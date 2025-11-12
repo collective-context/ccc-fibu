@@ -1,0 +1,21 @@
+
+ÚÄ Programmname, Steuerkennzeichen, Masken und Formulare: ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+@ECHO OFF
+REM Anweswenheitsliste Angestellte:
+REM [ö       ]  [÷       ]    ZEMASK oder Prefix     Source: MASK       FORM
+rem %1 %2  EU1100 2500E       Zeiterf. Anwesenheitsb. LO250
+
+REM euroSOFT-Lohnverrechnung:
+    %1 %2  eu1100 4300E    û  LO  Zeiterfassung       LO130
+rem %1 %2  eu1100 4500E    û  LO  Erfassen Projekte   LO150
+@echo off
+rem %1 %2  eu4100 85000    û  LO Zeiterfassung        LO4130,250         LO1300    0010
+
+rem euroSoft Zeiterfassung (Hausintern)
+    %1 %2  eu4100 80000    û  LO Zeiterfassung INT.   LO4150             LO1500    0010
+
+REM           ³     ³                                                                ³
+REM Programm ÄÙ     ÀÄÄ Steuerkennzeichen                         Formular-Nummer ÄÄÄÙ
+

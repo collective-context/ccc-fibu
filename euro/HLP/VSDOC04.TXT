@@ -1,0 +1,35 @@
+
+/*.ta,F01,IV. Numerische Liste Kunden / 1.,1
+ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-VERTRIEBSsteuerung                                                 บ
+ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.hd (VS,drucke),VS,num-li.
+.te*/
+
+
+/*.ta,F01,IV. Alphanumerische Liste Kunden / 2.,1
+ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-VERTRIEBSsteuerung                                                 บ
+ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.hd (VS,drucke),VS,alph-li.
+.te*/
+
+
+/*.ta,F01,IV. Sonstige Vertriebssteuerungs-Drucke / 3.,1
+ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-VERTRIEBSsteuerung                                                 บ
+ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.hd (VS,drucke),STHLP10,kundtel.
+.hd (VS,drucke),STHLP10,kundet.
+.hd (VS,drucke),VSHLP10,tel-rep.
+.te*/
+
+
+hd (VS,vs-deta),VSHLP10,vs-info.
+hd (VS,ST110),VS,drucke.
+
+
+

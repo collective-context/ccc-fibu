@@ -1,0 +1,3 @@
+lharc s /x ar_01.lzh
+if exist ar_01.lzh del ar_01.lzh
+

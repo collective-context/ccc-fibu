@@ -1,0 +1,69 @@
+
+
+
+
+
+
+
+
+
+   ù
+
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    Art.Nr        Zu/Abgang   Lager/neu                         EKP/Aktuell
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    ïïïïïïïïïïïï ###.##›,››  ```.``|,||
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                  ###.###.##›,››
+
+
+   ù                                                                       ù
+
+^
+
+>>Mask:   STM136 (verbunden mit Source STM131/STM133)
+>>Prog.:  ST1100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  STAMM Lager-Zu/Abg„nge"
+&FRAME    = 0, 0, 0, 0, "ÄErfassen Lager-Zu-/Abg„nge", 2
+&SEQUENZ  = 00,01,04
+
+&MASKHELP = AUHLP10, art-st
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1300
+
+>>Artikelnummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+&ADD_MATCH  (+-) = "Match-Code                              ", 0, MATCH_CODE
+  &HELPTEXT (+-) = STHLP10, 130, 0
+  &DATA     (+-) = 0, ARTNR
+
+>>Zugang
+  &HELPTEXT (+)  = STHLP10, 131, 27
+  &DATA     (+-) = 0, _BEWEGUNG
+
+>>Soll-Bestand
+  &HELPTEXT (+)  = STHLP10, 131, 27
+  &DATA     (+-) = 0, _SOLL_BEST
+
+>>Bezeichnung zur Suche
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Match-Code                              ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+  &HELPTEXT (+-)  = STHLP10, 130, 1
+  &DATA     (+-) = 0, MATCH_CODE
+
+>>letzter Netto-Einkaufs-Preis
+  &HELPTEXT (+)  = STHLP10, 131, 20
+  &DATA     (+-) = 0, EKPR1
+
+
+  &DATA_H   (+)  = 0, SOLL_BEST
+
+
+^ ^   ^
+`|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||

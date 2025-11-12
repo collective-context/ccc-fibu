@@ -1,0 +1,152 @@
+
+
+
+   Lieferant: ïïïïïïïïïïïïïïïï  Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Anrede    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      Sprach-Code: ›››
+   Name      : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   Zusatz    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+   Straáe    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    ® Postfach   : @@@@@@@@
+   Ld/PLZ/Ort: @@@ - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+   Empf„nger: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   Konto-Nr : @@@@@@@@@@@@@@@@@ BEI: @@@@@@@@@@@@@@@@@@@@@@@@ BLZ: @@@@@@@@@@
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+   Verwendungszweck: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Betrag-Wert:      @@@@@@@@@@@@@@@@                   Datum: ##.##.##
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ù                                                                            ù
+
+^ ^ ^ ^ ^ ^   ^ ^ ^
+
+>>Mask:   STM4201
+>>Prog.:  ST4100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  DRUCK Zahlscheine 1/1"
+&FRAME    = 0, 0, 0, 0, "ÄDruck Zahlscheine", 2
+&SEQUENZ = 00,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1200
+&DRU_DATEI  (1)  = MASK, D.ST4201
+&DATEI      (2)  = MASK, D.ST1210
+
+>>Lieferanten-Nummer (S)
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Lieferanten-Nr", 0, LIEFNR
+&ADD_MATCH  (+-) = "Kurzbezeichnung ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Straáe          ", 0, STRASSE
+&ADD_MATCH  (+-) = "PLZ/Ort         ", 0, PLZ_ORT
+  &HELPTEXT (+-) = STHLP10, 120, 0
+  &DATA     (+-) = 0, LIEFNR
+
+>>Match-Code Kurzbezeichnung (S)
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Kurzbezeichnung               ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Liefer.-Nr. ",                   0, LIEFNR
+&ADD_MATCH  (+-) = "Strasse                  ",      0, STRASSE
+  &HELPTEXT (+-)  = STHLP10, 120, 1
+  &DATA     (+-) = 0, MATCH_CODE
+
+>>Anrede
+  &HELPTEXT (+)  = STHLP10, 120, 2
+  &DATA     (+-) = 0, ANREDE
+
+>>Sprach-Code
+  &HELPTEXT (+)  = STHLP10, 120, 3
+  &DATA     (+-) = 0, SPRACH_COD
+  &DEFAULT  (+-) = "043"
+
+>>Name
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Name                     ",      0, NAME
+&ADD_MATCH  (+-) = "Liefer.-Nr. ",                   0, LIEFNR
+&ADD_MATCH  (+-) = "Kurzbezeichnung               ", 0, MATCH_CODE
+  &HELPTEXT (+-)  = STHLP10, 120, 4
+  &DATA     (+-) = 0, NAME
+
+>>Zusatz
+  &HELPTEXT (+)  = STHLP10, 120, 5
+  &DATA     (+-) = 0, ZUSATZ
+
+>>Straáe
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Strasse                  ",      0, STRASSE
+&ADD_MATCH  (+-) = "Liefer.-Nr. ",                   0, LIEFNR
+&ADD_MATCH  (+-) = "Kurzbezeichnung               ", 0, MATCH_CODE
+  &HELPTEXT (+-)  = STHLP10, 120, 8
+  &DATA     (+-) = 0, STRASSE
+
+>>Postfach
+  &HELPTEXT (+)  = STHLP10, 120, 9
+  &DATA     (+-) = 0, POSTFACH
+
+>>Landkrzel
+  &HELPTEXT  (+)  = STHLP10, 120, 10
+  &DATA      (+-) = 0, LAND
+  &DEFAULT   (+-) = "A"
+
+&REM  PLZ-Ort
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Postleitzahl / Ort       ",      0, PLZ_ORT
+&ADD_MATCH  (+-) = "Liefer.-Nr. ",                   0, LIEFNR
+&ADD_MATCH  (+-) = "Kurzbezeichnung               ", 0, MATCH_CODE
+  &HELPTEXT (+-)  = STHLP10, 120, 11
+  &DATA     (+-) = 0, PLZ_ORT
+
+>>Zahlschein - Empf„nger
+  &DATA     (+)  = 2, Z_EMPFANG
+
+>>Zahlschein - Konto
+  &DATA     (+)  = 2, Z_KONTO
+
+>>Zahlschein - BEI
+  &DATA     (+)  = 2, Z_BEI
+
+>>Zahlschein - Bankleitzahl
+  &DATA     (+)  = 2, Z_BLZ
+
+>>Verwendungszweck 1
+  &DATA     (+)  = 1, TEXT_1
+
+>>Verwendungszweck 2
+  &DATA     (+)  = 1, TEXT_2
+
+>>Verwendungszweck 3
+  &DATA     (+)  = 1, TEXT_3
+
+>>Betrag Wert
+  &DATA     (+)  = 1, B_WERT
+
+>>Zahlschein - Datum
+  &DATA     (+)  = 1, _DATUM
+
+>>von Seite
+  &HELPTEXT (+)  = STHLP10, 413, 9
+  &DATA_H   (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = STHLP10, 413, 10
+  &DATA_H   (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
+ 
+

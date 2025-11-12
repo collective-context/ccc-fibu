@@ -1,0 +1,52 @@
+/*.ta,F02,III. KONSTANTEN / Mahntexte 7.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE LK-Fibu                                                            บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.fo (\euro\form\DRUCK021.TXT),1,S0,Z0,B125,H26,DRUCK021.
+.fo (\euro\form\DRUCK022.TXT),1,S0,Z0,B125,H26,DRUCK022.
+.fo (\euro\form\DRUCK023.TXT),1,S0,Z0,B125,H26,DRUCK023.
+.fo (\euro\form\DRUCK024.TXT),1,S0,Z0,B125,H26,DRUCK024.
+.fo (\euro\form\DRUCK025.TXT),1,S0,Z0,B125,H26,DRUCK025.
+.fo (\euro\form\DRUCK026.TXT),1,S0,Z0,B125,H26,DRUCK026.
+.fo (\euro\form\DRUCK027.TXT),1,S0,Z0,B125,H26,DRUCK027.
+.fo (\euro\form\DRUCK028.TXT),1,S0,Z0,B125,H26,DRUCK028.
+.fo (\euro\form\DRUCK029.TXT),1,S0,Z0,B125,H26,DRUCK029.
+.fo (\euro\form\DRUCK030.TXT),1,S0,Z0,B125,H26,DRUCK030.
+.fo (\euro\form\DRUCK031.TXT),1,S0,Z0,B125,H26,DRUCK031.
+.fo (\euro\form\DRUCK032.TXT),1,S0,Z0,B125,H26,DRUCK032.
+.fo (\euro\form\DRUCK033.TXT),1,S0,Z0,B125,H26,DRUCK033.
+.fo (\euro\form\DRUCK034.TXT),1,S0,Z0,B125,H26,DRUCK034.
+.fo (\euro\form\DRUCK035.TXT),1,S0,Z0,B125,H26,DRUCK035.
+.fo (\euro\form\DRUCK036.TXT),1,S0,Z0,B125,H26,DRUCK036.
+.fo (\euro\form\DRUCK037.TXT),1,S0,Z0,B125,H26,DRUCK037.
+.fo (\euro\form\DRUCK038.TXT),1,S0,Z0,B125,H26,DRUCK038.
+.fo (\euro\form\DRUCK039.TXT),1,S0,Z0,B125,H26,DRUCK039.
+.fo (\euro\form\DRUCK030.TXT),1,S0,Z0,B125,H26,DRUCK030.
+.te*/
+
+/*.ta,F02,II. euroSOFT-MEN / 1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE LK-Fibu                                                            บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+Bentzeroberflche euroSOFT-MEN
+ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+
+Der Aufruf der jeweiligen Funktionen erfolgt ber das euroSOFT-MEN. Dabei sind
+die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
+
+fo (\euro\form\FIB4100.M01),1,S0,Z0,B125,H26,Druck Sachkontensaldenliste.
+mi (MENUE,FI-L000),1,ฏLK Finanzbuchhaltungฎ.
+mi (MENUE,FI-L010),1,ฏKontenstammฎ.
+mi (MENUE,FI-L011),1,ฏAuswertungsstammฎ.
+mi (MENUE,FI-L020),1,ฏSalden/offene Postenฎ.
+mi (MENUE,FI-L021),1,ฏStatistiken / Kostenฎ.
+mi (MENUE,FI-L025),1,ฏZusatzpakete Fibuฎ.
+.te*/
+
+
+
+
+
+

@@ -1,0 +1,295 @@
+
+
+
+
+
+    ù
+      von Kunden-Kurzbez. : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      bis Kunden-Kurzbez. : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Kopien: ##
+      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      von bis Land        : @@@                    @@@
+      von bis Plz/Ort     : @@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@
+
+      von Kundengruppe    : ïïïïïïïïïï   bis Kundengruppe    : ïïïïïïïïïï
+      von Auswertungs-KZ. : ïïïïïïïïïï   bis Auswertungs-KZ. : ïïïïïïïïïï
+      von Seite           : ####         bis Seite           : ####
+
+      Branche : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    ù                                                                     ù
+
+^ ^
+``.``.`` ^ ^ ^ ^ ^ ^ 
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^
+
+>>Mask:   STM4111
+>>Prog.:  ST4100.C
+>>Update: 01.06.91
+
+&TITEL    = "VS  DRUCK Kunden Bez. intern"
+&FRAME    = 0, 0, 0, 0, "ÄListe Kunde nach Bezeichnung", 2
+>>SEQUENZ =
+
+&MASKHELP = STHLP10, kundbez
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1100
+&DRU_DATEI  (1)  = MASK, D.ST4110
+&DATEI      (2)  = MASK, D.ST1110
+&DATEI      (3)  = MASK, D.VS1110
+&DATEI      (4)  = MASK, D.FI1110
+
+>>von Kunden-Bezeichnung
+  &HELPTEXT (0)  = STHLP10, 411, 3
+  &DATA     (+-) = 1, _V_KURZBEZ
+
+>>bis Kunden-Bezeichnung
+  &HELPTEXT (+)  = STHLP10, 411, 5
+  &DATA     (+-) = 1, _B_KURZBEZ
+
+>>Kopien
+  &HELPTEXT (+)  = SYHLP10, 402, 04
+  &DATA     (+-) = 1, _KOPIEN
+  &DEFAULT  (+-) = "1"
+
+>>von Land
+  &HELPTEXT (+)  = STHLP10, 411, 7
+  &DATA     (+-) = 1, _V_LAND
+
+>>bis Land
+  &HELPTEXT (+)  = STHLP10, 411, 9
+  &DATA     (+-) = 1, _B_LAND
+
+>>von Postleitzahl
+  &HELPTEXT (+)  = STHLP10, 411, 7
+  &DATA     (+-) = 1, _V_PLZ_ORT
+
+>>bis Postleitzahl
+  &HELPTEXT (+)  = STHLP10, 411, 9
+  &DATA     (+-) = 1, _B_PLZ_ORT
+
+>>von Kundengruppe
+  &HELPTEXT (+)  = STHLP10, 411, 2
+  &DATA     (+-) = 1, _V_KUNDGR
+
+>>bis Kundengruppe
+  &HELPTEXT (+)  = STHLP10, 411, 4
+  &DATA     (+-) = 1, _B_KUNDGR
+
+>>von Auswertungs-Kenzeichen
+  &HELPTEXT (+)  = STHLP10, 411, 6
+  &DATA     (+-) = 1, _V_AUSWKZ
+
+>>bis Auswertungs-Kennzeichen
+  &HELPTEXT (+)  = STHLP10, 411, 8
+  &DATA     (+-) = 1, _B_AUSWKZ
+
+>>von Seite
+  &HELPTEXT (+)  = SYHLP10, 100, 100
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = SYHLP10, 100, 100
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>Branche
+  &HELPTEXT (+)  = STHLP10, 110, 24
+  &DATA     (+-) = 0, BRANCHE
+  &SELECT   (+-) = "Kundengruppe",\
+                 "Computer Herst. 3573",    1, "Br/Com-Fachh.  5081",    2,\
+                 "Hold/Inv-Ges.   6711",    4, "Softwarehaus    7372",    8,\
+                 "Computerdienste 7374",   16, "Forschung/Entw. 7391",   32,\
+                 "Untern.-Berat.  7392",   64, "w. Meinungsbildner  ",  128,\
+                 "Verlag          2721",  256
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REC_KEY    (+)                   >>von Kunden-Nummer
+&REC_MATCH  (+-) = "Kurzbezeichnung      ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Kunden-Nummer   ", 0, KUNDE
+  &DATA_H   (+-) = 0, KUNDE
+
+>>Kurzbezeichnung (Dummy-Feld fuer Kunden-Kurzbezeichnung)
+&REC_KEY    (+)
+  &DATA_H   (+-) = 0, MATCH_CODE
+
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy-Feld fuer Point-Anweisung
+  &DATA_H   (+)  = 0, ANREDE
+  &DATA_H   (+)  = 0, NAME
+  &DATA_H   (+)  = 0, ZUSATZ
+  &DATA_H   (+)  = 0, LAND
+  &DATA_H   (+)  = 0, PLZ_ORT
+  &DATA_H   (+)  = 0, ANREDE_1
+
+  &DATA_H   (+)  = 0, TITEL_1
+  &DATA_H   (+)  = 0, VORNAME_1
+  &DATA_H   (+)  = 0, ZUNAME_1
+  &DATA_H   (+)  = 0, BRIEFANR_1
+  &DATA_H   (+)  = 1, _NAME_1
+  &DATA_H   (+)  = 1, _NAME_2
+
+  &DATA_H   (+)  = 1, _NAME_3
+  &DATA_H   (+)  = 1, _NAME_4
+  &DATA_H   (+)  = 1, _ORT
+  &DATA_H   (+)  = 4, WHRUNG
+  &DATA_H   (+)  = 2, FILLER
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+
+
+
+
+
+
+    ù
+      von Kunden-Kurzbez. : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      bis Kunden-Kurzbez. : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      von bis Land        : @@@                    @@@
+      von bis Plz/Ort     : @@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@
+
+      von Kundengruppe    : ïïïïïïïïïï   bis Kundengruppe    : ïïïïïïïïïï
+      von Auswertungs-KZ. : ïïïïïïïïïï   bis Auswertungs-KZ. : ïïïïïïïïïï
+      von Seite           : ####         bis Seite           : ####
+
+      Branche : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    ù                                                                     ù
+
+^ ^
+``.``.`` ^ ^ ^ ^ ^ ^ 
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^
+
+>>Mask:   STM4111
+>>Prog.:  ST4100.C
+>>Update: 01.06.91
+
+&TITEL    = "ST  DRUCK Kunden Bez. intern"
+&FRAME    = 0, 0, 0, 0, "ÄListe Kunde nach Bezeichnung", 2
+>>SEQUENZ =
+
+&MASKHELP = STHLP10, kundbez
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1100
+&DRU_DATEI  (1)  = MASK, D.ST4110
+&DATEI      (2)  = MASK, D.ST1110
+
+>>von Kunden-Bezeichnung
+  &HELPTEXT (0)  = STHLP10, 411, 3
+  &DATA     (+-) = 1, _V_KURZBEZ
+
+>>bis Kunden-Bezeichnung
+  &HELPTEXT (+)  = STHLP10, 411, 5
+  &DATA     (+-) = 1, _B_KURZBEZ
+
+>>von Land
+  &HELPTEXT (+)  = STHLP10, 411, 7
+  &DATA     (+-) = 1, _V_LAND
+
+>>bis Land
+  &HELPTEXT (+)  = STHLP10, 411, 9
+  &DATA     (+-) = 1, _B_LAND
+
+>>von Postleitzahl
+  &HELPTEXT (+)  = STHLP10, 411, 7
+  &DATA     (+-) = 1, _V_PLZ_ORT
+
+>>bis Postleitzahl
+  &HELPTEXT (+)  = STHLP10, 411, 9
+  &DATA     (+-) = 1, _B_PLZ_ORT
+
+>>von Kundengruppe
+  &HELPTEXT (+)  = STHLP10, 411, 2
+  &DATA     (+-) = 1, _V_KUNDGR
+
+>>bis Kundengruppe
+  &HELPTEXT (+)  = STHLP10, 411, 4
+  &DATA     (+-) = 1, _B_KUNDGR
+
+>>von Auswertungs-Kenzeichen
+  &HELPTEXT (+)  = STHLP10, 411, 6
+  &DATA     (+-) = 1, _V_AUSWKZ
+
+>>bis Auswertungs-Kennzeichen
+  &HELPTEXT (+)  = STHLP10, 411, 8
+  &DATA     (+-) = 1, _B_AUSWKZ
+
+>>von Seite
+  &HELPTEXT (+)  = SYHLP10, 100, 100
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = SYHLP10, 100, 100
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>Branche
+  &HELPTEXT (+)  = STHLP10, 110, 24
+  &DATA     (+-) = 0, BRANCHE
+  &SELECT   (+-) = "Kundengruppe",\
+                 "Computer Herst. 3573",    1, "Br/Com-Fachh.  5081",    2,\
+                 "Hold/Inv-Ges.   6711",    4, "Softwarehaus    7372",    8,\
+                 "Computerdienste 7374",   16, "Forschung/Entw. 7391",   32,\
+                 "Untern.-Berat.  7392",   64, "w. Meinungsbildner  ",  128,\
+                 "Verlag          2721",  256
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REC_KEY    (+)                   >>von Kunden-Nummer
+&REC_MATCH  (+-) = "Kurzbezeichnung      ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Kunden-Nummer   ", 0, KUNDE
+  &DATA_H   (+-) = 0, KUNDE
+
+>>Kurzbezeichnung (Dummy-Feld fuer Kunden-Kurzbezeichnung)
+&REC_KEY    (+)
+  &DATA_H   (+-) = 0, MATCH_CODE
+
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy-Feld fuer Point-Anweisung
+  &DATA_H   (+)  = 0, ANREDE
+  &DATA_H   (+)  = 0, NAME
+  &DATA_H   (+)  = 0, ZUSATZ
+  &DATA_H   (+)  = 0, LAND
+  &DATA_H   (+)  = 0, PLZ_ORT
+  &DATA_H   (+)  = 0, ANREDE_1
+
+  &DATA_H   (+)  = 0, TITEL_1
+  &DATA_H   (+)  = 0, VORNAME_1
+  &DATA_H   (+)  = 0, ZUNAME_1
+  &DATA_H   (+)  = 0, BRIEFANR_1
+  &DATA_H   (+)  = 1, _NAME_1
+  &DATA_H   (+)  = 1, _NAME_2
+
+  &DATA_H   (+)  = 1, _NAME_3
+  &DATA_H   (+)  = 1, _NAME_4
+  &DATA_H   (+)  = 1, _ORT
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+

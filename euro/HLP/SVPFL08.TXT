@@ -1,0 +1,18 @@
+/*.ta,F02,III. euroSOFT-PROGRAMMbeschreibung / 5.,22
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE UB-Urlaub am Bauernhof                                             บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+
+Mahnwesen
+อออออออออ
+
+.da (EURODATA,UB2100),1, Mahnwesen.
+.ma (\euro\mask\UBM210),1,Erfassen Rechnungen/Eingnge.
+.hd (UB,mahnung),UB,rechein.
+.ma (\euro\mask\UBM4210),1,Drucken Mahnungen.
+.hd (UB,mahnung),UB,mahnwes.
+.fo (\euro\form\UBB2200.M03),1,S0,Z0,B84,H61,Mahnungen.
+.te*/
+
+

@@ -1,0 +1,8 @@
+#  Make File fÅr TIOCTL.EXE
+
+COMP=CL
+
+TIOCTL.EXE: TIOCTL.C SHOWHELP.C
+  $(COMP)  TIOCTL.C /link DOSLIBS.LIB
+
+

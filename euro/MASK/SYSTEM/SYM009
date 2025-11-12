@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+
+       Ы                    Laufwerk wechseln                          Ы
+        ддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+	Laufwerk und Pfad f│r Dateien  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	Laufwerk und Pfad f│r Programme: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        ддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+       Ы  <ды=Eingabe  Esc= Abbruch  F1=Hilfe                          Ы
+
+
+
+
+&TITEL = "SYмArbeit Manueller Programm-Start 1/1"
+&REM   Maske    :  SYM009
+&REM   Programm:  SY1000 / 09000
+&REM   Datei    : SYTEIL
+
+&FRAME = 0,0,0,0, "д", 2
+&INDEX = "SY009"
+
+&DATEI (0) = EURODATA, L.SYTEIL
+
+&REM  Laufwerk u. Pfad f│r Dateien
+&HELPTEXT (00) = SYHLP, 009, 00
+&DATA     (+-) = 0, DAT_G
+
+&REM  Laufwerk u. Pfad f│r Programme
+&HELPTEXT (+)  = SYHLP, 009, 01
+&DATA     (+-) = 0, EXE_G

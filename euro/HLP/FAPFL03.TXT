@@ -1,0 +1,22 @@
+/*.ta,F02,IV. WINware AUFTRAG Kundenstamm / 1.,1
+ﾉﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍｻ
+ｺ  WINware WARE Basis Auftragsbearbeitung                                           ｺ
+ﾈﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍｼ
+
+.me (MENU,AU-030),1,Basis Auftragsbearbeitung,始dern Kunden.
+.me (MENU,AU-040),1,Stammdaten,Anlegen/始dern Kunden.
+.da (EURODATA,ST1100),1,Kundenstamm.
+.da (EURODATA,ST1110),1,.
+.ma (\euro\mask\ST\STM110),1,Anlegen/始dern Kundenstamm 1/2.
+.ma (\euro\mask\AU\AUM111),1,Anlegen/始dern Kundenstamm 2/2.
+.hd (AU,st-deta),AU,kunden.
+.hd (AU,listen),ST,kund-li.
+.fo (\euro\form\ST\STB1100.M),1,S0,Z0,B84,H63,Druck Adress-Liste Kunden.
+.fo (\euro\form\ST\STB1101.M),1,S0,Z0,B55,H49,Druck Telefon-Liste Kunden.
+.fo (\euro\form\ST\STB1102.M),1,S0,Z0,B40,H23,Druck Adress-Etiketten Kunden.
+.te*/
+
+hi (SY,SY110)
+ff
+
+

@@ -1,0 +1,35 @@
+# Compiled binaries
+*.exe
+*.obj
+*.o
+*.com
+*.dll
+*.so
+*.dylib
+
+# Build artifacts
+*.bak
+*.tmp
+*.swp
+*~
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+Thumbs.db
+
+# Large binary data (optional - falls du die .btr NICHT hochladen willst)
+# Auskommentieren falls doch hochladen:
+# *.btr
+# *.BTR
+
+# Logs
+*.log
+
+# Sensitive data
+*.key
+*.pem
+secrets/
+credentials/

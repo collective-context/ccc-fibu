@@ -1,0 +1,43 @@
+/*.ta,F02,II. euroSOFT-SV Men / 2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE ARGE-SV / Buerliche Selbstvermarkter                              บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+Bentzeroberflche euroSOFT-MEN
+ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+
+Der Aufruf der jeweiligen Funktionen erfolgt ber das euroSOFT-MEN. Dabei sind
+die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
+
+.mi (MENUE,SV-L000),1,ฏSV Hauptmen ฏSelbstvermarkterฎ.
+.mi (MENUE,SV-L010),1,ฏSV Stammdaten/Konstantenฎ.
+.me (MENUE,SV-048),1,SV Stammdaten,Konstanten.
+
+Die euroSOFT-MEN's im Detail:
+ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+.me (MENUE,SV-030),1,SV Hauptmen,Stammdaten.
+.me (MENUE,SV-050),1,SV Hauptmen,Bearbeiten.
+.me (MENUE,SV-018),1,SV Hauptmen,Optionen.
+.me (MENUE,SV-040),1,SV Stammdaten,Mitglieder.
+.me (MENUE,SV-042),1,SV Stammdaten,Lieferatnen.
+.me (MENUE,SV-044),1,SV Stammdaten,Artikel/Leistungen.
+.me (MENUE,SV-046),1,SV Stammdaten,Sonstige.
+.me (MENUE,SV-048),1,SV Stammdaten,Konstanten.
+.te*/
+
+/*.ta,F02,III. euroSOFT-SV Mahntexte / 1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE ARGE-SV / Buerliche Selbstvermarkter                              บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+Da alle anderen Konstanten im folgenden Men bereits im Pflichtenheft der ฏeuroSOFT-
+Basis Auftragsbearbeitungฎ beschrieben sind, werden hier nur noch die Mahntexte
+zustzlich angefhrt:
+
+.me (MENUE,SV-048),1,Konstanten,Mahntexte.
+.da (EURODATA,SYP_04),1, Mahntexte.
+.ma (\euro\mask\FIM040),1,Anlegen/ndern Mahntexte.
+.hd (FI,kons-st),FI,mate-an.
+.te*/
+
+

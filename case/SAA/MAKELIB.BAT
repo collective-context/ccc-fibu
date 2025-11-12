@@ -1,0 +1,147 @@
+: MAKELIB.BAT
+:
+: Mit dieser Batch-Datei k”nnen leicht und einfach Komplett-
+: bibliotheken fr die euroSOFT-CASEbox erstellt werden.
+: MAKELIB erh„lt als Argument einen Buchstaben, der das Speicher-
+: modell definiert, fr das die Bibliothek erstellt werden soll.
+:
+:         MAKELIB S, M, C, L
+:
+: Die Angabe des Speichermodells muá in Grossbuchstaben erfolgen.
+:
+: Die Batch-Datei setzt voraus, das alle Source-Dateien im
+: aktuellen Verzeichnis sind und die Deklarationsdateien ber
+: die Umgebungsvariable INCLUDE erreichbar sind.
+: Mit dieser Batch-Datei werden die C-Dateien aufgebaut.
+: Wenn Sie eine ge„nderte Version der Assembler-Datei vio.asm mit
+: aufnehmen wollen, mssen Sie den entsprechenden Aufruf „ndern.
+: Der C 5.1 Compiler erzeugt beim Kompilieren der Datei dl_laden.cpp
+: eine interne Fehlermeldung. Aus diesem Grund wird diese Datei fr
+: das Compact- und Large Speichermodell mit dem QCL-Compiler aufgebaut.
+@echo off
+REM SET OUT=CON
+REM SET OUT=LPT1
+    SET OUT=PROTO.TXT
+REM frher:cl -Zpi -Oals -G2 -Gt -Gs -A%1 -c -W4 dl_*.cpp
+rem bstop
+prompt $h$h
+echo Makelib.BAT
+echo Batch-Datei zur Erstellung einer Bibliothek fr die C-Toolbox
+echo ÿ
+if exist proto.txt del proto.txt
+:test1
+if not "%1"=="A" goto test2
+echo Speichermodell fehlt  S(mall), M(edium), C(ompact) oder L(arge)
+pause
+goto ende
+
+:test2
+if "%1"=="S" goto starten
+if "%1"=="M" goto starten
+if "%1"=="C" goto starten
+if "%1"=="L" goto starten
+echo Speichermodell fehlt  S(mall), M(edium), C(ompact) oder L(arge)
+pause
+goto ende
+
+:starten
+if not X%2==X goto %2
+
+REM Kompiliere das DL-Modul
+:dlg
+echo Das Dialog-Modul wird kompiliert.
+echo Das dauert jetzt seine Zeit.
+echo Bitte bleiben Sie dran
+cl -Zpi -Ox   -G3 -Gt -Gs -A%1 -c -W4 dl_*.cpp >> %OUT%
+REM if %1==S goto e_global
+REM if %1==M goto e_global
+REM cl -qc -c -Gt -Ox -W4 -A%1 dl_laden.cpp
+REM if errorlevel 1 goto comperror
+
+REM Kompiliere E_GLOBAL.Cpp
+:e
+echo Die Datei mit den globalen Daten wird erstellt.
+echo Bitte warten Sie.
+cl -Zpi -Ox   -G3 -Gt -Gs -A%1 -c -W4 e_global.cpp >> %OUT%
+REM if errorlevel 1 goto comperror
+
+REM Kompiliere das IN-Modul
+:int
+echo Und jetzt die internen Funktionen.
+cl -Zpi -Ox   -G3 -Gt -Gs -A%1 -c -W4 in_*.cpp >> %OUT%
+REM if errorlevel 1 goto comperror
+
+REM Kompiliere das MN-Modul
+:mnu
+echo Das Men-Modul wird kompiliert.
+echo Dies sind nur zehn Dateien.
+cl -Zpi -Ox   -G3 -Gt -Gs -A%1 -c -W4 mn_*.cpp >> %OUT%
+REM if errorlevel 1 goto comperror
+
+REM Kompiliere das MS-Modul
+:msm
+echo Das Maus-Modul wird kompiliert (eine Datei)
+cl -Zpi -Ox   -G3 -Gt -Gs -A%1 -c -W4 ms_*.cpp >> %OUT%
+REM if errorlevel 1 goto comperror
+
+REM Kompiliere das M-Modul
+:msk
+echo Das Mask-Modul wird kompiliert.
+cl -Zpi -Ox   -G3 -Gt -Gs -A%1 -c -W4 m_*.cpp >> %OUT%
+REM if errorlevel 1 goto comperror
+
+REM Kompiliere das UT-Modul
+:utl
+echo Das Utility-Modul wird kompiliert
+echo Jetzt sinds noch einige Dateien.
+cl -Zpi -Ox   -G3 -Gt -Gs -A%1 -c -W4 ut_*.cpp >> %OUT%
+REM if errorlevel 1 goto comperror
+
+REM Kompiliere das VI-Modul
+:vio
+echo Das Video-Modul wird kompiliert (eine Datei).
+cl -Zpi -Ox   -G3 -Gt -Gs -A%1 -c -W4 vi_*.cpp >> %OUT%
+REM if errorlevel 1 goto comperror
+
+REM Kompiliere das WI-Modul
+:win
+echo Zum Schluá wird das Window-Modul kompiliert.
+cl -Zpi -Ox   -G3 -Gt -Gs -A%1 -c -W4 wi_*.cpp >> %OUT%
+REM if errorlevel 1 goto comperror
+
+:lib
+echo Das war das Kompilieren
+echo Jetzt wird die LIB aufgebaut
+if not exist *.lib goto lib_weiter
+ask "DEL *.LIB [j/n] " j,n
+  if errorlevel 2 goto ende
+  if errorlevel 1 del *.lib
+
+:lib_weiter
+rem /P:16==Standard(16*64=1.024MB)
+rem lib /P:16 @objekt
+    lib /P:32 @objekt
+if errorlevel 1 goto liberror
+
+ask "DEL *.OBJ [j/n] " j,n
+  if errorlevel 2 goto ende
+  if errorlevel 1 del *.obj
+
+echo Einzelbibliothek wurde erstellt.
+goto ende
+
+:comperror
+echo Fehler bei der Kompilierung.
+pause
+goto ende
+
+:liberror
+echo Fehler bei der Erstellung der Einzelbibliothek.
+pause
+
+:ende
+  xcopy SAA_M80%1.lib \euro\LIB
+  rem libcopy \euro\LIB\saa_m70%1.lib
+prompt $p$g
+m proto.txt
+

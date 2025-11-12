@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+                   Bankleitzahl     : ########
+                   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+                 ù Bankbezeichnung  : @@@@@@@@@@@@@@@@@@@@@@@@@@ ù
+
+
+&TITEL = "FI=Anlegen Banken 1/1"
+&REM   Source:  STM1177
+&REM   Maske :  #177
+
+&REM Historie
+&REM Stand: 05.08.89
+
+&REM ORIGIN = 4, 1, 22, 80
+&FRAME = 0, 0, 0, 0, "Anlegen/ndern Banken" 2
+&INDEX = "FI177"
+
+&DATEI (0) = EURODATA, D.FI1770
+
+&NUMMER  = 00,01
+&SEQUENZ = 00,01
+
+&REM  Bankleitzahl
+&HELPTEXT (00) = FIHLP10, 177, 0
+&DATA     (+-) = 0, BANKLEITZ
+
+&REM  Bankbezeichnung
+&HELPTEXT (+) = FIHLP10, 177, 1
+&DATA     (+-) = 0, BANK_BEZ

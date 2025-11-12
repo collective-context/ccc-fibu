@@ -1,0 +1,13 @@
+ ST4100     BA_ISAM    BA_PRN1    BA_PRN2   +
+(ST_4100)  (BA_SAA)   (BA_INIT)   FO_PRN    +
+(ST4100A)                                   +
+(MA_MATCH)            (MA_HILFE)            +
+(MA_MKSEL) (DB_OPEN)  (DL_LADEN)
+
+(MA_MATCH) (MA_MEMO)  (MA_HILFE) (MA_INDEX) +
+(MA_MKSEL) (DB_OPEN)  (DL_LADEN) (DL_HTOOL)
+
+ 51,1      22,2      24,6        ==  97,9 + (35,0) = 132,9 KB
+(16,7      18,3   ) (24,6  )
+(22,2)
+

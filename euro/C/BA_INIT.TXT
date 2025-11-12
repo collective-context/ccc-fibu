@@ -1,0 +1,69 @@
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Application_Init()                                                      บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ                                                                         บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+WORD Application_Init()
+{
+Ut_SchreibArray (apstrMessage, "Informationen werden geladen.",
+                               "Bitte warten Sie ...", NULL);
+Dl_Nachricht(apstrMessage, 32, 12);
+Ut_LoeschArray (apstrMessage);
+
+M_ReadSyPara(pSkb_g);
+
+wRetCode=M_Init(strApp_g, apWkbMask_g,               /* Masken-Tool ini-     */
+  apstrMaskText_g, apstrBrowseText_g, apTextBox_g,   /* tialisieren	     */
+  awMasks_g, aFiles_g, awFirstFieldNumber_g,
+  awBlocks_g,  awScroll_g, &wFileHandler_g,
+  apstrFileName_g, apstrRecord_g, awInitRecLen_g,
+  awRecLength_g, awFileMode_g, &pstrIndexKey_g, "MI_0");
+
+for(i=0; *apTextBox_g[i]; i++)
+  for(j=0; apTextBox_g[i][j]; j++)
+    for(wKey=0; wKey<aFiles_g[0].wNbKeyFields; wKey++)
+      if(aFiles_g[0].apKeys[wKey] == apTextBox_g[i][j])
+        {awRecKeyMask_g[wKey]=i;
+        awRecKeyField_g[wKey]=j;}
+
+for(i=0; i<wFileHandler_g; i++)                      /* Dateien ”ffnen       */
+  if(awFileMode_g[i] != DRU_F)                       /* Auแer Druckdateien   */
+    wRetCode=Db_Open(i, apstrFileBlock_g,            /*                      */
+    apstrOwner_g, B_NO, apstrFileName_g,             /*                      */
+    awAccessMode_g, apfsFileBuffer_g,                /*                      */
+    awRecKeyLength_g, awRecKeyOffset_g,
+    apstrRecKey_g, &wMaxRecKey_g, aFiles_g, _F, _L);
+
+wRet=i_Application_Init();
+return(wRet);
+}
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Application_Close()                                                     บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ                                                                         บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+VOID Application_Close()
+{
+REGISTER i;
+LONG lBlock=BLOCK, lBrowse=BROWSE;
+WORD wRetCode;
+
+i_Application_Close();
+Db_EndTran("APP_CLOSE", _F, _L);
+
+for(i=0; i<wFileHandler_g; i++)                      /* Dateien schlieแen    */
+  if(awFileMode_g[i] != DRU_F)                       /* Auแer Druckdateien   */
+    wRetCode=Db_Close(i, apstrFileBlock_g,           /* und Speicher wieder  */
+      apfsFileBuffer_g, apstrRecKey_g, _F, _L);      /* freigeben	     */
+
+M_CloseInit(apWkbMask_g, apstrMaskText_g,            /* Initialisierten      */
+   apstrBrowseText_g, apTextBox_g, aFiles_g,	     /* Speicher freigeben   */
+   &wFileHandler_g, apstrFileName_g, apstrRecord_g);
+
+Ut_Free(pSkb_g);
+return;
+}

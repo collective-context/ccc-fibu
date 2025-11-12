@@ -1,0 +1,112 @@
+/*.ta,F02,V. Bereich: Zusatz / 3.1.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+me (MENU,AUF-???),1,Zuschlagskalkulation,Grundlagen.
+mh (\euro\mask\AUF\AUFM???),1,Grundlagen 1/1.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,V. Bereich: Zusatz / 4.1.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-231),1,Barverkauf/Kasse,Kassengrundlagen.
+.mh (\euro\mask\AUF\AUFM651),1,Kassengrundlagen 1/1.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,V. Bereich: Zusatz / 4.1.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-231),1,Barverkauf/Kasse,Kassenprogramm.
+.mh (\euro\mask\AUF\AUFM652),1,Kassenprogramm 1/1.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,V. Bereich: Zusatz / 4.1.3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-231),1,Barverkauf/Kasse,Kassenabschluแ.
+.mh (\euro\mask\AUF\AUFM653),1,Kassenabschluแ 1/3.
+.mh (\euro\mask\AUF\AUFM654),1,Kassenabschluแ 2/3.
+.mh (\euro\mask\AUF\AUFM454),1,Kassenabschluแ 3/3.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,V. Bereich: Zusatz / 4.1.4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-231),1,Barverkauf/Kasse,Kassenstatistik.
+.mh (\euro\mask\AUF\AUFM655),1,Kassenstatistik.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,V. Bereich: Zusatz / 5.1.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+me (MENU,AUF-???),1,Barcode/Etiketten,Grundlagen.
+mh (\euro\mask\AUF\AUFM???),1,Grundlagen 1/1.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,V. Bereich: Zusatz / 6.1.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-251),1,Reparaturverwaltung,Reparaturen bearbeiten.
+.mh (\euro\mask\AUF\AUFM641),1,Reparaturen bearbeiten 1/1.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,V. Bereich: Zusatz / 6.1.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-251),1,Reparaturverwaltung,Reparaturen drucken.
+.mh (\euro\mask\AUF\AUFM642),1,Reparaturen drucken.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,V. Bereich: Zusatz / 6.1.3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-251),1,Reparaturverwaltung,Reparaturarchiv drucken.
+.mh (\euro\mask\AUF\AUFM643),1,Reparaturarchiv drucken.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,V. Bereich: Zusatz / 6.1.4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-251),1,Reparaturverwaltung,Reparaturarchiv l”schen.
+.mh (\euro\mask\AUF\AUFM644),1,Reparaturarchiv l”schen.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,V. Bereich: Zusatz / 7.1.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-261),1,Paketversand,Grundlagen.
+mh (\euro\mask\AUF\AUFM???),1,Grundlagen.
+   ---------------------------------------------------
+.te*/
+

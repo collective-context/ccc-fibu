@@ -1,0 +1,8 @@
+# Make File fÅr TPROC.C
+
+COMP=CL
+
+TPROC.EXE: TPROC.C SHOWHELP.C
+   $(COMP) TPROC.C /link DOSLIBS.LIB
+
+

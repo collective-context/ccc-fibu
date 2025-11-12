@@ -1,0 +1,1527 @@
+// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:51:08 - Wed
+
+// ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+// บ  Programme-Name: FI1100.CPP      Revision: 2.0	    (C) 1989/1993     บ
+// บ  Function	    : Stammdaten fr die Finanzbuchhaltung		      บ
+// บ		      Anlegen, ndern Kunden, Lieferanten, Sachkonten	      บ
+// บ		      USt-VA-Kennzeichen, Bilanztexte			      บ
+// บ									      บ
+// บ  Rev.-Date     : 01.07.1993, Graz		   Update: 01.05.1991, Graz   บ
+// บ  Author	    : Peter Mayer		   Author: Peter Mayer	      บ
+// บ  Copyright (C) : euroWIN-WARE, euroCASE-BOX   Peter Mayer, A-8041 Graz   บ
+// ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+// ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+// บ			     Deklarations-Dateien			      บ
+// ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+#define NDEBUG 1
+#include <string.h>
+#include <ctype.h>		// isdigit(),
+#include <app_tool.h>
+#include "..\c\ba.h"
+#include "..\c\ba_proto.h"
+
+IMPORT SWORD   wMaxiMask_g;
+
+   GLOBAL SWORD  Fi220_Application_Set(SWORD, SWORD);
+// GLOBAL VOID Fi220_Read_Calc(VOID);
+// GLOBAL SWORD  Fi210_Field_Classification(PSWORD, PSWORD);
+// GLOBAL SWORD  Fi210_Reference_Key_Handler(VOID);
+// GLOBAL SWORD  Fi210_Other_Fields_Handler(VOID);
+// GLOBAL SWORD  Fi210_Set_Default(VOID);
+// GLOBAL SWORD  Fi210_Matchcode_Handler(MATCH **, PSWORD, PSWORD);
+// GLOBAL SWORD  Fi210_Semantic_Check(VOID);
+   GLOBAL VOID Fi151_Other_Fields_Handler(VOID);
+
+GLOBAL	VOID   i_UpdateBestKto(DOUBLE);
+GLOBAL	VOID   i_UpdateKonto(DOUBLE, PSSTR);
+GLOBAL	VOID   i_CreateBuchung(DOUBLE);
+GLOBAL	VOID   i_CreateAnlaBu(DOUBLE);
+
+STATIC	SWORD	 i_Kto_Empty(VOID);
+STATIC	VOID   i_SynDef(SWORD, PSSTR, PSSTR);
+STATIC	VOID   i_SynCheck(SWORD, PSSTR, PSSTR);
+STATIC	SWORD	 wFormular_m;
+
+STATIC	DOUBLE	dZeitWert_m;
+STATIC	DOUBLE	dAoAbgang_m;
+
+// ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+// บ	  Globale Daten, die aus der Toolbox importiert werden		      บ
+// ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+// บ	  Konstanten &	modul-globale Variablen  &  Array - Deklaration       บ
+// ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+// บ	  Funktions-Prototypen						      บ
+// ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+GLOBAL CHAR strKAP_g[20];
+
+
+// ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+// บ	 Grund-Initialisierungen  == Programmstart			      บ
+// ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+VOID main(SWORD  argc, PSSTR argv[])
+{
+ba_Init(argc, argv);
+while(wSteuerKz_g >= 0 )
+  {
+  boNewLoop_g=JA;
+  i_main_init(&wSteuerKz_g, &wDruckKz_g, strApp_g,
+    strAppDru_g, awMasks_g, &wFormular_m,
+    strSpecialKeyCodes_g);
+
+  if(wSteuerKz_g >= 0)
+    {
+    if(Application_Init())
+      Application_Mask();			       // Start der Applikation
+
+    Application_Close();
+    }
+
+  i_main_while(&wSteuerKz_g, &wDruckKz_g);	       //
+  } // end While == Programmende		       //
+
+Mn_Entfernen(1);				       // Menzeile l”schen
+if(pWkbInfo_g) Wi_Entfernen(pWkbInfo_g);	       // WindowKontollBlock
+D_end_process(0);				       //
+} // end main
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Application_Set()                                                       บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Fhrt applikationsabhngige Vorbelegungen fr bestimmte Felder          บ
+  บ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           บ
+  บ ฏwMskฎ und ฏwFldฎ sind die Nummern des Feldes und der Maske, die als    บ
+  บ nchstes vom Interpreter angesprungen werden wrde.                     บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Application_Set(SWORD  wMsk, SWORD  wFld)
+{
+SWORD  wR=apTextBox_g[wMsk][wFld]->wRecord;
+SWORD  wBlLen=awBlockLength_g[wMsk];
+SWORD  wBlock=wNextBlockNumber_g*awBlockLength_g[wMsk];
+SWORD  wMask=_MSK, wFeld=_FLD;
+
+if(Maske(_MSK,"FI220","FI225","FI221",_N) )
+  Fi220_Application_Set(wMsk, wFld);
+
+if(Maske(_MSK,"FI110","LKF110","FI120","LKF120",_N) )
+  {                                                  /* bei Liefer-Stamm 1/1 */
+  if(!*pt("MATCH_CODE") && TBox("PLZ_ORT"))          /* wenn Matchcode leer  */
+    Matchcode_Creation(pt("MATCH_CODE"));            /* und Feld PLZ_ORT     */
+
+  if((!*pt("BRIEFANR_1")||awNewRecord_g[0])
+    && TBox("ZUNAME_1"))
+    Anrede_Creation(pt("BRIEFANR_1"),                /* Briefanrede leer oder*/
+      pt("ANREDE_1"),pt("TITEL_1"),pt("ZUNAME_1"));  /* neues Record         */
+  }
+
+if(Maske(_MSK,"FI311","LKF311","FI321","LKF321",_N) )
+  if(!*pt("KURZ_BEZ") && TBox("PLZ_ORT"))            /* wenn Matchcode leer  */
+    Matchcode_Creation(pt("KURZ_BEZ"))  ;            /* und Feld PLZ_ORT     */
+
+/* ---> erst hier !!! <--- */
+_MSK=wMsk; _FLD=wFld;
+
+if(Maske(_MSK,"FI130","LKF130",_N) && *pt("KTO_KLASS")!='n')
+  if(_FLD>2 || (wFeld!=0 && wKeyCode_g==T_DOWN) || wKeyCode_g==T_C_END)
+    {wMask=0; wFeld=0; wKeyCode_g=AUS;}
+
+if(Maske(_MSK,"FI131","LKF131","FI135","LKF135","FI132","LKF132",
+  "FI136","LKF136","FI140","LKF140","FI112","LKF112","FI114","LKF114",
+  "FI122","LKF122","FI124","LKF124","FI220","FI225","FI221",_N))
+  {SREGISTER i;
+  DOUBLE adSaldo[13], dJahrSoll=0.0, dJahrHaben=0.0, dJahrSaldo=0.0;
+
+  adSaldo[1]=ptD("VOR_SALDO")+ptD("SOLL_01")-ptD("HABEN_01");
+  for(i=2; i<13; i++)
+    adSaldo[i]=adSaldo[i-1]+ptD(chri("SOLL_0x",i))-ptD(chri("HABEN_0x",i));
+
+  for(i=1; i<13; i++)
+    {dJahrSoll+=ptD(chri("SOLL_0x",i));
+    dJahrHaben+=ptD(chri("HABEN_0x",i));
+
+    if(!Maske(_MSK,"FI220","FI225","FI221",_N))
+      memcpy(pt(chri("SALDO_0x",i)), &adSaldo[i], 8);
+    }
+
+  dJahrSaldo=ptD("VOR_SALDO")+dJahrSoll-dJahrHaben;
+  memcpy(pt("JHR_SALDO"), prnd(dJahrSaldo), 8);
+
+  if(!Maske(_MSK,"FI220","FI225","FI221",_N))
+    {memcpy(pt("JHR_SOLL"), prnd(dJahrSoll), 8);
+    memcpy(pt("JHR_HABEN"), prnd(dJahrHaben), 8);}
+  }
+
+if(Maske(_MSK,"FI145","LKF145",_N))
+  {SREGISTER i, j; DOUBLE adSaldo[13];
+
+  for(j=0; j<4; j++)
+    {DOUBLE dJahrSoll=0.0, dJahrHaben=0.0, dJahrSaldo=0.0;
+    PSSTR pstr; CHAR strTmp[TB_MAX];
+    j=(j==1) ? 2 : j;
+
+    strcpy(strTmp, apstrFileName_g[j]);
+    pstr=strrchr(strTmp, '\\');
+    if(pstr) {*pstr='\0'; pstr=strrchr(strTmp, '\\');}
+    if(pstr) pstr++; else pstr=strTmp;
+    if(!atoi(pstr)) *pstr='\0';
+    strcpy(pt(chri("JAHR_x",j)), pstr);
+
+    for(i=1; i<13; i++)
+      {adSaldo[i]=ptD(chri(chi(j,"x๘SOLL_0x"),i))-
+	ptD(chri(chi(j,"x๘HABEN_0x"),i));
+
+      dJahrSoll+=ptD(chri(chi(j,"x๘SOLL_0x"),i));
+      dJahrHaben+=ptD(chri(chi(j,"x๘HABEN_0x"),i));
+      pstr=ch((CHAR)(j+48),"SALDO_x_0x",6);
+      memcpy(pt(chri(pstr,i)),&adSaldo[i],8);
+      }
+
+    dJahrSaldo=ptD(chi(j,"x๘VOR_SALDO"))+dJahrSoll-dJahrHaben;
+    memcpy(pt(chri("JHR_SALDOx",j)), prnd(dJahrSaldo), 8);
+    }
+  }
+
+if(Maske(_MSK,"FI310","LKF310","FI320","LKF320",
+  "FI330","LKF330",_N) && TBox("_VOR_SALDO"))
+  {
+  DOUBLE dSaldo=ptD("VOR_SALDO");
+  memcpy(pt("_VOR_SALDO"), &dSaldo, 8);
+  }
+
+if(Maske(_MSK,"FI340","LKF340","FI345","LKF345",_N) &&
+  !TBox("MG_BEZ") && !TBox("_IN_AKT_EK"))
+  {DOUBLE dSumme;
+  memcpy(pt("_MENGE"), pt("INVEN_AKT"), 8);
+  memcpy(pt("_IN_AKT_EK"), pt("IN_AKT_EKP"), 8);
+
+  if(ptD("_IN_AKT_EK")==0.0)
+    memcpy(pt("_IN_AKT_EK"), pt("EKPR1"), 8);
+
+  dSumme=ptD("_MENGE")*ptD("_IN_AKT_EK");
+  memcpy(pt("_SUMME"), &dSumme, 8);
+  }
+
+if(Maske(1,"FI346","LKF346",_N))
+  {if(!*pt("ERLOES_KT"))
+    {strcpy(pt("ERLOES_BZ"), pt("AUFWAND_BZ"));
+    strcpy(pt("ERLOES_KT"), pt("AUFWAND_KT"));}
+
+  if(!*pt("AUFWAND_KT"))
+    {strcpy(pt("AUFWAND_BZ"), pt("ERLOES_BZ"));
+    strcpy(pt("AUFWAND_KT"), pt("ERLOES_KT"));}
+
+  if(!*pt("MEHR_MI_KT"))
+    {strcpy(pt("MEHR_MI_BZ"), pt("ERLOES_BZ"));
+    strcpy(pt("MEHR_MI_KT"), pt("ERLOES_KT"));}
+    }
+
+/*if(Maske(wMsk,"FI210","FI251","LKF210","LKF251",_N))
+  i_HoldMask(&wKeyCode_g, &wFieldNumber_g,
+    apTextBox_g, _MSK, _FLD);*/
+
+if(wMaxiMask_g > -1 && _MSK >= wMaxiMask_g)
+  i_HoldMask(&wKeyCode_g, &wFieldNumber_g,
+    apTextBox_g, wMask, wFeld);
+
+_MSK=wMask; _FLD=wFeld;
+return(OK);
+} /*end Application_Set () */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ KeyCode_Handler()                                                       บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ                                                                         บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+VOID KeyCode_Handler()
+{
+STATIC wKeyCode;
+
+if(Maske(_MSK,"FI345","LKF345",_N) && wKeyCode==T_F2)
+  {wKeyCode_g=T_F2; wKeyCode=AUS;
+  boInput_g=NO; return;}
+
+switch(wKeyCode_g)                                   /*                      */
+  {                                                  /*                      */
+  case T_F2:					     /* 		     */
+      if(Maske(_MSK,"FI345","LKF345",_N) &&
+	TBox("ARTNR") &&
+	(awNewRecord_g[0]||awExistingRecord_g[0]) )  /* handen, dann das     */
+	{wKeyCode_g=T_ESC;
+	wKeyCode=T_F2;
+	boInput_g=NO;}
+      break;
+
+  case T_F3:                                         /* L”schen des Datens.  */
+     if(Maske(0,"FI140","LKF140","FI145","LKF145",_N))
+       wKeyCode_g=T_RETURN;
+
+     if(Maske(0,"FI110","LKF110","FI120","LKF120",
+       "FI130","LKF130","FI310","LKF310","FI320",
+       "LKF320","FI330","LKF330",_N) && !i_Kto_Empty() )
+       wKeyCode_g=T_RETURN;
+     break;
+
+  case T_S_F5:
+  case T_F5:					     /* Kopie des Datensatzes*/
+     if(Maske(0,"FI140","LKF140","FI145","LKF145",_N))
+       wKeyCode_g=T_RETURN;
+
+     if(Maske(0,"FI110","LKF110","FI120","LKF120",
+       "FI130","LKF130","FI310","LKF310","FI320",
+       "LKF320","FI330","LKF330",_N) && !i_Kto_Empty() )
+       wKeyCode_g=T_RETURN;
+     break;
+
+  }  /*end switch*/
+
+
+if( (wKeyCode_g==T_RETURN && _MSK==0 && _FLD==0 && *strNewString_g=='\0') &&
+  Maske(0,"FI110","LKF110","FI310","LKF310",
+  "FI120","LKF120","FI320","LKF320",_N) )
+  { SWORD wSelect=0;
+  M_OkQuestion(&wSelect, "Nummernkreise",
+    "Nummernvergabe #berspringen.", "#Neue Nummer holen.", _N);
+
+  if(wSelect==1) strcpy(strNewString_g, "&");  // '&'
+  else if(wSelect==-1) wKeyCode_g=AUS; }
+
+return;
+} /*end KeyCode_Handler() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ All_Fields_Handler()                                                    บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ                                                                         บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+VOID All_Fields_Handler()
+{
+
+if(Maske(_MSK,"FI340","LKF340",_N) &&
+  (wKeyCode_g==T_RETURN || wKeyCode_g==T_UP) )
+  {if(TBox("KONTONR"))
+     if(!*pt("KONTONR")) wKeyCode_g=AUS;}
+
+if(Maske(_MSK,"FI346","LKF346",_N) &&
+  (wKeyCode_g==T_ESC || wKeyCode_g==T_C_PGDN ||
+  (TBox("MEHR_MI_KT") &&
+  (wKeyCode_g==T_RETURN || wKeyCode_g==T_UP) ) ) )
+  if(*pt("BESTAND_KT") &&
+    (*pt("AUFWAND_KT") || *pt("ERLOES_KT")) )
+    {_MSK=0; _FLD=1; wKeyCode_g=T_RETURN;}
+  else
+    {PSSTR apstrMessage[25];
+    Ut_SchreibArray(apstrMessage, "Konten eintragen", _N);
+
+    Dl_Info(apstrMessage, DLG_WARNUNG);
+    Ut_LoeschArray(apstrMessage);
+
+    _MSK=1; _FLD=0; wKeyCode_g=AUS;}
+
+if(Maske(_MSK,"FI160","LKF160",_N) && *pt("AKTIVIERT")=='n' &&
+  TBox("AKTIVIERT") && (wKeyCode_g==T_RETURN || wKeyCode_g==T_DOWN) )
+  _FLD+=6;
+
+  /* {PTEXTBOX pTB=TBpt("DAT_AKTIV", _MSK, 99);
+  if(*pt("AKTIVIERT")=='n') pTB->pFeld->bArt -= IS_EINGABE;
+  else pTB->pFeld->bArt += | IS_EINGABE;} */
+
+if(Maske(_MSK,"FI160","LKF160","FI165","LKF165",_N))
+  {D_DATE d_Date;
+  DOUBLE dNutzGes=ptD("NUTZ_GES");
+  DOUBLE dJahrAfaP=ptD("JAHR_AFA_P");
+  DOUBLE dAnWert=ptD("AN_WERT"), dHelp;
+  SWORD  wDatAktiv, wBuchJahr, wHelp;
+  CHAR strDatum[11], strTmp[TB_MAX];				     /*       fr JJJJ.MM.TT */
+  PSSTR pstr;
+
+  memcpy(strTmp, pt("DAT_AKTIV"), 4);
+  D_get_date(&d_Date); movrdat(strDatum, strTmp);
+  wDatAktiv=atoi(strDatum);
+
+  pstr=str("%d", d_Date.wJahr); wBuchJahr=atoi(pstr+2);
+
+  wHelp=(SWORD)dNutzGes-(wBuchJahr-wDatAktiv);
+  if(wHelp<0) wHelp=0;
+  memcpy(pt("NUTZ_RES"), &wHelp, 2);
+
+  E(); strcpy(pt("BUCH_JAHR"), str("%d", d_Date.wJahr));
+
+  if(TBox("JAHR_AFA_P") && dJahrAfaP!=0.0) dNutzGes=100/dJahrAfaP;
+  else if(TBox("NUTZ_GES") && dNutzGes!=0.0) dJahrAfaP=100/dNutzGes;
+
+  memcpy(pt("JAHR_AFA_P"), &dJahrAfaP, 8);
+  memcpy(pt("NUTZ_GES"), &dNutzGes, 8);
+
+  dHelp=(dNutzGes) ? dAnWert/dNutzGes : 0.0;
+  memcpy(pt("JAHR_AFA"), &dHelp, 8);
+
+  dHelp=(wBuchJahr-wDatAktiv)*ptD("JAHR_AFA");
+  dHelp=dAnWert-dHelp; if(dHelp<0.0) dHelp=0.0;
+
+  if(Maske(_MSK,"FI160","LKF160",_N))
+    memcpy(pt("ZEITW_ANF"), &dHelp, 8);
+
+  dHelp=ptD("ZEITW_ANF")+ptD("ZUGANG")-ptD("ABGANG")-ptD("AFA");
+  if(dHelp<0.0) dHelp=0.0;
+  if(dHelp==0.0 && !ptL("AB_DATUM")) dHelp=1.0;
+  memcpy(pt("ZEIT_WERT"), &dHelp, 8);
+
+  /* for(wBl=0; wBl<
+  BU_JAHR
+  WJ_ANFANG   >>Wirtschaftsjahr Anfang
+  WJ_ZUGANG   >>Zugang
+  AO_ABGANG   >>auแerordentlicher Abgang
+  WJ_AFA      >>Abschreibung
+  WJ_ENDE     >>Wirtschaftsjahr Ende */
+  }
+
+/* if(Maske(0,"FI130","LKF130",_N))
+  awChangeFlag_g[0]=YES; */
+
+if(Maske(_MSK, "FI130", "LKF130", _N))
+  {
+  SWORD wC=NEIN;
+  if(*pt("KTO_KLASS")!='n') *pt("KTO_KLASS")='j';
+
+  if(*pt("KTO_KLASS")=='n')
+    {
+    if(*pt(".KONTONR")!='\0') {*pt(".KONTONR")='\0'; wC=JA;}
+    if(*pt(".KONTO_BEZ")!='\0') {*pt(".KONTO_BEZ")='\0'; wC=JA;}
+    }
+  else
+    {PTEXTBOX pTB=TBpt(".KONTONR", 99, 99);
+    PSSTR pstr=strdup(pt("KONTONR"));
+    SWORD  wRet, wPre=0;
+
+    for(wRet=4; strlen(pstr) && wRet==4;
+      *(pstr+(strlen(pstr)-1))='\0')
+      wRet=Read_Rec(pTB->wRecord, pstr, 0, NEIN, B_MNW, _F, _L);
+
+    //-----------
+    if(memcmp(pt("K_BUCH_ART"), pt(".K_BUCH_AR"), 4))
+      {memcpy(pt("K_BUCH_ART"), pt(".K_BUCH_AR"), 4); wC=JA;}
+    if(strcmp(pt("UST_KZ"), pt(".UST_KZ")))
+      {strcpy(pt("UST_KZ"), pt(".UST_KZ")); wC=JA;}
+    //if(strcmp(pt("USTVA_KZ"), pt(".USTVA_KZ")))
+    //	{strcpy(pt("USTVA_KZ"), pt(".USTVA_KZ")); wC=JA;}
+    if(strcmp(pt("UVA_KZ"), pt(".USTVA_KZ")))
+      {strcpy(pt("UVA_KZ"), pt(".USTVA_KZ")); wC=JA;}
+    if(strcmp(pt("ZEIL_TEXT"), pt(".ZEIL_TEXT")))
+      {strcpy(pt("ZEIL_TEXT"), pt(".ZEIL_TEXT")); wC=JA;}
+    if(strcmp(pt("KOSTENVERG"), pt(".KOSTENVER")))
+      {strcpy(pt("KOSTENVERG"), pt(".KOSTENVER")); wC=JA;}
+    if(strcmp(pt("KAPITAL_RE"), pt(".KAPITAL_R")))
+      {strcpy(pt("KAPITAL_RE"), pt(".KAPITAL_R")); wC=JA;}
+    if(strcmp(pt("S_VOR"), pt(".S_VOR")))
+      {strcpy(pt("S_VOR"), pt(".S_VOR")); wC=JA;}
+    //-----------
+
+    if(wRet==4) {wKeyCode_g=T_ESC; boInput_g=NO;}
+    Ut_Free(pstr);
+    }
+
+  if(wC==JA) awChangeFlag_g[0]=YES;
+
+  // if(wC==JA)
+  //   {BOOL boTest=boTestModus_g; boTestModus_g=JA;
+  //   Wi_TestPrintf(pWkbInfo_g, "\nBuchart: ฏ%ld-%ldฎ, UVA-KZ: ฏ%s-%sฎ.",
+  //	ptL("K_BUCH_ART"), ptL(".K_BUCH_AR"),
+  //	pt("USTVA_KZ"), pt(".USTVA_KZ"));
+  //   boTestModus_g=boTest;}
+  }
+
+boNewLoop_g=NEIN;
+return;
+} /* end All_Fields_Handler() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Special_Functions (02)                                                บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine wird angesprungen, wenn vom Anwender eine Sonderfunk-     บ
+  บ tionstaste bettigt wurde, die fr die Applikation eine bestimmte       บ
+  บ Bedeutung hat.                                                          บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  i_Special_Functions()
+{
+SREGISTER i;
+
+switch(wKeyCode_g)                                   /*                      */
+  {                                                  /*                      */
+  case T_ESC:					     /* 		     */
+      if(Maske(_MSK,"FI347","LKF347",_N))
+	{_MSK=0; _FLD=0; *pt("_STARTFLAG")='1';
+	wKeyCode_g=AUS; return(OK);}
+
+      if(Maske(_MSK,"FI20","LKF20",_N))
+	for(i=0; i<wFileHandler_g; i++)
+	  if(awFileMode_g[i]==REC_F)		     /* Bei Rec-Dateien      */
+	    awChangeFlag_g[i]=YES;		     /* immer Speicher-Frage */
+      break;
+
+  case T_S_F2:					     /* Match-Code-Suche:    */
+      if(Maske(_MSK,"FI130","LKF130",_N))
+	if(Matchcode_Handler() && *strSelection_g)   /* 		     */
+	  {SWORD  wOkAbort=Store();		       /* Stammsatz beenden    */
+	  if(!wOkAbort)
+	    {strcpy(pt("KONTONR"), strSelection_g);
+	    awChangeFlag_g[0]=YES;
+	    awNewRecord_g[0]=NO;
+	    awExistingRecord_g[0]=NO;}}
+      break;
+
+  case T_F8:
+    if(Maske(0,"FI130","FI220","FI225","FI221",_N))
+      {DOUBLE dSaldo=ptD("JHR_SALDO");
+      memcpy(pt("SALDO"), &dSaldo, 8);
+      wKeyCode_g=T_S_RETURN;}
+      break;
+
+  case T_S_F8:
+    if(strMoDevice_g[0] != '0')
+      Build_TelNr ();                                /*~Whlautomat          */
+    return(OK);
+
+  }  /*end switch*/
+
+return(0);
+} /*end i_Special_Functions () */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Kto_Empty()                                                           บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ                                                                         บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+STATIC
+SWORD  i_Kto_Empty(VOID)
+{
+SREGISTER i;
+PSSTR apstrMessage[25];
+BOOL boSaldo=rnd(ptD("SALDO"))!=0.0 ||
+             rnd(ptD("VOR_SALDO"))!=0.0;
+
+for(i=1; !boSaldo && i<=12; i++)
+  if(rnd(ptD(chri("SOLL_0x",i)))!=0.0 ||
+    rnd(ptD(chri("HABEN_0x",i)))!=0.0)
+    boSaldo=JA;
+
+if(Maske(0,"FI130","LKF130","FI330","LKF330",_N))
+  {boSaldo=boSaldo||rnd(ptD("K_VOR_SAL"))!=0.0;
+  for(i=1; !boSaldo && i<=12; i++)
+    if(rnd(ptD(chri("K_SOLL_0x",i)))!=0.0 ||
+      rnd(ptD(chri("K_HABEN_0x",i)))!=0.0)
+      boSaldo=JA;}
+
+apstrMessage[0]=NULL;
+if(boSaldo) Ut_SchreibArray(apstrMessage,
+  "Das aktuelle Konto kann nicht gel”scht",
+  "oder kopiert werden, da es Salden enthlt.",_N);
+
+if(apstrMessage[0])
+  {
+  Dl_Info(apstrMessage, DLG_INFO);
+  Ut_LoeschArray(apstrMessage);
+  return(NEIN);
+  }
+
+return(JA);
+} /* end i_Kto_Empty() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Special_Functions_2()                                                 บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ                                                                         บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+VOID i_Special_Functions_2(SWORD  wKeyCode)
+{
+
+switch(wKeyCode)                                     /*                      */
+  {                                                  /*                      */
+  case T_F9:                                         /* Match-Code-Suche:    */
+    break;
+
+  case T_S_F5:
+  case T_F5:
+    if(Maske(_MSK,"FI160","LKF160",_N))
+      dZeitWert_m=0.0;
+    break;
+
+  } /*end switch*/
+
+return;
+} /*end i_Special_Functions () */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Set_Prefix()                                                            บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Funktion wird nach drcken der [F2]-Taste aufgerufen. Wenn das    บ
+  บ Feld fr den Key am Beginn abgeschnitten werden soll, dann geben Sie    บ
+  บ das hier an. ฏpwPreฎ ist die Aufsatzstelle fr den Key.                 บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Set_Prefix(PSWORD  pwPre)
+{
+*pwPre=0;
+
+if(Maske(_MSK,"XXnnn",_N) && TBox("KULI_KONTO"))
+  *pwPre=1;
+
+return(OK);
+} /* end Set_Prefix() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Field_Classification()                                                บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Field_Classification() teilt das vom Anwender gerade verlassene Feld in บ
+  บ eine der Kategorien "Schlssel zum Stammsatz", "Schlsselfeld mit Ver-  บ
+  บ weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     บ
+  บ Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  บ
+  บ auf den Primarkey in der Reference-Datei beziehen, so muแ dies in der   บ
+  บ Sub-Funktion i_Field_Classification nachgetragen werden.                บ
+  บ Auch bei scrollbaren Zeilen im Maskentyp 1 muแe bei einem Verweis auf   บ
+  บ Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  i_Field_Classification(PSWORD  pwRefKey, PSWORD	pwRefFile)
+{
+/* STATIC wRecKey; */
+SWORD  i;
+
+/*if(Maske(_MSK,"FI210",_N))
+  Fi210_Field_Classification(pwRefKey, pwRefFile);*/
+
+if(Maske(_MSK,"FI160","LKF160","FI165","LKF165",_N) &&		      /* Erfassen Anlagekont. */
+  (TBox("ANL_KONTO")||TBox("AFA_KONTO")) )
+  {
+  PTEXTBOX pTB=TBpt("KONTONR", _MSK, 99);	     /* Sachkonto	     */
+  memset(apstrRecord_g[pTB->wRecord],
+    '\0', awRecLength_g[pTB->wRecord]);
+
+  *pwRefKey=1;
+  *pwRefFile=pTB->wRecord;			     /* Datei 1 	     */
+
+  strcpy(pt("KONTONR"), apTextBox_g[_MSK][_FLD]->acText);
+  } /* end FI/LKF160 */
+
+/* if(Maske(_MSK,"FI150","LKF150",_N) && TBox("KONTEN"))
+  i_Field_Class("KONTONR", pwRefKey, pwRefFile); */
+
+if(Maske(_MSK,"FI346","LKF346",_N)
+  && (TBox("ERLOES_KT") || TBox("AUFWAND_KT") ||
+  TBox("BESTAND_KT") || TBox("MEHR_MI_KT")) )
+  i_Field_Class("KONTONR", pwRefKey, pwRefFile);
+
+if(Maske(_MSK,"FI345","LKF345",_N) && wRecKey_g &&   /* TBox("ARTNR") && */
+  (awNewRecord_g[0]||awExistingRecord_g[0]) &&
+  strcmp(strNewString_g, strOldString_g) )
+  {strcpy(strNewString_g, strOldString_g);
+  for(i=0; i<wFileHandler_g; i++) awChangeFlag_g[0]=NEIN;
+  wRecKey_g=0; wKeyCode_g=T_ESC; boInput_g=NO;}
+
+/* {wRecKey=wRecKey_g; wRecKey_g=0;
+  wKeyCode_g=T_ESC; boInput_g=NO;} */
+
+/* if(Maske(_MSK,"FI345","LKF345",_N) && wRecKey)
+  {wRecKey_g=wRecKey; wRecKey=0;
+  wKeyCode_g=T_RETURN; boInput_g=NO;} */
+
+return(OK);
+} /* end i_Field_Classification() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Validate_Primary_Key()                                                  บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Primrschlssel auf zulssige Eingabe prfen.                           บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Validate_Primary_Key ()
+{
+SWORD  wEmpty=NEIN;				       /* Flag fr ungltige   */
+
+wFail_g=(
+  (wKeyCode_g==T_C_PGDN || wKeyCode_g==T_C_PGUP) &&
+  (!awNewRecord_g[0] && !awExistingRecord_g[0]) );
+
+wEmpty=wEmpty||(strKeyValue_g[0]=='\0');	     /* Flag fr ungltige   */
+if(wEmpty)
+  MissingKey();
+return(wEmpty);
+} /* end Validate_Primary_Key() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Primary_KeyHandler()                                                    บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Funktion wird aufgerufen, wenn das Primrkeyfeld verlassen wird.  บ
+  บ Hier k”nnen Funktionen wie beispielsweise das Hochzhlen der Nummern-   บ
+  บ kreise nachgetragen werden.                                             บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+VOID i_Primary_Key_Handler()
+{
+wNrKreisAkt_g=-1;
+
+if(Maske(0,"FI110","LKF110","FI310","LKF310",_N)     /* bei Kundenstamm      */
+  && (*strNewString_g=='&' || *strNewString_g=='+') )
+  Read_Nummernkreis("NR_KUND");
+
+if(Maske(0,"FI120","LKF120","FI320","LKF320",_N)     /* bei Lieferantenstamm */
+  && (*strNewString_g=='&' || *strNewString_g=='+') )
+  Read_Nummernkreis("NR_LIEF");
+
+// if(Maske(_MSK, "FI130", "LKF130", _N))
+//   {PTEXTBOX pTB=TBpt(".KONTONR", 99, 99);
+//   PSSTR pstr=strdup(strKeyValue_g);
+//   SWORD  wRet, wPre=0;
+//
+//   for(wRet=4; strlen(pstr) && wRet==4;
+//     *(pstr+(strlen(pstr)-1))='\0')
+//     wRet=Read_Rec(pTB->wRecord, pstr, 0, NEIN, B_MNW, _F, _L);
+//
+//   SWORD j;
+//   for(j=0; j<aFiles_g[pTB->wRecord].wNbRefFields; j++)
+//     i_CopyFromRefField(aFiles_g[pTB->wRecord].apRefFields[j],
+//	 apstrRecord_g, wPre);
+//
+//   {BOOL boTest=boTestModus_g; boTestModus_g=JA;
+//   Wi_TestPrintf(pWkbInfo_g, "\nBuchart: ฏ%ld-%ldฎ.",
+//    ptL("K_BUCH_ART"), ptL(".K_BUCH_AR"));
+//   boTestModus_g=boTest;}
+//
+//   if(wRet==4) {wKeyCode_g=T_ESC; boInput_g=NO;}
+//   Ut_Free(pstr);
+//   }
+
+
+return;
+} /* end i_Primary_Key_Handler() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Reference_Key_Handler()                                               บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Reference_Key_Handler() behandelt die Eingaben, die in einem Schlssel- บ
+  บ feld auf eine Referenz-Datei gemacht wurden.                            บ
+  บ Es werden Referenz-Zugriffe (sofern erwnscht) auf die jeweiligen       บ
+  บ Dateien vorgenommen.                                                    บ
+  บ Der laut Field_Classification() oder Matchcode_Handler gewhlte Primr- บ
+  บ key in der Reference-Datei wird geladen.                                บ
+  บ In i_Reference_Key_Handler() k”nnen etwaige Feldzuordnungen nachgetra-  บ
+  บ gen werden.                                                             บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  i_Reference_Key_Handler()
+{
+SWORD  wR=apTextBox_g[_MSK][_FLD]->wRecord;
+
+/*if(Maske(_MSK,"FI210",_N)&&strcmp(strNewString_g, strOldString_g))
+  Fi210_Reference_Key_Handler();*/
+
+
+if(Maske(_MSK,"FI160","LKF160","FI165","LKF165",_N) &&	/* Erfassen Anlagekont. */
+  strcmp(strNewString_g, strOldString_g) )
+  {PTEXTBOX pTB;
+
+  if(TBox("ANL_KONTO"))
+    {pTB=TBpt("KONTO_BEZ", _MSK, 99);
+
+    if(pTB) strcpy(pt("ANL_K_BEZ"),
+      &apstrRecord_g[pTB->wRecord][pTB->wOffset]);
+
+    strcpy(pt("ANL_KONTO"), pt("KONTONR"));
+    awChangeFlag_g[wR]=YES;
+    }
+
+  if(TBox("AFA_KONTO"))
+    {pTB=TBpt("KONTO_BEZ", _MSK, 99);
+
+    if(pTB) strcpy(pt("AFA_K_BEZ"),
+         &apstrRecord_g[pTB->wRecord][pTB->wOffset]);
+
+    strcpy(pt("AFA_KONTO"), pt("KONTONR"));
+    awChangeFlag_g[wR]=YES;
+    }
+
+  }  /* end FI/LKF160 */
+
+
+/*
+if(Maske(_MSK,"FI130","LKF130",_N) &&                 * Erfassen Sachkonten  *
+  strcmp(strNewString_g, strOldString_g) )
+  {
+  PTEXTBOX pTB;
+
+  if(TBox("BILANZ_SOL"))
+    {
+    SWORD  wMsk=0, wRec=2;
+
+    if(pTB=TBpt("BIL_TEXT", wMsk, wRec))
+      strcpy(pt("TEXT_SOLL"),
+           &apstrRecord_g[pTB->wRecord][pTB->wOffset]);
+
+    strcpy(pt("BILANZ_SOL"), pt("BIL_KZ"));
+
+    awChangeFlag_g[wR]=YES;
+    }  * end  "BILANZ_SOL" *
+
+  if(TBox("BILANZ_HAB"))
+    {
+    SWORD  wMsk=0, wRec=2;
+
+    if(pTB=TBpt("BIL_TEXT", wMsk, wRec))
+      strcpy(pt("TEXT_HABEN"),
+         &apstrRecord_g[pTB->wRecord][pTB->wOffset]);
+
+    strcpy(pt("BILANZ_HAB"),
+             pt("BIL_KZ"));
+
+    awChangeFlag_g[wR]=YES;
+    }  * end "BILANZ_HAB" *
+
+  }  * end FI/LKF130 *
+*/
+
+if(Maske(_MSK,"FI346","LKF346",_N)		     /* Artikel-Stamm - Fibu */
+  && strcmp(strNewString_g, strOldString_g) )	     /* und neuer Eingabe    */
+  {awChangeFlag_g[wR]=YES;
+
+  if(TBox("ERLOES_KT"))
+    {strcpy(pt("ERLOES_BZ"), pt("KONTO_BEZ"));
+    strcpy(pt("ERLOES_KT"), pt("KONTONR"));}
+
+  else if(TBox("AUFWAND_KT"))
+    {strcpy(pt("AUFWAND_BZ"), pt("KONTO_BEZ"));
+    strcpy(pt("AUFWAND_KT"), pt("KONTONR"));}
+
+  else if(TBox("BESTAND_KT"))
+    {strcpy(pt("BESTAND_BZ"), pt("KONTO_BEZ"));
+    strcpy(pt("BESTAND_KT"), pt("KONTONR"));}
+
+  else if(TBox("MEHR_MI_KT"))
+    {strcpy(pt("MEHR_MI_BZ"), pt("KONTO_BEZ"));
+    strcpy(pt("MEHR_MI_KT"), pt("KONTONR"));}
+
+  } /* end Maske(ST135,LKS135) */
+
+
+
+return(OK);
+} /* end i_Reference_Key_Handler() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Other_Fields_Handler()                                                  บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine behandelt die Eingaben, die in die normalen Stamm-        บ
+  บ datenfelder gemacht wurden.                                             บ
+  บ Hier k”nnen applikationsabhngige Plausibilittstests und Folgereak-    บ
+  บ tionen zu den einzelnen Feldern angegeben werden.                       บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Other_Fields_Handler()
+{
+SWORD  wR=apTextBox_g[_MSK][_FLD]->wRecord;
+BOOL boExisting=awExistingRecord_g[0]||awNewRecord_g[0];
+
+/*if(Maske(_MSK,"FI210",_N))                         /* Erfassen Buchungen   */
+/*Fi210_Other_Fields_Handler();*/
+
+if(Maske(_MSK,"FI151","LKF151",_N))                  /* Bearbeiten Bilanz    */
+  Fi151_Other_Fields_Handler();
+
+if(Maske(_MSK,"FI310","LKF310","FI320","LKF320",
+  "FI330","LKF330",_N) && wKeyCode_g==T_RETURN
+  && boExisting && TBox("_VOR_SALDO"))
+  {
+  DOUBLE dBetrag=ptD("_VOR_SALDO")-ptD("0๘VOR_SALDO");
+  DOUBLE dNull=0.0, dSaldo;
+
+  i_UpdateBestKto(dBetrag);
+
+  dSaldo=ptD("0๘VOR_SALDO")+dBetrag;
+  memcpy(pt("0๘VOR_SALDO"), &dSaldo, 8);
+  memcpy(pt("_VOR_SALDO"), &dNull, 8);
+
+  M_PrintTBs(_MSK,apstrRecord_g,apTextBox_g,
+    awBlocks_g);
+  }
+
+if(Maske(_MSK,"FI340","LKF340","FI345","LKF345",_N) && *pt("BESTAND_KT")=='\0')
+  {DOUBLE dNull=0.0;
+  memcpy(pt("VOR_SALDO"), &dNull ,8);}
+
+if(Maske(_MSK,"FI340","LKF340","FI345","LKF345",_N) && wKeyCode_g==T_RETURN
+  && boExisting && TBox("_IN_AKT_EK"))
+  {DOUBLE dNeuSumme=ptD("_MENGE")*ptD("_IN_AKT_EK");
+  DOUBLE dAltSumme=ptD("INVEN_AKT")*ptD("IN_AKT_EKP");
+  DOUBLE dBetrag=dNeuSumme-dAltSumme, dNull=0.0;
+
+  if(Maske(_MSK,"FI340","LKF340",_N))	 /* Ersterfassung */
+    i_UpdateKonto(dBetrag, pt("BESTAND_KT"));
+
+  if(Maske(_MSK,"FI345","LKF345",_N))	 /* laufende Inventur */
+    i_CreateBuchung(dBetrag);
+
+  memcpy(pt("_ANDERUNG"), &dBetrag, 8);
+  memcpy(pt("_SUMME"), &dNeuSumme, 8);
+
+  memcpy(pt("INVEN_AKT"), pt("_MENGE"), 8);
+  memcpy(pt("IN_AKT_EKP"), pt("_IN_AKT_EK"), 8);
+  memcpy(pt("LETZ_INVEN"), pt("_DATUM"), 8);
+
+  if(Maske(_MSK,"FI340","LKF340",_N))	 /* Ersterfassung */
+    {memcpy(pt("INVEN_ANF"), pt("INVEN_AKT"), 8);
+    memcpy(pt("IN_ANF_EKP"), pt("IN_AKT_EKP"), 8);}
+
+  M_PrintTBs(_MSK,apstrRecord_g,apTextBox_g,awBlocks_g);
+  memcpy(pt("_ANDERUNG"), &dNull, 8);
+  }
+
+if(Maske(_MSK,"FI345","LKF345",_N) && wKeyCode_g==T_RETURN)	 /* _FLD+=2; */
+  if(TBox("MATCH_CODE") && (!*pt("BESTAND_KT") || !*pt("MEHR_MI_KT") ||
+    (!*pt("AUFWAND_KT") && !*pt("ERLOES_KT")) ) )
+    {_MSK=1; _FLD=0; wKeyCode_g=AUS;}
+
+
+if(Maske(1,"FI111","LKF111","FI113","LKF113","FI311","LKF311",_N))
+  {
+  if(*pt("WHRUNG")!='0')
+    {
+    strcpy(pt("AUSLANDSKU"), "j");
+    strcpy(pt("MWST"), "o");
+    }
+  else
+    strcpy(pt("AUSLANDSKU"), "n");
+  }
+
+if(Maske(1,"FI121","LKF121","FI123","LKF123","FI321","LKF321",_N))
+  {
+  if(*pt("WHRUNG")!='0')
+    {
+    strcpy(pt("AUSLANDSLI"), "j");
+    strcpy(pt("VST"), "o");
+    }
+  else
+    strcpy(pt("AUSLANDSLI"), "n");
+  }
+
+
+
+awChangeFlag_g[wR]=(!boStrCmp(strNewString_g,        /*                      */
+  strOldString_g)||awChangeFlag_g[wR]);
+
+return(OK);
+} /* end Other_Fields_Handler() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Set_Default()                                                           บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine belegt die Defaultfelder vor.                             บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Set_Default()
+{
+if(Maske(_MSK,"FI20","LKF20",_N)) /*  && !strstr(pt("MAND_50"),"KBASIS") ) */
+  {if(boNewLoop_g && *pt("MAND_50")=='\0')
+    strcpy(pt("MAND_50"), "KBASIS");
+  else if(*pt("MAND_50")=='\0') *pt("MAND_50")='K';}
+else
+  M_Defaults(apstrRecord_g, apTextBox_g);	     /* Defaults eintragen   */
+
+if(Maske(1,"FI111","LKF111","FI113","LKF113",_N))  i_SynDef(1, "FI_KU_KTO", "KUNDE");
+if(Maske(1,"FI121","LKF121","FI123","LKF123",_N))  i_SynDef(1, "FI_LI_KTO", "LIEFNR");
+if(Maske(1,"FI311","LKF311",_N))  i_SynDef(1, "KU_KONTO", "FI_KUNDE");
+if(Maske(1,"FI321","LKF321",_N))  i_SynDef(1, "LI_KONTO", "FI_LIEFER");
+
+if(Maske(0,"FI345","LKF345",_N) && !*pt("_STARTFLAG") )
+  {_MSK=2; _FLD=0;} /* wKeyCode_g=AUS;} */
+
+/*if(Maske(_MSK,"FI210",_N))                         /* Erfassen Buchungen   */
+/*Fi210_Set_Default();*/
+
+return(OK);
+} /* end Set_Default() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_SynDef()                                                              บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Synchronisieren in Set_Default().                                       บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+STATIC
+VOID i_SynDef(SWORD  wMsk, PSSTR pstrDEST, PSSTR pstrSOURCE)
+{
+
+if( !*pt(pstrDEST) )
+  {
+  PTEXTBOX pTB=TBpt(pstrDEST, wMsk, 99);
+  ncpy(pt(pstrDEST), pt(pstrSOURCE), pTB->wMaxL);
+  awChangeFlag_g[pTB->wRecord]=JA;
+  }
+
+return;
+} /* end i_SynDef() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Semantic_Check()                                                        บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine berprft vor dem Abspeichern die sematische Gltigkeit   บ
+  บ des Stammsatzes. Unter die sematischen Abprfungen fallen Plausitests   บ
+  บ zur Erfllung von Pflichtfeldern und widersprchliche Feldinhalte.      บ
+  บ Bei erfolgreicher Prfung muแ wValid auf JA (1) gesetzt werden.         บ
+  บ Fllt die Prfung durch muแ wVailid auf NEIN (0) gesetzt werden.        บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Semantic_Check()
+{
+SWORD  wValid=JA;				       /* Datensatz gltig     */
+
+/*if(Maske(_MSK,"FI250",_N)) Cut_Block();            /* Erfass.Rechn.Buch.   */
+
+/*if(Maske(_MSK,"FI210",_N))
+  wValid=Fi210_Semantic_Check();*/
+
+if(Maske(1,"FI111","LKF111","FI113","LKF113",_N))		      /* falls richtige Maske */
+  {SWORD  wMsk=1;
+  i_SynCheck(wMsk, "FI_KUNDE", "KUNDE");
+  i_SynCheck(wMsk, "KU_KONTO", "FI_KU_KTO");
+  i_SynCheck(wMsk, "KURZ_BEZ", "MATCH_CODE");
+  }  /* end FI111 LKF111 */
+
+if(Maske(1,"FI311","LKF311",_N))                     /* falls richtige Maske */
+  {SWORD  wMsk=1;
+  i_SynCheck(wMsk, "KUNDE", "FI_KUNDE");
+  i_SynCheck(wMsk, "FI_KU_KTO", "KU_KONTO");
+  i_SynCheck(wMsk, "MATCH_CODE", "KURZ_BEZ");
+  }  /* end FI311 LKF311 */
+
+if(Maske(1,"FI121","LKF121","FI123","LKF123",_N))		      /* falls richtige Maske */
+  {SWORD  wMsk=1;
+  i_SynCheck(wMsk, "FI_LIEFER", "LIEFNR");
+  i_SynCheck(wMsk, "LI_KONTO", "FI_LI_KTO");
+  i_SynCheck(wMsk, "KURZ_BEZ", "MATCH_CODE");
+  }  /* end FI121 LKF121 */
+
+if(Maske(1,"FI321","LKF321",_N))                     /* falls richtige Maske */
+  {SWORD  wMsk=1;
+  i_SynCheck(wMsk, "LIEFNR", "FI_LIEFER");
+  i_SynCheck(wMsk, "FI_LI_KTO", "LI_KONTO");
+  i_SynCheck(wMsk, "MATCH_CODE", "KURZ_BEZ");
+  }  /* end FI321 LKF321 */
+
+
+if(Maske(_MSK,"FI20","LKF20",_N))
+  if(*pt("MAND_50")!='K') wValid=NEIN;
+
+if(Maske(_MSK,"FI160","LKF160",_N))
+  if(*pt("ANL_KONTO")=='\0' || *pt("AFA_KONTO")=='\0') wValid=NEIN;
+
+
+return(wValid);
+} /* end Semantic_Check () */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_SynCheck()                                                            บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Synchronisieren in Semantic_Check().                                    บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+STATIC
+VOID i_SynCheck(SWORD  wMsk, PSSTR pstrDEST, PSSTR pstrSOURCE)
+{
+
+if( strcmp(pt(pstrDEST), pt(pstrSOURCE)) )
+  {
+  PTEXTBOX pTB=TBpt(pstrDEST, wMsk, 99);
+  ncpy(pt(pstrDEST), pt(pstrSOURCE), pTB->wMaxL);
+  awChangeFlag_g[pTB->wRecord]=JA;
+  }
+
+return;
+} /* end i_SynCheck() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Read_Next()                                                           บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Soll die Read_Next() Funktion nicht in der Standardaufgabe mit der      บ
+  บ Synchronisierung der REC-Dateien verwendet werden, dann kann hier eine  บ
+  บ Funktion die neue Aufgabe bernehmen. Um die Standardfunktion auszu-    บ
+  บ schalten, muแ dann ein ฏreturn(OK)ฎ zurckgegeben werden.               บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  i_Read_Next(PSWORD  pwLock)
+{
+*pwLock=B_MNW;
+
+/* if(Maske(_MSK,"XXnnnn",_N))                        * Kein Read_Next()     *
+  return(OK);
+
+if(Maske(_MSK,"ST136","LKS136",_N) ||
+  Maske(0,"FI210","LKF210",_N))
+  wNdx_g=1; */
+
+return(0);
+} /* end i_Read_Next() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Read_Previous()                                                       บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Soll die Read_Previous() Funktion nicht in der Standardaufgabe mit der  บ
+  บ Synchronisierung der REC-Dateien verwendet werden, dann kann hier eine  บ
+  บ Funktion die neue Aufgabe bernehmen. Um die Standardfunktion auszu-    บ
+  บ schalten, muแ dann ein ฏreturn(OK)ฎ zurckgegeben werden.               บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  i_Read_Previous(PSWORD  pwLock)
+{
+*pwLock=B_MNW;
+
+/* if(Maske(_MSK,"XXnnnn",_N))                        * Kein Read_Next()     *
+  return(OK);
+
+if(Maske(_MSK,"ST136","LKS136",_N) ||
+  Maske(0,"FI210","LKF210",_N))
+  wNdx_g=1; */
+
+return(0);
+} /* end i_Read_Previous() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Write_Work ()                                                           บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Sollen verarbeitete Teile in Dateien gespeichert werden, so ist der     บ
+  บ entsprechende Teil hier einzutragen.                                    บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Write_Work ()
+{
+
+if(Maske(0,"FI160","LKF160",_N))		  /* Erfassen Anlagekont. */
+  i_UpdateKonto(ptD("ZEIT_WERT")-dZeitWert_m, pt("ANL_KONTO"));
+
+if(Maske(_MSK,"FI165","LKF165",_N))
+  i_CreateAnlaBu(ptD("ABGANG")-dAoAbgang_m);
+
+if(Maske(0,"FI110","LKF110","FI310","LKF310",_N))    /* bei Kundenstamm      */
+  Write_Nummernkreis("NR_KUND");
+
+if(Maske(0,"FI120","LKF120","FI320","LKF320",_N))    /* bei Lieferantenstamm */
+  Write_Nummernkreis("NR_LIEF");
+
+return(OK);
+} /* end Write_Work() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Prepare_Save_Record()						    บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Die Funktion wird in ba_isam.cpp nach folgender Speicherabfrage	    บ
+  บ nur dann aufgerufen, wenn der Anwender "Abspeichern" auswhlt:	    บ
+  บ M_OkQuestion(&wSelect,"Bitte whlen Sie:", "#Abspeichern der Daten.",   บ
+  บ   "#Beenden ohne speichern.", "#Zurck zur Eingabe.",_N);		    บ
+  บ									    บ
+  บ Sollen verarbeitete Teile in Dateien gespeichert werden, so ist der     บ
+  บ entsprechende Teil hier einzutragen.                                    บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+VOID Prepare_Save_Record()
+{
+
+return;
+}
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Read_Default()                                                          บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Legt fest, ob beim Aufruf eines Programmes bereits ein Datensatz gele-  บ
+  บ sen werden soll.                                                        บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Read_Default()
+{
+SWORD  wValid=NO;
+
+return(wValid);
+} /* end Read_Default() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Validate_Read()                                                         บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Fr Read_Record(), Read_Next() und fr Read_Previous kann hier kontrol- บ
+  บ liert werden ob der gelesene Satz gltig ist.                           บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Validate_Read ()
+{
+SWORD  wValid=JA;				       /* Datensatz gltig     */
+
+if(apstrRecord_g[0][6]=='\01')                       /* Fr internen Daten-  */
+  wValid=NEIN;                                       /* satz                 */
+
+if(Maske(_MSK,"FI20","LKF20",_N))
+  if(*pt("MAND_50")!='K') wValid=NEIN;
+
+if(wValid)
+  {Read_Reference();
+  Read_Calc();}
+
+return(wValid);
+} /* end Validate_Read () */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Read_Calc()                                                             บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine liest die Datenstze aus der Stammdatei, die zum berech-  บ
+  บ nen von Vorgabe-Daten fr die Maske ben”tigt werden.                    บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+STATIC
+SWORD  Read_Calc()
+{
+
+/* if(Maske(_MSK,"FI220","FI225","FI221",_N) )
+  Fi220_Read_Calc(); */
+
+if(Maske(_MSK,"FI160","LKF160",_N))
+  dZeitWert_m=ptD("ZEIT_WERT");
+
+if(Maske(_MSK,"FI165","LKF165",_N))
+  dAoAbgang_m=ptD("ABGANG");
+
+return(OK);
+} /* end Read_Calc() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Matchcode_Handler_1()                                                   บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Wenn vor der Wahl anderes als im Maskensource definiert werden soll, so บ
+  บ kann das hier erfolgen.                                                 บ
+  บ Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    บ
+  บ Fr scrollbare Zeilen im Maskentyp 1 und fr spezielle Wnsche bei      บ
+  บ Zugriffen auf Referenz-Dateien k”nnen in Matchcode_Handler_1() Eintrge บ
+  บ erfolgen.                                                               บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Matchcode_Handler_1(PPMATCH ppMatchCode, PSWORD	pwNbFile, PSWORD  pwFileNb)
+{
+
+/*if(Maske(_MSK,"XXnnn",_N))
+  Fi210_Matchcode_Handler(ppMatchCode, pwNbFile, pwFileNb);*/
+
+if(Maske(_MSK,"FI130","LKF130",_N) &&		     /* Erfassen Sachkonten  */
+  TBox("KONTONR") && wKeyCode_g==T_S_F2)
+  i_Match(".KONTONR", " ");			     /* Match-Field u. -Text */
+
+if(Maske(_MSK,"FI30","LKF30","FI130","LKF130",	     /* Erfassen Sachkonten  */
+  "FI15","LKF15",_N) && TBox("UVA_KZ") )	     /* 		     */
+  i_Match(NULL, "\0");				     /* Default bei [F2]     */
+
+if(Maske(_MSK,"FI150","LKF150",_N) &&
+  TBox("KONTEN") )
+  i_Match("KONTONR", "\0");			      /* Match-Field u. -Text */
+
+if(Maske(_MSK,"FI160","LKF160","FI165","LKF165",_N) && /* Erfassen Sachkonten*/
+  (TBox("ANL_KONTO")||TBox("AFA_KONTO")) )	     /* 		     */
+  i_Match("KONTO_BEZ", " ");			     /* Match-Field u. -Text */
+
+if(Maske(_MSK,"FI346","LKF346",_N)		     /* Artikel-Stamm - Fibu */
+  && (TBox("ERLOES_KT") || TBox("MEHR_MI_KT")
+  || TBox("AUFWAND_KT") || TBox("BESTAND_KT")) )
+  {
+  CHAR acPre[2]; acPre[1]='\0';
+       if(TBox("ERLOES_KT"))  acPre[0]='8';
+  else if(TBox("MEHR_MI_KT")) acPre[0]='8';
+  else if(TBox("AUFWAND_KT")) acPre[0]='4';
+  else if(TBox("BESTAND_KT")) acPre[0]='\0';
+
+  i_Match("KONTONR", acPre);			   /* Match-Field u. -Text */
+  }
+
+return(OK);
+} /* end Matchcode_Handler_1() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Matchcode_Handler_2                                                     บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Wenn nach der Wahl nicht der Primrkey kopiert werden soll, so ist dies บ
+  บ hier nachzutragen.                                                      บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Matchcode_Handler_2()
+{
+if(!Maske(_MSK,"FI210","LKF210","FI250","LKF250",_N)) /* Auแer bei Erfassen  */
+  {SWORD  wPre=0; Set_Prefix(&wPre);		       /* FIBU oder REBU       */
+  if(*strSelection_g && wPre)
+    memmove(strSelection_g, &strSelection_g[wPre],
+      strlen(strSelection_g)-wPre+1);}
+
+/* if(Maske(_MSK,"XXnnnn",_N) && TBox("_B_PLZ_ORT"))
+     strcpy(strSelection_g, pt("PLZ_ORT")); */
+
+return(OK);
+} /* end Matchcode_Handler_2() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Match_Check_OK()                                                        บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Schlieแt fr den Matchcode die gewnschten Eintrge aus.                บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+SWORD  Match_Check_OK(SWORD  wRec, SWORD  wKey)
+{
+PSSTR pstrFile;
+SWORD  wRetCode=JA;
+
+wKey=wKey;
+
+pstrFile=apstrRecord_g[wRec];
+apstrRecord_g[wRec]=pstrDataBuffer_g;
+
+if(pstrDataBuffer_g[6]=='\01')                       /* Fr internen Daten-  */
+  wRetCode=NEIN;                                     /* satz                 */
+
+/*if(Maske(_MSK,"FI250",_N))
+  Fi250_Match_Check_OK(&wRetCode);*/
+
+if(Maske(_MSK,"FI346","LKF346",_N)) /* Artikel-Stamm - Fibu */
+  {PSSTR pstr=pt("KOSTENVERG");
+  if( (TBox("ERLOES_KT") || TBox("AUFWAND_KT")|| TBox("MEHR_MI_KT"))
+    && *pstr=='b') wRetCode=NEIN;
+
+  if(TBox("BESTAND_KT") && *pstr != 'b')
+    wRetCode=NEIN;}
+
+if(Maske(_MSK,"FI20","LKF20",_N))
+  if(*pt("MAND_50")!='K') wRetCode=NEIN;
+
+apstrRecord_g[wRec]=pstrFile;
+return(wRetCode);
+} /* end Match_Check_Ok() */
+
+
+
+/* ----------------------------------------------------------------------------
+//ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+//บ Cut_Block()                                                             บ
+//บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+//บ                                                                         บ
+//ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+STATIC
+SWORD  Cut_Block()
+{
+SWORD  wMask=0;
+PTEXTBOX pTB=TBpt("AR_NUMMER", 99, 99);
+SWORD  wWhile=JA, wKopf=pTB->wOffset, wBlock=0;
+awRecLength_g[pTB->wRecord]=wKopf;
+
+pTB=TBpt("KONTO_NR", 99, 99);
+while(wWhile && pTB->wOffset+wBlock <
+  _msize(apstrRecord_g[pTB->wRecord]) )          //
+  {
+  if(*(pt("KONTO_NR")+wBlock)=='\0')
+    wWhile=NO;
+  else
+    {wBlock+=awBlockLength_g[wMask];
+    awRecLength_g[pTB->wRecord]=wKopf+wBlock;}
+  }
+
+return(OK);
+} // end Cut_Block()
+
+
+
+if(Maske(_MSK,"FI160","LKF160",_N) &&		     // Erfassen Anlagekont.
+  TBox("KO_STELLE") )
+  {
+  PTEXTBOX pTB=TBpt("KOSTENSTEL", _MSK, 99);	     // Kostenstellen
+  SWORD  wR=pTB->wRecord;
+
+  *pwRefFile=pTB->wRecord;			     // Datei 1
+  *pwRefKey=1;
+  memset(apstrRecord_g[wR],'\0',awRecLength_g[wR]);
+
+  strcpy(pt("KOSTENSTEL"), pt("KO_STELLE"));
+  }  // end FI/LKF160
+
+
+if(TBox("GELDKONTO"))
+  {
+  PTEXTBOX pTB=TBpt("KONTONR", _MSK, 99);
+  *ppMatchCode=&aFiles_g[pTB->wRecord].aMatch[0];
+  *pwNbFile=*pwFileNb=pTB->wRecord;
+  strcpy(pt("KONTONR"), pt("GELDKONTO"));
+  strcpy( (*(*ppMatchCode)->ppKey)->acText, "2");         // Default bei [F2]
+  } // end GELDKONTO
+
+SWORD  Matchcode_Handler_1(PPMATCH ppMatchCode, PSWORD	pwNbFile, PSWORD  pwFileNb)
+if(Maske(_MSK,"FI130","LKF130",_N) &&                // Erfassen Sachkonten
+  (TBox("BILANZ_SOL")||TBox("BILANZ_HAB")) )
+  {
+  //PTEXTBOX pTB=TBpt("KONTONR", _MSK, 99);
+  // *ppMatchCode=&aFiles_g[pTB->wRecord].aMatch[0];
+  PTEXTBOX pTB;
+  SWORD  wMsk=0, wRec=2;
+
+  *ppMatchCode=&aFiles_g[wRec].aMatch[0];
+  *pwNbFile=*pwFileNb=wRec;
+
+  if(TBox("BILANZ_SOL"))
+    if(pTB=TBpt("BIL_TEXT", wMsk, wRec))
+      strcpy(&apstrRecord_g[pTB->wRecord][pTB->wOffset],
+          pt("TEXT_SOLL"));
+
+  if(TBox("BILANZ_HAB"))
+    if(pTB=TBpt("BIL_TEXT", wMsk, wRec))
+      strcpy(&apstrRecord_g[pTB->wRecord][pTB->wOffset],
+          pt("TEXT_HABEN"));
+
+  strcpy( (*(*ppMatchCode)->ppKey)->acText, " ");    // Default bei [F2]
+  } // end FI/LKF130
+
+
+if(Maske(_MSK,"FI130","LKF130",_N) &&                // Erfassen Sachkonten
+  (TBox("BILANZ_SOL")||TBox("BILANZ_HAB")) )
+  {
+  PTEXTBOX pTB=i_Match("BIL_TEXT", " ");             // Match-Field u. -Text
+
+  if(TBox("BILANZ_SOL"))
+    strcpy(&apstrRecord_g[pTB->wRecord][pTB->wOffset],pt("TEXT_SOLL"));
+
+  //else if(TBox("BILANZ_HAB"))
+      strcpy(&apstrRecord_g[pTB->wRecord][pTB->wOffset],pt("TEXT_HABEN"));
+
+  } // end FI/LKF130
+
+
+// {BOOL boTest=boTestModus_g; boTestModus_g=JA;
+//   Wi_TestPrintf(pWkbInfo_g, "\nBuchart: ฏ%d/%dฎ.",
+//     lBuchArt, lNichtBebuchen);
+//   boTestModus_g=boTest;}
+
+  // && boExisting && TBox("_EIN_AUS"))
+
+  // if(*pt("_EIN_AUS")=='a') dBetrag= 0-dBetrag;
+
+
+  {SREGISTER i; boTestModus_g=JA;
+
+//   for(i=0; i<wMaxRecKey_g; i++)			//
+//     Wi_TestPrintf(pWkbInfo_g, "\nwMax%d, key:%s-%s.",
+//	 wMaxRecKey_g, apstrRecKey_g[i],
+//	 &apstrRecord_g[wR][awRecKeyOffset_g[i]]);
+
+  for(i=0; i<wMaxRecKey_g; i++)                      //
+    {memcpy(&apstrRecord_g[wR][awRecKeyOffset_g[i]],  //
+       apstrRecKey_g[i], awRecKeyLength_g[i]);       //
+    // Wi_TestPrintf(pWkbInfo_g, "\nwMax%d, key:%s-%s.",
+    //	 wMaxRecKey_g, apstrRecKey_g[i],
+    //	 &apstrRecord_g[wR][awRecKeyOffset_g[i]]);
+    }
+
+  boTestModus_g=NEIN;
+
+
+  i_Synchro(wMsk, "KU_KONTO", "FI_KU_KTO");
+  if( !boStrCmp(pt("KU_KONTO"),pt("FI_KU_KTO")) )
+    {
+    strcpy(pt("KU_KONTO"), pt("FI_KU_KTO") );
+    pTB=TBpt("KU_KONTO", wMsk, wRec);
+    awChangeFlag_g[pTB->wRecord]=JA;
+    }
+
+
+if(Maske(1,"FI121","LKF121","FI123","LKF123","FI321","LKF321",_N))    // falls richtige Maske
+  {
+  PTEXTBOX pTB;
+  SWORD  wMsk=1, wRec=99;
+
+  if( !boStrCmp(pt("FI_LIEFER"), pt("LIEFNR")) )
+    {
+    strcpy(pt("FI_LIEFER"), pt("LIEFNR") );
+    pTB=TBpt("FI_LIEFER", wMsk, wRec);
+    awChangeFlag_g[pTB->wRecord]=JA;
+    }
+
+  if( !boStrCmp(pt("LI_KONTO"), pt("FI_LI_KTO")) )
+    {
+    strcpy(pt("LI_KONTO"), pt("FI_LI_KTO") );
+    pTB=TBpt("LI_KONTO", wMsk, wRec);
+    awChangeFlag_g[pTB->wRecord]=JA;
+    }
+
+  if( !boStrCmp(pt("KURZ_BEZ"), pt("MATCH_CODE")) )
+    {
+    strcpy(pt("KURZ_BEZ"), pt("MATCH_CODE") );
+    pTB=TBpt("KURZ_BEZ", wMsk, wRec);
+    awChangeFlag_g[pTB->wRecord]=JA;
+    }
+  }  // end FI121 LKF121
+
+
+if(Maske(1,"FI121","LKF121","FI123","LKF123",_N))    // falls richtige Maske
+  if(!*pt("FI_LI_KTO"))
+    {
+    PTEXTBOX pTB=TBpt("FI_LI_KTO", 1, 99);
+
+    memcpy(pt("FI_LI_KTO"), pt("LIEFNR"), 8);
+    awChangeFlag_g[pTB->wRecord]=JA;
+    } //end if(!*pt("FI_LI_KTO"))
+
+if(Maske(1,"FI121","LKF121","FI123","LKF123",_N) && !*pt("FI_LI_KTO"))
+  i_SynDef(1, "FI_LI_KTO", "LIEFNR");
+
+
+  DOUBLE dMenge=ptD("_MENGE")-ptD("INVEN_AKT");
+
+
+SWORD  Validate_Read ()
+if(Maske(_MSK,"FI160","LKF160",_N))		     // Erfassen Anlagekont.
+  {if( *pt("AKTIVIERT")=='j')
+      {PSSTR apstrMessage[25];
+      *(pt("AR_NUMMER")+wBlk)= *(pt("AR_BEZEICH")+wBlk)=
+      *(pt("KONTO_NR")+wBlk)= '\0';
+      Ut_SchreibArray(apstrMessage,
+      "                                                                        ",
+      "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
+      "Eingabefehler: Diese Anlage ist bereits aktiviert.",
+      "Weitere Zugnge ber eine neue Anlage buchen!", _N);
+      sprintf(apstrMessage[0], "%s %s", pt("INVENT_NR"), pt("6๘MATCH_CODE"));
+      apstrMessage[0][52]='\0';
+
+      Dl_Info(apstrMessage, DLG_INFO);
+      Ut_LoeschArray(apstrMessage);
+      wNewAnlage_g=NO;} }
+
+
+// {BOOL boTest=boTestModus_g; boTestModus_g=JA;
+//   Wi_TestPrintf(pWkbInfo_g, "\nSaldo: (%f)=(%f)+(%f).",
+//     dSaldo, ptD(chi(wRec,"x๘VOR_SALDO")), dBetrag);
+//   boTestModus_g=boTest;}
+
+
+      if(Maske(0,"FI221",_N))dSaldo=0.0-ptD("JHR_SALDO");
+
+
+---------------------------------------------------------------------------- */

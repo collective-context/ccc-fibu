@@ -1,0 +1,164 @@
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ  Programme-Name: BA_SAA.C        Revision: 1.3         (C) 1989/1991    บ
+  บ  Function      : euroSOFT Basisprogramm                                 บ
+  บ                                                                         บ
+  บ  Rev.-Date     : 01.05.1991, Graz           Update: 16.07.1991, Graz    บ
+  บ  Author        : Peter Mayer                Author: Peter Mayer         บ
+  บ  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ     Application_Mask()                                                  บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+WORD Application_Mask()
+{
+ReadSelect();
+Read_Default();
+while(!wFinis_g)                                     /* Haupt-Eingabe-Schl.  */
+  {
+  Set_Default();
+
+  while(wKeyCode_g!=9999 && !wEscFlag_g)             /* ESC-Taste gedrckt   */
+    {
+    M_KeyCode(apWkbMask_g, wKeyCode_g,               /* Fr Application_Set  */
+      &wNextMaskNumber, &wNextFieldNumber,
+      &wNextBlockNumber_g, apTextBox_g,
+      apstrRecord_g, awRecLength_g, awBlocks_g );    /* Key-Code auswerten   */
+
+    Application_Set(wNextMaskNumber,
+      wNextFieldNumber);                             /* Vorbelegungen        */
+
+    if(boInput_g) M_Input(apWkbMask_g,               /* Masken-Interpreter   */
+      &wMaskNumber_g, apstrRecord_g, apstrMaskText_g,/*                      */
+      apstrBrowseText_g,apTextBox_g,&wFieldNumber_g, /*                      */
+      strOldString_g, strNewString_g, &wKeyCode_g,   /*                      */
+      awBlocks_g, awScroll_g, awRecLength_g,         /*                      */
+      &wBlockNumber_g, strApp_g, pstrIndexKey_g);    /*                      */
+
+    KeyCode_Handler();
+    if(strchr(strSpecialKeyCodes_g,wKeyCode_g ) > 0) /* Wenn Funktionstaste  */
+      Special_Functions();                           /* gedrckt dann aus-   */
+    else                                             /* werten sonst:        */
+      {                                              /* Feldnummer auf Key-  */
+      Field_Classification();                        /* Feld prfen          */
+      if(wRecKey_g>0 && boRecMask_g)                 /* Wenn Stammschlssel  */
+        Record_Key_Handler();                        /* dann abhandeln       */
+      else                                           /* sonst: wenn Referenz-*/
+        if(wRefKey_g>0)                              /* schlssel dann such  */
+          Reference_Key_Handler();                   /* Referenzdatei        */
+        else                                         /* sonst: andere Felder */
+          Other_Fields_Handler();                    /* abhandeln            */
+
+      } /*end ! strSpecialKeyCodes */                /*                      */
+
+    All_Fields_Handler();
+    } /*end: while(!wEscFlag_g)*/
+
+  wOkAbort=Store();                                  /* satz speichern       */
+  } /*end while(wFinis_g)*/                          /* !wFinis dann Eingabe */
+
+return(OK);
+} /*end Application_Mask() */
+
+#pragma optimize("q", on)   /* P-Code ein */
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Special_Functions()                                                     บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine wird angesprungen, wenn vom Anwender eine Sonderfunk-     บ
+  บ tionstaste bettigt wurde, die fr die Applikation eine bestimmte       บ
+  บ Bedeutung hat.                                                          บ
+  บ Siehe Konstanten-Deklaration                                            บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Field_Classification()                                                  บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Field_Classification() teilt das vom Anwender gerade verlassene Feld in บ
+  บ eine der Kategorien "Schlssel zum Stammsatz", "Schlsselfeld mit Ver-  บ
+  บ weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     บ
+  บ Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  บ
+  บ auf den Primarkey in der Reference-Datei beziehen, so muแ dies in der   บ
+  บ Sub-Funktion i_Field_Classification nachgetragen werden.                บ
+  บ Auch bei scrollbaren Zeilen im Maskentyp 1 muแe bei einem Verweis auf   บ
+  บ Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Copy_Selection()                                                        บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Funktion wird nach drcken der [F2]-Taste nach Ausfhrung der     บ
+  บ Funktion Matchcode_Handler() in der Funktion Special_Funktions() vor    บ
+  บ der Funktion Reference_Key_Handler() aufgerufen.                        บ
+  บ Weiters wird die Funktion in der Funktion Field_Classification() und    บ
+  บ damit ebenfalls vor Reference_Key_Handler() aufgerufen.                 บ
+  บ Aufgabe:                                                                บ
+  บ   1) In der Funktion Matchcode_Handler wird nach einem beliebigen       บ
+  บ      Schlssel in der angebenen Datei gesucht. Unter strSelection_g     บ
+  บ      wird vom gewhlten Datensatz der Primrkey der Datei zurckgegeben.บ
+  บ oder: (R-2)                                                             บ
+  บ   2) In der Funktion Field_Classification() wird nach einem beliebigen  บ
+  บ      Schlssel in der angebenen Datei gesucht. Unter strSelection_g     บ
+  บ      wird vom gewhlten Datensatz der Primrkey der Datei zurckgegeben.บ
+  บ In beiden Fllen kopiert diese Funktion strSelection_g an die Primarkey-บ
+  บ stelle des Records sowie auf die Varaiblen strKey_Value_g und strNew-   บ
+  บ string_g.                                                               บ
+  บ Danach steht der Primrkey nach der Wahl fr die Funktion Referenc_Key- บ
+  บ Handler() an der richtigen Stelle.                                      บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Record_Key_Handler()                                                    บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine behandelt die Eingaben, die in einem Schlsselfeld        บ
+  บ zum Stammsatz gemacht wurden.                                           บ
+  บ Hier wird berprft, ob der Schlssel Gltigkeit besitzt und in         บ
+  บ der Stammdaten-Datei vorhanden ist. Danach wird entschieden, ob ein     บ
+  บ bestehender Satz mutiert werden soll, oder ob ein neuer Satz ange-      บ
+  บ legt werden soll.                                                       บ
+  บ Bei Leereingaben ohne aktuellen Datensatz wird in das nchste           บ
+  บ Schlsselfeld zum Stammdaten-Satz verzweigt.                            บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Primary_KeyHandler()                                                    บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Funktion wird aufgerufen, wenn das Primrkeyfeld verlassen wird.  บ
+  บ Der Primary_KeyHandler wird auch in einem Rec-Schlsselfeld nach dem    บ
+  บ Drcken der [F2]-Taste angesprungen.                                    บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Reference_Key_Handler()                                                 บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Reference_Key_Handler() behandelt die Eingaben, die in einem Schlssel- บ
+  บ feld auf eine Referenz-Datei gemacht wurden.                            บ
+  บ Es werden Referenz-Zugriffe (sofern erwnscht) auf die jeweiligen       บ
+  บ Dateien vorgenommen.                                                    บ
+  บ Der laut Field_Classification() oder Matchcode_Handler gewhlte Primr- บ
+  บ key in der Reference-Datei wird geladen.                                บ
+  บ In i_Reference_Key_Handler() k”nnen etwaige Feldzuordnungen nachgetra-  บ
+  บ gen werden.                                                             บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Next_Key_Field ()                                                       บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine setzt den Feld-Cursor auf das nchste Schlsselfeld.      บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Matchcode_Handler()                                                     บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    บ
+  บ Fr scrollbare Zeilen im Maskentyp 1 und fr spezielle Wnsche bei      บ
+  บ Zugriffen auf Referenz-Dateien k”nnen in i_Matchcode_Handler() Eintrge บ
+  บ erfolgen.                                                               บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Read_Default()                                                        บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Legt fest, ob beim Aufruf eines Programmes bereits ein Datensatz gele-  บ
+  บ sen werden soll.                                                        บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/

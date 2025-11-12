@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+                                ù
+
+                                   Inventurdatum: ##.##.##
+
+                                   ¯¯ Weiter mit [ESC] ®®®
+
+                                ù                           ù
+^
+
+>>Mask:   FIM147
+>>Prog.:  FI1100.C
+>>Update: 6.04.92
+
+&TITEL    = "FI  STAMM Anlegen Artikel-Merkmale 2/x"
+&FRAME    = 0, 0, 0, 0, "ÄLK-Fibu / ndern Artikel-Merkmale", 2
+>>SEQUENZ = 00,01,02,03,04,05,07,09,10,11,12,13,15,17
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+
+&DATEI      (0)  = MASK, D.ST1300
+&PARA_DATEI (1)  = MASK, D.ST4500
+
+
+  &HELPTEXT (0)  = FIHLP10, 347, 0
+  &DATA     (+-) = 1, _DATUM
+  &DEFAULT  (+-) = "S"
+
+  &DATA_H   (+)  = 1, _STARTFLAG
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+

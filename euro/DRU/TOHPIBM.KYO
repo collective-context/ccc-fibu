@@ -1,0 +1,20 @@
+!R! FRPO C0,1;                     FRPO H3,1;
+    FRPO C1,0;                     FRPO H4,0;
+    FRPO C2,0;                     FRPO H5,0;
+    FRPO C3,9;                     FRPO H6,90;
+    FRPO C4,0;                     FRPO H7,70;
+    FRPO C5,0;                     FRPO H8,6;
+    FRPO A1,0;                     FRPO H9,1;
+    FRPO A2,0;                     FRPO P1,6;
+    FRPO A3,0;                     FRPO P2,1;
+    FRPO A4,00;                    FRPO P3,2;
+    FRPO A5,13;                    FRPO P9,82;
+    FRPO A6,0;                     FRPO U0,6;
+    FRPO A7,12;                    FRPO U1,60;
+    FRPO A8,87;                    FRPO U2,11;
+    FRPO H0,0;                     FRPO U3,0;
+    FRPO H1,96;                    FRPO U5,0;
+    FRPO H2,8;                     FRPO U6,2;
+    RES; FTMD 13; FRPO C3,6; SLPI 6.6; SLM 0.75; STM 0;
+    FONT 9;  EXIT;
+

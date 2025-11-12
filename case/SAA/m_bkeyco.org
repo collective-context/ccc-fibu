@@ -1,0 +1,603 @@
+// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+
+/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ                        DEKLARATIONS-DATEIEN                            บ
+  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+#define NDEBUG 1
+
+#include <eur_tool.h>
+
+
+/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ                       MODULGLOBALE DATEN                               บ
+  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+IMPORT PEVENT pEvent_g;
+IMPORT PWKB   pWkbInfo_m;
+
+
+
+/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ  Funktionsname:  Block_Key_Code_Evaluation        Datum: 29.11.89      บ
+  บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ
+  บ                                                                        บ
+  บ  Parameter:                                                            บ
+  บ                                                                        บ
+  บ                                                                        บ
+  บ  Beschreibung:     Die Funktion                                        บ
+  บ                                                                        บ
+  บ                                                                        บ
+  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
+  บ                                                                        บ
+  บ                                                                        บ
+  บ  Benutzte globale                                                      บ
+  บ  Variablen (R/W):                                                      บ
+  บ                                                                        บ
+  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+VOID Block_Key_Code_Evaluation (SWORD wKeyCode, PMASKS* ppAktMask,
+                      PBLOCKCOLUMN* ppAktColumn, PBLOCKLINE* ppAktLine,
+                      PBLOCKS* ppAktBlock, PTEXTBOXLIST* ppAktField)
+{
+  PTEXTBOXLIST pAktField  = *ppAktField;
+  PBLOCKCOLUMN pAktColumn = *ppAktColumn;
+  PBLOCKLINE   pAktLine   = *ppAktLine;
+  PBLOCKS      pAktBlock  = *ppAktBlock;
+  PMASKS       pAktMask   = *ppAktMask;
+
+  if (pAktField->wTBLSignatur     != TBLSIGNATUR ||
+      pAktBlock->wBlSignatur      != BLOCKSIGNATUR ||
+      pAktLine->wLineSignatur     != LINESIGNATUR ||
+      pAktColumn->wColumnSignatur != COLUMNSIGNATUR ||
+      pAktMask->wMaskSignatur     != MASKSIGNATUR)
+
+   Dl_ErrorHandler(701 , "Block_Key_Code_Evaluation()",
+       __FILE__, __LINE__, 0);
+
+
+/*if(pEvent_g->wKbflags & (LEFT_SHIFT|RIGHT_SHIFT) || /* Shift-Taste gedrckt */
+/*  wKeyCode==T_UP || wKeyCode==T_DOWN) */
+{
+SWORD wFensterS = pAktField->wFensterS,
+  wFensterZ = pAktField->wFensterZ;
+
+switch (wKeyCode)
+  {
+  case T_DOWN:					     /* Cursor abwrts	     */
+	while (pAktField && wFensterZ == pAktField->wFensterZ)
+	    pAktField = pAktField->pNext;
+
+	while (pAktField && wFensterS != pAktField->wFensterS)
+	    pAktField = pAktField->pNext;
+
+	while (!pAktField && pAktLine->pNext)
+	  {
+	   pAktLine=pAktLine->pNext;
+	   pAktColumn=pAktMask->pBlColumnWurzel;
+	   pAktBlock=pAktLine->pBlWurzel;
+
+	   if (!pAktBlock->pTBLWurzel)
+	     i_InsertTBL (pAktBlock, pAktMask);
+
+	   for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+		pAktColumn=pAktColumn->pNext)
+	     ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	   if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+	   pAktField=pAktBlock->pTBLWurzel;
+
+	   while (pAktField && wFensterS != pAktField->wFensterS)
+	       pAktField = pAktField->pNext;
+	  }
+
+	if (!pAktField)
+	  {
+	   pAktField  = *ppAktField;
+	   pAktBlock  = *ppAktBlock;
+	   pAktLine   = *ppAktLine;
+	   pAktColumn = *ppAktColumn;
+
+	   if (pAktField->pNext)
+	     pAktField = pAktField->pNext;
+	   else if (pAktBlock->pNextColumn)
+	     {
+	      pAktBlock  = pAktBlock->pNextColumn;
+
+	      if (!pAktBlock->pTBLWurzel)
+		i_InsertTBL (pAktBlock, pAktMask);
+
+	      pAktColumn = pAktColumn->pNext;
+	      pAktField  = pAktBlock->pTBLWurzel;
+	     }
+	   else if (pAktLine->pNext)
+	     {
+	      pAktLine=pAktLine->pNext;
+	      pAktColumn=pAktMask->pBlColumnWurzel;
+	      pAktBlock=pAktLine->pBlWurzel;
+
+	      if (!pAktBlock->pTBLWurzel)
+		i_InsertTBL (pAktBlock, pAktMask);
+
+	      for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+		   pAktColumn=pAktColumn->pNext)
+		; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	      if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+	      pAktField=pAktBlock->pTBLWurzel;
+	     }
+	   else if (pAktMask->pNext)
+	     {
+	      pAktMask = pAktMask->pNext;
+	      pAktColumn = pAktMask->pBlColumnWurzel;
+	      pAktLine = pAktMask->pBlLineWurzel;
+	      pAktBlock = pAktLine->pBlWurzel;
+
+	      if (!pAktBlock->pTBLWurzel)
+		i_InsertTBL (pAktBlock, pAktMask);
+
+	      for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+		   pAktColumn=pAktColumn->pNext)
+		; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	      if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+	      pAktField = pAktBlock->pTBLWurzel;
+	     }
+	  }
+  break;
+
+  case T_UP:					     /* Cursor aufwrts      */
+	while (pAktField && wFensterZ == pAktField->wFensterZ)
+	    pAktField = pAktField->pLast;
+
+	while (pAktField && wFensterS != pAktField->wFensterS)
+	    pAktField = pAktField->pLast;
+
+	while (!pAktField && pAktLine->pLast)
+	  {
+	   pAktLine=pAktLine->pLast;
+	   pAktColumn=pAktMask->pBlColumnEnd;
+	   pAktBlock=pAktLine->pBlEnd;
+
+	   if (!pAktBlock->pTBLWurzel)
+	     i_InsertTBL (pAktBlock, pAktMask);
+
+	   for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+		pAktColumn=pAktColumn->pLast)
+	     ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	   if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+	   pAktField=pAktBlock->pTBLEnd;
+
+	   while (pAktField && wFensterS != pAktField->wFensterS)
+	       pAktField = pAktField->pLast;
+	  }
+
+	if (!pAktField)
+	  {
+	   pAktField  = *ppAktField;
+	   pAktBlock  = *ppAktBlock;
+	   pAktLine   = *ppAktLine;
+	   pAktColumn = *ppAktColumn;
+
+	   if (pAktField->pLast)
+	     pAktField = pAktField->pLast;
+	   else if (pAktBlock->pLastColumn)
+	     {
+	      pAktBlock = pAktBlock->pLastColumn;
+
+	      if (!pAktBlock->pTBLWurzel)
+		i_InsertTBL (pAktBlock, pAktMask);
+
+	      pAktColumn = pAktColumn->pLast;
+	      pAktField = pAktBlock->pTBLEnd;
+	     }
+	   else if (pAktLine->pLast)
+	     {
+	      pAktLine=pAktLine->pLast;
+	      pAktColumn=pAktMask->pBlColumnEnd;
+	      pAktBlock=pAktLine->pBlEnd;
+
+	      if (!pAktBlock->pTBLWurzel)
+		i_InsertTBL (pAktBlock, pAktMask);
+
+	      for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+		   pAktColumn=pAktColumn->pLast)
+		; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	      if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+	      pAktField=pAktBlock->pTBLEnd;
+	     }
+	   else if (pAktMask->pLast)
+	     {
+	      pAktMask = pAktMask->pLast;
+	      pAktColumn=pAktMask->pBlColumnEnd;
+	      pAktLine=pAktMask->pBlLineEnd;
+	      pAktBlock = pAktLine->pBlEnd;
+
+	      if (!pAktBlock->pTBLWurzel)
+		i_InsertTBL (pAktBlock, pAktMask);
+
+	      for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+		   pAktColumn=pAktColumn->pLast)
+		; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	      if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+	      pAktField = pAktBlock->pTBLEnd;
+	     }
+	  }
+  break;
+
+  case T_PGUP:
+	if (pAktBlock->wBlockX && pAktBlock->wBlockY)
+	 {
+	  while (pAktMask->pBlAktZeile->wPhysicalLine +
+		 pAktMask->pBlAktZeile->wMaxHoehe <
+		 pAktMask->wScrollHoehe +
+		 pAktLine->wPhysicalLine &&
+		 pAktLine->pLast)
+	     pAktLine=pAktLine->pLast;
+
+	  for (pAktBlock=pAktLine->pBlWurzel;
+	       pAktBlock->wBlockX < pAktColumn->wLogicalColumn &&
+	       pAktBlock->pNextColumn;
+	       pAktBlock=pAktBlock->pNextColumn)
+	     ;
+
+	  if (!pAktBlock->pTBLWurzel)
+	    i_InsertTBL (pAktBlock, pAktMask);
+
+	  for (pAktField=pAktBlock->pTBLWurzel;
+	       pAktField->wFensterS < wFensterS &&
+	       pAktField->pNext;
+	       pAktField=pAktField->pNext)
+	     ;
+	 }
+  break;
+
+  case T_PGDN:
+	if (pAktBlock->wBlockX && pAktBlock->wBlockY)
+	  {
+	   if (pAktMask->pBlLastZeile->pNext)
+	     {
+	      pAktMask->pBlAktZeile = pAktMask->pBlLastZeile;
+	      pAktLine = pAktMask->pBlAktZeile;
+	     }
+	   else
+	     pAktLine = pAktMask->pBlLastZeile;
+
+	   for (pAktBlock=pAktLine->pBlWurzel;
+		pAktBlock->pNextColumn &&
+		pAktBlock->wBlockX < pAktColumn->wLogicalColumn;
+		pAktBlock=pAktBlock->pNextColumn)
+	     ;
+
+	   if (!pAktBlock->pTBLWurzel)
+	     i_InsertTBL (pAktBlock, pAktMask);
+
+	   pAktField = pAktBlock->pTBLWurzel;
+	  }
+  break;
+
+/* }  end case
+}    End Shift Taste gedrckt
+   else switch (wKeyCode)
+	  { */
+
+  case T_RETURN:			     /* Return			     */
+             if (pAktField->pTBLSequenz)
+               pAktField = pAktField->pTBLSequenz;
+             else if (pAktBlock->pNextColumn)
+               {
+                pAktBlock = pAktBlock->pNextColumn;
+
+                if (!pAktBlock->pTBLWurzel)
+                  i_InsertTBL (pAktBlock, pAktMask);
+
+                pAktColumn = pAktColumn->pNext;
+                pAktField  = pAktBlock->pTBLWurzel;
+               }
+             else if (pAktLine->pNext)
+               {
+                pAktLine=pAktLine->pNext;
+                pAktColumn=pAktMask->pBlColumnWurzel;
+                pAktBlock=pAktLine->pBlWurzel;
+
+                if (!pAktBlock->pTBLWurzel)
+                  i_InsertTBL (pAktBlock, pAktMask);
+
+                for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+                     pAktColumn=pAktColumn->pNext)
+		  ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+		if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+                pAktField=pAktBlock->pTBLWurzel;
+               }
+             else if (pAktMask->pNext)
+               {
+                pAktMask = pAktMask->pNext;
+                pAktColumn = pAktMask->pBlColumnWurzel;
+                pAktLine = pAktMask->pBlLineWurzel;
+                pAktBlock = pAktLine->pBlWurzel;
+
+                if (!pAktBlock->pTBLWurzel)
+                  i_InsertTBL (pAktBlock, pAktMask);
+
+                for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+                     pAktColumn=pAktColumn->pNext)
+		  ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+		if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+                pAktField = pAktBlock->pTBLWurzel;
+               }
+  break;
+
+  case T_RIGHT: 				     /* Cursor rechts	     */
+             if (pAktField->pNext)
+               pAktField = pAktField->pNext;
+             else if (pAktBlock->pNextColumn)
+               {
+                pAktBlock  = pAktBlock->pNextColumn;
+
+                if (!pAktBlock->pTBLWurzel)
+                  i_InsertTBL (pAktBlock, pAktMask);
+
+                pAktColumn = pAktColumn->pNext;
+                pAktField  = pAktBlock->pTBLWurzel;
+               }
+             else if (pAktLine->pNext)
+               {
+                pAktLine=pAktLine->pNext;
+                pAktColumn=pAktMask->pBlColumnWurzel;
+                pAktBlock=pAktLine->pBlWurzel;
+
+                if (!pAktBlock->pTBLWurzel)
+                  i_InsertTBL (pAktBlock, pAktMask);
+
+                for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+                     pAktColumn=pAktColumn->pNext)
+		  ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+		if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+                pAktField=pAktBlock->pTBLWurzel;
+               }
+             else if (pAktMask->pNext)
+               {
+                pAktMask = pAktMask->pNext;
+                pAktColumn = pAktMask->pBlColumnWurzel;
+                pAktLine = pAktMask->pBlLineWurzel;
+                pAktBlock = pAktLine->pBlWurzel;
+
+                if (!pAktBlock->pTBLWurzel)
+                  i_InsertTBL (pAktBlock, pAktMask);
+
+                for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+                     pAktColumn=pAktColumn->pNext)
+		  ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+		if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+                pAktField = pAktBlock->pTBLWurzel;
+               }
+  break;
+
+  case T_LEFT:					     /* Cursor links	     */
+             if (pAktField->pLast)
+               pAktField = pAktField->pLast;
+             else if (pAktBlock->pLastColumn)
+               {
+                pAktBlock = pAktBlock->pLastColumn;
+
+                if (!pAktBlock->pTBLWurzel)
+                  i_InsertTBL (pAktBlock, pAktMask);
+
+                pAktColumn = pAktColumn->pLast;
+                pAktField = pAktBlock->pTBLEnd;
+               }
+             else if (pAktLine->pLast)
+               {
+                pAktLine=pAktLine->pLast;
+                pAktColumn=pAktMask->pBlColumnEnd;
+                pAktBlock=pAktLine->pBlEnd;
+
+                if (!pAktBlock->pTBLWurzel)
+                  i_InsertTBL (pAktBlock, pAktMask);
+
+                for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+                     pAktColumn=pAktColumn->pLast)
+		  ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+		if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+                pAktField=pAktBlock->pTBLEnd;
+               }
+             else if (pAktMask->pLast)
+               {
+                pAktMask = pAktMask->pLast;
+                pAktColumn=pAktMask->pBlColumnEnd;
+                pAktLine=pAktMask->pBlLineEnd;
+                pAktBlock = pAktLine->pBlEnd;
+
+                if (!pAktBlock->pTBLWurzel)
+                  i_InsertTBL (pAktBlock, pAktMask);
+
+                for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+                     pAktColumn=pAktColumn->pLast)
+		  ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+		if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+                pAktField = pAktBlock->pTBLEnd;
+	       }
+  break;
+
+  case T_C_PGUP:
+             if (pAktMask->pLast)
+               {
+                pAktMask = pAktMask->pLast;
+                pAktLine = pAktMask->pBlLineWurzel;
+                pAktColumn = pAktMask->pBlColumnWurzel;
+                pAktBlock = pAktLine->pBlWurzel;
+
+                if (!pAktBlock->pTBLWurzel)
+                  i_InsertTBL (pAktBlock, pAktMask);
+
+                for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+                     pAktColumn=pAktColumn->pNext)
+		  ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+		if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+                pAktField = pAktBlock->pTBLWurzel;
+               }
+  break;
+
+  case T_C_PGDN:
+             if (pAktMask->pNext)
+               {
+                pAktMask = pAktMask->pNext;
+                pAktLine = pAktMask->pBlLineWurzel;
+                pAktColumn = pAktMask->pBlColumnWurzel;
+                pAktBlock = pAktLine->pBlWurzel;
+
+                if (!pAktBlock->pTBLWurzel)
+                  i_InsertTBL (pAktBlock, pAktMask);
+
+                for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+                     pAktColumn=pAktColumn->pNext)
+		  ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+		if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+                pAktField = pAktBlock->pTBLWurzel;
+               }
+  break;
+
+  case T_C_HOME:
+             pAktLine = pAktMask->pBlLineWurzel;
+             pAktColumn = pAktMask->pBlColumnWurzel;
+             pAktBlock = pAktLine->pBlWurzel;
+
+             if (!pAktBlock->pTBLWurzel)
+               i_InsertTBL (pAktBlock, pAktMask);
+
+             for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+                  pAktColumn=pAktColumn->pNext)
+	       ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	     if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+             pAktField = pAktBlock->pTBLWurzel;
+  break;
+
+  case T_C_END:
+             pAktLine = pAktMask->pBlLineEnd;
+             pAktColumn = pAktMask->pBlColumnEnd;
+             pAktBlock = pAktLine->pBlEnd;
+
+             if (!pAktBlock->pTBLWurzel)
+               i_InsertTBL (pAktBlock, pAktMask);
+
+             for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+                  pAktColumn=pAktColumn->pLast)
+	       ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	     if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+             pAktField = pAktBlock->pTBLEnd;
+             break;
+
+  default:
+  break;
+
+ }  /*end switch*/
+}
+
+
+// while (!(pAktField->pFeld->bArt & IS_EINGABE))
+while(pAktField && pAktField->pFeld &&
+  !(pAktField->pFeld->bArt & IS_EINGABE))
+  {
+   if (wKeyCode==T_LEFT || wKeyCode==T_UP || wKeyCode==T_C_END)
+     {
+      if (pAktField->pLast)
+        pAktField=pAktField->pLast;
+      else if (pAktBlock->pLastColumn)
+        {
+         pAktBlock=pAktBlock->pLastColumn;
+
+         if (!pAktBlock->pTBLWurzel)
+           i_InsertTBL (pAktBlock, pAktMask);
+
+         pAktColumn=pAktColumn->pLast;
+         pAktField=pAktBlock->pTBLEnd;
+        }
+      else if (pAktLine->pLast)
+        {
+         pAktLine=pAktLine->pLast;
+         pAktColumn=pAktMask->pBlColumnEnd;
+         pAktBlock=pAktLine->pBlEnd;
+
+         if (!pAktBlock->pTBLWurzel)
+           i_InsertTBL (pAktBlock, pAktMask);
+
+         for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+              pAktColumn=pAktColumn->pLast)
+	   ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	 if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+         pAktField=pAktBlock->pTBLEnd;
+        }
+      else if (pAktMask->pLast)
+        {
+         pAktMask = pAktMask->pLast;
+         pAktColumn=pAktMask->pBlColumnEnd;
+         pAktLine=pAktMask->pBlLineEnd;
+         pAktBlock = pAktLine->pBlEnd;
+
+         if (!pAktBlock->pTBLWurzel)
+           i_InsertTBL (pAktBlock, pAktMask);
+
+         for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+              pAktColumn=pAktColumn->pLast)
+	   ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	 if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+         pAktField = pAktBlock->pTBLEnd;
+        }
+      else
+	wKeyCode = T_RIGHT; /* T_DOWN; */
+     } /* if T_LEFT || T_UP || T_END */
+
+   if (wKeyCode != T_LEFT && wKeyCode != T_UP && wKeyCode != T_C_END)
+     {
+      if (pAktField->pNext)
+        pAktField=pAktField->pNext;
+      else if (pAktBlock->pNextColumn)
+        {
+         pAktBlock=pAktBlock->pNextColumn;
+
+         if (!pAktBlock->pTBLWurzel)
+           i_InsertTBL (pAktBlock, pAktMask);
+
+         pAktColumn=pAktColumn->pNext;
+         pAktField=pAktBlock->pTBLWurzel;
+        }
+      else if (pAktLine->pNext)
+        {
+         pAktLine=pAktLine->pNext;
+         pAktColumn=pAktMask->pBlColumnWurzel;
+         pAktBlock=pAktLine->pBlWurzel;
+
+         if (!pAktBlock->pTBLWurzel)
+           i_InsertTBL (pAktBlock, pAktMask);
+
+         for (;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+              pAktColumn=pAktColumn->pNext)
+	   ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	 if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+         pAktField=pAktBlock->pTBLWurzel;
+        }
+      else if (pAktMask->pNext)
+        {
+         pAktMask = pAktMask->pNext;
+         pAktColumn = pAktMask->pBlColumnWurzel;
+         pAktLine = pAktMask->pBlLineWurzel;
+         pAktBlock = pAktLine->pBlWurzel;
+
+	 if(!pAktBlock->pTBLWurzel)
+           i_InsertTBL (pAktBlock, pAktMask);
+
+	 for(;pAktColumn->wLogicalColumn != pAktBlock->wBlockX;
+              pAktColumn=pAktColumn->pNext)
+	   ; /* Error, wenn BlockX-Nummer nicht gefunden wird !!!! */
+	 if(pAktColumn==NULL) Dl_Abbruch("Column==NULL", _L, _F, " ");
+         pAktField = pAktBlock->pTBLWurzel;
+        }
+      else
+	wKeyCode = T_LEFT; /* T_UP; */
+     }	/* if T_RIGHT || T_DOWN || T_RETURN || T_C_HOME */
+  }  /* end while !IS_EINGABE */
+
+
+  *ppAktField  = pAktField;
+  *ppAktBlock  = pAktBlock;
+  *ppAktLine   = pAktLine;
+  *ppAktColumn = pAktColumn;
+  *ppAktMask   = pAktMask;
+
+return;
+} /* end: Block_Key_Code_Evaluation () */

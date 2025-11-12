@@ -1,0 +1,364 @@
+
+
+
+  ù
+   Anlage: ïïïïïïïïïï       Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+   Anlagenkonto : Sïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   Abschreibung : Sïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Anlage aktiviert   : @@@@              Buchfhrungsjahr : ^^^^^^^^^
+
+   Datum Ersterfassung: ``.``.``          Zeitwert Anfang  : `.```.``|,||
+   Datum Aktivierung  : ##.##.##          Zug„nge          : `.```.``|,||
+                                          a.o. Abg„nge     : #.###.##›,››
+   Anschaffungswert   : `.```.``|,||      Abschreibung     : `.```.``|,||
+   Nutzungsdauer      : ### Jahre         Zeitwert derzeit : `.```.``|,||
+   Restnutzungsdauer  : `` Jahre
+
+   j„hrliche AFA in % : ``|,||            j„hrliche AFA    : `.```.``|,||
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Datum Ausscheidung : ``.``.``          Verkaufswert     : `.```.``|,||
+ ù                                                                            ù
+
+^ ^ ^ ^ ^ ^    ^ ^
+^ ^ ^ ^ ^ ^    ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^    ^
+
+>>Mask:   FIM160
+>>Prog.:  FI1100.C
+>>Update: 2.08.91
+
+&TITEL    = "FI  STAMM Ersterfaáung Anlagen 1/1"
+&FRAME    = 0, 0, 0, 0, "ÄErsterfaáung Anlagen", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, bila-an
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI1600
+&REF_DATEI  (1)  = MASK, D.FI1310
+&REF_DATEI  (2)  = MASK, D.FI1700
+&PARA_READ  (3)  = MASK, L.SYP_01
+&REF_DATEI  (4)  = MASK, D.FI2100
+
+>>Inventar/Projekt NR
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Projekt-Nr", 0, INVENT_NR
+&ADD_MATCH  (+-) = "Anlagen-Bezeichnung             ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "aktiviert", 0, AKTIVIERT
+  &HELPTEXT (+-) = FIHLP10, 160, 0
+  &DATA     (+-) = 0, INVENT_NR
+
+>>Projekt/Anlagen-Kurzbezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Anlagen-Bezeichnung             ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Projekt-Nr", 0, INVENT_NR
+  &HELPTEXT (+-) = FIHLP10, 160, 1
+  &DATA     (+-) = 0, MATCH_CODE
+
+>>Anlagenkonto
+  &HELPTEXT (+)  = FIHLP10, 160, 5
+  &DATA     (+-) = 0, ANL_KONTO
+
+>>Konten-Bezeichnung
+  &DATA     (+)  = 0, ANL_K_BEZ
+
+>>Abschreibungskonto
+  &HELPTEXT (+)  = FIHLP10, 160, 6
+  &DATA     (+-) = 0, AFA_KONTO
+
+>>Konten-Bezeichnung
+  &DATA     (+)  = 0, AFA_K_BEZ
+
+>>aktiviert j/n
+  &HELPTEXT  (+)  = FIHLP10, 160, 16
+  &DATA      (+-) = 0, AKTIVIERT
+  &DEFAULT   (+-) = "n"
+  &CHOICE    (+-) = "Anlage aktiviert?",   "ja",j,   "nein",n
+
+>>Buchfhrungsjahr
+  &HELPTEXT (+)  = FIHLP10, 160, 8
+  &DATA     (+-) = 0, BUCH_JAHR
+
+>>Anschaffungsdatum = Datum Ersterfassung
+  &HELPTEXT (+)  = FIHLP10, 160, 9
+  &DATA     (+-) = 0, AN_DATUM
+  &DEFAULT  (+-) = s
+
+>>Zeitwert Anfang
+  &HELPTEXT (+)  = FIHLP10, 160, 11
+  &DATA     (+-) = 0, ZEITW_ANF
+
+>>Datum Aktivierung
+  &HELPTEXT (+)  = FIHLP10, 160, 16
+  &DATA     (+-) = 0, DAT_AKTIV
+
+>>Zug„nge
+  &HELPTEXT (+)  = FIHLP10, 160, 17
+  &DATA     (+-) = 0, ZUGANG
+  
+>>Ausserordentliche Abg„nge
+  &HELPTEXT (+)  = FIHLP10, 160, 19
+  &DATA     (+-) = 0, ABGANG
+  
+>>Anschaffungswert
+  &HELPTEXT (+)  = FIHLP10, 160, 21
+  &DATA     (+-) = 0, AN_WERT
+
+>>Abschreibung aktuell (diesj„hrige AFA)
+  &HELPTEXT (+)  = FIHLP10, 160, 20
+  &DATA     (+-) = 0, AFA
+  
+>>Nutzungsdauer gesamt
+  &HELPTEXT (+)  = FIHLP10, 160, 12
+  &DATA     (+-) = 0, NUTZ_GES
+
+>>Zeitwert aktuell
+  &HELPTEXT (+)  = FIHLP10, 160, 13
+  &DATA     (+-) = 0, ZEIT_WERT
+
+>>Nutzungsdauer Rest
+  &HELPTEXT (+)  = FIHLP10, 160, 14
+  &DATA     (+-) = 0, NUTZ_RES
+
+>>j„hrliche Abschreibung in %
+  &HELPTEXT (+)  = FIHLP10, 160, 15
+  &DATA     (+-) = 0, JAHR_AFA_P
+
+>>j„hrliche Abschreibung in S
+  &HELPTEXT (+)  = FIHLP10, 160, 15
+  &DATA     (+-) = 0, JAHR_AFA
+
+>>Anschaffungsdatum = Datum Ersterfassung
+  &HELPTEXT (+)  = FIHLP10, 160, 9
+  &DATA     (+-) = 0, AB_DATUM
+
+>>Zeitwert Anfang
+  &HELPTEXT (+)  = FIHLP10, 160, 11
+  &DATA     (+-) = 0, VERK_WERT
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+>>Sachkonto
+&REF_KEY     (+)
+&REF_MATCH   (+-) = "Konto-Nummer", 1, KONTONR
+&ADD_MATCH   (+-) = "Konten-Bezeichnung            ", 1, KONTO_BEZ
+  &DATA_H    (+-) = 1, KONTONR
+
+>>Konten-Bezeichnung
+&REF_KEY     (+)
+  &DATA_H    (+-) = 1, KONTO_BEZ
+
+  &DATA_H    (+)  = 1, VOR_SALDO
+  &DATA_H    (+)  = 3, KAPIT_KTO
+  &DATA_H    (+)  = 3, AN_SCHADEN
+  &DATA_H    (+)  = 3, AN_ERTRAG
+  &DATA_H    (+)  = 3, AN_AUFWAND
+  &DATA_H    (+)  = 0, ABGANG_DAT
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)
+  &DATA_H   (+-) = 4, :SATZ_NR
+  &DATA_H   (+)  = 4, :SOLL_ART
+  &DATA_H   (+)  = 4, :SOL_KONTO  >>Soll-Konto
+  &DATA_H   (+)  = 4, :BELEG_NR   >>Beleg-Nummer
+  &DATA_H   (+)  = 4, :BELEG_DAT  >>Beleg-Datum
+  &DATA_H   (+)  = 4, :HABEN_ART  >>Haben-Konto
+
+  &DATA_H   (+)  = 4, :HAB_KONTO  >>Haben Konto
+  &DATA_H   (+)  = 4, :BETRAG_BR  >>Betrag
+  &DATA_H   (+)  = 4, :UST_ART    >>Umsatzsteuer-Art
+  &DATA_H   (+)  = 4, :UST_SATZ   >>Umsatzsteuer-Satz  (0/1-8)
+  &DATA_H   (+)  = 4, :SOLL_TEXT  >>Bezeichnung-Soll-Konto (aus Referenz-Datei)
+  &DATA_H   (+)  = 4, :HAB_TEXT   >>Bezeichnung-Haben-Konto (aus Referenz-Datei)
+
+  &DATA_H   (+)  = 4, :UST_BETR   >>UST-Betrag
+  &DATA_H   (+)  = 4, :BUCH_TEXT  >>Buchungs-Text
+  &DATA_H   (+)  = 4, :BUCH_DAT   >>Buchungsdatum
+  &DATA_H   (+)  = 4, :BUCH_ART   >>Buchungsart
+  &DATA_H   (+)  = 4, :SOLL_UST   >>Kunden Konto
+  &DATA_H   (+)  = 4, :HABEN_UST
+
+  &DATA_H    (+)  = 4, PREPARE
+
+>>Vorzeitige Afa
+  &HELPTEXT (+)  = FIHLP10, 160, 10
+  &DATA     (+-) = 0, VOR_AFA
+
+>>Anlagenbezeichnung 1
+  &HELPTEXT (+)  = FIHLP10, 160, 2
+  &DATA     (+-) = 0, ANLAG_BEZ1
+
+>>Anlagenbezeichnung 2
+  &HELPTEXT (+)  = FIHLP10, 160, 3
+  &DATA     (+-) = 0, ANLAG_BEZ2
+
+>>Standort
+  &HELPTEXT (+)  = FIHLP10, 160, 4
+  &DATA     (+-) = 0, STANDORT
+
+   Kostenstelle : Tïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^ ^
+
+>>Kostenstelle
+&REF_KEY    (+)
+&HELPTEXT   (+-) = FIHLP10, 160, 7
+&REF_MATCH  (+-) = "Kostenstelle-Nr.", 2, KOSTENSTEL
+&ADD_MATCH  (+-) = "Kostenstelle-Bezeichnung       ", 2, KOSTENBEZ
+  &REF_DATA (+-) = 2, KOSTENSTEL, 0, KO_STELLE
+
+>>Kostenstellen-Bezeichnung
+&REF_KEY    (+)
+  &REF_DATA (+-) = 2, KOSTENBEZ, 0, KO_BEZ
+
+>>Kostenstelle
+  &DATA_H   (+)  = 0, KO_STELLE
+
+>>Kostenstellen-Bezeichnung
+  &DATA_H   (+)  = 0, KO_BEZ
+
+
+
+
+   Anlage: ïïïïïïïïïï       Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+   Anlagenkonto : Sïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   Abschreibung : Sïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Anlage aktiviert   : @@@@              Buchfhrungsjahr : ^^^^^^^^^
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Datum Ersterfassung: ``.``.``          Zeitwert Anfang  : #.###.##›,››
+   Datum Aktivierung  : ##.##.##          Zug„nge          : #.###.##›,››
+   Datum Ausscheiden  : ##.##.##          a.o. Abg„nge     : #.###.##›,››
+                                          Abschreibung     : #.###.##›,››
+   Anschaffungswert   : #.###.##›,››      Zeitwert derzeit : `.```.``|,||
+   Nutzungsdauer      : ## Jahre
+ ù J„hrl. Abschreibung: #.###.##›,››      Restnutzungsdauer: `` Jahre        ù
+
+^ ^
+
+>>Mask:   FIM160
+>>Prog.:  FI1100.C
+>>Update: 2.08.91
+
+&TITEL    = "FI  STAMM Anlegen Anlagenstamm 1/1"
+&FRAME    = 0, 0, 0, 0, "ÄAnlegen/ndern Anlagenstamm", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, bila-an
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI1600
+&REF_DATEI  (1)  = MASK, D.FI1310
+&REF_DATEI  (2)  = MASK, D.FI1700
+
+>>Inventar/Projekt NR
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Projekt-Nr", 0, INVENT_NR
+&ADD_MATCH  (+-) = "Anlagen-Bezeichnung             ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Standort       ", 0, STANDORT
+  &HELPTEXT (+-) = FIHLP10, 160, 0
+  &DATA     (+-) = 0, INVENT_NR
+
+>>Projekt/Anlagen-Kurzbezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Anlagen-Bezeichnung             ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Projekt-Nr", 0, INVENT_NR
+&ADD_MATCH  (+-) = "Standort       ", 0, STANDORT
+  &HELPTEXT (+-) = FIHLP10, 160, 1
+  &DATA     (+-) = 0, MATCH_CODE
+
+>>Anlagenkonto
+  &HELPTEXT (+)  = FIHLP10, 160, 5
+  &DATA     (+-) = 0, ANL_KONTO
+
+>>Konten-Bezeichnung
+  &DATA     (+)  = 0, ANL_K_BEZ
+
+>>Abschreibungskonto
+  &HELPTEXT (+)  = FIHLP10, 160, 6
+  &DATA     (+-) = 0, AFA_KONTO
+
+>>Konten-Bezeichnung
+  &DATA     (+)  = 0, AFA_K_BEZ
+
+>>aktiviert j/n
+  &HELPTEXT  (+)  = FIHLP10, 160, 16
+  &DATA      (+-) = 0, AKTIVIERT
+  &DEFAULT   (+-) = "n"
+  &CHOICE    (+-) = "Anlage aktiviert?",   "ja",j,   "nein",n
+
+>>Buchfhrungsjahr
+  &HELPTEXT (+)  = FIHLP10, 160, 8
+  &DATA     (+-) = 0, BUCH_JAHR
+
+>>Anschaffungsdatum = Datum Ersterfassung
+  &HELPTEXT (+)  = FIHLP10, 160, 9
+  &DATA     (+-) = 0, AN_DATUM
+
+>>Zeitwert Anfang
+  &HELPTEXT (+)  = FIHLP10, 160, 11
+  &DATA     (+-) = 0, ZEITW_ANF
+
+>>Datum Aktivierung
+  &HELPTEXT (+)  = FIHLP10, 160, 16
+  &DATA     (+-) = 0, DAT_AKTIV
+
+>>Zug„nge
+  &HELPTEXT (+)  = FIHLP10, 160, 17
+  &DATA     (+-) = 0, ZUGANG
+  
+>>Datum Ausscheiden
+  &HELPTEXT (+)  = FIHLP10, 160, 18
+  &DATA     (+-) = 0, DAT_AUS
+  
+>>Ausserordentliche Abg„nge
+  &HELPTEXT (+)  = FIHLP10, 160, 19
+  &DATA     (+-) = 0, ABGANG
+  
+>>Abschreibung aktuell (diesj„hrige AFA)
+  &HELPTEXT (+)  = FIHLP10, 160, 20
+  &DATA     (+-) = 0, AFA
+  
+>>Anschaffungswert
+  &HELPTEXT (+)  = FIHLP10, 160, 21
+  &DATA     (+-) = 0, AN_WERT
+>>&DATA     (+-) = 0, ANSCH_WERT
+
+>>Zeitwert aktuell
+  &HELPTEXT (+)  = FIHLP10, 160, 13
+  &DATA     (+-) = 0, ZEIT_WERT
+
+>>Nutzungsdauer gesamt
+  &HELPTEXT (+)  = FIHLP10, 160, 12
+  &DATA     (+-) = 0, NUTZ_GES
+
+>>j„hrliche Abschreibung
+  &HELPTEXT (+)  = FIHLP10, 160, 15
+  &DATA     (+-) = 0, JAHR_AFA
+
+>>Nutzungsdauer Rest
+  &HELPTEXT (+)  = FIHLP10, 160, 14
+  &DATA     (+-) = 0, NUTZ_RES
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+>>Sachkonto
+&REF_KEY     (+)
+&REF_MATCH   (+-) = "Konto-Nummer", 1, KONTONR
+&ADD_MATCH   (+-) = "Konten-Bezeichnung            ", 1, KONTO_BEZ
+  &DATA_H    (+-) = 1, KONTONR
+
+>>Konten-Bezeichnung
+&REF_KEY     (+)
+  &DATA_H    (+-) = 1, KONTO_BEZ
+
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+

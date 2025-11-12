@@ -1,0 +1,130 @@
+/*.ta,F02,I. Einfhrung / 1.,1
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º  euroSOFT-WARE BS-b„uerliche Selbstvermarkter                                     º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+
+
+
+                                  Pflichtenheft
+                                       fr
+             B  U E R L I C H E   S E L B S T V E R M A R K T E R
+
+                                 Hamerlinggasse 3
+                                   A-8010 GRAZ
+                             Tel.: 0316/80 50 dw. 304
+
+
+Dieses Pflichtenheft ist eine detailierte Beschreibung des Projektes "BS-b„uerliche
+Selbstvermarkter". Es ist innerhalb eines v”llig neuen Programmierkonzeptes mit
+Hilfe der euroSOFT-CASEbox erstellt worden und erschlieát sowohl fr den Kunden
+als auch fr den Programmierer vollkommen neue M”glichkeiten.
+
+Man kann den Produktlebenszyklus in sechs verschiedene Phasen aufteilen:
+
+                               ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                               ³ 6) nderung ³
+                               ³ 5) Wartung  ³
+                   ÚÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿
+                   ³         4) Test/Debugging           ³
+                   ³  3) Implementierung/Programmierung  ³
+            ÚÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄ¿
+            ³              2) Konzept-Erstellung              ³
+            ³          1) Anforderungsspezifikation           ³
+            ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+Fr die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
+und Konzepterstellung - wird meist eine Textverarbeitung verwendet. Fort-
+schrittlichere Programmierkonzepte setzten hier bereits CASE-Tools ein.
+
+Die beiden nachfolgenden Phasen - Implementierung/Programmierung und Test/De-
+bugging - finden in der Anwendungs-Entwicklungsumgebung statt. Das Problem
+dabei ist nur: Die Brcke zwischen den ersten beiden Planungs-Phasen und den
+n„chsten beiden Phasen der Programmerstellung kann man bei den herk”mmlichen
+Programmerstellungs-Mitteln nicht als tragf„hig bezeichnen.
+
+Das erarbeitete Konzept muá mit groáem Aufwand in die Anwendungs-Enwicklungs-
+umgebung bernommen werden. Das n„chste Problem taucht auf, wenn sich in den
+Phasen der Implementierung und des Test/Debugging nderungen ergeben. Wenn
+sich diese nderungen auf das Konzept zurckschlagen, mssen diese im Planungs-
+teil "von Hand nachgefahren" werden. Unterbleibt dies, kommt es zur Inkon-
+sistenz zwischen Konzept und Realisierung, was in der Praxis ein durchaus
+blicher Zustand ist.
+
+Diese Inkonsistenz r„cht sich aber sp„testens dann, wenn es um die Wartung der
+Software geht. ndern sich beispielsweise die Anforderungen an das Produkt,
+hat dies zun„chst Auswirkungen auf das Konzept und schlieálich auf die
+Implementierung. Wenn die Brcke zwischen der Planungs- und Anwendungs-
+Entwicklungsumgebung fehlt oder unvollst„ndig ist, wird man direkt die
+Implementierung ver„ndern und das Konzept somit veraltern lassen. Wiederholt
+sich dieser Vorgang einige Male, kann man das Konzept praktisch wegwerfen.
+
+Die Forderung nach einer integrierten Umgebung, die sowohl die Planungsphasen
+als auch die Entwicklungsphasen umfaát - einschlieálich Wartung -, ist somit
+sehr sinnvoll. Genau dieses Ziel ist mit der euroSOFT-CASEbox verwirklicht.
+.ff
+Der Kern der euroSOFT-CASEbox ist das Datenlexikon. Es gibt also nur eine
+einzige Stelle, an der die Datenfelder fr jede Datei beschrieben werden.
+Der Masken-Compiler, der Formular-Compiler und der Programm-Quellcode greifen
+bereits auf diese Informationen zu.
+
+Doch damit nicht genug. Selbst das Druckprogramm fr dieses Pflichtenheft
+holt sich die Dateiinforamtion w„hrend des Ausdruckes direkt aus dem Daten-
+lexikon. Dasselbe gilt fr Masken-Abbildungen oder Meninformationen.
+
+Fr den Kunden und fr den Applikations-Programmierer bringt die euroSOFT-
+CASEbox eine Reihe von Vorteilen. Der frhzeitige Einsatz eines professionellen
+Werkzeuges bereits in der Planung eines Softwareprojektes reduziert konzeptio-
+nelle Fehler. Durch den "weichen šbergang" zwischen Planungs- und Entwicklungs-
+werkzeug l„át sich das erarbeitete Konzept ohne Einschr„nkungen fr die
+Implementierung verwenden. Hiezu geh”rt beispielsweise, daá die eruoSOFT-
+CASEbox automatisch die Datenbanken und die Bildschirm-Masken in der im
+Konzept angegebenen Form anlegt.
+
+Stellen sich w„hrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
+Ursprungs sind, stellt die integrierte L”sung sicher, daá notwendige nderungen
+am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daá
+diese Methode die Produktivit„t bei der Software-Entwicklung drastisch steigert.
+
+
+
+Das Programmpaket ¯BS-b„erlichen Selbstvermarkter® umfaát die Bereiche:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+        ÚÄ Stammdaten Kunden/Mitglieder: Anlegen/ndern                 ÄÄÄ¿
+        ³                                Adressliste                       ³
+        ³                                Stammblatt                        ³
+        ³                                                                  ³
+        ³             Kunden/Anfrager    : Anlegen/ndern                  ³
+        ³                                  Adressliste                     ³
+        ³                                  Stammblatt                      ³
+        ³                                  Liste nach Land/Postleitzahl    ³
+        ³                                                                  ³
+        ³             Textbausteine      : Anlegen/ndern                  ³
+        ³                                  Drucken                         ³
+        ³                                  Liste nach Anfrage ber         ³
+        ³             Konstanten         : Nummernkreise                   ³
+        ³                                  Mahntexte                       ³
+        ³                                  Werbetexte                      ³
+        ³                                  Liste nach Anfrage ber         ³
+        ³                                                                  ³
+        ³  Bewegungsdaten Mitglieder     : Mitgliedsbeitragsvorschreibung  ³
+        ³                                  Erfassen Rechnungen             ³
+        ³                                  Drucken Rechnungen              ³
+        ³                                  Erfassen Rechnungen/Einzahlungen³
+        ³                                  Drucken Mahnungen               ³
+        ³                                  Werbetexte                      ³
+        ³                                                                  ³
+        ³                 Kunden         : Anfragen                        ³
+        ³                                  Anfragenbeantwortung            ³
+        ³                                  Drucken Antworten               ³
+        ³                                  Erfassen G„steanfragen          ³
+        ³                                  Liste nach H„ufigkeit d. Anfrage³
+        ³                                  Liste nach Information ber     ³
+        ³                                  Liste nach Regionen             ³
+        ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄListe nach Anfrage berÄÄÄÄÄÄÄÄÄÙ
+
+.te*/
+
+

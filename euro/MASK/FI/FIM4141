@@ -1,0 +1,74 @@
+
+
+
+ ˘
+   1: @ @ @ @ @     @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @
+   2: @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @
+
+
+
+ ˘                                                                            ˘
+
+>>Mask:   FIM4141
+>>Prog.:  FI4100.C
+>>Update: 4.08.91
+
+&TITEL    = "FI  DRUCK Dummy-Maske fÅr FIM4140"
+
+&DATEI      (0) = MASK, D.FI1310
+&DRU_DATEI  (1) = MASK, D.FI4135
+
+&REM --- 1. Zeile
+&DATA  (0) = 0, K_VOR_SAL
+&DATA  (+) = 0, K_SOLL_01
+&DATA  (+) = 0, K_HABEN_01
+&DATA  (+) = 0, K_SOLL_02
+&DATA  (+) = 0, K_HABEN_02
+
+&DATA  (+) = 0, K_SOLL_03
+&DATA  (+) = 0, K_HABEN_03
+&DATA  (+) = 0, K_SOLL_04
+&DATA  (+) = 0, K_HABEN_04
+&DATA  (+) = 0, K_SOLL_05
+&DATA  (+) = 0, K_HABEN_05
+
+&DATA  (+) = 0, K_SOLL_06
+&DATA  (+) = 0, K_HABEN_06
+&DATA  (+) = 0, K_SOLL_07
+&DATA  (+) = 0, K_HABEN_07
+&DATA  (+) = 0, K_SOLL_08
+&DATA  (+) = 0, K_HABEN_08
+
+&DATA  (+) = 0, K_SOLL_09
+&DATA  (+) = 0, K_HABEN_09
+&DATA  (+) = 0, K_SOLL_10
+&DATA  (+) = 0, K_HABEN_10
+&DATA  (+) = 0, K_SOLL_11
+&DATA  (+) = 0, K_HABEN_11
+
+&DATA  (+) = 0, K_SOLL_12
+&DATA  (+) = 0, K_HABEN_12
+
+&REM --- 2. Zeile
+&DATA  (+) = 1, -VOR_SALDO
+&DATA  (+) = 1, -PER_SOLL
+&DATA  (+) = 1, -PER_HABEN
+&DATA  (+) = 1, -JHR_SOLL
+&DATA  (+) = 1, -JHR_HABEN
+&DATA  (+) = 1, -AKT_SALDO
+
+&DATA  (+) = 1, $VOR_SALDO
+&DATA  (+) = 1, $PER_SOLL
+&DATA  (+) = 1, $PER_HABEN
+&DATA  (+) = 1, $JHR_SOLL
+&DATA  (+) = 1, $JHR_HABEN
+&DATA  (+) = 1, $AKT_SALDO
+
+&DATA  (+) = 1, _VOR_SALDO
+&DATA  (+) = 1, _PER_SOLL
+&DATA  (+) = 1, _PER_HABEN
+&DATA  (+) = 1, _JHR_SOLL
+&DATA  (+) = 1, _JHR_HABEN
+&DATA  (+) = 1, _AKT_SALDO
+
+

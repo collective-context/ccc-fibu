@@ -1,0 +1,1118 @@
+/*.ta M_Input()
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º  M_Input()                                                                   º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+šberblick:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+#include <eur_tool.h>
+WORD M_Input (apWkbMask[], pswMask, apstrRecord[], apstrMaskText[][25],
+              apTextBox[][99], pswField, pstrOldString, pstrNewString,
+              pswKeyCode, awBlocks[][2], awScroll[][4], awRecLen[]);
+
+Parameter:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+PWKB   apWkbMask[]        Zeiger auf Array fr die Maskenattribute.
+
+Beschreibung:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Diese Funktion bildet aus der Sicht des Applikations-Programmierers die
+zentrale Schnittstelle zum Masken-Interpreter fr den ¯Maskentyp 1®. Die
+Funktion positioniert den Feldcursor an die angegebene Stelle innerhalb der
+angegebenen Maske. Die Funktion kann erst aufgerufen werden, nachdem der
+Interpreter mit der Funktion ¯M_Init()® initialisiert wurde.
+
+Der Anwender kann dieses Feld editieren. Der Vorschlagswert ergibt sich aus
+dem alten Feldinhalt, wie er im angegebenen Datensatz ¯apstrRecord[]® steht.
+
+Verl„át der Anwender das Feld durch ein Sonderfunktions-Taste, die fr den
+Feld-Editor keine Bedeutung hat, so erfolgt nach einer erfolgreichen Syntax
+prfung und Format-Aufbereitung der Rcksprung in den aufrufenden Programm-
+teil. Zuvor wird der vom Anwender eingegebene Wert im Datensatz an der dem
+Feld zugewiesenen Stelle (siehe Offset-Anweisung im Masken-Compiler) abge-
+stellt (s.u.).
+
+Die Syntaxprfung des Interpreters ergibt sich aus der Maskendefinition
+(siehe u.a. Range-, Choise- und Datum-Anweisung des Maskencompilers). Der
+Anwender kann das Feld erst dann verlasasen, wenn er einen syntaktisch
+richtigen Wert eingegeben hat. šber die semantische Gltigkeit des Wertes
+muá der Applikationsprogrammierer entscheiden.
+
+Nach dem Rcksprung kann der Applikationsprogrammierer nun fr dieses Feld
+individuelle Apprfungen vornehmen. Anhand des bergebenen Key-Codes kann
+er feststellen mit welcher Sonderfunktionstaste der Anwender das Feld ver-
+lassen hat.
+
+Bei einem erneuten Aufruf von ¯M_Input()® mit einem unver„nderten
+Key-Code (aus dem letzten Aufruf), fhrt der Interpreter zuerst die Aktion
+durch, die mit dem Key-Code verbunden ist (sofern der Key-Code fr den
+Interpreter eine Bedeutung hat), bevor er das aus dieser Interpretation
+resultierende Feld betritt.
+
+Hat zum Beispiel der Anwender das Feld mit der Enter-Taste verlassen und der
+Applikationsprogrammierer die fr ihn erforderlichen Abprfungen durchgefhrt
+und ruft er ¯M_Input()® erneut auf, so interpretiert der Maskeninterpreter
+zuerst den Key-Code (in diesem Fall den entsprechenden Wert fr die Enter-
+Taste).
+
+Die Enter-Taste hat fr den Interpreter die Bedeutung, den Feldcursor auf
+das n„chste Feld laut Sequenz-Angabe vorzurcken. Ausgangspunkt ist dabei,
+das dem Interpreter angegebene Feld. Hat der Applikationsprogrammierer die
+Feldnummer seit dem letzten Aufruf nicht ver„ndert, so ist sie identisch mit
+der Feldnummer des letzten Feldes, welches der Anwender gerade verlassen hat.
+
+Nach Interpretation des Key-Codes befindet sich der Feld-Editor im resul-
+tierenden Feld (im Beispiel das n„chste Feld lt. Sequenz-Angabe).
+
+Der Applikationsprogrammierer kann auf diese Weise sowohl die Ausgangs-Feld-
+nummer, als auch den Key-Code zur Steuerung des Interpreters, manipulieren
+und somit den Feldcursor auf eine individuelle Weise steuern.
+
+Wurde seit dem letzten Aufruf von ¯M_Input()® die Maskennummer ver„ndert,
+so bl„ttert der Interpreter zuerst auf die angegebene Maske. Die angegebene
+Feldnummer bezieht sich immer auf die gew„hlte Maske. Ist die angegebene
+Feldnummer nicht auf der angegeben Maske, so wird ein Fehler gemeldet.
+
+Hat der Anwender das Feld mit der Ctrl-PgUp oder Ctrl-PgDn Taste verlassen,
+so erfolgt der Rcksprung aus ¯M_Input()® mit dem entsprechenden Key-Code.
+
+Wird ¯M_Input()® nun erneut mit unver„ndertem Key-Code aufgerufen, so
+interpretiert der Masken-Interpreter zuerst die Ctrl-PgUp oder Ctrl-PgDn
+Funktion, was zur Folge hat, daá entweder eine Maske vor oder zurckge-
+bl„ttert wird.
+
+Beim Bl„ttern wird der Feldcursor an die Stelle gesetzt, aus der die Maske
+zuvor verlassen wurde. Wurde die Maske noch nit betreten, wird der Feldcursor
+an die erste Stelle laut Sequenz-Angabe gesetzt. Dies unabh„ngig von der
+Feldnummer, die der Applikationsprogrammierer angegeben hat.
+
+Will der Applikationsprogrammierer, daá beim Bet„tigen von Ctrl-PgUp oder
+Ctrl-PgDn auf ein bestimmtes Feld der Maske gesprungen wird, so muá er den
+Ctrl-PgUp/PgDn-Key-Code abfangen, die Maskennummer selbstst„ndig ver„ndern,
+die gewnschte Feldnummer setzen und anschlieáend ¯M_Input()® mit einem
+Key-Code aufrufen, der fr den Interpreter keine Bedeutung hat (z.B. 0).
+
+¯M_Input()® darf nur aufgerufen werden, wenn die angegebene Maske vom
+¯Maskentyp 1® ist.
+
+Versorgung:
+   Eingang:
+   char *equal_part[];
+      Ist ein String-Feld, welches die Equivalenz_Angaben zu eventuell vor-
+      handenen Choise-Elementen beinhaltet. Sind laut Maskendefinition
+      Choise-Elemente vorhanden so werden die Equivalenz-Angaben zus„tzlich
+      zu den einzelen Choise-Elementen im Auswahl-Fenster angezeigt. Damit
+      ist es zum Beispiel m”glich die Equivalenz-Werte einer Codierung aus
+      einer Parameter-Datei zu lesen.
+      Fr den Fall, daá ein Feld mit der Dychoise-Anweisung belegt wurde,
+      stehen in equal_part[] die eigentlichen Auswahlm”glichkeiten aufge-
+      z„hlt. In diesem Fall gibt es also keine Equivalenz-Angaben.
+      Achtung: Ist equal_part[] kleiner dimensioniert als die anzahl der
+               Auswahlm”glichkeiten laut Maskendefinition, so erscheinen im
+               Auswahl-fenster nur so viele Elemente, wie equal_part[]
+               dimensioniert ist.
+   Ein-/Ausgang:
+   int mask_number;
+      Beinhaltet die Nummer der Maske, die aktuell angew„hlt werden soll.
+      Ist die Nummer nicht identisch mit der Nummer der aktuell ange-
+      zeigten Maske, so wird auf die angegebene Maske vor oder zurck-
+      gebl„ttert. Vor dem ersten Aufruf von ¯M_Input()® ist die aktuelle
+      Maske die erste in ¯awMaskSequenz_m® angegebene Maske.
+      Beim Rcksprung in den aufrufenden Programmteil, beinhaltet
+      mask_number die aktuell eingestellte Maske. Dieser Wert unterscheidet
+      sich insbesondere dann vom Eingangswert, wenn ein PgUp- oder PgDn-
+      Funktionscode interpretiert wurde.
+   int application_field_number;
+      Beinhaltet die Nummer des Feldes (relativ zur angegebenen Maske), das
+      aktuell angew„hlt werden soll. Die Feldnummer bezeichnet dabei die
+      Applikations-Feldnummer der jeweiligen Maske. Die Applikations-
+      Feldnummer ist identisch mit der Feldnummer des Masken-Compilers,
+      solange keine Nummer-Anweisung gegeben wurde. Wurde einem Feld ber
+      eine Nummer-Anweisung eine andere , applikationsabh„ngige, Feld-
+      nummer zugewiesen, so ist das gewnschte Feld durch diese Appli-
+      kations-Nummer anzusprechen.
+      Beim Rcksprung in den aufrufenden Programmteil beinhaltet
+      application_field_number die Nummer des Feldes, daá der Anwender
+      gerade verlassen hat. Der Rckgabewert unterscheidet sich meist vom
+      Eingangswert, auáer wenn beim Aufruf der Funktion ein Key-Code ange-
+      geben wurde, der fr den Interpreter keine Bedeutung hat. (z.B. wenn
+      eine individuelle Abprfung negativ ausfiel und der Anwender einen
+      neuen Wert fr das gleiche Feld angeben muá).
+   char *record[];
+      Ist das Feld der Datens„tze, die durch das Maskentool manipuliert
+      werden sollen. Der Offset des Feldes innerhalb des Records ist in der
+      Maskendefinition hinterlegt (siehe Offset-Anweisung im Masken-
+      Compiler).
+      Beim Rcksprung in den aufrufenden Programmteil enth„lt record[] immer
+      den vom Anwender eingegebenen Wert, auch dann, wenn er u.U. falsch ist.
+      D.h., daá der Applikationsprogrammierer den alten Feldwert selbst
+      wieder eintragen muá, sobald sich eine inidividuelle Abprfung als
+      negativ herausgestellt hat (siehe old_string).
+      In record[] muá fr jeden Datensatz ein ausreichend langer String ange-
+      geben werden, sodaá das Feld mit der gr”áten Offset-Nummer noch Platz
+      hat.
+   int key_code;
+      Beinhaltet die Funktionscodes fr den Masken-Interpreter. Bei Aufruf
+      von M_Input () wird der Funktions-Code interpretiert und die der
+      Bedeutung entsprechende Funktion ausgefhrt, ehe der Feld-Editor
+      aufgerufen wird.
+      Beim Rcksprung aus M_Input () gibt der Funktions-Code die
+      Sonderfunktions-Taste an, mit dem der Anwender den Feldeditor ver-
+      lassen hat.
+   Ausgang:
+   int record_number;
+      Gibt den Index fr den Parameter record[] an, der fr das gerade
+      verlassene Feld Gltigkeit hat. Diese Angabe kommt aus der Masken-
+      definiton (Offset-Anweisung im Masken-Compiler).
+   int record_offset;
+      Gibt den Offset des gerade verlassenen Feldes innerhalb von
+      record[record_number] an. Diese Angabe kommt aus der Maskendefinition
+      (Offset-Anweisung im Masken-Compiler).
+   char *old_string;
+      Gibt den alten Feldinhalt aus record[record_number] an, der dort vor
+      verlassen des Feldes durch den Anwender gestanden hat. Diesen Wert
+      muá der Applikationsprogrammierer wieder in den Datensatz einbauen,
+      falls eine individuelle Abprfung negativ ausf„llt, da der Inter-
+      preter auf jeden Fall den vom Anwender eingegebenen Wert im Daten-
+      satz ablegt.
+   char *new_string;
+      Gibt den neuen Feldinhalt aus record[record_number] an, der nach
+      verlassen des Feldes durch den Anwender dort eingesetzt wurde. Hat
+      der Anwender den Feldinhalt nicht ver„ndert, so ist new_string gleich
+      old_string.
+      Sowohl new_string als auch old_string geben nicht unbedingt den vom
+      Benutzer eingegebenen Wert wieder, sondern den Feldinhalt aus
+      record[record_number] der je nach maskentyp konvertiert worden sein
+      kann (siehe Packed-, Datum- und Choise-Anweisung im Masken-Compiler).
+
+
+Rckgabewert:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+WORD  Fehlerinformation OK/ERROR
+
+
+Benutzte globale Variablen (R/W):
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g   (R)
+                  - wCSInd_g   (R)           - pstrF1_g    (R)
+                  - wMausda_g  (R)           - boBeepen_g  (R)
+.ff
+REM .de \euro\demo\dmohilf1.c
+.te*/
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º                        DEKLARATIONS-DATEIEN                            º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/* #define NDEBUG 1	 1 == keine Wi_TestPrintf
+   #ifndef NDEBUG
+   #endif */
+
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <math.h>
+#include <eur_tool.h>
+
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+IMPORT COLORSET aCS_g[];
+IMPORT WORD wCSInd_g;
+IMPORT MENUSTATUS MS_g;
+IMPORT BOOL   boPrepare_g;
+IMPORT BOOL   boTestModus_g;
+IMPORT BOOL   boBeepen_g;
+IMPORT BOOL   boInM_Input_g;
+
+IMPORT PEVENT pEvent_g;
+
+IMPORT LONG	lBlockVer_g;			     /* 0==Kein Block	     */
+						     /* BLOCK	 1==&BLOCK   */
+						     /* BROWSE	 2==&BROWSE  */
+						     /* BLK_TYP2 4==mbc.exe  */
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º                      FUNKTIONS-PROTOTYPEN                              º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+STATIC WORD  i_ProcessEvent	 (PTEXTBOX, PEVENT);
+STATIC VOID  i_Prepare		 (PSTR, PTEXTBOX);
+STATIC VOID  i_BlockHandling	 (SWORD, PSTR[], PTEXTBOX[][99], WORD[][2]);
+STATIC VOID  i_PrintBlock	 (SWORD, PSTR[], PTEXTBOX[][99], WORD[][2]);
+GLOBAL WORD  i_TooBig		 (VOID);	  /* fr m_keycod.c GLOBAL */
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º                       MODULGLOBALE DATEN                               º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*MGLOBAL CHAR *event[][12] = { "EVENT_NULL",
+                              "EVENT_MOUSE_MOVE",
+                              "EVENT_L_PRESS",
+                              "EVENT_R_PRESS",
+                              "EVENT_B_PRESS",
+                              "EVENT_L_RELEASE",
+                              "EVENT_R_RELEASE",
+                              "EVENT_B_RELEASE",
+                              "EVENT_TASTE",
+                              "EVENT_ALT_PRESS",
+                              "EVENT_ALT_RELEASE",
+                              "EVENT_WAHL" };      ~~~ l”schen  */
+
+/* STATIC  BOOL boInM_Input = NEIN; */
+GLOBAL	BOOL aboInBlock_g[10] =
+  {NEIN,NEIN,NEIN,NEIN,NEIN,NEIN,NEIN,NEIN,NEIN,NEIN};	/* fr m_keycod.c GLOBAL */
+GLOBAL SWORD aswAktLine_g[10] = {0,0,0,0,0,0,0,0,0,0};	/* fr m_keycod.c GLOBAL */
+GLOBAL	WORD awHoehe_g[10]    = {0,0,0,0,0,0,0,0,0,0};	/* fr m_keycod.c GLOBAL */
+GLOBAL	WORD awMaxLine_g[10]  = {0,0,0,0,0,0,0,0,0,0};	/* fr m_keycod.c GLOBAL */
+GLOBAL	WORD awBlockLen_g[10] = {0,0,0,0,0,0,0,0,0,0};	/* fr m_keycod.c GLOBAL */
+GLOBAL	SWORD aswAktStartLine_g[10] = {0,0,0,0,0,0,0,0,0,0}; /* fr m_keycod.c GLOBAL */
+STATIC	WORD wAlteMaske=0;
+
+STATIC  BOOL aboNewMask[10] = { JA, JA, JA, JA, JA, JA, JA, JA, JA, JA };
+
+GLOBAL BOOL bo_S_PGUP_g  =NEIN; 		    /* fr m_keycod.c GLOBAL */
+GLOBAL BOOL bo_S_PGDOWN_g=NEIN; 		    /* fr m_keycod.c GLOBAL */
+
+IMPORT PWKB pWkbInfo_g;
+STATIC PSTR pstrApp_m, pstrIndexKey_m;
+STATIC BOOL boFromSelect_m=NEIN;
+
+PPSTR ppstrRecord_m;
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º                          FUNKTIONS-DEFINITION                          º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+GLOBAL
+SWORD M_Input (PWKB apWkbMask[], PSWORD pswMask,
+               PSTR apstrRecord[], PSTR apstrMaskText[][25],
+               PTEXTBOX apTextBox[][99], PSWORD pswField, PSTR pstrOldString,
+               PSTR pstrNewString, PSWORD pswKeyCode, WORD awBlocks[][2],
+               WORD awScroll[][4], WORD awRecLen[], PWORD pwAktZeile,
+               PSTR pstrApp, PSTR pstrIndexKey)
+{
+LONG lBlock=BLOCK, lBrowse=BROWSE;
+REGISTER i;					     /* Z„hlervariable	     */
+SWORD swMax;
+WORD  wKeyCode, wFirstField, wMaxField, wMaxMask,
+      wFensterZ, wFensterS, wAttri, wOff;
+
+ppstrRecord_m=apstrRecord;
+pstrApp_m=pstrApp;
+pstrIndexKey_m=pstrIndexKey;
+
+Wi_Cursor(AUS);
+M_KeyEvaluation(apWkbMask, pswKeyCode, pswMask, pswField, apTextBox,
+  apstrRecord, awRecLen, awBlocks, awScroll,
+  &wFirstField, &wMaxField, &wMaxMask,
+  &wFensterZ, &wFensterS, wAlteMaske);
+
+for(i=wMaxMask; i > *pswMask; --i)
+  if(Wi_IsAktiv(apWkbMask[i]))
+    Wi_Verstecken(apWkbMask[i]);	       /* Window verstecken	    */
+
+if( !Wi_IsAktiv(apWkbMask[*pswMask]) )	     /* Wenn Window nicht aktiv ist */
+  {
+  PPSTR ppstrTmp=apstrMaskText[*pswMask];	    /* Zeiger zurcksetzen  */
+  Wi_Aktivieren(apWkbMask[*pswMask]);		    /* Window aktivieren    */
+  if(aboNewMask[*pswMask])
+    {
+    for(i=0; *ppstrTmp != NULL;)	  /* Window-Maske ausgeben   */
+      Wi_Ss(0, i++, *ppstrTmp++);
+    aboNewMask[*pswMask] = NEIN;
+    }
+  }
+
+wMaxField=i_MaxFld(apTextBox[*pswMask]);	     /* h”hste FeldNummer    */
+if(awBlockLen_g[*pswMask] && lBlockVer_g&lBlock)
+   swMax=awBlocks[*pswMask][1]-1;		     /* frher [*pswMask][0] */
+else swMax=wMaxField;
+
+for(i=0; i <= swMax; i++)		  /* Dialog-Inhalt ausgeben */
+  {
+  PTEXTBOX pT=apTextBox[*pswMask][i];
+  if(pT==NULL) Dl_Abbruch("pT==NULL", _L, _F,
+    str("Mask(%d), Field(%d), swMax(%d)",*pswMask,i,swMax));
+
+  M_RecordToBox(pT, apstrRecord);
+  Dl_SchreibBox(pT);
+
+  if(pT->swRefCode >=0)
+    {strcpy(apTextBox[*pswMask][pT->swRefCode]->acText, pT->acText);
+    M_BoxToRecord(apstrRecord, apTextBox[*pswMask][pT->swRefCode]);}
+  }
+
+if(lBlockVer_g&lBlock)
+  {i_BlockHandling(*pswMask,apstrRecord,apTextBox,awBlocks);
+
+  if(awBlockLen_g[*pswMask])
+    i_PrintBlock(*pswMask,apstrRecord,apTextBox,awBlocks);}
+
+i_Prepare(pstrOldString, apTextBox[*pswMask][*pswField]);
+
+swMax = apTextBox[*pswMask][*pswField]->wMaxL;	       /* L„nge des Textes */
+if(apTextBox[*pswMask][*pswField]->bTyp != 0 &&
+  swMax < apTextBox[*pswMask][*pswField]->wFensterB)
+  apTextBox[*pswMask][*pswField]->wMaxL=
+  apTextBox[*pswMask][*pswField]->wFensterB;
+
+wAttri=apTextBox[*pswMask][*pswField]->wAttri;	     /* Farbe der Textbox    */
+apTextBox[*pswMask][*pswField]->wAttri= 	     /* Farbe ist wenn:      */
+  (wAttri==aCS_g[wCSInd_g].wCs_m_itb1)		     /* Inaktive TextBox 1   */
+  ? aCS_g[wCSInd_g].wCs_m_atb1			     /* dann Akt. TextBox 1  */
+  : aCS_g[wCSInd_g].wCs_m_atb2; 		     /* sondt Akt. TextBox 2 */
+
+if (Vi_GetMode() == MONOCHROM)                  /* Cursortyp je nach    */
+   Wi_SetCursorTyp(11,12);                     /* Videomodus festlegen */
+else
+   Wi_SetCursorTyp(6,7);
+Wi_Cursor(EIN);
+
+wFensterZ=apTextBox[*pswMask][*pswField]->wFensterZ;
+wOff=apTextBox[*pswMask][*pswField]->wOffset;
+if(awBlockLen_g[*pswMask] && aboInBlock_g[*pswMask])
+  {PTEXTBOX pT=apTextBox[*pswMask][*pswField];
+  pT->wFensterZ += aswAktLine_g[*pswMask] - aswAktStartLine_g[*pswMask];
+  pT->wOffset += awBlockLen_g[*pswMask] * aswAktLine_g[*pswMask];}
+
+if(!(apTextBox[*pswMask][*pswField]->pFeld->bArt & IS_ASCII))
+  apTextBox[*pswMask][*pswField]->boInsert=NEIN;
+
+while(i_LiesEingabe(*pswMask, *pswField,
+	apstrRecord, apTextBox, pstrNewString))  ;   /* Haupteingabeschleife */
+
+
+if(apTextBox[*pswMask][*pswField]->swRefCode >=0)
+  {PTEXTBOX pT=apTextBox[*pswMask][*pswField];
+  strcpy(apTextBox[*pswMask][pT->swRefCode]->acText,pT->acText);
+  M_BoxToRecord(apstrRecord, apTextBox[*pswMask][pT->swRefCode]);}
+
+Wi_Cursor(AUS);
+
+apTextBox[*pswMask][*pswField]->wMaxL = swMax;	       /* L„nge des Textes */
+/* Wi_TestPrintf(pWkbInfo_g, "\n%d", __LINE__); */
+strcpy(pstrNewString, apTextBox[*pswMask][*pswField]->acText);
+apTextBox[*pswMask][*pswField]->wAttri = wAttri;
+Dl_SchreibBox(apTextBox[*pswMask][*pswField]);	       /* Attribut wieder zurcksetzen*/
+apTextBox[*pswMask][*pswField]->wFensterZ = wFensterZ;
+apTextBox[*pswMask][*pswField]->wOffset = wOff;
+
+if(pEvent_g->wKbflags & (LEFT_SHIFT|RIGHT_SHIFT) &&  /* Shift-Taste gedrckt */
+  (lBlockVer_g & lBlock) )
+   {
+    switch(wKeyCode)
+      {
+       case T_PGUP:
+	 bo_S_PGUP_g=JA;
+	 bo_S_PGDOWN_g=NEIN;
+	 wKeyCode=NULL;
+         break;
+
+       case T_PGDN:
+	 bo_S_PGDOWN_g=JA;
+	 bo_S_PGUP_g=NEIN;
+	 wKeyCode=NULL;
+         break;
+
+       default:
+	 bo_S_PGDOWN_g=NEIN;
+	 bo_S_PGUP_g=NEIN;
+         break;
+      }
+   }
+else
+   {
+    bo_S_PGDOWN_g=NEIN;
+    bo_S_PGUP_g = NEIN;
+   }
+
+
+wAlteMaske = *pswMask;
+*pwAktZeile = aswAktLine_g[*pswMask];
+
+*pswKeyCode=wKeyCode;
+return(OK);
+} /* end M_Input () */
+
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º  Funktionsname:    i_Prepare()		      Datum: 28.10.88	   º
+  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+  º                                                                        º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+STATIC
+VOID i_Prepare(PSTR pstrOldString, PTEXTBOX pTPre)
+{
+/* Wi_TestPrintf(pWkbInfo_g, "\n%d=%s.", pTPre->wMaxL, pTPre->pstrDefault); */
+
+strcpy(pstrOldString, pTPre->acText);
+
+if(pTPre->wModus==PREPARE && boPrepare_g &&
+  *pTPre->acText=='\0' && !boFromSelect_m)
+  if(pTPre->pstrDefault)
+    memcpy(&apstrRecord[pTPre->wRecord][pTPre->wOffset],
+      pTPre->pstrDefault, pTPre->wMaxL);
+
+boFromSelect_m=NEIN;
+return;
+}
+
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º  Funktionsname:    i_BlockHandling()	      Datum: 28.10.88	   º
+  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+  º                                                                        º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+STATIC
+VOID i_BlockHandling(SWORD wMsk, PSTR apstrRecord[], PTEXTBOX apTextBox[][99],
+     WORD awBlocks[][2])
+{
+WORD wRec=apTextBox[wMsk][awBlocks[wMsk][0]]->wRecord;
+WORD wRecLen=apTextBox[wMsk][awBlocks[wMsk][0]]->wOffset +
+	  awBlockLen_g[wMsk] * awMaxLine_g[wMsk];
+if(wRecLen>19800) i_TooBig ();
+
+if(awBlockLen_g[wMsk] && awRecLen[wRec]<wRecLen)
+  {
+  PSTR pstrTmp=NULL;
+  Ut_Calloc(pstrTmp, wRecLen, CHAR);
+
+  memcpy(pstrTmp, apstrRecord[wRec], awRecLen[wRec]);
+  Ut_Free(apstrRecord[wRec]);
+  apstrRecord[wRec]=pstrTmp;
+  awRecLen[wRec]=wRecLen;
+  } /* end awRecLen[wRec] < wRecLen) */
+
+if(*pswKeyCode==T_C_D && aboInBlock_g[wMsk])
+  if(awMaxLine_g[wMsk] > 1)
+    {
+    WORD wFld=awBlocks[wMsk][0];
+    WORD wOff=apTextBox[wMsk][wFld]->wOffset;
+    WORD wBlLen=awBlockLen_g[wMsk];
+
+    PSTR pstrTmp=apstrRecord[wRec]+ wOff+ aswAktLine_g[wMsk]*wBlLen;
+    for(;pstrTmp < apstrRecord[wRec]+ awRecLen[wRec]- wBlLen;
+      pstrTmp+= wBlLen)
+      memcpy(pstrTmp, pstrTmp+wBlLen, wBlLen);
+
+    awRecLen[wRec]-= wBlLen;
+    awMaxLine_g[wMsk]--;
+
+    if(aswAktLine_g[wMsk] > awMaxLine_g[wMsk]- 1)
+      aswAktLine_g[wMsk]=awMaxLine_g[wMsk] - 1;
+
+    wRecLen=wOff+ awMaxLine_g[wMsk]*wBlLen;
+    if(wRecLen>19800) i_TooBig ();
+    }
+  else if (boBeepen_g) i_Beep();
+
+if(*pswKeyCode==T_C_N && aboInBlock_g[wMsk])
+  {
+  PSTR pstrTmp=NULL;
+  WORD wFld=awBlocks[wMsk][0];
+  WORD wOff=apTextBox[wMsk][wFld]->wOffset;
+  WORD wBlLen=awBlockLen_g[wMsk];
+
+  awMaxLine_g[wMsk]++;
+
+  wRecLen=wOff+ wBlLen*awMaxLine_g[wMsk];
+  if(wRecLen>19800) i_TooBig ();
+
+  Ut_Calloc(pstrTmp, wRecLen, CHAR);
+  memcpy(pstrTmp, apstrRecord[wRec], awRecLen[wRec]);
+  Ut_Free(apstrRecord[wRec]);
+  apstrRecord[wRec]=pstrTmp;
+  awRecLen[wRec]=wRecLen;
+
+  for(pstrTmp=apstrRecord[wRec]+ wRecLen- wBlLen;
+    pstrTmp > apstrRecord[wRec]+ wOff+ aswAktLine_g[wMsk]*wBlLen;
+    pstrTmp-= wBlLen)
+    memcpy(pstrTmp, pstrTmp-wBlLen, wBlLen);
+
+  memset(pstrTmp, '\0', wBlLen);
+  } /* end T_C_N */
+
+aswAktStartLine_g[wMsk]= aswAktLine_g[wMsk]- awHoehe_g[wMsk]+ 1;
+
+if(aswAktStartLine_g[wMsk] < 0)
+  aswAktStartLine_g[wMsk] = 0;
+
+return;
+} /* end i_BlockHandling() */
+
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º  Funktionsname:    i_PrintBlock()		      Datum: 28.10.88	   º
+  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+  º                                                                        º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+STATIC
+VOID i_PrintBlock(SWORD wMsk, PSTR apstrRecord[], PTEXTBOX apTextBox[][99],
+     WORD awBlocks[][2])
+{
+REGISTER i, j;
+WORD  wOff, wFensterZ, wAttri;
+WORD  wHoehe=awHoehe_g[wMsk];
+CHAR  acText[TB_MAX];
+SWORD swStart=aswAktStartLine_g[wMsk];
+
+for(i=swStart;i < swStart+wHoehe; i++)
+  {
+  for(j=awBlocks[wMsk][0]; j <= awBlocks[wMsk][1]; j++)
+    {PTEXTBOX pT=apTextBox[wMsk][j];
+    wFensterZ=pT->wFensterZ+ i- swStart;
+    wOff=pT->wOffset;
+    pT->wOffset+= awBlockLen_g[wMsk]* i;
+    wAttri=pT->wAttri;
+
+    if(i<awMaxLine_g[wMsk])
+      {
+      M_RecordToBox(pT, apstrRecord);
+
+      if(pT->swRefCode >=0)
+	{strcpy(apTextBox[wMsk][pT->swRefCode]->acText,pT->acText);
+	M_BoxToRecord(apstrRecord,apTextBox[wMsk][pT->swRefCode]);}
+
+      strcpy(acText, pT->acText);
+      }
+    else
+      *acText='\0';
+
+    if(!pT->wHide)
+      {
+      pT->wOffset=wOff;
+      if(strlen (acText) > pT->wFensterB)
+	acText[pT->wFensterB]='\0';
+      else strpad(acText, pT->wFensterB);
+
+      Vi_Ssa(pT->wFensterS, wFensterZ, acText, wAttri);
+      }
+    } /* end j */
+  } /* end for(i=swStart;i < swStart+wHoehe; i++) */
+
+
+for(j=awBlocks[wMsk][0]; j <= awBlocks[wMsk][1]; j++)
+  {PTEXTBOX pT=apTextBox[wMsk][j];
+  wOff=pT->wOffset;
+  pT->wOffset+= awBlockLen_g[wMsk]* aswAktLine_g[wMsk];
+  M_RecordToBox(apTextBox [wMsk][j], apstrRecord);
+  pT->wOffset=wOff;}
+
+return;
+} /* end i_PrintBlock() */
+
+
+STATIC
+WORD i_LiesEingabe(WORD wMsk, WORD wFld, PSTR apstrRecord[],
+		   PTEXTBOX apTextBox[][99], PSTR pstrNewString)
+{
+WORD wMaxL;
+TEXTBOX  TB;
+PTEXTBOX pTB=&TB;
+PTEXTBOX pT=apTextBox[wMsk][wFld];
+
+if(pT==NULL) Dl_Abbruch("pT==NULL", _L, _F,
+  str("Mask(%d), Field(%d)", wMsk, wFld));
+
+M_RecordToBox(pT, apstrRecord);
+if(pT->swRefCode >=0)
+  {strcpy(apTextBox[wMsk][pT->swRefCode]->acText, pT->acText);
+  M_BoxToRecord(apstrRecord, apTextBox[wMsk][pT->swRefCode]);}
+
+if(*pstrNewString != '\0')
+  Dl_StringToBox(pT, pstrNewString);
+
+Dl_KopierBox(pTB, pT);
+
+if(pTB->pSelect || pTB->pChoice)
+  {wMaxL=pTB->wMaxL; pTB->wMaxL=127;}
+
+i_Dl_LiesZK(pTB, pEvent_g, AKT_BUFFER);      /* Zeileneditor initial */
+wKeyCode=i_ProcessEvent(pTB, pEvent_g);     /* Anwendereingaben lesen */
+i_Dl_LiesZK(pTB, pEvent_g, AKT_TEXTBOX);     /* In TextBox schreiben  */
+
+if(pTB->pSelect||pTB->pChoice) pTB->wMaxL=wMaxL;
+
+M_Prepare(pTB, apstrRecord);			 /* z.B. Zahl berechnen. */
+
+if(*pTB->acText != '\0' || (pTB->pFeld->bArt & IS_ASCII))
+  Dl_KopierBox(pT, pTB);
+
+return(M_BoxToRecord(apstrRecord, pT));
+}
+
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      º
+  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+  º                                                                        º
+  º  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     º
+  º                    PEVENT   pEvent     Zeiger auf Event-Struktur       º
+  º                                                                        º
+  º                                                                        º
+  º  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     º
+  º                    zeigt nach Anforderung das Hilfefenster, und        º
+  º                    kehrt zur aufrufenden Funktion zurck, wenn         º
+  º                    entweder die Schaltfl„che ABBRUCH oder EINGABE      º
+  º                    bet„tigt wurde.                                     º
+  º                                                                        º
+  º  Rckgabewert:     DLG_ESC     ABBRUCH-Schaltfl„che wurde ausgew„hlt   º
+  º                    DLG_RETURN  EINGABE-Schaltfl„che wurde ausgew„hlt   º
+  º                                                                        º
+  º  Benutzte globale   - pstrReturn_g (R)                                 º
+  º  Variablen (R/W):   - pstrEsc_g    (R)                                 º
+  º                     - pstrF1_g     (R)                                 º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+STATIC
+WORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
+{
+ BYTE bErstmals = JA;
+
+    for(;;)                                           /* Eingaberoutine       */
+    {
+    boInM_Input_g=JA;
+    Mn_Eingabe(pE);
+    boInM_Input_g=NEIN; /* ~ */
+
+      switch(pE->wArt)
+        {
+            case EVENT_WAHL:
+                switch(pE->wOption)
+                {
+                    default:
+                        return (0);
+                }
+
+            case EVENT_TASTE:
+                if (pT->pChoice &&
+                    pE->wTaste != T_RIGHT &&      /* Tasten abfangen. die     */
+                    pE->wTaste != T_LEFT &&       /* zur Steuerung in der     */
+                    pE->wTaste != T_HOME &&       /* Editor-Zeile dienen      */
+                    pE->wTaste != T_END &&
+                    pE->wTaste != T_INS &&
+                    pE->wTaste != T_DEL &&
+                    pE->wTaste != T_BACKSPACE &&
+                    pE->wTaste != T_C_Y)
+                  {
+                   CHAR str1[TB_MAX], str2[TB_MAX];
+                   CHOICES *pTemp, *pLauf;
+
+                   pTemp = NULL;
+
+                   if (pE->wTaste < 256 &&
+                       pE->wTaste > 31)
+                     {
+                      if (!bErstmals)
+                        {
+                         i_Dl_LiesZK (pT, pE, AKT_TEXTBOX);
+
+                         for (pLauf=pT->pChoice;
+                              pLauf; pLauf=pLauf->pNext)
+                           {
+			   strcpy(str1, pLauf->pstrWert);
+                           upper (str1);
+
+			   strcpy(str2, pT->acText);
+                           upper (str2);
+                           if (!strcmp(str1, str2))
+                             break;
+                           }
+
+                         if (pLauf)
+                           bErstmals = JA;
+                        }
+
+                      if (bErstmals)
+                        {
+                         *pT->acText = '\0';
+                         i_Dl_LiesZK (pT, pE, AKT_BUFFER);
+                         bErstmals = NEIN;
+                        }
+
+		      if(pE->wTaste > 31)
+			i_Dl_LiesZK (pT, pE, AKT_GARNIX);
+                     }
+
+                   i_Dl_LiesZK (pT, pE, AKT_TEXTBOX);
+
+                   for (pLauf=pT->pChoice;
+                        pLauf; pLauf=pLauf->pNext)
+                     {
+		      strcpy(str1, pLauf->pstrWert);
+                      upper (str1);
+
+		      strcpy(str2, pT->acText);
+                      upper (str2);
+
+                      if (strstr(str1, str2) == str1)
+                        if (pTemp)
+                          break;
+                        else
+                          pTemp=pLauf;
+                     }
+
+                   if (pTemp && !pLauf)
+                     {
+		      strcpy(pT->acText, pTemp->pstrWert);
+                      i_Dl_LiesZK (pT, pE, AKT_BUFFER);
+                      pE->wTaste == 0;
+                      pE->wArt = EVENT_NULL;
+                     }
+                   else if (!pLauf && *pT->acText &&      /* Kommentar siehe m_binput !! */
+                            (pE->wTaste == T_RETURN ||
+                             pE->wTaste == T_ESC ||
+                             pE->wTaste == T_C_D ||
+                             pE->wTaste == T_C_N ||
+                             pE->wTaste > 255))
+                     {
+                      pE->wTaste = T_F2;
+                      *pT->acText = '\0';
+                      i_Dl_LiesZK (pT, pE, AKT_BUFFER);
+                     }
+                   else
+                     {
+                      pE->wTaste == 0;
+                      pE->wArt = EVENT_NULL;
+                     }
+                  }
+
+                switch(pE->wTaste)
+                {
+                    case T_RIGHT:                   /* Tasten abfangen. die     */
+                    case T_LEFT:                    /* zur Steuerung in der     */
+                    case T_HOME:                    /* Editor-Zeile dienen      */
+                    case T_END:
+                    case T_INS:
+                    case T_DEL:
+                    case T_BACKSPACE:
+                    case T_C_Y:
+                        bErstmals = NEIN;
+                        break;
+
+                    case T_C_D:                     /* Zeile in Maske einfgen */
+                    case T_C_N:                     /* bzw. l”schen            */
+                        return(pE->wTaste);
+
+                    case T_F1:
+                        i_Dl_LiesZK (pT, pE, AKT_TEXTBOX);
+                        M_HilfeTools(pT);
+                        pE->wArt = EVENT_NULL;
+                        Wi_Cursor (EIN);
+                        i_Dl_LiesZK (pT, pE, AKT_BUFFER);
+                        break;
+
+                    case T_A_F1:
+                        i_Dl_LiesZK (pT, pE, AKT_TEXTBOX);
+                        M_HilfeIndex (pstrApp_m, pstrIndexKey_m);
+                        pE->wArt = EVENT_NULL;
+                        Wi_Cursor (EIN);
+                        i_Dl_LiesZK (pT, pE, AKT_BUFFER);
+                        break;
+
+                    case T_F2:
+                        if (pT->pChoice)
+                          {
+			   if(M_Choice(pT))
+                             {
+                              pE->wArt = EVENT_NULL;
+                              Wi_Cursor (EIN);
+                              i_Dl_LiesZK (pT, pE, AKT_BUFFER);
+			      return (NULL);
+                             }
+                           else
+                             {
+                              pE->wArt = EVENT_NULL;
+                              Wi_Cursor (EIN);
+                              i_Dl_LiesZK (pT, pE, AKT_BUFFER);
+                             }
+                          }
+                        else if (pT->pSelect)
+                          {
+			   if(M_Select(pT))
+                             {
+                              pE->wArt = EVENT_NULL;
+                              Wi_Cursor (EIN);
+			      i_Dl_LiesZK (pT, pE, AKT_BUFFER);
+			      boFromSelect_m=JA;
+			      return (NULL);
+                             }
+                           else
+                             {
+                              pE->wArt = EVENT_NULL;
+                              Wi_Cursor (EIN);
+                              i_Dl_LiesZK (pT, pE, AKT_BUFFER);
+                             }
+                          }
+                        else
+                          return (T_F2);
+                        break;
+
+                    case T_PGUP:
+                        if (pT->pChoice && ! (pE->wKbflags &
+                                             (LEFT_SHIFT|RIGHT_SHIFT)))
+                          {
+                           CHOICES *pCHelp1, *pCHelp2;
+
+                           pCHelp1 = pT->pChoice;
+
+			   while(pCHelp1)
+			     if(strcmp(pCHelp1->pstrWert, pT->acText))
+                               {
+                                pCHelp2 = pCHelp1;
+                                pCHelp1 = pCHelp1->pNext;
+                               }
+                             else
+                               break;
+
+                           if (!pCHelp1)
+                             return (T_PGUP);
+
+                           if (pCHelp1 == pT->pChoice)
+                             while (pCHelp1)
+                               {
+                                pCHelp2 = pCHelp1;
+                                pCHelp1 = pCHelp1->pNext;
+                               }
+
+			   strcpy(pT->acText, pCHelp2->pstrWert);
+
+                           pE->wArt = EVENT_NULL;
+                           i_Dl_LiesZK (pT, pE, AKT_BUFFER);
+                          }
+                        else
+                          return (T_PGUP);
+                        break;
+
+                    case T_PGDN:
+                        if (pT->pChoice && ! (pE->wKbflags &
+                                             (LEFT_SHIFT|RIGHT_SHIFT)))
+                          {
+                           CHOICES *pCHelp1;
+
+                           pCHelp1 = pT->pChoice;
+
+                           while (pCHelp1)
+			     if (strcmp (pCHelp1->pstrWert, pT->acText))
+                                pCHelp1 = pCHelp1->pNext;
+                             else
+                               break;
+
+                           if (!pCHelp1)
+                             return (T_PGUP);
+
+                           if (pCHelp1->pNext == NULL)
+                              pCHelp1 = pT->pChoice;
+                           else
+                              pCHelp1 = pCHelp1->pNext;
+
+			   strcpy(pT->acText, pCHelp1->pstrWert);
+
+                           pE->wArt = EVENT_NULL;
+                           i_Dl_LiesZK (pT, pE, AKT_BUFFER);
+                          }
+                        else
+                          return (T_PGDN);
+                        break;
+
+                    case T_ESC:
+                        return(T_ESC);
+
+                    case T_RETURN:
+                        return(T_RETURN);
+       
+                    default:
+                        if (pE->wTaste > 255)
+                            return(pE->wTaste);
+                        else if (bErstmals && (!(pT->pFeld->bArt & IS_ASCII))
+                                 && !pT->pSelect)
+                            {
+                             EVENT EV;
+                             PEVENT pEV = &EV;
+
+                             bErstmals = NEIN;
+                             *pT->acText = '\0';
+                             i_Dl_LiesZK (pT, pEV, AKT_BUFFER);
+                            }
+                }
+
+/*
+            case EVENT_L_PRESS:
+                if (pE->wZeile == ZEI+HOE-2)
+                {
+                    if (pE->wSpalte > SPA+2 &&         RETURN-Schaltfl„che
+                        pE->wSpalte < SPA+3+strlen(pstrReturn_g))
+                        return(T_RETURN);
+
+                    if (pE->wSpalte > SPA+17 &&        ESC-Schaltfl„che
+                        pE->wSpalte < SPA+18+strlen(pstrEsc_g))
+                        return(T_ESC);
+
+                    if (pE->wSpalte > SPA+30 &&        Hilfe-Schaltfl„che
+                        pE->wSpalte < SPA+31+strlen(pstrF1_g))
+                     {
+                        M_HilfeTools(pT);
+                        pE->wArt = EVENT_NULL;
+                     }
+
+                } /* end of if (pE->wZeile == ZEI+HOE-2) */
+        } /* end of switch(pE->wEventart) */
+
+    i_Dl_LiesZK(pT, pE,AKT_GARNIX);
+    } /* end of for */
+
+return (-1);
+} /* end i_ProcessEvent() */
+
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º  Funktionsname:    M_Reset_ScrollLine             Datum: 25.08.89      º
+  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+  º                                                                        º
+  º  Parameter:        keine                                               º
+  º                                                                        º
+  º                                                                        º
+  º  Beschreibung:     Die Funktion setzt die internen Variablen der       º
+  º                    Funktion M_Input zurck, die zur Behandlung         º
+  º                    von scrollbaren Masken ben”tigt werden.             º
+  º                    Sie muá von der Applikation immer dann              º
+  º                    aufgerufen werden, wenn sich der am Schirm          º
+  º                    angezeigte Datensatz ge„ndert hat, da dieser        º
+  º                    ja nicht unbedingt die gleiche L„nge wie            º
+  º                    der zuvor bearbeitete haben muá.                    º
+  º                                                                        º
+  º  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               º
+  º                                                                        º
+  º  Benutzte globale                                                      º
+  º  Variablen (R/W):                                                      º
+  º                                                                        º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+GLOBAL
+VOID M_Reset_ScrollLine(WORD wFileHandler, PPSTR ppstrRecord,
+                   WORD awInitRecLen[], WORD awRecLength[], WORD awFileMode[])
+{
+REGISTER i;
+
+for(i=0; i < wFileHandler; i++) 		     /* Fr alle Dateien     */
+  if(awFileMode[i]==REC_F || awFileMode[i]==WORK_F )
+    {
+    if( *(ppstrRecord+i) )
+      Ut_Free( *(ppstrRecord+i) );
+
+    Ut_Calloc(*(ppstrRecord+i), awInitRecLen[i], CHAR);
+    awRecLength[i]=awInitRecLen[i];
+
+    /* Wi_TestPrintf(pWkbInfo_g, "\nawFileMode[%d](%d), "
+      "awRecLength[%d](%d).", i, awFileMode[i], i, awRecLength[i]); */
+    }
+
+
+for(i=0; i < 10; i++)				     /* Fr alle Masken      */
+  {
+  awMaxLine_g[i]=0;
+  aswAktLine_g[i]=0;
+  aswAktStartLine_g[i]=0;
+  aboInBlock_g[i]=NEIN;
+  }
+
+bo_S_PGUP_g=NEIN;
+bo_S_PGDOWN_g=NEIN;
+return;
+} /* end M_Reset_ScrollLine() */
+
+
+GLOBAL
+VOID M_Reset_Masks(VOID)
+{
+REGISTER i;
+
+for (i=0; i < 10; i++)
+   aboNewMask[i] = JA;
+
+return;
+} /* M_Reset_Masks() */
+
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º i_TooBig ()                                                             º
+  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
+  º                                                                         º
+  º                                                                         º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+GLOBAL
+WORD i_TooBig(VOID)
+{
+PSTR apstrMessage[25];
+if(boBeepen_g) i_Beep();
+
+Ut_SchreibArray (apstrMessage,
+    "   Sie haben die maximale Zeilenl„nge ",
+    "   berschritten! ",
+    "    ",
+    "   Bitte l”schen Sie die letzte Zeile.",
+    "   Speichern Sie danach den Datensatz ",
+    "   mit der [ESC]-Taste ab.",  NULL);
+
+Dl_Info(apstrMessage, DLG_KRITISCH);
+Ut_LoeschArray (apstrMessage);
+return(OK);
+} /* end i_TooBig() */
+
+
+
+  /*Wi_TestPrintf(pWkbInfo_g, "\napTextBox[%d][%d]-%s",
+    *pswMask, i, pT->strDatenfeld); */
+
+
+/* Wi_TestPrintf(pWkbInfo_g,"\n%s¯%s.", pTB->strDatenfeld, pTB->acText); */
+
+/*boTestModus_g=JA;*/
+/*boTestModus_g=NEIN;*/
+/*Wi_TestPrintf(pWkbInfo_g, "\nMsk(%d), Fld(%d)",  *pswMsk, *pswFld);*/
+
+/* Wi_TestPrintf(pWkbInfo_g, "\n%d", __LINE__); */
+
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º  Funktionsname:    i_PrintBrowse()		      Datum: 28.10.88	   º
+  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+  º                                                                        º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+STATIC
+VOID i_PrintBrowse(SWORD wMsk, PSTR apstrRecord[], PTEXTBOX apTextBox[][99],
+     WORD awBlocks[][2])
+{
+REGISTER i, j;
+WORD  wFensterZ, wAttri;
+WORD  wHoehe=awHoehe_g[wMsk];
+CHAR  acText[TB_MAX];
+SWORD swStart=aswAktStartLine_g[wMsk];
+
+for(i=swStart;i < swStart+wHoehe; i++)
+  {
+  for(j=awBlocks[wMsk][0]; j <= awBlocks[wMsk][1]; j++)
+    {PTEXTBOX pT=apTextBox[wMsk][j];
+    wFensterZ=pT->wFensterZ+ i- swStart;
+    wAttri=pT->wAttri;
+
+    /* if(i<awMaxLine_g[wMsk]) */
+    if(i<5)
+      {
+      /* read_next */
+      strcpy(acText, pT->acText);
+      }
+    else
+      *acText='\0';
+
+    if(!pT->wHide)
+      {
+      if(strlen (acText) > pT->wFensterB)
+	acText[pT->wFensterB]='\0';
+      else strpad(acText, pT->wFensterB);
+
+      Vi_Ssa(pT->wFensterS, wFensterZ, acText, wAttri);
+      }
+    } /* end j */
+  } /* end for(i=swStart;i < swStart+wHoehe; i++) */
+
+return;
+} /* end i_PrintBrowse() */

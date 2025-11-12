@@ -1,0 +1,45 @@
+
+
+ 1 euroSOFT (C) 1989    euroSOFT-TOOLbox / Bedienergerechte Menüs   1-[pic] 
+
+
+2 1.1 Bedienergerechte Menüs
+
+Bei der Software-Erstellung hat vor allem das Gebiet der Egonomie in den
+letzten Jahren einen riesigen Aufschwung erlebt. Erinnern wir uns, was in
+puncto Programm-Anwendung noch Mitte der 80er Jahre gang und gäbe war:
+Nach dem Programmstart erschien auf dem Bildschirm ein kleines Sternchen
+oder ein Pfeil - sonst nichts. Noch nicht einmal ein Hinweis, um was für
+ein Programm es sich da überhaupt handelt, war ohne dedruckte Information
+zu erkenne. Der Einsatz eines Programmes erforderte vom Anwender of
+fundierte Programmierkenntnisse 8Beispiel dBASE).
+Heut hingegen kann kein Programm mehr gegen die Konkurrenz bestehen,
+welches sich nicht selbst erklärt, eine umfassende Hilfsfunktion und eine
+Menüstruktur aufweist, die sicher durch das Programm führt.
+Wie aber sieht ein optimales Menü aus? Vordergründig scheint diese Frage
+trivial; daß sie aber bis heute noch nicht eindeutig beantwordet ist, zeigt
+ein Blick in die Praxis: es herscht ein bundes Durcheinander.
+Die einen schwören auf Kommandosprache, die anderen auf Pop-up-Menüs, hier
+finden wir Piktogramme, die per Maus anzuklicken sind, da gibt es
+Bildschirme, bei denen mit den Finger der gewünschte Punkt ausgewählt
+werden kann. Fast jeder Softwareanbieter hat da seine eigene Vorstellung
+von optimaler Benutzerführung.
+
+┌───────────────────┐
+│                   │
+│                   │
+│                   │
+├───────────────────┤
+│                   │
+│                   │
+│                   │
+│                   │
+│                   │
+│                   │
+│                   │
+│                   │
+├───────────────────┤
+│                   │
+│                   │
+└───────────────────┘
+

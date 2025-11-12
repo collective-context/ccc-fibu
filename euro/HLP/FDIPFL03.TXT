@@ -1,0 +1,18 @@
+/*.ta,F02,III. euroSOFT-PROGRAMMbeschreibung / 1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE FD-Frhstcks-Dienst                                               บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+                       S T A M M D A T E N   -   P R O G R A M M E
+                       อออออออออออออออออออออออออออออออออออออออออออ
+
+Anlegen, ndern Frhstcks-Bestellungs-Karteikarte
+ออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+.da (EURODATA,FD1100),1, Frhstcks-Bestellungen.
+.ma (\euro\mask\FDM210),1,Anlegen Frhstcks-Bestellungen.
+.hd (FD,1100),FD,kund-be.
+
+.te*/
+
+

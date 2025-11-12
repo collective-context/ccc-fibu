@@ -1,0 +1,155 @@
+
+
+
+
+    ù
+      von Artikel-Nummer : ïïïïïïïïïïïïïïïïïïïïï
+      bis Artikel-Nummer : ïïïïïïïïïïïïïïïïïïïïï               Kopien: ##
+      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+      von Lieferanten-Nr. : ïïïïïïïïïïïïïïïïïïïïï
+      bis Lieferanten-Nr. : ïïïïïïïïïïïïïïïïïïïïï
+      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+      zu druckender Preis : @@@@@@@@@@@@@@@@@@@@@@
+      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+      Anzahl Etik. minim. : ##    Anzahl Bahnen       : @@@@@@@@
+      Anzahl Etik. maxim. : ##    Breite Bahn         : ## Schriftzeichen
+                                  H”he Bahn           : ## Zeilen
+    ù                                                                      ù
+
+^ ^
+``.``.``  ^ ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^
+``.```.```,|| ^ ^ ^ ^
+^ ^
+
+>>Mask:   AUM4142
+>>Prog.:  ST4100.C
+>>Update: 01.06.91
+
+&TITEL    = "ST  DRUCK Artikel-Etiketten 1/1"
+&FRAME    = 0, 0, 0, 0, "ÄArtikel-Etiketten", 2
+>>&SEQUENZ= 00,01,11,12,13,18,20,19,21,22
+
+&MASKHELP = STHLP10, artetik
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1300
+&DRU_DATEI  (1)  = MASK, D.ST4140
+&PARA_READ  (2)  = MASK, L.SYP_01
+
+>>von Artikel-Nummer
+  &HELPTEXT (0)  = STHLP10, 414, 0
+  &DATA     (+-) = 1, _V_ARTNR
+
+>>bis Artikel-Nummer
+  &HELPTEXT (+)  = STHLP10, 414, 1
+  &DATA     (+-) = 1, _B_ARTNR
+
+>>Kopien
+  &HELPTEXT (+)  = SYHLP10, 402, 04
+  &DATA     (+-) = 1, _KOPIEN
+  &DEFAULT  (+-) = "1"
+
+>> von Lieferanten-Nummer
+  &HELPTEXT (+)  = STHLP10, 414, 4
+  &DATA     (+-) = 1, _V_LIEFNR
+
+>> bis Lieferanten-Nummer
+  &HELPTEXT (+)  = STHLP10, 414, 5
+  &DATA     (+-) = 1, _B_LIEFNR
+
+>>zu druckender Art.-Preis
+  &HELPTEXT (+)  = STHLP10, 414, 10
+  &DATA     (+-) = 1, _ART_PREIS
+  &DEFAULT  (+-) = "1"
+  &CHOICE   (+-) = "Aritkel-Preis",\
+                   "Art.-Preis 1",1,  "Art.-Preis 2",2,\
+                   "Art.-Preis 3",3,  "Art.-Preis 4",4,\
+                   "Art.-Preis 5",5
+
+>>Anzahl Etiketten min.
+  &HELPTEXT (+)  = STHLP10, 414, 11
+  &DATA     (+-) = 1, _ANZ_MIN
+  &DEFAULT  (+-) = "1"
+
+>>Anzahl Bahnen
+  &HELPTEXT (+)  = STHLP10, 414, 12
+  &DATA     (+-) = 1, _BAHNEN
+  &DEFAULT  (+-) = "1"
+  &CHOICE   (+-) = "Anzahl der Bahnen"\
+                 "1 Bahn",1,  "2 Bahnen",2,  "3 Bahnen",3,  "4 Bahnen",4
+
+>>Anzahl Etiketten max.
+  &HELPTEXT (+)  = STHLP10, 414, 13
+  &DATA     (+-) = 1, _ANZ_MAX
+  &DEFAULT  (+-) = "1"
+
+>>Breite der Bahn
+  &HELPTEXT (+)  = STHLP10, 414, 14
+  &DATA     (+-) = 1, _BREITE
+  &DEFAULT  (+-) = "32"
+
+>>H”he der Bahn
+  &HELPTEXT (+)  = STHLP10, 414, 14
+  &DATA     (+-) = 1, _H™HE
+  &DEFAULT  (+-) = "4"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REC_KEY    (+)                   >>Artikel-Nummer
+&REC_MATCH  (+-)  = "Artikel-Nummer  ", 0, ARTNR
+&ADD_MATCH  (+-) = "Artikel-Bezeichnung  ", 0, MATCH_CODE
+  &DATA_H   (+-) = 0, ARTNR
+
+&REC_KEY    (+)                   >>Artikel-Bezeichnung
+  &DATA_H   (+-) = 0, MATCH_CODE
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
+  &DATA_H   (+)  = 1, _PROBE      >>Probedruck
+  &DEFAULT  (+-) = "j"
+ 
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 2, TXT_VKP_01  >>Text zu Verkaufs-Preis 1
+  &DATA_H   (+)  = 0, VKPR1       >>Netto   Verkaufs-Preis 1
+  &DATA_H   (+)  = 2, TXT_VKP_02  >>Text zu Verkaufs-Preis 2
+  &DATA_H   (+)  = 0, VKPR2       >>Netto   Verkaufs-Preis 2
+  &DATA_H   (+)  = 2, TXT_VKP_03  >>Text zu Verkaufs-Preis 3
+  &DATA_H   (+)  = 0, VKPR3       >>Netto   Verkaufs-Preis 3
+
+  &DATA_H   (+)  = 2, TXT_VKP_04  >>Text zu Verkaufs-Preis 4
+  &DATA_H   (+)  = 0, VKPR4       >>Netto   Verkaufs-Preis 4
+  &DATA_H   (+)  = 2, TXT_VKP_05  >>Text zu Verkaufs-Preis 5
+  &DATA_H   (+)  = 0, VKPR5       >>Netto   Verkaufs-Preis 6
+  &DATA_H   (+)  = 0, LIEFNR      >>Lieferantennummer
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _PREIS      >>zu druckender Preis
+  &DATA_H   (+)  = 1, _FELD_1
+  &DATA_H   (+)  = 1, _FELD_2
+  &DATA_H   (+)  = 0, LETZLIEFAM
+  &DATA_H   (+)  = 1, _DATUM_LIE
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+>>von Seite
+  &HELPTEXT (+)  = STHLP10, 413, 9
+  &DATA_H   (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = STHLP10, 413, 10
+  &DATA_H   (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+

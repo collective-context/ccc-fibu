@@ -1,0 +1,121 @@
+
+
+
+
+  ù
+   Kunden-Nr: K^^^^^^^^^^^^^^^^^^^^
+   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   ³Konto-Nr: K^^^^^^^^ Konto-Bezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^³
+   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+    OP-Kennzeichen   : @@@@@@@@@@@@@@@@@@@    Fibu-Saldo  : ###.###.##›,››
+    W„hrung          : @@@@                   MwSt.-Code  : @@@@@@@@@@
+    Auslandskunde    : ^^^^
+
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+    Zahlungskondition: @@@@@@@@@              Kredit-Limit: ###.###.##›,››
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+^ ^ ^ ^
+    Bankleitzahl     : @@@@@@@@               Bankkonto-Nr: @@@@@@@@@@@@@@
+    Postscheck-Kto   : @@@@@@@@@@@@@@         Postsch.-Amt: @@@@@
+  ù                                                                        ù
+
+
+>>Mask:   FIM111
+>>Prog.:  FI1100.C
+>>Update: 25.07.91
+
+&TITEL    = "FI  STAMM Kunden-Daten"
+&FRAME    = 0, 0, 0, 0, "Kunden-Daten", 2
+>>SEQUENZ =
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1100
+&DATEI      (1)  = MASK, D.ST1110
+&DATEI      (2)  = MASK, D.FI1110
+&PARA_READ  (3)  = MASK, L.SYP_01
+
+>>Kunden-Nummer (S)
+  &DATA     (0) = 0, KUNDE
+
+>>Kunden-Nummer (S)
+  &DATA     (+) = 1, FI_KU_KTO
+
+>>Match-Code Kurzbezeichnung (S)
+  &DATA     (+) = 0, MATCH_CODE
+
+>>OP-Kennzeichen
+  &HELPTEXT (+)  = FIHLP10, 111, 4
+  &DATA     (+-) = 2, OP_KENNZEI
+  &DEFAULT  (+-) = "1"
+  &CHOICE   (+-) = "OP Kennzeichen", "ohne offene Posten",0, \
+                   "mit Mahnung",1, "OP's ohne Mahnung",2
+
+>>(Schatten-)Saldo
+  &HELPTEXT (+) = FIHLP10, 111, 10
+  &DATA     (+-) = 2, SALDO
+
+>>W„hrung (aus der Datei SYP_01, Dychoice-Feld)
+  &HELPTEXT (+)  = FIHLP10, 111, 1
+  &DEFAULT  (+-) = "0"
+  &DATA     (+-) = 2, WŽHRUNG
+
+>>MWST-Kennzeichen
+  &HELPTEXT (+)  = FIHLP10, 111, 2
+  &DATA     (+-) = 1, MWST
+  &DEFAULT  (+-) = "m"
+  &CHOICE   (+-) = "MwSt. Kennzeichen",\
+                   "ohne MwSt",o,   "plus MwSt",m,   "incl. MwSt",i
+
+>>Auslandskunde
+  &HELPTEXT (+)  = FIHLP10, 111, 3
+  &DATA     (+-) = 2, AUSLANDSKU
+  &DEFAULT  (+-) = "n"
+  &CHOICE   (+-) = "Auslandskunde",\
+                   "nein",n,   "ja",j
+
+>>Zahlungskonditionen TT%%TTT
+>>** Eventuell šberprfung auf Zul„ssigkeit **
+  &HELPTEXT (+)  = FIHLP10, 111, 5
+  &DATA     (+-) = 2, KONDITION
+  &DEFAULT  (+-) = "05-20-010"
+  &MODUS    (+-) = OVERWRITE
+
+>>Kreditlimit
+  &HELPTEXT (+)  = FIHLP10, 111, 6
+  &DATA     (+-) = 1, KREDIT
+  &DEFAULT  (+-) = "10000"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder:
+  &DATA_H   (+)  = 2, KU_KONTO     >>Konto-Nummer  Datei FI1110
+  &DATA_H   (+)  = 2, FI_KUNDE     >>Kunden-Nummer Datei FI1110
+  &DATA_H   (+)  = 2, KURZ_BEZ     >>Matchcode     Datei FI1110
+
+>>Mandanten-Nummer (Dummy Feld)
+  &DATA_H   (+)  = 3, FRWŽ_BE_00   >>Fremdw„hrung (Dummy Feld)
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>Bankleitzahl
+>>** Eventuell Test, ob im Bankenstamm angelegt **
+  &HELPTEXT (+)  = FIHLP10, 111, 7
+  &DATA     (+-) = 2, BANKLEIT
+
+>>Bank-Kto.-Nr.
+  &HELPTEXT (+)  = FIHLP10, 111, 8
+  &DATA     (+-) = 2, BKONTO_NR
+
+>>Postscheck-Kto.-Nr.
+  &HELPTEXT (+)  = FIHLP10, 111, 9
+  &DATA     (+-) = 2, POSTSCHECK
+
+>>Postscheck-Amt
+  &HELPTEXT (+)  = FIHLP10, 111, 10
+  &DATA     (+-) = 2, POSTAMT
+
+

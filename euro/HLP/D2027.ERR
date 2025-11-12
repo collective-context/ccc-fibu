@@ -1,0 +1,22 @@
+
+  ³      Command-line error D2027
+  ³
+  ³      could not execute 'component'
+  ³
+  ³      The CL driver was unable to execute one of the compiler components
+  ³      or the linker, possibly for one of the following reasons:
+  ³
+  ³         þ There is not enough memory to load the component.
+  ³
+  ³         þ The given component is for the wrong operating system.
+  ³
+  ³         þ The given component is corrupted.
+  ³
+  ³         þ An option was specified incorrectly. For example, the
+  ³           following command causes this error, as CL tries to
+  ³           execute myfile.c:
+  ³
+  ³                cl /B1 file1.c                                                    
+  ³                                     --
+
+

@@ -1,0 +1,186 @@
+
+
+
+ ù
+
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Soll      Beleg      Beleg     Haben                         U-Art   U-Satz
+  Konto     Nummer     Datum     Konto                Betrag       Ust-Betrag
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  ïïïïïïï ^ @@@@@@@@@@ ##.##.##  ïïïïïïïïï     ##.###.##›,››   @@@@  @@@@@@@@
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ##.###.##›,››
+  ^ ^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
+  ``.``.`` ^ ^ ^ ^ ^ ^ ^ ^ ^   ^ ^     B-Text: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+
+
+
+
+ ù                                                                            ù
+
+>>Mask:   FIM210
+>>Prog.:  FI1500.C
+>>Update: 10.06.91
+
+&TITEL = "FI-Erfassen Buchungen"
+&FRAME    = 0, 0, 0, 0, "ÄErfassen Buchungen", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, buch-er
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI2100
+&REF_DATEI  (1)  = MASK, D.ST1300
+&REF_DATEI  (2)  = MASK, D.FI1310
+&REF_DATEI  (3)  = MASK, D.FI1110
+&REF_DATEI  (4)  = MASK, D.FI1210
+&PARA_READ  (5)  = MASK, L.SYP_01
+&REF_DATEI  (6)  = MASK, L.SYP_02
+
+>>&SEQUENZ = 01,02,03,04,05,06,07,10,31
+
+>>Soll-Konto
+  &HELPTEXT (0)  = FIHLP10, 210, 0
+  &DATA     (+-) = 0, :SOL_KONTO
+
+>>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>Erfassungsnummer
+&REC_KEY    (+)
+  &DATA_H   (+-) = 0, :SATZ_NR
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>Beleg-Nummer
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Beleg-Nummer", 0, :BELEG_NR
+&ADD_MATCH  (+-) = "Datum   ", 0, :BELEG_DAT
+&ADD_MATCH  (+-) = "Buchungstext               ", 0, :BUCH_TEXT
+&ADD_MATCH  (+-) = "Bu-Datum", 0, :BUCH_DAT
+  &HELPTEXT (+-) = FIHLP10, 210, 1
+  &DATA     (+-) = 0, :BELEG_NR
+
+>>Beleg-Datum
+&REC_KEY    (+)
+>>REC_MATCH (+-) = "Datum   ", 0, :BELEG_DAT
+>>ADD_MATCH (+-) = "Beleg-Nummer", 0, :BELEG_NR
+>>ADD_MATCH (+-) = "Buchungstext               ", 0, :BUCH_TEXT
+>>ADD_MATCH (+-) = "Bu-Datum", 0, :BUCH_DAT
+  &HELPTEXT (+-) = FIHLP10, 210, 2
+  &DATA     (+-) = 0, :BELEG_DAT
+
+>>Haben Konto
+  &HELPTEXT (+)  = FIHLP10, 210, 3
+  &DATA     (+-) = 0, :HAB_KONTO
+
+>>Betrag
+  &HELPTEXT (+)  = FIHLP10, 210, 4
+  &DATA     (+-) = 0, :BETRAG_BR
+
+>>Umsatzsteuer-Art
+  &HELPTEXT (+)  = FIHLP10, 210, 5
+  &DATA     (+-) = 0, :UST_ART
+>>&CHOICE   (+-) = "USt-Art","VSt","v","MwSt","m"
+  &CHOICE   (+-) = "USt-Art","V","v","M","m"
+
+>>Umsatzsteuer-Satz  (0/1-8)
+  &HELPTEXT (+)  = FIHLP10, 210, 6
+  &DATA     (+-) = 0, :UST_SATZ
+
+>>Bezeichnung-Soll-Konto (aus Referenz-Datei)
+  &DATA     (+)  = 0, :SOLL_TEXT
+
+>>Bezeichnung-Haben-Konto (aus Referenz-Datei)
+  &DATA     (+)  = 0, :HAB_TEXT
+
+>>UST-Betrag
+  &HELPTEXT (+)  = FIHLP10, 210, 7
+  &DATA     (+-) = 0, :UST_BETR
+
+>>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>UST-Kennzeichen  (0/1-8)
+  &DATA_H   (+)  = 2, UST_KZ
+
+>>Mandanten-Nummer
+&REF_KEY    (+)
+  &DATA_H   (+-) = 5, MAND_01
+
+>>Steuers„tze
+  &DATA_H   (+)  = 5, UST_1
+  &DATA_H   (+)  = 5, UST_2
+  &DATA_H   (+)  = 5, UST_3
+  &DATA_H   (+)  = 5, UST_4
+  &DATA_H   (+)  = 5, UST_5
+  &DATA_H   (+)  = 5, UST_6
+  &DATA_H   (+)  = 5, UST_7
+  &DATA_H   (+)  = 5, UST_8
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>Buchungsdatum
+  &DATA_H   (+)  = 0, :BUCH_DAT
+
+>>Buchungsart
+  &DATA_H   (+)  = 0, :BUCH_ART
+
+>>Kunden Konto
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Bezeichnung                   ", 3, KURZ_BEZ
+&ADD_MATCH  (+-) = "Kunden-Nummer      ", 3, FI_KUNDE
+&ADD_MATCH  (+-) = "Konto-Nr", 3, KU_KONTO
+  &DATA_H   (+-) = 3, FI_KUNDE
+
+>>Kunden Bezeichnung
+&REF_KEY    (+)
+  &DATA_H   (+-) = 3, KURZ_BEZ
+
+>>Kunden Nummer
+  &DATA_H    (+)  = 3, KU_KONTO
+
+>>Lieferanten Konto
+&REF_KEY     (+)
+&REF_MATCH   (+-) = "Bezeichnung                   ", 4, KURZ_BEZ
+&ADD_MATCH   (+-) = "Lieferanten-Nummer ", 4, FI_LIEFER
+&ADD_MATCH   (+-) = "Konto-Nr", 4, LI_KONTO
+  &DATA_H    (+-) = 4, FI_LIEFER
+
+>>Lieferanten Bezeichnung
+&REF_KEY     (+)
+  &DATA_H    (+-) = 4, KURZ_BEZ
+
+>>Lieferanten Nummer
+  &DATA_H    (+)  = 4, LI_KONTO
+
+>>Sachkonten Konto
+&REF_KEY     (+)
+&REF_MATCH   (+-) = "Konto-Nummer", 2, KONTONR
+&ADD_MATCH   (+-) = "Konten-Bezeichnung            ", 2, KONTO_BEZ
+  &DATA_H    (+-) = 2, KONTONR
+
+>>Sachkonten Bezeichnung
+&REF_KEY     (+)
+  &DATA_H    (+-) = 2, KONTO_BEZ
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+) = 6, MAND_02
+  &DATA_H   (+) = 6, SALDO_VOR
+
+>>Buchungs-Text
+  &HELPTEXT (+) = FIHLP10, 210, 8
+  &DATA     (+-) = 0, :BUCH_TEXT
+
+>>                                    OP-Nr : @@@@@@@@@@@@    ZKD: @@@@@@@@@
+>>OP-Nummer
+>>HELPTEXT (+) = FIHLP10, 210, 9
+>>DATA     (+-) = 0, :OP_NUMMER
+
+>>Zahlungskonditionen
+>>HELPTEXT (+) = FIHLP10, 210, 10
+>>DATA     (+-) = 0, :ZAHL_KO
+
+

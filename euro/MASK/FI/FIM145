@@ -1,0 +1,237 @@
+
+
+
+ ù                                                                            ù
+   Konto: S@@@@@@@@  Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                               ^^^^               ^^^^               ^^^^
+       Vortrag  :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+       J„nner   :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+       Februar  :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+       M„rz     :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+       April    :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+       Mai      :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+       Juni     :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+       Juli     :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+       August   :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+       September:    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+       Oktober  :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+       November :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+       Dezember :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||
+      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ù     Summen   :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||     ù
+
+>>Mask:   FIM131
+>>Prog.:  FI1100.C
+>>Update: 25.07.91
+
+
+&TITEL    = "FI  STAMM Vorjahressalden Sachkonto"
+&FRAME    = 0, 0, 0, 0, "ÄSalden Sachkonto incl. Vorjahre", 2
+>>SEQUENZ =
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI1310
+&DRU_DATEI  (1)  = MASK, D.FI4500
+&DATEI      (2)  = MASK, V.FI1310
+&DATEI      (3)  = MASK, 2.FI1310
+
+>>Kunden-Nummer (S)
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Konto-Nummer", 0, KONTONR
+&ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 0, KONTO_BEZ
+  &HELPTEXT (+-) = FIHLP10, 130, 0
+  &DATA     (+-) = 0, KONTONR
+
+>>Konten-Bezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Konten-Bezeichnung            ", 0, KONTO_BEZ
+&ADD_MATCH  (+-) = "Konto-Nummer", 0, KONTONR
+  &HELPTEXT (+-) = FIHLP10, 130, 1
+  &DATA     (+-) = 0, KONTO_BEZ
+  &MODUS    (+-) = PREPARE
+
+>>(Schatten-) Saldo
+>>&HELPTEXT (+)  = FIHLP10, 112, 0
+>>&DATA     (+-) = 0, SALDO
+
+  &DATA     (+)  = 1, JAHR_3
+  &DATA     (+)  = 1, JAHR_2
+  &DATA     (+)  = 1, JAHR_0
+
+>>Saldovortrag
+  &HELPTEXT (+) = FIHLP10, 112, 1
+  &DATA     (+-) = 3, VOR_SALDO
+
+>>Saldovortrag
+  &HELPTEXT (+) = FIHLP10, 112, 1
+  &DATA     (+-) = 2, VOR_SALDO
+
+>>Saldovortrag
+  &HELPTEXT (+) = FIHLP10, 112, 1
+  &DATA     (+-) = 0, VOR_SALDO
+
+>>SALDO J„nner
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_01
+
+>>SALDO J„nner
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_01
+
+>>SALDO J„nner
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_01
+
+>>SALDO Februar
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_02
+
+>>SALDO Februar
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_02
+
+>>SALDO Februar
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_02
+
+>>SALDO M„rz
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_03
+
+>>SALDO M„rz
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_03
+
+>>SALDO M„rz
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_03
+
+>>SALDO April
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_04
+
+>>SALDO April
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_04
+
+>>SALDO April
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_04
+
+>>SALDO Mai
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_05
+
+>>SALDO Mai
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_05
+
+>>SALDO Mai
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_05
+
+>>SALDO Juni
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_06
+
+>>SALDO Juni
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_06
+
+>>SALDO Juni
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_06
+
+>>SALDO Juli
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_07
+
+>>SALDO Juli
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_07
+
+>>SALDO Juli
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_07
+
+>>SALDO August
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_08
+
+>>SALDO August
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_08
+
+>>SALDO August
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_08
+
+>>SALDO September
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_09
+
+>>SALDO September
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_09
+
+>>SALDO September
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_09
+
+>>SALDO Oktober
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_10
+
+>>SALDO Oktober
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_10
+
+>>SALDO Oktober
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_10
+
+>>SALDO November
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_11
+
+>>SALDO November
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_11
+
+>>SALDO November
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_11
+
+>>SALDO Dezember
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_3_12
+
+>>SALDO Dezember
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_2_12
+
+>>SALDO Dezember
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SALDO_0_12
+
+>>Aktueller Saldo auf Konto
+  &HELPTEXT (+) = FIHLP10, 112, 4
+  &DATA     (+-) = 1, JHR_SALDO3
+
+>>Aktueller Saldo auf Konto
+  &HELPTEXT (+) = FIHLP10, 112, 4
+  &DATA     (+-) = 1, JHR_SALDO2
+
+>>Aktueller Saldo auf Konto
+  &HELPTEXT (+) = FIHLP10, 112, 4
+  &DATA     (+-) = 1, JHR_SALDO0
+
+>> ù     Summen   :    ```.```.``|,||     ```.```.``|,||     ```.```.``|,||     ù
+
+

@@ -1,0 +1,362 @@
+/*.ta Dl_HilfeTools()
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º  Dl_HilfeTools()							       º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+šberblick:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+#include <eur_dlg.h>
+VOID Dl_HilfeTools(wDialog);
+
+Parameter:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+WORD  wDialog	 Konstante fr Kennzahl des Dialogfeldes, fr fr das die
+		 Hilfe ausgegeben werden soll:
+
+		 - FARBPALETTE	Hilfe fr Funktion Dl_FarbPalette()
+		 - DOSSHELL	Hilfe fr Funktion Ut_DosShell()
+		 - SPEICHERN	Hilfe fr Funktion Dl_SpeichernUnter()
+		 - LADEN	Hilfe fr Funktion Dl_Laden()
+		 - WARNTON	Hilfe fr Funktion Dl_Warnton()
+		 - MAUSTEMPO	Hilfe fr Funktion Dl_MausTempo
+		 - DLGINDEX	Hilfe Dl_HilfeIndex()
+
+Beschreibung:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Mit dieser Funktuion haben Sie die M”glichkeit, von einer beliebigen Stelle
+Ihres Programms aus die Hilfstext der Toolbox-Dialogfunktionen anzeigen zu
+lassen. Dies ist beispielweise sinnvoll, wenn Sie fr Ihr Programm die Funktion
+zur Bearbeitung von Hilfe-Anforderung aus einem Hilfeindex erstellen.
+
+Alle Hilfstexte fr diese Dialogfelder befinden sich in der Datei <dlghtool.c>.
+Wenn Sie die Texte „ndern wollen, brauchen Sie nur diese Datei zu editieren,
+und ie ge„nderte Objekt-Datei gegen die ursprngliche in der Bibliothek auszu-
+tauschen.
+
+
+Rckgabewert:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Diese Funktion hat keinen Rckgabewert.
+
+
+Benutzte globale Variablen (R/W):
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Diese Funktion verwendet keine globalen Variablen.
+
+.ff
+.te*/
+
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º                        DEKLARATIONS-DATEIEN                            º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+#include <eur_tool.h>
+#include <stdio.h>
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º                        MODULGLOBALE VARIABLEN                          º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+STATIC	PSTR pstrPresentTitel_m = "Hilfe fr euroSOFT-WARE Presentation.";
+STATIC	PSTR apstrPresentText_m[]=
+{
+    "Die euroSOFT-WARE Presentation ist aufgebaut wie eine Dia-Show.",
+    "",
+    "Nach dem Start der Presentation wird Ihnen das n„chste Bild durch",
+    "Drcken einer beliebigen Taste angezeigt.",
+    "",
+    "Es gibt jedoch auch Tasten, mit denen Sie die Bildreihenfolge selbst",
+    "beeinflussen k”nnen:",
+    "",
+    "ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",
+    "",
+    " ş   oder PgUp zeigt Ihnen nochmals das letzte Bild.",
+    "",
+    " ş  CTRL+END zeigt Ihnen das letzte Bild.",
+    " ş  CTRL+HOME zeigt Ihnen das erste Bild.",
+    "",
+    " ş  TAB oder CTRL-PgDn geht nach vor zum ersten Bild des",
+    "    n„chsten Kapitels.",
+    "",
+    " ş  SHIFT+TAB oder CTRL-PgUp geht zurck zum ersten Bild des",
+    "    letzten Kapitels",
+    "",
+    " ş  Esc   geht bis zum Kapitelanfang jeweils ein Bild zurck.",
+    " ş  Esc   bedeutet Programmende, wenn Sie beim ersten Bild des",
+    "          ersten Kapitels stehen (z.B. mit CTRL+HOME).",
+    NULL
+};
+
+
+
+STATIC	PSTR pstrPalTitel_m = "Hilfe fr Farbpalette w„hlen";
+STATIC	PSTR apstrPalText_m[]=
+{
+    " Benutzen Sie diese Dialog-Box um die Farben,",
+    " mit denen das Men und die Dialog-Boxen auf",
+    " dem Bildschirm dargestellt werden, festzulegen.",
+    "",
+    " Wenn an Ihrem Rechner ein Farbmonitor ange-",
+    " schlossen ist, stehen Ihnen fnf Farbpaletten",
+    " zur Verfgung. Bei einem Monochrom-Monitor",
+    " ist immer die monochrome Palette aktiv.",
+    "",
+    " Sie w„hlen eine Palette aus, indem Sie",
+    "  ş  die Tasten    und    bet„tigen oder",
+    "  ş  einen der andersfarbigen Buchstaben",
+    "     eingeben oder",
+    "  ş  den Mauszeiger auf ein Optionsfeld bewegen",
+    "     und dort die linke Maustaste drcken.",
+    "",
+    " Drcken Sie",
+    "  ş  <ÄÙ   um die gew„hlte Palette einzustellen",
+    "  ş  Esc   um den Dialog abzubrechen und die",
+    "           alte Palette wieder zu aktivieren.",
+    NULL
+};
+
+STATIC	PSTR pstrSpeichernTitel_m = "Hilfe fr Speichern unter";
+STATIC	PSTR apstrSpeichernText_m[] =
+{
+    "Mit dem Speichern unter... - Befehl k”nnen Sie",
+    "aktuelle Datei unter einem neuen Namen auf",
+    "dem Datentr„ger abspeichern.",
+    "",
+    "Das Dialogfeld besteht aus folgenden Anzeigen",
+    "und Optionen:",
+    " ş Verzeichnis:  Hier finden Sie die Angabe des",
+    "                 aktuellen Pfades.",
+    " ş Dateiname:    Geben Sie hier den Namen ein,",
+    "                 unter dem die aktuelle Datei ",
+    "                 gespeichert werden soll.",
+    "",
+    " W„hlen Sie",
+    "  ş <ÄÙ  um die Datei unter dem Namen abzuspeichern,",
+    "         der im Textfeld ¯Dateiname® angegeben ist.",
+    "  ş Esc  um den Speichern unter... - Befehl ",
+    "         abzubrechen.",
+    "",
+    " Folgende Zeichen drfen in einem Dateinamen nicht",
+    " vorkommen: \\ / [] {} : | <> + = ; . \" ? * ",
+    "",
+    " Fr den Fall, daá einer der Buchstaben Teil des",
+    " Namens ist, gibt die Funktion folgende Meldung",
+    " aus: \"Der eingegebene Dateiname ist ungltig.\" ",
+    NULL
+};
+
+STATIC	PSTR pstrMausTitel_m = "Maustempo festlegen";
+STATIC	PSTR apstrMausText_m[]=
+{
+    " Benutzen Sie diese Dialog-Box um zu bestimmen,",
+    " wie schnell sich der Mauszeiger auf dem Bild-",
+    " schirm bewegen soll.",
+    "",
+    " Je kleiner die gew„hlte Zahl, desto langsamer",
+    " ist die Bewegung des Mauszeigers, und umge-",
+    " kehrt. Der Standardwert fr die Mausgeschwindig-",
+    " keit ist 50.",
+    "",
+    " Sie k”nnen die Markierung in der Scroll-Leiste ",
+    " verschieben, indem Sie",
+    " ş  die Tasten  <-  und  ->  bet„tigen oder",
+    " ş  den Mauszeiger auf die Pfeile an der Scroll-",
+    "    leiste bewegen, und dort die linke Maustaste",
+    "    drcken,",
+    " ş  den Mauszeiger auf die gewnschte Position auf",
+    "    der Scrollleiste bewegen und dort die linke",
+    "    Maustaste drcken",
+    "",
+    " W„hlen Sie",
+    " ş <ÄÙ   um das gew„hlte Tempo einzustellen",
+    " ş Esc   um den Dialog abzubrechen",
+    NULL
+};
+
+
+STATIC	PSTR pstrTonTitel_m = "Hilfe fr Warnton einstellen";
+STATIC	PSTR apstrTonText_m[]=
+{
+    " Benutzen Sie diese Dialog-Box um zu bestimmen,",
+    " ob das Programm im Bedarfsfall einen Warnton ",
+    " ausgibt oder nicht.",
+    "",
+    " Sie k”nnen auáerdem die Dauer und Frequenz des",
+    " Warntons festlegen."
+    "",
+    " Sie k”nnen das Eingabefeld ver„ndern, indem Sie",
+    "  ş  Tab oder Umsch+Tab drcken.",
+    "",
+    " Unter dem Namen des aktiven Eingabefeldes blinkt",
+    " der Cursor.",
+    "",
+    " Verschieben Sie die Markierung in den Rolleisten",
+    " fr Dauer und Frequenz, indem Sie",
+    " ş  die Tasten  <-  und  ->  bet„tigen oder",
+    " ş  den Mauszeiger auf die Pfeile an der Scroll-",
+    "    leiste bewegen, und dort die linke Maustaste",
+    "    drcken.",
+    "",
+    " Drcken Sie",
+    " ş <ÄÙ  um die gew„hlten Werte einzustellen",
+    " ş Esc  um den Dialog abzubrechen",
+    " ş F4   um den eingestellten Ton probeweise zu h”ren",
+    NULL
+};
+
+STATIC	PSTR pstrShellTitel_m = "Hilfe fr Betriebssystem-Befehl";
+STATIC	PSTR apstrShellText_m[] =
+{
+    "Dieser Befehl erm”glicht es Ihnen, vorbergehend",
+    "zur DOS-Ebene zurckzukehren."
+    "",
+    "Sie k”nnen dort andere Programme oder DOS-Befehle",
+    "ausfhren.",
+    "",
+    "Um von der DOS-Ebene wieder in dieses Programm",
+    "zurckzukehren, geben Sie den EXIT-Befehl ein",
+    "und drcken die Eingabe-Taste.",
+    "",
+    "Wenn der DOS-Befehlsinterpreter nicht gestartet",
+    "werden konnte, wird der Betriebssystem-Befehl mit",
+    "einer Fehlermeldung abgebrochen.",
+    NULL
+};
+
+
+STATIC	PSTR pstrLadenTitel_m = "Hilfe fr Datei laden";
+STATIC	PSTR apstrLadenText_m[] =
+{
+    " Mit dem Dialogfeld ¯Laden® k”nnen Sie auf ver-",
+    " schiedene Arten bestimmen, welche Datei als",
+    " n„chstes zur Bearbeitung geladen werden soll.",
+    "",
+    " Das Dialogfeld besteht neben den Schaltfl„chen",
+    " aus folgenden Elementen:",
+    "",
+    " ş Textfeld: Im Textfeld k”nnen Sie einen Datei-",
+    "      namen eingeben, eine neue Suchmaske, oder",
+    "      ein Laufwerk oder Verzeichnis, in dem",
+    "      nach Dateien gesucht werden soll.",
+    "",
+    " ş Angabe aktuelles Verzeichnis: Unter dem Textfeld",
+    "      wird das Laufwerk und Verzeichnis ausgegeben,",
+    "      in dem die Dialogbox derzeit nach Dateien",
+    "      sucht.",
+    "",
+    " ş Verzeichnisfeld: Im Verzeichnisfeld werden alle",
+    "      Dateinamen ausgegeben, die der im Textfeld ",
+    "      ausgegebenen Suchmaske entsprechen. Die Ver-",
+    "      zeichnisse und die Dateinamen sind getrennt",
+    "      sortiert.",
+    "      Das bergeordnete Verzeichnis wird durch [..]",
+    "      symbolisiert, die Unterverzeichnisse werden in",
+    "      Groábuchstaben und in eckigen Klammern einge-",
+    "      schlossen ausgegeben.",
+    "",
+    " Folgende Tasten sind immer aktiv:",
+    "",
+    "     Tab oder Umsch+Tab",
+    "              ver„ndert den Fokus",
+    "     Esc      bricht die Funktion ab",
+    "     Eingabe  bernimmt die angezeigte Zeichen-",
+    "              kette und beendet die Funktion",
+    "     F1       zeigt diesen Hilfe-Bildschirm",
+    "",
+    " Sondertasten im Textfeld:",
+    "",
+    "     \x1B \x1A        bewegen den Cursor um ein Zeichen",
+    "     Pos1       setzt Cursor auf erstes Zeichen",
+    "     Ende       setzt Cursor hinter letztes Zeichen",
+    "     Entf       l”scht Zeichen unter dem Cursor",
+    "     Umsch+Entf l”scht komplettes Textfeld",
+    "     Rck       l”scht Zeichen links vom Cursor",
+    "     Einfg      schaltet Einfgemodus ein/aus",
+    "",
+    "     Das Textfeld akzeptiert nur Zeichen die fr",
+    "     Dateinamen zugelassen sind.",
+    "",
+    " Sondertasten im Verzeichnisfeld:",
+    "",
+    "           bewegen den Balken um einen Eintrag",
+    "     Bild  bewegen den Balken um eine Seite",
+    "     Pos1    bewegt den Balken auf ersten Eintrag",
+    "     Ende    bewegt den Balken auf letzten Eintrag",
+    "",
+    "     Durch die Eingabe eines Anfangs-Buchstabens",
+    "     k”nnen Sie direkt zu einem Eintrag springen.",
+    "     Der gefundene Dateiname erscheint immer in der",
+    "     ersten Zeile des Verzeichnisfeldes.",
+    NULL
+};
+
+STATIC	PSTR pstrIndexTitel_m = "Hilfe fr Index der Hilfsbildschirme";
+STATIC	PSTR apstrIndexText_m[] =
+{
+    " W„hlen Sie in diesem Dialogfeld ein Thema aus, zu",
+    " dem Sie Hilfe anfordern wollen.",
+    "",
+    " Bewegen Sie den Auswahlbalken auf das Thema, zu dem",
+    " Sie Hilfe anfordern wollen. Der Balken wird bewegt,",
+    " indem Sie",
+    " ş  die Tasten    und    bet„tigen oder",
+    " ş  mit dem Mauszeiger auf das Thema zeigen und die",
+    "    linke Maustaste bet„tigen, oder",
+    " ş  mit dem Mauszeiger auf die Rollpfeile zeigen, und",
+    "    die linke Maustaste drcken.",
+    "",
+    " Sie aktivieren ein Thema, indem Sie",
+    " ş  die Eingabe-Schaltfl„che bet„tigen,",
+    " ş  auf einem Thema mit der Maus doppelklicken.",
+    "",
+    " Mit der Esc-Schaltfl„che k”nnen Sie die Auswahl",
+    " abbrechen.",
+    NULL
+};
+
+
+
+/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º                          FUNKTIONS-DEFINITION                          º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+GLOBAL
+VOID Dl_HilfeTools(WORD wDialog)
+{
+    switch(wDialog)
+    {
+	case PRESENT:	    Dl_Hilfe(pstrPresentTitel_m,
+				     apstrPresentText_m);
+                            break;
+
+	case FARBPALETTE:   Dl_Hilfe(pstrPalTitel_m,
+                                     apstrPalText_m);
+                            break;
+
+	case SPEICHERN:     Dl_Hilfe(pstrSpeichernTitel_m,
+                                     apstrSpeichernText_m);
+                            break;
+
+	case MAUSTEMPO:     Dl_Hilfe(pstrMausTitel_m,
+                                     apstrMausText_m);
+                            break;
+
+	case DOSSHELL:	    Dl_Hilfe(pstrShellTitel_m,
+                                     apstrShellText_m);
+                            break;
+
+	case WARNTON:	    Dl_Hilfe(pstrTonTitel_m,
+                                     apstrTonText_m);
+                            break;
+
+	case LADEN:	    Dl_Hilfe(pstrLadenTitel_m,
+                                     apstrLadenText_m);
+                            break;
+	case DLGINDEX:	    Dl_Hilfe(pstrIndexTitel_m,
+                                     apstrIndexText_m);
+                            break;
+
+    }
+    return;
+}
+
+
+

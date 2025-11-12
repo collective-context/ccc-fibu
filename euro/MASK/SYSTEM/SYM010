@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+
+
+       ù                                    ù
+          Zeichensatz ^^^^^^^^^^^^^^^^^^^^
+                wird auf Drucker
+          ^^^^^^^^^^^^^^^^^^^^^ kopiert
+
+                    OK?  @@@@
+       ù                                    ù
+
+
+&TITEL = "SYÍKopieren des Zeichensatzes"
+&REM   Maske    :  SYM010
+&REM   Programm:  SY1100
+&REM   Datei    : SYRINT
+
+&FRAME = 0,0,0,0, "Ä", 2
+
+&DATEI (0) = EURODATA, L.SYPRINT
+&DATEI (1) = EURODATA, L.SYARBEIT
+
+&REM  Zeichensatz
+&DATA     (00) = 0, ZEICH_SATZ
+
+&REM Drucker Bezeichnung (Match-Code)
+&DATA     (+)  = 0, MATCH_CODE
+
+&REM OK ?
+&HELPTEXT (+)  = SYHLP, 010, 02
+&CHOICE   (+-) = "OK ?", "Ja", j, "Nein", n
+&DEFAULT  (+-) = j
+&DATA     (+-)  = 1, FELD_3
+
+

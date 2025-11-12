@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+
+
+
+              ù                                                        ù
+                   ``
+                      šbergabe in Mandant Nr. : #
+                      Datenverzeichnis KHK    : @@@@@@@@@@@@@@@@@@@@@
+                      Kontenklasse Erl”s      : #
+
+              ù                                                        ù
+
+
+>>Mask:   SYM043
+>>Prog.:  SY1100.C
+>>Update: 06.08.91
+
+&TITEL    = "SY  STAMM Mandant-Uebergabe in KHK-Fibu"
+&FRAME    = 0, 0, 0, 0, "šbergabe Rechnungen an KHK-Fibu", 2
+>>SEQUENZ =
+
+>>MASKHELP= SYHLP10, men-inf
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, L.SYP_13
+>>PARA_READ (0)  = MASK, L.SYP_13
+
+>>Mandanten-Nummer (Dummy Feld)
+&REC_KEY    (0)
+  &HIDE     (+-)
+  &DATA     (+-) = 0, MAND_13
+
+>>Mandant KHK
+  &HELPTEXT (+)  = AUHLP20, 422, 03
+  &DATA     (+-) = 0, BUCHMAND
+
+>>Datenverzeichnis KHK
+  &HELPTEXT (+)  = AUHLP20, 422, 04
+  &DATA     (+-) = 0, BUCHDATEI
+
+>>Kontenklasse Erl”s
+  &HELPTEXT (+)  = AUHLP20, 422, 05
+  &DATA     (+-) = 0, BUCHERLS
+

@@ -1,0 +1,92 @@
+
+
+
+
+
+       ù                                                             ù
+           Stammdaten     ge„nderte Nummer      gespeicherte Nummer
+    
+           Kunden      : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^
+           Lieferanten : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^
+           Artikel     : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^
+           Mitarbeiter : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^
+
+           ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+           Bewegungsdaten:
+          
+           Angebote      :     @@@@@@                 ^^^^^^^
+           Auftr„ge      :     @@@@@@                 ^^^^^^^
+           Lieferscheine :     @@@@@@                 ^^^^^^^
+           Rechnungen    :     @@@@@@                 ^^^^^^^
+           RA-BUCH       :     @@@@@@                 ^^^^^^^
+       ù                                                             ù
+
+``
+
+>>Mask:   STM091
+>>Prog.:  ST1100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  STAMM ndern Nummernkreise"
+&FRAME    = 0, 0, 0, 0, "ÄNummernkreise" 2
+>>SEQUENZ =
+
+&MASKHELP = STHLP10, num-inf
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, L.SYP_02
+&DRU_DATEI  (1)  = MASK, D.DU1100
+
+>>Kunde(Feld zur Eingabe der neuen Nummer)
+  &HELPTEXT (0)  = STHLP10, 191, 11
+  &DATA     (+-) = 1, FELD_1
+  &DATA     (+)  = 0, NR_KUND      >>Kunde
+
+>>Lieferant(Feld zur Eingabe der neuen Nummer)
+  &HELPTEXT (+)  = STHLP10, 191, 11
+  &DATA     (+-) = 1, FELD_2
+  &DATA     (+) = 0, NR_LIEF      >>Lieferant
+
+>>Artikel(Feld zur Eingabe der neuen Nummer)
+  &HELPTEXT (+)  = STHLP10, 191, 11
+  &DATA     (+-) = 1, FELD_3
+  &DATA     (+)  = 0, NR_ART      >>Artikel
+
+>>Mitarbeiter(Feld zur Eingabe der neuen Nummer)
+  &HELPTEXT (+)  = STHLP10, 191, 11
+  &DATA     (+-) = 1, FELD_4
+  &DATA     (+)  = 0, NR_MITARB   >>Mitarbeiter
+
+>>Angebote(Feld zur Eingabe der neuen Nummer)
+  &HELPTEXT (+)  = STHLP10, 191, 1
+  &DATA     (+-) = 1, FELD_5
+  &DATA     (+)  = 0, NR_ANGEBOT  >>Angebote
+
+>>Auftr„ge(Feld zur Eingabe der neuen Nummer)
+  &HELPTEXT (+)  = STHLP10, 191, 1
+  &DATA     (+-) = 1, FELD_6
+  &DATA     (+)  = 0, NR_AUFTRAG  >>Auftr„ge
+
+>>Lieferscheine(Feld zur Eingabe der neuen Nummer)
+  &HELPTEXT (+)  = STHLP10, 191, 1
+  &DATA     (+-) = 1, FELD_7
+  &DATA     (+)  = 0, NR_LIEFER   >>Lieferscheine
+
+>>Rechnungen(Feld zur Eingabe der neuen Nummer)
+  &HELPTEXT (+)  = STHLP10, 191, 1
+  &DATA     (+-) = 1, FELD_8
+  &DATA     (+)  = 0, NR_RECH     >>Rechnungen
+
+>>RA-Buch(Feld zur Eingabe der neuen Nummer)
+  &HELPTEXT (+)  = STHLP10, 191, 1
+  &DATA     (+-) = 1, FELD_9
+  &DATA     (+)  = 0, RA_RECH     >>RA-Buch
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+&REC_KEY   (+)                    >>Mandanten-Nummer
+  &DATA_H  (+-)  = 0, MAND_02
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+

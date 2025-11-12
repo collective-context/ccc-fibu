@@ -1,0 +1,196 @@
+ÚÄ(c)WINware P.Mayer                                   SY_9112.001 - Seite 1/3 ÄÄ¿
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+Nach Aufruf einer Menzeile erscheint folgende Fehlermeldung:
+-------------------------------------------------------------
+
+  Ú(c) 1993 WINware ÄÄÄÄÄ WINware P. Mayer / A-8041 Graz ÄÄÄÄ Datum 23.08.93 (01)¿   
+  À                                                                              Ù   
+                                                                                     
+      ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿      
+      ³                 WINware-TOOLbox Laufzeitfehler                        ³
+      ³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³      
+      ³  Fehler (12) ®¯ Source ¯menu.cpp®, Zeile ¯929®.                       ³      
+      ³    Datei ¯F:\euro\t02\datum.bat® konnte nicht ge”ffnet werden.        ³      
+      ³                                                                       ³      
+      ³  Ursache des Fehlers:                                                 ³      
+      ³    ¯ BTR-12 = file not found ®                                        ³      
+      ³                                                                       ³      
+      ³    Die Ausfhrung des Programmes wird beendet...   ¯wFehler_g(0)®     ³      
+      ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ      
+
+Ist der Fehlermeldungs-Modus nicht fr "Entwickler" sondern fr "Kunden" ein-
+gestellt erscheint folgende Fehlermeldung:
+-----------------------------------------------------------------------------
+
+
+  Ú(c) 1993 WINware ÄÄÄÄÄ WINware P. Mayer / A-8041 Graz ÄÄÄÄ Datum 23.08.93 (01)¿   
+  À                                                                              Ù   
+                                                                                     
+                    ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿                     
+                    ³                                          ³                     
+                    ³ Es ist ein kritischer Fehler mit der     ³                     
+                    ³ Nr.: 12 aufgetreten!                     ³                     
+                    ³                                          ³                     
+                    ³ Die Programmausfhrung wird abgebrochen. ³                     
+                    ³ Bitte informieren Sie Ihren Betreuer!    ³                     
+                    ³                                          ³                     
+                    ³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³                     
+                    ³  <Ù=Eingabe   ESC=Abbruch                ³
+                    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ                     
+                                                                                     
+Grund:
+------
+                                                                                     
+  Ú(c) 1993 WINware ÄÄÄÄÄ WINware P. Mayer / A-8041 Graz ÄÄÄÄ Datum 23.08.93 (01)¿   
+  À  F-Tasten  Optionen                                              F1=Hilfe    Ù   
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/ndernÿMen-Stamm - 1/2Ä¿   
+  ³  Mennummer : ST-018                                                         ³   
+  ³                            ID-Men³  Programm  ³Steu.                        ³   
+  ³  Menzeilen - Bezeichnung ³Folges.³    Name    ³Kennz³ Passwort ³  Hilfe     ³   
+  ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄ  ³   
+  ³  #Optionen                ³       ³            ³     ³          ³Bitte w„hl  ³   
+  ³  #Mandant wechseln        ³       ³SY1100      ³14000³          ³Hier k”nne  ³   
+  ³  #Datum „ndern          ------->  ³datum.bat   ³     ³          ³Ver„ndern   ³
+  ³  ---                      ³       ³            ³     ³          ³            ³   
+  ³  #Betriebssystem ...      ³       ³$shell      ³     ³          ³Damit gela  ³   
+  ³  DOS-#SHELL 5.0           ³       ³DOS.BAT     ³     ³euro      ³            ³   
+
+
+In einer Menzeile ist eine .BAT Datei angegeben, die jedoch im Teilnehmerver-
+zeichnis noch nicht angelegt ist.
+
+
+
+
+ÚÄ(c)WINware P.Mayer                                   SY_9112.001 - Seite 2/3 ÄÄ¿
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+Kurzanweisung:
+----------------------------------------------------------------------------------
+
+Im Teilnehmerverzeichnis (z.B.: C:\euro\T01) muá die BATCH-Datei ¯DATUM.BAT®
+mit beispielsweise folgendem Inhalt stehen:
+
+-----
+@echo off
+cls
+date
+-----
+
+Detailierte Anweisung:
+----------------------
+                                                                                     
+Dazu rufen Sie folgendes Programm auf:
+--------------------------------------
+
+  Ú(c) 1990 WINware  ÄÄÄÄÄÄÄ Demodaten WINware -WARE ÄÄÄÄÄÄÄÄ Datum 03.12.91 (03)¿   
+  À ÚInstallation¿ Basis-Werte  Optionen                           [F1]=Hilfe    Ù
+   ÚÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿
+   ³  ndern Mandantenstamm  ³
+   ³  Drucken Mandantenstamm ³
+   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+   ³  ndern Programm-Men   ³  <---
+   ³  Drucken Programm-Men  ³
+
+
+Dann rufen Sie die Mennummer ST-018 auf und gehen mit dem Cursor in die Spalte
+¯Programmname® in das Feld ¯datum.bat®
+                                                                                      
+                                                                                     
+  Ú(c) 1990 WINware  ÄÄÄÄÄÄÄ Demodaten WINware -WARE ÄÄÄÄÄÄÄÄ Datum 03.12.91 (03)¿   
+  À  F-Tasten  Optionen                                              F1=Hilfe    Ù   
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/ndernÿMen-Stamm - 1/2Ä¿   
+  ³  Mennummer : ST-018                                                         ³   
+  ³                            ID-Men³  Programm  ³Steu.                        ³   
+  ³  Menzeilen - Bezeichnung ³Folges.³    Name    ³Kennz³ Passwort ³  Hilfe     ³   
+  ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄ  ³   
+  ³  #Optionen                ³       ³            ³     ³          ³Bitte w„hl  ³   
+  ³  #Mandant wechseln        ³       ³SY1100      ³10000³          ³Hier k”nne  ³   
+  ³  #Datum „ndern            ³ --->  ³datum.bat   ³     ³          ³Ver„ndern   ³
+  ³  ---                      ³       ³            ³     ³          ³            ³   
+  ³  #Betriebssystem ...      ³       ³$shell      ³     ³          ³Damit gela  ³   
+                                                   
+
+
+
+
+
+
+
+
+
+
+
+
+Wenn Sie hier die [F1]-Taste drcken, sehen Sie im Hilfstext, daá die [F8]-Taste
+die Datei ¯datum.bat® ”ffnen bzw. neu anlegen wird:
+----------------------------------------------------------------------------------
+
+
+ÚÄ(c)WINware P.Mayer                                   SY_9112.001 - Seite 3/3 ÄÄ¿
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+  Ú(c) 1990 WINware  ÄÄÄÄÄÄÄ Demodaten WINware -WARE ÄÄÄÄÄÄÄÄ Datum 03.12.91 (03)¿   
+  À  F-Tasten  Optionen                                              F1=Hilfe    Ù   
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/ndernÿMen-Stamm - 1/2Ä¿   
+  ³  Mennummer : ST-018                                                         ³   
+  ³                            ID-Men³  Programm  ³Steu.                        ³   
+  ³  Menzeilen - Bezeichnung ³Folges.³    Name    ³Kennz³ Passwort ³  Hilfe     ³   
+  ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄ  ³   
+  ³  #ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿hl  ³   
+  ³  #³                        Hilfe fr Programm Name                      ³ne  ³   
+  ³  #³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³n   ³
+  ³  -³ Bei Menzeilen kann in dieser Spalte entweder eine Batchdatei an-   ³    ³   
+  ³  #³ gegeben werden, die vom WINware -MENš aufgerufen wird oder ein      ³la  ³   
+  ³  D³ Programmname eines WINware -WAREmoduls, der dann mit dem Steuer-    ³    ³   
+  ³  -³ kennzeichen in der n„chste Spalte gekoppelt wird.                   ³    ³   
+  ³  D³                                                                     ³ne  ³   
+  ³  B³ Wenn Sie mit dem Cursor in der Spalte ¯Programm Name® stehen und    ³ei  ³   
+  ³  -³ der eingegebene Name mit [.BAT] endet k”nnen Sie mit der [F8]-Taste ³    ³   
+  ³  ¯³ die Batchdatei sofort editieren.                      --->Ù         ³    ³
+
+                                                                                     
+Danach geben Sie folgende Zeilen ein und benden das Fenster mit der [ESC]-Taste.
+----------------------------------------------------------------------------------
+
+  Ú(c) 1990 WINware  ÄÄÄÄÄÄÄ Demodaten WINware -WARE ÄÄÄÄÄÄÄÄ Datum 03.12.91 (03)¿   
+  À  F-Tasten  Optionen                                              F1=Hilfe    Ù   
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/ndernÿMen-Stamm - 1/2Ä¿   
+  ³  Mennummer : ST-018                                                         ³   
+  ³                            ID-Men³  Programm  ³Steu.                        ³   
+  ³  Menzeilen - Bezeichnung ³Folges.³    Name    ³Kennz³ Passwort ³  Hilfe     ³   
+  ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄ  ³   
+  ³  #ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿l  ³   
+  ³  #³                         F:\EURO\T02\DATUM.BAT                        ³e  ³   
+  ³  #³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³   ³
+  ³  -³ @echo off                                                            ³   ³
+  ³  #³ cls                                                                  ³a  ³   
+  ³  D³ date                                                                 ³   ³   
+  ³  D³                                                                      ³e  ³   
+
+Dieses Beispiel steht stellvertretend fr den Aufruf beliebiger .BAT Dateien.
+Fr das Einstellen von Datum und Zeit gibt es im WINware Men inzwischen eine
+bessere L”sung als das Aufrufen einer .BAT Datei.
+
+Geben Sie in die Spalte Programmname das Makro $datum ein. Der Anwender
+kann dann in einer Dialogbox sein Datum oder die Zeit einstellen:
+----------------------------------------------------------------------------------
+
+ 
+  Ú(c) 1990 WINware  ÄÄÄÄÄÄÄ Demodaten WINware -WARE ÄÄÄÄÄÄÄÄ Datum 03.12.91 (03)¿   
+  À  F-Tasten  Optionen                                              F1=Hilfe    Ù   
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/ndernÿMen-Stamm - 1/2Ä¿   
+  ³  Mennummer : ST-018                                                         ³   
+  ³                            ID-Men³  Programm  ³Steu.                        ³   
+  ³  Menzeilen - Bezeichnung ³Folges.³    Name    ³Kennz³ Passwort ³  Hilfe     ³   
+  ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄ  ³   
+  ³  #Optionen                ³       ³            ³     ³          ³Bitte w„hl  ³   
+  ³  #Mandant wechseln        ³       ³SY1100      ³10000³          ³Hier k”nne  ³   
+  ³  #Datum „ndern            ³ --->  ³$datum      ³     ³          ³Ver„ndern   ³
+  ³  ---                      ³       ³            ³     ³          ³            ³   
+  ³  #Betriebssystem ...      ³       ³$shell      ³     ³          ³Damit gela  ³
+
+
+

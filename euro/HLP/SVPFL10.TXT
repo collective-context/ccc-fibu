@@ -1,0 +1,14 @@
+/*.ta,F02,III. euroSOFT-PROGRAMMbeschreibung / 6.,12
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE UB-Urlaub am Bauernhof                                             บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+Erfassen Gsteanfragen
+ออออออออออออออออออออออ
+
+.da (EURODATA,UB2200),1, Gsteanfragen.
+.ma (\euro\mask\UBM220),1,Erfassen Gsteanfragen.
+.hd (UB,beweg-k),UB,gastan.
+.te*/
+
+

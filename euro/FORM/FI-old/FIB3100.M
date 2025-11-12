@@ -1,0 +1,48 @@
+      
+     粕BUCHUNGS-JOURNAL                                                                      Datum: 16.03.91 - SEITE 0001읏
+     넬컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴엿
+     윱Mandant (03) ... T갷htig & Co                                                                      Teilnehmer: 002쵬
+      읕컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴켸
+            Buch.-   Beleg-     Beleg-   Konto-         U m s a t z      U m s a t z Gegen-
+     Lfd.Nr    Datum Nummer        Datum Nummer             S O L L        H A B E N Konto     Buchungstext
+     컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+      
+     000001  3.04.91 KO/001      3.04.91 S2000            10.000,00             0,00 S2100     KO Umbuchungen
+     000002  3.04.91 KO/001      3.04.91 S2100                 0,00        10.000,00 S2000     KO Umbuchungen
+     000003  3.04.91 EB/001      3.04.91 K105              1.000,00             0,00 S9700     EB Saldovortrag Kunden
+     000004  3.04.91 EB/001      3.04.91 S2300             1.000,00             0,00 S9700     EB Saldovortrag Kunden
+     000005  3.04.91 EB/001      3.04.91 S9700                 0,00         1.000,00 K105      EB Saldovortrag Kunden
+     000006  3.04.91 VK/001      3.04.91 K105              1.200,00             0,00 S8200     VK Rechnungsausgang
+     000007  3.04.91 VK/001      3.04.91 S3520                 0,00           200,00 K105      VK Rechnungsausgang
+     000008  3.04.91 VK/001      3.04.91 S8200                 0,00         1.000,00 K105      VK Rechnungsausgang
+     000009  3.04.91 VK/002      3.04.91 S2100             1.200,00             0,00 K105      VK Zahlungseingang
+     000010  3.04.91 VK/002      3.04.91 K105                  0,00         1.200,00 S2100     VK Zahlungseingang
+     000011  3.04.91 EB/002      3.04.91 S9700             1.000,00             0,00 L113      EB Saldovortrag Lieferanten
+     000012  3.04.91 EB/002      3.04.91 L113                  0,00         1.000,00 S9700     EB Saldovortrag Lieferanten
+     000013  3.04.91 EB/002      3.04.91 S3300                 0,00         1.000,00 S9700     EB Saldovortrag Lieferanten
+     000014  3.04.91 EK/001      3.04.91 S4120             1.000,00             0,00 L113      EK Rechnungseingang
+     000015  3.04.91 EK/001      3.04.91 L113                  0,00         1.200,00 S4120     EK Rechnungseingang
+     000016  3.04.91 EK/001      3.04.91 S2500               200,00             0,00 L113      EK Rechnungseingang
+     000017  3.04.91 EK/002      3.04.91 L113              1.200,00             0,00 S2100     EK Zahlungsausgang
+     000018  3.04.91 EK/002      3.04.91 S2100                 0,00         1.200,00 L113      EK Zahlungsausgang
+     000019  3.04.91 EB/004      3.04.91 S9700             1.000,00             0,00 S2100     EB Schkonto Haben
+     000020  3.04.91 EB/004      3.04.91 S2100                 0,00         1.000,00 S9700     EB Schkonto Haben
+     000021  3.04.91 EB/003      3.04.91 S1100             1.000,00             0,00 S9700     EB Sachkonto Soll
+     000022  3.04.91 EB/003      3.04.91 S9700                 0,00         1.000,00 S1100     EB Sachkonto Soll
+     000023  3.04.91 BA/002      3.04.91 S2000             1.200,00             0,00 S8200     BA Barverkauf
+     000024  3.04.91 BA/002      3.04.91 S3520                 0,00           200,00 S2000     BA Barverkauf
+     000025  3.04.91 BA/002      3.04.91 S8200                 0,00         1.000,00 S2000     BA Barverkauf
+     000026  3.04.91 BA/001      3.04.91 S4120             1.000,00             0,00 S2000     BA Bareinkauf
+     000027  3.04.91 BA/001      3.04.91 S2000                 0,00         1.200,00 S4120     BA Bareinkauf
+     000028  3.04.91 BA/001      3.04.91 S2500               200,00             0,00 S2000     BA Bareinkauf
+     000029  3.04.91 AUTO        3.04.91 S2300             1.200,00             0,00 Kunde/Inl INLANDSFORDERUNGEN SOLL
+     000030  3.04.91 AUTO        3.04.91 S2300                 0,00         1.200,00 Kunde/Inl INLANDSFORDERUNGEN HABEN
+     000031  3.04.91 AUTO        3.04.91 S3300             1.200,00             0,00 Lief./Inl INLANDSVERBINDL. SOLL
+     000032  3.04.91 AUTO        3.04.91 S3300                 0,00         1.200,00 Lief./Inl INLANDSVERBINDL. HABEN
+
+
+     旼컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴커
+     읏Nutzungsberechtigung: euroSOFT Graz                                                              (c) 1990 euroSOFT粕
+
+
+

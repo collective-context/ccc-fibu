@@ -1,0 +1,3 @@
+cobol %1;
+LINK %1+NCLINK+MF2BTRV+CSUPPORT;
+

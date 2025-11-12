@@ -1,0 +1,66 @@
+
+Maskensource: \euro\mask\akv\akvM510.        Workdatei: F:\euro\t02\WORK.001,       Datum: Samstag, 22.10.1994 - 05:50
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+
+
+   Nummer: ïïïïïïïïïïïïïïïï   Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+   Anrede    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   Name 1    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   Name 2    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   Name 3    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Aussendung: @@@@
+   Name 4    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Geburtstag: ##.##.##
+
+   Straáe    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     ® Postfach : @@@@@@@@@
+   Ld/PLZ/Ort: @@@ - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+   Telefon   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@    Telex   : @@@@@@@@@@@@@@@@@@@@
+   Telefax   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@    BTX-Nr. : @@@@@@@@@@@@@@@@@@@@
+   Gruppe    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Bekommen  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   Versenden : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ ù Amtsstelle: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ù
+
+^ ^ ^ ^ ^ ^
+
+&TITEL    = "AKV STAMM Direktions_Adressen"
+ 
+&SEQUENZ  = 00,02,03,04,05,07,09,12,01,13,15,17,20
+ 
+&MASKHELP = AKVHLP10, kund-al
+ 
+&DATEI      (0)  =   MASK, D.AKV1100
+&REF_DATEI  (1)  =   MASK, L.SYP_02
+ 
+Kunden-Nummer (S)              -                        -( 0)-  0, KUNDE
+Match-Code Kurzbezeichnung (S) -                        -( 1)-  0, MATCH_CODE
+Anrede                         -                        -( 2)-  0, ANREDE
+Name (Name 1)                  -                        -( 3)-  0, NAME
+Zusatz 1 (Name 2)              -                        -( 4)-  0, ZUSATZ
+Zusatz 2 (Name 3)              -                        -( 5)-  0, ZUSATZ_2
+Aussendung                     -                        -( 6)-  0, AUSSENDUNG
+Zusatz 3 (Name 4)              -                        -( 7)-  0, ZUSATZ_3
+Geburtstag                     -                        -( 8)-  0, GEBURT_1
+Straáe                         -                        -( 9)-  0, STRASSE
+Postfach                       -                        -(10)-  0, POSTFACH
+Landkrzel                     -                        -(11)-  0, LAND
+PLZ-Ort                        -                        -(12)-  0, PLZ_ORT
+Telefon                        -                        -(13)-  0, TELEFON
+Telex                          -                        -(14)-  0, TELEX
+Telefax                        -                        -(15)-  0, TELEFAX
+BTX                            -                        -(16)-  0, BTX
+Branche                        -                        -(17)-  0, BRANCHE_0
+Pers”nlichkeiten (Werbung erha -                        -(18)-  0, WERB_EIN
+Pers”nlichkeiten (Werbung gese -                        -(19)-  0, WERB_AUS
+Amtsstellen (Public-Relation)  -                        -(20)-  0, PUBLIC
+Mandanten-Nummer               -                        -(21)-  1, MAND_02
+Nummernkreis Kundenstamm       -                        -(22)-  1, NR_KUND
+Anrede Brief                   -                        -(23)-  0, BRIEFANR_1
+Titel                          -                        -(24)-  0, TITEL_1
+Vorname                        -                        -(25)-  0, VORNAME_1
+Zuname                         -                        -(26)-  0, ZUNAME_1

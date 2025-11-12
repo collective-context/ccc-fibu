@@ -1,0 +1,331 @@
+
+
+
+ ù
+  ####
+  Beleg-Nr : @@@@@@@@@@           Belegdatum: ##.##.##           Ein/Aus : @@@
+  Geldkonto: S@@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^ Zahlungsbetrag:###.###.##›,››
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Kunde/Lieferant: ï@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       ^ ^ ^     ^
+  Rechn-Nr : @@@@@@@@@@       Rech.Datum: ##.##.##   ^ ^   ^   ^ ^ ^ ^ ^ ^ ^
+  ^ ^ ^ ^ ^ ^                ^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Produkt ``.``.``        Konto^ ^ ^Menge EH^ ^ ^ ^ Preis/EH N U%^ ^ Betrag^™S
+  @@@@@@@ @@@@@@@@@@@@@@@ @@@@ ###.##›,›› @@@@@ #.###.##›,›› @ @@ #.###.##›,››
+
+
+
+
+
+
+
+
+ ù                                                                            ù
+
+&TITEL = "frei"
+&REM   Source:  FIM250
+&REM   Maske :  #250
+&REM   Progr.:  FI2500
+
+&FRAME    = 0, 0, 0, 0, "Erfassen Rechnungs-Buchungen", 2
+&MASKHELP = FIHLP10, gebu-er
+&INDEX    = BASIS
+
+&BLOCK = 51,59
+&SCROLL = 12,0,21,79
+
+&DATEI      (0) = EURODATA, D.FI2500
+&REF_DATEI  (1) = EURODATA, D.ST1300
+&REF_DATEI  (2) = EURODATA, D.FI1310
+&REF_DATEI  (3) = EURODATA, D.FI1110
+&REF_DATEI  (4) = EURODATA, D.FI1210
+&REF_DATEI  (5) = EURODATA, D.ST1400
+&PARA_READ  (6) = EURODATA, L.SYP_01
+
+&SEQUENZ = 01,02,03,04,06,07,13,14,51,52,53,54,55,56,57,58,59
+
+&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM - Erfassungsnummer
+&REM HIDE      (0)
+&REC_KEY   (0)
+&DATA      (+-) = 0, SATZ_NR
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+&REM Beleg-Nummer
+&HELPTEXT  (+)  = FIHLP10, 250, 1
+&REC_KEY   (+-)
+&REC_MATCH (+-) = "Beleg-Nr  ", 0, BELEG_NR
+&ADD_MATCH (+-) = "Datum   ", 0, BELEG_DAT
+&ADD_MATCH (+-) = "Konto   ", 0, GELDKONTO
+&ADD_MATCH (+-) = "Bezeichnung Geldkonto    ", 0, GELDK_BEZ
+&ADD_MATCH (+-) = "Bu-Datum", 0, BUCH_DATUM
+&DATA      (+-) = 0, BELEG_NR
+
+&REM Beleg-Datum
+&HELPTEXT  (+)  = FIHLP10, 250, 4
+&REC_KEY   (+-)
+&DATA      (+-) = 0, BELEG_DAT
+
+&REM Ein/Aus
+&HELPTEXT  (+)  = FIHLP10, 250, 3
+&REM CHOICE    (+-) = "Zahlung Ein/Aus","Eingangs-Zahlung","e","Ausgangs-Zahlung","a"
+&DATA      (+-) = 0, EIN_AUS
+
+&REM Geld-Konto
+&HELPTEXT  (+)  = FIHLP10, 250, 0
+&DATA      (+-) = 0, GELDKONTO
+
+&REM Bezeichnung-Geldkonto (aus Referenz-Datei: Sachkontenstamm)
+&DATA      (+)  = 0, GELDK_BEZ
+
+&REM Betrag
+&HELPTEXT  (+)  = FIHLP10, 250, 4
+&DATA      (+-) = 0, ZAHL_BETR
+
+&REM  Kunde/Lieferant
+&HELPTEXT  (+)  = FIHLP10, 250, 5
+&DATA      (+-) = 0, KULI_KONTO
+
+&REM Bezeichnung-Kunde/Lieferant (aus Referenz-Datei: Kunden/Lieferantenstamm)
+&DATA      (+)  = 0, KULI_BEZ
+
+&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM Geld-Konto
+&HIDE      (+)
+&REF_KEY   (+-)
+&REF_MATCH (+-) = "Konto-Nummer", 2, KONTONR
+&ADD_MATCH (+-) = "Konten-Bezeichnung            ", 2, KONTO_BEZ
+&DATA      (+-) = 2, KONTONR
+
+&REM Bezeichnung-Geldkonto (aus Referenz-Datei: Sachkontenstamm)
+&HIDE      (+)
+&REF_KEY   (+-)
+&DATA      (+-) = 2, KONTO_BEZ
+
+&REM Bezeichnung-Geldkonto (aus Referenz-Datei: Sachkontenstamm)
+&HIDE      (+)
+&DATA      (+-) = 2, UST_KZ
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM  Fr Geldkonto (Dummy-Feld)
+&HIDE      (+)
+&DATA      (+-) =  2, KONTENART
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+
+&REM Rechnungs-Nummer
+&HELPTEXT  (+) = FIHLP10, 250, 6
+&REC_KEY   (+-)
+&REM REC_MATCH (+-) = "Rechnung-Nr", 0, RECH_NR
+&REM ADD_MATCH (+-) = "Datum  ", 0, RECH_DAT
+&REM ADD_MATCH (+-) = "Konto   ", 0, KULI_KONTO
+&REM ADD_MATCH (+-) = "Kunde/Lieferant          ", 0, KULI_BEZ
+&REM ADD_MATCH (+-) = "Bu-Datum", 0, BUCH_DATUM
+&DATA      (+-) = 0, RECH_NR
+
+&REM Liefer-Datum
+&HELPTEXT  (+) = FIHLP10, 250, 7
+&DATA      (+-) = 0, RECH_DAT
+
+&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM Artikelnummer (Dummy - Feld)
+&HIDE      (+)
+&REF_KEY   (+-)
+&REF_MATCH (+-) = "Bezeichnung        ", 1, MATCH_CODE
+&ADD_MATCH (+-) = "Artikelnummer   ", 1, ARTNR
+&DATA      (+-) = 1, ARTNR
+
+&REM Bezeichnung (Dummy - Feld)
+&HIDE      (+)
+&REF_KEY   (+-)
+&DATA      (+-) = 1, MATCH_CODE
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM Kontonummer (Dummy - Feld)
+&HIDE      (+)
+&DATA      (+-) = 1, ERLOES_KT
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM Kontonummer (Dummy - Feld)
+&HIDE      (+)
+&DATA      (+-) = 1, AUFWAND_KT
+
+&REM Kontonummer (Dummy - Feld)
+&HIDE      (+)
+&DATA      (+-) = 1, BESTAND_KT
+
+&REM Mengeneiheit (Dummy - Feld)
+&HIDE      (+)
+&DATA      (+-) = 1, MENGENEINH
+
+&REM Umsatzsteuerart
+&HIDE      (+)
+&DATA      (+-) = 0, UST_ART
+
+&REM Buchungsart
+&HIDE      (+)
+&DATA      (+-) = 0, BUCH_ART
+
+&REM Art - Buchungen (Buchungsart im Kopf)
+&HIDE      (+)
+&DATA      (+-) = 0, ART_BUCH
+
+&REM Umsatzsteuerbetrag
+&HIDE      (+)
+&DATA      (+-) = 0, UST_BETRAG
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM  Kunden Konto (Dummy-Feld)
+&HIDE      (+)
+&REF_KEY   (+-)
+&REF_MATCH (+-) = "Bezeichnung                   ", 3, KURZ_BEZ
+&ADD_MATCH (+-) = "Kunden-Nummer      ", 3, FI_KUNDE
+&ADD_MATCH (+-) = "Konto-Nr", 3, KU_KONTO
+&DATA      (+-) = 3, FI_KUNDE
+
+&REM  Kunden Bezeichnung (Dummy-Feld)
+&HIDE      (+)
+&REF_KEY   (+-)
+&DATA      (+-) = 3, KURZ_BEZ
+
+&REM  Kunden Nummer (Dummy-Feld)
+&HIDE      (+)
+&DATA      (+-) = 3, KU_KONTO
+
+&REM  Lieferanten Konto (Dummy-Feld)
+&HIDE      (+)
+&REF_KEY   (+-)
+&REF_MATCH (+-) = "Bezeichnung                   ", 4, KURZ_BEZ
+&ADD_MATCH (+-) = "Lieferanten-Nummer ", 4, FI_LIEFER
+&ADD_MATCH (+-) = "Konto-Nr", 4, LI_KONTO
+&DATA      (+-) = 4, FI_LIEFER
+
+&REM  Liefranten Bezeichnung (Dummy-Feld)
+&HIDE      (+)
+&REF_KEY   (+-)
+&DATA      (+-) = 4, KURZ_BEZ
+
+&REM  Lieferanten Nummer (Dummy-Feld)
+&HIDE      (+)
+&DATA      (+-) = 4, LI_KONTO
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM - Mandanten-Nummer
+&REF_KEY   (+)
+&HIDE      (+-)
+&DATA      (+-) = 6, MAND_01
+
+&REM - Steuers„tze
+&HIDE      (+)
+&DATA      (+-) = 6, UST_1
+&HIDE      (+)
+&DATA      (+-) = 6, UST_2
+&HIDE      (+)
+&DATA      (+-) = 6, UST_3
+&HIDE      (+)
+&DATA      (+-) = 6, UST_4
+&HIDE      (+)
+&DATA      (+-) = 6, UST_5
+&HIDE      (+)
+&DATA      (+-) = 6, UST_6
+&HIDE      (+)
+&DATA      (+-) = 6, UST_7
+&HIDE      (+)
+&DATA      (+-) = 6, UST_8
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM Buchungsdatum
+&HIDE      (+)
+&DATA      (+-) = 0, BUCH_DATUM
+
+&REM Mengeneiheit (Dummy - Feld)
+&HIDE      (+)
+&DATA      (+-) = 1, MENGENBAS
+
+&REM Preis/Einheit (Dummy - Feld)
+&HIDE      (+)
+&DATA      (+-) = 1, VKPR1
+
+&REM  Einkaufspreis (Dummy-Feld)
+&HIDE      (+)
+&DATA      (+-) =  1, EKPR1
+
+&REM Ust_Art (Dummy - Feld)
+&HIDE      (+)
+&DATA      (+-) = 1, MWST
+
+&REM Artikelkennzeichen (Gruppe) (Dummy - Feld)
+&HIDE      (+)
+&DATA      (+-) = 1, ART_KENNZ
+
+&REM Artikelkennzeichen (Gruppe) (Dummy - Feld)
+&HIDE      (+)
+&DATA      (+-) = 0, AR_KENNZ
+
+&REM Mengen-Einheit
+&HIDE      (+)
+&REF_KEY   (+-)
+&REF_MATCH (+-) = "Match-Code                                 ", 5, MG_MATCH
+&ADD_MATCH (+-) = "Bezeichnung   ", 5, MG_BEZ
+&DATA      (+-) = 5, MG_BEZ
+
+&REM (Dummy - Feld)
+&HIDE      (+)
+&REF_KEY   (+-)
+&DATA      (+-) = 5, MG_MATCH
+
+&REM (Dummy - Feld)
+&HIDE      (+)
+&DATA      (+-) = 5, BASIS_EH
+
+&REM Basiseinheit
+&HIDE      (+)
+&DATA      (+-) = 0, AR_BASIS
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+&REM ------------------------------
+&REM Positionsteil
+&REM Artikel-Nummer
+&HELPTEXT  (+)  = AUHLP10, 250, 9
+&DATA      (+-) = 0, AR_NUMMER
+
+&REM Bezeichnung
+&HELPTEXT  (+) = AUHLP10, 250, 10
+&DATA      (+-) = 0, AR_BEZEICH
+
+&REM Konto
+&HELPTEXT  (+)  = FIHLP10, 250, 10
+&DATA      (+-) = 0, KONTO_NR
+
+&REM Menge
+&HELPTEXT  (+) = AUHLP10, 250, 11
+&DATA      (+-) = 0, AR_MENGE
+
+&REM Mengen-Einheit
+&HELPTEXT  (+) = AUHLP10, 250, 12
+&DATA      (+-) = 0, AR_EINHEIT
+
+&REM Preis/Einheit
+&HELPTEXT  (+) = AUHLP10, 250, 13
+&DATA      (+-) = 0, PREIS_EINH
+
+&REM Netto/Brutto
+&HELPTEXT  (+)  = AUHLP10, 250, 14
+&CHOICE    (+-) = "Netto/Brutto","Netto = plus MwSt","n","Brutto = incl. MwSt","b"
+&DATA      (+-) = 0, NETTO_BRUT
+
+&REM Umsatzsteuer-Schlssel (0/1-8)
+&HELPTEXT  (+)  = AUHLP10, 250, 15
+&DATA      (+-) = 0, UST_SATZ
+
+&REM Betrag in ™S
+&HELPTEXT  (+)  = AUHLP10, 250, 16
+&DATA      (+-) = 0, BETRAG
+
+

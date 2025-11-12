@@ -1,0 +1,30 @@
+
+
+
+ 
+   ù
+     ACHTUNG !!
+                                                                                
+     Ein ausgew„hltes Programm wurde z.B. durch einen Stromausfall nicht 
+     korrekt abgeschlossen.
+                                                                                
+     Dadurch k”nnen unter Umst„nden Ihre Daten besch„digt worden sein,
+     woraus auch weitere Folgefehler resultieren k”nnen.
+                                                                                
+     Setzen Sie daher m”glichst auf Ihrer letzte Datensicherung auf.
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                            Weiter mit beliebiger Taste!
+   ù                                                                     ù
+
+
+
+&TITEL = "SYÍMeldung nach Systemabsturz 1/1"
+&REM   Maske    :  SYM005
+&REM   Programm:  SY0050 / 00000
+&REM   Datei    :  
+
+&FRAME = 0,0,0,0, "Wichtige Meldung", 2
+&INDEX = "SY005"

@@ -1,0 +1,213 @@
+
+
+
+   Mandanten-Nr: ##        Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+       Saldovortrag      : S@@@@@@@@       Lieferanten-Skonto  : S@@@@@@@@
+
+   Ú Forderungen Inland  : S@@@@@@@@ ¿   Ú Kunden-Skonto UST 1 : S@@@@@@@@ ¿
+   À Forderungen Ausland : S@@@@@@@@ Ù   ³ Kunden-Skonto UST 2 : S@@@@@@@@ ³
+                                         ³ Kunden-Skonto UST 3 : S@@@@@@@@ ³
+   Ú Verbindlichk.Inland : S@@@@@@@@ ¿   ³ Kunden-Skonto UST 4 : S@@@@@@@@ ³
+   À Verbindlichk.Ausland: S@@@@@@@@ Ù   ³ Kunden-Skonto UST 5 : S@@@@@@@@ ³
+                                         ³ Kunden-Skonto UST 6 : S@@@@@@@@ ³
+     Vorsteuer           : S@@@@@@@@     ³ Kunden-Skonto UST 7 : S@@@@@@@@ ³
+                                         ³ Kunden-Skonto UST 8 : S@@@@@@@@ ³
+   Ú Mehrwertsteuer 1    : S@@@@@@@@ ¿   À Kunden-Skonto Stfr. : S@@@@@@@@ Ù
+   ³ Mehrwertsteuer 2    : S@@@@@@@@ ³
+   ³ Mehrwertsteuer 3    : S@@@@@@@@ ³     Zwischenkonto       : S@@@@@@@@
+   ³ Mehrwertsteuer 4    : S@@@@@@@@ ³
+   ³ Mehrwertsteuer 5    : S@@@@@@@@ ³     Kapitalkonto        : S@@@@@@@@
+   ³ Mehrwertsteuer 6    : S@@@@@@@@ ³     Anlagen Schadensfall: S@@@@@@@@
+   ³ Mehrwertsteuer 7    : S@@@@@@@@ ³     Anlagen Aufwand     : S@@@@@@@@
+ ù À Mehrwertsteuer 8    : S@@@@@@@@ Ù     Anlagen Ertrag      : S@@@@@@@@    ù
+
+
+
+>>Mask:   STM020
+>>Prog.:  ST1100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  STAMM ndern Festkonten"
+&FRAME    = 0,0,0,0, "Anlegen/ndern Festkonten", 2
+&SEQUENZ  = 00,01,02,04,06,09,11,14,17,19,20,22,23,25,26,27\
+            03,05,07,08,10,12,13,15,16,18,21,24
+
+&MASKHELP = FIHLP10, kons-an
+&INDEX    = "BASIS"
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, L.SYPARA
+&DATEI      (1)  = MASK, L.SYP_01
+
+>>Mandanten-Nummer (S)
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Mandanten-Nr.", 0, MAND_PARA
+&ADD_MATCH  (+-) = "Bezeichnung                   ", 0, MATCH_CODE
+  &HELPTEXT (+-) = SYHLP10, 041, 00
+  &DATA     (+-) = 0, MAND_PARA
+
+>>Bezeichnung (S)
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Bezeichnung                   ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Mandanten-Nr.", 0, MAND_PARA
+  &HELPTEXT (+-) = SYHLP10, 041, 01
+  &DATA     (+-) = 0, MATCH_CODE
+
+>>Saldovortrag
+  &HELPTEXT  (+)  = FIHLP10, 020, 02
+  &DATA      (+-) = 1, SALDO_VOR
+  &DEFAULT   (+-) = "9800"
+
+>>Lieferanten-Skonto
+  &HELPTEXT  (+)  = FIHLP10, 020, 03
+  &DATA      (+-) = 1, LIEF_SKONT
+  &DEFAULT   (+-) = "5880"
+
+>>Forderungen Inland
+  &HELPTEXT  (+)  = FIHLP10, 020, 04
+  &DATA      (+-) = 1, FORDER_IN
+  &DEFAULT   (+-) = "2000"
+
+>>Kunden-Skonto UST1
+  &HELPTEXT  (+)  = FIHLP10, 020, 05
+  &DATA      (+-) = 1, KU_SKONT_1
+  &DEFAULT   (+-) = "4410"
+                                                                            
+>>Forderungen Ausland
+  &HELPTEXT  (+)  = FIHLP10, 020, 06
+  &DATA      (+-) = 1, FORDER_AUS
+  &DEFAULT   (+-) = "2100"
+
+>>Kunden-Skonto UST2
+  &HELPTEXT  (+)  = FIHLP10, 020, 05
+  &DATA      (+-) = 1, KU_SKONT_2
+  &DEFAULT   (+-) = "4420"
+                                                                            
+>>Kunden-Skonto UST3
+  &HELPTEXT  (+)  = FIHLP10, 020, 05
+  &DATA      (+-) = 1, KU_SKONT_3
+  &DEFAULT   (+-) = "4400"
+                                                                            
+>>Verbindlichkeinten Inland
+  &HELPTEXT  (+)  = FIHLP10, 020, 09
+  &DATA      (+-) = 1, VERBIN_IN
+  &DEFAULT   (+-) = "3300"
+
+>>Kunden-Skonto UST4
+  &HELPTEXT  (+)  = FIHLP10, 020, 05
+  &DATA      (+-) = 1, KU_SKONT_4
+  &DEFAULT   (+-) = "4400"
+                                                                            
+>>Verbindlichkeiten Ausland
+  &HELPTEXT  (+)  = FIHLP10, 020, 11
+  &DATA      (+-) = 1, VERBIN_AUS
+  &DEFAULT   (+-) = "3310"
+
+>>Kunden-Skonto UST5
+  &HELPTEXT  (+)  = FIHLP10, 020, 05
+  &DATA      (+-) = 1, KU_SKONT_5
+  &DEFAULT   (+-) = "4400"
+                                                                            
+>>Kunden-Skonto UST6
+  &HELPTEXT  (+)  = FIHLP10, 020, 05
+  &DATA      (+-) = 1, KU_SKONT_6
+  &DEFAULT   (+-) = "4400"
+                                                                            
+>>Vorsteuer
+  &HELPTEXT  (+)  = FIHLP10, 020, 14
+  &DATA      (+-) = 1, VORSTEUER
+  &DEFAULT   (+-) = "2500"
+                                                                            
+>>Kunden-Skonto UST7
+  &HELPTEXT  (+)  = FIHLP10, 020, 05
+  &DATA      (+-) = 1, KU_SKONT_7
+  &DEFAULT   (+-) = "4400"
+                                                                            
+>>Kunden-Skonto UST8
+  &HELPTEXT  (+)  = FIHLP10, 020, 05
+  &DATA      (+-) = 1, KU_SKONT_8
+  &DEFAULT   (+-) = "4400"
+                                                                            
+>>Mehrwertsteuer 1
+  &HELPTEXT  (+)  = FIHLP10, 020, 17
+  &DATA      (+-) = 1, KTO_MWST_1
+  &DEFAULT   (+-) = "3510"
+                                                                            
+>>Kunden-Skonto ST-frei
+  &HELPTEXT  (+)  = FIHLP10, 020, 18
+  &DATA      (+-) = 1, KU_SKONT_S
+  &DEFAULT   (+-) = "4400"
+                                                                            
+>>Mehrwertsteuer 2
+  &HELPTEXT  (+)  = FIHLP10, 020, 17
+  &DATA      (+-) = 1, KTO_MWST_2
+  &DEFAULT   (+-) = "3520"
+                                                                            
+>>Mehrwertsteuer 3
+  &HELPTEXT  (+)  = FIHLP10, 020, 17
+  &DATA      (+-) = 1, KTO_MWST_3
+  &DEFAULT   (+-) = "3509"
+                                          
+>>Zwischenkonto
+  &HELPTEXT  (+)  = FIHLP10, 020, 21
+  &DATA      (+-) = 1, ZWISCH_KTO
+  &DEFAULT   (+-) = "2880"
+                                                                            
+>>Mehrwertsteuer 4
+  &HELPTEXT  (+)  = FIHLP10, 020, 17
+  &DATA      (+-) = 1, KTO_MWST_4
+  &DEFAULT   (+-) = "3509"
+                                                                            
+>>Mehrwertsteuer 5
+  &HELPTEXT  (+)  = FIHLP10, 020, 17
+  &DATA      (+-) = 1, KTO_MWST_5
+  &DEFAULT   (+-) = "3509"
+                                                                            
+>>Kapitalkonto
+  &HELPTEXT  (+)  = FIHLP10, 020, 20
+  &DATA      (+-) = 1, KAPIT_KTO
+  &DEFAULT   (+-) = "9010"
+
+>>Mehrwertsteuer 6
+  &HELPTEXT  (+)  = FIHLP10, 020, 17
+  &DATA      (+-) = 1, KTO_MWST_6
+  &DEFAULT   (+-) = "3509"
+                                                                            
+>>Anlagen Schaden
+  &HELPTEXT  (+)  = FIHLP10, 020, 20
+  &DATA      (+-) = 1, AN_SCHADEN
+  &DEFAULT   (+-) = "7010"
+                                                                            
+>>Mehrwertsteuer 7
+  &HELPTEXT  (+)  = FIHLP10, 020, 17
+  &DATA      (+-) = 1, KTO_MWST_7
+  &DEFAULT   (+-) = "3509"
+                                                                            
+>>Anlagen Aufwand
+  &HELPTEXT  (+)  = FIHLP10, 020, 21
+  &DATA      (+-) = 1, AN_AUFWAND
+  &DEFAULT   (+-) = "7010"
+                                                                            
+>>Mehrwertsteuer 8
+  &HELPTEXT  (+)  = FIHLP10, 020, 17
+  &DATA      (+-) = 1, KTO_MWST_8
+  &DEFAULT   (+-) = "3509"
+                                                                            
+>>Anlagen Ertrag
+  &HELPTEXT  (+)  = FIHLP10, 020, 22
+  &DATA      (+-) = 1, AN_ERTRAG
+  &DEFAULT   (+-) = "4600"
+
+
+
+>>&PARA_READ  (2)  = MASK, L.SYP_02
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Mandanten-Nummer
+>>&REF_KEY     (+)
+>>  &DATA_H    (+-) = 2, MAND_02
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+

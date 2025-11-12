@@ -1,0 +1,12 @@
+
+/*.ta,F02,Tiefster Indexeintrag / 1.,1
+
+euroSOFT-SYSTEMprogramme
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
+
+.in (SY,SY110)
+.te*/
+
+in (SY,SY110)
+hi (FA,AU110)
+

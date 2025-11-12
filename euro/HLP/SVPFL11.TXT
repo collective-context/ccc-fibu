@@ -1,0 +1,21 @@
+/*.ta,F02,III. euroSOFT-PROGRAMMbeschreibung / 7.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE UB-Urlaub am Bauernhof                                             บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+Kunden Statistiken
+ออออออออออออออออออ
+
+Unter dem Punkt Kunden Statistiken existieren folgende Auswertungsprogramme:
+a) Liste nach Hufigkeit der Anfrage
+b) Liste nach Information: Liste der Kunden sortiert nach dem Feld ฏInformationฎ.
+                           Die Information ber den Verein ฏUrlaub am Bauernhofฎ
+                           kann der Kunde ber einen Pressetext, eine Messever-
+                           anstaltung, ber Mundpropaganda, LFVV, oder sonstige
+                           Informationsquellen erhalten haben.
+c) Liste nach Regionen
+d) Liste nach Anfrage per: Die Anfrage kann per Telefon oder per Post gettigt
+                           werden.
+.te*/
+
+

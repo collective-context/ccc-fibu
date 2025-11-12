@@ -1,0 +1,156 @@
+
+
+
+
+
+
+         ù
+           von Artikel-Bez. : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+           bis Artikel-Bez. : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+           von Lieferant    : ïïïïïïïïïïïïïïïïïïïï     Kopien: ##
+           bis Lieferant    : ïïïïïïïïïïïïïïïïïïïï
+
+          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+           von Lagerort     : ïïïïïï    bis Lagerort     : ïïïïïï
+           von Seite        : ####      bis Seite        : ####
+         ù                                                         ù
+
+^ ^ 
+``.``.``  ^ ^ ^ ^ ^ ^ 
+  ^ ^ ^ ^ ^   ^ ^ ^
+  ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^
+^ ^ ^ ^ ^ ^   ^
+
+>>Mask:   STM4151
+>>Prog.:  ST4100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  Liste Inventur nach Bezeichnung 1/1"
+&FRAME    = 0, 0, 0, 0, "ÄListe Inventur nach Artikelbezeichnung", 2
+>>SEQUENZ =
+
+&MASKHELP = STHLP10, artbez
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1300
+&DRU_DATEI  (1)  = MASK, D.ST4140
+&PARA_READ  (2)  = MASK, L.SYP_01
+
+>>von Artikel-Bezeichnung
+  &HELPTEXT (0)  = STHLP10, 414, 2
+  &DATA     (+-) = 1, _V_KURZBEZ
+
+>>bis Artikel-Bezeichnung
+  &HELPTEXT (+)  = STHLP10, 414, 3
+  &DATA     (+-) = 1, _B_KURZBEZ
+
+>>von Lieferant
+  &HELPTEXT (+)  = STHLP10, 414, 4
+  &DATA     (+-) = 1, _V_LIEFNR
+
+>>Kopien
+  &HELPTEXT (+)  = SYHLP10, 402, 04
+  &DATA     (+-) = 1, _KOPIEN
+  &DEFAULT  (+-) = "1"
+
+
+>>bis Lieferant
+  &HELPTEXT (+)  = STHLP10, 414, 5
+  &DATA     (+-) = 1, _B_LIEFNR
+
+>>         von Artikelgruppe: ###       bis Artikelgruppe: ###
+>>von Artikelgruppe
+>>&HELPTEXT (+)  = STHLP10, 414, 6
+>>&DATA     (+-) = 1, _V_ARTGR
+>>&DEFAULT  (+-) = "001"
+
+>>bis Artikelgruppe
+>>&HELPTEXT (+)  = STHLP10, 414, 8
+>>&DATA     (+-) = 1, _B_ARTGR
+>>&DEFAULT  (+-) = "999"
+
+>>von Erl”scode
+  &HELPTEXT (+)  = STHLP10, 414, 7
+  &DATA     (+-) = 1, _V_LAGEROR
+
+>>bis Erl”scode
+  &HELPTEXT (+)  = STHLP10, 414, 9
+  &DATA     (+-) = 1, _B_LAGEROR
+
+>>von Seite
+  &HELPTEXT (+)  = STHLP10, 413, 9
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = STHLP10, 413, 10
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REC_KEY    (+)                   >>Artikel-Nummer
+&REC_MATCH  (+-) = "Artikel-Bezeichnung", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Artikel-Nummer", 0, ARTNR
+  &DATA_H   (+-) = 0, ARTNR
+
+&REC_KEY    (+)                   >>Artikel-Bezeichnung
+  &DATA_H   (+-) = 0, MATCH_CODE
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
+ 
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>&REF_KEY    (+)
+>>  &DATA_H   (+-) = 2, MAND_01     >>Mandanten-Nummer
+  &DATA_H   (+)  = 2, UST_1       >>Steuersatz 1 - 8
+  &DATA_H   (+)  = 2, UST_2
+  &DATA_H   (+)  = 2, UST_3
+  &DATA_H   (+)  = 2, UST_4
+  &DATA_H   (+)  = 2, UST_5
+
+  &DATA_H   (+)  = 2, UST_6
+  &DATA_H   (+)  = 2, UST_7
+  &DATA_H   (+)  = 2, UST_8
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>&REF_KEY    (+)                   >>Mandanten-Nummer
+>>  &DATA_H   (+-) = 2, MAND_01
+  &DATA_H   (+)  = 2, TXT_VKP_01  >>Artikel-Preis-Text 1
+  &DATA_H   (+)  = 2, TXT_VKP_02  >>Artikel-Preis-Text 2
+  &DATA_H   (+)  = 2, TXT_VKP_03  >>Artikel-Preis-Text 3
+  &DATA_H   (+)  = 2, TXT_VKP_04  >>Artikel-Preis-Text 4
+  &DATA_H   (+)  = 2, TXT_VKP_05  >>Artikel-Preis-Text 5
+
+  &DATA_H   (+)  = 1, _FELD_1     >>Preis-Text 1
+  &DATA_H   (+)  = 1, _FELD_2     >>Preis-Text 2
+  &DATA_H   (+)  = 1, _FELD_3     >>Preis-Text 3
+  &DATA_H   (+)  = 1, _FELD_4     >>Preis-Text 4
+  &DATA_H   (+)  = 1, _FELD_5     >>Preis-Text 5
+  &DATA_H   (+)  = 0, PREINHKZ    >>Preis-Einheits-Kennzeichen
+
+  &DATA_H   (+)  = 1, _PREINHKZ   >>Preis-Einheits-Kennzeichen
+  &DATA_H   (+)  = 0, MWST        >>Mehrwertsteuer
+  &DATA_H   (+)  = 1, _MWST       >>Mehrwertsteuer
+
+>>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 0, SOLL_BEST   >>Bestand aktuell
+  &DATA_H   (+)  = 0, INVEN_AKT   >>Inventur aktuell
+  &DATA_H   (+)  = 0, EKPR1       >>Einkaufspreis
+  &DATA_H   (+)  = 0, LAGERKZ
+  &DATA_H   (+)  = 1, _INVEN_DIF  >>Inventur-Differenz
+  &DATA_H   (+)  = 1, _IN_BETRAG  >>Inventur-Betrag
+
+  &DATA_H   (+)  = 1, _IN_SUMME   >>Inventur-Summe
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+

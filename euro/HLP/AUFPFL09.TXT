@@ -1,0 +1,99 @@
+/*.ta,F02,VI. Bereich: Stammdaten / 1.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-006),1,Hauptmen,ndern Kunden/Lieferanten/Artikel.
+
+Siehe anschlieแend bei "Stammdaten/Konstanten..."
+   ---------------------------------------------------
+
+.te*/
+
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.1.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-006),1,Hauptmen,Stammdaten.
+   ---------------------------------------------------
+
+.mi (MENU,AUF-L10),1,ฏStammdaten/Konstantenฎ.
+.mi (MENU,AUF-L91),1,ฏStammdaten/Konstantenฎ.
+   ---------------------------------------------------
+
+.me (MENU,AUF-101),1,Stammdaten/Konstanten,ndern Kunden.
+.mh (\euro\mask\AUF\AUFM110),1,ndern Kunden 1/1.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.1.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-101),1,Stammdaten/Konstanten,Liste numerisch.
+.mh (\euro\mask\AUF\AUFM401),1,Liste Kunden numerisch.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.1.3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-101),1,Stammdaten/Konstanten,Liste Bezeichnung.
+.mh (\euro\mask\AUF\AUFM402),1,Liste Kunden n Bezeichnung.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.1.4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-101),1,Stammdaten/Konstanten,Liste Adressen.
+.mh (\euro\mask\ST\STM4112),1,Liste Kunden n Adressen.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.1.5.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-101),1,Stammdaten/Konstanten,Liste PLZ.
+.mh (\euro\mask\AUF\AUFM403),1,Liste Kunden n PLZ.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.1.6.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-101),1,Stammdaten/Konstanten,Liste Ansprechpartner.
+.mh (\euro\mask\AUF\AUFM404),1,Liste Kunden n Ansprechpartner.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.1.7.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-101),1,Stammdaten/Konstanten,Telefonliste.
+.mh (\euro\mask\ST\STM4112),1,Telefonliste.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.1.8.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-101),1,Stammdaten/Konstanten,Etiketten.
+.mh (\euro\mask\ST\STM4113),1,Etiketten.
+---------------------------------------------------
+.te*/

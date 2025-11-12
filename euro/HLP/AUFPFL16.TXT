@@ -1,0 +1,153 @@
+/*.ta,F02,VI. Bereich: Stammdaten / 4.1.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-141),1,Stammdaten/Konstanten,Sonderpreise pro Kunde.
+.mh (\euro\mask\AUF\AUFM140),1,Sonderpreise pro Kunde.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 4.1.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-141),1,Stammdaten/Konstanten,Sonderrabatt Kunde/AGR.
+.mh (\euro\mask\AUF\AUFM141),1,Sonderrabatt Kunde/AGR.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 4.1.3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-141),1,Stammdaten/Konstanten,Kundenpreislisten.
+mh (\euro\mask\AUF\AUFM???),1,Kundenpreislisten.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 4.1.4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-141),1,Stammdaten/Konstanten,Kundensonderkonditionen.
+mh (\euro\mask\AUF\AUFM???),1,Kundensonderkonditionen.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 4.1.5.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-141),1,Stammdaten/Konstanten,Altkonditionen l”schen.
+mh (\euro\mask\AUF\AUFM???),1,Altkonditionen l”schen.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 4.2.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-142),1,Stammdaten/Konstanten,Rabattmatrix bearbeiten.
+.mh (\euro\mask\AUF\AUFM142),1,Rabattmatrix bearbeiten.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 4.2.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-142),1,Stammdaten/Konstanten,Rabattmatrix drucken.
+.mh (\euro\mask\AUF\AUFM400),1,Rabattmatrix drucken.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 4.2.3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-142),1,Stammdaten/Konstanten,Rabattstaffel anlegen.
+.mh (\euro\mask\AUF\AUFM143),1,Rabattstaffel anlegen.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 4.2.4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-142),1,Stammdaten/Konstanten,Rabattstaffel drucken.
+.mh (\euro\mask\AUF\AUFM400),1,Rabattstaffel drucken.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 4.2.5.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-142),1,Stammdaten/Konstanten,Anlegen Rabattst/-Art.
+.mh (\euro\mask\AUF\AUFM144),1,Anlegen Rabattst/-Art.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 4.2.6.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-142),1,Stammdaten/Konstanten,Drucken Rabattst/-Art.
+.mh (\euro\mask\AUF\AUFM441),1,Drucken Rabattst/-Art.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 5.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-006),1,Hauptmen,ndern Mitarbeiterstamm.
+.mh (\euro\mask\AUF\AUFM160),1,ndern Mitarbeiterstamm.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 5.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-006),1,Hauptmen,Liste Mitarbeiterstamm.
+.mh (\euro\mask\ST\STM4170),1,Liste Mitarbeiterstamm.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 5.3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-006),1,Hauptmen,Vertreterstamm.
+.mh (\euro\mask\AUF\AUFM190),1,Vertreterstamm.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 5.4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-006),1,Hauptmen,Vertreterliste.
+.mh (\euro\mask\AUF\AUFM491),1,Vertreterliste.
+---------------------------------------------------
+.te*/
+
+
+
+

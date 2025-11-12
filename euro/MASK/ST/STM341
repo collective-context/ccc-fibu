@@ -1,0 +1,74 @@
+
+
+
+
+
+
+
+
+        ù
+           VK-Preis incl     MwSt    VK-Preis excl       CODE-ART
+          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+           ##.###.##›,››    #›,››    ##.###.##›,››    @@@@@@@@@@@
+ 
+                    CODE   Abschlag  Aufschlag        EK-Preis/EH
+                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                 ­######      #›,›%  ##.##›,›%      ##.###.##›,››
+        ù                                                          ù
+
+
+>>Mask:   STM341
+>>Prog.:  ST1100.C
+>>Update: 21.07.92
+
+&TITEL    = "ST  WORK Inventur Artikel 2/2"
+&FRAME    = 0, 0, 0, 0, "ÄErfassen Inventurù0", 2
+&SEQUENZ  = 0,5,8
+
+&DATEI      (0)  = MASK, D.ST1300
+&DRU_DATEI  (1)  = MASK, D.ST4500
+&REF_DATEI  (2)  = MASK, D.ST1400
+&PARA_READ  (3)  = MASK, L.SYP_01
+&PARA_READ  (4)  = MASK, L.SYP_02
+
+>>Verkaufs-Preis
+  &HELPTEXT (0)  = STHLP10, 341, 1
+  &DATA     (+-) = 1, _VKPR1
+
+>>MwSt
+  &HELPTEXT (+)  = STHLP10, 341, 3
+  &DATA     (+-) = 0, MWST
+  &DEFAULT  (+-) = 2
+
+>>Abschlag
+  &HELPTEXT (+)  = STHLP10, 341, 2
+  &DATA     (+-) = 0, VKPR1
+
+>>Abschlag/Aufschlag
+  &HELPTEXT (+)  = STHLP10, 341, 2
+  &DATA     (+-) = 0, CODE_ART
+  &DEFAULT  (+-) = A
+  &CHOICE   (+-) = "ÄCode-Art", "A/Aufschlag als Code",A, \
+                                "B/Abschlag  als Code",B,
+
+>>Abschlag/Aufschlag
+  &DATA     (+)  = 0, CODE_ART
+
+>>Abschlag/Aufschlag
+  &HELPTEXT (+)  = STHLP10, 341, 2
+  &DATA     (+-) = 0, CODE
+  &MODUS    (+-) = PREPARE
+
+>>Abschlag
+  &HELPTEXT (+)  = STHLP10, 341, 2
+  &DATA     (+-) = 1, _ABSCHLAG
+
+>>Aufschlag
+  &HELPTEXT (+)  = STHLP10, 341, 3
+  &DATA     (+-) = 1, _AUFSCHLAG
+
+>>letzter Netto-Einkaufs-Preis
+  &HELPTEXT (+)  = STHLP10, 341, 4
+  &DATA     (+-) = 1, _IN_AKT_EK
+
+

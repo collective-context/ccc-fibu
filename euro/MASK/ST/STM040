@@ -1,0 +1,121 @@
+
+
+
+   Text 1   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Text 2   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Text 3   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ ù            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ù
+
+^
+
+>>Mask:   STM040
+>>Prog.:  ST1100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  STAMM ndern Mahntexte"
+&FRAME    = 0, 0, 0, 0, "ÄAnlegen/ndern Mahntexte" 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, mate-an
+&INDEX    = "BASIS"
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, L.SYP_04
+
+>>Mahnstufe 1 Text 1
+  &HELPTEXT (0)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_11
+
+>>Mahnstufe 1 Text 2
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_12
+
+>>Mahnstufe 1 Text 3
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_13
+
+>>Mahnstufe 1 Text 4
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_14
+
+>>Mahnstufe 1 Text 5
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_15
+
+>>Mahnstufe 1 Text 6
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_16
+
+>>Mahnstufe 2 Text 1
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_21
+
+>>Mahnstufe 2 Text 2
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_22
+
+>>Mahnstufe 2 Text 3
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_23
+
+>>Mahnstufe 2 Text 4
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_24
+
+>>Mahnstufe 2 Text 5
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_25
+
+>>Mahnstufe 2 Text 6
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_26
+
+>>Mahnstufe 3 Text 1
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_31
+
+>>Mahnstufe 3 Text 2
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_32
+
+>>Mahnstufe 3 Text 3
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_33
+
+>>Mahnstufe 3 Text 4
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_34
+
+>>Mahnstufe 3 Text 5
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_35
+
+>>Mahnstufe 3 Text 6
+  &HELPTEXT (+)  = FIHLP10, 040, 0
+  &DATA     (+-) = 0, MA_TXT_36
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+&REC_KEY    (+)                   >>Mandanten-Nummer
+  &DATA_H   (+-) = 0, MAND_04
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+

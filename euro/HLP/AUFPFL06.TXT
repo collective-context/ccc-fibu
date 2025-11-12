@@ -1,0 +1,94 @@
+/*.ta,F02,IV. Bereich: Auswertung / 2.3.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-183),1,Umsatz,Umsatzliste.
+.mh (\euro\mask\AUF\AUFM591),1,Umsatzliste 1/2.
+.mh (\euro\mask\AUF\AUFM592),1,Umsatzliste 2/2.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,IV. Bereich: Auswertung / 2.3.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-183),1,Umsatz,Hitliste n Umsatz.
+.mh (\euro\mask\AUF\AUFM593),1,Hitliste n Umsatz 1/2.
+.mh (\euro\mask\AUF\AUFM594),1,Hitliste n Umsatz 2/2.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,IV. Bereich: Auswertung / 2.3.3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-183),1,Umsatz,Hitliste n Roherl”s.
+.mh (\euro\mask\AUF\AUFM595),1,Hitliste n Roherl”s 1/2.
+.mh (\euro\mask\AUF\AUFM596),1,Hitliste n Roherl”s 2/2.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,IV. Bereich: Auswertung / 2.4.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-184),1,Umsatz,Umsatzliste.
+.mh (\euro\mask\AUF\AUFM581),1,Umsatzliste 1/2.
+.mh (\euro\mask\AUF\AUFM582),1,Umsatzliste 2/2.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,IV. Bereich: Auswertung / 3.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-003),1,Hauptmen,Periodenabschluแ.
+.mh (\euro\mask\AUF\AUFM380),1,Periodenabschluแ.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,IV. Bereich: Auswertung / 3.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-003),1,Hauptmen,Jahresabschluแ.
+.mh (\euro\mask\AUF\AUFM390),1,Jahresabschluแ.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,IV. Bereich: Auswertung / 3.3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-003),1,Hauptmen,Tagessummen.
+mh (\euro\mask\AUF\AUFM???),1,Tagessummen.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,IV. Bereich: Auswertung / 3.4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-003),1,Hauptmen,Interne Rechnungen.
+mh (\euro\mask\AUF\AUFM???),1,Interne Rechnungen.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,IV. Bereich: Auswertung / 3.5.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-003),1,Hauptmen,Gewhrleistungen.
+mh (\euro\mask\AUF\AUFM???),1,Gewhrleistungen.
+   ---------------------------------------------------
+.te*/
+

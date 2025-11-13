@@ -1,31 +1,31 @@
 /*.ta Dl_HilfeIndex()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Dl_HilfeIndex()							       º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Dl_HilfeIndex()							       â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_dlg.h>
 WORD Dl_HilfeIndex(pHilfeIndex);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 HILFEINDEX  pHilfeIndex  Zeiger auf Array aus Strukturen des Typs HILFEINDEX.
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Diese Funktion baut ein Hilfe-Fenster auf, in dem der Anwender aus einem
-Hilfe-Index das Thema ausw„hlen kann, zu dem er Hilfe anfordern will. Diese
+Hilfe-Index das Thema auswÃ¤hlen kann, zu dem er Hilfe anfordern will. Diese
 Dialogfeld ist Bestandteil des SAA-Konzeptes. Nach den Tastenzuordnungen von
 SAA sollen Sie dem Anwender mit der Taste [F11] (auf dem PC durch [Alt][F1]
 simuliert) Zugang zum Hilfeindex bieten. Dies Tastenbelegung findet auch bei
-Shell von DOS 4.0 Verwendung. Der Session-Manager von OS/2 verwendet fr den
+Shell von DOS 4.0 Verwendung. Der Session-Manager von OS/2 verwendet fÃ¼r den
 gleichen Zweck die Taste [F5].
 
-šbergeben Sie der Funktion einen Zeiger auf ein Array von Daten des Struktur-
+Ãœbergeben Sie der Funktion einen Zeiger auf ein Array von Daten des Struktur-
 typs HILFEINDEX. Dieser Strukturtyp ist in der Datei <eur_dlg.h> folgender-
-maáen definiert:
+maÃŸen definiert:
 
 typedef struct
 {
@@ -33,49 +33,49 @@ typedef struct
      WORD wRueckgabe;
 } HILFEINDEX;
 
-Tragen Sie bei der Initialisierung fr das Strukturelement pstrText das Thema
-und fr wRueckgabe den Wert ein, den Sie zurck erhalten wollen, wenn der
+Tragen Sie bei der Initialisierung fÃ¼r das Strukturelement pstrText das Thema
+und fÃ¼r wRueckgabe den Wert ein, den Sie zurÃ¼ck erhalten wollen, wenn der
 Anwender dieses Thema selektiert.
 
 Initialisieren Sie das letzte Element des Array expliziet als NULL-Zeiger,
 damit die Funktion das Ende der Initialisierungen erkennen kann. Verwenden Sie
-fr wRueckgabe nicht die Zahl Null, da dieser Rckgabewert das Abbrechen der
+fÃ¼r wRueckgabe nicht die Zahl Null, da dieser RÃ¼ckgabewert das Abbrechen der
 Funktion durch den Anwender signalisiert.
 
-Die einzelnen Eintr„ge des Index k”nnen maximal 52 Zeichen lang sein. Wenn
-der Index mehr als acht Zeilen/Eintr„ge umfaát, stellt die Funktion dem
-Anwender eine Scroll-M”glichkeit zur Verfgung.
+Die einzelnen EintrÃ¤ge des Index kÃ¶nnen maximal 52 Zeichen lang sein. Wenn
+der Index mehr als acht Zeilen/EintrÃ¤ge umfaÃŸt, stellt die Funktion dem
+Anwender eine Scroll-MÃ¶glichkeit zur VerfÃ¼gung.
 
-Der Anwender kann mit der Tastatur ein Thema ausw„hlen, indem er mit den
-Cursor-Tasten ein Thema ausw„hlt und anschlieáend mit [Return] best„tigt.
+Der Anwender kann mit der Tastatur ein Thema auswÃ¤hlen, indem er mit den
+Cursor-Tasten ein Thema auswÃ¤hlt und anschlieÃŸend mit [Return] bestÃ¤tigt.
 
 Bei einer aktiven Maus kann der Auswahlcursor verschoben werden, indem der
 Anwender den Mauszeiger auf die Scrollpfeile bewegt, die sich auf der oberen
-Trennlinie im Fenster befinden, und dort die linke Maustaste drckt. Auáer-
+Trennlinie im Fenster befinden, und dort die linke Maustaste drÃ¼ckt. AuÃŸer-
 dem kann der Anwender ein Thema makieren, indem er mit dem Mauszeiger auf den
-Eintrag zeigt und dort die linke Maustaste drckt. Mit einem Doppelklick wird
-das Thema ausgew„hlt, auf das der Mauszeiger beim Klicken zeigt.
+Eintrag zeigt und dort die linke Maustaste drÃ¼ckt. Mit einem Doppelklick wird
+das Thema ausgewÃ¤hlt, auf das der Mauszeiger beim Klicken zeigt.
 .ff
-Im unteren Bereich der Dialogbox befinden sich drei Schaltfl„chen:
+Im unteren Bereich der Dialogbox befinden sich drei SchaltflÃ¤chen:
 
-- Mit der [Esc]-Schaltfl„che kann der Anwender die Hilfe beenden.
+- Mit der [Esc]-SchaltflÃ¤che kann der Anwender die Hilfe beenden.
   Die Funktion gibt dann den Wert der Konstanten DLG_ESC (definiert mit
-  dem Wert 0) zurck.
-- Mit der [F1]-Schaltfl„che kann Hilfe zur Bedienung der Dialogbox angefordert
-  werden. Diese Hilfe wird von der Toolbox zur Verfgung gestellt.
-- Mit der Eingabe-Schaltfl„che w„hlt der Anwender das Thema unter dem
-  Auswahl-Cursor aus. Rufen Sie anschlieáend die Funktion Dl_Hilfe() oder
+  dem Wert 0) zurÃ¼ck.
+- Mit der [F1]-SchaltflÃ¤che kann Hilfe zur Bedienung der Dialogbox angefordert
+  werden. Diese Hilfe wird von der Toolbox zur VerfÃ¼gung gestellt.
+- Mit der Eingabe-SchaltflÃ¤che wÃ¤hlt der Anwender das Thema unter dem
+  Auswahl-Cursor aus. Rufen Sie anschlieÃŸend die Funktion Dl_Hilfe() oder
   Dl_HilfeTools() auf, um die angefeorderte Hilfe anzuzeigen.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 WORD  Auswahl   DLG_ESC == 0  Funktion abgebrochen,
-                sonst      Eintrag in wRueckgabe fr gew„hltes Thema
+                sonst      Eintrag in wRueckgabe fÃ¼r gewÃ¤hltes Thema
 
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 - aCS_g[]    (R)            - pstrEsc_g   (R)         - pstrReturn_g (R)
 - wCSInd_g   (R)            - pstrF1_g    (R)
 - wMausda_g  (R)            - boBeepen_g  (R)
@@ -85,50 +85,50 @@ Benutzte globale Variablen (R/W):
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <eur_tool.h>
 #include <stdio.h>
 #include <string.h>
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT COLORSET aCS_g[];                            /* Farbpaletten-Array   */
 IMPORT WORD     wCSInd_g;                           /* Index in Pal.-Array  */
 IMPORT WORD     wMausda_g;                          /* Maus im System ?     */
 
 IMPORT PSTR     pstrF1_g;                           /* Texte der Schalt-    */
-IMPORT PSTR     pstrEsc_g;                          /* fl„chen              */
+IMPORT PSTR     pstrEsc_g;                          /* flÃ¤chen              */
 IMPORT PSTR     pstrReturn_g;
 IMPORT BOOL     boBeepen_g;                         /* Warnton ein ?        */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	PSTR   pstrHI_m     = "Index der Hilfsbildschirme";
 STATIC	WORD   wHilfsZeilen_m,
                wAktZeile_m,
                wIndex_m;
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE FUNKTIONEN                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE FUNKTIONEN                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	VOID cdecl i_BalkenPlusEins	  (PHILFEINDEX);
 STATIC	VOID cdecl i_BalkenMinusEins	  (PHILFEINDEX);
 STATIC	VOID cdecl i_ZeichneScroller	  (VOID);
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        KONSTANTEN UND MAKROS                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        KONSTANTEN UND MAKROS                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define SPA         9                               /* Spalte des Dialoges  */
 #define ZEI         5                               /* Zeile des Dialoges   */
 #define BRE        56                               /* Breite des Dialoges  */
-#define HOE        14                               /* H”he des Dialoges    */
+#define HOE        14                               /* HÃ¶he des Dialoges    */
 #define TEXTZEILEN  8                               /* Anzahl Hilfszeilen   */
 #define MINZEILEN   5                               /* min. Anzahl Hilfsz.  */
 
@@ -139,16 +139,16 @@ STATIC	VOID cdecl i_ZeichneScroller	  (VOID);
 #define LOESCHEBALKEN(z)    Wi_Swa(1,z+2, 52,1,aCS_g[wCSInd_g].wCs_dlg)
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 WORD Dl_HilfeIndex(PHILFEINDEX pHilfeIndex)
 {
     REGISTER    i;
     PWKB        pWkbDialog;
 
-    EVENT       Event;                              /* Zeiger fr Event     */
+    EVENT       Event;                              /* Zeiger fÃ¼r Event     */
     PEVENT      pEvent;
     PHILFEINDEX pHILokal;                           /* lokaler Zeiger Texte */
     LONG        lTicksEins;                         /* zur Erkennung Doppel-*/
@@ -161,7 +161,7 @@ WORD Dl_HilfeIndex(PHILFEINDEX pHilfeIndex)
     for (wHilfsZeilen_m=0;                          /* Anzahl der Hilfs-    */
          pHILokal->pstrText != NULL;                /* zeilen ermitteln     */
          wHilfsZeilen_m++, pHILokal++);
-    pHILokal = pHilfeIndex;                         /* Zeiger zurcksetzen  */
+    pHILokal = pHilfeIndex;                         /* Zeiger zurÃ¼cksetzen  */
 
     wAktZeile_m = 0;
     wIndex_m    = 0;
@@ -295,28 +295,28 @@ WORD Dl_HilfeIndex(PHILFEINDEX pHilfeIndex)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_BalkenPlusEins               Datum: 25.10.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion steuert das Scrollen und die Neu-    º
-  º		       ausgabe des Hilfstextes bei Dl_HilfeIndex().	   º
-  º                    In diesem Fall wird der im Fenster stehende         º
-  º                    Text gescrollt, der neue Text ausgegeben und        º
-  º                    die Scroll-Pfeile an die nach dem Scrollen ent-     º
-  º                    standene Situation angepaát.                        º
-  º                                                                        º
-  º  Rckgabewert:     keine                                               º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  modulglobale Variablen:                             º
-  º                    - wHilfsZeilen_m (R)                                º
-  º                    - wStartzeile_m  (R/W)                              º
-  º                    - ppstrTmp_m     (R)                                º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_BalkenPlusEins               Datum: 25.10.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion steuert das Scrollen und die Neu-    â•‘
+  â•‘		       ausgabe des Hilfstextes bei Dl_HilfeIndex().	   â•‘
+  â•‘                    In diesem Fall wird der im Fenster stehende         â•‘
+  â•‘                    Text gescrollt, der neue Text ausgegeben und        â•‘
+  â•‘                    die Scroll-Pfeile an die nach dem Scrollen ent-     â•‘
+  â•‘                    standene Situation angepaÃŸt.                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  modulglobale Variablen:                             â•‘
+  â•‘                    - wHilfsZeilen_m (R)                                â•‘
+  â•‘                    - wStartzeile_m  (R/W)                              â•‘
+  â•‘                    - ppstrTmp_m     (R)                                â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_BalkenPlusEins(PHILFEINDEX pHI)
 {
@@ -352,32 +352,32 @@ VOID i_BalkenPlusEins(PHILFEINDEX pHI)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_BalkenMinusEins              Datum: 25.10.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PPSTR ppstrTxt  Zeiger auf erste Zeile der          º
-  º                                    Hilfstexte                          º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   º
-  º                    ausgabe des Hilfstextes.                            º
-  º                    Eine Aktion wird erst dann ausgefhrt, wenn         º
-  º                    mehr als die in der Konstante MINZEILEN angegebenen º
-  º                    Zeilen noch im Fenster stehen.                      º
-  º                    In diesem Fall wird der im Fenster stehende         º
-  º                    Text gescrollt, der neue Text ausgegeben und        º
-  º                    die Scroll-Pfeile an die nach dem Scrollen ent-     º
-  º                    standene Situation angepaát.                        º
-  º                                                                        º
-  º  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  modulglobale Variablen:                             º
-  º                    - wHilfsZeilen_m (R)                                º
-  º                    - wStartzeile_m  (R/W)                              º
-  º                    - ppstrTmp_m     (R)                                º
-  º                    - wIndex_m       (R/W)                              º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_BalkenMinusEins              Datum: 25.10.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PPSTR ppstrTxt  Zeiger auf erste Zeile der          â•‘
+  â•‘                                    Hilfstexte                          â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   â•‘
+  â•‘                    ausgabe des Hilfstextes.                            â•‘
+  â•‘                    Eine Aktion wird erst dann ausgefÃ¼hrt, wenn         â•‘
+  â•‘                    mehr als die in der Konstante MINZEILEN angegebenen â•‘
+  â•‘                    Zeilen noch im Fenster stehen.                      â•‘
+  â•‘                    In diesem Fall wird der im Fenster stehende         â•‘
+  â•‘                    Text gescrollt, der neue Text ausgegeben und        â•‘
+  â•‘                    die Scroll-Pfeile an die nach dem Scrollen ent-     â•‘
+  â•‘                    standene Situation angepaÃŸt.                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Diese Funktion hat keinen RÃ¼ckgabewert.             â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  modulglobale Variablen:                             â•‘
+  â•‘                    - wHilfsZeilen_m (R)                                â•‘
+  â•‘                    - wStartzeile_m  (R/W)                              â•‘
+  â•‘                    - ppstrTmp_m     (R)                                â•‘
+  â•‘                    - wIndex_m       (R/W)                              â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_BalkenMinusEins(PHILFEINDEX pHI)
 {
@@ -413,36 +413,36 @@ VOID i_BalkenMinusEins(PHILFEINDEX pHI)
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_ZeichneScroller              Datum: 31.10.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion testet die Bedingungen fr           º
-  º                    die Anzeige der Scrollpfeile und gibt die           º
-  º                    Pfeile entsprechend aus.                            º
-  º                                                                        º
-  º  Rckgabewert:     keine                                               º
-  º                                                                        º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  modulglobale:                                       º
-  º                    - wAktZeile_m      (R)                              º
-  º                    - wIndex_m         (R)                              º
-  º                    - wHilfsZeilen_m   (R)                              º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_ZeichneScroller              Datum: 31.10.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion testet die Bedingungen fÃ¼r           â•‘
+  â•‘                    die Anzeige der Scrollpfeile und gibt die           â•‘
+  â•‘                    Pfeile entsprechend aus.                            â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  modulglobale:                                       â•‘
+  â•‘                    - wAktZeile_m      (R)                              â•‘
+  â•‘                    - wIndex_m         (R)                              â•‘
+  â•‘                    - wHilfsZeilen_m   (R)                              â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_ZeichneScroller(VOID)
 {
     if( wIndex_m == wHilfsZeilen_m-1)
-	Wi_Sza(52,1,'Ä',aCS_g[wCSInd_g].wCs_dlg);
+	Wi_Sza(52,1,'â”€',aCS_g[wCSInd_g].wCs_dlg);
     else
 	Wi_Sza(52,1,'',aCS_g[wCSInd_g].wCs_dlg_sp);
 
     if( wIndex_m == 0)
-	Wi_Sza(50,1,'Ä',aCS_g[wCSInd_g].wCs_dlg);
+	Wi_Sza(50,1,'â”€',aCS_g[wCSInd_g].wCs_dlg);
     else
 	Wi_Sza(50,1,'',aCS_g[wCSInd_g].wCs_dlg_sp);
 

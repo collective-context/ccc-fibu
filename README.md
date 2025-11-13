@@ -1,5 +1,16 @@
 # CCC-FIBU - Open Source FIBU Modernisierung
 
+### PM-LOG 2025-01-13: Btrieve ISAM Dokumentation abgeschlossen
+1) **UTF-8 Konvertierung:** 28 .ORG Textdateien erfolgreich von CP850 nach UTF-8 konvertiert. Die Dokumentationsdateien im `euro_UTF8/case/ISAM/` Verzeichnis sind jetzt vollständig lesbar mit korrekten deutschen Umlauten und Sonderzeichen. Backup-Dateien (.bak) wurden erstellt.
+
+2) **Umfassende Btrieve-Dokumentation:** Zwei detaillierte technische Dokumentationen wurden erstellt:
+   - **`docs/BTRIEVE_ISAM_INTERFACE.md`** (39 KB): Vollständige API-Dokumentation mit Low-Level BTRV() Interface, High-Level Db_*() Funktionen, Multi-User Locking, Transaktionen, Fehlerbehandlung und Best Practices
+   - **`docs/README_BTRIEVE.md`** (14 KB): Übersichtsdokument das beide Dokumentationen verbindet und Anwendungsbeispiele zeigt
+
+3) **Tools entwickelt:** Python- und Bash-Skripte für automatische Encoding-Konvertierung (`tools/convert_org_to_utf8.py` und `.sh`) mit Dry-Run-Mode, Backup-Funktion und Binär-Datei-Erkennung.
+
+4) **Nächste Schritte:** Die vollständige Btrieve-Dokumentation bildet die Grundlage für den Python Btrieve-Parser zur Migration nach SQLite/PostgreSQL. Alle Low-Level Details (DOS Interrupts, Parameter-Block, Positionsblock) sind jetzt dokumentiert.
+
 ### PM-LOG 2025-11-13:
 1) Die Migration der Legacy-DOS-FIBU zu einer modernen Open-Source-Lösungen ist ein wichtiger Schritt für die Zukunft der Finanzbuchhaltungen. Verfolge die Entwicklung der neuen Lösung gerne im docs und im .logs Verzeichnis.
 
@@ -31,9 +42,13 @@ ccc-fibu/
 │   ├── DAT/D01/2024/        # Mandanten-Daten (Btrieve .btr Dateien)
 │   └── ...
 ├── docs/                    # Dokumentation
-│   └── BTRIEVE_RECORD_STRUCTURES.md  # Extrahierte Record-Strukturen
+│   ├── BTRIEVE_RECORD_STRUCTURES.md  # Record-Strukturen aller .BTR Dateien
+│   ├── BTRIEVE_ISAM_INTERFACE.md     # Vollständige API-Dokumentation
+│   └── README_BTRIEVE.md             # Übersicht Btrieve-Dokumentation
 ├── tools/                   # Entwicklungs-Tools
-│   └── btrieve_parser.py    # Python Btrieve-Parser
+│   ├── btrieve_parser.py             # Python Btrieve-Parser
+│   ├── convert_org_to_utf8.py        # UTF-8 Konverter (Python)
+│   └── convert_org_to_utf8.sh        # UTF-8 Konverter (Bash)
 └── README.md               # Diese Datei
 ```
 
@@ -225,9 +240,26 @@ grep -r "struct.*FI" euro/C/
 
 ## 📚 Dokumentation
 
-- **[BTRIEVE_RECORD_STRUCTURES.md](docs/BTRIEVE_RECORD_STRUCTURES.md)** - Vollständige Record-Dokumentation
-- **C-Quellcode:** `euro/C/*.cpp` (245 Dateien, CP850 Encoding)
-- **Header:** `euro/INCLUDE/*.h`
+### Btrieve-Datenbank
+- **[README_BTRIEVE.md](docs/README_BTRIEVE.md)** - Übersicht und Einstiegspunkt für alle Btrieve-Docs
+- **[BTRIEVE_ISAM_INTERFACE.md](docs/BTRIEVE_ISAM_INTERFACE.md)** - API-Dokumentation (39 KB)
+  - Low-Level BTRV() Interface mit DOS Interrupts
+  - High-Level Db_*() Funktionen (Open, Close, Insert, Update, Delete, Navigation)
+  - Multi-User Locking-Strategien
+  - Transaktionen (Begin, Commit, Rollback)
+  - Fehlerbehandlung und Status-Codes
+  - Best Practices und Code-Beispiele
+- **[BTRIEVE_RECORD_STRUCTURES.md](docs/BTRIEVE_RECORD_STRUCTURES.md)** - Daten-Strukturen
+  - Record-Definitionen aller FIBU-Dateien
+  - Feld-Offsets, Typen und Längen
+  - C-Struct Definitionen
+  - Field-Access-Makros (pt(), ptD(), ptW())
+
+### Quellcode
+- **C-Quellcode:** `euro_UTF8/C/*.cpp` (245 Dateien, UTF-8 Encoding)
+- **ISAM-Interface:** `euro_UTF8/case/ISAM/*.cpp` (28 Dateien)
+- **Header:** `euro_UTF8/INCLUDE/*.h`
+- **Dokumentation:** `euro_UTF8/case/ISAM/*.ORG` (UTF-8 konvertiert)
 
 ---
 
@@ -291,5 +323,6 @@ Ich bin der Original-Chefentwickler der C/MSDOS FIBU mit jahrzehntelanger Produk
 ---
 
 **Letzte Aktualisierung:** 2025-01-13  
-**Version:** 0.1.0-alpha  
+**Version:** 0.2.0-alpha  
+**Status:** Btrieve-Dokumentation abgeschlossen ✅  
 **Lizenz:** TBD (Open Source geplant)

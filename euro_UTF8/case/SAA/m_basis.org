@@ -1,47 +1,47 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta M_ParameterUebergabe
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  M_ParameterUebergabe()   ... auswerten der Paremeterbergabe aus MSDOS.     º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  M_ParameterUebergabe()   ... auswerten der ParemeterÃ¼bergabe aus MSDOS.     â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_dlg.h>
 SWORD M_ParameterUebergabe(argc, argv[], pstrApp, pwStKenn, pwMasks,
                           apstrFileName[])
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-SWORD	argc		Anzahl der bergebenen Parameter beim Programmstart.
-PSSTR	argv[]		Zeiger auf Arrays, der bergebenen Parameter.
-PSSTR	pstrApp 	Applikationskennzeichen (z.B. ST fr Stammdatenprogramme)
-PSWORD	pwStKenn	šbergebenes Steuerkennzeichen zur Programmsteuerung.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+SWORD	argc		Anzahl der Ã¼bergebenen Parameter beim Programmstart.
+PSSTR	argv[]		Zeiger auf Arrays, der Ã¼bergebenen Parameter.
+PSSTR	pstrApp 	Applikationskennzeichen (z.B. ST fÃ¼r Stammdatenprogramme)
+PSWORD	pwStKenn	Ãœbergebenes Steuerkennzeichen zur Programmsteuerung.
 PSWORD	pwMasks 	Zeiger auf Variablen, die die Maskennummern speichern.
 PSSTR	apstrFileName[] Zeiger auf String-Array, das die Dateinamen speichert.
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Beim Programmstart k”nnen Sie verschiedenste Parameter bergeben. Diese Kenn-
-zeichen werden mit dieser Funktion fr Ihre Applikation ausgewertert und an
-Ihr Programm bergeben.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Beim Programmstart kÃ¶nnen Sie verschiedenste Parameter Ã¼bergeben. Diese Kenn-
+zeichen werden mit dieser Funktion fÃ¼r Ihre Applikation ausgewertert und an
+Ihr Programm Ã¼bergeben.
 
 Es gibt drei Varianten des Programmstarts:
 
-ù <ProgrammName>
+Â¨ <ProgrammName>
 
-ù <ProgrammName> <Steuerkennzeichen>
+Â¨ <ProgrammName> <Steuerkennzeichen>
 
-ù <ProgrammName> <Steuerkennzeichen> <Applikation>
+Â¨ <ProgrammName> <Steuerkennzeichen> <Applikation>
                  <MaskenNummer> [ <MaskenNummer> ...]
 
-argv[0] = Programmname  (z.B. ST1100.EXE)  ¯DOS-Konfention beachten®
-argv[1] = Steuerkennz.  (z.B. 02000) ¯2 Zeichen = 1xINT® ¯3 Zeichen = 1xSTRING®
-argv[2] = Applikation   (z.B. ST = Stammdaten) ¯2 Zeichen = 1xSTRING®
-argv[3] = Maskennummer  (z.B. 110) ¯3 Zeichen = 1xINT®
+argv[0] = Programmname  (z.B. ST1100.EXE)  Â»DOS-Konfention beachtenÂ«
+argv[1] = Steuerkennz.  (z.B. 02000) Â»2 Zeichen = 1xINTÂ« Â»3 Zeichen = 1xSTRINGÂ«
+argv[2] = Applikation   (z.B. ST = Stammdaten) Â»2 Zeichen = 1xSTRINGÂ«
+argv[3] = Maskennummer  (z.B. 110) Â»3 Zeichen = 1xINTÂ«
 argv[+] = ... weitere Maskennummern
 
-Ihre Applikation sollte so programmiert sein, daá vor der Funktion folgende
+Ihre Applikation sollte so programmiert sein, daÃŸ vor der Funktion folgende
 Variablen deklariert und initiallisiert sind:
 
 STATIC	SWORD	awMasks_m [UPB_MASK] =		   Nummern aller Masken
@@ -56,47 +56,47 @@ stradd(apstrFileName_m[0], strDat_g, "D", strMan_g, "\\",
 stradd(apstrFileName_m[1], strDat_g, "D", strMan_g, "\\",
 		     strApp_m, "1000", ".BTR", _N);
 
-wSteuerKennzeichen_m = 0;          wenn keine Parameterbergabe ¯ Kundenstamm
+wSteuerKennzeichen_m = 0;          wenn keine ParameterÃ¼bergabe Â» Kundenstamm
 M_ParameterUebergabe(argc, argv, strApp_m, &wSteuerKennzeichen_m,
                      awMasks_m);
 
 Bei der ersten Variante des Programmstarts werden alle Werte wie oben initialli-
-siert verwendet, die Funktion berschreibt keine Werte.
+siert verwendet, die Funktion Ã¼berschreibt keine Werte.
 
-Bei der zweiten Variante des Programmstarts wird aus MSDOS ein ein- bis fnf-
-stelliger Wert šbergeben. Aus den ersten beiden Stellen wird ein INT-Wert
-gebildet und an wSteuerKennzeichen_m zurckgegeben. Die n„chsten drei Zeichen
-werden als String an strSteuerkennzeichen_m bergeben.
+Bei der zweiten Variante des Programmstarts wird aus MSDOS ein ein- bis fÃ¼nf-
+stelliger Wert Ãœbergeben. Aus den ersten beiden Stellen wird ein INT-Wert
+gebildet und an wSteuerKennzeichen_m zurÃ¼ckgegeben. Die nÃ¤chsten drei Zeichen
+werden als String an strSteuerkennzeichen_m Ã¼bergeben.
 
-Bei der dritten Variante wird zus„tzlich ein String (empfohlen zwei Zeichen)
-an strApp_m fr die Applikation bergeben. Weiters werden die Maskennummern
-als INT-Wert an awMask_m bergeben. Die Funktion bildet die Dateinamen mit den
+Bei der dritten Variante wird zusÃ¤tzlich ein String (empfohlen zwei Zeichen)
+an strApp_m fÃ¼r die Applikation Ã¼bergeben. Weiters werden die Maskennummern
+als INT-Wert an awMask_m Ã¼bergeben. Die Funktion bildet die Dateinamen mit den
 Werten: Pfadangaben aus der globalen Variable strDat_g, Mandantenbezeichnung
 aus der globalen Variable strMan_g, Applikationskennzeichen aus strApp_m,
-den aus MSDOS bergebenen Dateinummern (empfohlen vier Zeichen) und als
+den aus MSDOS Ã¼bergebenen Dateinummern (empfohlen vier Zeichen) und als
 Extention .BTR!
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD  Fehlerinformation OK/ERROR
 
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  - strExe_g        (R)     Programmverzeichnis
                   - strDat_g        (R)     Datenverzeichnis
                   - strMan_g        (R)     Mandanten-Nummer
                   - strApp_m        (R)     Applikationskennzeichen
-                  - strExt_g        (R)     L„nder-Code
+                  - strExt_g        (R)     LÃ¤nder-Code
 
 
 .ff
 .te*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define  NDEBUG 1
 #include <stdio.h>
 #include <ctype.h>
@@ -105,20 +105,20 @@ Variablen (R/W):  - strExe_g        (R)     Programmverzeichnis
 #include <eur_tool.h>
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT COLORSET aCS_g[5];			     /* Farbpaletten-Array   */
 IMPORT SWORD	 wCSInd_g;			     /* Index in Pal.-Array  */
 IMPORT SWORD	 wMausda_g;			     /* Maus im System ?     */
 
 IMPORT PSSTR	 pstrF1_g;			     /* Texte der Schalt-    */
-IMPORT PSSTR	 pstrEsc_g;			     /* fl„chen 	     */
+IMPORT PSSTR	 pstrEsc_g;			     /* flÃ¤chen 	     */
 IMPORT PSSTR	 pstrReturn_g;
 IMPORT BOOL     boBeepen_g;                         /* Warnton ein ?        */
 IMPORT BOOL     boDemoVersion_g;
 
-IMPORT CHAR	  strExt_g[4];		// Extention fr Landescode
+IMPORT CHAR	  strExt_g[4];		// Extention fÃ¼r Landescode
 IMPORT CHAR	  strMan_g[3];		// Mandaten-Nummer
 IMPORT CHAR	  strNrTeil_g[4];	//
 IMPORT CHAR	  strTeiln_g[81];	// Teilnehmer-Verzeichnis
@@ -133,9 +133,9 @@ IMPORT SWORD	 wEcoYear_g;   /* Wirtschaftsjahr */
 
 IMPORT PSKB pSkb_g;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD M_ParameterUebergabe(SWORD argc, PSSTR argv[], PSSTR pstrApp,
        PSWORD pwStKenn, PSWORD pwDrKenn, PCHAR pcKz, PSWORD pwMasks)
@@ -145,7 +145,7 @@ CHAR strTemp[TB_MAX];
 memset(strTemp, '\0', TB_MAX);
 
 i_InitVars();
-if(argc > 1)					 /* Falls Argumente-šbergabe */
+if(argc > 1)					 /* Falls Argumente-Ãœbergabe */
   {
   ncpy(strTemp, argv[1], 5);			 /* Vom Argument von hinten  */
   *pcKz=strTemp[4];				 /* zuerst Zeichen=Kennzeich.*/
@@ -156,7 +156,7 @@ if(argc > 1)					 /* Falls Argumente-šbergabe */
   }
 
 
-if(argc > 2 && *argv[2]=='/')			 /* Falls Argumente-šbergabe */
+if(argc > 2 && *argv[2]=='/')			 /* Falls Argumente-Ãœbergabe */
   {
   ncpy(pstrApp, &argv[2][1], 3);		 /* Lesen Applikations-Kennz */
 
@@ -168,9 +168,9 @@ return(0);
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID M_BasisMaske(PSSTR pstrFussZeile)
 {
@@ -187,7 +187,7 @@ M_ReadSyPara(); 				     /* ..\DAT\SYPARA.BTR    */
 
 Wi_TestPrintf(pWkbInfo_g, "\nNach M_ReadSyPara");
 
-/* pWkbTest=Wi_Einrichten(3, 11, 72, 11);	     /* Fenster fr	     */
+/* pWkbTest=Wi_Einrichten(3, 11, 72, 11);	     /* Fenster fÃ¼r	     */
 /* Wi_SchattenEin(pWkbTest);			     /* WinTestPrintf()      */
 
 /* Wi_TestPrintf(pWkbInfo_g, "\n\nHeute ist %s, der" /* 		     */
@@ -212,28 +212,28 @@ memcpy(&strFussZ[78-strlen(strNrTeil_g)],            /*                      */
 strcpy(&strFussZ[79], "\0");                         /*                      */
 
 if(strlen(pSkb_g->strManName)==0)		       /*		       */
-  sprintf(pSkb_g->strManName, "®%s¯", strMan_g);       /*		       */
+  sprintf(pSkb_g->strManName, "Â«%sÂ»", strMan_g);       /*		       */
 
 sprintf(strMandant, "%s %s "                         /* Mandant zentrieren u.*/
-  "ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",            /* mit 'Ä' einschlieáen */
-  strstring(strTemp, 'Ä',                            /*                      */
+  "â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€",            /* mit 'â”€' einschlieÃŸen */
+  strstring(strTemp, 'â”€',                            /*                      */
   (32-strlen(pSkb_g->strManName))/2),		       /*		       */
   pSkb_g->strManName);				       /*		       */
 strMandant[34]='\0';                                 /*                      */
 
 Vi_Spza(178, KOBALT);				   /* Bildschirm beschreib.*/
-Vi_Swza(0,0,80,2,' ',aCS_g[wCSInd_g].wCs_mz_c);      /* Kopfzeile  l”schen   */
-Vi_Swza(0,24,80,1,' ',aCS_g[wCSInd_g].wCs_mz);       /* Hilfszeile l”schen   */
+Vi_Swza(0,0,80,2,' ',aCS_g[wCSInd_g].wCs_mz_c);      /* Kopfzeile  lÃ¶schen   */
+Vi_Swza(0,24,80,1,' ',aCS_g[wCSInd_g].wCs_mz);       /* Hilfszeile lÃ¶schen   */
 
 sprintf(strText,				   //
-  "Ú%s ÄÄÄÄ%sÄÄÄ Datum %02d.%02d.%s (%s)¿",	       //
+  "â”Œ%s â”€â”€â”€â”€%sâ”€â”€â”€ Datum %02d.%02d.%s (%s)â”",	       //
   pSkb_g->strCopyright, strMandant,		       //
   pSkb_g->d_Date.cTag, pSkb_g->d_Date.cMonat,	       //
   itoa(pSkb_g->d_Date.wJahr,strTemp,10)+2, strMan_g);  //
 
 Vi_Ss(0,0,  strText);				     /* Kopfzeile 1 ausgeben */
-Vi_Sz(0, 1, (UCHAR)'À');			     /* Kopfzeile 2 ausgeben */
-Vi_Sz(79,1, (UCHAR)'Ù');			     /* Kopfzeile 2 ausgeben */
+Vi_Sz(0, 1, (UCHAR)'â””');			     /* Kopfzeile 2 ausgeben */
+Vi_Sz(79,1, (UCHAR)'â”˜');			     /* Kopfzeile 2 ausgeben */
 /* Vi_Ssa(1,24, strFussZ);			     /* Hilfstext ausgeben	*/
 Vi_Ss(1,24, strFussZ);                               /* Hilfstext ausgeben      */
 
@@ -248,9 +248,9 @@ return;
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                         ™FFNEN - ..\DAT\SYPARA.BTR                       º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                         Ã–FFNEN - ..\DAT\SYPARA.BTR                       â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD M_ReadSyPara(VOID)
 {
@@ -301,7 +301,7 @@ wRetCode=BTRV(B_OPEN, strFileBlock, strTempo,
     Dl_ErrorHandler (wRetCode, strTemp, 	      //
       __FILE__, __LINE__, 0);			     //
 
-// Wi_TestPrintf(pWkbInfo_g, "\nM_ReadSyPara ¯3");
+// Wi_TestPrintf(pWkbInfo_g, "\nM_ReadSyPara Â»3");
 // boTestModus_g=NEIN;
 
 wBufferLen=INIT_RECORD_LENGTH;
@@ -309,8 +309,8 @@ wRetCode = BTRV (B_GET_EQ, strFileBlock,	     //
   pstrDataBuffer_g, &wBufferLen, strMan, 0);	     //
 
   sprintf(strTemp,"M_BasisMaske(B_GET_EQ), - "	      //
-    "Schlssel: %s", strMan);			  //
-  //  "Schlssel: %s", strMan, 0);		       // ~
+    "SchlÃ¼ssel: %s", strMan);			  //
+  //  "SchlÃ¼ssel: %s", strMan, 0);		       // ~
   Dl_ErrorHandler (wRetCode, strTemp,		      //
     __FILE__, __LINE__, 9);			     //
 
@@ -324,12 +324,12 @@ else
 wRetCode=BTRV (B_CLOSE, strFileBlock, strNull,	     //
   &wNull, strNull, wNull);			     //
   sprintf(strTemp,"M_BasisMaske(B_CLOSE), - "	      //
-    "Datei zum Schlssel: %s", strMan); 	  // ~
- // "Datei zum Schlssel: %s", strMan, 0);	     // ~
+    "Datei zum SchlÃ¼ssel: %s", strMan); 	  // ~
+ // "Datei zum SchlÃ¼ssel: %s", strMan, 0);	     // ~
   Dl_ErrorHandler (wRetCode, strTemp,		      //
     __FILE__, __LINE__, 0);			     //
 
-ncpy(pSkb_g->strCopyright, &pstrDataBuffer_g[62], 16);	// [46], 17 frher
+ncpy(pSkb_g->strCopyright, &pstrDataBuffer_g[62], 16);	// [46], 17 frÃ¼her
 
 if(!pSkb_g->strCopyright[0])
   strcpy(pSkb_g->strCopyright, "(c) 1993 WINware");
@@ -355,9 +355,9 @@ sprintf(&pstrDataBuffer_g[351], "%02d.%02d.%04d",
 	  pSkb_g->d_Date.cTag, pSkb_g->d_Date.cMonat,
 	  pSkb_g->d_Date.wJahr);
 
-strcpy(pSkb_g->strManName,   &pstrDataBuffer_g[  21]);	  // [ 13] frher
+strcpy(pSkb_g->strManName,   &pstrDataBuffer_g[  21]);	  // [ 13] frÃ¼her
 strcpy(pSkb_g->strDatumAkt,  &pstrDataBuffer_g[ 351]);
-strcpy(pSkb_g->strNutzung,   &pstrDataBuffer_g[1479]);	  // [ 69] frher
+strcpy(pSkb_g->strNutzung,   &pstrDataBuffer_g[1479]);	  // [ 69] frÃ¼her
 memcpy(&wEcoYear_g, &pstrDataBuffer_g[1547], 2);
 
 return(OK);

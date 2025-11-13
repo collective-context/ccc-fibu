@@ -1,23 +1,23 @@
 /*.ta Db_Open(0)
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Db_Open()   ... ”ffnet eine DBMS-Datei unter einer Dateinummer.             º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Db_Open()   ... Ã¶ffnet eine DBMS-Datei unter einer Dateinummer.             â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_btr.h>
 WORD Db_Open(wFile, ppstrBlock, ppstrOwner, wLock, ppstrFileName,
 	     pwAccessMode, apfsFileBuffer[], pwKeyLen, pwKeyOffset
 	     ppstrKey, pwMaxKey, aFiles[], pF, wL);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 WORD	 wFile		  Logische Dateinummer.
-PPSTR	 ppstrBlock	  Zeiger-Array auf Positionsbl”cke.
+PPSTR	 ppstrBlock	  Zeiger-Array auf PositionsblÃ¶cke.
 PPSTR    ppstrOwner
 WORD     wLock
 PPSTR    ppstrFileName    Array aller Datei-Namen.
-PWORD    pwAccessMode     Array, daá den Zugriffsmode fr jede Datei speichert.
+PWORD    pwAccessMode     Array, daÃŸ den Zugriffsmode fÃ¼r jede Datei speichert.
 PFSPEC   apfsFileBuffer[]
 PWORD	 pwKeyLen
 PWORD	 pwKeyOffset
@@ -25,123 +25,123 @@ PPSTR	 ppstrKey
 PWORD	 pwMaxKey
 BFILEINFO aFiles[]
 
-          ÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄ
-          Datei-³        F C B           ³Daten-Buffer³Schlssel-³Schlssel-
-          Nummer³Pos. Block³ Daten-Buffer³    L„nge   ³  Buffer  ³  Nummer
-          ÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ
-Eingang:     ù                    ù            ù           ù           ù
-Ausgang:             ù
+          â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          Datei-â”‚        F C B           â”‚Daten-Bufferâ”‚SchlÃ¼ssel-â”‚SchlÃ¼ssel-
+          Nummerâ”‚Pos. Blockâ”‚ Daten-Bufferâ”‚    LÃ¤nge   â”‚  Buffer  â”‚  Nummer
+          â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Eingang:     Â¨                    Â¨            Â¨           Â¨           Â¨
+Ausgang:             Â¨
                                                                                                       
 Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-ù wFile:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Â¨ wFile:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Bezeichnet die logische Dateinummer, unter der die Datei angesprochen werden
-soll. Die Funktion verwendet diese Dateinummer intern fr alle Arrays die
-bergeben wurden.
+soll. Die Funktion verwendet diese Dateinummer intern fÃ¼r alle Arrays die
+Ã¼bergeben wurden.
 
-Die h”chstm”gliche logische Datei-Nummer richtet sich nach der Definition in
+Die hÃ¶chstmÃ¶gliche logische Datei-Nummer richtet sich nach der Definition in
 Ihrem Programm: 0 <= wFile < UPB_FILE_HANDLER. (Default == 0 bis 9).
 
-ù apstrRecord[]:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Â¨ apstrRecord[]:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Dieses Array ist der Datenbuffer, in dem jeweils ein Datensatz zu jeder
-defninierte Datei Platz finden muá. Ihre Applikation wird sp„ter ber diesen
+defninierte Datei Platz finden muÃŸ. Ihre Applikation wird spÃ¤ter Ã¼ber diesen
 Datenbuffer bei allen Schreib- und Leseoperationen den Datensatzinhalt an
-Btrieve bergeben oder ihn von Btrieve bekommen.
+Btrieve Ã¼bergeben oder ihn von Btrieve bekommen.
 
-Welches der Arrays von der Create-Funktion verwendet wird h„ngt vom Inhalt
-¯wFile® ab.
+Welches der Arrays von der Create-Funktion verwendet wird hÃ¤ngt vom Inhalt
+Â»wFileÂ« ab.
 
-ù awRecordLength[]:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Dieses Array enth„lt fr jeden Datensatz die Record-L„nge und bergibt Btrieve
-diesen Wert als L„nge fr den Datenbuffer.
+Â¨ awRecordLength[]:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Dieses Array enthÃ¤lt fÃ¼r jeden Datensatz die Record-LÃ¤nge und Ã¼bergibt Btrieve
+diesen Wert als LÃ¤nge fÃ¼r den Datenbuffer.
 
-ù ppstrFileName:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-In diesem Schlsselbuffer-Array k”nnen Sie  die vollst„ndigen Dateinamen der zu
-er”ffnenten Dateien abgespeichern. Als Extension wird  *.BTR fr ¯Btrieve®
-empfohlen. Aus welchem Array die Create-Funktion den Namen holt h„ngt wieder
-vom Inhalt in ¯wFile® ab.
+Â¨ ppstrFileName:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+In diesem SchlÃ¼sselbuffer-Array kÃ¶nnen Sie  die vollstÃ¤ndigen Dateinamen der zu
+erÃ¶ffnenten Dateien abgespeichern. Als Extension wird  *.BTR fÃ¼r Â»BtrieveÂ«
+empfohlen. Aus welchem Array die Create-Funktion den Namen holt hÃ¤ngt wieder
+vom Inhalt in Â»wFileÂ« ab.
 .ff
-ù pwAccessMode:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Gibt an in welcher Form die Datei ge”ffnet werden soll:
+Â¨ pwAccessMode:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Gibt an in welcher Form die Datei geÃ¶ffnet werden soll:
 
-ù 1 Accelerated (Disk-Cache): In diesem Mode wird durch Disk-Caching ein
-schnellerer Datenzugriff erm”glicht. Wie viele Dateien gleichzeitig in diesem
-ge”ffnet werden k”nnen h„ngt von den Speicher- und Seitengr”áe-Optionen ab,
-die Sie beim laden von Btrieve angegeben haben. Sehen Sie fr weiter Infor-
+Â¨ 1 Accelerated (Disk-Cache): In diesem Mode wird durch Disk-Caching ein
+schnellerer Datenzugriff ermÃ¶glicht. Wie viele Dateien gleichzeitig in diesem
+geÃ¶ffnet werden kÃ¶nnen hÃ¤ngt von den Speicher- und SeitengrÃ¶ÃŸe-Optionen ab,
+die Sie beim laden von Btrieve angegeben haben. Sehen Sie fÃ¼r weiter Infor-
 mationen im Kapitel 2 in dieser dokumentaion nach.
 
-ù 2 Read-Only: In diesem Mode kann der Anwender mit ihrem Programm die Datei
+Â¨ 2 Read-Only: In diesem Mode kann der Anwender mit ihrem Programm die Datei
 nur lesen.
 
-ù 3 Verify: Dieser Modus hat nur bei einer lokalen DOS-Disk eine Wirkung. Nach
-jeder Schreib-Operation prft das Operation-System, ob die Daten auch wieder
-gelesen werden k”nnen.
+Â¨ 3 Verify: Dieser Modus hat nur bei einer lokalen DOS-Disk eine Wirkung. Nach
+jeder Schreib-Operation prÃ¼ft das Operation-System, ob die Daten auch wieder
+gelesen werden kÃ¶nnen.
 
-ù 4 Exlusive: Dieser Modus hat nur in einem Mehrplatzsytem ein Wirkung. Wenn
-eine Datei im Exlusiv-Modus er”ffnet wurde kann keine andere Arbeitstation auf
+Â¨ 4 Exlusive: Dieser Modus hat nur in einem Mehrplatzsytem ein Wirkung. Wenn
+eine Datei im Exlusiv-Modus erÃ¶ffnet wurde kann keine andere Arbeitstation auf
 diese Datei zugreifen.
 
-ù sonstiges: Jede andere Zahl ”ffnet die Datei im Normalmodus.
+Â¨ sonstiges: Jede andere Zahl Ã¶ffnet die Datei im Normalmodus.
 
 
 Ausgang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-ù ppstrBlock:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Ist der Name des Positionsblock-Arrays. Fr jede gleichzeitig ge”ffnete Datei
-mssen in diesem Array 128 Zeichen reserviert werden. Diesen Zwischenspeicher
-verwendet Btrieve fr alle I/O Routinen zwischen Ihrem Programm und der
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Â¨ ppstrBlock:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Ist der Name des Positionsblock-Arrays. FÃ¼r jede gleichzeitig geÃ¶ffnete Datei
+mÃ¼ssen in diesem Array 128 Zeichen reserviert werden. Diesen Zwischenspeicher
+verwendet Btrieve fÃ¼r alle I/O Routinen zwischen Ihrem Programm und der
 Festplatte.
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion er”ffnet eine Btrieve-Datei unter einer logischen Dateinummer,
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion erÃ¶ffnet eine Btrieve-Datei unter einer logischen Dateinummer,
 zur weiteren Bearbeitung.
 
-Die Dateien k”nnen zuvor irgendwann mit der ¯Db_Create()® Funktion erzeugt und
-damit vorhanden sein. Wird versucht eine Datei zu er”ffnen, welche nicht
+Die Dateien kÃ¶nnen zuvor irgendwann mit der Â»Db_Create()Â« Funktion erzeugt und
+damit vorhanden sein. Wird versucht eine Datei zu erÃ¶ffnen, welche nicht
 vorhanden ist (Fehlerstatus 12), so wird diese Datei automatisch laut den
 Angaben des Datenlexikons erzeugt.
 
-Eine bereits er”ffnete logische Dateinummer kann nicht ein zweites mal er-
-”ffnet werden, solange sie nicht mit B_Close wieder geschlossen wird.
+Eine bereits erÃ¶ffnete logische Dateinummer kann nicht ein zweites mal er-
+Ã¶ffnet werden, solange sie nicht mit B_Close wieder geschlossen wird.
 
-Btrieve erlaubt bis zu 255 gleichzeitig ge”ffnete Dateien. Wieviele Dateien
-wirklich gleichzeitig ge”ffnet werden k”nnen h„ngt also von der Konfiguration
+Btrieve erlaubt bis zu 255 gleichzeitig geÃ¶ffnete Dateien. Wieviele Dateien
+wirklich gleichzeitig geÃ¶ffnet werden kÃ¶nnen hÃ¤ngt also von der Konfiguration
 des DOS und vom verwendeten Compiler und dem Inhalt der Konstante
-¯UPB_FILE_HANDLER® (Default=10) ab.
+Â»UPB_FILE_HANDLERÂ« (Default=10) ab.
 
-Remark fr AccessMode: 1 CACHE
+Remark fÃ¼r AccessMode: 1 CACHE
                        2 READ-ONLY
                        4 VERiFY
                        8 EXLUSIVE
                       16 CREATE         z.B. READ-ONLY + CREATE = 18
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 WORD  Fehlerinformation OK/ERROR
-      ù OK              Die Funktion wurde fehlerfrei ausgefhrt.
-      ù Fehlerstatus:   Ist der Rckgabestatus ungleich 0, so liegt ein Fehler
-                        vor. Die Bedeutung des berreichten Fehlercodes
-                        entnehmen sie bitte einer getrennten šbersicht.
+      Â¨ OK              Die Funktion wurde fehlerfrei ausgefÃ¼hrt.
+      Â¨ Fehlerstatus:   Ist der RÃ¼ckgabestatus ungleich 0, so liegt ein Fehler
+                        vor. Die Bedeutung des Ã¼berreichten Fehlercodes
+                        entnehmen sie bitte einer getrennten Ãœbersicht.
 
 Globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 keine
 
 .ff
 .de \euro\demo\b_open.c
 .te*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define NDEBUG 1
 
 #include <stdio.h>
@@ -149,9 +149,9 @@ keine
 #include <process.h>               /* fuer execl() */
 #include <eur_tool.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                       MODULGLOBALE VARIABLEN                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                       MODULGLOBALE VARIABLEN                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT BOOL     boTestModus_g;
 IMPORT CHAR     strExe_g[];
 IMPORT CHAR     strDat_g[];
@@ -165,9 +165,9 @@ STATIC WORD i_ExchangeKeyInfo (BFILEINFO, WORD, WORD);
 
 /*STATIC  PWKB pWkbInfo = NULL;*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 WORD Db_BOpen(WORD   wFile,	       PPSTR ppstrBlock,
 	      PPSTR  ppstrOwner,       WORD  wLock,
@@ -178,8 +178,8 @@ WORD Db_BOpen(WORD   wFile,	       PPSTR ppstrBlock,
 	      PSTR   pF, WORD wL)
 {
 REGISTER i;
-WORD wOwnerLength, wCreate=0;			       /* L„nge Besitzername  */
-WORD wFileBufferLength;                                /* L„nge Filenamen     */
+WORD wOwnerLength, wCreate=0;			       /* LÃ¤nge Besitzername  */
+WORD wFileBufferLength;                                /* LÃ¤nge Filenamen     */
 WORD wStatus=0, wKeyNumber=0, wNull=0;
 BOOL boSypara;
 CHAR strExtFileName[TB_MAX], strFileName[TB_MAX];
@@ -204,9 +204,9 @@ else
   boSypara = NO;
 
 if(*(ppstrOwner+wFile)) 		       /* Falls Besitzername  */
-  wOwnerLength=strlen(*(ppstrOwner+wFile))+1;  /* da, L„nge speichern */
+  wOwnerLength=strlen(*(ppstrOwner+wFile))+1;  /* da, LÃ¤nge speichern */
 else                                                  /* sonst ist die Be-   */
-  wOwnerLength=0;                                     /* sitzernamenl„nge 0  */
+  wOwnerLength=0;                                     /* sitzernamenlÃ¤nge 0  */
 
 strcpy(strFileName, *(ppstrFileName+wFile));
 for(i=0,wStatus=12; (wStatus==11 || wStatus==12) &&
@@ -325,16 +325,16 @@ do
 
   if (!wFile)
     {
-    for(i=0; i<apfsFileBuffer[0]->wNdxCnt; i++)       /* Fr jeden Schlssel */
+    for(i=0; i<apfsFileBuffer[0]->wNdxCnt; i++)       /* FÃ¼r jeden SchlÃ¼ssel */
       {
       if( *(ppstrKey+i)==NULL ) 		      /* in der Stammdatei   */
 	Ut_Calloc(*(ppstrKey+i), TB_MAX, CHAR);       /* Platz allokieren    */
 
       *(pwKeyOffset+i) =			      /* Offset des	     */
-        apfsFileBuffer[0]->ksKeyBuf[i].wKeyPosition-1;/* Schlssels          */
+        apfsFileBuffer[0]->ksKeyBuf[i].wKeyPosition-1;/* SchlÃ¼ssels          */
 
-      *(pwKeyLen+i) =				/* L„nge des	       */
-        apfsFileBuffer[0]->ksKeyBuf[i].wKeyLength;    /* Schlssels          */
+      *(pwKeyLen+i) =				/* LÃ¤nge des	       */
+        apfsFileBuffer[0]->ksKeyBuf[i].wKeyLength;    /* SchlÃ¼ssels          */
       }
 
     }
@@ -352,11 +352,11 @@ return (wStatus);
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_AnalyseKeys ()                                                        º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_AnalyseKeys ()                                                        â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 WORD i_AnalyseKeys(BFILEINFO FileInfo, PFSPEC apfsFile,
 		   WORD wFile, PSTR pF, WORD wL)
@@ -418,7 +418,7 @@ if (wFound < wTheorie)
 
       if (boTest)
         {
-        sprintf (strError, "Kein Key fuer Feld ¯%s® in Datei %d.",
+        sprintf (strError, "Kein Key fuer Feld Â»%sÂ« in Datei %d.",
                  FileInfo.apKeys[i]->strDatenfeld, wFile);
 
 	Dl_ErrorHandler(6,strError,pF,wL,0);
@@ -432,7 +432,7 @@ if (wFound < wTheorie)
         Wi_TestPrintf (pWkbInfo, "Keys in der Datei %d:\n", wFile);
 
         for (j=0; j<FileInfo.wNbKeyFields; j++)
-          Wi_TestPrintf (pWkbInfo, "\nKey %d: ¯%s®, Ofs=%d, Len=%d\n",
+          Wi_TestPrintf (pWkbInfo, "\nKey %d: Â»%sÂ«, Ofs=%d, Len=%d\n",
                     j+1, FileInfo.apKeys[j]->strDatenfeld,
                     FileInfo.awKeyOffset[j], FileInfo.awKeyLength[j]);
 
@@ -442,31 +442,31 @@ if (wFound < wTheorie)
       }
 
 /* Eigentlich sollten nicht existierende Key-Pfade hier automatisch angelegt */
-/* werden. Dabei ergibt sich aber das Problem, daá Systemausf„lle w„hrend    */
-/* dieser Operation sich sehr ungnstig auswirken: Erst beim n„chsten Zugriff*/
-/* auf die Datei ber diesen Key-Pfad meldet BTRIEVE einen Fehler (i.a. 56). */
-/* Dann máte die Applikation eine DROP-Supp.-Index Operation ausfhren und  */
-/* danach den Index neu aufbauen. Dazu enth„lt die Applikation aber (leider) */
-/* keine Logik. Da solche F„lle in erster Linie jedoch bei der Programment-  */
+/* werden. Dabei ergibt sich aber das Problem, daÃŸ SystemausfÃ¤lle wÃ¤hrend    */
+/* dieser Operation sich sehr ungÃ¼nstig auswirken: Erst beim nÃ¤chsten Zugriff*/
+/* auf die Datei Ã¼ber diesen Key-Pfad meldet BTRIEVE einen Fehler (i.a. 56). */
+/* Dann mÃ¼ÃŸte die Applikation eine DROP-Supp.-Index Operation ausfÃ¼hren und  */
+/* danach den Index neu aufbauen. Dazu enthÃ¤lt die Applikation aber (leider) */
+/* keine Logik. Da solche FÃ¤lle in erster Linie jedoch bei der Programment-  */
 /* wicklung auftreten werden, lohnt sich der damit verbundene Aufwand im     */
-/* Moment (noch) nicht. Daher wird in solchen F„llen eine eindeutige Fehler- */
+/* Moment (noch) nicht. Daher wird in solchen FÃ¤llen eine eindeutige Fehler- */
 /* meldung ausgegeben (6==Invalid Key Number). Zur Zeit wird also nur die    */
-/* logische Key-Reihenfolge so umsortiert, daá sie der physikalischen ent-   */
-/* spricht. Auáerdem wird auf eine ev. vorhandene Alternate Collating Sequ.  */
-/* Rcksicht genommen. Die hier verwendete Technik mit einem return-Wert     */
+/* logische Key-Reihenfolge so umsortiert, daÃŸ sie der physikalischen ent-   */
+/* spricht. AuÃŸerdem wird auf eine ev. vorhandene Alternate Collating Sequ.  */
+/* RÃ¼cksicht genommen. Die hier verwendete Technik mit einem return-Wert     */
 /* und die in der aufrufenden Funktion vorkommende while-Schleife haben daher*/
-/* nur im Hinblick auf zuknftige Erweiterungen einen Sinn.                  */
+/* nur im Hinblick auf zukÃ¼nftige Erweiterungen einen Sinn.                  */
 
 
 return (boOK);
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_ExchangeKeyInfo ()                                                    º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_ExchangeKeyInfo ()                                                    â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 WORD i_ExchangeKeyInfo(BFILEINFO File, WORD wDest, WORD wSrc)
 {
@@ -498,11 +498,11 @@ return (OK);
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º File_Definition()                                                       º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ File_Definition()                                                       â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 WORD File_Definition(WORD wFH, PPSTR ppstrFileName,
        PFSPEC apfsFileBuffer[], PSTR pF, WORD wL)
@@ -540,7 +540,7 @@ while(*pstrKeyName!='\\')                            /* Pfad (..\ST1100.BTR) */
   pstrKeyName--;                                     /* suchen und dort      */
 *pstrKeyName++; 				     /* aufsetzen	     */
 
-if(*pstrKeyName<='9') *pstrKeyName='M'; 	     /* Fr KHK NR tauschen  */
+if(*pstrKeyName<='9') *pstrKeyName='M'; 	     /* FÃ¼r KHK NR tauschen  */
 
 strcpy(strBuffer, "(c)Mayer");
 wBufferLength=strlen(strBuffer)+1;
@@ -568,7 +568,7 @@ if(wRetCode == 22 || wRetCode == 0)
 		 pstrKeyName,
 		 wKeyNumber);
   }
-        sprintf (strError, "B_GET_EQ, - SCHLšSSEL : >%s<.", pstrKeyName);
+        sprintf (strError, "B_GET_EQ, - SCHLÃœSSEL : >%s<.", pstrKeyName);
 	Dl_ErrorHandler(wRetCode,strError,pF,wL,0);
 
 wRetCode=BTRV(B_CLOSE,
@@ -637,7 +637,7 @@ for(i=0, pstrPos=pstrDataBuffer_g+210; i<wKey; i++, pstrPos+=79)
   wSeg = *(pstrPos+77) == 'J' ? SEG     : 0;        /*                      */
 
   /*Wi_TestPrintf ( pWkbInfo,
-    "\nKeyNr.:¯%s® <Key=%d> <wDup=%d> <wMod=%d> <wDes=%d> "
+    "\nKeyNr.:Â»%sÂ« <Key=%d> <wDup=%d> <wMod=%d> <wDes=%d> "
     "<wAlt=%d> <wNul=%d> <wSeg=%d>",
     pstrPos+61, i, wDup, wMod, wDes, wAlt, wNul, wSeg);*/
 
@@ -694,140 +694,140 @@ return (OK);
 
 
 /*.ta B_Open(0)
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  B_Open()   ... ”ffnet eine Btrieve-Datei unter einer Dateinummer.           º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  B_Open()   ... Ã¶ffnet eine Btrieve-Datei unter einer Dateinummer.           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_btr.h>
 WORD B_Open(wFile, apstrBlock, apstrRecord, awRecordLength,
              apstrFileName, awAccessMode);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 WORD   wFile	   Logische Dateinummer.
-PSTR   apstrBlock[]   Zeiger-Array auf Positionsbl”cke.
+PSTR   apstrBlock[]   Zeiger-Array auf PositionsblÃ¶cke.
 PSTR   apstrRecord[]      Array von Zeigern auf String je Datensatz.
-WORD   awRecordLength[]   Array, daá die Datenstatzl„nge je Datei enth„lt.
+WORD   awRecordLength[]   Array, daÃŸ die DatenstatzlÃ¤nge je Datei enthÃ¤lt.
 PSTR   apstrFileName[]    Array aller Datei-Namen.
-WORD   awAccessMode[]     Array, daá den Zugriffsmode fr jede Datei speichert.
+WORD   awAccessMode[]     Array, daÃŸ den Zugriffsmode fÃ¼r jede Datei speichert.
 
-          ÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄ
-          Datei-³        F C B           ³Daten-Buffer³Schlssel-³Schlssel-
-          Nummer³Pos. Block³ Daten-Buffer³    L„nge   ³  Buffer  ³  Nummer
-          ÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ
-Eingang:     ù                    ù            ù           ù           ù
-Ausgang:             ù
+          â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          Datei-â”‚        F C B           â”‚Daten-Bufferâ”‚SchlÃ¼ssel-â”‚SchlÃ¼ssel-
+          Nummerâ”‚Pos. Blockâ”‚ Daten-Bufferâ”‚    LÃ¤nge   â”‚  Buffer  â”‚  Nummer
+          â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Eingang:     Â¨                    Â¨            Â¨           Â¨           Â¨
+Ausgang:             Â¨
                                                                                                       
 Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-ù wFile:
-ÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Â¨ wFile:
+â”€â”€â”€â”€â”€â”€â”€â”€
 Bezeichnet die logische Dateinummer, unter der die Datei angesprochen werden
-soll. Die Funktion verwendet diese Dateinummer intern fr alle Arrays die
-bergeben wurden.
+soll. Die Funktion verwendet diese Dateinummer intern fÃ¼r alle Arrays die
+Ã¼bergeben wurden.
 
-Die h”chstm”gliche logische Datei-Nummer richtet sich nach der Definition in
+Die hÃ¶chstmÃ¶gliche logische Datei-Nummer richtet sich nach der Definition in
 Ihrem Programm: 0 <= wFile < UPB_FILE_HANDLER.
 
-ù apstrRecord[]:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Â¨ apstrRecord[]:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Dieses Array ist der Datenbuffer, in dem jeweils ein Datensatz zu jeder
-defninierte Datei Platz finden muá. Ihre Applikation wird sp„ter ber diesen
+defninierte Datei Platz finden muÃŸ. Ihre Applikation wird spÃ¤ter Ã¼ber diesen
 Datenbuffer bei allen Schreib- und Leseoperationen den Datensatzinhalt an
-Btrieve bergeben oder ihn von Btrieve bekommen.
+Btrieve Ã¼bergeben oder ihn von Btrieve bekommen.
 
-Welches der Arrays von der Create-Funktion verwendet wird h„ngt vom Inhalt
-¯wFile® ab.
+Welches der Arrays von der Create-Funktion verwendet wird hÃ¤ngt vom Inhalt
+Â»wFileÂ« ab.
 
-ù awRecordLength[]:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Dieses Array enth„lt fr jeden Datensatz die Record-L„nge und bergibt Btrieve
-diesen Wert als L„nge fr den Datenbuffer.
+Â¨ awRecordLength[]:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Dieses Array enthÃ¤lt fÃ¼r jeden Datensatz die Record-LÃ¤nge und Ã¼bergibt Btrieve
+diesen Wert als LÃ¤nge fÃ¼r den Datenbuffer.
 
-ù apstrFileName[]:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-In diesem Schlsselbuffer-Array k”nnen Sie  die vollst„ndigen Dateinamen der zu
-er”ffnenten Dateien abgespeichern. Als Extension wird  *.BTR fr ¯Btrieve®
-empfohlen. Aus welchem Array die Create-Funktion den Namen holt h„ngt wieder
-vom Inhalt in ¯wFile® ab.
+Â¨ apstrFileName[]:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+In diesem SchlÃ¼sselbuffer-Array kÃ¶nnen Sie  die vollstÃ¤ndigen Dateinamen der zu
+erÃ¶ffnenten Dateien abgespeichern. Als Extension wird  *.BTR fÃ¼r Â»BtrieveÂ«
+empfohlen. Aus welchem Array die Create-Funktion den Namen holt hÃ¤ngt wieder
+vom Inhalt in Â»wFileÂ« ab.
 .ff
-ù awAccessMode[]
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Gibt an in welcher Form die Datei ge”ffnet werden soll:
+Â¨ awAccessMode[]
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Gibt an in welcher Form die Datei geÃ¶ffnet werden soll:
 
-ù 1 Accelerated (Disk-Cache): In diesem Mode wird durch Disk-Caching ein
-schnellerer Datenzugriff erm”glicht. Wie viele Dateien gleichzeitig in diesem
-ge”ffnet werden k”nnen h„ngt von den Speicher- und Seitengr”áe-Optionen ab,
-die Sie beim laden von Btrieve angegeben haben. Sehen Sie fr weiter Infor-
+Â¨ 1 Accelerated (Disk-Cache): In diesem Mode wird durch Disk-Caching ein
+schnellerer Datenzugriff ermÃ¶glicht. Wie viele Dateien gleichzeitig in diesem
+geÃ¶ffnet werden kÃ¶nnen hÃ¤ngt von den Speicher- und SeitengrÃ¶ÃŸe-Optionen ab,
+die Sie beim laden von Btrieve angegeben haben. Sehen Sie fÃ¼r weiter Infor-
 mationen im Kapitel 2 in dieser dokumentaion nach.
 
-ù 2 Read-Only: In diesem Mode kann der Anwender mit ihrem Programm die Datei
+Â¨ 2 Read-Only: In diesem Mode kann der Anwender mit ihrem Programm die Datei
 nur lesen.
 
-ù 3 Verify: Dieser Modus hat nur bei einer lokalen DOS-Disk eine Wirkung. Nach
-jeder Schreib-Operation prft das Operation-System, ob die Daten auch wieder
-gelesen werden k”nnen.
+Â¨ 3 Verify: Dieser Modus hat nur bei einer lokalen DOS-Disk eine Wirkung. Nach
+jeder Schreib-Operation prÃ¼ft das Operation-System, ob die Daten auch wieder
+gelesen werden kÃ¶nnen.
 
-ù 4 Exlusive: Dieser Modus hat nur in einem Mehrplatzsytem ein Wirkung. Wenn
-eine Datei im Exlusiv-Modus er”ffnet wurde kann keine andere Arbeitstation auf
+Â¨ 4 Exlusive: Dieser Modus hat nur in einem Mehrplatzsytem ein Wirkung. Wenn
+eine Datei im Exlusiv-Modus erÃ¶ffnet wurde kann keine andere Arbeitstation auf
 diese Datei zugreifen.
 
-ù sonstiges: Jede andere Zahl ”ffnet die Datei im Normalmodus.
+Â¨ sonstiges: Jede andere Zahl Ã¶ffnet die Datei im Normalmodus.
 
 
 Ausgang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-ù apstrBlock[]:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Ist der Name des Positionsblock-Arrays. Fr jede gleichzeitig ge”ffnete Datei
-mssen in diesem Array 128 Zeichen reserviert werden. Diesen Zwischenspeicher
-verwendet Btrieve fr alle I/O Routinen zwischen Ihrem Programm und der
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Â¨ apstrBlock[]:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Ist der Name des Positionsblock-Arrays. FÃ¼r jede gleichzeitig geÃ¶ffnete Datei
+mÃ¼ssen in diesem Array 128 Zeichen reserviert werden. Diesen Zwischenspeicher
+verwendet Btrieve fÃ¼r alle I/O Routinen zwischen Ihrem Programm und der
 Festplatte.
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion er”ffnet eine Btrieve-Datei unter einer logischen Dateinummer,
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion erÃ¶ffnet eine Btrieve-Datei unter einer logischen Dateinummer,
 zur weiteren Bearbeitung.
 
-Die Dateien mssen zuvor irgendwann mit der ¯B_Create()® Funktion erzeugt und
-damit vorhanden sein. Wird versucht eine Datei zu er”ffnen, welche nicht
-vorhanden ist, so wird der Fehlerstatus 12 zurckgegeben.
+Die Dateien mÃ¼ssen zuvor irgendwann mit der Â»B_Create()Â« Funktion erzeugt und
+damit vorhanden sein. Wird versucht eine Datei zu erÃ¶ffnen, welche nicht
+vorhanden ist, so wird der Fehlerstatus 12 zurÃ¼ckgegeben.
 
-Eine bereits er”ffnete logische Dateinummer kann nicht ein zweites mal er-
-”ffnet werden, solange sie nicht mit B_Close wieder geschlossen wird.
+Eine bereits erÃ¶ffnete logische Dateinummer kann nicht ein zweites mal er-
+Ã¶ffnet werden, solange sie nicht mit B_Close wieder geschlossen wird.
 
-Btrieve erlaubt bis zu 255 gleichzeitig ge”ffnete Dateien. Wieviele Dateien
-wirklich gleichzeitig ge”ffnet werden k”nnen h„ngt also von der Konfiguration
+Btrieve erlaubt bis zu 255 gleichzeitig geÃ¶ffnete Dateien. Wieviele Dateien
+wirklich gleichzeitig geÃ¶ffnet werden kÃ¶nnen hÃ¤ngt also von der Konfiguration
 des DOS und vom verwendeten Compiler ab.
 
-Remark fr AccessMode: 1 CACHE
+Remark fÃ¼r AccessMode: 1 CACHE
                        2 READ-ONLY
                        4 VERiFY
                        8 EXLUSIVE
                       16 CREATE         z.B. READ-ONLY + CREATE = 18
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 WORD  Fehlerinformation OK/ERROR
-      ù OK              Die Funktion wurde fehlerfrei ausgefhrt.
-      ù Fehlerstatus:   Ist der Rckgabestatus ungleich 0, so liegt ein Fehler
-                        vor. Die Bedeutung des berreichten Fehlercodes
-                        entnehmen sie bitte einer getrennten šbersicht.
+      Â¨ OK              Die Funktion wurde fehlerfrei ausgefÃ¼hrt.
+      Â¨ Fehlerstatus:   Ist der RÃ¼ckgabestatus ungleich 0, so liegt ein Fehler
+                        vor. Die Bedeutung des Ã¼berreichten Fehlercodes
+                        entnehmen sie bitte einer getrennten Ãœbersicht.
 
 Globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 keine
 
 .ff
 .de \euro\demo\b_open.c
 .te*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define NDEBUG 1
 
 #include <stdio.h>
@@ -835,9 +835,9 @@ keine
 #include <process.h>               /* fuer execl() */
 #include <eur_tool.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                       MODULGLOBALE VARIABLEN                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                       MODULGLOBALE VARIABLEN                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT BOOL     boTestModus_g;
 IMPORT CHAR     strExe_g[];
 IMPORT CHAR     strDat_g[];
@@ -849,9 +849,9 @@ STATIC WORD i_ExchangeKeyInfo (BFILEINFO, WORD, WORD);
 
 /*STATIC  PWKB pWkbInfo = NULL;*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 WORD Db_BOpen (WORD wFile, PSTR apstrBlock[],
 	      PSTR apstrOwner[], WORD wLock,
@@ -861,8 +861,8 @@ WORD Db_BOpen (WORD wFile, PSTR apstrBlock[],
 	      PWORD pwMaxKey, BFILEINFO aFiles[], PSTR pF, WORD wL)
 {
 REGISTER i;
-WORD wOwnerLength;                                     /* L„nge Besitzername  */
-WORD wFileBufferLength;                                /* L„nge Filenamen     */
+WORD wOwnerLength;                                     /* LÃ¤nge Besitzername  */
+WORD wFileBufferLength;                                /* LÃ¤nge Filenamen     */
 WORD wStatus = 0;
 BOOL boSypara;
 CHAR strExtFileName[TB_MAX];
@@ -886,9 +886,9 @@ else
   boSypara=NO;
 
 if (apstrOwner[wFile])				/* Falls Besitzername  */
-   wOwnerLength = strlen(apstrOwner[wFile]) +1; /* da, L„nge speichern */
+   wOwnerLength = strlen(apstrOwner[wFile]) +1; /* da, LÃ¤nge speichern */
 else                                                   /* sonst ist die Be-   */
-   wOwnerLength = 0;                                   /* sitzernamenl„nge 0  */
+   wOwnerLength = 0;                                   /* sitzernamenlÃ¤nge 0  */
 
 wStatus=BTRV(B_OPEN+wLock, apstrBlock[wFile],	      /*		     */
 		   apstrOwner[wFile],		/*		       */
@@ -960,16 +960,16 @@ do
 
   if (!wFile)
     {
-    for(i=0; i<apfsFileBuffer[0]->wNdxCnt; i++)       /* Fr jeden Schlssel */
+    for(i=0; i<apfsFileBuffer[0]->wNdxCnt; i++)       /* FÃ¼r jeden SchlÃ¼ssel */
       {
       if(apstrKey[i]==NULL)			      /* in der Stammdatei   */
 	Ut_Calloc(apstrKey[i], TB_MAX, CHAR);	      /* Platz allokieren    */
 
       awKeyOffset[i] =				      /* Offset des	     */
-        apfsFileBuffer[0]->ksKeyBuf[i].wKeyPosition-1;/* Schlssels          */
+        apfsFileBuffer[0]->ksKeyBuf[i].wKeyPosition-1;/* SchlÃ¼ssels          */
 
-      awKeyLen[i] =				/* L„nge des	       */
-        apfsFileBuffer[0]->ksKeyBuf[i].wKeyLength;    /* Schlssels          */
+      awKeyLen[i] =				/* LÃ¤nge des	       */
+        apfsFileBuffer[0]->ksKeyBuf[i].wKeyLength;    /* SchlÃ¼ssels          */
       }
 
     }
@@ -986,11 +986,11 @@ return (wStatus);
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_AnalyseKeys ()                                                        º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_AnalyseKeys ()                                                        â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 WORD i_AnalyseKeys(BFILEINFO FileInfo, PFSPEC apfsFile,
 		   WORD wFile, PSTR pF, WORD wL)
@@ -1052,7 +1052,7 @@ if (wFound < wTheorie)
 
       if (boTest)
         {
-        sprintf (strError, "Kein Key fuer Feld ¯%s® in Datei %d.",
+        sprintf (strError, "Kein Key fuer Feld Â»%sÂ« in Datei %d.",
                  FileInfo.apKeys[i]->strDatenfeld, wFile);
 
 	Dl_ErrorHandler(6,strError,pF,wL,0);
@@ -1066,7 +1066,7 @@ if (wFound < wTheorie)
         Wi_TestPrintf (pWkbInfo, "Keys in der Datei %d:\n", wFile);
 
         for (j=0; j<FileInfo.wNbKeyFields; j++)
-          Wi_TestPrintf (pWkbInfo, "\nKey %d: ¯%s®, Ofs=%d, Len=%d\n",
+          Wi_TestPrintf (pWkbInfo, "\nKey %d: Â»%sÂ«, Ofs=%d, Len=%d\n",
                     j+1, FileInfo.apKeys[j]->strDatenfeld,
                     FileInfo.awKeyOffset[j], FileInfo.awKeyLength[j]);
 
@@ -1076,31 +1076,31 @@ if (wFound < wTheorie)
       }
 
 /* Eigentlich sollten nicht existierende Key-Pfade hier automatisch angelegt */
-/* werden. Dabei ergibt sich aber das Problem, daá Systemausf„lle w„hrend    */
-/* dieser Operation sich sehr ungnstig auswirken: Erst beim n„chsten Zugriff*/
-/* auf die Datei ber diesen Key-Pfad meldet BTRIEVE einen Fehler (i.a. 56). */
-/* Dann máte die Applikation eine DROP-Supp.-Index Operation ausfhren und  */
-/* danach den Index neu aufbauen. Dazu enth„lt die Applikation aber (leider) */
-/* keine Logik. Da solche F„lle in erster Linie jedoch bei der Programment-  */
+/* werden. Dabei ergibt sich aber das Problem, daÃŸ SystemausfÃ¤lle wÃ¤hrend    */
+/* dieser Operation sich sehr ungÃ¼nstig auswirken: Erst beim nÃ¤chsten Zugriff*/
+/* auf die Datei Ã¼ber diesen Key-Pfad meldet BTRIEVE einen Fehler (i.a. 56). */
+/* Dann mÃ¼ÃŸte die Applikation eine DROP-Supp.-Index Operation ausfÃ¼hren und  */
+/* danach den Index neu aufbauen. Dazu enthÃ¤lt die Applikation aber (leider) */
+/* keine Logik. Da solche FÃ¤lle in erster Linie jedoch bei der Programment-  */
 /* wicklung auftreten werden, lohnt sich der damit verbundene Aufwand im     */
-/* Moment (noch) nicht. Daher wird in solchen F„llen eine eindeutige Fehler- */
+/* Moment (noch) nicht. Daher wird in solchen FÃ¤llen eine eindeutige Fehler- */
 /* meldung ausgegeben (6==Invalid Key Number). Zur Zeit wird also nur die    */
-/* logische Key-Reihenfolge so umsortiert, daá sie der physikalischen ent-   */
-/* spricht. Auáerdem wird auf eine ev. vorhandene Alternate Collating Sequ.  */
-/* Rcksicht genommen. Die hier verwendete Technik mit einem return-Wert     */
+/* logische Key-Reihenfolge so umsortiert, daÃŸ sie der physikalischen ent-   */
+/* spricht. AuÃŸerdem wird auf eine ev. vorhandene Alternate Collating Sequ.  */
+/* RÃ¼cksicht genommen. Die hier verwendete Technik mit einem return-Wert     */
 /* und die in der aufrufenden Funktin vorkommende while-Schleife haben daher */
-/* nur im Hinblick auf zuknftige Erweiterungen einen Sinn.                  */
+/* nur im Hinblick auf zukÃ¼nftige Erweiterungen einen Sinn.                  */
 
 
 return (boOK);
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_ExchangeKeyInfo() 						    º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_ExchangeKeyInfo() 						    â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 WORD i_ExchangeKeyInfo(BFILEINFO File, WORD wDest, WORD wSrc)
 {
@@ -1132,11 +1132,11 @@ return (OK);
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º File_Definition()                                                       º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ File_Definition()                                                       â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 WORD File_Definition(WORD wFH, PSTR apstrFileName[],
        PFSPEC apfsFileBuffer[], PSTR pF, WORD wL)
@@ -1191,7 +1191,7 @@ if (wRetCode == 22 || wRetCode == 0)
     Ut_Calloc(pstrBuffer, wBufferLength+1, CHAR);
     wRetCode = BTRV (B_GET_EQ, strBlock, pstrBuffer, &wBufferLength, pstrKeyName, 0);
    }
-        sprintf (strError, "B_GET_EQ, - SCHLšSSEL : >%s<.", pstrKeyName);
+        sprintf (strError, "B_GET_EQ, - SCHLÃœSSEL : >%s<.", pstrKeyName);
 	Dl_ErrorHandler(wRetCode,strError,pF,wL,0);
 
 wRetCode = BTRV (B_CLOSE, strBlock, pstrBuffer, &wBufferLength, strFileName, 0);
@@ -1254,7 +1254,7 @@ for(i=0, pstrPos = pstrBuffer+210; i<wKey; i++, pstrPos+=79)
   wSeg = *(pstrPos+77) == 'J' ? SEG     : 0;        /*                      */
 
   /*Wi_TestPrintf ( pWkbInfo,
-    "\nKeyNr.:¯%s® <Key=%d> <wDup=%d> <wMod=%d> <wDes=%d> "
+    "\nKeyNr.:Â»%sÂ« <Key=%d> <wDup=%d> <wMod=%d> <wDes=%d> "
     "<wAlt=%d> <wNul=%d> <wSeg=%d>",
     pstrPos+61, i, wDup, wMod, wDes, wAlt, wNul, wSeg);*/
 

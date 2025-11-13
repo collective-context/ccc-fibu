@@ -1,32 +1,32 @@
 /*.ta M_Hilfe()
-ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  M_Hilfe()                                                                   บ
-ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  M_Hilfe()                                                                   โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-berblick:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+รberblick:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 #include <eur_tool.h>
 
 Parameter:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
 Beschreibung:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
-Rckgabewert:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Rรผckgabewert:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
 Benutzte globale Variablen (R/W):
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 Variablen (R/W):
 
 
 .te*/
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define  NDEBUG 1
 #include <eur_tool.h>
 #include <stdio.h>
@@ -34,40 +34,40 @@ Variablen (R/W):
 #include <dos.h>
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT COLORSET aCS_g[];                            /* Farbpaletten-Array   */
 IMPORT WORD     wCSInd_g;                           /* Index in Pal.-Array  */
 IMPORT WORD     wMausda_g;                          /* Maus im System ?     */
 
 IMPORT PSTR     pstrF1_g;                           /* Texte der Schalt-    */
 IMPORT CHAR	acHlpFile_g[];		    /* Name der Hilfedatei / _MSK 0 */
-IMPORT CHAR	acHlpKey_g[];		    /* Hilfstext-Schlssel / 2x[F1] */
+IMPORT CHAR	acHlpKey_g[];		    /* Hilfstext-Schlรผssel / 2x[F1] */
 IMPORT WORD	wLoopF1_g;		    /* 1 X [F1]-Taste	    */
 IMPORT CHAR     strHlp_g[];
 IMPORT CHAR     strExt_g[];
-IMPORT PSTR     pstrEsc_g;                          /* flchen              */
+IMPORT PSTR     pstrEsc_g;                          /* flรคchen              */
 IMPORT PSTR     pstrReturn_g;
 IMPORT BOOL     boBeepen_g;                         /* Warnton ein ?        */
 IMPORT PSTR     pstrDataBuffer_g;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        KONSTANTEN UND MAKROS                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-#define SCR_DELAY   1              /* Zeitverz”gerung fr Maus-Dauer-Scroll */
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        KONSTANTEN UND MAKROS                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+#define SCR_DELAY   1              /* Zeitverzรถgerung fรผr Maus-Dauer-Scroll */
 
 #define PFEILOBENAN()	    Wi_Sza(wBre_m-6,1,'',aCS_g[wCSInd_g].wCs_dlg_sp)
-#define PFEILOBENAUS()	    Wi_Sza(wBre_m-6,1,'ฤ',aCS_g[wCSInd_g].wCs_dlg)
+#define PFEILOBENAUS()	    Wi_Sza(wBre_m-6,1,'โ”€',aCS_g[wCSInd_g].wCs_dlg)
 
 #define PFEILUNTENAN()	    Wi_Sza(wBre_m-4,1,'',aCS_g[wCSInd_g].wCs_dlg_sp)
-#define PFEILUNTENAUS()     Wi_Sza(wBre_m-4,1,'ฤ',aCS_g[wCSInd_g].wCs_dlg)
+#define PFEILUNTENAUS()     Wi_Sza(wBre_m-4,1,'โ”€',aCS_g[wCSInd_g].wCs_dlg)
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC WORD   wStartzeile_m;
 STATIC WORD   wHilfsZeilen_m;
 STATIC WORD   wAktZeile_m=0;
@@ -79,9 +79,9 @@ STATIC CHAR   strName[TB_MAX];
 MGLOBAL PSTR  apstrText_m[500];
 GLOBAL	PSTR  pstrTitel_g;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE FUNKTIONEN                         บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE FUNKTIONEN                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC VOID cdecl i_EineSeiteHoch	 (PPSTR);
 STATIC VOID cdecl i_EineSeiteRunter	 (PPSTR);
 STATIC VOID cdecl i_EineZeileHoch	 (VOID);
@@ -92,27 +92,27 @@ STATIC BOOL cdecl i_KeinKeyDa		 (VOID);
 STATIC VOID cdecl i_HilfeSchreibeText	 (PPSTR);
 STATIC WORD cdecl i_ReadHelpRecord	 (PTEXTBOX, PSTR, PSTR, PPSTR, PPWKB);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    M_HilfeTools()                 Datum: 17.08.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    M_HilfeTools()                 Datum: 17.08.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID M_HilfeTools (PTEXTBOX pT)
 {
@@ -124,8 +124,8 @@ CHAR	strHelpFile[TB_MAX];
 CHAR	strHelpKey[TB_MAX];
 WORD	wRetCode;
 
-CHAR acHlpFile[HLPFL];	     /* Name der Hilfedatei / temporr		     */
-CHAR acHlpKey[HLPKEY];	     /* Hilfstext-Schlssel / temporr		     */
+CHAR acHlpFile[HLPFL];	     /* Name der Hilfedatei / temporรคr		     */
+CHAR acHlpKey[HLPKEY];	     /* Hilfstext-Schlรผssel / temporรคr		     */
 
 pEvent = &Event;				     /* Var. initialisieren  */
 
@@ -334,32 +334,32 @@ for(;;) 					     /* Eingaberoutine	     */
 
 
 /*.ta i_EineSeiteHoch
-  ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_EineSeiteHoch                Datum: 17.08.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   บ
-  บ                    ausgabe des Hilfstextes bei Dl_Hilfe().             บ
-  บ                    Eine Aktion wird erst dann ausgefhrt, wenn         บ
-  บ                    mehr als die in der Konstante MINZEILEN angegebenen บ
-  บ                    Zeilen noch im Fenster stehen.                      บ
-  บ                    In diesem Fall wird der im Fenster stehende         บ
-  บ                    Text gescrollt, der neue Text ausgegeben und        บ
-  บ                    die Scroll-Pfeile an die nach dem Scrollen ent-     บ
-  บ                    standene Situation angepaแt.                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     keine                                               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  modulglobale Variablen:                             บ
-  บ                    - wHilfsZeilen_m (R)                                บ
-  บ                    - wStartzeile_m  (R/W)                              บ
-  บ                    - ppstrTmp_m     (R)                                บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+  โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_EineSeiteHoch                Datum: 17.08.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   โ•‘
+  โ•‘                    ausgabe des Hilfstextes bei Dl_Hilfe().             โ•‘
+  โ•‘                    Eine Aktion wird erst dann ausgefรผhrt, wenn         โ•‘
+  โ•‘                    mehr als die in der Konstante MINZEILEN angegebenen โ•‘
+  โ•‘                    Zeilen noch im Fenster stehen.                      โ•‘
+  โ•‘                    In diesem Fall wird der im Fenster stehende         โ•‘
+  โ•‘                    Text gescrollt, der neue Text ausgegeben und        โ•‘
+  โ•‘                    die Scroll-Pfeile an die nach dem Scrollen ent-     โ•‘
+  โ•‘                    standene Situation angepaรt.                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  modulglobale Variablen:                             โ•‘
+  โ•‘                    - wHilfsZeilen_m (R)                                โ•‘
+  โ•‘                    - wStartzeile_m  (R/W)                              โ•‘
+  โ•‘                    - ppstrTmp_m     (R)                                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 .ff
 .te*/
 STATIC
@@ -405,32 +405,32 @@ VOID i_EineSeiteHoch(PPSTR ppstrTxt)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_EineSeiteRunter              Datum: 17.08.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PPSTR ppstrTxt  Zeiger auf erste Zeile der          บ
-  บ                                    Hilfstexte                          บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   บ
-  บ                    ausgabe des Hilfstextes bei Dl_Hilfe().             บ
-  บ                    Eine Aktion wird erst dann ausgefhrt, wenn         บ
-  บ                    mehr als die in der Konstante MINZEILEN angegebenen บ
-  บ                    Zeilen noch im Fenster stehen.                      บ
-  บ                    In diesem Fall wird der im Fenster stehende         บ
-  บ                    Text gescrollt, der neue Text ausgegeben und        บ
-  บ                    die Scroll-Pfeile an die nach dem Scrollen ent-     บ
-  บ                    standene Situation angepaแt.                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  modulglobale Variablen:                             บ
-  บ                    - wHilfsZeilen_m (R)                                บ
-  บ                    - wStartzeile_m  (R/W)                              บ
-  บ                    - ppstrTmp_m     (R)                                บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_EineSeiteRunter              Datum: 17.08.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PPSTR ppstrTxt  Zeiger auf erste Zeile der          โ•‘
+  โ•‘                                    Hilfstexte                          โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   โ•‘
+  โ•‘                    ausgabe des Hilfstextes bei Dl_Hilfe().             โ•‘
+  โ•‘                    Eine Aktion wird erst dann ausgefรผhrt, wenn         โ•‘
+  โ•‘                    mehr als die in der Konstante MINZEILEN angegebenen โ•‘
+  โ•‘                    Zeilen noch im Fenster stehen.                      โ•‘
+  โ•‘                    In diesem Fall wird der im Fenster stehende         โ•‘
+  โ•‘                    Text gescrollt, der neue Text ausgegeben und        โ•‘
+  โ•‘                    die Scroll-Pfeile an die nach dem Scrollen ent-     โ•‘
+  โ•‘                    standene Situation angepaรt.                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Diese Funktion hat keinen Rรผckgabewert.             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  modulglobale Variablen:                             โ•‘
+  โ•‘                    - wHilfsZeilen_m (R)                                โ•‘
+  โ•‘                    - wStartzeile_m  (R/W)                              โ•‘
+  โ•‘                    - ppstrTmp_m     (R)                                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_EineSeiteRunter(PPSTR ppstrTxt)
 {
@@ -471,32 +471,32 @@ VOID i_EineSeiteRunter(PPSTR ppstrTxt)
 
 
 /*.ta i_EineZeileHoch
-  ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_EineZeileHoch                Datum: 25.10.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   บ
-  บ                    ausgabe des Hilfstextes bei Dl_Hilfe().             บ
-  บ                    Eine Aktion wird erst dann ausgefhrt, wenn         บ
-  บ                    mehr als die in der Konstante MINZEILEN angegebenen บ
-  บ                    Zeilen noch im Fenster stehen.                      บ
-  บ                    In diesem Fall wird der im Fenster stehende         บ
-  บ                    Text gescrollt, der neue Text ausgegeben und        บ
-  บ                    die Scroll-Pfeile an die nach dem Scrollen ent-     บ
-  บ                    standene Situation angepaแt.                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     keine                                               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  modulglobale Variablen:                             บ
-  บ                    - wHilfsZeilen_m (R)                                บ
-  บ                    - wStartzeile_m  (R/W)                              บ
-  บ                    - ppstrTmp_m     (R)                                บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+  โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_EineZeileHoch                Datum: 25.10.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   โ•‘
+  โ•‘                    ausgabe des Hilfstextes bei Dl_Hilfe().             โ•‘
+  โ•‘                    Eine Aktion wird erst dann ausgefรผhrt, wenn         โ•‘
+  โ•‘                    mehr als die in der Konstante MINZEILEN angegebenen โ•‘
+  โ•‘                    Zeilen noch im Fenster stehen.                      โ•‘
+  โ•‘                    In diesem Fall wird der im Fenster stehende         โ•‘
+  โ•‘                    Text gescrollt, der neue Text ausgegeben und        โ•‘
+  โ•‘                    die Scroll-Pfeile an die nach dem Scrollen ent-     โ•‘
+  โ•‘                    standene Situation angepaรt.                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  modulglobale Variablen:                             โ•‘
+  โ•‘                    - wHilfsZeilen_m (R)                                โ•‘
+  โ•‘                    - wStartzeile_m  (R/W)                              โ•‘
+  โ•‘                    - ppstrTmp_m     (R)                                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 .ff
 .te*/
 STATIC
@@ -525,32 +525,32 @@ VOID i_EineZeileHoch(VOID)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_EineZeileRunter              Datum: 25.10.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PPSTR ppstrTxt  Zeiger auf erste Zeile der          บ
-  บ                                    Hilfstexte                          บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   บ
-  บ                    ausgabe des Hilfstextes bei Dl_Hilfe().             บ
-  บ                    Eine Aktion wird erst dann ausgefhrt, wenn         บ
-  บ                    mehr als die in der Konstante MINZEILEN angegebenen บ
-  บ                    Zeilen noch im Fenster stehen.                      บ
-  บ                    In diesem Fall wird der im Fenster stehende         บ
-  บ                    Text gescrollt, der neue Text ausgegeben und        บ
-  บ                    die Scroll-Pfeile an die nach dem Scrollen ent-     บ
-  บ                    standene Situation angepaแt.                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  modulglobale Variablen:                             บ
-  บ                    - wHilfsZeilen_m (R)                                บ
-  บ                    - wStartzeile_m  (R/W)                              บ
-  บ                    - ppstrTmp_m     (R)                                บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_EineZeileRunter              Datum: 25.10.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PPSTR ppstrTxt  Zeiger auf erste Zeile der          โ•‘
+  โ•‘                                    Hilfstexte                          โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   โ•‘
+  โ•‘                    ausgabe des Hilfstextes bei Dl_Hilfe().             โ•‘
+  โ•‘                    Eine Aktion wird erst dann ausgefรผhrt, wenn         โ•‘
+  โ•‘                    mehr als die in der Konstante MINZEILEN angegebenen โ•‘
+  โ•‘                    Zeilen noch im Fenster stehen.                      โ•‘
+  โ•‘                    In diesem Fall wird der im Fenster stehende         โ•‘
+  โ•‘                    Text gescrollt, der neue Text ausgegeben und        โ•‘
+  โ•‘                    die Scroll-Pfeile an die nach dem Scrollen ent-     โ•‘
+  โ•‘                    standene Situation angepaรt.                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Diese Funktion hat keinen Rรผckgabewert.             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  modulglobale Variablen:                             โ•‘
+  โ•‘                    - wHilfsZeilen_m (R)                                โ•‘
+  โ•‘                    - wStartzeile_m  (R/W)                              โ•‘
+  โ•‘                    - ppstrTmp_m     (R)                                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_EineZeileRunter(PPSTR ppstrTxt)
 {
@@ -574,15 +574,15 @@ VOID i_EineZeileRunter(PPSTR ppstrTxt)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_KeineDateiDa()                Datum: 20.02.90     บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion wird                                 บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_KeineDateiDa()                Datum: 20.02.90     โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion wird                                 โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 BOOL i_KeineDateiDa(PSTR pstrFileName, PSTR pstrFileBlock)
 {
 EVENT event;
@@ -670,24 +670,24 @@ return(boOK);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_KeineInfosDa()                Datum: 20.02.90     บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion wird                                 บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_KeineInfosDa()                Datum: 20.02.90     โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion wird                                 โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID i_KeineInfosDa(VOID)
 {
 PSTR apstrText[25];
 
-Ut_SchreibArray (apstrText, "    Fr dieses Feld gibt es ",
+Ut_SchreibArray (apstrText, "    Fรผr dieses Feld gibt es ",
                             "    keine Infos zur Hilfedatei.",
                             " ",
                             "    Bitte setzen Sie sich mit",
-                            "    Ihrem Hndler in Verbindung !   ",
+                            "    Ihrem Hรคndler in Verbindung !   ",
                             NULL);
 
 Dl_Info (apstrText, DLG_WARNUNG);
@@ -697,15 +697,15 @@ Ut_LoeschArray (apstrText);
 return;
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_KeinKeyDa()                   Datum: 20.02.90     บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion wird                                 บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_KeinKeyDa()                   Datum: 20.02.90     โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion wird                                 โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 BOOL i_KeinKeyDa(VOID)
 {
 EVENT event;
@@ -718,7 +718,7 @@ pWkbDialog = Wi_Einrichten (15, 8, 50, 10);
 i_Dl_Init (15, 8, 50, 10, NULL,
          pWkbDialog, SF_JANEIN, DLG_WARNUNG);
 
-Wi_Ss(9, 1, "Fr dieses Feld");
+Wi_Ss(9, 1, "Fรผr dieses Feld");
 Wi_Ss(9, 2, "gibt es noch keine Hilfe.");
 Wi_Ss(9, 4, "Soll sie neu angelegt werden ?");
 
@@ -761,22 +761,22 @@ return(boOK);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_HilfeSchreibeText()						   บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ Parameter:	      PPSTR  ppstrT	       Ausgabetext		   บ
-  บ                                                                        บ
-  บ Beschreibung:     Diese Funktion gibt ab der Zeile 2 des		   บ
-  บ		      Dialogfensters den bergebenen Text fr die	   บ
-  บ		      Funktion Dl_Hilfe() aus.				   บ
-  บ                                                                        บ
-  บ Rckgabewert:     Diese Funktion hat keinen Rckgabewert.		   บ
-  บ                                                                        บ
-  บ Benutzte globale							   บ
-  บ Variablen (R/W):  keine						   บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_HilfeSchreibeText()						   โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘ Parameter:	      PPSTR  ppstrT	       Ausgabetext		   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘ Beschreibung:     Diese Funktion gibt ab der Zeile 2 des		   โ•‘
+  โ•‘		      Dialogfensters den รผbergebenen Text fรผr die	   โ•‘
+  โ•‘		      Funktion Dl_Hilfe() aus.				   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘ Rรผckgabewert:     Diese Funktion hat keinen Rรผckgabewert.		   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘ Benutzte globale							   โ•‘
+  โ•‘ Variablen (R/W):  keine						   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_HilfeSchreibeText(PPSTR ppstrT)
 {
@@ -787,7 +787,7 @@ for(i=0, wZeile=2; i<TEXTZEILEN && *ppstrT != NULL;  /* Solange Zeilen da && */
   {
   WORD wS=1;					     /* Spaltenbeginn/ Zeile */
   PSTR pstr=*ppstrT;				     /* Zeichen der Zeile je */
-  while(*pstr && wS<=wBre_m-4)			     /* um eines erh”hen und */
+  while(*pstr && wS<=wBre_m-4)			     /* um eines erhรถhen und */
     Wi_Sz(wS++, wZeile, *pstr++);		     /* in der Zeile inner-  */
   }						     /* halb des Windows aus-*/
 						     /* geben.		     */
@@ -795,20 +795,20 @@ return;
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_ReadHelpRecord 	      Datum: 05.05.90	   บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter: 							   บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion gibt				   บ
-  บ                                                                        บ
-  บ  Rckgabewert:							   บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  keine                                               บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_ReadHelpRecord 	      Datum: 05.05.90	   โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter: 							   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion gibt				   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:							   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 WORD i_ReadHelpRecord(PTEXTBOX pT, PSTR pstrHelpFile, PSTR pstrHelpKey,
 		    PPSTR ppstrTitel, PPWKB ppWkbDialog)
@@ -854,7 +854,7 @@ PSTR	pstrPos;
 	     pstrDataBuffer_g, &wBufLength, pstrHelpKey, 0);
 
     sprintf(strError_m, "B_GET_EQ(HILFE_01)"
-                        " - Key: ฏ%sฎ",
+                        " - Key: ยป%sยซ",
 			pstrHelpKey);
 
     Dl_ErrorHandler (wRetCode, strError_m,
@@ -883,7 +883,7 @@ PSTR	pstrPos;
 	 **apstrText_m = ' ';			    /* ? */
 	 apstrText_m[1] = NULL; 		    /* ? */
 	 Ut_Calloc(*ppstrTitel, TB_MAX, CHAR);	    /* ? */
-	 strcpy (*ppstrTitel, "Hilfe fr ");	    /* ? */
+	 strcpy (*ppstrTitel, "Hilfe fรผr ");	    /* ? */
 
 	 if((pWkbText=Wi_Einrichten(wSpa_m,wZei_m,
 	   wBre_m,wHoe_m))==NULL) return(OK);
@@ -912,7 +912,7 @@ PSTR	pstrPos;
 
     pstrPos = pstrDataBuffer_g + 13;
     Ut_Calloc(*ppstrTitel, TB_MAX, CHAR);
-    sprintf ( *ppstrTitel, "Hilfe fr %s", pstrPos);
+    sprintf ( *ppstrTitel, "Hilfe fรผr %s", pstrPos);
 
     wBre_m = strlen (*ppstrTitel);
     while (( pstrPos - pstrDataBuffer_g) < wBufLength)
@@ -963,7 +963,7 @@ PSTR	pstrPos;
     for (wHilfsZeilen_m=0;			     /* Anzahl der Hilfs-    */
 	 *ppstrTmp_m++ != NULL; 		     /* zeilen ermitteln     */
          wHilfsZeilen_m++);
-    ppstrTmp_m = ppstrTxt_m;			     /* Zeiger zurcksetzen  */
+    ppstrTmp_m = ppstrTxt_m;			     /* Zeiger zurรผcksetzen  */
 
     if (wHilfsZeilen_m > TEXTZEILEN)		     /* evtl. Scrollpfeil    */
 	PFEILUNTENAN(); 			     /* einschalten	     */

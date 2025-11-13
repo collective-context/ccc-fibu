@@ -1,146 +1,146 @@
 /*.ta Dl_HilfeTools()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Dl_HilfeTools()							       º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Dl_HilfeTools()							       â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_dlg.h>
 VOID Dl_HilfeTools(wDialog);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-WORD  wDialog	 Konstante fr Kennzahl des Dialogfeldes, fr fr das die
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+WORD  wDialog	 Konstante fÃ¼r Kennzahl des Dialogfeldes, fÃ¼r fÃ¼r das die
 		 Hilfe ausgegeben werden soll:
 
-		 - FARBPALETTE	Hilfe fr Funktion Dl_FarbPalette()
-		 - DOSSHELL	Hilfe fr Funktion Ut_DosShell()
-		 - SPEICHERN	Hilfe fr Funktion Dl_SpeichernUnter()
-		 - LADEN	Hilfe fr Funktion Dl_Laden()
-		 - WARNTON	Hilfe fr Funktion Dl_Warnton()
-		 - MAUSTEMPO	Hilfe fr Funktion Dl_MausTempo
+		 - FARBPALETTE	Hilfe fÃ¼r Funktion Dl_FarbPalette()
+		 - DOSSHELL	Hilfe fÃ¼r Funktion Ut_DosShell()
+		 - SPEICHERN	Hilfe fÃ¼r Funktion Dl_SpeichernUnter()
+		 - LADEN	Hilfe fÃ¼r Funktion Dl_Laden()
+		 - WARNTON	Hilfe fÃ¼r Funktion Dl_Warnton()
+		 - MAUSTEMPO	Hilfe fÃ¼r Funktion Dl_MausTempo
 		 - DLGINDEX	Hilfe Dl_HilfeIndex()
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Mit dieser Funktuion haben Sie die M”glichkeit, von einer beliebigen Stelle
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Mit dieser Funktuion haben Sie die MÃ¶glichkeit, von einer beliebigen Stelle
 Ihres Programms aus die Hilfstext der Toolbox-Dialogfunktionen anzeigen zu
-lassen. Dies ist beispielweise sinnvoll, wenn Sie fr Ihr Programm die Funktion
+lassen. Dies ist beispielweise sinnvoll, wenn Sie fÃ¼r Ihr Programm die Funktion
 zur Bearbeitung von Hilfe-Anforderung aus einem Hilfeindex erstellen.
 
-Alle Hilfstexte fr diese Dialogfelder befinden sich in der Datei <dlghtool.c>.
-Wenn Sie die Texte „ndern wollen, brauchen Sie nur diese Datei zu editieren,
-und ie ge„nderte Objekt-Datei gegen die ursprngliche in der Bibliothek auszu-
+Alle Hilfstexte fÃ¼r diese Dialogfelder befinden sich in der Datei <dlghtool.c>.
+Wenn Sie die Texte Ã¤ndern wollen, brauchen Sie nur diese Datei zu editieren,
+und ie geÃ¤nderte Objekt-Datei gegen die ursprÃ¼ngliche in der Bibliothek auszu-
 tauschen.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion hat keinen Rckgabewert.
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion hat keinen RÃ¼ckgabewert.
 
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Diese Funktion verwendet keine globalen Variablen.
 
 .ff
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <eur_tool.h>
 #include <stdio.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
-STATIC	PSTR pstrPresentTitel_m = "Hilfe fr euroSOFT-WARE Presentation.";
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
+STATIC	PSTR pstrPresentTitel_m = "Hilfe fÃ¼r euroSOFT-WARE Presentation.";
 STATIC	PSTR apstrPresentText_m[]=
 {
     "Die euroSOFT-WARE Presentation ist aufgebaut wie eine Dia-Show.",
     "",
-    "Nach dem Start der Presentation wird Ihnen das n„chste Bild durch",
-    "Drcken einer beliebigen Taste angezeigt.",
+    "Nach dem Start der Presentation wird Ihnen das nÃ¤chste Bild durch",
+    "DrÃ¼cken einer beliebigen Taste angezeigt.",
     "",
     "Es gibt jedoch auch Tasten, mit denen Sie die Bildreihenfolge selbst",
-    "beeinflussen k”nnen:",
+    "beeinflussen kÃ¶nnen:",
     "",
-    "ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",
+    "â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€",
     "",
-    " ş   oder PgUp zeigt Ihnen nochmals das letzte Bild.",
+    " â–    oder PgUp zeigt Ihnen nochmals das letzte Bild.",
     "",
-    " ş  CTRL+END zeigt Ihnen das letzte Bild.",
-    " ş  CTRL+HOME zeigt Ihnen das erste Bild.",
+    " â–   CTRL+END zeigt Ihnen das letzte Bild.",
+    " â–   CTRL+HOME zeigt Ihnen das erste Bild.",
     "",
-    " ş  TAB oder CTRL-PgDn geht nach vor zum ersten Bild des",
-    "    n„chsten Kapitels.",
+    " â–   TAB oder CTRL-PgDn geht nach vor zum ersten Bild des",
+    "    nÃ¤chsten Kapitels.",
     "",
-    " ş  SHIFT+TAB oder CTRL-PgUp geht zurck zum ersten Bild des",
+    " â–   SHIFT+TAB oder CTRL-PgUp geht zurÃ¼ck zum ersten Bild des",
     "    letzten Kapitels",
     "",
-    " ş  Esc   geht bis zum Kapitelanfang jeweils ein Bild zurck.",
-    " ş  Esc   bedeutet Programmende, wenn Sie beim ersten Bild des",
+    " â–   Esc   geht bis zum Kapitelanfang jeweils ein Bild zurÃ¼ck.",
+    " â–   Esc   bedeutet Programmende, wenn Sie beim ersten Bild des",
     "          ersten Kapitels stehen (z.B. mit CTRL+HOME).",
     NULL
 };
 
 
 
-STATIC	PSTR pstrPalTitel_m = "Hilfe fr Farbpalette w„hlen";
+STATIC	PSTR pstrPalTitel_m = "Hilfe fÃ¼r Farbpalette wÃ¤hlen";
 STATIC	PSTR apstrPalText_m[]=
 {
     " Benutzen Sie diese Dialog-Box um die Farben,",
-    " mit denen das Men und die Dialog-Boxen auf",
+    " mit denen das MenÃ¼ und die Dialog-Boxen auf",
     " dem Bildschirm dargestellt werden, festzulegen.",
     "",
     " Wenn an Ihrem Rechner ein Farbmonitor ange-",
-    " schlossen ist, stehen Ihnen fnf Farbpaletten",
-    " zur Verfgung. Bei einem Monochrom-Monitor",
+    " schlossen ist, stehen Ihnen fÃ¼nf Farbpaletten",
+    " zur VerfÃ¼gung. Bei einem Monochrom-Monitor",
     " ist immer die monochrome Palette aktiv.",
     "",
-    " Sie w„hlen eine Palette aus, indem Sie",
-    "  ş  die Tasten    und    bet„tigen oder",
-    "  ş  einen der andersfarbigen Buchstaben",
+    " Sie wÃ¤hlen eine Palette aus, indem Sie",
+    "  â–   die Tasten    und    betÃ¤tigen oder",
+    "  â–   einen der andersfarbigen Buchstaben",
     "     eingeben oder",
-    "  ş  den Mauszeiger auf ein Optionsfeld bewegen",
-    "     und dort die linke Maustaste drcken.",
+    "  â–   den Mauszeiger auf ein Optionsfeld bewegen",
+    "     und dort die linke Maustaste drÃ¼cken.",
     "",
-    " Drcken Sie",
-    "  ş  <ÄÙ   um die gew„hlte Palette einzustellen",
-    "  ş  Esc   um den Dialog abzubrechen und die",
+    " DrÃ¼cken Sie",
+    "  â–   <â”€â”˜   um die gewÃ¤hlte Palette einzustellen",
+    "  â–   Esc   um den Dialog abzubrechen und die",
     "           alte Palette wieder zu aktivieren.",
     NULL
 };
 
-STATIC	PSTR pstrSpeichernTitel_m = "Hilfe fr Speichern unter";
+STATIC	PSTR pstrSpeichernTitel_m = "Hilfe fÃ¼r Speichern unter";
 STATIC	PSTR apstrSpeichernText_m[] =
 {
-    "Mit dem Speichern unter... - Befehl k”nnen Sie",
+    "Mit dem Speichern unter... - Befehl kÃ¶nnen Sie",
     "aktuelle Datei unter einem neuen Namen auf",
-    "dem Datentr„ger abspeichern.",
+    "dem DatentrÃ¤ger abspeichern.",
     "",
     "Das Dialogfeld besteht aus folgenden Anzeigen",
     "und Optionen:",
-    " ş Verzeichnis:  Hier finden Sie die Angabe des",
+    " â–  Verzeichnis:  Hier finden Sie die Angabe des",
     "                 aktuellen Pfades.",
-    " ş Dateiname:    Geben Sie hier den Namen ein,",
+    " â–  Dateiname:    Geben Sie hier den Namen ein,",
     "                 unter dem die aktuelle Datei ",
     "                 gespeichert werden soll.",
     "",
-    " W„hlen Sie",
-    "  ş <ÄÙ  um die Datei unter dem Namen abzuspeichern,",
-    "         der im Textfeld ¯Dateiname® angegeben ist.",
-    "  ş Esc  um den Speichern unter... - Befehl ",
+    " WÃ¤hlen Sie",
+    "  â–  <â”€â”˜  um die Datei unter dem Namen abzuspeichern,",
+    "         der im Textfeld Â»DateinameÂ« angegeben ist.",
+    "  â–  Esc  um den Speichern unter... - Befehl ",
     "         abzubrechen.",
     "",
-    " Folgende Zeichen drfen in einem Dateinamen nicht",
+    " Folgende Zeichen dÃ¼rfen in einem Dateinamen nicht",
     " vorkommen: \\ / [] {} : | <> + = ; . \" ? * ",
     "",
-    " Fr den Fall, daá einer der Buchstaben Teil des",
+    " FÃ¼r den Fall, daÃŸ einer der Buchstaben Teil des",
     " Namens ist, gibt die Funktion folgende Meldung",
-    " aus: \"Der eingegebene Dateiname ist ungltig.\" ",
+    " aus: \"Der eingegebene Dateiname ist ungÃ¼ltig.\" ",
     NULL
 };
 
@@ -151,70 +151,70 @@ STATIC	PSTR apstrMausText_m[]=
     " wie schnell sich der Mauszeiger auf dem Bild-",
     " schirm bewegen soll.",
     "",
-    " Je kleiner die gew„hlte Zahl, desto langsamer",
+    " Je kleiner die gewÃ¤hlte Zahl, desto langsamer",
     " ist die Bewegung des Mauszeigers, und umge-",
-    " kehrt. Der Standardwert fr die Mausgeschwindig-",
+    " kehrt. Der Standardwert fÃ¼r die Mausgeschwindig-",
     " keit ist 50.",
     "",
-    " Sie k”nnen die Markierung in der Scroll-Leiste ",
+    " Sie kÃ¶nnen die Markierung in der Scroll-Leiste ",
     " verschieben, indem Sie",
-    " ş  die Tasten  <-  und  ->  bet„tigen oder",
-    " ş  den Mauszeiger auf die Pfeile an der Scroll-",
+    " â–   die Tasten  <-  und  ->  betÃ¤tigen oder",
+    " â–   den Mauszeiger auf die Pfeile an der Scroll-",
     "    leiste bewegen, und dort die linke Maustaste",
-    "    drcken,",
-    " ş  den Mauszeiger auf die gewnschte Position auf",
+    "    drÃ¼cken,",
+    " â–   den Mauszeiger auf die gewÃ¼nschte Position auf",
     "    der Scrollleiste bewegen und dort die linke",
-    "    Maustaste drcken",
+    "    Maustaste drÃ¼cken",
     "",
-    " W„hlen Sie",
-    " ş <ÄÙ   um das gew„hlte Tempo einzustellen",
-    " ş Esc   um den Dialog abzubrechen",
+    " WÃ¤hlen Sie",
+    " â–  <â”€â”˜   um das gewÃ¤hlte Tempo einzustellen",
+    " â–  Esc   um den Dialog abzubrechen",
     NULL
 };
 
 
-STATIC	PSTR pstrTonTitel_m = "Hilfe fr Warnton einstellen";
+STATIC	PSTR pstrTonTitel_m = "Hilfe fÃ¼r Warnton einstellen";
 STATIC	PSTR apstrTonText_m[]=
 {
     " Benutzen Sie diese Dialog-Box um zu bestimmen,",
     " ob das Programm im Bedarfsfall einen Warnton ",
     " ausgibt oder nicht.",
     "",
-    " Sie k”nnen auáerdem die Dauer und Frequenz des",
+    " Sie kÃ¶nnen auÃŸerdem die Dauer und Frequenz des",
     " Warntons festlegen."
     "",
-    " Sie k”nnen das Eingabefeld ver„ndern, indem Sie",
-    "  ş  Tab oder Umsch+Tab drcken.",
+    " Sie kÃ¶nnen das Eingabefeld verÃ¤ndern, indem Sie",
+    "  â–   Tab oder Umsch+Tab drÃ¼cken.",
     "",
     " Unter dem Namen des aktiven Eingabefeldes blinkt",
     " der Cursor.",
     "",
     " Verschieben Sie die Markierung in den Rolleisten",
-    " fr Dauer und Frequenz, indem Sie",
-    " ş  die Tasten  <-  und  ->  bet„tigen oder",
-    " ş  den Mauszeiger auf die Pfeile an der Scroll-",
+    " fÃ¼r Dauer und Frequenz, indem Sie",
+    " â–   die Tasten  <-  und  ->  betÃ¤tigen oder",
+    " â–   den Mauszeiger auf die Pfeile an der Scroll-",
     "    leiste bewegen, und dort die linke Maustaste",
-    "    drcken.",
+    "    drÃ¼cken.",
     "",
-    " Drcken Sie",
-    " ş <ÄÙ  um die gew„hlten Werte einzustellen",
-    " ş Esc  um den Dialog abzubrechen",
-    " ş F4   um den eingestellten Ton probeweise zu h”ren",
+    " DrÃ¼cken Sie",
+    " â–  <â”€â”˜  um die gewÃ¤hlten Werte einzustellen",
+    " â–  Esc  um den Dialog abzubrechen",
+    " â–  F4   um den eingestellten Ton probeweise zu hÃ¶ren",
     NULL
 };
 
-STATIC	PSTR pstrShellTitel_m = "Hilfe fr Betriebssystem-Befehl";
+STATIC	PSTR pstrShellTitel_m = "Hilfe fÃ¼r Betriebssystem-Befehl";
 STATIC	PSTR apstrShellText_m[] =
 {
-    "Dieser Befehl erm”glicht es Ihnen, vorbergehend",
-    "zur DOS-Ebene zurckzukehren."
+    "Dieser Befehl ermÃ¶glicht es Ihnen, vorÃ¼bergehend",
+    "zur DOS-Ebene zurÃ¼ckzukehren."
     "",
-    "Sie k”nnen dort andere Programme oder DOS-Befehle",
-    "ausfhren.",
+    "Sie kÃ¶nnen dort andere Programme oder DOS-Befehle",
+    "ausfÃ¼hren.",
     "",
     "Um von der DOS-Ebene wieder in dieses Programm",
-    "zurckzukehren, geben Sie den EXIT-Befehl ein",
-    "und drcken die Eingabe-Taste.",
+    "zurÃ¼ckzukehren, geben Sie den EXIT-Befehl ein",
+    "und drÃ¼cken die Eingabe-Taste.",
     "",
     "Wenn der DOS-Befehlsinterpreter nicht gestartet",
     "werden konnte, wird der Betriebssystem-Befehl mit",
@@ -223,42 +223,42 @@ STATIC	PSTR apstrShellText_m[] =
 };
 
 
-STATIC	PSTR pstrLadenTitel_m = "Hilfe fr Datei laden";
+STATIC	PSTR pstrLadenTitel_m = "Hilfe fÃ¼r Datei laden";
 STATIC	PSTR apstrLadenText_m[] =
 {
-    " Mit dem Dialogfeld ¯Laden® k”nnen Sie auf ver-",
+    " Mit dem Dialogfeld Â»LadenÂ« kÃ¶nnen Sie auf ver-",
     " schiedene Arten bestimmen, welche Datei als",
-    " n„chstes zur Bearbeitung geladen werden soll.",
+    " nÃ¤chstes zur Bearbeitung geladen werden soll.",
     "",
-    " Das Dialogfeld besteht neben den Schaltfl„chen",
+    " Das Dialogfeld besteht neben den SchaltflÃ¤chen",
     " aus folgenden Elementen:",
     "",
-    " ş Textfeld: Im Textfeld k”nnen Sie einen Datei-",
+    " â–  Textfeld: Im Textfeld kÃ¶nnen Sie einen Datei-",
     "      namen eingeben, eine neue Suchmaske, oder",
     "      ein Laufwerk oder Verzeichnis, in dem",
     "      nach Dateien gesucht werden soll.",
     "",
-    " ş Angabe aktuelles Verzeichnis: Unter dem Textfeld",
+    " â–  Angabe aktuelles Verzeichnis: Unter dem Textfeld",
     "      wird das Laufwerk und Verzeichnis ausgegeben,",
     "      in dem die Dialogbox derzeit nach Dateien",
     "      sucht.",
     "",
-    " ş Verzeichnisfeld: Im Verzeichnisfeld werden alle",
+    " â–  Verzeichnisfeld: Im Verzeichnisfeld werden alle",
     "      Dateinamen ausgegeben, die der im Textfeld ",
     "      ausgegebenen Suchmaske entsprechen. Die Ver-",
     "      zeichnisse und die Dateinamen sind getrennt",
     "      sortiert.",
-    "      Das bergeordnete Verzeichnis wird durch [..]",
+    "      Das Ã¼bergeordnete Verzeichnis wird durch [..]",
     "      symbolisiert, die Unterverzeichnisse werden in",
-    "      Groábuchstaben und in eckigen Klammern einge-",
+    "      GroÃŸbuchstaben und in eckigen Klammern einge-",
     "      schlossen ausgegeben.",
     "",
     " Folgende Tasten sind immer aktiv:",
     "",
     "     Tab oder Umsch+Tab",
-    "              ver„ndert den Fokus",
+    "              verÃ¤ndert den Fokus",
     "     Esc      bricht die Funktion ab",
-    "     Eingabe  bernimmt die angezeigte Zeichen-",
+    "     Eingabe  Ã¼bernimmt die angezeigte Zeichen-",
     "              kette und beendet die Funktion",
     "     F1       zeigt diesen Hilfe-Bildschirm",
     "",
@@ -267,12 +267,12 @@ STATIC	PSTR apstrLadenText_m[] =
     "     \x1B \x1A        bewegen den Cursor um ein Zeichen",
     "     Pos1       setzt Cursor auf erstes Zeichen",
     "     Ende       setzt Cursor hinter letztes Zeichen",
-    "     Entf       l”scht Zeichen unter dem Cursor",
-    "     Umsch+Entf l”scht komplettes Textfeld",
-    "     Rck       l”scht Zeichen links vom Cursor",
-    "     Einfg      schaltet Einfgemodus ein/aus",
+    "     Entf       lÃ¶scht Zeichen unter dem Cursor",
+    "     Umsch+Entf lÃ¶scht komplettes Textfeld",
+    "     RÃ¼ck       lÃ¶scht Zeichen links vom Cursor",
+    "     Einfg      schaltet EinfÃ¼gemodus ein/aus",
     "",
-    "     Das Textfeld akzeptiert nur Zeichen die fr",
+    "     Das Textfeld akzeptiert nur Zeichen die fÃ¼r",
     "     Dateinamen zugelassen sind.",
     "",
     " Sondertasten im Verzeichnisfeld:",
@@ -283,41 +283,41 @@ STATIC	PSTR apstrLadenText_m[] =
     "     Ende    bewegt den Balken auf letzten Eintrag",
     "",
     "     Durch die Eingabe eines Anfangs-Buchstabens",
-    "     k”nnen Sie direkt zu einem Eintrag springen.",
+    "     kÃ¶nnen Sie direkt zu einem Eintrag springen.",
     "     Der gefundene Dateiname erscheint immer in der",
     "     ersten Zeile des Verzeichnisfeldes.",
     NULL
 };
 
-STATIC	PSTR pstrIndexTitel_m = "Hilfe fr Index der Hilfsbildschirme";
+STATIC	PSTR pstrIndexTitel_m = "Hilfe fÃ¼r Index der Hilfsbildschirme";
 STATIC	PSTR apstrIndexText_m[] =
 {
-    " W„hlen Sie in diesem Dialogfeld ein Thema aus, zu",
+    " WÃ¤hlen Sie in diesem Dialogfeld ein Thema aus, zu",
     " dem Sie Hilfe anfordern wollen.",
     "",
     " Bewegen Sie den Auswahlbalken auf das Thema, zu dem",
     " Sie Hilfe anfordern wollen. Der Balken wird bewegt,",
     " indem Sie",
-    " ş  die Tasten    und    bet„tigen oder",
-    " ş  mit dem Mauszeiger auf das Thema zeigen und die",
-    "    linke Maustaste bet„tigen, oder",
-    " ş  mit dem Mauszeiger auf die Rollpfeile zeigen, und",
-    "    die linke Maustaste drcken.",
+    " â–   die Tasten    und    betÃ¤tigen oder",
+    " â–   mit dem Mauszeiger auf das Thema zeigen und die",
+    "    linke Maustaste betÃ¤tigen, oder",
+    " â–   mit dem Mauszeiger auf die Rollpfeile zeigen, und",
+    "    die linke Maustaste drÃ¼cken.",
     "",
     " Sie aktivieren ein Thema, indem Sie",
-    " ş  die Eingabe-Schaltfl„che bet„tigen,",
-    " ş  auf einem Thema mit der Maus doppelklicken.",
+    " â–   die Eingabe-SchaltflÃ¤che betÃ¤tigen,",
+    " â–   auf einem Thema mit der Maus doppelklicken.",
     "",
-    " Mit der Esc-Schaltfl„che k”nnen Sie die Auswahl",
+    " Mit der Esc-SchaltflÃ¤che kÃ¶nnen Sie die Auswahl",
     " abbrechen.",
     NULL
 };
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Dl_HilfeTools(WORD wDialog)
 {

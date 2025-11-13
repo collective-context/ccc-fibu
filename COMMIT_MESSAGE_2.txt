@@ -1,0 +1,21 @@
+feat: Complete UTF-8 conversion and add documentation structure
+
+Extended UTF-8 Conversion:
+- Converted 529 additional text files from CP850 to UTF-8
+- Extended file types: *.B, *.M, *.TXT, *.PRO, *.LEX, *.HLP, *.DOC, *.INI, *.CFG
+- Total conversion: 618 text files (89 + 529)
+- Added script: tools/convert_remaining_to_utf8.sh
+
+Documentation Structure:
+- Created docs/ directory for development documentation
+- Added docs/DEVELOPMENT_LOG.md - comprehensive development history
+- Created .logs/ directory for session logs
+- Added .logs/session_2025-11-13.md - detailed session log
+
+Validation:
+- All converted files verified as readable UTF-8 content
+- Binary files (.btr, .exe, .obj) remain unchanged
+- Box-drawing characters correctly preserved
+
+The euro_UTF8 directory now contains all text files in UTF-8 encoding,
+ready for modern development tools and collaboration.

@@ -1,6 +1,9 @@
 # CCC-FIBU - Open Source FIBU Modernisierung
 
-### PM-LOG 2025-11-13: euro_DOS (read-only) ist das Original Legacy DOS FIBU Verzeichnis. Für die Analyse, die Dokumentaion und die Vorbereitung zur Migration gibt es jetzt eine Kopie davon im euro_UTF8 Verzeichis, das wir (die Zed+AI) und der Core Entwickler (DevOps) gemeinsam bearbeiten.
+### PM-LOG 2025-11-13:
+1) Die Migration der Legacy-DOS-FIBU zu einer modernen Open-Source-Lösungen ist ein wichtiger Schritt für die Zukunft der Finanzbuchhaltungen. Verfolge die Entwicklung der neuen Lösung gerne im docs und im .logs Verzeichnis.
+
+2) euro_DOS (read-only) ist das Original Legacy DOS FIBU Verzeichnis. Für die Analyse, die Dokumentaion und die Vorbereitung zur Migration gibt es jetzt eine Kopie davon im euro_UTF8 Verzeichis, das wir (die Zed+AI) und der Core Entwickler (DevOps) gemeinsam bearbeiten.
 
 ### PM-LOG 2025-11-12: Erste Analyse
 ## 🎯 Projekt-Vision

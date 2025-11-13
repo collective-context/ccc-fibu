@@ -3,7 +3,7 @@
 //------------------------------------------------------------------------------
 // Programm-Name: bildword.c
 // Funktion	: euroSOFT TOOLBOX
-//		  Bereitet ein T01 Bild fÅr Word auf.
+//		  Bereitet ein T01 Bild f√ºr Word auf.
 //
 //
 // Datum	: 01.04.1990, Graz
@@ -16,7 +16,7 @@
 #include <dos.h>
 #include <eur_tool.h>
 // #include "..\c\ba.h"
-GLOBAL PWKB    pWkbInfo_g=NULL; 	 // Window fÅr Testmodus == ein
+GLOBAL PWKB    pWkbInfo_g=NULL; 	 // Window f√ºr Testmodus == ein
 GLOBAL	PSKB pSkb_g=NULL;		 // System-Kontroll-Block
 
 	VOID   main	       (SWORD, PCHAR[]);
@@ -32,13 +32,13 @@ MGLOBAL PSSTR	apstrZeilen_m[50];
 
 MGLOBAL CHAR   cRahmenzeichen_m[][8] =
 {
-    {'⁄', 'ø', '¿', 'Ÿ', 'ƒ', 'ƒ', '≥', '≥'},               /* RT_EEEE    0 */
+    {'‚îå', '‚îê', '‚îî', '‚îò', '‚îÄ', '‚îÄ', '‚îÇ', '‚îÇ'},               /* RT_EEEE    0 */
 };
 
 MGLOBAL CHAR   cUmlaute_m[][15] =
 {
-    {'‰', 'ƒ', 'ˆ', '÷', '¸', '‹', 'ﬂ', '¶', 'Ã', 'ÿ', 'Œ', '⁄', 'œ', '€', 'ﬁ'},	// Umlaute Windows
-    {'Ñ', 'é', 'î', 'ô', 'Å', 'ö', '·', '›', 'Ñ', 'é', 'î', 'ô', 'Å', 'ö', '·'},	// Umlaute DOS
+    {'√µ', '‚îÄ', '√∑', '√ç', '¬≥', '‚ñÑ', '‚ñÄ', '¬™', '‚ï†', '√è', '‚ï¨', '‚îå', '¬§', '‚ñà', '√å'},	// Umlaute Windows
+    {'√§', '√Ñ', '√∂', '√ñ', '√º', '√ú', '√ü', '¬¶', '√§', '√Ñ', '√∂', '√ñ', '√º', '√ú', '√ü'},	// Umlaute DOS
 };
 
 
@@ -46,9 +46,9 @@ VOID main(SWORD argc, PCHAR argv[])
 {
 /*i_InitVars();*/
 pWkbInfo_g=Wi_Einrichten(3,11,72,11);		     /* WindowKontollBlock   */
-Wi_SchattenEin(pWkbInfo_g);			     /* fÅr Wi_TestPrintf()  */
+Wi_SchattenEin(pWkbInfo_g);			     /* f√ºr Wi_TestPrintf()  */
 
-if(argc > 1 && argc < 5)                            /* Argument Åbergeben ? */
+if(argc > 1 && argc < 5)                            /* Argument √ºbergeben ? */
   wPicNrEin_m = atoi(argv[1]);
 else
   {
@@ -60,13 +60,13 @@ else
   exit(1);
   }
 
-if(argc > 2)                                /* Argument Åbergeben ? */
+if(argc > 2)                                /* Argument √ºbergeben ? */
   wPicNrAus_m = atoi(argv[2]);
 else
   wPicNrAus_m = wPicNrEin_m;
 
 
-printf ("\nBild <%d> fÅr Word aufbereiten: ", wPicNrAus_m);
+printf ("\nBild <%d> f√ºr Word aufbereiten: ", wPicNrAus_m);
 
 Datei_Lesen();
 Datei_Filtern(argv[3]);
@@ -90,9 +90,9 @@ sprintf(acFileName,"T%#02d",wPicNrEin_m);
 for(i=0; i<50; i++)
   Ut_Calloc(apstrZeilen_m[i], 256, CHAR);
 
-if(!(pFileHandle=fopen(acFileName, "rt")) ) /* Bild - Datei îffnen */
+if(!(pFileHandle=fopen(acFileName, "rt")) ) /* Bild - Datei √∂ffnen */
   {
-  printf ("\nBild-Datei <%s> kann nicht geîffnet werden.\n", acFileName);
+  printf ("\nBild-Datei <%s> kann nicht ge√∂ffnet werden.\n", acFileName);
   exit (2);
   }
 
@@ -115,7 +115,7 @@ for(i=0; i<50 && pRetCode!=NULL; i++)
 
 printf ("\n%d=letzte Zeile, \n%s", i-1, apstrZeilen_m[1]);
 
-if( fclose(pFileHandle) )		     /* Bild - Datei schlie·en */
+if( fclose(pFileHandle) )		     /* Bild - Datei schlie√üen */
   {
   printf ("\nBild-Datei <%s> kann nicht geschlossen werden.\n", acFileName);
   exit (3);
@@ -174,10 +174,10 @@ pstr=acDateiBuffer;
 while(*pstr++ != '\x1A')
   {boChange=JA;
   for(i=0; i<15 && boChange==JA; i++)
-    {if(pstr!=acDateiBuffer && *pstr=='ƒ' &&
-      (*(pstr+1)=='ƒ' || *(pstr-1)=='ƒ') ) boChange=NEIN;
+    {if(pstr!=acDateiBuffer && *pstr=='‚îÄ' &&
+      (*(pstr+1)=='‚îÄ' || *(pstr-1)=='‚îÄ') ) boChange=NEIN;
     else
-     if(*pstr=='⁄' && *(pstr+1)=='ƒ') boChange=NEIN;
+     if(*pstr=='‚îå' && *(pstr+1)=='‚îÄ') boChange=NEIN;
     else
      if(*pstr==cUmlaute_m[0][i])
       {*pstr=cUmlaute_m[1][i]; boChange=JA;
@@ -244,7 +244,7 @@ for(i=0; *(pstrEnde+i); i++)
 
 pstr=acDateiBuffer;
 while(*pstr++ != '\x1A')
-  if(*pstr=='≤') *pstr=' ';
+  if(*pstr=='‚ñì') *pstr=' ';
 
 for(i=0; i<50; i++)
   Ut_Free(apstrZeilen_m[i]);
@@ -262,15 +262,15 @@ CHAR   acFileName[20];
 
 sprintf(acFileName,"T%#02d.TXT",wPicNrAus_m);
 
-    if(!(pFileHandle=fopen(acFileName, "wb")) ) /* Bild - Datei îffnen */
+    if(!(pFileHandle=fopen(acFileName, "wb")) ) /* Bild - Datei √∂ffnen */
       {
-      printf ("\nBild-Datei <%s> kann nicht geîffnet werden.", acFileName);
+      printf ("\nBild-Datei <%s> kann nicht ge√∂ffnet werden.", acFileName);
       exit (2);
       }
 
     fputs(acDateiBuffer, pFileHandle);         /* Schreib Bild-Datei */
 
-    if( fclose(pFileHandle) )                    /* Bild - Datei schlie·en */
+    if( fclose(pFileHandle) )                    /* Bild - Datei schlie√üen */
       {
       printf ("\nBild-Datei <%s> kann nicht geschlossen werden.", acFileName);
       exit (3);

@@ -17,7 +17,7 @@ SREGISTER i;
 Cls();
 
 for(i=0; i<10; i++)
-printf ("\nBin„r: %#4s = Dezimal: %d.", int_to_bin(i), i);
+printf ("\nBinÃ¤r: %#4s = Dezimal: %d.", int_to_bin(i), i);
 
 return(0);
 }

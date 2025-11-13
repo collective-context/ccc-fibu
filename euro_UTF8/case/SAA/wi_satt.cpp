@@ -1,65 +1,65 @@
 // (C) WINware Software P.Mayer: letztes Update am 13-Feb-1996
 
 /*.ta Wi_SetAttri()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Wi_SetAttri()							       º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Wi_SetAttri()							       â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_win.h>
 SWORD Wi_SetAttri(pWkb, wTitel, wRahmen, wInnen);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 PWKB   pWkb	 Zeiger auf Fensterkontrollblock
-SWORD	wTitel	  Attribut fr Titel
-SWORD	wRahmen   Attribut fr Rahmen
-SWORD	wInnen	  Attribut fr Data-Area
+SWORD	wTitel	  Attribut fÃ¼r Titel
+SWORD	wRahmen   Attribut fÃ¼r Rahmen
+SWORD	wInnen	  Attribut fÃ¼r Data-Area
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Mit dieser Funktion k”nnen die Attribute fr ein Fenster ge„ndert werden.
-Wenn pWkb auf das aktive Fenster zeigt, wird die Attribut„nderung nach Funk-
-tionsaufruf ausgefhrt. Anderenfalls werden die neuen Attribute nur in die
-Struktur eingetragen. Die nderungen werden dann bei der n„chsten Aktivierung
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Mit dieser Funktion kÃ¶nnen die Attribute fÃ¼r ein Fenster geÃ¤ndert werden.
+Wenn pWkb auf das aktive Fenster zeigt, wird die AttributÃ¤nderung nach Funk-
+tionsaufruf ausgefÃ¼hrt. Anderenfalls werden die neuen Attribute nur in die
+Struktur eingetragen. Die Ã„nderungen werden dann bei der nÃ¤chsten Aktivierung
 des Fensters wirksam.
 
-Die Farben mssen sowohl fr den Vorder-, als auch fr den Hintergrund festge-
-legt werden. Zur Erzeugung dieser Parameter k”nnen Sie das Makro ¯VH® verwenden,
+Die Farben mÃ¼ssen sowohl fÃ¼r den Vorder-, als auch fÃ¼r den Hintergrund festge-
+legt werden. Zur Erzeugung dieser Parameter kÃ¶nnen Sie das Makro Â»VHÂ« verwenden,
 das Vorder- und Hinterfurnd-Attribut mischt. Wenn Sie beispielsweise den Vorder-
-grund des Rahmens auf blau und den Hintergurnd auf rot setzten wollen, bergeben
-Sie als Funktionsargument fr ¯wRahmen® ¯VH(BLAU,ROT)®. Wenn Sie eines der At-
-tribute nicht „ndern wollen, bergeben Sie als Argument eine Null.
+grund des Rahmens auf blau und den Hintergurnd auf rot setzten wollen, Ã¼bergeben
+Sie als Funktionsargument fÃ¼r Â»wRahmenÂ« Â»VH(BLAU,ROT)Â«. Wenn Sie eines der At-
+tribute nicht Ã¤ndern wollen, Ã¼bergeben Sie als Argument eine Null.
 
-Eine kleine Eselsbrcke kann Ihnen helfen, sich die Reihenfolge der Argumente zu
-merken: Die letzten drei Buchstaben des funktionsnames ¯Wi_SetAttri()® (T,R,I)
+Eine kleine EselsbrÃ¼cke kann Ihnen helfen, sich die Reihenfolge der Argumente zu
+merken: Die letzten drei Buchstaben des funktionsnames Â»Wi_SetAttri()Â« (T,R,I)
 sind mit der Reihenfolge der Argumente (Titel, Rahmen, Innen) identisch.
 
-Wenn ¯pWkb® auf das aktive Fenster zeigt, wird die nderung der Attribute sofort
-nach Funktionsaufruf ausgefhrt.
+Wenn Â»pWkbÂ« auf das aktive Fenster zeigt, wird die Ã„nderung der Attribute sofort
+nach Funktionsaufruf ausgefÃ¼hrt.
 
-Andernfalls werden die neuen Attribute nur in die Struktur eingetragen. Die n-
-derungen werden dann bei der n„chsten Aktivierung ds Fensters wirksam.
+Andernfalls werden die neuen Attribute nur in die Struktur eingetragen. Die Ã„n-
+derungen werden dann bei der nÃ¤chsten Aktivierung ds Fensters wirksam.
 
-Bitte beachten Sie, daá die šbergabe eines neuen Attributes fr den Fensterin-
-halt, alle existierenden Attribute im Window ge„ndert werden.
+Bitte beachten Sie, daÃŸ die Ãœbergabe eines neuen Attributes fÃ¼r den Fensterin-
+halt, alle existierenden Attribute im Window geÃ¤ndert werden.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-SWORD  OK    Funktion wurde erfolgreich ausgefhrt
-      ERROR Fehler aufgetreten, wFehler_g erh„lt:
-	      - WIN_KEIN_PWKB bedeutet, daá das Funktionsargument ¯pWkb® nicht
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+SWORD  OK    Funktion wurde erfolgreich ausgefÃ¼hrt
+      ERROR Fehler aufgetreten, wFehler_g erhÃ¤lt:
+	      - WIN_KEIN_PWKB bedeutet, daÃŸ das Funktionsargument Â»pWkbÂ« nicht
 			      mehr auf einen Fensterkontrollbkock zeigt.
-	      - WIN_FALSCHE_OPT bedeutet, daá eines der Funktionsargumente
-				¯wTitel®, ¯wRahmen®, oder ¯wInnen® eine ungl-
+	      - WIN_FALSCHE_OPT bedeutet, daÃŸ eines der Funktionsargumente
+				Â»wTitelÂ«, Â»wRahmenÂ«, oder Â»wInnenÂ« eine ungÃ¼l-
 				tige Option enthielt.
 
 
 Benutzte globale Variablen:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  wFehler_g (W), wMausda_g (W)
 
 
@@ -67,22 +67,22 @@ Variablen (R/W):  wFehler_g (W), wMausda_g (W)
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <stdio.h>
 #include <eur_tool.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                    GLOBALE VARIABLEN, REFERENZEN                       º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                    GLOBALE VARIABLEN, REFERENZEN                       â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT SWORD wFehler_g; 	 /* Nummer des letzten aufgetretenen Fehlers */
 IMPORT SWORD wMausda_g; 	 /* Maus im System ?			     */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Wi_SetAttri (PWKB pWkb, SWORD wTitel, SWORD wRahmen, SWORD wInnen)
 {
@@ -95,18 +95,18 @@ SWORD Wi_SetAttri (PWKB pWkb, SWORD wTitel, SWORD wRahmen, SWORD wInnen)
     }
 
 
-    if (wTitel  < 0 || wTitel  > 255 ||             /* wenn kein gltiges   */
+    if (wTitel  < 0 || wTitel  > 255 ||             /* wenn kein gÃ¼ltiges   */
         wRahmen < 0 || wRahmen > 255 ||             /* Funktionsargument    */
         wInnen  < 0 || wInnen  > 255 )
     {
         wFehler_g = WIN_FALSCHE_OPT;                /* Variable setzen und  */
-        return (ERROR);                             /* an Aufrufer zurck   */
+        return (ERROR);                             /* an Aufrufer zurÃ¼ck   */
     }
 
 
 
     if (wRahmen != 0 || wTitel != 0)                /* wenn Rahmen- oder    */
-    {                                               /* Attribut ge„ndert    */
+    {                                               /* Attribut geÃ¤ndert    */
         if (wRahmen != 0)                           /* werden soll          */
             pWkb->wRahmenAttr = wRahmen;            /* neue Attribute ein-  */
         if (wTitel != 0)                            /* tragen               */
@@ -131,8 +131,8 @@ SWORD Wi_SetAttri (PWKB pWkb, SWORD wTitel, SWORD wRahmen, SWORD wInnen)
             pWkb->winFlags.wTRaendern = 1;
     }
 
-    if (wInnen != 0)                                /* wenn Attribut fr    */
-    {                                               /* Data-Area ge„ndert   */
+    if (wInnen != 0)                                /* wenn Attribut fÃ¼r    */
+    {                                               /* Data-Area geÃ¤ndert   */
         pWkb->wInnenAttr = wInnen;                  /* werden soll          */
 	if (Wi_IsAktiv(pWkb))
         {

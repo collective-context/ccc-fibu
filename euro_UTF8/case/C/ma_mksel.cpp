@@ -1,58 +1,58 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    M_MakeSelect                   Datum:  3.11.89      บ
-  บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion stellt eine Dialogbox zur Ver-       บ
-  บ                    fgung.                                             บ
-  บ                                                                        บ
-  บ  Rckgabewert:     DLG_ERROR    Dialog konnte nicht angezeigt werden   บ
-  บ                    DLG_RETURN   Dialog wurde mit Schaltflche EINGABE  บ
-  บ                                 beendet                                บ
-  บ                    DLG_ESC      Dialog wurde mit Schaltflche ABBRUCH  บ
-  บ                                 beendet                                บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - aCS_g          (R)                                บ
-  บ                                                                        บ
-  บ                    - boBeepen_g     (R)                                บ
-  บ                    - wVioMode_g     (R)                                บ
-  บ                                                                        บ
-  บ                    - pstrReturn_g   (R)                                บ
-  บ                    - pstrEsc_g      (R)                                บ
-  บ                    - pstrF1_g       (R)                                บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    M_MakeSelect                   Datum:  3.11.89      โ•‘
+  โ•‘โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion stellt eine Dialogbox zur Ver-       โ•‘
+  โ•‘                    fรผgung.                                             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     DLG_ERROR    Dialog konnte nicht angezeigt werden   โ•‘
+  โ•‘                    DLG_RETURN   Dialog wurde mit Schaltflรคche EINGABE  โ•‘
+  โ•‘                                 beendet                                โ•‘
+  โ•‘                    DLG_ESC      Dialog wurde mit Schaltflรคche ABBRUCH  โ•‘
+  โ•‘                                 beendet                                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - aCS_g          (R)                                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    - boBeepen_g     (R)                                โ•‘
+  โ•‘                    - wVioMode_g     (R)                                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    - pstrReturn_g   (R)                                โ•‘
+  โ•‘                    - pstrEsc_g      (R)                                โ•‘
+  โ•‘                    - pstrF1_g       (R)                                โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <eur_tool.h>
 #include <stdio.h>
 #include <string.h>
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        KONSTANTEN UND MAKROS                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        KONSTANTEN UND MAKROS                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 #define MARKER 'X'             /* Zeichen zum markieren der aktuellen Eingabe  */
-#define M_ALL	0	       /* Marker fr alle Felder setzen 	       */
-#define M_AKT	1	       /* Marker fr aktuelles Feld setzen (SPACE)     */
+#define M_ALL	0	       /* Marker fรผr alle Felder setzen 	       */
+#define M_AKT	1	       /* Marker fรผr aktuelles Feld setzen (SPACE)     */
 
-#define NO_EXTENDED_VERSION 1  /* noch keine Hotkeys und keine Unterstzung */
+#define NO_EXTENDED_VERSION 1  /* noch keine Hotkeys und keine Unterstรผzung */
                                /* der Hilfefunktion und einer Maus.         */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-IMPORT MENU	 aMenus_g[MAXMENUES];		     /* Array mit Mens 	     */
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+IMPORT MENU	 aMenus_g[MAXMENUES];		     /* Array mit Menรผs 	     */
 
 IMPORT COLORSET  aCS_g[5];		     /* Farbpalette und Index auf    */
 IMPORT SWORD	  wCSInd_g;		     /* Palette 		     */
 
-IMPORT PSSTR	  pstrReturn_g; 	     /* Texte der Schaltflchen      */
+IMPORT PSSTR	  pstrReturn_g; 	     /* Texte der Schaltflรคchen      */
 IMPORT PSSTR	  pstrEsc_g;
 IMPORT PSSTR	  pstrF1_g;
 
@@ -63,9 +63,9 @@ IMPORT SWORD	  wAktMnu_g;		     /* aktueller Index zu Menus_g   */
 IMPORT SWORD	  wMausda_g;		     /* Maus im System aktiviert ?   */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 STATIC	SWORD wSpa_m;			      /* erste Spalte der Dialog-Box */
 STATIC	SWORD wZei_m;			      /* erste Zeile  der Dialog-Box */
@@ -74,7 +74,7 @@ STATIC	SWORD wSdf1_m = 6;   /* erste SpalteDialogFelder in der Dialogbox    */
 STATIC	SWORD wSdf2_m;
 STATIC	SWORD wZdf_m = 3;    /* erste ZeileDialogFelder in der Dialogbox     */
 STATIC	SWORD wMaxdf_m;      /* maximaleDialogFelder in der Dialogbox	     */
-STATIC	SWORD wMaxln_m;      /* maximale DialogfeldLNge in der Dialogbox    */
+STATIC	SWORD wMaxln_m;      /* maximale DialogfeldLรคNge in der Dialogbox    */
 
 STATIC	SWORD wBre_m;	     /* Breite der Dialog-Box			     */
 STATIC	SWORD wHoe_m;	     /* Hoehe  der Dialog-Box			     */
@@ -89,25 +89,25 @@ STATIC	SWORD awSelected_m[25]; 		     /* Werte der Auswahl-   */
 
 SWORD	 wBalken_m;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                     MODULGLOBALE FUNKTIONEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                     MODULGLOBALE FUNKTIONEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC	VOID cdecl i_LoescheBalken  (VOID);
 STATIC	VOID cdecl i_ZeigeBalken    (PPSTR);
 STATIC	SWORD cdecl i_BalkenEvent    (VOID);
 STATIC	VOID cdecl i_SetMarker	    (SWORD, SWORD);
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD M_MakeSelect (PPSTR ppstrTxt, PSWORD pwWert,
 		    PSSTR pstrTitel, SWORD wSpa, SWORD wZei)
 {
     SREGISTER i;
     PWKB    pWkbDialog;                             /* Zg. Window-Struktur  */
-    SWORD    wResult;				     /* fr Rckgabewert     */
+    SWORD    wResult;				     /* fรผr Rรผckgabewert     */
 
     pstrTitel_m = pstrTitel;
     wSpa_m = wSpa;
@@ -127,7 +127,7 @@ SWORD M_MakeSelect (PPSTR ppstrTxt, PSWORD pwWert,
     apstrText_m[i] = NULL;
 
     wMaxdf_m = i;
-    wHoe_m = wMaxdf_m/2 + wMaxdf_m%2+ 8; /* berschrift plus Tastenbelegung */
+    wHoe_m = wMaxdf_m/2 + wMaxdf_m%2+ 8; /* รberschrift plus Tastenbelegung */
     wBre_m = 2*wMaxln_m + 18;            /* rechts und links 7 Zeichen Rand */
 
     if (wBre_m - 4 < (SWORD)strlen(pstrTitel_m))
@@ -145,19 +145,19 @@ SWORD M_MakeSelect (PPSTR ppstrTxt, PSWORD pwWert,
     i_InitVars();                                   /* Var. initialisieren  */
 
     if (wBre_m >= 42)
-      i_Dl_Init(wSpa_m, wZei_m, wBre_m, wHoe_m,     /* Dialogbox er”ffen    */
+      i_Dl_Init(wSpa_m, wZei_m, wBre_m, wHoe_m,     /* Dialogbox erรถffen    */
                 pstrTitel_m,
                 pWkbDialog,
                 SF_STANDARD,
                 DLG_MENU);
     else if (wBre_m >= 28)
-      i_Dl_Init(wSpa_m, wZei_m, wBre_m, wHoe_m,     /* Dialogbox er”ffen    */
+      i_Dl_Init(wSpa_m, wZei_m, wBre_m, wHoe_m,     /* Dialogbox erรถffen    */
                 pstrTitel_m,
                 pWkbDialog,
                 SF_ABBRUCH | SF_HILFE,
                 DLG_MENU);
     else
-      i_Dl_Init(wSpa_m, wZei_m, wBre_m, wHoe_m,     /* Dialogbox er”ffen    */
+      i_Dl_Init(wSpa_m, wZei_m, wBre_m, wHoe_m,     /* Dialogbox erรถffen    */
                 pstrTitel_m,
                 pWkbDialog,
                 SF_HILFE,
@@ -183,7 +183,7 @@ SWORD M_MakeSelect (PPSTR ppstrTxt, PSWORD pwWert,
             Wi_Entfernen(pWkbDialog);               /* Dialog entfernen     */
 
             for (i=0; ppstrTxt[i]; i++)             /* Neu selektierte Werte*/
-               pwWert[i] = awSelected_m[i];         /* zurckbergeben.     */
+               pwWert[i] = awSelected_m[i];         /* zurรผckรผbergeben.     */
 
             return (DLG_RETURN);
             break;
@@ -195,32 +195,32 @@ return(wResult);
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BalkenEvent                  Datum: 22.04.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PWKB   pWkb      Zeiger auf Window-Struktur         บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet alle Eingaben fr         บ
-  บ                    die Dialog-Box.                                     บ
-  บ                    Je nach Wahl des Anwenders wird von hieraus die     บ
-  บ                    Dialog-Box mit dem aktuellen Balken ange-           บ
-  บ                    zeigt, die Markierung verschoben, das Hilfe-        บ
-  บ                    Fenster angezeigt oder die Funktion verlassen.      บ
-  บ                                                                        บ
-  บ                    Zur Ausgabe wird die Hilfsfunktion                  บ
-  บ                    i_ZeigeBalken() aufgerufen.                         บ
-  บ                                                                        บ
-  บ  Rckgabewert:     DLG_RETURN   der Anwender hat die Eingabe-Schalt-   บ
-  บ                                 flche ausgel”st                       บ
-  บ                                                                        บ
-  บ                    DLG_ESC      der Anwender hat die Abbruch-Schalt-   บ
-  บ                                 flche ausgel”st                       บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BalkenEvent                  Datum: 22.04.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PWKB   pWkb      Zeiger auf Window-Struktur         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet alle Eingaben fรผr         โ•‘
+  โ•‘                    die Dialog-Box.                                     โ•‘
+  โ•‘                    Je nach Wahl des Anwenders wird von hieraus die     โ•‘
+  โ•‘                    Dialog-Box mit dem aktuellen Balken ange-           โ•‘
+  โ•‘                    zeigt, die Markierung verschoben, das Hilfe-        โ•‘
+  โ•‘                    Fenster angezeigt oder die Funktion verlassen.      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Zur Ausgabe wird die Hilfsfunktion                  โ•‘
+  โ•‘                    i_ZeigeBalken() aufgerufen.                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     DLG_RETURN   der Anwender hat die Eingabe-Schalt-   โ•‘
+  โ•‘                                 flรคche ausgelรถst                       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    DLG_ESC      der Anwender hat die Abbruch-Schalt-   โ•‘
+  โ•‘                                 flรคche ausgelรถst                       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_BalkenEvent(VOID)
 {
@@ -256,7 +256,7 @@ SWORD i_BalkenEvent(VOID)
                      i_ZeigeBalken(apstrText_m);
                      break;
 
-                case T_A_E:                         /* Hot-Key zurck       */
+                case T_A_E:                         /* Hot-Key zurรผck       */
                 case 'e':
                 case 'E':
                      i_LoescheBalken();
@@ -266,20 +266,20 @@ SWORD i_BalkenEvent(VOID)
 
 #endif
 
-                                                    /* nchsten Balken      */
-                case T_TAB:                         /* ausgewhlt           */
+                                                    /* nรคchsten Balken      */
+                case T_TAB:                         /* ausgewรคhlt           */
                 case T_RIGHT:
                      if (wBalken_m < wMaxdf_m-1)    /* wenn nicht letztes   */
                      {                              /* Dialogfeld           */
                         i_LoescheBalken();
                         wBalken_m++;                /* Balken inkrement.    */
-                        i_ZeigeBalken(apstrText_m); /* Bildschirm ndern    */
+                        i_ZeigeBalken(apstrText_m); /* Bildschirm รคndern    */
                      }
                      else
                        {
                        i_LoescheBalken();
                        wBalken_m = 0;
-                       i_ZeigeBalken(apstrText_m);  /* Bildschirm ndern    */
+                       i_ZeigeBalken(apstrText_m);  /* Bildschirm รคndern    */
                        }
                      break;
 
@@ -300,18 +300,18 @@ SWORD i_BalkenEvent(VOID)
 
                 case T_SHIFT_TAB:
                 case T_LEFT:                        /* vorherigen Balken    */
-                                                    /* ausgewhlt           */
+                                                    /* ausgewรคhlt           */
                      if (wBalken_m > 0)             /* wenn nicht oberste   */
                      {                              /* Option               */
                        i_LoescheBalken();
                        wBalken_m--;                 /* Balken dekrement.    */
-                       i_ZeigeBalken(apstrText_m);  /* Bildschirm ndern    */
+                       i_ZeigeBalken(apstrText_m);  /* Bildschirm รคndern    */
                      }
                      else
                         {
                         i_LoescheBalken();
                         wBalken_m = wMaxdf_m-1;
-                        i_ZeigeBalken(apstrText_m); /* Bildschirm ndern    */
+                        i_ZeigeBalken(apstrText_m); /* Bildschirm รคndern    */
                         }
                   break;
 
@@ -353,7 +353,7 @@ SWORD i_BalkenEvent(VOID)
                 case T_RETURN:                      /* Wahl wurde getroffen */
                      return(DLG_RETURN);            /* Aufrufer informieren */
 
-                default:                            /* nix anderes gltig   */
+                default:                            /* nix anderes gรผltig   */
                     if (boBeepen_g)                 /* wenn Warnton aktiv   */
                         i_Beep();                   /* beepen               */
              }
@@ -366,13 +366,13 @@ SWORD i_BalkenEvent(VOID)
         case EVENT_L_PRESS:                         /* MAUSEVENTS           */
              if (pEvent->wZeile == wZei_m+9)        /* Test: Schalfl.-Zeile */
              {
-                if (pEvent->wSpalte > wSpa_m+2 &&   /* Eingabe-Schaltflche */
+                if (pEvent->wSpalte > wSpa_m+2 &&   /* Eingabe-Schaltflรคche */
                       pEvent->wSpalte < wSpa_m+3+strlen(pstrReturn_g))
                     return(DLG_RETURN);
-                if (pEvent->wSpalte > wSpa_m+17 &&  /* Abbruch-Schaltflche */
+                if (pEvent->wSpalte > wSpa_m+17 &&  /* Abbruch-Schaltflรคche */
                       pEvent->wSpalte < wSpa_m+17+strlen(pstrEsc_g))
                     return(DLG_ESC);
-                if (pEvent->wSpalte > wSpa_m+30 &&  /* Hilfe-Schaltflche   */
+                if (pEvent->wSpalte > wSpa_m+30 &&  /* Hilfe-Schaltflรคche   */
                       pEvent->wSpalte < wSpa_m+31+strlen(pstrF1_g))
                     Dl_HilfeTools(FARBPALETTE);
              }
@@ -386,7 +386,7 @@ SWORD i_BalkenEvent(VOID)
                      i_LoescheBalken();
                      wBalken_m =                    /* neue Pal. aus Klick- */
                          pEvent->wZeile-(wZei_m+3); /* position ermitteln   */
-                     i_ZeigeBalken(apstrText_m);    /* Bildschirm ndern    */
+                     i_ZeigeBalken(apstrText_m);    /* Bildschirm รคndern    */
                  }
                  else if (boBeepen_g)               /* wenn Warnton aktiv   */
                      i_Beep();                      /* beepen               */
@@ -406,21 +406,21 @@ SWORD i_BalkenEvent(VOID)
 } /* end of i_BalkenEvent() */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_LoescheBalken                Datum: 22.04.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion l”scht den aktuellen Balken in der   บ
-  บ                    Dialogbox .                                         บ
-  บ                    Auแerdem wird dann die alte Markierung gel”scht.    บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  wBalken_m   (R)                                     บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_LoescheBalken                Datum: 22.04.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion lรถscht den aktuellen Balken in der   โ•‘
+  โ•‘                    Dialogbox .                                         โ•‘
+  โ•‘                    Auรerdem wird dann die alte Markierung gelรถscht.    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Diese Funktion hat keinen Rรผckgabewert.             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  wBalken_m   (R)                                     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_LoescheBalken(VOID)
 {
@@ -428,33 +428,33 @@ VOID i_LoescheBalken(VOID)
 
     if (wBalken_m%2)
       {
-        for (i=wSdf2_m-2; i<wSdf2_m+wMaxln_m+2; i++) /* alten Balken l”schen */
+        for (i=wSdf2_m-2; i<wSdf2_m+wMaxln_m+2; i++) /* alten Balken lรถschen */
             Wi_Sa(i, wZdf_m+wBalken_m/2, aCS_g[wCSInd_g].wCs_mf);
       }
     else
       {
-        for (i=wSdf1_m-2; i<wSdf1_m+wMaxln_m+2; i++) /* alten Balken l”schen */
+        for (i=wSdf1_m-2; i<wSdf1_m+wMaxln_m+2; i++) /* alten Balken lรถschen */
             Wi_Sa(i, wZdf_m+wBalken_m/2, aCS_g[wCSInd_g].wCs_mf);
       }
 
 return;
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_ZeigeBalken                  Datum: 22.04.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion zeigt den aktuellen Balken in der    บ
-  บ                    Dialogbox an.                                       บ
-  บ                    Der Marker wird an die neue Position gesetzt.       บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  wBalken_m   (R)                                     บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_ZeigeBalken                  Datum: 22.04.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion zeigt den aktuellen Balken in der    โ•‘
+  โ•‘                    Dialogbox an.                                       โ•‘
+  โ•‘                    Der Marker wird an die neue Position gesetzt.       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Diese Funktion hat keinen Rรผckgabewert.             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  wBalken_m   (R)                                     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_ZeigeBalken(PPSTR ppstr)
 {
@@ -513,19 +513,19 @@ VOID i_ZeigeBalken(PPSTR ppstr)
 return;
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_SetMarker                    Datum:  3.11.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion                                      บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  wBalken_m   (R)                                     บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_SetMarker                    Datum:  3.11.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Diese Funktion hat keinen Rรผckgabewert.             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  wBalken_m   (R)                                     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_SetMarker (SWORD wWo, SWORD wWie)
 {
@@ -539,9 +539,9 @@ else
 if(wWie==M_AKT)
   if(awSelected_m[wWo])
     if(wWo % 2)
-      Wi_Sz(wSdf2_m+1, wZdf_m+wWo/2, MARKER);	     /* alten Marker l”schen */
+      Wi_Sz(wSdf2_m+1, wZdf_m+wWo/2, MARKER);	     /* alten Marker lรถschen */
     else
-      Wi_Sz(wSdf1_m+1, wZdf_m+wWo/2, MARKER);	     /* alten Marker l”schen */
+      Wi_Sz(wSdf1_m+1, wZdf_m+wWo/2, MARKER);	     /* alten Marker lรถschen */
   else
     if(wWo % 2)
       Wi_Sz(wSdf2_m+1, wZdf_m+wWo/2, ' ');	     /* neuen Marker setzen  */

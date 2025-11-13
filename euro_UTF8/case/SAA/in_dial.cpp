@@ -1,31 +1,31 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Dateiname:        idialog.c                      Datum: 31.12.88      บ
-  บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ
-  บ                                                                        บ
-  บ  Diese Datei enthlt die Definitionen folgender interner Funktionen    บ
-  บ  des Dialog-Moduls:                                                    บ
-  บ                                                                        บ
-  บ         - i_Dl_Init()                Dialogbox initialsieren,          บ
-  บ                                      Schaltflchen und Titel           บ
-  บ         - i_Dl_HilfeFuerHilfe()      allg. Hilfefenster                บ
-  บ         - i_Dl_HilfeSchreibeText()   Text ausgeben                     บ
-  บ         - i_Dl_Scroll()              scrollen                          บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Dateiname:        idialog.c                      Datum: 31.12.88      โ•‘
+  โ•‘โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Diese Datei enthรคlt die Definitionen folgender interner Funktionen    โ•‘
+  โ•‘  des Dialog-Moduls:                                                    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘         - i_Dl_Init()                Dialogbox initialsieren,          โ•‘
+  โ•‘                                      Schaltflรคchen und Titel           โ•‘
+  โ•‘         - i_Dl_HilfeFuerHilfe()      allg. Hilfefenster                โ•‘
+  โ•‘         - i_Dl_HilfeSchreibeText()   Text ausgeben                     โ•‘
+  โ•‘         - i_Dl_Scroll()              scrollen                          โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <eur_tool.h>
 #include <stdio.h>
 #include <string.h>
 #include <dos.h>
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                   GLOBALE VARIABLEN, REFERENZEN                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                   GLOBALE VARIABLEN, REFERENZEN                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT COLORSET  aCS_g[5];
 IMPORT SWORD	  wCSInd_g;
 IMPORT BOOL      boBeepen_g;
@@ -40,70 +40,70 @@ IMPORT PSSTR	  pstrNein_g;
 IMPORT SWORD	  wMausda_g;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        KONSTANTEN UND MAKROS                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        KONSTANTEN UND MAKROS                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define ZEI  (HILFEZEILE+2)                         /* Koordinaten und Aus- */
 #define SPA  (HILFESPALTE+2)                        /* dehnung vom Hilfe-   */
-#define BRE        56                               /* fr-Hilfe-Dialogfeld */
+#define BRE        56                               /* fรผr-Hilfe-Dialogfeld */
 #define HOE        14
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 STATIC	PSSTR	apstrHFH_m[]=
 {
-    "    Folgende Tasten stehen zu Ihrer Verfgung:",
+    "    Folgende Tasten stehen zu Ihrer Verfรผgung:",
     "",
-    "     þ       scrollt Text eine Zeile nach oben",
-    "     þ       scrollt Text eine Zeile nach unten",
-    "     þ Pos1   geht an den Anfang des Hilfstextes",
-    "     þ Ende   geht an das Ende des Hilfstextes",
+    "     โ–        scrollt Text eine Zeile nach oben",
+    "     โ–        scrollt Text eine Zeile nach unten",
+    "     โ–  Pos1   geht an den Anfang des Hilfstextes",
+    "     โ–  Ende   geht an das Ende des Hilfstextes",
     "",
-    "     þ Esc    Hilfe beenden",
+    "     โ–  Esc    Hilfe beenden",
     "",
     "Markieren Sie im Hilfeindex das Thema, zu dem Sie",
-    "Hilfe wnschen, und drcken Sie anschlieแend die ",
-    "<ฤู - Taste.",
+    "Hilfe wรผnschen, und drรผcken Sie anschlieรend die ",
+    "<โ”€โ” - Taste.",
     NULL
 };
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Dl_Init                      Datum: 31.12.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        SWORD wSpalte	   Position und Ausdehnung	    บ
-  บ		       SWORD wZeile		der Dialogbox		    บ
-  บ		       SWORD wBreite					    บ
-  บ		       SWORD wHoehe					    บ
-  บ		       PSSTR pstrTitel	   Zeiger auf Titel oder NULL	    บ
-  บ                    PWKB pWkb          Zeiger auf Windowkontrollblock   บ
-  บ		       SWORD wSchalt	   Information ber Schaltflchen   บ
-  บ		       SWORD wDlgTyp	   Dialogtyp zur Bestimmung der     บ
-  บ                                       Attribute                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion initialisiert eine Dialogbox         บ
-  บ                    in den Standard-Farben. Die Attribute werden        บ
-  บ                    gesetzt, ein evtl. vorhandener Titel ausgegeben,    บ
-  บ                    die erforderlichen Trennlinien gezeichnet und       บ
-  บ                    und die angeforderten Schaltflchen plaziert.       บ
-  บ                                                                        บ
-  บ  Rckgabewert:     keine                                               บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):   - aCS_g[]  (R)                                     บ
-  บ                     - wCSInd_g   (R)                                   บ
-  บ                     - pstrReturn_g  (R)                                บ
-  บ                     - pstrEsc_g   (R)                                  บ
-  บ                     - pstrF1_g   (R)                                   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Dl_Init                      Datum: 31.12.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        SWORD wSpalte	   Position und Ausdehnung	    โ•‘
+  โ•‘		       SWORD wZeile		der Dialogbox		    โ•‘
+  โ•‘		       SWORD wBreite					    โ•‘
+  โ•‘		       SWORD wHoehe					    โ•‘
+  โ•‘		       PSSTR pstrTitel	   Zeiger auf Titel oder NULL	    โ•‘
+  โ•‘                    PWKB pWkb          Zeiger auf Windowkontrollblock   โ•‘
+  โ•‘		       SWORD wSchalt	   Information รผber Schaltflรคchen   โ•‘
+  โ•‘		       SWORD wDlgTyp	   Dialogtyp zur Bestimmung der     โ•‘
+  โ•‘                                       Attribute                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion initialisiert eine Dialogbox         โ•‘
+  โ•‘                    in den Standard-Farben. Die Attribute werden        โ•‘
+  โ•‘                    gesetzt, ein evtl. vorhandener Titel ausgegeben,    โ•‘
+  โ•‘                    die erforderlichen Trennlinien gezeichnet und       โ•‘
+  โ•‘                    und die angeforderten Schaltflรคchen plaziert.       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):   - aCS_g[]  (R)                                     โ•‘
+  โ•‘                     - wCSInd_g   (R)                                   โ•‘
+  โ•‘                     - pstrReturn_g  (R)                                โ•‘
+  โ•‘                     - pstrEsc_g   (R)                                  โ•‘
+  โ•‘                     - pstrF1_g   (R)                                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_Dl_Init(SWORD wSpalte, SWORD wZeile,	    /* wSpalte und wZeile wer- */
 	       SWORD wBreite, SWORD wHoehe,	    /* im Moment nicht ausge-  */
@@ -165,10 +165,10 @@ VOID i_Dl_Init(SWORD wSpalte, SWORD wZeile,	    /* wSpalte und wZeile wer- */
 	' ', aCS_g[wCSInd_g].wCs_mz_c);
       Wi_Sza((wBreite+wLaenge)/2, 0,
 	' ', aCS_g[wCSInd_g].wCs_mz_c);
-      Wi_Swz(0, 1, wBreite-2, 1, 'ฤ');	      /* Trennlinie zeichnen  */
+      Wi_Swz(0, 1, wBreite-2, 1, 'โ”€');	      /* Trennlinie zeichnen  */
       }
 
-    Wi_Swz(0, wHoehe-4, wBreite-2, 1, 'ฤ');   /* untere Trennlinie    */
+    Wi_Swz(0, wHoehe-4, wBreite-2, 1, 'โ”€');   /* untere Trennlinie    */
 
     wSpalteSF = 2;
 
@@ -188,7 +188,7 @@ VOID i_Dl_Init(SWORD wSpalte, SWORD wZeile,	    /* wSpalte und wZeile wer- */
 
     if ( !(Ut_BitTest(wSchalt, SF_EINGABE)) &&      /* nur wenn EINGABE und */
          !(Ut_BitTest(wSchalt, SF_ABBRUCH)) )       /* ABBRUCH noch nicht   */
-    {                                               /* gewhlt wurden       */
+    {                                               /* gewรคhlt wurden       */
 
         if (Ut_BitTest(wSchalt, SF_RETRYCANCEL))
         {
@@ -212,7 +212,7 @@ VOID i_Dl_Init(SWORD wSpalte, SWORD wZeile,	    /* wSpalte und wZeile wer- */
       }
 
 
-    /*  Dieser Teil ist fr sptere Erweiterungen reserviert.
+    /*  Dieser Teil ist fรผr spรคtere Erweiterungen reserviert.
      *  else if (Ut_BitTest(wSchalt, SF_JANEINABBRUCH))
      *      ;
      *  else if (Ut_BitTest(wSchalt, SF_ABORTRETRYIGNORE))
@@ -222,7 +222,7 @@ VOID i_Dl_Init(SWORD wSpalte, SWORD wZeile,	    /* wSpalte und wZeile wer- */
     }
 
     if (Ut_BitTest(wSchalt, SF_HILFE))              /* wahlweise Schaltfl.  */
-    {                                               /* (muแ rechts stehen!) */
+    {                                               /* (muร rechts stehen!) */
         Wi_Ssa(wSpalteSF, wHoehe-3,
                pstrF1_g, wFarbeSF);
     }
@@ -232,26 +232,26 @@ VOID i_Dl_Init(SWORD wSpalte, SWORD wZeile,	    /* wSpalte und wZeile wer- */
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_HilfeFuerHilfe               Datum: 31.12.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion liefert Informationen ber die       บ
-  บ                    Tasten zur Bedienung des Hilfedialoges.             บ
-  บ                    Das Fenster bleibt solange aktiv, bis auf die       บ
-  บ                    Eingabeschaltflche geklickt wird oder              บ
-  บ                    die Enter-Taste bettigt wird.                      บ
-  บ                                                                        บ
-  บ  Rckgabewert:     keiner                                              บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  modulglobale:               globale:                บ
-  บ                    - pstrReturn_m   (R)        - aCS_g   (R)           บ
-  บ                    - apstrHFH_m     (R)        - wCSInd_g (R)          บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_HilfeFuerHilfe               Datum: 31.12.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion liefert Informationen รผber die       โ•‘
+  โ•‘                    Tasten zur Bedienung des Hilfedialoges.             โ•‘
+  โ•‘                    Das Fenster bleibt solange aktiv, bis auf die       โ•‘
+  โ•‘                    Eingabeschaltflรคche geklickt wird oder              โ•‘
+  โ•‘                    die Enter-Taste betรคtigt wird.                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     keiner                                              โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  modulglobale:               globale:                โ•‘
+  โ•‘                    - pstrReturn_m   (R)        - aCS_g   (R)           โ•‘
+  โ•‘                    - apstrHFH_m     (R)        - wCSInd_g (R)          โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_Dl_HilfeFuerHilfe(VOID)
 {
@@ -269,7 +269,7 @@ VOID i_Dl_HilfeFuerHilfe(VOID)
     }
 
     i_Dl_Init(SPA, ZEI, BRE, HOE,
-              "Hilfe fr Hilfe",
+              "Hilfe fรผr Hilfe",
               pWkbDialog,
               SF_ABBRUCH,
               DLG_INFO);
@@ -311,22 +311,22 @@ VOID i_Dl_HilfeFuerHilfe(VOID)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Dl_HilfeSchreibeText         Datum: 31.12.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PPSTR  ppstrT            Ausgabetext                บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion gibt ab der Zeile 2 des              บ
-  บ                    Dialogfensters den bergebenen Text fr die         บ
-  บ                    Funktion Dl_Hilfe() aus.                            บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  keine                                               บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Dl_HilfeSchreibeText         Datum: 31.12.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PPSTR  ppstrT            Ausgabetext                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion gibt ab der Zeile 2 des              โ•‘
+  โ•‘                    Dialogfensters den รผbergebenen Text fรผr die         โ•‘
+  โ•‘                    Funktion Dl_Hilfe() aus.                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Diese Funktion hat keinen Rรผckgabewert.             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_Dl_HilfeSchreibeText(PPSTR ppstrT)
 {
@@ -352,24 +352,24 @@ return(OK);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Dl_Scroll                    Datum: 31.12.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        SBYTE   byRichtung     Richtung, in der gescrollt    บ
-  บ                                          werden soll                   บ
-  บ                                          UP/DOWN                       บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion scrollt den Hilfetext im             บ
-  บ                    Dialogfenster um eine Zeile in die bergebene       บ
-  บ                    Richtung.                                           บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - aCS_g[]  (R)                                      บ
-  บ                    - wCSInd_g (R)                                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Dl_Scroll                    Datum: 31.12.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        SBYTE   byRichtung     Richtung, in der gescrollt    โ•‘
+  โ•‘                                          werden soll                   โ•‘
+  โ•‘                                          UP/DOWN                       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion scrollt den Hilfetext im             โ•‘
+  โ•‘                    Dialogfenster um eine Zeile in die รผbergebene       โ•‘
+  โ•‘                    Richtung.                                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Diese Funktion hat keinen Rรผckgabewert.             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - aCS_g[]  (R)                                      โ•‘
+  โ•‘                    - wCSInd_g (R)                                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_Dl_Scroll(SWORD wSpOl, SWORD wZeOl,
 		 SWORD wSpUr, SWORD wZeUr,
@@ -390,7 +390,7 @@ VOID i_Dl_Scroll(SWORD wSpOl, SWORD wZeOl,
     regs.h.dh = (SBYTE) wZeUr;			     /* Zeile unten rechts   */
 
 
-    int86(0x10, &regs, &regs);                      /* Interrupt ausl”sen   */
+    int86(0x10, &regs, &regs);                      /* Interrupt auslรถsen   */
     if (wMausda_g && wStatus == MSM_WAR_AN)
         wStatus = Ms_CursorOn();
 

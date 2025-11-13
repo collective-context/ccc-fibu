@@ -1,18 +1,18 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Ut_TypeString(), Ut_TypeStringAtt()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Ut_TypeString(), Ut_TypeStringAtt()						 º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Ut_TypeString(), Ut_TypeStringAtt()						 â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_utl.h>
 VOID Ut_TypeString(wSpalte, wZeile, pStr);
 VOID Ut_TypeStringAtt(wSpalte, wZeile, pStr, wAttr);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD	 wSpatle    Ausgabespalte
 SWORD	 wZeile     Ausgabezeile
 PSSTR	 PSSTR	     Zeiger auf auszugebenden String
@@ -20,29 +20,29 @@ SWORD	 wAttr	    Attribut
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Beide Funktionen geben an der gewnschten Bildschirmposition eine Zeichenkette
-im ¯Zeitlupentempo® aus. Diese Funktion gibt, unabh„ngig von der Ausgabe eines
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Beide Funktionen geben an der gewÃ¼nschten Bildschirmposition eine Zeichenkette
+im Â»ZeitlupentempoÂ« aus. Diese Funktion gibt, unabhÃ¤ngig von der Ausgabe eines
 Zeichens eine Pause von 1 Tick Dauer eingelegt.
 
-Die Funktion ¯Ut_TypeString()® bernimmt bei der Ausgabe das an den Ausgabe-
+Die Funktion Â»Ut_TypeString()Â« Ã¼bernimmt bei der Ausgabe das an den Ausgabe-
 koordinaten vorhandene Attribut.
 
-¯Ut_TypeStringAtt()® gibt die Zeichenkette im bergebenen Attribut aus. Um einen
-m”glichst realistischen Eindruck zu vermitteln, wird bei beiden funktionen der
+Â»Ut_TypeStringAtt()Â« gibt die Zeichenkette im Ã¼bergebenen Attribut aus. Um einen
+mÃ¶glichst realistischen Eindruck zu vermitteln, wird bei beiden funktionen der
 Cursor mitbewegt.
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Beide Funktionen gaben keinen Rckgabewert.
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Beide Funktionen gaben keinen RÃ¼ckgabewert.
 
 .de \euro\demo\demotts.c
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #ifndef EUR_UTL_HEADER
 #include <eur_utl.h>
 #endif
@@ -53,25 +53,25 @@ Beide Funktionen gaben keinen Rckgabewert.
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    Ut_TypeString		      Datum: 22.08.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD	    wSpalte	  Ausgabespalte 	    º
-  º		       SWORD	    wZeile	  Ausgabezeile		    º
-  º                    PSTR        pstrQuelle    Zeiger auf auszugebenden  º
-  º                                              String                    º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion gibt eine Zeichenkette im            º
-  º                    "Schreibmaschinenmodus" aus. Nach jedem Buch-       º
-  º                    staben findet eine kurze Zeitverz”gerung statt.     º
-  º                                                                        º
-  º  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  keine                                               º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    Ut_TypeString		      Datum: 22.08.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD	    wSpalte	  Ausgabespalte 	    â•‘
+  â•‘		       SWORD	    wZeile	  Ausgabezeile		    â•‘
+  â•‘                    PSTR        pstrQuelle    Zeiger auf auszugebenden  â•‘
+  â•‘                                              String                    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion gibt eine Zeichenkette im            â•‘
+  â•‘                    "Schreibmaschinenmodus" aus. Nach jedem Buch-       â•‘
+  â•‘                    staben findet eine kurze ZeitverzÃ¶gerung statt.     â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Diese Funktion hat keinen RÃ¼ckgabewert.             â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Ut_TypeString(SWORD wSpalte, SWORD wZeile, PSSTR pstrQuelle)
 {
@@ -83,33 +83,33 @@ VOID Ut_TypeString(SWORD wSpalte, SWORD wZeile, PSSTR pstrQuelle)
     {
 	Vi_Sz(wSpalte++, wZeile, *pstrQuelle++);    /* Zeichen einzeln	    */
 	Vi_SetCursorPos(wSpalte, wZeile);	    /* Cursor mitbewegen    */
-	Ut_Pause(UT_TICKS, 1);			    /* Zeitverz”gerung	    */
+	Ut_Pause(UT_TICKS, 1);			    /* ZeitverzÃ¶gerung	    */
     }
-    return;                                         /* zurck an Aufrufer   */
+    return;                                         /* zurÃ¼ck an Aufrufer   */
 }
 
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    Ut_TypeStringAtt 	      Datum: 22.08.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD	    wSpalte	     Ausgabespalte	    º
-  º		       SWORD	    wZeile	     Ausgabezeile	    º
-  º		       PSSTR	    pstrQuelle	     Zeiger auf String	    º
-  º		       SWORD	    wAttr	     Attribut		    º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion arbeitet genau wie die Funktion      º
-  º		       Ut_TypeString(), nur das hier zus„tzlich ein	   º
-  º                    Attribut mit ausgegeben wird.                       º
-  º                                                                        º
-  º  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  keine                                               º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    Ut_TypeStringAtt 	      Datum: 22.08.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD	    wSpalte	     Ausgabespalte	    â•‘
+  â•‘		       SWORD	    wZeile	     Ausgabezeile	    â•‘
+  â•‘		       PSSTR	    pstrQuelle	     Zeiger auf String	    â•‘
+  â•‘		       SWORD	    wAttr	     Attribut		    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion arbeitet genau wie die Funktion      â•‘
+  â•‘		       Ut_TypeString(), nur das hier zusÃ¤tzlich ein	   â•‘
+  â•‘                    Attribut mit ausgegeben wird.                       â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Diese Funktion hat keinen RÃ¼ckgabewert.             â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Ut_TypeStringAtt(SWORD wSpalte, SWORD wZeile, PSSTR pstrQuelle, SWORD wAttr)
 {
@@ -120,8 +120,8 @@ VOID Ut_TypeStringAtt(SWORD wSpalte, SWORD wZeile, PSSTR pstrQuelle, SWORD wAttr
     {
       Vi_Sza(wSpalte++,wZeile,*pstrQuelle++,wAttr); /* Zeichen einzeln	    */
       Vi_SetCursorPos(wSpalte, wZeile); 	    /* Cursor mithalten     */
-      Ut_Pause(UT_TICKS, 1);			    /* Zeitverz”gerung	    */
+      Ut_Pause(UT_TICKS, 1);			    /* ZeitverzÃ¶gerung	    */
     }
 
-    return;                                         /* zurck an Aufrufer   */
+    return;                                         /* zurÃ¼ck an Aufrufer   */
 }

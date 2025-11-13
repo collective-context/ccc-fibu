@@ -1,62 +1,62 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Dl_Hilfe()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Dl_Hilfe()                                                                  º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Dl_Hilfe()                                                                  â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:                                                             20.11.89
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:                                                             20.11.89
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_dl.h>
 SWORD Dl_Hilfe(pstrTitel, ppstrText);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-PSSTR	pstrTitel   Zeiger auf String, der Titel des Hilfe-Fensters enth„lt
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+PSSTR	pstrTitel   Zeiger auf String, der Titel des Hilfe-Fensters enthÃ¤lt
 PPSTR  ppstrText   Zeiger auf Zeiger mit dem Hilfetext
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion baut ein Dialog-Fenster fr Hilfsinformationen auf. Die Position
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion baut ein Dialog-Fenster fÃ¼r Hilfsinformationen auf. Die Position
 der linken oberen Ecke ist Spalte 11, Zeile 9. Das Fenster ist insgesamt
 14 Zeilen hoch und 56 Spalten breit.
 
-In Spalte 0 des Fensters wird der der Funktion bergebene Parameter pstrTitel
+In Spalte 0 des Fensters wird der der Funktion Ã¼bergebene Parameter pstrTitel
 als Titel ausgegegeben.
 
 Eine Textzeile sollte maximal 52 Zeichen beinhalten. Kennzeichnen Sie das Ende
 der Liste mit einem NULL-Zeiger.
 
-Wenn der Hilfetext mehr als acht Zeilen umfaát, stellt die Funktion dem
-Anwender eine Scroll-M”glichkeit zur Verfgung. Die m”gliche Scroll-Richtung
+Wenn der Hilfetext mehr als acht Zeilen umfaÃŸt, stellt die Funktion dem
+Anwender eine Scroll-MÃ¶glichkeit zur VerfÃ¼gung. Die mÃ¶gliche Scroll-Richtung
 wird auf der Trennlinie unterhalb der Titelzeile durch die Anzeige von Rich-
 tungspfeilen kenntlich gemacht. Das Scrollen ist dann mit den Cursortasten nach
-oben und unten m”glich.
+oben und unten mÃ¶glich.
 
-Im unteren Bereich der Dialogbox befinden sich zwei Schaltfl„chen. Mit der
-Esc-Schaltfl„che kann der Anwender die Hilfe beenden. Mit der F1-Schaltfl„che
+Im unteren Bereich der Dialogbox befinden sich zwei SchaltflÃ¤chen. Mit der
+Esc-SchaltflÃ¤che kann der Anwender die Hilfe beenden. Mit der F1-SchaltflÃ¤che
 kann Hilfe zur Bedienung der Dialogbox angefordert werden, die von der Toolbox
-zur Verfgung gestellt wird.
+zur VerfÃ¼gung gestellt wird.
 
-Eine aktive Maus wird automatisch untersttzt. Der Anwender kann dann die
-Schaltfl„chen aktivieren, indem er mit dem Mauszeiger auf die gewnschte Schalt-
-fl„che zeigt und die linke Maustaste drckt. Das Scrollen wird durch Zeigen auf
-die Scroll-Pfeile und drcken der linken Maustaste aktiviert.
+Eine aktive Maus wird automatisch unterstÃ¼tzt. Der Anwender kann dann die
+SchaltflÃ¤chen aktivieren, indem er mit dem Mauszeiger auf die gewÃ¼nschte Schalt-
+flÃ¤che zeigt und die linke Maustaste drÃ¼ckt. Das Scrollen wird durch Zeigen auf
+die Scroll-Pfeile und drÃ¼cken der linken Maustaste aktiviert.
 
-Sie k”nnen diese Funktion auch u.a. auch dazu verwenden, um ein Hilfefenster
-fr die von Ihrem Programm benutzte Tastaturbelegung aufzubauen, das der SAA-
+Sie kÃ¶nnen diese Funktion auch u.a. auch dazu verwenden, um ein Hilfefenster
+fÃ¼r die von Ihrem Programm benutzte Tastaturbelegung aufzubauen, das der SAA-
 Standard vorsieht. Bieten Sie dann dem Anwender mit der Taste [F9] Zugang zu
 diesem Hilfsfenster. Diese Tastenbelegung wird sowohl in der Shell von DOS 4.0
 als auch im Session-Manager von OS/2 verwendet.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD  Fehlerinformation OK/ERROR
 
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g   (R)
                   - wCSInd_g   (R)           - pstrF1_g    (R)
                   - wMausda_g  (R)           - boBeepen_g  (R)
@@ -64,67 +64,67 @@ Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g   (R)
 .de \euro\demo\dmohilf1.c
 .te*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <eur_tool.h>
 #include <stdio.h>
 #include <string.h>
 #include <dos.h>
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT COLORSET  aCS_g[5];
 IMPORT SWORD	 wCSInd_g;			     /* Index in Pal.-Array  */
 IMPORT SWORD	 wMausda_g;			     /* Maus im System ?     */
 
 IMPORT PSSTR	 pstrF1_g;			     /* Texte der Schalt-    */
-IMPORT PSSTR	 pstrEsc_g;			     /* fl„chen 	     */
+IMPORT PSSTR	 pstrEsc_g;			     /* flÃ¤chen 	     */
 IMPORT PSSTR	 pstrReturn_g;
 IMPORT BOOL     boBeepen_g;                         /* Warnton ein ?        */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        KONSTANTEN UND MAKROS                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        KONSTANTEN UND MAKROS                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define ZEI   HILFEZEILE                            /* Zeile des Dialoges   */
 #define SPA   (HILFESPALTE-8)                       /* Spalte des Dialoges  */
 #define BRE        72                               /* Breite des Dialoges  */
-#define HOE        14                               /* H”he des Dialoges    */
-#define SCR_DELAY   1              /* Zeitverz”gerung fr Maus-Dauer-Scroll */
+#define HOE        14                               /* HÃ¶he des Dialoges    */
+#define SCR_DELAY   1              /* ZeitverzÃ¶gerung fÃ¼r Maus-Dauer-Scroll */
 
 #define PFEILOBENAN()	    Wi_Sza(BRE-6,1,'',aCS_g[wCSInd_g].wCs_dlg_sp)
-#define PFEILOBENAUS()	    Wi_Sza(BRE-6,1,'Ä',aCS_g[wCSInd_g].wCs_dlg)
+#define PFEILOBENAUS()	    Wi_Sza(BRE-6,1,'â”€',aCS_g[wCSInd_g].wCs_dlg)
 
 #define PFEILUNTENAN()	    Wi_Sza(BRE-4,1,'',aCS_g[wCSInd_g].wCs_dlg_sp)
-#define PFEILUNTENAUS()     Wi_Sza(BRE-4,1,'Ä',aCS_g[wCSInd_g].wCs_dlg)
+#define PFEILUNTENAUS()     Wi_Sza(BRE-4,1,'â”€',aCS_g[wCSInd_g].wCs_dlg)
 
 #define ZEICHNEBALKEN(z)    Wi_Swa(1,z+2, BRE-4,1,aCS_g[wCSInd_g].wCs_mf_ca)
 #define LOESCHEBALKEN(z)    Wi_Swa(1,z+2, BRE-4,1,aCS_g[wCSInd_g].wCs_dlg)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	SWORD	wStartzeile_m;
 STATIC	SWORD	wHilfsZeilen_m;
 STATIC	SWORD	wAktZeile_m=0;
 STATIC  PPSTR  ppstrTmp_m;
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE FUNKTIONEN                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE FUNKTIONEN                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC  VOID cdecl i_EineZeileHoch        (VOID);
 STATIC  VOID cdecl i_EineZeileRunter      (PPSTR);
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Dl_Hilfe(PSSTR pstrTitel, PPSTR ppstrTxt)
 {
@@ -152,7 +152,7 @@ SWORD Dl_Hilfe(PSSTR pstrTitel, PPSTR ppstrTxt)
     for (wHilfsZeilen_m=0;                          /* Anzahl der Hilfs-    */
          *ppstrTmp_m++ != NULL;                     /* zeilen ermitteln     */
          wHilfsZeilen_m++);
-    ppstrTmp_m = ppstrTxt;                          /* Zeiger zurcksetzen  */
+    ppstrTmp_m = ppstrTxt;                          /* Zeiger zurÃ¼cksetzen  */
 
     if (wHilfsZeilen_m > TEXTZEILEN)                /* evtl. Scrollpfeil    */
         PFEILUNTENAN();                             /* einschalten          */
@@ -279,32 +279,32 @@ SWORD Dl_Hilfe(PSSTR pstrTitel, PPSTR ppstrTxt)
 
 
 /*.ta i_EineZeileHoch
-  ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_EineZeileHoch                Datum: 25.10.88      º
-  ºÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄº
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   º
-  º                    ausgabe des Hilfstextes bei Dl_Hilfe().             º
-  º                    Eine Aktion wird erst dann ausgefhrt, wenn         º
-  º                    mehr als die in der Konstante MINZEILEN angegebenen º
-  º                    Zeilen noch im Fenster stehen.                      º
-  º                    In diesem Fall wird der im Fenster stehende         º
-  º                    Text gescrollt, der neue Text ausgegeben und        º
-  º                    die Scroll-Pfeile an die nach dem Scrollen ent-     º
-  º                    standene Situation angepaát.                        º
-  º                                                                        º
-  º  Rckgabewert:     keine                                               º
-  º                                                                        º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  modulglobale Variablen:                             º
-  º                    - wHilfsZeilen_m (R)                                º
-  º                    - wStartzeile_m  (R/W)                              º
-  º                    - ppstrTmp_m     (R)                                º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+  â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_EineZeileHoch                Datum: 25.10.88      â•‘
+  â•‘â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•‘
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   â•‘
+  â•‘                    ausgabe des Hilfstextes bei Dl_Hilfe().             â•‘
+  â•‘                    Eine Aktion wird erst dann ausgefÃ¼hrt, wenn         â•‘
+  â•‘                    mehr als die in der Konstante MINZEILEN angegebenen â•‘
+  â•‘                    Zeilen noch im Fenster stehen.                      â•‘
+  â•‘                    In diesem Fall wird der im Fenster stehende         â•‘
+  â•‘                    Text gescrollt, der neue Text ausgegeben und        â•‘
+  â•‘                    die Scroll-Pfeile an die nach dem Scrollen ent-     â•‘
+  â•‘                    standene Situation angepaÃŸt.                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  modulglobale Variablen:                             â•‘
+  â•‘                    - wHilfsZeilen_m (R)                                â•‘
+  â•‘                    - wStartzeile_m  (R/W)                              â•‘
+  â•‘                    - ppstrTmp_m     (R)                                â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 .ff
 .te*/
 STATIC
@@ -333,32 +333,32 @@ VOID i_EineZeileHoch(VOID)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_EineZeileRunter              Datum: 25.10.88      º
-  ºÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄº
-  º                                                                        º
-  º  Parameter:        PPSTR ppstrTxt  Zeiger auf erste Zeile der          º
-  º                                    Hilfstexte                          º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   º
-  º                    ausgabe des Hilfstextes bei Dl_Hilfe().             º
-  º                    Eine Aktion wird erst dann ausgefhrt, wenn         º
-  º                    mehr als die in der Konstante MINZEILEN angegebenen º
-  º                    Zeilen noch im Fenster stehen.                      º
-  º                    In diesem Fall wird der im Fenster stehende         º
-  º                    Text gescrollt, der neue Text ausgegeben und        º
-  º                    die Scroll-Pfeile an die nach dem Scrollen ent-     º
-  º                    standene Situation angepaát.                        º
-  º                                                                        º
-  º  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  modulglobale Variablen:                             º
-  º                    - wHilfsZeilen_m (R)                                º
-  º                    - wStartzeile_m  (R/W)                              º
-  º                    - ppstrTmp_m     (R)                                º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_EineZeileRunter              Datum: 25.10.88      â•‘
+  â•‘â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•‘
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PPSTR ppstrTxt  Zeiger auf erste Zeile der          â•‘
+  â•‘                                    Hilfstexte                          â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion steuert das Scrollen und die  Neu-   â•‘
+  â•‘                    ausgabe des Hilfstextes bei Dl_Hilfe().             â•‘
+  â•‘                    Eine Aktion wird erst dann ausgefÃ¼hrt, wenn         â•‘
+  â•‘                    mehr als die in der Konstante MINZEILEN angegebenen â•‘
+  â•‘                    Zeilen noch im Fenster stehen.                      â•‘
+  â•‘                    In diesem Fall wird der im Fenster stehende         â•‘
+  â•‘                    Text gescrollt, der neue Text ausgegeben und        â•‘
+  â•‘                    die Scroll-Pfeile an die nach dem Scrollen ent-     â•‘
+  â•‘                    standene Situation angepaÃŸt.                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Diese Funktion hat keinen RÃ¼ckgabewert.             â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  modulglobale Variablen:                             â•‘
+  â•‘                    - wHilfsZeilen_m (R)                                â•‘
+  â•‘                    - wStartzeile_m  (R/W)                              â•‘
+  â•‘                    - ppstrTmp_m     (R)                                â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_EineZeileRunter(PPSTR ppstrTxt)
 {
@@ -382,96 +382,96 @@ VOID i_EineZeileRunter(PPSTR ppstrTxt)
 
 
 /*.ta Dl_HilfeTools()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Dl_HilfeTools()                                                             º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Dl_HilfeTools()                                                             â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_dlg.h>
 VOID Dl_HilfeTools(wDialog);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-SWORD  wDialog	  Konstante fr Kennzahl des Dialogfeldes, fr fr das die
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+SWORD  wDialog	  Konstante fÃ¼r Kennzahl des Dialogfeldes, fÃ¼r fÃ¼r das die
                  Hilfe ausgegeben werden soll:
 
-                 - FARBPALETTE  Hilfe fr Funktion Dl_FarbPalette()
-                 - DOSSHELL     Hilfe fr Funktion Ut_DosShell()
-                 - SPEICHERN    Hilfe fr Funktion Dl_SpeichernUnter()
-                 - LADEN        Hilfe fr Funktion Dl_Laden()
-                 - WARNTON      Hilfe fr Funktion Dl_Warnton()
-                 - MAUSTEMPO    Hilfe fr Funktion Dl_MausTempo
+                 - FARBPALETTE  Hilfe fÃ¼r Funktion Dl_FarbPalette()
+                 - DOSSHELL     Hilfe fÃ¼r Funktion Ut_DosShell()
+                 - SPEICHERN    Hilfe fÃ¼r Funktion Dl_SpeichernUnter()
+                 - LADEN        Hilfe fÃ¼r Funktion Dl_Laden()
+                 - WARNTON      Hilfe fÃ¼r Funktion Dl_Warnton()
+                 - MAUSTEMPO    Hilfe fÃ¼r Funktion Dl_MausTempo
                  - DLGINDEX     Hilfe Dl_HilfeIndex()
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Mit dieser Funktuion haben Sie die M”glichkeit, von einer beliebigen Stelle
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Mit dieser Funktuion haben Sie die MÃ¶glichkeit, von einer beliebigen Stelle
 Ihres Programms aus die Hilfstext der Toolbox-Dialogfunktionen anzeigen zu
-lassen. Dies ist beispielweise sinnvoll, wenn Sie fr Ihr Programm die Funktion
+lassen. Dies ist beispielweise sinnvoll, wenn Sie fÃ¼r Ihr Programm die Funktion
 zur Bearbeitung von Hilfe-Anforderung aus einem Hilfeindex erstellen.
 
-Alle Hilfstexte fr diese Dialogfelder befinden sich in der Datei <dlghtool.c>.
-Wenn Sie die Texte „ndern wollen, brauchen Sie nur diese Datei zu editieren,
-und ie ge„nderte Objekt-Datei gegen die ursprngliche in der Bibliothek auszu-
+Alle Hilfstexte fÃ¼r diese Dialogfelder befinden sich in der Datei <dlghtool.c>.
+Wenn Sie die Texte Ã¤ndern wollen, brauchen Sie nur diese Datei zu editieren,
+und ie geÃ¤nderte Objekt-Datei gegen die ursprÃ¼ngliche in der Bibliothek auszu-
 tauschen.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion hat keinen Rckgabewert.
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion hat keinen RÃ¼ckgabewert.
 
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Diese Funktion verwendet keine globalen Variablen.
 
 .ff
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <eur_tool.h>
 #include <stdio.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º			   MODULGLOBALE Funktionen			   º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘			   MODULGLOBALE Funktionen			   â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º PresentText()							     º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘ PresentText()							     â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 STATIC VOID PresentText(VOID)
 {
 PSSTR apstrPresentText[100];
-PSSTR pstrPresentTitel=strdup("Hilfe fr die WINware Pr„sentation.");
+PSSTR pstrPresentTitel=strdup("Hilfe fÃ¼r die WINware PrÃ¤sentation.");
 
 Ut_SchreibArray(apstrPresentText,
-  "Die WINware Pr„sentation ist aufgebaut wie eine Dia-Show.",
+  "Die WINware PrÃ¤sentation ist aufgebaut wie eine Dia-Show.",
   " ",
-  "Nach dem Start der Pr„sentation wird Ihnen das n„chste Bild durch",
-  "Drcken einer beliebigen Taste angezeigt.",
+  "Nach dem Start der PrÃ¤sentation wird Ihnen das nÃ¤chste Bild durch",
+  "DrÃ¼cken einer beliebigen Taste angezeigt.",
   " ",
   "Es gibt jedoch auch Tasten, mit denen Sie die Bildreihenfolge selbst",
-  "beeinflussen k”nnen:",
+  "beeinflussen kÃ¶nnen:",
   " ",
-  "ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",
+  "â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€",
   " ",
-  " ş  [] oder [Bild] zeigt Ihnen nochmals das letzte Bild.",
+  " â–   [] oder [Bild] zeigt Ihnen nochmals das letzte Bild.",
   " ",
-  " ş  [Strg]+[Ende] zeigt Ihnen das letzte Bild.",
-  " ş  [Strg]+[Pos1] zeigt Ihnen das erste Bild.",
+  " â–   [Strg]+[Ende] zeigt Ihnen das letzte Bild.",
+  " â–   [Strg]+[Pos1] zeigt Ihnen das erste Bild.",
   " ",
-  " ş  [Tab] oder [Strg]+[Bild] geht nach vor zum ersten Bild",
-  "    des n„chsten Kapitels.",
+  " â–   [Tab] oder [Strg]+[Bild] geht nach vor zum ersten Bild",
+  "    des nÃ¤chsten Kapitels.",
   " ",
-  " ş  [Umsch]+[Tab] oder [Strg]+[Bild] geht zurck zum ersten",
+  " â–   [Umsch]+[Tab] oder [Strg]+[Bild] geht zurÃ¼ck zum ersten",
   "    Bild des letzten Kapitels",
   " ",
-  " ş  [Esc]  geht bis zum Kapitelanfang jeweils ein Bild zurck.",
-  " ş  [Esc]  bedeutet Programmende, wenn Sie beim ersten Bild des",
+  " â–   [Esc]  geht bis zum Kapitelanfang jeweils ein Bild zurÃ¼ck.",
+  " â–   [Esc]  bedeutet Programmende, wenn Sie beim ersten Bild des",
   "           ersten Kapitels stehen (z.B. mit [Strg]+[Pos1]).",
   _N);
 
@@ -481,34 +481,34 @@ Ut_Free(pstrPresentTitel);
 };
 
 
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º PalText()								     º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘ PalText()								     â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 STATIC VOID PalText(VOID)
 {
 PSSTR apstrPalText[100];
-PSSTR pstrPalTitel=strdup("Hilfe fr Farbpalette w„hlen");
+PSSTR pstrPalTitel=strdup("Hilfe fÃ¼r Farbpalette wÃ¤hlen");
 
 Ut_SchreibArray(apstrPalText,
   " Benutzen Sie diese Dialog-Box um die Farben,",
-  " mit denen das Men und die Dialog-Boxen auf",
+  " mit denen das MenÃ¼ und die Dialog-Boxen auf",
   " dem Bildschirm dargestellt werden, festzulegen.",
   " ",
   " Wenn an Ihrem Rechner ein Farbmonitor ange-",
-  " schlossen ist, stehen Ihnen fnf Farbpaletten",
-  " zur Verfgung. Bei einem Monochrom-Monitor",
+  " schlossen ist, stehen Ihnen fÃ¼nf Farbpaletten",
+  " zur VerfÃ¼gung. Bei einem Monochrom-Monitor",
   " ist immer die monochrome Palette aktiv.",
   " ",
-  " Sie w„hlen eine Palette aus, indem Sie",
-  "  ş  die Tasten  []  und  []  bet„tigen oder",
-  "  ş  einen der andersfarbigen Buchstaben",
+  " Sie wÃ¤hlen eine Palette aus, indem Sie",
+  "  â–   die Tasten  []  und  []  betÃ¤tigen oder",
+  "  â–   einen der andersfarbigen Buchstaben",
   "     eingeben oder",
-  "  ş  den Mauszeiger auf ein Optionsfeld bewegen",
-  "     und dort die linke Maustaste drcken.",
+  "  â–   den Mauszeiger auf ein Optionsfeld bewegen",
+  "     und dort die linke Maustaste drÃ¼cken.",
   " ",
-  " Drcken Sie",
-  "  ş  [<ÄÙ]  um die gew„hlte Palette einzustellen",
-  "  ş  [Esc]  um den Dialog abzubrechen und die",
+  " DrÃ¼cken Sie",
+  "  â–   [<â”€â”˜]  um die gewÃ¤hlte Palette einzustellen",
+  "  â–   [Esc]  um den Dialog abzubrechen und die",
   "            alte Palette wieder zu aktivieren.", _N);
 
 Dl_Hilfe(pstrPalTitel, apstrPalText);
@@ -517,39 +517,39 @@ Ut_Free(pstrPalTitel);
 };
 
 
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º SpeichernText()							     º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘ SpeichernText()							     â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 STATIC VOID SpeichernText(VOID)
 {
 PSSTR apstrSpeichernText[100];
-PSSTR pstrSpeichernTitel=strdup("Hilfe fr Speichern unter");
+PSSTR pstrSpeichernTitel=strdup("Hilfe fÃ¼r Speichern unter");
 
 Ut_SchreibArray(apstrSpeichernText,
-  "Mit dem Speichern unter... - Befehl k”nnen Sie",
+  "Mit dem Speichern unter... - Befehl kÃ¶nnen Sie",
   "aktuelle Datei unter einem neuen Namen auf",
-  "dem Datentr„ger abspeichern.",
+  "dem DatentrÃ¤ger abspeichern.",
   " ",
   "Das Dialogfeld besteht aus folgenden Anzeigen",
   "und Optionen:",
-  " ş Verzeichnis:  Hier finden Sie die Angabe des",
+  " â–  Verzeichnis:  Hier finden Sie die Angabe des",
   "                 aktuellen Pfades.",
-  " ş Dateiname:    Geben Sie hier den Namen ein,",
+  " â–  Dateiname:    Geben Sie hier den Namen ein,",
   "                 unter dem die aktuelle Datei ",
   "                 gespeichert werden soll.",
   " ",
-  " W„hlen Sie",
-  "  ş [<ÄÙ]  um die Datei unter dem Namen abzuspeichern,",
-  "           der im Textfeld ¯Dateiname® angegeben ist.",
-  "  ş [Esc]  um den Speichern unter... - Befehl ",
+  " WÃ¤hlen Sie",
+  "  â–  [<â”€â”˜]  um die Datei unter dem Namen abzuspeichern,",
+  "           der im Textfeld Â»DateinameÂ« angegeben ist.",
+  "  â–  [Esc]  um den Speichern unter... - Befehl ",
   "         abzubrechen.",
   " ",
-  " Folgende Zeichen drfen in einem Dateinamen nicht",
+  " Folgende Zeichen dÃ¼rfen in einem Dateinamen nicht",
   " vorkommen: \\ / [] {} : | <> + = ; . \" ? * ",
   " ",
-  " Fr den Fall, daá einer der Buchstaben Teil des",
+  " FÃ¼r den Fall, daÃŸ einer der Buchstaben Teil des",
   " Namens ist, gibt die Funktion folgende Meldung",
-  " aus: \"Der eingegebene Dateiname ist ungltig.\" ", _N);
+  " aus: \"Der eingegebene Dateiname ist ungÃ¼ltig.\" ", _N);
 
 Dl_Hilfe(pstrSpeichernTitel, apstrSpeichernText);
 Ut_LoeschArray(apstrSpeichernText);
@@ -557,9 +557,9 @@ Ut_Free(pstrSpeichernTitel);
 };
 
 
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º MausText() 							     º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘ MausText() 							     â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 STATIC VOID MausText(VOID)
 {
 PSSTR apstrMausText[100];
@@ -570,24 +570,24 @@ Ut_SchreibArray(apstrMausText,
   " wie schnell sich der Mauszeiger auf dem Bild-",
   " schirm bewegen soll.",
   " ",
-  " Je kleiner die gew„hlte Zahl, desto langsamer",
+  " Je kleiner die gewÃ¤hlte Zahl, desto langsamer",
   " ist die Bewegung des Mauszeigers, und umge-",
-  " kehrt. Der Standardwert fr die Mausgeschwindig-",
+  " kehrt. Der Standardwert fÃ¼r die Mausgeschwindig-",
   " keit ist 50.",
   " ",
-  " Sie k”nnen die Markierung in der Scroll-Leiste ",
+  " Sie kÃ¶nnen die Markierung in der Scroll-Leiste ",
   " verschieben, indem Sie",
-  " ş  die Tasten [] und [\x1A] bet„tigen oder den",
-  " ş  Mauszeiger auf die Pfeile an der Scroll-",
+  " â–   die Tasten [] und [\x1A] betÃ¤tigen oder den",
+  " â–   Mauszeiger auf die Pfeile an der Scroll-",
   "    leiste bewegen, und dort die linke Maustaste",
-  "    drcken,",
-  " ş  den Mauszeiger auf die gewnschte Position auf",
+  "    drÃ¼cken,",
+  " â–   den Mauszeiger auf die gewÃ¼nschte Position auf",
   "    der Scrollleiste bewegen und dort die linke",
-  "    Maustaste drcken",
+  "    Maustaste drÃ¼cken",
   " ",
-  " W„hlen Sie",
-  " ş [<ÄÙ]  um das gew„hlte Tempo einzustellen",
-  " ş [Esc]  um den Dialog abzubrechen", _N);
+  " WÃ¤hlen Sie",
+  " â–  [<â”€â”˜]  um das gewÃ¤hlte Tempo einzustellen",
+  " â–  [Esc]  um den Dialog abzubrechen", _N);
 
 Dl_Hilfe(pstrMausTitel, apstrMausText);
 Ut_LoeschArray(apstrMausText);
@@ -595,39 +595,39 @@ Ut_Free(pstrMausTitel);
 };
 
 
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º TonText()								     º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘ TonText()								     â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 STATIC VOID TonText(VOID)
 {
 PSSTR apstrTonText[100];
-PSSTR pstrTonTitel=strdup("Hilfe fr Warnton einstellen");
+PSSTR pstrTonTitel=strdup("Hilfe fÃ¼r Warnton einstellen");
 
 Ut_SchreibArray(apstrTonText,
   " Benutzen Sie diese Dialog-Box um zu bestimmen,",
   " ob das Programm im Bedarfsfall einen Warnton ",
   " ausgibt oder nicht.",
   " ",
-  " Sie k”nnen auáerdem die Dauer und Frequenz des",
+  " Sie kÃ¶nnen auÃŸerdem die Dauer und Frequenz des",
   " Warntons festlegen."
   " ",
-  " Sie k”nnen das Eingabefeld ver„ndern, indem Sie",
-  "  ş  [Tab] oder [Umsch]]+[Tab] drcken.",
+  " Sie kÃ¶nnen das Eingabefeld verÃ¤ndern, indem Sie",
+  "  â–   [Tab] oder [Umsch]]+[Tab] drÃ¼cken.",
   " ",
   " Unter dem Namen des aktiven Eingabefeldes blinkt",
   " der Cursor.",
   " ",
   " Verschieben Sie die Markierung in den Rolleisten",
-  " fr Dauer und Frequenz, indem Sie",
-  " ş  die Tasten [] und [\x1A] bet„tigen oder den",
-  " ş  Mauszeiger auf die Pfeile an der Scroll-",
+  " fÃ¼r Dauer und Frequenz, indem Sie",
+  " â–   die Tasten [] und [\x1A] betÃ¤tigen oder den",
+  " â–   Mauszeiger auf die Pfeile an der Scroll-",
   "    leiste bewegen, und dort die linke Maustaste",
-  "    drcken.",
+  "    drÃ¼cken.",
   " ",
-  " Drcken Sie",
-  " ş [<ÄÙ]  um die gew„hlten Werte einzustellen",
-  " ş [Esc]  um den Dialog abzubrechen",
-  " ş [F4]   um den eingestellten Ton probeweise zu h”ren", _N);
+  " DrÃ¼cken Sie",
+  " â–  [<â”€â”˜]  um die gewÃ¤hlten Werte einzustellen",
+  " â–  [Esc]  um den Dialog abzubrechen",
+  " â–  [F4]   um den eingestellten Ton probeweise zu hÃ¶ren", _N);
 
 Dl_Hilfe(pstrTonTitel, apstrTonText);
 Ut_LoeschArray(apstrTonText);
@@ -635,24 +635,24 @@ Ut_Free(pstrTonTitel);
 };
 
 
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º ShellText()							     º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘ ShellText()							     â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 STATIC VOID ShellText(VOID)
 {
 PSSTR apstrShellText[100];
-PSSTR pstrShellTitel=strdup("Hilfe fr Betriebssystem-Befehl");
+PSSTR pstrShellTitel=strdup("Hilfe fÃ¼r Betriebssystem-Befehl");
 
 Ut_SchreibArray(apstrShellText,
-  "Dieser Befehl erm”glicht es Ihnen, vorbergehend",
-  "zur DOS-Ebene zurckzukehren."
+  "Dieser Befehl ermÃ¶glicht es Ihnen, vorÃ¼bergehend",
+  "zur DOS-Ebene zurÃ¼ckzukehren."
   " ",
-  "Sie k”nnen dort andere Programme oder DOS-Befehle",
-  "ausfhren.",
+  "Sie kÃ¶nnen dort andere Programme oder DOS-Befehle",
+  "ausfÃ¼hren.",
   " ",
   "Um von der DOS-Ebene wieder in dieses Programm",
-  "zurckzukehren, geben Sie den EXIT-Befehl ein",
-  "und drcken die Eingabe-Taste.",
+  "zurÃ¼ckzukehren, geben Sie den EXIT-Befehl ein",
+  "und drÃ¼cken die Eingabe-Taste.",
   " ",
   "Wenn der DOS-Befehlsinterpreter nicht gestartet",
   "werden konnte, wird der Betriebssystem-Befehl mit",
@@ -664,43 +664,43 @@ Ut_Free(pstrShellTitel);
 };
 
 
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º LadenText()							     º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘ LadenText()							     â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 STATIC VOID LadenText(VOID)
 {
 PSSTR apstrLadenText[100];
-PSSTR pstrLadenTitel=strdup("Hilfe fr Datei laden");
+PSSTR pstrLadenTitel=strdup("Hilfe fÃ¼r Datei laden");
 
 Ut_SchreibArray(apstrLadenText,
-  " Mit dem Dialogfeld ¯Laden® k”nnen Sie bestimmen",
+  " Mit dem Dialogfeld Â»LadenÂ« kÃ¶nnen Sie bestimmen",
   " welche Datei geladen werden soll.",
   " ",
   " Das Dialogfeld besteht aus folgenden Elementen:",
   " ",
-  " ş Textfeld: Im Textfeld k”nnen Sie einen Datei-",
+  " â–  Textfeld: Im Textfeld kÃ¶nnen Sie einen Datei-",
   "      namen eingeben, eine neue Suchmaske, oder",
   "      ein Laufwerk oder Verzeichnis, in dem",
   "      nach Dateien gesucht werden soll.",
   " ",
-  " ş Angabe aktuelles Verzeichnis: Unter dem Textfeld",
+  " â–  Angabe aktuelles Verzeichnis: Unter dem Textfeld",
   "      wird das Laufwerk und Verzeichnis ausgegeben,",
   "      in dem die Dialogbox derzeit nach Dateien",
   "      sucht.",
   " ",
-  " ş Verzeichnisfeld: Im Verzeichnisfeld werden alle",
+  " â–  Verzeichnisfeld: Im Verzeichnisfeld werden alle",
   "      Dateinamen ausgegeben, die der im Textfeld ",
   "      ausgegebenen Suchmaske entsprechen.",
-  "      Das bergeordnete Verzeichnis wird durch [..]",
+  "      Das Ã¼bergeordnete Verzeichnis wird durch [..]",
   "      symbolisiert, die Unterverzeichnisse werden in",
-  "      Groábuchstaben und in eckigen Klammern einge-",
+  "      GroÃŸbuchstaben und in eckigen Klammern einge-",
   "      schlossen ausgegeben.",
   " ",
   " Folgende Tasten sind immer aktiv:",
   " ",
-  "     [Tab]  ver„ndert den Fokus",
+  "     [Tab]  verÃ¤ndert den Fokus",
   "     [Esc]  bricht die Funktion ab",
-  "     [ÄÙ]  bernimmt die angezeigte Zeichen-",
+  "     [â”€â”˜]  Ã¼bernimmt die angezeigte Zeichen-",
   "            kette und beendet die Funktion",
   "     [F1]   zeigt diesen Hilfe-Bildschirm",
   " ",
@@ -709,12 +709,12 @@ Ut_SchreibArray(apstrLadenText,
   "     [\x1A] / []      bewegen den Cursor um ein Zeichen", // \x1B \x1A
   "     [Pos1]         setzt Cursor auf erstes Zeichen",
   "     [Ende]         setzt Cursor hinter letztes Zeichen",
-  "     [Entf]         l”scht Zeichen unter dem Cursor",
-  "     [Umsch]+[Entf] l”scht komplettes Textfeld",
-  "     [ÄÄÄÄ  ]      l”scht Zeichen links vom Cursor",
-  "     [Einfg]        schaltet Einfgemodus ein/aus",
+  "     [Entf]         lÃ¶scht Zeichen unter dem Cursor",
+  "     [Umsch]+[Entf] lÃ¶scht komplettes Textfeld",
+  "     [â”€â”€â”€â”€  ]      lÃ¶scht Zeichen links vom Cursor",
+  "     [Einfg]        schaltet EinfÃ¼gemodus ein/aus",
   " ",
-  "     Das Textfeld akzeptiert nur Zeichen die fr",
+  "     Das Textfeld akzeptiert nur Zeichen die fÃ¼r",
   "     Dateinamen zugelassen sind.",
   " ",
   " Sondertasten im Verzeichnisfeld:",
@@ -725,7 +725,7 @@ Ut_SchreibArray(apstrLadenText,
   "     [Ende]          bewegt den Balken auf letzten Eintrag",
   " ",
   "     Durch die Eingabe eines Anfangs-Buchstabens",
-  "     k”nnen Sie direkt zu einem Eintrag springen.",
+  "     kÃ¶nnen Sie direkt zu einem Eintrag springen.",
   "     Der gefundene Dateiname erscheint immer in der",
   "     ersten Zeile des Verzeichnisfeldes.", _N);
 
@@ -736,32 +736,32 @@ Ut_Free(pstrLadenTitel);
 };
 
 
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º IndexText()							     º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘ IndexText()							     â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 STATIC VOID IndexText(VOID)
 {
 PSSTR apstrIndexText[100];
-PSSTR pstrIndexTitel=strdup("Hilfe fr Index der Hilfsbildschirme");
+PSSTR pstrIndexTitel=strdup("Hilfe fÃ¼r Index der Hilfsbildschirme");
 
 Ut_SchreibArray(apstrIndexText,
-  " W„hlen Sie in diesem Dialogfeld ein Thema aus, zu",
+  " WÃ¤hlen Sie in diesem Dialogfeld ein Thema aus, zu",
   " dem Sie Hilfe anfordern wollen.",
   " ",
   " Bewegen Sie den Auswahlbalken auf das Thema, zu dem",
   " Sie Hilfe anfordern wollen. Der Balken wird bewegt,",
   " indem Sie",
-  " ş  die Tasten [] und [] bet„tigen oder",
-  " ş  mit dem Mauszeiger auf das Thema zeigen und die",
-  "    linke Maustaste bet„tigen, oder",
-  " ş  mit dem Mauszeiger auf die Rollpfeile zeigen, und",
-  "    die linke Maustaste drcken.",
+  " â–   die Tasten [] und [] betÃ¤tigen oder",
+  " â–   mit dem Mauszeiger auf das Thema zeigen und die",
+  "    linke Maustaste betÃ¤tigen, oder",
+  " â–   mit dem Mauszeiger auf die Rollpfeile zeigen, und",
+  "    die linke Maustaste drÃ¼cken.",
   " ",
   " Sie aktivieren ein Thema, indem Sie",
-  " ş  die Eingabe-Schaltfl„che bet„tigen,",
-  " ş  auf einem Thema mit der Maus doppelklicken.",
+  " â–   die Eingabe-SchaltflÃ¤che betÃ¤tigen,",
+  " â–   auf einem Thema mit der Maus doppelklicken.",
   " ",
-  " Mit der Esc-Schaltfl„che k”nnen Sie die Auswahl",
+  " Mit der Esc-SchaltflÃ¤che kÃ¶nnen Sie die Auswahl",
   " abbrechen.", _N);
 
 Dl_Hilfe(pstrIndexTitel, apstrIndexText);
@@ -770,9 +770,9 @@ Ut_Free(pstrIndexTitel);
 };
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Dl_HilfeTools(SWORD wDialog)
 {

@@ -1,17 +1,17 @@
 // (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:59:07 - Wed
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Programme-Name: FI1500b.C       Revision: 1.3         (C) 1989/1991    บ
-  บ  Overlay       : Erfassen Geldbuchungen                                 บ
-  บ  for Programme : LK Fibu - Buchungserfassung                            บ
-  บ                                                                         บ
-  บ  Rev.-Date     : 01.05.1991, Graz           Update: 01.05.1991, Graz    บ
-  บ  Author        : Peter Mayer                Author: Peter Mayer         บ
-  บ  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         Deklarations-Dateien                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Programme-Name: FI1500b.C       Revision: 1.3         (C) 1989/1991    โ•‘
+  โ•‘  Overlay       : Erfassen Geldbuchungen                                 โ•‘
+  โ•‘  for Programme : LK Fibu - Buchungserfassung                            โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘  Rev.-Date     : 01.05.1991, Graz           Update: 01.05.1991, Graz    โ•‘
+  โ•‘  Author        : Peter Mayer                Author: Peter Mayer         โ•‘
+  โ•‘  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         Deklarations-Dateien                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define NDEBUG 1
 #include <string.h>
 #include <app_tool.h>
@@ -28,13 +28,13 @@ GLOBAL SWORD Fi250_Matchcode_Handler(MATCH **, PSWORD, PSWORD);
 GLOBAL SWORD Fi250_Semantic_Check(VOID);
 GLOBAL SWORD Fi250_Match_Check_OK(PSWORD);
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ      Globale Daten, die aus der Toolbox importiert werden               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-  บ      Konstanten &  modul-globale Variablen  &  Array - Deklaration      บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-  บ      Funktions-Prototypen                                               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘      Globale Daten, die aus der Toolbox importiert werden               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+  โ•‘      Konstanten &  modul-globale Variablen  &  Array - Deklaration      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+  โ•‘      Funktions-Prototypen                                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC CHAR   cSollUst_m, cHabenUst_m;
 GLOBAL SWORD   wNewArtikel_g=NO;
 GLOBAL SWORD   wNewAnlage_g=NO;
@@ -46,14 +46,14 @@ GLOBAL SWORD Fi211_Application_Set(SWORD wMsk, SWORD wFld)
   {wMsk=wMsk; wFld=wFld; return(OK);}
 GLOBAL	DOUBLE dOpRest_g;
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fi250_Application_Set()						    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Fhrt applikationsabhngige Vorbelegungen fr bestimmte Felder          บ
-  บ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           บ
-  บ ฏwMskฎ und ฏwFldฎ sind die Nummern des Feldes und der Maske, die als    บ
-  บ nchstes vom Interpreter angesprungen werden wrde.                     บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fi250_Application_Set()						    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Fรผhrt applikationsabhรคngige Vorbelegungen fรผr bestimmte Felder          โ•‘
+  โ•‘ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           โ•‘
+  โ•‘ ยปwMskยซ und ยปwFldยซ sind die Nummern des Feldes und der Maske, die als    โ•‘
+  โ•‘ nรคchstes vom Interpreter angesprungen werden wรผrde.                     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi250_Application_Set(SWORD wMsk, SWORD wFld)
 {
@@ -127,11 +127,11 @@ return(OK);
 } /* end Fi250_Application_Set() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fi250_All_Fields_Handler()						    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ									    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fi250_All_Fields_Handler()						    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘									    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID Fi250_All_Fields_Handler()
 {
@@ -175,8 +175,8 @@ if(Maske(_MSK,"FI250","LKF250",_N) && wKeyCode_g==T_RETURN)
   else if(TBox("KONTO_NR") && *(pt("PO_ART")+wBlk)=='i'
     && *(pt("PO_EIN_AUS")+wBlk)!='e' )
     {strcpy(pt("INVENT_NR"), pt("AR_NUMMER")+wBlk);
-    if(!*pt("6๘MATCH_CODE"))
-      strcpy(pt("6๘MATCH_CODE"), pt("AR_BEZEICH")+wBlk);
+    if(!*pt("6ยฐMATCH_CODE"))
+      strcpy(pt("6ยฐMATCH_CODE"), pt("AR_BEZEICH")+wBlk);
     strcpy(pt("ANL_KONTO"), pt("KONTO_NR")+wBlk);
     strcpy(pt("ANL_K_BEZ"), pt("KONTO_BEZ"));
 
@@ -248,7 +248,7 @@ if(Maske(_MSK,"FI252","LKF252",_N))
       strcpy(pt("MEHR_MI_KT"), pstr);
 
       strcpy(pt("ARTNR"),	pt("AR_NUMMER")+wB);
-      strcpy(pt("1๘MATCH_CODE"),pt("AR_BEZEICH")+wB);
+      strcpy(pt("1ยฐMATCH_CODE"),pt("AR_BEZEICH")+wB);
       strcpy(strRecKey, pt("ARTNR"));
 
       Db_Insert(pTB->wRecord, apstrFileBlock_g,
@@ -266,7 +266,7 @@ if(Maske(_MSK,"FI252","LKF252",_N))
 
 /* if(wNewAnlage_g==YES)
   {strcpy(pt("INVENT_NR"),   pt("AR_NUMMER")+wBlk);
-  strcpy(pt("6๘MATCH_CODE"),pt("AR_BEZEICH")+wBlk);
+  strcpy(pt("6ยฐMATCH_CODE"),pt("AR_BEZEICH")+wBlk);
   strcpy(pt("ANL_KONTO"), pt("KONTO_NR")+wBlk);} */
 
 
@@ -293,9 +293,9 @@ if(Maske(_MSK,"FI254","LKF254",_N) &&
     {PSSTR apstrMessage[25];
     Ut_SchreibArray(apstrMessage,
       "Eingabefehler:                      ",
-      "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
-      "Das Abschreibungskonto muแ noch",
-      "ausgewhlt werden.", _N);
+      "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
+      "Das Abschreibungskonto muร noch",
+      "ausgewรคhlt werden.", _N);
 
     Dl_Info(apstrMessage, DLG_WARNUNG);
     Ut_LoeschArray(apstrMessage);}
@@ -334,18 +334,18 @@ memcpy(pt("UST_BETRAG")+wBlk, &dUstBetrag, 8);
 } /* end Fi250_All_Fields_Handler() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fi250_Field_Classification()                                            บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Field_Classification() teilt das vom Anwender gerade verlassene Feld in บ
-  บ eine der Kategorien "Schlssel zum Stammsatz", "Schlsselfeld mit Ver-  บ
-  บ weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     บ
-  บ Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  บ
-  บ auf den Primarkey in der Reference-Datei beziehen, so muแ dies in der   บ
-  บ Sub-Funktion i_Field_Classification nachgetragen werden.                บ
-  บ Auch bei scrollbaren Zeilen im Maskentyp 1 muแe bei einem Verweis auf   บ
-  บ Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fi250_Field_Classification()                                            โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Field_Classification() teilt das vom Anwender gerade verlassene Feld in โ•‘
+  โ•‘ eine der Kategorien "Schlรผssel zum Stammsatz", "Schlรผsselfeld mit Ver-  โ•‘
+  โ•‘ weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     โ•‘
+  โ•‘ Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  โ•‘
+  โ•‘ auf den Primarkey in der Reference-Datei beziehen, so muร dies in der   โ•‘
+  โ•‘ Sub-Funktion i_Field_Classification nachgetragen werden.                โ•‘
+  โ•‘ Auch bei scrollbaren Zeilen im Maskentyp 1 muรe bei einem Verweis auf   โ•‘
+  โ•‘ Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi250_Field_Classification(PSWORD pwRefKey, PSWORD pwRefFile)
 {
@@ -381,18 +381,18 @@ return(OK);
 } /* end Fi250_Field_Classification() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Reference_Key_Handler()                                               บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Reference_Key_Handler() behandelt die Eingaben, die in einem Schlssel- บ
-  บ feld auf eine Referenz-Datei gemacht wurden.                            บ
-  บ Es werden Referenz-Zugriffe (sofern erwnscht) auf die jeweiligen       บ
-  บ Dateien vorgenommen.                                                    บ
-  บ Der laut Field_Classification() oder Matchcode_Handler gewhlte Primr- บ
-  บ key in der Reference-Datei wird geladen.                                บ
-  บ In i_Reference_Key_Handler() k”nnen etwaige Feldzuordnungen nachgetra-  บ
-  บ gen werden.                                                             บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Reference_Key_Handler()                                               โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Reference_Key_Handler() behandelt die Eingaben, die in einem Schlรผssel- โ•‘
+  โ•‘ feld auf eine Referenz-Datei gemacht wurden.                            โ•‘
+  โ•‘ Es werden Referenz-Zugriffe (sofern erwรผnscht) auf die jeweiligen       โ•‘
+  โ•‘ Dateien vorgenommen.                                                    โ•‘
+  โ•‘ Der laut Field_Classification() oder Matchcode_Handler gewรคhlte Primรคr- โ•‘
+  โ•‘ key in der Reference-Datei wird geladen.                                โ•‘
+  โ•‘ In i_Reference_Key_Handler() kรถnnen etwaige Feldzuordnungen nachgetra-  โ•‘
+  โ•‘ gen werden.                                                             โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi250_Reference_Key_Handler()
 {
@@ -411,12 +411,12 @@ if(TBox("GELDKONTO"))
 if(TBox("KULI_KONTO"))
   {if(*pt("KULI_ART")=='k')
     {awChangeFlag_g[wR]=YES;
-    strcpy(pt("KULI_BEZ"), pt("3๘KURZ_BEZ"));
+    strcpy(pt("KULI_BEZ"), pt("3ยฐKURZ_BEZ"));
     strcpy(pt("KULI_KONTO"), pt("KU_KONTO"));}
 
   else if(*pt("KULI_ART")=='l')
     {awChangeFlag_g[wR]=YES;
-    strcpy(pt("KULI_BEZ"), pt("4๘KURZ_BEZ"));
+    strcpy(pt("KULI_BEZ"), pt("4ยฐKURZ_BEZ"));
     strcpy(pt("KULI_KONTO"), pt("LI_KONTO"));}}
 
 if(TBox("AR_NUMMER"))
@@ -426,7 +426,7 @@ if(TBox("AR_NUMMER"))
     if(*(pt("ARTNR"))=='\0') wNewArtikel_g=YES;
     else {wNewArtikel_g=NO; strcpy(pt("AR_NUMMER")+wBlk,pt("ARTNR"));}
 
-    strcpy(pt("AR_BEZEICH")+wBlk, pt("1๘MATCH_CODE"));
+    strcpy(pt("AR_BEZEICH")+wBlk, pt("1ยฐMATCH_CODE"));
 
     if(*(pt("PO_EIN_AUS")+wBlk)=='e')
       {strcpy(pt("KONTO_NR")+wBlk, pt("ERLOES_KT"));
@@ -448,7 +448,7 @@ if(TBox("AR_NUMMER"))
 
     if( (!wNewAnlage_g && *pt("AKTIVIERT")=='n') ||
       *(pt("PO_EIN_AUS")+wBlk)=='e')
-      {strcpy(pt("AR_BEZEICH")+wBlk, pt("6๘MATCH_CODE"));
+      {strcpy(pt("AR_BEZEICH")+wBlk, pt("6ยฐMATCH_CODE"));
       strcpy(pt("KONTO_NR")+wBlk,   pt("ANL_KONTO"));}
     else if(!wNewAnlage_g)
       {PSSTR apstrMessage[25];
@@ -456,10 +456,10 @@ if(TBox("AR_NUMMER"))
       *(pt("KONTO_NR")+wBlk)= '\0';
       Ut_SchreibArray(apstrMessage,
       "                                                                        ",
-      "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
+      "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
       "Eingabefehler: Diese Anlage ist bereits aktiviert.",
-      "Weitere Zugnge ber eine neue Anlage buchen!", _N);
-      sprintf(apstrMessage[0], "%s %s", pt("INVENT_NR"), pt("6๘MATCH_CODE"));
+      "Weitere Zugรคnge รผber eine neue Anlage buchen!", _N);
+      sprintf(apstrMessage[0], "%s %s", pt("INVENT_NR"), pt("6ยฐMATCH_CODE"));
       apstrMessage[0][52]='\0';
 
       Dl_Info(apstrMessage, DLG_INFO);
@@ -483,7 +483,7 @@ if(TBox("AR_NUMMER") && *(pt("PO_ART")+wBlk)=='s')
   strcpy(pt("UST_SATZ")  +wBlk, pt("UST_KZ"));
 
   if(*(pt("PO_ART")+wBlk)=='i' && *(pt("AR_BEZEICH")+wBlk)=='\0')
-      strcpy(pt("AR_BEZEICH")+wBlk, pt("6๘MATCH_CODE"));
+      strcpy(pt("AR_BEZEICH")+wBlk, pt("6ยฐMATCH_CODE"));
 
   if(*(pt("PO_ART")+wBlk)=='s')
     {strcpy(pt("AR_NUMMER")+wBlk,  pt("KONTONR"));
@@ -503,14 +503,14 @@ return(OK);
 } /* end Fi250_Reference_Key_Handler() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Other_Fields_Handler()                                                  บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine behandelt die Eingaben, die in die normalen Stamm-        บ
-  บ datenfelder gemacht wurden.                                             บ
-  บ Hier k”nnen applikationsabhngige Plausibilittstests und Folgereak-    บ
-  บ tionen zu den einzelnen Feldern angegeben werden.                       บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Other_Fields_Handler()                                                  โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine behandelt die Eingaben, die in die normalen Stamm-        โ•‘
+  โ•‘ datenfelder gemacht wurden.                                             โ•‘
+  โ•‘ Hier kรถnnen applikationsabhรคngige Plausibilitรคtstests und Folgereak-    โ•‘
+  โ•‘ tionen zu den einzelnen Feldern angegeben werden.                       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi250_Other_Fields_Handler()
 {
@@ -591,11 +591,11 @@ return(OK);
 } /* end Fi250_Other_Fields_Handler() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Set_Default()                                                           บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine belegt die Defaultfelder vor.                             บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Set_Default()                                                           โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine belegt die Defaultfelder vor.                             โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi250_Set_Default()
 {
@@ -607,14 +607,14 @@ return(OK);
 } /* end Fi250_Set_Default() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fi250_Matchcode_Handler()						    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    บ
-  บ Fr scrollbare Zeilen im Maskentyp 1 und fr spezielle Wnsche bei      บ
-  บ Zugriffen auf Referenz-Dateien k”nnen in i_Matchcode_Handler() Eintrge บ
-  บ erfolgen.                                                               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fi250_Matchcode_Handler()						    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    โ•‘
+  โ•‘ Fรผr scrollbare Zeilen im Maskentyp 1 und fรผr spezielle Wรผnsche bei      โ•‘
+  โ•‘ Zugriffen auf Referenz-Dateien kรถnnen in i_Matchcode_Handler() Eintrรคge โ•‘
+  โ•‘ erfolgen.                                                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi250_Matchcode_Handler(PPMATCH ppMatchCode, PSWORD pwNbFile, PSWORD pwFileNb)
 {
@@ -656,15 +656,15 @@ return(OK);
 } /* end Fi250_Matchcode_Handler() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Semantic_Check()                                                        บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine berprft vor dem Abspeichern die sematische Gltigkeit   บ
-  บ des Stammsatzes. Unter die sematischen Abprfungen fallen Plausitests   บ
-  บ zur Erfllung von Pflichtfeldern und widersprchliche Feldinhalte.      บ
-  บ Bei erfolgreicher Prfung muแ wValid auf JA (1) gesetzt werden.         บ
-  บ Fllt die Prfung durch muแ wVailid auf NEIN (0) gesetzt werden.        บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Semantic_Check()                                                        โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine รผberprรผft vor dem Abspeichern die sematische Gรผltigkeit   โ•‘
+  โ•‘ des Stammsatzes. Unter die sematischen Abprรผfungen fallen Plausitests   โ•‘
+  โ•‘ zur Erfรผllung von Pflichtfeldern und widersprรผchliche Feldinhalte.      โ•‘
+  โ•‘ Bei erfolgreicher Prรผfung muร wValid auf JA (1) gesetzt werden.         โ•‘
+  โ•‘ Fรคllt die Prรผfung durch muร wVailid auf NEIN (0) gesetzt werden.        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi250_Semantic_Check()
 {
@@ -674,7 +674,7 @@ PSSTR apstrMessage[25];
 if(ptD("SKONTO")>0.0 && *pt("GELDKONTO"))
   {Ut_SchreibArray(apstrMessage,
     "                                    ",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
     "Bei dieser Buchung entsteht ein",
     "Skontobetrag.", " ",
     "Skontobetrag kontrollieren!", _N);
@@ -687,7 +687,7 @@ if(ptD("SKONTO")>0.0 && *pt("GELDKONTO"))
 else if(ptD("SKONTO")<0.0)
   {Ut_SchreibArray(apstrMessage,
     "                                    ",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
     "Bei dieser Buchung entsteht ein",
     "Skontobetrag als Minuswert.", " ",
     "Unbedingt korrigieren!", _N);
@@ -702,7 +702,7 @@ else if( (awNewRecord_g[0] || awExistingRecord_g[0]) &&
   ptD("ZAHL_BETR")==0.0 )
   {Ut_SchreibArray(apstrMessage,
     "Buchungsfehler:                     ",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
     "Kein Zahlungsbetrag eingetragen.", _N);
 
   Dl_Info(apstrMessage, DLG_WARNUNG);
@@ -714,8 +714,8 @@ else if( (awNewRecord_g[0] || awExistingRecord_g[0]) &&
   !*pt("GELDKONTO") )
   {Ut_SchreibArray(apstrMessage,
     "Buchungsfehler:                     ",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
-    "Kein gltiges Konto eingetragen.", _N);
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
+    "Kein gรผltiges Konto eingetragen.", _N);
 
   Dl_Info(apstrMessage, DLG_WARNUNG);
   Ut_LoeschArray(apstrMessage);
@@ -806,7 +806,7 @@ else if(*pt("KULI_ART")=='k')
 
 
 {BOOL boTest=boTestModus_g; boTestModus_g=JA;
-  Wi_TestPrintf(pWkbInfo_g, "\nฏ%sฎ, ฏ%sฎ.",
+  Wi_TestPrintf(pWkbInfo_g, "\nยป%sยซ, ยป%sยซ.",
    pt("GELDKONTO"), pt("GELDK_BEZ"));
   boTestModus_g=boTest;}
 

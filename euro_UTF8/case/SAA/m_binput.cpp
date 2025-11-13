@@ -1,32 +1,32 @@
 // (C)WINware Software, P.Mayer  Letztes Update am 02-Mar-1996 / 16:05:42 - Sat
 
 /*.ta M_BInput()
-ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  M_BInput()                                                                  บ
-ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  M_BInput()                                                                  โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-berblick:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+รberblick:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 #include <eur_tool.h>
 
 Parameter:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
 Beschreibung:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
 
-Rckgabewert:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Rรผckgabewert:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
 Benutzte globale Variablen (R/W):
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 Variablen (R/W):
 .te*/
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define NDEBUG 1
 
 #include <stdio.h>
@@ -37,9 +37,9 @@ Variablen (R/W):
 #include <eur_tool.h>
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT	COLORSET aCS_g[5];
 IMPORT	SWORD wCSInd_g;
 IMPORT  MENUSTATUS MS_g;
@@ -52,9 +52,9 @@ IMPORT  BOOL boInM_Input_g;
 IMPORT	BOOL boBoxEdit_g;			     /* Box im Edit-Modus    */
 IMPORT	PWKB pWkbInfo_g;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      FUNKTIONS-PROTOTYPEN                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      FUNKTIONS-PROTOTYPEN                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC	SWORD i_ProcessEvent	   (PTEXTBOX, PEVENT);
 STATIC	VOID  i_BSchreibBox	   (PTEXTBOXLIST);
 STATIC	VOID  i_BFormatLesen	   (PTEXTBOXLIST, PSSTR []);
@@ -69,9 +69,9 @@ STATIC	BOOL  i_SelectFieldHandler (PTEXTBOX);
 GLOBAL	BOOL  i_BKorrekt	   (PTEXTBOXLIST, PSSTR[]);
 STATIC	VOID  i_BFormatSchreibenII (PTEXTBOXLIST, PSSTR);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                       MODULGLOBALE DATEN                               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                       MODULGLOBALE DATEN                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC	SWORD wAktivFlag_m = NEIN;
 
 STATIC	PMASKS	     pMask;
@@ -89,9 +89,9 @@ IMPORT PEVENT pEvent_g; 			 // definiert in E_GLOBAL.CPP:
 
 STATIC	PSSTR pstrApp_m, pstrIndexKey_m;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD M_BInput (PWKB apWkbMask[], PSSTR apstrRecord[],
 		PSSTR apstrMaskText[][25], PMASKS pFirstMask,
@@ -101,7 +101,7 @@ SWORD M_BInput (PWKB apWkbMask[], PSSTR apstrRecord[],
 		PSSTR pstrNewString, PSWORD pwKeyCode,
 		PSSTR pstrApp, PSSTR pstrIndexKey)
 {
-SREGISTER i;					 /* Zhlervariable	 */
+SREGISTER i;					 /* Zรคhlervariable	 */
 SWORD wOff, wMaxL=0;
 SWORD wMax;
 
@@ -152,7 +152,7 @@ for (pMaskHilf2=pMaskHilf1; pMaskHilf2 != pMask;
 
 if (!Wi_IsAktiv(apWkbMask[pMask->wMaskNumber]) )    /* Wenn Window nicht aktiv*/
   {
-   ppstrTmp = apstrMaskText[pMask->wMaskNumber];      /* Zeiger zurcksetzen  */
+   ppstrTmp = apstrMaskText[pMask->wMaskNumber];      /* Zeiger zurรผcksetzen  */
    Wi_Aktivieren(apWkbMask[pMask->wMaskNumber]);      /* Window aktivieren    */
    if (aboNewMask[pMask->wMaskNumber])
       {
@@ -194,7 +194,7 @@ if(pMask->pBlAktSpalte != pMask->pBlAlteSpalte ||
   }
 
 M_BlockOutput(pMask, apstrRecord);
-wMax = pField->wMaxL;                              /* Lnge des Textes */
+wMax = pField->wMaxL;                              /* Lรคnge des Textes */
 
 if (pField->bTyp != 0 &&
     wMax < pField->wFensterB)
@@ -214,7 +214,7 @@ else
   Wi_SetCursorTyp(6,7);
 Wi_Cursor(EIN);
 
-if (!pField->pRefField)                     /* Ref-Felder k”nnen sich nur auf */
+if (!pField->pRefField)                     /* Ref-Felder kรถnnen sich nur auf */
   {                                         /* fixen Maskenteil beziehen  !!  */
    wOff = pField->wOffset;
    pField->wOffset += pBlock->wBlockOffset;
@@ -301,12 +301,12 @@ if (pField->pRefField)
 
 Wi_Cursor(AUS);
 
-pField->wMaxL = wMax;         /* Lnge des Textes */
+pField->wMaxL = wMax;         /* Lรคnge des Textes */
 strcpy (pstrNewString, pField->pstrText);
 
 pField->wAttri = wAttri;
 
-i_BSchreibBox(pField);         /* Attribut wieder zurcksetzen*/
+i_BSchreibBox(pField);         /* Attribut wieder zurรผcksetzen*/
 
 pField->wFensterS = wFensterS;
 pField->wFensterZ = wFensterZ;
@@ -325,31 +325,31 @@ else
 *ppBlock  = pBlock;
 *ppField  = pField;
 
-return(wResult);                   /* Gedrckte Taste zurck */
+return(wResult);                   /* Gedrรผckte Taste zurรผck */
 } /* end M_Input () */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     บ
-  บ                    PEVENT   pEvent     Zeiger auf Event-Struktur       บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     บ
-  บ                    zeigt nach Anforderung das Hilfefenster, und        บ
-  บ                    kehrt zur aufrufenden Funktion zurck, wenn         บ
-  บ                    entweder die Schaltflche ABBRUCH oder EINGABE      บ
-  บ                    bettigt wurde.                                     บ
-  บ                                                                        บ
-  บ  Rckgabewert:     DLG_ESC     ABBRUCH-Schaltflche wurde ausgewhlt   บ
-  บ                    DLG_RETURN  EINGABE-Schaltflche wurde ausgewhlt   บ
-  บ                                                                        บ
-  บ  Benutzte globale   - pstrReturn_g (R)                                 บ
-  บ  Variablen (R/W):   - pstrEsc_g    (R)                                 บ
-  บ                     - pstrF1_g     (R)                                 บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     โ•‘
+  โ•‘                    PEVENT   pEvent     Zeiger auf Event-Struktur       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     โ•‘
+  โ•‘                    zeigt nach Anforderung das Hilfefenster, und        โ•‘
+  โ•‘                    kehrt zur aufrufenden Funktion zurรผck, wenn         โ•‘
+  โ•‘                    entweder die Schaltflรคche ABBRUCH oder EINGABE      โ•‘
+  โ•‘                    betรคtigt wurde.                                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     DLG_ESC     ABBRUCH-Schaltflรคche wurde ausgewรคhlt   โ•‘
+  โ•‘                    DLG_RETURN  EINGABE-Schaltflรคche wurde ausgewรคhlt   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale   - pstrReturn_g (R)                                 โ•‘
+  โ•‘  Variablen (R/W):   - pstrEsc_g    (R)                                 โ•‘
+  โ•‘                     - pstrF1_g     (R)                                 โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
 {
@@ -467,14 +467,14 @@ SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
 		      if(pE->wTaste >= 32 && pE->wTaste <= 255)
 			pE->wTaste=T_RETURN;
                      }
-                   else if (!pLauf && *pT->acText &&       /* Alle m”gl. Ausstiege     */
+                   else if (!pLauf && *pT->acText &&       /* Alle mรถgl. Ausstiege     */
                             (pE->wTaste == T_RETURN ||     /* aus dieser Fu. abfangen, */
                              pE->wTaste == T_ESC ||        /* um nur korrekte Eingaben */
                              (pE->wTaste == T_DEL &&       /* weiterzuleiten. Trotzdem */
                              boBlockHandling_g &&          /* sollte noch in i_BKorrekt*/
-                             strcmp(pBlock->pstrBlockName, /* geprft, ob korrekte Ein-*/
+                             strcmp(pBlock->pstrBlockName, /* geprรผft, ob korrekte Ein-*/
                                     "(null)")) ||          /* gabe, sonst soll Eingabe */
-                             pE->wTaste == T_C_T ||        /* dort gel”scht werden !!! */
+                             pE->wTaste == T_C_T ||        /* dort gelรถscht werden !!! */
                              pE->wTaste > 255))
                      {
                       pE->wTaste = T_F2;
@@ -688,15 +688,15 @@ SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
             case EVENT_L_PRESS:
                 if (pE->wZeile == ZEI+HOE-2)
                 {
-                    if (pE->wSpalte > SPA+2 &&         RETURN-Schaltflche
+                    if (pE->wSpalte > SPA+2 &&         RETURN-Schaltflรคche
                         pE->wSpalte < SPA+3+strlen(pstrReturn_g))
                         return(T_RETURN);
 
-                    if (pE->wSpalte > SPA+17 &&        ESC-Schaltflche
+                    if (pE->wSpalte > SPA+17 &&        ESC-Schaltflรคche
                         pE->wSpalte < SPA+18+strlen(pstrEsc_g))
                         return(T_ESC);
 
-                    if (pE->wSpalte > SPA+30 &&        Hilfe-Schaltflche
+                    if (pE->wSpalte > SPA+30 &&        Hilfe-Schaltflรคche
                         pE->wSpalte < SPA+31+strlen(pstrF1_g))
                      {
                         M_HilfeTools(pT);
@@ -716,23 +716,23 @@ SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
 } /* end i_ProcessEvent() */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_ChoiceFieldHandler           Datum:26.9.89        บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_ChoiceFieldHandler           Datum:26.9.89        โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 BOOL i_ChoiceFieldHandler (PTEXTBOX pT)
 {
@@ -760,23 +760,23 @@ BOOL i_ChoiceFieldHandler (PTEXTBOX pT)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_SelectFieldHandler           Datum: 3.11.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_SelectFieldHandler           Datum: 3.11.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 BOOL i_SelectFieldHandler (PTEXTBOX pT)
 {
@@ -837,23 +837,23 @@ BOOL i_SelectFieldHandler (PTEXTBOX pT)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BKopiereTextBox               Datum:12.9.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BKopiereTextBox               Datum:12.9.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_BKopiereTextBox (PTEXTBOX pT1, PTEXTBOXLIST pT2)
 {
@@ -889,23 +889,23 @@ VOID i_BKopiereTextBox (PTEXTBOX pT1, PTEXTBOXLIST pT2)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BKopiereTextBoxII             Datum:1.12.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BKopiereTextBoxII             Datum:1.12.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_BKopiereTextBoxII (PTEXTBOXLIST pT1, PTEXTBOX pT2)
 {
@@ -940,23 +940,23 @@ VOID i_BKopiereTextBoxII (PTEXTBOXLIST pT1, PTEXTBOX pT2)
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BKommaEinfuegen               Datum: 7.9.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion fgt ein Komma lt. Textbox-            บ
-  บ                    inhalt in gelesenen Wert ein.                       บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BKommaEinfuegen               Datum: 7.9.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion fรผgt ein Komma lt. Textbox-            โ•‘
+  โ•‘                    inhalt in gelesenen Wert ein.                       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_BKommaEinfuegen (PTEXTBOXLIST pT)
 {
@@ -981,23 +981,23 @@ VOID i_BKommaEinfuegen (PTEXTBOXLIST pT)
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BKommaLoeschen                Datum: 7.9.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion l”scht das Komma bei der Eingabe.      บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BKommaLoeschen                Datum: 7.9.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion lรถscht das Komma bei der Eingabe.      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_BKommaLoeschen (PTEXTBOXLIST pT)
 {
@@ -1044,25 +1044,25 @@ VOID i_BKommaLoeschen (PTEXTBOXLIST pT)
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BKorrekt                      Datum: 6.9.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion prft die Gltigkeit der Eingabe       บ
-  บ                    durch Vergleich mit der Maskendefinition.           บ
-  บ                    (nur numerische Eingaben erlaubt etc.)              บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BKorrekt                      Datum: 6.9.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion prรผft die Gรผltigkeit der Eingabe       โ•‘
+  โ•‘                    durch Vergleich mit der Maskendefinition.           โ•‘
+  โ•‘                    (nur numerische Eingaben erlaubt etc.)              โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 BOOL i_BKorrekt (PTEXTBOXLIST pT, PSSTR apstrRecord[])
 {
@@ -1136,8 +1136,8 @@ if (!pT->pChoice && !pT->pSelect)
             wIndex++;
          else if ((ptemp->bArt & IS_ASCII) && (ptemp->bArt & IS_LEXIKOGRAPH))
            {
-            if (!(isprint(*pc) || *pc == '' || *pc == '' || *pc == '' ||
-                *pc == '' || *pc == '”' || *pc == '' || *pc ==  'แ'))
+            if (!(isprint(*pc) || *pc == 'ร' || *pc == 'รค' || *pc == 'รผ' ||
+                *pc == 'ร' || *pc == 'รถ' || *pc == 'ร–' || *pc ==  'ร'))
               {
                i_Beep();
                return (JA);
@@ -1174,24 +1174,24 @@ i_BFormatLesen (pT, apstrRecord);
 return (NEIN);
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BFormatLesen                  Datum: 4.9.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion liest den Feldinhalt aus der Textbox   บ
-  บ                    und kopiert ihn in das Record.                      บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BFormatLesen                  Datum: 4.9.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion liest den Feldinhalt aus der Textbox   โ•‘
+  โ•‘                    und kopiert ihn in das Record.                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_BFormatLesen (PTEXTBOXLIST pTB, PSSTR apstrRecord[])
 {
@@ -1282,7 +1282,7 @@ switch(pT->bTyp)
       case 7:
 	 if(strlen(pT->pstrText)%2)		/* Wenn ungerade Stellenzahl */
 	   ins(' ', pT->pstrText);		/* ( == Tag einstellig )     */
-                                                /* vor Tag 1 Stelle einfgen */
+                                                /* vor Tag 1 Stelle einfรผgen */
 	 ins(' ', &pT->pstrText[2]);
          pT->pstrText[2] = '\0';
 	 ins(' ', &pT->pstrText[5]);
@@ -1342,25 +1342,25 @@ Ut_Free(pT);
 return;
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BFormatLoeschen               Datum: 8.9.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion l”scht alle Zeichen aus der Eingabe,   บ
-  บ                    die nicht signifikant sind (d.h. z.B. Format-       บ
-  บ                    eingaben bei numerischen Teilfeldern).              บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BFormatLoeschen               Datum: 8.9.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion lรถscht alle Zeichen aus der Eingabe,   โ•‘
+  โ•‘                    die nicht signifikant sind (d.h. z.B. Format-       โ•‘
+  โ•‘                    eingaben bei numerischen Teilfeldern).              โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_BFormatLoeschen(PTEXTBOXLIST pT)
 {
@@ -1396,24 +1396,24 @@ VOID i_BFormatLoeschen(PTEXTBOXLIST pT)
  return;
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BFormatiere                   Datum: 4.9.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion formatiert den Inhalt der Textbox      บ
-  บ                    nach den in der Textbox gespeicherten Anweisungen.  บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BFormatiere                   Datum: 4.9.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion formatiert den Inhalt der Textbox      โ•‘
+  โ•‘                    nach den in der Textbox gespeicherten Anweisungen.  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 BOOL i_BFormatiere (PTEXTBOXLIST pT)
 {
@@ -1608,24 +1608,24 @@ BOOL i_BFormatiere (PTEXTBOXLIST pT)
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BNSignInLeer                  Datum:11.9.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion wandelt nicht signifikante Nullen      บ
-  บ                    in Leerzeichen um.                                  บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BNSignInLeer                  Datum:11.9.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion wandelt nicht signifikante Nullen      โ•‘
+  โ•‘                    in Leerzeichen um.                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_BNSignInLeer (PTEXTBOXLIST pT, PCHAR pc, SBYTE bLaenge)
 {
@@ -1660,24 +1660,24 @@ VOID i_BNSignInLeer (PTEXTBOXLIST pT, PCHAR pc, SBYTE bLaenge)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BNichtInNull                  Datum:11.9.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion wandelt nicht eingegebene Stellen      บ
-  บ                    in Nullen um.                                       บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BNichtInNull                  Datum:11.9.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion wandelt nicht eingegebene Stellen      โ•‘
+  โ•‘                    in Nullen um.                                       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_BNichtInNull (PCHAR pc, SBYTE bLaenge)
 {
@@ -1695,24 +1695,24 @@ VOID i_BNichtInNull (PCHAR pc, SBYTE bLaenge)
  return;
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BFormatSchreiben              Datum: 4.9.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion kopiert den Inhalt aus dem Record,     บ
-  บ                    formatiert ihn und speichert ihn in der Textbox.    บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BFormatSchreiben              Datum: 4.9.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion kopiert den Inhalt aus dem Record,     โ•‘
+  โ•‘                    formatiert ihn und speichert ihn in der Textbox.    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_BFormatSchreiben(PTEXTBOXLIST pT, PSSTR apstrRecord[])
 {
@@ -1865,24 +1865,24 @@ VOID i_BFormatSchreiben(PTEXTBOXLIST pT, PSSTR apstrRecord[])
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BFormatSchreibenII            Datum: 4.9.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion kopiert den Inhalt aus dem Record,     บ
-  บ                    formatiert ihn und speichert ihn in der Textbox.    บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BFormatSchreibenII            Datum: 4.9.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion kopiert den Inhalt aus dem Record,     โ•‘
+  โ•‘                    formatiert ihn und speichert ihn in der Textbox.    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_BFormatSchreibenII(PTEXTBOXLIST pT, PSSTR pstrNewString)
 {
@@ -2006,30 +2006,30 @@ VOID i_BFormatSchreibenII(PTEXTBOXLIST pT, PSSTR pstrNewString)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_BSchreibBox                   Datum: 24.12.88     บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        SWORD   wSpalte	 Absolute Startspalte		    บ
-  บ		       PSWORD  pwFirst	 Zeiger auf erstes auszugebendes    บ
-  บ                                     Zeichen                            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion aktualisiert den Inhalt der Textbox    บ
-  บ                    auf dem Bildschirm. Sie gibt dazu ab der durch      บ
-  บ                    ฏwSpalteฎ bestimmten Position Zeichen des Textbox-  บ
-  บ                    buffers ฏ->pstrTextฎ in dem Textfenster aus.        บ
-  บ                    Die Funktion beendet die Ausgabe wenn sie den       บ
-  บ                    rechten Rand der Textbox erreicht hat.              บ
-  บ                    Die aufrufende Funktion muแ sicherstellen, daแ      บ
-  บ                    der Buffer nicht ber sein Ende hinaus ausgegeben   บ
-  บ                    wird.                                               บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_BSchreibBox                   Datum: 24.12.88     โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        SWORD   wSpalte	 Absolute Startspalte		    โ•‘
+  โ•‘		       PSWORD  pwFirst	 Zeiger auf erstes auszugebendes    โ•‘
+  โ•‘                                     Zeichen                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion aktualisiert den Inhalt der Textbox    โ•‘
+  โ•‘                    auf dem Bildschirm. Sie gibt dazu ab der durch      โ•‘
+  โ•‘                    ยปwSpalteยซ bestimmten Position Zeichen des Textbox-  โ•‘
+  โ•‘                    buffers ยป->pstrTextยซ in dem Textfenster aus.        โ•‘
+  โ•‘                    Die Funktion beendet die Ausgabe wenn sie den       โ•‘
+  โ•‘                    rechten Rand der Textbox erreicht hat.              โ•‘
+  โ•‘                    Die aufrufende Funktion muร sicherstellen, daร      โ•‘
+  โ•‘                    der Buffer nicht รผber sein Ende hinaus ausgegeben   โ•‘
+  โ•‘                    wird.                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert.               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_BSchreibBox(PTEXTBOXLIST pTB)
 {

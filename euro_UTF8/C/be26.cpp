@@ -12,7 +12,7 @@ main(void)
 const int  SIZE = 5;
       char ca[SIZE];
 
-cout << " Die Gr”áe von ca: " << sizeof ca;
+cout << " Die GrÃ¶ÃŸe von ca: " << sizeof ca;
 
 return;
 }

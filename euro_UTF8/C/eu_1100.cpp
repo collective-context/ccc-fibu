@@ -1,23 +1,23 @@
 // (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:18:36 - Wed
 
-// ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-// บ  Programme-Name: EU_1100.C       Revision: 1.3	    (C) 1989/1991     บ
-// บ  Function	    : euroSOFT - CASEbox Programme			      บ
-// บ		      EU Anlegen/ndern Datenlexikon			      บ
-// บ		      EU Vertriebssteuerung euroSOFT			      บ
-// บ		      LE Lernprogramm - Lexikon 			      บ
-// บ		      PBA Prfbau - Preisbasis				      บ
-// บ		      LKS Obstsorten - Obstinfo 			      บ
-// บ		      AKV Anlegen Kunden				      บ
-// บ									      บ
-// บ									      บ
-// บ  Rev.-Date     : 01.05.1991, Graz		 Update: 05.08.1991, Graz     บ
-// บ  Author	    : Peter Mayer		 Author: Peter Mayer	      บ
-// บ  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz     บ
-// ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-// ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-// บ			     Deklarations-Dateien			      บ
-// ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+// โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+// โ•‘  Programme-Name: EU_1100.C       Revision: 1.3	    (C) 1989/1991     โ•‘
+// โ•‘  Function	    : euroSOFT - CASEbox Programme			      โ•‘
+// โ•‘		      EU Anlegen/รndern Datenlexikon			      โ•‘
+// โ•‘		      EU Vertriebssteuerung euroSOFT			      โ•‘
+// โ•‘		      LE Lernprogramm - Lexikon 			      โ•‘
+// โ•‘		      PBA Prรผfbau - Preisbasis				      โ•‘
+// โ•‘		      LKS Obstsorten - Obstinfo 			      โ•‘
+// โ•‘		      AKV Anlegen Kunden				      โ•‘
+// โ•‘									      โ•‘
+// โ•‘									      โ•‘
+// โ•‘  Rev.-Date     : 01.05.1991, Graz		 Update: 05.08.1991, Graz     โ•‘
+// โ•‘  Author	    : Peter Mayer		 Author: Peter Mayer	      โ•‘
+// โ•‘  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz     โ•‘
+// โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+// โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+// โ•‘			     Deklarations-Dateien			      โ•‘
+// โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 #define NDEBUG 1
 #include <string.h>
 #include <ctype.h>              /* isdigit(),                                */
@@ -25,21 +25,21 @@
 #include "..\c\ba_ovl.h"
 #include "..\c\ba_proto.h"
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ      Konstanten &  modul-globale Variablen  &  Array - Deklaration      บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-  บ      Funktions-Prototypen                                               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘      Konstanten &  modul-globale Variablen  &  Array - Deklaration      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+  โ•‘      Funktions-Prototypen                                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL SWORD	awTstMsk_m[]={10,110,120,125,130,140,150,160,170,171,-1};
 MGLOBAL SWORD	awTstFrm_m[]={ 1,  0,  0,  0,  0,  0,  0,  0,  0,  0,-1};
 GLOBAL	PSWORD	pwTstFrm_g=awTstFrm_m;
 GLOBAL	PSWORD	pwTstMsk_g=awTstMsk_m;
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_main_init()                                                           บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Initialisierungen                                                       บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_main_init()                                                           โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Initialisierungen                                                       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_main_init(PSWORD pwSteuerKz, PSWORD pwDruckKz, PSSTR pstrApp,
   PSSTR pstrAppDru, SWORD awMasks[], PSWORD pwForm, PSSTR pstrSpecialKeyCodes)
@@ -48,34 +48,34 @@ PSSTR pstr;
 *pwForm=*pwForm;
 
 sprintf(pstrSpecialKeyCodes, "%c %c %c %c %c"	    /* erlaubte Funktions-  */
-  "%c %c %c %c %c %c %c %c %c %c %c %c %c %c %c",   /* tasten fr Special_  */
+  "%c %c %c %c %c %c %c %c %c %c %c %c %c %c %c",   /* tasten fรผr Special_  */
   T_C_D, T_ESC, T_PGUP, T_PGDN, T_S_F2, T_F2, T_F3,	    /* Key_Code()	    */
   T_F4, T_S_F4, T_C_F4, T_A_F4, T_F5, T_S_F5,
   T_F6, T_S_F6, T_F8, T_S_F8, T_F9, T_S_RETURN, _N);
 
 switch(*pwSteuerKz)
-  {                                                  /* applikationsabhngig:*/
+  {                                                  /* applikationsabhรคngig:*/
   case 10:                                           /* SY-Stamm Anlegen     */
     iInit(pstrApp, "EU", pstrAppDru, NULL, awMasks,    /* Daten-Lexikon 1/2    */
       "900", "901",_N);                              /* Daten-Lexikon 2/2    */
 
-    M_InitMemo(&pstrMemoFile_g, "SYDATAM",           /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "SYDATAM",           /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Notiz zur "      /* satz > allgemein */
                         "Dateibeschreibung");        /* satz > allgemein */
     pstrAppTitel_g=
       strdup("Spezielle Notiz zur Dateibeschreibung"); /* Spezielle applikat.*/
-    break;                                           /* abhng. Notiz/Record */
+    break;                                           /* abhรคng. Notiz/Record */
 
   case 13:                                           /* SY-Stamm Anlegen     */
     iInit(pstrApp, "EU", pstrAppDru, NULL, awMasks,    /* Daten-Lexikon 1/2    */
       "903", "904",_N);                              /* Daten-Lexikon 2/2    */
 
-    M_InitMemo(&pstrMemoFile_g, "SYDATAM",           /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "SYDATAM",           /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Notiz zur "      /* satz > allgemein */
                         "Dateibeschreibung");        /* satz > allgemein */
     pstrAppTitel_g=
       strdup("Spezielle Notiz zur Dateibeschreibung"); /* Spezielle applikat.*/
-    break;                                           /* abhng. Notiz/Record */
+    break;                                           /* abhรคng. Notiz/Record */
 
   case 30:                                           /* ST-Stamm Anlegen     */
     /* pstr=(cKz_g=='L') ? stp("LKS") : stp("AKV");  /*                      */
@@ -84,7 +84,7 @@ switch(*pwSteuerKz)
       "91", _N);
     break;
 
-  case 100:                                          /* ST-Stamm fr PB      */
+  case 100:                                          /* ST-Stamm fรผr PB      */
     iInit(pstrApp, "PB", pstrAppDru, NULL, awMasks,    /* Preis-Basis 1/1      */
       "93", _N);
     break;                                           /*                      */
@@ -93,7 +93,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "EU", pstrAppDru, NULL, awMasks,    /* Kunden-Stamm 1/2     */
       "110", "111", "112", "113",_N);
 
-    M_InitMemo(&pstrMemoFile_g, "ST1100M",           /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "ST1100M",           /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Kunden-Notiz");  /* satz > allgemein     */
     pstrAppTitel_g=
       strdup("Spezielle Kunden-Notiz");              /* Spezielle applikat.- */
@@ -103,10 +103,10 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "PB", pstrAppDru, NULL, awMasks,    /* Artikel-Stamm 1/3    */
       "930", "931", "933", _N);
 
-    M_InitMemo(&pstrMemoFile_g, "ST1300M",           /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "ST1300M",           /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Notiz zum Artikel"); /* satz > allgemein */
     pstrAppTitel_g=
-      strdup("Artikel-Notiz fr die Fakturierung");  /* Spezielle applikat.- */
+      strdup("Artikel-Notiz fรผr die Fakturierung");  /* Spezielle applikat.- */
     break;                                           /* abh. Notiz/Record    */
 
   case 230:					     /* ST-Stamm Anlegen     */
@@ -126,7 +126,7 @@ switch(*pwSteuerKz)
       "250","251", _N);
       boStoreSelect_g=NEIN;			       /* Speichern n. fragen  */
 
-    M_InitMemo(&pstrMemoFile_g, "ST1700M",	     /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "ST1700M",	     /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Mitarbeiter-Notiz"); /* satz > allgemein */
     pstrAppTitel_g=
       strdup("Spezielle Mitarbeiter-Notiz ");	     /* Spezielle applikat.  */
@@ -146,7 +146,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "LO", pstrAppDru, NULL, awMasks,    /* Kunden-Stamm 1/2     */
       "130", "131", _N);
 
-    M_InitMemo(&pstrMemoFile_g, "LO1300M",           /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "LO1300M",           /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Notiz");         /* satz > allgemein     */
     pstrAppTitel_g=
       strdup("Spezielle Notiz");                     /* Spezielle applikat.- */
@@ -156,7 +156,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "LO", pstrAppDru, NULL, awMasks,
       "150", _N);
 
-    M_InitMemo(&pstrMemoFile_g, "LO1500M",           /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "LO1500M",           /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Notiz");         /* satz > allgemein     */
     pstrAppTitel_g=
       strdup("Spezielle Notiz");                     /* Spezielle applikat.- */
@@ -166,7 +166,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "AKV", pstrAppDru, NULL, awMasks,   /* Kunden-Stamm 1/2     */
       "510", _N);
 
-    M_InitMemo(&pstrMemoFile_g, "AKV1100M",          /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "AKV1100M",          /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Kunden-Notiz");  /* satz > allgemein     */
     pstrAppTitel_g=
       strdup("Spezielle Kunden-Notiz");              /* Spezielle applikat.- */
@@ -176,7 +176,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "AKV", pstrAppDru, NULL, awMasks,   /* Kunden-Stamm 1/2     */
       "515",_N);
 
-    M_InitMemo(&pstrMemoFile_g, "AKV1100M",          /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "AKV1100M",          /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Kunden-Notiz");  /* satz > allgemein     */
     pstrAppTitel_g=
       strdup("Spezielle Kunden-Notiz");              /* Spezielle applikat.- */
@@ -186,7 +186,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "ST", pstrAppDru, "ST", awMasks,  /* Personal-Liste nach  */
       "4201", "36", _N);                             /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=4201; break;
       case '1': *pwForm=4202; break;}
     break;
@@ -195,7 +195,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "ST", pstrAppDru, "ST", awMasks,  /* Personal-Liste nach  */
       "4203", "36", _N);
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=4203; break;}
     break;
 
@@ -203,7 +203,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "TE", pstrAppDru, "TE", awMasks,  /* Personal-Liste nach  */
       "6510", "36", _N);                             /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=6500; break;}
     break;
 
@@ -211,7 +211,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "TE", pstrAppDru, "TE", awMasks,  /* Personal-Liste nach  */
       "6520", "36", _N);                             /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=6500; break;}
     break;
 
@@ -219,7 +219,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "TE", pstrAppDru, "TE", awMasks,  /* Personal-Liste nach  */
       "6530", "36", _N);                             /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=6500; break;}
     break;
 
@@ -227,7 +227,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "TE", pstrAppDru, "TE", awMasks,  /* Personal-Liste nach  */
       "6610", "36", _N);                             /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=6600; break;}
     break;
 
@@ -235,7 +235,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "TE", pstrAppDru, "TE", awMasks,  /* Personal-Liste nach  */
       "6620", "36", _N);                             /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=6600; break;}
     break;
 
@@ -243,7 +243,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "TE", pstrAppDru, "TE", awMasks,  /* Personal-Liste nach  */
       "6630", "36", _N);                             /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=6600; break;}
     break;
 
@@ -251,39 +251,39 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "LKS", pstrAppDru, NULL, awMasks,
       "730", _N);
 
-    M_InitMemo(&pstrMemoFile_g, "LK1300M",           /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "LK1300M",           /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Notiz zur "      /* satz > allgemein     */
                         "Obstsorte");                /* satz > allgemein     */
     pstrAppTitel_g=
       strdup("Spezielle Notiz zur Obstsorte");       /* Spezielle applikat.  */
-    break;                                           /* abhng. Notiz/Record */
+    break;                                           /* abhรคng. Notiz/Record */
 
   case 750:                                          /* LK-WORK Obstinfo     */
     iInit(pstrApp, "LKS", pstrAppDru, NULL, awMasks,   /* Textbausteine 1/1    */
       "750", _N);
 
-    M_InitMemo(&pstrMemoFile_g, "LK1300M",           /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "LK1300M",           /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Notiz zur "      /* satz > allgemein     */
                         "Obstinfo");                 /* satz > allgemein     */
     pstrAppTitel_g=
       strdup("Spezielle Notiz zur Obstinfo");        /* Spezielle applikat.  */
-    break;                                           /* abhng. Notiz/Record */
+    break;                                           /* abhรคng. Notiz/Record */
 
   case 810:                                          /* LE-Stamm Anlegen     */
-    iInit(pstrApp, "LE", pstrAppDru, NULL, awMasks,    /* Anlegen/ndern       */
+    iInit(pstrApp, "LE", pstrAppDru, NULL, awMasks,    /* Anlegen/รndern       */
       "110", _N);                                    /* Vokabeln             */
 
-    M_InitMemo(&pstrMemoFile_g, "LE1100M",           /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "LE1100M",           /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Notiz");         /* satz > allgemein     */
     pstrAppTitel_g=
       strdup("Spezielle Notiz");                     /* Spezielle applikat.  */
-    break;                                           /* abhng. Notiz/Record */
+    break;                                           /* abhรคng. Notiz/Record */
 
   case 820:                                          /* FI-Stamm Anlegen     */
     iInit(pstrApp, "TP", pstrAppDru, NULL, awMasks,
       "110", "111", "112", "113", _N);
 
-    M_InitMemo(&pstrMemoFile_g, "TP1100M",           /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "TP1100M",           /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Platz-Notiz");   /* satz > allgemein     */
     pstrAppTitel_g=
       strdup("Spezielle Platz-Notiz");               /* Spezielle applikat.- */
@@ -293,23 +293,23 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "EU", pstrAppDru, NULL, awMasks,
       "995", _N);
 
-    M_InitMemo(&pstrMemoFile_g, "EU9950M",           /* Fr Notizen je Daten-*/
+    M_InitMemo(&pstrMemoFile_g, "EU9950M",           /* Fรผr Notizen je Daten-*/
       &pstrMemoTitel_g, "Allgemeine Notiz");         /* satz > allgemein     */
     pstrAppTitel_g=
       strdup("Spezielle Notiz");                     /* Spezielle applikat.  */
-    break;                                           /* abhng. Notiz/Record */
+    break;                                           /* abhรคng. Notiz/Record */
 
   case 997:                                          /* ST-Stamm Anlegen     */
     iInit(pstrApp, "ST", pstrAppDru, "ST", awMasks,
       "4201", "36",_N);
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case 0: *pwForm=4201; break;
       case 1: *pwForm=4202; break;}
     break;
 
-  case 998: break;                                   /* Resverviert fr Para-*/
-  default : ba_Fehler(); *pwSteuerKz = -1; break;    /* meterbergabe aus DOS*/
+  case 998: break;                                   /* Resverviert fรผr Para-*/
+  default : ba_Fehler(); *pwSteuerKz = -1; break;    /* meterรผbergabe aus DOS*/
   }
 
 wFormular_g=*pwForm;
@@ -317,11 +317,11 @@ return;
 } /* end i_main_init() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_main_while()                                                          บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Initialisierungen                                                       บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_main_while()                                                          โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Initialisierungen                                                       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_main_while(PSWORD pwSteuerKz, PSWORD pwDruckKz)
 {
@@ -336,19 +336,19 @@ return;
 } /* end i_main_while() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Application_Init()                                                    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Speicher reservieren oder Konstanten einlesen.                          บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Application_Init()                                                    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Speicher reservieren oder Konstanten einlesen.                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_Application_Init()
 {
 SWORD wRet=JA;
 
 if(Maske(0,"ST110","ST120","FA110","FA120",_N))      /* bei Kunden-Stamm 1/1 */
-  if(strMoDevice_g[0] != '0')                        /* Initialisiern fr    */
-    Wi_RS232Init(&pWkbTel_g);                        /* Whlautomatik        */
+  if(strMoDevice_g[0] != '0')                        /* Initialisiern fรผr    */
+    Wi_RS232Init(&pWkbTel_g);                        /* Wรคhlautomatik        */
 
 if(Maske(0,"AU230",_N))
   alRecNo_g[0]=ReadSatzNr(apstrFileBlock_g, 0, 0);
@@ -358,11 +358,11 @@ return(wRet);
 } /* end i_Application_Init() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Application_Close()                                                   บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Reservierten Speicher wieder freigeben.                                 บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Application_Close()                                                   โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Reservierten Speicher wieder freigeben.                                 โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_Application_Close()
 {
@@ -378,11 +378,11 @@ return(OK);
 } /* end i_Application_Close() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Read_Const()                                                            บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Read_Const()                                                            โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Read_Const(VOID)
 {

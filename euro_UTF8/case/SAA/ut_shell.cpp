@@ -1,92 +1,92 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Ut_DosShell()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Ut_DosShell()     ... kehrt vorbergehend ins Betriebssystem zurck.        º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Ut_DosShell()     ... kehrt vorÃ¼bergehend ins Betriebssystem zurÃ¼ck.        â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_utl.h>
 SWORD Ut_DosShell(wRand, pstrPrgName);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-SWORD  wRand	      0:     Bildschirm wird schlagartig gel”scht.
-                     sonst: Bildschirm wird mit ¯Ut_ClearRandom()® gel”scht
-                            und erh„lt das Attribut wRand.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+SWORD  wRand	      0:     Bildschirm wird schlagartig gelÃ¶scht.
+                     sonst: Bildschirm wird mit Â»Ut_ClearRandom()Â« gelÃ¶scht
+                            und erhÃ¤lt das Attribut wRand.
 
 PSSTR  pstrPrgName    Zeiger auf eine Zeichenkette, die den Namen des aktuellen
-                     Programms enth„lt, oder NULL.
+                     Programms enthÃ¤lt, oder NULL.
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Diese Funktion startet aus einem laufenden Programm heraus eine weitere Kopie
 des DOS-Befehlsinterpreters COMMAND.COM. Der komplette Bildschirm wird von der
-Funktion gesichert und einschlieálich der Position und Gr”áe des Cursors wieder
+Funktion gesichert und einschlieÃŸlich der Position und GrÃ¶ÃŸe des Cursors wieder
 hergestellt, wenn die Shell verlassen wird.
 
-Vor dem Start der Shell erscheint mit einem Funktionsaufruf von ¯Dl_Shell()®
+Vor dem Start der Shell erscheint mit einem Funktionsaufruf von Â»Dl_Shell()Â«
 eine Dialogbox, in der der Anwender den Hinweis bekommt, wie er die Shell wieder
-verlassen kann. Mit den Schaltfl„chen "OK" und "Abbruch" startet der Anwender
-die Shell oder kehrt in das Programm zurck.
+verlassen kann. Mit den SchaltflÃ¤chen "OK" und "Abbruch" startet der Anwender
+die Shell oder kehrt in das Programm zurÃ¼ck.
 
-Wenn die Shell nicht aktiviert werden konnte, wird der Anwender darber in einer
+Wenn die Shell nicht aktiviert werden konnte, wird der Anwender darÃ¼ber in einer
 Message-Box informiert. Weitere Informationen finden Sie bei der Beschreibung zu
-¯Dl_Shell()®.
+Â»Dl_Shell()Â«.
 
-Der Parameter wRand entscheidet ber die Art, wie der Bildschirm beim Start der
-neuen Shell gel”scht wird. Eine ¯0® veranlaát ein schlagartiges L”schen des
-Bildschirmes. Er wird dabei mit Leerzeichen gefllt, die alle das normale At-
+Der Parameter wRand entscheidet Ã¼ber die Art, wie der Bildschirm beim Start der
+neuen Shell gelÃ¶scht wird. Eine Â»0Â« veranlaÃŸt ein schlagartiges LÃ¶schen des
+Bildschirmes. Er wird dabei mit Leerzeichen gefÃ¼llt, die alle das normale At-
 tribut besitzten.
 
-Wird fr den Parameter wRand ein von Null verschiedener Wert bergeben, wird der
-Bildschirm mit der Funktion Ut_ClearRandom() gel”scht. In diesem Fall wird wRand
-als neues Attribut fr den gel”schten Bildschirm interpretiert.
+Wird fÃ¼r den Parameter wRand ein von Null verschiedener Wert Ã¼bergeben, wird der
+Bildschirm mit der Funktion Ut_ClearRandom() gelÃ¶scht. In diesem Fall wird wRand
+als neues Attribut fÃ¼r den gelÃ¶schten Bildschirm interpretiert.
 
-Der zweite Parameter erm”glicht es, den aktuellen Programmnamen in die Dialogbox
-aufzunehmen. Ein NULL-Zeiger unterdrckt diese Option, und es wird ein neutraler
+Der zweite Parameter ermÃ¶glicht es, den aktuellen Programmnamen in die Dialogbox
+aufzunehmen. Ein NULL-Zeiger unterdrÃ¼ckt diese Option, und es wird ein neutraler
 Text ausgegeben.
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD  OK/ERROR liefert die Information, ob Shell gestartet werden konnte oder
                nicht.
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 - wMausda_g (R)          - fpwCopyBuffer_g (W/R)
 
 .de \euro\demo\ut_shell.c
 .te*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <stdio.h>
 #include <process.h>
 #include <eur_tool.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                    GLOBALE VARIABLEN, REFERENZEN                       º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                    GLOBALE VARIABLEN, REFERENZEN                       â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT SWORD   wMausda_g;			     /* Maus da ?	     */
 IMPORT FPWORD fpwCopyBuffer_g;                      /* allg. 4K-Buffer      */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC SWORD wZeile, wSpalte, wStop, wStart;
 STATIC PSSTR apstrShellWarnung[] =
     {"Der DOS-Befehlsinterpreter konnte",
      "nicht geladen werden.",
      NULL};
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Ut_DosShell(SWORD wRand, PSSTR pstrPrgName)
 {
@@ -113,7 +113,7 @@ SWORD Ut_DosShell(SWORD wRand, PSSTR pstrPrgName)
 
     Vi_Sw2b(0,0,80,25,fpwCopyBuffer_g);             /* Bildschirm sichern   */
     if (wRand == 0)
-        Vi_Spza(32,7);                              /* Bildschirm l”schen   */
+        Vi_Spza(32,7);                              /* Bildschirm lÃ¶schen   */
     else
         Ut_ClearRandom(wRand);
 
@@ -127,7 +127,7 @@ SWORD Ut_DosShell(SWORD wRand, PSSTR pstrPrgName)
 
 
     if (system("command") == -1)                    /* COMMAND.COM starten  */
-        wReturn = ERROR;                            /* und Rckgabewert     */
+        wReturn = ERROR;                            /* und RÃ¼ckgabewert     */
     else                                            /* festlegen            */
         wReturn = OK;
 

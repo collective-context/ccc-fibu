@@ -48,7 +48,7 @@ uMix.fFliessZahl = 356.8876;
   printf ("uMix.fFliessZahl = %f\n", uMix.fFliessZahl);
 
 for(i=0; i<10; i++)
-printf ("Bin„r: %s = Dezimal: %d.", int_to_bin(i), i);
+printf ("BinÃ¤r: %s = Dezimal: %d.", int_to_bin(i), i);
 
 MemSize();
 Datum();
@@ -76,7 +76,7 @@ VOID MemSize(VOID)
 union REGS r;
 
 int86(MEMSIZE, &r, &r);
-printf ("\nDer Arbeitsspeicher = %d KByte groá.\n", r.x.ax);
+printf ("\nDer Arbeitsspeicher = %d KByte groÃŸ.\n", r.x.ax);
 
 }
 

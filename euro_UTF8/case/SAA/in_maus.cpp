@@ -1,34 +1,34 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Mn_Mauswahl		      Datum: 19.01.88	   บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PEVENT   pEvent   Zeiger auf Ereignis               บ
-  บ                    PMKB     *ppMkb   Zeiger auf Zeiger des MKB         บ
-  บ                                                                        บ
-  บ  Beschreibung:     echt lekker                                         บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD  Fehlerinformation 			    บ
-  บ                          0 == kein Fehler                              บ
-  บ                          sonst Fehler                                  บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - MS_g      (R)                                     บ
-  บ                    - aMenus_g  (R)                                     บ
-  บ                    - wAktMnu_g (R)                                     บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Mn_Mauswahl		      Datum: 19.01.88	   โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PEVENT   pEvent   Zeiger auf Ereignis               โ•‘
+  โ•‘                    PMKB     *ppMkb   Zeiger auf Zeiger des MKB         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     echt lekker                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD  Fehlerinformation 			    โ•‘
+  โ•‘                          0 == kein Fehler                              โ•‘
+  โ•‘                          sonst Fehler                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - MS_g      (R)                                     โ•‘
+  โ•‘                    - aMenus_g  (R)                                     โ•‘
+  โ•‘                    - wAktMnu_g (R)                                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <eur_tool.h>
 #include <string.h>
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-IMPORT MENUSTATUS MS_g;               /* Zustand des Menmanagers           */
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+IMPORT MENUSTATUS MS_g;               /* Zustand des Menรผmanagers           */
 IMPORT COLORSET   aCS_g[5];	       /* Array der Farbpaletten	     */
 IMPORT SWORD	   wMausda_g;	       /* Maus im System aktiviert	     */
 IMPORT MENU	  aMenus_g[MAXMENUES]; // Array der MENU-Strukturen
@@ -36,9 +36,9 @@ IMPORT BOOL       boBeepen_g;
 IMPORT SWORD	   wAktMnu_g;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        KONSTANTEN UND MAKROS                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        KONSTANTEN UND MAKROS                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 #define AUF_AKT_TITEL(s,z,p) ( (z) == 0 && \
                                (p)->wTitelSpalte <= (s) && \
@@ -71,21 +71,21 @@ IMPORT SWORD	   wAktMnu_g;
 #define AUF_RAHMEN(s,z,p) (AUF_RAHMEN_WAAG(s,z,p) || AUF_RAHMEN_SENK(s,z,p))
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ    zu Makro AUF_TRENNER():                                             บ
-  บ                                                                        บ
-  บ    ฏzฎ muแ innerhalb des Fensters liegen !!!                           บ
-  บ    Ansonsten wird nicht richtig auf den MKB zugegriffen.               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘    zu Makro AUF_TRENNER():                                             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘    ยปzยซ muร innerhalb des Fensters liegen !!!                           โ•‘
+  โ•‘    Ansonsten wird nicht richtig auf den MKB zugegriffen.               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define AUF_TRENNER(s,z,p) ( ( (s) >  (p)->wSpalte ) && \
                              ( (s) <  (p)->wSpalte + (p)->wBreite -1 ) && \
                              ( strcmp( (p)->item[z-FENSTERZEILE].pstrText, \
                                          "TRENNER") == 0 ) )
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_Mn_Mauswahl (PEVENT pEvent, PMKB *ppMkb )
 {
@@ -110,7 +110,7 @@ SWORD i_Mn_Mauswahl (PEVENT pEvent, PMKB *ppMkb )
     else if ( MS_g.wTitel &&                        /* Titel markiert       */
              !MS_g.wFenster &&                      /* kein Fenster sichtb. */
              !MS_g.wBalken )                        /* keine Option markier.*/
-	i_Mn_Titel(ppMkb,0,AUS);		    /* Titel l”schen	    */
+	i_Mn_Titel(ppMkb,0,AUS);		    /* Titel lรถschen	    */
 
 
     else if ( !MS_g.wTitel &&                       /* kein Titel markiert  */
@@ -125,10 +125,10 @@ SWORD i_Mn_Mauswahl (PEVENT pEvent, PMKB *ppMkb )
                 if ( !AUF_TRENNER(wS, wZ,*ppMkb) )
 		    i_Mn_Balken(*ppMkb,wZ,EIN_ABS); /* Balken bewegen	    */
                 else                                /* auf Fensterrahmen    */
-		    i_Mn_Balken(*ppMkb,0,AUS);	    /* Balken l”schen	    */
+		    i_Mn_Balken(*ppMkb,0,AUS);	    /* Balken lรถschen	    */
             }
             else
-		i_Mn_Balken(*ppMkb,0,AUS);	    /* Balken l”schen	    */
+		i_Mn_Balken(*ppMkb,0,AUS);	    /* Balken lรถschen	    */
 
         }
         else                                        /* kein Balken          */
@@ -171,21 +171,21 @@ SWORD i_Mn_Mauswahl (PEVENT pEvent, PMKB *ppMkb )
         {                                           /* Option               */
             if ( !AUF_TRENNER(wS,wZ,*ppMkb) )       /* nicht auf Trenner    */
             {
-		i_Mn_Titel(ppMkb,0,AUS);	    /* Titel l”schen	    */
+		i_Mn_Titel(ppMkb,0,AUS);	    /* Titel lรถschen	    */
 		i_Mn_Balken(*ppMkb,wZ,EIN_ABS);     /* Balken setzen	    */
             }
         }
-        else                                        /* auแerhalb            */
+        else                                        /* auรerhalb            */
         {
-	    i_Mn_Titel(ppMkb,0,AUS);		    /* Titel l”schen	    */
-	    i_Mn_Fenster(ppMkb,0,AUS);		    /* Fenster l”schen	    */
+	    i_Mn_Titel(ppMkb,0,AUS);		    /* Titel lรถschen	    */
+	    i_Mn_Fenster(ppMkb,0,AUS);		    /* Fenster lรถschen	    */
         }
     }
   } while ( wButton == MSM_L_DOWN);                 /* solange linke Taste  */
-                                                    /* gedrckt bleibt.     */
+                                                    /* gedrรผckt bleibt.     */
 
 
-  Ut_Event(pEvent);				    /* Event-Strukt. l”sch. */
+  Ut_Event(pEvent);				    /* Event-Strukt. lรถsch. */
   pEvent->wSpalte = wS;                             /* Zustand der Maus in  */
   pEvent->wZeile  = wZ;                             /* die Eventstruktur    */
   pEvent->wButton = wButton;                        /* eintragen            */
@@ -202,15 +202,15 @@ SWORD i_Mn_Mauswahl (PEVENT pEvent, PMKB *ppMkb )
   {                                                 /* Fenster sichtbar     */
       if ( MS_g.wBalken )                           /* Balken ist sichtbar  */
       {
-          if ((*ppMkb)->pHotkeys[(*ppMkb)->wBalIndex].wAktiv) /* glt. Opt. */
+          if ((*ppMkb)->pHotkeys[(*ppMkb)->wBalIndex].wAktiv) /* gรผlt. Opt. */
           {
-	      i_Mn_Fenster(ppMkb,0,AUS);	    /* Fenster l”schen	    */
+	      i_Mn_Fenster(ppMkb,0,AUS);	    /* Fenster lรถschen	    */
               MS_g.wAktiv = 0;                      /* Manager deaktivieren */
               pEvent->wOption =
                     (*ppMkb)->pHotkeys[(*ppMkb)->wBalIndex].wOpt;
               pEvent->wArt = EVENT_WAHL;            /* Eventart korrigieren */
           }
-          else                                      /* auf ungltiger Opt.  */
+          else                                      /* auf ungรผltiger Opt.  */
           {
               if (boBeepen_g)
                   i_Beep();                         /* evtl. Warnton        */
@@ -228,7 +228,7 @@ SWORD i_Mn_Mauswahl (PEVENT pEvent, PMKB *ppMkb )
           }
           else
           {
-	      i_Mn_Fenster(ppMkb,0,AUS);	    /* Fenster l”schen	    */
+	      i_Mn_Fenster(ppMkb,0,AUS);	    /* Fenster lรถschen	    */
               MS_g.wAktiv = 0;                      /* Manager deaktivieren */
               pEvent->wArt = EVENT_NULL;
           }
@@ -240,7 +240,7 @@ SWORD i_Mn_Mauswahl (PEVENT pEvent, PMKB *ppMkb )
             MS_g.wFenster &&                        /* Fenster ist sichtbar */
            !MS_g.wBalken )                          /* keine Option markier.*/
   {
-      i_Mn_Titel(ppMkb,0,AUS);			    /* Titel l”schen	    */
+      i_Mn_Titel(ppMkb,0,AUS);			    /* Titel lรถschen	    */
       i_Mn_Balken(*ppMkb,FENSTERZEILE+1,
                   EIN_ABS);                         /* erste Option markier.*/
       pEvent->wArt = EVENT_NULL;

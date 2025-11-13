@@ -11,26 +11,26 @@
 /* Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                            */
 /*------------------------------------------------------------------------------*/
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ   Dieses Programm demonstriert die Wirkungsweise der Funktionen        บ
-  บ   Wi_ScrollDown() und Wi_ScrollUp().				   บ
-  บ   In einem Fenster wird beliebiger Text ausgegeben. Nach dem das       บ
-  บ   Fenster komplett beschrieben ist, k”nnen Sie mit den Tasten          บ
-  บ   [Pfeil-Unten] und [Pfeil-Oben] den Fensterinhalt um jeweils eine     บ
-  บ   Zeile scrollen. Mit der Leertaste wird der Fensterinhalt wieder      บ
-  บ   aufgebaut.                                                           บ
-  บ                                                                        บ
-  บ   Die Eingabe von [ESC] beendet das Programm.                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-#include <stdio.h>                                  /* fr printf(), NULL   */
-#include <stdlib.h>                                 /* fr exit()           */
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘   Dieses Programm demonstriert die Wirkungsweise der Funktionen        โ•‘
+  โ•‘   Wi_ScrollDown() und Wi_ScrollUp().				   โ•‘
+  โ•‘   In einem Fenster wird beliebiger Text ausgegeben. Nach dem das       โ•‘
+  โ•‘   Fenster komplett beschrieben ist, kรถnnen Sie mit den Tasten          โ•‘
+  โ•‘   [Pfeil-Unten] und [Pfeil-Oben] den Fensterinhalt um jeweils eine     โ•‘
+  โ•‘   Zeile scrollen. Mit der Leertaste wird der Fensterinhalt wieder      โ•‘
+  โ•‘   aufgebaut.                                                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘   Die Eingabe von [ESC] beendet das Programm.                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+#include <stdio.h>                                  /* fรผr printf(), NULL   */
+#include <stdlib.h>                                 /* fรผr exit()           */
 #include <string.h>
-#include <eur_tool.h>				    /* fr die Toolbox	    */
+#include <eur_tool.h>				    /* fรผr die Toolbox	    */
 
 PWKB pWkbD;					    /* glob. Zeiger auf WKB */
 
-GLOBAL PWKB   pWkbInfo_g=NULL;		      /* Window fr Testmodus == ein*/
-GLOBAL PSKB   pSkb_g=NULL;                    /*๙System-Kontroll-Block */
+GLOBAL PWKB   pWkbInfo_g=NULL;		      /* Window fรผr Testmodus == ein*/
+GLOBAL PSKB   pSkb_g=NULL;                    /*ยจSystem-Kontroll-Block */
 IMPORT BOOL   boTestModus_g;
 IMPORT BOOL   boKundenTest_g;
 
@@ -40,12 +40,12 @@ IMPORT WORD wCSInd_g;
 IMPORT PSTR	pstrDataBuffer_g;
 IMPORT PSTR	pstrTemp_g;
 IMPORT FPWORD	fpwCopyBuffer_g;		     /* Zeiger auf 4k-Buffer */
-IMPORT FPWORD	fpwBuffer_g;			     /* Puffer fr alten     */
+IMPORT FPWORD	fpwBuffer_g;			     /* Puffer fรผr alten     */
 						     /* Bildschirnm	     */
 IMPORT BOOL boInitVars_g;			     /* Erst-Initialisierung */
 
 
-VOID Ende(VOID);                                    /* Prototypen fr alle  */
+VOID Ende(VOID);                                    /* Prototypen fรผr alle  */
 VOID Paint(VOID);
 VOID ScrollDown(VOID);
 VOID ScrollUp(VOID);
@@ -65,9 +65,9 @@ MGLOBAL PSTR  pstrFileName_m;
 
 WORD main(WORD, PSTR[]);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                  Die main()-Funktion des Programms                     บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                  Die main()-Funktion des Programms                     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 WORD main(WORD argc, PSTR argv[])
 {
 WORD i, wAScr;
@@ -77,9 +77,9 @@ boKundenTest_g=NEIN;
 
 if(argc<1 ||argc>4 || *argv[1]=='?' || *argv[1]=='h' || *argv[1]=='/')
   {						      /* Befehlszeilen-Args  */
-  printf("Aufruf: SCROLL <Dateiname> [AbZeile] [FussH”he]\n\n");
+  printf("Aufruf: SCROLL <Dateiname> [AbZeile] [FussHรถhe]\n\n");
   printf("        AbZeile : ab welcher Zeile gescrollt werden soll!\n");
-  printf("        FussH”he: wieviele Zeile stehen bleiben sollen!\n\n");
+  printf("        FussHรถhe: wieviele Zeile stehen bleiben sollen!\n\n");
   return(ERROR);
   }
 else
@@ -93,11 +93,11 @@ wAScr=aCS_g[wCSInd_g].wCs_m_itb1;
 
 if((pWkbD = Wi_Einrichten(0,0,80,25)) == NULL)	     /* PWKB holen	     */
   {printf("\nFenster konnte nicht "		     /* Abbruch, wenn kein   */
-  "eingerichtet werden."); exit(1);}		     /* pWkb zurck	     */
+  "eingerichtet werden."); exit(1);}		     /* pWkb zurรผck	     */
 
 if((pWkbInfo_g=Wi_Einrichten(5,5,70,15)) == NULL)    /* PWKB holen	     */
   {printf("\nFenster konnte nicht "		     /* Abbruch, wenn kein   */
-  "eingerichtet werden."); exit(1);}		     /* pWkb zurck	     */
+  "eingerichtet werden."); exit(1);}		     /* pWkb zurรผck	     */
 
 Wi_SetAttri(pWkbD, wAScr, wAScr, wAScr);
 
@@ -128,9 +128,9 @@ return (OK);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ ScrollUp(): Eine Zeile nach oben					   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ ScrollUp(): Eine Zeile nach oben					   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID ScrollUp(VOID)
 {
 WORD wS=wS_g;					     /* Spaltenbeginn/ Zeile */
@@ -142,16 +142,16 @@ else return;
 
 Wi_ScrollDown(1);				     /* 1 Zeile nach unten   */
 
-while(wS<=wB_g) 				     /* um eines erh”hen und */
+while(wS<=wB_g) 				     /* um eines erhรถhen und */
   if(*pstr) Wi_Sz(wS++, 0, *pstr++);		     /* in der Zeile inner-  */
   else Wi_Sz(wS++, 0, ' ');			     /* in der Zeile inner-  */
 						     /* halb des Windows aus-*/
 }						     /* geben.		     */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ ScrollDown(): Eine Zeile nach unten 				   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ ScrollDown(): Eine Zeile nach unten 				   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID ScrollDown(VOID)
 {
 WORD wS=wS_g;					     /* Spaltenbeginn/ Zeile */
@@ -163,7 +163,7 @@ else return;
 
 Wi_ScrollUp(1); 				     /* 1 Zeile nach oben    */
 
-while(wS<=wB_g) 				     /* um eines erh”hen und */
+while(wS<=wB_g) 				     /* um eines erhรถhen und */
   if(*pstr) Wi_Sz(wS++, wH_g-1, *pstr++);	     /* in der Zeile inner-  */
   else Wi_Sz(wS++, wH_g-1, ' ');		     /* in der Zeile inner-  */
 						     /* halb des Windows aus-*/
@@ -171,9 +171,9 @@ while(wS<=wB_g) 				     /* um eines erh”hen und */
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ            Ende() beendet das Programm und rumt auf                   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘            Ende() beendet das Programm und rรคumt auf                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID Ende(VOID)
 {
 PPSTR ppstrT=ppstrText_m;
@@ -193,9 +193,9 @@ D_end_process(0);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                  Paint() beschreibt das Fenster                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                  Paint() beschreibt das Fenster                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID Paint(VOID)
 {
 REGISTER i;
@@ -203,17 +203,17 @@ PPSTR ppstrT=ppstrText_m;
 WORD wZeile, wZ, wS, boShort;
 WORD wALei;				      /* AttrScroll, A-Leiste */
 
-wALei=aCS_g[wCSInd_g].wCs_dlg;	     /* trkis */
+wALei=aCS_g[wCSInd_g].wCs_dlg;	     /* tรผrkis */
 
 wMaxZ_m=D_ReadFromDisk(pstrFileName_m, ppstrT, "rb");
 if(wMaxZ_m>=5000)
-  {printf("\nZuviele Zeilen fr "		     /* Abbruch, wenn kein   */
+  {printf("\nZuviele Zeilen fรผr "		     /* Abbruch, wenn kein   */
   "diese Anzeige!");  exit(1);}
 
 ppstrT++; wMaxZ_m--;				   /* erste Zeile verstecken */
 {PSTR pstr=*ppstrT;
 PSTR pstrAb=strstr(pstr, ".AbZeile");
-PSTR pstrFuss=strstr(pstr, ".FussH”he");
+PSTR pstrFuss=strstr(pstr, ".FussHรถhe");
 if(pstrAb || pstrFuss) {ppstrT++; wMaxZ_m--;}	    /* Zeile verstecken */
 
 if(pstrAb)
@@ -234,7 +234,7 @@ for(i=0, wZeile=0; i<wH_g && *ppstrT!=NULL;	     /* Solange Zeilen da && */
   WORD wS=wS_g; 				     /* Spaltenbeginn/ Zeile */
   PSTR pstr=*ppstrT;				     /* Zeichen der Zeile je */
 
-  while(wS<=wB_g)				     /* um eines erh”hen und */
+  while(wS<=wB_g)				     /* um eines erhรถhen und */
     if(*pstr) Wi_Sz(wS++, wZeile, *pstr++);	     /* in der Zeile inner-  */
     else Wi_Sz(wS++, wZeile, ' ');		     /* in der Zeile inner-  */
 
@@ -259,7 +259,7 @@ for(i=0, wZeile=0; i<wH_g && *ppstrT!=NULL;			      /* Solange Zeilen da && */
   WORD wS=wS_g; 				     /* Spaltenbeginn/ Zeile */
   PSTR pstr=*ppstrT;				     /* Zeichen der Zeile je */
 
-  while(boShort && wS<=wB_g)			     /* um eines erh”hen und */
+  while(boShort && wS<=wB_g)			     /* um eines erhรถhen und */
     if(*pstr) Wi_Sz(wS++, wZeile, *pstr++);	     /* in der Zeile inner-  */
     else Wi_Sz(wS++, wZeile, ' ');		     /* in der Zeile inner-  */
 

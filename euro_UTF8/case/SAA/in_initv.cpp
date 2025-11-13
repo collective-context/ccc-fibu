@@ -1,36 +1,36 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_InitVars                     Datum: 31.12.88      บ
-  บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion initialsiert, sofern noch nicht      บ
-  บ                    geschehen, folgende globale Variablen:              บ
-  บ                                                                        บ
-  บ                      - wVioMode_g      (aktiver Video-Modus)           บ
-  บ                      - wCSInd_g        (Index auf die Farbpalette)     บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Die Funktion hat keinen Rckgabewert                บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):   - wVioMode_g (W)                                   บ
-  บ                     - wCSInd_g   (W)                                   บ
-  บ                     - aMenus_g   (W)                                   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_InitVars                     Datum: 31.12.88      โ•‘
+  โ•‘โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion initialsiert, sofern noch nicht      โ•‘
+  โ•‘                    geschehen, folgende globale Variablen:              โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                      - wVioMode_g      (aktiver Video-Modus)           โ•‘
+  โ•‘                      - wCSInd_g        (Index auf die Farbpalette)     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Die Funktion hat keinen Rรผckgabewert                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):   - wVioMode_g (W)                                   โ•‘
+  โ•‘                     - wCSInd_g   (W)                                   โ•‘
+  โ•‘                     - aMenus_g   (W)                                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <eur_tool.h>
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT SWORD wCSInd_g;
 IMPORT SWORD wVioMode_g;
 IMPORT MENU aMenus_g[MAXMENUES];
@@ -46,15 +46,15 @@ IMPORT PSSTR pstrTemp_g;
 IMPORT PSKB pSkb_g;
 IMPORT BOOL boChangeKomma_g;			     // SET KOMMA=JA;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 STATIC VOID i_ZuWenig (SLONG);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_InitVars()
 {
@@ -92,13 +92,13 @@ boInitVars_g=JA;				     /* Erst-Initialisierung */
 wVioMode_g = Vi_GetMode();			     /* Videomodus bestimmen */
 if(wCSInd_g == NICHT_INIT)			     /* Ist schon eine Farb- */
   {						     /* palette initial. ?   */
-  if(wVioMode_g == MONOCHROM)			     /* Standardpalette fr  */
+  if(wVioMode_g == MONOCHROM)			     /* Standardpalette fรผr  */
     wCSInd_g = MNU_PAL_MONO;			     /* Monochrom-Modus      */
-  else						     /* Standardpalette fr  */
+  else						     /* Standardpalette fรผr  */
     wCSInd_g = MNU_PAL_BLAU;			     /* alle anderen Modi    */
   }
 
-for(i=0; i<MAXMENUES; i++)			     /* Palette fr Mens    */
+for(i=0; i<MAXMENUES; i++)			     /* Palette fรผr Menรผs    */
   aMenus_g[i].wStatus.wPalette=wCSInd_g;	     /* festlegen	     */
 
 wRetCode=Db_Reset();
@@ -130,9 +130,9 @@ VOID i_ZuWenig(SLONG lMinimum)
 {
 
 system ("cls");
-printf ("Zum Ausfhren dieses Programms brauchen Sie\n"
+printf ("Zum Ausfรผhren dieses Programms brauchen Sie\n"
         "mindestens %ld Bytes freien Speicher.\n\n", lMinimum);
-printf ("Entfernen Sie daher ein nicht ben”tigtes\n"
+printf ("Entfernen Sie daher ein nicht benรถtigtes\n"
         "speicherresidentes Programm.\n\n");
 
 i_Show_Memory();
@@ -155,7 +155,7 @@ return;
 
 
 // pWkbInfo_m=Wi_Einrichten(3,11,72,11);		// WindowKontollBlock
-// Wi_SchattenEin(pWkbInfo_m);				// fr Wi_TestPrintf()
+// Wi_SchattenEin(pWkbInfo_m);				// fรผr Wi_TestPrintf()
 
 // BOOL boTest=boTestModus_g;  boTestModus_g=JA;
 // Wi_TestPrintf(pWkbInfo_m, "\n1.) i_InitVars(), Mem(%ld-%ld)",
@@ -165,7 +165,7 @@ return;
 
 
 {BOOL boTest=boTestModus_g; boTestModus_g=JA;
-Wi_TestPrintf(pWkbInfo_m, "\nboMemCheck_g(1):ฏ%dฎ.", boMemCheck_g);
+Wi_TestPrintf(pWkbInfo_m, "\nboMemCheck_g(1):ยป%dยซ.", boMemCheck_g);
 boTestModus_g=boTest;}
 
 

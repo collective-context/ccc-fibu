@@ -2,7 +2,7 @@
 
 #include <eur_tool.h>
 GLOBAL PWKB pWkbInfo_g;
-GLOBAL PSKB   pSkb_g=NULL;                    /*ùSystem-Kontroll-Block */
+GLOBAL PSKB   pSkb_g=NULL;                    /*Â¨System-Kontroll-Block */
 
 IMPORT PSSTR pstrTemp_g;
 
@@ -12,7 +12,7 @@ STATIC CHAR str[]="d";
 PSSTR pstrKZ=str;
 
 pWkbInfo_g=Wi_Einrichten(3,11,72,11);                /* WindowKontollBlock   */
-Wi_SchattenEin(pWkbInfo_g);                          /* fr Wi_TestPrintf()  */
+Wi_SchattenEin(pWkbInfo_g);                          /* fÃ¼r Wi_TestPrintf()  */
 
 if(argc>1 && argc<3) pstrKZ=argv[1];
 

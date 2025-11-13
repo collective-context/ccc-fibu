@@ -1,58 +1,58 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Dl_MausTempo()
-ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  Dl_MausTempo()							       บ
-ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  Dl_MausTempo()							       โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-berblick:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+รberblick:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 #include <eur_dlg.h>
 SWORD Dl_MausTempo(VOID);
 
 Parameter:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
-Diese Funktion erhlt keine Parameter.
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
+Diese Funktion erhรคlt keine Parameter.
 
 
 Beschreibung:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
-Mit dieser Funktion hat der Anwender die M”glichkeit, die Bewegungs-
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
+Mit dieser Funktion hat der Anwender die Mรถglichkeit, die Bewegungs-
 empfindlichkeit der Maus einzustellen. Die Bewegungsempfindlichkeit legt fest,
-welche Distanz die Maus auf der Schreibflche bewegt werden muแ, damit sich
+welche Distanz die Maus auf der Schreibflรคche bewegt werden muร, damit sich
 der Mauszeiger auf dem Bildschirm bewegt.
 
-Das Einstellen der Bewegungsempfindlichkeit geschieht ber eine Dialogbox,
+Das Einstellen der Bewegungsempfindlichkeit geschieht รผber eine Dialogbox,
 in der eine Rollleiste das zentrale Element ist. Mit den Tasten [Cursor links]
-und [Cursor rechts] kann der Wert verndert werden. ber die Rolleiste wird
+und [Cursor rechts] kann der Wert verรคndert werden. รber die Rolleiste wird
 der jeweils eingestellte Wert ausgegeben.
 
 
-Das Dialogfeld besitzt drei Schaltflchen, die folgende Wirkung haben:
+Das Dialogfeld besitzt drei Schaltflรคchen, die folgende Wirkung haben:
 
-๙ [Return]  ndert die Bewegungsempfindlichkeit der Maus zum eingestellten Wert.
-๙ [ESC]     beendet das Dialogfeld.
-๙ [F1]	    Zeigt ein Hilfefenster fr dieses Dialogfeld an, das von der
-	    Toolbox zur Verfgung gestellt wird.
+ยจ [Return]  รคndert die Bewegungsempfindlichkeit der Maus zum eingestellten Wert.
+ยจ [ESC]     beendet das Dialogfeld.
+ยจ [F1]	    Zeigt ein Hilfefenster fรผr dieses Dialogfeld an, das von der
+	    Toolbox zur Verfรผgung gestellt wird.
 
-Eine aktive Maus wird von der Funktion automatisch untersttzt.
+Eine aktive Maus wird von der Funktion automatisch unterstรผtzt.
 
 Durch Verwendung der Funktionen Dl_GetInstallation() und Dl_PutInstallation()
-k”nnen Sie die vom Anwender eingestellten Werte beim Programmstart einlesen
+kรถnnen Sie die vom Anwender eingestellten Werte beim Programmstart einlesen
 und vor dem Ende des Programms sichern lassen. Bitte sehen Sie dazu bei der
 Beschreibung zu diesen beiden Funktionen nach.
 
 
-Rckgabewert:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Rรผckgabewert:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 SWORD  Fehlerinformation: DLG_ERROR    Dialog konnte nicht angezeigt werden.
-			 DLG_RETURN   Dialog wurde mit Schaltflche EINGABE
+			 DLG_RETURN   Dialog wurde mit Schaltflรคche EINGABE
 				      beendet.
-			 DLG_ESC      Dialog wurde mit Schaltflche ABBRUCH
+			 DLG_ESC      Dialog wurde mit Schaltflรคche ABBRUCH
 				      beendet.
 
 Benutzte globale Variablen (R/W):
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 Variablen (R/W):  - aCS_g[]    (R)	     - pstrEsc_g    (R)
 		  - wCSInd_g   (R)	     - pstrF1_g     (R)
 		  - wMausda_g  (R/W)	     - pstrRetrun_g (R)
@@ -61,17 +61,17 @@ Variablen (R/W):  - aCS_g[]    (R)	     - pstrEsc_g    (R)
 .de \euro\demo\dmomaus1.c
 .te*/
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <eur_tool.h>
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        KONSTANTEN UND MAKROS                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        KONSTANTEN UND MAKROS                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define SPA     9
 #define ZEI     5
 #define BRE    45
@@ -86,13 +86,13 @@ Variablen (R/W):  - aCS_g[]    (R)	     - pstrEsc_g    (R)
 #define Z_PFEIL_LINKS 27
 #define Z_PFEIL_RECHTS 26
 
-#define SCR_DELAY   2              /* Zeitverz”gerung fr Maus-Dauer-Scroll */
-#define Z1 'ฐ' /* ALT 176 */
-#define Z2 'ฒ' /* ALT 178 */
+#define SCR_DELAY   2              /* Zeitverzรถgerung fรผr Maus-Dauer-Scroll */
+#define Z1 'โ–‘' /* ALT 176 */
+#define Z2 'โ–“' /* ALT 178 */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT	COLORSET aCS_g[5];
 IMPORT	SWORD	  wMausSpeed_g;
 IMPORT	SWORD	  wCSInd_g;
@@ -103,31 +103,31 @@ IMPORT PSSTR	  pstrReturn_g;
 IMPORT PSSTR	  pstrEsc_g;
 IMPORT PSSTR	  pstrF1_g;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE FUNKTIONEN                         บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE FUNKTIONEN                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC	SWORD i_ChangeSpeed(SWORD wSpeed, SWORD richtung);
 STATIC	VOID i_Dl_MausZeichneScrollBar(VOID);
 STATIC	SWORD i_Dl_MausGetSpeed(SWORD);
 STATIC	SWORD i_SetzeTempo(SWORD wTempoAlt, SWORD wPosition);
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC	SWORD wFarbe_m;
 
 STATIC	PSSTR apstrIkonMaus_m[]=
-{   "  บ  ",
-    "Û฿Û฿Û",
-    "ÛÛÛÛÛ",
-    "ÛÛÛÛÛ",
+{   "  โ•‘  ",
+    "โ–โ–€โ–โ–€โ–",
+    "โ–โ–โ–โ–โ–",
+    "โ–โ–โ–โ–โ–",
     NULL
 };
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Dl_MausTempo(VOID)
 {
@@ -148,7 +148,7 @@ SWORD Dl_MausTempo(VOID)
               SF_STANDARD,
               DLG_INFO);
 
-    Ut_ZeigeRahmen(SPA+3, ZEI+3, 9, 6,		    /* Rahmen fr Maus-Ikon */
+    Ut_ZeigeRahmen(SPA+3, ZEI+3, 9, 6,		    /* Rahmen fรผr Maus-Ikon */
                    RT_EEEE,
                    aCS_g[wCSInd_g].wCs_dlg);
 
@@ -169,39 +169,39 @@ SWORD Dl_MausTempo(VOID)
 
     wSpeedTmp = i_Dl_MausGetSpeed(wSpeedTmp);	    /* Wahl einlesen	    */
 
-    if (wSpeedTmp == 0)                             /* Tempo nicht ndern   */
+    if (wSpeedTmp == 0)                             /* Tempo nicht รคndern   */
     {
 	Wi_Entfernen(pWkbDlg);			    /* Dialog entfernen     */
         return(DLG_ESC);
     }
     else
     {
-        wMausSpeed_g = wSpeedTmp;                   /* globale Var. ndern  */
+        wMausSpeed_g = wSpeedTmp;                   /* globale Var. รคndern  */
 
 	Ms_SetRatio( (1495-14*wSpeedTmp)/95,	    /* Geraden-Gleichung    */
                     ((1495-14*wSpeedTmp)/95)<<1);   /* durch (5,15):(100,1) */
 
 	Wi_Entfernen(pWkbDlg);			    /* Dialog entfernen     */
 
-        return(DLG_RETURN);                         /* zurck an Aufrufer   */
+        return(DLG_RETURN);                         /* zurรผck an Aufrufer   */
     }
 }
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Dl_MausGetSpeed	      Datum: 26.07.88	   บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet alle Eingaben der         บ
-  บ                    Dialogbox.                                          บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD  >0    gewhlte Geschwindigkeit		    บ
-  บ                          == 0  Funktion wurde mit ESC beendet          บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Dl_MausGetSpeed	      Datum: 26.07.88	   โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet alle Eingaben der         โ•‘
+  โ•‘                    Dialogbox.                                          โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD  >0    gewรคhlte Geschwindigkeit		    โ•‘
+  โ•‘                          == 0  Funktion wurde mit ESC beendet          โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_Dl_MausGetSpeed(SWORD wTempo)
 {
@@ -265,7 +265,7 @@ SWORD i_Dl_MausGetSpeed(SWORD wTempo)
                             i_Beep();
                         break;
 
-                case ZEI+10:                        /* auf Schaltflchen    */
+                case ZEI+10:                        /* auf Schaltflรคchen    */
 		    if(pEvent->wSpalte > SPA+2 &&
 		      pEvent->wSpalte <
 		      SPA+3+(SWORD)strlen(pstrReturn_g))
@@ -289,7 +289,7 @@ SWORD i_Dl_MausGetSpeed(SWORD wTempo)
             break;
 
             default:                                /* Dauerklicken unter-  */
-                if (pEvent->wButton == MSM_L_DOWN &&/* sttzen              */
+                if (pEvent->wButton == MSM_L_DOWN &&/* stรผtzen              */
                     pEvent->lTicks-lScrollTicks >= SCR_DELAY &&
                     pEvent->wZeile == (ZEI+SCZE+1))
                 {
@@ -314,45 +314,45 @@ SWORD i_Dl_MausGetSpeed(SWORD wTempo)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_ChangeSpeed                  Datum: 19.08.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        SWORD wSpeed	aktuelles Tempo 		    บ
-  บ		       SWORD wRichtung	LINKS  == Tempo - 5		    บ
-  บ                                    RECHTS == Tempo + 5                 บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion fhrt die tatschliche nderung      บ
-  บ                    des Tempos in der Variablen wSpeed durch.           บ
-  บ                    Die nderungsrichtung ist vom Argument wRichtung    บ
-  บ                    abhngig.                                           บ
-  บ                    Die Funktion fhrt eine berprfung auf die         บ
-  บ                    Grenzwerte durch. Sind diese noch nicht ber-       บ
-  บ                    schritten, wird der Wert von wSpeed gendert.       บ
-  บ                                                                        บ
-  บ                    Im Falle einer nderung wird die Textausgabe des    บ
-  บ                    aktuellen Wertes und die Markierung auf der         บ
-  บ                    Rollleiste aktualisiert.                            บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD wSpeed  Geschwindigkeit nach Bearbeitung	    บ
-  บ                                 durch die Funktion                     บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  boBeepen_g /(R)                                     บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_ChangeSpeed                  Datum: 19.08.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        SWORD wSpeed	aktuelles Tempo 		    โ•‘
+  โ•‘		       SWORD wRichtung	LINKS  == Tempo - 5		    โ•‘
+  โ•‘                                    RECHTS == Tempo + 5                 โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion fรผhrt die tatsรคchliche รnderung      โ•‘
+  โ•‘                    des Tempos in der Variablen wSpeed durch.           โ•‘
+  โ•‘                    Die รnderungsrichtung ist vom Argument wRichtung    โ•‘
+  โ•‘                    abhรคngig.                                           โ•‘
+  โ•‘                    Die Funktion fรผhrt eine รberprรผfung auf die         โ•‘
+  โ•‘                    Grenzwerte durch. Sind diese noch nicht รผber-       โ•‘
+  โ•‘                    schritten, wird der Wert von wSpeed geรคndert.       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Im Falle einer รnderung wird die Textausgabe des    โ•‘
+  โ•‘                    aktuellen Wertes und die Markierung auf der         โ•‘
+  โ•‘                    Rollleiste aktualisiert.                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD wSpeed  Geschwindigkeit nach Bearbeitung	    โ•‘
+  โ•‘                                 durch die Funktion                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  boBeepen_g /(R)                                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_ChangeSpeed(SWORD wSpeed, SWORD wRichtung)
 {
     CHAR acZahl[4];
     if (wRichtung == LINKS)                         /* nach links ?         */
     {
-        if (wSpeed > 5)                             /* verkleinern m”glich? */
+        if (wSpeed > 5)                             /* verkleinern mรถglich? */
         {
-	    Wi_Sza(SCSP+(wSpeed/5), SCZE,	    /* alte Marke l”schen   */
+	    Wi_Sza(SCSP+(wSpeed/5), SCZE,	    /* alte Marke lรถschen   */
 		    Z1, NORMAL);
             wSpeed -= 5;                            /* Tempo verkleinern    */
-	    Wi_Ss(SCSP+20, SCZE-3,"   ");	    /* alte Ausgabe l”schen */
+	    Wi_Ss(SCSP+20, SCZE-3,"   ");	    /* alte Ausgabe lรถschen */
 	    Wi_Ss(SCSP+20, SCZE-3,		    /* neues Temp ausgeben  */
                   itoa(wSpeed, acZahl, 10));
 	    Wi_Sza(SCSP+(wSpeed/5), SCZE,	    /* neue Marke setzen    */
@@ -363,12 +363,12 @@ SWORD i_ChangeSpeed(SWORD wSpeed, SWORD wRichtung)
     }
     else if (wRichtung == RECHTS)                   /* nach rechts ?        */
     {
-        if (wSpeed < 100)                           /* vergr”แern m”glich ? */
+        if (wSpeed < 100)                           /* vergrรถรern mรถglich ? */
         {
-	    Wi_Sza(SCSP+(wSpeed/5), SCZE,	    /* alte Marke l”schen   */
+	    Wi_Sza(SCSP+(wSpeed/5), SCZE,	    /* alte Marke lรถschen   */
 		    Z1, NORMAL);
-            wSpeed +=5;                             /* Tempo vergr”แern     */
-	    Wi_Ss(SCSP+20, SCZE-3,"   ");	    /* alte Ausgabe l”schen */
+            wSpeed +=5;                             /* Tempo vergrรถรern     */
+	    Wi_Ss(SCSP+20, SCZE-3,"   ");	    /* alte Ausgabe lรถschen */
 	    Wi_Ss(SCSP+20, SCZE-3,		    /* neues Tempo ausgeben */
                   itoa(wSpeed, acZahl, 10));
 	    Wi_Sza(SCSP+(wSpeed/5), SCZE,	    /* neue Marke setzen    */
@@ -384,25 +384,25 @@ SWORD i_ChangeSpeed(SWORD wSpeed, SWORD wRichtung)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Dl_MausZeichneScrollBar      Datum: 25.10.88	   บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion gibt nach Ermittlung des aktuellen   บ
-  บ                    Grafikmodus die Scrollbar aus.                      บ
-  บ                    In die Scrollbar wird der aktuelle Wert des         บ
-  บ                    Maustempos eingetragen.                             บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - wVioMode_g  (R)                                   บ
-  บ                    - wCSInd_g    (R)                                   บ
-  บ                    modulglobale:  - wFarbe_m    (R/W)                  บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Dl_MausZeichneScrollBar      Datum: 25.10.88	   โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion gibt nach Ermittlung des aktuellen   โ•‘
+  โ•‘                    Grafikmodus die Scrollbar aus.                      โ•‘
+  โ•‘                    In die Scrollbar wird der aktuelle Wert des         โ•‘
+  โ•‘                    Maustempos eingetragen.                             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Diese Funktion hat keinen Rรผckgabewert.             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - wVioMode_g  (R)                                   โ•‘
+  โ•‘                    - wCSInd_g    (R)                                   โ•‘
+  โ•‘                    modulglobale:  - wFarbe_m    (R/W)                  โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_Dl_MausZeichneScrollBar(VOID)
 {
@@ -428,24 +428,24 @@ VOID i_Dl_MausZeichneScrollBar(VOID)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_SetzeTempo                   Datum: 25.10.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        SWORD  wTalt	  altes Tempo			    บ
-  บ		       SWORD  wPosition   neue Position auf Scrollbar	    บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion l”scht die Markierung auf der        บ
-  บ                    Scrolleiste, berechnet anhang der bergebenen       บ
-  บ                    Position das neue Tempo und markiert es auf der     บ
-  บ                    Scrolleiste.                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD   neues Tempo				    บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  keine                                               บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_SetzeTempo                   Datum: 25.10.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        SWORD  wTalt	  altes Tempo			    โ•‘
+  โ•‘		       SWORD  wPosition   neue Position auf Scrollbar	    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion lรถscht die Markierung auf der        โ•‘
+  โ•‘                    Scrolleiste, berechnet anhang der รผbergebenen       โ•‘
+  โ•‘                    Position das neue Tempo und markiert es auf der     โ•‘
+  โ•‘                    Scrolleiste.                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD   neues Tempo				    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_SetzeTempo(SWORD wTalt, SWORD wPosition)
 {
@@ -454,10 +454,10 @@ SWORD i_SetzeTempo(SWORD wTalt, SWORD wPosition)
 
     wTneu = wPosition * 5;
 
-    Wi_Sza(SCSP+(wTalt/5), SCZE,  Z1, NORMAL);	    /* alte Marke l”schen   */
+    Wi_Sza(SCSP+(wTalt/5), SCZE,  Z1, NORMAL);	    /* alte Marke lรถschen   */
     Wi_Sza(SCSP+(wTneu/5), SCZE,  Z2, BLAU);	    /* neue Marke setzen    */
 
-    Wi_Ss(SCSP+20, SCZE-3,"   ");		    /* altes Tempo l”schen  */
+    Wi_Ss(SCSP+20, SCZE-3,"   ");		    /* altes Tempo lรถschen  */
     Wi_Ss(SCSP+20, SCZE-3, itoa(wTneu,acZahl,10));  /* neues Tempo ausgeben */
 
     return(wTneu);

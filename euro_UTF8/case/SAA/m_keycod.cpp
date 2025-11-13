@@ -1,19 +1,19 @@
 // (C) WINware Software P.Mayer: letztes Update am 13-Feb-1996
 
 /*.ta M_KeyCode()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  M_KeyCode()                                                                 º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  M_KeyCode()                                                                 â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_tool.h>
 VOID M_KeyCode(apWkbMask, wKeyCode, pwMsk, pwFld, pwBlockNumber,
   apTextBox, apstrRecord, awRecLen, awBlocks)
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-PWKB     apWkbMask[]        Zeiger auf Array fr die Maskenattribute.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+PWKB     apWkbMask[]        Zeiger auf Array fÃ¼r die Maskenattribute.
 SWORD	 wKeyCode
 PSWORD	 pwMsk
 PSWORD	 pwFld
@@ -24,11 +24,11 @@ SWORD	  awRecLen[]
 SWORD	  awBlocks[][2])
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Diese Funktion bildet aus der Sicht des Applikations-Programmierers die
 
 Diese Funktion ist eine Hilfsfunktion des Maskentools. Die Funktion
-muá aufgerufen werden, um dem Maskeninterpreter mitzuteilen, wann er die
+muÃŸ aufgerufen werden, um dem Maskeninterpreter mitzuteilen, wann er die
 Defaultwerte aus der Maskendefinition (siehe Default-Anweisung Masken-
 Compiler) einzusetzen hat. Da der Masken-Interpreter nicht von sich aus
 entscheiden kann, ob es sich bei einem Datensatz um eine Neuanlage handelt
@@ -36,28 +36,28 @@ oder nicht. Nur im Falle einer Neuanlage ist es sinnvoll, Defaultwerte in
 den Datensatz zu schreiben. Bei einem Aufruf von Defaults () werden alle
 Felder in record[] mit Default-Werten belegt, die auch eine Default-
 Anweisung in der Maskendefinition haben. Ein eventuell zu kurzer Masken-
-Record, wird dabei auf die n”tige L„nge erg„nzt, in dem der Zwischenraum
-mit Low-Values (ASCII 0) aufgefllt wird. Beim Aufruf von Defaults () werden
+Record, wird dabei auf die nÃ¶tige LÃ¤nge ergÃ¤nzt, in dem der Zwischenraum
+mit Low-Values (ASCII 0) aufgefÃ¼llt wird. Beim Aufruf von Defaults () werden
 die Default-Werte aller Masken eingetragen, die mit Mask als zusammenge-
-h”rige Masken angemeldet wurden.
-Default-Werte werden nur fr eingabe-Felder gesetzt.
+hÃ¶rige Masken angemeldet wurden.
+Default-Werte werden nur fÃ¼r eingabe-Felder gesetzt.
 Versorgung:
    Eingang:
    char *record[];
       Ist das Feld der Masken-Records, die mit Default-Werten sollen. Das
-     Feld muá so groá dimensioniert werden, wie Masken-Records in der
+     Feld muÃŸ so groÃŸ dimensioniert werden, wie Masken-Records in der
       Maskendefinition verwendet werden.
    int record_number;
       Legt fest, welcher Masken-Record mit Default-Werten belegt werden
-      soll. Eine Angabe von -1 bewirkt, daá alle Masken-Records, fr die
+      soll. Eine Angabe von -1 bewirkt, daÃŸ alle Masken-Records, fÃ¼r die
       eine Default-Anweisung in der Maskendefinition gegeben wurde, belegt
       werden.
 
  Diese Funktion ist eine Hilfsfunktion des Maskentools. Mit Ihr kann
  die Feldposition ermittelt werden, auf die der Interpreter als
- n„chstes verzweigen wrde, wenn er von der angegeben Feldposition
- aus den angegebenen key_code interpretieren wrde.
- Somit lassen sich applikationsabh„ngige Vorbelegungen realisieren.
+ nÃ¤chstes verzweigen wÃ¼rde, wenn er von der angegeben Feldposition
+ aus den angegebenen key_code interpretieren wÃ¼rde.
+ Somit lassen sich applikationsabhÃ¤ngige Vorbelegungen realisieren.
  Versorgung:
     Eingang:
     int key_code;
@@ -65,24 +65,24 @@ Versorgung:
     Ein-/ Ausgang:
     int field_number;
        Gibt die Applikations-Feldnummer an, von der der Interpreter ausgehen
-       soll. Bei Rckkehr in den aufrufenden Programmteil enth„lt field_
+       soll. Bei RÃ¼ckkehr in den aufrufenden Programmteil enthÃ¤lt field_
        number die aus der Interpretation resultierende Feldnummer.
     int mask_number;
        Beinhaltet die Masekennummer. von der ausgehend der Interpreter den
-       Key-Code interpretieren soll. Die Maskennummer muá nicht mit der
-       Nummer der aktuellen Maske bereinstimmen. Die aktuelle Maske wird
-       jedoch nicht durch diese Routine ver„ndert.
-       Beim Rcksprung in den aufrufenden Programmteil beinhaltet mask_number
+       Key-Code interpretieren soll. Die Maskennummer muÃŸ nicht mit der
+       Nummer der aktuellen Maske Ã¼bereinstimmen. Die aktuelle Maske wird
+       jedoch nicht durch diese Routine verÃ¤ndert.
+       Beim RÃ¼cksprung in den aufrufenden Programmteil beinhaltet mask_number
        die Nummer der Maske, in der sich das Zielfeld (field_number) be-
        findet.
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD  Fehlerinformation OK/ERROR
 
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g   (R)
                   - wCSInd_g   (R)           - pstrF1_g    (R)
                   - wMausda_g  (R)           - boBeepen_g  (R)
@@ -90,26 +90,26 @@ Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g   (R)
 REM .de \euro\demo\dmohilf1.c
 .te*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
 #include <ctype.h>              /* isdigit(),                                */
 #include <eur_tool.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                      FUNKTIONS-PROTOTYPEN                              º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                      FUNKTIONS-PROTOTYPEN                              â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC VOID  i_BlockKeyCode	 (SWORD, SWORD, PSWORD, PSWORD, PTEXTBOX[][99],
 				  PSSTR[], SWORD[], SWORD[][2]);
 STATIC SWORD  i_Hide		  (PSWORD, PSWORD, PTEXTBOX[][99]);
 GLOBAL SWORD  i_TooBig		  (VOID); /* aus m_input.c GLOBAL */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT PWKB   pWkbInfo_g;
 IMPORT BOOL   boTestModus_g;
 IMPORT SWORD   awHideMsk_g[UPB_MASK];		  /* Masken verstecken ja/nein				       */
@@ -130,9 +130,9 @@ IMPORT SLONG   lBlockVer_g;			      /* 0==Kein Block	      */
 						     /* BLOCK	 1==&BLOCK   */
 						     /* BROWSE	 2==&BROWSE  */
 						     /* BLK_TYP2 4==mbc.exe  */
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID M_KeyCode(PWKB apWkbMask[], SWORD wKeyCode, PSWORD pwMsk,
   PSWORD pwFld, PSWORD pwBlockNumber, PTEXTBOX apTextBox[][99],
@@ -142,15 +142,15 @@ SREGISTER i;
 SLONG lBrowse=BROWSE, lBlock=BLOCK;
 SWORD wMaxMask=0;
 SWORD wFirstField=i_FirstFld(apTextBox[*pwMsk]);    /* erste FeldNr	    */
-SWORD wMaxField=i_MaxFld(apTextBox[*pwMsk]);	    /* h”hste FeldNummer    */
+SWORD wMaxField=i_MaxFld(apTextBox[*pwMsk]);	    /* hÃ¶hste FeldNummer    */
 
 for(i=0; apWkbMask[i]; i++)
-  if(awHideMsk_g[i]==NEIN) wMaxMask=i;		     /* h”hste Maskennummer  */
+  if(awHideMsk_g[i]==NEIN) wMaxMask=i;		     /* hÃ¶hste Maskennummer  */
 
-switch(wKeyCode)				    /* sonst n„chst. FeldNr */
+switch(wKeyCode)				    /* sonst nÃ¤chst. FeldNr */
   {
   case T_RETURN:                                     /* Return               */
-  case T_DOWN:                                       /* Cursor abw„rts       */
+  case T_DOWN:                                       /* Cursor abwÃ¤rts       */
   case T_RIGHT: 				     /* Cursor rechts	     */
   case T_TAB:
     ++(*pwFld);
@@ -178,7 +178,7 @@ switch(wKeyCode)				    /* sonst n„chst. FeldNr */
       }
   break;
 
-  case T_UP:                                         /* Cursor aufw„rts      */
+  case T_UP:                                         /* Cursor aufwÃ¤rts      */
   case T_LEFT:					     /* Cursor links	     */
   case T_SHIFT_TAB:
     --(*pwFld);
@@ -231,7 +231,7 @@ if(boInM_Input_g || awBlockLength_g[*pwMsk]==0	    /* ~ */
   || lBlockVer_g&lBrowse)
   {
   wFirstField=i_FirstFld(apTextBox[*pwMsk]);	    /* erste FeldNummer     */
-  wMaxField=i_MaxFld(apTextBox[*pwMsk]);	    /* h”hste FeldNummer    */
+  wMaxField=i_MaxFld(apTextBox[*pwMsk]);	    /* hÃ¶hste FeldNummer    */
 
   if(*pwFld>wMaxField) *pwFld=wFirstField;
   if(*pwFld<wFirstField) *pwFld=wMaxField;
@@ -245,7 +245,7 @@ else
     awRecLen, awBlocks);
 
 
-wMaxField=i_MaxFld(apTextBox[*pwMsk]);	      /* h”hste FeldNummer    */
+wMaxField=i_MaxFld(apTextBox[*pwMsk]);	      /* hÃ¶hste FeldNummer    */
 while(*pwFld<=wMaxField && i_Hide(pwMsk, pwFld, apTextBox) )
   {
   ++(*pwFld);
@@ -268,11 +268,11 @@ return;
 } /* end M_KeyCode() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_BlockKeyCode()				      Datum: 17.12.91	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_BlockKeyCode()				      Datum: 17.12.91	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_BlockKeyCode(SWORD wKeyCode, SWORD wMsk, PSWORD pwFld,
 		    PSWORD pwBlockNumber, PTEXTBOX apTextBox[][99],
@@ -328,7 +328,7 @@ if(awBlockLen_g[wMsk] && awRecLen[wRec] < wRecLen)
   } /* end awRecLen[wRec] < wRecLen) */
 
 wFirstField=i_FirstFld(apTextBox[wMsk]);	  /* erste FeldNummer	  */
-wMaxField=i_MaxFld(apTextBox[wMsk]);		  /* h”hste FeldNummer	  */
+wMaxField=i_MaxFld(apTextBox[wMsk]);		  /* hÃ¶hste FeldNummer	  */
 
 if(*pwFld>wMaxField) *pwFld=wMaxField;
 if(*pwFld<wFirstField) *pwFld=wFirstField;
@@ -337,16 +337,16 @@ return;
 } /* end i_BlockKeyCode() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_HoldMask()                                                            º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Verhindert das weiterbl„ttern auf eine zweite Bildschirmmakse.          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_HoldMask()                                                            â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Verhindert das weiterblÃ¤ttern auf eine zweite Bildschirmmakse.          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD i_HoldMask(PSWORD pwKeyCode, PSWORD pwFieldNr, PTEXTBOX apTB[][99],
 		SWORD wMsk, SWORD wFld)
 {
-SWORD wMaxField=i_MaxFld(apTB[wMsk]);		      /* h”hste FeldNummer    */
+SWORD wMaxField=i_MaxFld(apTB[wMsk]);		      /* hÃ¶hste FeldNummer    */
 
 if(apTB[wMsk][wFld]->wSequenz > wMaxField &&
   *pwFieldNr < wMaxField)
@@ -362,11 +362,11 @@ return(OK);
 } /* end i_HoldMask() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_Hide()					      Datum: 17.12.91	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_Hide()					      Datum: 17.12.91	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_Hide(PSWORD pwMsk, PSWORD pwFld, PTEXTBOX apTextBox[][99] )
 {
@@ -379,11 +379,11 @@ return(wRetCode);
 } /* end i_Hide() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_MaxFld()					      Datum: 17.12.91	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_MaxFld()					      Datum: 17.12.91	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD i_MaxFld(PTEXTBOX apTB[]) 			 /* hoehste FeldNummer	 */
 {
@@ -398,11 +398,11 @@ return(wMaxFld);
 } /* end i_MaxFld() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_FirstFld()				      Datum: 17.12.91	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_FirstFld()				      Datum: 17.12.91	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD i_FirstFld(PTEXTBOX apTB[])		     /* erste FeldNummer     */
 {
@@ -420,11 +420,11 @@ return(wFirstFld);
 } /* end i_FirstFld() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º M_KeyEvaluation()				      Datum: 17.12.91	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ M_KeyEvaluation()				      Datum: 17.12.91	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 /* --- Beginn M_KeyEvaluation() */
 GLOBAL
 VOID M_KeyEvaluation(PWKB apWkbMask[], PSWORD pwKeyCode, PSWORD pwMsk,
@@ -443,8 +443,8 @@ if(wAlteMaske != *pwMsk)
   awAktLine_g[wAlteMaske]=0;}
 
 *pwFirstField=i_FirstFld(apTextBox[*pwMsk]);	     /* erste FeldNummer     */
-*pwMaxField=i_MaxFld(apTextBox[*pwMsk]);	     /* h”hste FeldNummer    */
-for(i=0; apWkbMask[i]; i++) *pwMaxMask=i;              /* h”hste Maskennummer  */
+*pwMaxField=i_MaxFld(apTextBox[*pwMsk]);	     /* hÃ¶hste FeldNummer    */
+for(i=0; apWkbMask[i]; i++) *pwMaxMask=i;              /* hÃ¶hste Maskennummer  */
 
 for(j=0; j <= *pwMaxMask; j++)                  /* Aus dem Datensatz den Inhalt */
    {
@@ -455,7 +455,7 @@ for(j=0; j <= *pwMaxMask; j++)                  /* Aus dem Datensatz den Inhalt 
        +apTextBox[j][awBlocks[j][1]]->wMaxL+1;
        awHoehe_g[j]=awScroll[j][2] -awScroll[j][0] +1;}
 
-   for(i=0; apTextBox[j][i] != NULL; i++)     /* fr Bildschirm holen         */
+   for(i=0; apTextBox[j][i] != NULL; i++)     /* fÃ¼r Bildschirm holen         */
      {
      SWORD wRec=apTextBox[j][i]->wRecord;		     /* Dateinummer   */
      /* SWORD wOff=apTextBox[j][i]->wOffset; */
@@ -485,7 +485,7 @@ for(j=0; j <= *pwMaxMask; j++)                  /* Aus dem Datensatz den Inhalt 
       *pwField=i_MaxFld(apTextBox[*pwMsk]);
   }  */
 
-if(*pwKeyCode==T_RETURN ||   /* Bei Return, n„chste Feldnummer laut Sequenz-Anweisung suchen  */
+if(*pwKeyCode==T_RETURN ||   /* Bei Return, nÃ¤chste Feldnummer laut Sequenz-Anweisung suchen  */
   (lBlockVer_g&lBlock && *pwKeyCode==T_DOWN) )
   {
   if(lBlockVer_g&lBlock && aboInBlock_g[*pwMsk])
@@ -504,7 +504,7 @@ if(*pwKeyCode==T_RETURN ||   /* Bei Return, n„chste Feldnummer laut Sequenz-Anwe
   while(*pwField<=*pwMaxField && i_Hide(pwMsk, pwField, apTextBox) )
     ++(*pwField);
   }
-else                                    /* sonst n„chste Feldnummer suchen */
+else                                    /* sonst nÃ¤chste Feldnummer suchen */
   {
   *pwFensterZ=apTextBox[*pwMsk][*pwField]->wFensterZ;
   if(lBlockVer_g&lBlock && aboInBlock_g[*pwMsk])
@@ -535,7 +535,7 @@ if(*pwField < 0 && (lBlockVer_g&lBrowse ||	/* Eingabefeld im erlaubten */
   if(*pwMsk > 0) --(*pwMsk); else *pwMsk=0;
 						      /* Bereich halten       */
   *pwFirstField=i_FirstFld(apTextBox[*pwMsk]);	     /* erste FeldNummer     */
-  *pwField=*pwMaxField=i_MaxFld(apTextBox[*pwMsk]); /* h”hste FeldNummer    */
+  *pwField=*pwMaxField=i_MaxFld(apTextBox[*pwMsk]); /* hÃ¶hste FeldNummer    */
   }
 
 if(*pwField > *pwMaxField &&
@@ -553,7 +553,7 @@ if(*pwField > *pwMaxField &&
     {if(*pwMsk<*pwMaxMask) ++*pwMsk; else *pwMsk=*pwMaxMask;}
 
   *pwField=*pwFirstField=i_FirstFld(apTextBox[*pwMsk]); /* erste FeldNummer */
-  *pwMaxField=i_MaxFld(apTextBox[*pwMsk]);	     /* h”hste FeldNummer    */
+  *pwMaxField=i_MaxFld(apTextBox[*pwMsk]);	     /* hÃ¶hste FeldNummer    */
   }
 
 if(lBlockVer_g&lBlock && aboInBlock_g[*pwMsk] &&
@@ -599,7 +599,7 @@ if( !(pEvent_g->wKbflags & (SHIFT|CTRL)) )
   {
   switch(*pwKeyCode)
     {
-    case T_DOWN:                             /* Cursor abw„rts               */
+    case T_DOWN:                             /* Cursor abwÃ¤rts               */
       if(lBlockVer_g&lBlock && aboInBlock_g[*pwMsk])
         {
 	if(*pwField==awBlocks[*pwMsk][0])
@@ -624,7 +624,7 @@ if( !(pEvent_g->wKbflags & (SHIFT|CTRL)) )
         }
       break;
 
-    case T_UP:                        /* Cursor aufw„rts               */
+    case T_UP:                        /* Cursor aufwÃ¤rts               */
       if(lBlockVer_g&lBlock && aboInBlock_g[*pwMsk])
         {
 	if(*pwField == awBlocks[*pwMsk][1])
@@ -646,7 +646,7 @@ if( !(pEvent_g->wKbflags & (SHIFT|CTRL)) )
         }
       break;
     } /* end case */
-  }/* Shift Taste gedrckt */
+  }/* Shift Taste gedrÃ¼ckt */
 
 if(bo_S_PGUP_g && lBlockVer_g&lBlock && aboInBlock_g[*pwMsk])
   {
@@ -663,7 +663,7 @@ if(bo_S_PGDOWN_g && lBlockVer_g&lBlock && aboInBlock_g[*pwMsk])
   }
 
 for(i=0; apWkbMask[i] != NULL; i++) *pwMaxMask=i;          /* hoehste MaskenNr */
-*pwMaxField=i_MaxFld(apTextBox[*pwMsk]);	     /* h”hste FeldNummer    */
+*pwMaxField=i_MaxFld(apTextBox[*pwMsk]);	     /* hÃ¶hste FeldNummer    */
 
 if(*pwMsk <0) *pwMsk  = 0;		  /* Masken-Anzeige im erlaubten */
 if(*pwMsk >*pwMaxMask)	*pwMsk = *pwMaxMask;   /* Bereich halten	     */
@@ -700,7 +700,7 @@ while(*pwField<=*pwMaxField &&			    /* wegen Hide in Browse */
 	    *pwKeyCode = T_RIGHT;  /* T_DOWN; */
             }
           else
-	    *pwField=*pwMaxField=i_MaxFld(apTextBox[*pwMsk]); /* h”hste FeldNr */
+	    *pwField=*pwMaxField=i_MaxFld(apTextBox[*pwMsk]); /* hÃ¶hste FeldNr */
           }
     } /* if T_UP || T_END */
 
@@ -726,7 +726,7 @@ while(*pwField<=*pwMaxField &&			    /* wegen Hide in Browse */
           }
         else
           {
-	  *pwMaxField=i_MaxFld(apTextBox[*pwMsk]);    /* h”hste FeldNr	  */
+	  *pwMaxField=i_MaxFld(apTextBox[*pwMsk]);    /* hÃ¶hste FeldNr	  */
 	  *pwField=i_FirstFld(apTextBox[*pwMsk]);  /* erste FeldNr     */
           }
         }
@@ -767,7 +767,7 @@ return;
 //    *pwFld, *pwMsk, wKeyCode);
 //  boTestModus_g=boTest;}
 
-    wMaxField=i_MaxFld(apTextBox[*pwMsk]);	  // h”hste FeldNummer
+    wMaxField=i_MaxFld(apTextBox[*pwMsk]);	  // hÃ¶hste FeldNummer
     while(*pwFld<=wMaxField && i_Hide(pwMsk, pwFld, apTextBox) )
       {
       ++(*pwFld);

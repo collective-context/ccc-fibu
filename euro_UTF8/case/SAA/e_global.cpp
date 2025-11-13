@@ -1,34 +1,34 @@
 // (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 19:13:27 - Tue
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Dateiname:        E_GLOBAL.C                     Datum: 07.01.89      บ
-  บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ
-  บ                                                                        บ
-  บ    Diese Datei enthlt die Definition smtlicher globaler              บ
-  บ    Variablen, die die Toolbox ben”tigt.                                บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Dateiname:        E_GLOBAL.C                     Datum: 07.01.89      โ•‘
+  โ•‘โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘    Diese Datei enthรคlt die Definition sรคmtlicher globaler              โ•‘
+  โ•‘    Variablen, die die Toolbox benรถtigt.                                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <stdio.h>
 #include <eur_tool.h>
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ               Globale Variablen fr Ut_Free-Check                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘               Globale Variablen fรผr Ut_Free-Check                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 struct _heapinfo __hinfo__g;
 int __UT_free__g, __s__g;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ               Globale Variablen fr das Dialog-Modul                   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-GLOBAL SWORD wMausSpeed_g=50;			     /* enthlt aktuelle     */
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘               Globale Variablen fรผr das Dialog-Modul                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+GLOBAL SWORD wMausSpeed_g=50;			     /* enthรคlt aktuelle     */
                                                     /* Geschwindigkeit der  */
                                                     /* Maus                 */
 
-GLOBAL SWORD wBeepFreq_g=200;			     /* enthlt Frequenz,    */
+GLOBAL SWORD wBeepFreq_g=200;			     /* enthรคlt Frequenz,    */
                                                     /* mit dem Warnton aus- */
                                                     /* gegeben wird         */
 
-GLOBAL SWORD wBeepDauer_g=2;			     /* enthlt Dauer des    */
+GLOBAL SWORD wBeepDauer_g=2;			     /* enthรคlt Dauer des    */
                                                     /* Warntons in 18tel    */
                                                     /* Sekunden             */
 
@@ -38,23 +38,23 @@ GLOBAL SWORD wEcoYear_g=101;			     /* Wirt.Jahr ab 01.01   */
 GLOBAL SWORD wTestModus_g=AUS;			     /* Test aus Environment */
 GLOBAL BOOL boTestModus_g=AUS;                      /* Testmodus ein/aus    */
 GLOBAL BOOL boKundenTest_g=EIN;                     /* Modus Kunde/Entwickl.*/
-GLOBAL BOOL boReadNext_g=EIN;                       /* Nchsten Satz lesen  */
+GLOBAL BOOL boReadNext_g=EIN;                       /* Nรคchsten Satz lesen  */
 GLOBAL BOOL boPrepare_g=AUS;                        /* Vorbereiten Eingabef.*/
 GLOBAL BOOL boDemoVersion_g=AUS;                    /* Demoversion Ja/Nein  */
 GLOBAL BOOL boRekursiv_g=NO;                        /* Funkt. ist r. aktiv  */
-GLOBAL BOOL boBlockDelete_g=EIN;                    /* L”sch i.Block erlaub.*/
-GLOBAL BOOL boJump_g=JA;                            /* Felder berspringen  */
+GLOBAL BOOL boBlockDelete_g=EIN;                    /* Lรถsch i.Block erlaub.*/
+GLOBAL BOOL boJump_g=JA;                            /* Felder รผberspringen  */
 GLOBAL BOOL boBoxEdit_g=NEIN;                       /* Box im Edit-Modus    */
 
 GLOBAL BOOL boBeepen_g=JA;                          /* soll gebeept werden  */
 GLOBAL BOOL boMemCheck_g=JA;                        /* Test: genung speicher*/
-GLOBAL BOOL boPointReset_g=NEIN;                    /* Grundwert fr point()*/
+GLOBAL BOOL boPointReset_g=NEIN;                    /* Grundwert fรผr point()*/
 GLOBAL BOOL boChangeKomma_g=NEIN;		    // SET KOMMA=JA;
 
-GLOBAL PSSTR pstrReturn_g = "ู=Eingabe";	   /* Texte fr Schalt-    */
-GLOBAL PSSTR pstrEsc_g	  = "ESC=Abbruch";	   /* flchen des Dialog-  */
+GLOBAL PSSTR pstrReturn_g = "โ”=Eingabe";	   /* Texte fรผr Schalt-    */
+GLOBAL PSSTR pstrEsc_g	  = "ESC=Abbruch";	   /* flรคchen des Dialog-  */
 GLOBAL PSSTR pstrF1_g	  = "F1=Hilfe"; 	   /* moduls		   */
-GLOBAL PSSTR pstrRetry_g  = "ู=Wiederholen";
+GLOBAL PSSTR pstrRetry_g  = "โ”=Wiederholen";
 GLOBAL PSSTR pstrJa_g	  = "J=Ja";
 GLOBAL PSSTR pstrNein_g   = "N=Nein";
 
@@ -70,7 +70,7 @@ GLOBAL CHAR strTxt_g[81]   = "\\euro\\DAT\\";
 GLOBAL CHAR strZug_g[81]   = "\\WORD5\\";
 GLOBAL CHAR strTmp_g[TB_MAX]="\\EURO\\";  /*Temp z.B. Mask/Form-Compiler */
 GLOBAL CHAR strApp_g[TB_MAX]="SY";	  // War auch in ba.h deklariert und:
-// BAL CHAR strApp_g[4]    = "SY";	     hier frher in dieser Form !!!
+// BAL CHAR strApp_g[4]    = "SY";	     hier fรผrher in dieser Form !!!
 
 GLOBAL CHAR strModemTyp_g[4]  = "001";
 GLOBAL CHAR strMoDevice_g[2]  = "0";
@@ -82,40 +82,40 @@ GLOBAL CHAR strVorwahl_g[21]  = "0316";
 GLOBAL PSSTR pstrTemp_g;
 
 GLOBAL CHAR acHlpFile_g[HLPFL]="SYHLP10";   /* Default-Name der Hilfedatei 2x[F1]   */
-GLOBAL CHAR acHlpKey_g[HLPKEY]="blank";     /* Default-Schlssel bei 2x[F1]         */
+GLOBAL CHAR acHlpKey_g[HLPKEY]="blank";     /* Default-Schlรผssel bei 2x[F1]         */
 GLOBAL SWORD wLoopF1_g=1;		     /* 1 X [F1]-Taste	     */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ    Array cRahmenzeichen_g enthlt die Definition der Rahmentypen       บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘    Array cRahmenzeichen_g enthรคlt die Definition der Rahmentypen       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 UCHAR cRahmenzeichen_g[17][8] =
 {
-    {'ฺ', 'ฟ', 'ภ', 'ู', 'ฤ', 'ฤ', 'ณ', 'ณ'},               /* RT_EEEE    0 */
-    {'ึ', 'ฟ', 'ำ', 'ู', 'ฤ', 'ฤ', 'บ', 'ณ'},               /* RT_EEED    1 */
-    {'ฺ', 'ฟ', 'ิ', 'พ', 'ฤ', 'อ', 'ณ', 'ณ'},               /* RT_EEDE    2 */
-    {'ึ', 'ฟ', 'ศ', 'พ', 'ฤ', 'อ', 'บ', 'ณ'},               /* RT_EEDD    3 */
+    {'โ”', 'โ”', 'โ””', 'โ”', 'โ”€', 'โ”€', 'โ”', 'โ”'},               /* RT_EEEE    0 */
+    {'ร', 'โ”', 'ร', 'โ”', 'โ”€', 'โ”€', 'โ•‘', 'โ”'},               /* RT_EEED    1 */
+    {'โ”', 'โ”', 'ร', 'ยฅ', 'โ”€', 'โ•', 'โ”', 'โ”'},               /* RT_EEDE    2 */
+    {'ร', 'โ”', 'โ•', 'ยฅ', 'โ”€', 'โ•', 'โ•‘', 'โ”'},               /* RT_EEDD    3 */
 
-    {'ฺ', 'ท', 'ภ', 'ฝ', 'ฤ', 'ฤ', 'ณ', 'บ'},               /* RT_EDEE    4 */
-    {'ึ', 'ท', 'ำ', 'ฝ', 'ฤ', 'ฤ', 'บ', 'บ'},               /* RT_EDED    5 */
-    {'ฺ', 'ท', 'ิ', 'ผ', 'ฤ', 'อ', 'ณ', 'บ'},               /* RT_EDDE    6 */
-    {'ึ', 'ท', 'ศ', 'ผ', 'ฤ', 'อ', 'บ', 'บ'},               /* RT_EDDD    7 */
+    {'โ”', 'ร€', 'โ””', 'ยข', 'โ”€', 'โ”€', 'โ”', 'โ•‘'},               /* RT_EDEE    4 */
+    {'ร', 'ร€', 'ร', 'ยข', 'โ”€', 'โ”€', 'โ•‘', 'โ•‘'},               /* RT_EDED    5 */
+    {'โ”', 'ร€', 'ร', 'โ•', 'โ”€', 'โ•', 'โ”', 'โ•‘'},               /* RT_EDDE    6 */
+    {'ร', 'ร€', 'โ•', 'โ•', 'โ”€', 'โ•', 'โ•‘', 'โ•‘'},               /* RT_EDDD    7 */
 
-    {'ี', 'ธ', 'ภ', 'ู', 'อ', 'ฤ', 'ณ', 'ณ'},               /* RT_DEEE    8 */
-    {'ษ', 'ธ', 'ำ', 'ู', 'อ', 'ฤ', 'บ', 'ณ'},               /* RT_DEED    9 */
-    {'ี', 'ธ', 'ิ', 'พ', 'อ', 'อ', 'ณ', 'ณ'},               /* RT_DEDE   10 */
-    {'ษ', 'ธ', 'ศ', 'พ', 'อ', 'อ', 'บ', 'ณ'},               /* RT_DEDD   11 */
+    {'ฤฑ', 'ยฉ', 'โ””', 'โ”', 'โ•', 'โ”€', 'โ”', 'โ”'},               /* RT_DEEE    8 */
+    {'โ•”', 'ยฉ', 'ร', 'โ”', 'โ•', 'โ”€', 'โ•‘', 'โ”'},               /* RT_DEED    9 */
+    {'ฤฑ', 'ยฉ', 'ร', 'ยฅ', 'โ•', 'โ•', 'โ”', 'โ”'},               /* RT_DEDE   10 */
+    {'โ•”', 'ยฉ', 'โ•', 'ยฅ', 'โ•', 'โ•', 'โ•‘', 'โ”'},               /* RT_DEDD   11 */
 
-    {'ี', 'ป', 'ภ', 'ฝ', 'อ', 'ฤ', 'ณ', 'บ'},               /* RT_DDEE   12 */
-    {'ษ', 'ป', 'ำ', 'ฝ', 'อ', 'ฤ', 'บ', 'บ'},               /* RT_DDED   13 */
-    {'ี', 'ป', 'ิ', 'ผ', 'อ', 'อ', 'ณ', 'บ'},               /* RT_DDDE   14 */
-    {'ษ', 'ป', 'ศ', 'ผ', 'อ', 'อ', 'บ', 'บ'},               /* RT_DDDD   15 */
+    {'ฤฑ', 'โ•—', 'โ””', 'ยข', 'โ•', 'โ”€', 'โ”', 'โ•‘'},               /* RT_DDEE   12 */
+    {'โ•”', 'โ•—', 'ร', 'ยข', 'โ•', 'โ”€', 'โ•‘', 'โ•‘'},               /* RT_DDED   13 */
+    {'ฤฑ', 'โ•—', 'ร', 'โ•', 'โ•', 'โ•', 'โ”', 'โ•‘'},               /* RT_DDDE   14 */
+    {'โ•”', 'โ•—', 'โ•', 'โ•', 'โ•', 'โ•', 'โ•‘', 'โ•‘'},               /* RT_DDDD   15 */
     {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},		    /*		 16 */
 };
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                Globale Variablen fr das Btrieve-Modul                 บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                Globale Variablen fรผr das Btrieve-Modul                 โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL	PSSTR	 pstrDataBuffer_g;
 GLOBAL	SWORD	 wTranStarted_g;
 GLOBAL	SWORD	 wKeyNumber_g;
@@ -126,7 +126,7 @@ GLOBAL	SWORD	 wBtrieveRevision_g;
 GLOBAL  BOOL    boBtrieveNetWare_g;
 GLOBAL	SLONG	 lMinFreeMemory_g = 445000L;
 
-// bernommen von \euro\include\app_btr.h /    Fr Netzfunktion ist "AUS"
+// รbernommen von \euro\include\app_btr.h /    Fรผr Netzfunktion ist "AUS"
 // ----------------------------------------------------------------------
 GLOBAL  SWORD   B_NO =0;            // B_NO_LOCK        ... Import in \euro\include\app_btr.h
 GLOBAL  SWORD   B_SW =100;          // B_SINGLE_WAIT_LOCK
@@ -136,9 +136,9 @@ GLOBAL  SWORD   B_MNW=400;          // B_MULTIPLE_NOWAIT_LOCK
 GLOBAL  BOOL    boBtrLock_g=EIN;    // Btrieve Locks einachalten
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                Globale Variablen fr das Window-Modul                  บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                Globale Variablen fรผr das Window-Modul                  โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL	SWORD	wS_g=0; 			    /* Die Koordinaten be-  */
 GLOBAL	SWORD	wZ_g=0; 			    /* schreiben die Data-  */
 GLOBAL	SWORD	wB_g=MAXSPALTEN;		    /* Area des aktuellen   */
@@ -147,16 +147,16 @@ GLOBAL	SWORD	wH_g=MAXZEILEN; 		    /* Windows. 	    */
 GLOBAL	SWORD	 wAttribut_g=0x07;		     /* Attribut des Fenster-*/
 
 GLOBAL	SWORD	 wAktWin_g = 0; 		     /* Index des aktiven W. */
-                                                    /* in ฏapWkbSichtbar[]ฎ */
+                                                    /* in ยปapWkbSichtbar[]ยซ */
 
 GLOBAL  FPWORD  fpwCopyBuffer_g = 0L;               /* Zeiger auf 4K-Buffer */
 
 WKB WkbScreen = { WKBSIGNATUR,                      /* Screen WKB initiali- */
-		  (SWORD)-1, (SWORD) -1, 82, 27,      /* sieren, Gr”แe	      */
+		  (SWORD)-1, (SWORD) -1, 82, 27,      /* sieren, Grรถรe	      */
                    0, 0, 0, 0,                      /* Cursor               */
                    0, 0, 7,                         /* Attribute            */
                    NULL,                            /* Pointer auf Titel    */
-                   0,                               /* keine Schnittflche  */
+                   0,                               /* keine Schnittflรคche  */
                    {0,0, 0,1,0,1,0,0,0,0},          /* winFlags             */
                    0L};                             /* Puffer               */
 
@@ -165,9 +165,9 @@ GLOBAL PWKB apWkbSichtbar_g[16] = {&WkbScreen};     /* Array v. Zeigern auf */
                                                     /* WKB der sichtbaren W.*/
                                                     /* innneren.            */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ            Globale Variablen fr das Masken-Modul                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘            Globale Variablen fรผr das Masken-Modul                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL BOOL boShift_g=NEIN;
 GLOBAL BOOL boInM_Input_g=NEIN;                     /* f. Mn_Eingabe, T_ESC */
 GLOBAL SLONG lBlockVer_g;			     /* 0==Kein Block	     */
@@ -183,71 +183,71 @@ GLOBAL EVENT    Event_g;                            /* Event-Struktur und   */
 GLOBAL PEVENT   pEvent_g=&Event_g;                  /* der Zeiger darauf    */
 GLOBAL BOOL     boInitVars_g=NEIN;                  /* Erst-Initialisierung */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ            Globale Variablen fr das Men-Modul                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘            Globale Variablen fรผr das Menรผ-Modul                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL MENU aMenus_g[MAXMENUES];                    /* Array aus MAXMENUES  */
                                                     /* Elementen vom Struk- */
                                                     /* turtyp MENU          */
 
 GLOBAL SWORD wAktMnu_g = NICHT_INIT;		     /* Index auf aMenus_g   */
                                                     /* Nummer des aktiven   */
-                                                    /* Mens                */
+                                                    /* Menรผs                */
 
 GLOBAL FPWORD fpwAlteMZ_g;                          /* Zeiger auf Puffer,   */
                                                     /* Bildschirminh. unter */
-                                                    /* aktuellen Menzeile  */
-                                                    /* enthlt              */
+                                                    /* aktuellen Menรผzeile  */
+                                                    /* enthรคlt              */
 
 GLOBAL FPWORD fpwAlteHZ_g;                          /* Zeiger auf Puffer,   */
                                                     /* Bildschirminh. unter */
                                                     /* Hilfszeile (24)      */
 
-GLOBAL MENUSTATUS MS_g;                             /* Status Menmanager   */
+GLOBAL MENUSTATUS MS_g;                             /* Status Menรผmanager   */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  wFehler_g enthlt immer die Nummer des letzten aufgetretenen Fehlers  บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  wFehler_g enthรคlt immer die Nummer des letzten aufgetretenen Fehlers  โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL SWORD wFehler_g=0;
 GLOBAL ERRINFO errInfo_g;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ   Statusinformationen ber die Hardware, in der das Programm luft     บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-GLOBAL SWORD wMausda_g=NEIN;			     /* enthlt JA wenn Maus */
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘   Statusinformationen รผber die Hardware, in der das Programm lรคuft     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+GLOBAL SWORD wMausda_g=NEIN;			     /* enthรคlt JA wenn Maus */
                                                     /* erfolgreich initia-  */
                                                     /* lisiert wurden       */
 
-GLOBAL SWORD wVioMode_g=NICHT_INIT;		     /* enthlt aktuellen    */
+GLOBAL SWORD wVioMode_g=NICHT_INIT;		     /* enthรคlt aktuellen    */
                                                     /* Video-Modus          */
 
 GLOBAL SWORD awColor_g[5]=
-  {VH(SCHWARZ,	KOBALT),		      /*	FRBIGE  PALETTE     */
+  {VH(SCHWARZ,	KOBALT),		      /*	FรRBIGE  PALETTE     */
   VH(HELLWEISS, SCHWARZ),	              /*	WEISSE	 PALETTE     */
   VH(SCHWARZ,	KOBALT),		      /*	BLAUE	 PALETTE     */
   MATT_INVERS,				      /*	SCHWARZE PALETTE     */
   MATT_INVERS	       };		      /*	MONO	 PALETTE     */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ           Farbpaletten, Initialisierung des Arrays aCS_g[]             บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘           Farbpaletten, Initialisierung des Arrays aCS_g[]             โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 COLORSET aCS_g[5]=
 {
   {/*
-  ษออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ		    FRBIGE PALETTE			 บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออผ */
+  โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘		    FรRBIGE PALETTE			 โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ• */
   VH(WEISS, BLAU),        /* _ca;      Innen  1: Arbeitsbereich, wInnenAttr  */
 
-                          /*         Menzeile :                             */
+                          /*         Menรผzeile :                             */
   VH(SCHWARZ, WEISS),     /* _mz;      Innen  2: normaler Text, wInnenAttr   */
   VH(HELLWEISS,BLAU),     /* _mz_c;    Rahmen 1: Auswahlcursor, wTitelAttr, wRahmenAttr */
   VH(BLAU, WEISS),        /* _mz_hk;   Inaktive TBox 2: Hotkeys              */
 
-                          /*         Menfenster:                            */
+                          /*         Menรผfenster:                            */
   VH(SCHWARZ, WEISS),     /* _mf;        Rahmen, Innen, normaler Text        */
   VH(HELLWEISS, ROT),     /* _mf_ca;     Auswahlcursor auf aktiver Option    */
   VH(WEISS, BLAU),        /* _mf_ci;     Auswahlcursor auf inaktiver Option  */
@@ -257,7 +257,7 @@ COLORSET aCS_g[5]=
   VH(BLAU, WEISS),        /* _hz;        Hilfszeile                          */
 
   VH(HELLWEISS, KOBALT),  /* _dlg;    Dialogfenster:                         */
-  VH(GELB, SCHWARZ),      /* _dlg_sf;  Aktive TBox: Schaltflchen            */
+  VH(GELB, SCHWARZ),      /* _dlg_sf;  Aktive TBox: Schaltflรคchen            */
   VH(SCHWARZ, WEISS),     /* _dlg_tz;    Titelzeile                          */
   VH(HELLWEISS, WEISS),   /* _dlg_tt;  Rahmen 2: Titeltext, wTitelAttr, wRahmenAttr */
   VH(HELLROT, BLAU),      /* _dlg_sp;    Scrollpfeile                        */
@@ -266,7 +266,7 @@ COLORSET aCS_g[5]=
 
   VH(HELLWEISS, GRUEN),   /* _wdlg;      Warnungsfenster                     */
   VH(HELLWEISS, ROT),     /* _fdlg;      kritische Fehler                    */
-  VH(HELLWEISS, BLAU),    /* _wdlg_sf;   Schaltflchen bei Warnungen und     */
+  VH(HELLWEISS, BLAU),    /* _wdlg_sf;   Schaltflรคchen bei Warnungen und     */
                           /*             kritischen Fehlern                  */
 
                           /*         Masken-Tool:                            */
@@ -283,17 +283,17 @@ COLORSET aCS_g[5]=
 
   {
 
-//ษออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-//บ                 WEISSE PALETTE                       บ
-//ศออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+//โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+//โ•‘                 WEISSE PALETTE                       โ•‘
+//โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
   VH(SCHWARZ, HELLWEISS),   // _ca;      Innen  1: Arbeitsbereich, wInnenAttr
 
-                            //           Menzeile :
+                            //           Menรผzeile :
   VH(SCHWARZ, HELLWEISS),   // _mz;      Innen  2: normaler Text, wInnenAttr
   VH(SCHWARZ, HELLWEISS),   // _mz_c;    Rahmen 1: Auswahlcursor, wTitelAttr, wRahmenAttr
   VH(SCHWARZ, HELLWEISS),   // _mz_hk;   Inaktive TBox 2: Hotkeys
 
-                            //           Menfenster:
+                            //           Menรผfenster:
   VH(SCHWARZ, HELLWEISS),   // _mf;      Rahmen, Innen, normaler Text
   VH(SCHWARZ, HELLWEISS),   // _mf_ca;   Auswahlcursor auf aktiver Option
   VH(SCHWARZ, HELLWEISS),   // _mf_ci;   Auswahlcursor auf inaktiver Option
@@ -303,7 +303,7 @@ COLORSET aCS_g[5]=
   VH(SCHWARZ, HELLWEISS),   // _hz;      Hilfszeile
 
   VH(SCHWARZ, HELLWEISS),   // _dlg;     Dialogfenster:
-  VH(SCHWARZ, HELLWEISS),   // _dlg_sf;  Aktive TBox: Schaltflchen
+  VH(SCHWARZ, HELLWEISS),   // _dlg_sf;  Aktive TBox: Schaltflรคchen
   VH(SCHWARZ, HELLWEISS),   // _dlg_tz;  Titelzeile
   VH(SCHWARZ, HELLWEISS),   // _dlg_tt;  Rahmen 2: Titeltext, wTitelAttr, wRahmenAttr
   VH(SCHWARZ, HELLWEISS),   // _dlg_sp;  Scrollpfeile
@@ -312,7 +312,7 @@ COLORSET aCS_g[5]=
 
   VH(SCHWARZ, HELLWEISS),   // _wdlg;    Warnungsfenster
   VH(SCHWARZ, HELLWEISS),   // _fdlg;    kritische Fehler
-  VH(SCHWARZ, HELLWEISS),   // _wdlg_sf; Schaltflchen bei Warnungen und
+  VH(SCHWARZ, HELLWEISS),   // _wdlg_sf; Schaltflรคchen bei Warnungen und
                             //           kritischen Fehlern
 
                             //           Masken-Tool:
@@ -328,17 +328,17 @@ COLORSET aCS_g[5]=
   },
 
   {/*
-  ษออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ		    BLAUE PALETTE			 บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออผ */
+  โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘		    BLAUE PALETTE			 โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ• */
   VH(WEISS, BLAU),        /* _ca;      Innen  1: Arbeitsbereich, wInnenAttr  */
 
-                          /*         Menzeile :                             */
+                          /*         Menรผzeile :                             */
   VH(SCHWARZ, WEISS),     /* _mz;      Innen  2: normaler Text, wInnenAttr   */
   VH(HELLWEISS,BLAU),     /* _mz_c;    Rahmen 1: Auswahlcursor, wTitelAttr, wRahmenAttr */
   VH(BLAU, WEISS),        /* _mz_hk;   Inaktive TBox 2: Hotkeys              */
 
-                          /*         Menfenster:                            */
+                          /*         Menรผfenster:                            */
   VH(SCHWARZ, WEISS),     /* _mf;        Rahmen, Innen, normaler Text        */
   VH(HELLWEISS, ROT),     /* _mf_ca;     Auswahlcursor auf aktiver Option    */
   VH(WEISS, BLAU),        /* _mf_ci;     Auswahlcursor auf inaktiver Option  */
@@ -348,7 +348,7 @@ COLORSET aCS_g[5]=
   VH(BLAU, WEISS),        /* _hz;        Hilfszeile                          */
 
   VH(HELLWEISS, KOBALT),  /* _dlg;    Dialogfenster:                         */
-  VH(GELB, SCHWARZ),      /* _dlg_sf;  Aktive TBox: Schaltflchen            */
+  VH(GELB, SCHWARZ),      /* _dlg_sf;  Aktive TBox: Schaltflรคchen            */
   VH(SCHWARZ, WEISS),     /* _dlg_tz;    Titelzeile                          */
   VH(HELLWEISS, WEISS),   /* _dlg_tt;  Rahmen 2: Titeltext, wTitelAttr, wRahmenAttr */
   VH(HELLROT, BLAU),      /* _dlg_sp;    Scrollpfeile                        */
@@ -357,7 +357,7 @@ COLORSET aCS_g[5]=
 
   VH(HELLWEISS, GRUEN),   /* _wdlg;      Warnungsfenster                     */
   VH(HELLWEISS, ROT),     /* _fdlg;      kritische Fehler                    */
-  VH(HELLWEISS, BLAU),    /* _wdlg_sf;   Schaltflchen bei Warnungen und     */
+  VH(HELLWEISS, BLAU),    /* _wdlg_sf;   Schaltflรคchen bei Warnungen und     */
                           /*             kritischen Fehlern                  */
 
                           /*         Masken-Tool:                            */
@@ -373,17 +373,17 @@ COLORSET aCS_g[5]=
   },
 
   {/*
-  ษออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ              SCHWARZE PALETTE                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออผ */
+  โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘              SCHWARZE PALETTE                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ• */
   NORMAL,                 /* _ca;    Arbeitsbereich                          */
 
-                          /*         Menzeile :                             */
+                          /*         Menรผzeile :                             */
   INVERS,                 /* _mz;      normaler Text                         */
   NORMAL,                 /* _mz_c;    Auswahlcursor                         */
   NORMAL,                 /* _mz_hk;   Hotkeys                               */
 
-                          /*         Menfenster:                            */
+                          /*         Menรผfenster:                            */
   NORMAL,                 /* _mf;        Rahmen, Innen, normaler Text        */
   INVERS,                 /* _mf_ca;     Auswahlcursor auf aktiver Option    */
   INVERS,                 /* _mf_ci;     Auswahlcursor auf inaktiver Option  */
@@ -393,7 +393,7 @@ COLORSET aCS_g[5]=
   INVERS,                 /* _hz;     Hilfszeile                             */
 
   NORMAL,                 /* _dlg;    Dialogfenster:                         */
-  NORMAL,                 /* _dlg_sf;    Schaltflchen                       */
+  NORMAL,                 /* _dlg_sf;    Schaltflรคchen                       */
   INVERS,                 /* _dlg_tz;    Titelzeile                          */
   INVERS,                 /* _dlg_tt;    Titeltext                           */
   NORMAL,                 /* _dlg_sp;    Scrollpfeile                        */
@@ -402,7 +402,7 @@ COLORSET aCS_g[5]=
 
   INVERS,                 /* _wdlg;    Warnungsfenster                       */
   INVERS,                 /* _fdlg;      kritische Fehler                    */
-  NORMAL,                 /* _wdlg_sf;   Schaltflchen bei Warnungen und     */
+  NORMAL,                 /* _wdlg_sf;   Schaltflรคchen bei Warnungen und     */
                           /*             kritischen Fehlern                  */
 
                           /*           Masken-Tool:                          */
@@ -418,17 +418,17 @@ COLORSET aCS_g[5]=
   },
 
   {/*
-  ษออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ              MONOCHROME PALETTE                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออผ */
+  โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘              MONOCHROME PALETTE                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ• */
   NORMAL,                 /* _ca;    Arbeitsbereich                          */
 
-                          /*         Menzeile :                             */
+                          /*         Menรผzeile :                             */
   INVERS,                 /* _mz;      normaler Text                         */
   NORMAL,                 /* _mz_c;    Auswahlcursor                         */
   MATT_INVERS,            /* _mz_hk;   Hotkeys                               */
 
-                          /*         Menfenster:                            */
+                          /*         Menรผfenster:                            */
   NORMAL,                 /* _mf;        Rahmen, Innen, normaler Text        */
   INVERS,                 /* _mf_ca;     Auswahlcursor auf aktiver Option    */
   MATT_INVERS,            /* _mf_ci;     Auswahlcursor auf inaktiver Option  */
@@ -438,7 +438,7 @@ COLORSET aCS_g[5]=
   INVERS,                 /* _hz;     Hilfszeile                             */
 
   NORMAL,                 /* _dlg;    Dialogfenster:                         */
-  NORMAL,                 /* _dlg_sf;    Schaltflchen                       */
+  NORMAL,                 /* _dlg_sf;    Schaltflรคchen                       */
   INVERS,                 /* _dlg_tz;    Titelzeile                          */
   INVERS,                 /* _dlg_tt;    Titeltext                           */
   HELL,                   /* _dlg_sp;    Scrollpfeile                        */
@@ -447,7 +447,7 @@ COLORSET aCS_g[5]=
 
   MATT_INVERS,            /* _wdlg;    Warnungsfenster                       */
   INVERS,                 /* _fdlg;      kritische Fehler                    */
-  HELL,                   /* _wdlg_sf;   Schaltflchen bei Warnungen und     */
+  HELL,                   /* _wdlg_sf;   Schaltflรคchen bei Warnungen und     */
                           /*             kritischen Fehlern                  */
 
                           /*           Masken-Tool:                          */
@@ -465,28 +465,28 @@ COLORSET aCS_g[5]=
 
 
 GLOBAL SWORD wCSInd_g=NICHT_INIT;		     /* Index auf aCS_g,     */
-                                                    /* enthlt Nummer der   */
+                                                    /* enthรคlt Nummer der   */
                                                     /* aktive Farbpalette   */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                       Ende der Datei                                   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                       Ende der Datei                                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 
 /* ----------------------------------------------------------------------------
 
-//ษออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-//บ                 WEISSE PALETTE                       บ
-//ศออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+//โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+//โ•‘                 WEISSE PALETTE                       โ•‘
+//โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
   VH(SCHWARZ,WEISS),      // _ca;      Innen  1: Arbeitsbereich, wInnenAttr
 
-                          //         Menzeile :
+                          //         Menรผzeile :
   VH(SCHWARZ,WEISS),      // _mz;      Innen  2: normaler Text, wInnenAttr
   VH(HELLWEISS, SCHWARZ), // _mz_c;    Rahmen 1: Auswahlcursor, wTitelAttr, wRahmenAttr
   VH(ROT,WEISS),          // _mz_hk;   Inaktive TBox 2: Hotkeys
 
-                          //         Menfenster:
+                          //         Menรผfenster:
   VH(SCHWARZ, WEISS),     // _mf;        Rahmen, Innen, normaler Text
   VH(HELLWEISS, SCHWARZ), // _mf_ca;     Auswahlcursor auf aktiver Option
   VH(WEISS, SCHWARZ),     // _mf_ci;     Auswahlcursor auf inaktiver Option
@@ -496,7 +496,7 @@ GLOBAL SWORD wCSInd_g=NICHT_INIT;		     /* Index auf aCS_g,     */
   VH(WEISS,SCHWARZ),      // _hz;        Hilfszeile
 
   VH(SCHWARZ, WEISS),     // _dlg;    Dialogfenster:
-  VH(WEISS, BLAU),        // _dlg_sf;  Aktive TBox: Schaltflchen
+  VH(WEISS, BLAU),        // _dlg_sf;  Aktive TBox: Schaltflรคchen
   VH(SCHWARZ, WEISS),     // _dlg_tz;    Titelzeile
   VH(SCHWARZ, WEISS),     // _dlg_tt;  Rahmen 2: Titeltext, wTitelAttr, wRahmenAttr
   VH(SCHWARZ, WEISS),     // _dlg_sp;    Scrollpfeile
@@ -505,7 +505,7 @@ GLOBAL SWORD wCSInd_g=NICHT_INIT;		     /* Index auf aCS_g,     */
 
   VH(SCHWARZ, BRAUN),     // _wdlg;      Warnungsfenster
   VH(HELLWEISS, ROT),     // _fdlg;      kritische Fehler
-  VH(HELLWEISS, BLAU),    // _wdlg_sf;   Schaltflchen bei Warnungen und
+  VH(HELLWEISS, BLAU),    // _wdlg_sf;   Schaltflรคchen bei Warnungen und
                           //             kritischen Fehlern
 
                           //         Masken-Tool:

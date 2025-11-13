@@ -1,31 +1,31 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Dateiname:        iMn_util.c                     Datum: 07.01.89      บ
-  บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ
-  บ                                                                        บ
-  บ  Die Funktionen dieser Datei dienen zur Untersttzung der internen     บ
-  บ  Steuerung des Menmanagers.                                           บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Dateiname:        iMn_util.c                     Datum: 07.01.89      โ•‘
+  โ•‘โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Die Funktionen dieser Datei dienen zur Unterstรผtzung der internen     โ•‘
+  โ•‘  Steuerung des Menรผmanagers.                                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <stdio.h>
 #include <string.h>
 #include <eur_tool.h>
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                  BERGABEKONSTANTEN AN i_Mn_Buffern()                  บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                  รBERGABEKONSTANTEN AN i_Mn_Buffern()                  โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define RESTORE 30
 #define SICHERN 31
 #define ZEIGEN  32
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MAKRO FR i_Mn_Balken()                         บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MAKRO FรR i_Mn_Balken()                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 /* i: rel. Fensterzeile */
 #define IST_TRENNER(p,i) ( (p)->item[(i)].wOption == 0	&& \
                            (p)->item[(i)].pstrHilfstext == NULL && \
@@ -37,75 +37,75 @@
 #define HZ_SCHREIBEN(s)  Vi_Ssa(1,24,s,  \
                          aCS_g[aMenus_g[wAktMnu_g].wStatus.wPalette].wCs_hz)
 
-#define HZ_RECHTS()	 Vi_Ssa(61,24," [\x1A\x1B]/[ู]/[F10]",  \
+#define HZ_RECHTS()	 Vi_Ssa(61,24," [\x1A\x1B]/[โ”]/[F10]",  \
                          aCS_g[aMenus_g[wAktMnu_g].wStatus.wPalette].wCs_hz)
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-IMPORT MENUSTATUS MS_g;               /* Zustand des Menmanagers           */
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+IMPORT MENUSTATUS MS_g;               /* Zustand des Menรผmanagers           */
 IMPORT COLORSET   aCS_g[5];	       /* Array der Farbpaletten	     */
 IMPORT SWORD	   wMausda_g;	       /* Maus im System aktiviert	     */
 IMPORT MENU	  aMenus_g[MAXMENUES];	       /* Array der MENU-Strukturen	     */
-IMPORT SWORD	   wAktMnu_g;	       /* aktueller Index auf Men-Array     */
+IMPORT SWORD	   wAktMnu_g;	       /* aktueller Index auf Menรผ-Array     */
 
-GLOBAL FPWORD	  fpwBuffer_g=0L;		     /* Puffer fr alten     */
+GLOBAL FPWORD	  fpwBuffer_g=0L;		     /* Puffer fรผr alten     */
 						     /* Bildschirnm	     */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ               PROTOTYPEN MODULGLOBALE FUNKTIONEN                       บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘               PROTOTYPEN MODULGLOBALE FUNKTIONEN                       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC	VOID i_Mn_Buffern (PMKB, FPWORD, SWORD );
 STATIC	PMKB i_NeuerMkb   (PMKB, SWORD,  SWORD );
 STATIC	VOID i_Balken	  (PMKB, SWORD , SWORD );
 STATIC	VOID i_Mn_TitelStriche	(PMKB);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Mn_Balken                    Datum: 07.01.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PMKB   pMkb        Zeiger auf Menkontrollblock     บ
-  บ                                                                        บ
-  บ		       SWORD  swRichtung  steuert die Bewegungsrichtung    บ
-  บ                                       <  0  nach oben                  บ
-  บ                                       == 0  keine Bewegung             บ
-  บ                                       >  0  nach unten                 บ
-  บ                                                                        บ
-  บ		       SWORD   wModus	   steuert die Sichtbarkeit	    บ
-  บ                                       AUS      Balken ausschalten      บ
-  บ                                       EIN_REL  Balken relativ posit.   บ
-  บ                                       EIN_ABS  Balken absolut posit.   บ
-  บ                                                                        บ
-  บ  Beschreibung:     Mit dieser Funktion wird der Auswahlbalken inner-   บ
-  บ                    halb eines Menfensters bewegt.                     บ
-  บ                    Im Fenster befindliche Trenner werden ber-         บ
-  บ                    sprungen.                                           บ
-  บ                    Die genauere Wirkungsweise der Funktion hngt       บ
-  บ                    davon ab, ob der Balken relativ oder absolut        บ
-  บ                    positioniert werden soll.                           บ
-  บ                    Bei relativer Positionierung gibt swRichtung        บ
-  บ                    die Richtung und Entfernung an, in die der          บ
-  บ                    Balken bewegt werden soll.                          บ
-  บ                    Bei absoluter Positionierung wird die Bildschirm-   บ
-  บ                    zeile bergeben.                                    บ
-  บ                    Die Funktion bercksichtigt eine Maus im System.    บ
-  บ                                                                        บ
-  บ                    Die Funktion trgt die Position des Balkens in      บ
-  บ                    das Strukturelement wBalPos des MKB ein.            บ
-  บ                                                                        บ
-  บ                    Bei der bergabe von AUS wird der Balken an der     บ
-  บ                    alten Position gel”scht. Der Parameter swRichtung   บ
-  บ                    bleibt dann wirkungslos.                            บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD  Fehlerinformation 			    บ
-  บ                          0 == kein Fehler                              บ
-  บ                          sonst Fehler                                  บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  wMausda_g                                           บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Mn_Balken                    Datum: 07.01.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PMKB   pMkb        Zeiger auf Menรผkontrollblock     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘		       SWORD  swRichtung  steuert die Bewegungsrichtung    โ•‘
+  โ•‘                                       <  0  nach oben                  โ•‘
+  โ•‘                                       == 0  keine Bewegung             โ•‘
+  โ•‘                                       >  0  nach unten                 โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘		       SWORD   wModus	   steuert die Sichtbarkeit	    โ•‘
+  โ•‘                                       AUS      Balken ausschalten      โ•‘
+  โ•‘                                       EIN_REL  Balken relativ posit.   โ•‘
+  โ•‘                                       EIN_ABS  Balken absolut posit.   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Mit dieser Funktion wird der Auswahlbalken inner-   โ•‘
+  โ•‘                    halb eines Menรผfensters bewegt.                     โ•‘
+  โ•‘                    Im Fenster befindliche Trenner werden รผber-         โ•‘
+  โ•‘                    sprungen.                                           โ•‘
+  โ•‘                    Die genauere Wirkungsweise der Funktion hรคngt       โ•‘
+  โ•‘                    davon ab, ob der Balken relativ oder absolut        โ•‘
+  โ•‘                    positioniert werden soll.                           โ•‘
+  โ•‘                    Bei relativer Positionierung gibt swRichtung        โ•‘
+  โ•‘                    die Richtung und Entfernung an, in die der          โ•‘
+  โ•‘                    Balken bewegt werden soll.                          โ•‘
+  โ•‘                    Bei absoluter Positionierung wird die Bildschirm-   โ•‘
+  โ•‘                    zeile รผbergeben.                                    โ•‘
+  โ•‘                    Die Funktion berรผcksichtigt eine Maus im System.    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Die Funktion trรคgt die Position des Balkens in      โ•‘
+  โ•‘                    das Strukturelement wBalPos des MKB ein.            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Bei der รbergabe von AUS wird der Balken an der     โ•‘
+  โ•‘                    alten Position gelรถscht. Der Parameter swRichtung   โ•‘
+  โ•‘                    bleibt dann wirkungslos.                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD  Fehlerinformation 			    โ•‘
+  โ•‘                          0 == kein Fehler                              โ•‘
+  โ•‘                          sonst Fehler                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  wMausda_g                                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_Mn_Balken(PMKB pMkb, SWORD swRichtung, SWORD wModus)
 {
@@ -173,16 +173,16 @@ SWORD i_Mn_Balken(PMKB pMkb, SWORD swRichtung, SWORD wModus)
 
         case EIN_ABS:
              swRichtung -= FENSTERZEILE;            /* Angabe relat. machen */
-             if (swRichtung <= 0 ||                 /* Bereichsberprfung  */
+             if (swRichtung <= 0 ||                 /* Bereichsรผberprรผfung  */
                  swRichtung > pMkb->wItemAnzahl)
                 return(1);                          /* Zeile liegt nicht im */
-                                                    /* Menfenster          */
+                                                    /* Menรผfenster          */
              if (IST_TRENNER(pMkb,swRichtung))
                 return(2);                          /* In der Zeile ist ein */
                                                     /* Trenner              */
 
              if (pMkb->wBalPos != 0)                /* Anfangszustand be-   */
-                i_Balken(pMkb,pMkb->wBalPos,AUS);   /* rcksichtigen        */
+                i_Balken(pMkb,pMkb->wBalPos,AUS);   /* rรผcksichtigen        */
              i_Balken(pMkb,swRichtung,EIN);         /* Balken einschalten   */
 
              break;
@@ -199,34 +199,34 @@ SWORD i_Mn_Balken(PMKB pMkb, SWORD swRichtung, SWORD wModus)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Balken                       Datum: 10.01.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PMKB  pMkp     Zeiger auf den Menkontrollblock     บ
-  บ		       SWORD  wZeile   relative Fensterzeile		    บ
-  บ		       SWORD  wModus   EIN / AUS			    บ
-  บ                                                                        บ
-  บ  Beschreibung:     Die Funktion schaltet den Balkencursor in der       บ
-  บ                    gewnschten Zeile ein oder aus.                     บ
-  บ                    Anschlieแend wird der Zustand des Balkens in die    บ
-  บ                    Variable MS_g.Balken eingetragen. Die Position      บ
-  บ                    des Balkens wird in den MKB relativ zu der Text-    บ                                                                 บ
-  บ                    konstanten FENSTERZEILE eingetragen. Das Struktur-  บ
-  บ                    element wBalIndex wird aktualisiert.                บ
-  บ                                                                        บ
-  บ                    Die Funktion nimmt bei keinem Parameter eine Be-    บ
-  บ                    reichsberprfung vor!!                             บ
-  บ                                                                        บ
-  บ  Rckgabewert:     keinen                                              บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - MS_g      (R/W)                                   บ
-  บ                    - aCS_g      (R)                                    บ
-  บ                    - aMenus_g   (R)                                    บ
-  บ                    - wAktMnu_g  (R)                                    บ
-  บ                    - wMausda_g  (R)                                    บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Balken                       Datum: 10.01.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PMKB  pMkp     Zeiger auf den Menรผkontrollblock     โ•‘
+  โ•‘		       SWORD  wZeile   relative Fensterzeile		    โ•‘
+  โ•‘		       SWORD  wModus   EIN / AUS			    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Die Funktion schaltet den Balkencursor in der       โ•‘
+  โ•‘                    gewรผnschten Zeile ein oder aus.                     โ•‘
+  โ•‘                    Anschlieรend wird der Zustand des Balkens in die    โ•‘
+  โ•‘                    Variable MS_g.Balken eingetragen. Die Position      โ•‘
+  โ•‘                    des Balkens wird in den MKB relativ zu der Text-    โ•‘                                                                 โ•‘
+  โ•‘                    konstanten FENSTERZEILE eingetragen. Das Struktur-  โ•‘
+  โ•‘                    element wBalIndex wird aktualisiert.                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Die Funktion nimmt bei keinem Parameter eine Be-    โ•‘
+  โ•‘                    reichsรผberprรผfung vor!!                             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     keinen                                              โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - MS_g      (R/W)                                   โ•‘
+  โ•‘                    - aCS_g      (R)                                    โ•‘
+  โ•‘                    - aMenus_g   (R)                                    โ•‘
+  โ•‘                    - wAktMnu_g  (R)                                    โ•‘
+  โ•‘                    - wMausda_g  (R)                                    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_Balken( PMKB pMkb, SWORD wZeile, SWORD wModus)
 {
@@ -247,9 +247,9 @@ VOID i_Balken( PMKB pMkb, SWORD wZeile, SWORD wModus)
      if (wMausda_g)
         wMausStatus = Ms_CursorOff();               /* Mauscursor aus       */
 
-    if ( wModus == AUS )                            /* Balken l”schen ?     */
+    if ( wModus == AUS )                            /* Balken lรถschen ?     */
     {
-        if(aMenus_g[wAktMnu_g].wStatus.wHzeile==1)  /* Hilfszeile l”schen   */
+        if(aMenus_g[wAktMnu_g].wStatus.wHzeile==1)  /* Hilfszeile lรถschen   */
             HZ_LOESCHEN();
 
         pHK = pMkb->pHotkeys + pMkb->wBalIndex;
@@ -283,7 +283,7 @@ VOID i_Balken( PMKB pMkb, SWORD wZeile, SWORD wModus)
             if (*pstrTmp == '#')                    /* Hotkey gefunden ?    */
                 Vi_Sa(wAbsS, wAbsZ, wAttrHotkey);
 
-        MS_g.wBalken = 0;                           /* Statusflag l”schen   */
+        MS_g.wBalken = 0;                           /* Statusflag lรถschen   */
     }
 
     if (wModus == EIN)                              /* Einschalten geford.  */
@@ -328,43 +328,43 @@ VOID i_Balken( PMKB pMkb, SWORD wZeile, SWORD wModus)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Mn_Titel                     Datum: 07.01.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PMKB  *ppMkb       Zeiger auf Zeiger des            บ
-  บ                                       Menkontrollblocks               บ
-  บ                                                                        บ
-  บ		       SWORD  swRichtung  steuert die Bewegungsrichtung    บ
-  บ                                       <  0  nach oben                  บ
-  บ                                       == 0  keine Bewegung             บ
-  บ                                       >  0  nach unten                 บ
-  บ                                                                        บ
-  บ		       SWORD   wModus	   steuert die Sichtbarkeit	    บ
-  บ                                       AUS      Titel ausschalten       บ
-  บ                                       EIN_REL  Titel relativ posit.    บ
-  บ                                       EIN_ABS  Titel absolut posit.    บ
-  บ                                                                        บ
-  บ  Beschreibung:     Mit dieser Funktion wird der Auswahlbalken inner-   บ
-  บ                    halb der Menzeile bewegt.                          บ
-  บ                    Die genauere Wirkungsweise der Funktion hngt       บ
-  บ                    davon ab, ob der Balken relativ oder absolut        บ
-  บ                    positioniert werden soll.                           บ
-  บ                    Bei relativer Positionierung gibt swRichtung        บ
-  บ                    die Richtung und Entfernung an, in die der          บ
-  บ                    Balken bewegt werden soll.                          บ
-  บ                    Bei absoluter Positionierung wird die Bildschirm-   บ
-  บ                    spalte bergeben.                                   บ
-  บ                    Die Funktion bercksichtigt eine Maus im System.    บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD  Fehlerinformation 			    บ
-  บ                          0 == kein Fehler                              บ
-  บ                          sonst Fehler                                  บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  wMausda_g   (R)                                     บ
-  บ                    wMS_g       (R/W)                                   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Mn_Titel                     Datum: 07.01.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PMKB  *ppMkb       Zeiger auf Zeiger des            โ•‘
+  โ•‘                                       Menรผkontrollblocks               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘		       SWORD  swRichtung  steuert die Bewegungsrichtung    โ•‘
+  โ•‘                                       <  0  nach oben                  โ•‘
+  โ•‘                                       == 0  keine Bewegung             โ•‘
+  โ•‘                                       >  0  nach unten                 โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘		       SWORD   wModus	   steuert die Sichtbarkeit	    โ•‘
+  โ•‘                                       AUS      Titel ausschalten       โ•‘
+  โ•‘                                       EIN_REL  Titel relativ posit.    โ•‘
+  โ•‘                                       EIN_ABS  Titel absolut posit.    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Mit dieser Funktion wird der Auswahlbalken inner-   โ•‘
+  โ•‘                    halb der Menรผzeile bewegt.                          โ•‘
+  โ•‘                    Die genauere Wirkungsweise der Funktion hรคngt       โ•‘
+  โ•‘                    davon ab, ob der Balken relativ oder absolut        โ•‘
+  โ•‘                    positioniert werden soll.                           โ•‘
+  โ•‘                    Bei relativer Positionierung gibt swRichtung        โ•‘
+  โ•‘                    die Richtung und Entfernung an, in die der          โ•‘
+  โ•‘                    Balken bewegt werden soll.                          โ•‘
+  โ•‘                    Bei absoluter Positionierung wird die Bildschirm-   โ•‘
+  โ•‘                    spalte รผbergeben.                                   โ•‘
+  โ•‘                    Die Funktion berรผcksichtigt eine Maus im System.    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD  Fehlerinformation 			    โ•‘
+  โ•‘                          0 == kein Fehler                              โ•‘
+  โ•‘                          sonst Fehler                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  wMausda_g   (R)                                     โ•‘
+  โ•‘                    wMS_g       (R/W)                                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_Mn_Titel (PMKB *ppMkb, SWORD swRichtung, SWORD wModus)
 {
@@ -372,7 +372,7 @@ SWORD i_Mn_Titel (PMKB *ppMkb, SWORD swRichtung, SWORD wModus)
     SWORD wMausStatus = MSM_WAR_AUS;		     /* Mauszeiger an/aus ?  */
 
     SWORD wZeile,				     /* Position Mauszeiger  */
-         wDummy;                                    /* fr Aufruf Ms_Get... */
+         wDummy;                                    /* fรผr Aufruf Ms_Get... */
 
 
     pMkb = *ppMkb;                                  /* lokalen Zeiger laden */
@@ -384,7 +384,7 @@ SWORD i_Mn_Titel (PMKB *ppMkb, SWORD swRichtung, SWORD wModus)
     if (wMausda_g)                                  /* wenn Maus da         */
     {
         Ms_GetPosition(&wDummy, &wDummy, &wZeile);  /* Position holen       */
-        if (wZeile == 0)                            /* wenn in Menzeile    */
+        if (wZeile == 0)                            /* wenn in Menรผzeile    */
             wMausStatus = Ms_CursorOff();           /* Mauszeiger aus       */
     }
 
@@ -392,7 +392,7 @@ SWORD i_Mn_Titel (PMKB *ppMkb, SWORD swRichtung, SWORD wModus)
     switch (wModus)
     {
         case AUS:
-            Vi_Sb2w(MENUSPALTE,MENUZEILE,MENULAENGE,1,  /* Titel l”schen        */
+            Vi_Sb2w(MENUSPALTE,MENUZEILE,MENULAENGE,1,  /* Titel lรถschen        */
                     aMenus_g[wAktMnu_g].fpwMzBuffer);
             if (MS_g.wFenster == JA)
                 i_Mn_TitelStriche(pMkb);
@@ -404,7 +404,7 @@ SWORD i_Mn_Titel (PMKB *ppMkb, SWORD swRichtung, SWORD wModus)
         case EIN_ABS:                               /* Markierung beliebig  */
         case EIN_REL:                               /* positionieren        */
             if (MS_g.wTitel == JA)                         /* wenn Titel da ist    */
-                Vi_Sb2w(MENUSPALTE,MENUZEILE,MENULAENGE,1, /* Titel l”schen        */
+                Vi_Sb2w(MENUSPALTE,MENUZEILE,MENULAENGE,1, /* Titel lรถschen        */
                     aMenus_g[wAktMnu_g].fpwMzBuffer);
 
             if (aMenus_g[wAktMnu_g].wStatus.wHzeile == 1)
@@ -433,49 +433,49 @@ SWORD i_Mn_Titel (PMKB *ppMkb, SWORD swRichtung, SWORD wModus)
     if (wMausda_g && wMausStatus == MSM_WAR_AN)     /* wenn Maus da und     */
         Ms_CursorOn();                              /* an war, Zeiger ein   */
 
-    *ppMkb = pMkb;                                  /* neuen PMKB zurck    */
+    *ppMkb = pMkb;                                  /* neuen PMKB zurรผck    */
     return(0);
 }
 
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Mn_Fenster                   Datum: 07.01.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PMKB  *ppMkb       Zeiger auf Zeiger des            บ
-  บ                                       Menkontrollblocks               บ
-  บ                                                                        บ
-  บ		       SWORD  swRichtung  steuert die Bewegungsrichtung    บ
-  บ                                       <  0  nach oben                  บ
-  บ                                       == 0  keine Bewegung             บ
-  บ                                       >  0  nach unten                 บ
-  บ                                                                        บ
-  บ		       SWORD   wModus	   steuert die Sichtbarkeit	    บ
-  บ                                       AUS      Titel ausschalten       บ
-  บ                                       EIN_REL  Titel relativ posit.    บ
-  บ                                       EIN_ABS  Titel absolut posit.    บ
-  บ                                                                        บ
-  บ  Beschreibung:     Mit dieser Funktion kann ein beliebiges Men-       บ
-  บ                    fenster angezeigt werden.                           บ
-  บ                    Die genauere Wirkungsweise der Funktion hngt       บ
-  บ                    davon ab, ob die Information ber das anzuzeigende  บ
-  บ                    Menfenster relativ oder absolut bergeben wird.    บ
-  บ                                                                        บ
-  บ                    ber den Zeiger ppMkb wird der neue Menkontroll-   บ
-  บ                    block an die aufrufende Funktion zurckgegeben.     บ
-  บ                                                                        บ
-  บ                    Die Funktion bercksichtigt eine Maus im System.    บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD  Fehlerinformation 			    บ
-  บ                          0 == kein Fehler                              บ
-  บ                          sonst Fehler                                  บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  wMausda_g  (R)                                      บ
-  บ                    wMS_g      (R/W)                                    บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Mn_Fenster                   Datum: 07.01.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PMKB  *ppMkb       Zeiger auf Zeiger des            โ•‘
+  โ•‘                                       Menรผkontrollblocks               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘		       SWORD  swRichtung  steuert die Bewegungsrichtung    โ•‘
+  โ•‘                                       <  0  nach oben                  โ•‘
+  โ•‘                                       == 0  keine Bewegung             โ•‘
+  โ•‘                                       >  0  nach unten                 โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘		       SWORD   wModus	   steuert die Sichtbarkeit	    โ•‘
+  โ•‘                                       AUS      Titel ausschalten       โ•‘
+  โ•‘                                       EIN_REL  Titel relativ posit.    โ•‘
+  โ•‘                                       EIN_ABS  Titel absolut posit.    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Mit dieser Funktion kann ein beliebiges Menรผ-       โ•‘
+  โ•‘                    fenster angezeigt werden.                           โ•‘
+  โ•‘                    Die genauere Wirkungsweise der Funktion hรคngt       โ•‘
+  โ•‘                    davon ab, ob die Information รผber das anzuzeigende  โ•‘
+  โ•‘                    Menรผfenster relativ oder absolut รผbergeben wird.    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    รber den Zeiger ppMkb wird der neue Menรผkontroll-   โ•‘
+  โ•‘                    block an die aufrufende Funktion zurรผckgegeben.     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Die Funktion berรผcksichtigt eine Maus im System.    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD  Fehlerinformation 			    โ•‘
+  โ•‘                          0 == kein Fehler                              โ•‘
+  โ•‘                          sonst Fehler                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  wMausda_g  (R)                                      โ•‘
+  โ•‘                    wMS_g      (R/W)                                    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_Mn_Fenster(PMKB *ppMkb, SWORD swRichtung, SWORD wModus)
 {
@@ -506,7 +506,7 @@ SWORD i_Mn_Fenster(PMKB *ppMkb, SWORD swRichtung, SWORD wModus)
         case AUS:
             if (MS_g.wFenster == JA)                /* wenn Fenster da      */
             {
-                MS_g.wFenster = NEIN;               /* Flag zurcksetzen    */
+                MS_g.wFenster = NEIN;               /* Flag zurรผcksetzen    */
                 i_Mn_Titel(&pMkb, 0, AUS);
                 i_Mn_Balken(pMkb, 0, AUS);
                 i_Mn_Buffern(pMkb,                  /* alten Bildschirm     */
@@ -546,43 +546,43 @@ SWORD i_Mn_Fenster(PMKB *ppMkb, SWORD swRichtung, SWORD wModus)
 
 
 
-    return(0);                                      /* und zrck           */
+    return(0);                                      /* und zรผrรผck           */
 }
 
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Mn_Buffern                   Datum: 07.01.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PMKB   pMkb     Zeiger Menkontrollblock            บ
-  บ		       FPWORD fpwBuf   Zeiger auf Sicherungsbuffer	   บ
-  บ		       SWORD   wModus	ZEIGEN/RESTORE/SICHERN		    บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion ist eine Hilfsfunktion von           บ
-  บ                    i_Mn_Fenster(). Hier werden die Bildschirmaus-      บ
-  บ                    gaben und die Sicherung des Untergrundes durch-     บ
-  บ                    gefhrt.                                            บ
-  บ                                                                        บ
-  บ                    ZEIGEN   Das Menfenster dessen MKB bergeben       บ
-  บ                             wurde, wird angezeigt. Die Trennstriche    บ
-  บ                             auf der Menzeile werden ausgegeben und    บ
-  บ                             eventuell ein Schatten ausgegeben.         บ
-  บ                    RESTORE  Der Untergrund unter einem Menfenster     บ
-  บ                             wird wiederhergestellt und damit das       บ
-  บ                             Menfenster vom Bildschirm genommen.       บ
-  บ                    SICHERN  Der Untergrund, auf den ein neues          บ
-  บ                             Fenster kommt, wird gesichert.             บ
-  บ                                                                        บ
-  บ  Rckgabewert:     keiner                                              บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - aMenus_g    (R)                                   บ
-  บ                    - wAktMnu_g   (R)                                   บ
-  บ                    - aCS_g       (R)                                   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Mn_Buffern                   Datum: 07.01.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PMKB   pMkb     Zeiger Menรผkontrollblock            โ•‘
+  โ•‘		       FPWORD fpwBuf   Zeiger auf Sicherungsbuffer	   โ•‘
+  โ•‘		       SWORD   wModus	ZEIGEN/RESTORE/SICHERN		    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion ist eine Hilfsfunktion von           โ•‘
+  โ•‘                    i_Mn_Fenster(). Hier werden die Bildschirmaus-      โ•‘
+  โ•‘                    gaben und die Sicherung des Untergrundes durch-     โ•‘
+  โ•‘                    gefรผhrt.                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    ZEIGEN   Das Menรผfenster dessen MKB รผbergeben       โ•‘
+  โ•‘                             wurde, wird angezeigt. Die Trennstriche    โ•‘
+  โ•‘                             auf der Menรผzeile werden ausgegeben und    โ•‘
+  โ•‘                             eventuell ein Schatten ausgegeben.         โ•‘
+  โ•‘                    RESTORE  Der Untergrund unter einem Menรผfenster     โ•‘
+  โ•‘                             wird wiederhergestellt und damit das       โ•‘
+  โ•‘                             Menรผfenster vom Bildschirm genommen.       โ•‘
+  โ•‘                    SICHERN  Der Untergrund, auf den ein neues          โ•‘
+  โ•‘                             Fenster kommt, wird gesichert.             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     keiner                                              โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - aMenus_g    (R)                                   โ•‘
+  โ•‘                    - wAktMnu_g   (R)                                   โ•‘
+  โ•‘                    - aCS_g       (R)                                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_Mn_Buffern(PMKB pMkb, FPWORD fpwBuf, SWORD wModus)
 {
@@ -595,7 +595,7 @@ VOID i_Mn_Buffern(PMKB pMkb, FPWORD fpwBuf, SWORD wModus)
         wHoehe  = pMkb->wHoehe;
 
         if (aMenus_g[wAktMnu_g].wStatus.wSchatten   /* evtl. Schatten       */
-            == JA)                                  /* bercksichtigen      */
+            == JA)                                  /* berรผcksichtigen      */
         {
             wBreite += 2;
             wHoehe  += 1;
@@ -605,14 +605,14 @@ VOID i_Mn_Buffern(PMKB pMkb, FPWORD fpwBuf, SWORD wModus)
     switch(wModus)
     {
         case RESTORE:                               /* Untergrund unter     */
-            Vi_Sb2w(pMkb->wSpalte, FENSTERZEILE,    /* Menfenster wieder   */
+            Vi_Sb2w(pMkb->wSpalte, FENSTERZEILE,    /* Menรผfenster wieder   */
                     wBreite,                        /* herstellen           */
                     wHoehe,
                     fpwBuf);
             break;
 
         case SICHERN:                               /* Untergrund unter     */
-            Vi_Sw2b(pMkb->wSpalte, FENSTERZEILE,    /* Menfenster          */
+            Vi_Sw2b(pMkb->wSpalte, FENSTERZEILE,    /* Menรผfenster          */
                     wBreite,                        /* in Puffer kopieren   */
                     wHoehe,
                     fpwBuf);
@@ -620,7 +620,7 @@ VOID i_Mn_Buffern(PMKB pMkb, FPWORD fpwBuf, SWORD wModus)
 
 
         case ZEIGEN:
-            Vi_Sb2w(pMkb->wSpalte, FENSTERZEILE,               /* Menfenster ausgeben */
+            Vi_Sb2w(pMkb->wSpalte, FENSTERZEILE,               /* Menรผfenster ausgeben */
                      pMkb->wBreite,
                      pMkb->wHoehe,
                      pMkb->fpwBuffer);
@@ -638,44 +638,44 @@ VOID i_Mn_Buffern(PMKB pMkb, FPWORD fpwBuf, SWORD wModus)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Mn_TitelStriche              Datum: 07.01.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PMKB pMkb Zeiger auf Menkontrollblock              บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion gibt in Abhngigkeit von der         บ
-  บ                    aktiven Farbpalette und dem fr das Men            บ
-  บ                    festgelegten Rahmentyp Trennstriche neben dem       บ
-  บ                    Mentitel und auf dem oberen Fensterrahmen aus.     บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     keine                                               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  aMenus_g, aCS_g, wAktMnu_g  (R)                     บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Mn_TitelStriche              Datum: 07.01.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PMKB pMkb Zeiger auf Menรผkontrollblock              โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion gibt in Abhรคngigkeit von der         โ•‘
+  โ•‘                    aktiven Farbpalette und dem fรผr das Menรผ            โ•‘
+  โ•‘                    festgelegten Rahmentyp Trennstriche neben dem       โ•‘
+  โ•‘                    Menรผtitel und auf dem oberen Fensterrahmen aus.     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  aMenus_g, aCS_g, wAktMnu_g  (R)                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_Mn_TitelStriche(PMKB pMkb)
 {
-    STATIC UCHAR acStriche[] = "มฯ";		    /* ben”tigte Zeichen     */
-    SWORD wSpalte, wRTyp, wAttr;		     /* Trennlinie auf Men- */
+    STATIC UCHAR acStriche[] = "โ”ดยค";		    /* benรถtigte Zeichen     */
+    SWORD wSpalte, wRTyp, wAttr;		     /* Trennlinie auf Menรผ- */
                                                     /* zeile und am oberen  */
-                                                    /* Rahmen ergnzen      */
+                                                    /* Rahmen ergรคnzen      */
     wRTyp = aMenus_g[wAktMnu_g].wStatus.wRahmentyp;
     wSpalte = pMkb->wTitelSpalte+
               pMkb->wTitelBreite;
 
     wAttr = aCS_g[aMenus_g[wAktMnu_g].wStatus.wPalette].wCs_mz;
-    Vi_Sza( pMkb->wTitelSpalte-1, MENUZEILE, (UCHAR)'ฺ', wAttr);
-    Vi_Sza( wSpalte, MENUZEILE, (UCHAR)'ฟ', wAttr);
+    Vi_Sza( pMkb->wTitelSpalte-1, MENUZEILE, (UCHAR)'โ”', wAttr);
+    Vi_Sza( wSpalte, MENUZEILE, (UCHAR)'โ”', wAttr);
 
     wAttr = aCS_g[aMenus_g[wAktMnu_g].wStatus.wPalette].wCs_mf;
     Vi_Sza( pMkb->wTitelSpalte-1, FENSTERZEILE, acStriche[wRTyp], wAttr);
     if (pMkb->item->wOption == RECHTSBUENDIG)
-	Vi_Sza( wSpalte, FENSTERZEILE, (UCHAR)'ด', wAttr);
+	Vi_Sza( wSpalte, FENSTERZEILE, (UCHAR)'โ”ค', wAttr);
     else
         Vi_Sza( wSpalte, FENSTERZEILE, acStriche[wRTyp], wAttr);
 }
@@ -683,35 +683,35 @@ VOID i_Mn_TitelStriche(PMKB pMkb)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Mn_NeuerMkb                  Datum: 07.01.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PMKB    pMkb       Zeiger auf Zeiger des            บ
-  บ                                       Menkontrollblocks               บ
-  บ                                                                        บ
-  บ		       SWORD  swRichtung  steuert die Bewegungsrichtung    บ
-  บ                                       <  0  nach oben                  บ
-  บ                                       == 0  keine Bewegung             บ
-  บ                                       >  0  nach unten                 บ
-  บ                                                                        บ
-  บ		       SWORD   wModus	   steuert die Sichtbarkeit	    บ
-  บ                                       AUS      Titel ausschalten       บ
-  บ                                       EIN_REL  Titel relativ posit.    บ
-  บ                                       EIN_ABS  Titel absolut posit.    บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion ermittelt fr i_Mn_Titel() und       บ
-  บ                    i_Mn_Fenster() aus den bergebenen Argumenten       บ
-  บ                    fr welchen MKB das Fenster bzw. der Titel ange-    บ
-  บ                    zeigt werden soll.                                  บ
-  บ                                                                        บ
-  บ  Rckgabewert:     PMKB  Zeiger auf neuen Menkontrollblock            บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - aMenus_g    (R)                                   บ
-  บ                    - wAktMnu_g   (R)                                   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Mn_NeuerMkb                  Datum: 07.01.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PMKB    pMkb       Zeiger auf Zeiger des            โ•‘
+  โ•‘                                       Menรผkontrollblocks               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘		       SWORD  swRichtung  steuert die Bewegungsrichtung    โ•‘
+  โ•‘                                       <  0  nach oben                  โ•‘
+  โ•‘                                       == 0  keine Bewegung             โ•‘
+  โ•‘                                       >  0  nach unten                 โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘		       SWORD   wModus	   steuert die Sichtbarkeit	    โ•‘
+  โ•‘                                       AUS      Titel ausschalten       โ•‘
+  โ•‘                                       EIN_REL  Titel relativ posit.    โ•‘
+  โ•‘                                       EIN_ABS  Titel absolut posit.    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion ermittelt fรผr i_Mn_Titel() und       โ•‘
+  โ•‘                    i_Mn_Fenster() aus den รผbergebenen Argumenten       โ•‘
+  โ•‘                    fรผr welchen MKB das Fenster bzw. der Titel ange-    โ•‘
+  โ•‘                    zeigt werden soll.                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     PMKB  Zeiger auf neuen Menรผkontrollblock            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - aMenus_g    (R)                                   โ•‘
+  โ•‘                    - wAktMnu_g   (R)                                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 PMKB i_NeuerMkb(PMKB pMkb, SWORD swRichtung, SWORD wModus)
 {

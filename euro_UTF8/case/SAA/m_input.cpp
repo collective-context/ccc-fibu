@@ -1,170 +1,170 @@
 // (C) WINware Software P.Mayer: letztes Update am 13-Feb-1996
 
 /*.ta M_Input()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  M_Input()                                                                   º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  M_Input()                                                                   â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_tool.h>
 SWORD M_Input (apWkbMask[], pswMask, apstrRecord[], apstrMaskText[][25],
               apTextBox[][99], pswField, pstrOldString, pstrNewString,
 	      pwKeyCode, awBlocks[][2], awScroll[][4], awRecLen[]);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-PWKB   apWkbMask[]        Zeiger auf Array fr die Maskenattribute.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+PWKB   apWkbMask[]        Zeiger auf Array fÃ¼r die Maskenattribute.
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Diese Funktion bildet aus der Sicht des Applikations-Programmierers die
-zentrale Schnittstelle zum Masken-Interpreter fr den ¯Maskentyp 1®. Die
+zentrale Schnittstelle zum Masken-Interpreter fÃ¼r den Â»Maskentyp 1Â«. Die
 Funktion positioniert den Feldcursor an die angegebene Stelle innerhalb der
 angegebenen Maske. Die Funktion kann erst aufgerufen werden, nachdem der
-Interpreter mit der Funktion ¯M_Init()® initialisiert wurde.
+Interpreter mit der Funktion Â»M_Init()Â« initialisiert wurde.
 
 Der Anwender kann dieses Feld editieren. Der Vorschlagswert ergibt sich aus
-dem alten Feldinhalt, wie er im angegebenen Datensatz ¯apstrRecord[]® steht.
+dem alten Feldinhalt, wie er im angegebenen Datensatz Â»apstrRecord[]Â« steht.
 
-Verl„át der Anwender das Feld durch ein Sonderfunktions-Taste, die fr den
+VerlÃ¤ÃŸt der Anwender das Feld durch ein Sonderfunktions-Taste, die fÃ¼r den
 Feld-Editor keine Bedeutung hat, so erfolgt nach einer erfolgreichen Syntax
-prfung und Format-Aufbereitung der Rcksprung in den aufrufenden Programm-
+prÃ¼fung und Format-Aufbereitung der RÃ¼cksprung in den aufrufenden Programm-
 teil. Zuvor wird der vom Anwender eingegebene Wert im Datensatz an der dem
 Feld zugewiesenen Stelle (siehe Offset-Anweisung im Masken-Compiler) abge-
 stellt (s.u.).
 
-Die Syntaxprfung des Interpreters ergibt sich aus der Maskendefinition
+Die SyntaxprÃ¼fung des Interpreters ergibt sich aus der Maskendefinition
 (siehe u.a. Range-, Choise- und Datum-Anweisung des Maskencompilers). Der
 Anwender kann das Feld erst dann verlasasen, wenn er einen syntaktisch
-richtigen Wert eingegeben hat. šber die semantische Gltigkeit des Wertes
-muá der Applikationsprogrammierer entscheiden.
+richtigen Wert eingegeben hat. Ãœber die semantische GÃ¼ltigkeit des Wertes
+muÃŸ der Applikationsprogrammierer entscheiden.
 
-Nach dem Rcksprung kann der Applikationsprogrammierer nun fr dieses Feld
-individuelle Apprfungen vornehmen. Anhand des bergebenen Key-Codes kann
+Nach dem RÃ¼cksprung kann der Applikationsprogrammierer nun fÃ¼r dieses Feld
+individuelle ApprÃ¼fungen vornehmen. Anhand des Ã¼bergebenen Key-Codes kann
 er feststellen mit welcher Sonderfunktionstaste der Anwender das Feld ver-
 lassen hat.
 
-Bei einem erneuten Aufruf von ¯M_Input()® mit einem unver„nderten
-Key-Code (aus dem letzten Aufruf), fhrt der Interpreter zuerst die Aktion
-durch, die mit dem Key-Code verbunden ist (sofern der Key-Code fr den
+Bei einem erneuten Aufruf von Â»M_Input()Â« mit einem unverÃ¤nderten
+Key-Code (aus dem letzten Aufruf), fÃ¼hrt der Interpreter zuerst die Aktion
+durch, die mit dem Key-Code verbunden ist (sofern der Key-Code fÃ¼r den
 Interpreter eine Bedeutung hat), bevor er das aus dieser Interpretation
 resultierende Feld betritt.
 
 Hat zum Beispiel der Anwender das Feld mit der Enter-Taste verlassen und der
-Applikationsprogrammierer die fr ihn erforderlichen Abprfungen durchgefhrt
-und ruft er ¯M_Input()® erneut auf, so interpretiert der Maskeninterpreter
-zuerst den Key-Code (in diesem Fall den entsprechenden Wert fr die Enter-
+Applikationsprogrammierer die fÃ¼r ihn erforderlichen AbprÃ¼fungen durchgefÃ¼hrt
+und ruft er Â»M_Input()Â« erneut auf, so interpretiert der Maskeninterpreter
+zuerst den Key-Code (in diesem Fall den entsprechenden Wert fÃ¼r die Enter-
 Taste).
 
-Die Enter-Taste hat fr den Interpreter die Bedeutung, den Feldcursor auf
-das n„chste Feld laut Sequenz-Angabe vorzurcken. Ausgangspunkt ist dabei,
+Die Enter-Taste hat fÃ¼r den Interpreter die Bedeutung, den Feldcursor auf
+das nÃ¤chste Feld laut Sequenz-Angabe vorzurÃ¼cken. Ausgangspunkt ist dabei,
 das dem Interpreter angegebene Feld. Hat der Applikationsprogrammierer die
-Feldnummer seit dem letzten Aufruf nicht ver„ndert, so ist sie identisch mit
+Feldnummer seit dem letzten Aufruf nicht verÃ¤ndert, so ist sie identisch mit
 der Feldnummer des letzten Feldes, welches der Anwender gerade verlassen hat.
 
 Nach Interpretation des Key-Codes befindet sich der Feld-Editor im resul-
-tierenden Feld (im Beispiel das n„chste Feld lt. Sequenz-Angabe).
+tierenden Feld (im Beispiel das nÃ¤chste Feld lt. Sequenz-Angabe).
 
 Der Applikationsprogrammierer kann auf diese Weise sowohl die Ausgangs-Feld-
 nummer, als auch den Key-Code zur Steuerung des Interpreters, manipulieren
 und somit den Feldcursor auf eine individuelle Weise steuern.
 
-Wurde seit dem letzten Aufruf von ¯M_Input()® die Maskennummer ver„ndert,
-so bl„ttert der Interpreter zuerst auf die angegebene Maske. Die angegebene
-Feldnummer bezieht sich immer auf die gew„hlte Maske. Ist die angegebene
+Wurde seit dem letzten Aufruf von Â»M_Input()Â« die Maskennummer verÃ¤ndert,
+so blÃ¤ttert der Interpreter zuerst auf die angegebene Maske. Die angegebene
+Feldnummer bezieht sich immer auf die gewÃ¤hlte Maske. Ist die angegebene
 Feldnummer nicht auf der angegeben Maske, so wird ein Fehler gemeldet.
 
 Hat der Anwender das Feld mit der Ctrl-PgUp oder Ctrl-PgDn Taste verlassen,
-so erfolgt der Rcksprung aus ¯M_Input()® mit dem entsprechenden Key-Code.
+so erfolgt der RÃ¼cksprung aus Â»M_Input()Â« mit dem entsprechenden Key-Code.
 
-Wird ¯M_Input()® nun erneut mit unver„ndertem Key-Code aufgerufen, so
+Wird Â»M_Input()Â« nun erneut mit unverÃ¤ndertem Key-Code aufgerufen, so
 interpretiert der Masken-Interpreter zuerst die Ctrl-PgUp oder Ctrl-PgDn
-Funktion, was zur Folge hat, daá entweder eine Maske vor oder zurckge-
-bl„ttert wird.
+Funktion, was zur Folge hat, daÃŸ entweder eine Maske vor oder zurÃ¼ckge-
+blÃ¤ttert wird.
 
-Beim Bl„ttern wird der Feldcursor an die Stelle gesetzt, aus der die Maske
+Beim BlÃ¤ttern wird der Feldcursor an die Stelle gesetzt, aus der die Maske
 zuvor verlassen wurde. Wurde die Maske noch nit betreten, wird der Feldcursor
-an die erste Stelle laut Sequenz-Angabe gesetzt. Dies unabh„ngig von der
+an die erste Stelle laut Sequenz-Angabe gesetzt. Dies unabhÃ¤ngig von der
 Feldnummer, die der Applikationsprogrammierer angegeben hat.
 
-Will der Applikationsprogrammierer, daá beim Bet„tigen von Ctrl-PgUp oder
-Ctrl-PgDn auf ein bestimmtes Feld der Maske gesprungen wird, so muá er den
-Ctrl-PgUp/PgDn-Key-Code abfangen, die Maskennummer selbstst„ndig ver„ndern,
-die gewnschte Feldnummer setzen und anschlieáend ¯M_Input()® mit einem
-Key-Code aufrufen, der fr den Interpreter keine Bedeutung hat (z.B. 0).
+Will der Applikationsprogrammierer, daÃŸ beim BetÃ¤tigen von Ctrl-PgUp oder
+Ctrl-PgDn auf ein bestimmtes Feld der Maske gesprungen wird, so muÃŸ er den
+Ctrl-PgUp/PgDn-Key-Code abfangen, die Maskennummer selbststÃ¤ndig verÃ¤ndern,
+die gewÃ¼nschte Feldnummer setzen und anschlieÃŸend Â»M_Input()Â« mit einem
+Key-Code aufrufen, der fÃ¼r den Interpreter keine Bedeutung hat (z.B. 0).
 
-¯M_Input()® darf nur aufgerufen werden, wenn die angegebene Maske vom
-¯Maskentyp 1® ist.
+Â»M_Input()Â« darf nur aufgerufen werden, wenn die angegebene Maske vom
+Â»Maskentyp 1Â« ist.
 
 Versorgung:
    Eingang:
    char *equal_part[];
       Ist ein String-Feld, welches die Equivalenz_Angaben zu eventuell vor-
       handenen Choise-Elementen beinhaltet. Sind laut Maskendefinition
-      Choise-Elemente vorhanden so werden die Equivalenz-Angaben zus„tzlich
+      Choise-Elemente vorhanden so werden die Equivalenz-Angaben zusÃ¤tzlich
       zu den einzelen Choise-Elementen im Auswahl-Fenster angezeigt. Damit
-      ist es zum Beispiel m”glich die Equivalenz-Werte einer Codierung aus
+      ist es zum Beispiel mÃ¶glich die Equivalenz-Werte einer Codierung aus
       einer Parameter-Datei zu lesen.
-      Fr den Fall, daá ein Feld mit der Dychoise-Anweisung belegt wurde,
-      stehen in equal_part[] die eigentlichen Auswahlm”glichkeiten aufge-
-      z„hlt. In diesem Fall gibt es also keine Equivalenz-Angaben.
+      FÃ¼r den Fall, daÃŸ ein Feld mit der Dychoise-Anweisung belegt wurde,
+      stehen in equal_part[] die eigentlichen AuswahlmÃ¶glichkeiten aufge-
+      zÃ¤hlt. In diesem Fall gibt es also keine Equivalenz-Angaben.
       Achtung: Ist equal_part[] kleiner dimensioniert als die anzahl der
-               Auswahlm”glichkeiten laut Maskendefinition, so erscheinen im
+               AuswahlmÃ¶glichkeiten laut Maskendefinition, so erscheinen im
                Auswahl-fenster nur so viele Elemente, wie equal_part[]
                dimensioniert ist.
    Ein-/Ausgang:
    int mask_number;
-      Beinhaltet die Nummer der Maske, die aktuell angew„hlt werden soll.
+      Beinhaltet die Nummer der Maske, die aktuell angewÃ¤hlt werden soll.
       Ist die Nummer nicht identisch mit der Nummer der aktuell ange-
-      zeigten Maske, so wird auf die angegebene Maske vor oder zurck-
-      gebl„ttert. Vor dem ersten Aufruf von ¯M_Input()® ist die aktuelle
-      Maske die erste in ¯awMaskSequenz_m® angegebene Maske.
-      Beim Rcksprung in den aufrufenden Programmteil, beinhaltet
+      zeigten Maske, so wird auf die angegebene Maske vor oder zurÃ¼ck-
+      geblÃ¤ttert. Vor dem ersten Aufruf von Â»M_Input()Â« ist die aktuelle
+      Maske die erste in Â»awMaskSequenz_mÂ« angegebene Maske.
+      Beim RÃ¼cksprung in den aufrufenden Programmteil, beinhaltet
       mask_number die aktuell eingestellte Maske. Dieser Wert unterscheidet
       sich insbesondere dann vom Eingangswert, wenn ein PgUp- oder PgDn-
       Funktionscode interpretiert wurde.
    int application_field_number;
       Beinhaltet die Nummer des Feldes (relativ zur angegebenen Maske), das
-      aktuell angew„hlt werden soll. Die Feldnummer bezeichnet dabei die
+      aktuell angewÃ¤hlt werden soll. Die Feldnummer bezeichnet dabei die
       Applikations-Feldnummer der jeweiligen Maske. Die Applikations-
       Feldnummer ist identisch mit der Feldnummer des Masken-Compilers,
-      solange keine Nummer-Anweisung gegeben wurde. Wurde einem Feld ber
-      eine Nummer-Anweisung eine andere , applikationsabh„ngige, Feld-
-      nummer zugewiesen, so ist das gewnschte Feld durch diese Appli-
+      solange keine Nummer-Anweisung gegeben wurde. Wurde einem Feld Ã¼ber
+      eine Nummer-Anweisung eine andere , applikationsabhÃ¤ngige, Feld-
+      nummer zugewiesen, so ist das gewÃ¼nschte Feld durch diese Appli-
       kations-Nummer anzusprechen.
-      Beim Rcksprung in den aufrufenden Programmteil beinhaltet
-      application_field_number die Nummer des Feldes, daá der Anwender
-      gerade verlassen hat. Der Rckgabewert unterscheidet sich meist vom
-      Eingangswert, auáer wenn beim Aufruf der Funktion ein Key-Code ange-
-      geben wurde, der fr den Interpreter keine Bedeutung hat. (z.B. wenn
-      eine individuelle Abprfung negativ ausfiel und der Anwender einen
-      neuen Wert fr das gleiche Feld angeben muá).
+      Beim RÃ¼cksprung in den aufrufenden Programmteil beinhaltet
+      application_field_number die Nummer des Feldes, daÃŸ der Anwender
+      gerade verlassen hat. Der RÃ¼ckgabewert unterscheidet sich meist vom
+      Eingangswert, auÃŸer wenn beim Aufruf der Funktion ein Key-Code ange-
+      geben wurde, der fÃ¼r den Interpreter keine Bedeutung hat. (z.B. wenn
+      eine individuelle AbprÃ¼fung negativ ausfiel und der Anwender einen
+      neuen Wert fÃ¼r das gleiche Feld angeben muÃŸ).
    char *record[];
-      Ist das Feld der Datens„tze, die durch das Maskentool manipuliert
+      Ist das Feld der DatensÃ¤tze, die durch das Maskentool manipuliert
       werden sollen. Der Offset des Feldes innerhalb des Records ist in der
       Maskendefinition hinterlegt (siehe Offset-Anweisung im Masken-
       Compiler).
-      Beim Rcksprung in den aufrufenden Programmteil enth„lt record[] immer
+      Beim RÃ¼cksprung in den aufrufenden Programmteil enthÃ¤lt record[] immer
       den vom Anwender eingegebenen Wert, auch dann, wenn er u.U. falsch ist.
-      D.h., daá der Applikationsprogrammierer den alten Feldwert selbst
-      wieder eintragen muá, sobald sich eine inidividuelle Abprfung als
+      D.h., daÃŸ der Applikationsprogrammierer den alten Feldwert selbst
+      wieder eintragen muÃŸ, sobald sich eine inidividuelle AbprÃ¼fung als
       negativ herausgestellt hat (siehe old_string).
-      In record[] muá fr jeden Datensatz ein ausreichend langer String ange-
-      geben werden, sodaá das Feld mit der gr”áten Offset-Nummer noch Platz
+      In record[] muÃŸ fÃ¼r jeden Datensatz ein ausreichend langer String ange-
+      geben werden, sodaÃŸ das Feld mit der grÃ¶ÃŸten Offset-Nummer noch Platz
       hat.
    int key_code;
-      Beinhaltet die Funktionscodes fr den Masken-Interpreter. Bei Aufruf
+      Beinhaltet die Funktionscodes fÃ¼r den Masken-Interpreter. Bei Aufruf
       von M_Input () wird der Funktions-Code interpretiert und die der
-      Bedeutung entsprechende Funktion ausgefhrt, ehe der Feld-Editor
+      Bedeutung entsprechende Funktion ausgefÃ¼hrt, ehe der Feld-Editor
       aufgerufen wird.
-      Beim Rcksprung aus M_Input () gibt der Funktions-Code die
+      Beim RÃ¼cksprung aus M_Input () gibt der Funktions-Code die
       Sonderfunktions-Taste an, mit dem der Anwender den Feldeditor ver-
       lassen hat.
    Ausgang:
    int record_number;
-      Gibt den Index fr den Parameter record[] an, der fr das gerade
-      verlassene Feld Gltigkeit hat. Diese Angabe kommt aus der Masken-
+      Gibt den Index fÃ¼r den Parameter record[] an, der fÃ¼r das gerade
+      verlassene Feld GÃ¼ltigkeit hat. Diese Angabe kommt aus der Masken-
       definiton (Offset-Anweisung im Masken-Compiler).
    int record_offset;
       Gibt den Offset des gerade verlassenen Feldes innerhalb von
@@ -173,14 +173,14 @@ Versorgung:
    char *old_string;
       Gibt den alten Feldinhalt aus record[record_number] an, der dort vor
       verlassen des Feldes durch den Anwender gestanden hat. Diesen Wert
-      muá der Applikationsprogrammierer wieder in den Datensatz einbauen,
-      falls eine individuelle Abprfung negativ ausf„llt, da der Inter-
+      muÃŸ der Applikationsprogrammierer wieder in den Datensatz einbauen,
+      falls eine individuelle AbprÃ¼fung negativ ausfÃ¤llt, da der Inter-
       preter auf jeden Fall den vom Anwender eingegebenen Wert im Daten-
       satz ablegt.
    char *new_string;
       Gibt den neuen Feldinhalt aus record[record_number] an, der nach
       verlassen des Feldes durch den Anwender dort eingesetzt wurde. Hat
-      der Anwender den Feldinhalt nicht ver„ndert, so ist new_string gleich
+      der Anwender den Feldinhalt nicht verÃ¤ndert, so ist new_string gleich
       old_string.
       Sowohl new_string als auch old_string geben nicht unbedingt den vom
       Benutzer eingegebenen Wert wieder, sondern den Feldinhalt aus
@@ -188,13 +188,13 @@ Versorgung:
       kann (siehe Packed-, Datum- und Choise-Anweisung im Masken-Compiler).
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD  Fehlerinformation OK/ERROR
 
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g   (R)
                   - wCSInd_g   (R)           - pstrF1_g    (R)
                   - wMausda_g  (R)           - boBeepen_g  (R)
@@ -204,9 +204,9 @@ REM .de \euro\demo\dmohilf1.c
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 /* #define NDEBUG 1	 1 == keine Wi_TestPrintf
    #ifndef NDEBUG
    #endif */
@@ -220,9 +220,9 @@ REM .de \euro\demo\dmohilf1.c
 #include <eur_tool.h>
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT COLORSET aCS_g[5];
 IMPORT SWORD wCSInd_g;
 IMPORT MENUSTATUS MS_g;
@@ -230,7 +230,7 @@ IMPORT BOOL   boPrepare_g;
 IMPORT BOOL   boTestModus_g;
 IMPORT BOOL   boBeepen_g;
 IMPORT BOOL   boInM_Input_g;
-IMPORT BOOL   boBlockDelete_g;			     /* L”sch i.Block erlaub.*/
+IMPORT BOOL   boBlockDelete_g;			     /* LÃ¶sch i.Block erlaub.*/
 IMPORT BOOL   boBoxEdit_g;			     /* Box im Edit-Modus    */
 
 IMPORT PEVENT pEvent_g;
@@ -239,11 +239,11 @@ IMPORT SLONG	 lBlockVer_g;			      /* 0==Kein Block	      */
 						     /* BROWSE	 2==&BROWSE  */
 						     /* BLK_TYP2 4==mbc.exe  */
 
-IMPORT SWORD awBlocks_g[UPB_MASK][2];	      /*ù?? zwischendurch 3 ..\c\ba.h */
+IMPORT SWORD awBlocks_g[UPB_MASK][2];	      /*Â¨?? zwischendurch 3 ..\c\ba.h */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                      FUNKTIONS-PROTOTYPEN                              º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                      FUNKTIONS-PROTOTYPEN                              â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC VOID  i_StoreBrowse	 (SWORD, PSSTR[], PSSTR[][25],
 				  PTEXTBOX[][99], SWORD[][2]);
 STATIC VOID  i_PrintWindow	 (PWKB[], SWORD, SWORD, PSSTR[], PSSTR[][25],
@@ -253,14 +253,14 @@ STATIC VOID  i_Prepare		 (PSSTR, PSSTR[], PTEXTBOX);
 STATIC VOID  i_BlockHandling	 (SWORD, PSSTR[], PTEXTBOX[][99], SWORD[],
 				  SWORD, SWORD[][2]);
 STATIC VOID  i_PrintBlock	 (SWORD, PSSTR[], PTEXTBOX[][99], SWORD[][2]);
-GLOBAL SWORD  i_TooBig		  (VOID);	   /* fr m_keycod.c GLOBAL */
+GLOBAL SWORD  i_TooBig		  (VOID);	   /* fÃ¼r m_keycod.c GLOBAL */
 STATIC SWORD  i_LiesEingabe	  (SWORD, SWORD, PSSTR[], PTEXTBOX[][99],
 				  PSSTR, PSWORD);
 STATIC VOID  i_KeyCode		 (PSWORD);
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                       MODULGLOBALE DATEN                               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                       MODULGLOBALE DATEN                               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 /*MGLOBAL CHAR *event[][12] = { "EVENT_NULL",
                               "EVENT_MOUSE_MOVE",
                               "EVENT_L_PRESS",
@@ -272,23 +272,23 @@ STATIC VOID  i_KeyCode		 (PSWORD);
                               "EVENT_TASTE",
                               "EVENT_ALT_PRESS",
                               "EVENT_ALT_RELEASE",
-                              "EVENT_WAHL" };      ~~~ l”schen  */
+                              "EVENT_WAHL" };      ~~~ lÃ¶schen  */
 
 /* STATIC  BOOL boInM_Input = NEIN; */
 GLOBAL	BOOL aboInBlock_g[UPB_MASK] =
-  {NEIN,NEIN,NEIN,NEIN,NEIN,NEIN,NEIN,NEIN};  /* fr m_keycod.c GLOBAL */
-GLOBAL SWORD awAktLine_g[UPB_MASK]     = {0,0,0,0,0,0,0,0};  /* fr m_keycod.c GLOBAL */
-GLOBAL SWORD awHoehe_g[UPB_MASK]       = {0,0,0,0,0,0,0,0};  /* fr m_keycod.c GLOBAL */
-GLOBAL SWORD awMaxLine_g[UPB_MASK]     = {0,0,0,0,0,0,0,0};  /* fr m_keycod.c GLOBAL */
-GLOBAL SWORD awBlockLen_g[UPB_MASK]    = {0,0,0,0,0,0,0,0};  /* fr m_keycod.c GLOBAL */
-GLOBAL SWORD awAktStartLine_g[UPB_MASK]= {0,0,0,0,0,0,0,0}; /* fr m_keycod.c GLOBAL */
+  {NEIN,NEIN,NEIN,NEIN,NEIN,NEIN,NEIN,NEIN};  /* fÃ¼r m_keycod.c GLOBAL */
+GLOBAL SWORD awAktLine_g[UPB_MASK]     = {0,0,0,0,0,0,0,0};  /* fÃ¼r m_keycod.c GLOBAL */
+GLOBAL SWORD awHoehe_g[UPB_MASK]       = {0,0,0,0,0,0,0,0};  /* fÃ¼r m_keycod.c GLOBAL */
+GLOBAL SWORD awMaxLine_g[UPB_MASK]     = {0,0,0,0,0,0,0,0};  /* fÃ¼r m_keycod.c GLOBAL */
+GLOBAL SWORD awBlockLen_g[UPB_MASK]    = {0,0,0,0,0,0,0,0};  /* fÃ¼r m_keycod.c GLOBAL */
+GLOBAL SWORD awAktStartLine_g[UPB_MASK]= {0,0,0,0,0,0,0,0}; /* fÃ¼r m_keycod.c GLOBAL */
 STATIC SWORD wAlteMaske=0;
 
 STATIC	BOOL aboNewMask[UPB_MASK] = { JA, JA, JA, JA, JA, JA, JA, JA };
 STATIC	BOOL aboBrowseMask[UPB_MASK] = { JA, JA, JA, JA, JA, JA, JA, JA };
 
-GLOBAL BOOL bo_S_PGUP_g  =NEIN; 		    /* fr m_keycod.c GLOBAL */
-GLOBAL BOOL bo_S_PGDOWN_g=NEIN; 		    /* fr m_keycod.c GLOBAL */
+GLOBAL BOOL bo_S_PGUP_g  =NEIN; 		    /* fÃ¼r m_keycod.c GLOBAL */
+GLOBAL BOOL bo_S_PGDOWN_g=NEIN; 		    /* fÃ¼r m_keycod.c GLOBAL */
 
 IMPORT PWKB pWkbInfo_g;
 STATIC PSSTR pstrApp_m, pstrIndexKey_m;
@@ -297,9 +297,9 @@ STATIC BOOL boReset_m=NEIN;
 
 PPSTR ppstrRecord_m;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD M_Input (PWKB apWkbMask[], PSWORD pswMask, PSSTR apstrRecord[],
   PSSTR apstrMaskText[][25], PSSTR apstrBrowseText[][25],
@@ -344,7 +344,7 @@ if(lBlockVer_g&lBlock)
 i_Prepare(pstrOldString, apstrRecord,
   apTextBox[*pswMask][*pswField]);
 
-wMaxL=apTextBox[*pswMask][*pswField]->wMaxL;	     /* L„nge des Textes */
+wMaxL=apTextBox[*pswMask][*pswField]->wMaxL;	     /* LÃ¤nge des Textes */
 if(apTextBox[*pswMask][*pswField]->bTyp != 0 &&
   wMaxL < apTextBox[*pswMask][*pswField]->wFensterB)
   apTextBox[*pswMask][*pswField]->wMaxL=
@@ -383,10 +383,10 @@ if(apTextBox[*pswMask][*pswField]->wRefCode >=0)
   M_BoxToRecord(apstrRecord, apTextBox[*pswMask][pT->wRefCode]);}
 
 Wi_Cursor(AUS);
-apTextBox[*pswMask][*pswField]->wMaxL=wMaxL;	     /* L„nge des Textes     */
+apTextBox[*pswMask][*pswField]->wMaxL=wMaxL;	     /* LÃ¤nge des Textes     */
 strcpy(pstrNewString, apTextBox[*pswMask][*pswField]->acText);
 apTextBox[*pswMask][*pswField]->wAttri = wAttri;
-Dl_SchreibBox(apTextBox[*pswMask][*pswField]);	     /* Attribut zurck      */
+Dl_SchreibBox(apTextBox[*pswMask][*pswField]);	     /* Attribut zurÃ¼ck      */
 apTextBox[*pswMask][*pswField]->wFensterZ = wFensterZ;
 apTextBox[*pswMask][*pswField]->wOffset = wOff;
 
@@ -398,11 +398,11 @@ return(OK);
 } /* end M_Input () */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_StoreBrowse()		      Datum: 28.10.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_StoreBrowse()		      Datum: 28.10.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_StoreBrowse(SWORD wMsk, PSSTR apstrRecord[],
   PSSTR apstrBrowseText[][25], PTEXTBOX apTextBox[][99], SWORD awBlocks[][2])
@@ -427,17 +427,17 @@ return;
 } /* end i_StoreBrowse() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_PrintWindow()		      Datum: 28.10.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_PrintWindow()		      Datum: 28.10.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_PrintWindow(PWKB apWkbMask[], SWORD wMaxMask, SWORD wMsk,
   PSSTR apstrRecord[], PSSTR apstrMaskText[][25], PSSTR apstrBrowseText[][25],
   PTEXTBOX apTextBox[][99], SWORD awBlocks[][2], SWORD awScroll[][4])
 {
-SREGISTER i,j;					      /* Z„hlervariable       */
+SREGISTER i,j;					      /* ZÃ¤hlervariable       */
 SLONG lBlock=BLOCK, lBrowse=BROWSE;
 
 for(i=wMaxMask; i > wMsk; --i)
@@ -448,7 +448,7 @@ if(!Wi_IsAktiv(apWkbMask[wMsk]))		     /* Window nicht aktiv   */
   Wi_Aktivieren(apWkbMask[wMsk]);		     /* Window aktivieren    */
 
 if(aboNewMask[wMsk])
-  {PPSTR ppstrTmp=apstrMaskText[wMsk];		     /* Zeiger zurcksetzen  */
+  {PPSTR ppstrTmp=apstrMaskText[wMsk];		     /* Zeiger zurÃ¼cksetzen  */
   Wi_Cls();					     /* Hintergrundtext dru. */
   for(i=0; *ppstrTmp;)
     Wi_Ss(0, i++, *ppstrTmp++);
@@ -464,7 +464,7 @@ boReset_m=NEIN;
 
 if(aboBrowseMask[wMsk] && awBlocks_g[wMsk][1])
   {SWORD wAttri=apTextBox[wMsk][0]->wAttri;	     /* Farbe der Textbox    */
-  PPSTR ppstrTmp=apstrBrowseText[wMsk]; 	    /* Zeiger zurcksetzen  */
+  PPSTR ppstrTmp=apstrBrowseText[wMsk]; 	    /* Zeiger zurÃ¼cksetzen  */
   for(i=0; *ppstrTmp; ppstrTmp++, i++)		    /* Hintergrundtext dru. */
     {PSSTR pstr=*ppstrTmp;
     Wi_Ss(0, i, strpad(apstrMaskText[wMsk][i],
@@ -480,22 +480,22 @@ return;
 } /* end i_PrintWindow() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    M_PrintTBs()		      Datum: 28.10.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    M_PrintTBs()		      Datum: 28.10.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID M_PrintTBs(SWORD wMsk, PSSTR apstrRecord[], PTEXTBOX apTextBox[][99],
 		SWORD awBlocks[][2])
 {
-SWORD i;					     /* Z„hlervariable	     */
+SWORD i;					     /* ZÃ¤hlervariable	     */
 SLONG lBlock=BLOCK, lBrowse=BROWSE;
-SWORD wMax, wMaxField=i_MaxFld(apTextBox[wMsk]);    /* h”hste FeldNummer    */
+SWORD wMax, wMaxField=i_MaxFld(apTextBox[wMsk]);    /* hÃ¶hste FeldNummer    */
 
 awBlocks[0][0]=awBlocks[0][0];
 /* if(awBlockLen_g[wMsk] && lBlockVer_g&lBlock) */
-/*   wMax=awBlocks[wMsk][1]-1;			      /* frher [wMsk][0]     */
+/*   wMax=awBlocks[wMsk][1]-1;			      /* frÃ¼her [wMsk][0]     */
 /*else */ wMax=wMaxField;
 
 
@@ -522,11 +522,11 @@ return;
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Prepare()		      Datum: 28.10.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Prepare()		      Datum: 28.10.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_Prepare(PSSTR pstrOldString, PSSTR apstrRecord[], PTEXTBOX pTPre)
 {
@@ -549,11 +549,11 @@ return;
 } /* end i_Prepare() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_BlockHandling()	      Datum: 28.10.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_BlockHandling()	      Datum: 28.10.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_BlockHandling(SWORD wMsk, PSSTR apstrRecord[], PTEXTBOX apTextBox[][99],
      SWORD awRecLen[], SWORD wKeyCode, SWORD awBlocks[][2])
@@ -612,11 +612,11 @@ return;
 } /* end i_BlockHandling() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_BlockHandling()	      Datum: 28.10.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_BlockHandling()	      Datum: 28.10.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID i_BlockDelete(SWORD wMsk, PSSTR apstrRecord[], PTEXTBOX apTextBox[][99],
      SWORD awRecLen[], SWORD awBlocks[][2])
@@ -655,11 +655,11 @@ return;
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_PrintBlock()		      Datum: 28.10.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_PrintBlock()		      Datum: 28.10.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_PrintBlock(SWORD wMsk, PSSTR apstrRecord[], PTEXTBOX apTextBox[][99],
      SWORD awBlocks[][2])
@@ -716,11 +716,11 @@ return;
 } /* end i_PrintBlock() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_LiesEingabe()		      Datum: 28.10.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_LiesEingabe()		      Datum: 28.10.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_LiesEingabe(SWORD wMsk, SWORD wFld, PSSTR apstrRecord[],
   PTEXTBOX apTextBox[][99], PSSTR pstrNewString, PSWORD pwKeyCode)
@@ -764,27 +764,27 @@ return(wRetCode);
 } /* i_LiesEingabe() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     º
-  º                    PEVENT   pEvent     Zeiger auf Event-Struktur       º
-  º                                                                        º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     º
-  º                    zeigt nach Anforderung das Hilfefenster, und        º
-  º                    kehrt zur aufrufenden Funktion zurck, wenn         º
-  º                    entweder die Schaltfl„che ABBRUCH oder EINGABE      º
-  º                    bet„tigt wurde.                                     º
-  º                                                                        º
-  º  Rckgabewert:     DLG_ESC     ABBRUCH-Schaltfl„che wurde ausgew„hlt   º
-  º                    DLG_RETURN  EINGABE-Schaltfl„che wurde ausgew„hlt   º
-  º                                                                        º
-  º  Benutzte globale   - pstrReturn_g (R)                                 º
-  º  Variablen (R/W):   - pstrEsc_g    (R)                                 º
-  º                     - pstrF1_g     (R)                                 º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     â•‘
+  â•‘                    PEVENT   pEvent     Zeiger auf Event-Struktur       â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     â•‘
+  â•‘                    zeigt nach Anforderung das Hilfefenster, und        â•‘
+  â•‘                    kehrt zur aufrufenden Funktion zurÃ¼ck, wenn         â•‘
+  â•‘                    entweder die SchaltflÃ¤che ABBRUCH oder EINGABE      â•‘
+  â•‘                    betÃ¤tigt wurde.                                     â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     DLG_ESC     ABBRUCH-SchaltflÃ¤che wurde ausgewÃ¤hlt   â•‘
+  â•‘                    DLG_RETURN  EINGABE-SchaltflÃ¤che wurde ausgewÃ¤hlt   â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale   - pstrReturn_g (R)                                 â•‘
+  â•‘  Variablen (R/W):   - pstrEsc_g    (R)                                 â•‘
+  â•‘                     - pstrF1_g     (R)                                 â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
 {
@@ -920,8 +920,8 @@ SBYTE bErstmals = JA;
                 {
 
 		    case T_C_D:
-		    case T_C_L: 		    /* Zeile in Maske einfgen */
-                    case T_C_N:                     /* bzw. l”schen            */
+		    case T_C_L: 		    /* Zeile in Maske einfÃ¼gen */
+                    case T_C_N:                     /* bzw. lÃ¶schen            */
 		    case T_C_E:
                         return(pE->wTaste);
 
@@ -1112,15 +1112,15 @@ SBYTE bErstmals = JA;
             case EVENT_L_PRESS:
                 if (pE->wZeile == ZEI+HOE-2)
                 {
-		    if (pE->wSpalte > SPA+2 &&	       // RETURN-Schaltfl„che
+		    if (pE->wSpalte > SPA+2 &&	       // RETURN-SchaltflÃ¤che
                         pE->wSpalte < SPA+3+strlen(pstrReturn_g))
                         return(T_RETURN);
 
-		    if (pE->wSpalte > SPA+17 &&        // ESC-Schaltfl„che
+		    if (pE->wSpalte > SPA+17 &&        // ESC-SchaltflÃ¤che
                         pE->wSpalte < SPA+18+strlen(pstrEsc_g))
                         return(T_ESC);
 
-		    if (pE->wSpalte > SPA+30 &&        // Hilfe-Schaltfl„che
+		    if (pE->wSpalte > SPA+30 &&        // Hilfe-SchaltflÃ¤che
                         pE->wSpalte < SPA+31+strlen(pstrF1_g))
                      {
                         M_HilfeTools(pT);
@@ -1139,11 +1139,11 @@ SBYTE bErstmals = JA;
 } /* end i_ProcessEvent() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_PrintWindow()		      Datum: 28.10.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_PrintWindow()		      Datum: 28.10.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_KeyCode(PSWORD pwKeyCode)
 {
@@ -1182,35 +1182,35 @@ return;
 } /* i_KeyCode() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    M_Reset_ScrollLine             Datum: 25.08.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion setzt die internen Variablen der       º
-  º                    Funktion M_Input zurck, die zur Behandlung         º
-  º                    von scrollbaren Masken ben”tigt werden.             º
-  º                    Sie muá von der Applikation immer dann              º
-  º                    aufgerufen werden, wenn sich der am Schirm          º
-  º                    angezeigte Datensatz ge„ndert hat, da dieser        º
-  º                    ja nicht unbedingt die gleiche L„nge wie            º
-  º                    der zuvor bearbeitete haben muá.                    º
-  º                                                                        º
-  º  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):                                                      º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    M_Reset_ScrollLine             Datum: 25.08.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion setzt die internen Variablen der       â•‘
+  â•‘                    Funktion M_Input zurÃ¼ck, die zur Behandlung         â•‘
+  â•‘                    von scrollbaren Masken benÃ¶tigt werden.             â•‘
+  â•‘                    Sie muÃŸ von der Applikation immer dann              â•‘
+  â•‘                    aufgerufen werden, wenn sich der am Schirm          â•‘
+  â•‘                    angezeigte Datensatz geÃ¤ndert hat, da dieser        â•‘
+  â•‘                    ja nicht unbedingt die gleiche LÃ¤nge wie            â•‘
+  â•‘                    der zuvor bearbeitete haben muÃŸ.                    â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Die Funktion hat keinen RÃ¼ckgabewert.               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):                                                      â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID M_Reset_ScrollLine(SWORD wFileHandler, PPSTR ppstrRecord,
 		   SWORD awInitRecLen[], SWORD awRecLength[], SWORD awFileMode[])
 {
 SREGISTER i;
 
-for(i=0; i < wFileHandler; i++) 		     /* Fr alle Dateien     */
+for(i=0; i < wFileHandler; i++) 		     /* FÃ¼r alle Dateien     */
   if(awFileMode[i]==REC_F || awFileMode[i]==WORK_F )
     {
     if( *(ppstrRecord+i) )
@@ -1221,7 +1221,7 @@ for(i=0; i < wFileHandler; i++) 		     /* Fr alle Dateien     */
     }
 
 
-for(i=0; i < UPB_MASK; i++)				   /* Fr alle Masken	   */
+for(i=0; i < UPB_MASK; i++)				   /* FÃ¼r alle Masken	   */
   {
   awMaxLine_g[i]=0;
   awAktLine_g[i]=0;
@@ -1260,12 +1260,12 @@ return;
 } /* M_BrowseMasks() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_TooBig ()                                                             º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_TooBig ()                                                             â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD i_TooBig(VOID)
 {
@@ -1273,10 +1273,10 @@ PSSTR apstrMessage[25];
 if(boBeepen_g) i_Beep();
 
 Ut_SchreibArray (apstrMessage,
-    "   Sie haben die maximale Zeilenl„nge ",
-    "   berschritten! ",
+    "   Sie haben die maximale ZeilenlÃ¤nge ",
+    "   Ã¼berschritten! ",
     "    ",
-    "   Bitte l”schen Sie die letzte Zeile.",
+    "   Bitte lÃ¶schen Sie die letzte Zeile.",
     "   Speichern Sie danach den Datensatz ",
     "   mit der [ESC]-Taste ab.",  _N);
 
@@ -1291,7 +1291,7 @@ return(OK);
   //  *pswMask, i, pT->strDatenfeld);
 
 
-// Wi_TestPrintf(pWkbInfo_g,"\n%s¯%s.", pTB->strDatenfeld, pTB->acText);
+// Wi_TestPrintf(pWkbInfo_g,"\n%sÂ»%s.", pTB->strDatenfeld, pTB->acText);
 
 //boTestModus_g=JA;
 //boTestModus_g=NEIN;
@@ -1300,11 +1300,11 @@ return(OK);
 // Wi_TestPrintf(pWkbInfo_g, "\n%d", __LINE__);
 
 
-//ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-//º  Funktionsname:    i_PrintBrowse()		      Datum: 28.10.88	   º
-//ºÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄº
-//º                                                                        º
-//ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+//â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+//â•‘  Funktionsname:    i_PrintBrowse()		      Datum: 28.10.88	   â•‘
+//â•‘â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•‘
+//â•‘                                                                        â•‘
+//â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 STATIC
 VOID i_PrintBrowse(SWORD wMsk, PSSTR apstrRecord[], PTEXTBOX apTextBox[][99],
      SWORD awBlocks[][2])
@@ -1378,7 +1378,7 @@ VOID M_Reset_ScrollLine(SWORD wFileHandler, PPSTR ppstrRecord,
 {
 SREGISTER i;
 
-for(i=0; i < wFileHandler; i++) 		     // Fr alle Dateien
+for(i=0; i < wFileHandler; i++) 		     // FÃ¼r alle Dateien
   if(awFileMode[i]==REC_F || awFileMode[i]==WORK_F )
     //if(awRecLength[i] != awInitRecLen[i] ||
     //	_msize(*(ppstrRecord+i))-2 > (SIZE_T)awInitRecLen[i])
@@ -1401,7 +1401,7 @@ for(i=0; i < wFileHandler; i++) 		     // Fr alle Dateien
       }
 
 
-for(i=0; i < UPB_MASK; i++)				   // Fr alle Masken
+for(i=0; i < UPB_MASK; i++)				   // FÃ¼r alle Masken
   {
   awMaxLine_g[i]=0;
   awAktLine_g[i]=0;

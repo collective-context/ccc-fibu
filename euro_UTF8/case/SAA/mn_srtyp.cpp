@@ -1,64 +1,64 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Mn_SetRahmenTyp()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Mn_SetRahmenTyp()							       º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Mn_SetRahmenTyp()							       â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_mnu.h>
 SWORD Mn_SetRahmenTyp(wMenuNr, wTyp);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-SWORD  wMenuNr	  Nummer des Mens
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+SWORD  wMenuNr	  Nummer des MenÃ¼s
 SWORD wTyp	 RT_EEEE/RT_DDDD
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion legt fr alle Menfenster eines Mens fest, welchen Typ der
-Rahmen der Menfenster hat.
-Alle eventuell bereits im Puffer stehenden Menfenster werden aktualisiert und
-die Statusinformation zu diesem Men wird ge„ndert.
-Folgende Rahmentypen sind m”glich:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion legt fÃ¼r alle MenÃ¼fenster eines MenÃ¼s fest, welchen Typ der
+Rahmen der MenÃ¼fenster hat.
+Alle eventuell bereits im Puffer stehenden MenÃ¼fenster werden aktualisiert und
+die Statusinformation zu diesem MenÃ¼ wird geÃ¤ndert.
+Folgende Rahmentypen sind mÃ¶glich:
 
 	       RT_EEE	Rahmen aus einfacher Linie
 	       RT_DDDD	Rahmen aus doppelter Linie
 
-Die Konstanten sind mit denen fr die Funktionen ¯Ut_ZeigeRahmen()® und ¯Wi_Set-
-Rahmentyp()® identisch.
+Die Konstanten sind mit denen fÃ¼r die Funktionen Â»Ut_ZeigeRahmen()Â« und Â»Wi_Set-
+Rahmentyp()Â« identisch.
 
 Diese Funktion kann zu jeder Zeit aufgerufen werden. Es ist jedoch empfehlens-
-wert, den Rahmentyp vor dem Aufruf der Funktion ¯Mn_Einrichten()® festzulegen,
+wert, den Rahmentyp vor dem Aufruf der Funktion Â»Mn_Einrichten()Â« festzulegen,
 um ein wiederholtes Beschreiben der Buffer zu vermeiden.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD Fehlerinformation OK/ERROR
      Im Fehlerfall wird die globale Varialble wFehler_g mit der Fehlernummer
      geladen.
-     MNU_LIMIT das Argument wMenuNr hatte einen Wert gr”áer als 9
-     MNU_FALSCHE_OPT   die gew„hlte Option fr wTyp war ungltig
+     MNU_LIMIT das Argument wMenuNr hatte einen Wert grÃ¶ÃŸer als 9
+     MNU_FALSCHE_OPT   die gewÃ¤hlte Option fÃ¼r wTyp war ungÃ¼ltig
 
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  wFehler_g   (W)
 		  aMenus_g[]  (R)
 .ff
 siehe auch:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Mn_SetPalette(), Ut_ZeigeRahmen(), Wi_SetRahmentyp()
 
 Beispiel:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Dieses Beispiel nimmt Bezug auf das Beispiel zur Funktion ¯Mn_Einrichten()®. Der
-Funktionsaufruf fr ¯Mn_SetRahmenTyp()® sollte, wie hier gezeigt, m”glichst vor
-dem Einrichten der einzelnen Menfenster erfolgen.
-Mit diesem Funktionsaufruf wird allen Menfenstern das HAUPTMENš's Rahmentyp
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Dieses Beispiel nimmt Bezug auf das Beispiel zur Funktion Â»Mn_Einrichten()Â«. Der
+Funktionsaufruf fÃ¼r Â»Mn_SetRahmenTyp()Â« sollte, wie hier gezeigt, mÃ¶glichst vor
+dem Einrichten der einzelnen MenÃ¼fenster erfolgen.
+Mit diesem Funktionsaufruf wird allen MenÃ¼fenstern das HAUPTMENÃœ's Rahmentyp
 doppelt zugewiesen.
 
 main()
@@ -73,21 +73,21 @@ main()
 
 .te*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <stdio.h>
 #include <eur_tool.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT SWORD wFehler_g; 	 /* Nummer des letzten aufgetretenen Fehlers */
 IMPORT MENU  aMenus_g[MAXMENUES]; // Array der MENU-Strukturen
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Mn_SetRahmenTyp(SWORD wMenuNr, SWORD wTyp)
 {
@@ -95,14 +95,14 @@ SWORD Mn_SetRahmenTyp(SWORD wMenuNr, SWORD wTyp)
     BOOL boAendern = NEIN;
 
     if (wMenuNr >= MAXMENUES)                       /* maximale Anzahl der  */
-    {                                               /* Mens berprfen     */
+    {                                               /* MenÃ¼s Ã¼berprÃ¼fen     */
         wFehler_g = MNU_LIMIT;                      /* Fehlernummer laden   */
-        return(ERROR);                              /* und zurck           */
+        return(ERROR);                              /* und zurÃ¼ck           */
     }
 
 
-    switch(wTyp)                                    /* Argument wTyp ber-  */
-    {                                               /* prfen               */
+    switch(wTyp)                                    /* Argument wTyp Ã¼ber-  */
+    {                                               /* prÃ¼fen               */
         case RT_EEEE:                               /* und eintragen        */
             if (aMenus_g[wMenuNr].wStatus.wRahmentyp != 0)
             {
@@ -127,7 +127,7 @@ SWORD Mn_SetRahmenTyp(SWORD wMenuNr, SWORD wTyp)
 
     pMkbLokal = aMenus_g[wMenuNr].pMkbStart;        /* ersten PMKB holen    */
 
-    if (pMkbLokal != NULL && boAendern == JA )      /* Men-Puffer „ndern,  */
+    if (pMkbLokal != NULL && boAendern == JA )      /* MenÃ¼-Puffer Ã¤ndern,  */
     {                                               /* wenn Fenster einge-  */
         do                                          /* richtet              */
         {
@@ -135,11 +135,11 @@ SWORD Mn_SetRahmenTyp(SWORD wMenuNr, SWORD wTyp)
 		i_Fehler(I_FEHLER_SIGN, "Mn_SetRahmenTyp()",
                          __FILE__, __LINE__);
 
-	    i_Mn_ToBuffer(pMkbLokal,		    /* Menfenster im	    */
-                          wMenuNr,                  /* Puffer „ndern lassen */
+	    i_Mn_ToBuffer(pMkbLokal,		    /* MenÃ¼fenster im	    */
+                          wMenuNr,                  /* Puffer Ã¤ndern lassen */
                           MNU_AENDERN);
 
-            pMkbLokal = pMkbLokal->pNaechster;      /* n„chsten holen       */
+            pMkbLokal = pMkbLokal->pNaechster;      /* nÃ¤chsten holen       */
 
         } while (pMkbLokal != aMenus_g[wMenuNr].pMkbStart);
     } /* end of if */

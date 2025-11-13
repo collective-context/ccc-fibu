@@ -1,72 +1,72 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Ut_ZeigeLinie()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Ut_ZeigeLinie()							       º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Ut_ZeigeLinie()							       â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_utl.h>
 VOID Ut_ZeigeLinie(wSpalte, wZeile, wBreite, wHoehe, wAttr, wRT, wLT);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD	 wSpatle    Ausgabespalte
 SWORD	 wZeile     Ausgabezeile
-SWORD	 wBreite    L„nge der Linie oder ¯0®
-SWORD	 wHoehe     L„nge der Linie oder ¯0®
+SWORD	 wBreite    LÃ¤nge der Linie oder Â»0Â«
+SWORD	 wHoehe     LÃ¤nge der Linie oder Â»0Â«
 SWORD	 wAttr	    Attribut der Linie
 SWORD	 wRT	    Rahmentyp
 SWORD	 wLT	    Linientyp: EINFACH, DOPPELT
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Diese Funktion teilt einen Rahmen mit einem beliebigen Typ durch eine waag-
 erechte oder senkrechte einfache oder doppelte Linie, an der angegebenen
-Position. Mit Hilfe der Parameter ¯wBreite® und ¯wHoehe® kann die L„nge und die
-Ausrichtung der Linien festgelegt werden. So muá beispielsweise fr eine fnf
-Spalten lange, waagrechte Linei ¯wBreite® mit ¯5® und ¯wHoehe® mit ¯0® be-
+Position. Mit Hilfe der Parameter Â»wBreiteÂ« und Â»wHoeheÂ« kann die LÃ¤nge und die
+Ausrichtung der Linien festgelegt werden. So muÃŸ beispielsweise fÃ¼r eine fÃ¼nf
+Spalten lange, waagrechte Linei Â»wBreiteÂ« mit Â»5Â« und Â»wHoeheÂ« mit Â»0Â« be-
 schrieben werden. Wenn beide Parameter von Null verschieden sind, erfolgt keine
 Ausgabe.
 
-Damit die Enden der Linie nahtlos an den Rahmen anschlieáen k”nnen, ben”tigt die
-Funktion den Typ des Rahmens. Sie k”nnen fr den Parameter ¯WAttr® die bei der
-Funktion ¯Ut_ZeigeRahmen()® vorgestellten Textkonstanten benutzen.
-Mit dem Parameter ¯wLT® kann der Linientyp gew„hlt werden. Die Linie wird ent-
-weder mit einem einfachen oder einem doppelten Strich ausgegeben. Hierfr stehen
-Ihnen zwei Textkonstanten zur Verfgung: EINFACH, DOPPELT.
+Damit die Enden der Linie nahtlos an den Rahmen anschlieÃŸen kÃ¶nnen, benÃ¶tigt die
+Funktion den Typ des Rahmens. Sie kÃ¶nnen fÃ¼r den Parameter Â»WAttrÂ« die bei der
+Funktion Â»Ut_ZeigeRahmen()Â« vorgestellten Textkonstanten benutzen.
+Mit dem Parameter Â»wLTÂ« kann der Linientyp gewÃ¤hlt werden. Die Linie wird ent-
+weder mit einem einfachen oder einem doppelten Strich ausgegeben. HierfÃ¼r stehen
+Ihnen zwei Textkonstanten zur VerfÃ¼gung: EINFACH, DOPPELT.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion hat keinen Rckgabewert.
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion hat keinen RÃ¼ckgabewert.
 
 
 Benutzte globale Variablen:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  keine
 
 .de \euro\demo\demolini.c
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <string.h>
 
 #include <eur_tool.h>
 
 CHAR acEnde[2][2][5] = {
-                          { "Â´ÁÃ", "Ñ¶ÏÇ" },        /* einfacher Linientyp  */
-                          { "ÒµĞÆ", "Ë¹ÊÌ" }         /* doppelter Linietyp   */
+                          { "â”¬â”¤â”´â”œ", "ÃÃ‚Â¤Ãƒ" },        /* einfacher Linientyp  */
+                          { "ÃŠÃÃ°Ã£", "â•¦â•£â•©â• " }         /* doppelter Linietyp   */
                        };
 
 CHAR acLinie[2][3] = {
-                        "Ä³",                       /* einfacher Linietyp   */
-                        "Íº"                        /* doppelter Linietyp   */
+                        "â”€â”‚",                       /* einfacher Linietyp   */
+                        "â•â•‘"                        /* doppelter Linietyp   */
                      };
 
 #define  MASKE_L   0x01                             /* Obere Rahmenkante    */
@@ -74,9 +74,9 @@ CHAR acLinie[2][3] = {
 #define  MASKE_R   0x04                             /* Untere Rahmenkante   */
 #define  MASKE_O   0x08                             /* Linke Rahmenkante    */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Ut_ZeigeLinie(SWORD wSpalte, SWORD wZeile,
 		   SWORD wBreite, SWORD wHoehe,
@@ -87,7 +87,7 @@ VOID Ut_ZeigeLinie(SWORD wSpalte, SWORD wZeile,
 
     if ( wBreite != 0  &&  wHoehe == 0 )            /* waagrechte Linie     */
     {
-        wStaerke = (wRT & MASKE_L) ? 1:0;           /* Strichst„rke des Rah.*/
+        wStaerke = (wRT & MASKE_L) ? 1:0;           /* StrichstÃ¤rke des Rah.*/
 	Vi_Sza(wSpalte++, wZeile,
                acEnde[wLT][wStaerke][3], wAttr);
 
@@ -95,14 +95,14 @@ VOID Ut_ZeigeLinie(SWORD wSpalte, SWORD wZeile,
 	    Vi_Sza(wSpalte++, wZeile,
                    acLinie[wLT][0], wAttr);
 
-        wStaerke = (wRT & MASKE_R) ? 1:0;           /* Strichst„rke des Rah.*/
+        wStaerke = (wRT & MASKE_R) ? 1:0;           /* StrichstÃ¤rke des Rah.*/
 	Vi_Sza(wSpalte, wZeile,
                acEnde[wLT][wStaerke][1], wAttr);
     }
 
     else if ( wBreite == 0  &&  wHoehe != 0 )       /* senkrechte Linie     */
     {
-        wStaerke = (wRT & MASKE_O) ? 1:0;           /* Strichst„rke des Rah.*/
+        wStaerke = (wRT & MASKE_O) ? 1:0;           /* StrichstÃ¤rke des Rah.*/
 	Vi_Sza(wSpalte, wZeile++,
                acEnde[wLT][wStaerke][0], wAttr);
 
@@ -110,7 +110,7 @@ VOID Ut_ZeigeLinie(SWORD wSpalte, SWORD wZeile,
 	    Vi_Sza(wSpalte, wZeile++,
                    acLinie[wLT][1], wAttr);
 
-        wStaerke = (wRT & MASKE_U) ? 1:0;           /* Strichst„rke des Rah.*/
+        wStaerke = (wRT & MASKE_U) ? 1:0;           /* StrichstÃ¤rke des Rah.*/
 	Vi_Sza(wSpalte, wZeile,
                acEnde[wLT][wStaerke][2], wAttr);
 

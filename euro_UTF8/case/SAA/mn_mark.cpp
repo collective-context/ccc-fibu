@@ -1,17 +1,17 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Mn_Marker()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Mn_Marker()								       º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Mn_Marker()								       â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_mnu.h>
 SWORD Mn_Marker(wOption, wModus);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD  wOption	 Nummer der Option
 SWORD  wModus	 EIN	  Marker einschalten
 		AUS	 Marker ausschalten
@@ -20,72 +20,72 @@ SWORD  wModus	 EIN	  Marker einschalten
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Mit dieser Funktion k”nnen Sie fr die bergebene Option festlegen, ob vor dem
-Text der Menoption ein kleines H„kchen (û=ASCII 251) angezeigt werden soll oder
-nicht. Dieses Verfahren ist fr den Anwender sinnvoll, da er mit einem Blick auf
-das Menfenster erkennen kann, ob eine Option zur Zeit ein- oder ausgeschaltet
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Mit dieser Funktion kÃ¶nnen Sie fÃ¼r die Ã¼bergebene Option festlegen, ob vor dem
+Text der MenÃ¼option ein kleines HÃ¤kchen (Â¹=ASCII 251) angezeigt werden soll oder
+nicht. Dieses Verfahren ist fÃ¼r den Anwender sinnvoll, da er mit einem Blick auf
+das MenÃ¼fenster erkennen kann, ob eine Option zur Zeit ein- oder ausgeschaltet
 ist.
 
-Sie kennen dieses Prinzip sicherlich vom Debug-Men des QuickC-Compilers. Dort
-wird der Status der Optionen ¯Bildschirmwechsel ein® und ¯Verfolgen ein® durch
+Sie kennen dieses Prinzip sicherlich vom Debug-MenÃ¼ des QuickC-Compilers. Dort
+wird der Status der Optionen Â»Bildschirmwechsel einÂ« und Â»Verfolgen einÂ« durch
 diese Markierungen angezeigt.
 
-Wegen des Komforts der Toolbox ist es natrlich nicht notwendig, daá Sie in den
-#Strings der Menoptionen Platz fr dieses H„kchen lassen.
+Wegen des Komforts der Toolbox ist es natÃ¼rlich nicht notwendig, daÃŸ Sie in den
+#Strings der MenÃ¼optionen Platz fÃ¼r dieses HÃ¤kchen lassen.
 
-Die Wirkung der Funktion steuern Sie ber das Argument wModus.
+Die Wirkung der Funktion steuern Sie Ã¼ber das Argument wModus.
 
-Mit der Konstanten EIN eird der bergebenen Option ein Marker hinzugefgt, mit
-der Konstanten AUS wird ein eventuell vorhandener Marker entfernt. Durch šber-
+Mit der Konstanten EIN eird der Ã¼bergebenen Option ein Marker hinzugefÃ¼gt, mit
+der Konstanten AUS wird ein eventuell vorhandener Marker entfernt. Durch Ãœber-
 gabe von DREHEN wird ein Marker gesetzt, wenn keiner vorhanden war, bzw. ent-
 fernt, wenn er vorhanden war.
-Wenn Sie den aktuellen Status des Markers ermitteln wollen, k”nnen Sie der
-Funktion fr wModus die Konstante STATUS berbegen.
+Wenn Sie den aktuellen Status des Markers ermitteln wollen, kÃ¶nnen Sie der
+Funktion fÃ¼r wModus die Konstante STATUS Ã¼berbegen.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD	   Status der Markierung nach dem Aufruf der Funktion
 	  0 == Markierung nicht gesetzt
 	  1 == Markierung gesetzt
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  wFehler_g   (W)
 
 siehe auch:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Mn_Option()
 
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <eur_tool.h>                                 /* Toolbox-Headers      */
-#include <stdio.h>                                  /* fr NULL             */
-#include <string.h>                                 /* fr strcmp()         */
+#include <stdio.h>                                  /* fÃ¼r NULL             */
+#include <string.h>                                 /* fÃ¼r strcmp()         */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT SWORD wFehler_g; 	 /* Nummer des letzten aufgetretenen Fehlers */
 IMPORT MENU  aMenus_g[MAXMENUES]; // Array der MENU-Strukturen
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Mn_Marker(SWORD wOption, SWORD wModus)
 {
-    PMKB  pMkb;                                     /* MKB gefundenes Men  */
-    SWORD  wMenuNr;				     /* Nummer gefund. Men  */
+    PMKB  pMkb;                                     /* MKB gefundenes MenÃ¼  */
+    SWORD  wMenuNr;				     /* Nummer gefund. MenÃ¼  */
 
-    pMkb = i_Mn_FindeMkb(&wOption, &wMenuNr);	    /* MKB fr Option find. */
+    pMkb = i_Mn_FindeMkb(&wOption, &wMenuNr);	    /* MKB fÃ¼r Option find. */
 
     if (pMkb == NULL)                               /* MKB nicht gefunden   */
     {
@@ -117,13 +117,13 @@ SWORD Mn_Marker(SWORD wOption, SWORD wModus)
                 break;
 
             case STATUS:                            /* nur return-Anweisung */
-                break;                              /* ausfhren            */
+                break;                              /* ausfÃ¼hren            */
 
             default:
-                wFehler_g = MNU_FALSCHE_OPT;        /* ungltiger Wert fr  */
+                wFehler_g = MNU_FALSCHE_OPT;        /* ungÃ¼ltiger Wert fÃ¼r  */
                 return (ERROR);                     /* wModus               */
         }
-        return(pMkb->pHotkeys[wOption].wMarker);    /* Status zurckgeben   */
+        return(pMkb->pHotkeys[wOption].wMarker);    /* Status zurÃ¼ckgeben   */
     }
 
 return(0); //
@@ -132,35 +132,35 @@ return(0); //
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Mn_FindeMkb		      Datum: 26.10.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PSWORD pwOption	 hin	= gesuchte Option	    º
-  º                                     zurck = Index in pHotkeys         º
-  º		       PSWORD pwMenuNr	 zurck = Nummer des Mens	    º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion ist eine Hilfsfunktion fr           º
-  º		       Mn_Marker() und Mn_Option().			   º
-  º                    Sie ermittelt die Nummer des Mens, den MKB und     º
-  º                    den Index auf MKB->pHotkeys fr die im Argument     º
-  º                    pwOption bergebene Option.                         º
-  º                                                                        º
-  º  Rckgabewert:     PMKB   Zeiger auf MKB, wenn Option gefunden wurde   º
-  º                           oder NULL-Zeiger, wenn nicht                 º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):                                                      º
-  º                    aMenus_g    (R)                                     º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Mn_FindeMkb		      Datum: 26.10.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PSWORD pwOption	 hin	= gesuchte Option	    â•‘
+  â•‘                                     zurÃ¼ck = Index in pHotkeys         â•‘
+  â•‘		       PSWORD pwMenuNr	 zurÃ¼ck = Nummer des MenÃ¼s	    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion ist eine Hilfsfunktion fÃ¼r           â•‘
+  â•‘		       Mn_Marker() und Mn_Option().			   â•‘
+  â•‘                    Sie ermittelt die Nummer des MenÃ¼s, den MKB und     â•‘
+  â•‘                    den Index auf MKB->pHotkeys fÃ¼r die im Argument     â•‘
+  â•‘                    pwOption Ã¼bergebene Option.                         â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     PMKB   Zeiger auf MKB, wenn Option gefunden wurde   â•‘
+  â•‘                           oder NULL-Zeiger, wenn nicht                 â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):                                                      â•‘
+  â•‘                    aMenus_g    (R)                                     â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 PMKB i_Mn_FindeMkb(PSWORD pwOption, PSWORD pwMenuNr)
 {
-    SWORD i,j;					    /* Schleifenz„hler	    */
+    SWORD i,j;					    /* SchleifenzÃ¤hler	    */
     PMKB     pMkbTmp;                               /* derzeit bearb. MKB   */
 
-    for (i=0; i < MAXMENUES; i++)                   /* alle Mens werden    */
+    for (i=0; i < MAXMENUES; i++)                   /* alle MenÃ¼s werden    */
     {                                               /* durchsucht           */
         pMkbTmp = aMenus_g[i].pMkbStart;            /* Adresse erster MKB   */
         if (pMkbTmp != NULL)                        /* wenn MKB da          */

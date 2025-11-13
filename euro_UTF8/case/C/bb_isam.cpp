@@ -1,16 +1,16 @@
 // (C)WINware Software, P.Mayer  Letztes Update am 02-Mar-1996 / 16:04:18 - Sat
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Programme-Name: BAB_ISAM.C      Revision: 1.3	   (C) 1989/1991    º
-  º  Function      : euroSOFT Basisprogramm                                 º
-  º                                                                         º
-  º  Rev.-Date     : 01.05.1991, Graz           Update: 16.07.1991, Graz    º
-  º  Author        : Peter Mayer                Author: Peter Mayer         º
-  º  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                         Deklarations-Dateien                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Programme-Name: BAB_ISAM.C      Revision: 1.3	   (C) 1989/1991    â•‘
+  â•‘  Function      : euroSOFT Basisprogramm                                 â•‘
+  â•‘                                                                         â•‘
+  â•‘  Rev.-Date     : 01.05.1991, Graz           Update: 16.07.1991, Graz    â•‘
+  â•‘  Author        : Peter Mayer                Author: Peter Mayer         â•‘
+  â•‘  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                         Deklarations-Dateien                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define NDEBUG 1
 #include <string.h>
 #include <app_tool.h>
@@ -18,14 +18,14 @@
 #include "\euro\c\bb_proto.h"
 
 IMPORT SWORD wMwstMode_g;
-IMPORT SWORD wFremdwMode_g;   /* Nummer der Fremdw., 0==Landesw„hr. */
+IMPORT SWORD wFremdwMode_g;   /* Nummer der Fremdw., 0==LandeswÃ¤hr. */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Unlock()                                                                º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Gesperrte Datens„tze entsperren                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Unlock()                                                                â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Gesperrte DatensÃ¤tze entsperren                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Unlock(PSSTR pstrErr)
 {
@@ -44,16 +44,16 @@ return(OK);
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Store (14)                                                              º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine behandelt den Abschluá eines Stammsatzes.                 º
-  º Zum Abschluá geh”rt die OK-Abfrage und das Herstellen eines defi-       º
-  º nierten Endzustandes des Datensatzes in der Datei, je nach Ergebnis     º
-  º der OK-Abfrage.                                                         º
-  º Hier k”nnen die Daten in mehrere Dateien geschrieben werden und         º
-  º applikationsabh„ngige Querverweise aktualisiert werden.                 º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Store (14)                                                              â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine behandelt den AbschluÃŸ eines Stammsatzes.                 â•‘
+  â•‘ Zum AbschluÃŸ gehÃ¶rt die OK-Abfrage und das Herstellen eines defi-       â•‘
+  â•‘ nierten Endzustandes des Datensatzes in der Datei, je nach Ergebnis     â•‘
+  â•‘ der OK-Abfrage.                                                         â•‘
+  â•‘ Hier kÃ¶nnen die Daten in mehrere Dateien geschrieben werden und         â•‘
+  â•‘ applikationsabhÃ¤ngige Querverweise aktualisiert werden.                 â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Store (VOID)
 {
@@ -61,36 +61,36 @@ SREGISTER i;
 SWORD wChanged=NO, wSelect=NO;
 SWORD wOkAbort=NO;				      /* Antwort-Abbruch NEIN */
 
-if(Semantic_Check() == ABBRUCH ||                    /* Wenn Satz ungltig   */
+if(Semantic_Check() == ABBRUCH ||                    /* Wenn Satz ungÃ¼ltig   */
   (!awNewRecord_g[0] && !awExistingRecord_g[0]) )    /* !!! Funktion vor-    */
   {Unlock("STORE_1");                                /* zeitig verlassen !!! */
   wNrKreisAkt_g= -1;
   return(ABBRUCH);}
 
 for(i=0; i < wFileHandler_g; i++)		     /* Wurde in einem Daten */
-  if (awFileMode_g[i]==REC_F ||   /* POS_F */	     /* satz etwas ge„ndert? */
+  if (awFileMode_g[i]==REC_F ||   /* POS_F */	     /* satz etwas geÃ¤ndert? */
       pBFinfo_g[i].wNbRefFields -
       pBFinfo_g[i].wNbRefLooks >1)
     wChanged=( wChanged || awChangeFlag_g[i]);
 
-if(wChanged)                                         /* Wenn nderung JA     */
+if(wChanged)                                         /* Wenn Ã„nderung JA     */
   {
-  M_OkQuestion(&wSelect,"Bitte w„hlen Sie:",	     /* Kommt als Antwort 2  */
+  M_OkQuestion(&wSelect,"Bitte wÃ¤hlen Sie:",	     /* Kommt als Antwort 2  */
     "#Abspeichern der Daten.",
     "#Beenden ohne speichern.",
-    "#Zurck zur Eingabe.",_N);
+    "#ZurÃ¼ck zur Eingabe.",_N);
 
   switch(wSelect)
     {
     case -1:                                         /* oder ESC, dann Abb-  */
-    case  2:                                         /* bruch und zurck zur */
+    case  2:                                         /* bruch und zurÃ¼ck zur */
       wOkAbort=YES;				    /* Eingabe. Programm-   */
-      wFinis_g=NO;				    /* ende verz”gern.	    */
+      wFinis_g=NO;				    /* ende verzÃ¶gern.	    */
       wNrKreisAkt_g = -1;
       break;
 
     case  0:                                         /* Sonst: Kommt als Ant-*/
-      /* i_Prepare_Records(apTextBox_g);	    /* wort 0, dann die Gl-*/
+      /* i_Prepare_Records(apTextBox_g);	    /* wort 0, dann die GÃ¼l-*/
       Save_Record ();				    /* tigkeit speichern    */
       break;
     } /* end case */
@@ -115,16 +115,16 @@ return(wOkAbort);
 } /* end Store (14) */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Save_Record (15)                                                        º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine schreibt den aktuellen Stammsatz in  die Stammsatz-       º
-  º Datei zurck. Die tats„chlich ausgefhrte Operation richtet sich        º
-  º danach, ob ein neuer Satz in die Datei hinzukommt oder ein beste-       º
-  º hender Satz berschrieben werden soll.                                  º
-  º Soll der Stammsatz, oder Teile davon, noch in eine andere Datei ge-     º
-  º schrieben werden, so ist der entsprechnde Teil hier einzutragen.        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Save_Record (15)                                                        â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine schreibt den aktuellen Stammsatz in  die Stammsatz-       â•‘
+  â•‘ Datei zurÃ¼ck. Die tatsÃ¤chlich ausgefÃ¼hrte Operation richtet sich        â•‘
+  â•‘ danach, ob ein neuer Satz in die Datei hinzukommt oder ein beste-       â•‘
+  â•‘ hender Satz Ã¼berschrieben werden soll.                                  â•‘
+  â•‘ Soll der Stammsatz, oder Teile davon, noch in eine andere Datei ge-     â•‘
+  â•‘ schrieben werden, so ist der entsprechnde Teil hier einzutragen.        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID Save_Record (VOID)
 {
@@ -132,34 +132,34 @@ SREGISTER i;					      /*		      */
 SWORD wRetCode; 				      /* Fehlercode	      */
 CHAR strPrimaryKey[TB_MAX];                          /*                      */
                                                      /*                      */
-for (i=0; i < wFileHandler_g; i++)		     /* Bei nderun.in Folge-*/
+for (i=0; i < wFileHandler_g; i++)		     /* Bei Ã„nderun.in Folge-*/
     awChangeFlag_g[0]=(awChangeFlag_g[0] ||	     /* Dateien, Satz auch in*/
     awChangeFlag_g[i]); 			     /* Stammdatei schreiben */
-						     /* Prim„rkey zusammen-  */
+						     /* PrimÃ¤rkey zusammen-  */
 strcpy(strPrimaryKey, p0("ART_ERFASS"));	     /* setzen aus Art der   */
 strcat(strPrimaryKey, p0("NUMMER"));		     /* Erfassung+Nummer der */
 						     /* Erfassung.	     */
-strcpy(p0("PRIMR_KEY"), strPrimaryKey);	     /* Prim„rkey in AU2100  */
-strcpy(p1("PRIMR_KEY"), strPrimaryKey);	     /* (File 0) und AU2101 */
+strcpy(p0("PRIMÃ„R_KEY"), strPrimaryKey);	     /* PrimÃ¤rkey in AU2100  */
+strcpy(p1("PRIMÃ„R_KEY"), strPrimaryKey);	     /* (File 0) und AU2101 */
 						     /* (File 1) kopieren.   */
 wRetCode=Db_BeginTran(B_MNW, "SAVE_01");	     /* Transaktion starten  */
                                                      /*                      */
-for (i=0; i < wFileHandler_g; i++)		     /* Fr alle Dateien,    */
-  if (awChangeFlag_g[i] &&			     /* wenn sich was ge„nd- */
+for (i=0; i < wFileHandler_g; i++)		     /* FÃ¼r alle Dateien,    */
+  if (awChangeFlag_g[i] &&			     /* wenn sich was geÃ¤nd- */
       awFileMode_g[i]==REC_F)  /* POS_F */	     /* ert hat und keine    */
     {                                                /* Ref-oder Dru-Datei   */
      if(i)					     /* Ab Datei 1 ein	     */
-       {memset(apstrRecKey_g[1],'\0',		     /* Schlssel (MATCHCODE)*/
+       {memset(apstrRecKey_g[1],'\0',		     /* SchlÃ¼ssel (MATCHCODE)*/
 			awRecKeyLength_g[1]);	     /* weniger!!, daher     */
-       strcpy(apstrRecKey_g[1], apstrRecKey_g[2]);}  /* Prim„rkey kopieren!  */
+       strcpy(apstrRecKey_g[1], apstrRecKey_g[2]);}  /* PrimÃ¤rkey kopieren!  */
 
-       /*_memset(apstrRecKey_g[1],'\0',TB_MAX,_F,_L); /* Schlssel (MATCHCODE)*/
+       /*_memset(apstrRecKey_g[1],'\0',TB_MAX,_F,_L); /* SchlÃ¼ssel (MATCHCODE)*/
        /*memcpy(apstrRecKey_g[1], apstrRecKey_g[2],   /* weniger!!, daher     */
-       /*  awRecKeyLength_g[1]);		      /* Prim„rkey kopieren!  */
+       /*  awRecKeyLength_g[1]);		      /* PrimÃ¤rkey kopieren!  */
 
      if(awNewRecord_g[i])			     /* neuer Datensatz      */
        {                                             /*                      */
-       Extract_Keys (i);                             /* 20 Schlssel filtern */
+       Extract_Keys (i);                             /* 20 SchlÃ¼ssel filtern */
        wRetCode=Db_Insert(i, apstrFileBlock_g,	     /* 		     */
 	 apstrRecord_g, awRecLength_g,		     /* 		     */
 	 apstrRecKey_g[i?1:2], i?1:2, _F, _L);	     /* 		     */
@@ -169,14 +169,14 @@ for (i=0; i < wFileHandler_g; i++)		     /* Fr alle Dateien,    */
           Insert_Pos_Info (i);                       /*                      */
                                                      /*                      */
 	  if(i) 				     /* Ab Datei 1 ein	     */
-	    {memset(apstrRecKey_g[1],'\0',	     /* Schlssel (MATCHCODE)*/
+	    {memset(apstrRecKey_g[1],'\0',	     /* SchlÃ¼ssel (MATCHCODE)*/
 			awRecKeyLength_g[1]);	     /* weniger!!, daher     */
-	    strcpy(apstrRecKey_g[1],		     /* Prim„rkey kopieren!  */
+	    strcpy(apstrRecKey_g[1],		     /* PrimÃ¤rkey kopieren!  */
 			apstrRecKey_g[2]);}
 
-	    /*_memset(apstrRecKey_g[1],'\0',TB_MAX,_F,_L); /* Schlssel (MATCHCODE)*/
+	    /*_memset(apstrRecKey_g[1],'\0',TB_MAX,_F,_L); /* SchlÃ¼ssel (MATCHCODE)*/
 	    /*memcpy(apstrRecKey_g[1], apstrRecKey_g[2],   /* weniger!!, daher	   */
-	    /*	awRecKeyLength_g[1]);			   /* Prim„rkey kopieren!  */
+	    /*	awRecKeyLength_g[1]);			   /* PrimÃ¤rkey kopieren!  */
 
 	  wRetCode=Db_Insert(i, apstrFileBlock_g,    /* 		     */
 	    apstrPosition_g, awPosLength_g,	     /* 		     */
@@ -190,16 +190,16 @@ for (i=0; i < wFileHandler_g; i++)		     /* Fr alle Dateien,    */
        }                                             /*                      */
      else                                            /* exisit.    Datensatz */
        {                                             /*                      */
-       Extract_Keys (i);			     /* 20 Schlssel filtern */
+       Extract_Keys (i);			     /* 20 SchlÃ¼ssel filtern */
 
-       /* ~PM 14.4.93 AU210: Best. Rech. laden PREIS_GR „ndern, šbernahme */
-       /* in Kundenstamm ja -->> deswegen vorl„ufig immer awReadOutside_g[i]=JA */
+       /* ~PM 14.4.93 AU210: Best. Rech. laden PREIS_GR Ã¤ndern, Ãœbernahme */
+       /* in Kundenstamm ja -->> deswegen vorlÃ¤ufig immer awReadOutside_g[i]=JA */
 
-       /* if(!awExistingRecord_g[i])			/* markieren fr vorher */
+       /* if(!awExistingRecord_g[i])			/* markieren fÃ¼r vorher */
 	 awReadOutside_g[i]=JA; 		     /* einlesen	     */
 
        wRetCode=Db_Update(i, apstrFileBlock_g,	     /* ACHTUNG: Hier ist in */
-	 apstrRecord_g, awRecLength_g, B_MNW, /*B_NO /* File 0 Key 2 Prim„rk.*/
+	 apstrRecord_g, awRecLength_g, B_MNW, /*B_NO /* File 0 Key 2 PrimÃ¤rk.*/
 	 apstrRecKey_g[i?1:2], i?1:2, _F, _L);	     /* u.in File 1 Key 1 !!!*/
                                                      /* wichtig, da B_Update */
        if (awPosLength_g[i])			     /* zuerst Record liest  */
@@ -207,16 +207,16 @@ for (i=0; i < wFileHandler_g; i++)		     /* Fr alle Dateien,    */
           Insert_Pos_Info (i);                       /* BTRIEVE !!           */
                                                      /*                      */
 	  if(i) 				     /* Ab Datei 1 ein	     */
-	    {memset(apstrRecKey_g[1],'\0',	     /* Schlssel (MATCHCODE)*/
+	    {memset(apstrRecKey_g[1],'\0',	     /* SchlÃ¼ssel (MATCHCODE)*/
 			awRecKeyLength_g[1]);	     /* weniger!!, daher     */
-	    strcpy(apstrRecKey_g[1],		     /* Prim„rkey kopieren!  */
+	    strcpy(apstrRecKey_g[1],		     /* PrimÃ¤rkey kopieren!  */
 			apstrRecKey_g[2]);}
 
-	    /*_memset(apstrRecKey_g[1],'\0',TB_MAX,_F,_L); /* Schlssel (MATCHCODE)*/
+	    /*_memset(apstrRecKey_g[1],'\0',TB_MAX,_F,_L); /* SchlÃ¼ssel (MATCHCODE)*/
 	    /*memcpy(apstrRecKey_g[1], apstrRecKey_g[2],   /* weniger!!, daher	   */
-	    /*	awRecKeyLength_g[1]);			   /* Prim„rkey kopieren!  */
+	    /*	awRecKeyLength_g[1]);			   /* PrimÃ¤rkey kopieren!  */
 
-	  /* if(!awExistingRecord_g[i]) 	     /* markieren fr vorher */
+	  /* if(!awExistingRecord_g[i]) 	     /* markieren fÃ¼r vorher */
 	    awReadOutside_g[i]=JA;		     /* einlesen	     */
 						     /* 		     */
 	  wRetCode=Db_Update(i, apstrFileBlock_g,    /* 		     */
@@ -237,12 +237,12 @@ return;                                              /*                      */
 } /* end Save_Record (15) */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Extract_Keys (20)                                                       º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Liest die Schlssel aus dem Stamm-Satz und tr„gt Sie in die weiteren    º
-  º Dateien ein.                                                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Extract_Keys (20)                                                       â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Liest die SchlÃ¼ssel aus dem Stamm-Satz und trÃ¤gt Sie in die weiteren    â•‘
+  â•‘ Dateien ein.                                                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Extract_Keys (SWORD wRec)
 {
@@ -271,17 +271,17 @@ return;
 } /* end Ectract_Keys (20) */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Read_Record (22)                                                        º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine liest einen Stammsatz aus der Stammsatz-Datei. Ist der    º
-  º eingegebene Schlssel nicht vorhanden, so wird eine Neuanlage           º
-  º signalisiert.                                                           º
-  º Ist der betreffende Datensatz gesperrt, so wird eine entsprechende      º
-  º Meldung ausgegeben.                                                     º
-  º Wird der Masken-Stammsatz aus mehreren Dateien gebildet, so wird        º
-  º das durch die Variable wFileHandler automatisch erkannt.                º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Read_Record (22)                                                        â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine liest einen Stammsatz aus der Stammsatz-Datei. Ist der    â•‘
+  â•‘ eingegebene SchlÃ¼ssel nicht vorhanden, so wird eine Neuanlage           â•‘
+  â•‘ signalisiert.                                                           â•‘
+  â•‘ Ist der betreffende Datensatz gesperrt, so wird eine entsprechende      â•‘
+  â•‘ Meldung ausgegeben.                                                     â•‘
+  â•‘ Wird der Masken-Stammsatz aus mehreren Dateien gebildet, so wird        â•‘
+  â•‘ das durch die Variable wFileHandler automatisch erkannt.                â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Read_Record (VOID)
 {
@@ -295,14 +295,14 @@ PMASKS pMask;
 Wi_TestPrintf(pWkbInfo_g, "\nRead_Record Art(%c).", cArt);
 
 for (pMask=pInitMasks_g;			     /* Alten Blockaufbau    */
-     pMask;pMask=pMask->pNext)                       /* fr alle vorhandenen */
-  M_DeleteAllBlocks (pMask);                         /* Masken l”schen. Dann */
+     pMask;pMask=pMask->pNext)                       /* fÃ¼r alle vorhandenen */
+  M_DeleteAllBlocks (pMask);                         /* Masken lÃ¶schen. Dann */
                                                      /* existiert nur mehr   */
                                                      /* der fixe Maskenteil. */
 for(i=0; !wBreak && i<wFileHandler_g; i++)	     /* 		     */
   if(awFileMode_g[i]==REC_F && !wEnde)	 /* POS_F */
     {
-    Extract_Keys(i);				     /* Schlssel filtern    */
+    Extract_Keys(i);				     /* SchlÃ¼ssel filtern    */
     wKeyNr=2 - (i ? 1 : 0);
 
     apstrRecKey_g[wKeyNr][0]=cArt;
@@ -348,7 +348,7 @@ for(i=0; !wBreak && i<wFileHandler_g; i++)	     /* 		     */
     EndFlag_Handler(i,wRet,&wBreak,B_MNW);
 
 
-if(awExistingRecord_g[1]) /* eigentl. applikationsabh„ngig, also nicht hier */
+if(awExistingRecord_g[1]) /* eigentl. applikationsabhÃ¤ngig, also nicht hier */
   M_BlockMaskAufbau(pInitMasks_g, apstrRecord_g,
 		     awRecLength_g, apstrPosition_g,
 		     awPosLength_g);
@@ -360,7 +360,7 @@ wFail_g=wBreak;
 
 if(Validate_Read() == 0)
   {
-  wFail_g=YES;					   /* ungltige Eingabe = YES	  */
+  wFail_g=YES;					   /* ungÃ¼ltige Eingabe = YES	  */
   pMask_g=pInitMasks_g;
   pLine_g=pMask_g->pBlLineWurzel;
   pBlock_g=pLine_g->pBlWurzel;
@@ -372,8 +372,8 @@ if(Validate_Read() == 0)
   wKeyCode_g=AUS;
 
   Ut_SchreibArray (apstrMessage,
-    "Interner Schlssel",
-    "Bitte einen gltigen Schlssel angeben", _N); /*			   */
+    "Interner SchlÃ¼ssel",
+    "Bitte einen gÃ¼ltigen SchlÃ¼ssel angeben", _N); /*			   */
 
   Dl_Info(apstrMessage, DLG_KRITISCH);
   Ut_LoeschArray (apstrMessage);
@@ -392,11 +392,11 @@ return;
 } /* end Read_Record (22) */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_Read_Ref                                                              º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_Read_Ref                                                              â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD i_Read_Ref(SWORD wF, SWORD wK)
 {
@@ -438,7 +438,7 @@ else
   {
   _memset(apstrRecord_g[wF],'\0',awRecLength_g[wF],_F,_L);
   i_BCopyToRefField(pBFinfo_g[wF].apKeys[wK]);
-  /* Ev. Meldung "Datensatz nicht verfgbar" */
+  /* Ev. Meldung "Datensatz nicht verfÃ¼gbar" */
   }
 
 EndFlag_Handler(wF,wRetCode,&wBreak,B_MNW);
@@ -453,14 +453,14 @@ return(wRetCode);
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Read_Rec(wFH, wK, wMeldung)                                             º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Funktion liest im File wFH den Schlssel strSelection_g laut Key- º
-  º Nummer wK.                                                              º
-  º In apstrRecord_g[wFH] und strSelection_g steht danach entweder der ge-  º
-  º funde Datensatz und der gewnschte Schlssel oder '\0'.                 º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Read_Rec(wFH, wK, wMeldung)                                             â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Funktion liest im File wFH den SchlÃ¼ssel strSelection_g laut Key- â•‘
+  â•‘ Nummer wK.                                                              â•‘
+  â•‘ In apstrRecord_g[wFH] und strSelection_g steht danach entweder der ge-  â•‘
+  â•‘ funde Datensatz und der gewÃ¼nschte SchlÃ¼ssel oder '\0'.                 â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Read_Rec(SWORD wFH, PSSTR pstrKey, SWORD wK, SWORD wMeldung, SWORD wLock,
 	     PSSTR pF, SWORD wL)
@@ -521,17 +521,17 @@ return(wRetCode);
 } /* end Read_Rec() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Read_Referenc (22)                                                      º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine liest die Datens„tze aus den Referenz-Dateien. Ist der    º
-  º eingegebene Schlssel nicht vorhanden, so wird die Nachricht "Daten     º
-  º nicht verfgbar" ausgegeben. Der Cursor bleibt im Referenz-Feld.        º
-  º Ist der betreffende Datensatz gesperrt, so wird eine entsprechende      º
-  º Meldung ausgegeben.                                                     º
-  º Wird die Maske aus mehreren Referenz-Dateien gebildet, so ist dies      º
-  º hier nachzutragen.                                                      º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Read_Referenc (22)                                                      â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine liest die DatensÃ¤tze aus den Referenz-Dateien. Ist der    â•‘
+  â•‘ eingegebene SchlÃ¼ssel nicht vorhanden, so wird die Nachricht "Daten     â•‘
+  â•‘ nicht verfÃ¼gbar" ausgegeben. Der Cursor bleibt im Referenz-Feld.        â•‘
+  â•‘ Ist der betreffende Datensatz gesperrt, so wird eine entsprechende      â•‘
+  â•‘ Meldung ausgegeben.                                                     â•‘
+  â•‘ Wird die Maske aus mehreren Referenz-Dateien gebildet, so ist dies      â•‘
+  â•‘ hier nachzutragen.                                                      â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Read_Reference ()
 {
@@ -567,12 +567,12 @@ return(OK);
 } /* end Read_Reference (22) */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º EndFlag_Handler()                                                       º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Abhandlung der EndFlag aus den Funktion Read_Record(), Read_Next()      º
-  º und Read_Previous.                                                      º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ EndFlag_Handler()                                                       â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Abhandlung der EndFlag aus den Funktion Read_Record(), Read_Next()      â•‘
+  â•‘ und Read_Previous.                                                      â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD EndFlag_Handler(SWORD wRec, SWORD wEndFlag, PSWORD pwBreak, SWORD wLock)
 {
@@ -580,26 +580,26 @@ SWORD wSuccess=NO;
 
 switch(wEndFlag)
   {
-  case 0:                                            /* Schlssel existiert  */
+  case 0:                                            /* SchlÃ¼ssel existiert  */
     awRecordLocked_g[wRec]=(wLock!=B_NO) ? JA : NEIN;
     awNewRecord_g[wRec]=NO;                          /*                      */
     awExistingRecord_g[wRec]=YES;                    /*                      */
     awChangeFlag_g[wRec]=NO;                         /*                      */
 
     if(awFileMode_g[wRec]==REC_F)  /* POS_F */			/* nur bei Rec-Keys !	*/
-      {Extract_Keys(wRec);			     /* Cursor im Schlssel- */
+      {Extract_Keys(wRec);			     /* Cursor im SchlÃ¼ssel- */
       Set_Default();				     /* Feld halten	     */
-      wKeyCode_g=AUS;}				     /* Schlssel eintragen  */
+      wKeyCode_g=AUS;}				     /* SchlÃ¼ssel eintragen  */
 
     wSuccess=YES;                                    /* erfolgreich JA       */
     break;
 
-  case 4:                                            /* Schlssel nicht da   */
+  case 4:                                            /* SchlÃ¼ssel nicht da   */
     awNewRecord_g[wRec]=YES;                         /*                      */
     awExistingRecord_g[wRec]=NO;                     /*                      */
     awChangeFlag_g[wRec]=NO;			     /* 		     */
 
-    if(awFileMode_g[wRec] != PARA_F)		     /* auáer Para-Dateien   */
+    if(awFileMode_g[wRec] != PARA_F)		     /* auÃŸer Para-Dateien   */
       {/*Db_SetRecLength(wRec, apstrRecord_g,	     /* 		     */
       /*  awRecLength_g, awInitRecLen_g, _F, _L, 0); /* 		     */
       _memset(apstrRecord_g[wRec],'\0',
@@ -608,7 +608,7 @@ switch(wEndFlag)
 	apstrRecKey_g[0], awRecKeyLength_g[0]);}     /* 		     */
 
     if(awFileMode_g[wRec]==REC_F)  /* POS_F */			/* nur bei Rec-Keys !	*/
-      {Extract_Keys(wRec);			     /* Schlssel eintragen  */
+      {Extract_Keys(wRec);			     /* SchlÃ¼ssel eintragen  */
       Set_Default();}
 
     wSuccess=YES;                                    /* erfolgreich JA       */
@@ -625,14 +625,14 @@ return(wSuccess);
 } /* end EndFlag_Handler() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Read_Next (24)                                                          º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine liest den n„chsten Satz lt. Sortierreihenfolge des        º
-  º Prim„r- bzw. Sekund„r-Keys, d.h. mit PgUp kann gebl„tter werden.        º
-  º Bei allen Feldern, auáer dem Sekund„r-Feld wird der n„chste             º
-  º Prim„rkey gesucht.                                                      º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Read_Next (24)                                                          â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine liest den nÃ¤chsten Satz lt. Sortierreihenfolge des        â•‘
+  â•‘ PrimÃ¤r- bzw. SekundÃ¤r-Keys, d.h. mit PgUp kann geblÃ¤tter werden.        â•‘
+  â•‘ Bei allen Feldern, auÃŸer dem SekundÃ¤r-Feld wird der nÃ¤chste             â•‘
+  â•‘ PrimÃ¤rkey gesucht.                                                      â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Read_Next()
 {
@@ -648,12 +648,12 @@ Wi_TestPrintf(pWkbInfo_g, "\nRead_Record Art(%c).", cArt);
 
 if(wNdx_g==0) wNdx_g=2;
 						     /* Alten Blockaufbau    */
-for(pMask=pInitMasks_g; pMask; pMask=pMask->pNext)   /* fr alle vorhandenen */
-  M_DeleteAllBlocks(pMask);			     /* Masken l”schen. Dann */
+for(pMask=pInitMasks_g; pMask; pMask=pMask->pNext)   /* fÃ¼r alle vorhandenen */
+  M_DeleteAllBlocks(pMask);			     /* Masken lÃ¶schen. Dann */
 						     /* existiert nur mehr   */
 						     /* der fixe Maskenteil. */
 memcpy(strKeyValue_g, apstrRecKey_g[0],
-  awRecKeyLength_g[0]); 			     /* Schlssel eintragen  */
+  awRecKeyLength_g[0]); 			     /* SchlÃ¼ssel eintragen  */
 
 Unlock("NEXT");
 wRet=Db_Next(0, apstrFileBlock_g,		     /* 		     */
@@ -678,7 +678,7 @@ for(i=1; !wBreak && i<wFileHandler_g; i++)	     /* 		     */
   if(awFileMode_g[i]==REC_F)   /* POS_F */
     {
     SWORD wBufLen=MAX_RECORD_SIZE, wOff, wKey=1;
-    Extract_Keys (i);				     /*(20)Schlssel filtern */
+    Extract_Keys (i);				     /*(20)SchlÃ¼ssel filtern */
 
     strcpy(apstrRecKey_g[wKey], apstrRecKey_g[2]);
 
@@ -714,7 +714,7 @@ if(wBreak) Read_Record();			     /*(22) Neuen Datens. l. */
 wFail_g=wBreak; 				     /* 		     */
 
 if(awExistingRecord_g[1])			     /* eigentl. applikations*/
-  M_BlockMaskAufbau(pInitMasks_g, apstrRecord_g,     /* abh„ngig, also nicht */
+  M_BlockMaskAufbau(pInitMasks_g, apstrRecord_g,     /* abhÃ¤ngig, also nicht */
     awRecLength_g, apstrPosition_g, awPosLength_g);  /* hier		     */
 else if(awNewRecord_g[1] &&
   !pInitMasks_g->pNext->pBlLineWurzel->pNext)
@@ -742,14 +742,14 @@ return;
 } /* end: Read_Next (24) */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Read_Previous (25)                                                      º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine liest den vorherigen Satz lt. Sortierreihenfolge des      º
-  º Prim„r- bzw. Sekund„r-Key, d.h. mit PgDn kann gebl„ttert werden.        º
-  º Bei allen Feldern, auáer dem Sekund„r-Feld wird der vorherige           º
-  º Prim„r-Key gesucht.                                                     º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Read_Previous (25)                                                      â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine liest den vorherigen Satz lt. Sortierreihenfolge des      â•‘
+  â•‘ PrimÃ¤r- bzw. SekundÃ¤r-Key, d.h. mit PgDn kann geblÃ¤ttert werden.        â•‘
+  â•‘ Bei allen Feldern, auÃŸer dem SekundÃ¤r-Feld wird der vorherige           â•‘
+  â•‘ PrimÃ¤r-Key gesucht.                                                     â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Read_Previous (VOID)
 {
@@ -765,8 +765,8 @@ Wi_TestPrintf(pWkbInfo_g, "\nRead_Record Art(%c).", cArt);
 
 if(wNdx_g==0) wNdx_g=2;
 						     /* Alten Blockaufbau    */
-for(pMask=pInitMasks_g; pMask; pMask=pMask->pNext)   /* fr alle vorhandenen */
-  M_DeleteAllBlocks(pMask);			     /* Masken l”schen. Dann */
+for(pMask=pInitMasks_g; pMask; pMask=pMask->pNext)   /* fÃ¼r alle vorhandenen */
+  M_DeleteAllBlocks(pMask);			     /* Masken lÃ¶schen. Dann */
 						     /* existiert nur mehr   */
 						     /* der fixe Maskenteil. */
 strcpy(strKeyValue_g, apstrRecKey_g[0]);	     /* 		     */
@@ -795,7 +795,7 @@ for(i=1; !wBreak && i<wFileHandler_g; i++)	     /* 		     */
   if(awFileMode_g[i]==REC_F)   /* POS_F */
     {
     SWORD wBufLen=MAX_RECORD_SIZE, wOff, wKey=1;
-    Extract_Keys (i);				     /*(20)Schlssel filtern */
+    Extract_Keys (i);				     /*(20)SchlÃ¼ssel filtern */
 
     strcpy(apstrRecKey_g[wKey], apstrRecKey_g[2]);
 
@@ -830,7 +830,7 @@ if(wBreak) Read_Record();			     /*(22) Neuen Datens. l. */
 wFail_g=wBreak;
 
 if(awExistingRecord_g[1])			     /* eigentl. applikations*/
-  M_BlockMaskAufbau(pInitMasks_g, apstrRecord_g,     /* abh„ngig, also nicht */
+  M_BlockMaskAufbau(pInitMasks_g, apstrRecord_g,     /* abhÃ¤ngig, also nicht */
     awRecLength_g, apstrPosition_g, awPosLength_g);  /* hier		     */
 else if(awNewRecord_g[1] &&
   !pInitMasks_g->pNext->pBlLineWurzel->pNext)
@@ -858,12 +858,12 @@ return;
 } /* end Read_Previous (25) */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Delete_Record (29)                                                      º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Dieses Modul behandelt die Anwender-L”schfunktion und l”scht bestehende º
-  º Datens„tze in den Datei.                                                º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Delete_Record (29)                                                      â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Dieses Modul behandelt die Anwender-LÃ¶schfunktion und lÃ¶scht bestehende â•‘
+  â•‘ DatensÃ¤tze in den Datei.                                                â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Delete_Record (VOID)
 {
@@ -871,10 +871,10 @@ SREGISTER i;
 SWORD wSelect, wKeyNr;
 
 M_OkQuestion(&wSelect,				    /* Antwort		    */
-    "Daten unwiederbringlich l”schen:",              /* Titelzeile           */
-    "#Zurck zur Eingabe.",                          /* Text der Auswahl-    */
-    "#Ja, Daten ¯L ™ S C H E N®.",                   /* liste                */
-    "#Nein, Daten nicht l”schen.",_N);
+    "Daten unwiederbringlich lÃ¶schen:",              /* Titelzeile           */
+    "#ZurÃ¼ck zur Eingabe.",                          /* Text der Auswahl-    */
+    "#Ja, Daten Â»L Ã– S C H E NÂ«.",                   /* liste                */
+    "#Nein, Daten nicht lÃ¶schen.",_N);
 strcpy (apstrRecKey_g[1], apstrRecKey_g[2]);
 
 if(wSelect == 1)                                     /*                      */

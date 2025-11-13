@@ -3,7 +3,7 @@
 /*****************************************************************
  *   Programmname:    DIREC.C                                    *
  *   Aufgabe:         Stellt eine Reihe von C-Funktionen zur     *
- *                    VerfÅgung, die mit dem DOS-Directory zu    *
+ *                    Verf√ºgung, die mit dem DOS-Directory zu    *
  *                    tun haben.                                 *
  *   Memory Model:    SMALL                                      *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC         *
@@ -15,10 +15,10 @@
  *    wobei options:  COMP=QCL  (falls QuickC verwendet wird)    *
  *                                                               *
  *   Sollen Routinen in anderen Programmen verwendet werden, so  *
- *   mu· beim Linken DOSLIBS.LIB als Library zusÑtzlich angege-  *
+ *   mu√ü beim Linken DOSLIBS.LIB als Library zus√§tzlich angege-  *
  *   ben werden.                                                 *
  *                                                               *
- *   Programmautor:    Heinrich Gîbl                             *
+ *   Programmautor:    Heinrich G√∂bl                             *
  *   Stand:            27.6.88                                   *
  *****************************************************************/
 
@@ -96,7 +96,7 @@ return (inregs.x.cflag ? (inregs.x.ax & 0x00ff) : 0);
 
 
 /* ---------------------------------------------------------- *
- *  F 41h - Lîscht Verzeichniseintrag und damit Datei         *
+ *  F 41h - L√∂scht Verzeichniseintrag und damit Datei         *
  * ---------------------------------------------------------- */
 
 int
@@ -149,7 +149,7 @@ else                                              /* Alles OK */
 
 
 /* ---------------------------------------------------------- *
- *  F 47h - Gibt aktuelles Verzeichnis eines Laufwerks zurÅck *
+ *  F 47h - Gibt aktuelles Verzeichnis eines Laufwerks zur√ºck *
  * ---------------------------------------------------------- */
 
 
@@ -207,14 +207,14 @@ segread (&segregs);             /* Ermitteln des Datensegments */
 
 movedata (D_dta [1], D_dta [0], segregs.ds, (SWORD) f,
           sizeof (struct FIND));
-D_dta [2] = segregs.ds;      /* FÅr die Funktion D_find_next() */
+D_dta [2] = segregs.ds;      /* F√ºr die Funktion D_find_next() */
 D_dta [3] = (SWORD) f;
 return (0);
 }
 
 
 /* ---------------------------------------------------------- *
- *  F 4Fh - Sucht nÑchsten passenden Eintrag im Verzeichnis   *
+ *  F 4Fh - Sucht n√§chsten passenden Eintrag im Verzeichnis   *
  * ---------------------------------------------------------- */
 
 int
@@ -223,7 +223,7 @@ D_find_next (void)
 union REGS inregs;
 
 if (D_dta [2] == 0xffff)  /* FIND_FIRST noch nicht aufgerufen */
-    return (1);                  /* UngÅltige Funktionsnummer */
+    return (1);                  /* Ung√ºltige Funktionsnummer */
 inregs.h.ah = FIND_NEXT;
 intdos (&inregs, &inregs);
 

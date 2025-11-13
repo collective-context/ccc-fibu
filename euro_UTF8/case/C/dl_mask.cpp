@@ -1,64 +1,64 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Dl_SpeichernUnter()
-ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  Dl_SpeichernUnter()                                                         บ
-ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  Dl_SpeichernUnter()                                                         โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-berblick:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+รberblick:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 #include <eur_dlg.h>
 SWORD Dl_SpeichernUnter(pstrDateiname, wMaxLaenge);
 
 Parameter:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 PSSTR	pstrDateiname	Zeiger auf derzeitigen Dateinamen.
-SWORD	wMaxLaenge	maximale Lnge des Dateinamens.
+SWORD	wMaxLaenge	maximale Lรคnge des Dateinamens.
 
 
 Beschreibung:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
-Mit dieser Funktion k”nnen Sie dem Anwender ein Dialogfeld zur Verfgung
-stellen, mit dem er vor dem Speichern fr die aktuell bearbeitete Datei
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
+Mit dieser Funktion kรถnnen Sie dem Anwender ein Dialogfeld zur Verfรผgung
+stellen, mit dem er vor dem Speichern fรผr die aktuell bearbeitete Datei
 einen neuen Namen festlegen kann.
 
-bergeben Sie der Funktion einen Zeiger auf den derzeitigen Dateinamen
-und die maximale Lnge, die der Dateiname haben darf. Die Lnge des Datei-
-namens muแ mindestens 37 Zeichen (Wert derKonstanten TBB) sein.
+รbergeben Sie der Funktion einen Zeiger auf den derzeitigen Dateinamen
+und die maximale Lรคnge, die der Dateiname haben darf. Die Lรคnge des Datei-
+namens muร mindestens 37 Zeichen (Wert derKonstanten TBB) sein.
 
 Diese Funktion baut ein Dialogfeld auf, in dem das aktuelle Verzeichnis
 ausgegeben wird. Der derzeitige Dateiname erscheint in einem Textfeld, das vom
-Anwender editiert werden kann, um den Dateinamen zu ndern.
+Anwender editiert werden kann, um den Dateinamen zu รคndern.
 
-Das Dialogfeld besitzt drei Schaltflchen, die folgende Wirkung haben:
+Das Dialogfeld besitzt drei Schaltflรคchen, die folgende Wirkung haben:
 
-๙ Eingabe kopiert den derzeitgen Namen der Datei in den Speicherbereich,
-  auf den das Argument ฏpstrDateiNameฎ zeigt.
-  Sie mssen dafr sorgen, daแ der Speicherbereich groแ genug ist, um
+ยจ Eingabe kopiert den derzeitgen Namen der Datei in den Speicherbereich,
+  auf den das Argument ยปpstrDateiNameยซ zeigt.
+  Sie mรผssen dafรผr sorgen, daร der Speicherbereich groร genug ist, um
   wMaxlaenge Zeichen aufzunehmen.
-๙ [Esc]      beendet das Dialogfeld.
-๙ [F1]       zeigt ein Hilfefenster fr dieses Dialogfeld an, das von der
-             Toolbox zur Verfgung gestellt wird.
+ยจ [Esc]      beendet das Dialogfeld.
+ยจ [F1]       zeigt ein Hilfefenster fรผr dieses Dialogfeld an, das von der
+             Toolbox zur Verfรผgung gestellt wird.
 
 
-Die Funktion fhrt eine berprfung durch, ob der eingegebene Dateiname den
+Die Funktion fรผhrt eine รberprรผfung durch, ob der eingegebene Dateiname den
 DOS-Konventionen entspricht. Das Dialogfeld kann erst dann mit der
-Eingabe-Schaltflche verlassen werden, wenn dieser Test erfolgreich war.
+Eingabe-Schaltflรคche verlassen werden, wenn dieser Test erfolgreich war.
 
-Die Funktion prft nicht, ob das eingebene Laufwerk oder Verzeichnis auch
-tatschlich existieren.
+Die Funktion prรผft nicht, ob das eingebene Laufwerk oder Verzeichnis auch
+tatsรคchlich existieren.
 
 
-Rckgabewert:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Rรผckgabewert:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 SWORD  Fehlerinformation:  Wahl des Anwenders/ERROR
-      ๙ DLG_RETURN    Der Anwender hat die Eingabe-Schaltflche gewhlt.
-      ๙ DLG_ESC       Der Anwender hat mit der [Esc]-Schaltflche abgebrochen.
-      ๙ ERROR         Das Dialogfeld konnte nicht angezeigt werden.
+      ยจ DLG_RETURN    Der Anwender hat die Eingabe-Schaltflรคche gewรคhlt.
+      ยจ DLG_ESC       Der Anwender hat mit der [Esc]-Schaltflรคche abgebrochen.
+      ยจ ERROR         Das Dialogfeld konnte nicht angezeigt werden.
 
 .ff
 Benutzte globale Variablen (R/W):
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 Variablen (R/W):  - aCS_g[]    (R)           - pstrReturn_g (R)
                   - wCSInd_g   (R)           - pstrEsc_g    (R)
                   - wMausda_g  (R)           - pstrF1_g     (R)
@@ -68,19 +68,19 @@ Variablen (R/W):  - aCS_g[]    (R)           - pstrReturn_g (R)
 .te*/
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <eur_tool.h>
-#include <ctype.h>					 /* fr isdigit()    */
-#include <process.h>					 /* fr spawnlp()    */
+#include <ctype.h>					 /* fรผr isdigit()    */
+#include <process.h>					 /* fรผr spawnlp()    */
 #include <stdio.h>
 #include <string.h>
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        KONSTANTEN UND MAKROS                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        KONSTANTEN UND MAKROS                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define SPA  2
 #define ZEI  7
 #define BRE 75
@@ -88,9 +88,9 @@ Variablen (R/W):  - aCS_g[]    (R)           - pstrReturn_g (R)
 
 #define TBZ ZEI+4
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT COLORSET  aCS_g[5];
 IMPORT SWORD	 awColor_g[5];
 IMPORT SWORD	 wCSInd_g;
@@ -100,7 +100,7 @@ IMPORT PSSTR	 pstrReturn_g;
 IMPORT PSSTR	 pstrEsc_g;
 IMPORT PSSTR	 pstrF1_g;
 
-IMPORT CHAR	  strExt_g[4];		// Extention fr Landescode
+IMPORT CHAR	  strExt_g[4];		// Extention fรผr Landescode
 IMPORT CHAR	  strExe_g[81]; 	// Programm-Verzeichnis
 IMPORT CHAR	  strDat_g[81]; 	// Daten-Verzeichnis
 IMPORT CHAR	  strTmp_g[TB_MAX];	//Temp z.B. Mask/Form-Compiler
@@ -115,15 +115,15 @@ IMPORT PWKB	  pWkbInfo_g;
 STATIC PTEXTBOX  SetTextBox  (SWORD, SWORD, SWORD, SWORD, BOOL);
 STATIC VOID	 SchreibBox  (PTEXTBOX[], SWORD);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-STATIC	PSSTR pstrDTitel_m = "ndern Bildschirm-Masken";
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+STATIC	PSSTR pstrDTitel_m = "รndern Bildschirm-Masken";
 STATIC	SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE);
 
 STATIC	PSSTR apstrText_m[]=
   {"  Eingabedatei   :                                                    ",
-   " ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ ",
+   " โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ ",
    "  Ausgabedatei   :                                                    ",
    "  Maskennummer   :                                                    ",
    "  Protokolldatei :                                                    ",
@@ -137,9 +137,9 @@ STATIC CHAR acEin_m[TB_MAX],  acAus_m[TB_MAX],
 STATIC PTEXTBOX apTB_m[20];
 STATIC PSSTR   pstrApp_m, pstrExt_m;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Dl_Mask(VOID)
 {
@@ -163,7 +163,7 @@ apTB_m[3]=SetTextBox(SPA+21, TBZ+4, 48, 48, JA);
 apTB_m[4]=NULL;
 
 i_InitVars();                                        /* Var. initialisieren  */
-for(i=0; i<3; i++) awColor_g[i]=VH(GELB, BLAU);   /*	 frbige PALETTE     */
+for(i=0; i<3; i++) awColor_g[i]=VH(GELB, BLAU);   /*	 fรคrbige PALETTE     */
 
 pWkbDialog=Wi_Einrichten(SPA,ZEI,BRE,HOE);	     /* WindowKontollBlock   */
 
@@ -240,7 +240,7 @@ for(;;)
     case T_LEFT:
     case DLG_RETURN:
       boBoxEdit_g=JA;
-      apTB_m[wBox]->wAttri=aCS_g[wCSInd_g].wCs_dlg;	/* Farbe zurcksetzen  */
+      apTB_m[wBox]->wAttri=aCS_g[wCSInd_g].wCs_dlg;	/* Farbe zurรผcksetzen  */
       i_Dl_LiesZK(apTB_m[wBox], pEvent, AKT_BUFFER);	/* und am Schirm zeigen*/
       boBoxEdit_g=NEIN;
 
@@ -280,11 +280,11 @@ for(;;)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  SetTextBox()				      Datum: 28.10.88	   บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  SetTextBox()				      Datum: 28.10.88	   โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 PTEXTBOX SetTextBox(SWORD wSpalte, SWORD wZeile, SWORD wBreite,
 		    SWORD wMaxL, BOOL boInsert)
@@ -301,11 +301,11 @@ return(pTB);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  SchreibBox()                                     Datum: 28.10.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  SchreibBox()                                     Datum: 28.10.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID SchreibBox(PTEXTBOX apT[], SWORD wBox)
 {
@@ -337,27 +337,27 @@ return;
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     บ
-  บ                    PEVENT   pEvent     Zeiger auf Event-Struktur       บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     บ
-  บ                    zeigt nach Anforderung das Hilfefenster, und        บ
-  บ                    kehrt zur aufrufenden Funktion zurck, wenn         บ
-  บ                    entweder die Schaltflche ABBRUCH oder EINGABE      บ
-  บ                    bettigt wurde.                                     บ
-  บ                                                                        บ
-  บ  Rckgabewert:     DLG_ESC     ABBRUCH-Schaltflche wurde ausgewhlt   บ
-  บ                    DLG_RETURN  EINGABE-Schaltflche wurde ausgewhlt   บ
-  บ                                                                        บ
-  บ  Benutzte globale   - pstrReturn_g (R)                                 บ
-  บ  Variablen (R/W):   - pstrEsc_g    (R)                                 บ
-  บ                     - pstrF1_g     (R)                                 บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     โ•‘
+  โ•‘                    PEVENT   pEvent     Zeiger auf Event-Struktur       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     โ•‘
+  โ•‘                    zeigt nach Anforderung das Hilfefenster, und        โ•‘
+  โ•‘                    kehrt zur aufrufenden Funktion zurรผck, wenn         โ•‘
+  โ•‘                    entweder die Schaltflรคche ABBRUCH oder EINGABE      โ•‘
+  โ•‘                    betรคtigt wurde.                                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     DLG_ESC     ABBRUCH-Schaltflรคche wurde ausgewรคhlt   โ•‘
+  โ•‘                    DLG_RETURN  EINGABE-Schaltflรคche wurde ausgewรคhlt   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale   - pstrReturn_g (R)                                 โ•‘
+  โ•‘  Variablen (R/W):   - pstrEsc_g    (R)                                 โ•‘
+  โ•‘                     - pstrF1_g     (R)                                 โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
 {
@@ -410,15 +410,15 @@ for(;;)                                           /* Eingaberoutine       */
         {
 	if(pE->wSpalte > SPA+2 && pE->wSpalte <
 	  SPA+3+(SWORD)strlen(pstrReturn_g))
-	  return(DLG_RETURN);			     /* RETURN-Schaltflche  */
+	  return(DLG_RETURN);			     /* RETURN-Schaltflรคche  */
 
 	if(pE->wSpalte > SPA+17 && pE->wSpalte <
 	  SPA+18+(SWORD)strlen(pstrEsc_g))
-	  return(DLG_ESC);			     /* ESC-Schaltflche     */
+	  return(DLG_ESC);			     /* ESC-Schaltflรคche     */
 
 	if(pE->wSpalte > SPA+30 && pE->wSpalte <
 	  SPA+31+(SWORD)strlen(pstrF1_g))
-	  /*Dl_HilfeTools(SPEICHERN)*/ ;	     /* Hilfe-Schaltflche   */
+	  /*Dl_HilfeTools(SPEICHERN)*/ ;	     /* Hilfe-Schaltflรคche   */
         }
 
     } /* end of switch(pE->wEventart) */

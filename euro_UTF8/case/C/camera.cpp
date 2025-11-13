@@ -3,7 +3,7 @@
 /*------------------------------------------------------------------------------*/
 /* Programm-Name: camera.c							*/
 /* Funktion     : euroSOFT TOOLBOX                                              */
-/*		  Erstellt fÅr das Programm euroSOFT-PRESENT eine Hardcopy.	*/
+/*		  Erstellt f√ºr das Programm euroSOFT-PRESENT eine Hardcopy.	*/
 /*                                                                              */
 /*                                                                              */
 /* Datum	: 18.02.1990, Graz						*/
@@ -38,10 +38,10 @@ VOID main(SWORD argc, PCHAR argv[])
 SWORD	wMode;
 /*i_InitVar();*/
 
-if(argc == 2)				     /* Argument Åbergeben ? */
+if(argc == 2)				     /* Argument √ºbergeben ? */
   wMode = atoi(argv[1]);
 
-if(wMode < 0 || wMode > 9)		     /* BereichsÅberprÅfung  */
+if(wMode < 0 || wMode > 9)		     /* Bereichs√ºberpr√ºfung  */
   wMode = DEFAULT_MODE ;
 
 Camera();
@@ -55,7 +55,7 @@ VOID ZeigeMeldung(SWORD wZeile, PSSTR pstrText)
     if (wVi_Mode == 0)				    /* den aktuellen Video- */
 	wVi_Mode == Vi_GetMode();		    /* Modus ermitteln	    */
 
-    Vi_Swza(0, wZeile, 80, 1,' ', BLAU<<4 | WEISS); /* Zeile lîschen	    */
+    Vi_Swza(0, wZeile, 80, 1,' ', BLAU<<4 | WEISS); /* Zeile l√∂schen	    */
     Vi_Ss( 0, wZeile, pstrText);
     Vi_Ss(20, wZeile, strWeiter);
     Vi_SetCursorPos(21 + strlen(strWeiter), wZeile);
@@ -89,15 +89,15 @@ sprintf(acFileName,"BLD%#04d",wBildNr);
     Vi_Sw2b(0,0,80,25,pwScreenBuffer);
     pwScreenBuffer[2001]=NULL;
 
-    if(!(pFileHandle=fopen(acFileName, "w")) ) /* Bild - Datei îffnen */
+    if(!(pFileHandle=fopen(acFileName, "w")) ) /* Bild - Datei √∂ffnen */
       {
-      printf ("\nBild-Datei <%s> kann nicht geîffnet werden", acFileName);
+      printf ("\nBild-Datei <%s> kann nicht ge√∂ffnet werden", acFileName);
       exit (ERROR);
       }
 
     fputs((CHAR *)pwScreenBuffer, pFileHandle);  /* Lies Bild-Datei */
 
-    if( fclose(pFileHandle) )                    /* Bild - Datei schlie·en */
+    if( fclose(pFileHandle) )                    /* Bild - Datei schlie√üen */
       {
       printf ("\nBild-Datei <%s> kann nicht geschlossen werden", acFileName);
       exit (ERROR);

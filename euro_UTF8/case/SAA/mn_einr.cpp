@@ -1,28 +1,28 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Mn_Einrichten()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Mn_Einrichten()                                                             º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Mn_Einrichten()                                                             â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_mnu.h>
 SWORD Mn_Einrichten(wMenuNr, pItem);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-SWORD  wMenuNr		Nummer des Mens
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+SWORD  wMenuNr		Nummer des MenÃ¼s
 ITEM pItem             Zeiger auf ITEM-Struktur
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion wiest ein Menfenster einem Men zu.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion wiest ein MenÃ¼fenster einem MenÃ¼ zu.
 
-Das erste Argument legt die Kennziffer des Mens fest, dem dieses Menfenster
+Das erste Argument legt die Kennziffer des MenÃ¼s fest, dem dieses MenÃ¼fenster
 zugeordnet werden soll.
 Das Argument pItem ist ein Zeiger auf das erste Element eines Arrays vom Typ
-ITEM. Der Datentpy IREM ist in der Datei ¯eur_mnu.h® definiert und besitzt fol-
+ITEM. Der Datentpy IREM ist in der Datei Â»eur_mnu.hÂ« definiert und besitzt fol-
 gendes Stukturmuster:
 
 typedef struct
@@ -32,77 +32,77 @@ typedef struct
       PSSTR	pstrHilfetext;
 } ITEM;
 
-Das erste Element des Arraxs beschreibt immer den Titel des Menfensters, die
-wieteren Elemente k”nnen entweder Optionen oder Trenner definieren. Als letztes
-Element muá eine Enderkennung aufgenommen werden (siehe unten).
+Das erste Element des Arraxs beschreibt immer den Titel des MenÃ¼fensters, die
+wieteren Elemente kÃ¶nnen entweder Optionen oder Trenner definieren. Als letztes
+Element muÃŸ eine Enderkennung aufgenommen werden (siehe unten).
 
-Das Strukturelement wOption erh„lt bei der Initialisierung die Kennziffer des
-Menfensters (beim ersten Element des Arrays) oder einer Option. Die Kennziffern
-der Menoptionen werden von der Funktion ¯Mn_Eingabe()® an die aufrufende
-Funktion zurckgegeben, wenn der Anwender diese Option ausw„hlt.
+Das Strukturelement wOption erhÃ¤lt bei der Initialisierung die Kennziffer des
+MenÃ¼fensters (beim ersten Element des Arrays) oder einer Option. Die Kennziffern
+der MenÃ¼optionen werden von der Funktion Â»Mn_Eingabe()Â« an die aufrufende
+Funktion zurÃ¼ckgegeben, wenn der Anwender diese Option auswÃ¤hlt.
 
-Das Strukturelement pstrText erh„lt einen Zeiger auf den Text des Titels oder
-der Option. Der dem Anwender zur Verfgung stehende Hotkey wird durch Voran-
-stellen des Zeichens ¯#® vor den gewnschten Buchstaben erreicht. Dieses
+Das Strukturelement pstrText erhÃ¤lt einen Zeiger auf den Text des Titels oder
+der Option. Der dem Anwender zur VerfÃ¼gung stehende Hotkey wird durch Voran-
+stellen des Zeichens Â»#Â« vor den gewÃ¼nschten Buchstaben erreicht. Dieses
 Zeichen wird nicht mit ausgegeben, sondern dient den Toolbox-Funktionen nur zur
 Identifizierung des Hotkeys.
 
-Das Stukturelement pstrHilfstext erh„lt einen Zeiger auf einen Zeichenkette, die
+Das Stukturelement pstrHilfstext erhÃ¤lt einen Zeiger auf einen Zeichenkette, die
 maximal 80 Zeichen sein darf. Der hierin enthaltene Text wird in der Hilfszeile
 (Zeile 24) ausgegeben,wenn sich der Auswahlcursor auf dem Text der entsprchenden
-Optionen, oder auf dem Titel des Menfensters befindet.
+Optionen, oder auf dem Titel des MenÃ¼fensters befindet.
 InitialisierenSie ein Element des Arraxs mit der Textkonstanten MNU_TRENNER,
 wenn Sie die Optionen durch waagerechte Linien zu Optionsgruppen zusammenfassen
-m”chten.
+mÃ¶chten.
 
 Initialisierten Sie das letzte Element des Arrays mit der Textkonstante
-MNU_ENDE, damit die Funktion ¯Mn_Einrichten()® das Ende des Arrays erkennen
+MNU_ENDE, damit die Funktion Â»Mn_Einrichten()Â« das Ende des Arrays erkennen
 kann.
 .ff
-Mit den Kennziffern der Menfenster wird ihre Reihenfolge in der Menzeile fest-
-gelegt. Das Menfenster, dessen Titel ganz links auf der Menzeile erscheinen
-soll, muá die kleinste Kennziffer erhalten. Wemm eom Tote” eomes ;em+femsters
-(z.B. das Menfenster fr Hilfe) ganz rechts auf der Menzeile erscheinen soll,
-k”nnen Sie dies durch šbergabe der Kennziffer RECHTSBšNDIG erreichen.
+Mit den Kennziffern der MenÃ¼fenster wird ihre Reihenfolge in der MenÃ¼zeile fest-
+gelegt. Das MenÃ¼fenster, dessen Titel ganz links auf der MenÃ¼zeile erscheinen
+soll, muÃŸ die kleinste Kennziffer erhalten. Wemm eom ToteÃ¶ eomes ;em+femsters
+(z.B. das MenÃ¼fenster fÃ¼r Hilfe) ganz rechts auf der MenÃ¼zeile erscheinen soll,
+kÃ¶nnen Sie dies durch Ãœbergabe der Kennziffer RECHTSBÃœNDIG erreichen.
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD Fehlerinformation OK/ERROR
-     Wert der Konstanten OK, wenn Menfenster eingerichtet werden konnte,
+     Wert der Konstanten OK, wenn MenÃ¼fenster eingerichtet werden konnte,
      sonst ERROR
 
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  g_max_menues (R)
 
 .de \euro\demo\Mn_einr.c
 .te*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
 #include <eur_tool.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT UCHAR cRahmenzeichen_g[17][8];
 IMPORT COLORSET  aCS_g[5];
 IMPORT SWORD	 wCSInd_g;
 IMPORT MENU	 aMenus_g[MAXMENUES]; // Array der MENU-Strukturen
 IMPORT SWORD	 wVioMode_g;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        KONSTANTEN UND MAKROS                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        KONSTANTEN UND MAKROS                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define OL      0                           /* Position des Grafikzeichens  */
-#define OR      1                           /* im Array ¯cRahmenzeichen_g®  */
-#define UL      2                           /* fr den entsprechenden       */
+#define OR      1                           /* im Array Â»cRahmenzeichen_gÂ«  */
+#define UL      2                           /* fÃ¼r den entsprechenden       */
 #define UR      3                           /* Teil des Rahmens             */
 #define WAAGEO  4
 #define WAAGEU  5
@@ -110,34 +110,34 @@ IMPORT SWORD	 wVioMode_g;
 #define SENKR   7
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE FUNKTIONEN                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE FUNKTIONEN                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	BOOL   cdecl i_Mn_Hotkey  (PSSTR);
 STATIC	FPWORD cdecl i_Mn_Trenner (PMKB, FPWORD, SWORD);
 STATIC	VOID   cdecl i_Mn_InsList (SWORD, PMKB);
 STATIC	VOID   cdecl i_Mn_SetzeZeiger(PMKB pMkbVoriger, PMKB pMkbNeu, PMKB pMkbNaechster);
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                       MODULGLOBALE VARIABLEN                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                       MODULGLOBALE VARIABLEN                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	CHAR strError[TB_MAX]="Mn_Einrichten()";
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 PMKB Mn_Einrichten( SWORD wMenuNr, PITEM pItem)
 {
     PMKB     pMkb=NULL; 			    /* Zeiger auf MKB	    */
-    SREGISTER wMaxLaenge;			     /* l„ngstes Men-Item   */
+    SREGISTER wMaxLaenge;			     /* lÃ¤ngstes MenÃ¼-Item   */
     PITEM    pItemTmp;
 
     Ut_Calloc(pMkb, 1, MKB);
 
-    /* if((pMkb=(PMKB)Ut_Malloc(sizeof(MKB)))==NULL) /* Speicher fr MKB     */
+    /* if((pMkb=(PMKB)Ut_Malloc(sizeof(MKB)))==NULL) /* Speicher fÃ¼r MKB     */
     /*	  Dl_ErrorHandler(MNU_KEIN_SPEICHER,	     /* allokieren	     */
     /*	    strError, __FILE__, __LINE__, 0);	     */
 
@@ -154,23 +154,23 @@ PMKB Mn_Einrichten( SWORD wMenuNr, PITEM pItem)
     pMkb->item         = pItem;                     /* Adresse der Items    */
     pMkb->wBalPos      = 0;
 
-    pMkb->wTitelBreite = strlen(pItem->pstrText);   /* L„nge des Mentitels */
+    pMkb->wTitelBreite = strlen(pItem->pstrText);   /* LÃ¤nge des MenÃ¼titels */
     if (i_Mn_Hotkey(pItem->pstrText))               /* berechnen und in MKB */
         pMkb->wTitelBreite--;                       /* eintragen            */
 
     pItemTmp = pMkb->item;
 
-    if (pItemTmp->pstrHilfstext != NULL)            /* Test ob Hilfe fr    */
-        aMenus_g[wMenuNr].wStatus.wHzeile = 1;      /* Mentitel            */
+    if (pItemTmp->pstrHilfstext != NULL)            /* Test ob Hilfe fÃ¼r    */
+        aMenus_g[wMenuNr].wStatus.wHzeile = 1;      /* MenÃ¼titel            */
 
     pItemTmp = pMkb->item + 1;                      /* Text der 1. Option   */
 
     for( wMaxLaenge=pMkb->wItemAnzahl=0;            /* Anzahl der Items und */
-         pItemTmp->pstrText != NULL;                /* L„nge der l„ngsten   */
+         pItemTmp->pstrText != NULL;                /* LÃ¤nge der lÃ¤ngsten   */
          pItemTmp++)                                /* Option ermitteln     */
     {
-        if (pItemTmp->pstrHilfstext != NULL)        /* Test ob Hilfe fr    */
-            aMenus_g[wMenuNr].wStatus.wHzeile = 1;  /* Menoption           */
+        if (pItemTmp->pstrHilfstext != NULL)        /* Test ob Hilfe fÃ¼r    */
+            aMenus_g[wMenuNr].wStatus.wHzeile = 1;  /* MenÃ¼option           */
 
          pMkb->wItemAnzahl++;
 
@@ -187,10 +187,10 @@ PMKB Mn_Einrichten( SWORD wMenuNr, PITEM pItem)
 
 
     i_Mn_InsList(wMenuNr, pMkb);                    /* MKB in verkettete    */
-                                                    /* Liste einfgen       */
+                                                    /* Liste einfÃ¼gen       */
 
     if (pMkb->wItemAnzahl == 0)                     /* Hoehe und Breite des */
-        pMkb->wHoehe = pMkb->wBreite = 0;           /* Menfensters in MKB  */
+        pMkb->wHoehe = pMkb->wBreite = 0;           /* MenÃ¼fensters in MKB  */
     else                                            /* eintragen            */
     {
         pMkb->wHoehe  = pMkb->wItemAnzahl + RAHMENZEILEN;
@@ -210,7 +210,7 @@ PMKB Mn_Einrichten( SWORD wMenuNr, PITEM pItem)
 		Dl_ErrorHandler(MNU_KEIN_SPEICHER,   /* allokieren	     */
 		  strError, __FILE__, __LINE__, 0);
 
-        i_Mn_ToBuffer(pMkb, wMenuNr, MNU_INIT);     /* Menfenster aufbauen */
+        i_Mn_ToBuffer(pMkb, wMenuNr, MNU_INIT);     /* MenÃ¼fenster aufbauen */
     }
 
     return(pMkb);
@@ -218,21 +218,21 @@ PMKB Mn_Einrichten( SWORD wMenuNr, PITEM pItem)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Mn_Hotkey                    Datum: 25.10.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PSSTR  pStr   String, der ausgewertet werden soll    º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion berprft, ob das Symbol fr         º
-  º                    den Hotkey (#) im Teststring vorkommt.              º
-  º                                                                        º
-  º  Rckgabewert:     JA      wenn Hotkey-Symbol (#) in String vorkommt   º
-  º                    NEIN    wenn Hotkey-Symbol (#) nicht in String      º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  keine                                               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Mn_Hotkey                    Datum: 25.10.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PSSTR  pStr   String, der ausgewertet werden soll    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion Ã¼berprÃ¼ft, ob das Symbol fÃ¼r         â•‘
+  â•‘                    den Hotkey (#) im Teststring vorkommt.              â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     JA      wenn Hotkey-Symbol (#) in String vorkommt   â•‘
+  â•‘                    NEIN    wenn Hotkey-Symbol (#) nicht in String      â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  keine                                               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_Mn_Hotkey(PSSTR pStr)
 {
@@ -241,29 +241,29 @@ SWORD i_Mn_Hotkey(PSSTR pStr)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Mn_ToBuffer                  Datum: 25.10.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PMKB   pMkb     Zeiger auf Menkontrollblock.       º
-  º		       SWORD   wMenunr	Men, zu dem MKB geh”rt 	    º
-  º		       SWORD   wModus	MNU_INIT    erster Aufbau des	    º
-  º                                                Menfensters            º
-  º                                    MNU_AENDERN Menfenster „ndern      º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion legt einen 1:1-Puffer fr ein        º
-  º                    Men im Speicher ab. Dieser Puffer wird bei         º
-  º                    Aktivierung eines Mens mit der Funktion            º
-  º                    Vi_Sb2w() auf den Bildschirm ausgegeben.            º
-  º                                                                        º
-  º  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  - cRahmenzeichen_g (R)                              º
-  º                    - aCS_g (R)                                         º
-  º                    - wCSInd_g (R)                                      º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Mn_ToBuffer                  Datum: 25.10.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PMKB   pMkb     Zeiger auf MenÃ¼kontrollblock.       â•‘
+  â•‘		       SWORD   wMenunr	MenÃ¼, zu dem MKB gehÃ¶rt 	    â•‘
+  â•‘		       SWORD   wModus	MNU_INIT    erster Aufbau des	    â•‘
+  â•‘                                                MenÃ¼fensters            â•‘
+  â•‘                                    MNU_AENDERN MenÃ¼fenster Ã¤ndern      â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion legt einen 1:1-Puffer fÃ¼r ein        â•‘
+  â•‘                    MenÃ¼ im Speicher ab. Dieser Puffer wird bei         â•‘
+  â•‘                    Aktivierung eines MenÃ¼s mit der Funktion            â•‘
+  â•‘                    Vi_Sb2w() auf den Bildschirm ausgegeben.            â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Diese Funktion hat keinen RÃ¼ckgabewert.             â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  - cRahmenzeichen_g (R)                              â•‘
+  â•‘                    - aCS_g (R)                                         â•‘
+  â•‘                    - wCSInd_g (R)                                      â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID i_Mn_ToBuffer(PMKB pMkb, SWORD wMenunr, SWORD wModus)
 {
@@ -317,7 +317,7 @@ VOID i_Mn_ToBuffer(PMKB pMkb, SWORD wMenunr, SWORD wModus)
             fpwTmpBuf=i_Mn_Trenner(pMkb,
                                fpwTmpBuf, wMenunr); /* Trennlinie einbauen  */
 
-        else                                        /* Menoption einbauen  */
+        else                                        /* MenÃ¼option einbauen  */
         {
 	    *fpwTmpBuf++ = wFattn|cRahmenzeichen_g[wRTyp][SENKL]; /* linker Rahmen	  */
 
@@ -331,23 +331,23 @@ VOID i_Mn_ToBuffer(PMKB pMkb, SWORD wMenunr, SWORD wModus)
             else                                    /* sonst zweiter++      */
             {                                       /* Durchlauf            */
                 if (pHK->wMarker == JA)             /* evtl. Marker eintra- */
-                    *fpwTmpBuf++ = wFattn | 'û';    /* gen                  */
+                    *fpwTmpBuf++ = wFattn | 'Â¹';    /* gen                  */
                 else
                     *fpwTmpBuf++ = wFattn | BLANK;  /* ein Leerzeichen      */
             }
             *fpwTmpBuf++ = wFattn | BLANK;          /* zweites Leerzeichen  */
             rest = pMkb->wBreite - 3;               /* restliche Zeichen    */
-                                                    /* der Menzeile        */
+                                                    /* der MenÃ¼zeile        */
 
-	    pstrOpt = (PUSTR)pItemTmp->pstrText;    /* Zeiger auf Mentext  */
+	    pstrOpt = (PUSTR)pItemTmp->pstrText;    /* Zeiger auf MenÃ¼text  */
 
             for (; rest>1;rest--)                   /* 1 Zeichen aufsparen  */
             {
-                if (*pstrOpt)                       /* noch im Mentext ?   */
+                if (*pstrOpt)                       /* noch im MenÃ¼text ?   */
                 {
-                    if (*pstrOpt == HOTKEY)         /* Zeichen fr Hotkey ? */
+                    if (*pstrOpt == HOTKEY)         /* Zeichen fÃ¼r Hotkey ? */
                     {
-                        pstrOpt++;                  /* Zeichen berspringen */
+                        pstrOpt++;                  /* Zeichen Ã¼berspringen */
                         if (wModus != MNU_INIT)
                         {
                             if (pHK->wAktiv == NEIN)
@@ -392,41 +392,41 @@ VOID i_Mn_ToBuffer(PMKB pMkb, SWORD wMenunr, SWORD wModus)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Mn_Trenner                    Datum: 25.10.88   û º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º   Parameter:        MKB      *pm     Zeiger auf Menkontrollblock des  º
-  º                                      Mens, fr das die Linie          º
-  º                                      gezeichnet werden soll.           º
-  º                                                                        º
-  º                     FPWORD fpwPuffer Adresse des Puffers, ab der die   º
-  º                                      Linie geschrieben werden soll.    º
-  º                                                                        º
-  º   Beschreibung:     MNLINIE schreibt ab der bergebenen Position des   º
-  º                     Puffers eine Trennlinie und die zugeh”rigen        º
-  º                     Rahmenzeichen.                                     º
-  º                                                                        º
-  º   Rckgabewert:     FPWORD  Zeiger auf n„chste Schreibposition         º
-  º                                                                        º
-  º   Benutzte globale                                                     º
-  º   Variablen (R/W):  - aCS_g (R)                                        º
-  º                     - wCSInd_g (R)                                     º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Mn_Trenner                    Datum: 25.10.88   Â¹ â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘   Parameter:        MKB      *pm     Zeiger auf MenÃ¼kontrollblock des  â•‘
+  â•‘                                      MenÃ¼s, fÃ¼r das die Linie          â•‘
+  â•‘                                      gezeichnet werden soll.           â•‘
+  â•‘                                                                        â•‘
+  â•‘                     FPWORD fpwPuffer Adresse des Puffers, ab der die   â•‘
+  â•‘                                      Linie geschrieben werden soll.    â•‘
+  â•‘                                                                        â•‘
+  â•‘   Beschreibung:     MNLINIE schreibt ab der Ã¼bergebenen Position des   â•‘
+  â•‘                     Puffers eine Trennlinie und die zugehÃ¶rigen        â•‘
+  â•‘                     Rahmenzeichen.                                     â•‘
+  â•‘                                                                        â•‘
+  â•‘   RÃ¼ckgabewert:     FPWORD  Zeiger auf nÃ¤chste Schreibposition         â•‘
+  â•‘                                                                        â•‘
+  â•‘   Benutzte globale                                                     â•‘
+  â•‘   Variablen (R/W):  - aCS_g (R)                                        â•‘
+  â•‘                     - wCSInd_g (R)                                     â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 FPWORD i_Mn_Trenner(PMKB pMkb, FPWORD fpwTmpBuf, SWORD wMenuNr)
 {
-    SREGISTER wFatt,	      /* erh„lt einmalige Berechnung des Attributes  */
-             wAnz,           /* erh„lt Anzahl der auszugebenden Zeichen     */
-             wTmp;           /* erh„lt einmalige Berechnung von Zei/Att     */
-    UCHAR acStriche[4];      /* erh„lt ben”tigte Zeichen		    */
+    SREGISTER wFatt,	      /* erhÃ¤lt einmalige Berechnung des Attributes  */
+             wAnz,           /* erhÃ¤lt Anzahl der auszugebenden Zeichen     */
+             wTmp;           /* erhÃ¤lt einmalige Berechnung von Zei/Att     */
+    UCHAR acStriche[4];      /* erhÃ¤lt benÃ¶tigte Zeichen		    */
 
     switch(aMenus_g[wMenuNr].wStatus.wRahmentyp)     /* Rahmentyp auswerten  */
     {
-	case 0:     strcpy((PSSTR)acStriche, "ÃÄ´");  /* ben”tigte Zeichen    */
+	case 0:     strcpy((PSSTR)acStriche, "â”œâ”€â”¤");  /* benÃ¶tigte Zeichen    */
 		    break;			     /* in Array acStriche   */
-	case 1:     strcpy((PSSTR)acStriche, "ÇÄ¶");  /* laden. 	      */
+	case 1:     strcpy((PSSTR)acStriche, "Ãƒâ”€Ã‚");  /* laden. 	      */
                     break;
     }
 
@@ -439,7 +439,7 @@ FPWORD i_Mn_Trenner(PMKB pMkb, FPWORD fpwTmpBuf, SWORD wMenuNr)
     *fpwTmpBuf++ = wFatt | acStriche[2];            /* rechter Rahmen       */
 
     return((FPWORD) fpwTmpBuf);                     /* neue Schreibposition */
-}                                                   /* zurckgeben          */
+}                                                   /* zurÃ¼ckgeben          */
 
 
 
@@ -448,24 +448,24 @@ FPWORD i_Mn_Trenner(PMKB pMkb, FPWORD fpwTmpBuf, SWORD wMenuNr)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Funktionsname:    i_Mn_InsList                   Datum: 25.10.88       º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º Parameter:        MKB  *pm    Zeiger auf den Menkontrollblock, der    º
-  º                               in die doppelt verkettete Liste auf-     º
-  º                               genommen werden soll.                    º
-  º                                                                        º
-  º Beschreibung:     Diese Funktion fgt die neue Struktur vom Daten-     º
-  º                   typ MKB in die doppelt verkettete Liste ein. Wenn    º
-  º                   die Liste nicht existiert, wird sie neu angelegt.    º
-  º                                                                        º
-  º Rckgabewert:     Diese Funktion hat keinen Rckgabewert.              º
-  º                                                                        º
-  º Benutzte globale                                                       º
-  º Variablen (R/W):  MKB  *startmkb (R/W)                                 º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Funktionsname:    i_Mn_InsList                   Datum: 25.10.88       â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘ Parameter:        MKB  *pm    Zeiger auf den MenÃ¼kontrollblock, der    â•‘
+  â•‘                               in die doppelt verkettete Liste auf-     â•‘
+  â•‘                               genommen werden soll.                    â•‘
+  â•‘                                                                        â•‘
+  â•‘ Beschreibung:     Diese Funktion fÃ¼gt die neue Struktur vom Daten-     â•‘
+  â•‘                   typ MKB in die doppelt verkettete Liste ein. Wenn    â•‘
+  â•‘                   die Liste nicht existiert, wird sie neu angelegt.    â•‘
+  â•‘                                                                        â•‘
+  â•‘ RÃ¼ckgabewert:     Diese Funktion hat keinen RÃ¼ckgabewert.              â•‘
+  â•‘                                                                        â•‘
+  â•‘ Benutzte globale                                                       â•‘
+  â•‘ Variablen (R/W):  MKB  *startmkb (R/W)                                 â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_Mn_InsList(SWORD wMenuNr, PMKB pMkbNeu)
 {
@@ -482,7 +482,7 @@ VOID i_Mn_InsList(SWORD wMenuNr, PMKB pMkbNeu)
 
     if(pMkbNeu->wFensterId < pMkbStart->wFensterId) /* neues 1. Element ?   */
     {
-        i_Mn_SetzeZeiger(pMkbStart->pVoriger,       /* einfgen             */
+        i_Mn_SetzeZeiger(pMkbStart->pVoriger,       /* einfÃ¼gen             */
                          pMkbNeu,
                          pMkbStart);
         aMenus_g[wMenuNr].pMkbStart = pMkbNeu;      /* und neues merken     */
@@ -490,7 +490,7 @@ VOID i_Mn_InsList(SWORD wMenuNr, PMKB pMkbNeu)
 
     else if (pMkbNeu->wFensterId >                  /* neues letztes Elem.? */
              pMkbStart->pVoriger->wFensterId)
-        i_Mn_SetzeZeiger(pMkbStart->pVoriger,       /* einfgen             */
+        i_Mn_SetzeZeiger(pMkbStart->pVoriger,       /* einfÃ¼gen             */
                          pMkbNeu,
                          pMkbStart);
     else
@@ -505,7 +505,7 @@ VOID i_Mn_InsList(SWORD wMenuNr, PMKB pMkbNeu)
             pMkbTmp = pMkbTmp->pNaechster;
         } while( pMkbTmp->wFensterId <= pMkbNeu->wFensterId );
 
-        i_Mn_SetzeZeiger(pMkbTmp->pVoriger,         /* einfgen             */
+        i_Mn_SetzeZeiger(pMkbTmp->pVoriger,         /* einfÃ¼gen             */
                          pMkbNeu,
                          pMkbTmp);
     }

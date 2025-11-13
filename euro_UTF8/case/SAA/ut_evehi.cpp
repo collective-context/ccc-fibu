@@ -1,23 +1,23 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Ut_EventHilfe()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Ut_EventHilfe()                                                             º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Ut_EventHilfe()                                                             â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_utl.h>
 VOID Ut_EventHilfe(pEvent);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 EVENT  pevent   Zeiger auf Eventstruktur
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Die Funktion berprft, ob der Anwender eine Eingabe vorgenommen hat. Diese kann
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Die Funktion Ã¼berprÃ¼ft, ob der Anwender eine Eingabe vorgenommen hat. Diese kann
 von der Tastatur oder mit einer Maus erfolgen und wird im folgenden als Event
 bezeichenet.
 Wenn ein Event aufgetreten ist, wird folgende Struktur beschrieben:
@@ -25,109 +25,109 @@ Wenn ein Event aufgetreten ist, wird folgende Struktur beschrieben:
 typdef struct
 {
    SWORD	wArt;	     / *  Eventart				      * /
-   SWORD	wTaste;      / *  gedrckte Taste			      * /
+   SWORD	wTaste;      / *  gedrÃ¼ckte Taste			      * /
    SWORD	wKbflags;    / *  Zustand der Tastatur			      * /
    SWORD	wButton;     / *  Zustand der Mausbuttons		      * /
    SWORD	wSpalte;     / *  Position des Maus-			      * /
    SWORD	wZeile;      / *  cursors				      * /
-   SWORD	wOption;     / *  gew„hlte Menoption (nur beim Menmanager)  * /
+   SWORD	wOption;     / *  gewÃ¤hlte MenÃ¼option (nur beim MenÃ¼manager)  * /
    SWORD	wTicks;      / *  Ticks zum Zeitpunkt des Ereignisses	      * /
 } EVENT;
 
-Der Zeiger auf die Eventstruktur ist folgendermaáen definiert:
+Der Zeiger auf die Eventstruktur ist folgendermaÃŸen definiert:
 
 typedef EVENT* PEVENT
 
 In das Stukturelement wArt wird die Art des Ereignisses eingetragen. Die Funk-
-tion untersttzt elf verschiedene Eventarten:
+tion unterstÃ¼tzt elf verschiedene Eventarten:
                        - EVENT_NULL         keine Eingabe erfolgt
                        - EVENT_MOUSE_MOVE   Maus wurde bewegt
-                       - EVENT_L_PRESS      linker Button gedrckt
-                       - EVENT_R_PRESS      rechter Button gedrckt
-                       - EVENT_B_PRESS      beide Buttons gedrckt
+                       - EVENT_L_PRESS      linker Button gedrÃ¼ckt
+                       - EVENT_R_PRESS      rechter Button gedrÃ¼ckt
+                       - EVENT_B_PRESS      beide Buttons gedrÃ¼ckt
                        - EVENT_L_RELEASE    linker Button losgelassen
                        - EVENT_R_RELEASE    rechter Button losgelassen
                        - EVENT_B_RELEASE    beide Buttons losgelassen
                        - EVENT_TASTE        Tastatureingabe
-                       - EVENT_ALT_PRESS    Alt-Taste gedrckt
+                       - EVENT_ALT_PRESS    Alt-Taste gedrÃ¼ckt
                        - EVENT_ALT_RELEASE  Alt-Taste losgelassen
-Welche der Stukturkomponenten sonst noch beschriben werden, h„ngt von der aufge-
-tretenen Eventart ab. Bei den Eventarten, die das Drcken oder Loslassen der
+Welche der Stukturkomponenten sonst noch beschriben werden, hÃ¤ngt von der aufge-
+tretenen Eventart ab. Bei den Eventarten, die das DrÃ¼cken oder Loslassen der
 Maustaste signalisieren, erhalten wSpalte und wZeile die Position des Maus-
 zeigers.
-Bei der Evenart EVENT_TASTE erh„lt das Element wTaste den Toolbox-Code der ge-
-drckten Taste.
-Dieser Code entspricht den ASCII-Werten fr die normalen Tasten. Fr die Unter-
+Bei der Evenart EVENT_TASTE erhÃ¤lt das Element wTaste den Toolbox-Code der ge-
+drÃ¼ckten Taste.
+Dieser Code entspricht den ASCII-Werten fÃ¼r die normalen Tasten. FÃ¼r die Unter-
 suchung der Taste mit einem erweiterten Tastaturcode (Funktionstasten, Buch-
-stabe gemeinsam mit ALT- oder CTRL-Taste) k”nnen Sie die symbolischen Konstanten
-verwenden, die in der Datei ¯eur_utl.h® definiert sind.
+stabe gemeinsam mit ALT- oder CTRL-Taste) kÃ¶nnen Sie die symbolischen Konstanten
+verwenden, die in der Datei Â»eur_utl.hÂ« definiert sind.
 
-Die Eventarten EVENT_ALT_PRESS und EVENT_ALT_RELEASE signalisieren das Drcken
-und Loslassen der linken ALT-Taste und wurden zur Untersttzung des Menman-
+Die Eventarten EVENT_ALT_PRESS und EVENT_ALT_RELEASE signalisieren das DrÃ¼cken
+und Loslassen der linken ALT-Taste und wurden zur UnterstÃ¼tzung des MenÃ¼man-
 agers aufgenommen.
 
-Die Eventart EVENT_WAHL dient ebenfalls der Untersttzung des Menmanagers. Bei
-der Menauswahl erh„lt das Element wOption die gew„hlte Option.
-Die Funktion tr„gt grunds„tzlich bei jedem Aufruf die Mausposition und den Zu-
+Die Eventart EVENT_WAHL dient ebenfalls der UnterstÃ¼tzung des MenÃ¼managers. Bei
+der MenÃ¼auswahl erhÃ¤lt das Element wOption die gewÃ¤hlte Option.
+Die Funktion trÃ¤gt grundsÃ¤tzlich bei jedem Aufruf die Mausposition und den Zu-
 stand der Tastaturflags in die Ebentstruktur ein. Die Informationen zu den ein-
 zelnen Tastaturflags sind bitweise codiert. Die Toolbox stellt Ihnen symbolische
-Konstanten zur Verfgung, mit denen Sie die einzelnen Bits abfragen k”nnen:
+Konstanten zur VerfÃ¼gung, mit denen Sie die einzelnen Bits abfragen kÃ¶nnen:
 
-             ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-             ³  Konstanten       Wertigkeit             ³
-             ³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³
-             ³  RIGHT_SHIFT      0000 0001 b            ³
-             ³  LEFT_SHIFT       0000 0010 b            ³
-             ³  CTRL             0000 0100 b            ³
-             ³  ALT              0000 1000 b            ³
-             ³  SCROLL_LOCK      0001 0000 b            ³
-             ³  NUM_LOCK         0010 0000 b            ³
-             ³  CAPS_LOCK        0100 0000 b            ³
-             ³  INSERT_ON        1000 0000 b            ³
-             ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+             â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+             â”‚  Konstanten       Wertigkeit             â”‚
+             â”‚â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”‚
+             â”‚  RIGHT_SHIFT      0000 0001 b            â”‚
+             â”‚  LEFT_SHIFT       0000 0010 b            â”‚
+             â”‚  CTRL             0000 0100 b            â”‚
+             â”‚  ALT              0000 1000 b            â”‚
+             â”‚  SCROLL_LOCK      0001 0000 b            â”‚
+             â”‚  NUM_LOCK         0010 0000 b            â”‚
+             â”‚  CAPS_LOCK        0100 0000 b            â”‚
+             â”‚  INSERT_ON        1000 0000 b            â”‚
+             â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 Im Falle eines Events wird neben der Ebentart auch die aktuelle Systemzeit
 (Ticks nach Mitternacht in die Struktur eingetragen. Dadurch ist es beispiel-
-weise m”glich, einen Doppelklick zu erkennen.
+weise mÃ¶glich, einen Doppelklick zu erkennen.
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Die Funktion hat keinen Rckgabewert.
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Die Funktion hat keinen RÃ¼ckgabewert.
 
 Benutzte globale Variablen:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):   - wMausda_g (R)
 
 .de \euro\demo\demoevent.c
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <conio.h>
 #include <eur_tool.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT SWORD wMausda_g; 			     /* Systemkonfiguration  */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º               Prototypen der modulglobalen Funktionen                  º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘               Prototypen der modulglobalen Funktionen                  â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	VOID cdecl i_TestMausStatus(EVENT*);
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Ut_EventHilfe(PEVENT pEvent)
 {
 
-    pEvent->wArt = EVENT_NULL;                      /* alten Event l”schen  */
-    pEvent->wTaste = 0;                             /* alte Taste l”schen   */
-    pEvent->wOption = 0;                            /* alte Option l”schen  */
+    pEvent->wArt = EVENT_NULL;                      /* alten Event lÃ¶schen  */
+    pEvent->wTaste = 0;                             /* alte Taste lÃ¶schen   */
+    pEvent->wOption = 0;                            /* alte Option lÃ¶schen  */
 
     Ut_GetUhrTicks(&pEvent->lTicks);                /* Systemzeit eintragen */
 
@@ -153,28 +153,28 @@ VOID Ut_EventHilfe(PEVENT pEvent)
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_TestMausStatus               Datum: 07.01.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        EVENT  *event   Zeiger auf Eventstruktur            º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion tr„gt zuerst den aktuellen Zustand     º
-  º                    der Mausbuttons und die Position des Mauscursors    º
-  º                    in die Eventstruktur ein.                           º
-  º                    Danach wird berprft, ob die Maus seit dem letzen  º
-  º                    Aufruf der Funktion bewegt worden ist. In diesem    º
-  º                    Fall wird die aktuelle Position gesichert und ein   º
-  º                    EVENT_MOUSE_MOVE ausgel”st.                         º
-  º                    Wenn die Maus nicht bewegt worden ist, untersucht   º
-  º                    die Fuktion, ob sich der Zustand der Mausbuttons    º
-  º                    seit dem letzten Aufruf der Funktion ge„ndert hat.  º
-  º                    In diesem Fall wird der entsprechende Event ausge-  º
-  º                    l”st.                                               º
-  º                                                                        º
-  º  Rckgabewert:     Die Funktion hat keinen Rckgabewert                º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_TestMausStatus               Datum: 07.01.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        EVENT  *event   Zeiger auf Eventstruktur            â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion trÃ¤gt zuerst den aktuellen Zustand     â•‘
+  â•‘                    der Mausbuttons und die Position des Mauscursors    â•‘
+  â•‘                    in die Eventstruktur ein.                           â•‘
+  â•‘                    Danach wird Ã¼berprÃ¼ft, ob die Maus seit dem letzen  â•‘
+  â•‘                    Aufruf der Funktion bewegt worden ist. In diesem    â•‘
+  â•‘                    Fall wird die aktuelle Position gesichert und ein   â•‘
+  â•‘                    EVENT_MOUSE_MOVE ausgelÃ¶st.                         â•‘
+  â•‘                    Wenn die Maus nicht bewegt worden ist, untersucht   â•‘
+  â•‘                    die Fuktion, ob sich der Zustand der Mausbuttons    â•‘
+  â•‘                    seit dem letzten Aufruf der Funktion geÃ¤ndert hat.  â•‘
+  â•‘                    In diesem Fall wird der entsprechende Event ausge-  â•‘
+  â•‘                    lÃ¶st.                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Die Funktion hat keinen RÃ¼ckgabewert                â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 VOID i_TestMausStatus(EVENT *pEvent)
 {
     STATIC SWORD  wSaveButton;			      /* Letzter Status       */
@@ -202,22 +202,22 @@ VOID i_TestMausStatus(EVENT *pEvent)
     if (wSaveButton == MSM_B_DOWN)                  /* waren beide gedr. ?  */
         pEvent->wArt = EVENT_B_RELEASE;
 
-    else if (pEvent->wButton == MSM_B_DOWN)         /* sind beide gedrckt? */
+    else if (pEvent->wButton == MSM_B_DOWN)         /* sind beide gedrÃ¼ckt? */
         pEvent->wArt = EVENT_B_PRESS;
 
-    else if (wSaveButton == 0)                      /* war keine gedrckt ? */
+    else if (wSaveButton == 0)                      /* war keine gedrÃ¼ckt ? */
     {
-        if (pEvent->wButton == MSM_L_DOWN)          /* ist links gedrckt ? */
+        if (pEvent->wButton == MSM_L_DOWN)          /* ist links gedrÃ¼ckt ? */
             pEvent->wArt = EVENT_L_PRESS;
-        else if (pEvent->wButton == MSM_R_DOWN)     /* ist recht gedrckt ? */
+        else if (pEvent->wButton == MSM_R_DOWN)     /* ist recht gedrÃ¼ckt ? */
             pEvent->wArt = EVENT_R_PRESS;
     }
 
-    else if (pEvent->wButton == 0)                  /* ist keine gedrckt ? */
+    else if (pEvent->wButton == 0)                  /* ist keine gedrÃ¼ckt ? */
     {
-        if (wSaveButton == MSM_L_DOWN)              /* war links gedrckt ? */
+        if (wSaveButton == MSM_L_DOWN)              /* war links gedrÃ¼ckt ? */
             pEvent->wArt = EVENT_L_RELEASE;
-        else if (wSaveButton == MSM_R_DOWN)         /* war rechts gedrckt? */
+        else if (wSaveButton == MSM_R_DOWN)         /* war rechts gedrÃ¼ckt? */
             pEvent->wArt = EVENT_R_RELEASE;
     }
 

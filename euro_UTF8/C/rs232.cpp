@@ -134,12 +134,12 @@ for(j=0, i=0; i<16; i++)
    if(j==16)
      {
      strReturn[j++]=' ';
-     strReturn[j++]='³';
+     strReturn[j++]='â”‚';
      }
 
 
    strReturn[j++]=strErgebnis[i];
-   strReturn[j++]='³';
+   strReturn[j++]='â”‚';
    }
 
 return(strReturn);

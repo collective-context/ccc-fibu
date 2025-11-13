@@ -1,28 +1,28 @@
 // (C) WINware Software P.Mayer: letztes Update am 13-Feb-1996
 
 /*.ta Wi_Aktivieren()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Wi_Akitivieren()							       º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Wi_Akitivieren()							       â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_Win.h>
 SWORD Wi_Aktivieren(pWkb);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 PWKB  pWkb	  Zeiger auf den Kontrollblock des anzuzeigenden Windows.
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Mit dieser Funktion kann ein Window zum obersten, also aktiven Window gemacht
-werden. Auf dem Bildschirm k”nnen 15 Windows gleichzeitig angezeigt werden
+werden. Auf dem Bildschirm kÃ¶nnen 15 Windows gleichzeitig angezeigt werden
 (1..15) der Bildschirm wird als Window Nr.0 betrachtet.
 
-Die Vorgehensweise ist abh„ngig vom vorherigen Zustand des Windows. Es wird
-zwischen 3 Zust„nden unterschieden:
+Die Vorgehensweise ist abhÃ¤ngig vom vorherigen Zustand des Windows. Es wird
+zwischen 3 ZustÃ¤nden unterschieden:
 
 		     1. Das Window ist sichtbar,
 		     2. Das Window ist nicht sichtbar, aber versteckt
@@ -30,8 +30,8 @@ zwischen 3 Zust„nden unterschieden:
 			steckt
 
 zu 1)  Zuerst werden alle Windows, die das zu zeigende Window verdecken vom
-       Bildschirm abger„umt. Das anzuzeigende Window wird dann entfernt und die
-       abger„umten Windows in der alten Reihenfolge wieder auf den Bildschirm ge-
+       Bildschirm abgerÃ¤umt. Das anzuzeigende Window wird dann entfernt und die
+       abgerÃ¤umten Windows in der alten Reihenfolge wieder auf den Bildschirm ge-
        legt. Zuletzt wird das zu zeigende Window aufgelegt.
 
 zu 2)  Wenn die maximal erlaubte Anzahl von angegezeigten Windows noch nicht er-
@@ -40,38 +40,38 @@ zu 2)  Wenn die maximal erlaubte Anzahl von angegezeigten Windows noch nicht er-
 
 zu 3)  Wenn die maximale Windowanzahl noch nicht erreicht ist, wird das Window
        als oberstes auf dem Bildschirm angezeigt. Um den Untergrund zu sichern,
-       wird vorher Speicherplatz fr einen Buffer allokiert.
+       wird vorher Speicherplatz fÃ¼r einen Buffer allokiert.
 
 Die Anzahl der eingerichteten und versteckten Fenster ist nur durch die Spei-
-cherkapazit„t des Systems begrenzt, in dem das Programm l„uft.
+cherkapazitÃ¤t des Systems begrenzt, in dem das Programm lÃ¤uft.
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD  Fehlerinformationen (OK/ERROR)
-      Im Fehlerfall erh„lt ¯wFehler_g® eine der folgenden Fehlernummern:
+      Im Fehlerfall erhÃ¤lt Â»wFehler_gÂ« eine der folgenden Fehlernummern:
       - WIN_KEIN_PWKB (pWkb zeigt nciht auf einen Fensterkontrollblock.)
       - WIN_LIMIT (Maximale Anzahl der Fenster ist erreicht.)
       - WIN_KEIN_SPEICHER (Hintergrund kann nicht gesichert werden.)
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 - wMausda_g (R) 	     - wFehler_g (W)		     - wAktWin_g (R/W)
 - apWkbSichtbar_g[] (R/W)    - fpwCopyBuffer_g (R/W)
 
 
 siehe auch:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Wi_Einrichten()
 
 Beispiel:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Beispiele fr die Anwendung von ¯Wi_Aktivieren()® finden Sie in den Beispiel-
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Beispiele fÃ¼r die Anwendung von Â»Wi_Aktivieren()Â« finden Sie in den Beispiel-
 programmen der anderen Funktionen des Window-Moduls.
 
 .te*/
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          HEADER - DATEIEN                              º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          HEADER - DATEIEN                              â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <eur_tool.h>
 
 #include <dos.h>
@@ -79,27 +79,27 @@ programmen der anderen Funktionen des Window-Moduls.
 #include <string.h>
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        KONSTANTEN UND MAKROS                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        KONSTANTEN UND MAKROS                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define WIN_MAX 15                                  /* Anzahl der maximal   */
                                                     /* sichtbaren Windows.  */
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                       Modulglobale Variablen                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                       Modulglobale Variablen                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	SWORD awBit_m[17] = {  0x0001, 0x0002, 0x0004, 0x0008,	/* Bitmasken */
                               0x0010, 0x0020, 0x0040, 0x0080,
                               0x0100, 0x0200, 0x0400, 0x0800,
                               0x1000, 0x2000, 0x4000, 0x8000  };
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          Globale Variablen                             º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          Globale Variablen                             â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
 IMPORT  PWKB    apWkbSichtbar_g[16];                /* Array v. Zeigern auf */
                                                     /* WKB der sichtbaren W.*/
 IMPORT	SWORD	 wAktWin_g;			     /* Index des aktiven W. */
-                                                    /* in ¯apWkbSichtbar[]® */
+                                                    /* in Â»apWkbSichtbar[]Â« */
 IMPORT  FPWORD  fpwCopyBuffer_g;                    /* Zeiger auf 4k-Buffer */
 
 IMPORT	SWORD	 wS_g;				     /* Die Koordinaten be-  */
@@ -113,17 +113,17 @@ IMPORT	SWORD	 wMausda_g;			     /* 0: keine Maus da     */
                                                     /* 1: Maus vorhanden    */
 IMPORT	SWORD	 wFehler_g;			     /* Nr. des letzten auf- */
                                                     /* getretenen Fehlers   */
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º               Prototypen der modulglobalen Funktionen                  º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘               Prototypen der modulglobalen Funktionen                  â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC SWORD i_Wi_Schnitt(SWORD);
 STATIC SWORD i_Wi_Schaufeln(PWKB);
 STATIC SWORD i_Wi_Versteckt(PWKB);
 STATIC SWORD i_Wi_Neu(PWKB);
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Wi_Aktivieren( PWKB pWkb )
 {
@@ -132,7 +132,7 @@ SWORD Wi_Aktivieren( PWKB pWkb )
     if (pWkb->wWkbsign != WKBSIGNATUR)              /* Test ob Zeiger noch  */
     {                                               /* auf WKB zeigt.       */
         wFehler_g = WIN_KEIN_PWKB;                  /* Fehlernummer setzen  */
-        return (ERROR);                             /* zurck an Aufrufer   */
+        return (ERROR);                             /* zurÃ¼ck an Aufrufer   */
     }
 
     if (pWkb == apWkbSichtbar_g[wAktWin_g] )        /* Window schon aktiv   */
@@ -153,16 +153,16 @@ SWORD Wi_Aktivieren( PWKB pWkb )
     if ( pWkb->winFlags.wSichtbar )                 /* Zustand 1 (s. o.)    */
 	    wReturn = i_Wi_Schaufeln(pWkb);	    /* W. nach oben holen   */
 
-    else if ( wAktWin_g < WIN_MAX )                 /* anzeigen m”glich ?   */
+    else if ( wAktWin_g < WIN_MAX )                 /* anzeigen mÃ¶glich ?   */
 
         if ( pWkb->winFlags.wVersteckt )            /* Zustand 2 (s. o.)    */
 	    wReturn = i_Wi_Versteckt(pWkb);	    /* Verst. Window zeigen */
         else                                        /* Zustand 3 (s. o.)    */
 	    wReturn = i_Wi_Neu(pWkb);		    /* Neues Window zeigen  */
-    else                                            /* ¯WIN_MAX® erreicht   */
+    else                                            /* Â»WIN_MAXÂ« erreicht   */
     {
         wFehler_g = WIN_LIMIT;                      /* Fehlernummer setzen  */
-        return (ERROR);                             /* zurck an Aufrufer   */
+        return (ERROR);                             /* zurÃ¼ck an Aufrufer   */
     }
 
     if (wMausda_g && wStatus == MSM_WAR_AN)         /* wenn Maus sichtbar   */
@@ -173,29 +173,29 @@ SWORD Wi_Aktivieren( PWKB pWkb )
 } /* end Wi_Aktivieren() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Wi_Schaufeln		      Datum: 21.09.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PWKB    pWkb   Zeiger auf den Kontrollblock des     º
-  º                                   anzuzeigenden Windows.               º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion aktiviert ein sichtbares Window. Dazu  º
-  º                    werden folgende Schritte abgearbeitet:              º
-  º                                                                        º
-  º                       - Index des pWkb fr apWkbSichtbar_g bestimmen   º
-  º                       - Cursor des alten aktiven Windows sichern       º
-  º                       - Bestimmung der abzur„umenden Windows           º
-  º                       - Abr„umen der ermittelten Windows               º
-  º                       - Verstecken des zu sichernden Windows           º
-  º                       - Abger„umte Windows wieder anzeigen             º
-  º                       - Verstecktes Window wieder sichtbar machen      º
-  º                       - globale Variablen aktualisieren                º
-  º                       - Schnittfl„chen berechnen                       º
-  º                                                                        º
-  º  Rckgabewert:     SWORD  Fehlerinformation 			    º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Wi_Schaufeln		      Datum: 21.09.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PWKB    pWkb   Zeiger auf den Kontrollblock des     â•‘
+  â•‘                                   anzuzeigenden Windows.               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion aktiviert ein sichtbares Window. Dazu  â•‘
+  â•‘                    werden folgende Schritte abgearbeitet:              â•‘
+  â•‘                                                                        â•‘
+  â•‘                       - Index des pWkb fÃ¼r apWkbSichtbar_g bestimmen   â•‘
+  â•‘                       - Cursor des alten aktiven Windows sichern       â•‘
+  â•‘                       - Bestimmung der abzurÃ¤umenden Windows           â•‘
+  â•‘                       - AbrÃ¤umen der ermittelten Windows               â•‘
+  â•‘                       - Verstecken des zu sichernden Windows           â•‘
+  â•‘                       - AbgerÃ¤umte Windows wieder anzeigen             â•‘
+  â•‘                       - Verstecktes Window wieder sichtbar machen      â•‘
+  â•‘                       - globale Variablen aktualisieren                â•‘
+  â•‘                       - SchnittflÃ¤chen berechnen                       â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     SWORD  Fehlerinformation 			    â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_Wi_Schaufeln( PWKB pWkb)
 {
@@ -222,22 +222,22 @@ SWORD i_Wi_Schaufeln( PWKB pWkb)
     i_Wi_SaveCursor();				    /* Cursor des zur Zeit  */
                                                     /* aktiven W. sichern   */
 
-    wListe = awBit_m[wIndex];                       /* Abr„umliste initial. */
+    wListe = awBit_m[wIndex];                       /* AbrÃ¤umliste initial. */
     wMaske = awBit_m[wIndex+1];                     /* Bitmaske initial.    */
     for (i = wIndex+1; i <= wAktWin_g; i++)         /* nach oben abarbeiten */
     {
-        if (wListe & apWkbSichtbar_g[i]->wSchnitte) /* exis. Schnittfl„che? */
+        if (wListe & apWkbSichtbar_g[i]->wSchnitte) /* exis. SchnittflÃ¤che? */
             wListe |= wMaske;                       /* wListe erweitern     */
         wMaske <<= 1;
     }
 
-    if (wListe != awBit_m[wIndex])                  /* exis. Schnittfl„che? */
+    if (wListe != awBit_m[wIndex])                  /* exis. SchnittflÃ¤che? */
     {
         wMaske = awBit_m[wAktWin_g];
-        for (i = wAktWin_g; i >= wIndex; i--)       /* von oben abr„umen    */
+        for (i = wAktWin_g; i >= wIndex; i--)       /* von oben abrÃ¤umen    */
         {
             if (wListe & wMaske)                    /* Soll das Window ab-  */
-		i_Wi_Pop(i);			    /* ger„umt werden ?     */
+		i_Wi_Pop(i);			    /* gerÃ¤umt werden ?     */
             wMaske >>= 1;
         }
 
@@ -245,14 +245,14 @@ SWORD i_Wi_Schaufeln( PWKB pWkb)
         for (i = wIndex+1; i <= wAktWin_g; i++)     /* Windows auflegen     */
         {
             if (wListe & wMaske)                    /* Wurde das Window ab- */
-		i_Wi_Push(i);			    /* ger„umt ?	    */
+		i_Wi_Push(i);			    /* gerÃ¤umt ?	    */
             wMaske <<= 1;
         }
 
-	i_Wi_Push(wIndex);			    /* gewnschtes Window   */
+	i_Wi_Push(wIndex);			    /* gewÃ¼nschtes Window   */
     }
 
-    if (pWkb->winFlags.wTRaendern)                  /* Titel o. Rahmen „nd.?*/
+    if (pWkb->winFlags.wTRaendern)                  /* Titel o. Rahmen Ã¤nd.?*/
     {
 	Ut_ZeigeRahmen(pWkb->wSpalte, pWkb->wZeile, /* Rahmen neu anzeigen  */
                        pWkb->wBreite,pWkb->wHoehe,
@@ -269,7 +269,7 @@ SWORD i_Wi_Schaufeln( PWKB pWkb)
                pWkb->wBreite -2, pWkb->wHoehe -2,   /* dows festlegen       */
                pWkb->wInnenAttr);
 
-    if (pWkb->winFlags.wDAaendern)                  /* Data-Area „ndern ?   */
+    if (pWkb->winFlags.wDAaendern)                  /* Data-Area Ã¤ndern ?   */
     {
 	Wi_Swa( 0, 0,				    /* neues Attribut geben */
                 pWkb->wBreite-2,
@@ -291,7 +291,7 @@ SWORD i_Wi_Schaufeln( PWKB pWkb)
     }
 
     apWkbSichtbar_g[wAktWin_g] = pWkb;              /* neues aktives Window */
-    pWkb->wSchnitte = i_Wi_Schnitt(wAktWin_g);	    /* Schnittfl„chen be-   */
+    pWkb->wSchnitte = i_Wi_Schnitt(wAktWin_g);	    /* SchnittflÃ¤chen be-   */
                                                     /* rechnen              */
 
     i_Wi_RestoreCursor();			    /* Cursor an alte Pos.  */
@@ -301,30 +301,30 @@ SWORD i_Wi_Schaufeln( PWKB pWkb)
 } /* end i_Wi_Schaufeln() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Wi_Versteckt		      Datum: 21.09.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PWKB    pWkb   Zeiger auf den Kontrollblock des     º
-  º                                   anzuzeigenden Windows.               º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion zeigt ein vorher verstecktes Window    º
-  º                    auf dem Bildschirm an. Da sich versteckte Windows   º
-  º                    im Hintergrund-Buffer (fpwBuffer) befinden, wird    º
-  º                    der globale ¯Copy-Buffer® als Zwischenspeicher be-  º
-  º                    nutzt. Damit ergibt sich fr die Funktion folgende  º
-  º                    Vorgehensweise:                                     º
-  º                                                                        º
-  º                       - Cursor des alten aktiven Windows sichern       º
-  º                       - Window in ¯Copy-Buffer® kopieren               º
-  º                       - Hintergrund sichern                            º
-  º                       - Window auf dem Bildschirm anzeigen             º
-  º                       - globale Variablen aktualisieren                º
-  º                       - Schnittfl„chen berechnen                       º
-  º                                                                        º
-  º  Rckgabewert:     SWORD  Fehlerinformation 			    º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Wi_Versteckt		      Datum: 21.09.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PWKB    pWkb   Zeiger auf den Kontrollblock des     â•‘
+  â•‘                                   anzuzeigenden Windows.               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion zeigt ein vorher verstecktes Window    â•‘
+  â•‘                    auf dem Bildschirm an. Da sich versteckte Windows   â•‘
+  â•‘                    im Hintergrund-Buffer (fpwBuffer) befinden, wird    â•‘
+  â•‘                    der globale Â»Copy-BufferÂ« als Zwischenspeicher be-  â•‘
+  â•‘                    nutzt. Damit ergibt sich fÃ¼r die Funktion folgende  â•‘
+  â•‘                    Vorgehensweise:                                     â•‘
+  â•‘                                                                        â•‘
+  â•‘                       - Cursor des alten aktiven Windows sichern       â•‘
+  â•‘                       - Window in Â»Copy-BufferÂ« kopieren               â•‘
+  â•‘                       - Hintergrund sichern                            â•‘
+  â•‘                       - Window auf dem Bildschirm anzeigen             â•‘
+  â•‘                       - globale Variablen aktualisieren                â•‘
+  â•‘                       - SchnittflÃ¤chen berechnen                       â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     SWORD  Fehlerinformation 			    â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_Wi_Versteckt( PWKB pWkb )
 
@@ -357,7 +357,7 @@ SWORD i_Wi_Versteckt( PWKB pWkb )
              pWkb->wBreite, pWkb->wHoehe,           /* schirm anzeigen      */
              fpwCopyBuffer_g);
 
-    if (pWkb->winFlags.wTRaendern)                  /* Titel o. Rahmen „nd.?*/
+    if (pWkb->winFlags.wTRaendern)                  /* Titel o. Rahmen Ã¤nd.?*/
     {
 	Ut_ZeigeRahmen(pWkb->wSpalte, pWkb->wZeile, /* Rahmen neu anzeigen  */
                        pWkb->wBreite,pWkb->wHoehe,
@@ -374,7 +374,7 @@ SWORD i_Wi_Versteckt( PWKB pWkb )
                pWkb->wBreite -2, pWkb->wHoehe -2,   /* dows festlegen       */
                pWkb->wInnenAttr);
 
-    if (pWkb->winFlags.wDAaendern)                  /* Data-Area „ndern ?   */
+    if (pWkb->winFlags.wDAaendern)                  /* Data-Area Ã¤ndern ?   */
     {
 	Wi_Swa( 0, 0,				    /* neues Attribut geben */
                 pWkb->wBreite-2,
@@ -398,7 +398,7 @@ SWORD i_Wi_Versteckt( PWKB pWkb )
     pWkb->winFlags.wDAaendern = 0;
 
     apWkbSichtbar_g[++wAktWin_g] = pWkb;            /* neues aktives Window */
-    pWkb->wSchnitte = i_Wi_Schnitt(wAktWin_g);	    /* Schnittfl„chen be-   */
+    pWkb->wSchnitte = i_Wi_Schnitt(wAktWin_g);	    /* SchnittflÃ¤chen be-   */
                                                     /* rechnen              */
 
 
@@ -409,27 +409,27 @@ SWORD i_Wi_Versteckt( PWKB pWkb )
 } /* end i_Wi_Versteckt() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Wi_Neu 		      Datum: 21.09.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PWKB    pWkb   Zeiger auf den Kontrollblock des     º
-  º                                   anzuzeigenden Windows.               º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion schreibt ein Window auf den Bild-      º
-  º                    schirm. Dazu werden folgende Schritte abgear-       º
-  º                    beitet:                                             º
-  º                                                                        º
-  º                      - Buffer allokieren  (evtl. Fehlermeldung)        º
-  º                      - Cursor des alten aktiven Windows sichern        º
-  º                      - globale Variablen aktualisieren                 º
-  º                      - Hintergrund sichern                             º
-  º                      - Bild aufbauen (Rahmen, Titel, leerer Innenraum) º
-  º                      - Schnittfl„chen berechnen                        º
-  º                                                                        º
-  º  Rckgabewert:     SWORD  Fehlerinformation 			    º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Wi_Neu 		      Datum: 21.09.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PWKB    pWkb   Zeiger auf den Kontrollblock des     â•‘
+  â•‘                                   anzuzeigenden Windows.               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion schreibt ein Window auf den Bild-      â•‘
+  â•‘                    schirm. Dazu werden folgende Schritte abgear-       â•‘
+  â•‘                    beitet:                                             â•‘
+  â•‘                                                                        â•‘
+  â•‘                      - Buffer allokieren  (evtl. Fehlermeldung)        â•‘
+  â•‘                      - Cursor des alten aktiven Windows sichern        â•‘
+  â•‘                      - globale Variablen aktualisieren                 â•‘
+  â•‘                      - Hintergrund sichern                             â•‘
+  â•‘                      - Bild aufbauen (Rahmen, Titel, leerer Innenraum) â•‘
+  â•‘                      - SchnittflÃ¤chen berechnen                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     SWORD  Fehlerinformation 			    â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_Wi_Neu( PWKB pWkb )
 {
@@ -483,14 +483,14 @@ SWORD i_Wi_Neu( PWKB pWkb )
                pWkb->wBreite -2, pWkb->wHoehe -2,   /* dows festlegen       */
                pWkb->wInnenAttr);
 
-    Wi_Cls();					    /* Window l”schen	    */
+    Wi_Cls();					    /* Window lÃ¶schen	    */
 
     pWkb->winFlags.wSichtbar  = 1;                  /* Window ist sichtbar  */
     pWkb->winFlags.wVersteckt = 0;
-    pWkb->winFlags.wTRaendern = 0;                  /* nderungen sind be-  */
-    pWkb->winFlags.wDAaendern = 0;                  /* rcksichtigt         */
+    pWkb->winFlags.wTRaendern = 0;                  /* Ã„nderungen sind be-  */
+    pWkb->winFlags.wDAaendern = 0;                  /* rÃ¼cksichtigt         */
 
-    pWkb->wSchnitte = i_Wi_Schnitt(wAktWin_g);	    /* Schnittfl„chen be-   */
+    pWkb->wSchnitte = i_Wi_Schnitt(wAktWin_g);	    /* SchnittflÃ¤chen be-   */
 						    /* rechnen		    */
 
 return(0); //
@@ -498,34 +498,34 @@ return(0); //
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Wi_Schnitt		      Datum: 21.09.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD  wIndex	 Index des abdeckenden Windows	    º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion erstellt fr das angegebene Window   º
-  º                    eine Bitmaske, in der die Informationen ber die    º
-  º                    Schnittfl„chen mit tiefer gelegenen Windows abge-   º
-  º                    legt sind.                                          º
-  º                    Jedem Bit in dieser Maske ist ein sichtbares Win-   º
-  º                    dow zugeordnet. Dem untersten Window ist das Bit    º
-  º                    0 zugeordnet, dem n„chsten Bit 1 usw.. Da maximal   º
-  º                    16 Windows erlaubt sind (wobei der Bildschirm als   º
-  º                    Window Nr. 0 betrachtet wird), ist die Bitmaske     º
-  º                    2 Byte (1 Word) lang.                               º
-  º                    Ein Bit in der Maske wird immer dann gesetzt, wenn  º
-  º                    das korrespondierende Window vom aktuellen Window   º
-  º                    ganz oder teilweise berdeckt wird.                 º
-  º                                                                        º
-  º                    Beispiel:  Das aktuelle Window berdeckt die Win-   º
-  º                               dows 3,6,9 und 11. Die Bitmaske lautet   º
-  º                               dann:                                    º
-  º                                      0000 1010 0100 1000  (0x0A48)     º
-  º                                                                        º
-  º  Rckgabewert:     SWORD   Ergebnis der Schnittstellen-Berechnung	    º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Wi_Schnitt		      Datum: 21.09.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD  wIndex	 Index des abdeckenden Windows	    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion erstellt fÃ¼r das angegebene Window   â•‘
+  â•‘                    eine Bitmaske, in der die Informationen Ã¼ber die    â•‘
+  â•‘                    SchnittflÃ¤chen mit tiefer gelegenen Windows abge-   â•‘
+  â•‘                    legt sind.                                          â•‘
+  â•‘                    Jedem Bit in dieser Maske ist ein sichtbares Win-   â•‘
+  â•‘                    dow zugeordnet. Dem untersten Window ist das Bit    â•‘
+  â•‘                    0 zugeordnet, dem nÃ¤chsten Bit 1 usw.. Da maximal   â•‘
+  â•‘                    16 Windows erlaubt sind (wobei der Bildschirm als   â•‘
+  â•‘                    Window Nr. 0 betrachtet wird), ist die Bitmaske     â•‘
+  â•‘                    2 Byte (1 Word) lang.                               â•‘
+  â•‘                    Ein Bit in der Maske wird immer dann gesetzt, wenn  â•‘
+  â•‘                    das korrespondierende Window vom aktuellen Window   â•‘
+  â•‘                    ganz oder teilweise Ã¼berdeckt wird.                 â•‘
+  â•‘                                                                        â•‘
+  â•‘                    Beispiel:  Das aktuelle Window Ã¼berdeckt die Win-   â•‘
+  â•‘                               dows 3,6,9 und 11. Die Bitmaske lautet   â•‘
+  â•‘                               dann:                                    â•‘
+  â•‘                                      0000 1010 0100 1000  (0x0A48)     â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     SWORD   Ergebnis der Schnittstellen-Berechnung	    â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_Wi_Schnitt(SWORD wIndex)
 {
@@ -558,17 +558,17 @@ SWORD i_Wi_Schnitt(SWORD wIndex)
             if ((wSl > t->wSpalte + t->wBreite +1)  /* a(ktiv) rechts von t */
              || (wZo > t->wZeile  + t->wHoehe )     /* a unter t(est)       */
              || (t->wSpalte > wSr)                  /* a links von t        */
-             || (t->wZeile  > wZu ))                /* a ber t             */
-            ;                                       /* -> keine šberlappung */
-            else                                    /* berlappende Windows */
+             || (t->wZeile  > wZu ))                /* a Ã¼ber t             */
+            ;                                       /* -> keine Ãœberlappung */
+            else                                    /* Ã¼berlappende Windows */
                 wReturn |= wMaske;                  /* entspr. Bit setzen   */
         else
             if ((wSl > t->wSpalte + t->wBreite -1)  /* a(ktiv) rechts von t */
              || (wZo > t->wZeile  + t->wHoehe -1)   /* a unter t(est)       */
              || (t->wSpalte > wSr)                  /* a links von t        */
-             || (t->wZeile  > wZu ))                /* a ber t             */
-            ;                                       /* -> keine šberlappung */
-            else                                    /* berlappende Windows */
+             || (t->wZeile  > wZu ))                /* a Ã¼ber t             */
+            ;                                       /* -> keine Ãœberlappung */
+            else                                    /* Ã¼berlappende Windows */
                 wReturn |= wMaske;                  /* entspr. Bit setzen   */
 
     }
@@ -578,17 +578,17 @@ SWORD i_Wi_Schnitt(SWORD wIndex)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Wi_Pop 		      Datum: 21.09.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD  wIndex   Index des zu entfernenden Windows    º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion entfernt das gewnschte Window vom     º
-  º                    Bildschirm und sichert es im Hintergrund-Buffer.    º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Wi_Pop 		      Datum: 21.09.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD  wIndex   Index des zu entfernenden Windows    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion entfernt das gewÃ¼nschte Window vom     â•‘
+  â•‘                    Bildschirm und sichert es im Hintergrund-Buffer.    â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID i_Wi_Pop( SWORD wIndex )
 {
@@ -616,17 +616,17 @@ VOID i_Wi_Pop( SWORD wIndex )
 } /* end i_Wi_Pop */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Wi_Push		      Datum: 21.09.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD  wIndex   Index des aufzulegenden Windows	    º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion holt das gewnschte Window aus dem     º
-  º                    Hintergrund-Buffer und legt es auf den Bildschirm.  º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Wi_Push		      Datum: 21.09.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD  wIndex   Index des aufzulegenden Windows	    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion holt das gewÃ¼nschte Window aus dem     â•‘
+  â•‘                    Hintergrund-Buffer und legt es auf den Bildschirm.  â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID i_Wi_Push( SWORD wIndex )
 {

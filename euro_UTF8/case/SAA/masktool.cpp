@@ -55,7 +55,7 @@ Close_Printer ()
 
 
 /*------ Close_Window () -------------------------------------------------------*/
-/* Diese Funktion schlie·t das zuletzt erîffnete Window.                        */
+/* Diese Funktion schlie√üt das zuletzt er√∂ffnete Window.                        */
 /*------------------------------------------------------------------------------*/
 Close_Window ()
 {
@@ -138,18 +138,18 @@ Key_Input ()
 
 /*------ Kill_Memo ( memofile_name, memo_key ) ---------------------------------*/
 /* Diese Funktion ist ein Bestandteil des Memo-Systems. Mit ihr kann man ein    */
-/* komplettes Memo aus einer Memo-Bibliothek lîschen. Ist der angegebene        */
-/* memoschlÅssel nicht in der Bibliothek verzeichnet, so geschieht gar nichts.  */
+/* komplettes Memo aus einer Memo-Bibliothek l√∂schen. Ist der angegebene        */
+/* memoschl√ºssel nicht in der Bibliothek verzeichnet, so geschieht gar nichts.  */
 /* Versorgung:                                                                  */
 /*    Eingang:                                                                  */
 /*    char *memofile_name;                                                      */
 /*       Name der Memo-Bibliothek. Ist die Memobibliothek nicht vorhanden, so   */
 /*       wird sie erzeugt, auch wenn mann in einer leeren Bibliothek nichts     */
-/*       lîschen kann.                                                          */
+/*       l√∂schen kann.                                                          */
 /*    char *memo_key;                                                           */
-/*       SchlÅssel des Memos, das gelîscht werden soll. Wird der SchlÅssel in   */
+/*       Schl√ºssel des Memos, das gel√∂scht werden soll. Wird der Schl√ºssel in   */
 /*       der Bibliothek nicht gefunden, wird sofort in den aufrufenden          */
-/*       Programmteil zurÅckgesprungen.                                         */
+/*       Programmteil zur√ºckgesprungen.                                         */
 /*------------------------------------------------------------------------------*/
 Kill_Memo ( memofile_name, memo_key )
 char *memofile_name, *memo_key;
@@ -188,71 +188,71 @@ Make_Window ()
 /*              default_upper_line, default_upper_col, default_width,           */
 /*              default_hight )                                                 */
 /* Diese Funktion aktiviert das Memo-System. Der Memo-Editor ist ein in sich    */
-/* abgeschlossenes Datei- und Textverwaltungssystem. öber den Editor lassen     */
+/* abgeschlossenes Datei- und Textverwaltungssystem. √úber den Editor lassen     */
 /* sich verschiedene Sonderfunktionen aufrufen, mit denen die Texte verwaltet   */
-/* werden kînnen. Der RÅcksprung zum aufrufenden Programmteil erfolgt erst,     */
+/* werden k√∂nnen. Der R√ºcksprung zum aufrufenden Programmteil erfolgt erst,     */
 /* wenn der Anwender das Memo explizit durch ESC verlassen hat.                 */
 /* Versorgung:                                                                  */
 /*    Eingang:                                                                  */
 /*    char *memofile_name;                                                      */
 /*       Gibt den Dateinamen der Memo-Bibliothek an, die angesprochen werden    */
-/*       soll. Der Dateiname mu· ein DOS-konformer Dateiname (evtl. mit         */
+/*       soll. Der Dateiname mu√ü ein DOS-konformer Dateiname (evtl. mit         */
 /*       Pfadangaben) sein. Die Memo-Bibliothek wird erzeugt, falls sie noch    */
 /*       nicht exisitiert.                                                      */
 /*    char *memo_key;                                                           */
-/*       Gibt den SchlÅssel des memos in der Memo-Bibliothek an. Ist das Memo   */
+/*       Gibt den Schl√ºssel des memos in der Memo-Bibliothek an. Ist das Memo   */
 /*       dort noch nicht verzeichnet, kann das Memo auf Wunsch des Anwenders    */
 /*       dort eingetragen werden. In diesem Fall wird das Default-Memo ange-    */
 /*       zeigt, welches leer ist und an der bezeichneten Stelle am Bildschirm   */
-/*       erscheint. Der Memo-SchlÅssel wird nur auf 35 Stellen ausgewertet.     */
+/*       erscheint. Der Memo-Schl√ºssel wird nur auf 35 Stellen ausgewertet.     */
 /*    int right_margin;                                                         */
 /*       Legt den rechten Rand fest, bis zu dem der Benutzer eine Zeile einge-  */
 /*       ben kann, ehe sie automatisch umgebrochen wird. Der rechte Rand ist    */
-/*       fast beliebig wÑhlbar, sollte jedoch auf sinnvolle Werte beschrÑnkt    */
+/*       fast beliebig w√§hlbar, sollte jedoch auf sinnvolle Werte beschr√§nkt    */
 /*       werden. Um den rechten Rand praktisch freizugeben kann z.B. ein Wert   */
 /*       von 9999 angegeben werden.                                             */
 /*    char *usage;                                                              */
 /*       Gibt die Zeichenkette an, die oben im Rahmen des Memos eingeblendet    */
 /*       werden soll, um auf die Funktion des Memos hinzuweisen. Ist das        */
-/*       Fenster schmÑler als die angegebene Zeichenkette, wird diese ent-      */
+/*       Fenster schm√§ler als die angegebene Zeichenkette, wird diese ent-      */
 /*       sprechend rechts abgeschnitten.                                        */
 /*    char *message_str;                                                        */
 /*       Gibt die Nachricht an, die ausgegeben werden soll, wenn der angege-    */
-/*       bene Memo-SchlÅssel nicht in der Memo-Bibliothek vorhanden ist.        */
+/*       bene Memo-Schl√ºssel nicht in der Memo-Bibliothek vorhanden ist.        */
 /*    char *question;                                                           */
 /*       Gibt die Frage an, die gestellt werden soll, damit der Anwender ent-   */
 /*       scheiden kann, ob ein noch nicht existierendes Memo angelegt werden    */
 /*       soll. Die Frage wird allerdings nur dann gestellt, wenn der Anwender   */
-/*       auch berechtigt ist, das Memo zu verÑndern (s.u.).                     */
+/*       auch berechtigt ist, das Memo zu ver√§ndern (s.u.).                     */
 /*    int changable;                                                            */
-/*       Gibt an, ob der Anwender das Memo verÑndern (editieren) oder anlegen   */
+/*       Gibt an, ob der Anwender das Memo ver√§ndern (editieren) oder anlegen   */
 /*       kann, falls es noch nicht vorhanden ist. Ansonsten wird der Memoinhalt */
-/*       nur angezeigt. Soll der Anwender das Memo nicht verÑndern kînnen und   */
+/*       nur angezeigt. Soll der Anwender das Memo nicht ver√§ndern k√∂nnen und   */
 /*       exisitert das bezeichnete Memo noch nicht, so erscheint dem Anwender   */
 /*       nur die in message angegebene Meldung. Der Parameter question ist in   */
 /*       diesem Fall ohne Bedeutung.                                            */
-/*       Der Wert 0 fÅr changable bedeutet, da· das memo nicht verÑndert werden */
+/*       Der Wert 0 f√ºr changable bedeutet, da√ü das memo nicht ver√§ndert werden */
 /*       kann (nur angezeigt wird).                                             */
-/*       Der Wert -1 bedeutet, da· das Memo editiert werden kann.               */
-/*       Der Wert  bedeutet, da· das Memo nicht verÑndert werden kann und da·   */
+/*       Der Wert -1 bedeutet, da√ü das Memo editiert werden kann.               */
+/*       Der Wert  bedeutet, da√ü das Memo nicht ver√§ndert werden kann und da√ü   */
 /*       bei Nichtexistenz des Memos keinerlei Anzeige erfolgt, sonder direkt   */
-/*       zum aufrufenden Programmteil zurÅckgesprungen wird. Andere Werte sind  */
-/*       nicht zulÑssig.                                                        */
+/*       zum aufrufenden Programmteil zur√ºckgesprungen wird. Andere Werte sind  */
+/*       nicht zul√§ssig.                                                        */
 /*    int window_palette;                                                       */
-/*       Ist die Nummer der Palette fÅr die Farbattributen des Fensters         */
+/*       Ist die Nummer der Palette f√ºr die Farbattributen des Fensters         */
 /*    int frame_palette;                                                        */
-/*       Ist die Nummer der Palette fÅr die Farbattributen des Fensterrahmens   */
+/*       Ist die Nummer der Palette f√ºr die Farbattributen des Fensterrahmens   */
 /*    int default_upper_line;                                                   */
 /*       Gibt die Zeilenkoordinate der linken oberen Ecke an, an der das        */
-/*       Fenster erîffnet werden soll, falls das Memo noch nicht existiert.     */
+/*       Fenster er√∂ffnet werden soll, falls das Memo noch nicht existiert.     */
 /*    int default_upper_col;                                                    */
 /*       Gibt die Spaltenkoordinate der linken oberen Ecke an, an der das       */
-/*       Fenster erîffnet werden soll, falls das Memo noch nicht existiert.     */
+/*       Fenster er√∂ffnet werden soll, falls das Memo noch nicht existiert.     */
 /*       Die linke obere Bildschirmecke hat die Koordinaten 1/1.                */
 /*    int default_width;                                                        */
-/*       Gibt an, wie breit das Fenster erîffnet werden soll.                   */
+/*       Gibt an, wie breit das Fenster er√∂ffnet werden soll.                   */
 /*    int default_hight;                                                        */
-/*       Gibt an, wie hoch das Fenster erîffnet werden soll.                    */
+/*       Gibt an, wie hoch das Fenster er√∂ffnet werden soll.                    */
 /*------------------------------------------------------------------------------*/
 Memo ( memofile_name, memo_key, right_margin, usage, message_str,
        question, changable, window_palette, frame_palette,
@@ -373,9 +373,9 @@ Switch_Back ()
 
 /*------ Waiting () ------------------------------------------------------------*/
 /* Diese Funktion ist eine interne Funktion des Masken-Interpreters, deren      */
-/* Nutzung aber u.U. auch au·erhalb des Masken-Interpreters interessant sein    */
+/* Nutzung aber u.U. auch au√üerhalb des Masken-Interpreters interessant sein    */
 /* kann.                                                                        */
-/* Diese Funktion wartet darauf, da· der Anwender eine der Tasten Enter,        */
+/* Diese Funktion wartet darauf, da√ü der Anwender eine der Tasten Enter,        */
 /* ESC oder Leerschritt.                                                        */
 /*------------------------------------------------------------------------------*/
 Waiting ()

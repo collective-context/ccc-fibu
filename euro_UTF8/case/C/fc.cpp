@@ -1,24 +1,24 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    euroSOFT FormularCompiler      Datum: 01.05.89      บ
-  บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    euroSOFT FormularCompiler      Datum: 01.05.89      โ•‘
+  โ•‘โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <ctype.h>
 #include <bios.h>
 #include <stdio.h>
@@ -30,9 +30,9 @@
 #include "\euro\c\eu_proto.h"
 /* #include "..\c\eu_case.h" */
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                     MODULGLOBALE FUNKTIONEN                             บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                     MODULGLOBALE FUNKTIONEN                             โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC SWORD i_SetFeldInfo	 (FELDINFO **, FELDINFO **, PSWORD);
 STATIC SWORD Init_Memory	 (VOID);
 STATIC SWORD Free_Memory	 (VOID);
@@ -53,38 +53,38 @@ STATIC SWORD i_trim		 (PPPKB, SWORD);
 STATIC SWORD i_isdruck		 (PUSTR);
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT CHAR	  strExt_g[];
 
-SWORD wFormatIndex_m;		/* fr i_SetFeldInfo(), Format_Auswerten()    */
-CHAR strFileBlock_m[128];      /* BTRV-Positionsblock fr Formularbibliothek */
+SWORD wFormatIndex_m;		/* fรผr i_SetFeldInfo(), Format_Auswerten()    */
+CHAR strFileBlock_m[128];      /* BTRV-Positionsblock fรผr Formularbibliothek */
 PSSTR pstrBuffer_m;		/* Zeiger auf BTRV-Datensatz		      */
 PSSTR apstrDataFile[10];	/* bis 10 x File Name im Datenlekixon	      */
 PSSTR apstrDataKey[10]; 	/* bis 10 x Record Name im Datenlekixon       */
-/*SWORD wEingangsZ_g;		/* Fr Fehlermeldung: Formular-Source-Zeile   */
+/*SWORD wEingangsZ_g;		/* Fรผr Fehlermeldung: Formular-Source-Zeile   */
 
 MGLOBAL PSSTR apstrZeile_m[PKB_MAX];	/* Zeiger auf Formular-Source-Zeile	  */
 MGLOBAL SWORD awZeileKombi_m[PKB_MAX];
 
 D_DATE *pD;                    /* Datum bei Titeleintrag in die Bibliothek   */
 D_TIME *pT;                    /* Zeit bei Titeleintrag in die Bibliothek    */
-CHAR strMaskSignatur[TB_MAX];  /* Titel fr Bibliothekseintrag - Set_Titel() */
+CHAR strMaskSignatur[TB_MAX];  /* Titel fรผr Bibliothekseintrag - Set_Titel() */
 
-STATIC SWORD  wDruckS_m;       /* Spalte auแen links, abs.Koordinaten	     */
+STATIC SWORD  wDruckS_m;       /* Spalte auรen links, abs.Koordinaten	     */
 STATIC BYTE bKomma_m;	    /* Position des Kommas im Druckfeld 	  */
 
 STATIC FELDINFO *pTempInfo_m, /*                                            */
                  *pLastInfo_m; /*                                            */
 
-STATIC SWORD wKopfZ_m;	      /* Index-Nr. fr apKopfInfo_m[]		    */
-STATIC SWORD wRumpfZ_m;       /* Index-Nr. fr apRumpfInfo_m[]		    */
-STATIC SWORD wFussZ_m;	      /* Index-Nr. fr apFussInfo_m[]		    */
-STATIC SWORD  wBereich_m;      /* Wert ob Kopf-, Rumpf- o. Fuแbereich	     */
+STATIC SWORD wKopfZ_m;	      /* Index-Nr. fรผr apKopfInfo_m[]		    */
+STATIC SWORD wRumpfZ_m;       /* Index-Nr. fรผr apRumpfInfo_m[]		    */
+STATIC SWORD wFussZ_m;	      /* Index-Nr. fรผr apFussInfo_m[]		    */
+STATIC SWORD  wBereich_m;      /* Wert ob Kopf-, Rumpf- o. Fuรbereich	     */
 STATIC SWORD wSpalte_m;       /* Spalte innerhalb der Zeile		    */
 
-STATIC FKB  Fkb_m;                /* Fr Set_LiRand etc.                     */
+STATIC FKB  Fkb_m;                /* Fรผr Set_LiRand etc.                     */
 MGLOBAL PPKB apKopfInfo_m[PKB_MAX];   /* MGLOBAL wegen Ut_Calloc(->acText)	 */
 MGLOBAL PPKB apRumpfInfo_m[PKB_MAX];  /* MGLOBAL wegen Ut_Calloc(->acText)	 */
 MGLOBAL PPKB apFussInfo_m[PKB_MAX];   /* MGLOBAL wegen Ut_Calloc(->acText)	 */
@@ -101,9 +101,9 @@ STATIC PSSTR pstrMan_m;
 
 MGLOBAL CHAR acApp_m[TB_MAX];
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID main (SWORD argc, PSSTR argv[])
 {
 SREGISTER i;
@@ -124,13 +124,13 @@ pstrId_m=getenv("ID");
 pstrExt_m=getenv("EXT");
 pstrMan_m=getenv("MAN");
 
-/* printf("\nDie DOS-Variable ฏUSERฎ muแ den Pfad des"
+/* printf("\nDie DOS-Variable ยปUSERยซ muร den Pfad des"
      " Teilnehmerverzeichnisses tragen.\n\n"
      "Beispiel: [SET USER=\EURO\T01].\n\n"); */
 
 Init_Memory ();
 if( !Source_Open(&pfHandle, argc, argv,
-  apstrZeile_m, awZeileKombi_m) )                    /* Source-File ”ffnen   */
+  apstrZeile_m, awZeileKombi_m) )                    /* Source-File รถffnen   */
   D_end_process(0);
 
 strcpy(acApp_m, argv[1]);
@@ -154,7 +154,7 @@ assert( FP_SEG(*ppstrZeile_m) > 0);
 for(wEingangsZeile_g=0; *ppstrZeile_m; ppstrZeile_m++, wEingangsZeile_g++)
   {
   while(*ppstrZeile_m && strlen(*ppstrZeile_m)==0)   /* Wenn Leerzeilen dann */
-     {ppstrZeile_m++; wEingangsZeile_g++;}		  /* nchste Zeile	  */
+     {ppstrZeile_m++; wEingangsZeile_g++;}		  /* nรคchste Zeile	  */
 
   if(*ppstrZeile_m==NULL) break;                     /* Source-Ende/ Abbruch */
 
@@ -164,7 +164,7 @@ for(wEingangsZeile_g=0; *ppstrZeile_m; ppstrZeile_m++, wEingangsZeile_g++)
     Kommando_Auswerten(*ppstrZeile_m);
     }
   else if( strstr(*ppstrZeile_m, ">>") )             /* Bei Remark gehe in   */
-    {ppstrZeile_m++; wEingangsZeile_g++;}		  /* nchste Zeile	  */
+    {ppstrZeile_m++; wEingangsZeile_g++;}		  /* nรคchste Zeile	  */
   else
     {                                                /* sonst Fehlermeldung  */
     SWORD j;
@@ -172,9 +172,9 @@ for(wEingangsZeile_g=0; *ppstrZeile_m; ppstrZeile_m++, wEingangsZeile_g++)
       wKombi_g+=awZeileKombi_m[j];
 
 
-    Ut_Beep(); printf("\nFehler: Zeile ฏ%dฎ\n        "
-      "Befehl beginnt nicht mit ฏ&ฎ, oder endet"
-      " nicht mit ฏ&ENDฎ.\n\n", L_);
+    Ut_Beep(); printf("\nFehler: Zeile ยป%dยซ\n        "
+      "Befehl beginnt nicht mit ยป&ยซ, oder endet"
+      " nicht mit ยป&ENDยซ.\n\n", L_);
 
     Dl_Abbruch("Fehler: &/&END", L_, F_, "\0");
     exit(-1);
@@ -186,18 +186,18 @@ apKopfInfo_m[++wKopfZ_m]=NULL;                  /* NULL-Pointer markieren    */
 apRumpfInfo_m[++wRumpfZ_m]=NULL;                /* NULL-Pointer markieren    */
 apFussInfo_m[++wFussZ_m]=NULL;                  /* NULL-Pointer markieren    */
 
-Destination_Open(strFileBlock_m, pstrBuffer_m,  /* Formular-Bibliothek ”ffnen */
+Destination_Open(strFileBlock_m, pstrBuffer_m,  /* Formular-Bibliothek รถffnen */
                  argv[2]);
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DATENSATZ IN BILBIOTHEK EINTRAGEN                บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DATENSATZ IN BILBIOTHEK EINTRAGEN                โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 pstrStartBuffer = pstrBuffer_m;                /* Adressse sichern           */
 strcpy( pstrBuffer_m+6, argv[3]);              /* Formularnummer - BTRV      */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      MASKENTITEL IN BILBIOTHEK EINTRAGEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      MASKENTITEL IN BILBIOTHEK EINTRAGEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 pD = D_get_date (NULL);
 pT = D_get_time (NULL);
 
@@ -206,7 +206,7 @@ pstrBuffer_m += 17;
 sprintf(pstrBuffer_m, "%s am %2d.%2d.%4d -> %2d:%2d Uhr",
   strpad(strMaskSignatur, 40), pD->cTag, pD->cMonat,
   pD->wJahr, pT->cStd, pT->cMin);
-fprintf(pfHandle, "Titel fr den Katalogeintrag: \n");
+fprintf(pfHandle, "Titel fรผr den Katalogeintrag: \n");
 fprintf(pfHandle,"%s.\n", pstrBuffer_m);
 
 pstrBuffer_m += strlen(pstrBuffer_m) + 1;
@@ -214,9 +214,9 @@ pstrBuffer_m += strlen(pstrBuffer_m) + 1;
 fprintf(pfHandle,"DOS environment: USER(%s), ID(%s), APP(%s), EXT(%s), MAN(%s).\n",
   pstrUser_m, pstrId_m, pstrApp_m, pstrExt_m, pstrMan_m);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                            WERTE IN BILBIOTHEK EINTRAGEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                            WERTE IN BILBIOTHEK EINTRAGEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 sprintf(pstrBuffer_m,  "%#04d %#02d %#02d %#02d %#02d %#02d %#02d",
   Fkb_m.wFormular, Fkb_m.wLiRand,
   Fkb_m.wFormularHoehe, Fkb_m.wObRand,
@@ -261,7 +261,7 @@ for (i=0; apKopfInfo_m[i]; i++)
           strcat  (pstrBuffer_m, acBuffer);
           }
 
-        strcat (pstrBuffer_m, "þ");
+        strcat (pstrBuffer_m, "โ– ");
         pTempInfo_m=pTempInfo_m->pNext;
 
         fprintf(pfHandle, " [Format: %s]", pstrBuffer_m);
@@ -309,7 +309,7 @@ for (i=0; apRumpfInfo_m[i]; i++)                      /* Bis NULL-P. kopieren  *
           strcat  (pstrBuffer_m, acBuffer);
           }
 
-        strcat (pstrBuffer_m, "þ");
+        strcat (pstrBuffer_m, "โ– ");
         pTempInfo_m=pTempInfo_m->pNext;
 
         fprintf(pfHandle, " [Format: %s]", pstrBuffer_m);
@@ -356,7 +356,7 @@ for (i=0; apFussInfo_m[i]; i++)                       /* Bis NULL-P. kopieren  *
           strcat  (pstrBuffer_m, acBuffer);
           }
 
-        strcat (pstrBuffer_m, "þ");
+        strcat (pstrBuffer_m, "โ– ");
         pTempInfo_m=pTempInfo_m->pNext;
 
         fprintf(pfHandle, " [Format: %s]", pstrBuffer_m);
@@ -372,8 +372,8 @@ fflush(pfHandle);
 wBufferLen = pstrBuffer_m - pstrStartBuffer;
 pstrBuffer_m=pstrStartBuffer;
 
-fprintf (pfHandle, "\nSatzlnge: ฏ%#05dฎ", wBufferLen);
-sprintf (pstrBuffer_m,  "%#05d", wBufferLen);       /* Datensatzlnge - BTRV */
+fprintf (pfHandle, "\nSatzlรคnge: ยป%#05dยซ", wBufferLen);
+sprintf (pstrBuffer_m,  "%#05d", wBufferLen);       /* Datensatzlรคnge - BTRV */
 
 
 wTemp = 120;
@@ -382,7 +382,7 @@ if(wRetCode == 0 || wRetCode == 22)
   {
   wRetCode=BTRV (B_DEL, strFileBlock_m, strTempBuf, /*                      */
     &wTemp, argv[3], 0);                             /*                      */
-    sprintf(strError,"main(B_DEL), - Schlssel: %s"  /*                      */
+    sprintf(strError,"main(B_DEL), - Schlรผssel: %s"  /*                      */
       " in Datei: %d", argv[3], 0);                  /*                      */
                                                      /*                      */
     Dl_ErrorHandler (wRetCode, strError,            /*                      */
@@ -392,7 +392,7 @@ if(wRetCode == 0 || wRetCode == 22)
 
 wRetCode=BTRV (B_INS, strFileBlock_m, pstrBuffer_m, /*                      */
   &wBufferLen, argv[3], 0);                          /*                      */
-  sprintf(strError,"main(B_INS), - Schlssel: %s"    /*                      */
+  sprintf(strError,"main(B_INS), - Schlรผssel: %s"    /*                      */
     " in Datei: %d", argv[3], 0);                    /*                      */
                                                      /*                      */
   Dl_ErrorHandler (wRetCode, strError,              /*                      */
@@ -400,8 +400,8 @@ wRetCode=BTRV (B_INS, strFileBlock_m, pstrBuffer_m, /*                      */
 
 
 Destination_Close(strFileBlock_m, pstrBuffer_m,      /* Formular-Bibliothek  */
-                 argv[2]);                           /* schlieแem            */
-Source_Close(pfHandle,argv,apstrZeile_m);         /* Source-File schlieแen*/
+                 argv[2]);                           /* schlieรem            */
+Source_Close(pfHandle,argv,apstrZeile_m);         /* Source-File schlieรen*/
 
 Free_Memory ();
 D_end_process (0);
@@ -422,23 +422,23 @@ return(wDruck);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Maske_Auswerten ()             Datum: 01.05.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Maske_Auswerten ()             Datum: 01.05.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Maske_Auswerten (PSSTR pstrZeichen, SWORD wDruckLF, PSWORD pwZeile,
                       PPPKB ppInfo)
@@ -448,7 +448,7 @@ SWORD wTabFlag,
      wDruck,
      wWeiter;
 
-STATIC PSSTR pstrCode;			       /* fr Code am rechten Rand    */
+STATIC PSSTR pstrCode;			       /* fรผr Code am rechten Rand    */
 
 wDruckS_m = wSpalte_m;
 wSpalte_m = 0;
@@ -494,10 +494,10 @@ while ( *pstrZeichen )                               /* Verweile - Zeilenende*/
     {
     switch ((UCHAR)*pstrZeichen)
        {
-       case (UCHAR)'ญ':
-       case (UCHAR)'':   case (UCHAR)'@':   case (UCHAR)'๗':	case (UCHAR)'~':
-       case (UCHAR)'๏': 		     case (UCHAR)'\\':	case (UCHAR)'#':
-       case (UCHAR)'':   case (UCHAR)'$':   case (UCHAR)'`':	case (UCHAR)'|':
+       case (UCHAR)'ยก':
+       case (UCHAR)'ฦ’':   case (UCHAR)'@':   case (UCHAR)'ยธ':	case (UCHAR)'~':
+       case (UCHAR)'ยด': 		     case (UCHAR)'\\':	case (UCHAR)'#':
+       case (UCHAR)'รธ':   case (UCHAR)'$':   case (UCHAR)'`':	case (UCHAR)'|':
 	 wDruck=i_isdruck((PUSTR)ppInfo[*pwZeile]->acText);
 	 if(wDruck) /* Wenn neue Anweisung */
           {
@@ -514,16 +514,16 @@ while ( *pstrZeichen )                               /* Verweile - Zeilenende*/
                  ppInfo[*pwZeile]->acText[FZ_MAX-1] = '\0';
           }
 
-	 if((UCHAR)*pstrZeichen == (UCHAR)'๗')
+	 if((UCHAR)*pstrZeichen == (UCHAR)'ยธ')
            ppInfo[*pwZeile]->bDruckTyp = 20;
          else
            ppInfo[*pwZeile]->bDruckTyp = 2;
 
          ppInfo[*pwZeile]->wDruckS = wSpalte_m;
          Dialog_Auswerten (&pstrZeichen, *pwZeile,
-           ppInfo);                                  /*Art und Lnge auswert.*/
+           ppInfo);                                  /*Art und Lรคnge auswert.*/
          pstrCode=strtok(NULL, "~");                 /*Variablen vom r. Rand */
-                                                     /*holen u, String krzen*/
+                                                     /*holen u, String kรผrzen*/
          Set_Data(pstrCode, *pwZeile, ppInfo);       /*Information auswerten */
 
          wWeiter = NEIN;                             /*ausschalten und       */
@@ -550,7 +550,7 @@ while ( *pstrZeichen )                               /* Verweile - Zeilenende*/
          pstrCode=strtok(NULL, "~");                /* DruckerCode vom Rand  */
          if(pstrCode)
            strncpy(ppInfo[*pwZeile]->acDruckCode,   /* Information eintragen */
-             trim(pstrCode), 3);                    /* ^ Zeichen bergehen   */
+             trim(pstrCode), 3);                    /* ^ Zeichen รผbergehen   */
 
          wSpalte_m--;
          break;
@@ -583,23 +583,23 @@ return(OK);
 } /* end Maske Auswerten */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_SetFeldInfo()                Datum: 01.09.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_SetFeldInfo()                Datum: 01.09.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_SetFeldInfo(FELDINFO **ppTempInfo, FELDINFO **ppLastInfo,
 		   PSWORD pwFormatIndex)
@@ -616,23 +616,23 @@ return(OK);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Format_Auswerten ()            Datum: 01.09.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Format_Auswerten ()            Datum: 01.09.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Format_Auswerten (PUCHAR pcAlt, UCHAR cNeu, PSWORD pwAltStart)
 {
@@ -642,9 +642,9 @@ if (cNeu != '.' && cNeu != '\x27' &&
     cNeu != '-' && cNeu != '/' && cNeu != ',')
   switch ((UCHAR)*pcAlt)
      {
-      case (UCHAR)'':
+      case (UCHAR)'ฦ’':
       case (UCHAR)'@':
-      case (UCHAR)'๗':
+      case (UCHAR)'ยธ':
        pTempInfo_m->bArt = IS_ASCII | IS_OPTIONAL | IS_EINGABE;
        pTempInfo_m->bLaenge = (UBYTE) (wSpalte_m - *pwAltStart);
        *pcAlt = cNeu;
@@ -660,8 +660,8 @@ if (cNeu != '.' && cNeu != '\x27' &&
        i_SetFeldInfo(&pTempInfo_m, &pLastInfo_m, &wFormatIndex_m);
        break;
 
-      case (UCHAR)'ญ':
-      case (UCHAR)'๏':
+      case (UCHAR)'ยก':
+      case (UCHAR)'ยด':
        pTempInfo_m->bArt = IS_ASCII | IS_EINGABE | IS_OPTIONAL | IS_KONVGROSS;
        pTempInfo_m->bLaenge = (UBYTE) (wSpalte_m - *pwAltStart);
        *pcAlt = cNeu;
@@ -693,7 +693,7 @@ if (cNeu != '.' && cNeu != '\x27' &&
        i_SetFeldInfo(&pTempInfo_m, &pLastInfo_m, &wFormatIndex_m);
        break;
 
-      case (UCHAR)'':
+      case (UCHAR)'รธ':
        pTempInfo_m->bArt = IS_EINGABE | IS_OPTIONAL | IS_NICHTTONULL;
        pTempInfo_m->bLaenge = (UBYTE) (wSpalte_m - *pwAltStart);
        *pcAlt = cNeu;
@@ -765,23 +765,23 @@ return (OK);
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Dialog_Auswerten ()            Datum: 01.05.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Dialog_Auswerten ()            Datum: 01.05.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Dialog_Auswerten (PPSTR ppstrZeichen, SWORD wZeile, PPPKB ppInfo)
 {
@@ -809,14 +809,14 @@ bKomma_m = 0;
 
 while(wWeiter==JA)
   {
-  if(cAlt==(UCHAR)'' || cAlt==(UCHAR)'ญ')
+  if(cAlt==(UCHAR)'ฦ’' || cAlt==(UCHAR)'ยก')
     boNewField=JA;
 
     switch((UCHAR)**ppstrZeichen)
       {
-      case (UCHAR)'':			      case (UCHAR)'ญ':
-      case (UCHAR)'@':	  case (UCHAR)'๗':    case (UCHAR)'~':	  case (UCHAR)'๏':
-      case (UCHAR)'\\':   case (UCHAR)'#':    case (UCHAR)'':
+      case (UCHAR)'ฦ’':			      case (UCHAR)'ยก':
+      case (UCHAR)'@':	  case (UCHAR)'ยธ':    case (UCHAR)'~':	  case (UCHAR)'ยด':
+      case (UCHAR)'\\':   case (UCHAR)'#':    case (UCHAR)'รธ':
       case (UCHAR)'$':	  case (UCHAR)'`':    case (UCHAR)'|':	  case (UCHAR)'.':
       case (UCHAR)'\x27': case (UCHAR)'-':    case (UCHAR)'/':	  case (UCHAR)',':
 
@@ -856,23 +856,23 @@ return(OK);
 } /* end Dialog Auswerten */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Zeichen_Filtern ()             Datum: 01.05.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Zeichen_Filtern ()             Datum: 01.05.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Zeichen_Filtern (PSSTR pstrZeichen)
 {
@@ -891,7 +891,7 @@ wStringFlag = AUS;
 	      *pstrZeichen = ' ';
                   break;
 
-	   case '=':			       /* spter ausbauen  */
+	   case '=':			       /* spรคter ausbauen  */
                   if (wStringFlag == AUS)
 		  *pstrZeichen = '=';
                   break;
@@ -911,7 +911,7 @@ wStringFlag = AUS;
 
 	   case ' ':
                   if(wStringFlag == EIN)
-		    *pstrZeichen = 'ÿ'; 		     /* ALT 255      */
+		    *pstrZeichen = 'ย '; 		     /* ALT 255      */
                   break;
 
 	   case ',':
@@ -930,23 +930,23 @@ return(OK);
 } /* end Maske Auswerten */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Kommando_Auswerten ()          Datum: 01.05.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Kommando_Auswerten ()          Datum: 01.05.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Kommando_Auswerten (PSSTR pstrNextWord)
 {
@@ -1032,29 +1032,29 @@ return(OK);
 } /* end Kommando Auswerten */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Set_Data ()                    Datum: 25.08.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:                                                         บ
-  บ  Diese Daten werden aus dem Data-Dictionary fr jede Variable geholt   บ
-  บ  und im zweiten Teil der Druckanweisung in der Form:                   บ
-  บ	       ฏwRecord.wOffset.wMaxL.bTyp.bVKS.bNKS[.pstrDatenfeld]ฎ	   บ
-  บ  abgespeichert.							   บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Set_Data ()                    Datum: 25.08.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:                                                         โ•‘
+  โ•‘  Diese Daten werden aus dem Data-Dictionary fรผr jede Variable geholt   โ•‘
+  โ•‘  und im zweiten Teil der Druckanweisung in der Form:                   โ•‘
+  โ•‘	       ยปwRecord.wOffset.wMaxL.bTyp.bVKS.bNKS[.pstrDatenfeld]ยซ	   โ•‘
+  โ•‘  abgespeichert.							   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Set_Data (PSSTR pstrText, SWORD wZeile, PPPKB ppInfo)
 {
 SWORD wRecord,			     /* Dateinummer in Applikation	    */
-     wOffset,                       /* DatenOffset fr Applikation         */
-     wMaxL;                         /* Max. Lnge des Teilstrings in Datei */
+     wOffset,                       /* DatenOffset fรผr Applikation         */
+     wMaxL;                         /* Max. Lรคnge des Teilstrings in Datei */
 
 BYTE bTyp,                          /* Typ laut Data-Dictionary            */
      bVKS,                          /* Anzahl der Vorkommastellen          */
@@ -1075,19 +1075,19 @@ BOOL   boChoice=NEIN;
 
 /*Wi_TestPrintf ( pWkbTestInfo, "pstrText=<%s>.\n", pstrText);*/
 
-pstrRecord=pstrText;				      /* Adresse fr Rec-Info*/
+pstrRecord=pstrText;				      /* Adresse fรผr Rec-Info*/
 while(*pstrText)				      /* Bleib bis Stringende*/
   {
-  if(*pstrText=='.' || (UCHAR)*pstrText==(UCHAR)'๘')	     /* Wenn Trennpunkt das */
+  if(*pstrText=='.' || (UCHAR)*pstrText==(UCHAR)'ยฐ')	     /* Wenn Trennpunkt das */
     {						      /* Ende von Record-    */
-    boChoice=((UCHAR)*pstrText==(UCHAR)'๘') ? JA : NEIN;
+    boChoice=((UCHAR)*pstrText==(UCHAR)'ยฐ') ? JA : NEIN;
     *pstrText= '\0';				      /* info kennzeichnen.  */
     pstrField= ++pstrText;			      /* Dann Beg. von Field */
-    }						      /* merken, nchst. Zei-*/
+    }						      /* merken, nรคchst. Zei-*/
   else if(*pstrText==' ')			      /* chen. Bei Leerzeich.*/
     *pstrText= '\0';				      /* das Ende vom Feld-  */
                                                       /* namen kennzeichen.  */
-  pstrText++;					      /* Auf nchsten Buch-  */
+  pstrText++;					      /* Auf nรคchsten Buch-  */
   }
 
 wRecord=atoi(pstrRecord);
@@ -1131,7 +1131,7 @@ wRetCode=BTRV(B_GET_EQ, strFileBlock, strTempBuf,    /*                      */
     }
 
   sprintf(strError,"SetData(B_GET_EQ), - "           /*                      */
-    "Schlssel: %s",  strKey);                       /*                      */
+    "Schlรผssel: %s",  strKey);                       /*                      */
                                                      /*                      */
   Dl_ErrorHandler (wRetCode, strError,               /*                      */
     __FILE__, __LINE__, 0);                          /*                      */
@@ -1152,7 +1152,7 @@ if(*pstrPos && *pstrField)			     /* 		     */
   printf("\n%s-%s", pstrPos, pstrField);	     /* 		     */
 else
   {Ut_Beep();
-  printf("\nÛFehler: %s-%s", pstrPos, pstrField); /*			   */
+  printf("\nโ–Fehler: %s-%s", pstrPos, pstrField); /*			   */
   Dl_Abbruch(str("NO %s-%s", pstrPos, pstrField), L_, F_, "\0");}
 
 
@@ -1185,20 +1185,20 @@ return (OK);  /* end Set_Data() */                   /*                      */
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Set_Datei ()                   Datum: 25.08.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:   .                                                     บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Set_Datei ()                   Datum: 25.08.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:   .                                                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Set_Datei (VOID)
 {
@@ -1213,20 +1213,20 @@ return (OK);
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Set_Formular()                 Datum: 25.08.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:   .                                                     บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Set_Formular()                 Datum: 25.08.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:   .                                                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Set_Formular(VOID)
 {
@@ -1237,20 +1237,20 @@ return (OK);
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Set_Kopf ()                    Datum: 25.08.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:   .                                                     บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Set_Kopf ()                    Datum: 25.08.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:   .                                                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Set_Kopf (VOID)
 {
@@ -1276,20 +1276,20 @@ for(; !strstr(*ppstrZeile_m, "&END");
 return (OK);
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Set_Rumpf ()                   Datum: 25.08.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:   .                                                     บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Set_Rumpf ()                   Datum: 25.08.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:   .                                                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Set_Rumpf (VOID)
 {
@@ -1316,20 +1316,20 @@ return (OK);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Set_Fuss ()                    Datum: 25.08.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:   .                                                     บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Set_Fuss ()                    Datum: 25.08.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:   .                                                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Set_Fuss (VOID)
 {
@@ -1357,20 +1357,20 @@ return (OK);
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Set_Titel ()                   Datum: 01.05.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:   .                                                     บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Set_Titel ()                   Datum: 01.05.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:   .                                                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Set_Titel (VOID)
 {
@@ -1380,22 +1380,22 @@ strcpy (strMaskSignatur, pstrWort_m[2]);
 
 for  (i=0; strMaskSignatur[i] != '\0'; i++ )         /* Bleib bis Stringende */
      {
-     if (strMaskSignatur[i] == 'ÿ')		     /* Wenn ASCII 255 dann  */
+     if (strMaskSignatur[i] == 'ย ')		     /* Wenn ASCII 255 dann  */
 	 strMaskSignatur[i] = ' ';		     /* tausche mit BLANK    */
      }
 
-/*fprintf (pfHandle, "Titel fr den Katalogeintrag: %s.\n", strMaskSignatur);*/
+/*fprintf (pfHandle, "Titel fรผr den Katalogeintrag: %s.\n", strMaskSignatur);*/
 return(OK);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_trim(PSTR)             Datum: 25.08.89            บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ  Mit Hilfe der Funktion trim() wird in dieser Funktion ppInfo[wZweile] บ
-  บ  ->acText am Beginn und Ende von Leerzeichen gesubert. Beim Druck-    บ
-  บ  Typ 1 wird auแerdem die Druckspalte und Druckbreite korrigiert.       บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_trim(PSTR)             Datum: 25.08.89            โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘  Mit Hilfe der Funktion trim() wird in dieser Funktion ppInfo[wZweile] โ•‘
+  โ•‘  ->acText am Beginn und Ende von Leerzeichen gesรคubert. Beim Druck-    โ•‘
+  โ•‘  Typ 1 wird auรerdem die Druckspalte und Druckbreite korrigiert.       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_trim(PPPKB ppInfo, SWORD wZeile)
 {
@@ -1405,24 +1405,24 @@ if(ppInfo[wZeile] && ppInfo[wZeile]->acText)         /* Eingabetext          */
   pstrText=ppInfo[wZeile]->acText;
 else
   return(ERROR);
-                                                     /*gek.String an die Ur-*/
+                                                     /*gekรผ.String an die Ur-*/
 strcpy(pstrText, pstr=trim(pstrText));               /*Sprungsadresse kopier.*/
 
-if(ppInfo[wZeile]->bDruckTyp == 1)                   /*fr jedes Leerzeichen */
+if(ppInfo[wZeile]->bDruckTyp == 1)                   /*fรผr jedes Leerzeichen */
   {                                                  /*Koordinatenbeg. korri.*/
-  ppInfo[wZeile]->wDruckS=pstr-pstrText;             /*durch erh”hen der Sp. */
-  ppInfo[wZeile]->wDruckB=strlen(pstrText);          /*String-Lnge eintrag. */
+  ppInfo[wZeile]->wDruckS=pstr-pstrText;             /*durch erhรถhen der Sp. */
+  ppInfo[wZeile]->wDruckB=strlen(pstrText);          /*String-Lรคnge eintrag. */
   }
 
 return (OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Init_Memory ()                                                          บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Reserviert Speicherplatz ...                                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Init_Memory ()                                                          โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Reserviert Speicherplatz ...                                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Init_Memory (VOID)
 {
@@ -1445,11 +1445,11 @@ return(OK);  /* end Init_Memory() */
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Free_Memory ()                                                          บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Reserviert Speicherplatz ...                                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Free_Memory ()                                                          โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Reserviert Speicherplatz ...                                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Free_Memory (VOID)
 {

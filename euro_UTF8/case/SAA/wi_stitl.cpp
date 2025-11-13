@@ -1,60 +1,60 @@
 // (C) WINware Software P.Mayer: letztes Update am 13-Feb-1996
 
 /*.ta Wi_SetTitel()
-ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  Wi_SetTitel()                                                               บ
-ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  Wi_SetTitel()                                                               โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-berblick:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+รberblick:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 #include <eur_win.h>
 SWORD Wi_SetTitel(pWkb, pstrTitel, wPos);
 
 Parameter:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 PWKB     pWkb    Zeiger auf Fensterkontrollblock
 PSSTR	  pStr	  Zeiger auf Titelstring
 SWORD	  wPos	  Position des Titels auf dem Rahmen
-                 - WIN_TITEL_OL  oben, linksbndig
-		 - WIN_TITEL_1L  1 Zeile, linksbndig
+                 - WIN_TITEL_OL  oben, linksbรผndig
+		 - WIN_TITEL_1L  1 Zeile, linksbรผndig
                  - WIN_TITEL_OZ  oben, zentriert
-                 - WIN_TITEL_OR  oben, rechtsbndig
-                 - WIN_TITEL_UL  unten, linksbndig
+                 - WIN_TITEL_OR  oben, rechtsbรผndig
+                 - WIN_TITEL_UL  unten, linksbรผndig
                  - WIN_TITEL_UZ  unten, zentriert
-                 - WIN_TITEL_UR  unten, rechtsbndig
+                 - WIN_TITEL_UR  unten, rechtsbรผndig
 
 
 Beschreibung:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
-Mit dieser Funktion kann fr ein Fenster der Text und die Position eines Titels
-festgelegt werden. Fr die maximale Lnge des Titels gilt: max <= Fenster-
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
+Mit dieser Funktion kann fรผr ein Fenster der Text und die Position eines Titels
+festgelegt werden. Fรผr die maximale Lรคnge des Titels gilt: max <= Fenster-
 breite - 4.
 
-Die Funktion legt eine Kopie des Titelstrings an und trgt einen Zeiger auf den
-Titel und die bergebene Position in den WKB ein. Der Titeltext kann daher im
+Die Funktion legt eine Kopie des Titelstrings an und trรคgt einen Zeiger auf den
+Titel und die รผbergebene Position in den WKB ein. Der Titeltext kann daher im
 lokalen datenbereich der aufrufenden Funktion liegen. Der Zeiger auf den Titel-
-string und die gewhtle Position werden in den Fensterkontrollblock eingetragen.
+string und die gewรคhtle Position werden in den Fensterkontrollblock eingetragen.
 
-Bei einem aktiven Fenster wird der neue Titel ausgegeben. Sonst werden die n-
+Bei einem aktiven Fenster wird der neue Titel ausgegeben. Sonst werden die รn-
 derungen erst beim Aktivieren des Fensters sichtbar.
 
 
-Rckgabewert:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Rรผckgabewert:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 SWORD	 OK	kein Fehler aufgetreten
         ERROR  wenn Fehler auftritt und globale Variable wFehler_g
-               erhlt die Fehlernummer
-                - WIN_KEIN_PWKB, ฏpWkbฎ zeigt nicht mehr auf einen Fenster-
+               erhรคlt die Fehlernummer
+                - WIN_KEIN_PWKB, ยปpWkbยซ zeigt nicht mehr auf einen Fenster-
                                  kontrollblock.
-                - WIN_KEIN_SPEICHER, fr die Kopie des Titelstings konnte
+                - WIN_KEIN_SPEICHER, fรผr die Kopie des Titelstings konnte
                                      kein Spwicher allokiert werden.
                 - WIN_TITEL_LAENGE, der Titel ist zu lang.
-                - WIN_FALSCHE_OPT, fr das funktionsargument ฏwPosฎ wurde
-                                   eine ungltige Option bergeben.
+                - WIN_FALSCHE_OPT, fรผr das funktionsargument ยปwPosยซ wurde
+                                   eine ungรผltige Option รผbergeben.
 
 
 Benutzte globale Variablen:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 Variablen (R/W):  wFehler_g (W)
 
 .de \euro\demo\demostit.c
@@ -62,25 +62,25 @@ Variablen (R/W):  wFehler_g (W)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define NDEBUG 1
 #include <stdio.h>
 #include <string.h>
 
 #include <eur_tool.h>
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT SWORD wFehler_g; 	 /* Nummer des letzten aufgetretenen Fehlers */
 IMPORT SWORD wMausda_g; 	 /* Maus vorhanden ?			     */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Wi_SetTitel(PWKB pWkb, PSSTR pStr, SWORD wPos)
 {
@@ -97,7 +97,7 @@ if(pStr==NULL) return(!OK);
 
 
     if (wPos < WIN_TITEL_OL
-	|| wPos > WIN_TITEL_1L) 		    /* wenn kein gltiges   */
+	|| wPos > WIN_TITEL_1L) 		    /* wenn kein gรผltiges   */
     {                                               /* Funktionsargument    */
         wFehler_g = WIN_FALSCHE_OPT;                /* Variable setzen und  */
         return (ERROR);                             /* an Aufrufer          */
@@ -107,15 +107,15 @@ if(pStr==NULL) return(!OK);
     if(wPos==WIN_TITEL_1L)
       {
       CHAR acTmp[80];
-      stradd(acStr, "ฤฤฤ ", pStr, " ",
-	strstring(acTmp, 'ฤ', (pWkb->wBreite-strlen(pStr))/3 ), _N);
+      stradd(acStr, "โ”€โ”€โ”€ ", pStr, " ",
+	strstring(acTmp, 'โ”€', (pWkb->wBreite-strlen(pStr))/3 ), _N);
       }
     else
       strcpy(acStr, pStr);
 
 
     if (strlen(acStr) > (SIZE_T)pWkb->wBreite-4)    /* Titel darf nicht     */
-    {                                               /* lnger sein als      */
+    {                                               /* lรคnger sein als      */
         wFehler_g = WIN_TITEL_LAENGE;               /* Fensterbreite - 4    */
         return (ERROR);
     }
@@ -152,34 +152,34 @@ if(pStr==NULL) return(!OK);
     }
     else
         pWkb->winFlags.wTRaendern = 1;              /* Flag setzen, damit   */
-                                                    /* bei nchster Aktiv.  */
-						    /* bercksichtigt werden*/
+                                                    /* bei nรคchster Aktiv.  */
+						    /* berรผcksichtigt werden*/
 return(OK);
 }
 
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    i_Wi_ZeigeTitel                Datum: 19.08.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PWKB   Zeiger auf Fensterkontrollblock              บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion schreibt einen Window-Titel an       บ
-  บ                    die in der Struktur festgelegte Position im         บ
-  บ                    festgelegten Attribut.                              บ
-  บ                                                                        บ
-  บ                    Aufrufer: Wi_SetTitel(), Wi_Zeigen(), Wi_SetAtt()   บ
-  บ                    Diese Funktion zeichnen ggf. den Rahmen neu.        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     keine                                               บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  keine                                               บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    i_Wi_ZeigeTitel                Datum: 19.08.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PWKB   Zeiger auf Fensterkontrollblock              โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion schreibt einen Window-Titel an       โ•‘
+  โ•‘                    die in der Struktur festgelegte Position im         โ•‘
+  โ•‘                    festgelegten Attribut.                              โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Aufrufer: Wi_SetTitel(), Wi_Zeigen(), Wi_SetAtt()   โ•‘
+  โ•‘                    Diese Funktion zeichnen ggf. den Rahmen neu.        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_Wi_ZeigeTitel(PWKB pWkb)
 {

@@ -1,8 +1,8 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <stdio.h>
 #include <string.h>
 #include <eur_tool.h>
@@ -26,20 +26,20 @@ SWORD wRetCode, wbuffer_length, wMasks=0;
 FILE *pFileHandle;
 
 pWkbInfo_g=Wi_Einrichten(3,11,72,11);                /* WindowKontollBlock   */
-Wi_SchattenEin(pWkbInfo_g);			     /* fr Wi_TestPrintf()  */
+Wi_SchattenEin(pWkbInfo_g);			     /* fรผr Wi_TestPrintf()  */
 
 i_InitVars();                             /* glo. Var. initialis. */
 Dl_GetInstallation("euroINST");           /* lesen der Installation */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      PROGRAMMAUFRUF BERPRFEN                         บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      PROGRAMMAUFRUF รBERPRรFEN                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 if(argc != 3)
   {
   printf("\a\n!!! Fehler:"
     "\neuroSOFT Katalog Rel. 1.2"
-    "\nฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ"
+    "\nโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€"
     "\nSyntax  : KATALOG <Masken-Bibliothek> <Ausgabe-Datei>"
     "\nBeispiel: katalog \\euro\\EXE\\SYMASK.043 \\euro\\T02\\KATALOG.PRO\n");
   exit (-1);
@@ -52,14 +52,14 @@ pstrOutFile_m=argv[2];
 if (!(pFileHandle = fopen (pstrOutFile_m, "w")))
    {
     printf ("\a\n!!!Fehler:"
-            "\nProtokolldatei kann nicht ge”ffnet werden.\n");
+            "\nProtokolldatei kann nicht geรถffnet werden.\n");
     exit (-1);
    }
 
-memset(strScore, 'ฤ', TB_MAX);
+memset(strScore, 'โ”€', TB_MAX);
 strScore[34-strlen(pstrMskFile_m)]='\0';
-fprintf (pFileHandle, "ฺฤ Inhaltsverzeichnis zur Bibliothek: ฏ%sฎ %sฤฤฤฟ\n", Ut_Strupr(pstrMskFile_m), strScore);
-fprintf (pFileHandle, "ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู\n");
+fprintf (pFileHandle, "โ”โ”€ Inhaltsverzeichnis zur Bibliothek: ยป%sยซ %sโ”€โ”€โ”€โ”\n", Ut_Strupr(pstrMskFile_m), strScore);
+fprintf (pFileHandle, "โ””โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”\n");
 
 strcpy(strOwner, "(c)Mayer");
 wbuffer_length=strlen(strOwner)+1;
@@ -77,7 +77,7 @@ wRetCode = BTRV (B_GET_FIRST, strFileBlock_m,        /*                      */
   if(wRetCode != 22)                                 /*                      */
     {                                                /*                      */
     sprintf(strError,"main(B_GET_FIRST), - "         /*                      */
-      "Schlssel: %s", strMaskKey_m, 0);             /*                      */
+      "Schlรผssel: %s", strMaskKey_m, 0);             /*                      */
                                                      /*                      */
     Dl_ErrorHandler (wRetCode, strError,             /*                      */
       __FILE__, __LINE__, 0);                        /*                      */
@@ -92,8 +92,8 @@ while(wRetCode != 9)                                 /*                      */
     {
     boMASK=NEIN;
     wMasks=i; wOff=16;
-    fprintf(pFileHandle,"\n\nฺฤ Verwendete Dateien: ฤฤฤฟ");
-    fprintf(pFileHandle,"\nภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู");
+    fprintf(pFileHandle,"\n\nโ”โ”€ Verwendete Dateien: โ”€โ”€โ”€โ”");
+    fprintf(pFileHandle,"\nโ””โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”");
     }
 
   i++;                                               /*                      */
@@ -105,7 +105,7 @@ while(wRetCode != 9)                                 /*                      */
     if(wRetCode != 22)                               /*                      */
       {                                              /*                      */
       sprintf(strError,"main(B_GET_NEXT), - "        /*                      */
-        "Schlssel: %s", strMaskKey_m, 0);           /*                      */
+        "Schlรผssel: %s", strMaskKey_m, 0);           /*                      */
                                                      /*                      */
       Dl_ErrorHandler (wRetCode, strError,           /*                      */
         __FILE__, __LINE__, 1);                      /*                      */

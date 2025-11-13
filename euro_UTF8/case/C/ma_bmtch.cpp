@@ -1,12 +1,12 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta M_BMatchCode()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  M_BMatchCode()                                                              º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  M_BMatchCode()                                                              â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_tool.h>
 SWORD M_MatchCode(wZeile, wSpalte, wFileHandler, apstrFileBlock[], apstrRecord[],
                 awRecLen[], pstrKeyPreset, apstrRecordKey[], wReadIndex,
@@ -20,173 +20,173 @@ SWORD M_MatchCode(SWORD wZeile, SWORD wSpalte, SWORD wFileHandler, SWORD wReadIn
 		SWORD wPrimaryKeyOffset, SWORD wPrimaryKeyLength, PSSTR pstrSelect)
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD  wZeile  Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Gibt die Zeilenkoordinate der aktuellen Cursor-Position an. Sie k”nnen in Ihrer
-Applikation die Ausgangswerte fr wZeile und wSpalte mit der Funktion
-¯Vi_GetCursor® ermitteln.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Gibt die Zeilenkoordinate der aktuellen Cursor-Position an. Sie kÃ¶nnen in Ihrer
+Applikation die Ausgangswerte fÃ¼r wZeile und wSpalte mit der Funktion
+Â»Vi_GetCursorÂ« ermitteln.
 
 SWORD  wSpalte	Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Gibt die Spaltenkoordinate der aktuellen Cursor-Position an. Mit den beiden
 Werten wZeile und wSpalte wird die linke obere Ecke des Dialogfeldes festge-
 legt. Die Funktion korrigiert die Werte, wenn das Matchcodefenster nicht auf
-dem Bildschirm Platz f„nde.
+dem Bildschirm Platz fÃ¤nde.
 
 SWORD  wFileHandler  Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Gibt die logische Nummer der ISAM-Datei an, unter der die Datei mit der
-Funktion ¯I_Open()® ge”ffnet wurde.
+Funktion Â»I_Open()Â« geÃ¶ffnet wurde.
 
 PSSTR pstrKeyPreset Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Gibt den Schlssel-Vorspann an. Der Vorspann ist nur dann notwendig, wenn der
-Auswahlschlssel im Verzeichnis l„nger ist als in der Anzeige. Ist dies der
-Fall, so muá hier der Wert angegeben werden, der intern vor jeden Schlssel
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Gibt den SchlÃ¼ssel-Vorspann an. Der Vorspann ist nur dann notwendig, wenn der
+AuswahlschlÃ¼ssel im Verzeichnis lÃ¤nger ist als in der Anzeige. Ist dies der
+Fall, so muÃŸ hier der Wert angegeben werden, der intern vor jeden SchlÃ¼ssel
 gestellt werden soll.
 
 
 PSSTR apstrRecordKey[] Ein-/Ausgang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Hier wird ein Array aller Schlssel-Felder bergeben.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Hier wird ein Array aller SchlÃ¼ssel-Felder Ã¼bergeben.
 
 
 SWORD  wReadIndex  Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Gibt die Nummer des Schlsselfeldes an, aus dem die Auswahl erfolgen soll.
-Der Index muá vorhanden sein. Hier w„hlen Sie zum Beispiel den Prim„r- oder
-Sekund„rschlssel.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Gibt die Nummer des SchlÃ¼sselfeldes an, aus dem die Auswahl erfolgen soll.
+Der Index muÃŸ vorhanden sein. Hier wÃ¤hlen Sie zum Beispiel den PrimÃ¤r- oder
+SekundÃ¤rschlÃ¼ssel.
 
 PSSTR pstrFieldName Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Gibt eine Bezeichnung des Auswahl-Feldes an. Die Bezeichnung wird im Eingabe-
 Fenster des Suchbegriffs angezeigt.
 
 SWORD awAddDispFields[] Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Gibt die Applikationsfeldnummern aller Felder an, die mit dem Auswahlfeld
-angezeigt werden sollen. Es k”nnen nur soviele Felder angegeben werden, wie
+angezeigt werden sollen. Es kÃ¶nnen nur soviele Felder angegeben werden, wie
 auf dem Bildschirm in einer Zeile Platz haben.
 
 PSSTR apstrAddDispNames[] Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Gibt die Bezeichnung der Felder an, die zus„tzlich angezeigt werden sollen
-(siehe awAddDispFields[]). Diese Bezeichnungen werden in einer Kopfzeile ber
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Gibt die Bezeichnung der Felder an, die zusÃ¤tzlich angezeigt werden sollen
+(siehe awAddDispFields[]). Diese Bezeichnungen werden in einer Kopfzeile Ã¼ber
 dem eigentlichen Auswahlfenster angezeigt.
 
 SWORD wNbOfAddFields Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Gibt an, wie viele Felder aus awAddDispFields[] zus„tzlich angezeigt werden
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Gibt an, wie viele Felder aus awAddDispFields[] zusÃ¤tzlich angezeigt werden
 sollen.
 
 PSSTR pstrDefaults Eingang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Gibt den Vorschlagswert fr die Suche an. Der Vorschlagswert wird bei Eingabe
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Gibt den Vorschlagswert fÃ¼r die Suche an. Der Vorschlagswert wird bei Eingabe
 des Suchbegriffes vorgeschlagen.
 
 PSSTR  pstrSelect Ausgang:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Zeiger auf String, der den ausgew„hlten Prim„r-Schlssel enth„lt. Das Ergebnis
-der Auswahl ist immer ein Prim„r-Schlssel, auch dann wenn das Auswahl-
-Verzeichnis ein Sekund„rverzeichnis war. Hat der Anwender die Auswahl mit
-der ESC-Taste abgebrochen, so ist ¯pstrSelect® ein Leerstring.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Zeiger auf String, der den ausgewÃ¤hlten PrimÃ¤r-SchlÃ¼ssel enthÃ¤lt. Das Ergebnis
+der Auswahl ist immer ein PrimÃ¤r-SchlÃ¼ssel, auch dann wenn das Auswahl-
+Verzeichnis ein SekundÃ¤rverzeichnis war. Hat der Anwender die Auswahl mit
+der ESC-Taste abgebrochen, so ist Â»pstrSelectÂ« ein Leerstring.
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Mit dieser Funktion stellen Sie dem Anwender ein Dialogfeld zur Verfgung, in
-der er interaktiv einen Datensatz ausw„hlen kann. Das Aussehen und die
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Mit dieser Funktion stellen Sie dem Anwender ein Dialogfeld zur VerfÃ¼gung, in
+der er interaktiv einen Datensatz auswÃ¤hlen kann. Das Aussehen und die
 Bedienung der Matchcode-Auswahl lehnt sich an das SAA-Konzept an.
 
-Mit der Funktion ist es m”glich, anhand eines Verzeichnisses einen
-Prim„rschlssel auszuw„hlen.
+Mit der Funktion ist es mÃ¶glich, anhand eines Verzeichnisses einen
+PrimÃ¤rschlÃ¼ssel auszuwÃ¤hlen.
 
 Als Verzeichnis kann jeder Index zu einem Datensatz verwendet werden,
 sofern dem Verzeichnis ein Feld auf der aktuellen Maske zugewiesen ist.
 
-Zus„tzlich zum Auswahl-Schlsselfeld k”nnen weitere Felder der aktuellen
-Maske angezeigt werden, solange die Bildschirmbreite nicht berschritten wird.
+ZusÃ¤tzlich zum Auswahl-SchlÃ¼sselfeld kÃ¶nnen weitere Felder der aktuellen
+Maske angezeigt werden, solange die Bildschirmbreite nicht Ã¼berschritten wird.
 Das Auswahlfeld wird immer angezeigt. Ist das Auswahl-Verzeichnis nicht das
-Prim„rverzeichnis, so muá das entsprechende Masken-Feld des Prim„rschlssels
-als zus„tzliches Anzeigefeld angegeben werden, wenn die Anzeige des
-Prim„rschlssel gewnscht ist. Die Anzeige ist jedoch nicht notwendig.
+PrimÃ¤rverzeichnis, so muÃŸ das entsprechende Masken-Feld des PrimÃ¤rschlÃ¼ssels
+als zusÃ¤tzliches Anzeigefeld angegeben werden, wenn die Anzeige des
+PrimÃ¤rschlÃ¼ssel gewÃ¼nscht ist. Die Anzeige ist jedoch nicht notwendig.
 
-Das Ergebnis der Auswahl ist immer der Prim„rschlssel des Datensatzes,
+Das Ergebnis der Auswahl ist immer der PrimÃ¤rschlÃ¼ssel des Datensatzes,
 egal ob er als Auswahl-Verzeichnis angegeben ist, oder nicht einmal angezeigt
 wird.
 
-Dem Anwender stehen mehrere M”glichkeiten der Datensatzauswahl zur Verfgung:
+Dem Anwender stehen mehrere MÃ¶glichkeiten der Datensatzauswahl zur VerfÃ¼gung:
 
-ù nderung der Suchmaske:
+Â¨ Ã„nderung der Suchmaske:
   In das Textfeld im oberen Teil der Dialogbox kann der Anwender einen neuen
   Suchstring eingeben. Dieser neue Text wird aktiviert, wenn der Anwender
   mit der [Tab]-Taste den Eingabefokus auf das Verzeichnisfeld setzt
-  oder die Eingabe-Schaltfl„che mit der Tastatur oder Maus ausl”st.
+  oder die Eingabe-SchaltflÃ¤che mit der Tastatur oder Maus auslÃ¶st.
 
-  Wenn der eingegebene Text einen Joker (*,?) enth„lt wird das Verzeichnisfeld
+  Wenn der eingegebene Text einen Joker (*,?) enthÃ¤lt wird das Verzeichnisfeld
   aktualisiert und die Dialogbox bleibt weiter aktiv. Andernfalls handelt es
   sich um einen Dateinamen. Dann kopiert die Funktion den angegebenen Text
-  in den Speicherbereich, auf den der Zeiger ¯pstrDateiname® zeigt und kehrt
-  zur aufrufenden Funktion zurck.
+  in den Speicherbereich, auf den der Zeiger Â»pstrDateinameÂ« zeigt und kehrt
+  zur aufrufenden Funktion zurÃ¼ck.
 
-ù Auswahl einer Datei im Verzeichnisfeld:
+Â¨ Auswahl einer Datei im Verzeichnisfeld:
   Wenn das Verzeichnisfeld den Eingabefokus besitzt, kann der Anwender den
   Auswahlcursor im Verzeichnisfeld bewegen.
 
-  Dazu werden folgendete Tasten untersttzt:
+  Dazu werden folgendete Tasten unterstÃ¼tzt:
 
-  ù Cursor oben              vorhergehenden Eintrag makieren.
-  ù Cursor unten             n„chsten Eintrag makieren.
-  ù [PgUp] / [Bild oben]     Verzeichnisfeld eine Seite nach oben scrollen.
-  ù [PgDn] / [Bild unten]    Verzeichnisfeld eine Seite nach unten scrollen.
-  ù [Home] / [Pos 1]         ersten gefunden Eintrag makieren.
-  ù [End]  / [Ende]          letzten gefunden Eintrag makieren.
+  Â¨ Cursor oben              vorhergehenden Eintrag makieren.
+  Â¨ Cursor unten             nÃ¤chsten Eintrag makieren.
+  Â¨ [PgUp] / [Bild oben]     Verzeichnisfeld eine Seite nach oben scrollen.
+  Â¨ [PgDn] / [Bild unten]    Verzeichnisfeld eine Seite nach unten scrollen.
+  Â¨ [Home] / [Pos 1]         ersten gefunden Eintrag makieren.
+  Â¨ [End]  / [Ende]          letzten gefunden Eintrag makieren.
 
   Bei einer aktiven Maus kann der Auswahlcursor verschoben werden, indem der
   den Mauscursor auf die Scrollpfeile auf dem oberen Rand des Verzeichnisfeldes
-  und dort die linke Maustaste drckt (scrollen). Auáerdem kann der Anwender
+  und dort die linke Maustaste drÃ¼ckt (scrollen). AuÃŸerdem kann der Anwender
   einen Eintrag makieren, indem er mit dem Mauszeiger auf den Eintrag zeigt und
-  dort die linke Maustaste drckt. Mit einem Doppelklick wird der Eintrag aus-
-  gew„hlt, auf den der Mauszeiger beim Klicken zeigt.
+  dort die linke Maustaste drÃ¼ckt. Mit einem Doppelklick wird der Eintrag aus-
+  gewÃ¤hlt, auf den der Mauszeiger beim Klicken zeigt.
 
   Bei der Auswahl eines Verzeichnisses wird das Verzeichnisfeld aktualisiert.
   Bei Auswahl eines Dateinamens kopiert die Funktion den eingegebenen Text in
-  den Speicherbereich auf den der Zeiger ¯pstrDateiname® zeigt.
+  den Speicherbereich auf den der Zeiger Â»pstrDateinameÂ« zeigt.
 
-ù Hilfe anfordern:
-  Der Anwender kann durch aktivieren der [F1]-Schaltfl„che Hilfe zur Bedienung
-  der Dialogbox anfordern. Diese Hilfe wird von der Toolbox zur Verfgung ge-
+Â¨ Hilfe anfordern:
+  Der Anwender kann durch aktivieren der [F1]-SchaltflÃ¤che Hilfe zur Bedienung
+  der Dialogbox anfordern. Diese Hilfe wird von der Toolbox zur VerfÃ¼gung ge-
   stellt.
 
-ù ndern des Eingabefokus:
+Â¨ Ã„ndern des Eingabefokus:
   Mit den Tasten [Tab] und [Shift][Tab] kann der Anwender den Eingabefokus
   zwischen dem Text- und dem Verzeichnisfeld hin- und herschalten. Das Feld
-  mit dem Eingabefokus erh„lt den Cursor bzw. den Auswahlbalken.
+  mit dem Eingabefokus erhÃ¤lt den Cursor bzw. den Auswahlbalken.
 
-  Der Eingabefokus kann bei einer aktiven Maus ebenfalls ge„ndert werden, indem
+  Der Eingabefokus kann bei einer aktiven Maus ebenfalls geÃ¤ndert werden, indem
   der Anwender auf das Text- oder Verzeichnisfeld zeigt.
 
 
 Der beim Aufruf der Funktion aktuelle Bildschirm wird vor dem Verlassen der
-Funktion wiederhergestellt. Der Speicherbereich, in der gew„hlte Schlssel
-kopiert wird, sollte 128 Zeichen groá sein.
+Funktion wiederhergestellt. Der Speicherbereich, in der gewÃ¤hlte SchlÃ¼ssel
+kopiert wird, sollte 128 Zeichen groÃŸ sein.
 
-Die Funktion berprft nicht, ob der eingetragene Schlssel existiert. Es kann
-somit auch der Name eines nicht existierenden Schlssels zurckgegeben werden.
+Die Funktion Ã¼berprÃ¼ft nicht, ob der eingetragene SchlÃ¼ssel existiert. Es kann
+somit auch der Name eines nicht existierenden SchlÃ¼ssels zurÃ¼ckgegeben werden.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-SWORD	 Information, welche Schaltfl„che der Anwender beim Verlassen der
-        Dialogbox bet„tigt hat:
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+SWORD	 Information, welche SchaltflÃ¤che der Anwender beim Verlassen der
+        Dialogbox betÃ¤tigt hat:
 
         - DLG_RETURN    Der Anwender hat eine Wahl vorgenommen.
         - DLG_ESC       Die Auswahl wurde mit ESC abgebrochen.
         - DLG_ERROR     Dialog konnte nicht angezeigt werden.
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g    (R)
                   - wCSInd_g   (R)           - pstrF1_g     (R)
                   - wMausda_g  (R)           - pstrReturn_g (R)
@@ -194,9 +194,9 @@ Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g    (R)
 .de \euro\demo\dmoladen.c
 .te*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define  NDEBUG JA	      /* NDEBUG JA == Debug ausgeschaltet */
 #include <stdio.h>
 #include <string.h>
@@ -205,9 +205,9 @@ Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g    (R)
 #include <ctype.h>
 #include <eur_tool.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        KONSTANTEN UND MAKROS                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        KONSTANTEN UND MAKROS                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define  HOE        18
 
          /* absolute Koordinaten der Textbox */
@@ -217,14 +217,14 @@ Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g    (R)
 #define  VFS        0        /* relative Koordinaten des ersten Zeichens im */
 #define  VFZ        2        /* Verzeichnisfeld.                            */
 
-#define  DKLICK     6        /* Zeitabstand in Ticks fr Doppelklick        */
-#define  SCR_DELAY  1        /* Zeitabstand fr Dauer-Scrollen mit der Maus */
-#define  SCR_WAIT   6        /* Zeitdauer fr Verz”gerung des Scrollbeginns */
+#define  DKLICK     6        /* Zeitabstand in Ticks fÃ¼r Doppelklick        */
+#define  SCR_DELAY  1        /* Zeitabstand fÃ¼r Dauer-Scrollen mit der Maus */
+#define  SCR_WAIT   6        /* Zeitdauer fÃ¼r VerzÃ¶gerung des Scrollbeginns */
 
-#define  TEXTFELD   0        /* Konstanten fr Eingabefokus                 */
+#define  TEXTFELD   0        /* Konstanten fÃ¼r Eingabefokus                 */
 #define  VERZFELD   1
 
-#define  MAX        128      /* maximale Stringl„nge fr Datei-/Pfadname    */
+#define  MAX        128      /* maximale StringlÃ¤nge fÃ¼r Datei-/Pfadname    */
 #define  MAXDATEIEN 500      /* maximale Anzahl der Dateien pro Verzeichnis */
 
 
@@ -233,12 +233,12 @@ Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g    (R)
 
 #define  PFEIL_O_EIN()	Wi_Sza(VFS+wBreite_m-6,VFZ-1,'',aCS_g[wCSInd_g].wCs_dlg_sp)
 #define  PFEIL_U_EIN()	Wi_Sza(VFS+wBreite_m-4,VFZ-1,'',aCS_g[wCSInd_g].wCs_dlg_sp)
-#define  PFEIL_O_AUS()	Wi_Sza(VFS+wBreite_m-6,VFZ-1,'Ä',aCS_g[wCSInd_g].wCs_dlg)
-#define  PFEIL_U_AUS()	Wi_Sza(VFS+wBreite_m-4,VFZ-1,'Ä',aCS_g[wCSInd_g].wCs_dlg)
+#define  PFEIL_O_AUS()	Wi_Sza(VFS+wBreite_m-6,VFZ-1,'â”€',aCS_g[wCSInd_g].wCs_dlg)
+#define  PFEIL_U_AUS()	Wi_Sza(VFS+wBreite_m-4,VFZ-1,'â”€',aCS_g[wCSInd_g].wCs_dlg)
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT COLORSET  aCS_g[5];
 IMPORT SWORD	  wMausda_g;
 IMPORT SWORD	  wVioMode_g;
@@ -259,9 +259,9 @@ IMPORT int __s__g;
 #endif /* NDEBUG */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC SWORD wSpalte_m;
 STATIC SWORD wZeile_m;
 STATIC SWORD wBreite_m;
@@ -270,17 +270,17 @@ STATIC SWORD wPos_m;
 STATIC SWORD wTBS_m;	      /* absolute Koordinaten der Textbox */
 
 STATIC SWORD awVFB_m[10];     /* relative Koordinaten / Verz.-Feld-Breite    */
-                              /* max. 10 zus„tz. anzuzeigende Felder         */
-STATIC SWORD wVFH_m;	     /* Verzeichnisfeld-H”he			    */
+                              /* max. 10 zusÃ¤tz. anzuzeigende Felder         */
+STATIC SWORD wVFH_m;	     /* Verzeichnisfeld-HÃ¶he			    */
 
-STATIC SWORD wRecKeyOfs_m;    /* Offset des Prim„rschlssels in der Stammdatei */
+STATIC SWORD wRecKeyOfs_m;    /* Offset des PrimÃ¤rschlÃ¼ssels in der Stammdatei */
 
 STATIC PSSTR pstrDTitel_m;
 STATIC PSSTR pstrMTitel_m;
 
 STATIC CHAR strError_m[TB_MAX];
 
-STATIC SWORD wFokus_m;				    /* Fokus fr RETURN     */
+STATIC SWORD wFokus_m;				    /* Fokus fÃ¼r RETURN     */
 STATIC SWORD wAktZeile_m;			    /* Zeile in Verz.feld   */
 
 STATIC SWORD wReadIndex_m;
@@ -321,9 +321,9 @@ STATIC PPSTR ppstrEnde_m;			   /* ge benutzt werden    */
 STATIC PFSPEC *apfsFile_m;
 STATIC PUSTR   pstrAltColSeq_m;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                       MODULGLOBALE FUNKTIONEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                       MODULGLOBALE FUNKTIONEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	 SWORD cdecl i_EventBearbeiten	(VOID);
 STATIC	 VOID cdecl i_SchreibeNamen    (PSSTR);
 STATIC	 VOID cdecl i_AlterZustand     (VOID);
@@ -344,16 +344,16 @@ STATIC	 VOID cdecl i_TryReadMore      (SWORD);
 STATIC	 SWORD cdecl _i_Korrekt 	(PTEXTBOXLIST);
 STATIC	 VOID cdecl _i_FormatSchreiben (PTEXTBOXLIST);
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD M_BMatchCode(SWORD swZeile, SWORD swSpalte,
      PSSTR apstrFileBlock[], SWORD wReadIndex, BMATCH *pMatchCode,
      SWORD awRecKeyOffset[], PSSTR pstrSelect, PFSPEC apfsFile[])
 {
 SREGISTER i;
-SWORD wMaxEintraege;				 /* max. Verz.-Eintr„ge  */
+SWORD wMaxEintraege;				 /* max. Verz.-EintrÃ¤ge  */
 SWORD  wMausStatus;
 SWORD  wRetStatus;
 PSSTR pstrHilf;
@@ -368,7 +368,7 @@ wReadIndex_m = wReadIndex;
 pMatchCode_m = pMatchCode;
 wNbAddFields_m = pMatchCode_m->wNbAddFields;
 wAktFile_m = ((PTEXTBOXLIST) *pMatchCode->ppKey)->wRecord;;
-wRecKeyOfs_m = awRecKeyOffset[0];                  /* Prim„rkeyoffset */
+wRecKeyOfs_m = awRecKeyOffset[0];                  /* PrimÃ¤rkeyoffset */
 ppstrFileBlock_m = apstrFileBlock;
 
 if(apfsFile_m[wAktFile_m]->ksKeyBuf
@@ -387,8 +387,8 @@ ppstrEndeKey_m = ppstrAktKey_m = apstrStartKey_m;
 strcpy(pstrDTitel_m, pMatchCode_m->pstrFieldName);   /*~ Titelzeile zusammen- */
 						     /*  stellen	      */
 
-awVFB_m[0] = strlen(pMatchCode_m->pstrFieldName); /* Feldbreite der Eintr„ge  */
-wVFH_m = 10;                                      /* Feldh”he der Eintr„ge    */
+awVFB_m[0] = strlen(pMatchCode_m->pstrFieldName); /* Feldbreite der EintrÃ¤ge  */
+wVFH_m = 10;                                      /* FeldhÃ¶he der EintrÃ¤ge    */
 
 for(i=0; i<MAXDATEIEN; i++)
   apstrStart_m[i]=apstrStartKey_m[i]=
@@ -396,7 +396,7 @@ for(i=0; i<MAXDATEIEN; i++)
 
 for (i=0;i < wNbAddFields_m;i++)
   {
-   strcat(pstrDTitel_m, " ³ ");
+   strcat(pstrDTitel_m, " â”‚ ");
    strcat(pstrDTitel_m, pMatchCode->apstrAddName[i]);
    awVFB_m[i+1] = strlen(pMatchCode->apstrAddName[i]);
   }
@@ -404,7 +404,7 @@ for (i=0;i < wNbAddFields_m;i++)
 if ((wBreite_m=strlen(pstrDTitel_m)+4) > 77)    /* Dialogfensterbreite festlegen */
   {
    wBreite_m = 77;                                /* Breite begrenzen       */
-   pstrDTitel_m[73] = '\0';                       /* Titel krzen           */
+   pstrDTitel_m[73] = '\0';                       /* Titel kÃ¼rzen           */
   }
 
 if (wBreite_m < 56)
@@ -415,7 +415,7 @@ strpad (pstrDTitel_m, wBreite_m-3);
 if (swSpalte < 2)
   swSpalte=2;                                   /* Korrektur auf niedrigsten */
 if (swZeile  < 3)
-  swZeile=3;                                    /* Wert fr Dialogfenster    */
+  swZeile=3;                                    /* Wert fÃ¼r Dialogfenster    */
 
 if (swSpalte+wBreite_m <= 77)                   /* Dialogfeld im erlaubten */
    wSpalte_m = swSpalte;                        /* Bereich halten          */
@@ -431,7 +431,7 @@ strcpy (pstrMTitel_m, pMatchCode_m->pstrFieldName); /* Matchcode-Bezeichnung */
 
 for (pstrHilf = strchr(pstrMTitel_m, '\0')-1;
      pstrHilf >= pstrMTitel_m &&
-     (*pstrHilf==' ' || *pstrHilf=='ÿ');            /*  ASCII 32 oder 255    */
+     (*pstrHilf==' ' || *pstrHilf=='Â ');            /*  ASCII 32 oder 255    */
      pstrHilf--)
    ;
 
@@ -480,14 +480,14 @@ for (wPos_m=0, i=0; i < wNbAddFields_m; i++)
                  EINFACH);
   }
 
-Wi_Swz (0,HOE-6,wBreite_m-2,1,'Ä');
-Wi_Swz (0,1,wBreite_m-2,1,'Ä');
+Wi_Swz (0,HOE-6,wBreite_m-2,1,'â”€');
+Wi_Swz (0,1,wBreite_m-2,1,'â”€');
 if (wMausStatus == MSM_WAR_AN && wMausda_g)       /* wenn Maus an war,    */
   Ms_CursorOn();                                  /* wieder ein           */
 
 Wi_Ss(1,HOE-5,pstrMTitel_m);                        /* Text ausgeben        */
 
-if (wVioMode_g == MONOCHROM)                      /* Cursorgr”áe je nach  */
+if (wVioMode_g == MONOCHROM)                      /* CursorgrÃ¶ÃŸe je nach  */
   Wi_SetCursorTyp(11,12);                         /* Video-Modus auf      */
 else                                              /* Editiermodus INSERT  */
   Wi_SetCursorTyp(6,7);                           /* festlegen            */
@@ -582,41 +582,41 @@ for(;;)
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_EventBearbeiten              Datum: 06.12.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     In dieser Funktion werden die Eingaben des An-      º
-  º                    wenders eingelesen und ausgewertet. Es werden       º
-  º                    folgende Sondertasten untersttzt:                  º
-  º                                                                        º
-  º                       TAB,         wechselt den Fokus                  º
-  º                       SHIFT-TAB       "      "    "                    º
-  º                       F1           zeigt ein Hilfefenster an           º
-  º                       ESC          bricht die Funktion ab              º
-  º                       RETURN       beendet die Eingabe                 º
-  º                                                                        º
-  º                    Die Reaktion auf alle anderen Tasten ist davon      º
-  º                    abh„ngig, auf welchem Feld der Fokus steht.         º
-  º                                                                        º
-  º                    Die Funktion bietet volle Mausuntersttzung !!!     º
-  º                                                                        º
-  º                                                                        º
-  º  Rckgabewert:     DLG_ESC     wenn Dialog-Funktion abgebrochen        º
-  º                                werden soll                             º
-  º                                                                        º
-  º                    DLG_RETURN  wenn Enter (ber Maus oder Tastatur)    º
-  º                                ausgew„hlt, oder im Verzeichnisfeld     º
-  º                                doppel-geklickt wurde                   º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  - wFokus_m    (R)                                   º
-  º                    - wAktZeile_m (R)                                   º
-  º                    - pacAkt_m    (R)                                   º
-  º                    - pacEnde_m   (R)                                   º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_EventBearbeiten              Datum: 06.12.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     In dieser Funktion werden die Eingaben des An-      â•‘
+  â•‘                    wenders eingelesen und ausgewertet. Es werden       â•‘
+  â•‘                    folgende Sondertasten unterstÃ¼tzt:                  â•‘
+  â•‘                                                                        â•‘
+  â•‘                       TAB,         wechselt den Fokus                  â•‘
+  â•‘                       SHIFT-TAB       "      "    "                    â•‘
+  â•‘                       F1           zeigt ein Hilfefenster an           â•‘
+  â•‘                       ESC          bricht die Funktion ab              â•‘
+  â•‘                       RETURN       beendet die Eingabe                 â•‘
+  â•‘                                                                        â•‘
+  â•‘                    Die Reaktion auf alle anderen Tasten ist davon      â•‘
+  â•‘                    abhÃ¤ngig, auf welchem Feld der Fokus steht.         â•‘
+  â•‘                                                                        â•‘
+  â•‘                    Die Funktion bietet volle MausunterstÃ¼tzung !!!     â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     DLG_ESC     wenn Dialog-Funktion abgebrochen        â•‘
+  â•‘                                werden soll                             â•‘
+  â•‘                                                                        â•‘
+  â•‘                    DLG_RETURN  wenn Enter (Ã¼ber Maus oder Tastatur)    â•‘
+  â•‘                                ausgewÃ¤hlt, oder im Verzeichnisfeld     â•‘
+  â•‘                                doppel-geklickt wurde                   â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  - wFokus_m    (R)                                   â•‘
+  â•‘                    - wAktZeile_m (R)                                   â•‘
+  â•‘                    - pacAkt_m    (R)                                   â•‘
+  â•‘                    - pacEnde_m   (R)                                   â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_EventBearbeiten(VOID)
 {
@@ -629,7 +629,7 @@ SWORD i_EventBearbeiten(VOID)
   for(;;)                                           /* Eingaberoutine       */
   {
     Ut_Event(pEvent);                               /* Event einlesen       */
-    boError = OK;                                   /* Errorflag l”schen    */
+    boError = OK;                                   /* Errorflag lÃ¶schen    */
 
     switch(pEvent->wArt)                            /* Eventart auswerten   */
     {
@@ -737,10 +737,10 @@ SWORD i_EventBearbeiten(VOID)
 
       case EVENT_L_PRESS:                           /* MAUSEVENT auswerten  */
 
-        if (pEvent->wZeile == wZeile_m+HOE-2)            /* Schaltfl„chen-Zeile  */
+        if (pEvent->wZeile == wZeile_m+HOE-2)            /* SchaltflÃ¤chen-Zeile  */
         {
 
-          if (pEvent->wSpalte > wSpalte_m+2 &&            /* RETURN-Schaltfl„che  */
+          if (pEvent->wSpalte > wSpalte_m+2 &&            /* RETURN-SchaltflÃ¤che  */
               pEvent->wSpalte < wSpalte_m+3+
 				(SWORD)strlen(pstrReturn_g))
 
@@ -755,7 +755,7 @@ SWORD i_EventBearbeiten(VOID)
             return(DLG_RETURN);
           }
 
-          else if (pEvent->wSpalte > wSpalte_m+16 &&      /* ESCAPE-Schaltfl„che  */
+          else if (pEvent->wSpalte > wSpalte_m+16 &&      /* ESCAPE-SchaltflÃ¤che  */
                    pEvent->wSpalte < wSpalte_m+17+
 				 (SWORD)strlen(pstrEsc_g))
           {
@@ -763,14 +763,14 @@ SWORD i_EventBearbeiten(VOID)
           }                                         /* rufer beenden lassen */
 
 
-          else if (pEvent->wSpalte > wSpalte_m+30 &&      /* HILFE-Schaltfl„che   */
+          else if (pEvent->wSpalte > wSpalte_m+30 &&      /* HILFE-SchaltflÃ¤che   */
                    pEvent->wSpalte < wSpalte_m+31+
 			       (SWORD)strlen(pstrF1_g))
           {
             Dl_HilfeTools(LADEN);                   /* Hilfe anzeigen       */
           }
 
-        } /* end of if (Zeile == Schaltfl„chen-Zeile) */
+        } /* end of if (Zeile == SchaltflÃ¤chen-Zeile) */
 
 
         else if (pEvent->wZeile == wZeile_m+2 &&         /* Scrollpfeil -Zeile   */
@@ -826,7 +826,7 @@ SWORD i_EventBearbeiten(VOID)
 		 pEvent->wSpalte < (SWORD)TBB+wTBS_m  &&   /* Textbox		   */
                  pEvent->wZeile  == TBZ )
         {
-          if (wFokus_m == VERZFELD)                 /* evtl. Fokus „ndern   */
+          if (wFokus_m == VERZFELD)                 /* evtl. Fokus Ã¤ndern   */
             i_AendereFokus();
 
           i_Dl_LiesZK(pTBox, pEvent, AKT_GARNIX);
@@ -866,25 +866,25 @@ SWORD i_EventBearbeiten(VOID)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_AlterZustand                 Datum: 11.01.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion stellt vor dem Verlassen des         º
-  º                    Dialogfeldes den ursprnglichen Zustand wieder      º
-  º                    her:                                                º
-  º                    - Dialogfeld entfernen                              º
-  º                    - allokierten Sepicher freigeben                    º
-  º                                                                        º
-  º  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  modulglobale:                                       º
-  º                    - pacStart_m           (R)                          º
-  º                    - pWkbDialog           (R)                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_AlterZustand                 Datum: 11.01.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion stellt vor dem Verlassen des         â•‘
+  â•‘                    Dialogfeldes den ursprÃ¼nglichen Zustand wieder      â•‘
+  â•‘                    her:                                                â•‘
+  â•‘                    - Dialogfeld entfernen                              â•‘
+  â•‘                    - allokierten Sepicher freigeben                    â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Diese Funktion hat keinen RÃ¼ckgabewert.             â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  modulglobale:                                       â•‘
+  â•‘                    - pacStart_m           (R)                          â•‘
+  â•‘                    - pWkbDialog           (R)                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_AlterZustand(VOID)
 {
@@ -922,35 +922,35 @@ return;
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_AendereFokus                 Datum: 10.01.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion schaltet den Eingabefokus zwischen   º
-  º                    dem Text- und Verzeichnisfeld hin und her.          º
-  º                                                                        º
-  º  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  - wFokus_m    (R/W)                                 º
-  º                    - wAktZeile_m (R)                                   º
-  º                    - pacStart_m  (R)                                   º
-  º                    - pacEnde_m   (R)                                   º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_AendereFokus                 Datum: 10.01.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion schaltet den Eingabefokus zwischen   â•‘
+  â•‘                    dem Text- und Verzeichnisfeld hin und her.          â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Diese Funktion hat keinen RÃ¼ckgabewert.             â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  - wFokus_m    (R/W)                                 â•‘
+  â•‘                    - wAktZeile_m (R)                                   â•‘
+  â•‘                    - pacStart_m  (R)                                   â•‘
+  â•‘                    - pacEnde_m   (R)                                   â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_AendereFokus(VOID)
 {
 if(wFokus_m == TEXTFELD &&
-  *apstrStart_m && **apstrStart_m)		     /* sind Eintr„ge da ?   */
+  *apstrStart_m && **apstrStart_m)		     /* sind EintrÃ¤ge da ?   */
   {
   Wi_Cursor(AUS);				     /* Cursor ausschalten   */
   i_SchreibeNamen(*ppstrAktEdit_m);		     /* Namen ausgeben	     */
   i_BewegeBalken(0);				     /* Balkencursor und     */
 						     /* Scroll-Pfeile ein-   */
 						     /* schalten	     */
-  wFokus_m=VERZFELD;				     /* Fokus „ndern	     */
+  wFokus_m=VERZFELD;				     /* Fokus Ã¤ndern	     */
   i_Dl_LiesZK(pTBox, pEvent, AKT_TEXTBOX);
   i_BKopiereTextBoxII (pTextBox_m, pTBox);
   }
@@ -960,7 +960,7 @@ else
   PFEIL_O_AUS();				     /* Scroll-Pfeile aus-   */
   PFEIL_U_AUS();				     /* schalten	     */
   Wi_Cursor(EIN);				     /* Cursor wieder ein    */
-  wFokus_m=TEXTFELD;				     /* Fokus „ndern	     */
+  wFokus_m=TEXTFELD;				     /* Fokus Ã¤ndern	     */
 
   i_BKopiereTextBox (pTBox, pTextBox_m);
   i_Dl_LiesZK(pTBox, pEvent, AKT_BUFFER);
@@ -972,30 +972,30 @@ return;
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_UpdateVerz                   Datum: 10.01.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PSSTR  pstrMaske      gewnschte Suchmaske	    º
-  º		       SWORD wMaxEintraege maximal einlesbare Eintr„ge	  º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion liest im aktuellen Index             º
-  º                    alle Eintr„ge die der Suchmaske entsprechen.        º
-  º                                                                        º
-  º                    Gleichzeitig werden von der Funktion folgende       º
-  º                    modulglobale Variablen initialisiert:               º
-  º                    - wAktZeile_m    Zeile auf den Balken zeigt         º
-  º                    - pacAkt_m       Zeiger auf aktuellen Eintrag       º
-  º                    - pacEnde_m      Zeiger auf letzten Eintrag         º
-  º                                                                        º
-  º  Rckgabewert:     keine                                               º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  - wAktZeile_m    (W)                                º
-  º                    - pacStart_m     (R/W)                              º
-  º                    - pacEnde_m      (W)                                º
-  º                    - pacAkt_m       (W)                                º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_UpdateVerz                   Datum: 10.01.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PSSTR  pstrMaske      gewÃ¼nschte Suchmaske	    â•‘
+  â•‘		       SWORD wMaxEintraege maximal einlesbare EintrÃ¤ge	  â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion liest im aktuellen Index             â•‘
+  â•‘                    alle EintrÃ¤ge die der Suchmaske entsprechen.        â•‘
+  â•‘                                                                        â•‘
+  â•‘                    Gleichzeitig werden von der Funktion folgende       â•‘
+  â•‘                    modulglobale Variablen initialisiert:               â•‘
+  â•‘                    - wAktZeile_m    Zeile auf den Balken zeigt         â•‘
+  â•‘                    - pacAkt_m       Zeiger auf aktuellen Eintrag       â•‘
+  â•‘                    - pacEnde_m      Zeiger auf letzten Eintrag         â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  - wAktZeile_m    (W)                                â•‘
+  â•‘                    - pacStart_m     (R/W)                              â•‘
+  â•‘                    - pacEnde_m      (W)                                â•‘
+  â•‘                    - pacAkt_m       (W)                                â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_UpdateVerz(VOID)
 {
@@ -1043,11 +1043,11 @@ SWORD i_UpdateVerz(VOID)
   for (wPos_m=0, i=0; i <= wNbAddFields_m; i++)
    {
     Wi_Swza(VFS + wPos_m, VFZ, awVFB_m[i]+1,         /* Verzeichnisfenster   */
-            wVFH_m, ' ',aCS_g[wCSInd_g].wCs_dlg);    /* l”schen              */
+            wVFH_m, ' ',aCS_g[wCSInd_g].wCs_dlg);    /* lÃ¶schen              */
     wPos_m += awVFB_m[i]+3;
    }
 
-  _i_FormatSchreiben (pTextBox_m);		 /* Notwendigkeit hier prfen !!!!! */
+  _i_FormatSchreiben (pTextBox_m);		 /* Notwendigkeit hier prÃ¼fen !!!!! */
 
   strcpy (strOldMask, pTextBox_m->pstrText);
 
@@ -1100,7 +1100,7 @@ SWORD i_UpdateVerz(VOID)
        strMaskAkt_m );                                    /*                      */
 
      Dl_ErrorHandler (wRetCode, strError_m,           /* Status 4 (key not    */
-       __FILE__, __LINE__, 9);                        /* found) ¯ wHandle==1  */
+       __FILE__, __LINE__, 9);                        /* found) Â» wHandle==1  */
 
      while ( !(wOK=Match_Check_Ok(wAktFile_m, wReadIndex_m)) &&
 	    !wRetCode && i_KeyCmp(pTextBox_m, strMaskAkt_m))
@@ -1151,7 +1151,7 @@ ENDE:
     strMaskEnd_m );                                    /*                      */
 
   Dl_ErrorHandler (wRetCode, strError_m,              /* Status 4 (key not    */
-    __FILE__, __LINE__, 9);                           /* found) ¯ wHandle==1  */
+    __FILE__, __LINE__, 9);                           /* found) Â» wHandle==1  */
 
   wBufferLength=INIT_RECORD_LENGTH;
 
@@ -1164,7 +1164,7 @@ ENDE:
     strMaskAkt_m );                                       /*                      */
 
   Dl_ErrorHandler (wRetCode, strError_m,              /* Status 4 (key not    */
-    __FILE__, __LINE__, 9);                           /* found) ¯ wHandle==1  */
+    __FILE__, __LINE__, 9);                           /* found) Â» wHandle==1  */
 
   i_TryReadMore (wVFH_m);
 
@@ -1187,50 +1187,50 @@ ENDE:
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_BewegeBalken                 Datum: 25.10.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD wRichtung	  bestimmt Bewegung		  º
-  º                                                                        º
-  º                                           > 0: nach oben               º
-  º                                           = 0: keine Bewegung          º
-  º                                           < 0: nach unten              º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion steuert die Bewegung des Cursor-     º
-  º                    Balken in dem Verzeichnisfeld. Mit dem Parameter    º
-  º                    ¯wRichtung® wird der Funktion die Richtung und      º
-  º                    die Anzahl der Eintr„ge um die sich der Balken      º
-  º                    bewegen soll mitgeteilt.                            º
-  º                    Der Inhalt des Verzeichnisfeldes wird von der       º
-  º                    Funktion bei Bedarf gesrcollt.                      º
-  º                    Der Eintrag in der Textbox und die Scroll-Pfeile    º
-  º                    werden immer aktualisiert.                          º
-  º                                                                        º
-  º                    Bei šbergabe von ¯0® findet keine Bewegung des      º
-  º                    Balkens statt. Diese Option kann dazu benutzt       º
-  º                    werden, um den Balken in der durch ¯wAktZeile_m®    º
-  º                    festgelegten Zeile sichtbar zu machen.              º
-  º                                                                        º
-  º                    Die Variablen ¯pacAkt_m® und ¯wAktZeile® mssen     º
-  º                    sinnvolle Werte enthalten, um ein einwandfreies     º
-  º                    Arbeiten der Funktion zu gew„hrleisten.             º
-  º                                                                        º
-  º  Rckgabewert:     BOOL  OK     Kein Fehler aufgetreten                º
-  º                          ERROR  Bereichsberschreitung erkannt         º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  - pacStart_m  (R)                                   º
-  º                    - pacAkt_m    (R/W)                                 º
-  º                    - pacEnde_m   (R)                                   º
-  º                    - wAktZeile_m (R/W)                                 º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_BewegeBalken                 Datum: 25.10.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD wRichtung	  bestimmt Bewegung		  â•‘
+  â•‘                                                                        â•‘
+  â•‘                                           > 0: nach oben               â•‘
+  â•‘                                           = 0: keine Bewegung          â•‘
+  â•‘                                           < 0: nach unten              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion steuert die Bewegung des Cursor-     â•‘
+  â•‘                    Balken in dem Verzeichnisfeld. Mit dem Parameter    â•‘
+  â•‘                    Â»wRichtungÂ« wird der Funktion die Richtung und      â•‘
+  â•‘                    die Anzahl der EintrÃ¤ge um die sich der Balken      â•‘
+  â•‘                    bewegen soll mitgeteilt.                            â•‘
+  â•‘                    Der Inhalt des Verzeichnisfeldes wird von der       â•‘
+  â•‘                    Funktion bei Bedarf gesrcollt.                      â•‘
+  â•‘                    Der Eintrag in der Textbox und die Scroll-Pfeile    â•‘
+  â•‘                    werden immer aktualisiert.                          â•‘
+  â•‘                                                                        â•‘
+  â•‘                    Bei Ãœbergabe von Â»0Â« findet keine Bewegung des      â•‘
+  â•‘                    Balkens statt. Diese Option kann dazu benutzt       â•‘
+  â•‘                    werden, um den Balken in der durch Â»wAktZeile_mÂ«    â•‘
+  â•‘                    festgelegten Zeile sichtbar zu machen.              â•‘
+  â•‘                                                                        â•‘
+  â•‘                    Die Variablen Â»pacAkt_mÂ« und Â»wAktZeileÂ« mÃ¼ssen     â•‘
+  â•‘                    sinnvolle Werte enthalten, um ein einwandfreies     â•‘
+  â•‘                    Arbeiten der Funktion zu gewÃ¤hrleisten.             â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     BOOL  OK     Kein Fehler aufgetreten                â•‘
+  â•‘                          ERROR  BereichsÃ¼berschreitung erkannt         â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  - pacStart_m  (R)                                   â•‘
+  â•‘                    - pacAkt_m    (R/W)                                 â•‘
+  â•‘                    - pacEnde_m   (R)                                   â•‘
+  â•‘                    - wAktZeile_m (R/W)                                 â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 BOOL i_BewegeBalken( SWORD wRichtung )
 {
   SWORD wRest,
 	wAktZ = wAktZeile_m + wRichtung;	  /* lokale Kopie anlegen */
-                                                    /* probeweise „ndern    */
+                                                    /* probeweise Ã¤ndern    */
 
   if (wRichtung < 0)				   /* Bewegung nach oben   */
   {
@@ -1246,9 +1246,9 @@ BOOL i_BewegeBalken( SWORD wRichtung )
       ppstrAktKey_m += wRichtung;
       ppstrAktEdit_m += wRichtung;
     }
-    else                                            /* scrollen n”tig       */
+    else                                            /* scrollen nÃ¶tig       */
     {
-      if (ppstrAkt_m-apstrStart_m-wAktZeile_m >=    /* genug Eintr„ge zum   */
+      if (ppstrAkt_m-apstrStart_m-wAktZeile_m >=    /* genug EintrÃ¤ge zum   */
 	  -wRichtung)				   /* scrollen ?	   */
       {
 	ppstrAkt_m += wRichtung;		   /* Zeiger aktualisieren */
@@ -1277,7 +1277,7 @@ BOOL i_BewegeBalken( SWORD wRichtung )
     if (ppstrAkt_m == ppstrEnde_m)                  /* Balken schon auf dem */
       return(ERROR);                                /* letzten Eintrag      */
 
-    wRest = ppstrEnde_m - ppstrAkt_m		   /* Eintr„ge auáerhalb   */
+    wRest = ppstrEnde_m - ppstrAkt_m		   /* EintrÃ¤ge auÃŸerhalb   */
              - (wVFH_m - wAktZeile_m -1);           /* des Fensters         */
 
     if (wAktZ < wVFH_m || wRest < 0)		  /* Bewegung innerhalb   */
@@ -1292,9 +1292,9 @@ BOOL i_BewegeBalken( SWORD wRichtung )
       ppstrAktKey_m += wRichtung;
       ppstrAktEdit_m += wRichtung;
     }
-    else                                            /* scrollen n”tig       */
+    else                                            /* scrollen nÃ¶tig       */
     {
-      if (wRest >= wRichtung)			  /* genug Eintr„ge zum   */
+      if (wRest >= wRichtung)			  /* genug EintrÃ¤ge zum   */
       {                                             /* scrollen ?           */
 	ppstrAkt_m += wRichtung;		   /* Zeiger aktualisieren */
 	ppstrAktKey_m += wRichtung;
@@ -1320,12 +1320,12 @@ BOOL i_BewegeBalken( SWORD wRichtung )
 
 
   if (boEnde_m &&
-      ppstrAkt_m == ppstrEnde_m)                    /* Pfeil-Unten l”schen  */
+      ppstrAkt_m == ppstrEnde_m)                    /* Pfeil-Unten lÃ¶schen  */
     PFEIL_U_AUS();
   else                                              /* Pfeil-Unten zeigen   */
     PFEIL_U_EIN();
 
-  if (ppstrAkt_m == apstrStart_m)                   /* Pfeil-Oben l”schen   */
+  if (ppstrAkt_m == apstrStart_m)                   /* Pfeil-Oben lÃ¶schen   */
     PFEIL_O_AUS();
   else                                              /* Pfeil-Oben zeigen    */
     PFEIL_O_EIN();
@@ -1337,27 +1337,27 @@ BOOL i_BewegeBalken( SWORD wRichtung )
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_ZeigeVerz                    Datum: 11.01.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion aktualisiert den Inhalt des Ver-     º
-  º                    zeichnisfeldes. Es benutzt dazu die modulglobalen   º
-  º                    Variablen ¯pacAkt_m® und ¯wAktZeile_m®.             º
-  º                    Die Werte, der beiden Variablen mssen in sich      º
-  º                    schlssig sein, um ein zuverl„ssiges Arbeiten der   º
-  º                    Funktion zu gew„hrleisten.                          º
-  º                                                                        º
-  º  Rckgabewert:     Die Funktion hat keinen Rckgabewert                º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  - pacStart_m   (R)                                  º
-  º                    - pacAkt_m     (R)                                  º
-  º                    - pacEnde_m    (R)                                  º
-  º                    - wAktZeile_m  (R)                                  º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_ZeigeVerz                    Datum: 11.01.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion aktualisiert den Inhalt des Ver-     â•‘
+  â•‘                    zeichnisfeldes. Es benutzt dazu die modulglobalen   â•‘
+  â•‘                    Variablen Â»pacAkt_mÂ« und Â»wAktZeile_mÂ«.             â•‘
+  â•‘                    Die Werte, der beiden Variablen mÃ¼ssen in sich      â•‘
+  â•‘                    schlÃ¼ssig sein, um ein zuverlÃ¤ssiges Arbeiten der   â•‘
+  â•‘                    Funktion zu gewÃ¤hrleisten.                          â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Die Funktion hat keinen RÃ¼ckgabewert                â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  - pacStart_m   (R)                                  â•‘
+  â•‘                    - pacAkt_m     (R)                                  â•‘
+  â•‘                    - pacEnde_m    (R)                                  â•‘
+  â•‘                    - wAktZeile_m  (R)                                  â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_ZeigeVerz(VOID)
 {
@@ -1365,14 +1365,14 @@ VOID i_ZeigeVerz(VOID)
   PPSTR ppstrTmp;
 
   if (!*apstrStart_m ||
-      !**apstrStart_m)                              /* sind Eintr„ge da ?   */
+      !**apstrStart_m)                              /* sind EintrÃ¤ge da ?   */
     return;                                         /* nein: abbrechen      */
 
   ppstrTmp = ppstrAkt_m - wAktZeile_m;              /* auf ersten Eintrag   */
                                                     /* zeigen               */
 
   for (z = 0;                                       /* Liste der Verzeich-  */
-       z < wVFH_m &&                                /* niseintr„ge aktual.  */
+       z < wVFH_m &&                                /* niseintrÃ¤ge aktual.  */
        ppstrTmp <= ppstrEnde_m;
        z++, ppstrTmp++)
     Wi_Ss(VFS+1, VFZ+z, *ppstrTmp);
@@ -1381,28 +1381,28 @@ VOID i_ZeigeVerz(VOID)
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_SchreibeNamen                Datum: 12.12.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keinen                                              º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion tr„gt einen neu ausgew„hlten Namen   º
-  º                    in die TEXTBOX-Struktur ein. Dabei werden die       º
-  º                    eckigen Klammern, die im Verzeichnisfeld zur        º
-  º                    Identifizierung eines Directory verwendet werden,   º
-  º                    entfernt.                                           º
-  º                    Abschlieáend wird die Funktion i_Dl_LiesZK()        º
-  º                    aufgerufen, damit die internen Puffer dieser        º
-  º                    Funktion aktualisiert werden. Von dort aus          º
-  º                    wird auch der neue Name im Textfeld ausgegeben.     º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  - pacAkt_m       (R)                                º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_SchreibeNamen                Datum: 12.12.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion trÃ¤gt einen neu ausgewÃ¤hlten Namen   â•‘
+  â•‘                    in die TEXTBOX-Struktur ein. Dabei werden die       â•‘
+  â•‘                    eckigen Klammern, die im Verzeichnisfeld zur        â•‘
+  â•‘                    Identifizierung eines Directory verwendet werden,   â•‘
+  â•‘                    entfernt.                                           â•‘
+  â•‘                    AbschlieÃŸend wird die Funktion i_Dl_LiesZK()        â•‘
+  â•‘                    aufgerufen, damit die internen Puffer dieser        â•‘
+  â•‘                    Funktion aktualisiert werden. Von dort aus          â•‘
+  â•‘                    wird auch der neue Name im Textfeld ausgegeben.     â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  - pacAkt_m       (R)                                â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_SchreibeNamen(PSSTR pstrAkt)
 {
@@ -1419,34 +1419,34 @@ VOID i_SchreibeNamen(PSSTR pstrAkt)
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_LiesAddFields                Datum:  7.2.90       º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PCHAR pcEintrag           anzuzeigende Zeile        º
-  º		       PSSTR  pstrKey		  Prim„rschlssel fr	    º
-  º                                              Datensatz                 º
-  º                    PTEXTBOX apTextBox[][99]  Informationen ber die    º
-  º                                              aufrufende Applikation    º
-  º		       SWORD awAddFields[][20]	  zus„tzlich anzuzeigende   º
-  º                                              Felder                    º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion liest laut Schlssel in pstrKey      º
-  º                    die Datens„tze aus den in der Struktur pTextBox     º
-  º                    angegebenen Dateien. Die Dateien mssen dazu        º
-  º                    schon ge”ffnet sein.                                º
-  º                    Mit Hilfe der im Array awAddFields                  º
-  º                    stehenden Information wird dann                     º
-  º                    die im Verzeichnisfeld anzuzeigende Zeile           º
-  º                    aufgebaut und in der Variablen pcEintrag            º
-  º                    dem Aufrufer bergeben.                             º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  wReadIndex_m (R)                                    º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_LiesAddFields                Datum:  7.2.90       â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PCHAR pcEintrag           anzuzeigende Zeile        â•‘
+  â•‘		       PSSTR  pstrKey		  PrimÃ¤rschlÃ¼ssel fÃ¼r	    â•‘
+  â•‘                                              Datensatz                 â•‘
+  â•‘                    PTEXTBOX apTextBox[][99]  Informationen Ã¼ber die    â•‘
+  â•‘                                              aufrufende Applikation    â•‘
+  â•‘		       SWORD awAddFields[][20]	  zusÃ¤tzlich anzuzeigende   â•‘
+  â•‘                                              Felder                    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion liest laut SchlÃ¼ssel in pstrKey      â•‘
+  â•‘                    die DatensÃ¤tze aus den in der Struktur pTextBox     â•‘
+  â•‘                    angegebenen Dateien. Die Dateien mÃ¼ssen dazu        â•‘
+  â•‘                    schon geÃ¶ffnet sein.                                â•‘
+  â•‘                    Mit Hilfe der im Array awAddFields                  â•‘
+  â•‘                    stehenden Information wird dann                     â•‘
+  â•‘                    die im Verzeichnisfeld anzuzeigende Zeile           â•‘
+  â•‘                    aufgebaut und in der Variablen pcEintrag            â•‘
+  â•‘                    dem Aufrufer Ã¼bergeben.                             â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  wReadIndex_m (R)                                    â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
 STATIC
 VOID i_LiesAddFields (VOID)
@@ -1466,7 +1466,7 @@ VOID i_LiesAddFields (VOID)
       (*ppstrEnde_m)[wLaenge] = '\0';
    else strpad(*ppstrEnde_m, wLaenge);
 
-   strcat (*ppstrEnde_m, " ³ ");
+   strcat (*ppstrEnde_m, " â”‚ ");
    wLaenge += 3;
 
    for (i=0;i < wNbAddFields_m; i++)
@@ -1489,7 +1489,7 @@ VOID i_LiesAddFields (VOID)
             *ppstrEndeKey_m );                      /*                      */
 
           Dl_ErrorHandler (wRetCode, strError_m,    /* Status 4 (key not    */
-            __FILE__, __LINE__, 9);                 /* found) ¯ wHandle==1  */
+            __FILE__, __LINE__, 9);                 /* found) Â» wHandle==1  */
 
 
           if (wRetCode == 4)
@@ -1511,7 +1511,7 @@ VOID i_LiesAddFields (VOID)
 
        if (i < wNbAddFields_m - 1)
          {
-          strcat (*ppstrEnde_m, " ³ ");
+          strcat (*ppstrEnde_m, " â”‚ ");
           wLaenge += 3;
          }
       }  /* end for i */
@@ -1519,20 +1519,20 @@ VOID i_LiesAddFields (VOID)
    return;
 }
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_KeyCmp                       Datum:  10.10.89     º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion                                      º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):                                                      º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_KeyCmp                       Datum:  10.10.89     â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion                                      â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):                                                      â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 BOOL i_KeyCmp (PTEXTBOXLIST pT, PSSTR pstrKey)
 {
@@ -1615,20 +1615,20 @@ BOOL i_KeyCmp (PTEXTBOXLIST pT, PSSTR pstrKey)
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_KuerzeKey                    Datum:  25.9.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion                                      º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):                                                      º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_KuerzeKey                    Datum:  25.9.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion                                      â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):                                                      â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 BOOL i_KuerzeKey(PTEXTBOXLIST pT, PSSTR pstrKey1, PSSTR pstrKey2)
 {
@@ -1854,20 +1854,20 @@ BOOL i_KuerzeKey(PTEXTBOXLIST pT, PSSTR pstrKey1, PSSTR pstrKey2)
  return (boOK);
 }
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_EndKey                       Datum:  25.9.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion                                      º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):                                                      º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_EndKey                       Datum:  25.9.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion                                      â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):                                                      â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_EndKey (PTEXTBOXLIST pT, PSSTR pstrKey)
 {
@@ -1983,20 +1983,20 @@ VOID i_EndKey (PTEXTBOXLIST pT, PSSTR pstrKey)
  return;
 }
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_ReadMore                     Datum:  25.9.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion                                      º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):                                                      º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_ReadMore                     Datum:  25.9.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion                                      â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):                                                      â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 BOOL i_ReadMore (PSSTR pstrEnd, PSSTR pstrAkt)
 {
@@ -2055,32 +2055,32 @@ BOOL i_ReadMore (PSSTR pstrEnd, PSSTR pstrAkt)
  return (boOK);
 }
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_FalscheEingabe               Datum:  25.9.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion ”ffnet ein Dialogfenster,            º
-  º                    in dem dem Anwender mitgeteilt wird,                º
-  º                    daá er eine ungltige Suchmaske eingegeben hat.     º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):                                                      º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_FalscheEingabe               Datum:  25.9.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion Ã¶ffnet ein Dialogfenster,            â•‘
+  â•‘                    in dem dem Anwender mitgeteilt wird,                â•‘
+  â•‘                    daÃŸ er eine ungÃ¼ltige Suchmaske eingegeben hat.     â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):                                                      â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_FalscheEingabe(VOID)
 
 {
 PSSTR apstrText[25];
 
-Ut_SchreibArray (apstrText,  " Sie haben einen ungltigen Suchbegriff",
+Ut_SchreibArray (apstrText,  " Sie haben einen ungÃ¼ltigen Suchbegriff",
                              " eingegeben.",
                              "",
-                             " Bitte w„hlen Sie einen neuen Suchbegriff",
+                             " Bitte wÃ¤hlen Sie einen neuen Suchbegriff",
                              " oder brechen Sie die Funktion mit <ESC> ab.",
 			     _N );
 
@@ -2093,33 +2093,33 @@ return;
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_NichtGefunden                Datum:  24.7.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion ”ffnet ein Dialogfenster,            º
-  º                    in dem dem Anwender mitgeteilt wird,                º
-  º                    daá fr die eingegebene Suchmaske kein              º
-  º                    Eintrag in der Datei existiert.                     º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):                                                      º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_NichtGefunden                Datum:  24.7.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion Ã¶ffnet ein Dialogfenster,            â•‘
+  â•‘                    in dem dem Anwender mitgeteilt wird,                â•‘
+  â•‘                    daÃŸ fÃ¼r die eingegebene Suchmaske kein              â•‘
+  â•‘                    Eintrag in der Datei existiert.                     â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):                                                      â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_NichtGefunden (VOID)
 
 {
 PSSTR apstrText[25];
 
-Ut_SchreibArray (apstrText,  " Es existieren fr die eingegebene Suchmaske",
+Ut_SchreibArray (apstrText,  " Es existieren fÃ¼r die eingegebene Suchmaske",
                              " in der Datei keine Eintraege.",
                              "",
-                             " Bitte w„hlen Sie eine neue Suchmaske oder",
+                             " Bitte wÃ¤hlen Sie eine neue Suchmaske oder",
                              " brechen Sie die Funktion mit <ESC> ab.",
 			     _N );
 
@@ -2131,9 +2131,9 @@ return;
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Fehler ()                                        Datum:  24.7.89      º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Fehler ()                                        Datum:  24.7.89      â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID Fehler(VOID)
 {
@@ -2141,7 +2141,7 @@ PSSTR apstrText[25];
 
 Ut_SchreibArray (apstrText,  " Es ist ein Fehler aufgetreten.",
                              "",
-                             " Die gewnschte Funktion konnte" ,
+                             " Die gewÃ¼nschte Funktion konnte" ,
                              " nicht aufgerufen werden.  ",
 			       _N );
 
@@ -2151,9 +2151,9 @@ Ut_LoeschArray(apstrText);
 return;
 }
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  i_Read_Line()                                        Datum:  6.2.89   º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  i_Read_Line()                                        Datum:  6.2.89   â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_Read_Line (VOID)
 {
@@ -2192,9 +2192,9 @@ VOID i_Read_Line (VOID)
  return;
 }
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  _i_FormatSchreiben ()                                Datum:  6.2.89   º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  _i_FormatSchreiben ()                                Datum:  6.2.89   â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID _i_FormatSchreiben (PTEXTBOXLIST pTB)
 {
@@ -2204,7 +2204,7 @@ VOID _i_FormatSchreiben (PTEXTBOXLIST pTB)
 
  pTB->wRecord = 0;
 
- /* Wie weiá ich hier i.a., was im Record zu stehen hat ????? */
+ /* Wie weiÃŸ ich hier i.a., was im Record zu stehen hat ????? */
 
  i_BFormatSchreiben (pTB, &pstrDataBuffer_g);
 
@@ -2214,9 +2214,9 @@ VOID _i_FormatSchreiben (PTEXTBOXLIST pTB)
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  _i_Korrekt()                                         Datum:  6.2.89   º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  _i_Korrekt()                                         Datum:  6.2.89   â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD _i_Korrekt(PTEXTBOXLIST pTB)
 {
@@ -2233,9 +2233,9 @@ SWORD _i_Korrekt(PTEXTBOXLIST pTB)
  return (wReturn);
 }
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  i_TryReadMore ()                                     Datum:  7.2.89   º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  i_TryReadMore ()                                     Datum:  7.2.89   â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_TryReadMore (SWORD wNb)
 {
@@ -2274,7 +2274,7 @@ VOID i_TryReadMore (SWORD wNb)
       strMaskAkt_m );                                 /*                      */
 
     Dl_ErrorHandler (wRetCode, strError_m,            /* Status 4 (key not    */
-      __FILE__, __LINE__, 9);                         /* found) ¯ wHandle==1  */
+      __FILE__, __LINE__, 9);                         /* found) Â» wHandle==1  */
 
     boEnde_m |= (wRetCode == 9);
 

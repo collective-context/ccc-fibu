@@ -1,15 +1,15 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    Mn_Init ()                     Datum: 14.09.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion                                      º
-  º                                                                        º
-  º                                                                        º
-  º                                                                        º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    Mn_Init ()                     Datum: 14.09.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion                                      â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
 #include <stdio.h>
 #include <string.h>
@@ -17,63 +17,63 @@
 
 IMPORT	SWORD  wCSInd_g;		  /* Nummer der Farbpaletten	      */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º MNU_Modul APP            DAS APPLIKATIONS-MENš                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ MNU_Modul APP            DAS APPLIKATIONS-MENÃœ                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC  ITEM itMenu[][20] =
 {
   {
     { 100, "#F-Tasten",
-           "Mit [\x19]/[\x18] die Funktion w„hlen und mit [\x11\xD9] starten." },
+           "Mit [\x19]/[\x18] die Funktion wÃ¤hlen und mit [\x11\xD9] starten." },
     { 101, "#Speichern und Ende   [ESC]",
            "1x [ESC]= Speichern --> 2x [ESC]= Programmende." },
     { 102, "#Matchcode             [F2]",
            "Damit aktivieren Sie die Suchfunktion."  },
-    { 103, "#L”schen               [F3]",
-           "L”schen des aktuellen Datensatzes." },
+    { 103, "#LÃ¶schen               [F3]",
+           "LÃ¶schen des aktuellen Datensatzes." },
     MNU_TRENNER,
     { 104, "Memo-#Allgemein        [F4]",
            "Speichert allgemeine Notizen zum Datensatz."},
     { 105, "M#emo-Speziell [Umsch]+[F4]",
-           "Speichert applikationsabh„ngige Notizen zum Datensatz."},
+           "Speichert applikationsabhÃ¤ngige Notizen zum Datensatz."},
     { 106, "#Nachrichten    [Strg]+[F4]",
-           "Schwarzes Brett mit Nachrichten an ¯Alle®."},
+           "Schwarzes Brett mit Nachrichten an Â»AlleÂ«."},
     { 107, "#Privates Fach   [Alt]+[F4]",
-           "Arbeitsplatzabh„ngiges, privates Notizfach."},
+           "ArbeitsplatzabhÃ¤ngiges, privates Notizfach."},
     MNU_TRENNER,
     { 108, "#Kopie                 [F5]",
-           "Damit k”nnen Sie einen Datensatz kopieren." },
+           "Damit kÃ¶nnen Sie einen Datensatz kopieren." },
     MNU_ENDE
   },
   {
     { 200, "#Optionen",
-           "Ver„ndert und steuert die Programmumgebung." },
+           "VerÃ¤ndert und steuert die Programmumgebung." },
     { 207, "#Felder vorbelegen",
 	   "Bestimmte Eingabefelder werden automatisch vorbelegt." },
-    { 208, "#N„chsten lesen",
-	   "An speziellen Stellen den n„chsten Eintrag automatisch lesen." },
+    { 208, "#NÃ¤chsten lesen",
+	   "An speziellen Stellen den nÃ¤chsten Eintrag automatisch lesen." },
     MNU_TRENNER,
     { 201, "#Maussteuerung",
            "Mausempfindlichkeit einstellen."},
     { 202 ,"#Warnton",
-           "Erm”glicht das Einstellen des Warntons." },
+           "ErmÃ¶glicht das Einstellen des Warntons." },
     MNU_TRENNER,
     { 203, "#Rahmen doppelt ein",
-           "Ein- oder ausschalten der doppelten Rahmen im Men." },
+           "Ein- oder ausschalten der doppelten Rahmen im MenÃ¼." },
     { 204, "#Schatten aus",
-           "Den Schatten der Menfenster ein- oder ausschalten."},
+           "Den Schatten der MenÃ¼fenster ein- oder ausschalten."},
     { 205, "#Betriebssystem",
-           "Vorbergehender Sprung ins Betriebssystem." },
+           "VorÃ¼bergehender Sprung ins Betriebssystem." },
     { 206, "#Testmodus ein",
            "Aktiviert oder deaktiviert den Testmodus." },
     MNU_ENDE
   },
   {
-    { 31000, "F1=#Hilfe", "Er”ffnet Zugang zum Hilfesystem."},
+    { 31000, "F1=#Hilfe", "ErÃ¶ffnet Zugang zum Hilfesystem."},
     { 31001, "Informationen Kurz#tasten [F9]",
              "Zeigt Hilfsbildschirm mit den wichtigsten Tasten." },
     { 31002, "Hilfe#index...      [Alt]+[F1]",
-             "Zeigt Auswahlliste fr die Hilfeuntersttzung." },
+             "Zeigt Auswahlliste fÃ¼r die HilfeunterstÃ¼tzung." },
     MNU_ENDE
   },
   { MNU_ENDE }
@@ -81,9 +81,9 @@ STATIC  ITEM itMenu[][20] =
 
 PITEM  pitMenu=itMenu[0];
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º MNU_Modul APPMENU        MENš-ZUORDNUNG                                º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ MNU_Modul APPMENU        MENÃœ-ZUORDNUNG                                â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Mn_Init(PPITEM ppitMenu)              /* MGLOBAL PITEM apAppMenu_m[10];*/
 {
@@ -114,7 +114,7 @@ apAppMenu[3]=NULL;
 Mn_SetSchatten(1, EIN);
 Mn_SetPalette(1, wCSInd_g);
 
-for(i=0; itMenu[i][0].wOption; i++)                  /* Hauptmen zusammen-  */
+for(i=0; itMenu[i][0].wOption; i++)                  /* HauptmenÃ¼ zusammen-  */
   Mn_Einrichten(1, itMenu[i] );                      /* stellen              */
 
 return;

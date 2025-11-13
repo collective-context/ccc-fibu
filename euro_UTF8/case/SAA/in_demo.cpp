@@ -11,12 +11,12 @@ VOID i_ThisIsDemo (VOID)
  Ut_SchreibArray (apstrMessage,
      " ",
      "   Sie haben die in einer Demo-     ",
-     "   version maximal mîgliche         ",
-     "   Dateigrî·e bei diesem Programm   ",
+     "   version maximal m√∂gliche         ",
+     "   Dateigr√∂√üe bei diesem Programm   ",
      "   erreicht !                       ",
      " ",
      "   Bitte setzen Sie sich mit        ",
-     "   Ihrem HÑndler in Verbindung !    ",
+     "   Ihrem H√§ndler in Verbindung !    ",
      " ", 
      _N);
 

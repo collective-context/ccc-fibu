@@ -22,16 +22,16 @@ SWORD  wCom=1;
 SWORD  wRetCode=0;
 CHAR cZeichen;
 
-printf("\n¯%d®\n", wRetCode);
+printf("\nÂ»%dÂ«\n", wRetCode);
 for(i=0; i<20; i++)
   {
   cZeichen=strTxt[i];
-  printf("¯%c®", cZeichen);
+  printf("Â»%cÂ«", cZeichen);
   wRetCode= bdos( AUX_OUTPUT, (SWORD ) cZeichen, 0);
   cZeichen=' ';
-  printf("¯%c®", cZeichen);
+  printf("Â»%cÂ«", cZeichen);
   cZeichen= (CHAR)(bdos( AUX_INPUT, 0, 0) & 0x00ff);
-  printf("¯%c®", cZeichen);
+  printf("Â»%cÂ«", cZeichen);
   }
 
 return (OK);
@@ -45,30 +45,30 @@ SWORD  wCom=1;
 SWORD  wRetCode=0;
 SWORD  wZeichen=0;
 
-printf("\n¯%d®\n", wRetCode);
+printf("\nÂ»%dÂ«\n", wRetCode);
 wRetCode = _bios_serialcom(_COM_STATUS, wCom, wZeichen);
-printf("\n¯%d®\n", wRetCode);
+printf("\nÂ»%dÂ«\n", wRetCode);
 
 wZeichen=(_COM_1200 | _COM_NOPARITY | _COM_STOP1 | _COM_CHR8);
 wRetCode= _bios_serialcom(_COM_INIT, wCom, wZeichen);
-printf("\n¯%d®\n", wRetCode);
+printf("\nÂ»%dÂ«\n", wRetCode);
 
 
 for(i=0; i<20; i++)
   {
   wZeichen=(SWORD )strTxt[i];
   wZeichen=65;
-  printf("¯%c®", wZeichen);
+  printf("Â»%cÂ«", wZeichen);
   wRetCode= _bios_serialcom(_COM_SEND, wCom, wZeichen);
   wZeichen=32;
-  printf("¯%c®", wZeichen);
+  printf("Â»%cÂ«", wZeichen);
   wRetCode= _bios_serialcom(_COM_RECEIVE, wCom, wZeichen);
-  printf("¯%c®", wZeichen);
-  printf("¯%d®", wRetCode);
+  printf("Â»%cÂ«", wZeichen);
+  printf("Â»%dÂ«", wRetCode);
   }
 
 wRetCode = _bios_serialcom(_COM_STATUS, wCom, wZeichen);
-printf("\n¯%d®\n", wRetCode);
+printf("\nÂ»%dÂ«\n", wRetCode);
 
 return (OK);
 }
@@ -79,9 +79,9 @@ CHAR strDevice[TB_MAX];
 FILE *pfDevice;
 
 strcpy(strDevice, "COM2");
-if ( !(pfDevice = fopen(strDevice, "w")) )    /* Protokoll - Datei ”ffnen   */
+if ( !(pfDevice = fopen(strDevice, "w")) )    /* Protokoll - Datei Ã¶ffnen   */
    {
-   printf ("\nProtokoll-Datei <%s> kann nicht ge”ffnet werden", strDevice);
+   printf ("\nProtokoll-Datei <%s> kann nicht geÃ¶ffnet werden", strDevice);
    exit (ERROR);
    }
 

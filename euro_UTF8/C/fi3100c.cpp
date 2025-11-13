@@ -1,17 +1,17 @@
 //4win(R) P.Mayer, www.4win.com/at  Last Update: 24-Feb-1997 / 11:53:22  -  Mon
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Programme-Name: FI3100c.C       Revision: 1.3         (C) 1989/1991    บ
-  บ  Overlay       : L”schen Fibu, ...                                      บ
-  บ  for Programme : Verarbeiten Buchungen                                  บ
-  บ                                                                         บ
-  บ  Rev.-Date     : 01.05.1991, Graz           Update: 01.05.1991, Graz    บ
-  บ  Author        : Peter Mayer                Author: Peter Mayer         บ
-  บ  Copyright (C) : 4win(R) Software, P.Mayer  A-8082 Kirchach 126         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         Deklarations-Dateien                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Programme-Name: FI3100c.C       Revision: 1.3         (C) 1989/1991    โ•‘
+  โ•‘  Overlay       : Lรถschen Fibu, ...                                      โ•‘
+  โ•‘  for Programme : Verarbeiten Buchungen                                  โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘  Rev.-Date     : 01.05.1991, Graz           Update: 01.05.1991, Graz    โ•‘
+  โ•‘  Author        : Peter Mayer                Author: Peter Mayer         โ•‘
+  โ•‘  Copyright (C) : 4win(R) Software, P.Mayer  A-8082 Kirchach 126         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         Deklarations-Dateien                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define NDEBUG 1
 #include <string.h>
 #include <app_tool.h>
@@ -28,11 +28,11 @@ STATIC VOID iDelSaldo(SWORD);
 STATIC VOID iDelAnlagen(SWORD);
 STATIC VOID iDelArtikel(SWORD);
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Del_Fibu()                                                            บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ L”schen der Fibusalden oder L”schen Jahressalden und EBK		    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Del_Fibu()                                                            โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Lรถschen der Fibusalden oder Lรถschen Jahressalden und EBK		    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_Del_Fibu(SWORD wLoop)
 {
@@ -54,90 +54,90 @@ return(wLoop);
 } /* end i_Del_Fibu() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ iDelSaldo() 							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ L”schen der Fibusalden oder L”schen Jahressalden und EBK		    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ iDelSaldo() 							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Lรถschen der Fibusalden oder Lรถschen Jahressalden und EBK		    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID iDelSaldo(SWORD wF)
 {
 SWORD wMo; DOUBLE dNull=0.0;
-DOUBLE dVorSaldo=ptD(chi(wF,"x๘VOR_SALDO"));
+DOUBLE dVorSaldo=ptD(chi(wF,"xยฐVOR_SALDO"));
 
 for(wMo=1; wMo<=12; wMo++)
   {
   dVorSaldo= ((wF==0 && *pt("KOSTENVERG")=='b') || wF>0)
-    ? dVorSaldo+=(ptD(chri(chi(wF,"x๘SOLL_0x"),wMo))-
-		ptD(chri(chi(wF,"x๘HABEN_0x"),wMo))) : 0.0;
+    ? dVorSaldo+=(ptD(chri(chi(wF,"xยฐSOLL_0x"),wMo))-
+		ptD(chri(chi(wF,"xยฐHABEN_0x"),wMo))) : 0.0;
 
-  if(Maske(0,"FI4320","LKF4320",_N))	       /* L”schen Fibu/Salden  */
+  if(Maske(0,"FI4320","LKF4320",_N))	       /* Lรถschen Fibu/Salden  */
      dVorSaldo=0.0;
 
-  memcpy(pt(chri(chi(wF,"x๘SOLL_0x"),wMo)), &dNull, 8);
-  memcpy(pt(chri(chi(wF,"x๘HABEN_0x"),wMo)), &dNull, 8);
+  memcpy(pt(chri(chi(wF,"xยฐSOLL_0x"),wMo)), &dNull, 8);
+  memcpy(pt(chri(chi(wF,"xยฐHABEN_0x"),wMo)), &dNull, 8);
 
   if(wF==0)
-    {memcpy(pt(chri(chi(wF,"x๘K_SOLL_0x"),wMo)), &dNull, 8);
-    memcpy(pt(chri(chi(wF,"x๘K_HABEN_0x"),wMo)), &dNull, 8);}
+    {memcpy(pt(chri(chi(wF,"xยฐK_SOLL_0x"),wMo)), &dNull, 8);
+    memcpy(pt(chri(chi(wF,"xยฐK_HABEN_0x"),wMo)), &dNull, 8);}
   }
 
-memcpy(pt(chi(wF,"x๘VOR_SALDO")), &dVorSaldo, 8);
-if(wF==0) memcpy(pt(chi(wF,"x๘K_VOR_SAL")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐVOR_SALDO")), &dVorSaldo, 8);
+if(wF==0) memcpy(pt(chi(wF,"xยฐK_VOR_SAL")), &dNull, 8);
 
 return;
 } /* end iDelSaldo() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ iDelAnlagen()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ iDelAnlagen()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID iDelAnlagen(SWORD wF)
 {
 DOUBLE dNull=0.0;
 
-memcpy(pt(chi(wF,"x๘ZEITW_ANF")), pt("ZEIT_WERT"), 8);
-memcpy(pt(chi(wF,"x๘ZUGANG")), &dNull, 8);
-memcpy(pt(chi(wF,"x๘ABGANG")), &dNull, 8);
-memcpy(pt(chi(wF,"x๘AFA")),    &dNull, 8);
+memcpy(pt(chi(wF,"xยฐZEITW_ANF")), pt("ZEIT_WERT"), 8);
+memcpy(pt(chi(wF,"xยฐZUGANG")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐABGANG")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐAFA")),    &dNull, 8);
 
 return;
 } /* end iDelAnlagen() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ iDelArtikel()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ iDelArtikel()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID iDelArtikel(SWORD wF)
 {
 DOUBLE dNull=0.0;
 
-memcpy(pt(chi(wF,"x๘EINKAUFMEN")), &dNull, 8);
-memcpy(pt(chi(wF,"x๘EKPRMIT")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐEINKAUFMEN")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐEKPRMIT")), &dNull, 8);
 
-memcpy(pt(chi(wF,"x๘UMSATZMEN")), &dNull, 8);
-memcpy(pt(chi(wF,"x๘UMSATZK")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐUMSATZMEN")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐUMSATZK")), &dNull, 8);
 
-memcpy(pt(chi(wF,"x๘LETZ_INVEN")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐLETZ_INVEN")), &dNull, 8);
 
-memcpy(pt(chi(wF,"x๘INVEN_ANF")), &dNull, 8);
-memcpy(pt(chi(wF,"x๘IN_ANF_EKP")), &dNull, 8);
-memcpy(pt(chi(wF,"x๘INVEN_AKT")), &dNull, 8);
-memcpy(pt(chi(wF,"x๘IN_AKT_EKP")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐINVEN_ANF")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐIN_ANF_EKP")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐINVEN_AKT")), &dNull, 8);
+memcpy(pt(chi(wF,"xยฐIN_AKT_EKP")), &dNull, 8);
 
 return;
 } /* end iDelArtikel() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Upd_EBK() 							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ EBK aus Vorjahressalden beliebig oft bertragen.			    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Upd_EBK() 							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ EBK aus Vorjahressalden beliebig oft รผbertragen.			    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_Upd_EBK(SWORD wLoop)
 {
@@ -159,11 +159,11 @@ if(Maske(0,"FI4342","LKF4342",_N))
       if(wRet!=0 || (wFD==0 && *pt("KOSTENVERG")!='b') )
 	dVorSaldo=0.0;
       else
-	{dVorSaldo=ptD(chi(wFV,"x๘VOR_SALDO"));
+	{dVorSaldo=ptD(chi(wFV,"xยฐVOR_SALDO"));
 	for(wMo=1; wMo<=12; wMo++)
-	  dVorSaldo+=(ptD(chri(chi(wFV,"x๘SOLL_0x"),wMo))-
-		      ptD(chri(chi(wFV,"x๘HABEN_0x"),wMo)));}
-      memcpy(pt(chi(wFD,"x๘VOR_SALDO")), &dVorSaldo, 8);}
+	  dVorSaldo+=(ptD(chri(chi(wFV,"xยฐSOLL_0x"),wMo))-
+		      ptD(chri(chi(wFV,"xยฐHABEN_0x"),wMo)));}
+      memcpy(pt(chi(wFD,"xยฐVOR_SALDO")), &dVorSaldo, 8);}
 
     awEOF[wFD]=awEOF_g[wFD];
     }
@@ -175,11 +175,11 @@ return(wLoop);
 } /* end i_Upd_EBK() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Write_AFA()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Erstellen der Buchungsstze in FI2100.BTR fr die AFA		    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Write_AFA()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Erstellen der Buchungssรคtze in FI2100.BTR fรผr die AFA		    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_Write_AFA(SWORD wLoop)
 {
@@ -241,11 +241,11 @@ return(wLoop);
 } /* end i_Write_AFA() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_VerkaufAnlage()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Erstellen der Buchungsstze in FI2100.BTR fr die AFA		    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_VerkaufAnlage()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Erstellen der Buchungssรคtze in FI2100.BTR fรผr die AFA		    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_VerkaufAnlage()
 {
@@ -293,11 +293,11 @@ return;
 } /* end i_VerkaufAnlage() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ DeleteFile()                                                            บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ L”schen der Buchungserfaแungsdateien und der Journal/Konten-Datei.      บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ DeleteFile()                                                            โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Lรถschen der Buchungserfaรungsdateien und der Journal/Konten-Datei.      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD DeleteFile()
 {
@@ -309,7 +309,7 @@ PSSTR apstrF[10], pstr;
 PSSTR apstrZ[20];
 PWKB pWkb = Wi_Einrichten (0,0,80,25);               /* WindowKontollBlock   */
 Wi_Aktivieren(pWkb);                                 /* Window zeigen        */
-Vi_Spza(32, VH(GELB,BLAU));                          /* Bildschirm l”schen   */
+Vi_Spza(32, VH(GELB,BLAU));                          /* Bildschirm lรถschen   */
 if(wMausda_g)                                        /* wenn Maus im System, */
   wStatus=Ms_CursorOff();                            /* Maus ausschalten.    */
 
@@ -323,19 +323,19 @@ strcpy(pstr, "\\FI2500A.BTR"); apstrF[3]=strdup(strDirectory);
 strcpy(pstr, "\\FI3100.BTR");  apstrF[4]=strdup(strDirectory);
 apstrF[5]=NULL;
 
-apstrZ[0] =strdup("echo ÿ");
-apstrZ[1] =strdup(stradd(str,"echo ÿฏ L”schen: ", apstrF[0], _N));
+apstrZ[0] =strdup("echo ย ");
+apstrZ[1] =strdup(stradd(str,"echo ย ยป Lรถschen: ", apstrF[0], _N));
 apstrZ[2] =strdup(stradd(str,"del ", apstrF[0], _N));
-apstrZ[3] =strdup(stradd(str,"echo ÿฏ L”schen: ", apstrF[1], _N));
+apstrZ[3] =strdup(stradd(str,"echo ย ยป Lรถschen: ", apstrF[1], _N));
 apstrZ[4] =strdup(stradd(str,"del ", apstrF[1], _N));
-apstrZ[5] =strdup(stradd(str,"echo ÿฏ L”schen: ", apstrF[2], _N));
+apstrZ[5] =strdup(stradd(str,"echo ย ยป Lรถschen: ", apstrF[2], _N));
 apstrZ[6] =strdup(stradd(str,"del ", apstrF[2], _N));
-apstrZ[7] =strdup(stradd(str,"echo ÿฏ L”schen: ", apstrF[3], _N));
+apstrZ[7] =strdup(stradd(str,"echo ย ยป Lรถschen: ", apstrF[3], _N));
 apstrZ[8] =strdup(stradd(str,"del ", apstrF[3], _N));
-apstrZ[9] =strdup(stradd(str,"echo ÿฏ L”schen: ", apstrF[4], _N));
+apstrZ[9] =strdup(stradd(str,"echo ย ยป Lรถschen: ", apstrF[4], _N));
 apstrZ[10] =strdup(stradd(str,"del ", apstrF[4], _N));
-apstrZ[11] =strdup("echo ÿ");
-apstrZ[12]=strdup("echo ÿฏฏฏ Weiter mit beliebiger Taste!");
+apstrZ[11] =strdup("echo ย ");
+apstrZ[12]=strdup("echo ย ยปยปยป Weiter mit beliebiger Taste!");
 apstrZ[13]=NULL;
 
 for(i=0; apstrZ[i]; i++)
@@ -358,11 +358,11 @@ return(OK);
 } /* end DeleteFile() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ NewYear()								    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Anlegen eines neuen Jahres. 					    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ NewYear()								    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Anlegen eines neuen Jahres. 					    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD NewYear()
 {
@@ -373,7 +373,7 @@ CHAR str[TB_MAX], strS[TB_MAX], strD[TB_MAX];  /* Source/Destination */
 PSSTR apstrF[10], apstrZ[20];
 PWKB pWkb = Wi_Einrichten (0,0,80,25);		     /* WindowKontollBlock   */
 Wi_Aktivieren(pWkb);                                 /* Window zeigen        */
-Vi_Spza(32, VH(GELB,BLAU));                          /* Bildschirm l”schen   */
+Vi_Spza(32, VH(GELB,BLAU));                          /* Bildschirm lรถschen   */
 if(wMausda_g)                                        /* wenn Maus im System, */
   wStatus=Ms_CursorOff();                            /* Maus ausschalten.    */
 
@@ -387,21 +387,21 @@ apstrF[3]=strdup("\\ST1300.BTR");
 apstrF[4]=strdup("\\FI1600.BTR");
 apstrF[5]=NULL;
 
-apstrZ[0] =strdup("echo ÿ");
+apstrZ[0] =strdup("echo ย ");
 apstrZ[1] =strdup(stradd(str,"echo Verzeichnis ", strD, " anlegen", _N));
 apstrZ[2] =strdup(stradd(str,"md ", strD, _N));
-apstrZ[3] =strdup(stradd(str,"echo ÿฏ Kopiere: ", apstrF[0], _N));
+apstrZ[3] =strdup(stradd(str,"echo ย ยป Kopiere: ", apstrF[0], _N));
 apstrZ[4] =strdup(stradd(str,"copy", strS, apstrF[0] ," ", strD, _N));
-apstrZ[5] =strdup(stradd(str,"echo ÿฏ Kopiere: ", apstrF[1], _N));
+apstrZ[5] =strdup(stradd(str,"echo ย ยป Kopiere: ", apstrF[1], _N));
 apstrZ[6] =strdup(stradd(str,"copy", strS, apstrF[1] ," ", strD, _N));
-apstrZ[7] =strdup(stradd(str,"echo ÿฏ Kopiere: ", apstrF[2], _N));
+apstrZ[7] =strdup(stradd(str,"echo ย ยป Kopiere: ", apstrF[2], _N));
 apstrZ[8] =strdup(stradd(str,"copy", strS, apstrF[2] ," ", strD, _N));
-apstrZ[9] =strdup(stradd(str,"echo ÿฏ Kopiere: ", apstrF[3], _N));
+apstrZ[9] =strdup(stradd(str,"echo ย ยป Kopiere: ", apstrF[3], _N));
 apstrZ[10] =strdup(stradd(str,"copy", strS, apstrF[3] ," ", strD, _N));
-apstrZ[11] =strdup(stradd(str,"echo ÿฏ Kopiere: ", apstrF[4], _N));
+apstrZ[11] =strdup(stradd(str,"echo ย ยป Kopiere: ", apstrF[4], _N));
 apstrZ[12] =strdup(stradd(str,"copy", strS, apstrF[4] ," ", strD, _N));
-apstrZ[13] =strdup("echo ÿ");
-apstrZ[14]=strdup("echo ÿฏฏฏ Weiter mit beliebiger Taste!");
+apstrZ[13] =strdup("echo ย ");
+apstrZ[14]=strdup("echo ย ยปยปยป Weiter mit beliebiger Taste!");
 apstrZ[15]=NULL;
 
 for(i=0; apstrZ[i]; i++)
@@ -422,7 +422,7 @@ Wi_Entfernen (pWkb);                                 /* WindowKontollBlock   */
 
 pD->wJahr+=1; D_set_date(&d_D);
 M_BasisMaske("[F1]=Hilfe  [Alt]+[F1]=Index  "
-  "[F2]=Suchen  [F10]=Men  [ESC]=Ende");
+  "[F2]=Suchen  [F10]=Menรผ  [ESC]=Ende");
 
 return(OK);
 } /* end NewYear() */
@@ -436,7 +436,7 @@ apstrF[3]=strdup(stradd(str, strDat_g, "D", strMan_g, "\\FI3100.BTR", _N));
 
 
       dVorSaldo = (wF>0)
-	? dVorSaldo+=(ptD(chri(chi(wF,"x๘SOLL_0x"),wMo))-
-		      ptD(chri(chi(wF,"x๘HABEN_0x"),wMo))) : 0.0;
+	? dVorSaldo+=(ptD(chri(chi(wF,"xยฐSOLL_0x"),wMo))-
+		      ptD(chri(chi(wF,"xยฐHABEN_0x"),wMo))) : 0.0;
 
 ---------------------------------------------------------------------------- */

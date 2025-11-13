@@ -1,106 +1,106 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Mn_Aktivieren()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Mn_Aktivieren()							       º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Mn_Aktivieren()							       â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_mnu.h>
 SWORD Mn_Aktivieren(wMenuNr);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-SWORD  wMenuNr	  Nummer der gewnschtes Mens
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+SWORD  wMenuNr	  Nummer der gewÃ¼nschtes MenÃ¼s
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Mit dieser Funktion wird eines der von Ihnen eingerichteten Mens aktiviert.
-Die Menzeile des Mens wird in Zeile 0 ausgegeben. Die Bielschirmzeile wird
-vorher gesichert, um den Hintergrund wiederherstellen zu k”nnen.
-Rufen Sie nach der Aktivierung dei Funktion Mn_Eingabe() auf, um den Menmanager
-zu starten und damit dem Anwender die M”glichkeit zur Eingabe zu geben.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Mit dieser Funktion wird eines der von Ihnen eingerichteten MenÃ¼s aktiviert.
+Die MenÃ¼zeile des MenÃ¼s wird in Zeile 0 ausgegeben. Die Bielschirmzeile wird
+vorher gesichert, um den Hintergrund wiederherstellen zu kÃ¶nnen.
+Rufen Sie nach der Aktivierung dei Funktion Mn_Eingabe() auf, um den MenÃ¼manager
+zu starten und damit dem Anwender die MÃ¶glichkeit zur Eingabe zu geben.
 
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD	   Fehlerinformation OK/ERROR
           im Fehlerfall wird die globale Variable
           wFehler_g mit der Fehlernummer geladen
           - MNU_LIMIT
-          - MNU_NICHT_REG   kein Menfenster einger.
+          - MNU_NICHT_REG   kein MenÃ¼fenster einger.
 
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  wVioMode_g (R(W)
 
 
 siehe auch:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Mn_Deaktivieren(), Mn_Entfernen(), Mn_Einrichten()
 
 Beispiel:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Die Wirkungswiese der Funktion k”nnen Sie dem Demoprogramm ¯dmomenu.c® in
-Kapitel 3.3 entnehmen. ¯MenuAktivieren()® wird dort in der ¯mani()® - Funktion
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Die Wirkungswiese der Funktion kÃ¶nnen Sie dem Demoprogramm Â»dmomenu.cÂ« in
+Kapitel 3.3 entnehmen. Â»MenuAktivieren()Â« wird dort in der Â»mani()Â« - Funktion
 aufgerufen.
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <stdio.h>
 #include <eur_tool.h>
 #include <string.h>
 #include <dos.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT SWORD	   wFehler_g;	       /* Nummer des letzten Fehlers	       */
 IMPORT SWORD	   wVioMode_g;	       /* aktueller Video-Modus 	       */
 IMPORT SWORD	   wMausda_g;	       /* Maus im System aktiviert	       */
 IMPORT COLORSET   aCS_g[5];	       /* Array der Farbpaletten	       */
 
 IMPORT MENU	  aMenus_g[MAXMENUES]; // Array der MENU-Strukturen
-IMPORT SWORD	   wAktMnu_g;	       /* aktueller Index auf Men-Array       */
+IMPORT SWORD	   wAktMnu_g;	       /* aktueller Index auf MenÃ¼-Array       */
 IMPORT FPWORD     fpwAlteMZ_g;        /* Puffer mit altem Inhalt Zeile 0      */
 IMPORT FPWORD     fpwAlteHZ_g;        /* Puffer alter Inhalt Hilfszeile       */
 IMPORT MENUSTATUS MS_g;               /* Zustand des Menumanagers             */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Mn_Aktivieren(SWORD wMenuNr)
 {
     SWORD wMausStatus=0;
 
     if (wMenuNr >= MAXMENUES)                       /* maximale Anzahl der  */
-    {                                               /* Mens berprfen     */
+    {                                               /* MenÃ¼s Ã¼berprÃ¼fen     */
         wFehler_g = MNU_LIMIT;                      /* Fehlernummer laden   */
-        return(ERROR);                              /* und zurck           */
+        return(ERROR);                              /* und zurÃ¼ck           */
     }
 
 
-    if (aMenus_g[wMenuNr].pMkbStart == NULL)        /* kein Menfenster     */
+    if (aMenus_g[wMenuNr].pMkbStart == NULL)        /* kein MenÃ¼fenster     */
     {                                               /* eingerichtet         */
         wFehler_g = MNU_NICHT_REG;                  /* Fehlernummer laden   */
-        return(ERROR);                              /* und zurck           */
+        return(ERROR);                              /* und zurÃ¼ck           */
     }
 
 
-    if (wAktMnu_g != wMenuNr)                       /* neues Men aktivier. */
+    if (wAktMnu_g != wMenuNr)                       /* neues MenÃ¼ aktivier. */
     {
         if (wAktMnu_g != NICHT_INIT)                /* wenn and. Mnu aktiv  */
 	    Mn_Deaktivieren();			    /* dies zuerst deaktiv. */
@@ -110,7 +110,7 @@ SWORD Mn_Aktivieren(SWORD wMenuNr)
         MS_g.wFenster = NEIN;
         MS_g.wBalken = NEIN;
 
-	if(fpwAlteMZ_g == 0L)			   /* Puffer Menzeile	   */
+	if(fpwAlteMZ_g == 0L)			   /* Puffer MenÃ¼zeile	   */
 	  if( (fpwAlteMZ_g=(FPWORD)Ut_Fmalloc(MAXSPALTEN*sizeof(SWORD))) == 0L )
 	    i_Fehler(MNU_KEIN_SPEICHER,
 	      "Mn_Aktivieren()", __FILE__, __LINE__);
@@ -123,15 +123,15 @@ SWORD Mn_Aktivieren(SWORD wMenuNr)
 
         wAktMnu_g = wMenuNr;                        /* glo. Var. laden      */
 
-	i_Mn_GenMenuZeile(wMenuNr);		    /* Menzeile generieren */
+	i_Mn_GenMenuZeile(wMenuNr);		    /* MenÃ¼zeile generieren */
 
         if (wMausda_g)
 	    wMausStatus = Ms_CursorOff();	    /* Mauszeiger aus	    */
 
-        if (fpwAlteMZ_g != 0L)                      /* Menzeile sichern    */
+        if (fpwAlteMZ_g != 0L)                      /* MenÃ¼zeile sichern    */
 	    Vi_Sw2b(MENUSPALTE,MENUZEILE,MENULAENGE,1,fpwAlteMZ_g);
 
-	Vi_Sb2w(MENUSPALTE,MENUZEILE,MENULAENGE,1,   /* Menzeile anzeigen   */
+	Vi_Sb2w(MENUSPALTE,MENUZEILE,MENULAENGE,1,   /* MenÃ¼zeile anzeigen   */
                 aMenus_g[wAktMnu_g].fpwMzBuffer);
 
         if (wMausda_g && wMausStatus == MSM_WAR_AN) /* wenn da und an war   */
@@ -142,38 +142,38 @@ SWORD Mn_Aktivieren(SWORD wMenuNr)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Mn_GenMenuZeile	      Datum: 25.10.88	 û º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD	   wMenuNr Nummer des Mens, fr das die    º
-  º                                       Menzeile generiert werden       º
-  º                                       soll                             º
-  º                                                                        º
-  º  Beschreibung:     In dieser Funktion wird ein 1:1-Puffer der Men-    º
-  º                    zeile generiert und im Speicher abgelegt.           º
-  º                    Gleichzeitig wird der Tastaturcode, mit dem das     º
-  º                    Men aktiviert werden kann, in den zum Men ge-     º
-  º                    h”renden Menkontrollblock eingetragen.             º
-  º                                                                        º
-  º  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  aCS_g[]  (R)                                        º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Mn_GenMenuZeile	      Datum: 25.10.88	 Â¹ â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD	   wMenuNr Nummer des MenÃ¼s, fÃ¼r das die    â•‘
+  â•‘                                       MenÃ¼zeile generiert werden       â•‘
+  â•‘                                       soll                             â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     In dieser Funktion wird ein 1:1-Puffer der MenÃ¼-    â•‘
+  â•‘                    zeile generiert und im Speicher abgelegt.           â•‘
+  â•‘                    Gleichzeitig wird der Tastaturcode, mit dem das     â•‘
+  â•‘                    MenÃ¼ aktiviert werden kann, in den zum MenÃ¼ ge-     â•‘
+  â•‘                    hÃ¶renden MenÃ¼kontrollblock eingetragen.             â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Diese Funktion hat keinen RÃ¼ckgabewert.             â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  aCS_g[]  (R)                                        â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID i_Mn_GenMenuZeile(SWORD wMenuNr)
 {
     SREGISTER wSpace,				     /* Leerzeichen mit Attr */
              wMzAttn,                               /* normales Attribut    */
-             wMzAtth;                               /* Attribut fr Hotkeys */
+             wMzAtth;                               /* Attribut fÃ¼r Hotkeys */
 
     PMKB     pMkbLokal;                             /* lokaler Zeiger auf   */
                                                     /* Liste der MKB's      */
 
     FPWORD   fpwTmpMzBuf;                           /* lokaler Zeiger auf   */
-                                                    /* Menzeile            */
+                                                    /* MenÃ¼zeile            */
 
     SWORD     wPalInd;
     SWORD     wMaxlaenge;			     /* geschriebene Zeichen */
@@ -195,7 +195,7 @@ VOID i_Mn_GenMenuZeile(SWORD wMenuNr)
     fpwTmpMzBuf = aMenus_g[wMenuNr].fpwMzBuffer;    /* Pufferadresse holen  */
 
     wAktSpalte  = MENUSPALTE;                       /* akt. Schreibspalte   */
-    wMaxlaenge  = MENULAENGE;                       /* maximale Zeilenl„nge */
+    wMaxlaenge  = MENULAENGE;                       /* maximale ZeilenlÃ¤nge */
 
     wPalInd   = aMenus_g[wMenuNr].wStatus.wPalette; /* Palettenindex holen  */
     wMzAttn   = aCS_g[wPalInd].wCs_mz    <<8;       /* normales Attribut    */
@@ -211,7 +211,7 @@ VOID i_Mn_GenMenuZeile(SWORD wMenuNr)
 
 
 
-    do                                              /* Mentitel in Puffer  */
+    do                                              /* MenÃ¼titel in Puffer  */
     {
 	pstrTitel = (PUSTR)pMkbLokal->item->pstrText;
 
@@ -227,7 +227,7 @@ VOID i_Mn_GenMenuZeile(SWORD wMenuNr)
                 *fpwTmpMzBuf++ = wSpace;        /* Leerzeichen          */
             }
         }
-        if ((wAktSpalte+pMkbLokal->wBreite) < MENULAENGE) /* Startspalte des Men-*/
+        if ((wAktSpalte+pMkbLokal->wBreite) < MENULAENGE) /* Startspalte des MenÃ¼-*/
             pMkbLokal->wSpalte = wAktSpalte-2;      /* fensters berechnen   */
         else
             pMkbLokal->wSpalte = MENULAENGE-2-pMkbLokal->wBreite;
@@ -236,39 +236,39 @@ VOID i_Mn_GenMenuZeile(SWORD wMenuNr)
         if (pMkbLokal->item->wOption == RECHTSBUENDIG)
             pMkbLokal->wTitelSpalte--;
 
-        while (*pstrTitel)                          /* noch im Mentext ?   */
+        while (*pstrTitel)                          /* noch im MenÃ¼text ?   */
         {
-            if (*pstrTitel == HOTKEY)               /* Zeichen fr Hotkey ? */
+            if (*pstrTitel == HOTKEY)               /* Zeichen fÃ¼r Hotkey ? */
             {
-                pstrTitel++;                        /* Zeichen berspringen */
-                *fpwTmpMzBuf++ =wMzAtth|*pstrTitel; /* n„chst. Z. in Puffer */
+                pstrTitel++;                        /* Zeichen Ã¼berspringen */
+                *fpwTmpMzBuf++ =wMzAtth|*pstrTitel; /* nÃ¤chst. Z. in Puffer */
                 c = *pstrTitel;
-		c=(UCHAR)Ut_Gross((SWORD)c);	     /* Hotkey zur Menaktiv.*/
+		c=(UCHAR)Ut_Gross((SWORD)c);	     /* Hotkey zur MenÃ¼aktiv.*/
 		pMkbLokal->wMzHotkey= Ut_AltCode(c);/* in Alt-Code umwand.  */
                                                     /* und ablegen          */
             }
             else                                    /* sonst Buchstaben     */
                 *fpwTmpMzBuf++ = wMzAttn | *pstrTitel;   /* in Buffer       */
-            wMaxlaenge--;                           /* L„nge mithalten      */
+            wMaxlaenge--;                           /* LÃ¤nge mithalten      */
             wAktSpalte++;                           /* akt. Spalte mithalten*/
-            pstrTitel++;                            /* n„chstes Zeichen     */
+            pstrTitel++;                            /* nÃ¤chstes Zeichen     */
         } /* end of while */
 
 
-                *fpwTmpMzBuf++ = wSpace;                    /* Men-Titel in den    */
-                *fpwTmpMzBuf++ = wSpace;                    /* Men-Titel in den    */
+                *fpwTmpMzBuf++ = wSpace;                    /* MenÃ¼-Titel in den    */
+                *fpwTmpMzBuf++ = wSpace;                    /* MenÃ¼-Titel in den    */
                 wMaxlaenge -=2;                               /* Buffer schreiben     */
                 wAktSpalte +=2;
 
 
-        pMkbLokal = pMkbLokal->pNaechster;          /* auf n„chsten MKB     */
+        pMkbLokal = pMkbLokal->pNaechster;          /* auf nÃ¤chsten MKB     */
         if (pMkbLokal->wMkbsign != MKBSIGNATUR)     /* Test ob Zeiger nach  */
              i_Fehler(I_FEHLER_SIGN,                /*   MKB zeigt          */
 		       "i_Mn_GenMenuZeile()",
                        __FILE__, __LINE__);
     } while (pMkbLokal != aMenus_g[wMenuNr].pMkbStart);
 
-    while ((wMaxlaenge--) > 0)                      /* fr Rest der Zeile   */
+    while ((wMaxlaenge--) > 0)                      /* fÃ¼r Rest der Zeile   */
         *fpwTmpMzBuf++ = wSpace;                    /* Leerzeichen          */
 
     return;

@@ -1,17 +1,17 @@
 //4win(R) P.Mayer, www.4win.com/at  Last Update: 24-Feb-1997 / 12:35:46  -  Mon
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Programme-Name: FI1500a.C       Revision: 1.3         (C) 1989/1991    บ
-  บ  Overlay       : Erfassen Buchungen                                     บ
-  บ  for Programme : Fibu - Buchungserfassung                               บ
-  บ                                                                         บ
-  บ  Rev.-Date     : 01.05.1991, Graz           Update: 01.05.1991, Graz    บ
-  บ  Author        : Peter Mayer                Author: Peter Mayer         บ
-  บ  Copyright (C) : 4win(R) Software, P.Mayer  A-8082 Kirchach 126         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         Deklarations-Dateien                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Programme-Name: FI1500a.C       Revision: 1.3         (C) 1989/1991    โ•‘
+  โ•‘  Overlay       : Erfassen Buchungen                                     โ•‘
+  โ•‘  for Programme : Fibu - Buchungserfassung                               โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘  Rev.-Date     : 01.05.1991, Graz           Update: 01.05.1991, Graz    โ•‘
+  โ•‘  Author        : Peter Mayer                Author: Peter Mayer         โ•‘
+  โ•‘  Copyright (C) : 4win(R) Software, P.Mayer  A-8082 Kirchach 126         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         Deklarations-Dateien                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define NDEBUG 1
 #include <string.h>
 #include <app_tool.h>
@@ -53,27 +53,27 @@ IMPORT	DOUBLE dBetragBr_g, dMwSt_g, dSaldoSol_g, dSaldoHab_g;
 IMPORT	BOOL boDeleteSelect_g;
 STATIC	BOOL boDelete_m=NEIN;
 GLOBAL	SWORD wKeybCount_g;
-IMPORT	BOOL boBlockDelete_g;			     /* L”sch i.Block erlaub.*/
+IMPORT	BOOL boBlockDelete_g;			     /* Lรถsch i.Block erlaub.*/
 
 
 //GLOBAL  SWORD pTOff(PSTR, SWORD, SWORD);
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ      Globale Daten, die aus der Toolbox importiert werden               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-  บ      Konstanten &  modul-globale Variablen  &  Array - Deklaration      บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-  บ      Funktions-Prototypen                                               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘      Globale Daten, die aus der Toolbox importiert werden               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+  โ•‘      Konstanten &  modul-globale Variablen  &  Array - Deklaration      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+  โ•‘      Funktions-Prototypen                                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fi210_Application_Set()                                                 บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Fhrt applikationsabhngige Vorbelegungen fr bestimmte Felder          บ
-  บ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           บ
-  บ ฏwMskฎ und ฏwFldฎ sind die Nummern des Feldes und der Maske, die als    บ
-  บ nchstes vom Interpreter angesprungen werden wrde.                     บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fi210_Application_Set()                                                 โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Fรผhrt applikationsabhรคngige Vorbelegungen fรผr bestimmte Felder          โ•‘
+  โ•‘ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           โ•‘
+  โ•‘ ยปwMskยซ und ยปwFldยซ sind die Nummern des Feldes und der Maske, die als    โ•‘
+  โ•‘ nรคchstes vom Interpreter angesprungen werden wรผrde.                     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi210_Application_Set(SWORD wMsk, SWORD wFld)
 {
@@ -107,14 +107,14 @@ return(OK);
     (SWORD)_msize(apstrRecord_g[wF])  );
   boTestModus_g=boTest;} */
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fi211_Application_Set()						    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Fhrt applikationsabhngige Vorbelegungen fr bestimmte Felder          บ
-  บ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           บ
-  บ ฏwMskฎ und ฏwFldฎ sind die Nummern des Feldes und der Maske, die als    บ
-  บ nchstes vom Interpreter angesprungen werden wrde.                     บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fi211_Application_Set()						    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Fรผhrt applikationsabhรคngige Vorbelegungen fรผr bestimmte Felder          โ•‘
+  โ•‘ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           โ•‘
+  โ•‘ ยปwMskยซ und ยปwFldยซ sind die Nummern des Feldes und der Maske, die als    โ•‘
+  โ•‘ nรคchstes vom Interpreter angesprungen werden wรผrde.                     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi211_Application_Set(SWORD wMsk, SWORD wFld)
 {
@@ -125,11 +125,11 @@ return(OK);
 } /* end Fi210_Application_Set() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fi211_All_Fields_Handler()						    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ									    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fi211_All_Fields_Handler()						    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘									    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID Fi211_All_Fields_Handler(VOID)
 {
@@ -144,33 +144,33 @@ BOOL boRechnung= ( (*pt(":SOLL_ART")=='s' && *pt(":HABEN_ART")=='l') ||
 
 for(i=0; i<9; i++) adSkoBet[i]=adSkontoBet[i]=0.0;
 
-if(*(pt(chi(wF,"x๘MWST_SATZ"))+wBlk) == '\0')
-  strcpy(pt(chi(wF,"x๘MWST_SATZ"))+wBlk, pt(":UST_SATZ"));
+if(*(pt(chi(wF,"xยฐMWST_SATZ"))+wBlk) == '\0')
+  strcpy(pt(chi(wF,"xยฐMWST_SATZ"))+wBlk, pt(":UST_SATZ"));
 
-if(*(pt(chi(wF,"x๘ZAHLUNGS_K"))+wBlk) == '\0')
-  strcpy(pt(chi(wF,"x๘ZAHLUNGS_K"))+wBlk, pt(":ZAHL_KO"));
+if(*(pt(chi(wF,"xยฐZAHLUNGS_K"))+wBlk) == '\0')
+  strcpy(pt(chi(wF,"xยฐZAHLUNGS_K"))+wBlk, pt(":ZAHL_KO"));
 
-memcpy(&dRechBetr,pt(chi(wF,"x๘RECH_BETR"))+wBlk,8);
-memcpy(&dZahlBetr,pt(chi(wF,"x๘ZAHL_BETR"))+wBlk,8);
-memcpy(&dSkontoBet,pt(chi(wF,"x๘SKONTO_BET"))+wBlk,8);
+memcpy(&dRechBetr,pt(chi(wF,"xยฐRECH_BETR"))+wBlk,8);
+memcpy(&dZahlBetr,pt(chi(wF,"xยฐZAHL_BETR"))+wBlk,8);
+memcpy(&dSkontoBet,pt(chi(wF,"xยฐSKONTO_BET"))+wBlk,8);
 dZahlRest=rnd(dRechBetr-(dZahlBetr+dSkontoBet));
 
 if(wKeyCode_g==T_F8 && !boRechnung && dOpZuOrd_g!=0.0)
   {
   if(dOpZuOrd_g < 0.0 && dZahlBetr!=0.0)
     {dZahlBetr+= dOpZuOrd_g;
-    memcpy(pt(chi(wF,"x๘ZAHL_BETR"))+wBlk, &dZahlBetr, 8);
+    memcpy(pt(chi(wF,"xยฐZAHL_BETR"))+wBlk, &dZahlBetr, 8);
     dZahlRest=rnd(dRechBetr-(dZahlBetr+dSkontoBet));}
 
   if(dZahlBetr==0.0)
-    memcpy(pt(chi(wF,"x๘ZAHL_BETR"))+wBlk, &dZahlRest, 8);
+    memcpy(pt(chi(wF,"xยฐZAHL_BETR"))+wBlk, &dZahlRest, 8);
   else
-    memcpy(pt(chi(wF,"x๘SKONTO_BET"))+wBlk, &dZahlRest, 8);
+    memcpy(pt(chi(wF,"xยฐSKONTO_BET"))+wBlk, &dZahlRest, 8);
   }
 
 
-memcpy(&dZahlBetr,pt(chi(wF,"x๘ZAHL_BETR"))+wBlk,8);
-memcpy(&dSkontoBet,pt(chi(wF,"x๘SKONTO_BET"))+wBlk,8);
+memcpy(&dZahlBetr,pt(chi(wF,"xยฐZAHL_BETR"))+wBlk,8);
+memcpy(&dSkontoBet,pt(chi(wF,"xยฐSKONTO_BET"))+wBlk,8);
 DOUBLE dRest=rnd(dRechBetr)-(rnd(dZahlBetr)+rnd(dSkontoBet));
 if(rnd(dSkontoBet) && rnd(dRest)!=0.0)
   {PSSTR apstrMessage[25];
@@ -183,34 +183,34 @@ if(rnd(dSkontoBet) && rnd(dRest)!=0.0)
   Ut_SchreibArray(apstrMessage,
     "Skontobuchung nur erlaubt, wenn sich der Rechnungsbetrag,",
     "der Zahlungsbetrag und der Skontobetrag ausgleicht!",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
-    "Drcken Sie zum Ausgleich einfach die [F8]-Taste!", _N);
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
+    "Drรผcken Sie zum Ausgleich einfach die [F8]-Taste!", _N);
   Dl_Info(apstrMessage, DLG_INFO);
   Ut_LoeschArray(apstrMessage);
-  memcpy(pt(chi(wF,"x๘SKONTO_BET"))+wBlk, &dNull, 8);}
+  memcpy(pt(chi(wF,"xยฐSKONTO_BET"))+wBlk, &dNull, 8);}
 
 for(SWORD wBl=0; pTB->wOffset+wBl < awRecLength_g[wF]; //
   wBl+=awBlockLength_g[_MSK])			       //
   {						       //
   if(iBlockEmpty(wF, wBl) && dOpRest)
-    {strcpy(pt(chi(wF,"x๘OP_NUMMER"))+wBl, pt(":BELEG_NR") );
-    strcpy(pt(chi(wF,"x๘BELEG_NR"))+wBl, pt(":BELEG_NR") );
-    memcpy(pt(chi(wF,"x๘BELEG_DAT"))+wBl,pt(":BELEG_DAT"), 4);
+    {strcpy(pt(chi(wF,"xยฐOP_NUMMER"))+wBl, pt(":BELEG_NR") );
+    strcpy(pt(chi(wF,"xยฐBELEG_NR"))+wBl, pt(":BELEG_NR") );
+    memcpy(pt(chi(wF,"xยฐBELEG_DAT"))+wBl,pt(":BELEG_DAT"), 4);
 
-    if(boRechnung) memcpy(pt(chi(wF,"x๘RECH_BETR"))+wBl, &dOpRest, 8);
-    else memcpy(pt(chi(wF,"x๘ZAHL_BETR"))+wBl, &dOpRest, 8);
+    if(boRechnung) memcpy(pt(chi(wF,"xยฐRECH_BETR"))+wBl, &dOpRest, 8);
+    else memcpy(pt(chi(wF,"xยฐZAHL_BETR"))+wBl, &dOpRest, 8);
     dOpRest=0.0;  wKeyCode_g=AUS;}
 
 
-  memcpy(&dRechBetr,pt(chi(wF,"x๘RECH_BETR"))+wBl,8);
-  memcpy(&dZahlBetr,pt(chi(wF,"x๘ZAHL_BETR"))+wBl,8);
-  memcpy(&dSkontoBet, pt(chi(wF,"x๘SKONTO_BET"))+wBl, 8);
+  memcpy(&dRechBetr,pt(chi(wF,"xยฐRECH_BETR"))+wBl,8);
+  memcpy(&dZahlBetr,pt(chi(wF,"xยฐZAHL_BETR"))+wBl,8);
+  memcpy(&dSkontoBet, pt(chi(wF,"xยฐSKONTO_BET"))+wBl, 8);
 
   dOpZugeord+=rnd(dRechBetr-dZahlBetr);
   dOpSaldo+=rnd(dRechBetr-dZahlBetr-dSkontoBet);
 
-  {SWORD wMW=atoi(pt(chi(wF,"x๘MWST_SATZ"))+wBl);
-  if(wMW<0 || wMW>8) Dl_Abbruch(str("MwSt ฏ%dฎ falsch!",wMW), _L, _F, "\0");
+  {SWORD wMW=atoi(pt(chi(wF,"xยฐMWST_SATZ"))+wBl);
+  if(wMW<0 || wMW>8) Dl_Abbruch(str("MwSt ยป%dยซ falsch!",wMW), _L, _F, "\0");
   adSkontoBet[wMW]+=dSkontoBet;}
   }
 
@@ -220,9 +220,9 @@ if(boRechnung)
 else
   dOpZuOrd_g=rnd(dBetragBr-(dZahlRest_m-dOpZugeord));
 
-memcpy(pt(chi(wF,"x๘OP_BETR_BR")),&dBetragBr, 8);
-memcpy(pt(chi(wF,"x๘OP_ZUORD")),  &dOpZuOrd_g,8);
-memcpy(pt(chi(wF,"x๘OP_SALDO")),  &dOpSaldo,  8);
+memcpy(pt(chi(wF,"xยฐOP_BETR_BR")),&dBetragBr, 8);
+memcpy(pt(chi(wF,"xยฐOP_ZUORD")),  &dOpZuOrd_g,8);
+memcpy(pt(chi(wF,"xยฐOP_SALDO")),  &dOpSaldo,  8);
 
 
 for(i=0; i<9; i++)
@@ -233,7 +233,7 @@ for(i=0; i<9; i++)
     {PSSTR apstrMessage[25];
     Ut_SchreibArray(apstrMessage,
      "Skontobuchungen sind nur bei",
-     "Zahlungsbuchungen m”glich.", _N);
+     "Zahlungsbuchungen mรถglich.", _N);
     Dl_Info(apstrMessage, DLG_INFO);
     Ut_LoeschArray(apstrMessage);
     wKeyCode_g=AUS;}
@@ -244,9 +244,9 @@ if(TBox("SKONTO_BET") && dOpZuOrd_g==0.0 &&
   {SWORD wChange=wChangeFlag_g||strcmp(strNewString_g, strOldString_g);
 
   if(wKeybCount_g || !wChange)			       // Wenn gerade etwas ver
-    {//iDeleteBlock(_MSK);				 // ndert wurde, dann
+    {//iDeleteBlock(_MSK);				 // รคndert wurde, dann
     Wi_Verstecken(apWkbMask_g[_MSK]);		       // Window verstecken
-    _MSK=0; _FLD=25; wKeyCode_g=AUS;		       // verz”gern
+    _MSK=0; _FLD=25; wKeyCode_g=AUS;		       // verzรถgern
     iSchattenSaldo();}
   else wKeyCode_g=AUS;
 
@@ -261,11 +261,11 @@ return;
 } /* end Fi211_All_Fields_Handler() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ iDeleteBlock()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ									    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ iDeleteBlock()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘									    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID iDeleteBlock(SWORD wMsk)
 {
@@ -278,12 +278,12 @@ boBlockDelete_g=EIN;
 
 for(wBl=0; pTB->wOffset+wBl < awRecLength_g[wF]; )
   {
-  memcpy(&dRechBetr,pt(chi(wF,"x๘RECH_BETR"))+wBl,8);
-  memcpy(&dZahlBetr,pt(chi(wF,"x๘ZAHL_BETR"))+wBl,8);
-  memcpy(&dSkontoBet,pt(chi(wF,"x๘SKONTO_BET"))+wBl, 8);
+  memcpy(&dRechBetr,pt(chi(wF,"xยฐRECH_BETR"))+wBl,8);
+  memcpy(&dZahlBetr,pt(chi(wF,"xยฐZAHL_BETR"))+wBl,8);
+  memcpy(&dSkontoBet,pt(chi(wF,"xยฐSKONTO_BET"))+wBl, 8);
 
   /* {BOOL boTest=boTestModus_g; boTestModus_g=JA;
-  Wi_TestPrintf(pWkbInfo_g, "\nZeile(%d/%d): ฏ%fฎ -(%f+%f) = ฏ%fฎ.",
+  Wi_TestPrintf(pWkbInfo_g, "\nZeile(%d/%d): ยป%fยซ -(%f+%f) = ยป%fยซ.",
   awAktLine_g[wMsk], wBl,
   rnd(dRechBetr), rnd(dZahlBetr), rnd(dSkontoBet),
   rnd(dRechBetr)-(rnd(dZahlBetr)+rnd(dSkontoBet)) );
@@ -304,20 +304,20 @@ return;
 }  /* end iDeleteBlock() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ iBlockEmpty()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ iBlockEmpty()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 BOOL iBlockEmpty(SWORD wF, SWORD wBlk)
 {
 DOUBLE dReBet, dZaBet, dSkBet; BOOL boEmpty;
-PSSTR pstrOpNr=pt(chi(wF,"x๘OP_NUMMER"))+wBlk;
-PSSTR pstrBeNr=pt(chi(wF,"x๘BELEG_NR"))+wBlk;
+PSSTR pstrOpNr=pt(chi(wF,"xยฐOP_NUMMER"))+wBlk;
+PSSTR pstrBeNr=pt(chi(wF,"xยฐBELEG_NR"))+wBlk;
 
-memcpy(&dReBet, pt(chi(wF,"x๘RECH_BETR"))+wBlk, 8);
-memcpy(&dZaBet, pt(chi(wF,"x๘ZAHL_BETR"))+wBlk, 8);
-memcpy(&dSkBet, pt(chi(wF,"x๘SKONTO_BET"))+wBlk, 8);
+memcpy(&dReBet, pt(chi(wF,"xยฐRECH_BETR"))+wBlk, 8);
+memcpy(&dZaBet, pt(chi(wF,"xยฐZAHL_BETR"))+wBlk, 8);
+memcpy(&dSkBet, pt(chi(wF,"xยฐSKONTO_BET"))+wBlk, 8);
 
 boEmpty=(!*pstrOpNr && !*pstrBeNr && !dReBet &&
   !dZaBet && !dSkBet) ? JA : NEIN;
@@ -332,18 +332,18 @@ return(boEmpty);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fi210_Field_Classification()                                            บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Field_Classification() teilt das vom Anwender gerade verlassene Feld in บ
-  บ eine der Kategorien "Schlssel zum Stammsatz", "Schlsselfeld mit Ver-  บ
-  บ weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     บ
-  บ Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  บ
-  บ auf den Primarkey in der Reference-Datei beziehen, so muแ dies in der   บ
-  บ Sub-Funktion i_Field_Classification nachgetragen werden.                บ
-  บ Auch bei scrollbaren Zeilen im Maskentyp 1 muแe bei einem Verweis auf   บ
-  บ Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fi210_Field_Classification()                                            โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Field_Classification() teilt das vom Anwender gerade verlassene Feld in โ•‘
+  โ•‘ eine der Kategorien "Schlรผssel zum Stammsatz", "Schlรผsselfeld mit Ver-  โ•‘
+  โ•‘ weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     โ•‘
+  โ•‘ Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  โ•‘
+  โ•‘ auf den Primarkey in der Reference-Datei beziehen, so muร dies in der   โ•‘
+  โ•‘ Sub-Funktion i_Field_Classification nachgetragen werden.                โ•‘
+  โ•‘ Auch bei scrollbaren Zeilen im Maskentyp 1 muรe bei einem Verweis auf   โ•‘
+  โ•‘ Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi210_Field_Classification(PSWORD pwRefKey, PSWORD pwRefFile)
 {
@@ -379,11 +379,11 @@ return(OK);
 } /* end Fi210_Field_Classification() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Read_OP() 							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Lesen der Offenen Postenntrag in i_Field_Classification() erfolgen.     บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Read_OP() 							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Lesen der Offenen Postenntrag in i_Field_Classification() erfolgen.     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_Read_OP(VOID)
 {
@@ -405,7 +405,7 @@ else return;
 if(cKonto=='k') pTB=TBpt("OP_KTO_KUN", 99, 99);
 else pTB=TBpt("OP_KTO_LIE", 99, 99);
 Read_Rec(pTB->wRecord, strKonto, 1, NEIN, B_MNW, _F, _L);
-/* dOpSaldo_m=ptD(chi(pTB->wRecord,"x๘OP_SALDO")); */
+/* dOpSaldo_m=ptD(chi(pTB->wRecord,"xยฐOP_SALDO")); */
 
 if(cKonto=='k') pTB=TBpt("KU_KONTO", 99, 99);
 else pTB=TBpt("LI_KONTO", 99, 99);
@@ -425,26 +425,26 @@ for(i=0; i<9; i++)
 
 for(wBl=0; pTB->wOffset+wBl < awRecLength_g[wF];     /* 		     */
   wBl+=awBlockLength_g[wMsk])			     /* 		     */
-  {SWORD wMW=atoi(pt(chi(wF,"x๘MWST_SATZ"))+wBl);
+  {SWORD wMW=atoi(pt(chi(wF,"xยฐMWST_SATZ"))+wBl);
   DOUBLE dSkontoBet, dRechBetr, dZahlBetr;
-  if(wMW<0 || wMW>8) Dl_Abbruch(str("MwSt ฏ%dฎ falsch!",wMW), _L, _F, "\0");
+  if(wMW<0 || wMW>8) Dl_Abbruch(str("MwSt ยป%dยซ falsch!",wMW), _L, _F, "\0");
 
-  memcpy(&dSkontoBet, pt(chi(wF,"x๘SKONTO_BET"))+wBl, 8);
+  memcpy(&dSkontoBet, pt(chi(wF,"xยฐSKONTO_BET"))+wBl, 8);
   adSkontoBet_m[wMW]+=rnd(dSkontoBet);
 
-  memcpy(&dRechBetr,pt(chi(wF,"x๘RECH_BETR"))+wBl,8);
-  memcpy(&dZahlBetr,pt(chi(wF,"x๘ZAHL_BETR"))+wBl,8);
+  memcpy(&dRechBetr,pt(chi(wF,"xยฐRECH_BETR"))+wBl,8);
+  memcpy(&dZahlBetr,pt(chi(wF,"xยฐZAHL_BETR"))+wBl,8);
   dZahlRest_m+=rnd(dRechBetr-dZahlBetr);}
 
 return;
 } /* end i_Read_OP() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Kto_SemanticCheck()						    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ									    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Kto_SemanticCheck()						    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘									    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_Kto_SemanticCheck(VOID)
 {
@@ -459,17 +459,17 @@ if( (*pt(":SOLL_ART")=='k'||*pt(":SOLL_ART")=='l') &&
   (*pt(":HABEN_ART")=='k'||*pt(":HABEN_ART")=='l') )
   {Ut_SchreibArray(apstrMessage,
     "                                    ",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
-    "Bei Buchungen mit Personenkonten muแ",
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
+    "Bei Buchungen mit Personenkonten muร",
     "das Gegenkonto ein Sachkonto sein.", _N);
   memcpy(pt(":BETRAG_BR"), &dNull, 8);}
 
 else if( *pt(":SOLL_ART")=='l' && ptD(":UST_BETR")!=0.0 )
   {Ut_SchreibArray(apstrMessage,
     "                                    ",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
     "Bei Buchung eines Zahlungsausganges ",
-    "mit einem Liefarantenkonto im ฏSOLLฎ",
+    "mit einem Liefarantenkonto im ยปSOLLยซ",
     "darf keine VSt angegeben werden.", _N);
   *pt(":UST_ART")='\0'; *pt(":UST_SATZ")='\0';
   memcpy(pt(":UST_BETR"), &dNull, 8);}
@@ -477,9 +477,9 @@ else if( *pt(":SOLL_ART")=='l' && ptD(":UST_BETR")!=0.0 )
 else if( *pt(":HABEN_ART")=='k' && ptD(":UST_BETR")!=0.0 )
   {Ut_SchreibArray(apstrMessage,
     "                                   ",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
     "Bei Buchung eines Zahlungseinganges",
-    "mit einem Kundenkonto im ฏHABENฎ",
+    "mit einem Kundenkonto im ยปHABENยซ",
     "darf keine MwSt angegeben werden.", _N);
   *pt(":UST_ART")='\0'; *pt(":UST_SATZ")='\0';
   memcpy(pt(":UST_BETR"), &dNull, 8);}
@@ -488,34 +488,34 @@ else if( (*pt(":SOLL_ART")=='k'||*pt(":HABEN_ART")=='k') &&
   *pt(":UST_ART")=='v')
   {Ut_SchreibArray(apstrMessage,
     "                                  ",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
     "Bei Buchungen mit Kundenkonten ist",
-    "keine ฏVorsteuerฎ sondern nur eine",
-    "ฏMehrwertsteuerฎ m”glich.", _N);
+    "keine ยปVorsteuerยซ sondern nur eine",
+    "ยปMehrwertsteuerยซ mรถglich.", _N);
   *pt(":UST_ART")='m';}
 
 else if( (*pt(":SOLL_ART")=='l'||*pt(":HABEN_ART")=='l') &&
   *pt(":UST_ART")=='m')
   {Ut_SchreibArray(apstrMessage,
     "                                       ",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
     "Bei Buchungen mit Lieferantenkonten ist",
-    "keine ฏMehrwertsteuerฎ sondern nur eine",
-    "ฏVorsteuerฎ m”glich.", _N);
+    "keine ยปMehrwertsteuerยซ sondern nur eine",
+    "ยปVorsteuerยซ mรถglich.", _N);
   *pt(":UST_ART")='v';}
 
 else if( *pt(":SOLL_TEXT")=='\0'|| *pt(":HAB_TEXT")=='\0')
   {Ut_SchreibArray(apstrMessage,
     "                                       ",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
-    "Es mssen gltige Konten gewhlt werden",_N);
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
+    "Es mรผssen gรผltige Konten gewรคhlt werden",_N);
   memcpy(&dBetragBrutto_m, pt(":BETRAG_BR"), 8);
   memcpy(pt(":BETRAG_BR"), &dNull, 8);
   }
 
 if(apstrMessage[0])
   {
-  sprintf(apstrMessage[0], "Buchungsfehler: ฏ%s/%sฎ",
+  sprintf(apstrMessage[0], "Buchungsfehler: ยป%s/%sยซ",
     pt(":SOL_KONTO"), pt(":HAB_KONTO"));
 
   Dl_Info(apstrMessage, DLG_INFO);
@@ -527,11 +527,11 @@ return(wError);
 } /* end i_Kto_SemanticCheck() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Kto_ReadCheck()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ									    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Kto_ReadCheck()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘									    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_Kto_ReadCheck(VOID)
 {
@@ -543,21 +543,21 @@ PSSTR apstrMessage[25];
 apstrMessage[0]=NULL;
 
 /*{BOOL boTest=boTestModus_g; boTestModus_g=JA;
-  Wi_TestPrintf(pWkbInfo_g, "\nBuchart: ฏ%ld/%ldฎ.",
+  Wi_TestPrintf(pWkbInfo_g, "\nBuchart: ยป%ld/%ldยซ.",
     lBuchArt, lNichtBebuchen);
   boTestModus_g=boTest;}*/
 
 if(lBuchArt & lNichtBebuchen)			      /* Wenn nicht bebuchen */
   {Ut_SchreibArray(apstrMessage,
     "                                       ",
-    "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
-    "Das gewhlte Konto kann nicht direkt ",
+    "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
+    "Das gewรคhlte Konto kann nicht direkt ",
     "bebucht werden.",_N);
   memcpy(pt(":BETRAG_BR"), &dNull, 8);}
 
 if(apstrMessage[0])
   {
-  sprintf(apstrMessage[0], "Buchungsfehler: ฏ%s/%sฎ",
+  sprintf(apstrMessage[0], "Buchungsfehler: ยป%s/%sยซ",
     pt(":SOL_KONTO"), pt(":HAB_KONTO"));
 
   Dl_Info(apstrMessage, DLG_INFO);
@@ -569,18 +569,18 @@ return(wError);
 } /* end i_Kto_ReadCheck() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Reference_Key_Handler()                                               บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Reference_Key_Handler() behandelt die Eingaben, die in einem Schlssel- บ
-  บ feld auf eine Referenz-Datei gemacht wurden.                            บ
-  บ Es werden Referenz-Zugriffe (sofern erwnscht) auf die jeweiligen       บ
-  บ Dateien vorgenommen.                                                    บ
-  บ Der laut Field_Classification() oder Matchcode_Handler gewhlte Primr- บ
-  บ key in der Reference-Datei wird geladen.                                บ
-  บ In i_Reference_Key_Handler() k”nnen etwaige Feldzuordnungen nachgetra-  บ
-  บ gen werden.                                                             บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Reference_Key_Handler()                                               โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Reference_Key_Handler() behandelt die Eingaben, die in einem Schlรผssel- โ•‘
+  โ•‘ feld auf eine Referenz-Datei gemacht wurden.                            โ•‘
+  โ•‘ Es werden Referenz-Zugriffe (sofern erwรผnscht) auf die jeweiligen       โ•‘
+  โ•‘ Dateien vorgenommen.                                                    โ•‘
+  โ•‘ Der laut Field_Classification() oder Matchcode_Handler gewรคhlte Primรคr- โ•‘
+  โ•‘ key in der Reference-Datei wird geladen.                                โ•‘
+  โ•‘ In i_Reference_Key_Handler() kรถnnen etwaige Feldzuordnungen nachgetra-  โ•‘
+  โ•‘ gen werden.                                                             โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi210_Reference_Key_Handler()
 {
@@ -619,20 +619,20 @@ if(boKto)
   awChangeFlag_g[wR]=YES;
 
   if(cSoHaArt=='k')
-    {strcpy(pt(":ZAHL_KO"), pt("3๘KONDITION"));
-    memcpy(pstrSoHaSaldo, pt("3๘SALDO"), 8);
-    strcpy(pstrSoHaText, pt("3๘KURZ_BEZ"));
+    {strcpy(pt(":ZAHL_KO"), pt("3ยฐKONDITION"));
+    memcpy(pstrSoHaSaldo, pt("3ยฐSALDO"), 8);
+    strcpy(pstrSoHaText, pt("3ยฐKURZ_BEZ"));
     strcpy(pstrSoHaKonto,pt("KU_KONTO"));}
 
   if(cSoHaArt=='l')
-    {strcpy(pt(":ZAHL_KO"), pt("4๘KONDITION"));
-    memcpy(pstrSoHaSaldo, pt("4๘SALDO"), 8);
-    strcpy(pstrSoHaText, pt("4๘KURZ_BEZ"));
+    {strcpy(pt(":ZAHL_KO"), pt("4ยฐKONDITION"));
+    memcpy(pstrSoHaSaldo, pt("4ยฐSALDO"), 8);
+    strcpy(pstrSoHaText, pt("4ยฐKURZ_BEZ"));
     strcpy(pstrSoHaKonto, pt("LI_KONTO"));}
 
   if(cSoHaArt=='s')
-    {memcpy(pstrSoHaSaldo, pt("2๘SALDO"), 8);
-    strcpy(pstrSoHaText, pt("2๘KONTO_BEZ"));
+    {memcpy(pstrSoHaSaldo, pt("2ยฐSALDO"), 8);
+    strcpy(pstrSoHaText, pt("2ยฐKONTO_BEZ"));
     strcpy(pstrSoHaKonto,pt("KONTONR"));}
 
   if(TBox(":SOL_KONTO")) dSaldoSol_g=ptD(":SALDO_SOL");
@@ -672,14 +672,14 @@ return(OK);
 } /* end Fi210_Reference_Key_Handler() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Other_Fields_Handler()                                                  บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine behandelt die Eingaben, die in die normalen Stamm-        บ
-  บ datenfelder gemacht wurden.                                             บ
-  บ Hier k”nnen applikationsabhngige Plausibilittstests und Folgereak-    บ
-  บ tionen zu den einzelnen Feldern angegeben werden.                       บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Other_Fields_Handler()                                                  โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine behandelt die Eingaben, die in die normalen Stamm-        โ•‘
+  โ•‘ datenfelder gemacht wurden.                                             โ•‘
+  โ•‘ Hier kรถnnen applikationsabhรคngige Plausibilitรคtstests und Folgereak-    โ•‘
+  โ•‘ tionen zu den einzelnen Feldern angegeben werden.                       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi210_Other_Fields_Handler()
 {
@@ -690,9 +690,9 @@ if(TBox(":BETRAG_BR") && ptD(":BETRAG_BR")==0.0 && dBetragBr_g != 0.0)
   {SWORD wSelect;
 
   M_OkQuestion(&wSelect,			     /* Antwort 	     */
-    "Buchungserfassung unwiederbringlich l”schen:",  /* Titelzeile	     */
-    "#Ja, Daten ฏL  S C H E Nฎ.",                   /* liste                */
-    "#Nein, Daten nicht l”schen.",_N);
+    "Buchungserfassung unwiederbringlich lรถschen:",  /* Titelzeile	     */
+    "#Ja, Daten ยปL ร– S C H E Nยซ.",                   /* liste                */
+    "#Nein, Daten nicht lรถschen.",_N);
 
   if(wSelect==1) memcpy(pt(":BETRAG_BR"), &dBetragBr_g, 8);
   else boDelete_m=JA;}
@@ -732,10 +732,10 @@ return(OK);
 } /* end Fi210_Other_Fields_Handler() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ iOPs()								    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ iOPs()								    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID iOPs(VOID)
 {
@@ -763,10 +763,10 @@ return;
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ iSchattenSaldo()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ iSchattenSaldo()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID iSchattenSaldo(VOID)
 {
@@ -793,11 +793,11 @@ return;
 } /* end iSchattenSaldo() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Set_Default()                                                           บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine belegt die Defaultfelder vor.                             บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Set_Default()                                                           โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine belegt die Defaultfelder vor.                             โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi210_Set_Default()
 {
@@ -816,15 +816,15 @@ return(OK);
 } /* end Fi210_Set_Default() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Semantic_Check()                                                        บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine berprft vor dem Abspeichern die sematische Gltigkeit   บ
-  บ des Stammsatzes. Unter die sematischen Abprfungen fallen Plausitests   บ
-  บ zur Erfllung von Pflichtfeldern und widersprchliche Feldinhalte.      บ
-  บ Bei erfolgreicher Prfung muแ wValid auf JA (1) gesetzt werden.         บ
-  บ Fllt die Prfung durch muแ wValid auf NEIN (0) gesetzt werden.         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Semantic_Check()                                                        โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine รผberprรผft vor dem Abspeichern die sematische Gรผltigkeit   โ•‘
+  โ•‘ des Stammsatzes. Unter die sematischen Abprรผfungen fallen Plausitests   โ•‘
+  โ•‘ zur Erfรผllung von Pflichtfeldern und widersprรผchliche Feldinhalte.      โ•‘
+  โ•‘ Bei erfolgreicher Prรผfung muร wValid auf JA (1) gesetzt werden.         โ•‘
+  โ•‘ Fรคllt die Prรผfung durch muร wValid auf NEIN (0) gesetzt werden.         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi210_Semantic_Check(PSSTR pstrEBK)
 {
@@ -836,7 +836,7 @@ i_SetBuchDat();
 if(boDelete_m)
   {BOOL boDel=boDeleteSelect_g; boDeleteSelect_g=NEIN;
 
-  Db_BeginTran(B_MNW, "SEMANTIC_CHECK");	/* Satz l”schen und n. */
+  Db_BeginTran(B_MNW, "SEMANTIC_CHECK");	/* Satz lรถschen und nรค. */
   Write_Work(); Delete_Record(); wNdx_g=0;
 
   boDeleteSelect_g=boDel; boDelete_m=NEIN;}
@@ -848,7 +848,7 @@ if(ptD(":BETRAG_BR")==0.0)
 
   for(SREGISTER i=0; i<wFileHandler_g; i++)
     if(awFileMode_g[i] == REC_F ||		       // Keine Ref-Datei
-      awFileMode_g[i] == WORK_F)		       // Records l”schen
+      awFileMode_g[i] == WORK_F)		       // Records lรถschen
       memset(apstrRecord_g[i], '\0', awRecLength_g[i]);
   }
 
@@ -860,11 +860,11 @@ return(wValid);
   // if(awExistingRecord_g[0])
   //  {wKeyCode_g=T_ESC; return(OK);} else
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_SetBuchArt()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine legt die Buchungsart fest.				    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_SetBuchArt()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine legt die Buchungsart fest.				    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_SetBuchArt(PSSTR pstrEBK)
 {
@@ -900,7 +900,7 @@ else if(*pt(":UST_ART")=='v')
 memcpy(pt(":BUCH_ART"), &wBuchArt, 2);
 
 /* {BOOL boTest=boTestModus_g; boTestModus_g=JA;
-  Wi_TestPrintf(pWkbInfo_g, "\nฏ%s/%sฎ BuchArt()%d.",
+  Wi_TestPrintf(pWkbInfo_g, "\nยป%s/%sยซ BuchArt()%d.",
     pt(":SOL_KONTO"), pt(":HAB_KONTO"), wBuchArt);
   boTestModus_g=boTest;}*/
 
@@ -908,11 +908,11 @@ return;
 } /* end i_SetBuchArt() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_SetBuchDat()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine legt das Buchungsdatum fest.				    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_SetBuchDat()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine legt das Buchungsdatum fest.				    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_SetBuchDat()
 {
@@ -921,25 +921,25 @@ strcpy(pTB->acText, "s");
 M_BoxToRecord(apstrRecord_g, pTB);
 
 /*{BOOL boTest=boTestModus_g; boTestModus_g=JA;
-  Wi_TestPrintf(pWkbInfo_g, "\n%s = ฏ%sฎ.", pTB->strDatenfeld, pTB->acText);
+  Wi_TestPrintf(pWkbInfo_g, "\n%s = ยป%sยซ.", pTB->strDatenfeld, pTB->acText);
   boTestModus_g=boTest;}*/
 
 return;
 } /* end i_SetBuchDat() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fi210_Write_Work()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Wenn erst nach der Speicherabfrage gespeichert werden soll, siehe:	    บ
-  บ Prepare_Save_Record()						    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fi210_Write_Work()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Wenn erst nach der Speicherabfrage gespeichert werden soll, siehe:	    โ•‘
+  โ•‘ Prepare_Save_Record()						    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID Fi210_Write_Work()
 {
 //PTEXTBOX pTB=TBpt("OP_KTO_KUN", _MSK, 99);
 //SWORD wF=pTB->wRecord;
-//memcpy(pt(chi(wF,"x๘OP_BETR_BR")),&dNull, 8);
+//memcpy(pt(chi(wF,"xยฐOP_BETR_BR")),&dNull, 8);
 
 
 if(lKzFibuBa_g&lKzOp_m) 			     /* Bei Mandant hat OP's */
@@ -948,9 +948,9 @@ if(lKzFibuBa_g&lKzOp_m) 			     /* Bei Mandant hat OP's */
     {PTEXTBOX pTB=TBpt("OP_KTO_KUN", 99, 99);
     iDeleteBlock(1);				     // _MSK 1 == FIM211
     strcpy(pt("OP_KUNDE"), pt("FI_KUNDE"));
-    strcpy(pt("6๘KURZ_BEZ"), pt("3๘KURZ_BEZ"));
+    strcpy(pt("6ยฐKURZ_BEZ"), pt("3ยฐKURZ_BEZ"));
     strcpy(pt("OP_KTO_KUN"), pt("KU_KONTO"));
-    memcpy(pt("6๘OP_BETR_BR"),&dNull, 8);
+    memcpy(pt("6ยฐOP_BETR_BR"),&dNull, 8);
     Write_Rec(pTB->wRecord, pt("OP_KTO_KUN"), 1, B_MNW, _F, _L);
     }
 
@@ -958,9 +958,9 @@ if(lKzFibuBa_g&lKzOp_m) 			     /* Bei Mandant hat OP's */
     {PTEXTBOX pTB=TBpt("OP_KTO_LIE", 99, 99);
     iDeleteBlock(2);				     // _MSK 2 == FIM212
     strcpy(pt("OP_LIEFER"), pt("FI_LIEFER"));
-    strcpy(pt("7๘KURZ_BEZ"), pt("4๘KURZ_BEZ"));
+    strcpy(pt("7ยฐKURZ_BEZ"), pt("4ยฐKURZ_BEZ"));
     strcpy(pt("OP_KTO_LIE"), pt("LI_KONTO"));
-    memcpy(pt("7๘OP_BETR_BR"),&dNull, 8);
+    memcpy(pt("7ยฐOP_BETR_BR"),&dNull, 8);
     Write_Rec(pTB->wRecord, pt("OP_KTO_LIE"), 1, B_MNW, _F, _L);}
   }
 
@@ -970,7 +970,7 @@ if(lKzFibuBa_g&lKzOp_m) 			     /* Bei Mandant hat OP's */
   if(*pt(":SOLL_ART")=='l') pTB=TBpt("FI_LIEFER", 99, 99);
 
   Read_Rec(pTB->wRecord, pt(":SOL_KONTO"), 0, JA, B_MNW, _F, _L);
-  memcpy(pt(chi(pTB->wRecord,"x๘SALDO")), pt(":SALDO_SOL"), 8);
+  memcpy(pt(chi(pTB->wRecord,"xยฐSALDO")), pt(":SALDO_SOL"), 8);
   Write_Rec(pTB->wRecord, pt(":SOL_KONTO"), 0, B_MNW, _F, _L);
 
   pTB=TBpt("KONTONR", 99, 99);
@@ -978,24 +978,24 @@ if(lKzFibuBa_g&lKzOp_m) 			     /* Bei Mandant hat OP's */
   if(*pt(":HABEN_ART")=='l') pTB=TBpt("FI_LIEFER", 99, 99);
 
   Read_Rec(pTB->wRecord, pt(":HAB_KONTO"), 0, JA, B_MNW, _F, _L);
-  memcpy(pt(chi(pTB->wRecord,"x๘SALDO")), pt(":SALDO_HAB"), 8);
+  memcpy(pt(chi(pTB->wRecord,"xยฐSALDO")), pt(":SALDO_HAB"), 8);
   Write_Rec(pTB->wRecord, pt(":HAB_KONTO"), 0, B_MNW, _F, _L);}
 
 return;
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Prepare_Save_Record()						    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Die Funktion wird in ba_isam.cpp nach folgender Speicherabfrage	    บ
-  บ nur dann aufgerufen, wenn der Anwender "Abspeichern" auswhlt:	    บ
-  บ M_OkQuestion(&wSelect,"Bitte whlen Sie:", "#Abspeichern der Daten.",   บ
-  บ   "#Beenden ohne speichern.", "#Zurck zur Eingabe.",_N);		    บ
-  บ									    บ
-  บ Sollen verarbeitete Teile in Dateien gespeichert werden, so ist der     บ
-  บ entsprechende Teil hier einzutragen.                                    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Prepare_Save_Record()						    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Die Funktion wird in ba_isam.cpp nach folgender Speicherabfrage	    โ•‘
+  โ•‘ nur dann aufgerufen, wenn der Anwender "Abspeichern" auswรคhlt:	    โ•‘
+  โ•‘ M_OkQuestion(&wSelect,"Bitte wรคhlen Sie:", "#Abspeichern der Daten.",   โ•‘
+  โ•‘   "#Beenden ohne speichern.", "#Zurรผck zur Eingabe.",_N);		    โ•‘
+  โ•‘									    โ•‘
+  โ•‘ Sollen verarbeitete Teile in Dateien gespeichert werden, so ist der     โ•‘
+  โ•‘ entsprechende Teil hier einzutragen.                                    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID Prepare_Save_Record()
 {
@@ -1023,14 +1023,14 @@ return;
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fi210_Matchcode_Handler()						    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    บ
-  บ Fr scrollbare Zeilen im Maskentyp 1 und fr spezielle Wnsche bei      บ
-  บ Zugriffen auf Referenz-Dateien k”nnen in i_Matchcode_Handler() Eintrge บ
-  บ erfolgen.                                                               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fi210_Matchcode_Handler()						    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    โ•‘
+  โ•‘ Fรผr scrollbare Zeilen im Maskentyp 1 und fรผr spezielle Wรผnsche bei      โ•‘
+  โ•‘ Zugriffen auf Referenz-Dateien kรถnnen in i_Matchcode_Handler() Eintrรคge โ•‘
+  โ•‘ erfolgen.                                                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fi210_Matchcode_Handler(PPMATCH ppMatchCode, PSWORD pwNbFile, PSWORD pwFileNb)
 {
@@ -1048,11 +1048,11 @@ return(OK);
 } /* end Fi210_Matchcode_Handler() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fi210_Matchcode_Handler_2() 					    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ									    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fi210_Matchcode_Handler_2() 					    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘									    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID Fi210_Matchcode_Handler_2()
 {
@@ -1065,12 +1065,12 @@ return;
 /* ----------------------------------------------------------------------------
 
   // {BOOL boTest=boTestModus_g; boTestModus_g=JA;
-  // Wi_TestPrintf(pWkbInfo_g, "\nฏ%ld-%ldฎ (%ld,%ld,%ld).",
+  // Wi_TestPrintf(pWkbInfo_g, "\nยป%ld-%ldยซ (%ld,%ld,%ld).",
   //  ptL(":BUART_SOL"), ptL(":BUART_HAB"), lGeldKto, lAufwand, lErtrag);
   // boTestModus_g=boTest;}
 
 
-   Write_Work(); Delete_Record();		     // Satz l”schen und n.
+   Write_Work(); Delete_Record();		     // Satz lรถschen und nรค.
    // wEscFlag_g=NO; wKeyCode_g=T_RETURN;
    wNdx_g=0; if(boReadNext_g) Read_Next();}	     // Satz lesen.
 
@@ -1119,7 +1119,7 @@ else
   }
 
 {BOOL boTest=boTestModus_g; boTestModus_g=JA;
-  Wi_TestPrintf(pWkbInfo_g, "\nOpKzฏ%ld/%ld/%ldฎ.",
+  Wi_TestPrintf(pWkbInfo_g, "\nOpKzยป%ld/%ld/%ldยซ.",
     (lKzFibuBa_g & lKzOp_m), lKzOp_m, lKzFibuBa_g);
   boTestModus_g=boTest;}
 
@@ -1138,7 +1138,7 @@ apTextBox[_MSK][_FLD]->wHide= (ptD(":BETRAG_BR")==0.0) ? NEIN : JA;
 
 
   // {BOOL boTest=boTestModus_g; boTestModus_g=JA;
-  // Wi_TestPrintf(pWkbInfo_g, "\nOld/New: ฏ%s/%sฎ.",
+  // Wi_TestPrintf(pWkbInfo_g, "\nOld/New: ยป%s/%sยซ.",
   //  strOldString_g, strNewString_g);
   // boTestModus_g=boTest;}
 
@@ -1147,16 +1147,16 @@ apTextBox[_MSK][_FLD]->wHide= (ptD(":BETRAG_BR")==0.0) ? NEIN : JA;
 
 
 STATIC	SWORD Dl_MwSt(VOID);
-//ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-//บ Dl_MwSt()								    บ
-//บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-//บ									    บ
-//ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+//โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+//โ•‘ Dl_MwSt()								    โ•‘
+//โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+//โ•‘									    โ•‘
+//โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 STATIC
 SWORD Dl_MwSt(VOID)
 {SWORD wSelect;
 
-M_OkQuestion(&wSelect, "Mwst-Satz whlen:",	     // Antwort, Titel
+M_OkQuestion(&wSelect, "Mwst-Satz wรคhlen:",	     // Antwort, Titel
   "#0 = MwSt-Satz 0", "#1 = MwSt-Satz 1",
   "#2 = MwSt-Satz 2", "#3 = MwSt-Satz 3", _N);
 
@@ -1164,38 +1164,38 @@ return(wSelect);
 }
 
     // {BOOL boTest=boTestModus_g; boTestModus_g=JA;
-    // Wi_TestPrintf(pWkbInfo_g, "\nฏ%fฎ ", dOpRest);
+    // Wi_TestPrintf(pWkbInfo_g, "\nยป%fยซ ", dOpRest);
     // boTestModus_g=boTest;}
 
 
 if(wKeyCode_g==T_F8 && dZahlRest)
   {if(boRechnung)
     {DOUBLE dReBetr;
-    memcpy(&dReBetr, pt(chi(wF,"x๘RECH_BETR"))+wBlk, 8);
+    memcpy(&dReBetr, pt(chi(wF,"xยฐRECH_BETR"))+wBlk, 8);
     if(dReBetr==0.0)
-      memcpy(pt(chi(wF,"x๘RECH_BETR"))+wBlk, &dZahlRest, 8);
+      memcpy(pt(chi(wF,"xยฐRECH_BETR"))+wBlk, &dZahlRest, 8);
     else
-      memcpy(pt(chi(wF,"x๘SKONTO_BET"))+wBlk, &dZahlRest, 8);
+      memcpy(pt(chi(wF,"xยฐSKONTO_BET"))+wBlk, &dZahlRest, 8);
     }
   else
     {DOUBLE dZaBetr;
-    memcpy(&dZaBetr, pt(chi(wF,"x๘ZAHL_BETR"))+wBlk, 8);
+    memcpy(&dZaBetr, pt(chi(wF,"xยฐZAHL_BETR"))+wBlk, 8);
     if(dZaBetr==0.0)
-      memcpy(pt(chi(wF,"x๘ZAHL_BETR"))+wBlk, &dZahlRest, 8);
+      memcpy(pt(chi(wF,"xยฐZAHL_BETR"))+wBlk, &dZahlRest, 8);
     else
-      memcpy(pt(chi(wF,"x๘SKONTO_BET"))+wBlk, &dZahlRest, 8);
+      memcpy(pt(chi(wF,"xยฐSKONTO_BET"))+wBlk, &dZahlRest, 8);
     }
   }
 
 
-//ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-//บ Fi211_Application_Set()						    บ
-//บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-//บ Fhrt applikationsabhngige Vorbelegungen fr bestimmte Felder          บ
-//บ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           บ
-//บ ฏwMskฎ und ฏwFldฎ sind die Nummern des Feldes und der Maske, die als    บ
-//บ nchstes vom Interpreter angesprungen werden wrde.                     บ
-//ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+//โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+//โ•‘ Fi211_Application_Set()						    โ•‘
+//โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+//โ•‘ Fรผhrt applikationsabhรคngige Vorbelegungen fรผr bestimmte Felder          โ•‘
+//โ•‘ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           โ•‘
+//โ•‘ ยปwMskยซ und ยปwFldยซ sind die Nummern des Feldes und der Maske, die als    โ•‘
+//โ•‘ nรคchstes vom Interpreter angesprungen werden wรผrde.                     โ•‘
+//โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 GLOBAL
 SWORD Fi211_Application_Set(SWORD wMsk, SWORD wFld)
 {
@@ -1212,45 +1212,45 @@ wFld=wFld;
 
 for(i=0; i<9; i++) adSkoBet[i]=adSkontoBet[i]=0.0;
 
-if(*(pt(chi(wF,"x๘MWST_SATZ"))+wBlk) == '\0')
-  strcpy(pt(chi(wF,"x๘MWST_SATZ"))+wBlk, pt(":UST_SATZ"));
+if(*(pt(chi(wF,"xยฐMWST_SATZ"))+wBlk) == '\0')
+  strcpy(pt(chi(wF,"xยฐMWST_SATZ"))+wBlk, pt(":UST_SATZ"));
 
-memcpy(&dRechBetr,pt(chi(wF,"x๘RECH_BETR"))+wBlk,8);
-memcpy(&dZahlBetr,pt(chi(wF,"x๘ZAHL_BETR"))+wBlk,8);
-memcpy(&dSkontoBet,pt(chi(wF,"x๘ZAHL_BETR"))+wBlk,8);
+memcpy(&dRechBetr,pt(chi(wF,"xยฐRECH_BETR"))+wBlk,8);
+memcpy(&dZahlBetr,pt(chi(wF,"xยฐZAHL_BETR"))+wBlk,8);
+memcpy(&dSkontoBet,pt(chi(wF,"xยฐZAHL_BETR"))+wBlk,8);
 dZahlRest=dRechBetr-(dZahlBetr+dSkontoBet);
 
 if(wKeyCode_g==T_F8 && dZahlRest && !boRechnung)
   {DOUBLE dZaBetr;
-  memcpy(&dZaBetr, pt(chi(wF,"x๘ZAHL_BETR"))+wBlk, 8);
+  memcpy(&dZaBetr, pt(chi(wF,"xยฐZAHL_BETR"))+wBlk, 8);
   if(dZaBetr==0.0)
-    memcpy(pt(chi(wF,"x๘ZAHL_BETR"))+wBlk, &dZahlRest, 8);
+    memcpy(pt(chi(wF,"xยฐZAHL_BETR"))+wBlk, &dZahlRest, 8);
   else
-    memcpy(pt(chi(wF,"x๘SKONTO_BET"))+wBlk, &dZahlRest, 8);}
+    memcpy(pt(chi(wF,"xยฐSKONTO_BET"))+wBlk, &dZahlRest, 8);}
 
 
 for(wBl=0; pTB->wOffset+wBl < awRecLength_g[wF];     //
   wBl+=awBlockLength_g[wMsk])			     //
   {						     //
   if(iBlockEmpty(wF, wBl) && dOpRest)
-    {strcpy(pt(chi(wF,"x๘OP_NUMMER"))+wBl, pt(":BELEG_NR") );
-    strcpy(pt(chi(wF,"x๘BELEG_NR"))+wBl, pt(":BELEG_NR") );
-    memcpy(pt(chi(wF,"x๘BELEG_DAT"))+wBl,pt(":BELEG_DAT"), 4);
+    {strcpy(pt(chi(wF,"xยฐOP_NUMMER"))+wBl, pt(":BELEG_NR") );
+    strcpy(pt(chi(wF,"xยฐBELEG_NR"))+wBl, pt(":BELEG_NR") );
+    memcpy(pt(chi(wF,"xยฐBELEG_DAT"))+wBl,pt(":BELEG_DAT"), 4);
 
-    if(boRechnung) memcpy(pt(chi(wF,"x๘RECH_BETR"))+wBl, &dOpRest, 8);
-    else memcpy(pt(chi(wF,"x๘ZAHL_BETR"))+wBl, &dOpRest, 8);
+    if(boRechnung) memcpy(pt(chi(wF,"xยฐRECH_BETR"))+wBl, &dOpRest, 8);
+    else memcpy(pt(chi(wF,"xยฐZAHL_BETR"))+wBl, &dOpRest, 8);
     dOpRest=0.0;  wKeyCode_g=AUS;}
 
 
-  memcpy(&dRechBetr,pt(chi(wF,"x๘RECH_BETR"))+wBl,8);
-  memcpy(&dZahlBetr,pt(chi(wF,"x๘ZAHL_BETR"))+wBl,8);
-  memcpy(&dSkontoBet, pt(chi(wF,"x๘SKONTO_BET"))+wBl, 8);
+  memcpy(&dRechBetr,pt(chi(wF,"xยฐRECH_BETR"))+wBl,8);
+  memcpy(&dZahlBetr,pt(chi(wF,"xยฐZAHL_BETR"))+wBl,8);
+  memcpy(&dSkontoBet, pt(chi(wF,"xยฐSKONTO_BET"))+wBl, 8);
 
   dOpZugeord+=dRechBetr-dZahlBetr;
   dOpSaldo+=(dRechBetr-dZahlBetr-dSkontoBet);
 
-  {SWORD wMW=atoi(pt(chi(wF,"x๘MWST_SATZ"))+wBl);
-  if(wMW<0 || wMW>8) Dl_Abbruch(str("MwSt ฏ%dฎ falsch!",wMW), _L, _F, "\0");
+  {SWORD wMW=atoi(pt(chi(wF,"xยฐMWST_SATZ"))+wBl);
+  if(wMW<0 || wMW>8) Dl_Abbruch(str("MwSt ยป%dยซ falsch!",wMW), _L, _F, "\0");
   adSkontoBet[wMW]+=dSkontoBet;}
   }
 
@@ -1260,9 +1260,9 @@ if(boRechnung)
 else
   dOpZuOrd_g=dBetragBr-(dZahlRest_m-dOpZugeord);
 
-memcpy(pt(chi(wF,"x๘OP_BETR_BR")),&dBetragBr, 8);
-memcpy(pt(chi(wF,"x๘OP_ZUORD")),  &dOpZuOrd_g,8);
-memcpy(pt(chi(wF,"x๘OP_SALDO")),  &dOpSaldo,  8);
+memcpy(pt(chi(wF,"xยฐOP_BETR_BR")),&dBetragBr, 8);
+memcpy(pt(chi(wF,"xยฐOP_ZUORD")),  &dOpZuOrd_g,8);
+memcpy(pt(chi(wF,"xยฐOP_SALDO")),  &dOpSaldo,  8);
 
 
 for(i=0; i<9; i++)
@@ -1273,7 +1273,7 @@ for(i=0; i<9; i++)
     {PSSTR apstrMessage[25];
     Ut_SchreibArray(apstrMessage,
      "Skontobuchungen sind nur bei",
-     "Zahlungsbuchungen m”glich.", _N);
+     "Zahlungsbuchungen mรถglich.", _N);
     Dl_Info(apstrMessage, DLG_INFO);
     Ut_LoeschArray(apstrMessage);
     wKeyCode_g=AUS;}
@@ -1336,10 +1336,10 @@ if(TBox("SKONTO_BET"))
 // }  // end iDeleteBlock()
 
 
-//ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-//บ pTOff()								    บ
-//บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-//ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+//โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+//โ•‘ pTOff()								    โ•‘
+//โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+//โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 //GLOBAL
 //SWORD pTOff(PSTR pstrDatenfeld, SWORD wMsk, SWORD wFile)
 //{

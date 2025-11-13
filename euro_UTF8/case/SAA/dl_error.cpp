@@ -1,16 +1,16 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Dl_ErrorHandler()
-ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  Dl_ErrorHandler   ... handelt die Fehlermeldungen ab.                       บ
-ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-berblick:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  Dl_ErrorHandler   ... handelt die Fehlermeldungen ab.                       โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+รberblick:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 #include <eur_dlg.h>
 SWORD Dl_ErrorHandler(wFehlerNr, pstrFunktion, pstrDateiname, wZeile, wHandle);
 
 Parameter:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 SWORD  wFehlerNr	  Art des Fehlers.
 SWORD  wHandle		  Bestimmt die Reaktion auf die Fehler-Nummer.
 PSSTR  pstrFunktion	  Funktion, in der der Fehler auftrat.
@@ -19,21 +19,21 @@ SWORD  wZeile		  Zeilennummer im Source-Modul der euroSOFT-TOOLbox.
 
 
 Beschreibung:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 Diese Funktion wird zur Absicherung der Programme sehr oft aufgerufen. Sie
-entscheidet, ob ein bergebener Fehler (wStatus) oder der Inhalt der globalen
-Fehlervariable wFehler_g zum Programmabruch fhren soll.
+entscheidet, ob ein รผbergebener Fehler (wStatus) oder der Inhalt der globalen
+Fehlervariable wFehler_g zum Programmabruch fรผhren soll.
 
-Ist der bergebe Wert von ฏwHandleฎ gr”แer ฏ0ฎ wird trotz Fehlernummer das
+Ist der รผbergebe Wert von ยปwHandleยซ grรถรer ยป0ยซ wird trotz Fehlernummer das
 Programm nicht abgebrochen.
 
-Soll zum Beispiel der Btrieve-Status ฏ BTR-04 = key not found ฎ nicht zum
-Abbruch fhren, so muแ ein ฏwHandleฎ gr”แer ฏ0ฎ bergeben werden.
+Soll zum Beispiel der Btrieve-Status ยป BTR-04 = key not found ยซ nicht zum
+Abbruch fรผhren, so muร ein ยปwHandleยซ grรถรer ยป0ยซ รผbergeben werden.
 
 Wird das Programm nicht abgebrochen, so wird die globale Variable wFehler_g
 wieder auf KEIN_FEHLER (0) gesetzt.
 
-Ist der Testmodus ber die globale Variable boTestModus_g eingeschaltet, so
+Ist der Testmodus รผber die globale Variable boTestModus_g eingeschaltet, so
 gibt die Funktion in jedem Fall eine Meldung am Bildschirm aus.
 
 Bei schweren Laufzeitfehlern wird abgebrochen und eine Fehlermeldung ausge-
@@ -41,39 +41,39 @@ geben, die die Art des Fehlers angibt und die Funktion, in der der Fehler
 auftrat.
 
 
-Rckgabewert:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
-SWORD  OK = Die Funktion wurde in Ordnung ausgefhrt.
+Rรผckgabewert:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
+SWORD  OK = Die Funktion wurde in Ordnung ausgefรผhrt.
 
 
 Globale Variablen (R/W):
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 keine
 .de ..\demo\dl_fehler.c
 .te*/
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         DEKLARATIONS-DATEIEN                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define  NDEBUG 1
 #include <eur_tool.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         KONSTANTEN UND MAKROS                           บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         KONSTANTEN UND MAKROS                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define SPA   4
 #define ZEI   3
 #define BRE  73
 #define HOE  11
 #define BUFFER_LEN 700                        /* == 10x60 CHAR + Kopfinfo   */
-                                              /* ist Lnge des Fehlertextes */
+                                              /* ist Lรคnge des Fehlertextes */
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         GLOBALE VARIABLEN                               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-IMPORT CHAR	  strExt_g[4];		// Extention fr Landescode
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         GLOBALE VARIABLEN                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+IMPORT CHAR	  strExt_g[4];		// Extention fรผr Landescode
 IMPORT CHAR	  strTeiln_g[81];	// Teilnehmer-Verzeichnis
 IMPORT CHAR	  strExe_g[81]; 	// Programm-Verzeichnis
 
@@ -90,9 +90,9 @@ IMPORT SWORD	  wDbCount_g;
 IMPORT  ERRINFO errInfo_g;
 STATIC	VOID	iFehler(SWORD);
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         MODULGLOBALE VARIABLEN                          บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC	VOID i_ProgEnd(PSSTR, SWORD);
 STATIC	SWORD i_Btrieve_Error(SWORD, PSSTR, PSSTR, SWORD);
 STATIC	SWORD Lies_Fehler_Text(SWORD, PSSTR, PSWORD);
@@ -100,20 +100,20 @@ STATIC	SWORD Lies_Fehler_Text(SWORD, PSSTR, PSWORD);
 MGLOBAL CHAR strFehlerTxt_m[BUFFER_LEN+100];
 MGLOBAL PWKB pWkbDlg_m;
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ ba_Fehler()                                                             บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ ba_Fehler()                                                             โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID iFehler(SWORD wFehler)
 {
-PSSTR apstrMessage[25]; 			      /* fr Nachrichten      */
+PSSTR apstrMessage[25]; 			      /* fรผr Nachrichten      */
 
 Ut_SchreibArray(apstrMessage,		     /* 		     */
       "Es ist ein kritischer Fehler mit der",
   str("Nr.: %d aufgetreten!", wFehler), " ",
-      "Die Programmausfhrung wird abgebrochen.",
+      "Die Programmausfรผhrung wird abgebrochen.",
       "Bitte informieren Sie Ihren Betreuer!",
       _N);
 
@@ -124,9 +124,9 @@ return;
 
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                           FUNKTIONS-DEFINITION                          บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                           FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Dl_ErrorHandler(SWORD wFehlerNr, PSSTR pstrFunktion,
 		     PSSTR pstrDateiname,  SWORD wZeile, SWORD wHandle)
@@ -147,15 +147,15 @@ if(boKundenTest_g==EIN && wFehlerNr!=20)
 if(pstrFunktion) ncpy(strFunktion, pstrFunktion, 70);
 if(pstrDateiname) ncpy(strDateiname, pstrDateiname, 70);
 
-strcpy(strEnde, "  Die Ausfhrung des Programmes "   /*                      */
+strcpy(strEnde, "  Die Ausfรผhrung des Programmes "   /*                      */
                 "wird beendet");                     /*                      */
 
 strSource[0]='\0';                                   /*                      */
 if(*strDateiname)                                    /*                      */
-   sprintf(strSource,"Source ฏ%sฎ, ",strDateiname);  /*                      */
+   sprintf(strSource,"Source ยป%sยซ, ",strDateiname);  /*                      */
 
 if(wZeile)                                           /*                      */
-  sprintf(strSource,"%sZeile ฏ%dฎ.",
+  sprintf(strSource,"%sZeile ยป%dยซ.",
     strSource, wZeile);                              /*                      */
 
 wHoehe=HOE;                                          /*                      */
@@ -172,7 +172,7 @@ if((pWkbDlg_m = Wi_Einrichten(SPA, ZEI,                /*                      *
   }
 
 if(wFehlerNr==0 || wHandle>0)                        /* Wenn kein Abbruch er */
-  {                                                  /* wnscht ist          */
+  {                                                  /* wรผnscht ist          */
   wAbbruch=NEIN;                                     /*                      */
   Wi_SetAttri(pWkbDlg_m, 0, aCS_g[wCSInd_g].wCs_wdlg,  /*                      */
     aCS_g[wCSInd_g].wCs_wdlg);                       /*                      */
@@ -187,17 +187,17 @@ Wi_SchattenEin(pWkbDlg_m);                             /* Schatten ein         *
 Wi_Aktivieren(pWkbDlg_m);                              /* Dialog aktivieren    */
 
 Wi_Swa(0,0,BRE-2,1, VH(HELLWEISS, SCHWARZ));         /*                      */
-Wi_Swz(0,1,BRE,1,'ฤ');			      /*		      */
+Wi_Swz(0,1,BRE,1,'โ”€');			      /*		      */
 Wi_Ss(17,0, "euroSOFT-TOOLbox Laufzeitfehler");      /*                      */
 Wi_SetCursorPos(0,2);                                /*                      */
 
-Wi_Printf("  Fehler (%d) ฎฏ %s\n",                   /*                      */
+Wi_Printf("  Fehler (%d) ยซยป %s\n",                   /*                      */
    wFehlerNr, strSource);                            /*                      */
 Wi_Printf("    %s.\n\n", strFunktion);              /*                      */
 
 Wi_Printf("  Ursache des Fehlers:\n%s\n",            /*                      */
   strFehlerTxt_m);                                   /*                      */
-Wi_Printf("  %s...   ฏwFehler_g(%d)ฎ",               /*                      */
+Wi_Printf("  %s...   ยปwFehler_g(%d)ยซ",               /*                      */
   strEnde, wFehler_g );                              /*                      */
 
 Vi_SetCursorPos(0,20);                               /*                      */
@@ -224,11 +224,11 @@ return(OK);                                          /*                      */
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Lies_Fehler_Text()                                                       บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Lies_Fehler_Text()                                                       โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Lies_Fehler_Text(SWORD wFehlerNr, PSSTR pstrFehlerText, PSWORD pwZeilen)
 {
@@ -252,7 +252,7 @@ if(!wErrorFileOpen_g)
   if(wRetCode==12)                                   /*                      */
     {
     sprintf(pstrFehlerText, "    Die Fehlerdatei "   /*                      */
-      "ฏ%sฎ ist nicht vorhanden!\n", strErrorDatei); /*                      */
+      "ยป%sยซ ist nicht vorhanden!\n", strErrorDatei); /*                      */
 
     return(OK);                                      /* !!!ABBRUCH wenn kei- */
     }                                                /* ne Fehlerdatei da!!! */
@@ -269,7 +269,7 @@ wRetCode=BTRV(B_GET_EQ, strErrorBlock_g,             /*                      */
   if(wRetCode==4)                                    /*                      */
     {
     sprintf(pstrFehlerText,                          /*                      */
-      "    Fehler ฏ%sฎ in Datei ฏ%sฎ unbekannt!\n",  /*                      */
+      "    Fehler ยป%sยซ in Datei ยป%sยซ unbekannt!\n",  /*                      */
       strErrorKey, strErrorDatei);                   /*                      */
 
     if(wErrorFileOpen_g && !wTranStarted_g)
@@ -313,24 +313,24 @@ return(OK);                                          /*                      */
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Btrieve_Error()                                                       บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Btrieve_Error()                                                       โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_Btrieve_Error(SWORD wFehlerNummer,PSSTR pstrKey,PSSTR pstrFile,SWORD wLine)
 {
 if(wFehlerNummer==20)                                /*                      */
   {                                                  /*                      */
   cls();
-  printf("\n Der Programmstart ist nicht m”glich."
+  printf("\n Der Programmstart ist nicht mรถglich."
          "                DOS VARIABLE:\n"
          " Ursache:  Btrieve ist nicht geladen."
          "                SET USER=%s\n\n"
-         " Beispiel Netzwerk: ฏBREQUEST /D:22000ฎ.\n"
-         " Beispiel Einplatz: ฏBTRIEVE /U:22 /P:2048"
-         " /T:\\EURO\\EXE\\BTRIEVE.TRNฎ.\n\n", strTeiln_g);
+         " Beispiel Netzwerk: ยปBREQUEST /D:22000ยซ.\n"
+         " Beispiel Einplatz: ยปBTRIEVE /U:22 /P:2048"
+         " /T:\\EURO\\EXE\\BTRIEVE.TRNยซ.\n\n", strTeiln_g);
 
   Dl_Abbruch("Kein Btrieve geladen", wLine, pstrFile, "\0");
   }                                                  /*                      */
@@ -338,7 +338,7 @@ else if(wFehlerNummer)                               /*                      */
   {                                                  /*                      */
   cls();                                             /*                      */
   printf("Das Programm wurde abgebrochen.\n\n");     /*                      */
-  printf("Ursache : Btrieve-Fehler: ฏ%dฎ,\n"         /*                      */
+  printf("Ursache : Btrieve-Fehler: ยป%dยซ,\n"         /*                      */
          "          Key: %s,\n"                      /*                      */
          "          in Datei: %s, Zeile: %d.\n\n"    /*                      */
          "Funktion: Lies_Fehler_Text().\n",          /*                      */
@@ -352,11 +352,11 @@ return(OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Dl_Abbruch()                                                            บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Dl_Abbruch()                                                            โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Dl_Abbruch(PSSTR pstrError, SWORD wL, PSSTR pF, PSSTR pstrText)
 {
@@ -366,7 +366,7 @@ if(pstrError)
   sprintf(acMeldung, "%s (%s/Z:%d) %s!",
     pstrError, pF, wL, pstrText);
 else
-  {strcpy(acMeldung, "Bitte whlen Sie");
+  {strcpy(acMeldung, "Bitte wรคhlen Sie");
   wL=_L; pF=_F;}
 
 acMeldung[65]='\0';
@@ -377,8 +377,8 @@ if(boKundenTest_g)                                   /* Testmodus Kunde      */
 else
   M_OkQuestion(&wSelect, acMeldung,		    /* Antwort		    */
     "#Abbruch des Programmes.",                      /* Titelzeile           */
-    "#Fortfhren des Programmes.",                   /* Text der Auswahl-    */
-    "Fortfhren im #Testmodus.", _N);		   /* liste		   */
+    "#Fortfรผhren des Programmes.",                   /* Text der Auswahl-    */
+    "Fortfรผhren im #Testmodus.", _N);		   /* liste		   */
 switch(wSelect)
   {
   case -1:                                           /* Taste ESC            */
@@ -391,12 +391,12 @@ return(OK);
 } /* end Dl_Abbruch */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_ProgEnd()                                                             บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ  #define E() {strcpy(errInfo_g.strFile,_F); errInfo_g.wLine=_L;}        บ
-  บ  #define Err() {strcpy(errInfo_g.strFile,pF); errInfo_g.wLine=wL;}      บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_ProgEnd()                                                             โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘  #define E() {strcpy(errInfo_g.strFile,_F); errInfo_g.wLine=_L;}        โ•‘
+  โ•‘  #define Err() {strcpy(errInfo_g.strFile,pF); errInfo_g.wLine=wL;}      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID i_ProgEnd(PSSTR pF, SWORD wL)
 {
@@ -418,9 +418,9 @@ Err(); exit(-1);                                     /*                      */
    ..\LIB\SAA_M51L.LIB(mn_srtyp.c)    ..\LIB\SAA_M51L.LIB(ut_array.c)
    ..\LIB\SAA_M51L.LIB(mn_entf .c)    ..\LIB\SAA_M51L.LIB(WI_AKTIV.C)
    ..\LIB\SAA_M51L.LIB(MN_AKTIV.C)    ..\LIB\SAA_M51L.LIB(MN_MARK .C) */
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ ... vorbergehend (hnlich Dl_ErrorHandler), wird wieder entfernt!      บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ ... vorรผbergehend (รคhnlich Dl_ErrorHandler), wird wieder entfernt!      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_Fehler(SWORD wFehlerNr, PSSTR pstrFunktion,
 	      PSSTR pstrDateiname,  SWORD wZeile)
@@ -435,12 +435,12 @@ if( (boTestModus_g==AUS||boKundenTest_g==EIN)
   return;                                            /*                      */
 
 Ut_Calloc(pstrFehlerText, BUFFER_LEN+100, CHAR);     /*                      */
-strcpy(strEnde, "  Die Ausfhrung des Programmes "   /*                      */
+strcpy(strEnde, "  Die Ausfรผhrung des Programmes "   /*                      */
                 "wird beendet");                     /*                      */
 
 strSource[0]='\0';                                   /*                      */
 if(strlen(pstrDateiname)>0)                          /*                      */
-   sprintf(strSource,"Source ฏ%sฎ, ",pstrDateiname); /*                      */
+   sprintf(strSource,"Source ยป%sยซ, ",pstrDateiname); /*                      */
 
 wHoehe=HOE;                                          /*                      */
 Lies_Fehler_Text(wFehlerNr,pstrFehlerText,&wHoehe);  /*                      */
@@ -472,17 +472,17 @@ Wi_SchattenEin(pWkbDlg_m);                             /* Schatten ein         *
 Wi_Aktivieren(pWkbDlg_m);                              /* Dialog aktivieren    */
 
 Wi_Swa(0,0,BRE-2,1, VH(HELLWEISS, SCHWARZ));         /*                      */
-Wi_Swz(0,1,BRE,1,'ฤ');			      /*		      */
+Wi_Swz(0,1,BRE,1,'โ”€');			      /*		      */
 Wi_Ss(17,0, "euroSOFT-TOOLbox Laufzeitfehler");      /*                      */
 Wi_SetCursorPos(0,2);                                /*                      */
 
-Wi_Printf("  Fehler ฏ%dฎ bei Position: "             /*                      */
-  "%sZeile ฏ%dฎ.\n", wFehlerNr, strSource, wZeile);  /*                      */
+Wi_Printf("  Fehler ยป%dยซ bei Position: "             /*                      */
+  "%sZeile ยป%dยซ.\n", wFehlerNr, strSource, wZeile);  /*                      */
 Wi_Printf("    %s.\n\n", pstrFunktion);              /*                      */
 
 Wi_Printf("  Ursache des Fehlers:\n%s\n",            /*                      */
   pstrFehlerText);                                   /*                      */
-Wi_Printf("  %s...   ฏwFehler_g(%d)ฎ",               /*                      */
+Wi_Printf("  %s...   ยปwFehler_g(%d)ยซ",               /*                      */
   strEnde, wFehler_g );                              /*                      */
 
 Vi_SetCursorPos(0,20);                               /*                      */

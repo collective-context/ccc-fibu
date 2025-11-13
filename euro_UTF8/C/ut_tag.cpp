@@ -3,7 +3,7 @@
 #include <eur_tool.h>
 #include <string.h>
 
-GLOBAL PSKB   pSkb_g=NULL;                    /*ùSystem-Kontroll-Block */
+GLOBAL PSKB   pSkb_g=NULL;                    /*Â¨System-Kontroll-Block */
 GLOBAL	PWKB pWkbInfo_g=NULL;
 
 SLONG M_Tag(SWORD, SWORD, SWORD);

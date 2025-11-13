@@ -1,23 +1,23 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Dl_GetInstallation()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Dl_GetInstallation(), Dl_PutInstallation()                                  º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Dl_GetInstallation(), Dl_PutInstallation()                                  â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_dlg.h>
 SWORD Dl_GetInstallation(pstrDateiName);
 SWORD Dl_PutInstallation(pstrDateiName);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 PSSTR pstrDateiName  Dateiname der Installationsdatei (z.B.: \euro\t02\euroINST).
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Diese Funktion liest die vom Benutzer einstellbaren Optionen aus einer
 Struktur, die beim ersten Aufruf von dieser Funktion in der Datei euroINST
 gespeichert wird. Ist also die Datei euroINST im Teilnehmerverzeichnis noch
@@ -26,7 +26,7 @@ beschrieben.
 
 Beim zweiten Aufruf der Funktion werden der Struktur die beim letzten
 Verlassen des Programms gespeicherten Werte entnommen. Bei vorhandener Datei
-euroINST werden also die zuletzt gespeicherten Werte eingelesen fr:
+euroINST werden also die zuletzt gespeicherten Werte eingelesen fÃ¼r:
 
 - die Mausgeschwindigkeit
 - die Farbpalette
@@ -35,35 +35,35 @@ euroINST werden also die zuletzt gespeicherten Werte eingelesen fr:
 
 - der Testmodus
 - die Mandantennummer (  00 -  99)
-- die L„nderextention ( 000 - 999)
+- die LÃ¤nderextention ( 000 - 999)
 
 - die Verzeichnisse ( z.B.: \euro\t01\, \euro\exe\, \euro\dat\, \euro\hlp\,
                             \euro\txt\, \KHK\KHKDAT\)
 
-Mit diesen Werten werden die globalen Variablen der Toolbox, ber die diese
+Mit diesen Werten werden die globalen Variablen der Toolbox, Ã¼ber die diese
 Programmeigenschaften gesteuert werden, initialisiert.
 
 Sie sollten die Funktion Dl_GetInstallation als erste Funktion in Ihrem
 Programm aufrufen.
 
-Wurden zum Beispiel im Menprogramm (z.B. \euro\t02\wahl.exe) Installations-
-werte ver„ndert, so k”nnen diese mit Dl_PutInstallation() in die Datei
-euroINST zurckgeschrieben werden.
+Wurden zum Beispiel im MenÃ¼programm (z.B. \euro\t02\wahl.exe) Installations-
+werte verÃ¤ndert, so kÃ¶nnen diese mit Dl_PutInstallation() in die Datei
+euroINST zurÃ¼ckgeschrieben werden.
 
 
-Rckgabewert Dl_GetInstallation():
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert Dl_GetInstallation():
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD Fehlerinformation: OK    - Daten konnten gelesen werden.
                         ERROR - Daten konnten nicht gelesen werden.
 
-Rckgabewert Dl_PutInstallation():
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert Dl_PutInstallation():
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD Fehlerinformation: OK    - Daten konnten geschrieben werden.
                         ERROR - Daten konnten nicht geschrieben werden.
 
 .ff
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 - wVioMode_g    (R/W)       - wCSInd_g      (R/W)       - wBeepDauer_g   (R/W)
 - wMausSpeed_g  (R/W)       - wBeepFreq_g   (R/W)       - boBeepen_g     (R/W)
 
@@ -76,9 +76,9 @@ Benutzte globale Variablen (R/W):
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <fcntl.h>
 #include <io.h>
 #include <stdio.h>
@@ -87,10 +87,10 @@ Benutzte globale Variablen (R/W):
 #include <eur_tool.h>
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        KONSTANTEN UND MAKROS                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
-#define OPTSIGNATUR "4win Software 2.00"  /* Signatur fr Struktur */
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        KONSTANTEN UND MAKROS                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
+#define OPTSIGNATUR "4win Software 2.00"  /* Signatur fÃ¼r Struktur */
 
 #define SPA  9
 #define ZEI  5
@@ -101,9 +101,9 @@ Benutzte globale Variablen (R/W):
 #define TBZ ZEI+6
 #define TBB BRE-19
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT COLORSET  aCS_g[5];
 IMPORT SWORD	  wCSInd_g;
 IMPORT BOOL      boBeepen_g;
@@ -120,7 +120,7 @@ IMPORT BOOL boTestModus_g;
 IMPORT BOOL boKundenTest_g;
 
 IMPORT CHAR	  strPrt_g[4];		// Extention Druckernummer
-IMPORT CHAR	  strExt_g[4];		// Extention fr Landescode
+IMPORT CHAR	  strExt_g[4];		// Extention fÃ¼r Landescode
 IMPORT CHAR	  strMan_g[3];		// Mandaten-Nummer
 IMPORT CHAR	  strNrTeil_g[4];	//
 IMPORT CHAR	  strTeiln_g[81];	// Teilnehmer-Verzeichnis
@@ -132,7 +132,7 @@ IMPORT CHAR	  strZug_g[81]; 	// Datenzugan-Verzeichnis z.B KHK
 IMPORT CHAR	  strTmp_g[TB_MAX];	//Temp z.B. Mask/Form-Compiler
 
 IMPORT CHAR	  strModemTyp_g[4];
-IMPORT CHAR	  strMoDevice_g[2];	 // W„hlautomat
+IMPORT CHAR	  strMoDevice_g[2];	 // WÃ¤hlautomat
 IMPORT CHAR	  strPulsWahl_g[21];
 IMPORT CHAR	  strAmtsLeit_g[21];
 IMPORT CHAR	  strWahlEnd_g[21];
@@ -143,9 +143,9 @@ IMPORT CHAR	  strVorwahl_g[21];
 IMPORT	ERRINFO errInfo_g;
 IMPORT PWKB	  pWkbInfo_g;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 struct options
   {
   CHAR acSignatur[sizeof(OPTSIGNATUR)+1];
@@ -177,9 +177,9 @@ struct options
   CHAR strTmp[TB_MAX];
   } Optionen;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º       FUNKTIONS-DEFINITION zum Lesen der Installation                  º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘       FUNKTIONS-DEFINITION zum Lesen der Installation                  â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Dl_GetInstallation(PSSTR pstrDateiName)
 {
@@ -202,11 +202,11 @@ if( (pstrUser = getenv("USER")) != NULL)
   else strcpy(pstrFileName, pstrDateiName);
   }
 else
-  {printf("\nDie DOS-Variable ¯USER® muá den Pfad des"
+  {printf("\nDie DOS-Variable Â»USERÂ« muÃŸ den Pfad des"
     " Teilnehmerverzeichnisses tragen.        \n"
     "                                         \n"
     "Beispiel: [SET USER=\\EURO\\T01].        \n"
-    "ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ\n"
+    "â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n"
     "Fehler: %s, Zeile: %d, Key: <%s|%s>.\n"
     "                                                                      \n",
      _F, _L, pstrDateiName, pstrUser);
@@ -216,7 +216,7 @@ strcpy(strTeiln_g, pstrUser);
 strcat(strTeiln_g, "\\");
 strcpy(strNrTeil_g, strrchr(pstrUser, '\\')+1);
 
-wFileHandle=_open(pstrFileName,O_CREAT|O_RDWR|O_TEXT); /* Datei ”ffnen	       */
+wFileHandle=_open(pstrFileName,O_CREAT|O_RDWR|O_TEXT); /* Datei Ã¶ffnen	       */
 if(wFileHandle == -1)
   {printf("\nDatei: %s konnte in Dl_GetInstall"
     "ation nicht angelegt werden.", pstrFileName);
@@ -259,7 +259,7 @@ strncpy(strTelBetr_g,  Optionen.strTelBetr,   21);
 strncpy(strVorwahl_g,  Optionen.strVorwahl,   21);
 strncpy(strTmp_g,      Optionen.strTmp,   TB_MAX);
 
-/*if(wVioMode_g==MONOCHROM && wCSInd_g!=MNU_PAL_MONO)  /* Palette berprfen   */
+/*if(wVioMode_g==MONOCHROM && wCSInd_g!=MNU_PAL_MONO)  /* Palette Ã¼berprÃ¼fen   */
 /*  wCSInd_g = MNU_PAL_MONO;	andere Palette ist erlaubt.	    */
 
 _close(wFileHandle);
@@ -270,40 +270,40 @@ return (OK);
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    Dl_PutInstallation             Datum: 19.03.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PSSTR pstrDateiName Dateiname des aktuellen	    º
-  º                                       jeweiligen Programms             º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion liest die vom Anwender mit ver-      º
-  º                    schiedenen Dialogfeldern einstellbaren Optionen     º
-  º                    aus globalen Variablen in eine Struktur und schreibtº
-  º                    diese akteullen Werte in die Datei: "euroINST".     º
-  º                                                                        º
-  º                    Im einzelnen handelt es sich um folgende Daten:     º
-  º                                                                        º
-  º                    - die Mausgeschwindigkeit                           º
-  º                    - die Farbpalette                                   º
-  º                    - die Dauer und Frequenz des Warntons               º
-  º                    - die Information, ob ein Warnton erklingen soll    º
-  º                      oder nicht                                        º
-  º                                                                        º
-  º                    Beim n„chsten Programmstart k”nnen durch einen      º
-  º                    Aufruf der Funktion Dl_GetInstallation() die vom    º
-  º                    Anwender festgelegten Werte wieder initialisiert    º
-  º                    werden.                                             º
-  º                                                                        º
-  º  Rckgabewert:     SWORD  Fehlerinformation OK/ERROR		    º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  - wCSInd_g           (R)                            º
-  º                    - wMausSpeed_g       (R)                            º
-  º                    - wBeepFreq_g        (R)                            º
-  º                    - wBeepDauer_g       (R)                            º
-  º                    - boBeepen_g         (R)                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    Dl_PutInstallation             Datum: 19.03.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PSSTR pstrDateiName Dateiname des aktuellen	    â•‘
+  â•‘                                       jeweiligen Programms             â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion liest die vom Anwender mit ver-      â•‘
+  â•‘                    schiedenen Dialogfeldern einstellbaren Optionen     â•‘
+  â•‘                    aus globalen Variablen in eine Struktur und schreibtâ•‘
+  â•‘                    diese akteullen Werte in die Datei: "euroINST".     â•‘
+  â•‘                                                                        â•‘
+  â•‘                    Im einzelnen handelt es sich um folgende Daten:     â•‘
+  â•‘                                                                        â•‘
+  â•‘                    - die Mausgeschwindigkeit                           â•‘
+  â•‘                    - die Farbpalette                                   â•‘
+  â•‘                    - die Dauer und Frequenz des Warntons               â•‘
+  â•‘                    - die Information, ob ein Warnton erklingen soll    â•‘
+  â•‘                      oder nicht                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘                    Beim nÃ¤chsten Programmstart kÃ¶nnen durch einen      â•‘
+  â•‘                    Aufruf der Funktion Dl_GetInstallation() die vom    â•‘
+  â•‘                    Anwender festgelegten Werte wieder initialisiert    â•‘
+  â•‘                    werden.                                             â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     SWORD  Fehlerinformation OK/ERROR		    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  - wCSInd_g           (R)                            â•‘
+  â•‘                    - wMausSpeed_g       (R)                            â•‘
+  â•‘                    - wBeepFreq_g        (R)                            â•‘
+  â•‘                    - wBeepDauer_g       (R)                            â•‘
+  â•‘                    - boBeepen_g         (R)                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Dl_PutInstallation(PSSTR pstrDateiName)
 {
@@ -322,11 +322,11 @@ if( (pstrUser = getenv("USER")) != NULL)
   else strcpy(acDateiName, pstrDateiName);
   }
 else
-  {printf("\nDie DOS-Variable ¯USER® muá den Pfad des"
+  {printf("\nDie DOS-Variable Â»USERÂ« muÃŸ den Pfad des"
     " Teilnehmerverzeichnisses tragen.        \n"
     "                                         \n"
     "Beispiel: [SET USER=\\EURO\\T01].        \n"
-    "ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ\n"
+    "â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n"
     "Fehler: %s, Zeile: %d, Key: <%s|%s>.\n"
     "                                                                      \n",
      _F, _L, pstrDateiName, pstrUser);
@@ -336,9 +336,9 @@ strcpy(strTeiln_g, pstrUser);
 strcat(strTeiln_g, "\\");
 strcpy(strNrTeil_g, strrchr(pstrUser, '\\')+1);
 
-if((pFileHandle=fopen(acDateiName,"w")) == NULL)     /* Datei ”ffnen	     */
+if((pFileHandle=fopen(acDateiName,"w")) == NULL)     /* Datei Ã¶ffnen	     */
   {printf("\nDatei: %s konnte in Dl_PutInstallation"
-    " nicht ge”ffnet werden.", acDateiName);
+    " nicht geÃ¶ffnet werden.", acDateiName);
   E(); exit(0);}
 
     Optionen.wPalette      = wCSInd_g;                 /* Daten aus den glo-   */
@@ -368,12 +368,12 @@ if((pFileHandle=fopen(acDateiName,"w")) == NULL)     /* Datei ”ffnen	     */
     strcpy(Optionen.strVorwahl,  strVorwahl_g);
     strcpy(Optionen.strTmp,	 strTmp_g);
 
-fwrite((char*) &Optionen,			     /* neue Daten ber alte */
+fwrite((char*) &Optionen,			     /* neue Daten Ã¼ber alte */
   sizeof(Optionen), 1, pFileHandle);		     /* Struktur schreiben   */
 
-fclose(pFileHandle);				     /* Datei schlieáen      */
+fclose(pFileHandle);				     /* Datei schlieÃŸen      */
 /* Wi_TestPrintf(pWkbInfo_g, "\nPut 2:%s", strDat_g); */
-return(OK);					     /* und zurck	     */
+return(OK);					     /* und zurÃ¼ck	     */
 }
 
 /* -------------------------------------------------------------------------
@@ -382,34 +382,34 @@ STATIC	PSSTR pstrVerz_m   = "Verzeichnis:";
 STATIC	PSSTR pstrD_m	   = "Dateiname:";
 STATIC	PSSTR apstrFalscherName_m[]=
 {
-    " Der eingegebene Dateiname ist ungltig.",
+    " Der eingegebene Dateiname ist ungÃ¼ltig.",
     NULL,
 };
 
 
 STATIC SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE);
 
-//ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-//º  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      º
-//ºÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄº
-//º                                                                        º
-//º  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     º
-//º                    PEVENT   pEvent     Zeiger auf Event-Struktur       º
-//º                                                                        º
-//º                                                                        º
-//º  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     º
-//º                    zeigt nach Anforderung das Hilfefenster, und        º
-//º                    kehrt zur aufrufenden Funktion zurck, wenn         º
-//º                    entweder die Schaltfl„che ABBRUCH oder EINGABE      º
-//º                    bet„tigt wurde.                                     º
-//º                                                                        º
-//º  Rckgabewert:     DLG_ESC     ABBRUCH-Schaltfl„che wurde ausgew„hlt   º
-//º                    DLG_RETURN  EINGABE-Schaltfl„che wurde ausgew„hlt   º
-//º                                                                        º
-//º  Benutzte globale   - pstrReturn_g (R)                                 º
-//º  Variablen (R/W):   - pstrEsc_g    (R)                                 º
-//º                     - pstrF1_g     (R)                                 º
-//ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+//â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+//â•‘  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      â•‘
+//â•‘â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•‘
+//â•‘                                                                        â•‘
+//â•‘  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     â•‘
+//â•‘                    PEVENT   pEvent     Zeiger auf Event-Struktur       â•‘
+//â•‘                                                                        â•‘
+//â•‘                                                                        â•‘
+//â•‘  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     â•‘
+//â•‘                    zeigt nach Anforderung das Hilfefenster, und        â•‘
+//â•‘                    kehrt zur aufrufenden Funktion zurÃ¼ck, wenn         â•‘
+//â•‘                    entweder die SchaltflÃ¤che ABBRUCH oder EINGABE      â•‘
+//â•‘                    betÃ¤tigt wurde.                                     â•‘
+//â•‘                                                                        â•‘
+//â•‘  RÃ¼ckgabewert:     DLG_ESC     ABBRUCH-SchaltflÃ¤che wurde ausgewÃ¤hlt   â•‘
+//â•‘                    DLG_RETURN  EINGABE-SchaltflÃ¤che wurde ausgewÃ¤hlt   â•‘
+//â•‘                                                                        â•‘
+//â•‘  Benutzte globale   - pstrReturn_g (R)                                 â•‘
+//â•‘  Variablen (R/W):   - pstrEsc_g    (R)                                 â•‘
+//â•‘                     - pstrF1_g     (R)                                 â•‘
+//â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 STATIC
 SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
 {
@@ -435,17 +435,17 @@ SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
             case EVENT_L_PRESS:
                 if (pE->wZeile == ZEI+HOE-2)
                 {
-		    if(pE->wSpalte > SPA+2 &&	   // RETURN-Schaltfl„che
+		    if(pE->wSpalte > SPA+2 &&	   // RETURN-SchaltflÃ¤che
 		      pE->wSpalte <
 		      SPA+3+(WORD)strlen(pstrReturn_g))
 		      return(DLG_RETURN);
 
-		    if(pE->wSpalte > SPA+17 &&	   // ESC-Schaltfl„che
+		    if(pE->wSpalte > SPA+17 &&	   // ESC-SchaltflÃ¤che
 		      pE->wSpalte <
 		      SPA+18+(WORD)strlen(pstrEsc_g))
 		      return(DLG_ESC);
 
-		    if(pE->wSpalte > SPA+30 &&	   // Hilfe-Schaltfl„che
+		    if(pE->wSpalte > SPA+30 &&	   // Hilfe-SchaltflÃ¤che
 		      pE->wSpalte <
 		      SPA+31+(WORD)strlen(pstrF1_g))
 		      Dl_HilfeTools(SPEICHERN);
@@ -458,11 +458,11 @@ SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
 
 
 
-  printf("\nDie DOS-Variable ¯USER® muá den Pfad des"
+  printf("\nDie DOS-Variable Â»USERÂ« muÃŸ den Pfad des"
     " Teilnehmerverzeichnisses tragen.        \n"
     "                                         \n"
     "Beispiel: [SET USER=\\EURO\\T01].        \n"
-    "ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ\n"
+    "â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n"
     "Lesen: %s, Zeile: %d, Key: <%s|%s>.\n"
     "                                                                      \n",
      _F, _L, acDateiName, pstrUser);
@@ -472,14 +472,14 @@ SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
 
 FILE *pFileHandle;
 
-if(!(pFileHandle=fopen(acDateiName,"r")))	     // Datei ”ffnen > lesen
+if(!(pFileHandle=fopen(acDateiName,"r")))	     // Datei Ã¶ffnen > lesen
   {
-  if(!(pFileHandle=fopen(acDateiName,"w")))	     // ”ffnen > schreiben
+  if(!(pFileHandle=fopen(acDateiName,"w")))	     // Ã¶ffnen > schreiben
     {printf("\nDatei: %s konnte in Dl_GetInstall"
       "ation nicht angelegt werden.", acDateiName);
     E(); exit(0);}
   else
-    {fclose(pFileHandle);			     // Datei schlieáen
+    {fclose(pFileHandle);			     // Datei schlieÃŸen
     return(ERROR);}
   }
 

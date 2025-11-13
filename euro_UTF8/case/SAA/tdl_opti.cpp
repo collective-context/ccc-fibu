@@ -1,56 +1,56 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Dl_GetOptionen		      Datum: 25.10.88	   บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PSSTR pstrPrgName   Dateiname des aktuellen	    บ
-  บ                                       jeweiligen Programms             บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion liest die vom Benutzer einstell-     บ
-  บ                    baren Optionen aus einer Struktur, die beim         บ
-  บ                    ersten Aufruf des Programms von dieser Funktion     บ
-  บ                    an das Ende der Programmdatei angehngt wird.       บ
-  บ                                                                        บ
-  บ                    Beim zweiten Aufruf des Programms werden dieser     บ
-  บ                    Struktur die beim letzten Verlassen des Programms   บ
-  บ                    gespeicherten Werte entnommen fr                   บ
-  บ                    - die Mausgeschwindigkeit                           บ
-  บ                    - die Farbpalette                                   บ
-  บ                    - die Dauer und Frequenz des Warntons               บ
-  บ                    - die Information, ob ein Warnton erklingen soll    บ
-  บ                      oder nicht                                        บ
-  บ                    Mit diesen Werten werden die globalen Variablen     บ
-  บ                    der Toolbox, die diese Werte enthalten,             บ
-  บ                    initialisiert.                                      บ
-  บ                                                                        บ
-  บ                    Sie sollten diese Funktion als erste Funktion       บ
-  บ                    in Ihrem Programm aufrufen.                         บ
-  บ                                                                        บ
-  บ                    Da die M”glichkeit besteht, daแ der Anwender        บ
-  บ                    den Namen der Programmdatei ndert, sollten Sie     บ
-  บ                    dieser Funktion als Argument argv[0] bergeben,     บ
-  บ                    das ab DOS 3.xx den Dateinamen des gestarteten      บ
-  บ                    Programms enthlt. Sie sollten in diesem Fall       บ
-  บ                    vor dem Aufruf der Funktion berprfen, mit         บ
-  บ                    welcher DOS-Version das System gefahren wird.       บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD   Fehlerinformation OK/ERROR		    บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - wVioMode_g         (R)                            บ
-  บ                    - wMausSpeed_g       (R)                            บ
-  บ                    - wCSInd_g           (R)                            บ
-  บ                    - wBeepFreq_g        (R)                            บ
-  บ                    - wBeepDauer_g       (R)                            บ
-  บ                    - boBeepen_g         (R)                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Dl_GetOptionen		      Datum: 25.10.88	   โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PSSTR pstrPrgName   Dateiname des aktuellen	    โ•‘
+  โ•‘                                       jeweiligen Programms             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion liest die vom Benutzer einstell-     โ•‘
+  โ•‘                    baren Optionen aus einer Struktur, die beim         โ•‘
+  โ•‘                    ersten Aufruf des Programms von dieser Funktion     โ•‘
+  โ•‘                    an das Ende der Programmdatei angehรคngt wird.       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Beim zweiten Aufruf des Programms werden dieser     โ•‘
+  โ•‘                    Struktur die beim letzten Verlassen des Programms   โ•‘
+  โ•‘                    gespeicherten Werte entnommen fรผr                   โ•‘
+  โ•‘                    - die Mausgeschwindigkeit                           โ•‘
+  โ•‘                    - die Farbpalette                                   โ•‘
+  โ•‘                    - die Dauer und Frequenz des Warntons               โ•‘
+  โ•‘                    - die Information, ob ein Warnton erklingen soll    โ•‘
+  โ•‘                      oder nicht                                        โ•‘
+  โ•‘                    Mit diesen Werten werden die globalen Variablen     โ•‘
+  โ•‘                    der Toolbox, die diese Werte enthalten,             โ•‘
+  โ•‘                    initialisiert.                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Sie sollten diese Funktion als erste Funktion       โ•‘
+  โ•‘                    in Ihrem Programm aufrufen.                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Da die Mรถglichkeit besteht, daร der Anwender        โ•‘
+  โ•‘                    den Namen der Programmdatei รคndert, sollten Sie     โ•‘
+  โ•‘                    dieser Funktion als Argument argv[0] รผbergeben,     โ•‘
+  โ•‘                    das ab DOS 3.xx den Dateinamen des gestarteten      โ•‘
+  โ•‘                    Programms enthรคlt. Sie sollten in diesem Fall       โ•‘
+  โ•‘                    vor dem Aufruf der Funktion รผberprรผfen, mit         โ•‘
+  โ•‘                    welcher DOS-Version das System gefahren wird.       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD   Fehlerinformation OK/ERROR		    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - wVioMode_g         (R)                            โ•‘
+  โ•‘                    - wMausSpeed_g       (R)                            โ•‘
+  โ•‘                    - wCSInd_g           (R)                            โ•‘
+  โ•‘                    - wBeepFreq_g        (R)                            โ•‘
+  โ•‘                    - wBeepDauer_g       (R)                            โ•‘
+  โ•‘                    - boBeepen_g         (R)                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <eur_tool.h>
 #include <fcntl.h>
 #include <io.h>
@@ -59,15 +59,15 @@
 #include <string.h>
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        KONSTANTEN UND MAKROS                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-#define OPTSIGNATUR "euroSOFT - Install"           /* Signatur fr Struktur */
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        KONSTANTEN UND MAKROS                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+#define OPTSIGNATUR "euroSOFT - Install"           /* Signatur fรผr Struktur */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT SWORD wVioMode_g;
 IMPORT SWORD wCSInd_g;
 IMPORT SWORD wMausSpeed_g;
@@ -75,21 +75,21 @@ IMPORT SWORD wBeepFreq_g;
 IMPORT SWORD wBeepDauer_g;
 IMPORT BOOL boBeepen_g;
 
-IMPORT CHAR	  strExt_g[4];		// Extention fr Landescode
+IMPORT CHAR	  strExt_g[4];		// Extention fรผr Landescode
 IMPORT CHAR	  strTeiln_g[81];	// Teilnehmer-Verzeichnis
 IMPORT CHAR	  strExe_g[81]; 	// Programm-Verzeichnis
 IMPORT CHAR	  strDat_g[81]; 	// Daten-Verzeichnis
 IMPORT CHAR	  strHlp_g[81]; 	// Hilftext-Verzeichnis
 IMPORT CHAR	  strTxt_g[81];
 IMPORT CHAR	  strZug_g[81]; 	// Datenzugan-Verzeichnis z.B KHK
-IMPORT CHAR	  strApp_g[TB_MAX];	//๙Applikations-Kennzeichen in e_global.cpp
+IMPORT CHAR	  strApp_g[TB_MAX];	//ยจApplikations-Kennzeichen in e_global.cpp
 
 IMPORT CHAR strHdb_g[81];  // ~ich glaub das wird nicht mehr verwendet
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 struct options
 {
     CHAR acSignatur[sizeof(OPTSIGNATUR)];
@@ -110,9 +110,9 @@ struct options
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Dl_GetOptionen(PSSTR pstrPrgName)
 {
@@ -120,7 +120,7 @@ SWORD Dl_GetOptionen(PSSTR pstrPrgName)
     SWORD    wFileHandle;
 
 
-    if ( (wFileHandle=open(pstrPrgName, 	   /* Datei ”ffnen	   */
+    if ( (wFileHandle=open(pstrPrgName, 	   /* Datei รถffnen	   */
                            O_RDWR|O_BINARY)) == -1)
         return (ERROR);
 
@@ -137,14 +137,14 @@ SWORD Dl_GetOptionen(PSSTR pstrPrgName)
                Optionen.acSignatur) != 0)           /* vorhanden, wird      */
     {                                               /* hier die Struktur    */
         memset(&Optionen, 0, sizeof(Optionen));     /* an das Ende der      */
-        strcpy(Optionen.acSignatur, OPTSIGNATUR);   /* Datei angehngt      */
+        strcpy(Optionen.acSignatur, OPTSIGNATUR);   /* Datei angehรคngt      */
 	lseek(wFileHandle, 0L, SEEK_END);
         boDasErsteMal = JA;
 	if (write(wFileHandle,
                   (char*) &Optionen,
                   sizeof(Optionen)) != sizeof(Optionen))
         {
-	    close(wFileHandle); 		       /* Datei schlieแen      */
+	    close(wFileHandle); 		       /* Datei schlieรen      */
             return (ERROR);
         }
 	close(wFileHandle);
@@ -167,7 +167,7 @@ SWORD Dl_GetOptionen(PSSTR pstrPrgName)
         strcpy (strHdb_g,   Optionen.strHdb);
         strcpy (strTxt_g,   Optionen.strTxt);
     }
-    if (wVioMode_g == MONOCHROM &&                  /* Palette berprfen   */
+    if (wVioMode_g == MONOCHROM &&                  /* Palette รผberprรผfen   */
         wCSInd_g   != MNU_PAL_MONO)
             wCSInd_g = MNU_PAL_MONO;
 
@@ -177,57 +177,57 @@ SWORD Dl_GetOptionen(PSSTR pstrPrgName)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Dl_PutOptionen		      Datum: 25.10.88	   บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PSSTR pstrPrgName   Dateiname des aktuellen	    บ
-  บ                                       jeweiligen Programms             บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion liest die vom Anwender mit ver-      บ
-  บ                    schiedenen Dialogfeldern einstellbaren Optionen     บ
-  บ                    aus globalen Variablen in eine Struktur, die        บ
-  บ                    sich innerhalb der .EXE-Datei befindet, und         บ
-  บ                    beschreibt diesen Teil der Datei mit den beim       บ
-  บ                    Aufruf dieser Funktion aktuellen Werten.            บ
-  บ                                                                        บ
-  บ                    Im einzelnen handelt es sich um folgende Daten:     บ
-  บ                                                                        บ
-  บ                    - die Mausgeschwindigkeit                           บ
-  บ                    - die Farbpalette                                   บ
-  บ                    - die Dauer und Frequenz des Warntons               บ
-  บ                    - die Information, ob ein Warnton erklingen soll    บ
-  บ                      oder nicht                                        บ
-  บ                                                                        บ
-  บ                    Beim nchsten Programmstart k”nnen durch einen      บ
-  บ		       Aufruf der Funktion Dl_GetOptionen() die vom	   บ
-  บ                    Anwender festgelegten Werte wieder initialisiert    บ
-  บ                    werden.                                             บ
-  บ                                                                        บ
-  บ                    Da die M”glichkeit besteht, daแ der Anwender        บ
-  บ                    den Namen der Programmdatei ndert, sollten Sie     บ
-  บ                    dieser Funktion als Argument argv[0] bergeben,     บ
-  บ                    das ab DOS 3.xx den Dateinamen des gestarteten      บ
-  บ                    Programms enthlt. Sie sollten in diesem Fall       บ
-  บ                    vor dem Aufruf der Funktion berprfen, mit         บ
-  บ                    welcher DOS-Version das System gefahren wird.       บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD  Fehlerinformation OK/ERROR		    บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - wCSInd_g           (R)                            บ
-  บ                    - wMausSpeed_g       (R)                            บ
-  บ                    - wBeepFreq_g        (R)                            บ
-  บ                    - wBeepDauer_g       (R)                            บ
-  บ                    - boBeepen_g         (R)                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Dl_PutOptionen		      Datum: 25.10.88	   โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PSSTR pstrPrgName   Dateiname des aktuellen	    โ•‘
+  โ•‘                                       jeweiligen Programms             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion liest die vom Anwender mit ver-      โ•‘
+  โ•‘                    schiedenen Dialogfeldern einstellbaren Optionen     โ•‘
+  โ•‘                    aus globalen Variablen in eine Struktur, die        โ•‘
+  โ•‘                    sich innerhalb der .EXE-Datei befindet, und         โ•‘
+  โ•‘                    beschreibt diesen Teil der Datei mit den beim       โ•‘
+  โ•‘                    Aufruf dieser Funktion aktuellen Werten.            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Im einzelnen handelt es sich um folgende Daten:     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    - die Mausgeschwindigkeit                           โ•‘
+  โ•‘                    - die Farbpalette                                   โ•‘
+  โ•‘                    - die Dauer und Frequenz des Warntons               โ•‘
+  โ•‘                    - die Information, ob ein Warnton erklingen soll    โ•‘
+  โ•‘                      oder nicht                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Beim nรคchsten Programmstart kรถnnen durch einen      โ•‘
+  โ•‘		       Aufruf der Funktion Dl_GetOptionen() die vom	   โ•‘
+  โ•‘                    Anwender festgelegten Werte wieder initialisiert    โ•‘
+  โ•‘                    werden.                                             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Da die Mรถglichkeit besteht, daร der Anwender        โ•‘
+  โ•‘                    den Namen der Programmdatei รคndert, sollten Sie     โ•‘
+  โ•‘                    dieser Funktion als Argument argv[0] รผbergeben,     โ•‘
+  โ•‘                    das ab DOS 3.xx den Dateinamen des gestarteten      โ•‘
+  โ•‘                    Programms enthรคlt. Sie sollten in diesem Fall       โ•‘
+  โ•‘                    vor dem Aufruf der Funktion รผberprรผfen, mit         โ•‘
+  โ•‘                    welcher DOS-Version das System gefahren wird.       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD  Fehlerinformation OK/ERROR		    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - wCSInd_g           (R)                            โ•‘
+  โ•‘                    - wMausSpeed_g       (R)                            โ•‘
+  โ•‘                    - wBeepFreq_g        (R)                            โ•‘
+  โ•‘                    - wBeepDauer_g       (R)                            โ•‘
+  โ•‘                    - boBeepen_g         (R)                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Dl_PutOptionen(PSSTR pstrPrgName)
 {
     SWORD    wFileHandle;
     SWORD     wReturn;
 
-    if ((wFileHandle = open(pstrPrgName,	   /* Datei ”ffnen	   */
+    if ((wFileHandle = open(pstrPrgName,	   /* Datei รถffnen	   */
                         O_RDWR | O_BINARY)) == -1)
         return(ERROR);
 
@@ -249,63 +249,63 @@ SWORD Dl_PutOptionen(PSSTR pstrPrgName)
            0L - sizeof(Optionen),                   /* Struktur position.   */
            SEEK_END);
 
-    if( write(wFileHandle,			   /* neue Daten ber alte */
+    if( write(wFileHandle,			   /* neue Daten รผber alte */
               (char*) &Optionen,                    /* Struktur schreiben   */
               sizeof(Optionen)) != sizeof(Optionen))
          wReturn = ERROR;
     else
         wReturn = OK;
 
-    close(wFileHandle); 			   /* Datei schlieแen	   */
+    close(wFileHandle); 			   /* Datei schlieรen	   */
 
-    return (wReturn);                               /* und zurck           */
+    return (wReturn);                               /* und zurรผck           */
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Dl_GetInstallation	      Datum: 19.03.89	   บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PSSTR pstrPrgName   Dateiname des aktuellen	    บ
-  บ                                       jeweiligen Programms             บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion liest die vom Benutzer einstell-     บ
-  บ                    baren Optionen aus einer Struktur, die in der       บ
-  บ                    Datei euroINST gespeichert ist.                     บ
-  บ                                                                        บ
-  บ                    Beim zweiten Aufruf des Programms werden dieser     บ
-  บ                    Struktur die beim letzten Verlassen des Programms   บ
-  บ                    gespeicherten Werte entnommen fr                   บ
-  บ                    - die Mausgeschwindigkeit                           บ
-  บ                    - die Farbpalette                                   บ
-  บ                    - die Dauer und Frequenz des Warntons               บ
-  บ                    - die Information, ob ein Warnton erklingen soll    บ
-  บ                      oder nicht                                        บ
-  บ                    Mit diesen Werten werden die globalen Variablen     บ
-  บ                    der Toolbox, die diese Werte enthalten,             บ
-  บ                    initialisiert.                                      บ
-  บ                                                                        บ
-  บ                    Sie sollten diese Funktion als erste Funktion       บ
-  บ                    in Ihrem Programm aufrufen.                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD   Fehlerinformation OK/ERROR		    บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - wVioMode_g         (R)                            บ
-  บ                    - wMausSpeed_g       (R)                            บ
-  บ                    - wCSInd_g           (R)                            บ
-  บ                    - wBeepFreq_g        (R)                            บ
-  บ                    - wBeepDauer_g       (R)                            บ
-  บ                    - boBeepen_g         (R)                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Dl_GetInstallation	      Datum: 19.03.89	   โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PSSTR pstrPrgName   Dateiname des aktuellen	    โ•‘
+  โ•‘                                       jeweiligen Programms             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion liest die vom Benutzer einstell-     โ•‘
+  โ•‘                    baren Optionen aus einer Struktur, die in der       โ•‘
+  โ•‘                    Datei euroINST gespeichert ist.                     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Beim zweiten Aufruf des Programms werden dieser     โ•‘
+  โ•‘                    Struktur die beim letzten Verlassen des Programms   โ•‘
+  โ•‘                    gespeicherten Werte entnommen fรผr                   โ•‘
+  โ•‘                    - die Mausgeschwindigkeit                           โ•‘
+  โ•‘                    - die Farbpalette                                   โ•‘
+  โ•‘                    - die Dauer und Frequenz des Warntons               โ•‘
+  โ•‘                    - die Information, ob ein Warnton erklingen soll    โ•‘
+  โ•‘                      oder nicht                                        โ•‘
+  โ•‘                    Mit diesen Werten werden die globalen Variablen     โ•‘
+  โ•‘                    der Toolbox, die diese Werte enthalten,             โ•‘
+  โ•‘                    initialisiert.                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Sie sollten diese Funktion als erste Funktion       โ•‘
+  โ•‘                    in Ihrem Programm aufrufen.                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD   Fehlerinformation OK/ERROR		    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - wVioMode_g         (R)                            โ•‘
+  โ•‘                    - wMausSpeed_g       (R)                            โ•‘
+  โ•‘                    - wCSInd_g           (R)                            โ•‘
+  โ•‘                    - wBeepFreq_g        (R)                            โ•‘
+  โ•‘                    - wBeepDauer_g       (R)                            โ•‘
+  โ•‘                    - boBeepen_g         (R)                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Dl_GetInstallation(PSSTR pstrPrgName)
 {
     BOOL     boDasErsteMal;
     SWORD    wFileHandle;
 
-    if ( (wFileHandle=open(pstrPrgName, 	   /* Datei ”ffnen	   */
+    if ( (wFileHandle=open(pstrPrgName, 	   /* Datei รถffnen	   */
                            O_RDWR|O_TEXT)) == -1)
         return (ERROR);
 
@@ -329,7 +329,7 @@ SWORD Dl_GetInstallation(PSSTR pstrPrgName)
                   (char*) &Optionen,
                   sizeof(Optionen)) != sizeof(Optionen))
         {
-	    close(wFileHandle); 		       /* Datei schlieแen      */
+	    close(wFileHandle); 		       /* Datei schlieรen      */
             return (ERROR);
         }
 	close(wFileHandle);
@@ -352,7 +352,7 @@ SWORD Dl_GetInstallation(PSSTR pstrPrgName)
         strcpy (strHdb_g,   Optionen.strHdb);
         strcpy (strTxt_g,   Optionen.strTxt);
     }
-    if (wVioMode_g == MONOCHROM &&                  /* Palette berprfen   */
+    if (wVioMode_g == MONOCHROM &&                  /* Palette รผberprรผfen   */
         wCSInd_g   != MNU_PAL_MONO)
             wCSInd_g = MNU_PAL_MONO;
 
@@ -362,47 +362,47 @@ SWORD Dl_GetInstallation(PSSTR pstrPrgName)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Dl_PutInstallation	      Datum: 19.03.89	   บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        PSSTR pstrPrgName   Dateiname des aktuellen	    บ
-  บ                                       jeweiligen Programms             บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion liest die vom Anwender mit ver-      บ
-  บ                    schiedenen Dialogfeldern einstellbaren Optionen     บ
-  บ                    aus globalen Variablen in eine Struktur und schreibtบ
-  บ                    diese akteullen Werte in die Datei: "euroINST.DAT". บ
-  บ                                                                        บ
-  บ                    Im einzelnen handelt es sich um folgende Daten:     บ
-  บ                                                                        บ
-  บ                    - die Mausgeschwindigkeit                           บ
-  บ                    - die Farbpalette                                   บ
-  บ                    - die Dauer und Frequenz des Warntons               บ
-  บ                    - die Information, ob ein Warnton erklingen soll    บ
-  บ                      oder nicht                                        บ
-  บ                                                                        บ
-  บ                    Beim nchsten Programmstart k”nnen durch einen      บ
-  บ		       Aufruf der Funktion Dl_GetInstallation() die vom    บ
-  บ                    Anwender festgelegten Werte wieder initialisiert    บ
-  บ                    werden.                                             บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD  Fehlerinformation OK/ERROR		    บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - wCSInd_g           (R)                            บ
-  บ                    - wMausSpeed_g       (R)                            บ
-  บ                    - wBeepFreq_g        (R)                            บ
-  บ                    - wBeepDauer_g       (R)                            บ
-  บ                    - boBeepen_g         (R)                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Dl_PutInstallation	      Datum: 19.03.89	   โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        PSSTR pstrPrgName   Dateiname des aktuellen	    โ•‘
+  โ•‘                                       jeweiligen Programms             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion liest die vom Anwender mit ver-      โ•‘
+  โ•‘                    schiedenen Dialogfeldern einstellbaren Optionen     โ•‘
+  โ•‘                    aus globalen Variablen in eine Struktur und schreibtโ•‘
+  โ•‘                    diese akteullen Werte in die Datei: "euroINST.DAT". โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Im einzelnen handelt es sich um folgende Daten:     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    - die Mausgeschwindigkeit                           โ•‘
+  โ•‘                    - die Farbpalette                                   โ•‘
+  โ•‘                    - die Dauer und Frequenz des Warntons               โ•‘
+  โ•‘                    - die Information, ob ein Warnton erklingen soll    โ•‘
+  โ•‘                      oder nicht                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    Beim nรคchsten Programmstart kรถnnen durch einen      โ•‘
+  โ•‘		       Aufruf der Funktion Dl_GetInstallation() die vom    โ•‘
+  โ•‘                    Anwender festgelegten Werte wieder initialisiert    โ•‘
+  โ•‘                    werden.                                             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD  Fehlerinformation OK/ERROR		    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - wCSInd_g           (R)                            โ•‘
+  โ•‘                    - wMausSpeed_g       (R)                            โ•‘
+  โ•‘                    - wBeepFreq_g        (R)                            โ•‘
+  โ•‘                    - wBeepDauer_g       (R)                            โ•‘
+  โ•‘                    - boBeepen_g         (R)                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Dl_PutInstallation(PSSTR pstrPrgName)
 {
     SWORD    wFileHandle;
     SWORD     wReturn;
 
-    if ((wFileHandle = open(pstrPrgName,	   /* Datei ”ffnen	   */
+    if ((wFileHandle = open(pstrPrgName,	   /* Datei รถffnen	   */
                         O_CREAT|O_RDWR|O_TEXT)) == -1)
         return(ERROR);
 
@@ -423,14 +423,14 @@ SWORD Dl_PutInstallation(PSSTR pstrPrgName)
            0L - sizeof(Optionen),                   /* Struktur position.   */
            SEEK_SET);
 
-    if( write(wFileHandle,			   /* neue Daten ber alte */
+    if( write(wFileHandle,			   /* neue Daten รผber alte */
               (char*) &Optionen,                    /* Struktur schreiben   */
               sizeof(Optionen)) != sizeof(Optionen))
          wReturn = ERROR;
     else
         wReturn = OK;
 
-    close(wFileHandle); 			   /* Datei schlieแen	   */
+    close(wFileHandle); 			   /* Datei schlieรen	   */
 
-    return (wReturn);                               /* und zurck           */
+    return (wReturn);                               /* und zurรผck           */
 }

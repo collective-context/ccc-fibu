@@ -1,24 +1,24 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    euroSOFT FormularCompiler      Datum: 01.05.89      บ
-  บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ
-  บ                                                                        บ
-  บ  Parameter: Basis-Funktionen                                           บ
-  บ                                                                        บ
-  บ  Beschreibung:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    euroSOFT FormularCompiler      Datum: 01.05.89      โ•‘
+  โ•‘โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter: Basis-Funktionen                                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define NDEBUG 1
 #include <ctype.h>
 #include <stdio.h>
@@ -28,29 +28,29 @@
 #include "\euro\c\eu_ovl.h"
 #include "\euro\c\eu_proto.h"
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN                บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN                โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT PSSTR	 pstrDataBuffer_g;
 IMPORT BOOL     boTestModus_g;
 IMPORT CHAR     strExe_g[];           /* Programm-Verzeichnis                */
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                     MODULGLOBALE FUNKTIONEN                             บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                     MODULGLOBALE FUNKTIONEN                             โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC SWORD Del_Record(PSSTR pstrAusgabe, PSSTR pstrRecord);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Source_Open ()                                                          บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ ffnen der Eingabedatei, einlesen des Source, schlieแen der Eingabe-    บ
-  บ datei, ”ffnen der Protokolldatei ...                                    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Source_Open ()                                                          โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ ร–ffnen der Eingabedatei, einlesen des Source, schlieรen der Eingabe-    โ•‘
+  โ•‘ datei, รถffnen der Protokolldatei ...                                    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Source_Open(FILE **ppFileHandle, SWORD argc,
 		 PSSTR argv[], PPSTR ppstrZeile, SWORD awZeileKombi[])
@@ -58,7 +58,7 @@ SWORD Source_Open(FILE **ppFileHandle, SWORD argc,
 SREGISTER i;
 CHAR strSource[2000];
 
-if(argc < 4)                                         /* Prog.-Aufruf prfen  */
+if(argc < 4)                                         /* Prog.-Aufruf prรผfen  */
   {Ut_Beep();					     /* 		     */
   printf ("\n!!! Fehler:"			   /*			   */
     "\neuroSOFT Formular-Compiler Rel. 1.01"         /*                      */
@@ -73,11 +73,11 @@ else                                                 /*                      */
 if(argv[1][0]=='-')
   {Del_Record(argv[2], argv[3]); return(AUS);}
 
-*ppFileHandle=fopen(argv[1], "r");		     /* Source-File ”ffnen   */
+*ppFileHandle=fopen(argv[1], "r");		     /* Source-File รถffnen   */
 if(!(*ppFileHandle))
   {                                                  /*                      */
   printf ("\nEingabe-Datei <%s> kann nicht "         /*                      */
-    "ge”ffnet werden", argv[1]);                     /*                      */
+    "geรถffnet werden", argv[1]);                     /*                      */
   return(ERROR);
   }
 
@@ -99,7 +99,7 @@ for(i=0; fgets(pstrDataBuffer_g,MAX_RECORD_SIZE -1,
   if(boSameLine==NEIN)
     {
     Ut_Calloc(*(ppstrZeile+i), strlen(strSource)+1, CHAR);
-    strSource[ strlen(strSource)-1 ] = '\0';         /* LF rausl”schen       */
+    strSource[ strlen(strSource)-1 ] = '\0';         /* LF rauslรถschen       */
     strcpy(*(ppstrZeile+i), strSource);
     *strSource='\0'; i++;
     }
@@ -107,22 +107,22 @@ for(i=0; fgets(pstrDataBuffer_g,MAX_RECORD_SIZE -1,
   *(ppstrZeile+i) = NULL;                            /* Letzte Zeile festl.  */
 
 
-if(*ppstrZeile == NULL)                              /* Gltigkeit prfen    */
+if(*ppstrZeile == NULL)                              /* Gรผltigkeit prรผfen    */
   return(ERROR);
 
 
-if( fclose(*ppFileHandle) )                          /* Source-File schlieแen*/
+if( fclose(*ppFileHandle) )                          /* Source-File schlieรen*/
   {                                                  /*                      */
   printf ("\nEingabe-Datei <%s> kann nicht "         /*                      */
     "geschlossen werden", argv[1]);
   return(ERROR);
   }
 
-*ppFileHandle=fopen(argv[4], "w");		     /* Protokolldatei ”ffn. */
+*ppFileHandle=fopen(argv[4], "w");		     /* Protokolldatei รถffn. */
 if( !(*ppFileHandle) )
   {                                                  /*                      */
   printf ("\nProtokoll-Datei <%s> kann nicht "       /*                      */
-    "ge”ffnet werden", argv[4]);                     /*                      */
+    "geรถffnet werden", argv[4]);                     /*                      */
   return(ERROR);
   }
 
@@ -146,9 +146,9 @@ return(OK);  /* end Source_Open */
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      LSCHFUNKTION FALLS MIT - GESTARTET               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      Lร–SCHFUNKTION FALLS MIT - GESTARTET               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Del_Record(PSSTR pstrAusgabe, PSSTR pstrRecord)
 {
@@ -169,7 +169,7 @@ if(wRetCode==0 || wRetCode==22)
   wRetCode=BTRV(B_DEL, strFileBlock,
     pstrDataBuffer_g, &wBufLen, pstrRecord, 0);
   sprintf(strError,"Del_Record, - "                /*                      */
-    "Schlssel: %s", pstrRecord);                  /*                      */
+    "Schlรผssel: %s", pstrRecord);                  /*                      */
                                                    /*                      */
   Dl_ErrorHandler (wRetCode, strError,             /*                      */
     __FILE__, __LINE__, 0);                        /*                      */
@@ -179,10 +179,10 @@ Destination_Close(strFileBlock, pstrDataBuffer_g,
   pstrAusgabe);
 
 if(wRetCode)
-  printf("\n\nEs war nicht m”glich den Eintrag "
-    "ฏ%sฎ zu l”schen.\n\n\n\n", pstrRecord);
+  printf("\n\nEs war nicht mรถglich den Eintrag "
+    "ยป%sยซ zu lรถschen.\n\n\n\n", pstrRecord);
 else
-  printf("\n\nDer Eintrag ฏ%sฎ wurde gel”scht."
+  printf("\n\nDer Eintrag ยป%sยซ wurde gelรถscht."
     "\n\n\n\n", pstrRecord);
 
 printf("\n>Ende Formular-Compiler (Delete).\n\n");
@@ -190,11 +190,11 @@ return(OK);
 } /* end if(argv[1][0]=='-') */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Source_Close ()                                                         บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Schlieแen der Protokoll-Datei ...                                       บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Source_Close ()                                                         โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Schlieรen der Protokoll-Datei ...                                       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Source_Close (FILE *pFileHandle, PSSTR argv[], PPSTR ppstrZeile)
 {
@@ -202,7 +202,7 @@ SREGISTER i;
 
 fflush(pFileHandle);
 if ( fcloseall() == EOF )                            /* Protokoll-Datei +    */
-   {                                                 /* EUROINST schlieแen   */
+   {                                                 /* EUROINST schlieรen   */
    printf ("\nEingabe-Datei <%s> kann nicht "        /*                      */
      "geschlossen werden", argv[1]);                 /*                      */
                                                      /*                      */
@@ -215,17 +215,17 @@ for(i=0; *(ppstrZeile+i); i++)                       /*                      */
 *ppstrZeile = NULL;                                  /* mit NULL kennz.      */
 
 printf("\n\n> Ende Formular-Compiler");
-printf ("\nH”chste Eingabe-Zeile <%d>.\n\n", i);
+printf ("\nHรถchste Eingabe-Zeile <%d>.\n\n", i);
 
 return(OK);  /* end Source_Close */
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Destination_Open ()                                                     บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ ffnen oder Erstellen der Formular-Bibliotheks-Datei.                   บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Destination_Open ()                                                     โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ ร–ffnen oder Erstellen der Formular-Bibliotheks-Datei.                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Destination_Open (PSSTR pstrFileBlock, PSSTR pstrBuffer,
 		       PSSTR pstrAusgabe)
@@ -236,7 +236,7 @@ CHAR strError[TB_MAX];
 PSSTR apstrMessage[25];
 
 Ut_SchreibArray (apstrMessage,                       /*                      */
-  "Bibliothek wird ge”ffnet.",                       /*                      */
+  "Bibliothek wird geรถffnet.",                       /*                      */
   "Bitte warten Sie ...", _N);			   /*			   */
 Dl_Nachricht(apstrMessage, 32, 12);                  /*                      */
 Ut_LoeschArray (apstrMessage);                       /*                      */
@@ -245,16 +245,16 @@ fsMaskBuffer.wRecordLength = 20;                     /*                      */
 fsMaskBuffer.wPageSize = 2048;			     /* 		     */
 fsMaskBuffer.wFileFlags=
   VARIABLE_LENGTH|BLANK_COMPRESSION|DATA_COMPRESSION; /*                     */
-fsMaskBuffer.wNdxCnt = 1;                            /* Index-Eintrge       */
+fsMaskBuffer.wNdxCnt = 1;                            /* Index-Eintrรคge       */
 fsMaskBuffer.ksKeyBuf[0].wKeyPosition = 7;           /* Position 1 Stelle    */
-fsMaskBuffer.ksKeyBuf[0].wKeyLength = 10;            /* Lnge 10 Zeichen     */
+fsMaskBuffer.ksKeyBuf[0].wKeyLength = 10;            /* Lรคnge 10 Zeichen     */
 fsMaskBuffer.ksKeyBuf[0].wKeyFlags = MOD | EXT_TYPE; /* Extended Type        */
 fsMaskBuffer.ksKeyBuf[0].cExtendedKeyType = B_ZSTR_TYPE;
 
 
 strcpy(pstrDataBuffer_g, "(c)Mayer");
 wBufferLen=strlen (pstrDataBuffer_g)+1;
-wRetCode=BTRV(B_OPEN,pstrFileBlock,pstrDataBuffer_g, /* Datei ”ffnen         */
+wRetCode=BTRV(B_OPEN,pstrFileBlock,pstrDataBuffer_g, /* Datei รถffnen         */
   &wBufferLen, pstrAusgabe, O_NORMAL);               /*                      */
 
 if(wRetCode==12) wHandle=9;
@@ -278,7 +278,7 @@ Dl_ErrorHandler(wRetCode, strError,                  /*                      */
     Dl_ErrorHandler(wRetCode, strError, _F, _L, 0);  /* 		     */
 
     wBufferLen=0;
-    wRetCode=BTRV (B_OPEN, pstrFileBlock,            /* Datei ”ffnen         */
+    wRetCode=BTRV (B_OPEN, pstrFileBlock,            /* Datei รถffnen         */
       pstrBuffer,&wBufferLen,pstrAusgabe,O_NORMAL);  /*                      */
 
     strcpy(pstrDataBuffer_g, "(c)Mayer");
@@ -299,11 +299,11 @@ return(OK);
 } /* end Destination_Open */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Destination_Close ()                                                    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Schlieแen der Formular-Bibliotheks-Datei.                               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Destination_Close ()                                                    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Schlieรen der Formular-Bibliotheks-Datei.                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Destination_Close (PSSTR pstrFileBlock, PSSTR pstrBuffer,
 		       PSSTR pstrAusgabe)

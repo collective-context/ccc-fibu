@@ -1,170 +1,170 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Fo_Print()
-ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  Fo_Print()								       บ
-ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  Fo_Print()								       โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-berblick:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+รberblick:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 #include <eur_tool.h>
 SWORD Fo_Print (apWkbMask[], pswMask, apstrRecord[], apstrMaskText[][25],
               apTextBox[][99], pswField, pstrOldString, pstrNewString,
               pswKeyCode, awBlocks[][2], awScroll[][4], awRecLen[]);
 
 Parameter:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
-PWKB   apWkbMask[]        Zeiger auf Array fr die Maskenattribute.
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
+PWKB   apWkbMask[]        Zeiger auf Array fรผr die Maskenattribute.
 
 Beschreibung:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 Diese Funktion bildet aus der Sicht des Applikations-Programmierers die
-zentrale Schnittstelle zum Masken-Interpreter fr den ฏMaskentyp 1ฎ. Die
+zentrale Schnittstelle zum Masken-Interpreter fรผr den ยปMaskentyp 1ยซ. Die
 Funktion positioniert den Feldcursor an die angegebene Stelle innerhalb der
 angegebenen Maske. Die Funktion kann erst aufgerufen werden, nachdem der
-Interpreter mit der Funktion ฏM_Init()ฎ initialisiert wurde.
+Interpreter mit der Funktion ยปM_Init()ยซ initialisiert wurde.
 
 Der Anwender kann dieses Feld editieren. Der Vorschlagswert ergibt sich aus
-dem alten Feldinhalt, wie er im angegebenen Datensatz ฏapstrRecord[]ฎ steht.
+dem alten Feldinhalt, wie er im angegebenen Datensatz ยปapstrRecord[]ยซ steht.
 
-Verlแt der Anwender das Feld durch ein Sonderfunktions-Taste, die fr den
+Verlรครt der Anwender das Feld durch ein Sonderfunktions-Taste, die fรผr den
 Feld-Editor keine Bedeutung hat, so erfolgt nach einer erfolgreichen Syntax
-prfung und Format-Aufbereitung der Rcksprung in den aufrufenden Programm-
+prรผfung und Format-Aufbereitung der Rรผcksprung in den aufrufenden Programm-
 teil. Zuvor wird der vom Anwender eingegebene Wert im Datensatz an der dem
 Feld zugewiesenen Stelle (siehe Offset-Anweisung im Masken-Compiler) abge-
 stellt (s.u.).
 
-Die Syntaxprfung des Interpreters ergibt sich aus der Maskendefinition
+Die Syntaxprรผfung des Interpreters ergibt sich aus der Maskendefinition
 (siehe u.a. Range-, Choise- und Datum-Anweisung des Maskencompilers). Der
 Anwender kann das Feld erst dann verlasasen, wenn er einen syntaktisch
-richtigen Wert eingegeben hat. ber die semantische Gltigkeit des Wertes
-muแ der Applikationsprogrammierer entscheiden.
+richtigen Wert eingegeben hat. รber die semantische Gรผltigkeit des Wertes
+muร der Applikationsprogrammierer entscheiden.
 
-Nach dem Rcksprung kann der Applikationsprogrammierer nun fr dieses Feld
-individuelle Apprfungen vornehmen. Anhand des bergebenen Key-Codes kann
+Nach dem Rรผcksprung kann der Applikationsprogrammierer nun fรผr dieses Feld
+individuelle Apprรผfungen vornehmen. Anhand des รผbergebenen Key-Codes kann
 er feststellen mit welcher Sonderfunktionstaste der Anwender das Feld ver-
 lassen hat.
 
-Bei einem erneuten Aufruf von ฏM_Input()ฎ mit einem unvernderten
-Key-Code (aus dem letzten Aufruf), fhrt der Interpreter zuerst die Aktion
-durch, die mit dem Key-Code verbunden ist (sofern der Key-Code fr den
+Bei einem erneuten Aufruf von ยปM_Input()ยซ mit einem unverรคnderten
+Key-Code (aus dem letzten Aufruf), fรผhrt der Interpreter zuerst die Aktion
+durch, die mit dem Key-Code verbunden ist (sofern der Key-Code fรผr den
 Interpreter eine Bedeutung hat), bevor er das aus dieser Interpretation
 resultierende Feld betritt.
 
 Hat zum Beispiel der Anwender das Feld mit der Enter-Taste verlassen und der
-Applikationsprogrammierer die fr ihn erforderlichen Abprfungen durchgefhrt
-und ruft er ฏM_Input()ฎ erneut auf, so interpretiert der Maskeninterpreter
-zuerst den Key-Code (in diesem Fall den entsprechenden Wert fr die Enter-
+Applikationsprogrammierer die fรผr ihn erforderlichen Abprรผfungen durchgefรผhrt
+und ruft er ยปM_Input()ยซ erneut auf, so interpretiert der Maskeninterpreter
+zuerst den Key-Code (in diesem Fall den entsprechenden Wert fรผr die Enter-
 Taste).
 
-Die Enter-Taste hat fr den Interpreter die Bedeutung, den Feldcursor auf
-das nchste Feld laut Sequenz-Angabe vorzurcken. Ausgangspunkt ist dabei,
+Die Enter-Taste hat fรผr den Interpreter die Bedeutung, den Feldcursor auf
+das nรคchste Feld laut Sequenz-Angabe vorzurรผcken. Ausgangspunkt ist dabei,
 das dem Interpreter angegebene Feld. Hat der Applikationsprogrammierer die
-Feldnummer seit dem letzten Aufruf nicht verndert, so ist sie identisch mit
+Feldnummer seit dem letzten Aufruf nicht verรคndert, so ist sie identisch mit
 der Feldnummer des letzten Feldes, welches der Anwender gerade verlassen hat.
 
 Nach Interpretation des Key-Codes befindet sich der Feld-Editor im resul-
-tierenden Feld (im Beispiel das nchste Feld lt. Sequenz-Angabe).
+tierenden Feld (im Beispiel das nรคchste Feld lt. Sequenz-Angabe).
 
 Der Applikationsprogrammierer kann auf diese Weise sowohl die Ausgangs-Feld-
 nummer, als auch den Key-Code zur Steuerung des Interpreters, manipulieren
 und somit den Feldcursor auf eine individuelle Weise steuern.
 
-Wurde seit dem letzten Aufruf von ฏM_Input()ฎ die Maskennummer verndert,
-so blttert der Interpreter zuerst auf die angegebene Maske. Die angegebene
-Feldnummer bezieht sich immer auf die gewhlte Maske. Ist die angegebene
+Wurde seit dem letzten Aufruf von ยปM_Input()ยซ die Maskennummer verรคndert,
+so blรคttert der Interpreter zuerst auf die angegebene Maske. Die angegebene
+Feldnummer bezieht sich immer auf die gewรคhlte Maske. Ist die angegebene
 Feldnummer nicht auf der angegeben Maske, so wird ein Fehler gemeldet.
 
 Hat der Anwender das Feld mit der Ctrl-PgUp oder Ctrl-PgDn Taste verlassen,
-so erfolgt der Rcksprung aus ฏM_Input()ฎ mit dem entsprechenden Key-Code.
+so erfolgt der Rรผcksprung aus ยปM_Input()ยซ mit dem entsprechenden Key-Code.
 
-Wird ฏM_Input()ฎ nun erneut mit unverndertem Key-Code aufgerufen, so
+Wird ยปM_Input()ยซ nun erneut mit unverรคndertem Key-Code aufgerufen, so
 interpretiert der Masken-Interpreter zuerst die Ctrl-PgUp oder Ctrl-PgDn
-Funktion, was zur Folge hat, daแ entweder eine Maske vor oder zurckge-
-blttert wird.
+Funktion, was zur Folge hat, daร entweder eine Maske vor oder zurรผckge-
+blรคttert wird.
 
-Beim Blttern wird der Feldcursor an die Stelle gesetzt, aus der die Maske
+Beim Blรคttern wird der Feldcursor an die Stelle gesetzt, aus der die Maske
 zuvor verlassen wurde. Wurde die Maske noch nit betreten, wird der Feldcursor
-an die erste Stelle laut Sequenz-Angabe gesetzt. Dies unabhngig von der
+an die erste Stelle laut Sequenz-Angabe gesetzt. Dies unabhรคngig von der
 Feldnummer, die der Applikationsprogrammierer angegeben hat.
 
-Will der Applikationsprogrammierer, daแ beim Bettigen von Ctrl-PgUp oder
-Ctrl-PgDn auf ein bestimmtes Feld der Maske gesprungen wird, so muแ er den
-Ctrl-PgUp/PgDn-Key-Code abfangen, die Maskennummer selbststndig verndern,
-die gewnschte Feldnummer setzen und anschlieแend ฏM_Input()ฎ mit einem
-Key-Code aufrufen, der fr den Interpreter keine Bedeutung hat (z.B. 0).
+Will der Applikationsprogrammierer, daร beim Betรคtigen von Ctrl-PgUp oder
+Ctrl-PgDn auf ein bestimmtes Feld der Maske gesprungen wird, so muร er den
+Ctrl-PgUp/PgDn-Key-Code abfangen, die Maskennummer selbststรคndig verรคndern,
+die gewรผnschte Feldnummer setzen und anschlieรend ยปM_Input()ยซ mit einem
+Key-Code aufrufen, der fรผr den Interpreter keine Bedeutung hat (z.B. 0).
 
-ฏM_Input()ฎ darf nur aufgerufen werden, wenn die angegebene Maske vom
-ฏMaskentyp 1ฎ ist.
+ยปM_Input()ยซ darf nur aufgerufen werden, wenn die angegebene Maske vom
+ยปMaskentyp 1ยซ ist.
 
 Versorgung:
    Eingang:
    char *equal_part[];
       Ist ein String-Feld, welches die Equivalenz_Angaben zu eventuell vor-
       handenen Choise-Elementen beinhaltet. Sind laut Maskendefinition
-      Choise-Elemente vorhanden so werden die Equivalenz-Angaben zustzlich
+      Choise-Elemente vorhanden so werden die Equivalenz-Angaben zusรคtzlich
       zu den einzelen Choise-Elementen im Auswahl-Fenster angezeigt. Damit
-      ist es zum Beispiel m”glich die Equivalenz-Werte einer Codierung aus
+      ist es zum Beispiel mรถglich die Equivalenz-Werte einer Codierung aus
       einer Parameter-Datei zu lesen.
-      Fr den Fall, daแ ein Feld mit der Dychoise-Anweisung belegt wurde,
-      stehen in equal_part[] die eigentlichen Auswahlm”glichkeiten aufge-
-      zhlt. In diesem Fall gibt es also keine Equivalenz-Angaben.
+      Fรผr den Fall, daร ein Feld mit der Dychoise-Anweisung belegt wurde,
+      stehen in equal_part[] die eigentlichen Auswahlmรถglichkeiten aufge-
+      zรคhlt. In diesem Fall gibt es also keine Equivalenz-Angaben.
       Achtung: Ist equal_part[] kleiner dimensioniert als die anzahl der
-               Auswahlm”glichkeiten laut Maskendefinition, so erscheinen im
+               Auswahlmรถglichkeiten laut Maskendefinition, so erscheinen im
                Auswahl-fenster nur so viele Elemente, wie equal_part[]
                dimensioniert ist.
    Ein-/Ausgang:
    int mask_number;
-      Beinhaltet die Nummer der Maske, die aktuell angewhlt werden soll.
+      Beinhaltet die Nummer der Maske, die aktuell angewรคhlt werden soll.
       Ist die Nummer nicht identisch mit der Nummer der aktuell ange-
-      zeigten Maske, so wird auf die angegebene Maske vor oder zurck-
-      geblttert. Vor dem ersten Aufruf von ฏM_Input()ฎ ist die aktuelle
-      Maske die erste in ฏawMaskSequenz_mฎ angegebene Maske.
-      Beim Rcksprung in den aufrufenden Programmteil, beinhaltet
+      zeigten Maske, so wird auf die angegebene Maske vor oder zurรผck-
+      geblรคttert. Vor dem ersten Aufruf von ยปM_Input()ยซ ist die aktuelle
+      Maske die erste in ยปawMaskSequenz_mยซ angegebene Maske.
+      Beim Rรผcksprung in den aufrufenden Programmteil, beinhaltet
       mask_number die aktuell eingestellte Maske. Dieser Wert unterscheidet
       sich insbesondere dann vom Eingangswert, wenn ein PgUp- oder PgDn-
       Funktionscode interpretiert wurde.
    int application_field_number;
       Beinhaltet die Nummer des Feldes (relativ zur angegebenen Maske), das
-      aktuell angewhlt werden soll. Die Feldnummer bezeichnet dabei die
+      aktuell angewรคhlt werden soll. Die Feldnummer bezeichnet dabei die
       Applikations-Feldnummer der jeweiligen Maske. Die Applikations-
       Feldnummer ist identisch mit der Feldnummer des Masken-Compilers,
-      solange keine Nummer-Anweisung gegeben wurde. Wurde einem Feld ber
-      eine Nummer-Anweisung eine andere , applikationsabhngige, Feld-
-      nummer zugewiesen, so ist das gewnschte Feld durch diese Appli-
+      solange keine Nummer-Anweisung gegeben wurde. Wurde einem Feld รผber
+      eine Nummer-Anweisung eine andere , applikationsabhรคngige, Feld-
+      nummer zugewiesen, so ist das gewรผnschte Feld durch diese Appli-
       kations-Nummer anzusprechen.
-      Beim Rcksprung in den aufrufenden Programmteil beinhaltet
-      application_field_number die Nummer des Feldes, daแ der Anwender
-      gerade verlassen hat. Der Rckgabewert unterscheidet sich meist vom
-      Eingangswert, auแer wenn beim Aufruf der Funktion ein Key-Code ange-
-      geben wurde, der fr den Interpreter keine Bedeutung hat. (z.B. wenn
-      eine individuelle Abprfung negativ ausfiel und der Anwender einen
-      neuen Wert fr das gleiche Feld angeben muแ).
+      Beim Rรผcksprung in den aufrufenden Programmteil beinhaltet
+      application_field_number die Nummer des Feldes, daร der Anwender
+      gerade verlassen hat. Der Rรผckgabewert unterscheidet sich meist vom
+      Eingangswert, auรer wenn beim Aufruf der Funktion ein Key-Code ange-
+      geben wurde, der fรผr den Interpreter keine Bedeutung hat. (z.B. wenn
+      eine individuelle Abprรผfung negativ ausfiel und der Anwender einen
+      neuen Wert fรผr das gleiche Feld angeben muร).
    char *record[];
-      Ist das Feld der Datenstze, die durch das Maskentool manipuliert
+      Ist das Feld der Datensรคtze, die durch das Maskentool manipuliert
       werden sollen. Der Offset des Feldes innerhalb des Records ist in der
       Maskendefinition hinterlegt (siehe Offset-Anweisung im Masken-
       Compiler).
-      Beim Rcksprung in den aufrufenden Programmteil enthlt record[] immer
+      Beim Rรผcksprung in den aufrufenden Programmteil enthรคlt record[] immer
       den vom Anwender eingegebenen Wert, auch dann, wenn er u.U. falsch ist.
-      D.h., daแ der Applikationsprogrammierer den alten Feldwert selbst
-      wieder eintragen muแ, sobald sich eine inidividuelle Abprfung als
+      D.h., daร der Applikationsprogrammierer den alten Feldwert selbst
+      wieder eintragen muร, sobald sich eine inidividuelle Abprรผfung als
       negativ herausgestellt hat (siehe old_string).
-      In record[] muแ fr jeden Datensatz ein ausreichend langer String ange-
-      geben werden, sodaแ das Feld mit der gr”แten Offset-Nummer noch Platz
+      In record[] muร fรผr jeden Datensatz ein ausreichend langer String ange-
+      geben werden, sodaร das Feld mit der grรถรten Offset-Nummer noch Platz
       hat.
    int key_code;
-      Beinhaltet die Funktionscodes fr den Masken-Interpreter. Bei Aufruf
+      Beinhaltet die Funktionscodes fรผr den Masken-Interpreter. Bei Aufruf
       von M_Input () wird der Funktions-Code interpretiert und die der
-      Bedeutung entsprechende Funktion ausgefhrt, ehe der Feld-Editor
+      Bedeutung entsprechende Funktion ausgefรผhrt, ehe der Feld-Editor
       aufgerufen wird.
-      Beim Rcksprung aus M_Input () gibt der Funktions-Code die
+      Beim Rรผcksprung aus M_Input () gibt der Funktions-Code die
       Sonderfunktions-Taste an, mit dem der Anwender den Feldeditor ver-
       lassen hat.
    Ausgang:
    int record_number;
-      Gibt den Index fr den Parameter record[] an, der fr das gerade
-      verlassene Feld Gltigkeit hat. Diese Angabe kommt aus der Masken-
+      Gibt den Index fรผr den Parameter record[] an, der fรผr das gerade
+      verlassene Feld Gรผltigkeit hat. Diese Angabe kommt aus der Masken-
       definiton (Offset-Anweisung im Masken-Compiler).
    int record_offset;
       Gibt den Offset des gerade verlassenen Feldes innerhalb von
@@ -173,14 +173,14 @@ Versorgung:
    char *old_string;
       Gibt den alten Feldinhalt aus record[record_number] an, der dort vor
       verlassen des Feldes durch den Anwender gestanden hat. Diesen Wert
-      muแ der Applikationsprogrammierer wieder in den Datensatz einbauen,
-      falls eine individuelle Abprfung negativ ausfllt, da der Inter-
+      muร der Applikationsprogrammierer wieder in den Datensatz einbauen,
+      falls eine individuelle Abprรผfung negativ ausfรคllt, da der Inter-
       preter auf jeden Fall den vom Anwender eingegebenen Wert im Daten-
       satz ablegt.
    char *new_string;
       Gibt den neuen Feldinhalt aus record[record_number] an, der nach
       verlassen des Feldes durch den Anwender dort eingesetzt wurde. Hat
-      der Anwender den Feldinhalt nicht verndert, so ist new_string gleich
+      der Anwender den Feldinhalt nicht verรคndert, so ist new_string gleich
       old_string.
       Sowohl new_string als auch old_string geben nicht unbedingt den vom
       Benutzer eingegebenen Wert wieder, sondern den Feldinhalt aus
@@ -188,13 +188,13 @@ Versorgung:
       kann (siehe Packed-, Datum- und Choise-Anweisung im Masken-Compiler).
 
 
-Rckgabewert:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Rรผckgabewert:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 SWORD  Fehlerinformation OK/ERROR
 
 
 Benutzte globale Variablen (R/W):
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g   (R)
                   - wCSInd_g   (R)           - pstrF1_g    (R)
                   - wMausda_g  (R)           - boBeepen_g  (R)
@@ -202,9 +202,9 @@ Variablen (R/W):  - aCS_g[]    (R)           - pstrEsc_g   (R)
 REM .de \euro\demo\dmohilf1.c
 .te*/
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 #define NDEBUG 1            /* Mit Check kompiliern == Zeile unter REMARKS  */
 
@@ -227,9 +227,9 @@ REM .de \euro\demo\dmohilf1.c
 
 STATIC VOID iSteuerKz(PFKB, PPKB, FILE *, SWORD);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT COLORSET  aCS_g[5];		     /* Farbpalette und Index auf    */
 IMPORT SWORD wCSInd_g;
 IMPORT MENUSTATUS MS_g;
@@ -239,7 +239,7 @@ IMPORT BOOL boMonitor_g;
 IMPORT SWORD wMausda_g;
 IMPORT BOOL boBeepen_g;
 
-IMPORT CHAR	strExt_g[4];	      // Extention fr Landescode
+IMPORT CHAR	strExt_g[4];	      // Extention fรผr Landescode
 IMPORT CHAR	strMan_g[3];	      // Mandaten-Nummer
 IMPORT CHAR	strDat_g[81];	      // Daten-Verzeichnis
 
@@ -248,17 +248,17 @@ IMPORT PWKB pWkbInfo_g;
 
 // IMPORT PTEXTBOX apTextBox_g[UPB_MASK][99];  //Eingabe-Felder wegen TBpt()
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      FUNKTIONS-PROTOTYPEN                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      FUNKTIONS-PROTOTYPEN                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC	SWORD cdecl SetData   (PSSTR, PSWORD, PSWORD, PSWORD, PSBYTE, PSBYTE, PSBYTE, PSSTR);
 STATIC	SWORD Read_Print_Info (PSSTR, PFKB, PPPKB);
 STATIC	SWORD Print_Text      (PSSTR[], PFKB, PPKB, PPKB[], PSWORD, FILE *, SWORD);
 STATIC	SWORD i_ChangexFF     (PSSTR, PSSTR[], PFKB, PPKB[], FILE *);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                       MODULGLOBALE DATEN                               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                       MODULGLOBALE DATEN                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL BOOL boInhalt_m=NO;
 MGLOBAL BOOL boHide_m=AUS;
 IMPORT	BOOL boRekursiv_g;
@@ -270,9 +270,9 @@ MGLOBAL SWORD wZeilenVorLF_m;
 MGLOBAL BOOL boHeadFoot_m;
 GLOBAL	BOOL boFF_g=NEIN;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fo_Print(PSSTR apstrRecord[], FILE *pfDevice, SWORD wBereich,
 	     PFKB pFkb, PPKB apPkb[], PSSTR pF, SWORD wL)
@@ -289,12 +289,12 @@ else if(boMonitor_g==2) pFkb->wLiRand=1;
 
 /* while(wEnd < 1) */
   {
-  SREGISTER i, j, k;				      /* Zhlervariable       */
+  SREGISTER i, j, k;				      /* Zรคhlervariable       */
   SWORD wSpalte=0, wZ=0;
   BOOL boRumpf=NEIN;
 
   for(i=0; apPkb[i] &&
-    apPkb[i]->wBereich < wBereich; i++) 	     /* Aufsatz fr Kopf-,   */
+    apPkb[i]->wBereich < wBereich; i++) 	     /* Aufsatz fรผr Kopf-,   */
     ;
 
   if(boHide_m==EIN) wZ++;
@@ -313,10 +313,10 @@ else if(boMonitor_g==2) pFkb->wLiRand=1;
 
     if(boHide_m==AUS || boHeadFoot_m)
       {fPutC('\x0A', pfDevice);
-      pFkb->wAktZeile++; T_put("%2d.ฏ");}
+      pFkb->wAktZeile++; T_put("%2d.ยป");}
     else
       {cat(strHide_m, '\x0A');
-      wAktZeile_m++; wZ++; T_cat("๘๘.>");}
+      wAktZeile_m++; wZ++; T_cat("ยฐยฐ.>");}
 
     wSpalte=0;
     wRand_m=0;
@@ -325,7 +325,7 @@ else if(boMonitor_g==2) pFkb->wLiRand=1;
 
 
   for(; apPkb[i]&&apPkb[i]->wBereich==wBereich;i++)					 /* Kopf-, Rumpf- oder	 */
-    {						     /* Fuแbereich suchen u. */
+    {						     /* Fuรbereich suchen u. */
     if(pFkb->wAktZeile == 32000 &&		     /* drucken bis das Be-  */
       pFkb->wNextHeader )			     /* reichsende erreicht  */
       {Fo_Set_Page(apstrRecord, pfDevice,
@@ -336,7 +336,7 @@ else if(boMonitor_g==2) pFkb->wLiRand=1;
       apPkb[i]->wDruckLF > pFkb->wFormularHoehe &&
       wBereich != pFkb->wNextFoot && pFkb->wNextFoot)
       {
-      Fo_Print(apstrRecord, pfDevice,		       /* Fuแzeile drucken   */
+      Fo_Print(apstrRecord, pfDevice,		       /* Fuรzeile drucken   */
 	pFkb->wNextFoot, pFkb, apPkb, pF, wL);
       Fo_Set_Page(apstrRecord, pfDevice,
 	pFkb, apPkb, pF, wL);			     /* Kopfzeile drucken  */
@@ -359,15 +359,15 @@ else if(boMonitor_g==2) pFkb->wLiRand=1;
 	boNoLineFeed_m=NO;
       else if(boHide_m==AUS || boHeadFoot_m)
 	{fPutC('\x0A', pfDevice);
-	pFkb->wAktZeile++; T_put("%2d:ฏ");}
+	pFkb->wAktZeile++; T_put("%2d:ยป");}
       else
 	{cat(strHide_m, '\x0A');
-	wAktZeile_m++; T_cat("๙๙:>");}
+	wAktZeile_m++; T_cat("ยจยจ:>");}
 
       if(pFkb->wAktZeile >= pFkb->wFormularHoehe)
 	pFkb->wAktZeile=0;
 
-      /* fprintf(pfDevice, "ฏ%d/%dฎ", pFkb->wAktZeile,
+      /* fprintf(pfDevice, "ยป%d/%dยซ", pFkb->wAktZeile,
 	pFkb->wFormularHoehe); */
 
       wSpalte=0;
@@ -390,14 +390,14 @@ else if(boMonitor_g==2) pFkb->wLiRand=1;
       switch(pFkb->wStandardFont)
         {
 	case 1: Fo_Print_SteuerKz(GLpt("SCHR_NORM"), pfDevice); break;
-	case 2: Fo_Print_SteuerKz(GLpt("SCHR_SCH"), pfDevice); break;
+	case 2: Fo_Print_SteuerKz(GLpt("SCHR_SCHร–"), pfDevice); break;
 	case 3: Fo_Print_SteuerKz(GLpt("SCHR_SCHM"), pfDevice); break;
 	case 4: Fo_Print_SteuerKz(GLpt("SCHR_FREI"), pfDevice); break;
         }
       }
 
-    if(apPkb[i]->bDruckTyp != 20)                    /* Mit Blanks fllen    */
-      for( ; wSpalte<apPkb[i]->wDruckS; wSpalte++)   /* wenn nicht ๗ Dateityp*/
+    if(apPkb[i]->bDruckTyp != 20)                    /* Mit Blanks fรผllen    */
+      for( ; wSpalte<apPkb[i]->wDruckS; wSpalte++)   /* wenn nicht ยธ Dateityp*/
 	if(boHide_m==AUS || wBereich==pFkb->wNextHeader
 	  || wBereich==pFkb->wNextFoot)
 	  {fPutC(' ', pfDevice);}
@@ -430,29 +430,29 @@ return(OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Set_Data()                                                              บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  บ  Rckgabewert:                                                          บ
-  บ   SWORD wRecord	    Dateinummer in Applikation			     บ
-  บ      wOffset           DatenOffset fr Applikation                      บ
-  บ      wMaxL             Max. Lnge des Teilstrings in Datei              บ
-  บ                                                                         บ
-  บ   BYTE bTyp                  Typ laut Data-Dictionary                   บ
-  บ      bVKS                    Anzahl der Vorkommastellen                 บ
-  บ	 bNKS			 Anzahl der Nachkommastellen		    บ
-  บ                                                                         บ
-  บ   PSSTR pstrDatenfeld	  Event. Name (bei Choice/Select)	     บ
-  บ                                                                         บ
-  บ   Benutzte globale                                                      บ
-  บ   Variablen (R/W):                                                      บ
-  บ                                                                         บ
-  บ Diese Daten werden aus der Formularbibliothek fr die Variable geholt   บ
-  บ und stehen in der Form:                                                 บ
-  บ	       ฏwRecord.wOffset.wMaxL.bTyp.bVKS.bNKS[.pstrDatenfeld]ฎ	    บ
-  บ zur Verfgung.							    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Set_Data()                                                              โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘  Rรผckgabewert:                                                          โ•‘
+  โ•‘   SWORD wRecord	    Dateinummer in Applikation			     โ•‘
+  โ•‘      wOffset           DatenOffset fรผr Applikation                      โ•‘
+  โ•‘      wMaxL             Max. Lรคnge des Teilstrings in Datei              โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘   BYTE bTyp                  Typ laut Data-Dictionary                   โ•‘
+  โ•‘      bVKS                    Anzahl der Vorkommastellen                 โ•‘
+  โ•‘	 bNKS			 Anzahl der Nachkommastellen		    โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘   PSSTR pstrDatenfeld	  Event. Name (bei Choice/Select)	     โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘   Benutzte globale                                                      โ•‘
+  โ•‘   Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘ Diese Daten werden aus der Formularbibliothek fรผr die Variable geholt   โ•‘
+  โ•‘ und stehen in der Form:                                                 โ•‘
+  โ•‘	       ยปwRecord.wOffset.wMaxL.bTyp.bVKS.bNKS[.pstrDatenfeld]ยซ	    โ•‘
+  โ•‘ zur Verfรผgung.							    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD SetData (PSSTR pstrText, PSWORD pwRecord, PSWORD pwOffset, PSWORD pwMaxL,
 	      PSBYTE pbTyp,  PSBYTE pbVKS, PSBYTE pbNKS, PSSTR pstrDatenfeld)
@@ -465,18 +465,18 @@ Ut_Calloc(apstrEintrag[0], strlen(pstrText)+10, CHAR);
 strcpy(apstrEintrag[0], pstrText);
 
 i=0;
-pstrTemp=apstrEintrag[0];			      /* Adresse fr Rec-Info*/
+pstrTemp=apstrEintrag[0];			      /* Adresse fรผr Rec-Info*/
 while(*pstrTemp && i<6) 			      /* Bleib bis Stringende*/
   {
   if(*pstrTemp=='.')				      /* Wenn Trennpunkt das */
     {						      /* Ende von Record-    */
     *pstrTemp = '\0';				      /* info kennzeichnen.  */
     apstrEintrag[++i] = pstrTemp+1;		      /* Denn Beg. von Field */
-    }						      /* merken, nchst. Zei-*/
+    }						      /* merken, nรคchst. Zei-*/
   else if(*pstrTemp==' ')			      /* chen. Bei Leerzeich.*/
     *pstrTemp = '\0';				      /* das Ende vom Feld-  */
 						      /* namen kennzeichen.  */
-  pstrTemp++;					      /* Auf nchsten Buch-  */
+  pstrTemp++;					      /* Auf nรคchsten Buch-  */
   }						      /* staben zeigen.      */
 
 apstrEintrag[6]=pstrTemp;
@@ -498,11 +498,11 @@ return (OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fo_Open ()								    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ ffnen der Formular-Bibliotheks-Datei.                                  บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fo_Open ()								    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ ร–ffnen der Formular-Bibliotheks-Datei.                                  โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fo_Open (PSSTR pstrApplikation, SWORD wFormular, PFKB pFkb, PPPKB ppPkb)
 {
@@ -529,7 +529,7 @@ for(i=0,wStatus=12; (wStatus==11 || wStatus==12) &&
   SWORD wHandle=0;
   PSSTR pstr, pstrName=strrchr(strFileName, '\\');
 
-  wStatus=BTRV(B_OPEN, strFileBlock, strTemp,	     /* Datei ”ffnen	     */
+  wStatus=BTRV(B_OPEN, strFileBlock, strTemp,	     /* Datei รถffnen	     */
     &wBufferLength, strFileName, O_NORMAL);	     /* 		     */
 
   sprintf(strError, "B_OPEN(FORM), - Datei: %s",
@@ -551,7 +551,7 @@ wBufferLength = MAX_RECORD_SIZE;
 wStatus=BTRV(B_GET_EQ, strFileBlock, pstrDataBuffer_g,
                  &wBufferLength, strFormular, 0);
 
-sprintf(strError, "B_GET_EQ(FORM), - Datei: %d _ Schlssel %s, Index: %d", 0, strFormular, 0);
+sprintf(strError, "B_GET_EQ(FORM), - Datei: %d _ Schlรผssel %s, Index: %d", 0, strFormular, 0);
 Dl_ErrorHandler(wStatus, strError, __FILE__, __LINE__, 0);
 
 
@@ -567,16 +567,16 @@ return (OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Read_Print_Info()                                                       บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Kopiern des Recordinhalts in die PrintInfo-Stuktur und FormularInfo-    บ
-  บ struktur.                                                               บ
-  บ                                                                         บ
-  บ pFkb = Pointer auf Formular-Kontroll-Block.                             บ
-  บ pPkb = Pointer auf Print-Kontroll-Block                                 บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Read_Print_Info()                                                       โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Kopiern des Recordinhalts in die PrintInfo-Stuktur und FormularInfo-    โ•‘
+  โ•‘ struktur.                                                               โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘ pFkb = Pointer auf Formular-Kontroll-Block.                             โ•‘
+  โ•‘ pPkb = Pointer auf Print-Kontroll-Block                                 โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Read_Print_Info(PSSTR pstrBuffer, PFKB pFkb, PPPKB ppPkb)
 {
@@ -636,7 +636,7 @@ while(*pstrBuffer)				    /* Bis NULL-P. kopieren  */
 
     for(k=0; k < 20; k++)
       {
-      if(*pstrTmp != 'þ')
+      if(*pstrTmp != 'โ– ')
 	{
 	sscanf (pstrTmp, "%3d", &ptempinfo->abFormat[k]);
 	pstrTmp += 4;
@@ -659,13 +659,13 @@ return (OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Print_Text()                                                            บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ pFkb = Pointer auf Formular-Kontroll-Block.                             บ
-  บ pPkb = Pointer auf Print-Kontroll-Block                                 บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Print_Text()                                                            โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ pFkb = Pointer auf Formular-Kontroll-Block.                             โ•‘
+  โ•‘ pPkb = Pointer auf Print-Kontroll-Block                                 โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD Print_Text(PSSTR apstrRecord[], PFKB pFkb, PPKB pPkb, PPKB apPkb[],
 		PSWORD pwSpalte, FILE *pfDevice, SWORD wBereich)
@@ -724,7 +724,7 @@ switch(pPkb->bDruckTyp)
 	{memset(strText, '\0', 500);
 	memset(strText, '.', 499);}
       else if(lPrintModus_g&2)			    /* Probedruck Etiketten */
-	strcpy(strText, str("Zeile: ฏ%dฎ",pFkb->wAktZeile));
+	strcpy(strText, str("Zeile: ยป%dยซ",pFkb->wAktZeile));
 
       if(bTyp>=1 && bTyp<=5)
 	{if(boHide_m==EIN && atoi(strText) )
@@ -748,7 +748,7 @@ switch(pPkb->bDruckTyp)
 
 	    strcat(strHide_m, strText);
 	    cat(strHide_m, '\x0A');		     /* LF		     */
-	    wAktZeile_m++; T_cat("þþ->");
+	    wAktZeile_m++; T_cat("โ– โ– ->");
 	    *pwSpalte=0;
 
 	    while(*pwSpalte < pPkb->wDruckS+pFkb->wLiRand)  /*		       */
@@ -764,7 +764,7 @@ switch(pPkb->bDruckTyp)
 	  } /* end while */
 	} /* end Hide-Feld == Select */
 
-      if(pPkb->bDruckTyp != 20) 		     /* Ausser bei ๗ Typ     */
+      if(pPkb->bDruckTyp != 20) 		     /* Ausser bei ยธ Typ     */
 	strText[pPkb->wDruckB]='\0';		     /* rechts begrenzen     */
 
       i_ChangexFF(strText, apstrRecord, pFkb, apPkb, pfDevice);
@@ -795,7 +795,7 @@ if(!strcmp(pPkb->acDruckCode,"HA ") ||
       pFkb->wFormularHoehe && pFkb->wNextFoot)
       {/* printf("\x07"); /* ~ */
       boNoLineFeed_m=YES;
-      Fo_Print(apstrRecord, pfDevice,		       /* Fuแzeile drucken   */
+      Fo_Print(apstrRecord, pfDevice,		       /* Fuรzeile drucken   */
 	pFkb->wNextFoot, pFkb, apPkb, _F, _L);
       Fo_Set_Page(apstrRecord, pfDevice,
 	pFkb, apPkb, _F, _L);}			       /* Kopfzeile drucken  */
@@ -817,9 +817,9 @@ return(OK);
 } /* end Print_Text */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ iSteuerKz() 							    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ iSteuerKz() 							    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID iSteuerKz(PFKB pFkb, PPKB pPkb, FILE *pfDevice, SWORD wBereich)
 {
@@ -832,7 +832,7 @@ if(pFkb->wVonSeite<=pFkb->wAktSeite && pFkb->wBisSeite>=pFkb->wAktSeite)
 
        IF(pstr,"NO ") {strcpy(strSteuer,"SCHR_NORM"); pFkb->wStandardFont=1;}
   else IF(pstr,"SM ") {strcpy(strSteuer,"SCHR_SCHM"); pFkb->wStandardFont=3;}
-  else IF(pstr,"LQ ") {strcpy(strSteuer,"SCHR_SCH"); pFkb->wStandardFont=2;}
+  else IF(pstr,"LQ ") {strcpy(strSteuer,"SCHR_SCHร–"); pFkb->wStandardFont=2;}
   else IF(pstr,"OP ") {strcpy(strSteuer,"SCHR_FREI"); pFkb->wStandardFont=4;}
   else IF(pstr,"HE ") boHide_m=EIN;
   else IF(pstr,"UE ") strcpy(strSteuer, "UNTER_EIN");
@@ -863,11 +863,11 @@ return;
 } /* end iSteuerKz() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_ChangexFF ()                                                          บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_ChangexFF ()                                                          โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD i_ChangexFF(PSSTR pstr, PSSTR apstrRecord[], PFKB pFkb,
 		PPKB apPkb[], FILE *pfDevice)
@@ -887,11 +887,11 @@ return(OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fo_InitSteuerZ()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Druckersteuerzeichen von \xxx in ASCII-Code wandeln.		    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fo_InitSteuerZ()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Druckersteuerzeichen von \xxx in ASCII-Code wandeln.		    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fo_InitSteuerZ()
 {
@@ -903,7 +903,7 @@ Fo_WandleSteuerZ("DEINIT_ERS");
 
 Fo_WandleSteuerZ("SCHR_NORM");
 Fo_WandleSteuerZ("SCHR_SCHM");
-Fo_WandleSteuerZ("SCHR_SCH");
+Fo_WandleSteuerZ("SCHR_SCHร–");
 Fo_WandleSteuerZ("SCHR_FREI");
 Fo_WandleSteuerZ("UNTER_EIN");
 Fo_WandleSteuerZ("UNTER_AUS");
@@ -926,11 +926,11 @@ return(OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fo_iWandleSteuerZ() 						    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fo_iWandleSteuerZ() 						    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fo_iWandleSteuerZ(PSSTR pstrAnf)
 {
@@ -967,11 +967,11 @@ return(OK);
 }  /* Ende Fo_iWandleSteuerZ () */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fo_Print_SteuerKz ()						    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fo_Print_SteuerKz ()						    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fo_Print_SteuerKz(PSSTR pstrTyp, FILE *pfDevice)
 {
@@ -997,11 +997,11 @@ return(OK);
 } /* end Fo_Print_SteuerKz() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fo_Set_Page()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Seite setzten, nchste Kopfzeile drucken.				    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fo_Set_Page()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Seite setzten, nรคchste Kopfzeile drucken.				    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fo_Set_Page(PSSTR apstrRecord[], FILE *pfDevice, PFKB pFkb, PPKB apPkb[],
 		 PSSTR pF, SWORD wL)
@@ -1021,11 +1021,11 @@ return (OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fo_WahlSelect()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ pstrOut auf 150 Zeichen allocieren!!!				    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fo_WahlSelect()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ pstrOut auf 150 Zeichen allocieren!!!				    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fo_WahlSelect(PSSTR pstrSatz, PTEXTBOX pTW,
 		   PSSTR apstrRecord[], SWORD wLine, PSSTR pstrFile)
@@ -1069,11 +1069,11 @@ return(wSelect);
 } /* end Fo_WahlSelect() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fo_WahlChoice()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fo_WahlChoice()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Fo_WahlChoice(PSSTR pstrSatz, PSSTR pstrWahl, PTEXTBOX pTW,
 		   SWORD wLine, PSSTR pstrFile)
@@ -1102,11 +1102,11 @@ return(wSelect);
 } /* end Fo_WahlChoice() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Fo_WahlStr()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Fo_WahlStr()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID Fo_WahlStr(PSWORD pwRetCode, PSSTR pstrSatz, PSSTR pstrWahl, ...)
 {

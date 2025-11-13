@@ -1,17 +1,17 @@
 //4win(R) P.Mayer, www.4win.com/at  Last Update: 24-Feb-1997 / 11:52:59  -  Mon
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Programme-Name: FI3100b.C       Revision: 1.3         (C) 1989/1991    บ
-  บ  Overlay       : Update Artikel, ...                                    บ
-  บ  for Programme : Verarbeiten Geldbuchungen                              บ
-  บ                                                                         บ
-  บ  Rev.-Date     : 01.05.1991, Graz           Update: 01.05.1991, Graz    บ
-  บ  Author        : Peter Mayer                Author: Peter Mayer         บ
-  บ  Copyright (C) : 4win(R) Software, P.Mayer  A-8082 Kirchach 126         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         Deklarations-Dateien                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Programme-Name: FI3100b.C       Revision: 1.3         (C) 1989/1991    โ•‘
+  โ•‘  Overlay       : Update Artikel, ...                                    โ•‘
+  โ•‘  for Programme : Verarbeiten Geldbuchungen                              โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘  Rev.-Date     : 01.05.1991, Graz           Update: 01.05.1991, Graz    โ•‘
+  โ•‘  Author        : Peter Mayer                Author: Peter Mayer         โ•‘
+  โ•‘  Copyright (C) : 4win(R) Software, P.Mayer  A-8082 Kirchach 126         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         Deklarations-Dateien                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define NDEBUG 1
 #include <string.h>
 #include <app_tool.h>
@@ -31,11 +31,11 @@ IMPORT PSSTR  apstrWorkKey_g[];
 IMPORT	SLONG  lKzFibuBa_g;
 MGLOBAL SLONG  lKzBruttoBuchen_m=2;	    /* Select Brutto Buchen JA == 2   */
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Write_Rebu ()                                                         บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Zusammenstellung der Rechnungs-Buchungsstze                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Write_Rebu ()                                                         โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Zusammenstellung der Rechnungs-Buchungssรคtze                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_Write_Rebu (SWORD wLoop)
 {
@@ -61,11 +61,11 @@ return(wLoop);
 } /* end i_Write_Rebu */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_ReBuArt_2()                                                           บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ 2==VK Rechnungsausgang                                                  บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_ReBuArt_2()                                                           โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ 2==VK Rechnungsausgang                                                  โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_ReBuArt_2(SWORD wLoop)
 {
@@ -114,8 +114,8 @@ while(pt("PO_EIN_AUS")+wBlock < 			 /*			 */
   if( !(lKzFibuBa_g & lKzBruttoBuchen_m) )	      /* Wenn Mandant nicht  */
     {
 boTestModus_g=JA; Wi_TestPrintf(pWkbInfo_g, "\nArt_2"); boTestModus_g=NEIN;
-    strcpy(pt(":UST_ART"), pt("UST_ART")+wBlock);    /* bei Erl”s/Aufwand   */
-    strcpy(pt(":UST_SATZ"),pt("UST_SATZ")+wBlock);    /* ฏbruttoฎ buchen an- */
+    strcpy(pt(":UST_ART"), pt("UST_ART")+wBlock);    /* bei Erlรถs/Aufwand   */
+    strcpy(pt(":UST_SATZ"),pt("UST_SATZ")+wBlock);    /* ยปbruttoยซ buchen an- */
     memcpy(pt(":UST_BETR"),pt("UST_BETRAG")+wBlock,8);} /* gegeben hat	     */
 
   if(boShort)
@@ -162,11 +162,11 @@ return(wLoop);
 } /* end i_ReBuArt_2() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_ReBuArt_3()                                                           บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ 3==VK Zahlungseingang                                                   บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_ReBuArt_3()                                                           โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ 3==VK Zahlungseingang                                                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_ReBuArt_3(SWORD wLoop)
 {
@@ -207,8 +207,8 @@ memcpy(pt(":BETRAG_BR"), pt("ZAHL_BETR"), 8);
 if( !(lKzFibuBa_g & lKzBruttoBuchen_m) )	      /* Wenn Mandant nicht  */
   {
 boTestModus_g=JA; Wi_TestPrintf(pWkbInfo_g, "\nArt_3"); boTestModus_g=NEIN;
-  strcpy(pt(":UST_ART"), "m");			     /* bei Erl”s/Aufwand   */
-  strcpy(pt(":UST_SATZ"), "*");}		      /* ฏbruttoฎ buchen an- */
+  strcpy(pt(":UST_ART"), "m");			     /* bei Erlรถs/Aufwand   */
+  strcpy(pt(":UST_SATZ"), "*");}		      /* ยปbruttoยซ buchen an- */
 						      /* gegeben hat	     */
 strcpy(pt(":OP_NUMMER"), "\0");
 memcpy(pt(":BUCH_ART"),  pt("ART_BUCH"), 2);
@@ -239,9 +239,9 @@ if(dSkonto)
 if( !(lKzFibuBa_g & lKzBruttoBuchen_m) )	      /* Wenn Mandant nicht  */
 {
 boTestModus_g=JA; Wi_TestPrintf(pWkbInfo_g, "\nArt_3"); boTestModus_g=NEIN;
-  memcpy(pt(":UST_BETR"), &dUstSumme, 8);	      /* bei Erl”s/Aufwand   */
+  memcpy(pt(":UST_BETR"), &dUstSumme, 8);	      /* bei Erlรถs/Aufwand   */
 }
-						      /* ฏbruttoฎ buchen an- */
+						      /* ยปbruttoยซ buchen an- */
 awNewRecord_g[2]=JA; alRecNo_g[2]++;		      /* gegeben hat	     */
 memcpy(pt(":SATZ_NR"), &alRecNo_g[2], 4);	      /*		     */
 Write_Record(_F, _L);				      /*		      */
@@ -257,11 +257,11 @@ return(wLoop);
 } /* end i_ReBuArt_3() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_ReBuArt_5()                                                           บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ 5==EK Rechnungseingang                                                  บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_ReBuArt_5()                                                           โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ 5==EK Rechnungseingang                                                  โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_ReBuArt_5(SWORD wLoop)
 {
@@ -309,8 +309,8 @@ while(pt("PO_EIN_AUS")+wBlock < 			 /*			 */
   if( !(lKzFibuBa_g & lKzBruttoBuchen_m) )	      /* Wenn Mandant nicht  */
     {
 boTestModus_g=JA; Wi_TestPrintf(pWkbInfo_g, "\nArt_5"); boTestModus_g=NEIN;
-    strcpy(pt(":UST_ART"),pt("UST_ART")+wBlock);     /* bei Erl”s/Aufwand   */
-    strcpy(pt(":UST_SATZ"),pt("UST_SATZ")+wBlock);    /* ฏbruttoฎ buchen an- */
+    strcpy(pt(":UST_ART"),pt("UST_ART")+wBlock);     /* bei Erlรถs/Aufwand   */
+    strcpy(pt(":UST_SATZ"),pt("UST_SATZ")+wBlock);    /* ยปbruttoยซ buchen an- */
     memcpy(pt(":UST_BETR"),pt("UST_BETRAG")+wBlock,8);
     } /* gegeben hat	   */
 
@@ -358,11 +358,11 @@ return(wLoop);
 } /* end i_ReBuArt_5() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_ReBuArt_6()                                                           บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ 6==EK Zahlungsausgang                                                   บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_ReBuArt_6()                                                           โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ 6==EK Zahlungsausgang                                                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD i_ReBuArt_6(SWORD wLoop)
 {
@@ -404,8 +404,8 @@ memcpy(pt(":BETRAG_BR"), pt("ZAHL_BETR"), 8);
 if( !(lKzFibuBa_g & lKzBruttoBuchen_m) )	      /* Wenn Mandant nicht  */
   {
 boTestModus_g=JA; Wi_TestPrintf(pWkbInfo_g, "\nArt_6"); boTestModus_g=NEIN;
-  strcpy(pt(":UST_ART"), "v");			     /* bei Erl”s/Aufwand   */
-  strcpy(pt(":UST_SATZ"), "*"); 		      /* ฏbruttoฎ buchen an- */
+  strcpy(pt(":UST_ART"), "v");			     /* bei Erlรถs/Aufwand   */
+  strcpy(pt(":UST_SATZ"), "*"); 		      /* ยปbruttoยซ buchen an- */
   memcpy(pt(":UST_BETR"), &dUstSumme, 8);
   }	       /* gegeben hat	      */
 
@@ -438,9 +438,9 @@ if(dSkonto)
 if( !(lKzFibuBa_g & lKzBruttoBuchen_m) )	     /* Wenn Mandant nicht   */
   {
 boTestModus_g=JA; Wi_TestPrintf(pWkbInfo_g, "\nArt_6"); boTestModus_g=NEIN;
-  memcpy(pt(":UST_BETR"), &dUstSumme, 8);	     /* bei Erl”s/Aufwand    */
+  memcpy(pt(":UST_BETR"), &dUstSumme, 8);	     /* bei Erlรถs/Aufwand    */
   }
-						   /* ฏbruttoฎ buchen an-  */
+						   /* ยปbruttoยซ buchen an-  */
 awNewRecord_g[2]=JA; alRecNo_g[2]++;		     /* gegeben hat	     */
 memcpy(pt(":SATZ_NR"), &alRecNo_g[2], 4);	     /* 		     */
 Write_Record(_F, _L);				     /* 		     */
@@ -450,11 +450,11 @@ return(wLoop);
 } /* end i_ReBuArt_6() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Update_Artikel()                                                        บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Aktuallisieren der mengenmแigen und der wertmแigen Artikelumstze     บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Update_Artikel()                                                        โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Aktuallisieren der mengenmรครigen und der wertmรครigen Artikelumsรคtze     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Update_Artikel(SWORD wBlock)
 {
@@ -526,8 +526,8 @@ if(*(pt("PO_EIN_AUS")+wBlock)=='e')
 
 if(boNewArt)
   {
-  strcpy(pt("3๘ARTNR"),       pt("AR_NUMMER")+wBlock);
-  strcpy(pt("3๘MATCH_CODE"),pt("AR_BEZEICH")+wBlock);
+  strcpy(pt("3ยฐARTNR"),       pt("AR_NUMMER")+wBlock);
+  strcpy(pt("3ยฐMATCH_CODE"),pt("AR_BEZEICH")+wBlock);
   if(*(pt("PO_EIN_AUS")+wBlock)=='e')
     {
     strcpy(pt("ERLOES_KT"), pt("KONTO_NR")+wBlock);
@@ -547,11 +547,11 @@ return(OK);
 } /* end Update_Artikel */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Update_Anlagen()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Aktuallisieren der Anlagen. 					    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Update_Anlagen()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Aktuallisieren der Anlagen. 					    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD Update_Anlagen(SWORD wBlock)
 {
@@ -583,7 +583,7 @@ if(*(pt("PO_EIN_AUS")+wBlock)=='a')
     DOUBLE dNutzGes=ptD("NUTZ_GES");
     DOUBLE dAnWert=ptD("AN_WERT"), dHelp;
     SWORD wDatAktiv, wBuchJahr, wHelp;
-    CHAR strDatum[11], strTmp[TB_MAX];				       /*	fr JJJJ.MM.TT */
+    CHAR strDatum[11], strTmp[TB_MAX];				       /*	fรผr JJJJ.MM.TT */
     PSSTR pstr;
 
     /* dHelp=(wBuchJahr-wDatAktiv)*ptD("JAHR_AFA");
@@ -614,8 +614,8 @@ else
 
 if(boNewAnl)
   {
-  strcpy(pt("8๘INVENT_NR"), pt("AR_NUMMER")+wBlock);
-  strcpy(pt("8๘MATCH_CODE"),pt("AR_BEZEICH")+wBlock);
+  strcpy(pt("8ยฐINVENT_NR"), pt("AR_NUMMER")+wBlock);
+  strcpy(pt("8ยฐMATCH_CODE"),pt("AR_BEZEICH")+wBlock);
   strcpy(apstrWorkKey_g[wAnl], pt("AR_NUMMER")+wBlock);
   }
 
@@ -628,11 +628,11 @@ return(OK);
 // else if(wBuchArt==3 && wLoop==3)   * 0==Sachkonto/Sachkonto *
 // wLoop=i_ReBuArt_4(wLoop);
 
-//ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-//บ i_ReBuArt_4()  == Investition					    บ
-//บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-//บ 0==VK Sachkonto / Sachkonto 					    บ
-//ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+//โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+//โ•‘ i_ReBuArt_4()  == Investition					    โ•‘
+//โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+//โ•‘ 0==VK Sachkonto / Sachkonto 					    โ•‘
+//โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 GLOBAL
 SWORD i_ReBuArt_4(SWORD wLoop)
 {
@@ -670,8 +670,8 @@ if(!*pt(":HAB_KONTO")) // if(*pt("FIRMA")!='n')
 memcpy(pt(":BETRAG_BR"), pt("ZAHL_BETR"), 8);
 
 if( !(lKzFibuBa_g & lKzBruttoBuchen_m) )	      // Wenn Mandant nicht
-  {strcpy(pt(":UST_ART"), "m"); 		      // bei Erl”s/Aufwand
-  strcpy(pt(":UST_SATZ"), "*");}		      // ฏbruttoฎ buchen an-
+  {strcpy(pt(":UST_ART"), "m"); 		      // bei Erlรถs/Aufwand
+  strcpy(pt(":UST_SATZ"), "*");}		      // ยปbruttoยซ buchen an-
 						      // gegeben hat
 strcpy(pt(":OP_NUMMER"), "\0");
 memcpy(pt(":BUCH_ART"),  pt("ART_BUCH"), 2);
@@ -700,8 +700,8 @@ if(dSkonto)
     }
 
 if( !(lKzFibuBa_g & lKzBruttoBuchen_m) )	      // Wenn Mandant nicht
-  memcpy(pt(":UST_BETR"), &dUstSumme, 8);	      // bei Erl”s/Aufwand
-						      // ฏbruttoฎ buchen an-
+  memcpy(pt(":UST_BETR"), &dUstSumme, 8);	      // bei Erlรถs/Aufwand
+						      // ยปbruttoยซ buchen an-
 awNewRecord_g[2]=JA; alRecNo_g[2]++;		      // gegeben hat
 memcpy(pt(":SATZ_NR"), &alRecNo_g[2], 4);	      //
 Write_Record(_F, _L);				      //
@@ -712,130 +712,130 @@ return(wLoop);
 
 
 
-      ณ  Fehler (0) ฎฏ Source ฏDB_TRANB.Cฎ, Zeile ฏ45ฎ.                       ณ      
-      ณ    Db_BeginTran(400) - READ_FIRST.).                                  ณ      
+      โ”  Fehler (0) ยซยป Source ยปDB_TRANB.Cยซ, Zeile ยป45ยซ.                       โ”      
+      โ”    Db_BeginTran(400) - READ_FIRST.).                                  โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ84ฎ.                   ณ      
-      ณ    Db_GetGe(400), - File/Key: 0/2 _ 20.4.91.0.0.
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป84ยซ.                   โ”      
+      โ”    Db_GetGe(400), - File/Key: 0/2 _ 20.4.91.0.0.
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100b.cฎ, Zeile ฏ376ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 3/0 _ 103-001|SatzNr:12(0 49 48 51 45ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100b.cยซ, Zeile ยป376ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 3/0 _ 103-001|SatzNr:12(0 49 48 51 45โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100b.cฎ, Zeile ฏ380ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 4/0 _ kg|SatzNr:12(0 107 103 0 0...).ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100b.cยซ, Zeile ยป380ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 4/0 _ kg|SatzNr:12(0 107 103 0 0...).โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ38ฎ.                   ณ      
-      ณ(13 0 0 0 0...). File/Key: 2/0 _                                       ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป38ยซ.                   โ”      
+      โ”(13 0 0 0 0...). File/Key: 2/0 _                                       โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ44ฎ.                   ณ      
-      ณ    Db_Update(400), - File/Key: 3/0 _ 103-001(49 48 51 45 48...).      ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป44ยซ.                   โ”      
+      โ”    Db_Update(400), - File/Key: 3/0 _ 103-001(49 48 51 45 48...).      โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100b.cฎ, Zeile ฏ376ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 3/0 _ 103-001|SatzNr:13(0 49 48 51 45ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100b.cยซ, Zeile ยป376ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 3/0 _ 103-001|SatzNr:13(0 49 48 51 45โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100b.cฎ, Zeile ฏ380ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 4/0 _ kg|SatzNr:13(0 107 103 0 0...).ณ      
-  ÿ                                                                                  
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ38ฎ.                   ณ      
-      ณ    Db_Insert, - File/Key: 2/0 _ (14 0 0 0 0...).                     ณ
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100b.cยซ, Zeile ยป380ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 4/0 _ kg|SatzNr:13(0 107 103 0 0...).โ”      
+  ย                                                                                   
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป38ยซ.                   โ”      
+      โ”    Db_Insert, - File/Key: 2/0 _ (14 0 0 0 0...).                     โ”
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ44ฎ.                   ณ      
-      ณ    Db_Update(400), - File/Key: 3/0 _ 103-001(49 48 51 45 48...).      ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป44ยซ.                   โ”      
+      โ”    Db_Update(400), - File/Key: 3/0 _ 103-001(49 48 51 45 48...).      โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ38ฎ.                   ณ      
-      ณ    Db_Insert, - File/Key: 2/0 _ (15 0 0 0 0...).                     ณ
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป38ยซ.                   โ”      
+      โ”    Db_Insert, - File/Key: 2/0 _ (15 0 0 0 0...).                     โ”
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100.cฎ, Zeile ฏ435ฎ.                   ณ      
-      ณ    Db_Delete - File/Key: 0/2.                                         ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100.cยซ, Zeile ยป435ยซ.                   โ”      
+      โ”    Db_Delete - File/Key: 0/2.                                         โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100.cฎ, Zeile ฏ520ฎ.                   ณ      
-      ณ    B_GET_NEXT(400), - File/Key: 0/2 _ [.                            ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100.cยซ, Zeile ยป520ยซ.                   โ”      
+      โ”    B_GET_NEXT(400), - File/Key: 0/2 _ [.                            โ”      
 
-     ณ wEnd(-1), Key(  91.04.22), KeyEnd(  91.04.30þ).                      ณ        
-     ณ  wEnd(-1), OldKey(  91.04.20), Key(  91.04.22).                      ณ        
+     โ” wEnd(-1), Key(  91.04.22), KeyEnd(  91.04.30โ– ).                      โ”        
+     โ”  wEnd(-1), OldKey(  91.04.20), Key(  91.04.22).                      โ”        
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100b.cฎ, Zeile ฏ376ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 3/0 _ 103-001|SatzNr:15(0 49 48 51 45ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100b.cยซ, Zeile ยป376ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 3/0 _ 103-001|SatzNr:15(0 49 48 51 45โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100b.cฎ, Zeile ฏ380ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 4/0 _ kg|SatzNr:15(0 107 103 0 0...).ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100b.cยซ, Zeile ยป380ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 4/0 _ kg|SatzNr:15(0 107 103 0 0...).โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ38ฎ.                   ณ      
-      ณ    Db_Insert, - File/Key: 2/0 _ (16 0 0 0 0...).                     ณ
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป38ยซ.                   โ”      
+      โ”    Db_Insert, - File/Key: 2/0 _ (16 0 0 0 0...).                     โ”
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ44ฎ.                   ณ      
-      ณ    Db_Update(400), - File/Key: 3/0 _ 103-001(49 48 51 45 48...).      ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป44ยซ.                   โ”      
+      โ”    Db_Update(400), - File/Key: 3/0 _ 103-001(49 48 51 45 48...).      โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100b.cฎ, Zeile ฏ376ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 3/0 _ 103-001|SatzNr:16(0 49 48 51 45ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100b.cยซ, Zeile ยป376ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 3/0 _ 103-001|SatzNr:16(0 49 48 51 45โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100b.cฎ, Zeile ฏ380ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 4/0 _ kg|SatzNr:16(0 107 103 0 0...).ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100b.cยซ, Zeile ยป380ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 4/0 _ kg|SatzNr:16(0 107 103 0 0...).โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ38ฎ.                   ณ      
-      ณ    Db_Insert, - File/Key: 2/0 _ (17 0 0 0 0...).                     ณ
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป38ยซ.                   โ”      
+      โ”    Db_Insert, - File/Key: 2/0 _ (17 0 0 0 0...).                     โ”
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ44ฎ.                   ณ      
-      ณ    Db_Update(400), - File/Key: 3/0 _ 103-001(49 48 51 45 48...).      ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป44ยซ.                   โ”      
+      โ”    Db_Update(400), - File/Key: 3/0 _ 103-001(49 48 51 45 48...).      โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ38ฎ.                   ณ      
-      ณ    Db_Insert, - File/Key: 2/0 _ (18 0 0 0 0...).                     ณ
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป38ยซ.                   โ”      
+      โ”    Db_Insert, - File/Key: 2/0 _ (18 0 0 0 0...).                     โ”
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100.cฎ, Zeile ฏ435ฎ.                   ณ      
-      ณ    Db_Delete - File/Key: 0/2.                                         ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100.cยซ, Zeile ยป435ยซ.                   โ”      
+      โ”    Db_Delete - File/Key: 0/2.                                         โ”      
 
-      ณ  Fehler (9) ฎฏ Source ฏ..\C\fi3100.cฎ, Zeile ฏ520ฎ.                   ณ      
-      ณ    B_GET_NEXT(400), - File/Key: 0/2 _ [.                            ณ      
+      โ”  Fehler (9) ยซยป Source ยป..\C\fi3100.cยซ, Zeile ยป520ยซ.                   โ”      
+      โ”    B_GET_NEXT(400), - File/Key: 0/2 _ [.                            โ”      
 
                                                                                      
-     ณ wEnd(-1), Key(  91.04.22), KeyEnd(  91.04.30þ).                      ณ        
-     ณ  wEnd(-1), OldKey(  91.04.20), Key(  91.04.22).                      ณ        
-     ณwEnd(-1), wEOF_g(0).                                                  ณ        
-     ณ                                                                      ณ        
-     ณ wEnd(1), Key(26955.32.58), KeyEnd(  91.04.30þ).                      ณ        
-     ณ  wEnd(1), OldKey(  91.04.22), Key(26955.32.58).                      ณ        
-     ณwEnd(1), wEOF_g(1).                                                   ณ        
+     โ” wEnd(-1), Key(  91.04.22), KeyEnd(  91.04.30โ– ).                      โ”        
+     โ”  wEnd(-1), OldKey(  91.04.20), Key(  91.04.22).                      โ”        
+     โ”wEnd(-1), wEOF_g(0).                                                  โ”        
+     โ”                                                                      โ”        
+     โ” wEnd(1), Key(26955.32.58), KeyEnd(  91.04.30โ– ).                      โ”        
+     โ”  wEnd(1), OldKey(  91.04.22), Key(26955.32.58).                      โ”        
+     โ”wEnd(1), wEOF_g(1).                                                   โ”        
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_init.cฎ, Zeile ฏ366ฎ.                  ณ      
-      ณ    Db_EndTran(APP_CLOSE).                                             ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_init.cยซ, Zeile ยป366ยซ.                  โ”      
+      โ”    Db_EndTran(APP_CLOSE).                                             โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_init.cฎ, Zeile ฏ371ฎ.                  ณ      
-      ณ    Db_Close - Datei: 0 1 2 3 4 5 6 7 8 9                              ณ
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_init.cยซ, Zeile ยป371ยซ.                  โ”      
+      โ”    Db_Close - Datei: 0 1 2 3 4 5 6 7 8 9                              โ”
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi_3100.cฎ, Zeile ฏ188ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 7/0 _  3|SatzNr:18(0 32 51 0 0...).  ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi_3100.cยซ, Zeile ยป188ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 7/0 _  3|SatzNr:18(0 32 51 0 0...).  โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi_3100.cฎ, Zeile ฏ204ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 9/0 _  3|SatzNr:18(0 32 51 0 0...).  ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi_3100.cยซ, Zeile ยป204ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 9/0 _  3|SatzNr:18(0 32 51 0 0...).  โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi_3100.cฎ, Zeile ฏ206ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 6/0 _  3|SatzNr:18(0 32 51 0 0...).  ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi_3100.cยซ, Zeile ยป206ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 6/0 _  3|SatzNr:18(0 32 51 0 0...).  โ”      
 
-      ณ  Fehler (9) ฎฏ Source ฏ..\C\ba_init.cฎ, Zeile ฏ199ฎ.                  ณ      
-      ณ    B_GET_LAST(22000|RS_1), - File/Key: 8/0 - .                        ณ      
+      โ”  Fehler (9) ยซยป Source ยป..\C\ba_init.cยซ, Zeile ยป199ยซ.                  โ”      
+      โ”    B_GET_LAST(22000|RS_1), - File/Key: 8/0 - .                        โ”      
 
-      ณ  Fehler (9) ฎฏ Source ฏ..\C\ba_init.cฎ, Zeile ฏ199ฎ.                  ณ      
-      ณ    B_GET_LAST(22000|RS_1), - File/Key: 2/0 - .                        ณ      
+      โ”  Fehler (9) ยซยป Source ยป..\C\ba_init.cยซ, Zeile ยป199ยซ.                  โ”      
+      โ”    B_GET_LAST(22000|RS_1), - File/Key: 2/0 - .                        โ”      
 
-               ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤVerarbeitenÿBuchungenฤฟ                
-               ณ                                                    ณ                
-               ณ  Verarbeiten Monat: April                          ณ                
-               ณ  ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ  ณ                
-               ณ  Von Datum:  1.04.91          Bis Datum: 30.04.91  ณ                
-               ณ                                                    ณ                
-               ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู                
+               โ”โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€Verarbeitenย Buchungenโ”€โ”                
+               โ”                                                    โ”                
+               โ”  Verarbeiten Monat: April                          โ”                
+               โ”  โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€  โ”                
+               โ”  Von Datum:  1.04.91          Bis Datum: 30.04.91  โ”                
+               โ”                                                    โ”                
+               โ””โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”                
 
-      ณ  Fehler (0) ฎฏ Source ฏDB_TRANB.Cฎ, Zeile ฏ45ฎ.                       ณ      
-      ณ    Db_BeginTran(400) - READ_FIRST.).                                  ณ      
+      โ”  Fehler (0) ยซยป Source ยปDB_TRANB.Cยซ, Zeile ยป45ยซ.                       โ”      
+      โ”    Db_BeginTran(400) - READ_FIRST.).                                  โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\ba_work.cฎ, Zeile ฏ84ฎ.                   ณ      
-      ณ    Db_GetGe(400), - File/Key: 0/2 _ [-3.4.91.0.0.                   ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\ba_work.cยซ, Zeile ยป84ยซ.                   โ”      
+      โ”    Db_GetGe(400), - File/Key: 0/2 _ [-3.4.91.0.0.                   โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100a.cฎ, Zeile ฏ80ฎ.                   ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 3/0 _ 3080|SatzNr:0(0 51 48 56 48...)ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100a.cยซ, Zeile ยป80ยซ.                   โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 3/0 _ 3080|SatzNr:0(0 51 48 56 48...)โ”      
 
-      ณ  Fehler (0) ฎฏ Source ฏ..\C\fi3100a.cฎ, Zeile ฏ473ฎ.                  ณ      
-      ณ    Db_GetEq(REC_01), - File/Key: 3/0 _ 2000|SatzNr:0(0 50 48 48 48...)ณ      
+      โ”  Fehler (0) ยซยป Source ยป..\C\fi3100a.cยซ, Zeile ยป473ยซ.                  โ”      
+      โ”    Db_GetEq(REC_01), - File/Key: 3/0 _ 2000|SatzNr:0(0 50 48 48 48...)โ”      
 
 
 ---------------------------------------------------------------------------- */

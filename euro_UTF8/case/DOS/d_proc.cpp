@@ -3,7 +3,7 @@
 /*****************************************************************
  *   Programmname:    D_PROC.C					  *
  *   Aufgabe:         Stellt eine Reihe von C-Funktionen zur     *
- *                    VerfÅgung, Einflu· auf den Ablauf von      *
+ *                    Verf√ºgung, Einflu√ü auf den Ablauf von      *
  *                    Prozessen nehmen und Interrupt-Vektoren    *
  *                    lesen und setzten.                         *
  *   Memory Model:    SMALL                                      *
@@ -16,7 +16,7 @@
  *    wobei options:  COMP=QCL  (falls QuickC verwendet wird)    *
  *                                                               *
  *   Sollen Routinen in anderen Programmen verwendet werden, so  *
- *   mu· beim Linken DOSLIBS.LIB als Library zusÑtzlich angege-  *
+ *   mu√ü beim Linken DOSLIBS.LIB als Library zus√§tzlich angege-  *
  *   ben werden.                                                 *
  *                                                               *
  *   Copyright (C):    euroSOFT-WAREvertrieb - A-8020 Graz       *
@@ -82,7 +82,7 @@ inregs.h.al = (SBYTE) nr;
 intdosx (&inregs, &inregs, &segregs);
 
 wptr = (SWORD *) dwptr; 	      /* Erstellen des Far Ptr */
-*wptr++ = inregs.x.bx;                        /* Åber 2 WORDs */
+*wptr++ = inregs.x.bx;                        /* √ºber 2 WORDs */
 *wptr   = segregs.es;
 
 return (dw);
@@ -91,7 +91,7 @@ return (dw);
 
 
 /* ---------------------------------------------------------- *
- *  F 4Ch - Beendet Process mit RÅckgabewert                  *
+ *  F 4Ch - Beendet Process mit R√ºckgabewert                  *
  * ---------------------------------------------------------- */
 
 VOID
@@ -102,7 +102,7 @@ bdos (END_PROCESS, 0, (SWORD) retcode);
 
 
 /* ---------------------------------------------------------- *
- *  F 4Dh - Holt den RÅckgabewert eines Processes             *
+ *  F 4Dh - Holt den R√ºckgabewert eines Processes             *
  * ---------------------------------------------------------- */
 
 SWORD
@@ -115,7 +115,7 @@ return (bdos (GET_RET_CODE, 0, 0));
 
 /*
 // ----------------------------------------------------------
-//  F 4303h - LÑdt Process in Speicher (ohne AusfÅhrung)
+//  F 4303h - L√§dt Process in Speicher (ohne Ausf√ºhrung)
 // ----------------------------------------------------------
 
 SWORD

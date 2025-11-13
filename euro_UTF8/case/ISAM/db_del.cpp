@@ -24,7 +24,7 @@ SWORD	wKeyNr	     Schlüssel-Nummer.
           ──────┴──────────┴─────────────┴────────────┴──────────┴───────────
 Eingang:     ¨       ¨            ¨            ¨                       ¨
 Ausgang:             ¨                                     ¨
-                                                                                                      
+
 Eingang:
 ─────────────────────────────────────────────────────────────────────────────
 ¨ wFile:
@@ -173,6 +173,9 @@ SWORD wSelect=1;
 SWORD  wStatus;
 
 while(wSelect!=0)
+
+
+
   {
   CHAR strError[TB_MAX], strNull[TB_MAX];
   SWORD wHandle=0, wBufLen=MAX_RECORD_SIZE;

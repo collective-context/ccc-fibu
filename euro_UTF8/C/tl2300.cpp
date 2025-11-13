@@ -1,16 +1,16 @@
 // (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:21:47 - Wed
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Programm-Name: TL2300						    บ
-  บ  Funktion	  : euroSOFT - allgemeine Dateikonvertierung		    บ
-  บ                                                                         บ
-  บ  Datum	  : 20.01.1990, Graz	       Update: 20.01.1990, Graz     บ
-  บ  Author       : Peter Mayer                Author:                      บ
-  บ  Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         Deklarations-Dateien                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Programm-Name: TL2300						    โ•‘
+  โ•‘  Funktion	  : euroSOFT - allgemeine Dateikonvertierung		    โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘  Datum	  : 20.01.1990, Graz	       Update: 20.01.1990, Graz     โ•‘
+  โ•‘  Author       : Peter Mayer                Author:                      โ•‘
+  โ•‘  Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         Deklarations-Dateien                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define NDEBUG 1               /* ohne Angabe == mit Check kompiliern        */
 
 #include <stdio.h>
@@ -18,7 +18,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdarg.h>             /* ANSI-C Standard fr va_start(), va_end()  */
+#include <stdarg.h>             /* ANSI-C Standard fรผr va_start(), va_end()  */
 #include <eur_tool.h>
 
 MGLOBAL SWORD	Application_Write(VOID);	       /* Druckroutine springen*/
@@ -26,63 +26,63 @@ MGLOBAL SWORD	Read_First (VOID);
 MGLOBAL SWORD	Set_Default (VOID);
 MGLOBAL SWORD	Validate_Record (VOID);
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ      Globale Daten, die aus der Toolbox importiert werden               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-  บ      Konstanten &  modul-globale Variablen  &  Array - Deklaration      บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-  บ      Funktions-Prototypem                                               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘      Globale Daten, die aus der Toolbox importiert werden               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+  โ•‘      Konstanten &  modul-globale Variablen  &  Array - Deklaration      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+  โ•‘      Funktions-Prototypem                                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include "..\c\st.h"
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ     Grund-Initialisierungen  == Programmstart                           บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘     Grund-Initialisierungen  == Programmstart                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 SWORD  main (SWORD  argc, PSSTR  argv[])
 {
-PSSTR	apstrMessage[25];			       /* fr Nachrichten      */
+PSSTR	apstrMessage[25];			       /* fรผr Nachrichten      */
 
 pWkbInfo_m = Wi_Einrichten (3,11,72,11);             /* WindowKontollBlock   */
-Wi_SchattenEin (pWkbInfo_m);                         /* fr WinTestPrintf()  */
+Wi_SchattenEin (pWkbInfo_m);                         /* fรผr WinTestPrintf()  */
 
 Dl_GetInstallation("euroINST");                     /* liest    glob. Werte */
 
 wSteuerKennzeichen_m = 0;                            /* Wenn k. Parameter so.*/
 M_ParameterUebergabe(argc, argv, strApp_m,           /* Wert aus DOS-Command */
-   &wSteuerKennzeichen_m, &wDruckKennzeichen_m,      /* Line bernehmen      */
+   &wSteuerKennzeichen_m, &wDruckKennzeichen_m,      /* Line รผbernehmen      */
    awMasks_m);
 
-Mn_Init (apAppMenu_m);                               /* Menleiste initial.  */
-M_BasisMaske("[Alt] oder [F10] = Men");
-Mn_Aktivieren(1);                                    /* Menzeile anzeigen   */
+Mn_Init (apAppMenu_m);                               /* Menรผleiste initial.  */
+M_BasisMaske("[Alt] oder [F10] = Menรผ");
+Mn_Aktivieren(1);                                    /* Menรผzeile anzeigen   */
 
 while (wSteuerKennzeichen_m >= 0 )
 {
 
 sprintf (strSpecialKeyCodes_m,                       /* erlaubte Funktions-  */
-   "%c %c %c %c %c",                                 /* tasten fr Special_  */
+   "%c %c %c %c %c",                                 /* tasten fรผr Special_  */
    T_ESC, T_PGUP, T_PGDN, T_F2, _N);		   /* Key_Code()	   */
 
 awMaskSequence_m[0] = 0;                             /* Masken-Reihenfolge   */
 
 switch (wSteuerKennzeichen_m)
-  {                                                  /* applikationsabhngig:*/
+  {                                                  /* applikationsabhรคngig:*/
   case 0:
-       strcpy (strApp_m, "TL"); 		     /* berschr. Parameter.*/
+       strcpy (strApp_m, "TL"); 		     /* รผberschr. Parameterรผ.*/
 	 awMasks_m[0]=1100;			     /* Liste Kunden nach    */
 	 awMasks_m[1]=110;			     /* Liste Kunden nach    */
 	 awMasks_m[2]=111;			     /* Liste Kunden nach    */
 	 awMasks_m[3]=NULL;			     /* Kurzbezeichnung      */
 
-  case 98:                                           /* Resverviert fr Para-*/
+  case 98:                                           /* Resverviert fรผr Para-*/
     Application_Init();
     Start_Application();                             /* Start der Applikation*/
     Application_Close();
-    break;                                           /* meterbergabe aus DOS*/
+    break;                                           /* meterรผbergabe aus DOS*/
 
   default:                                           /*                      */
     Ut_SchreibArray (apstrMessage,                   /*                      */
-       "Unzulssiges Steuerkennzeichen.",            /*                      */
+       "Unzulรคssiges Steuerkennzeichen.",            /*                      */
        "Bitte das Programm neu starten!", _N);
 
     Dl_Info(apstrMessage, DLG_KRITISCH);             /*                      */
@@ -95,16 +95,16 @@ wSteuerKennzeichen_m = -1;			     /* 		     */
 
 } /* end While == Programmende */                    /*                      */
 
-Mn_Entfernen(1);                                     /* Menzeile l”schen    */
+Mn_Entfernen(1);                                     /* Menรผzeile lรถschen    */
 Wi_Entfernen (pWkbInfo_m);                           /* WindowKontollBlock   */
 D_end_process (0);				     /* 		     */
 return(OK);
 } /*end main*/
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ     Start_Application ()                                                บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘     Start_Application ()                                                โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Start_Application(VOID)
 {
@@ -117,7 +117,7 @@ wFieldNumber_m = awFirstFieldNumber_m[0];            /* auf 1. Eingabefeld   */
 
 for(i=0; i < wFileHandler_m; i++)
   memset ( apstrRecord_m[i], '\0',
-  awRecLength_m[i]);                                 /* Records l”schen      */
+  awRecLength_m[i]);                                 /* Records lรถschen      */
 
 Set_Default();                                       /* Belegung der Defaults*/
 
@@ -130,7 +130,7 @@ while(wKeyCode_m != 9999 && !wEscFlag_m)
   memset(strOldString_m, '\0', TB_MAX);
   memset(strNewString_m, '\0', TB_MAX);
 
-  Key_Code_Evaluation(wKeyCode_m,                    /* Fr Application_Set  */
+  Key_Code_Evaluation(wKeyCode_m,                    /* Fรผr Application_Set  */
     &wNextMaskNumber_m, &wNextFieldNumber_m,
     &wNextBlockNumber_m, apTextBox_m,
     apstrRecord_m, awRecLength_m, awBlocks_m);       /* Key-Code auswerten   */
@@ -145,18 +145,18 @@ while(wKeyCode_m != 9999 && !wEscFlag_m)
     awScroll_m, awRecLength_m, &wBlockNumber_m);     /*                      */
 
     if(strchr(strSpecialKeyCodes_m,wKeyCode_m ) > 0) /* (02) wenn Funktions- */
-      Special_Functions ();                          /* taste gedrckt dann  */
+      Special_Functions ();                          /* taste gedrรผckt dann  */
 
-      if(wFail_m)                                    /* Wenn ungltige Ein-  */
+      if(wFail_m)                                    /* Wenn ungรผltige Ein-  */
         {                                            /* gabe                 */
         strcpy(apTextBox_m[wMaskNumber_m]
           [wFieldNumber_m]->acText, strOldString_m); /*                      */
 
         wKeyCode_m = AUS;                            /*                      */
-        if ( boBeepen_g ) i_Beep();                  /* Wenn erlaubt ฏ Ton   */
+        if ( boBeepen_g ) i_Beep();                  /* Wenn erlaubt ยป Ton   */
         }
 
-    wEscFlag_m = (wKeyCode_m == T_ESC);              /* unglt.Eingabe zurck*/
+    wEscFlag_m = (wKeyCode_m == T_ESC);              /* ungรผlt.Eingabe zurรผck*/
   } /* end while(wEscFlag_m) */
 
 
@@ -168,14 +168,14 @@ return(OK);
 } /*end Start_Application() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Application_Set (01)                                                    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Fhrt applikationsabhngige Vorbelegungen fr bestimmte Felder          บ
-  บ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           บ
-  บ FieldNumber% und MaskNumber% beinhalten die Nummern des Feldes / der    บ
-  บ Maske die als nchstes vom Interpreter angesprungen werden wrde.       บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Application_Set (01)                                                    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Fรผhrt applikationsabhรคngige Vorbelegungen fรผr bestimmte Felder          โ•‘
+  โ•‘ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           โ•‘
+  โ•‘ FieldNumber% und MaskNumber% beinhalten die Nummern des Feldes / der    โ•‘
+  โ•‘ Maske die als nรคchstes vom Interpreter angesprungen werden wรผrde.       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Application_Set (SWORD  wM, SWORD  wFieldNr)
 {
@@ -193,21 +193,21 @@ return(OK);
 } /*end Application_Set (01) */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Special_Functions (02)                                                  บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine wird angesprungen, wenn vom Anwender eine Sonderfunk-     บ
-  บ tionstaste bettigt wurde, die fr die Applikation eine bestimmte       บ
-  บ Bedeutung hat.                                                          บ
-  บ Siehe Konstanten-Deklaration                                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Special_Functions (02)                                                  โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine wird angesprungen, wenn vom Anwender eine Sonderfunk-     โ•‘
+  โ•‘ tionstaste betรคtigt wurde, die fรผr die Applikation eine bestimmte       โ•‘
+  โ•‘ Bedeutung hat.                                                          โ•‘
+  โ•‘ Siehe Konstanten-Deklaration                                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Special_Functions ()
 {
 switch (wKeyCode_m)                                  /*                      */
   {
   case T_ESC:                                        /* Wenn Maske 0 und     */
-     wFinis_m=( (wMaskNumber_m==awMaskSequence_m[0]) /* Primrschlssel und  */
+     wFinis_m=( (wMaskNumber_m==awMaskSequence_m[0]) /* Primรคrschlรผssel und  */
        && (wFieldNumber_m==awRecKeyField_m[0]) &&    /* kein Datensatz vor-  */
        !(awNewRecord_m[0]||awExistingRecord_m[0]));  /* handen, dann das     */
                                                      /* Programm verlassen.  */
@@ -219,11 +219,11 @@ return(OK);
 } /*end Special_Functions (02) */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ point ()                                                                บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine ist eine Hilfsfunktion.                                   บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ point ()                                                                โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine ist eine Hilfsfunktion.                                   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 PSSTR	point (PSSTR  pstrWahl, SWORD  wBlock)
 {
 SREGISTER i;
@@ -249,9 +249,9 @@ for (i=0; apstrAltWahl[i]; i++)
     pstrReturn=&apstrRecord_m[awRec[i]][awOff[i]+wBlock];
 
     /*Wi_TestPrintf ( pWkbInfo_m,
-      "\n&apstrRecord_m[awRecฏ%d][awOffฏ%d]+wBlockฏ%d].",
+      "\n&apstrRecord_m[awRecยป%d][awOffยป%d]+wBlockยป%d].",
       awRec[i], awOff[i], wBlock);
-    Wi_TestPrintf ( pWkbInfo_m, "\npstrReturn: %s = ฏ%sฎ.",
+    Wi_TestPrintf ( pWkbInfo_m, "\npstrReturn: %s = ยป%sยซ.",
       pstr, pstrReturn);*/
     return (pstrReturn);
     }
@@ -286,17 +286,17 @@ pstrReturn =
 
 assert( FP_SEG(pstrReturn) > _psp);
 
-/*Wi_TestPrintf ( pWkbInfo_m, "\npstrReturn: %s = ฏ%sฎ.",
+/*Wi_TestPrintf ( pWkbInfo_m, "\npstrReturn: %s = ยป%sยซ.",
   pstr, pstrReturn); */
 return (pstrReturn);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Set_Default()                                                           บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine belegt die Defaultfelder vor.                             บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Set_Default()                                                           โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine belegt die Defaultfelder vor.                             โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Set_Default ()
 {
@@ -314,10 +314,10 @@ return (OK);
 
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Application_Write() 						    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Application_Write() 						    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Application_Write ()
 {
@@ -326,7 +326,7 @@ PSSTR  pstrKey, pstrKeyEnd;
 PWKB pWkb;
 
 pWkb = Wi_Einrichten (20,5,30,10);                    /* WindowKontollBlock   */
-Wi_SchattenEin (pWkb);                                /* fr Wi_Printf()      */
+Wi_SchattenEin (pWkb);                                /* fรผr Wi_Printf()      */
 Wi_Aktivieren  (pWkb);                                /*                      */
 
 Read_First();
@@ -338,23 +338,23 @@ while(wEnd <= 0)				     /* wenn rec < key bis   */
   if(Validate_Record())
     Save_Record ();
 
-  pstrKey=acEnd;				     /* Druckschlssel bis:  */
+  pstrKey=acEnd;				     /* Druckschlรผssel bis:  */
   pstrKeyEnd=acEnd;
 
     pstrKey=point("0.KUNDE", 0);
-    pstrKeyEnd = apTextBox_m[0][1]->acText;          /* Primrdruckrekord    */
+    pstrKeyEnd = apTextBox_m[0][1]->acText;          /* Primรคrdruckrekord    */
 
   wWahr=0;
   wWahr=wWahr||boStrCmp(strMask_m[0],"TL1100");      /* VS Dateikonvertier.  */
   if(wWahr)                                          /* falls richtige Maske */
     {
     pstrKey=point("0.KUNDE", 0);
-    pstrKeyEnd = apTextBox_m[0][1]->acText;          /* Primrdruckrekord    */
+    pstrKeyEnd = apTextBox_m[0][1]->acText;          /* Primรคrdruckrekord    */
     }
 
   Read_Next();
   wEnd=strcmpi(pstrKey, pstrKeyEnd);
-  Wi_Printf("%s ฏ %d.\n", pstrKey, wEnd);
+  Wi_Printf("%s ยป %d.\n", pstrKey, wEnd);
   }
 
 Wi_Entfernen (pWkb);                                  /* WindowKontollBlock   */
@@ -363,12 +363,12 @@ return(OK);
 
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Extract_Keys (20)                                                       บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Liest die Schlssel aus dem Stamm-Satz und trgt Sie in die weiteren    บ
-  บ Dateien ein.                                                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Extract_Keys (20)                                                       โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Liest die Schlรผssel aus dem Stamm-Satz und trรคgt Sie in die weiteren    โ•‘
+  โ•‘ Dateien ein.                                                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Extract_Keys (SWORD  wRec)
 {
@@ -381,8 +381,8 @@ if(boStrCmp(strMask_m[0],"SY9999") )
   {
   for(i=0; i<wMaxRecKey_m; i++)                      /*                      */
     {                                                /*                      */
-    memset(apstrRecKey_m[i],'\0', TB_MAX);           /* Alle Schlssel mit   */
-                                                     /* dem Primr-Druck-    */
+    memset(apstrRecKey_m[i],'\0', TB_MAX);           /* Alle Schlรผssel mit   */
+                                                     /* dem Primรคr-Druck-    */
     memcpy(apstrRecKey_m[i],                         /* Record (== 0) syn-   */
       &apstrRecord_m[0][awRecKeyOffset_m[i]],        /* chronisieren         */
       awRecKeyLength_m[i]);                          /*                      */
@@ -398,16 +398,16 @@ return(OK);
 
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Read_First ()                                                           บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Funktion liest fr die Druckroutiene den ersten zu druckenden     บ
-  บ Datensatz aus der Datei. (gr”แer oder gleich der Eingabe ฏDruck von:ฎ)  บ
-  บ Ist der betreffende Datensatz gesperrt, so wird eine entsprechende      บ
-  บ Meldung ausgegeben.                                                     บ
-  บ Wird der Masken-Stammsatz aus mehreren Dateien gebildet, so wird        บ
-  บ das durch die Variable wFileHandler automatisch erkannt.                บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Read_First ()                                                           โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Funktion liest fรผr die Druckroutiene den ersten zu druckenden     โ•‘
+  โ•‘ Datensatz aus der Datei. (grรถรer oder gleich der Eingabe ยปDruck von:ยซ)  โ•‘
+  โ•‘ Ist der betreffende Datensatz gesperrt, so wird eine entsprechende      โ•‘
+  โ•‘ Meldung ausgegeben.                                                     โ•‘
+  โ•‘ Wird der Masken-Stammsatz aus mehreren Dateien gebildet, so wird        โ•‘
+  โ•‘ das durch die Variable wFileHandler automatisch erkannt.                โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Read_First ()
 {
@@ -417,8 +417,8 @@ SWORD  wRetCode,				       /* Fehler-Code	       */
 
 wM=wMaskNumber_m;
 
-strncpy(apstrRecKey_m[0],                            /* Primrdruckrekord    */
-  apTextBox_m[0][0]->acText, awRecKeyLength_m[0]);   /* Druckschlssel von:  */
+strncpy(apstrRecKey_m[0],                            /* Primรคrdruckrekord    */
+  apTextBox_m[0][0]->acText, awRecKeyLength_m[0]);   /* Druckschlรผssel von:  */
 
 wRetCode = B_GetGe (0, apstrFileBlock_m,             /*                      */
     apstrRecord_m, awRecLength_m,                    /*                      */
@@ -435,7 +435,7 @@ if(boStrCmp(strMask_m[0],"SY9999") )
   {
   for(i=2; i < wFileHandler_m; i++)		     /* 		     */
     {						     /* 		     */
-    Extract_Keys (i);				     /*(20)Schlssel filtern */
+    Extract_Keys (i);				     /*(20)Schlรผssel filtern */
 
     wRetCode = B_GetEq (i, apstrFileBlock_m,	     /* 		     */
       apstrRecord_m, awRecLength_m,		     /* 		     */
@@ -451,11 +451,11 @@ return(OK);
 
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Validate_Read (22)                                                      บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Validate_Read (22)                                                      โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Validate_Read ()
 {
@@ -467,14 +467,14 @@ return (wValid);
 
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Read_Next (24)                                                          บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine liest den nchsten Satz lt. Sortierreihenfolge des        บ
-  บ Primr- bzw. Sekundr-Keys, d.h. liest den nchsten zu druckenden       บ
-  บ Datensatz und synchronisiert automatisch die dazugeh”rigen Datenstze   บ
-  บ in den temporren Dateien.                                              บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Read_Next (24)                                                          โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine liest den nรคchsten Satz lt. Sortierreihenfolge des        โ•‘
+  โ•‘ Primรคr- bzw. Sekundรคr-Keys, d.h. liest den nรคchsten zu druckenden       โ•‘
+  โ•‘ Datensatz und synchronisiert automatisch die dazugehรถrigen Datensรคtze   โ•‘
+  โ•‘ in den temporรคren Dateien.                                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Read_Next ()
 {
@@ -522,7 +522,7 @@ if(boStrCmp(strMask_m[0],"SY9999") )
   {
   for(i=2; i < wFileHandler_m; i++)		     /* 		     */
     {
-    Extract_Keys (i);				     /*(20)Schlssel filtern */
+    Extract_Keys (i);				     /*(20)Schlรผssel filtern */
 
       wRetCode = B_GetEq (i, apstrFileBlock_m,	     /* 		     */
 	apstrRecord_m, awRecLength_m,		     /* 		     */
@@ -539,11 +539,11 @@ return(OK);
 } /* end: Read_Next (24) */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Vaidate_Record ()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Vaidate_Record ()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Validate_Record ()
 {
@@ -554,16 +554,16 @@ return (wValid);
 } /* end Validate_Record () */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Save_Record ()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Diese Routine schreibt den aktuellen Stammsatz in  die Stammsatz-       บ
-  บ Datei zurck. Die tatschlich ausgefhrte Operation richtet sich        บ
-  บ danach, ob ein neuer Satz in die Datei hinzukommt oder ein beste-       บ
-  บ hender Satz berschrieben werden soll.                                  บ
-  บ Soll der Stammsatz, oder Teile davon, noch in eine andere Datei ge-     บ
-  บ schrieben werden, so ist der entsprechnde Teil hier einzutragen.        บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Save_Record ()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Diese Routine schreibt den aktuellen Stammsatz in  die Stammsatz-       โ•‘
+  โ•‘ Datei zurรผck. Die tatsรคchlich ausgefรผhrte Operation richtet sich        โ•‘
+  โ•‘ danach, ob ein neuer Satz in die Datei hinzukommt oder ein beste-       โ•‘
+  โ•‘ hender Satz รผberschrieben werden soll.                                  โ•‘
+  โ•‘ Soll der Stammsatz, oder Teile davon, noch in eine andere Datei ge-     โ•‘
+  โ•‘ schrieben werden, so ist der entsprechnde Teil hier einzutragen.        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Save_Record (VOID)
 {
@@ -577,7 +577,7 @@ wRetCode = B_Insert(3, apstrFileBlock_m,	     /* 		     */
 return(OK);
 
 
-for (i=0; i < wFileHandler_m; i++)                   /* Bei nderun.in Folge-*/
+for (i=0; i < wFileHandler_m; i++)                   /* Bei รnderun.in Folge-*/
     awChangeFlag_m[0]=(awChangeFlag_m[0] ||          /* Dateien, Satz auch in*/
     awChangeFlag_m[i]);                              /* Stammdatei schreiben */
 
@@ -586,14 +586,14 @@ for (i=0; i < wFileHandler_m; i++)
     {
      if(awNewRecord_m[i])                            /* neuer Datensatz */
        {
-       Extract_Keys (i);                             /* 20 Schlssel filtern */
+       Extract_Keys (i);                             /* 20 Schlรผssel filtern */
        wRetCode = B_Insert(i, apstrFileBlock_m,      /*                      */
          apstrRecord_m, awRecLength_m,
 	 apstrRecKey_m, 0, "IN_0");
        }
      else                                            /* exisit.    Datensatz */
        {
-       Extract_Keys (i);                             /* 20 Schlssel filtern */
+       Extract_Keys (i);                             /* 20 Schlรผssel filtern */
        wRetCode = B_Update (i, apstrFileBlock_m,     /*                      */
          apstrRecord_m, awRecLength_m,
 	 apstrRecKey_m, 0, "UP_0");
@@ -607,11 +607,11 @@ return(OK);
 
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Application_Init ()                                                     บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Application_Init ()                                                     โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Application_Init ()
 {
@@ -634,22 +634,22 @@ for (i=0; awMasks_m[i]; i++)
     itoa(awMasks_m[i], acTemp, 10), _N);
 
   if(awBlocks_m[i][0] | awBlocks_m[i][1])            /* In Maske Block da ?  */
-    awBlockLength_m[i]=                              /* Im Block h”chstes    */
+    awBlockLength_m[i]=                              /* Im Block hรถchstes    */
     apTextBox_m[i][awBlocks_m[i][1]]->wOffset -      /* Offset - niedrigstes */
-    apTextBox_m[i][awBlocks_m[i][0]]->wOffset +      /* Offset + max. Lnge  */
+    apTextBox_m[i][awBlocks_m[i][0]]->wOffset +      /* Offset + max. Lรคnge  */
     apTextBox_m[i][awBlocks_m[i][1]]->wMaxL +1;      /* vom letz. Block-Feld */
   else
     awBlockLength_m[i]=0;
   }
 
 
-for (i=0; i<wFileHandler_m; i++)                     /* Dateien ”ffnen       */
+for (i=0; i<wFileHandler_m; i++)                     /* Dateien รถffnen       */
     wRetCode = B_Open(i, apstrFileBlock_m,           /*                      */
     apstrOwner_m, apstrFileName_m, awAccessMode_m,   /*                      */
     apfsFileBuffer_m, awRecKeyLength_m,              /*                      */
     awRecKeyOffset_m, apstrRecKey_m, "OP_0");        /*                      */
 
-wMaxRecKey_m = apfsFileBuffer_m[0]->wNdxCnt;         /* Primrdruck-Rec==0 ! */
+wMaxRecKey_m = apfsFileBuffer_m[0]->wNdxCnt;         /* Primรคrdruck-Rec==0 ! */
 
 for (i=0; i<wMaxRecKey_m; i++)
   Wi_TestPrintf(pWkbInfo_m,"\nPos=%d wMaxRecKey_m=%d" /*                      */
@@ -665,7 +665,7 @@ for(i=0; i<wRefHandler_m; i++)                      /* Referenz-Dateien     */
   awRefLength_m[i]=1500;
   apstrRefRec_m[i]=Ut_Calloc(awRefLength_m[i],CHAR);
 
-  wRetCode = B_Open(i, apstrRefBlock_m,              /* ”ffnen               */
+  wRetCode = B_Open(i, apstrRefBlock_m,              /* รถffnen               */
   apstrRefOwner_m, apstrRefName_m, awRefAccess_m,    /*                      */
   apfsRefBuffer_m, awRefKeyLength_m,                 /*                      */
   awRefKeyOffset_m, apstrRefKey_m, "OP_0");          /*                      */
@@ -682,21 +682,21 @@ return(OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Application_Close ()                                                    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Fhrt applikationsabhngige Vorbelegungen fr bestimmte Felder          บ
-  บ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           บ
-  บ FieldNumber% und MaskNumber% beinhalten die Nummern des Feldes / der    บ
-  บ Maske die als nchstes vom Interpreter angesprungen werden wrde.       บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Application_Close ()                                                    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Fรผhrt applikationsabhรคngige Vorbelegungen fรผr bestimmte Felder          โ•‘
+  โ•‘ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           โ•‘
+  โ•‘ FieldNumber% und MaskNumber% beinhalten die Nummern des Feldes / der    โ•‘
+  โ•‘ Maske die als nรคchstes vom Interpreter angesprungen werden wรผrde.       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  Application_Close ()
 {
 SREGISTER i;
 SWORD  wRetCode;
 
-for (i=0; i<wFileHandler_m; i++)                     /* Dateien schlieแen    */
+for (i=0; i<wFileHandler_m; i++)                     /* Dateien schlieรen    */
     wRetCode = B_Close(i, apstrFileBlock_m,          /* und Speicher wieder  */
            apfsFileBuffer_m, apstrRecKey_m, "CL_0"); /* freigeben            */
 

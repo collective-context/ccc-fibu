@@ -38,7 +38,7 @@ do
 	   cout << "\n     Ende.  baba !   gemma ham ....\n";
 	   break;
       default:
-	   cout << "\n" << choice << " ist eine ungltige Nummer !!!\n";
+	   cout << "\n" << choice << " ist eine ungÃ¼ltige Nummer !!!\n";
 	   break;
    }
 }while(ip!=done);

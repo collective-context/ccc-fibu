@@ -9,14 +9,14 @@ PSSTR apstrText[25];
 
 Ut_SchreibArray (apstrText,  "  Tastenbelegung ",
                              "",
-                             "  ş  [F10] oder",
-                             "  ş  [Alt]+[markierter Buchstabe]",
-                             "     aktiviert das Men",
+                             "  â–   [F10] oder",
+                             "  â–   [Alt]+[markierter Buchstabe]",
+                             "     aktiviert das MenÃ¼",
                              "",
-                             "  ş  [Alt]+[F1]",
+                             "  â–   [Alt]+[F1]",
                              "     aktiviert den Hilfeindex",
                              "",
-                             "  ş  [F9]",
+                             "  â–   [F9]",
                              "      zeigt dieses Hilfsfenster",
 			     _N );
 

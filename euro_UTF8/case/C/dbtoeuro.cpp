@@ -3,7 +3,7 @@
 /*------------------------------------------------------------------------------*/
 /* Programm-Name: dBtoEuro.c							*/
 /* Funktion     : euroSOFT TOOLBOX                                              */
-/*		  wandelt z.B. fÅr dBASE alle \x01 in \x00 um!			*/
+/*		  wandelt z.B. f√ºr dBASE alle \x01 in \x00 um!			*/
 /*                                                                              */
 /*                                                                              */
 /* Datum	: 01.04.1990, Graz						*/
@@ -31,7 +31,7 @@ SWORD main(SWORD argc, PCHAR argv[])
 {
 
 
-if(argc > 2 && argc < 4)			    /* Argument Åbergeben ? */
+if(argc > 2 && argc < 4)			    /* Argument √ºbergeben ? */
   {
   pstrDateiEin_m = argv[1];
   pstrDateiAus_m = argv[2];
@@ -42,7 +42,7 @@ else
   exit(0);
   }
 
-printf ("\n\nDatei <%s> fÅr euroSOFT aufbereiten: ", pstrDateiAus_m);
+printf ("\n\nDatei <%s> f√ºr euroSOFT aufbereiten: ", pstrDateiAus_m);
 
 Dateien_Bearbeiten();
 
@@ -62,15 +62,15 @@ SWORD	wZ;
 SWORD	wChIn = 4;
 
 
-    if(!(pFileHandleEin=fopen(pstrDateiEin_m,"rb")) ) /* Eingabe-Datei îffnen */
+    if(!(pFileHandleEin=fopen(pstrDateiEin_m,"rb")) ) /* Eingabe-Datei √∂ffnen */
       {
-      printf ("\nEingabe-Datei <%s> kann nicht geîffnet werden", pstrDateiEin_m);
+      printf ("\nEingabe-Datei <%s> kann nicht ge√∂ffnet werden", pstrDateiEin_m);
       exit (ERROR);
       }
 
-    if(!(pFileHandleAus=fopen(pstrDateiAus_m,"wb")) ) /* Ausgabe - Datei îffnen */
+    if(!(pFileHandleAus=fopen(pstrDateiAus_m,"wb")) ) /* Ausgabe - Datei √∂ffnen */
       {
-      printf ("\nAusgabe-Datei <%s> kann nicht geîffnet werden", pstrDateiAus_m);
+      printf ("\nAusgabe-Datei <%s> kann nicht ge√∂ffnet werden", pstrDateiAus_m);
       exit (ERROR);
       }
 
@@ -144,13 +144,13 @@ SWORD	wChIn = 4;
       } 					     /* 		     */
 
 
-    if( fclose(pFileHandleEin) )		    /* Eingabe - Datei schlie·en */
+    if( fclose(pFileHandleEin) )		    /* Eingabe - Datei schlie√üen */
       {
       printf ("\n\nEingabe-Datei <%s> kann nicht geschlossen werden", pstrDateiEin_m);
       exit (ERROR);
       }
 
-    if( fclose(pFileHandleAus) )		    /* Ausgabe - Datei schlie·en */
+    if( fclose(pFileHandleAus) )		    /* Ausgabe - Datei schlie√üen */
       {
       printf ("\n\nAusgabe-Datei <%s> kann nicht geschlossen werden", pstrDateiAus_m);
       exit (ERROR);

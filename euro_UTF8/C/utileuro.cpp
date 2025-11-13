@@ -32,7 +32,7 @@ SWORD  main(SWORD  argc, PCHAR argv[])
 
 i_InitVars();					    /* Var. initialisieren  */
 
-if(argc > 2 && argc < 4)			    /* Argument Åbergeben ? */
+if(argc > 2 && argc < 4)			    /* Argument √ºbergeben ? */
   {
   pstrDateiEin_m = argv[1];
   pstrDateiAus_m = argv[2];
@@ -43,7 +43,7 @@ else
   exit(0);
   }
 
-printf ("\n\nDatei <%s> fÅr euroSOFT aufbereiten: ", pstrDateiAus_m);
+printf ("\n\nDatei <%s> f√ºr euroSOFT aufbereiten: ", pstrDateiAus_m);
 
 Dateien_Bearbeiten();
 
@@ -59,15 +59,15 @@ FILE   *pFileHandleEin;
 FILE   *pFileHandleAus;
 SWORD	 wRet;
 
-    if(!(pFileHandleEin=fopen(pstrDateiEin_m,"rb")) ) /* Eingabe-Datei îffnen */
+    if(!(pFileHandleEin=fopen(pstrDateiEin_m,"rb")) ) /* Eingabe-Datei √∂ffnen */
       {
-      printf ("\nEingabe-Datei <%s> kann nicht geîffnet werden", pstrDateiEin_m);
+      printf ("\nEingabe-Datei <%s> kann nicht ge√∂ffnet werden", pstrDateiEin_m);
       exit (ERROR);
       }
 
-    if(!(pFileHandleAus=fopen(pstrDateiAus_m,"wb")) ) /* Ausgabe - Datei îffnen */
+    if(!(pFileHandleAus=fopen(pstrDateiAus_m,"wb")) ) /* Ausgabe - Datei √∂ffnen */
       {
-      printf ("\nAusgabe-Datei <%s> kann nicht geîffnet werden", pstrDateiAus_m);
+      printf ("\nAusgabe-Datei <%s> kann nicht ge√∂ffnet werden", pstrDateiAus_m);
       exit (ERROR);
       }
 
@@ -132,13 +132,13 @@ SWORD	 wRet;
       } 					     /* 		     */
 
 
-    if( fclose(pFileHandleEin) )		    /* Eingabe - Datei schlie·en */
+    if( fclose(pFileHandleEin) )		    /* Eingabe - Datei schlie√üen */
       {
       printf ("\n\nEingabe-Datei <%s> kann nicht geschlossen werden", pstrDateiEin_m);
       exit (ERROR);
       }
 
-    if( fclose(pFileHandleAus) )		    /* Ausgabe - Datei schlie·en */
+    if( fclose(pFileHandleAus) )		    /* Ausgabe - Datei schlie√üen */
       {
       printf ("\n\nAusgabe-Datei <%s> kann nicht geschlossen werden", pstrDateiAus_m);
       exit (ERROR);

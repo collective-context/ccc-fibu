@@ -1,28 +1,28 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Programm-Name: MENU.C                                                  บ
-  บ Funktion     : euroSOFT Programm-Wahl                                  บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ Datum        : 19.05.1989, Graz           Update: 19.05.1989, Graz     บ
-  บ Author       : Peter Mayer                Author:                      บ
-  บ Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Programm-Name: MENU.C                                                  โ•‘
+  โ•‘ Funktion     : euroSOFT Programm-Wahl                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘ Datum        : 19.05.1989, Graz           Update: 19.05.1989, Graz     โ•‘
+  โ•‘ Author       : Peter Mayer                Author:                      โ•‘
+  โ•‘ Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
-/*.ta Menprogramm
-ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  Menprogramm                                                                บ
-ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+/*.ta Menรผprogramm
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  Menรผprogramm                                                                โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 Beschreibung:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
 
 
 
 Benutzte globale Variablen (R/W):
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 Variablen (R/W):  -            (R)           - pstrEsc_g   (R)
                   - wCSInd_g   (R)           - pstrF1_g    (R)
                   - wMausda_g  (R)           -             (R)
@@ -34,11 +34,11 @@ Variablen (R/W):  -            (R)           - pstrEsc_g   (R)
 .te*/
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define  NDEBUG 1
-#include <process.h>                  /* fr spawnlp()    */
+#include <process.h>                  /* fรผr spawnlp()    */
 #include <fcntl.h>
 #include <io.h>
 #include <stdio.h>             /* Definitionen wie EOF, NULL, etc.          */
@@ -48,13 +48,13 @@ Variablen (R/W):  -            (R)           - pstrEsc_g   (R)
 #include <eur_tool.h>
 #include "\euro\c\eu.h"
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           บ
-  บ    Die Informationen zur Installation sind in euroINST gespeichert.    บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                       Konstantendeklaration                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           โ•‘
+  โ•‘    Die Informationen zur Installation sind in euroINST gespeichert.    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                       Konstantendeklaration                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define HAUPTMENU 0
 #define KEINEHILFE 3000
 #define TASTENHILFE 3001
@@ -67,9 +67,9 @@ Variablen (R/W):  -            (R)           - pstrEsc_g   (R)
 
 #define UPB_MENU 10	/* maximale Verschachtelungstiefe */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ         MODUL-GLOBALE VARIABLEN                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘         MODUL-GLOBALE VARIABLEN                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 typedef struct { PSSTR pstrFolgeMenu;
 		 PSSTR pstrFolgeProgramm;
 		 PSSTR pstrPassword;
@@ -91,24 +91,24 @@ MGLOBAL PSSTR  pstrMenuKey_m;
 MGLOBAL CHAR  strMenuDatei[TB_MAX];
 MGLOBAL PSSTR  pstrMenuName_m;
 MGLOBAL PSSTR  apstrOptionen[50];
-MGLOBAL SWORD  awFieldOffset_m[] =    /* Offset der Eingabefelder in der Mendatei */
+MGLOBAL SWORD  awFieldOffset_m[] =    /* Offset der Eingabefelder in der Menรผdatei */
             { 6, 14, 40, 48, 61, 67, 78 };
 
-MGLOBAL PITEM apHauptMenu_m[10];         /* Applikations-Hauptmen */
+MGLOBAL PITEM apHauptMenu_m[10];         /* Applikations-Hauptmenรผ */
 
 MGLOBAL CHAR  strDateiName_m[TB_MAX] = "PW.BAT";
 MGLOBAL FILE  *pFileHandle;
 
-MGLOBAL EVENT Event;                                   /* fr Rckgabe von                  */
+MGLOBAL EVENT Event;                                   /* fรผr Rรผckgabe von                  */
 MGLOBAL PEVENT pEvent = &Event;                        /* Mn_Eingabe()                      */
 
 MGLOBAL BOOL  boMnSchatten_m = EIN;
 MGLOBAL SWORD  wMnRahmen_m = RT_EEEE;
 MGLOBAL CHAR  strTeiln_m[TB_MAX];
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      FUNKTIONS-PROTOTYPEN                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      FUNKTIONS-PROTOTYPEN                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL VOID  SchreibBat          (VOID);
 MGLOBAL VOID  Beenden             (VOID);
 MGLOBAL VOID  ZeigMenu            (VOID);
@@ -125,14 +125,14 @@ STATIC	VOID  iFree		  (VOID);
 
 IMPORT PSSTR	 pstrTemp_g;
 IMPORT FPWORD	fpwCopyBuffer_g;		     /* Zeiger auf 4k-Buffer */
-IMPORT FPWORD	fpwBuffer_g;			     /* Puffer fr alten     */
+IMPORT FPWORD	fpwBuffer_g;			     /* Puffer fรผr alten     */
 						     /* Bildschirnm	     */
 IMPORT BOOL boInitVars_g;			     /* Erst-Initialisierung */
 WORD wSupportKZ_m=0;   // 0=NEIN 1=EDIT 2=TEST
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          PROGRAMM-START                                บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          PROGRAMM-START                                โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID main (SWORD argc, PSSTR argv[])
 {
 SREGISTER i;
@@ -161,7 +161,7 @@ for(i=0; i < UPB_MENU; i++)
 
 if( (pstrTemp = getenv("USER")) != NULL )
   {SWORD wO=strlen(pstrTemp)-1;
-   if(*(pstrTemp+wO)==' '||*(pstrTemp+wO)=='ÿ')
+   if(*(pstrTemp+wO)==' '||*(pstrTemp+wO)=='ย ')
      i_UserError(pstrTemp);                        /* ASCII 32 oder 255 */
   else sprintf(strTeiln_m, "%s", pstrTemp);}
 else
@@ -171,7 +171,7 @@ sprintf(strMenuDatei, "%s\\MENU.BTR", strTeiln_m);
 
 if(pWkbInfo_g==NULL)
   {pWkbInfo_g=Wi_Einrichten(3,11,72,11);		/* WindowKontollBlock	*/
-  Wi_SchattenEin(pWkbInfo_g);}				/* fr Wi_TestPrintf()	*/
+  Wi_SchattenEin(pWkbInfo_g);}				/* fรผr Wi_TestPrintf()	*/
 
 if(Dl_GetInstallation("euroINST")==ERROR)
   Dl_PutInstallation("euroINST");
@@ -180,12 +180,12 @@ Vi_Spza(178, KOBALT);				 /* Bildschirm beschreib.*/
 
 /* Wi_TestPrintf(pWkbInfo_g, "\n1:%s", strDat_g); */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             AUSWERTEN DER PARAMETER-UEBERGABE AUS MSDOS                บ
-  บ  <ProgrammName> [<Steurkennzeichen>] [<Mengruppe> <Folgesatz>]        บ
-  บ                                                                        บ
-  บ  z.B. PW.EXE MEN L000                                                 บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             AUSWERTEN DER PARAMETER-UEBERGABE AUS MSDOS                โ•‘
+  โ•‘  <ProgrammName> [<Steurkennzeichen>] [<Menรผgruppe> <Folgesatz>]        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  z.B. PW.EXE MENร L000                                                 โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
  sprintf (pstrMenuKey_m, "%s", "ST-L000");  /* Wenn keine Parameter       */
  wSteuerKennzeichen_m = 0;                    /* aus MS-DOS kommt.          */
  wSeq_m = 0;
@@ -216,9 +216,9 @@ Vi_Spza(178, KOBALT);				 /* Bildschirm beschreib.*/
  else if (argc > 1)
    wSteuerKennzeichen_m = -1;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         FFNEN-MENDATEI                               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         ร–FFNEN-MENรDATEI                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 wBufferLength = 250;
 wRetCode=BTRV(B_OPEN, strFileBlock_m, pstrDataBuffer_g,
    &wBufferLength, strMenuDatei, O_NORMAL);
@@ -245,7 +245,7 @@ while (wSteuerKennzeichen_m >= 0)
 {
    switch (wSteuerKennzeichen_m)
    {
-   case 0:                                          /* Men anzeigen        */
+   case 0:                                          /* Menรผ anzeigen        */
          HauptMenuAufbauen();
          Mn_Aktivieren(HAUPTMENU);
          ZeigMenu();
@@ -254,11 +254,11 @@ while (wSteuerKennzeichen_m >= 0)
          LoeschAltesMenu();
          break;
 
-   case 1:                                          /* Men .......         */
+   case 1:                                          /* Menรผ .......         */
          break;
 
    default:
-         Ut_SchreibArray (apstrMessage, "Ungltige Parameterbergabe.",
+         Ut_SchreibArray (apstrMessage, "Ungรผltige Parameterรผbergabe.",
 					"Bitte das Programm richtig starten!", _N);
          Dl_Info(apstrMessage, DLG_KRITISCH);
          Ut_LoeschArray (apstrMessage);
@@ -283,9 +283,9 @@ D_end_process (0);
 } /* end main() */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ iFree()								   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ iFree()								   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 VOID iFree(VOID)
 {
@@ -306,21 +306,21 @@ Ut_Ffree(pstrDataBuffer_g);
 Ut_Free(pSkb_g);
 boInitVars_g=NEIN;
 
-/*Mn_Entfernen(HAUPTMENU);			     /* Menzeile l”schen    */
+/*Mn_Entfernen(HAUPTMENU);			     /* Menรผzeile lรถschen    */
 Wi_Entfernen(pWkbInfo_g);			     /* WindowKontollBlock   */
 return;
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ iZeigMenu() 							   บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ iZeigMenu() 							   โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID ZeigMenu(VOID)
 {
 SREGISTER i, j;
 PSSTR apstrMessage[25];
 
-pEvent = &Event;                                /* fr Rckgabe von     */
+pEvent = &Event;                                /* fรผr Rรผckgabe von     */
 
 MS_g.wAktiv = JA;
 Mn_Position (wFenster_m, wZeile_m);
@@ -547,14 +547,14 @@ MS_g.wAktiv = JA;
                         }
                         break;
 
-                    case T_A_F4:                                       /* Memo ndern, falls   */
+                    case T_A_F4:                                       /* Memo รคndern, falls   */
                         {
                         CHAR strMemoFile[TB_MAX];
                         CHAR strText[TB_MAX];
                         stradd (strMemoFile, strDat_g, "EUROMEMO.BTR",
 			   _N);
-                        stradd(strText, "Privates Notizfach fr den "
-			   "Arbeitsplatz ฏ", strNrTeil_g, "ฎ.", _N);
+                        stradd(strText, "Privates Notizfach fรผr den "
+			   "Arbeitsplatz ยป", strNrTeil_g, "ยซ.", _N);
 
                         M_Memo(strMemoFile, strNrTeil_g, strText);
                         }
@@ -578,7 +578,7 @@ MS_g.wAktiv = JA;
 			break;
 
 		    case T_S_F9:   /* Testmodus */
-	 Ut_SchreibArray (apstrMessage, "Das nchste Programm startet",
+	 Ut_SchreibArray (apstrMessage, "Das nรคchste Programm startet",
 					"startet im Test-Modus!", _N);
 	 Dl_Info(apstrMessage, DLG_INFO);
          Ut_LoeschArray (apstrMessage);
@@ -586,7 +586,7 @@ MS_g.wAktiv = JA;
                         break;
 
 		    case T_C_F9:   /* Editier/Support-Modus*/
-	 Ut_SchreibArray (apstrMessage, "Das nchste Programm startet",
+	 Ut_SchreibArray (apstrMessage, "Das nรคchste Programm startet",
 					"im Editier/Support-Modus!", _N);
 	 Dl_Info(apstrMessage, DLG_INFO);
          Ut_LoeschArray (apstrMessage);
@@ -630,20 +630,20 @@ return;
 } /*end ZeigMenu()*/
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    HauptMenuAufbauen              Datum: 28.07.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:                                                         บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    HauptMenuAufbauen              Datum: 28.07.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Diese Funktion hat keinen Rรผckgabewert.             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 VOID HauptMenuAufbauen(VOID)
 
@@ -673,7 +673,7 @@ strcpy(apstrMenuKeySequence_m[wSeq_m++], pstrMenuKey_m);
          pstrMenuKey_m, 0);                          /* -(i12)-              */
 
        sprintf(strError,"HauptMenuAufbauen(B_GET_EQ)"/*                      */
-         ", - Schlssel: %s", pstrMenuKey_m, 0);     /*                      */
+         ", - Schlรผssel: %s", pstrMenuKey_m, 0);     /*                      */
 
        Dl_ErrorHandler (wRetCode, strError,          /*                      */
          __FILE__, __LINE__, 0);                     /*                      */
@@ -713,14 +713,14 @@ for(; pstrTemp && j < 10;
       pstrMenuKey_m, 0);                             /* -(i12)-              */
 
       sprintf(strError,"HauptMenuAufbauen(B_GET_EQ)" /*                      */
-        ", - Schlssel: %s", pstrMenuKey_m, 0);      /*                      */
+        ", - Schlรผssel: %s", pstrMenuKey_m, 0);      /*                      */
 
       Dl_ErrorHandler (wRetCode, strError,           /*                      */
         __FILE__, __LINE__, 0);                      /*                      */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ MNU_Modul HAUPTMENU      MEN-ZUORDNUNG                                บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ MNU_Modul HAUPTMENU      MENร-ZUORDNUNG                                โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
     wBlockLen = awFieldOffset_m[6] - awFieldOffset_m[1] + 65;
 
@@ -771,8 +771,8 @@ Mn_SetPalette(HAUPTMENU, wCSInd_g);
 for(i=0;apHauptMenu_m[i];i++)                     /* HauptMenu zusammen-  */
   Mn_Einrichten(HAUPTMENU, apHauptMenu_m[i]);     /* stellen              */
 
-Mn_SetSchatten(HAUPTMENU, boMnSchatten_m);     /* Menfenster mit      */
-Mn_SetRahmenTyp(HAUPTMENU, wMnRahmen_m);       /* Rahmen fr Menfenster  */
+Mn_SetSchatten(HAUPTMENU, boMnSchatten_m);     /* Menรผfenster mit      */
+Mn_SetRahmenTyp(HAUPTMENU, wMnRahmen_m);       /* Rahmen fรผr Menรผfenster  */
 
 for (j=0;apFolgend[j][0];j++)
    for (i=1;apFolgend[j][i];i++)
@@ -786,20 +786,20 @@ Ut_Free (pstrMenuAufsatz);
 return;
 }      /* Ende HauptMenuAufbauen */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    LoeschAltesMenu                Datum: 16.04.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:                                                         บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    LoeschAltesMenu                Datum: 16.04.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Diese Funktion hat keinen Rรผckgabewert.             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID LoeschAltesMenu(VOID)
 {
  SREGISTER i,j;
@@ -828,9 +828,9 @@ return;
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        SCHLIESSEN-BIBLIOTHEK                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        SCHLIESSEN-BIBLIOTHEK                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 VOID Beenden(VOID)
 {
@@ -869,18 +869,18 @@ iFree();
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    SchreibBat()                   Datum: 30.01.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion wird angesprungen,                   บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                 (R)                                  บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    SchreibBat()                   Datum: 30.01.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion wird angesprungen,                   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                 (R)                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 VOID SchreibBat(VOID)
 {
@@ -889,13 +889,13 @@ SREGISTER i;
          Mn_Entfernen(HAUPTMENU);
          /* Vi_Spza(' ', NORMAL); */        /* Nicht bei euroSOFT Programmen */
 
-	 pFileHandle=fopen(strDateiName_m, "w");   /* Datei ”ffnen	   */
+	 pFileHandle=fopen(strDateiName_m, "w");   /* Datei รถffnen	   */
 	 if ( pFileHandle==NULL )
              {
              CHAR strError[TB_MAX];
 
-             sprintf (strError, "Datei ฏ%sฎ konnte "
-		     "nicht ge”ffnet werden", strDateiName_m);
+             sprintf (strError, "Datei ยป%sยซ konnte "
+		     "nicht geรถffnet werden", strDateiName_m);
 
              Dl_ErrorHandler ( 12, strError,
                       __FILE__, __LINE__, 0);
@@ -910,7 +910,7 @@ SREGISTER i;
          Ut_LoeschArray (apstrOptionen);
          Beenden();
 
-         if ( fclose(pFileHandle) )         /* Dateien schlieแen         */
+         if ( fclose(pFileHandle) )         /* Dateien schlieรen         */
              {
              printf ("\nDatei: %s konnte in MENU.EXE"
 		     " nicht geschlossen werden.", strDateiName_m);
@@ -922,18 +922,18 @@ SREGISTER i;
 return;
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    BatFileHandler()               Datum:  2.8.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion wird angesprungen,                   บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                 (R)                                  บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    BatFileHandler()               Datum:  2.8.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion wird angesprungen,                   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                 (R)                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID BatFileHandler(PSSTR pstrFileName)
 {
 SREGISTER k;
@@ -950,13 +950,13 @@ FILE *pFileHilf;
 
          sprintf (strFile, "%s\\%s", strTeiln_m, pstrFileName);
 
-	 pFileHandle=fopen(strDateiName_m, "w");   /* Datei ”ffnen	   */
-	 if( pFileHandle==NULL )    /* Datei ”ffnen	    */
+	 pFileHandle=fopen(strDateiName_m, "w");   /* Datei รถffnen	   */
+	 if( pFileHandle==NULL )    /* Datei รถffnen	    */
              {
              CHAR strError[TB_MAX];
 
-             sprintf (strError, "Datei ฏ%sฎ konnte "
-		     "nicht ge”ffnet werden", strDateiName_m);
+             sprintf (strError, "Datei ยป%sยซ konnte "
+		     "nicht geรถffnet werden", strDateiName_m);
 
              Dl_ErrorHandler ( 12, strError,
                       __FILE__, __LINE__, 0);
@@ -964,13 +964,13 @@ FILE *pFileHilf;
              exit (-1);
              }
 
-	 pFileHilf=fopen(strFile, "r"); 	     /* Datei ”ffnen	     */
+	 pFileHilf=fopen(strFile, "r"); 	     /* Datei รถffnen	     */
 	 if( pFileHilf==NULL )
              {
              CHAR strError[TB_MAX];
 
-             sprintf (strError, "Datei ฏ%sฎ konnte "
-                     "nicht ge”ffnet werden", strFile);
+             sprintf (strError, "Datei ยป%sยซ konnte "
+                     "nicht geรถffnet werden", strFile);
 
              Dl_ErrorHandler ( 12, strError,
                       __FILE__, __LINE__, 0);
@@ -1021,13 +1021,13 @@ FILE *pFileHilf;
            Db_Stop();
            }
 
-         if ( fclose(pFileHandle) )         /* Dateien schlieแen         */
+         if ( fclose(pFileHandle) )         /* Dateien schlieรen         */
              {
              printf ("\nDatei: %s konnte in MENU.EXE"
 		     " nicht geschlossen werden.", strDateiName_m);
              D_end_process (-1);
              }
-         else if ( fclose(pFileHilf) )         /* Dateien schlieแen         */
+         else if ( fclose(pFileHilf) )         /* Dateien schlieรen         */
              {
              printf ("\nDatei: %s konnte in MENU.EXE"
                      " nicht geschlossen werden.", strFile);
@@ -1039,18 +1039,18 @@ FILE *pFileHilf;
 return;
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    ende()                         Datum:  2.8.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion wird angesprungen,                   บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                 (R)                                  บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    ende()                         Datum:  2.8.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion wird angesprungen,                   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                 (R)                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID ende(VOID)
 {
   SREGISTER k;
@@ -1080,18 +1080,18 @@ VOID ende(VOID)
   SchreibBat();
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    PasswordOK()                   Datum:  3.8.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion wird angesprungen,                   บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                 (R)                                  บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    PasswordOK()                   Datum:  3.8.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion wird angesprungen,                   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                 (R)                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 BOOL PasswordOK (PSSTR pstrPassword)
 {
 
@@ -1110,14 +1110,14 @@ BOOL PasswordOK (PSSTR pstrPassword)
 if (*pstrPassword == '\0')
   return(YES);
 
-strcpy (acTitel, "Prfen der Zugriffsberechtigung");
+strcpy (acTitel, "Prรผfen der Zugriffsberechtigung");
 
 pwkbDialog = Wi_Einrichten (WIN_SPALTE, WIN_ZEILE, WIN_BREITE, WIN_HOEHE);
 
 i_Dl_Init (WIN_SPALTE, WIN_ZEILE, WIN_BREITE, WIN_HOEHE,
            acTitel, pwkbDialog, SF_EINGABE | SF_ABBRUCH, DLG_INFO);
 
-Wi_Ss (3, 3, "Paแwort :");
+Wi_Ss (3, 3, "Paรwort :");
 
 wIndex = 0;
 
@@ -1154,18 +1154,18 @@ else
   }
 }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Betriebssystem()               Datum:  2.8.89       บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion wird angesprungen,                   บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                 (R)                                  บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Betriebssystem()               Datum:  2.8.89       โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion wird angesprungen,                   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                 (R)                                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 VOID Betriebssystem(VOID)
 {
  if (_osmajor >=3)
@@ -1185,13 +1185,13 @@ VOID About(VOID)
 {
 PSSTR apstrText[25];
 
-Ut_SchreibArray (apstrText,  "       ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฟ ",
-                             "       ณ euroSOFT-WARE ...        ณ ",
-                             "       ณ                          ณ ",
-                             "       ณ    ...der neue Standard! ณ ",
-                             "       รฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤด ",
-                             "       ณ    Programmversion: 2.1. ณ ",
-                             "       ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู ",
+Ut_SchreibArray (apstrText,  "       โ”โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ” ",
+                             "       โ” euroSOFT-WARE ...        โ” ",
+                             "       โ”                          โ” ",
+                             "       โ”    ...der neue Standard! โ” ",
+                             "       โ”โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”ค ",
+                             "       โ”    Programmversion: 2.1. โ” ",
+                             "       โ””โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ” ",
                              "",
                              "(c) copyright 1992 euroSOFT-WARE A-8041 Graz",
 			     _N );
@@ -1209,11 +1209,11 @@ VOID i_UserError(PSSTR pstrError)
 PSSTR apstrText[25];
 
 Ut_SchreibArray(apstrText,
-  "Fehler beim ฏSET USER-Befehlฎ !!!                 ",
-  "ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ",
-  "Die DOS-Variable ฏUSERฎ endet mit Leerzeichen:    ",
+  "Fehler beim ยปSET USER-Befehlยซ !!!                 ",
+  "โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€",
+  "Die DOS-Variable ยปUSERยซ endet mit Leerzeichen:    ",
   "                                                  ", _N);
-sprintf(apstrText[3], "USER = ฏ%sฎ", pstrError);
+sprintf(apstrText[3], "USER = ยป%sยซ", pstrError);
 
 Dl_Info(apstrText, DLG_KRITISCH);                   /* Programm ausgeben    */
 Ut_LoeschArray (apstrText);

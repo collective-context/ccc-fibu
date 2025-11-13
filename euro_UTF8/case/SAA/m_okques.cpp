@@ -1,74 +1,74 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Ok_Question                    Datum: 22.04.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion stellt eine Dialogbox zur Ver-       บ
-  บ                                                                        บ
-  บ  Rckgabewert:     DLG_ERROR    Dialog konnte nicht angezeigt werden   บ
-  บ                    DLG_RETURN   Dialog wurde mit Schaltflche EINGABE  บ
-  บ                                 beendet                                บ
-  บ                    DLG_ESC      Dialog wurde mit Schaltflche ABBRUCH  บ
-  บ                                 beendet                                บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  - aCS_g          (R)                                บ
-  บ                                                                        บ
-  บ                    - boBeepen_g     (R)                                บ
-  บ                    - wVioMode_g     (R)                                บ
-  บ                                                                        บ
-  บ                    - pstrReturn_g   (R)                                บ
-  บ                    - pstrEsc_g      (R)                                บ
-  บ                    - pstrF1_g       (R)                                บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Ok_Question                    Datum: 22.04.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion stellt eine Dialogbox zur Ver-       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     DLG_ERROR    Dialog konnte nicht angezeigt werden   โ•‘
+  โ•‘                    DLG_RETURN   Dialog wurde mit Schaltflรคche EINGABE  โ•‘
+  โ•‘                                 beendet                                โ•‘
+  โ•‘                    DLG_ESC      Dialog wurde mit Schaltflรคche ABBRUCH  โ•‘
+  โ•‘                                 beendet                                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  - aCS_g          (R)                                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    - boBeepen_g     (R)                                โ•‘
+  โ•‘                    - wVioMode_g     (R)                                โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    - pstrReturn_g   (R)                                โ•‘
+  โ•‘                    - pstrEsc_g      (R)                                โ•‘
+  โ•‘                    - pstrF1_g       (R)                                โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 /*------ Ok_Question ( pwSelect ) ----------------------------------------------*/
 /* Diese Funktion ist eine Hilfsfunktion des Maskentools. Die Funktion aktiviert*/
-/* da OK-Fenster, in dem der Benutzer aufgefordert wird, ber das Schicksal des */
-/* gerade von ihm eingegebenen oder genderten Datensatzes zu entscheiden. Die  */
-/* aufgelisteten Auswahl-M”glichkeiten ergeben sich aus den bei der Masken-     */
+/* da OK-Fenster, in dem der Benutzer aufgefordert wird, รผber das Schicksal des */
+/* gerade von ihm eingegebenen oder geรคnderten Datensatzes zu entscheiden. Die  */
+/* aufgelisteten Auswahl-Mรถglichkeiten ergeben sich aus den bei der Masken-     */
 /* definition angegebenen Werten (sieh OK-Anweisung im Masken-Compiler).        */
-/* Das OK-Fenster wird an der aktuellen Cursor-Position er”ffnet. Dies ist      */
+/* Das OK-Fenster wird an der aktuellen Cursor-Position erรถffnet. Dies ist      */
 /* insbesondere dann zu beachten, wenn die Cursorposition der Maske manipuliert */
 /* wurde.                                                                       */
 /* Versorgung:                                                                  */
 /*    Ausgang:                                                                  */
 /*    pwSelect; 							       */
-/*       Gibt die Nummer des ausgewhlten Elementes aus der OK-Anweisung in der */
+/*       Gibt die Nummer des ausgewรคhlten Elementes aus der OK-Anweisung in der */
 /*       Masken-Definition wieder.                                              */
-/*       Das erste Element trgt dabei die Nummer "0".                          */
-/*       Der Rckgabewert -1 bedeutet dagegen, daแ der Anwender das OK-Fenster  */
+/*       Das erste Element trรคgt dabei die Nummer "0".                          */
+/*       Der Rรผckgabewert -1 bedeutet dagegen, daร der Anwender das OK-Fenster  */
 /*       mit der ESC-Taste abgebrochen hat.                                     */
 /*------------------------------------------------------------------------------*/
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <eur_tool.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdarg.h>           /* ANSI-C Standard fr va_start(), va_end()   */
+#include <stdarg.h>           /* ANSI-C Standard fรผr va_start(), va_end()   */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        KONSTANTEN UND MAKROS                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-#define SPA  9              /* durch nderung dieser beiden Konstanten kann */
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        KONSTANTEN UND MAKROS                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+#define SPA  9              /* durch รnderung dieser beiden Konstanten kann */
 #define ZEI  5              /* die Dialog-Box neu positioniert werden, wei- */
-                            /* tere nderungen sind nicht erforderlich      */
+                            /* tere รnderungen sind nicht erforderlich      */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               บ
-  ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               โ•‘
+  โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID M_OkQuestion(PSWORD pwSelect, const PCHAR pcFormat,...)
 {
@@ -101,9 +101,9 @@ return;
 
 //sprintf(strTitel, "Ausdruck auf %s", pstrTitel);
 
-//ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-//บ                          FUNKTIONS-DEFINITION                          บ
-//ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+//โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+//โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+//โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 GLOBAL
 VOID Ok_Question(PSWORD pwSelect, const PCHAR pcFormat,...)
 {
@@ -116,18 +116,18 @@ sprintf(strTitel,pcFormat,arg_zeiger);               // Meldung schreiben
 M_MakeChoice (pwSelect, apstrText_m, strTitel, SPA, ZEI);
 
 va_end(arg_zeiger);                                  // Zeiger auf NULL
-return;                                              // Zeichenanzahl zurck
+return;                                              // Zeichenanzahl zurรผck
 }
 
     PSSTR apstrMessage[25];
     Ut_SchreibArray(apstrMessage,
-                  "  Der eingegebene Schlssel ",
+                  "  Der eingegebene Schlรผssel ",
                   "  existiert in dieser Datei schon!  ",
                   " ",
-                  "  Da hier zwei Datenstze nicht den ",
-                  "  gleichen Schlssel haben drfen,  ",
-                  "  kann die Kopie  ฏn i c h tฎ",
-                  "  durchgefhrt werden!",
+                  "  Da hier zwei Datensรคtze nicht den ",
+                  "  gleichen Schlรผssel haben dรผrfen,  ",
+                  "  kann die Kopie  ยปn i c h tยซ",
+                  "  durchgefรผhrt werden!",
 		  _N);
     Dl_Info(apstrMessage, DLG_KRITISCH);
     Ut_LoeschArray(apstrMessage);

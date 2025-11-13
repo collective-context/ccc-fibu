@@ -14,7 +14,7 @@ STATIC CHAR str[]="d";
 PSSTR pstrKZ=str;
 
 pWkbInfo_g=Wi_Einrichten(3,11,72,11);                /* WindowKontollBlock   */
-Wi_SchattenEin(pWkbInfo_g);                          /* fr Wi_TestPrintf()  */
+Wi_SchattenEin(pWkbInfo_g);                          /* fÃ¼r Wi_TestPrintf()  */
 
 if(argc>1 && argc<3) pstrKZ=argv[1];
 
@@ -33,17 +33,17 @@ D_end_process(0);                                    /*                      */
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <eur_tool.h>
 #include <stdio.h>
 #include <string.h>
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        KONSTANTEN UND MAKROS                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        KONSTANTEN UND MAKROS                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define SPA  9
 #define ZEI  5
 #define BRE 56
@@ -51,9 +51,9 @@ D_end_process(0);                                    /*                      */
 
 #define TBZ ZEI+5
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT COLORSET  aCS_g[];
 IMPORT SWORD	  wCSInd_g;
 IMPORT BOOL      boBeepen_g;
@@ -64,23 +64,23 @@ IMPORT PSSTR	  pstrF1_g;
 
 STATIC VOID SchreibBox(PD_DATE, PD_TIME, PTEXTBOX[], SWORD);
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	PSSTR pstrDTitel_m = "Einstellen des Datums und der Zeit";
 STATIC	SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE);
 
 STATIC	PSSTR apstrText_m[]=
-  {"         ÚÄ TT.MM.JJJJ Ä¿         ÚÄÄ HH.MM.SS ÄÄ¿",
-   "  Datum: ÀÄ            ÄÙ   Zeit: ÀÄÄ          ÄÄÙ",NULL,
+  {"         â”Œâ”€ TT.MM.JJJJ â”€â”         â”Œâ”€â”€ HH.MM.SS â”€â”€â”",
+   "  Datum: â””â”€            â”€â”˜   Zeit: â””â”€â”€          â”€â”€â”˜",NULL,
   };
 
 
 TEXTBOX  aTextBox[2];	 // Deklarieren und initilaisieren !!!
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Dl_Datum(VOID)
 {
@@ -131,7 +131,7 @@ for(;;)
       return(DLG_ESC);
 
     case DLG_RETURN:
-      apTB[wBox]->wAttri=aCS_g[wCSInd_g].wCs_dlg;     /* Farbe zurcksetzen  */
+      apTB[wBox]->wAttri=aCS_g[wCSInd_g].wCs_dlg;     /* Farbe zurÃ¼cksetzen  */
       i_Dl_LiesZK(apTB[wBox], pEvent, AKT_BUFFER);    /* und am Schirm zeigen*/
 
       d_Date.cTag=(CHAR)atoi(apTB[0]->acText);
@@ -152,11 +152,11 @@ for(;;)
 } /* end of Dl_Datum() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  SchreibBox()				      Datum: 28.10.88	   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  SchreibBox()				      Datum: 28.10.88	   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID SchreibBox(PD_DATE pDate, PD_TIME pTime, PTEXTBOX apTB[], SWORD wBox)
 {
@@ -185,27 +185,27 @@ return;
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     º
-  º                    PEVENT   pEvent     Zeiger auf Event-Struktur       º
-  º                                                                        º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     º
-  º                    zeigt nach Anforderung das Hilfefenster, und        º
-  º                    kehrt zur aufrufenden Funktion zurck, wenn         º
-  º                    entweder die Schaltfl„che ABBRUCH oder EINGABE      º
-  º                    bet„tigt wurde.                                     º
-  º                                                                        º
-  º  Rckgabewert:     DLG_ESC     ABBRUCH-Schaltfl„che wurde ausgew„hlt   º
-  º                    DLG_RETURN  EINGABE-Schaltfl„che wurde ausgew„hlt   º
-  º                                                                        º
-  º  Benutzte globale   - pstrReturn_g (R)                                 º
-  º  Variablen (R/W):   - pstrEsc_g    (R)                                 º
-  º                     - pstrF1_g     (R)                                 º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     â•‘
+  â•‘                    PEVENT   pEvent     Zeiger auf Event-Struktur       â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     â•‘
+  â•‘                    zeigt nach Anforderung das Hilfefenster, und        â•‘
+  â•‘                    kehrt zur aufrufenden Funktion zurÃ¼ck, wenn         â•‘
+  â•‘                    entweder die SchaltflÃ¤che ABBRUCH oder EINGABE      â•‘
+  â•‘                    betÃ¤tigt wurde.                                     â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     DLG_ESC     ABBRUCH-SchaltflÃ¤che wurde ausgewÃ¤hlt   â•‘
+  â•‘                    DLG_RETURN  EINGABE-SchaltflÃ¤che wurde ausgewÃ¤hlt   â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale   - pstrReturn_g (R)                                 â•‘
+  â•‘  Variablen (R/W):   - pstrEsc_g    (R)                                 â•‘
+  â•‘                     - pstrF1_g     (R)                                 â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
 {
@@ -235,15 +235,15 @@ for(;;) 					  /* Eingaberoutine	  */
 	{
 	if(pE->wSpalte > SPA+2 && pE->wSpalte <
 	  SPA+3+(SWORD)strlen(pstrReturn_g))
-	  return(DLG_RETURN);			     /* RETURN-Schaltfl„che  */
+	  return(DLG_RETURN);			     /* RETURN-SchaltflÃ¤che  */
 
 	if(pE->wSpalte > SPA+17 && pE->wSpalte <
 	  SPA+18+(SWORD)strlen(pstrEsc_g))
-	  return(DLG_ESC);			     /* ESC-Schaltfl„che     */
+	  return(DLG_ESC);			     /* ESC-SchaltflÃ¤che     */
 
 	if(pE->wSpalte > SPA+30 && pE->wSpalte <
 	  SPA+31+(SWORD)strlen(pstrF1_g))
-	  /*Dl_HilfeTools(SPEICHERN)*/; 	     /* Hilfe-Schaltfl„che   */
+	  /*Dl_HilfeTools(SPEICHERN)*/; 	     /* Hilfe-SchaltflÃ¤che   */
 	}
 
     } /* end of switch(pE->wEventart) */

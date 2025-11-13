@@ -1,49 +1,49 @@
 // (C) WINware Software P.Mayer: letztes Update am 13-Feb-1996
 
 /*.ta Wi_Verstecken()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Wi_Verstecken()							       º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Wi_Verstecken()							       â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_win.h>
 SWORD Wi_Verstecken(pWkb);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 PWKB	pWkb   Zeiger auf den Kontrollblock des anzuzeigenden Windows.
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Die Funktion nimmt das gewnschte Window vom Bildschirm, sichert es in dem
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Die Funktion nimmt das gewÃ¼nschte Window vom Bildschirm, sichert es in dem
 Window-Buffer und stellt seinen Hintergrund wieder her.
-Anschlieáend wird das nun zuoberst liegende Window aktiviert.
+AnschlieÃŸend wird das nun zuoberst liegende Window aktiviert.
 Das versteckte Window kann jederzeit wieder aktiviert werden.
-Die Anzahl der versteckten Windows ist nur durch den zur Verfgung stehenden
-Speicherplatz beschr„nkt.
+Die Anzahl der versteckten Windows ist nur durch den zur VerfÃ¼gung stehenden
+Speicherplatz beschrÃ¤nkt.
 
 Hinwies:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Bitte beachten Sie, daá das Verstecken eines verdeckten Windows, immer ein
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Bitte beachten Sie, daÃŸ das Verstecken eines verdeckten Windows, immer ein
 kurzes Flackern mit sich bringt, da alle Fenster, die das zu versteckende
-Fenster berlagern, zuerst abr„umt und nach dem Verstecken wieder aufgelgt
-werden mssen. Sie k”nnen diesen Effekt in dem Demoporgramm ¯Wi_Dmp.c® be-
-obachten. Um das Bildschirmflackern zu vermeiden, empfehlen wir Ihnen, m”glichst
+Fenster Ã¼berlagern, zuerst abrÃ¤umt und nach dem Verstecken wieder aufgelgt
+werden mÃ¼ssen. Sie kÃ¶nnen diesen Effekt in dem Demoporgramm Â»Wi_Dmp.cÂ« be-
+obachten. Um das Bildschirmflackern zu vermeiden, empfehlen wir Ihnen, mÃ¶glichst
 das aktibe (also oberste) Window zu verstecken.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD  Fehlerinformationen (OK/ERROR)
-      Im Fehlerfall erh„lt ¯wFehler_g® eine der folgenden Fehlernummern:
+      Im Fehlerfall erhÃ¤lt Â»wFehler_gÂ« eine der folgenden Fehlernummern:
       - WIN_KEIN_PWKB, pWkb zeigt nicht mehr auf einen Fensterkontrollblock
       - WIN_NICHT_SICHTBAR
 
 
 Benutzte globale Variablen:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):    - wMausda_g (R)
 		    - wFehler_g (W)
 		    - wAktWin_g (R/W)
@@ -51,15 +51,15 @@ Variablen (R/W):    - wMausda_g (R)
 		    - fpwCopyBuffer_g (R/W)
 
 Beispiel:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-siehe Demoprogramm ¯Wi_Demo.c®
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+siehe Demoprogramm Â»Wi_Demo.cÂ«
 
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          HEADER - DATEIEN                              º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          HEADER - DATEIEN                              â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <dos.h>
 #include <stdio.h>
 #include <string.h>
@@ -67,22 +67,22 @@ siehe Demoprogramm ¯Wi_Demo.c®
 #include <eur_tool.h>
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                       Modulglobale Variablen                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                       Modulglobale Variablen                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	SWORD awBit_m[17] = {  0x0001, 0x0002, 0x0004, 0x0008,	/* Bitmasken */
                               0x0010, 0x0020, 0x0040, 0x0080,
                               0x0100, 0x0200, 0x0400, 0x0800,
                               0x1000, 0x2000, 0x4000, 0x8000  };
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                  G l o b a l e   V a r i a b l e n                     º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                  G l o b a l e   V a r i a b l e n                     â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
 IMPORT  PWKB    apWkbSichtbar_g[16];                /* Array v. Zeigern auf */
                                                     /* WKB der sichtbaren W.*/
 IMPORT	SWORD	 wAktWin_g;			     /* Index des aktiven W. */
-                                                    /* in ¯apWkbSichtbar[]® */
+                                                    /* in Â»apWkbSichtbar[]Â« */
 IMPORT  FPWORD  fpwCopyBuffer_g;                    /* Zeiger auf 4k-Buffer */
 
 IMPORT	SWORD	 wMausda_g;			     /* 0: keine Maus da     */
@@ -90,9 +90,9 @@ IMPORT	SWORD	 wMausda_g;			     /* 0: keine Maus da     */
 IMPORT	SWORD	 wFehler_g;			     /* Nr. des letzten auf- */
                                                     /* getretenen Fehlers   */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Wi_Verstecken (PWKB pWkb)
 {
@@ -104,7 +104,7 @@ SWORD Wi_Verstecken (PWKB pWkb)
     if (pWkb->wWkbsign != WKBSIGNATUR)              /* Test ob Zeiger noch  */
     {                                               /* auf WKB zeigt        */
         wFehler_g = WIN_KEIN_PWKB;
-        return (ERROR);                             /* zurck an aufr. Fkt. */
+        return (ERROR);                             /* zurÃ¼ck an aufr. Fkt. */
     }
 
     wIndex = wAktWin_g;                             /* Index bestimmen      */
@@ -115,7 +115,7 @@ SWORD Wi_Verstecken (PWKB pWkb)
     if (wIndex == 0)                                /* Ist Window sichtbar? */
     {
         wFehler_g = WIN_NICHT_SICHTBAR;
-        return (ERROR);                             /* zurck an aufr. Fkt. */
+        return (ERROR);                             /* zurÃ¼ck an aufr. Fkt. */
     }
 
     if (wMausda_g)                                  /* wenn Maus im System, */
@@ -124,24 +124,24 @@ SWORD Wi_Verstecken (PWKB pWkb)
     i_Wi_SaveCursor();				    /* Cursor des zur Zeit  */
                                                     /* aktiven W. sichern   */
 
-    wListe = awBit_m[wIndex];                       /* Abr„umliste initial. */
+    wListe = awBit_m[wIndex];                       /* AbrÃ¤umliste initial. */
     wMaske = awBit_m[wIndex+1];                     /* Bitmaske initial.    */
 
     for (i = wIndex+1; i <= wAktWin_g; i++)         /* nach oben abarbeiten */
     {
-        if ( apWkbSichtbar_g[i]->wSchnitte &        /* exis. Schnittfl„che? */
+        if ( apWkbSichtbar_g[i]->wSchnitte &        /* exis. SchnittflÃ¤che? */
              wListe)
             wListe |= wMaske;                       /* wListe erweitern     */
         wMaske <<= 1;
     }
 
-    if (wListe != awBit_m[wIndex])                  /* exis. Schnittfl„che? */
+    if (wListe != awBit_m[wIndex])                  /* exis. SchnittflÃ¤che? */
     {
         wMaske = awBit_m[wAktWin_g];
-        for (i = wAktWin_g; i >= wIndex; i--)       /* von oben abr„umen    */
+        for (i = wAktWin_g; i >= wIndex; i--)       /* von oben abrÃ¤umen    */
         {
             if (wListe & wMaske)                    /* Soll das Window ab-  */
-		i_Wi_Pop(i);			    /* ger„umt werden ?     */
+		i_Wi_Pop(i);			    /* gerÃ¤umt werden ?     */
             wMaske >>= 1;
         }
 
@@ -149,12 +149,12 @@ SWORD Wi_Verstecken (PWKB pWkb)
         for (i=wIndex+1; i<=wAktWin_g; i++)         /* Windows auflegen     */
         {
             if (wListe & wMaske)                    /* Wurde das Window ab- */
-		i_Wi_Push(i);			    /* ger„umt ?	    */
+		i_Wi_Push(i);			    /* gerÃ¤umt ?	    */
             wMaske <<= 1;
         }
 
         }
-    else                                            /* keine Schnittfl„chen */
+    else                                            /* keine SchnittflÃ¤chen */
 	i_Wi_Pop(wIndex);			    /* Window sichern	    */
 
     for (wMaske=i=0; i < wIndex; i++)               /* Maske zum Ausblenden */
@@ -169,7 +169,7 @@ SWORD Wi_Verstecken (PWKB pWkb)
         apWkbSichtbar_g[i]->wSchnitte = wTemp;
     }
 
-    apWkbSichtbar_g[wAktWin_g] = 0L;                /* oberst. Zeiger l”sch.*/
+    apWkbSichtbar_g[wAktWin_g] = 0L;                /* oberst. Zeiger lÃ¶sch.*/
     pWkbTemp = apWkbSichtbar_g[--wAktWin_g];        /* neues aktives Window */
 
     i_Wi_Init( pWkbTemp->wSpalte +1,		    /* Data-Area des Win-   */
@@ -178,7 +178,7 @@ SWORD Wi_Verstecken (PWKB pWkb)
                pWkbTemp->wHoehe -2,
                pWkbTemp->wInnenAttr);
 
-    if (pWkbTemp->winFlags.wTRaendern)              /* Titel o. Rahmen „nd.?*/
+    if (pWkbTemp->winFlags.wTRaendern)              /* Titel o. Rahmen Ã¤nd.?*/
     {
 	Ut_ZeigeRahmen(pWkbTemp->wSpalte,	    /* Rahmen neu anzeigen  */
                        pWkbTemp->wZeile,
@@ -193,7 +193,7 @@ SWORD Wi_Verstecken (PWKB pWkb)
         pWkbTemp->winFlags.wTRaendern = 0;
     }
 
-    if (pWkbTemp->winFlags.wDAaendern)              /* Data-Area „ndern ?   */
+    if (pWkbTemp->winFlags.wDAaendern)              /* Data-Area Ã¤ndern ?   */
     {
 	Wi_Swa( 0, 0,				    /* neues Attribut geben */
                 pWkbTemp->wBreite-2,

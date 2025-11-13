@@ -1,17 +1,17 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Programm-Name: HP_FCOPY						    บ
-  บ  Funktion	  : euroSOFT-FONTcopy					    บ
-  บ		    Kopiert Fonts fr HP-Laser-Jet			    บ
-  บ                                                                         บ
-  บ  Datum	  : 07.08.1990, Graz	       Update:	 .  .	 , Graz     บ
-  บ  Author       :                            Author:                      บ
-  บ  Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         Deklarations-Dateien                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Programm-Name: HP_FCOPY						    โ•‘
+  โ•‘  Funktion	  : euroSOFT-FONTcopy					    โ•‘
+  โ•‘		    Kopiert Fonts fรผr HP-Laser-Jet			    โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘  Datum	  : 07.08.1990, Graz	       Update:	 .  .	 , Graz     โ•‘
+  โ•‘  Author       :                            Author:                      โ•‘
+  โ•‘  Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         Deklarations-Dateien                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <stdio.h>
 #include <io.h>
 #include <fcntl.h>
@@ -35,9 +35,9 @@ PSSTR pstrIdNummer=argv[1];
 PSSTR pstrFontDatei=argv[2];
 PSSTR pstrOutDevice=argv[3];
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      PROGRAMMAUFRUF BERPRFEN                         บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      PROGRAMMAUFRUF รBERPRรFEN                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 if(argc != 4)
   {
   printf ("\a\n!!! Fehler:"
@@ -47,20 +47,20 @@ if(argc != 4)
   exit (ERROR);
   }
 
-if(!(pfOutDevice=fopen(pstrOutDevice, "w")))   /* Out-Device ”ffnen */
+if(!(pfOutDevice=fopen(pstrOutDevice, "w")))   /* Out-Device รถffnen */
   {
-  printf ("\nOut-Device <%s> kann nicht ge”ffnet werden", pstrOutDevice);
+  printf ("\nOut-Device <%s> kann nicht geรถffnet werden", pstrOutDevice);
   exit (ERROR);
   }
 fprintf(pfOutDevice, "%s%s%s", ID_START, pstrIdNummer, ID_END);
 
 fflush(pfOutDevice);
-if(fclose(pfOutDevice)) 			 /* Eingabe - Datei schlieแen */
+if(fclose(pfOutDevice)) 			 /* Eingabe - Datei schlieรen */
   {printf ("\nOut-Device <%s> kann nicht "
      "geschlossen werden", pstrOutDevice);
   exit (ERROR);}
 
-printf("\nAuf ID-Nr: ฏ%sฎ wird FONT ฏ%sฎ kopiert ...\n", pstrIdNummer, pstrFontDatei);
+printf("\nAuf ID-Nr: ยป%sยซ wird FONT ยป%sยซ kopiert ...\n", pstrIdNummer, pstrFontDatei);
 sprintf(strOut, "copy %s /b %s", pstrFontDatei, pstrOutDevice);
 system(strOut);
 
@@ -75,14 +75,14 @@ PSSTR pstr=strInput;
 
 if( (wFontDatei=open(pstrFontDatei, O_RDONLY | O_BINARY)) <= NULL)
   {
-  printf ("\nFont-Datei <%s> kann nicht ge”ffnet werden", pstrFontDatei);
+  printf ("\nFont-Datei <%s> kann nicht geรถffnet werden", pstrFontDatei);
   exit (ERROR);
   }
 
 sprintf(strOut, "%s%s%s", ID_START, pstrIdNummer, ID_END);
 write(wOutDevice, strOut, strlen(strOut));
 
-printf("\nAuf ID-Nr: ฏ%sฎ wird FONT ฏ%sฎ kopiert ", pstrIdNummer, pstrFontDatei);
+printf("\nAuf ID-Nr: ยป%sยซ wird FONT ยป%sยซ kopiert ", pstrIdNummer, pstrFontDatei);
 while( !eof(wFontDatei) )
   {
   pstr=strInput;

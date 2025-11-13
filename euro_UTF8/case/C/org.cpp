@@ -1,24 +1,24 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Dokumentationserstellung       Datum: 18.06.89      บ
-  บฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤบ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Dokumentationserstellung       Datum: 18.06.89      โ•‘
+  โ•‘โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 
 #include <stdio.h>
@@ -30,9 +30,9 @@
 #include <ctype.h>
 #include <eur_tool.h>
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        KONSTANTEN UND MAKROS                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        KONSTANTEN UND MAKROS                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 #define TEXTANFANG "/*.ta"
 #define TEXTENDE ".te*/"
@@ -51,7 +51,7 @@
 #define MAX_ZEILEN  100
 #define MAX_ZEICHEN 300
 #define L_MA  3                                 /* Left_Margin = 3  */
-#define F_LEN 80                                /* zustzl Calloc f. Font */
+#define F_LEN 80                                /* zusรคtzl Calloc f. Font */
 
 IMPORT CHAR     strPrt_g[];
 IMPORT CHAR     strTeiln_g[];
@@ -60,9 +60,9 @@ IMPORT CHAR     strHlp_g[];
 IMPORT PSSTR	 pstrDataBuffer_g;
 IMPORT CHAR     strExt_g[];
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                     MODULGLOBALE FUNKTIONEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                     MODULGLOBALE FUNKTIONEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 MGLOBAL SWORD File_Input  (PSSTR, PPSTR, SWORD);
 MGLOBAL SWORD NeueSeite   (SWORD, PPSTR);
@@ -77,9 +77,9 @@ MGLOBAL SWORD Mask_Input  (PSSTR, PPSTR, SWORD, SWORD, PSSTR);
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 
 MGLOBAL PPSTR ppstr;               /* Pointer-Pointer auf Zeilen die  */
@@ -104,12 +104,12 @@ MGLOBAL SWORD wKopfLen_m=81;
 MGLOBAL SWORD wF_m;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 SWORD main (SWORD argc, PSSTR argv[])
 {
-PSSTR  apstrZeile[MAX_ZEILEN+1];		    /* enthlt den Ausgabetext */
+PSSTR  apstrZeile[MAX_ZEILEN+1];		    /* enthรคlt den Ausgabetext */
 SWORD wZ;
 FILE *pFileInput;
 CHAR  strLine[260];
@@ -132,7 +132,7 @@ else
   wKopfLen_m=86;
 
 memset(strTrennZeile_m, '\0', 255);
-memset(strTrennZeile_m, 'ฤ', wKopfLen_m-1);
+memset(strTrennZeile_m, 'โ”€', wKopfLen_m-1);
 strcat(strTrennZeile_m, "\n\n");
 printf("\nDOC - Einstellung = %s\n\n", pstrDoc);
 
@@ -168,12 +168,12 @@ else if(boStrCmp(strPrt_g,"004"))
   }
 else if(boStrCmp(strPrt_g,"008"))
   {
-  /* ๎ = ESC             VMI  FONT T_MA T_LEN L_MA C_RO C_CO*/
-  strcpy(astrFont_m[1], "\x0C๎&l7C๎(80X๎&l1E๎&l99F๎&a20L๎&a1R๎&a1C\n");
-  strcpy(astrFont_m[2], "\x0C๎&l7C๎(55X๎&l1E๎&l99F๎&a12L๎&a1R๎&a1C\n");
-  strcpy(astrFont_m[3], "๎&l7C๎(80X");
-  strcpy(astrFont_m[4], "๎&l7C๎(55X");
-  strcpy(astrFont_m[5], "๎&l7C๎(255X");
+  /* ยฏ = ESC             VMI  FONT T_MA T_LEN L_MA C_RO C_CO*/
+  strcpy(astrFont_m[1], "\x0Cยฏ&l7Cยฏ(80Xยฏ&l1Eยฏ&l99Fยฏ&a20Lยฏ&a1Rยฏ&a1C\n");
+  strcpy(astrFont_m[2], "\x0Cยฏ&l7Cยฏ(55Xยฏ&l1Eยฏ&l99Fยฏ&a12Lยฏ&a1Rยฏ&a1C\n");
+  strcpy(astrFont_m[3], "ยฏ&l7Cยฏ(80X");
+  strcpy(astrFont_m[4], "ยฏ&l7Cยฏ(55X");
+  strcpy(astrFont_m[5], "ยฏ&l7Cยฏ(255X");
   awSeitenL_m[1]=54;
   awSeitenL_m[2]=72;
   }
@@ -189,9 +189,9 @@ else
   }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      PROGRAMMAUFRUF BERPRFEN                         บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      PROGRAMMAUFRUF รBERPRรFEN                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 if (argc != 3)
     {
     printf ("\a\n!!! Fehler:"
@@ -202,22 +202,22 @@ if (argc != 3)
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      PROTOKOLLDATEI FFNEN                             บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-if ( !(pFileOutput_m = fopen(argv[2], "w")) )  /* Protokoll - Datei ”ffnen */
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      PROTOKOLLDATEI ร–FFNEN                             โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+if ( !(pFileOutput_m = fopen(argv[2], "w")) )  /* Protokoll - Datei รถffnen */
    {
-   printf ("\nProtokoll-Datei <%s> kann nicht ge”ffnet werden !!\n", argv[2]);
+   printf ("\nProtokoll-Datei <%s> kann nicht geรถffnet werden !!\n", argv[2]);
    exit (ERROR);
    }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      EINGABEDATEI FFNEN UND LESEN                     บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      EINGABEDATEI ร–FFNEN UND LESEN                     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 strcpy (pstrModus, "r");
-if ( !(pFileInput = fopen(argv[1], pstrModus)) )   /* Eingabe - Datei ”ffnen */
+if ( !(pFileInput = fopen(argv[1], pstrModus)) )   /* Eingabe - Datei รถffnen */
    {
-   printf ("\nEingabe-Datei <%s> kann nicht ge”ffnet werden !!\n", argv[1]);
+   printf ("\nEingabe-Datei <%s> kann nicht geรถffnet werden !!\n", argv[1]);
    exit (ERROR);
    }
 
@@ -287,7 +287,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            if (!wZ)
              {
              printf("\a\n Fehler :"
-                    "Datei <%s> kann nicht ge”ffnet werden !!\n",strLine);
+                    "Datei <%s> kann nicht geรถffnet werden !!\n",strLine);
              exit (ERROR);
              }
            }
@@ -299,7 +299,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            if (!wZ)
              {
              printf("\a\n Fehler :"
-                    "Datei <%s> kann nicht ge”ffnet werden !!\n",strLine);
+                    "Datei <%s> kann nicht geรถffnet werden !!\n",strLine);
              exit (ERROR);
              }
            }
@@ -313,9 +313,9 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            pstrTmp=strchr(pstrDetailKey_m, '.');
            *pstrTmp='\0';
 
-           printf("\npstrDetailIndex_m = ฏ%sฎ"
-                  "\npstrDetailKey_m   = ฏ%sฎ"
-                  "\nwSeitenNr_m       = ฏ%dฎ\n\n",
+           printf("\npstrDetailIndex_m = ยป%sยซ"
+                  "\npstrDetailKey_m   = ยป%sยซ"
+                  "\nwSeitenNr_m       = ยป%dยซ\n\n",
                   pstrDetailIndex_m, pstrDetailKey_m,
                   wSeitenNr_m);
 
@@ -323,7 +323,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            if (!wZ)
              {
              printf("\a\n Fehler :"
-                    "Datei <%s> kann nicht ge”ffnet werden !!\n",strLine);
+                    "Datei <%s> kann nicht geรถffnet werden !!\n",strLine);
              exit (ERROR);
              }
            }
@@ -339,7 +339,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            wTiefe=atoi(pstrTiefe);
 
            printf("\nstrLine = %s"
-                  "\nwTiefe  = ฏ%dฎ\n\n",
+                  "\nwTiefe  = ยป%dยซ\n\n",
                   strLine, wTiefe);
 
            wZ = Hilfe_Holen(strLine, apstrZeile, wZ, wTiefe);
@@ -347,7 +347,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            if (!wZ)
              {
              printf("\a\n Fehler :"
-                    "Datei <%s> kann nicht ge”ffnet werden !!\n",strLine);
+                    "Datei <%s> kann nicht geรถffnet werden !!\n",strLine);
              exit (ERROR);
              }
            }
@@ -363,7 +363,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            wTiefe=atoi(pstrTiefe);
 
            printf("\nstrLine = %s"
-                  "\nwTiefe  = ฏ%dฎ\n\n",
+                  "\nwTiefe  = ยป%dยซ\n\n",
                   strLine, wTiefe);
 
            wZ = Menu_Holen(strLine, apstrZeile, wZ, wTiefe);
@@ -371,7 +371,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            if (!wZ)
              {
              printf("\a\n Fehler :"
-                    "Datei <%s> kann nicht ge”ffnet werden !!\n",strLine);
+                    "Datei <%s> kann nicht geรถffnet werden !!\n",strLine);
              exit (ERROR);
              }
            }
@@ -387,7 +387,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            wTiefe=atoi(pstrTiefe);
 
            printf("\nstrLine = %s"
-                  "\nwTiefe  = ฏ%dฎ\n\n",
+                  "\nwTiefe  = ยป%dยซ\n\n",
                   strLine, wTiefe);
 
 	   wZ = Menu_Index(strLine, apstrZeile, wZ, wTiefe, 0);
@@ -395,7 +395,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            if (!wZ)
              {
              printf("\a\n Fehler :"
-                    "Datei <%s> kann nicht ge”ffnet werden !!\n",strLine);
+                    "Datei <%s> kann nicht geรถffnet werden !!\n",strLine);
              exit (ERROR);
              }
            }
@@ -414,7 +414,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
 
            printf("\nstrLine   = %s"
                   "\npstrTitel = %s"
-                  "\nwTiefe    = ฏ%dฎ\n\n",
+                  "\nwTiefe    = ยป%dยซ\n\n",
                   strLine, pstrTitel, wTiefe);
 
            wZ = Data_Holen(strLine, apstrZeile, wZ, wTiefe, pstrTitel);
@@ -422,7 +422,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            if (!wZ)
              {
              printf("\a\n Fehler :"
-                    "Datei <%s> kann nicht ge”ffnet werden !!\n",strLine);
+                    "Datei <%s> kann nicht geรถffnet werden !!\n",strLine);
              exit (ERROR);
              }
            }
@@ -439,14 +439,14 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
 
            printf("\nstrLine   = %s"
                   "\npstrTitel = %s"
-                  "\nwTiefe    = ฏ%dฎ\n\n",
+                  "\nwTiefe    = ยป%dยซ\n\n",
                   strLine, pstrTitel, wTiefe);
 
            wZ = Mask_Input(strLine,apstrZeile,wZ,wTiefe,pstrTitel);
            if (!wZ)
              {
              printf("\a\n Fehler :"
-                    "Datei <%s> kann nicht ge”ffnet werden !!\n",strLine);
+                    "Datei <%s> kann nicht geรถffnet werden !!\n",strLine);
              exit (ERROR);
              }
            }
@@ -456,7 +456,7 @@ for(wZ=0; fgets (strLine, 255, pFileInput);)     /* Lies und verweile wenn != NU
            if (!wZ)
              {
              printf("\a\n Fehler :"
-                    "Datei <%s> kann nicht ge”ffnet werden !!\n",strLine);
+                    "Datei <%s> kann nicht geรถffnet werden !!\n",strLine);
              exit (ERROR);
              }
            }
@@ -503,13 +503,13 @@ for(ppstr=apstrZeile;*ppstr;*ppstr++)
 */
 
 
-if ( fclose(pFileInput) )              /* Eingabe - Datei schlieแen */
+if ( fclose(pFileInput) )              /* Eingabe - Datei schlieรen */
    {
    printf ("\nEingabe-Datei <%s> kann nicht geschlossen werden !!\n", argv[1]);
    /*exit (ERROR);*/
    }
 
-if ( fclose(pFileOutput_m) )              /* Protokolldatei schlieแen */
+if ( fclose(pFileOutput_m) )              /* Protokolldatei schlieรen */
    {
    printf ("\nProtokoll-Datei <%s> kann nicht geschlossen werden !!\n", argv[2]);
    /*exit (ERROR);*/
@@ -517,7 +517,7 @@ if ( fclose(pFileOutput_m) )              /* Protokolldatei schlieแen */
 
 if(boStrCmp(strPrt_g,"003"))
   {
-  printf("\n\n... weiter, bitte beliebige Taste drcken");
+  printf("\n\n... weiter, bitte beliebige Taste drรผcken");
   getch();
   printf("Bildschirmausdruck = %d",
   spawnlp(P_OVERLAY, "SHOW.COM", "SHOW", argv[2], NULL) );
@@ -531,23 +531,23 @@ return (0);
 }  /* end main() */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:   File_Input                      Datum: 18.06.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:   File_Input                      Datum: 18.06.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 MGLOBAL
 SWORD File_Input (PSSTR pstrLine, PPSTR ppstrZeile, SWORD wZ)
@@ -583,23 +583,23 @@ return (wZ);
 } /* end File_Input   */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:   NeueSeite                       Datum: 18.06.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:   NeueSeite                       Datum: 18.06.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD NeueSeite (SWORD wZ, PPSTR ppstrZeile)
 {
@@ -667,23 +667,23 @@ return (wZ);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:   File_Output                     Datum: 18.06.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:   File_Output                     Datum: 18.06.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD File_Output (FILE *pFileOutput, CHAR cOut)
 {
@@ -699,17 +699,17 @@ if(boStrCmp(strPrt_g,"003"))
 
      if(cOut=='\x15') cOut='\xA1';                   /*                      */
 else if(cOut=='')    cOut='\xF0';                   /*                      */
-else if(cOut=='')    cOut='\xA2';                   /*                      */
-else if(cOut=='')    cOut='\xA3';                   /*                      */
-else if(cOut=='')    cOut='\xA4';                   /*                      */
-else if(cOut=='')    cOut='\xA5';                   /*                      */
-else if(cOut=='')    cOut='\xA1';                   /*                      */
-else if(cOut=='”')    cOut='\xA6';                   /*                      */
-else if(cOut=='')    cOut='\xA7';                   /*                      */
-else if(cOut=='แ')    cOut='\xA8';                   /*                      */
-else if(cOut=='๎')    cOut='\x1B';                   /*                      */
-else if(cOut=='๏')    cOut='\xEE';                   /*                      */
-else if(cOut=='๙')    cOut='\x20';                   /*                      */
+else if(cOut=='ร')    cOut='\xA2';                   /*                      */
+else if(cOut=='ร–')    cOut='\xA3';                   /*                      */
+else if(cOut=='ร')    cOut='\xA4';                   /*                      */
+else if(cOut=='รค')    cOut='\xA5';                   /*                      */
+else if(cOut=='รธ')    cOut='\xA1';                   /*                      */
+else if(cOut=='รถ')    cOut='\xA6';                   /*                      */
+else if(cOut=='รผ')    cOut='\xA7';                   /*                      */
+else if(cOut=='ร')    cOut='\xA8';                   /*                      */
+else if(cOut=='ยฏ')    cOut='\x1B';                   /*                      */
+else if(cOut=='ยด')    cOut='\xEE';                   /*                      */
+else if(cOut=='ยจ')    cOut='\x20';                   /*                      */
 else if(cOut=='\x03') cOut='\xE0';                   /*                      */
 else if(cOut=='\x04') cOut='\xE1';                   /*                      */
 else if(cOut=='\x05') cOut='\xE2';                   /*                      */
@@ -723,7 +723,7 @@ else if(cOut=='\x18') cOut='\xE9';                   /*                      */
 else if(cOut=='\x19') cOut='\xEA';                   /*                      */
 else if(cOut=='\x1A') cOut='\xEB';                   /*                      */
 else if(cOut=='\x1B') cOut='\xEC';                   /*                      */
-else if(cOut=='๐') cOut='=';                         /*                      */
+else if(cOut=='ยญ') cOut='=';                         /*                      */
 
 
 fputc (cOut, pFileOutput);
@@ -732,23 +732,23 @@ return (OK);
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:   Index_Holen                     Datum: 18.06.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:   Index_Holen                     Datum: 18.06.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 MGLOBAL
 SWORD Index_Holen (PSSTR pstrLine,PPSTR ppstrZeile,SWORD wZ)
@@ -802,7 +802,7 @@ pstrEnd=strchr(pstrIndexKey, ')');
                                &wBufLength, strKey, 0);
 
     sprintf(strError, "B_GET_EQ(INDEX_01)"
-                        " - Key: ฏ%sฎ",                  /*                      */
+                        " - Key: ยป%sยซ",                  /*                      */
                         strKey);                        /*                      */
 
     Dl_ErrorHandler (wRetCode, strError,
@@ -850,7 +850,7 @@ while(wWeiter && pstrPos-pstrBuffer<wBufLength-3)   /* bis kein Speicher oder Re
         strcpy (ppstrZeile[wZ++], pstrLine);
 
         memset(ppstrZeile[wZ], '\0', 255);
-        memset(ppstrZeile[wZ], 'ฤ', wLineLength-1 );
+        memset(ppstrZeile[wZ], 'โ”€', wLineLength-1 );
         for (j=0; ppstrZeile[wZ-1][j]==' ' &&
              j<wLineLength-1; j++)
           ppstrZeile[wZ][j]=ppstrZeile[wZ-1][j];
@@ -928,23 +928,23 @@ return (wZ);
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:   Detail_Holen                    Datum: 18.06.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:   Detail_Holen                    Datum: 18.06.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 MGLOBAL
 SWORD Detail_Holen (PSSTR pstrLine,PPSTR ppstrZeile,SWORD wZ)
@@ -997,7 +997,7 @@ pstrEnd=strchr(pstrIndexKey, ')');
                                &wBufLength, strKey, 0);
 
     sprintf(strError, "B_GET_EQ(INDEX_01)"
-                        " - Key: ฏ%sฎ",                  /*                      */
+                        " - Key: ยป%sยซ",                  /*                      */
                         strKey);                        /*                      */
 
     Dl_ErrorHandler (wRetCode, strError,
@@ -1078,7 +1078,7 @@ while(wWeiter && pstrPos-pstrBuffer<wBufLength-3)   /* bis kein Speicher oder Re
       strcpy (ppstrZeile[wZ++], pstrLine);
 
       memset(ppstrZeile[wZ], '\0', 255);
-      memset(ppstrZeile[wZ], 'ฤ', wLineLength-1 );
+      memset(ppstrZeile[wZ], 'โ”€', wLineLength-1 );
 
       for (j=0;
            ppstrZeile[wZ-1][j]==' ' &&
@@ -1142,23 +1142,23 @@ return (wZ);
 } /* end Detail_Holen  */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:   Hilfe_Holen                     Datum: 18.06.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:   Hilfe_Holen                     Datum: 18.06.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 MGLOBAL
 SWORD Hilfe_Holen (PSSTR pstrLine,PPSTR ppstrZeile,SWORD wZ, SWORD wTiefe)
@@ -1225,7 +1225,7 @@ pstrEnd=strchr(pstrHelpKey, ')');
                                &wBufLength, strKey, 0);
 
     sprintf(strError, "B_GET_EQ(HELP_01)"
-                        " - Key: ฏ%sฎ",                  /*                      */
+                        " - Key: ยป%sยซ",                  /*                      */
                         strKey);                        /*                      */
 
     Dl_ErrorHandler (wRetCode, strError,
@@ -1281,23 +1281,23 @@ return (wZ);
 } /* end Hilfe_Holen   */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:   Menu_Holen                      Datum: 18.06.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:   Menu_Holen                      Datum: 18.06.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD Menu_Holen (PSSTR pstrLine,PPSTR ppstrZeile,SWORD wZ, SWORD wTiefe)
 {
@@ -1359,7 +1359,7 @@ pstrEnd=strchr(pstrMenuKey, ')');
                                &wBufLength, strKey, 0);
 
     sprintf(strError, "B_GET_EQ(MENU_02)"
-                        " - Key: ฏ%sฎ",                  /*                      */
+                        " - Key: ยป%sยซ",                  /*                      */
                         strKey);                        /*                      */
 
     Dl_ErrorHandler (wRetCode, strError,
@@ -1406,7 +1406,7 @@ while(pstrPos-pstrDataBuffer_g<wBufLength)       /* bis kein Speicher oder Recor
     SWORD wStrLen=strlen(pstrLine);
 
     memset(pstrLine, ' ', TB_MAX);
-    memset(pstrLine+(wTiefe*L_MA), 'ฤ', wStrLen);
+    memset(pstrLine+(wTiefe*L_MA), 'โ”€', wStrLen);
     *(pstrLine+(wTiefe*L_MA)+wStrLen)   = '\x0A';
     *(pstrLine+(wTiefe*L_MA)+wStrLen+1) = '\0';
 
@@ -1439,23 +1439,23 @@ return (wZ);
 } /* end Menu_Holen   */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:   Menu_Index                      Datum: 18.06.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:   Menu_Index                      Datum: 18.06.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD Menu_Index (PSSTR pstrLine,PPSTR ppstrZeile,SWORD wZ,
 		 SWORD wTiefe, SWORD wLeiste)
@@ -1507,7 +1507,7 @@ pstrEnd=strchr(pstrMenuKey, ')');
                                &wBufLength, strKey, 0);
 
     sprintf(strError, "B_GET_EQ(MENU_02)"
-                        " - Key: ฏ%sฎ",                  /*                      */
+                        " - Key: ยป%sยซ",                  /*                      */
                         strKey);                        /*                      */
 
     Dl_ErrorHandler (wRetCode, strError,
@@ -1625,27 +1625,27 @@ while(pstrPos-pstrDataBuffer_g+30<wBufLength)	/* bis kein Speicher oder Record a
   if(*pstrMenuNr)
     {
     strUnter[0]='\0';
-    strcat(strUnter, "ฺ");
+    strcat(strUnter, "โ”");
     for(i=0; i<wBezL+2; i++)
-      strcat(strUnter, "ฤ");
-    strcat(strUnter, "ฟ");
+      strcat(strUnter, "โ”€");
+    strcat(strUnter, "โ”");
 
     strcat (ppstrZeile[wZ],   strRand);
     strcat (ppstrZeile[wZ],   strUnter);
     strcat (ppstrZeile[wZ++], strReRand);
 
-    sprintf(pstrLine, "%sณ %s ณ%s",
+    sprintf(pstrLine, "%sโ” %s โ”%s",
       strRand, pstrBezeich, strReRand);
     strcat (ppstrZeile[wZ++], pstrLine);
 
     strUnter[0]='\0';
-    strcat(strUnter, "ร");
+    strcat(strUnter, "โ”");
     for(i=0; i<wBezL+2; i++)
-      strcat(strUnter, "ฤ");
-    strcat(strUnter, "ม");
+      strcat(strUnter, "โ”€");
+    strcat(strUnter, "โ”ด");
     for(i=wBezL; i<wZeilenLen-1; i++)
-      strcat(strUnter, "ฤ");
-    strcat(strUnter, "ฟ");
+      strcat(strUnter, "โ”€");
+    strcat(strUnter, "โ”");
 
     strcat (ppstrZeile[wZ],   strRand);
     strcat (ppstrZeile[wZ++], strUnter);
@@ -1655,17 +1655,17 @@ while(pstrPos-pstrDataBuffer_g+30<wBufLength)	/* bis kein Speicher oder Record a
     if(boStrCmp(pstrBezeich, "---"))
       {
       strUnter[0]='\0';
-      strcat(strUnter, "ร");
+      strcat(strUnter, "โ”");
       for(i=0; i<wZeilenLen+2; i++)
-	strcat(strUnter, "ฤ");
-      strcat(strUnter, "ด");
+	strcat(strUnter, "โ”€");
+      strcat(strUnter, "โ”ค");
 
       strcat (ppstrZeile[wZ],	strRand);
       strcat (ppstrZeile[wZ++], strUnter);
       }
     else
       {
-      sprintf(pstrLine, "%sณ %s%s ณ",
+      sprintf(pstrLine, "%sโ” %s%s โ”",
 	strRand, pstrBezeich, strReRand);
 
       strcat (ppstrZeile[wZ++], pstrLine);
@@ -1676,10 +1676,10 @@ while(pstrPos-pstrDataBuffer_g+30<wBufLength)	/* bis kein Speicher oder Record a
   } /* end while(pstrPos) */
 
 strUnter[0]='\0';
-strcat(strUnter, "ภ");
+strcat(strUnter, "โ””");
 for(i=0; i<wZeilenLen+2; i++)
-  strcat(strUnter, "ฤ");
-strcat(strUnter, "ู");
+  strcat(strUnter, "โ”€");
+strcat(strUnter, "โ”");
 
 strcat (ppstrZeile[wZ],   strRand);
 strcat (ppstrZeile[wZ++], strUnter);
@@ -1730,23 +1730,23 @@ return (wZ);
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:   Data_Holen                      Datum: 18.06.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:   Data_Holen                      Datum: 18.06.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD Data_Holen (PSSTR pstrLine,PPSTR ppstrZeile,SWORD wZ,
 		 SWORD wTiefe, PSSTR pstrTitel)
@@ -1811,7 +1811,7 @@ pstrEnd=strchr(pstrDataKey, ')');
                                &wBufLength, strKey, 0);
 
     sprintf(strError, "B_GET_EQ(DATA_02)"
-                        " - Key: ฏ%sฎ",                  /*                      */
+                        " - Key: ยป%sยซ",                  /*                      */
                         strKey);                        /*                      */
 
     Dl_ErrorHandler (wRetCode, strError,
@@ -1843,10 +1843,10 @@ if(*pstrTitel)
   {
   CHAR acUnter[TB_MAX+1];
   memset(acUnter, '\0', TB_MAX);
-  memset(acUnter, 'ฤ', strlen(pstrTitel)+23);
+  memset(acUnter, 'โ”€', strlen(pstrTitel)+23);
 
   memset(strTmp, ' ', TB_MAX);
-  sprintf(strTmp+(wTiefe*L_MA), "Dateibeschreibung fr: %s%c", pstrTitel, '\x0A');
+  sprintf(strTmp+(wTiefe*L_MA), "Dateibeschreibung fรผr: %s%c", pstrTitel, '\x0A');
   strcpy(ppstrZeile[wZ++], strTmp);
 
   memset(strTmp, ' ', TB_MAX);
@@ -1887,7 +1887,7 @@ while(pstrPos-pstrDataBuffer_g<wBufLength)       /* bis kein Speicher oder Recor
     {
     CHAR acUnter[TB_MAX+1];
     memset(acUnter, '\0', TB_MAX);
-    memset(acUnter, 'ฤ', 94);
+    memset(acUnter, 'โ”€', 94);
 
     memset(pstrLine, ' ', TB_MAX);
     sprintf(pstrLine+(wTiefe*L_MA), "%sName der Datei   : %s%c",
@@ -1912,7 +1912,7 @@ while(pstrPos-pstrDataBuffer_g<wBufLength)       /* bis kein Speicher oder Recor
       wZ = NeueSeite (wZ, ppstrZeile);
 
     memset(pstrLine, ' ', TB_MAX);
-    sprintf(pstrLine+(wTiefe*L_MA), "%sZusatzerklrung 1: %s%c",
+    sprintf(pstrLine+(wTiefe*L_MA), "%sZusatzerklรคrung 1: %s%c",
       astrFont_m[wF_m], pstrZusatz1, '\x0A');
     strcpy(ppstrZeile[wZ], astrFont_m[4]);
     strcat(ppstrZeile[wZ++], pstrLine);
@@ -1920,7 +1920,7 @@ while(pstrPos-pstrDataBuffer_g<wBufLength)       /* bis kein Speicher oder Recor
       wZ = NeueSeite (wZ, ppstrZeile);
 
     memset(pstrLine, ' ', TB_MAX);
-    sprintf(pstrLine+(wTiefe*L_MA), "%sZusatzerklrung 2: %s%c",
+    sprintf(pstrLine+(wTiefe*L_MA), "%sZusatzerklรคrung 2: %s%c",
       astrFont_m[wF_m], pstrZusatz2, '\x0A' );
     strcpy(ppstrZeile[wZ], astrFont_m[4]);
     strcat(ppstrZeile[wZ++], pstrLine);
@@ -1943,7 +1943,7 @@ while(pstrPos-pstrDataBuffer_g<wBufLength)       /* bis kein Speicher oder Recor
 
     memset(pstrLine, ' ', TB_MAX);
     sprintf(pstrLine+(wTiefe*L_MA), "%sDatenfeld  "
-      "Zusatzerklrung         Offset Lnge Filler "
+      "Zusatzerklรคrung         Offset Lรคnge Filler "
       "Datenattribut-TYP   VKS NKS KEY DUP MOD%c",
       astrFont_m[wF_m], '\x0A');
     strcpy (ppstrZeile[wZ], astrFont_m[4]);
@@ -2002,23 +2002,23 @@ return (wZ);
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:   Mask_Input                      Datum: 18.06.89      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:                                                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion bearbeitet                           บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Rckgabewert:                                                         บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):                                                      บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:   Mask_Input                      Datum: 18.06.89      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:                                                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion bearbeitet                           โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:                                                         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):                                                      โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 MGLOBAL
 SWORD Mask_Input (PSSTR pstrLine, PPSTR ppstrZeile, SWORD wZ,
@@ -2060,10 +2060,10 @@ if(*pstrTitel)
     *(pstrSeite-1)='\0';
 
   memset(acUnter, '\0', TB_MAX);
-  memset(acUnter, 'ฤ', strlen(pstrTitel)+24);
+  memset(acUnter, 'โ”€', strlen(pstrTitel)+24);
 
   memset(strTmp, ' ', TB_MAX);
-  sprintf(strTmp+(wTiefe*L_MA), "%sEin-/Ausgabefelder fr: %s%c", astrFont_m[4], pstrTitel, '\x0A');
+  sprintf(strTmp+(wTiefe*L_MA), "%sEin-/Ausgabefelder fรผr: %s%c", astrFont_m[4], pstrTitel, '\x0A');
   strcpy (ppstrZeile[wZ++], strTmp);
 
   memset(strTmp, ' ', TB_MAX);
@@ -2086,23 +2086,23 @@ if(*pstrTitel)
 
 memset(strTmp, ' ', 250);
 strcpy(&strTmp[(wTiefe*L_MA)],
-"ฺ(c) 1990 euroSOFT ฤฤฤฤฤ ...euroSOFT-WARE - 8010 Graz ฤฤฤฤฤ Datum 08.08.90 (01)ฟ\x0A");
+"โ”(c) 1990 euroSOFT โ”€โ”€โ”€โ”€โ”€ ...euroSOFT-WARE - 8010 Graz โ”€โ”€โ”€โ”€โ”€ Datum 08.08.90 (01)โ”\x0A");
 strcpy (ppstrZeile[wZ++], strTmp);
 if(wZ > wSeitenL_m)
   wZ = NeueSeite (wZ, ppstrZeile);
 
 memset(strTmp, ' ', 250);
-stradd(&strTmp[(wTiefe*L_MA)], "ภ", astrFont_m[5],
+stradd(&strTmp[(wTiefe*L_MA)], "โ””", astrFont_m[5],
 "F-TastenOptionenF1=Hilfe",
-astrFont_m[4], "ู\x0A", _N);
+astrFont_m[4], "โ”\x0A", _N);
 strcpy (ppstrZeile[wZ++], strTmp);
 if(wZ > wSeitenL_m)
   wZ = NeueSeite (wZ, ppstrZeile);
 
 memset(strTmp, ' ', 250);
-strTmp[wTiefe*L_MA]='ฺ';
-strcpy(&strTmp[(wTiefe*L_MA)+79], "ฟ\x0A");
-memset(&strTmp[(wTiefe*L_MA)+1], 'ฤ', 78);
+strTmp[wTiefe*L_MA]='โ”';
+strcpy(&strTmp[(wTiefe*L_MA)+79], "โ”\x0A");
+memset(&strTmp[(wTiefe*L_MA)+1], 'โ”€', 78);
 if(*pstrTitel)
   memcpy(&strTmp[(wTiefe*L_MA)+(78-strlen(pstrTitel))], pstrTitel, strlen(pstrTitel));
 strcpy (ppstrZeile[wZ++], strTmp);
@@ -2121,8 +2121,8 @@ for(wIn=0;fgets(pstrLine, 255, pfHandle);wIn++)
       if(pstrEnd) *pstrEnd='\0';
 
       memset(strTmp, ' ', 250);
-      strTmp[wTiefe*L_MA]='ณ';
-      strcpy(&strTmp[(wTiefe*L_MA)+79], "ณ\x0A");
+      strTmp[wTiefe*L_MA]='โ”';
+      strcpy(&strTmp[(wTiefe*L_MA)+79], "โ”\x0A");
       memcpy(&strTmp[(wTiefe*L_MA)+1], pstrLine+1, strlen(pstrLine+1));
 
       strcpy (ppstrZeile[wZ++], strTmp);
@@ -2136,24 +2136,24 @@ for(wIn=0;fgets(pstrLine, 255, pfHandle);wIn++)
      for(; wIn<23; wIn++)
        {
        memset(strTmp, ' ', 250);
-       strTmp[wTiefe*L_MA]='ณ';
-       strcpy(&strTmp[(wTiefe*L_MA)+79], "ณ\x0A");
+       strTmp[wTiefe*L_MA]='โ”';
+       strcpy(&strTmp[(wTiefe*L_MA)+79], "โ”\x0A");
        strcpy (ppstrZeile[wZ++], strTmp);
        if(wZ > wSeitenL_m)
          wZ = NeueSeite (wZ, ppstrZeile);
        }
 
      memset(strTmp, ' ', 250);
-     strTmp[wTiefe*L_MA]='ภ';
-     strcpy(&strTmp[(wTiefe*L_MA)+79], "ู\x0A");
-     memset(&strTmp[(wTiefe*L_MA)+1], 'ฤ', 78);
+     strTmp[wTiefe*L_MA]='โ””';
+     strcpy(&strTmp[(wTiefe*L_MA)+79], "โ”\x0A");
+     memset(&strTmp[(wTiefe*L_MA)+1], 'โ”€', 78);
      strcpy (ppstrZeile[wZ++], strTmp);
      if(wZ > wSeitenL_m)
        wZ = NeueSeite (wZ, ppstrZeile);
 
      memset(strTmp, ' ', 250);
      stradd(&strTmp[(wTiefe*L_MA)], astrFont_m[5],
-     "[F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=Men[ESC]=EndeT02",
+     "[F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=Menรผ[ESC]=EndeT02",
      astrFont_m[4], "\x0A", _N);
      strcpy (ppstrZeile[wZ++], strTmp);
      if(wZ > wSeitenL_m)

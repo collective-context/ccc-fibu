@@ -1,16 +1,16 @@
 // (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:49:03 - Wed
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Programm -Name: ST_4100.C	     Revision: 1.3	   (C) 1989/1991    บ
-  บ  Function      : Initialisieren -> Druck Stammdaten ...                 บ
-  บ                                                                         บ
-  บ  Rev.-Date     : 01.05.1991, Graz           Update: 04.08.1991, Graz    บ
-  บ  Author        : Peter Mayer                Author: Peter Mayer         บ
-  บ  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         Deklarations-Dateien                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Programm -Name: ST_4100.C	     Revision: 1.3	   (C) 1989/1991    โ•‘
+  โ•‘  Function      : Initialisieren -> Druck Stammdaten ...                 โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘  Rev.-Date     : 01.05.1991, Graz           Update: 04.08.1991, Graz    โ•‘
+  โ•‘  Author        : Peter Mayer                Author: Peter Mayer         โ•‘
+  โ•‘  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         Deklarations-Dateien                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define NDEBUG 1
 #include <string.h>
 #include <ctype.h>              /* isdigit(),                                */
@@ -21,11 +21,11 @@
 GLOBAL SWORD  DeleteFile(VOID);
 STATIC SWORD  Read_Para(PSSTR, SWORD , PSSTR, SWORD );
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ      Konstanten &  modul-globale Variablen  &  Array - Deklaration      บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-  บ      Funktions-Prototypen                                               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘      Konstanten &  modul-globale Variablen  &  Array - Deklaration      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+  โ•‘      Funktions-Prototypen                                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT  CHAR   acAktSatz_g[];
 IMPORT  CHAR   acVonWahl_g[];
 IMPORT  CHAR   acBisWahl_g[];
@@ -34,11 +34,11 @@ IMPORT  CHAR   strEBK_g[];
 MGLOBAL SWORD	awTstMsk_m[]={ 2, 2, 3, 4, 5,10,11,12,12,13,15,20,21,22,22,23,30,31,32,40,50,60,60,60,60,60,61,61,61,80 -1};
 MGLOBAL SWORD	awTstFrm_m[]={ 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 2, 5, 6, 0, 1, 2, 0 -1};
 GLOBAL	PSWORD	pwTstMsk_g=awTstMsk_m, pwTstFrm_g=awTstFrm_m;
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_main_init()                                                           บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Initialisierungen                                                       บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_main_init()                                                           โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Initialisierungen                                                       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_main_init(PSWORD  pwSteuerKz, PSWORD  pwDruckKz, PSSTR  pstrApp,
   PSSTR  pstrAppDru, SWORD  awMasks[], PSWORD  pwForm, PSSTR  pstrSpecialKeyCodes)
@@ -48,7 +48,7 @@ wNdx_g=0;                                            /* nach Key 1           */
 acAktSatz_g[0]=acVonWahl_g[0]=acBisWahl_g[0]='\0';
 
 sprintf(pstrSpecialKeyCodes,                         /* erlaubte Funktions-  */
-   "%c %c %c %c %c %c %c %c ",                       /* tasten fr Special_  */
+   "%c %c %c %c %c %c %c %c ",                       /* tasten fรผr Special_  */
    T_ESC, T_PGUP, T_PGDN, T_F2,                      /* Key_Code()           */
    T_C_F4, T_A_F4, T_F9, _N);			   /* T_F4, T_S_F4,	   */
 
@@ -66,11 +66,11 @@ switch(*pwSteuerKz)
 
   case 15:                                           /* ST DRUCK             */
     pstr=(cKz_g=='L') ? stp("LKS") : stp("ST");      /*                      */
-    iInit(pstrApp, pstr, pstrAppDru, pstr, awMasks,  /* Druck Fremdwhrungen */
+    iInit(pstrApp, pstr, pstrAppDru, pstr, awMasks,  /* Druck Fremdwรคhrungen */
       "4011", "4012", "36", _N);
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
-      {case '0': *pwForm=101; break;}                  /* Fremdwhrung         */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
+      {case '0': *pwForm=101; break;}                  /* Fremdwรคhrung         */
     break;
 
   case 90:                                           /* ST-Listen            */
@@ -78,7 +78,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, pstr, pstrAppDru, pstr, awMasks,  /* Textbausteine        */
       "4180", "180", "36", _N);
 
-    switch(*pwDruckKz)                               /* Formular fr Text-   */
+    switch(*pwDruckKz)                               /* Formular fรผr Text-   */
       {case '0': *pwForm=1800; break;}               /* bausteine            */
 
     iDruInit("TEXT_NR", "_V_TXTNR", "_B_TXTNR");
@@ -88,7 +88,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "AUF", pstrAppDru, "AUF", awMasks,  /* Liste Kunden nach    */
       "401", "36",_N);				      /* Kunden-Nummer	      */
 
-    switch(*pwDruckKz)                               /* Formular fr Auf-    */
+    switch(*pwDruckKz)                               /* Formular fรผr Auf-    */
       {case '0': *pwForm=1100; break;}               /* Kunden Adressen      */
 
     iDruInit("FILLER", "FILLER", "FILLER");
@@ -99,7 +99,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "AUF", pstrAppDru, "ST",awMasks,  /* Liste Kunden nach    */
       "402","36", _N);					 /* Kunden-Kurzbez.	 */
 
-    switch(*pwDruckKz)                               /* Formular fr List    */
+    switch(*pwDruckKz)                               /* Formular fรผr List    */
       {case '1': *pwForm=1101; wNdx_g=1; break;      /* Telefon Time intern  */
       case '3': *pwForm=1103; wNdx_g=1; break;}      /* Kundenliste n. Bez.  */
 
@@ -126,7 +126,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, pstr, pstrAppDru, pstr, awMasks,  /* Kunden-Etiketten     */
       "4113", "36", _N);
 
-    switch(*pwDruckKz)                               /* Formular fr         */
+    switch(*pwDruckKz)                               /* Formular fรผr         */
       {case '0': *pwForm=1102; wNdx_g=1; break;}     /* Kunden-Etiketten     */
 
     iDruInit("MATCH_CODE", "_V_KURZBEZ", "_B_KURZBEZ");
@@ -147,7 +147,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "ST", pstrAppDru, "ST", awMasks,  /* Liste Lieferanten n. */
       "4121", "120", "36", _N);                      /* Lieferanten-Kurzbez. */
                                                      /* ??? ohne kein Start  */
-    switch(*pwDruckKz)                               /* Formular fr List    */
+    switch(*pwDruckKz)                               /* Formular fรผr List    */
       {case '0': *pwForm=1201; wNdx_g=1; break;}     /* Telefon Time intern  */
 
     iDruInit("MATCH_CODE", "_V_KURZBEZ", "_B_KURZBEZ");
@@ -171,7 +171,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, pstr, pstrAppDru, pstr, awMasks,  /* Lieferanten-Etiketten*/
       "4123", "36", _N);
 
-    switch(*pwDruckKz)                               /* Formular fr         */
+    switch(*pwDruckKz)                               /* Formular fรผr         */
       {case '0': *pwForm=1202; wNdx_g=1; break;}     /* Lieferanten-Etiketten*/
 
     iDruInit("MATCH_CODE", "_V_KURZBEZ", "_B_KURZBEZ");
@@ -182,7 +182,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, pstr, pstrAppDru, pstr, awMasks,  /* Liste Artikel nach   */
       "431","36", _N);					  /* Artikel-Nummer	  */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=1400; break;}                 /* nach Artikel-Nummer  */
 
     iDruInit("FILLER", "FILLER", "FILLER");
@@ -193,7 +193,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, pstr, pstrAppDru, pstr, awMasks,  /* Liste Artikel nach   */
       "432","36", _N);				   /* Artikel-Bezeichnung  */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=1401; wNdx_g=1; break;}       /* nach Artikel-Bez.    */
 
     iDruInit("FILLER", "FILLER", "FILLER");
@@ -205,7 +205,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, pstr, pstrAppDru, pstr, awMasks,  /* Artikel-Etiketten    */
       "4143", "36", _N);
 
-    switch(*pwDruckKz)                               /* Formular fr Artikel-*/
+    switch(*pwDruckKz)                               /* Formular fรผr Artikel-*/
       {case '0': *pwForm=1402; break;}               /* etiketten            */
 
     iDruInit("ARTNR", "_V_ARTNR", "_B_ARTNR");
@@ -216,7 +216,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, pstr, pstrAppDru, pstr, awMasks,  /* Liste Mengen-Einheit */
       "4130", "36", _N);
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=1300; wNdx_g=1; break;}     /* Mitarbeiter n. Nummer*/
 
     iDruInit("MG_MATCH", "_V_MATCH", "_B_MATCH");
@@ -227,7 +227,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "ST", pstrAppDru, "ST", awMasks,  /* Personal-Liste nach  */
       "4170", "36", _N);                             /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=1700; break;}                 /* Mitarbeiter n. Nummer*/
 
     iDruInit("PERSONNR", "_V_MITNR", "_B_MITNR");
@@ -238,7 +238,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "AUF", pstrAppDru, "ST", awMasks,  /* Personal-Liste nach  */
       "403","36", _N);				   /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=1700; break;}                 /* Mitarbeiter n. Nummer*/
 
     //iDruInit("PERSONNR", "_V_MITNR", "_B_MITNR");
@@ -249,7 +249,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "AUF", pstrAppDru, "ST", awMasks,  /* Personal-Liste nach  */
       "404","36", _N);				   /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=1700; break;}                 /* Mitarbeiter n. Nummer*/
 
     iDruInit("FILLER", "FILLER", "FILLER");
@@ -260,7 +260,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "AUF", pstrAppDru, "ST", awMasks,  /* Personal-Liste nach  */
       "433","36", _N);				   /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=1700; break;}                 /* Mitarbeiter n. Nummer*/
 
     iDruInit("FILLER", "FILLER", "FILLER");
@@ -271,7 +271,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "AUF", pstrAppDru, "ST", awMasks,  /* Personal-Liste nach  */
       "434","36", _N);				   /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=1700; break;}                 /* Mitarbeiter n. Nummer*/
 
     iDruInit("FILLER", "FILLER", "FILLER");
@@ -282,7 +282,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "AUF", pstrAppDru, "ST", awMasks,  /* Personal-Liste nach  */
       "435","36", _N);				   /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=1700; break;}                 /* Mitarbeiter n. Nummer*/
 
     iDruInit("FILLER", "FILLER", "FILLER");
@@ -295,7 +295,7 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "AUF", pstrAppDru, "ST", awMasks,  /* Personal-Liste nach  */
       "491","36", _N);				   /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=1700; break;}                 /* Mitarbeiter n. Nummer*/
 
     iDruInit("FILLER", "FILLER", "FILLER");
@@ -306,14 +306,14 @@ switch(*pwSteuerKz)
     iInit(pstrApp, "AU", pstrAppDru, "ST", awMasks,  /* Personal-Liste nach  */
       "810","36", _N);				   /* Mitarbeiter-Nummer   */
 
-    switch(*pwDruckKz)                               /* Formular fr Liste   */
+    switch(*pwDruckKz)                               /* Formular fรผr Liste   */
       {case '0': *pwForm=1700; break;}		       /* Mitarbeiter n. Nummer*/
 
     iDruInit("PERSONNR", "_V_MITNR", "_B_MITNR");
     break;
 
-  case 998: break;                                   /* Resverviert fr Para-*/
-  default : ba_Fehler(); *pwSteuerKz = -1; break;    /* meterbergabe aus DOS*/
+  case 998: break;                                   /* Resverviert fรผr Para-*/
+  default : ba_Fehler(); *pwSteuerKz = -1; break;    /* meterรผbergabe aus DOS*/
   }
 
 wFormular_g=*pwForm;
@@ -328,11 +328,11 @@ return;
 } /* end i_main_init() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_main_while()                                                          บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Initialisierungen                                                       บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_main_while()                                                          โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Initialisierungen                                                       โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID i_main_while(PSWORD  pwSteuerKz, PSWORD  pwDruckKz)
 {
@@ -347,11 +347,11 @@ return;
 } /* end i_main_while() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Application_Init()                                                    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Speicher reservieren oder Konstanten einlesen.                          บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Application_Init()                                                    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Speicher reservieren oder Konstanten einlesen.                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD  i_Application_Init()
 {
@@ -375,11 +375,11 @@ return(wRet);
 } /* end i_Application_Init() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Application_Close()                                                   บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Reservierten Speicher wieder freigeben.                                 บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Application_Close()                                                   โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Reservierten Speicher wieder freigeben.                                 โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 SWORD  i_Application_Close()
 {
@@ -392,15 +392,15 @@ return(OK);
 } /* end i_Application_Close() */
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Read_Const()                                                            บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ                                                                         บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Read_Const()                                                            โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘                                                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD  Read_Const(VOID)
 {
-/* SWORD  wRetCode;				       /* fr sCho()	       */
+/* SWORD  wRetCode;				       /* fรผr sCho()	       */
 /* SREGISTER i; */
 SWORD  wRet=JA;
 
@@ -418,8 +418,8 @@ if(Maske(0,"ST4140","LKS4140","ST4141","LKS4141",_N))/* Artikelstamm         */
 
 /*if(Maske(0,"ST4011",_N))                           /* Choice() Felder !!!  */
 /*  for(i=48; i<58; i++)
-    {sCho( ch( (CHAR)i, "FRW_EH_0x", 9),
-    ch( (CHAR)i, "FRW_EH_0x", 9),
+    {sCho( ch( (CHAR)i, "FRWร_EH_0x", 9),
+    ch( (CHAR)i, "FRWร_EH_0x", 9),
     ch( (CHAR)i, "_FREMDWx_E", 7) );} */
 
 if(Maske(0,"XXnnnn",_N))
@@ -456,14 +456,14 @@ GLOBAL VOID Dl_HilfeTools(SWORD wDialog) {SWORD w=wDialog;}
 /* ----------------------------------------------------------------------------
 
 //if(Maske(0,"ST4011","LKS4011",_N))                   // Druck Konstanten
-//  {SWORD  wFH=Read_Para("MAND_01", NEIN, _F, _L);	// Para-File n. l”schen
+//  {SWORD  wFH=Read_Para("MAND_01", NEIN, _F, _L);	// Para-File n. lรถschen
 //  if(wFH > -1) awFileMode_g[wFH]=PARA_F;}            // weil 2. S Dummy-Mask
 
-//ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-//บ Read_Para()                                                             บ
-//บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-//บ                                                                         บ
-//ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+//โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+//โ•‘ Read_Para()                                                             โ•‘
+//โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+//โ•‘                                                                         โ•‘
+//โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 STATIC
 SWORD  Read_Para(PSSTR	pMANDANT, SWORD  wHandle, PSSTR  pF, SWORD  wL)
 {

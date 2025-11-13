@@ -1,35 +1,35 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Programm-Name: PREPARE						    บ
-  บ  Funktion	  : WINware-PREPARE					    บ
-  บ		    Vorbereiten und editiern von Demoseiten		    บ
-  บ                                                                         บ
-  บ  Datum	  : 05.03.1990, Graz	       Update: 05.03.1990, Graz     บ
-  บ  Author       : Peter Mayer                Author:                      บ
-  บ  Copyright(C) : WINware Software, P.Mayer, A-8020 Graz		    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         Deklarations-Dateien                            บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Programm-Name: PREPARE						    โ•‘
+  โ•‘  Funktion	  : WINware-PREPARE					    โ•‘
+  โ•‘		    Vorbereiten und editiern von Demoseiten		    โ•‘
+  โ•‘                                                                         โ•‘
+  โ•‘  Datum	  : 05.03.1990, Graz	       Update: 05.03.1990, Graz     โ•‘
+  โ•‘  Author       : Peter Mayer                Author:                      โ•‘
+  โ•‘  Copyright(C) : WINware Software, P.Mayer, A-8020 Graz		    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         Deklarations-Dateien                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <dos.h>
 #include <eur_tool.h>
-GLOBAL PSKB   pSkb_g=NULL;		      /*๙System-Kontroll-Block */
-GLOBAL PWKB   pWkbInfo_g=NULL;		/* Window fr Testmodus == ein	   */
+GLOBAL PSKB   pSkb_g=NULL;		      /*ยจSystem-Kontroll-Block */
+GLOBAL PWKB   pWkbInfo_g=NULL;		/* Window fรผr Testmodus == ein	   */
 IMPORT BOOL boInitVars_g;			     /* Erst-Initialisierung */
 IMPORT SWORD wCSInd_g;
 IMPORT SWORD wVioMode_g;
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ      Globale Daten, die aus der Toolbox importiert werden               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-  บ      Konstanten &  modul-globale Variablen  &  Array - Deklaration      บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
-  บ      Funktions-Prototypem                                               บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘      Globale Daten, die aus der Toolbox importiert werden               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+  โ•‘      Konstanten &  modul-globale Variablen  &  Array - Deklaration      โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
+  โ•‘      Funktions-Prototypem                                               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define       INFO_ZEILE      24
 
 #define       int_nr   0x1c
@@ -47,7 +47,7 @@ MGLOBAL BOOL  boMnSchatten_m = JA;
 MGLOBAL SWORD  wMnRahmen_m = RT_EEEE;
 
 MGLOBAL PSSTR  apstrSteuerZeile_m[1000];	     /* Steuert Bildfolge    */
-// MGLOBAL FPWORD fpwScreenBuffer=0L;			/* Puffer fr alten	*/
+// MGLOBAL FPWORD fpwScreenBuffer=0L;			/* Puffer fรผr alten	*/
 MGLOBAL SWORD  awScreenBuffer[2001];		     /* 2000 WORDs	     */
 MGLOBAL SWORD  wVi_Mode=0;
 MGLOBAL CHAR  strFertig[] = "Ausgabe beendet.";
@@ -55,36 +55,36 @@ MGLOBAL CHAR  strWeiter[] = "Weiter mit jeder Taste...";
 MGLOBAL CHAR  acMode_m='e';
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ     Grund-Initialisierungen  == Programmstart                           บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘     Grund-Initialisierungen  == Programmstart                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 SWORD main (SWORD argc, PSSTR argv[])
 {
 SWORD	wNr;
 
-boInitVars_g=JA;	// Temporr um Btrieve-Fehlerdatei in DL_ERROR.CPP
-// i_InitVars();	// nicht laden zu mssen und Platz zu sparen.
+boInitVars_g=JA;	// Temporรคr um Btrieve-Fehlerdatei in DL_ERROR.CPP
+// i_InitVars();	// nicht laden zu mรผssen und Platz zu sparen.
 
 wVioMode_g = Vi_GetMode();	  // normalerweise   // Videomodus bestimmen
 if(wCSInd_g == NICHT_INIT)	  // in i_InitVars() // Ist schon eine Farb-
   {						     /* palette initial. ?   */
-  if(wVioMode_g == MONOCHROM)			     /* Standardpalette fr  */
+  if(wVioMode_g == MONOCHROM)			     /* Standardpalette fรผr  */
     wCSInd_g = MNU_PAL_MONO;			     /* Monochrom-Modus      */
-  else						     /* Standardpalette fr  */
+  else						     /* Standardpalette fรผr  */
     wCSInd_g = MNU_PAL_BLAU;			     /* alle anderen Modi    */
   }
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      PROGRAMMAUFRUF BERPRFEN                         บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      PROGRAMMAUFRUF รBERPRรFEN                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 if (argc < 2 || argc > 3)
     {
     printf ("\a\n!!! Fehler:"
-	    "\nWINware-CASEbox Prsentationsprogramm Rel. 1.10"
+	    "\nWINware-CASEbox Prรคsentationsprogramm Rel. 1.10"
 	    "\nSyntax: PRESENT <Steuerdatei> [<Bildschirmadapter>]\n"
 	    "\nBereich: <Steuerdatei>       = DOS-FILE-SYNTAX\n"
-	    "\nBereich: <Bildschirmadapter> = e fr EGA"
-	    "\n                             = h fr HERCULES\n"
+	    "\nBereich: <Bildschirmadapter> = e fรผr EGA"
+	    "\n                             = h fรผr HERCULES\n"
 	    "\nBeispiel: PRESENT CASEbox e\n");
     exit (-1);
     }
@@ -92,7 +92,7 @@ if (argc < 2 || argc > 3)
 if(argc > 2)
   acMode_m = argv[2][0];
 
-Vi_Spza(' ', NORMAL);				/* Bildschirm l”schen	*/
+Vi_Spza(' ', NORMAL);				/* Bildschirm lรถschen	*/
 
 Read_SteuerDatei(argv[1]);
 
@@ -109,23 +109,23 @@ for(wNr=1; wNr<1000; )
     i_Input(&wNr);				     /* auf Taste warten     */
   }
 
-Vi_Spza(' ', NORMAL);				/* Bildschirm l”schen	*/
+Vi_Spza(' ', NORMAL);				/* Bildschirm lรถschen	*/
 return (OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Zeige_Meldung ()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Zeigt Meldung							    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Zeige_Meldung ()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Zeigt Meldung							    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD Zeige_Meldung(SWORD wZeile, PSSTR pstrText)
 {
 if(wVi_Mode == 0)				     /* den aktuellen Video- */
    wVi_Mode == Vi_GetMode();			     /* Modus ermitteln      */
 
-Vi_Swza(0, wZeile, 80, 1,' ', BLAU<<4 | WEISS);      /* Zeile l”schen	     */
+Vi_Swza(0, wZeile, 80, 1,' ', BLAU<<4 | WEISS);      /* Zeile lรถschen	     */
 Vi_Ss( 0, wZeile, pstrText);
 Vi_Ss(20, wZeile, strWeiter);
 Vi_SetCursorPos(21 + strlen(strWeiter), wZeile);
@@ -143,11 +143,11 @@ return(OK);
 
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Zeige_Bild ()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Zeigt Bild								    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Zeige_Bild ()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Zeigt Bild								    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD Zeige_Bild(PSWORD pwNr)
 {
@@ -164,7 +164,7 @@ else
   sprintf(strBild, "%s.EGA", apstrSteuerZeile_m[*pwNr]);
 
 
-if(!(pFileHandle=fopen(strBild, "rb")) )	      /* Bild - Datei ”ffnen  */
+if(!(pFileHandle=fopen(strBild, "rb")) )	      /* Bild - Datei รถffnen  */
   {
   PSSTR apstrText[25];
 
@@ -173,14 +173,14 @@ if(!(pFileHandle=fopen(strBild, "rb")) )	      /* Bild - Datei ”ffnen  */
     Ut_SchreibArray(apstrText,
        strLetztesBild,
        "  war das letzte Bild",
-       "  in dieser Prsentation.", _N );
+       "  in dieser Prรคsentation.", _N );
 
     *pwNr=0;
     }
   else
     {
     Ut_SchreibArray(apstrText,
-       "Prsentation kann nicht",
+       "Prรคsentation kann nicht",
        "gestartet werden, weil",
        "das erste Bild fehlt:",
        strBild, _N );
@@ -197,7 +197,7 @@ if(!(pFileHandle=fopen(strBild, "rb")) )	      /* Bild - Datei ”ffnen  */
 fread(awScreenBuffer, 2, 2000, pFileHandle);	/* Lies Bild-Datei	*/
 
 
-if( fclose(pFileHandle) )			     /* Bild-Datei schlieแen */
+if( fclose(pFileHandle) )			     /* Bild-Datei schlieรen */
   {
   printf ("\nBild-Datei <%s> kann nicht "
     "geschlossen werden", strBild);
@@ -209,11 +209,11 @@ return(OK);
 }
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ Read_SteuerDatei()							    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ SteuerDatei ”ffnen, lesen, schlieแen				    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ Read_SteuerDatei()							    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ SteuerDatei รถffnen, lesen, schlieรen				    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD Read_SteuerDatei(PSSTR pstrFile)
 {
@@ -221,9 +221,9 @@ SREGISTER i, j;
 FILE  *pFileInput;
 CHAR  strLine[TB_MAX];
 
-if ( !(pFileInput = fopen(pstrFile, "r")) )   /* Eingabe - Datei ”ffnen */
+if ( !(pFileInput = fopen(pstrFile, "r")) )   /* Eingabe - Datei รถffnen */
    {
-   printf ("\nEingabe-Datei <%s> kann nicht ge”ffnet werden !!\n", pstrFile);
+   printf ("\nEingabe-Datei <%s> kann nicht geรถffnet werden !!\n", pstrFile);
    exit (ERROR);
    }
 
@@ -248,7 +248,7 @@ for(i=0; fgets (strLine, TB_MAX, pFileInput); i++)    /* Lies und verweile wenn 
 apstrSteuerZeile_m[i]=NULL;
 
 
-if ( fclose(pFileInput) )	       /* Eingabe - Datei schlieแen */
+if ( fclose(pFileInput) )	       /* Eingabe - Datei schlieรen */
    {
    printf ("\nEingabe-Datei <%s> kann nicht geschlossen werden !!\n", pstrFile);
    exit (ERROR);
@@ -259,11 +259,11 @@ return(OK);
 
 
 
-/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ i_Input ()								    บ
-  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
-  บ Wertet die Tastatureingaben aus.					    บ
-  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ i_Input ()								    โ•‘
+  โ•‘ โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ โ•‘
+  โ•‘ Wertet die Tastatureingaben aus.					    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 MGLOBAL
 SWORD  i_Input(PSWORD pwNr)
 {

@@ -1,7 +1,7 @@
 // (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:18:06 - Wed
 
 //  Beispiel 2.4
-//		 Bereichsauflîsungsoperator
+//		 Bereichsaufl√∂sungsoperator
 
 #include <iostream.h>
 

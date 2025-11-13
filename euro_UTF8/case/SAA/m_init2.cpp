@@ -1,12 +1,12 @@
 // (C) WINware Software P.Mayer: letztes Update am 13-Feb-1996
 
 /*.ta M_Init()
-ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  M_Init()                                                                    บ
-ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  M_Init()                                                                    โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-berblick:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+รberblick:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 #include <eur_tool.h>
 SWORD M_Init (pstrApp, apWkbMask[], apstrText[][25], pTextBox[][99],
              pwMasks, pwFirstFieldNumber, awBlocks[][2],
@@ -14,7 +14,7 @@ SWORD M_Init (pstrApp, apWkbMask[], apstrText[][25], pTextBox[][99],
              awInitRecLen[], awRecLen[], pstrFehler)
 
 Parameter:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 PSSTR	  pstrApp	       Zeiger auf das Applikationskennzeichen.
 PWKB     apWkbMask[]          Array von Zeigern auf die Maskenattribute.
 PSSTR	  apstrText[][25]      Array von Zeigern auf den Maskentext.
@@ -22,35 +22,35 @@ PTEXTBOX pTextBox[][99]       Zeiger auf Array mit den Textboxen.
 PSWORD	  pwMasks,	       Zeiger auf Array mit den Maskennummern.
 PSWORD	  pwFirstFieldNumber   Zeiger auf Array mit der ersten Feldnummer
                               jeder Maske.
-SWORD	  awBlocks[][2]        Array mit der Information ber Blocktyp 1.
-SWORD	  awScroll[][4]        Array mit der Scrollinformation fr Blocktyp 1.
+SWORD	  awBlocks[][2]        Array mit der Information รผber Blocktyp 1.
+SWORD	  awScroll[][4]        Array mit der Scrollinformation fรผr Blocktyp 1.
 PSWORD	  pwNbFile	       Zeiger auf die Anzahl der verwendeten Dateien.
 PSSTR	  apstrDatei[]	       Array von Zeigern auf die Dateinamen.
 PSSTR	  apstrRecord[]        Array von Zeigern auf die Dateibuffer.
-SWORD	  awInitRecLen[]       Array mit den min. Datensatzlngen.
-SWORD	  awRecLen[]	       Array mit den akt. Datensatzlngen.
+SWORD	  awInitRecLen[]       Array mit den min. Datensatzlรคngen.
+SWORD	  awRecLen[]	       Array mit den akt. Datensatzlรคngen.
 PSSTR	  pstrFehler	       Zeiger auf die Fehlerinformation.
 
 
 Beschreibung:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 Meldet alle angegebenen Maskennummern aus der Bibliothek , die durch
-das in ฏpstrAppฎ bergebene Applikationskennzeichen festgelegt ist, an.
-Die Masken k”nnen erst danach aufgerufen werden.
-M_Init () speichert in der ฏTextboxฎ-Struktur alle fr den Interpreter
+das in ยปpstrAppยซ รผbergebene Applikationskennzeichen festgelegt ist, an.
+Die Masken kรถnnen erst danach aufgerufen werden.
+M_Init () speichert in der ยปTextboxยซ-Struktur alle fรผr den Interpreter
 wichtigen Informationen ab, damit dieser Sie nicht mehr aus der Bibliothek
-lesen muแ.
-Aus diesem Grund mssen alle Masken, die im Programm(teil) verwendet werden
+lesen muร.
+Aus diesem Grund mรผssen alle Masken, die im Programm(teil) verwendet werden
 sollen, zuvor einmal angemeldet werden. Es ist ein wiederholten Aufruf
-von M_Init () im gleichen Programm(teil) m”glich.
-Es ist m”glich, die Masken bereits vor Start des nutzenden Programmes von
+von M_Init () im gleichen Programm(teil) mรถglich.
+Es ist mรถglich, die Masken bereits vor Start des nutzenden Programmes von
 einem Initialisierungs- oder Menu-Programm anzumelden.
 Ferner werden durch M_Init () auch allgemeine Initialisierungen vorgenommen
 die direkt mit den Masken nichts zu tun haben. Durch einen Aufruf von
-M_Init wird den zu den Masken geh”rigen Dateibuffern Speicherplatz
-zugewiesen und die Gr”แe der aufrufenden Funktion mitgeteilt.
-Da diese Variablen in fast allen Tool-Routinen ben”tigt wird, ist es ratsam
-M_Init () als eine der ersten Routinen berhaupt aufzurufen.
+M_Init wird den zu den Masken gehรถrigen Dateibuffern Speicherplatz
+zugewiesen und die Grรถรe der aufrufenden Funktion mitgeteilt.
+Da diese Variablen in fast allen Tool-Routinen benรถtigt wird, ist es ratsam
+M_Init () als eine der ersten Routinen รผberhaupt aufzurufen.
 
 
 Versorgung:
@@ -62,37 +62,37 @@ Versorgung:
                     Maskennummern aus der Bibliothek.
       pstrFehler:   Zeiger auf die Fehlerinformation, die beim Auftreten
                     eines Fehlers oder beim Programmablauf im Testmodus
-                    im Fehlerfenster zustzlich angezeigt werden soll.
+                    im Fehlerfenster zusรคtzlich angezeigt werden soll.
                     Sie dient zur eindeutigen Feststellung des Ortes
                     im Programm, an dem der Fehler aufgetreten ist.
 
    Ausgang:
-      apWkbMask:    Ein Array von Zeigern auf sog. ฏWindowkontrollbl”ckeฎ.
-                    Diese werden vom internen Windowmanager ben”tigt.
+      apWkbMask:    Ein Array von Zeigern auf sog. ยปWindowkontrollblรถckeยซ.
+                    Diese werden vom internen Windowmanager benรถtigt.
       apstrText:    Ein Array von Zeigern auf den auszugebenden Maskentext.
-      pTextBox:     Ein Array von Zeigern auf die ฏTextboxฎ-Struktur,die
-                    alle fr den Interpreter wichtigen Informationen enthlt.
+      pTextBox:     Ein Array von Zeigern auf die ยปTextboxยซ-Struktur,die
+                    alle fรผr den Interpreter wichtigen Informationen enthรคlt.
       pwFirstFieldNumber : Ein Zeiger auf ein Array mit der ersten
                     anzuspringenden Feldnummer jeder Maske.
       awBlocks:     Ein Array mit den Blockinformationen zum Blocktyp 1.
       awScroll:     Ein Array mit der Scrollinformation zum Blocktyp 1.
       pwNbFile:     Ein Zeiger auf die Anzahl der initialisierten Dateibuffer.
-      apstrDatei:   Ein Array von Zeigern auf die zu ”ffnenden Dateinamen.
-      apstrRecord:  Ein Array von Zeigern auf die fr die internen Dateibuffer
+      apstrDatei:   Ein Array von Zeigern auf die zu รถffnenden Dateinamen.
+      apstrRecord:  Ein Array von Zeigern auf die fรผr die internen Dateibuffer
                     reservierten Speicherbereiche.
-      awInitRecLen: Ein Array mit den minimalen Gr”แen der Dateibuffer.
-      awRecLen:     Ein Array mit den aktuellen Gr”แen der Dateibuffer.
-                    Diese Werte sind naturgemแ beim Verlassen der Funktion
+      awInitRecLen: Ein Array mit den minimalen Grรถรen der Dateibuffer.
+      awRecLen:     Ein Array mit den aktuellen Grรถรen der Dateibuffer.
+                    Diese Werte sind naturgemรคร beim Verlassen der Funktion
                     M_Init () gleich der im Array awInitRecLen.
 
 
-Rckgabewert:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Rรผckgabewert:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 SWORD  Fehlerinformation OK/ERROR
 
 
 Benutzte globale Variablen (R/W):
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 Variablen (R/W):  - aCS_g[]    (R)           - boTestModus_g (R)
                   - wCSInd_g   (R)           - strExe_g      (R)
                   - strDat_g   (R)           - strExt_g      (R)
@@ -101,23 +101,23 @@ Variablen (R/W):  - aCS_g[]    (R)           - boTestModus_g (R)
 REM .de \euro\demo\dmohilf1.c
 .te*/
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         DEKLARATIONS-DATEIEN                             บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         DEKLARATIONS-DATEIEN                             โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define NDEBUG 1                                       /* Checks ausschalten  */
 #include <stdio.h>
 #include <string.h>
 #include <process.h>                                   /*  fuer execl()       */
 #include <eur_tool.h>
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ              GLOBALE VARIABLEN, DEFINITION UND REFERENZEN                บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘              GLOBALE VARIABLEN, DEFINITION UND REFERENZEN                โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT COLORSET aCS_g[5];
 IMPORT SWORD	 wCSInd_g;
 IMPORT PSSTR	pstrDataBuffer_g;
 IMPORT CHAR	acHlpFile_g[HLPFL];		 /* Name der Hilfedatei / _MSK 0 */
-IMPORT CHAR	acHlpKey_g[HLPKEY];		  /* Hilfstext-Schlssel / 2x[F1] */
+IMPORT CHAR	acHlpKey_g[HLPKEY];		  /* Hilfstext-Schlรผssel / 2x[F1] */
 IMPORT BOOL     boTestModus_g;              /* -"-                          */
 IMPORT PWKB	pWkbInfo_g;
 IMPORT ERRINFO	errInfo_g;
@@ -126,9 +126,9 @@ IMPORT SLONG	 lBlockVer_g;			      /* 0==Kein Block	      */
 						     /* BROWSE	 2==&BROWSE  */
 						     /* BLK_TYP2 4==mbc.exe  */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE FUNKTIONEN                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE FUNKTIONEN                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL VOID iM_Init(PSSTR, SWORD, SWORD[][20], CHAR[], PSSTR, PWKB[],
 	      PSSTR[][25], PSSTR[][25], PTEXTBOX[][99], PSWORD,
 	      PSWORD, SWORD[][2], SWORD[][4], PSSTR[],
@@ -138,9 +138,9 @@ STATIC PTEXTBOX SetTextBox(PTEXTBOX, SWORD, SWORD, SWORD, SWORD,
 		       SWORD, SWORD, BOOL, SWORD, SWORD, SWORD, SWORD);
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define RECMATCH   1
 #define REFMATCH   2
 #define ADDMATCH   4
@@ -161,14 +161,14 @@ typedef struct tagFLAG
 
 IMPORT REC_INFO_MC *apRecInfo_m[20], *pInfoLauf_m;   // aus m_init.cpp
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                          FUNKTIONS-DEFINITION                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ iM_Init()								     บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                          FUNKTIONS-DEFINITION                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘ iM_Init()								     โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID iM_Init(PSSTR pstrFileBlock, SWORD wM, SWORD awDateiNummer[][20],
 	      CHAR acVerzeichnisName[], PSSTR pstrApp, PWKB apWkbMask[],
@@ -212,20 +212,20 @@ wRetCode=BTRV(B_GET_EQ, pstrFileBlock,
   pstrDataBuffer_g, &wBufLen, strMaskKey, 0);
 
 sprintf(strError,"M_Init(B_GET_EQ/%s), - "	     /* 		     */
-  "Schlssel: %s",pstrFehler,strMaskKey,0);	  /*			  */
+  "Schlรผssel: %s",pstrFehler,strMaskKey,0);	  /*			  */
 Dl_ErrorHandler(wRetCode, strError, _F, _L, 0);      /* 		     */
 
 pstrPos=pstrDataBuffer_g+ 85;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MASKENTEXT-ZUORDNUNG                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MASKENTEXT-ZUORDNUNG                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 for(i=0; *pstrPos; i++)
   {
   if(i < 25)
     {/* SLONG lBlock=BLOCK, lBrowse=BROWSE;
-    if(lBlockVer_g&lBrowse)  wird erst spter belegt */
+    if(lBlockVer_g&lBrowse)  wird erst spรคter belegt */
     Ut_Calloc(apstrBrowseText[wM][i], 121, CHAR);
 
     Ut_Calloc(apstrText[wM][i], 121, CHAR);
@@ -240,9 +240,9 @@ apstrBrowseText[wM][i]=NULL;		  /* Null-Pointer Felder */
 pstrPos++;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                    WINDOWEINRICHTEN-ZUORDNUNG                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                    WINDOWEINRICHTEN-ZUORDNUNG                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 strcpy(strBuffer, pstrPos);
 pstrPos=strchr(pstrPos, '\0') + 1;
 
@@ -256,10 +256,10 @@ sscanf(&strBuffer[24], "%3d", &wInnenAttr);
 sscanf(&strBuffer[28], "%3d", &wTitelPos);
 sscanf(&strBuffer[32], "%s",  strTitel);
 
-{PSSTR pstr=strrchr(strTitel, '๙');
+{PSSTR pstr=strrchr(strTitel, 'ยจ');
 if(pstr) {*pstr='\0'; cColor=*(pstr+1);}}
 
-if(*strTitel != 'ฤ')
+if(*strTitel != 'โ”€')
   sprintf(&strTitel[strlen(strTitel)], " - %1d/%1d", wM+1, wMaxMask+1);
 
 if((wM % 2 && wBreite < 80 && cColor!='1') || cColor=='0')
@@ -277,7 +277,7 @@ else
 
 apWkbMask[wM] = Wi_Einrichten(wSpalte, wZeile, wBreite, wHoehe);
 
-if(*(strTitel+1) != 'ฤ' || *strTitel	!= 'ฤ')
+if(*(strTitel+1) != 'โ”€' || *strTitel	!= 'โ”€')
   Wi_SetTitel(apWkbMask[wM], strTitel, wTitelPos);
 
 Wi_SetAttri(apWkbMask[wM], wTitelAttr, wRahmenAttr, wInnenAttr);
@@ -286,9 +286,9 @@ if(wBreite < 78 && wHoehe < 22)
   Wi_SchattenEin(apWkbMask[wM]);
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                       TEXTBOX-ZUORDNUNG                                  บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                       TEXTBOX-ZUORDNUNG                                  โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 for(i=0; *pstrPos; i++)
   {
   strcpy(strBuffer, pstrPos);
@@ -348,7 +348,7 @@ for(i=0; *pstrPos; i++)
 
       for(k=0; k < 20; k++)
 	{
-	if(*pstrHilf != 'þ')
+	if(*pstrHilf != 'โ– ')
 	  {sscanf(pstrHilf, "%3d", &ptempinfo->abFormat[k]);
 	  pstrHilf += 4;}
 	else
@@ -458,7 +458,7 @@ for(i=0; *pstrPos; i++)
   }  /* end for */
 
 
-*(pwFirstFieldNumber+wM)=			     /* +wM ist fr alle Msk */
+*(pwFirstFieldNumber+wM)=			     /* +wM ist fรผr alle Msk */
   pTextBox[wM][i-1]->wSequenz;			     /* aus letzter Textbox */
 
 /*{BOOL boTest=boTestModus_g; boTestModus_g=JA;
@@ -477,9 +477,9 @@ Ut_Free(pTextBox[wM][i-1]);			      /* letzte Box freigeb. */
 pstrPos++;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                       REF_BOX-ZUORDNUNG                                  บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                       REF_BOX-ZUORDNUNG                                  โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 for(i=98; *pstrPos; i--)
   {
   strcpy (strBuffer, pstrPos);
@@ -538,7 +538,7 @@ for(i=98; *pstrPos; i--)
 
        for (k=0; k < 20; k++)
 	 {
-	  if (*pstrHilf != 'þ')
+	  if (*pstrHilf != 'โ– ')
 	    {
 	    sscanf (pstrHilf, "%3d", &ptempinfo->abFormat[k]);
 	    pstrHilf += 4;
@@ -669,9 +669,9 @@ for(i=98; *pstrPos; i--)
 
 pstrPos++;
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MATCHCODE ZUORDNEN                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MATCHCODE ZUORDNEN                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 Ut_Calloc(apRecInfo_m[wM], 1, REC_INFO_MC);
 
 for(i=0, pInfoLauf_m = apRecInfo_m[wM]; *pstrPos; i++)
@@ -710,9 +710,9 @@ for(i=0, pInfoLauf_m = apRecInfo_m[wM]; *pstrPos; i++)
 pstrPos++;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                           DATEIEN-ZUORDNUNG                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                           DATEIEN-ZUORDNUNG                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 for(i=0; *pstrPos; i++)
   {
@@ -768,9 +768,9 @@ for(i=0; *pstrPos; i++)
 pstrPos++;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      INDEXBEFEHLE-ZUORDNUNG                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      INDEXBEFEHLE-ZUORDNUNG                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 if(!*ppstrIndexKey)
   {
@@ -781,9 +781,9 @@ if(!*ppstrIndexKey)
 pstrPos = strchr(pstrPos, '\0') + 1;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      BLOCKBEFEHLE-ZUORDNUNG                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      BLOCKBEFEHLE-ZUORDNUNG                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 strcpy(strBuffer, pstrPos);
 
 if(!strstr(strBuffer, "(null)"))
@@ -833,9 +833,9 @@ if(!strstr(strBuffer, "(null)"))
 pstrPos=strchr(pstrPos, '\0') + 1;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      MASK-HILFE-ZUORDNUNG                                บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      MASK-HILFE-ZUORDNUNG                                โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 pstrTemp=strstr(pstrPos, "~SMH");
 
 if(pstrTemp && wM==0)
@@ -846,7 +846,7 @@ if(pstrTemp && wM==0)
 
   memcpy(acHlpFile_g, pstrPos, HLPFL); /* Default-Name der Hilfedatei 2x[F1] */
   pstrPos = strchr(pstrPos, '\0') + 1;
-  memcpy(acHlpKey_g, pstrPos, HLPKEY); /* Default-Schlssel bei 2x[F1]         */
+  memcpy(acHlpKey_g, pstrPos, HLPKEY); /* Default-Schlรผssel bei 2x[F1]         */
   pstrPos = strchr(pstrPos, '\0') + 1;
   }
 
@@ -857,16 +857,16 @@ if(pstrTemp && wM==0)
   boTestModus_g=boTest;}*/
 
 return;
-} /* ฏฏฏ Ende der Informationszuordnung fr alle Bildschirmmasken !!! */
+} /* ยปยปยป Ende der Informationszuordnung fรผr alle Bildschirmmasken !!! */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    SetTextBox                                            บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                          บ
-  บ  Beschreibung:     Diese Funktion                                        บ
-  บ                                                                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    SetTextBox                                            โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                          โ•‘
+  โ•‘  Beschreibung:     Diese Funktion                                        โ•‘
+  โ•‘                                                                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 PTEXTBOX SetTextBox(PTEXTBOX pT, SWORD wAttri, SWORD wFensterS, SWORD wFensterZ,
 		SWORD wFensterB, SWORD wCursorS, SWORD wMaxL, BOOL boInsert,
@@ -893,7 +893,7 @@ for (j=0; j < strlen(pstrDataBuffer_g); j++)
   if (j%2)
     pstrDataBuffer_g[j] = (CHAR) tolower(pstrDataBuffer_g[j]);
 
-Wi_TestPrintf(pWkbInfo_g,   ฏz.B: KsAmSv fr mAsK vSฎ
+Wi_TestPrintf(pWkbInfo_g,   ยปz.B: KsAmSv fรผr mAsK vSยซ
      "\npstrDataBuffer_g=%s", pstrDataBuffer_g);
 
 --------------------------------------------------------------------------- */

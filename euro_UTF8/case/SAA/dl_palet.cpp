@@ -1,69 +1,69 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Dl_FarbPalette()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Dl_FarbPalette()							       º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Dl_FarbPalette()							       â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_dlg.h>
 SWORD Dl_FarbPalette();
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion erh„lt keine Argumente.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion erhÃ¤lt keine Argumente.
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Mit dieser Funktion k”nnen Sie dem Anwender ein Dialogfeld zur Verfgung
-stellen, in dem er die Farbpalette ausw„hlen kann, mit der die Mens und die
-Dialogfelder angezeigt werden. Diese M”glichkeit sieht der SAA-Standard vor.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Mit dieser Funktion kÃ¶nnen Sie dem Anwender ein Dialogfeld zur VerfÃ¼gung
+stellen, in dem er die Farbpalette auswÃ¤hlen kann, mit der die MenÃ¼s und die
+Dialogfelder angezeigt werden. Diese MÃ¶glichkeit sieht der SAA-Standard vor.
 
 Die Auswahl der Farbpalette geschieht mit den Cursortasten oben und unten oder
-mit [Tab] und [Shift][Tab]. Nach der Aktivierung der Eingabe-Schaltfl„chen wird
-die die Ausgew„hlte Palette eingestellt. Mit der [F1]-Schaltfl„che kann der
-Anwender Hilfe anfordern, die von der Toolbox zur Verfgung gestellt wird.
+mit [Tab] und [Shift][Tab]. Nach der Aktivierung der Eingabe-SchaltflÃ¤chen wird
+die die AusgewÃ¤hlte Palette eingestellt. Mit der [F1]-SchaltflÃ¤che kann der
+Anwender Hilfe anfordern, die von der Toolbox zur VerfÃ¼gung gestellt wird.
 
-Eine aktive Maus wird von der funktion automatisch untersttzt. Der Anwender
-kann dann eine Palette ausw„hlen, indem er den Mauszeiger auf eines der runden
-Optionsfelder bewegt und dort die linke Maustaste bet„tigt. Die Schaltfl„chen
-k”nnen mit der Maus aktiviert werden, indem der Mauszeiger auf die gewnschte
-Schaltfl„che bewegt und dort die linke Maustaste gedrckt wird.
+Eine aktive Maus wird von der funktion automatisch unterstÃ¼tzt. Der Anwender
+kann dann eine Palette auswÃ¤hlen, indem er den Mauszeiger auf eines der runden
+Optionsfelder bewegt und dort die linke Maustaste betÃ¤tigt. Die SchaltflÃ¤chen
+kÃ¶nnen mit der Maus aktiviert werden, indem der Mauszeiger auf die gewÃ¼nschte
+SchaltflÃ¤che bewegt und dort die linke Maustaste gedrÃ¼ckt wird.
 
-Der Anwender kann aus fnf Farbpaletten ausw„hlen.
-Bei der Auswahl wird das Dialogfeld in der angew„hlten Farbpalette dargestellt.
+Der Anwender kann aus fÃ¼nf Farbpaletten auswÃ¤hlen.
+Bei der Auswahl wird das Dialogfeld in der angewÃ¤hlten Farbpalette dargestellt.
 
-Eine šbersicht ber die in Anlehnung an die SAA-Empfehlung definierten Farb-
+Eine Ãœbersicht Ã¼ber die in Anlehnung an die SAA-Empfehlung definierten Farb-
 paletten finden Sie im Anhang C.
 
-Bei einer Neuauswahl werden die eventuell bereits aufgebauten Menfenster mit
-der neuen Farbe aktualisiert und eine eventuell aktive Menzeile neu angezeigt.
-Zur nderung der Farbpalette verwendet Dl_Farbpalette() die Funktion
+Bei einer Neuauswahl werden die eventuell bereits aufgebauten MenÃ¼fenster mit
+der neuen Farbe aktualisiert und eine eventuell aktive MenÃ¼zeile neu angezeigt.
+Zur Ã„nderung der Farbpalette verwendet Dl_Farbpalette() die Funktion
 Mn_SetPalette().
 
 Durch den Einsatz der Funktionen Dl_GetInstallation() und Dl_PutInstallation()
-k”nnen Sie die vom Anwender eingestellte Farbpalette beim Programmstart ein-
+kÃ¶nnen Sie die vom Anwender eingestellte Farbpalette beim Programmstart ein-
 lesen und vor dem Ende des Programms sichern lassen. Bitte sehen Sie dazu die
 Beschreibung zu diesen beiden Funktionen.
 
-Die Werte s„mtlicher Farbpaletten sind in der Datei "e_global.c" definiert.
-Wenn Sie die Farben fr eine der Paletten „ndern wollen, nehmen Sie Ihre
-nderungen in dieser Datei vor und tauschen dann die neue Objekt-Datei nach
+Die Werte sÃ¤mtlicher Farbpaletten sind in der Datei "e_global.c" definiert.
+Wenn Sie die Farben fÃ¼r eine der Paletten Ã¤ndern wollen, nehmen Sie Ihre
+Ã„nderungen in dieser Datei vor und tauschen dann die neue Objekt-Datei nach
 der Kompilation gegen die Ursprungsdatei in der Bibliothek aus.
 
 .ff
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD Fehlerinformation: DLG_ERROR  - Dialog konnte nicht angezeigt werden.
-                        DLG_RETURN - Dialog wurde mit Schaltfl„che EINGABE
+                        DLG_RETURN - Dialog wurde mit SchaltflÃ¤che EINGABE
                                      beendet.
-                        DLG_ESC    - Dialog wurde mit Schaltfl„che ABBRUCH
+                        DLG_ESC    - Dialog wurde mit SchaltflÃ¤che ABBRUCH
                                      beendet.
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 - aCS_g      (R)         - boBeepen_g   (R)       - pstrReturn_g   (R)
 - wCSInd_g   (R/W)       - wVioMode_g   (R)       - pstrEsc_g      (R)
                                                   - pstrF1_g       (R)
@@ -74,37 +74,37 @@ Benutzte globale Variablen (R/W):
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <eur_tool.h>
 #include <stdio.h>
 #include <string.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        KONSTANTEN UND MAKROS                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
-#define SPA  9              /* durch nderung dieser beiden Konstanten kann */
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        KONSTANTEN UND MAKROS                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
+#define SPA  9              /* durch Ã„nderung dieser beiden Konstanten kann */
 #define ZEI  5              /* die Dialog-Box neu positioniert werden, wei- */
-                            /* tere nderungen sind nicht erforderlich      */
+                            /* tere Ã„nderungen sind nicht erforderlich      */
 
-#define BRE 45              /* Breite und H”he der Dialog-Box: drfen       */
-#define HOE 11              /* nicht ge„ndert werden                        */
+#define BRE 45              /* Breite und HÃ¶he der Dialog-Box: dÃ¼rfen       */
+#define HOE 11              /* nicht geÃ¤ndert werden                        */
 
 #define MARKER 7            /* Zeichen zum markieren der aktuellen Palette  */
 
-#define INIT   1000         /* šbergabe an i_ZeigePalette()             */
+#define INIT   1000         /* Ãœbergabe an i_ZeigePalette()             */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
-IMPORT MENU	 aMenus_g[MAXMENUES];		     /* Array mit Mens 	     */
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
+IMPORT MENU	 aMenus_g[MAXMENUES];		     /* Array mit MenÃ¼s 	     */
 
 IMPORT COLORSET  aCS_g[5];		     /* Farbpalette und Index auf    */
 IMPORT SWORD	  wCSInd_g;		     /* Palette 		     */
 
-IMPORT PSSTR	  pstrReturn_g; 	     /* Texte der Schaltfl„chen      */
+IMPORT PSSTR	  pstrReturn_g; 	     /* Texte der SchaltflÃ¤chen      */
 IMPORT PSSTR	  pstrEsc_g;
 IMPORT PSSTR	  pstrF1_g;
 
@@ -115,15 +115,15 @@ IMPORT SWORD	  wAktMnu_g;		     /* aktueller Index zu Menus_g   */
 IMPORT SWORD	  wMausda_g;		     /* Maus im System aktiviert ?   */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
-STATIC	BOOL bWaehlen_m  = JA;			    /* Wahlm”glichkeiten ?  */
-STATIC	PSSTR pstrTitel_m  = "Farbpalette w„hlen";   /* Titelzeile	     */
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
+STATIC	BOOL bWaehlen_m  = JA;			    /* WahlmÃ¶glichkeiten ?  */
+STATIC	PSSTR pstrTitel_m  = "Farbpalette wÃ¤hlen";   /* Titelzeile	     */
 
 STATIC	PSSTR apstrText_m[]=			     /* Text der Auswahl-    */
 {                                                   /* liste                */
-    "( )   f„rbige Palette",
+    "( )   fÃ¤rbige Palette",
     "( )   weisse Palette",
     "( )   blaue Palette",
     "( )   schwarze Palette",
@@ -133,16 +133,16 @@ STATIC	PSSTR apstrText_m[]=			     /* Text der Auswahl-    */
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                     MODULGLOBALE FUNKTIONEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                     MODULGLOBALE FUNKTIONEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	VOID cdecl i_ZeigePalette   (PWKB, SWORD, SWORD);
 STATIC	SWORD cdecl i_PalettenEvent  (PWKB);
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Dl_FarbPalette(VOID)
 {
@@ -151,7 +151,7 @@ SWORD Dl_FarbPalette(VOID)
     PWKB    pWkbDialog;                             /* Zg. Window-Struktur  */
     PMKB    pMkb;
 
-    SWORD    wResult;				     /* fr Rckgabewert     */
+    SWORD    wResult;				     /* fÃ¼r RÃ¼ckgabewert     */
     SWORD    wMausStatus=0;			     /* Mauszeiger an ?      */
     SWORD    wAltePalette;			     /* Inhalt wCSInd_g vor  */
                                                     /* Auswahl              */
@@ -188,9 +188,9 @@ SWORD Dl_FarbPalette(VOID)
         case DLG_RETURN:                            /* Wahl getroffen       */
 	    Wi_Entfernen(pWkbDialog);		    /* Dialog entfernen     */
 
-            if (wAltePalette != wCSInd_g)           /* wenn nderung erfolgt*/
+            if (wAltePalette != wCSInd_g)           /* wenn Ã„nderung erfolgt*/
             {
-                for (i=0; i < MAXMENUES; i++)       /* Palette fr Mens    */
+                for (i=0; i < MAXMENUES; i++)       /* Palette fÃ¼r MenÃ¼s    */
                 {
                     aMenus_g[i].wStatus.wPalette = wCSInd_g;
 
@@ -198,19 +198,19 @@ SWORD Dl_FarbPalette(VOID)
                     {
                         do
                         {
-			    i_Mn_ToBuffer(pMkb,     /* Menfenster im	    */
-                                          i,       /* Puffer „ndern lassen */
+			    i_Mn_ToBuffer(pMkb,     /* MenÃ¼fenster im	    */
+                                          i,       /* Puffer Ã¤ndern lassen */
                                           MNU_AENDERN);
-                            pMkb=pMkb->pNaechster;  /* n„chsten holen       */
+                            pMkb=pMkb->pNaechster;  /* nÃ¤chsten holen       */
                         } while (pMkb != aMenus_g[i].pMkbStart);
                     }
                 }
-                if (wAktMnu_g != NICHT_INIT)        /* Menzeile des akt.   */
-                {                                   /* Mens neu anzeigen   */
-		    i_Mn_GenMenuZeile(wAktMnu_g);   /* Menzeile generieren */
+                if (wAktMnu_g != NICHT_INIT)        /* MenÃ¼zeile des akt.   */
+                {                                   /* MenÃ¼s neu anzeigen   */
+		    i_Mn_GenMenuZeile(wAktMnu_g);   /* MenÃ¼zeile generieren */
                     if (wMausda_g)                  /* wenn Maus da         */
 			wMausStatus=Ms_CursorOff();		/* Zeiger ausschalten	*/
-		    Vi_Sb2w(MENUSPALTE,MENUZEILE,MENULAENGE,1,	/* Menzeile ausgeben	*/
+		    Vi_Sb2w(MENUSPALTE,MENUZEILE,MENULAENGE,1,	/* MenÃ¼zeile ausgeben	*/
                         aMenus_g[wAktMnu_g].fpwMzBuffer);
                     if (wMausda_g && wMausStatus == MSM_WAR_AN)
 			Ms_CursorOn();
@@ -224,32 +224,32 @@ SWORD Dl_FarbPalette(VOID)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_PalettenEvent                Datum: 04.01.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PWKB   pWkb      Zeiger auf Window-Struktur         º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion bearbeitet alle Eingaben fr         º
-  º                    die Dialog-Box.                                     º
-  º                    Je nach Wahl des Anwenders wird von hieraus die     º
-  º                    Dialog-Box in der aktuellen Farbpalette ange-       º
-  º                    zeigt, die Markierung verschoben, das Hilfe-        º
-  º                    Fenster angezeigt oder die Funktion verlassen.      º
-  º                                                                        º
-  º                    Zur Ausgabe wird die Hilfsfunktion                  º
-  º                    i_ZeigePalette() aufgerufen.                        º
-  º                                                                        º
-  º  Rckgabewert:     DLG_RETURN   der Anwender hat die Eingabe-Schalt-   º
-  º                                 fl„che ausgel”st                       º
-  º                                                                        º
-  º                    DLG_ESC      der Anwender hat die Abbruch-Schalt-   º
-  º                                 fl„che ausgel”st                       º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  wCSInd_g  (R/W)                                     º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_PalettenEvent                Datum: 04.01.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PWKB   pWkb      Zeiger auf Window-Struktur         â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion bearbeitet alle Eingaben fÃ¼r         â•‘
+  â•‘                    die Dialog-Box.                                     â•‘
+  â•‘                    Je nach Wahl des Anwenders wird von hieraus die     â•‘
+  â•‘                    Dialog-Box in der aktuellen Farbpalette ange-       â•‘
+  â•‘                    zeigt, die Markierung verschoben, das Hilfe-        â•‘
+  â•‘                    Fenster angezeigt oder die Funktion verlassen.      â•‘
+  â•‘                                                                        â•‘
+  â•‘                    Zur Ausgabe wird die Hilfsfunktion                  â•‘
+  â•‘                    i_ZeigePalette() aufgerufen.                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     DLG_RETURN   der Anwender hat die Eingabe-Schalt-   â•‘
+  â•‘                                 flÃ¤che ausgelÃ¶st                       â•‘
+  â•‘                                                                        â•‘
+  â•‘                    DLG_ESC      der Anwender hat die Abbruch-Schalt-   â•‘
+  â•‘                                 flÃ¤che ausgelÃ¶st                       â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  wCSInd_g  (R/W)                                     â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_PalettenEvent(PWKB pWkb)
 {
@@ -272,8 +272,8 @@ SWORD i_PalettenEvent(PWKB pWkb)
 		case T_A_F:			    /* Hot-Key		    */
 		case 'f':
 		case 'F':
-                     if (bWaehlen_m)                /* wenn Wahl m”glich    */
-                     {                              /* ausgew„hlte Palette  */
+                     if (bWaehlen_m)                /* wenn Wahl mÃ¶glich    */
+                     {                              /* ausgewÃ¤hlte Palette  */
                         wAlt = wCSInd_g;            /* einstellen           */
                         wCSInd_g = 0;
                         i_ZeigePalette(pWkb,        /* Hilfsfunktion aufr.  */
@@ -286,8 +286,8 @@ SWORD i_PalettenEvent(PWKB pWkb)
                 case T_A_W:                         /* Hot-Key              */
                 case 'w':
                 case 'W':
-                     if (bWaehlen_m)                /* wenn Wahl m”glich    */
-                     {                              /* ausgew„hlte Palette  */
+                     if (bWaehlen_m)                /* wenn Wahl mÃ¶glich    */
+                     {                              /* ausgewÃ¤hlte Palette  */
                         wAlt = wCSInd_g;            /* einstellen           */
                         wCSInd_g = 1;
                         i_ZeigePalette(pWkb, wAlt, wCSInd_g);
@@ -297,8 +297,8 @@ SWORD i_PalettenEvent(PWKB pWkb)
 		case T_A_B:			    /* Hot-Key		    */
 		case 'b':
 		case 'B':
-                     if (bWaehlen_m)                /* wenn Wahl m”glich,   */
-                     {                              /* ausgew„hlte Palette  */
+                     if (bWaehlen_m)                /* wenn Wahl mÃ¶glich,   */
+                     {                              /* ausgewÃ¤hlte Palette  */
                         wAlt = wCSInd_g;            /* einstellen           */
                         wCSInd_g = 2;
                         i_ZeigePalette(pWkb, wAlt, wCSInd_g);
@@ -309,11 +309,11 @@ SWORD i_PalettenEvent(PWKB pWkb)
                 case T_A_S:                         /* Hot-Key              */
                 case 's':
                 case 'S':
-                     if (bWaehlen_m)                /* wenn Wahl m”glich    */
+                     if (bWaehlen_m)                /* wenn Wahl mÃ¶glich    */
                      {
                         wAlt = wCSInd_g;            /* alte Palette merken  */
-                        wCSInd_g = 3;               /* Palette „ndern       */
-                        i_ZeigePalette(pWkb, wAlt,  /* Bildschirm „ndern    */
+                        wCSInd_g = 3;               /* Palette Ã¤ndern       */
+                        i_ZeigePalette(pWkb, wAlt,  /* Bildschirm Ã¤ndern    */
                                        wCSInd_g);
                      }
                      break;
@@ -322,22 +322,22 @@ SWORD i_PalettenEvent(PWKB pWkb)
 
                 case T_A_M:                         /* Hot-Key              */
                 case 'm':                           /* monochrom immer      */
-                case 'M':                           /* m”glich              */
-                     wAlt = wCSInd_g;               /* ausgew„hlte Palette  */
+                case 'M':                           /* mÃ¶glich              */
+                     wAlt = wCSInd_g;               /* ausgewÃ¤hlte Palette  */
                      wCSInd_g = 4;                  /* einstellen           */
                      i_ZeigePalette(pWkb, wAlt,
                                     wCSInd_g);
                      break;
 
 
-                case T_DOWN:                        /* n„chste Palette      */
-                case T_TAB:                         /* ausgew„hlt           */
-                     if (bWaehlen_m)                /* wenn Wahl m”glich    */
+                case T_DOWN:                        /* nÃ¤chste Palette      */
+                case T_TAB:                         /* ausgewÃ¤hlt           */
+                     if (bWaehlen_m)                /* wenn Wahl mÃ¶glich    */
                      {
                          if (wCSInd_g < 4)          /* wenn nicht letzte    */
                          {                          /* Option               */
                             wCSInd_g++;             /* Palette inkrement.   */
-                            i_ZeigePalette(pWkb,    /* Bildschirm „ndern    */
+                            i_ZeigePalette(pWkb,    /* Bildschirm Ã¤ndern    */
                                            wCSInd_g-1,
                                            wCSInd_g);
                          }
@@ -351,13 +351,13 @@ SWORD i_PalettenEvent(PWKB pWkb)
 
 
                 case T_SHIFT_TAB:                   /* vorherige Palette    */
-                case T_UP:                          /* ausgew„hlt           */
-                     if (bWaehlen_m)                /* wenn Wahl m”glich    */
+                case T_UP:                          /* ausgewÃ¤hlt           */
+                     if (bWaehlen_m)                /* wenn Wahl mÃ¶glich    */
                      {
                         if (wCSInd_g > 0)           /* wenn nicht oberste   */
                         {                           /* Option               */
                           wCSInd_g--;               /* Palette dekrement.   */
-                          i_ZeigePalette(pWkb,      /* Bildschirm „ndern    */
+                          i_ZeigePalette(pWkb,      /* Bildschirm Ã¤ndern    */
                                           wCSInd_g+1,
                                           wCSInd_g);
                         }
@@ -378,7 +378,7 @@ SWORD i_PalettenEvent(PWKB pWkb)
                 case T_RETURN:                      /* Wahl wurde getroffen */
                      return(DLG_RETURN);            /* Aufrufer informieren */
 
-                default:                            /* nix anderes gltig   */
+                default:                            /* nix anderes gÃ¼ltig   */
                     if (boBeepen_g)                 /* wenn Warnton aktiv   */
                         i_Beep();                   /* beepen               */
              }
@@ -389,23 +389,23 @@ SWORD i_PalettenEvent(PWKB pWkb)
         case EVENT_L_PRESS:                         /* MAUSEVENTS           */
              if (pEvent->wZeile == ZEI+9)           /* Test: Schalfl.-Zeile */
              {
-		if(pEvent->wSpalte > SPA+2 &&	   /* Eingabe-Schaltfl„che */
+		if(pEvent->wSpalte > SPA+2 &&	   /* Eingabe-SchaltflÃ¤che */
 		  pEvent->wSpalte <
 		  SPA+3+(SWORD)strlen(pstrReturn_g))
 		  return(DLG_RETURN);
 
-		if(pEvent->wSpalte > SPA+17 &&	   /* Abbruch-Schaltfl„che */
+		if(pEvent->wSpalte > SPA+17 &&	   /* Abbruch-SchaltflÃ¤che */
 		  pEvent->wSpalte <
 		  SPA+17+(SWORD)strlen(pstrEsc_g))
 		  return(DLG_ESC);
 
-		if(pEvent->wSpalte > SPA+30 &&	   /* Hilfe-Schaltfl„che   */
+		if(pEvent->wSpalte > SPA+30 &&	   /* Hilfe-SchaltflÃ¤che   */
 		  pEvent->wSpalte <
 		  SPA+31+(SWORD)strlen(pstrF1_g))
 		  Dl_HilfeTools(FARBPALETTE);
              }
 
-             else if (bWaehlen_m)                   /* wenn Wahl m”glich    */
+             else if (bWaehlen_m)                   /* wenn Wahl mÃ¶glich    */
              {
                 if (pEvent->wSpalte > SPA+9 &&      /* und Spalte irgendwo  */
                     pEvent->wSpalte < SPA+33)       /* in Auswahlliste      */
@@ -416,7 +416,7 @@ SWORD i_PalettenEvent(PWKB pWkb)
                         wAlt = wCSInd_g;            /* alte Palette merken  */
                         wCSInd_g =                  /* neue Pal. aus Klick- */
                             pEvent->wZeile-(ZEI+3); /* position ermitteln   */
-                        i_ZeigePalette(pWkb,        /* Bildschirm „ndern    */
+                        i_ZeigePalette(pWkb,        /* Bildschirm Ã¤ndern    */
                                        wAlt,
                                        wCSInd_g);
                     }
@@ -435,26 +435,26 @@ SWORD i_PalettenEvent(PWKB pWkb)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_ZeigePalette                 Datum: 04.01.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PWKB  pWkb  Zeiger auf Window-Struktur              º
-  º		       SWORD  wAlt  Alter Paletten-Index		    º
-  º		       SWORD  wNeu  neuer Paletten-Index		    º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion zeigt die Dialogbox in den           º
-  º                    Farben der neuen Palette an, wenn der Wert          º
-  º                    wAlt ungleich wNeu ist.                             º
-  º                    Auáerdem wird dann die alte Markierung gel”scht     º
-  º                    und der Marker an die neue Position gesetzt.        º
-  º                                                                        º
-  º  Rckgabewert:     Diese Funktion hat keinen Rckgabewert.             º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  - aCS_g     (R)                                     º
-  º                    - wCSInd_g  (R)                                     º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_ZeigePalette                 Datum: 04.01.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PWKB  pWkb  Zeiger auf Window-Struktur              â•‘
+  â•‘		       SWORD  wAlt  Alter Paletten-Index		    â•‘
+  â•‘		       SWORD  wNeu  neuer Paletten-Index		    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion zeigt die Dialogbox in den           â•‘
+  â•‘                    Farben der neuen Palette an, wenn der Wert          â•‘
+  â•‘                    wAlt ungleich wNeu ist.                             â•‘
+  â•‘                    AuÃŸerdem wird dann die alte Markierung gelÃ¶scht     â•‘
+  â•‘                    und der Marker an die neue Position gesetzt.        â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Diese Funktion hat keinen RÃ¼ckgabewert.             â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  - aCS_g     (R)                                     â•‘
+  â•‘                    - wCSInd_g  (R)                                     â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_ZeigePalette(PWKB pWkb, SWORD wAlt, SWORD wNeu)
 {
@@ -464,10 +464,10 @@ VOID i_ZeigePalette(PWKB pWkb, SWORD wAlt, SWORD wNeu)
     if (wAlt != wNeu)                               /* wenn neue Palette    */
     {
         if (wAlt != INIT)                           /* nicht beim erst. Mal */
-	    Wi_Sz(10, wAlt+2, 32);		    /* alten Marker l”schen */
+	    Wi_Sz(10, wAlt+2, 32);		    /* alten Marker lÃ¶schen */
 
 	i_Dl_Init(SPA, ZEI, BRE, HOE,		    /* Attribute der Dialog-*/
-                  pstrTitel_m,                      /* box berschreiben    */
+                  pstrTitel_m,                      /* box Ã¼berschreiben    */
                   pWkb,                             /* lassen               */
                   SF_STANDARD,
                   DLG_INFO);

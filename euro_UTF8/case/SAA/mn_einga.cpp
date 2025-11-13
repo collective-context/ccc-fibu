@@ -1,147 +1,147 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Mn_Eingabe()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Mn_Eingabe()                                                                º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Mn_Eingabe()                                                                â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_mnu.h>
 VOID Mn_Eingabe(pEvent);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 EVENT   pEvent   Zeiger auf Eventstruktur
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion ist das Hauptsteuermodul fr den Menmanager. Sie fungiert wie
-ein Filter zwischen der Eingabefunktion ¯Ut_Event()® und dem Programmierer. Alle
-Tastatur- und Mauseingaben werden daraufhin berprft, ob der Anwender mit
-seiner Eingabe die Menauswahl aktiviert hat. Er kann dies mit den Tasten ALT,
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion ist das Hauptsteuermodul fÃ¼r den MenÃ¼manager. Sie fungiert wie
+ein Filter zwischen der Eingabefunktion Â»Ut_Event()Â« und dem Programmierer. Alle
+Tastatur- und Mauseingaben werden daraufhin Ã¼berprÃ¼ft, ob der Anwender mit
+seiner Eingabe die MenÃ¼auswahl aktiviert hat. Er kann dies mit den Tasten ALT,
 F10 oder mit einem der von Ihnen festgelegten Hotkeys machen. Mit der Maus wird
-das Men durch Klichen auf einem der Mentitel in der Menzeile aktiviert.
-Diese šberprfung kann zu zwei verschiedenen Ergebnissen fhren:
+das MenÃ¼ durch Klichen auf einem der MenÃ¼titel in der MenÃ¼zeile aktiviert.
+Diese ÃœberprÃ¼fung kann zu zwei verschiedenen Ergebnissen fÃ¼hren:
 
-1. Das Men wurde nicht aktiviert. In diesem Fall wird der von ¯Ut_Event()®
+1. Das MenÃ¼ wurde nicht aktiviert. In diesem Fall wird der von Â»Ut_Event()Â«
    ermitelte Event umgehend an Ihr Progeamm (bzw. die aufrufende Funktion
    weitergegeben.
 
-2. Das Men wurde aktiviert. In diesem Fall wrden alle witeren Eingaben von
-   ¯Mn_Eingabe()® ausgewertet und von dort die Steuerung der Menauswahl durch
-   den Anwender vorgenommen. Der Rcksprung an die aufrufende Funktion erfolgt
-   erst dann, wenn im Men eine Auswahl vorgenommen oder die Auswahl abgebrochen
+2. Das MenÃ¼ wurde aktiviert. In diesem Fall wrden alle witeren Eingaben von
+   Â»Mn_Eingabe()Â« ausgewertet und von dort die Steuerung der MenÃ¼auswahl durch
+   den Anwender vorgenommen. Der RÃ¼cksprung an die aufrufende Funktion erfolgt
+   erst dann, wenn im MenÃ¼ eine Auswahl vorgenommen oder die Auswahl abgebrochen
    wurde.
 
-Der Datentyp EVENT ist in der Datei ¯eur_utl.h® definiert und besitzt folgendes
+Der Datentyp EVENT ist in der Datei Â»eur_utl.hÂ« definiert und besitzt folgendes
 Strukturmuster:
 
 typedef struct
 {
    SWORD   wArt;       / *  Eventart					* /
-   SWORD   wTaste;     / *  gedrckte Taste				* /
+   SWORD   wTaste;     / *  gedrÃ¼ckte Taste				* /
    SWORD   wKbflags;   / *  Zustand der Tastatur			* /
    SWORD   wButton;    / *  Zustand der Mausbuttons			* /
    SWORD   wSpalte;    / *  Position des Maus-				* /
    SWORD   wZeile;     / *  cursors					* /
-   SWORD   wOption;    / *  gew„hlte Menoption (nur beim Menmanager)	* /
+   SWORD   wOption;    / *  gewÃ¤hlte MenÃ¼option (nur beim MenÃ¼manager)	* /
    SWORD   lTicks;     / *  Ticks zum Zeitpunkt des Ereignisses 	* /
 } EVENT;
 .ff
 In das Strukturelement wArt wird die Art des Ereignisses eingetragen. Die
-Funktion untersttzt insgesamt zw„lf verschiedene Eventarten:
+Funktion unterstÃ¼tzt insgesamt zwÃ¤lf verschiedene Eventarten:
 
 EVENT_NULL           keine Eingabe erfolgt
 EVENT_MOUSE_MOVE     die Maus wurde bewegt
-EVENT_L_PRESS        linker Button gedrckt
+EVENT_L_PRESS        linker Button gedrÃ¼ckt
 EVENT_R_PRESS        rechter Button gedruckt
-EVENT_B_PRESS        beide Buttons gedrckt
+EVENT_B_PRESS        beide Buttons gedrÃ¼ckt
 EVENT_L_RELEASE      linker Button losgelassen
 EVENT_R_RELEASE      rechter Button losgelassen
 EVENT_B_RELEASE      beide Buttons losgelassen
 EVENT_TASTE          Tastatureingabe
-EVENT_ALT_PRESS      ALT-Taste gedrckt
+EVENT_ALT_PRESS      ALT-Taste gedrÃ¼ckt
 EVENT_ALT_RELEASE    ALT-Taste losgelassen
-EVENT_WAHL           ausgew„hlte Option bei aktiviertem Menmanager
+EVENT_WAHL           ausgewÃ¤hlte Option bei aktiviertem MenÃ¼manager
 
-Welche der Strukturkomponenten sonst noch beschrieben werden, h„ngt von der auf-
-getretenen Eventart ab. Bei den Eventarten, die das Drcken oder Loslassen der
+Welche der Strukturkomponenten sonst noch beschrieben werden, hÃ¤ngt von der auf-
+getretenen Eventart ab. Bei den Eventarten, die das DrÃ¼cken oder Loslassen der
 Maustasten signalisierten, erhalten wSpalte und wZeile die Position des Maus-
 zeigers.
 
-Bei der Eventart EVENT_TASTE erh„lt das Element wTaste den Toolbox-Code der ge-
-drckten Taste. Bei den normalen Tasten wird der entsprechende ASCII-Wert einge-
-tragen. Fr die Untersuchung der Tasten mit einem erweiterten Tastaturcode
-Funktionstasten, Buchstabe gemeinsam mit ALT- oder CTRL-Taste) k”nnen Sie die
-symbolischen Konstanten verwenden, die in der Datei ¯eur_utl.h® definiert sind.
+Bei der Eventart EVENT_TASTE erhÃ¤lt das Element wTaste den Toolbox-Code der ge-
+drÃ¼ckten Taste. Bei den normalen Tasten wird der entsprechende ASCII-Wert einge-
+tragen. FÃ¼r die Untersuchung der Tasten mit einem erweiterten Tastaturcode
+Funktionstasten, Buchstabe gemeinsam mit ALT- oder CTRL-Taste) kÃ¶nnen Sie die
+symbolischen Konstanten verwenden, die in der Datei Â»eur_utl.hÂ« definiert sind.
 
-Die Eventarten EVENT_ALT_PRESS und EVENT_ALT_RELEASE signalisieren das Drcken
-und L”slassen der linken ALT-Taste und wurden zur Untersttzung des Menmanagers
-aufgenommen. Da diese Events vom Menmanager abgefangen werden, erh„lt die
-Funktion, die ¯Mn_Eingabe()® aufruft, nie diese Eventart.
+Die Eventarten EVENT_ALT_PRESS und EVENT_ALT_RELEASE signalisieren das DrÃ¼cken
+und LÃ¶slassen der linken ALT-Taste und wurden zur UnterstÃ¼tzung des MenÃ¼managers
+aufgenommen. Da diese Events vom MenÃ¼manager abgefangen werden, erhÃ¤lt die
+Funktion, die Â»Mn_Eingabe()Â« aufruft, nie diese Eventart.
 
-Die Eventarten EVENT_WAHL dient ebenfalls der Untersttzung des Menmanagers.
-Wenn der Anwender im Men eine Option ausw„hlt, erh„lt das Element wArt den Wert
-der Konstanten EVENT_WAHL und wOption die Kennziffer der gew„hlten Menoption.
-Die Funktion tr„gt grunds„tzlich bei jedem Aufruf die Mausposition und den Zu-
+Die Eventarten EVENT_WAHL dient ebenfalls der UnterstÃ¼tzung des MenÃ¼managers.
+Wenn der Anwender im MenÃ¼ eine Option auswÃ¤hlt, erhÃ¤lt das Element wArt den Wert
+der Konstanten EVENT_WAHL und wOption die Kennziffer der gewÃ¤hlten MenÃ¼option.
+Die Funktion trÃ¤gt grundsÃ¤tzlich bei jedem Aufruf die Mausposition und den Zu-
 stand der Tastaturflags in die Eventstruktur ein. Die Informationen zu den ein-
 zelnen Tastaturflags sind bitweise codiert. Die Toolbox stellt Ihnen symboliche
-Konstanten zur Verfgung, mit denen Sie die einzelnen Bits abfragen k”nnen:
+Konstanten zur VerfÃ¼gung, mit denen Sie die einzelnen Bits abfragen kÃ¶nnen:
 
-             ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-             ³  Konstanten       Wertigkeit             ³
-             ³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³
-             ³  RIGHT_SHIFT      0000 0001 b            ³
-             ³  LEFT_SHIFT       0000 0010 b            ³
-             ³  CTRL             0000 0100 b            ³
-             ³  ALT              0000 1000 b            ³
-             ³  SCROLL_LOCK      0001 0000 b            ³
-             ³  NUM_LOCK         0010 0000 b            ³
-             ³  CAPS_LOCK        0100 0000 b            ³
-             ³  INSERT_ON        1000 0000 b            ³
-             ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+             â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+             â”‚  Konstanten       Wertigkeit             â”‚
+             â”‚â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”‚
+             â”‚  RIGHT_SHIFT      0000 0001 b            â”‚
+             â”‚  LEFT_SHIFT       0000 0010 b            â”‚
+             â”‚  CTRL             0000 0100 b            â”‚
+             â”‚  ALT              0000 1000 b            â”‚
+             â”‚  SCROLL_LOCK      0001 0000 b            â”‚
+             â”‚  NUM_LOCK         0010 0000 b            â”‚
+             â”‚  CAPS_LOCK        0100 0000 b            â”‚
+             â”‚  INSERT_ON        1000 0000 b            â”‚
+             â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 Im Falle eines Events wird neben der Eventart auch die aktuelle Systemzeit
 (Ticks nach Mitternacht) in die Strucktur eingetragen. Dadurch ist es bei-
-spielweise m”glich, einen Doppelklick zu erkennen.
+spielweise mÃ¶glich, einen Doppelklick zu erkennen.
 
 .ff
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion hat keinen Rckgabewert.
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion hat keinen RÃ¼ckgabewert.
 
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  MS_g   (R)
 
 siehe auch:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Mn_Einrichten(), Ut_Event()
 
 Beispiel:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Die Wirkungsweise der Funktion k”nnen Sie dem Demoprogramm ¯dmonenu.c® ent-
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Die Wirkungsweise der Funktion kÃ¶nnen Sie dem Demoprogramm Â»dmonenu.cÂ« ent-
 nehmen.
-¯Mn_Eingabe()® wird dort in der ¯main()® Funktion aufgerufen.
+Â»Mn_Eingabe()Â« wird dort in der Â»main()Â« Funktion aufgerufen.
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <stdio.h>
 #include <eur_tool.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        KONSTANTEN UND MAKROS                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        KONSTANTEN UND MAKROS                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define SICHERN 400
 #define RESTORE 401
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT MENUSTATUS MS_g;
 IMPORT MENU aMenus_g[MAXMENUES];
 IMPORT SWORD wAktMnu_g;
@@ -153,9 +153,9 @@ IMPORT BOOL boInM_Input_g;
 IMPORT BOOL boTestModus_g;
 IMPORT PWKB pWkbInfo_g;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE FUNKTIONEN                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE FUNKTIONEN                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	PMKB  i_Mn_IsMenuHK	  (SWORD);
 STATIC	SWORD i_Mn_IsMFHK	  (PMKB, SWORD);
 STATIC  VOID  i_Mn_Events         (PEVENT, PMKB*, BOOL);
@@ -163,9 +163,9 @@ STATIC	VOID  i_Mn_ClientStatus   (SWORD);
 
 STATIC  PMKB  pMkbPosition_m=NULL;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Mn_Eingabe(PEVENT pEvent)
 {
@@ -287,34 +287,34 @@ return;
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Mn_Events                    Datum: 07.01.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PEVENT  pEvent      Zeiger auf Eventstruktur        º
-  º                    PMKB    *ppMkb      Zeiger auf Zeiger MKB           º
-  º                    BOOL    boEinstieg  erster Aufruf dieser Funktion   º
-  º                                        innerhalb einer Auswahlrunde    º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion wertet nach der Aktivierung des      º
-  º                    Menmanagers alle Events aus.                       º
-  º                    Es wird hierbei zwischen verschiedenen Zust„nden    º
-  º                    unterschieden, in denen sich das Men befinden      º
-  º                    kann:                                               º
-  º                    - kein Fenster && kein Titel                        º
-  º                    - kein Fenster &&      Titel                        º
-  º                    -      Fenster && kein Titel                        º
-  º                                                                        º
-  º                    Je nach Zustand und eingelesenen Events wird        º
-  º                    dann die entsprechende Aktion ausgefhrt.           º
-  º                                                                        º
-  º  Rckgabewert:     Adresse des aktuellen MKB ber ppMkb                º
-  º                                                                        º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  - MS_g   (R)  Status des Menmanagers               º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Mn_Events                    Datum: 07.01.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PEVENT  pEvent      Zeiger auf Eventstruktur        â•‘
+  â•‘                    PMKB    *ppMkb      Zeiger auf Zeiger MKB           â•‘
+  â•‘                    BOOL    boEinstieg  erster Aufruf dieser Funktion   â•‘
+  â•‘                                        innerhalb einer Auswahlrunde    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion wertet nach der Aktivierung des      â•‘
+  â•‘                    MenÃ¼managers alle Events aus.                       â•‘
+  â•‘                    Es wird hierbei zwischen verschiedenen ZustÃ¤nden    â•‘
+  â•‘                    unterschieden, in denen sich das MenÃ¼ befinden      â•‘
+  â•‘                    kann:                                               â•‘
+  â•‘                    - kein Fenster && kein Titel                        â•‘
+  â•‘                    - kein Fenster &&      Titel                        â•‘
+  â•‘                    -      Fenster && kein Titel                        â•‘
+  â•‘                                                                        â•‘
+  â•‘                    Je nach Zustand und eingelesenen Events wird        â•‘
+  â•‘                    dann die entsprechende Aktion ausgefÃ¼hrt.           â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Adresse des aktuellen MKB Ã¼ber ppMkb                â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  - MS_g   (R)  Status des MenÃ¼managers               â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_Mn_Events(PEVENT pEvent, PMKB *ppMkb, BOOL boEinstieg)
 {
@@ -457,9 +457,9 @@ VOID i_Mn_Events(PEVENT pEvent, PMKB *ppMkb, BOOL boEinstieg)
             case T_C_B:       /* $mask Bildschirm-Comp. */
             case T_C_F:       /* $form Form-Compiler*/
             case T_C_I:       /* $install, INSERT   */
-   /*       case T_C_E:       /*           EINFšGEN */
+   /*       case T_C_E:       /*           EINFÃœGEN */
             case T_C_D:       /* $datum,   DELETE   */
-   /*       case T_C_L:       /*           L™SCHEN  */
+   /*       case T_C_L:       /*           LÃ–SCHEN  */
                 i_Mn_Fenster(&pMkb, 0, AUS);
                 MS_g.wAktiv = NEIN;
                 boHotKey = NEIN;
@@ -542,26 +542,26 @@ VOID i_Mn_Events(PEVENT pEvent, PMKB *ppMkb, BOOL boEinstieg)
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Mn_IsMenuHK                  Datum: 07.01.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD  wTaste	 zu berprfende Taste. 	    º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion berprft die bergebene Taste       º
-  º                    daraufhin, ob mit ihr ein Men aktiviert werden     º
-  º                    soll.                                               º
-  º                                                                        º
-  º  Rckgabewert:     PMKB    Zeiger auf den Menkontrollblock des        º
-  º                            Mens, das aktiviert werden soll oder       º
-  º                    NULL    wenn es sich bei der bergebenen Taste      º
-  º                            nicht um einen Mnemonic handelt.            º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  aMenus_g   (R)                                      º
-  º                    wAktMnu_g  (R)                                      º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Mn_IsMenuHK                  Datum: 07.01.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD  wTaste	 zu Ã¼berprÃ¼fende Taste. 	    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion Ã¼berprÃ¼ft die Ã¼bergebene Taste       â•‘
+  â•‘                    daraufhin, ob mit ihr ein MenÃ¼ aktiviert werden     â•‘
+  â•‘                    soll.                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     PMKB    Zeiger auf den MenÃ¼kontrollblock des        â•‘
+  â•‘                            MenÃ¼s, das aktiviert werden soll oder       â•‘
+  â•‘                    NULL    wenn es sich bei der Ã¼bergebenen Taste      â•‘
+  â•‘                            nicht um einen Mnemonic handelt.            â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  aMenus_g   (R)                                      â•‘
+  â•‘                    wAktMnu_g  (R)                                      â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 PMKB i_Mn_IsMenuHK(SWORD wTaste)
 {
@@ -574,37 +574,37 @@ PMKB i_Mn_IsMenuHK(SWORD wTaste)
             i_Fehler(I_FEHLER_SIGN, "i_Mn_IsMenuHK",
                      __FILE__, __LINE__);
 
-        if (wTaste == pMkb->wMzHotkey)              /* Taste Men-Hotkey    */
+        if (wTaste == pMkb->wMzHotkey)              /* Taste MenÃ¼-Hotkey    */
             return (pMkb);                          /* Adresse des MKB      */
-        else                                        /* zurck               */
-            pMkb = pMkb->pNaechster;                /* auf n„chsten Block   */
+        else                                        /* zurÃ¼ck               */
+            pMkb = pMkb->pNaechster;                /* auf nÃ¤chsten Block   */
 
     } while(pMkb != aMenus_g[wAktMnu_g].pMkbStart);
 
-    return (NULL);                                  /* Taste kein Men-HK   */
+    return (NULL);                                  /* Taste kein MenÃ¼-HK   */
 }
 
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Mn_AufMenutitel              Datum: 18.08.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PEVENT   pEvent     Zeiger auf EVENT-Struktur       º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion berprft, ob sich der Mauscursor    º
-  º                    innerhalb eines Mentitels befindet.                º
-  º                                                                        º
-  º  Rckgabewert:     PMKB    Zeiger auf Menkontrollblock des Mens,     º
-  º                            das aktiviert werden soll oder              º
-  º                    NULL    wenn nicht auf einem Mentitel geklickt     º
-  º                            wurde                                       º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  startmkb(R)                                         º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Mn_AufMenutitel              Datum: 18.08.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PEVENT   pEvent     Zeiger auf EVENT-Struktur       â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion Ã¼berprÃ¼ft, ob sich der Mauscursor    â•‘
+  â•‘                    innerhalb eines MenÃ¼titels befindet.                â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     PMKB    Zeiger auf MenÃ¼kontrollblock des MenÃ¼s,     â•‘
+  â•‘                            das aktiviert werden soll oder              â•‘
+  â•‘                    NULL    wenn nicht auf einem MenÃ¼titel geklickt     â•‘
+  â•‘                            wurde                                       â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  startmkb(R)                                         â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 PMKB i_Mn_AufMenutitel(PEVENT pEvent)
 {
@@ -620,8 +620,8 @@ PMKB i_Mn_AufMenutitel(PEVENT pEvent)
          if (pEvent->wSpalte >= pMkb->wTitelSpalte &&
              pEvent->wSpalte <  pMkb->wTitelSpalte+pMkb->wTitelBreite)
             return (pMkb);                          /* Adresse des MKB      */
-        else                                        /* zurck               */
-            pMkb = pMkb->pNaechster;                /* auf n„chsten Block   */
+        else                                        /* zurÃ¼ck               */
+            pMkb = pMkb->pNaechster;                /* auf nÃ¤chsten Block   */
     } while(pMkb != aMenus_g[wAktMnu_g].pMkbStart);
 
     return (NULL);
@@ -632,28 +632,28 @@ PMKB i_Mn_AufMenutitel(PEVENT pEvent)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Mn_IsMFHK                    Datum: 07.01.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PMKB  pMkb    Zeiger auf Menkontrollblock, der     º
-  º                                  untersucht werden soll                º
-  º		       SWORD  wTaste  eingegebene Taste 		    º						       º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion berprft, ob die eingegebene        º
-  º                    Taste ein Hotkey fr eine aktive Option im          º
-  º                    Menfensterist, auf das pMkb zeigt.                 º
-  º                                                                        º
-  º                    Wenn ja, wird der Index auf pMkb->pHotkeys          º
-  º                    zurckgegeben, sonst -1.                            º
-  º                                                                        º
-  º  Rckgabewert:     SWORD   -1   nicht gefunden oder nicht aktiv	    º
-  º                            >=0  Index auf pMkb->pHotkeys               º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  keine                                               º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Mn_IsMFHK                    Datum: 07.01.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PMKB  pMkb    Zeiger auf MenÃ¼kontrollblock, der     â•‘
+  â•‘                                  untersucht werden soll                â•‘
+  â•‘		       SWORD  wTaste  eingegebene Taste 		    â•‘						       â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion Ã¼berprÃ¼ft, ob die eingegebene        â•‘
+  â•‘                    Taste ein Hotkey fÃ¼r eine aktive Option im          â•‘
+  â•‘                    MenÃ¼fensterist, auf das pMkb zeigt.                 â•‘
+  â•‘                                                                        â•‘
+  â•‘                    Wenn ja, wird der Index auf pMkb->pHotkeys          â•‘
+  â•‘                    zurÃ¼ckgegeben, sonst -1.                            â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     SWORD   -1   nicht gefunden oder nicht aktiv	    â•‘
+  â•‘                            >=0  Index auf pMkb->pHotkeys               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_Mn_IsMFHK(PMKB pMkb, SWORD wTaste)
 {
@@ -680,24 +680,24 @@ return(-1);
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Mn_ClientStatus              Datum: 07.01.89      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD   wModus	SICHERN/RESTORE 		    º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion sichert beim Einstieg in den         º
-  º                    Menmanager die Hilfezeile und den Hardware-        º
-  º                    Cursor. Beim Verlassen wird beides wieder           º
-  º                    restauriert.                                        º
-  º                                                                        º
-  º  Rckgabewert:     keine                                               º
-  º                                                                        º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  fpwAlteMZ_g   (R/W)                                 º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Mn_ClientStatus              Datum: 07.01.89      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD   wModus	SICHERN/RESTORE 		    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion sichert beim Einstieg in den         â•‘
+  â•‘                    MenÃ¼manager die Hilfezeile und den Hardware-        â•‘
+  â•‘                    Cursor. Beim Verlassen wird beides wieder           â•‘
+  â•‘                    restauriert.                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  fpwAlteMZ_g   (R/W)                                 â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	VOID i_Mn_ClientStatus(SWORD wModus)
 {
     STATIC SWORD wSpalte, wZeile, wStart, wStop;

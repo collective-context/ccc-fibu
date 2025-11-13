@@ -1,64 +1,64 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
 /*.ta Dl_SpeichernUnter()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Dl_SpeichernUnter()							       º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Dl_SpeichernUnter()							       â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_dlg.h>
 SWORD Dl_SpeichernUnter(pstrDateiname, wMaxLaenge);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 PSSTR	pstrDateiname	Zeiger auf derzeitigen Dateinamen.
-SWORD	wMaxLaenge	maximale L„nge des Dateinamens.
+SWORD	wMaxLaenge	maximale LÃ¤nge des Dateinamens.
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Mit dieser Funktion k”nnen Sie dem Anwender ein Dialogfeld zur Verfgung
-stellen, mit dem er vor dem Speichern fr die aktuell bearbeitete Datei
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Mit dieser Funktion kÃ¶nnen Sie dem Anwender ein Dialogfeld zur VerfÃ¼gung
+stellen, mit dem er vor dem Speichern fÃ¼r die aktuell bearbeitete Datei
 einen neuen Namen festlegen kann.
 
-šbergeben Sie der Funktion einen Zeiger auf den derzeitigen Dateinamen
-und die maximale L„nge, die der Dateiname haben darf. Die L„nge des Datei-
-namens muá mindestens 37 Zeichen (Wert derKonstanten TBB) sein.
+Ãœbergeben Sie der Funktion einen Zeiger auf den derzeitigen Dateinamen
+und die maximale LÃ¤nge, die der Dateiname haben darf. Die LÃ¤nge des Datei-
+namens muÃŸ mindestens 37 Zeichen (Wert derKonstanten TBB) sein.
 
 Diese Funktion baut ein Dialogfeld auf, in dem das aktuelle Verzeichnis
 ausgegeben wird. Der derzeitige Dateiname erscheint in einem Textfeld, das vom
-Anwender editiert werden kann, um den Dateinamen zu „ndern.
+Anwender editiert werden kann, um den Dateinamen zu Ã¤ndern.
 
-Das Dialogfeld besitzt drei Schaltfl„chen, die folgende Wirkung haben:
+Das Dialogfeld besitzt drei SchaltflÃ¤chen, die folgende Wirkung haben:
 
-ù Eingabe kopiert den derzeitgen Namen der Datei in den Speicherbereich,
-  auf den das Argument ¯pstrDateiName® zeigt.
-  Sie mssen dafr sorgen, daá der Speicherbereich groá genug ist, um
+Â¨ Eingabe kopiert den derzeitgen Namen der Datei in den Speicherbereich,
+  auf den das Argument Â»pstrDateiNameÂ« zeigt.
+  Sie mÃ¼ssen dafÃ¼r sorgen, daÃŸ der Speicherbereich groÃŸ genug ist, um
   wMaxlaenge Zeichen aufzunehmen.
-ù [Esc]      beendet das Dialogfeld.
-ù [F1]	     zeigt ein Hilfefenster fr dieses Dialogfeld an, das von der
-	     Toolbox zur Verfgung gestellt wird.
+Â¨ [Esc]      beendet das Dialogfeld.
+Â¨ [F1]	     zeigt ein Hilfefenster fÃ¼r dieses Dialogfeld an, das von der
+	     Toolbox zur VerfÃ¼gung gestellt wird.
 
 
-Die Funktion fhrt eine šberprfung durch, ob der eingegebene Dateiname den
+Die Funktion fÃ¼hrt eine ÃœberprÃ¼fung durch, ob der eingegebene Dateiname den
 DOS-Konventionen entspricht. Das Dialogfeld kann erst dann mit der
-Eingabe-Schaltfl„che verlassen werden, wenn dieser Test erfolgreich war.
+Eingabe-SchaltflÃ¤che verlassen werden, wenn dieser Test erfolgreich war.
 
-Die Funktion prft nicht, ob das eingebene Laufwerk oder Verzeichnis auch
-tats„chlich existieren.
+Die Funktion prÃ¼ft nicht, ob das eingebene Laufwerk oder Verzeichnis auch
+tatsÃ¤chlich existieren.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD  Fehlerinformation:  Wahl des Anwenders/ERROR
-      ù DLG_RETURN    Der Anwender hat die Eingabe-Schaltfl„che gew„hlt.
-      ù DLG_ESC       Der Anwender hat mit der [Esc]-Schaltfl„che abgebrochen.
-      ù ERROR         Das Dialogfeld konnte nicht angezeigt werden.
+      Â¨ DLG_RETURN    Der Anwender hat die Eingabe-SchaltflÃ¤che gewÃ¤hlt.
+      Â¨ DLG_ESC       Der Anwender hat mit der [Esc]-SchaltflÃ¤che abgebrochen.
+      Â¨ ERROR         Das Dialogfeld konnte nicht angezeigt werden.
 
 .ff
 Benutzte globale Variablen (R/W):
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  - aCS_g[]    (R)           - pstrReturn_g (R)
                   - wCSInd_g   (R)           - pstrEsc_g    (R)
                   - wMausda_g  (R)           - pstrF1_g     (R)
@@ -68,17 +68,17 @@ Variablen (R/W):  - aCS_g[]    (R)           - pstrReturn_g (R)
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #include <eur_tool.h>
 #include <stdio.h>
 #include <string.h>
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        KONSTANTEN UND MAKROS                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        KONSTANTEN UND MAKROS                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define SPA  9
 #define ZEI  5
 #define BRE 56
@@ -88,9 +88,9 @@ Variablen (R/W):  - aCS_g[]    (R)           - pstrReturn_g (R)
 #define TBZ ZEI+6
 #define TBB BRE-19
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT COLORSET  aCS_g[5];
 IMPORT SWORD	  wCSInd_g;
 IMPORT BOOL      boBeepen_g;
@@ -99,23 +99,23 @@ IMPORT PSSTR	  pstrReturn_g;
 IMPORT PSSTR	  pstrEsc_g;
 IMPORT PSSTR	  pstrF1_g;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	PSSTR pstrDTitel_m = "Speichern unter";
 STATIC	PSSTR pstrVerz_m   = "Verzeichnis:";
 STATIC	PSSTR pstrD_m	   = "Dateiname:";
 STATIC	PSSTR apstrFalscherName_m[]=
 {
-    " Der eingegebene Dateiname ist ungltig.",
+    " Der eingegebene Dateiname ist ungÃ¼ltig.",
     NULL,
 };
 
 STATIC	SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE);
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Dl_SpeichernUnter(PSSTR pstrDateiName, SWORD wMaxLaenge)
 {
@@ -160,7 +160,7 @@ SWORD Dl_SpeichernUnter(PSSTR pstrDateiName, SWORD wMaxLaenge)
     Wi_Ss(1,5,pstrD_m);
 
     wMausStatus = Ms_CursorOff();		    /* Maus vor Ausgabe aus */
-    Ut_ZeigeRahmen(TBS-1, TBZ-1, TBB+2, 3,	    /* Rahmen fr das Text- */
+    Ut_ZeigeRahmen(TBS-1, TBZ-1, TBB+2, 3,	    /* Rahmen fÃ¼r das Text- */
                                  RT_EEEE,           /* feld ausgeben        */
                                  aCS_g[wCSInd_g].wCs_dlg);
     if (wMausStatus == MSM_WAR_AN && wMausda_g)     /* wenn Maus an war,    */
@@ -212,27 +212,27 @@ SWORD Dl_SpeichernUnter(PSSTR pstrDateiName, SWORD wMaxLaenge)
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     º
-  º                    PEVENT   pEvent     Zeiger auf Event-Struktur       º
-  º                                                                        º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     º
-  º                    zeigt nach Anforderung das Hilfefenster, und        º
-  º                    kehrt zur aufrufenden Funktion zurck, wenn         º
-  º                    entweder die Schaltfl„che ABBRUCH oder EINGABE      º
-  º                    bet„tigt wurde.                                     º
-  º                                                                        º
-  º  Rckgabewert:     DLG_ESC     ABBRUCH-Schaltfl„che wurde ausgew„hlt   º
-  º                    DLG_RETURN  EINGABE-Schaltfl„che wurde ausgew„hlt   º
-  º                                                                        º
-  º  Benutzte globale   - pstrReturn_g (R)                                 º
-  º  Variablen (R/W):   - pstrEsc_g    (R)                                 º
-  º                     - pstrF1_g     (R)                                 º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_ProcessEvent                 Datum: 28.10.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PTEXTBOX pTextBox   Zeiger auf Textbox-Struktur     â•‘
+  â•‘                    PEVENT   pEvent     Zeiger auf Event-Struktur       â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion wertet die Anwendereingaben aus,     â•‘
+  â•‘                    zeigt nach Anforderung das Hilfefenster, und        â•‘
+  â•‘                    kehrt zur aufrufenden Funktion zurÃ¼ck, wenn         â•‘
+  â•‘                    entweder die SchaltflÃ¤che ABBRUCH oder EINGABE      â•‘
+  â•‘                    betÃ¤tigt wurde.                                     â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     DLG_ESC     ABBRUCH-SchaltflÃ¤che wurde ausgewÃ¤hlt   â•‘
+  â•‘                    DLG_RETURN  EINGABE-SchaltflÃ¤che wurde ausgewÃ¤hlt   â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale   - pstrReturn_g (R)                                 â•‘
+  â•‘  Variablen (R/W):   - pstrEsc_g    (R)                                 â•‘
+  â•‘                     - pstrF1_g     (R)                                 â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
 {
@@ -258,17 +258,17 @@ SWORD i_ProcessEvent(PTEXTBOX pT, PEVENT pE)
             case EVENT_L_PRESS:
                 if (pE->wZeile == ZEI+HOE-2)
                 {
-		    if(pE->wSpalte > SPA+2 &&	   /* RETURN-Schaltfl„che  */
+		    if(pE->wSpalte > SPA+2 &&	   /* RETURN-SchaltflÃ¤che  */
 		      pE->wSpalte <
 		      SPA+3+(SWORD)strlen(pstrReturn_g))
 		      return(DLG_RETURN);
 
-		    if(pE->wSpalte > SPA+17 &&	   /* ESC-Schaltfl„che	   */
+		    if(pE->wSpalte > SPA+17 &&	   /* ESC-SchaltflÃ¤che	   */
 		      pE->wSpalte <
 		      SPA+18+(SWORD)strlen(pstrEsc_g))
 		      return(DLG_ESC);
 
-		    if(pE->wSpalte > SPA+30 &&	   /* Hilfe-Schaltfl„che   */
+		    if(pE->wSpalte > SPA+30 &&	   /* Hilfe-SchaltflÃ¤che   */
 		      pE->wSpalte <
 		      SPA+31+(SWORD)strlen(pstrF1_g))
 		      Dl_HilfeTools(SPEICHERN);

@@ -1,101 +1,101 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Dateiname:        Ut_crerr.c                     Datum: 12.12.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Diese Datei enthlt die Routinen zur Installation und Deinstallation  บ
-  บ  eines Critical Error Handlers (Interrupt 0x24).                       บ
-  บ  Diese Routinen werden von der Funktion Dl_Laden() eingesetzt,         บ
-  บ  k”nnen jedoch nach Modifizierung auch fr andere Programme            บ
-  บ  benutzt werden.                                                       บ
-  บ                                                                        บ
-  บ  Sie sollten diese Routinen erst dann ndern, wenn Sie mit den         บ
-  บ  internen Ablufen beim Auftreten eines Critical Errors vertraut sind, บ
-  บ  um einen Crash des Systems zu vermeiden.                              บ
-  บ                                                                        บ
-  บ  Hinweis: Weitere Informationen ber Critical Error Handler finden     บ
-  บ           Sie u.a. in:                                                 บ
-  บ        þ  MS-DOS Programmierhandbuch, DOS 3.1, Seite 1-37 ff.,         บ
-  บ                  Markt & Technik, 1986                                 บ
-  บ        þ  Ray Duncan, Advanced MS-DOS, Seite 130 ff.,                  บ
-  บ                  Microsoft Press, 1986                                 บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        DEKLARATIONS-DATEIEN                            บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Dateiname:        Ut_crerr.c                     Datum: 12.12.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Diese Datei enthรคlt die Routinen zur Installation und Deinstallation  โ•‘
+  โ•‘  eines Critical Error Handlers (Interrupt 0x24).                       โ•‘
+  โ•‘  Diese Routinen werden von der Funktion Dl_Laden() eingesetzt,         โ•‘
+  โ•‘  kรถnnen jedoch nach Modifizierung auch fรผr andere Programme            โ•‘
+  โ•‘  benutzt werden.                                                       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Sie sollten diese Routinen erst dann รคndern, wenn Sie mit den         โ•‘
+  โ•‘  internen Ablรคufen beim Auftreten eines Critical Errors vertraut sind, โ•‘
+  โ•‘  um einen Crash des Systems zu vermeiden.                              โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Hinweis: Weitere Informationen รผber Critical Error Handler finden     โ•‘
+  โ•‘           Sie u.a. in:                                                 โ•‘
+  โ•‘        โ–   MS-DOS Programmierhandbuch, DOS 3.1, Seite 1-37 ff.,         โ•‘
+  โ•‘                  Markt & Technik, 1986                                 โ•‘
+  โ•‘        โ–   Ray Duncan, Advanced MS-DOS, Seite 130 ff.,                  โ•‘
+  โ•‘                  Microsoft Press, 1986                                 โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        DEKLARATIONS-DATEIEN                            โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 
 #include <eur_tool.h>
 #include <stdio.h>
 #include <dos.h>
 #include <string.h>
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        KONSTANTEN UND MAKROS                           บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        KONSTANTEN UND MAKROS                           โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 #define ZEI         7                               /* Zeile des Dialoges   */
 #define SPA        11                               /* Spalte des Dialoges  */
 #define BRE        57                               /* Breite des Dialoges  */
-#define HOE        11                               /* H”he des Dialoges    */
+#define HOE        11                               /* Hรถhe des Dialoges    */
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                    MODULGLOBALE VARIABLEN                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                    MODULGLOBALE VARIABLEN                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
    STATIC VOID (__interrupt __far *fpfnAlterHandler_m) (VOID);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ               MODULGLOBALE FUNKTIONEN - PROTOTYPEN                     บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘               MODULGLOBALE FUNKTIONEN - PROTOTYPEN                     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 	  void __interrupt __far fpfnNeuerHandler();
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                    MODULGLOBALE VARIABLEN                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                    MODULGLOBALE VARIABLEN                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC SWORD (*routine) (SWORD, SWORD, SWORD, SWORD);
 STATIC CHAR *icon_ausruf[]=
-{   "ฺฤฤฤฤฤฤฤฟ",
-    "ณ  Û Û  ณ",
-    "ณ  Û Û  ณ",
-    "ณ  Ü Ü  ณ",
-    "ภฤฤฤฤฤฤฤู",
+{   "โ”โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”",
+    "โ”  โ– โ–  โ”",
+    "โ”  โ– โ–  โ”",
+    "โ”  โ– โ–  โ”",
+    "โ””โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”",
     NULL
 };
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT BOOL     boBeepen_g;
 IMPORT PSSTR	 pstrRetry_g;
 IMPORT PSSTR	 pstrEsc_g;
 IMPORT PSSTR	 pstrF1_g;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ               MODULGLOBALE FUNKTIONEN - PROTOTYPEN                     บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘               MODULGLOBALE FUNKTIONEN - PROTOTYPEN                     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC SWORD LadenFehler(SWORD, SWORD, SWORD, SWORD);
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Ut_SetErrorHandler             Datum: 12.12.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        SWORD  wWelcher	    Routine, die installiert werden บ
-  บ                                        soll                            บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion sichert den aktuellen Vektor auf     บ
-  บ                    die Behandlungsroutine, legt aufgrund des           บ
-  บ                    Parameters wWelcher die neue Routine fest und       บ
-  บ                    trgt diese in die Interruptvektor-Tabelle ein.     บ
-  บ                                                                        บ
-  บ  Rckgabewert:     keiner                                              บ
-  บ                                                                        บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  fpfnAlterHandler   (W), routine (W)                 บ
-  บ                    fpfnNeuerHandler                (R)                 บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Ut_SetErrorHandler             Datum: 12.12.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        SWORD  wWelcher	    Routine, die installiert werden โ•‘
+  โ•‘                                        soll                            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion sichert den aktuellen Vektor auf     โ•‘
+  โ•‘                    die Behandlungsroutine, legt aufgrund des           โ•‘
+  โ•‘                    Parameters wWelcher die neue Routine fest und       โ•‘
+  โ•‘                    trรคgt diese in die Interruptvektor-Tabelle ein.     โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     keiner                                              โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  fpfnAlterHandler   (W), routine (W)                 โ•‘
+  โ•‘                    fpfnNeuerHandler                (R)                 โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID Ut_SetNeuErrorHandler(SWORD wWofuer)
 {
@@ -114,21 +114,21 @@ switch(wWofuer) 				      /* neue Adresse der    */
 
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    Ut_SetAltErrorHandler          Datum: 12.12.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        keine                                               บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Funktion restauriert die ursprngliche        บ
-  บ                    Routine zur Behandlung der kritischen Fehler.       บ
-  บ                                                                        บ
-  บ  Rckgabewert:     keine                                               บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  fpfnAlterHandler_m   Zeiger auf Interrupt-Routine   บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    Ut_SetAltErrorHandler          Datum: 12.12.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Funktion restauriert die ursprรผngliche        โ•‘
+  โ•‘                    Routine zur Behandlung der kritischen Fehler.       โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     keine                                               โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  fpfnAlterHandler_m   Zeiger auf Interrupt-Routine   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 GLOBAL
 VOID Ut_SetAltErrorHandler(VOID)
 {
@@ -137,36 +137,36 @@ VOID Ut_SetAltErrorHandler(VOID)
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    fpfnNeuerHandler               Datum: 12.12.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        die fr eine Interrupt-Routine ben”tigten           บ
-  บ                    Register (der Compiler erkennt nur die Reihenfolge  บ
-  บ                    der Argumente, nicht deren Namen)                   บ
-  บ                                                                        บ
-  บ  Beschreibung:     Von dieser Funktion aus wird die Behandlungs-       บ
-  บ                    routine fr den kritischen Fehler angesprungen.     บ
-  บ                    Die Funktion erhlt aus                             บ
-  บ                                                                        บ
-  บ                    DI  den von MS-DOS zur Verfgung gestellten         บ
-  บ                        Fehlercode (niederwertiges Byte)                บ
-  บ                    AX  Informationen ber Gertefehler                 บ
-  บ                        AX > 0  Diskettenfehler                         บ
-  บ                                AX & 0xFF ergibt Nummer des Laufwerks   บ
-  บ                                          (1=A, 2=B usw.)               บ
-  บ                           < 0  sonstiger Fehler                        บ
-  บ                    BP:SI zeigt auf den Kopf des Gertetreibers         บ
-  บ                                                                        บ
-  บ  Rckgabewert:     Wert im AX-Register als Information fr DOS         บ
-  บ                                                                        บ
-  บ  Hinweis:          Weitere Informationen ber den Modifizierer         บ
-  บ                    interrupt finden Sie im Handbuch Ihres Compilers.   บ
-  บ                                                                        บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  routine  Enthlt die Adresse der Routine, die       บ
-  บ                             bei einem Fehler angesprungen wird         บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    fpfnNeuerHandler               Datum: 12.12.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        die fรผr eine Interrupt-Routine benรถtigten           โ•‘
+  โ•‘                    Register (der Compiler erkennt nur die Reihenfolge  โ•‘
+  โ•‘                    der Argumente, nicht deren Namen)                   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Von dieser Funktion aus wird die Behandlungs-       โ•‘
+  โ•‘                    routine fรผr den kritischen Fehler angesprungen.     โ•‘
+  โ•‘                    Die Funktion erhรคlt aus                             โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘                    DI  den von MS-DOS zur Verfรผgung gestellten         โ•‘
+  โ•‘                        Fehlercode (niederwertiges Byte)                โ•‘
+  โ•‘                    AX  Informationen รผber Gerรคtefehler                 โ•‘
+  โ•‘                        AX > 0  Diskettenfehler                         โ•‘
+  โ•‘                                AX & 0xFF ergibt Nummer des Laufwerks   โ•‘
+  โ•‘                                          (1=A, 2=B usw.)               โ•‘
+  โ•‘                           < 0  sonstiger Fehler                        โ•‘
+  โ•‘                    BP:SI zeigt auf den Kopf des Gerรคtetreibers         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     Wert im AX-Register als Information fรผr DOS         โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Hinweis:          Weitere Informationen รผber den Modifizierer         โ•‘
+  โ•‘                    interrupt finden Sie im Handbuch Ihres Compilers.   โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  routine  Enthรคlt die Adresse der Routine, die       โ•‘
+  โ•‘                             bei einem Fehler angesprungen wird         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
    void __interrupt __far fpfnNeuerHandler( unsigned _es, unsigned _ds, unsigned _di,
                                  unsigned _si, unsigned _bp, unsigned _sp,
                                  unsigned _bx, unsigned _dx, unsigned _cx,
@@ -182,30 +182,30 @@ VOID Ut_SetAltErrorHandler(VOID)
 }
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ  Funktionsname:    LadenFehler                    Datum: 12.12.88      บ
-  วฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤถ
-  บ                                                                        บ
-  บ  Parameter:        SWORD  wFehler	    siehe Beschreibung zu	    บ
-  บ		       SWORD  ax	    fpfnNeuerHandler		    บ
-  บ		       SWORD  bp					    บ
-  บ		       SWORD  si					    บ
-  บ                                                                        บ
-  บ  Beschreibung:     Diese Routine wird von fpfnNeuerHandler ange-       บ
-  บ                    sprungen, wenn der kritische Fehler whrend         บ
-  บ                    der Dialogbox Dl_Laden() auftritt.                  บ
-  บ                    Wegen des Kontexts kann es sich hierbei nur         บ
-  บ                    um einen Lesefehler bei einem Laufwerk handeln.     บ
-  บ                    Aus diesem Grunde werden nicht alle der Funktion    บ
-  บ                    bergebenen Argumente ausgewertet.                  บ
-  บ                                                                        บ
-  บ  Rckgabewert:     SWORD  0 = ignorieren, bzw. Abbrechen		    บ
-  บ                          1 = miแglckte Operation noch einmal          บ
-  บ                              versuchen                                 บ
-  บ  Benutzte globale                                                      บ
-  บ  Variablen (R/W):  boBeepen_g, pstrRetry_g, pstrEsc_g   (W)            บ
-  บ                                                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘  Funktionsname:    LadenFehler                    Datum: 12.12.88      โ•‘
+  รโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ร
+  โ•‘                                                                        โ•‘
+  โ•‘  Parameter:        SWORD  wFehler	    siehe Beschreibung zu	    โ•‘
+  โ•‘		       SWORD  ax	    fpfnNeuerHandler		    โ•‘
+  โ•‘		       SWORD  bp					    โ•‘
+  โ•‘		       SWORD  si					    โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Beschreibung:     Diese Routine wird von fpfnNeuerHandler ange-       โ•‘
+  โ•‘                    sprungen, wenn der kritische Fehler wรคhrend         โ•‘
+  โ•‘                    der Dialogbox Dl_Laden() auftritt.                  โ•‘
+  โ•‘                    Wegen des Kontexts kann es sich hierbei nur         โ•‘
+  โ•‘                    um einen Lesefehler bei einem Laufwerk handeln.     โ•‘
+  โ•‘                    Aus diesem Grunde werden nicht alle der Funktion    โ•‘
+  โ•‘                    รผbergebenen Argumente ausgewertet.                  โ•‘
+  โ•‘                                                                        โ•‘
+  โ•‘  Rรผckgabewert:     SWORD  0 = ignorieren, bzw. Abbrechen		    โ•‘
+  โ•‘                          1 = miรglรผckte Operation noch einmal          โ•‘
+  โ•‘                              versuchen                                 โ•‘
+  โ•‘  Benutzte globale                                                      โ•‘
+  โ•‘  Variablen (R/W):  boBeepen_g, pstrRetry_g, pstrEsc_g   (W)            โ•‘
+  โ•‘                                                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 STATIC
 SWORD LadenFehler(SWORD wFehler, SWORD ax, SWORD bp, SWORD si)
 {
@@ -236,12 +236,12 @@ wFehler=wFehler; bp=bp; si=si;
         Wi_Ss(3,i,*ppstrTmp++);
 
     Wi_SetCursorPos(14,3);                          /* Text ausgeben        */
-    Wi_Printf("Lesen von Laufwerk %c: ist nicht m”glich.", 'A'+ ax&0x00FF);
-    Wi_Ss(14,4,"Bitte whlen Sie die gewnschte Aktion.");
+    Wi_Printf("Lesen von Laufwerk %c: ist nicht mรถglich.", 'A'+ ax&0x00FF);
+    Wi_Ss(14,4,"Bitte wรคhlen Sie die gewรผnschte Aktion.");
 
     pEvent = &Event;                                /* Var. initialisieren  */
 
-    ax &= 0xFF00;                                   /* AL-Register l”schen  */
+    ax &= 0xFF00;                                   /* AL-Register lรถschen  */
     for(;;)                                         /* Eingaberoutine       */
     {
         Ut_Event(pEvent);

@@ -1,58 +1,58 @@
 // (C) WINware Software P.Mayer: letztes Update am 13-Feb-1996
 
 /*.ta Wi_Printf()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Wi_Printf()                                                                 º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Wi_Printf()                                                                 â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_win.h>
 SWORD Wi_Printf(pcFormat[[,Argument]]);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const    PCHAR     pcFormat[[,Argument]]
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Diese Funktion arbeitet „hnlich wie die Funktion ¯printf()® der C-Laufzeitbibli-
-othek. Mit ihr wird eine formatierte Ausgabe in einem Fenster erm”glicht, wobei
-das Argument ¯pcFormat® dieselbe Form und Bedeutung hat wie ¯format® bei der
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Diese Funktion arbeitet Ã¤hnlich wie die Funktion Â»printf()Â« der C-Laufzeitbibli-
+othek. Mit ihr wird eine formatierte Ausgabe in einem Fenster ermÃ¶glicht, wobei
+das Argument Â»pcFormatÂ« dieselbe Form und Bedeutung hat wie Â»formatÂ« bei der
 printf()-Funktion (siehe Referenzteil). Folgende Escape-Sequenzen werden unter-
-sttzt.
+stÃ¼tzt.
 \a       erzeigt einen kurzen Warnton
-\n       positioniert den Cursor an den Anfang der n„chsten Zeile
+\n       positioniert den Cursor an den Anfang der nÃ¤chsten Zeile
 \r       positioniert den Cursor an den Anfang der aktuellen Zeile
-\t       fhrt einen Tabulatorschritt durch. Der Standard-Wert pro Tabulator
-         betr„gt vier Zeichen und kann mit der Funktion ¯Wi_TabsAbstand()® ge-
-         „ndert werden.
+\t       fÃ¼hrt einen Tabulatorschritt durch. Der Standard-Wert pro Tabulator
+         betrÃ¤gt vier Zeichen und kann mit der Funktion Â»Wi_TabsAbstand()Â« ge-
+         Ã¤ndert werden.
 \b       bewegt den Cursor um eine Position nach links
-\\       umgekehrter Schr„gstrich (Backslash)
+\\       umgekehrter SchrÃ¤gstrich (Backslash)
 \'       Apostroph
-\"       Anfhrungszeichen
+\"       AnfÃ¼hrungszeichen
 \xdd     ASCII-Zeichen in Hexadezimal-Schreibweise
 \ddd     ASCII-Zeichen in Oktal-Schreibweise
 
 Die Zeichenkette kann bis zu 512 Zeichen lang sein.
 
 Die Ausgabe beginnt bei der aktuellen Position des Cursors im aktiven Fenster.
-Die Funktion fhrt bei Bedarf einen Zeilenumbruch aus. Ein Zeilenumbruch in der
-letzten Zeile l”st ein Scrollen des Windows aus.                                                º
+Die Funktion fÃ¼hrt bei Bedarf einen Zeilenumbruch aus. Ein Zeilenumbruch in der
+letzten Zeile lÃ¶st ein Scrollen des Windows aus.                                                â•‘
 
 Wenn sich im System eine Maus befindet und der Mauscursor sichtbar ist, wird er
-fr die Dauer der IO-Operation ausgeschaltet.
+fÃ¼r die Dauer der IO-Operation ausgeschaltet.
 
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD	  Die Anzahl der geschriebenen Zeichen ohne '\0' oder
          ein negativer Wert, wenn ein Fehler auftritt.
 
 
 Benutzte globale Variablen:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):    - wMausda_g (R)
                     - wS_g (R)
                     - wZ_g (R)
@@ -64,19 +64,19 @@ Variablen (R/W):    - wMausda_g (R)
 .te*/
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        DEKLARATIONS-DATEIEN                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
-#include <stdio.h>            /* fr vsprintf()                             */
-#include <stdarg.h>           /* ANSI-C Standard fr va_start(), va_end()   */
-#include <conio.h>            /* fr putch()                                */
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        DEKLARATIONS-DATEIEN                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
+#include <stdio.h>            /* fÃ¼r vsprintf()                             */
+#include <stdarg.h>           /* ANSI-C Standard fÃ¼r va_start(), va_end()   */
+#include <conio.h>            /* fÃ¼r putch()                                */
 #include <string.h>
 #include <eur_tool.h>           /* Einbinden aller Toolbox Header-Dateien     */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          GLOBALE VARIABLEN                             º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          GLOBALE VARIABLEN                             â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT	SWORD	 wMausda_g;			      /* 0: keine Maus da     */
 
 IMPORT	SWORD	wS_g;				     /* Die Koordinaten be-  */
@@ -88,17 +88,17 @@ IMPORT	BOOL	boKundenTest_g;
 IMPORT	SWORD	 wFehler_g;
 IMPORT	ERRINFO errInfo_g;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC  CHAR  acBuffer_m[512];
 STATIC	SWORD  wTabs_m = 4;			     /* Tabulator-Abstand    */
 STATIC	VOID  i_Wi_PrintfFilter(PSSTR);
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Wi_Printf(const PCHAR pcFormat,...)
 {
@@ -112,8 +112,8 @@ SWORD Wi_Printf(const PCHAR pcFormat,...)
     wSpalte -= wS_g;                                /* in relative Koordi-  */
     wZeile  -= wZ_g;                                /* naten umwandeln      */
 
-    if ( !Wi_KoordInDA(wSpalte,wZeile) )            /* Koord. auáerhalb ?   */
-        return (-1);                                /* zurck an aufr. Fkt. */
+    if ( !Wi_KoordInDA(wSpalte,wZeile) )            /* Koord. auÃŸerhalb ?   */
+        return (-1);                                /* zurÃ¼ck an aufr. Fkt. */
 
     va_start(arg_zeiger, pcFormat);                 /* Arg.-zeiger setzen   */
 
@@ -125,32 +125,32 @@ SWORD Wi_Printf(const PCHAR pcFormat,...)
         if (wMausda_g)                              /* wenn Maus im System, */
             wStatus = Ms_CursorOff();               /* Maus ausschalten.    */
 
-        i_Wi_PrintfFilter(acBuffer_m);              /* ¯acBuffer_m® ausgeb. */
+        i_Wi_PrintfFilter(acBuffer_m);              /* Â»acBuffer_mÂ« ausgeb. */
 
         if (wMausda_g && wStatus == MSM_WAR_AN)     /* wenn Maus sichtbar   */
             Ms_CursorOn();                          /* war, Maus anzeigen   */
     }
 
     va_end(arg_zeiger);                             /* Zeiger auf NULL      */
-    acBuffer_m[0] = '\0';                           /* Buffer l”schen       */
+    acBuffer_m[0] = '\0';                           /* Buffer lÃ¶schen       */
 
-    return (wReturn);                               /* Zeichenanzahl zurck */
+    return (wReturn);                               /* Zeichenanzahl zurÃ¼ck */
 }
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_Wi_PrintfFilter              Datum: 13.09.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        PSSTR  pstrBuffer   Zeiger auf eine Zeichenkette     º
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion bernimmt die Ausgabe der Zeichen-   º
-  º                    kette.                                              º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_Wi_PrintfFilter              Datum: 13.09.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        PSSTR  pstrBuffer   Zeiger auf eine Zeichenkette     â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion Ã¼bernimmt die Ausgabe der Zeichen-   â•‘
+  â•‘                    kette.                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_Wi_PrintfFilter( PSSTR pstrBuffer )
 {
@@ -177,7 +177,7 @@ VOID i_Wi_PrintfFilter( PSSTR pstrBuffer )
 
             case '\r':
                 wSpalteAbs = wS_g;
-                Vi_SetCursorPos(wSpalteAbs,         /* Cursor in Spalte ¯0® */
+                Vi_SetCursorPos(wSpalteAbs,         /* Cursor in Spalte Â»0Â« */
                                 wZeileAbs);
                 break;
 
@@ -227,41 +227,41 @@ VOID i_Wi_PrintfFilter( PSSTR pstrBuffer )
 } /* end of i_Wi_PrintfFilter */
 
 /*.ta Wi_TabsAbstand()
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  Wi_TabsAbstand()                                                            º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  Wi_TabsAbstand()                                                            â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-šberblick:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Ãœberblick:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #include <eur_win.h>
 SWORD Wi_TabsAbstand(wTababstand);
 
 Parameter:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD	wTababstand	    Neuer Tabulatorschritt
 
 
 Beschreibung:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Mit dieser Funktion wird die Anzahl der Leerzeichen festgelegt, die bei der
-Funktion ¯Wi_Printf()® fr die Escape-Sequenz '\t' ersetzt wird.
+Funktion Â»Wi_Printf()Â« fÃ¼r die Escape-Sequenz '\t' ersetzt wird.
 
-Wenn der Funktion eine Null bergeben wird, bleibt der aktuelle Tabulatorschritt
-erhalten. Die Funktion gibt dann nur den aktuellen Wert zurck.
-Der Standard-Wert betr„gt vier Leerzeichen.
+Wenn der Funktion eine Null Ã¼bergeben wird, bleibt der aktuelle Tabulatorschritt
+erhalten. Die Funktion gibt dann nur den aktuellen Wert zurÃ¼ck.
+Der Standard-Wert betrÃ¤gt vier Leerzeichen.
 
-Rckgabewert:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+RÃ¼ckgabewert:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 SWORD	aktueller Tabulatorabstand
 
 
 Benutzte globale Variablen:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Variablen (R/W):  wTabs_m (R/W)
 
 
 siehe auch:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Wi_Printf()
 
 .te*/
@@ -277,19 +277,19 @@ SWORD Wi_TabsAbstand(SWORD wTababstand)
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    Wi_TestPrintf()                                     º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion                                      º
-  º                                                                        º
-  º  Rckgabewert:     keine                                               º
-  º                                                                        º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  pWkbInfo (R), Event (R), pEvent (R)                 º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    Wi_TestPrintf()                                     â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion                                      â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  pWkbInfo (R), Event (R), pEvent (R)                 â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Wi_TestPrintf(PWKB pWkbTest, const PCHAR pcFormat,...)
 {
@@ -304,7 +304,7 @@ if(boTestModus_g==AUS || boKundenTest_g==EIN)	    /* Wenn Testmodus dakti- */
 if(boFensterda == NEIN)
   {
   Wi_Aktivieren(pWkbTest);			     /* Window zeigen	     */
-  Wi_Cls();					     /* und l”schen	     */
+  Wi_Cls();					     /* und lÃ¶schen	     */
   boFensterda = JA;				     /* nur beim ersten Mal  */
   }
 
@@ -316,8 +316,8 @@ Vi_GetCursor(&wSpalte, &wZeile, &wDummy, &wDummy);   /* absol. Position des  */
 wSpalte -= wS_g;				     /* in relative Koordi-  */
 wZeile	-= wZ_g;				     /* naten umwandeln      */
 
-if( !Wi_KoordInDA(wSpalte,wZeile) )		     /* Koord. auáerhalb ?   */
-  return (-1);					     /* zurck an aufr. Fkt. */
+if( !Wi_KoordInDA(wSpalte,wZeile) )		     /* Koord. auÃŸerhalb ?   */
+  return (-1);					     /* zurÃ¼ck an aufr. Fkt. */
 
 va_start(arg_zeiger, pcFormat); 		     /* Arg.-zeiger setzen   */
 wReturn=vsprintf(acBuffer_m,pcFormat,arg_zeiger);    /* Ausgabe in Buffer    */
@@ -327,35 +327,35 @@ if(wReturn>0)					     /* Zeichen in Buffer ?  */
   if(wMausda_g) 				     /* wenn Maus im System, */
     wStatus = Ms_CursorOff();			     /* Maus ausschalten.    */
 
-  i_Wi_PrintfFilter(acBuffer_m);		     /* ¯acBuffer_m® ausgeb. */
+  i_Wi_PrintfFilter(acBuffer_m);		     /* Â»acBuffer_mÂ« ausgeb. */
 
   if(wMausda_g && wStatus==MSM_WAR_AN)		     /* wenn Maus sichtbar   */
     Ms_CursorOn();				     /* war, Maus anzeigen   */
   }
 
 va_end(arg_zeiger);				     /* Zeiger auf NULL      */
-acBuffer_m[0] = '\0';				     /* Buffer l”schen	     */
+acBuffer_m[0] = '\0';				     /* Buffer lÃ¶schen	     */
 
 while( (wTaste=Ut_Taste()) == 0);
 
 Wi_Verstecken(pWkbTest);                            /* Window verstecken    */
-return (wReturn);                                   /* Zeichenanzahl zurck */
+return (wReturn);                                   /* Zeichenanzahl zurÃ¼ck */
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    Wi_TestPrintfH() 				   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion                                      º
-  º                                                                        º
-  º  Rckgabewert:     keine                                               º
-  º                                                                        º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  pWkbInfo (R), Event (R), pEvent (R)                 º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    Wi_TestPrintfH() 				   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion                                      â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  pWkbInfo (R), Event (R), pEvent (R)                 â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Wi_TestPrintfH(PWKB pWkbTest, const PCHAR pcFormat,...)
 {
@@ -380,7 +380,7 @@ SWORD Wi_TestPrintfH(PWKB pWkbTest, const PCHAR pcFormat,...)
     if (boFensterda == NEIN)
     {
         Wi_Aktivieren(pWkbTest);                    /* Window zeigen        */
-        Wi_Cls();                                   /* und l”schen          */
+        Wi_Cls();                                   /* und lÃ¶schen          */
         boFensterda = JA;                           /* nur beim ersten Mal  */
     }
 
@@ -393,8 +393,8 @@ SWORD Wi_TestPrintfH(PWKB pWkbTest, const PCHAR pcFormat,...)
     wSpalte -= wS_g;                                /* in relative Koordi-  */
     wZeile  -= wZ_g;                                /* naten umwandeln      */
 
-    if ( !Wi_KoordInDA(wSpalte,wZeile) )            /* Koord. auáerhalb ?   */
-        return (-1);                                /* zurck an aufr. Fkt. */
+    if ( !Wi_KoordInDA(wSpalte,wZeile) )            /* Koord. auÃŸerhalb ?   */
+        return (-1);                                /* zurÃ¼ck an aufr. Fkt. */
 
 
 
@@ -410,10 +410,10 @@ SWORD Wi_TestPrintfH(PWKB pWkbTest, const PCHAR pcFormat,...)
          Wi_Printf("ERROR - bad pointer to heap\n\n");
          break;
       case _HEAPBADBEGIN:
-         Wi_Printf("ERROR - Es wurde keine ¯Header®-Information gefunden.\n\n");
+         Wi_Printf("ERROR - Es wurde keine Â»HeaderÂ«-Information gefunden.\n\n");
          break;
       case _HEAPBADNODE:
-         Wi_Printf("ERROR - Der Heap ist besch„digt oder enth„lt keine Infos.\n\n");
+         Wi_Printf("ERROR - Der Heap ist beschÃ¤digt oder enthÃ¤lt keine Infos.\n\n");
          break;
       }
 
@@ -427,36 +427,36 @@ SWORD Wi_TestPrintfH(PWKB pWkbTest, const PCHAR pcFormat,...)
         if (wMausda_g)                              /* wenn Maus im System, */
             wStatus = Ms_CursorOff();               /* Maus ausschalten.    */
 
-        i_Wi_PrintfFilter(acBuffer_m);              /* ¯acBuffer_m® ausgeb. */
+        i_Wi_PrintfFilter(acBuffer_m);              /* Â»acBuffer_mÂ« ausgeb. */
 
         if (wMausda_g && wStatus == MSM_WAR_AN)     /* wenn Maus sichtbar   */
             Ms_CursorOn();                          /* war, Maus anzeigen   */
     }
 
     va_end(arg_zeiger);                             /* Zeiger auf NULL      */
-    acBuffer_m[0] = '\0';                           /* Buffer l”schen       */
+    acBuffer_m[0] = '\0';                           /* Buffer lÃ¶schen       */
 
 
     while ( (wTemp=Ut_Taste()) == 0);
 
 Wi_Verstecken(pWkbTest);                            /* Window verstecken    */
-return (wReturn);                                   /* Zeichenanzahl zurck */
+return (wReturn);                                   /* Zeichenanzahl zurÃ¼ck */
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    Wi_HeapDump()                                       º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Beschreibung:     Diese Funktion                                      º
-  º                                                                        º
-  º  Rckgabewert:     keine                                               º
-  º                                                                        º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):  pWkbInfo (R), Event (R), pEvent (R)                 º
-  º                                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    Wi_HeapDump()                                       â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Diese Funktion                                      â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):  pWkbInfo (R), Event (R), pEvent (R)                 â•‘
+  â•‘                                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Wi_HeapDump (PWKB pWkbTest)
 {
@@ -474,7 +474,7 @@ VOID Wi_HeapDump (PWKB pWkbTest)
     if (boFensterda == NEIN)
     {
         Wi_Aktivieren(pWkbTest);                    /* Window zeigen        */
-        Wi_Cls();                                   /* und l”schen          */
+        Wi_Cls();                                   /* und lÃ¶schen          */
         boFensterda = JA;                           /* nur beim ersten Mal  */
     }
 
@@ -487,8 +487,8 @@ VOID Wi_HeapDump (PWKB pWkbTest)
     wSpalte -= wS_g;                                /* in relative Koordi-  */
     wZeile  -= wZ_g;                                /* naten umwandeln      */
 
-    if ( !Wi_KoordInDA(wSpalte,wZeile) )            /* Koord. auáerhalb ?   */
-        return;                                     /* zurck an aufr. Fkt. */
+    if ( !Wi_KoordInDA(wSpalte,wZeile) )            /* Koord. auÃŸerhalb ?   */
+        return;                                     /* zurÃ¼ck an aufr. Fkt. */
 
 
     while((heapstatus = _heapwalk(&hinfo)) == _HEAPOK)
@@ -512,17 +512,17 @@ VOID Wi_HeapDump (PWKB pWkbTest)
          Wi_Printf("ERROR - bad pointer to heap\n\n");
          break;
       case _HEAPBADBEGIN:
-         Wi_Printf("ERROR - Es wurde keine ¯Header®-Information gefunden.\n\n");
+         Wi_Printf("ERROR - Es wurde keine Â»HeaderÂ«-Information gefunden.\n\n");
          break;
       case _HEAPBADNODE:
-         Wi_Printf("ERROR - Der Heap ist besch„digt oder enth„lt keine Infos.\n\n");
+         Wi_Printf("ERROR - Der Heap ist beschÃ¤digt oder enthÃ¤lt keine Infos.\n\n");
          break;
       }
 
       while ( (wTemp=Ut_Taste()) == 0);
 
 Wi_Verstecken(pWkbTest);                            /* Window verstecken    */
-return;                                             /* Zeichenanzahl zurck */
+return;                                             /* Zeichenanzahl zurÃ¼ck */
 }
 
 
@@ -536,21 +536,21 @@ va_start(arg_zeiger, pcFormat); 		     /* Arg.-zeiger setzen   */
 /* wReturn=vsprintf(acBuffer_m,pcFormat,	     /* Ausgabe in Buffer    */
 /*  arg_zeiger);				     /* vornehmen	     */
 /* if(wReturn > 0)				     /* Zeichen in Buffer ?  */
-/*   i_Wi_PrintfFilter(acBuffer_m);		     /* ¯acBuffer_m® ausgeb. */
+/*   i_Wi_PrintfFilter(acBuffer_m);		     /* Â»acBuffer_mÂ« ausgeb. */
 
-if( !(pfHandle=fopen(pstrDevice, pstrMode)) )	     /* Datei ”ffnen	     */
+if( !(pfHandle=fopen(pstrDevice, pstrMode)) )	     /* Datei Ã¶ffnen	     */
   {
   printf("\nProtokoll-Datei <%s> kann nicht "
-  "ge”ffnet werden", pstrDevice); E(); exit(ERROR);
+  "geÃ¶ffnet werden", pstrDevice); E(); exit(ERROR);
   }
 else vfprintf(pfHandle,pcFormat,arg_zeiger);	     /* Meldung schreiben    */
 
-if( fclose(pfHandle) )				     /* Datei schlieáen      */
+if( fclose(pfHandle) )				     /* Datei schlieÃŸen      */
   {
   printf ("\nEingabe-Datei <%s> kann nicht "
     "geschlossen werden", pstrDevice); E(); exit(ERROR);
   }
 
 va_end(arg_zeiger);				     /* Zeiger auf NULL      */
-return; 					     /* Zeichenanzahl zurck */
+return; 					     /* Zeichenanzahl zurÃ¼ck */
 }

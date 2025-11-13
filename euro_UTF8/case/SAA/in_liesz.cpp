@@ -1,80 +1,80 @@
 // (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
 
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º  Funktionsname:	i_Dl_LiesZK		       Datum: 20.12.88	     º
-// ºÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄº
-// º									     º
-// º  Parameter:	pTextBox      Zeiger auf die Struktur TEXTBOX	     º
-// º			pEvent	      Zeiger auf die Ereignisstruktur	     º
-// º			wInit	      interne Strukturen aktual.	     º
-// º									     º
-// º  Beschreibung:	Diese Funktion dient zur Untersttzung der Text-     º
-// º			boxen in einem Dialogfeld. Sie stellt im wesent-     º
-// º			lichen einen zeilenorientierten Texteditor dar,      º
-// º			wobei die Textbearbeitung wahlweise mit Tastatur     º
-// º			oder Maus erfolgen kann.			     º
-// º									     º
-// º			Die Struktur ¯TEXTBOX® enth„lt s„mtliche Infor-      º
-// º			mationen ber die Textbox (Gr”áe, Lage, Text). Zur   º
-// º			Bearbeitung wird der Text in einen Buffer kopiert.   º
-// º			Um die Ausgabegeschwindigkeit zu erh”hen, werden     º
-// º			die Zeichen zusammen mit ihrem Attribut in dem	     º
-// º			Buffer abgelegt. Bevor die Funktion einen Text be-   º
-// º			arbeiten kann, muá ein Aufruf erfolgen, bei dem dem  º
-// º			Parameter ¯wInit® die Textkonstante AKT_BUFFER	     º
-// º			bergeben werden muá. Die beiden ersten Parameter    º
-// º			sind in diesem Fall bedeutungslos.		     º
-// º			Um den editierten Text wieder in die Textbox-Struk-  º
-// º			tur zurckzuschreiben, muá ein Aufruf erfolgen, bei  º
-// º			dem fr den Parameter ¯wInit® die Textkonstante      º
-// º			AKT_TEXTBOX bergeben wird. Auch in diesem Fall      º
-// º			sind die beiden ersten Parameter bedeutungslos.      º
-// º									     º
-// º			Bei jeder Cursorbewegung wird die neue Position      º
-// º			in die Struktur eingetragen.			     º
-// º									     º
-// º			Die Funktion speichert den Zeiger auf die zu-	     º
-// º			letzt bearbeitete Struktur und kann so erkennen,     º
-// º			ob der aktuelle Aufruf sich auf diese oder eine      º
-// º			neue Struktur bezieht.				     º
-// º			Bevor eine Textbox editiert werden kann muá die      º
-// º			aufrufende Funktion den Text auf dem Bildschirm      º
-// º			ausgeben.					     º
-// º									     º
-// º			Folgende Sondertasten werden untersttzt:	     º
-// º									     º
-// º			<- , ->   bewegen den Cursor um eine Spalte	     º
-// º			HOME	  bewegt den Cursor an den Textanfang	     º
-// º			END	  bewegt den Cursor an das Textende	     º
-// º			BACKSPACE l”scht das Zeichen links neben dem Cursor  º
-// º			DELETE	  l”scht das Zeichen unter dem Cursor	     º
-// º			INSERT	  schaltet Einfge-Modus ein oder aus	     º
-// º			SHIFT-DEL und CTRL-Y l”schen die ganze Zeile	     º
-// º									     º
-// º  Rckgabewert:	Die Funktion hat keinen Rckgabewert		     º
-// º									     º
-// º  Benutzte globale							     º
-// º  Variablen (R/W):	 - wMausda_g (R)				     º
-// º			 - wVioMode_g (R)				     º
-// º									     º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º			    DEKLARATIONS-DATEIEN			     º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘  Funktionsname:	i_Dl_LiesZK		       Datum: 20.12.88	     â•‘
+// â•‘â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•‘
+// â•‘									     â•‘
+// â•‘  Parameter:	pTextBox      Zeiger auf die Struktur TEXTBOX	     â•‘
+// â•‘			pEvent	      Zeiger auf die Ereignisstruktur	     â•‘
+// â•‘			wInit	      interne Strukturen aktual.	     â•‘
+// â•‘									     â•‘
+// â•‘  Beschreibung:	Diese Funktion dient zur UnterstÃ¼tzung der Text-     â•‘
+// â•‘			boxen in einem Dialogfeld. Sie stellt im wesent-     â•‘
+// â•‘			lichen einen zeilenorientierten Texteditor dar,      â•‘
+// â•‘			wobei die Textbearbeitung wahlweise mit Tastatur     â•‘
+// â•‘			oder Maus erfolgen kann.			     â•‘
+// â•‘									     â•‘
+// â•‘			Die Struktur Â»TEXTBOXÂ« enthÃ¤lt sÃ¤mtliche Infor-      â•‘
+// â•‘			mationen Ã¼ber die Textbox (GrÃ¶ÃŸe, Lage, Text). Zur   â•‘
+// â•‘			Bearbeitung wird der Text in einen Buffer kopiert.   â•‘
+// â•‘			Um die Ausgabegeschwindigkeit zu erhÃ¶hen, werden     â•‘
+// â•‘			die Zeichen zusammen mit ihrem Attribut in dem	     â•‘
+// â•‘			Buffer abgelegt. Bevor die Funktion einen Text be-   â•‘
+// â•‘			arbeiten kann, muÃŸ ein Aufruf erfolgen, bei dem dem  â•‘
+// â•‘			Parameter Â»wInitÂ« die Textkonstante AKT_BUFFER	     â•‘
+// â•‘			Ã¼bergeben werden muÃŸ. Die beiden ersten Parameter    â•‘
+// â•‘			sind in diesem Fall bedeutungslos.		     â•‘
+// â•‘			Um den editierten Text wieder in die Textbox-Struk-  â•‘
+// â•‘			tur zurÃ¼ckzuschreiben, muÃŸ ein Aufruf erfolgen, bei  â•‘
+// â•‘			dem fÃ¼r den Parameter Â»wInitÂ« die Textkonstante      â•‘
+// â•‘			AKT_TEXTBOX Ã¼bergeben wird. Auch in diesem Fall      â•‘
+// â•‘			sind die beiden ersten Parameter bedeutungslos.      â•‘
+// â•‘									     â•‘
+// â•‘			Bei jeder Cursorbewegung wird die neue Position      â•‘
+// â•‘			in die Struktur eingetragen.			     â•‘
+// â•‘									     â•‘
+// â•‘			Die Funktion speichert den Zeiger auf die zu-	     â•‘
+// â•‘			letzt bearbeitete Struktur und kann so erkennen,     â•‘
+// â•‘			ob der aktuelle Aufruf sich auf diese oder eine      â•‘
+// â•‘			neue Struktur bezieht.				     â•‘
+// â•‘			Bevor eine Textbox editiert werden kann muÃŸ die      â•‘
+// â•‘			aufrufende Funktion den Text auf dem Bildschirm      â•‘
+// â•‘			ausgeben.					     â•‘
+// â•‘									     â•‘
+// â•‘			Folgende Sondertasten werden unterstÃ¼tzt:	     â•‘
+// â•‘									     â•‘
+// â•‘			<- , ->   bewegen den Cursor um eine Spalte	     â•‘
+// â•‘			HOME	  bewegt den Cursor an den Textanfang	     â•‘
+// â•‘			END	  bewegt den Cursor an das Textende	     â•‘
+// â•‘			BACKSPACE lÃ¶scht das Zeichen links neben dem Cursor  â•‘
+// â•‘			DELETE	  lÃ¶scht das Zeichen unter dem Cursor	     â•‘
+// â•‘			INSERT	  schaltet EinfÃ¼ge-Modus ein oder aus	     â•‘
+// â•‘			SHIFT-DEL und CTRL-Y lÃ¶schen die ganze Zeile	     â•‘
+// â•‘									     â•‘
+// â•‘  RÃ¼ckgabewert:	Die Funktion hat keinen RÃ¼ckgabewert		     â•‘
+// â•‘									     â•‘
+// â•‘  Benutzte globale							     â•‘
+// â•‘  Variablen (R/W):	 - wMausda_g (R)				     â•‘
+// â•‘			 - wVioMode_g (R)				     â•‘
+// â•‘									     â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘			    DEKLARATIONS-DATEIEN			     â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <eur_tool.h>
 #include <stdio.h>
 #include <string.h>
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        KONSTANTEN UND MAKROS                           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        KONSTANTEN UND MAKROS                           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 #define LINKS   0
 #define RECHTS  1
 #define HOME	2
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘             GLOBALE VARIABLEN, DEFINITION UND REFERENZEN               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT PWKB pWkbInfo_g;
 IMPORT BOOL boTestModus_g;
 IMPORT SWORD wCSInd_g;
@@ -83,23 +83,23 @@ IMPORT SWORD wMausda_g;
 IMPORT SWORD wVioMode_g;
 IMPORT BOOL boChangeKomma_g;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 IMPORT SWORD awColor_g[5];
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                        MODULGLOBALE VARIABLEN                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                        MODULGLOBALE VARIABLEN                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC	TEXTBOX* pTB_m; 			    /* zeigt auf aktuelle   */
                                                     /* Struktur             */
-STATIC	SWORD	  awBuffer_m[TB_MAX+1]; 	     /* enth„lt editierten   */
+STATIC	SWORD	  awBuffer_m[TB_MAX+1]; 	     /* enthÃ¤lt editierten   */
                                                     /* Text mit Attribut    */
 STATIC	PSWORD	  pwBufferC_m;			     /* Zeigt auf aktuelle   */
                                                     /* Cursorpos. im Buffer */
 STATIC	PSWORD	  pwBufferE_m;			     /* zeigt auf das letzte */
                                                     /* Zeichen im Buffer    */
-STATIC	SWORD	  wNbZeichen_m; 		     /* Enth„lt die Anzahl   */
+STATIC	SWORD	  wNbZeichen_m; 		     /* EnthÃ¤lt die Anzahl   */
                                                     /* Nichtleerzeichen im  */
                                                     /* Eingabebuffer        */
 
@@ -114,9 +114,9 @@ STATIC	VOID i_BewegeCursor	   (SWORD);
 STATIC	VOID iBoxEditModus	   (BOOL);
 STATIC	VOID iSetCursor 	   (VOID);
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º                          FUNKTIONS-DEFINITION                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘                          FUNKTIONS-DEFINITION                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID i_Dl_LiesZK( TEXTBOX* pTextBox, EVENT* pEvent, SWORD wInit)
 {
@@ -142,7 +142,7 @@ if(wInit==AKT_BUFFER || wInit==AKT_INTERN ||
   i_BewegeCursor(HOME); 			     /* Cursor an Textanfang */
 
   if(wInit==AKT_CURSOR && wCursorS>wFensterS)	     /* Wenn pTB_m->wCursorS */
-    for(i=0; i < (wCursorS-wFensterS); i++)	     /* gr”áer als Boxanfang */
+    for(i=0; i < (wCursorS-wFensterS); i++)	     /* grÃ¶ÃŸer als Boxanfang */
       i_BewegeCursor(RECHTS);			     /* Cursor nach rechts   */
 
   return;
@@ -167,20 +167,20 @@ if(boChangeKomma_g)				     // SET KOMMA=JA;
   {
   if(pEvent->wTaste=='.'			     // && pEvent->wKbflags & SHIFT
     && (pEvent->wKbflags & NUM_LOCK) )		     // Auf Ziffernblock keyb-
-    pEvent->wTaste=','; 			     // grpt.com untersttzen
+    pEvent->wTaste=','; 			     // grpt.com unterstÃ¼tzen
 
   else if(pEvent->wTaste==','			     // && pEvent->wKbflags & SHIFT
     && (pEvent->wKbflags & NUM_LOCK) )		     // Auf Ziffernblock keyb-
-    pEvent->wTaste='.'; 			     // grpt.com untersttzen
+    pEvent->wTaste='.'; 			     // grpt.com unterstÃ¼tzen
   }
 
   if(pEvent->wTaste==',' && pEvent->wKbflags & SHIFT
     && !(pEvent->wKbflags & NUM_LOCK) ) 	     // DEL-Taste auf dem Zif-
-    pEvent->wTaste=T_DEL;			     // fernblock untersttzen
+    pEvent->wTaste=T_DEL;			     // fernblock unterstÃ¼tzen
 
   else if(pEvent->wTaste=='.' && pEvent->wKbflags & SHIFT
     && !(pEvent->wKbflags & NUM_LOCK) ) 	     // DEL-Taste auf dem Zif-
-    pEvent->wTaste=T_DEL;			     // fernblock untersttzen
+    pEvent->wTaste=T_DEL;			     // fernblock unterstÃ¼tzen
 
 /*  {boTestModus_g=JA;
      Wi_TestPrintf(pWkbInfo_g, "\nwArt: wTaste(%d), wFlag(%d), wArt(%d).",
@@ -196,9 +196,9 @@ if(boChangeKomma_g)				     // SET KOMMA=JA;
     {strcpy(pTB_m->acText, acText_m);
     i_Dl_LiesZK(pTB_m, NULL, AKT_INTERN);}
 
-  else if((pEvent->wKbflags & ALT) &&		     /* Alt-Taste gedrckt   */
-    pEvent->wTaste < 256)			     /* fr ALT+NummernBlock */
-    {						     /* fr ASCII Werte      */
+  else if((pEvent->wKbflags & ALT) &&		     /* Alt-Taste gedrÃ¼ckt   */
+    pEvent->wTaste < 256)			     /* fÃ¼r ALT+NummernBlock */
+    {						     /* fÃ¼r ASCII Werte      */
     if(pwBufferC_m < awBuffer_m + pTB_m->wMaxL )     /* steht der Cursor im  */
       i_ZeichenEinfuegen(pEvent->wTaste);	     /* Buffer ?	     */
     else
@@ -209,9 +209,9 @@ if(boChangeKomma_g)				     // SET KOMMA=JA;
 	{
           case T_DEL:
 	    iBoxEditModus(JA);
-	    if(pEvent->wKbflags & SHIFT)	     /* Shift-Taste gedrckt */
+	    if(pEvent->wKbflags & SHIFT)	     /* Shift-Taste gedrÃ¼ckt */
 	      {
-	      pTB_m->acText[0]='\0';		     /* Text l”schen	     */
+	      pTB_m->acText[0]='\0';		     /* Text lÃ¶schen	     */
 	      i_Dl_LiesZK(pTB_m, NULL, AKT_INTERN);
 	      }
 	    else if(pwBufferC_m <= pwBufferE_m &&    /* Cursor im Text ?     */
@@ -273,7 +273,7 @@ if(boChangeKomma_g)				     // SET KOMMA=JA;
             break;
 
 	  case T_C_Y:
-	    pTB_m->acText[0]='\0';		     /* Text l”schen	     */
+	    pTB_m->acText[0]='\0';		     /* Text lÃ¶schen	     */
 	    i_Dl_LiesZK(pTB_m, NULL, AKT_INTERN);
             break;
 
@@ -323,14 +323,14 @@ if(boChangeKomma_g)				     // SET KOMMA=JA;
 
 	  case T_INS:
 	    iBoxEditModus(JA);
-	    pTB_m->boInsert=!pTB_m->boInsert;	/* Einfge-Modus drehen */
+	    pTB_m->boInsert=!pTB_m->boInsert;	/* EinfÃ¼ge-Modus drehen */
 	    iSetCursor();
             break;
 
           case T_RETURN:                            /* Tasten abfangen,     */
 	  /* case T_TAB:			    /* die zur Steuerung    */
 	  /* case T_SHIFT_TAB:			    /* der Dialogbox be-    */
-          case T_ESC:                               /* n”tigt werden        */
+          case T_ESC:                               /* nÃ¶tigt werden        */
             break;
 
           default:
@@ -346,8 +346,8 @@ if(boChangeKomma_g)				     // SET KOMMA=JA;
 
 
       case EVENT_L_PRESS:
-        if (pEvent->wZeile  == pTB_m->wFensterZ &&  /* Koordinaten ber- */
-            pEvent->wSpalte >= pTB_m->wFensterS &&  /* prfen            */
+        if (pEvent->wZeile  == pTB_m->wFensterZ &&  /* Koordinaten Ã¼ber- */
+            pEvent->wSpalte >= pTB_m->wFensterS &&  /* prÃ¼fen            */
             pEvent->wSpalte <  pTB_m->wFensterS +
                                pTB_m->wFensterB )
           {
@@ -376,10 +376,10 @@ return; 					     /* fertig! 	     */
        (CHAR)awBuffer_m[0]);
      boTestModus_g=NEIN;} */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  iBoxEditModus()							   º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  iBoxEditModus()							   â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID iBoxEditModus(BOOL boEdit)
 {
@@ -419,21 +419,21 @@ return;
 //   pTB_m->strDatenfeld, boBoxEdit_g, boEdit);
 // boTestModus_g=NEIN;
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  iSetCursor()							   º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  iSetCursor()							   â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID iSetCursor(VOID)
 {
 /* Wi_Cursor(EIN); */
 
-if(pTB_m->boInsert==AUS)			     /* Einfge-Modus aus?   */
+if(pTB_m->boInsert==AUS)			     /* EinfÃ¼ge-Modus aus?   */
   {if(wVioMode_g==MONOCHROM)
      Vi_SetCursorTyp(8,12);			     /* Block-Cursor	     */
   else Vi_SetCursorTyp(4,7);}
 
 else
-  {if(wVioMode_g==MONOCHROM)			     /* Einfge-Modus ein!   */
+  {if(wVioMode_g==MONOCHROM)			     /* EinfÃ¼ge-Modus ein!   */
      Vi_SetCursorTyp(11,12);			     /* Linien-Cursor	     */
   else Vi_SetCursorTyp(6,7);}
 
@@ -442,29 +442,29 @@ return;
 } /* end iSetCursor */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_ZeichenEinfuegen             Datum: 24.12.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD	 wZeichen    einzufgendes Zeichen	    º
-  º                                                                        º
-  º  Beschreibung:     Das Verhalten der Funktion ist von dem aktuellen    º
-  º                    Stand der Variablen ¯pTBakt->boInsert® abh„ngig.    º
-  º                    Bei eingeschaltetem Einfge-Modus untersucht die    º
-  º                    Funktion zun„chst, ob der Buffer ein weiteres       º
-  º                    Zeichen aufnehmen kann und fgt dann das Zeichen    º
-  º                    an der Cursorposition in den Buffer ein.            º
-  º                    Bei ausgeschaltetem Einfge-Modus wird das Zeichen  º
-  º                    an der aktuellen Cursorposition berschrieben.      º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):   - awBuffer_m (W)                                   º
-  º                     - pwBufferC_m (W)                                  º
-  º                     - pwBufferE_m (W)                                  º
-  º                     - pTB_m (R)                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_ZeichenEinfuegen             Datum: 24.12.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD	 wZeichen    einzufÃ¼gendes Zeichen	    â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Das Verhalten der Funktion ist von dem aktuellen    â•‘
+  â•‘                    Stand der Variablen Â»pTBakt->boInsertÂ« abhÃ¤ngig.    â•‘
+  â•‘                    Bei eingeschaltetem EinfÃ¼ge-Modus untersucht die    â•‘
+  â•‘                    Funktion zunÃ¤chst, ob der Buffer ein weiteres       â•‘
+  â•‘                    Zeichen aufnehmen kann und fÃ¼gt dann das Zeichen    â•‘
+  â•‘                    an der Cursorposition in den Buffer ein.            â•‘
+  â•‘                    Bei ausgeschaltetem EinfÃ¼ge-Modus wird das Zeichen  â•‘
+  â•‘                    an der aktuellen Cursorposition Ã¼berschrieben.      â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):   - awBuffer_m (W)                                   â•‘
+  â•‘                     - pwBufferC_m (W)                                  â•‘
+  â•‘                     - pwBufferE_m (W)                                  â•‘
+  â•‘                     - pTB_m (R)                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_ZeichenEinfuegen( SWORD wZeichen )
 {
@@ -472,7 +472,7 @@ VOID i_ZeichenEinfuegen( SWORD wZeichen )
 if(boBoxEdit_g==NEIN)
   {
   /*if(pTB_m->boInsert == EIN)*/
-    pTB_m->acText[0]='\0';			     /* Text l”schen	     */
+    pTB_m->acText[0]='\0';			     /* Text lÃ¶schen	     */
     i_Dl_LiesZK(pTB_m, NULL, AKT_INTERN);
   iBoxEditModus(JA);
   }
@@ -489,7 +489,7 @@ if(boBoxEdit_g==NEIN)
               awBuffer_m[0] != (pTB_m->wAttri << 8 | ' '))
                 i_SchiebeTextsegment(RECHTS);       /* rechts schieben      */
 
-            *pwBufferC_m = wZeichen |               /* Zeichen einfgen     */
+            *pwBufferC_m = wZeichen |               /* Zeichen einfÃ¼gen     */
                            pTB_m->wAttri << 8;
 
             i_TextboxAkt(pTB_m->wCursorS,
@@ -510,7 +510,7 @@ if(boBoxEdit_g==NEIN)
 	else if (*pwBufferC_m != (' ' | pTB_m->wAttri << 8))
                 --wNbZeichen_m;                     /* erlaubtes Zeichen ?  */
 
-        *pwBufferC_m = wZeichen |                   /* Zeichen einfgen     */
+        *pwBufferC_m = wZeichen |                   /* Zeichen einfÃ¼gen     */
                       pTB_m->wAttri << 8;
 
         i_TextboxAkt(pTB_m->wCursorS,
@@ -524,25 +524,25 @@ if(boBoxEdit_g==NEIN)
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_BufferAkt                    Datum: 24.12.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion kopiert den auszugebenden Text in      º
-  º                    den Buffer ¯awBuffer_m®. Dabei wird jedes Zeichen   º
-  º                    direkt mit seinem Attribut abgelegt. Wenn n”tig,    º
-  º                    wird der Buffer mit Leerzeichen aufgefllt.         º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):   - awBuffer_m (W)                                   º
-  º                     - pwBufferC_m (W)                                  º
-  º                     - pwBufferE_m (W)                                  º
-  º                     - pTB_m (R)                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_BufferAkt                    Datum: 24.12.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion kopiert den auszugebenden Text in      â•‘
+  â•‘                    den Buffer Â»awBuffer_mÂ«. Dabei wird jedes Zeichen   â•‘
+  â•‘                    direkt mit seinem Attribut abgelegt. Wenn nÃ¶tig,    â•‘
+  â•‘                    wird der Buffer mit Leerzeichen aufgefÃ¼llt.         â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):   - awBuffer_m (W)                                   â•‘
+  â•‘                     - pwBufferC_m (W)                                  â•‘
+  â•‘                     - pwBufferE_m (W)                                  â•‘
+  â•‘                     - pTB_m (R)                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_BufferAkt(VOID)
 {
@@ -562,11 +562,11 @@ if(pwBufferC_m - 1 > awBuffer_m)
 else pwBufferE_m=awBuffer_m;			     /* Textzeichen	     */
 
 wAttri |= ' ';					     /* Attribut mit Leer-   */
-						     /* zeichen verknpfen   */
+						     /* zeichen verknÃ¼pfen   */
 
 for(pwBufferC_m--; pwBufferC_m<=awBuffer_m+	     /* Rest des Buffers mit */
   ((pTB_m->wMaxL > pTB_m->wFensterB) ?
-  pTB_m->wMaxL : pTB_m->wFensterB);		     /* Leerzeichen fllen   */
+  pTB_m->wMaxL : pTB_m->wFensterB);		     /* Leerzeichen fÃ¼llen   */
   *(pwBufferC_m++) = wAttri)
   ;
 
@@ -582,22 +582,22 @@ Wi_TestPrintf(pWkbInfo_g, "\niBuAkt(%d)=%s.", wAttri, pstrText);
 boTestModus_g=NEIN; */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_StrukturAkt                  Datum: 24.12.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        keine                                               º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion bertr„gt die Zeichen des Buffers      º
-  º                    ¯awBuffer_m® in die TEXTBOX-Struktur des zuletzt    º
-  º                    ge„nderten Textes.                                  º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):   - awBuffer_m (R)                                   º
-  º                     - pTBold_m (R)                                     º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_StrukturAkt                  Datum: 24.12.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        keine                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion Ã¼bertrÃ¤gt die Zeichen des Buffers      â•‘
+  â•‘                    Â»awBuffer_mÂ« in die TEXTBOX-Struktur des zuletzt    â•‘
+  â•‘                    geÃ¤nderten Textes.                                  â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):   - awBuffer_m (R)                                   â•‘
+  â•‘                     - pTBold_m (R)                                     â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_StrukturAkt(VOID)
 {
@@ -610,7 +610,7 @@ VOID i_StrukturAkt(VOID)
                                                     /* eintragen            */
 
     *pcZiel = '\0';                                 /* Zeichenkette mit '\0'*/
-                                                    /* abschlieáen          */
+                                                    /* abschlieÃŸen          */
     for(pcZiel--;pcZiel >= pTB_m->acText;pcZiel--)
        if (*pcZiel == ' ')
          *pcZiel = '\0';
@@ -626,31 +626,31 @@ return;
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_TextboxAkt                   Datum: 24.12.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD   wSpalte	 Absolute Startspalte		    º
-  º		       PSWORD  pwFirst	 Zeiger auf erstes auszugebendes    º
-  º                                     Zeichen                            º
-  º                                                                        º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion aktualisiert den Inhalt der Textbox    º
-  º                    auf dem Bildschirm. Sie gibt dazu ab der durch      º
-  º                    ¯wSpalte® bestimmten Position Zeichen des Editier-  º
-  º                    buffers ¯awBuffer_m[]® in dem Textfenster aus.      º
-  º                    Die Funktion beendet die Ausgabe wenn sie den       º
-  º                    rechten Rand der Textbox erreicht hat.              º
-  º                    Die aufrufende Funktion muá sicherstellen, daá      º
-  º                    der Buffer nicht ber sein Ende hinaus ausgegeben   º
-  º                    wird.                                               º
-  º                                                                        º
-  º  Rckgabewert:     Die Funktion hat keinen Rckgabewert.               º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):   - awBuffer_m[]  (R)                                º
-  º                     - pTB_m (W)                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_TextboxAkt                   Datum: 24.12.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD   wSpalte	 Absolute Startspalte		    â•‘
+  â•‘		       PSWORD  pwFirst	 Zeiger auf erstes auszugebendes    â•‘
+  â•‘                                     Zeichen                            â•‘
+  â•‘                                                                        â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion aktualisiert den Inhalt der Textbox    â•‘
+  â•‘                    auf dem Bildschirm. Sie gibt dazu ab der durch      â•‘
+  â•‘                    Â»wSpalteÂ« bestimmten Position Zeichen des Editier-  â•‘
+  â•‘                    buffers Â»awBuffer_m[]Â« in dem Textfenster aus.      â•‘
+  â•‘                    Die Funktion beendet die Ausgabe wenn sie den       â•‘
+  â•‘                    rechten Rand der Textbox erreicht hat.              â•‘
+  â•‘                    Die aufrufende Funktion muÃŸ sicherstellen, daÃŸ      â•‘
+  â•‘                    der Buffer nicht Ã¼ber sein Ende hinaus ausgegeben   â•‘
+  â•‘                    wird.                                               â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     Die Funktion hat keinen RÃ¼ckgabewert.               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):   - awBuffer_m[]  (R)                                â•‘
+  â•‘                     - pTB_m (W)                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_TextboxAkt(SWORD wSpalte, PSWORD pwFirst)
 {
@@ -672,35 +672,35 @@ if(wStatus == MSM_WAR_AN && wMausda_g)
    Vi_Sz(wSpalte+i, pTB_m->wFensterZ+1, (PUSTR)(pwFirst+i)); } */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_SchiebeTextsegment           Datum: 19.08.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD  wRichtung  Richtung in die geschoben werden  º
-  º                                      soll:                             º
-  º                                                                        º
-  º                                        RECHTS: nach rechts schieben    º
-  º                                        LINKS:  nach links schieben     º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion verschiebt den Textbereich von         º
-  º                    der aktuellen Cursorposition bis zum Textende.      º
-  º                    Die Bewegungsrichtung wird durch das Vorzeichen     º
-  º                    des Parameters ¯wRichtung® gew„hlt.                 º
-  º                    Wenn der Textbereich nach rechts geschoben wird,    º
-  º                    l„át die Funktion das Zeichen an der aktuellen      º
-  º                    Cursorposition unver„ndert. Der Textbereich kann    º
-  º                    das Ende des Buffers nicht berschreiten.           º
-  º                    Beim Linksschieben werden die Zeichen an der ak-    º
-  º                    tuellen Cursorposition verschluckt.                 º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):   - awBuffer_m (W)                                   º
-  º                     - pwBufferC_m (W)                                  º
-  º                     - pwBufferE_m (W)                                  º
-  º                     - pTB_m (R)                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_SchiebeTextsegment           Datum: 19.08.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD  wRichtung  Richtung in die geschoben werden  â•‘
+  â•‘                                      soll:                             â•‘
+  â•‘                                                                        â•‘
+  â•‘                                        RECHTS: nach rechts schieben    â•‘
+  â•‘                                        LINKS:  nach links schieben     â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion verschiebt den Textbereich von         â•‘
+  â•‘                    der aktuellen Cursorposition bis zum Textende.      â•‘
+  â•‘                    Die Bewegungsrichtung wird durch das Vorzeichen     â•‘
+  â•‘                    des Parameters Â»wRichtungÂ« gewÃ¤hlt.                 â•‘
+  â•‘                    Wenn der Textbereich nach rechts geschoben wird,    â•‘
+  â•‘                    lÃ¤ÃŸt die Funktion das Zeichen an der aktuellen      â•‘
+  â•‘                    Cursorposition unverÃ¤ndert. Der Textbereich kann    â•‘
+  â•‘                    das Ende des Buffers nicht Ã¼berschreiten.           â•‘
+  â•‘                    Beim Linksschieben werden die Zeichen an der ak-    â•‘
+  â•‘                    tuellen Cursorposition verschluckt.                 â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):   - awBuffer_m (W)                                   â•‘
+  â•‘                     - pwBufferC_m (W)                                  â•‘
+  â•‘                     - pwBufferE_m (W)                                  â•‘
+  â•‘                     - pTB_m (R)                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_SchiebeTextsegment( SWORD wRichtung )
 {
@@ -730,7 +730,7 @@ VOID i_SchiebeTextsegment( SWORD wRichtung )
               pwTemp++)
             *pwTemp = *(pwTemp + 1);                /* Text verschieben     */
 
-        *pwTemp = wAttri |= ' ';                    /* Leerzeichen anh„ngen */
+        *pwTemp = wAttri |= ' ';                    /* Leerzeichen anhÃ¤ngen */
 
         if (pwBufferE_m > awBuffer_m)
           pwBufferE_m--;                            /* Zeiger aktualisieren */
@@ -739,31 +739,31 @@ VOID i_SchiebeTextsegment( SWORD wRichtung )
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Funktionsname:    i_BewegeCursor                 Datum: 24.12.88      º
-  ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
-  º                                                                        º
-  º  Parameter:        SWORD  wRichtung  Richtung in die der Cursor be-    º
-  º                                      wegt werden soll:                 º
-  º                                        RECHTS : nach rechts bewegen    º
-  º                                        LINKS  : nach links bewegen     º
-  º                                        HOME   : Textanfang             º
-  º                                        ENDE   : Textende               º
-  º                                                                        º
-  º  Beschreibung:     Die Funktion bewegt den Cursor innerhalb der Text-  º
-  º                    box. Die Bewegungsrichtung wird durch den Parameter º
-  º                    ¯wRichtung® gew„hlt.                                º
-  º                    Wenn sich der Cursor an einem der R„nder der Box    º
-  º                    befindet, wird der Text gescrollt.                  º
-  º                                                                        º
-  º  Rckgabewert:     keinen                                              º
-  º                                                                        º
-  º  Benutzte globale                                                      º
-  º  Variablen (R/W):   - awBuffer_m (W)                                   º
-  º                     - pwBufferC_m (W)                                  º
-  º                     - pwBufferE_m (W)                                  º
-  º                     - pTB_m (R)                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Funktionsname:    i_BewegeCursor                 Datum: 24.12.88      â•‘
+  Ãƒâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Ã‚
+  â•‘                                                                        â•‘
+  â•‘  Parameter:        SWORD  wRichtung  Richtung in die der Cursor be-    â•‘
+  â•‘                                      wegt werden soll:                 â•‘
+  â•‘                                        RECHTS : nach rechts bewegen    â•‘
+  â•‘                                        LINKS  : nach links bewegen     â•‘
+  â•‘                                        HOME   : Textanfang             â•‘
+  â•‘                                        ENDE   : Textende               â•‘
+  â•‘                                                                        â•‘
+  â•‘  Beschreibung:     Die Funktion bewegt den Cursor innerhalb der Text-  â•‘
+  â•‘                    box. Die Bewegungsrichtung wird durch den Parameter â•‘
+  â•‘                    Â»wRichtungÂ« gewÃ¤hlt.                                â•‘
+  â•‘                    Wenn sich der Cursor an einem der RÃ¤nder der Box    â•‘
+  â•‘                    befindet, wird der Text gescrollt.                  â•‘
+  â•‘                                                                        â•‘
+  â•‘  RÃ¼ckgabewert:     keinen                                              â•‘
+  â•‘                                                                        â•‘
+  â•‘  Benutzte globale                                                      â•‘
+  â•‘  Variablen (R/W):   - awBuffer_m (W)                                   â•‘
+  â•‘                     - pwBufferC_m (W)                                  â•‘
+  â•‘                     - pwBufferE_m (W)                                  â•‘
+  â•‘                     - pTB_m (R)                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_BewegeCursor(SWORD wRichtung)
 {
@@ -779,7 +779,7 @@ if(wRichtung==RECHTS || wRichtung==T_RIGHT)
     Vi_SetCursorPos(++pTB_m->wCursorS,		     /* Cursor nach rechts   */
       pTB_m->wFensterZ);}			     /* bewegen 	     */
 
-  else if(pwBufferC_m < awBuffer_m+ pTB_m->wMaxL)    /* scrollen m”glich?    */
+  else if(pwBufferC_m < awBuffer_m+ pTB_m->wMaxL)    /* scrollen mÃ¶glich?    */
     {if(wRichtung==T_RIGHT) iBoxEditModus(JA);
     pwBufferC_m++;
     i_TextboxAkt( pTB_m->wFensterS,
@@ -799,7 +799,7 @@ if(wRichtung==LINKS || wRichtung==T_LEFT)
     Vi_SetCursorPos(--pTB_m->wCursorS,		     /* Cursor nach links    */
       pTB_m->wFensterZ);}			     /* bewegen 	     */
 
-  else if(pwBufferC_m > awBuffer_m)		     /* scrollen m”glich ?   */
+  else if(pwBufferC_m > awBuffer_m)		     /* scrollen mÃ¶glich ?   */
     {if(wRichtung==T_LEFT) iBoxEditModus(JA);
     pwBufferC_m--;
     i_TextboxAkt(pTB_m->wFensterS, pwBufferC_m );}
@@ -841,7 +841,7 @@ if(wRichtung==T_END)
        ;
   pwBufferC_m = ++pwBufferE_m +1;		     /* Cursor an Bufferende */
 
-  if(pwBufferE_m-awBuffer_m > pTB_m->wFensterB-1)    /* Ist der Text gr”áer  */
+  if(pwBufferE_m-awBuffer_m > pTB_m->wFensterB-1)    /* Ist der Text grÃ¶ÃŸer  */
     {SWORD wCur=pTB_m->wFensterS+pTB_m->wFensterB -1; /* als das Textfenster? */
 						     /* Cursor ans Fensterend*/
     if(wCursorS==wCur && boBoxEdit_g==JA)
@@ -928,7 +928,7 @@ else if(boEdit==JA && boBoxEdit_g==NEIN)	     // BoxEdit einschalten
 
       default:
         ;                                           // andere Events werden
-                                                    // nicht untersttzt
+                                                    // nicht unterstÃ¼tzt
 
 ------------------------------------------------------------------------------
 */

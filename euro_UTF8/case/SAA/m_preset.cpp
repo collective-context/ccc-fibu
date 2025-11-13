@@ -6,8 +6,8 @@
 
 
 /*------ Preset_Records ( record[] ) -------------------------------------------*/
-/* Diese Funktion ist eine Hilfs-funktion des Maskentools. Die Funktion mu·     */
-/* aufgerufen werden, wenn die angegebenen DatensÑtze mit den Preset-Werten     */
+/* Diese Funktion ist eine Hilfs-funktion des Maskentools. Die Funktion mu√ü     */
+/* aufgerufen werden, wenn die angegebenen Datens√§tze mit den Preset-Werten     */
 /* aus der Masken-Definition belegt werden sollen ( siehe Preset-Anweisung      */
 /* im Masken-Compiler ).                                                        */
 /* Versorgung:                                                                  */
@@ -15,7 +15,7 @@
 /*    char *record[];                                                           */
 /*       Gibt den vorbelegten Datensatz an.                                     */
 /*       Ist der angegebene Datensatz zu kurz, so wird er entsprechend ver-     */
-/*       lÑngert und der Zwischenraum mit Low-Values (ASCII 0) aufgefÅllt.      */
+/*       l√§ngert und der Zwischenraum mit Low-Values (ASCII 0) aufgef√ºllt.      */
 /*------------------------------------------------------------------------------*/
 GLOBAL
 SWORD M_PresetRecords (PSSTR apstrRecord[], SWORD wRecordNumber)

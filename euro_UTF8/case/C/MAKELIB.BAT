@@ -2,12 +2,12 @@
 REM SET OUT=CON
 REM SET OUT=LPT1
     SET OUT=PROTO.TXT
-REM frÅher:cl -Zpi -Oals -G2 -Gt -Gs -A%1 -c -W4 ba_*.cpp
+REM fr√ºher:cl -Zpi -Oals -G2 -Gt -Gs -A%1 -c -W4 ba_*.cpp
 rem bstop
 prompt $h$h
 echo Makelib.BAT
-echo Batch-Datei zur Erstellung einer Bibliothek fÅr die C-Toolbox
-echo ˇ
+echo Batch-Datei zur Erstellung einer Bibliothek f√ºr die C-Toolbox
+echo ¬†
 if exist proto.txt del proto.txt
 :test1
 if not "%1"=="A" goto test2

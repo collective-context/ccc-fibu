@@ -28,6 +28,6 @@ goto ende
 :error
 echo Bitte die Arbeitsplatznummer mitangeben!
 pause
-echo  
+echo Ã¡
 
 :ende

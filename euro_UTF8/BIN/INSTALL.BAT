@@ -1,16 +1,16 @@
 echo off
 cls
-echo ÿ
-echo Installationshinweis: Sie mssen auf Laufwerk A:ÿstehen!
-echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÿ
-echo Die Installationsroutine legt auf der Festplatte selbst„ndig das
-echo Verzeichnis ¯\EURO® an und kopiert die Diskette.ÿ
-echo ÿ
-echo Richtige Syntax: ¯INSTALL Laufwerksname®  Beispiel: ¯INSTALL C®
-echo ÿ
-echo Wenn Sie die Diskette auf Laufwerk %1: installieren wollen, dann drcken
+echo Â 
+echo Installationshinweis: Sie mÃ¼ssen auf Laufwerk A:Â stehen!
+echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Â 
+echo Die Installationsroutine legt auf der Festplatte selbstÃ¤ndig das
+echo Verzeichnis Â»\EUROÂ« an und kopiert die Diskette.Â 
+echo Â 
+echo Richtige Syntax: Â»INSTALL LaufwerksnameÂ«  Beispiel: Â»INSTALL CÂ«
+echo Â 
+echo Wenn Sie die Diskette auf Laufwerk %1: installieren wollen, dann drÃ¼cken
 echo Sie jetzt eine beliebige Taste.            Oder: Abbruch ist [CTRL]+[C]!
-echo ÿ
+echo Â 
 goto %1
 
 :C
@@ -45,18 +45,18 @@ if not exist %1:\euro\exe\arc.exe goto error
 goto nachricht
 
 :error
-echo ÿ
-echo Fehler: Kopie auf ¯%1:® nicht m”glich!
-echo ÿ
-echo Richtige Syntax: ¯INSTALL C®
+echo Â 
+echo Fehler: Kopie auf Â»%1:Â« nicht mÃ¶glich!
+echo Â 
+echo Richtige Syntax: Â»INSTALL CÂ«
 echo 
-goto endeÿ
+goto endeÂ 
 
 :nachricht
-echo ÿ
-echo Ende: Diskette auf Laufwerk ¯%1:® fertig installiert!
-echo ÿ
-echo ÿ
+echo Â 
+echo Ende: Diskette auf Laufwerk Â»%1:Â« fertig installiert!
+echo Â 
+echo Â 
 
 :ende
 

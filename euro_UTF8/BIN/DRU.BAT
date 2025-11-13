@@ -3,13 +3,13 @@
 cls
 set A=%LPT%
 if X%LPT%==XLPT1 goto start
-echo ÿ
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo   Aktuelle Druckereinstellung = ¯%LPT%®
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo ÿ
-\%smd%DOS\ask "Zwischendurch auf ¯LPT1® umstellen [j/n] " j,n
-echo ÿ
+echo Â 
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo   Aktuelle Druckereinstellung = Â»%LPT%Â«
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo Â 
+\%smd%DOS\ask "Zwischendurch auf Â»LPT1Â« umstellen [j/n] " j,n
+echo Â 
 if errorlevel 2 goto start
 if errorlevel 1 set LPT=LPT1
 
@@ -35,9 +35,9 @@ goto pp
 
 :HOTLINE
 SHIFT
-echo ÿ
+echo Â 
 echo Druckdatei: \euro\HOT\%ID%_%HOT%.%1 %LPT%
-echo ÿ
+echo Â 
 \%smd%DOS\ask "Datei drucken [j/n] " j,n
 if errorlevel 2 goto end
 copy %DEFA%\euro\dru\ff.prn  %LPT%
@@ -85,13 +85,13 @@ copy %DEFA%\euro\dru\dru.ibm  %LPT%
 goto pp
 
 :pp
-echo ÿ
+echo Â 
 set LPT=%A%
 rem pause
 pp
 
 :end
-echo ÿ
+echo Â 
 set LPT=%A%
 
 

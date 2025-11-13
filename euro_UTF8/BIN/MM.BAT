@@ -18,9 +18,9 @@ if exist \euro\mask\%sB%%ID%\%ID%m%1 goto compiler
 
 :frage
 if X%1==X  goto ende
-echo ÿ
+echo Â 
 echo Datei \euro\mask\%sB%%ID%\%ID%m%1 nicht vorhanden!
-echo ÿ
+echo Â 
 ask "Batch-Job beenden j/n ",jn
 if errorlevel 2 goto weiter
 if errorlevel 1 goto ende

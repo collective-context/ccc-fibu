@@ -78,29 +78,29 @@ if NOT exist \euro\form\%ID%\%ID%f%1.M%2 goto start
   goto END
 
 :help
-  echo        Syntax: re [h/he] [m/f/be/ba/ho] [ID] ®Source¯ [MAN]
-  echo DOS-    ¯ART®: MASK, FORM, BEI, BATCH oder HOT
-  echo Werte   ¯ID® : Identifikation fr Masken-, Formular- u. Beispielsource.
-  echo         ¯MAN®: Mandantenbezeichnung fr Formularsource.
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo Beispiele: ¯ART==MASK®, ¯ID==ST® und ¯MAN==03®.    ÿ
+  echo        Syntax: re [h/he] [m/f/be/ba/ho] [ID] Â«SourceÂ» [MAN]
+  echo DOS-    Â»ARTÂ«: MASK, FORM, BEI, BATCH oder HOT
+  echo Werte   Â»IDÂ« : Identifikation fÃ¼r Masken-, Formular- u. Beispielsource.
+  echo         Â»MANÂ«: Mandantenbezeichnung fÃ¼r Formularsource.
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Beispiele: Â»ART==MASKÂ«, Â»ID==STÂ« und Â»MAN==03Â«.    Â 
   echo Eingabe:   re m    110     = Filtern von ..\MASK\ST\STM110.
   echo            re      110     = Filtern von ..\MASK\ST\STM110.
   echo            re   fi 111     = Filtern von ..\MASK\FI\FIM111.
   echo            re m fi 111     = Filtern von ..\MASK\FI\FIM111.
-  echo ÿ
+  echo Â 
   echo            re f    1100    = Filtern von ..\FORM\ST\STF1100.M03
   echo            re f FI 1100    = Filtern von ..\FORM\FI\FIF1100.M03
   echo            re f FI 1100 01 = Filtern von ..\FORM\FI\FIF1100.M01
-  echo ÿ
-  echo Beispiele: ¯ART==FORM®, ¯ID==ST® und ¯MAN==03®.    ÿ
+  echo Â 
+  echo Beispiele: Â»ART==FORMÂ«, Â»ID==STÂ« und Â»MAN==03Â«.    Â 
   echo            re      1100    = Filtern von ..\FORM\ST\STF1100.M03
   echo            re      1100 01 = Filtern von ..\FORM\ST\STF1100.M01
   echo            re   FI 1100    = Filtern von ..\FORM\FI\FIF1100.M03
   echo            re   FI 1100 01 = Filtern von ..\FORM\FI\FIF1100.M01
-  echo ÿ
+  echo Â 
   echo            re h         = Ausgabe dieses Hilfstextes.
-  echo ÿ
+  echo Â 
   goto end
 
 :HOT
@@ -110,14 +110,14 @@ goto abbruch
 :END
 set ID=%sA%
 
-echo ÿ
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo     [d] == Druck ¯ %LPT%
-echo     [s] == Support ¯ ..\HOT\%ID%m%1
+echo Â 
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo     [d] == Druck Â» %LPT%
+echo     [s] == Support Â» ..\HOT\%ID%m%1
 echo     [i] == Initialisieren
-echo     [a] == Abbruch ¯ DOS
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo ÿ
+echo     [a] == Abbruch Â» DOS
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo Â 
 ask "d/s/i/a " d,s,i,a
 if errorlevel 4 goto abbruch
 if errorlevel 3 goto init

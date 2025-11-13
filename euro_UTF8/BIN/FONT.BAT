@@ -27,7 +27,7 @@ rem map g:=euro_02/sys:
    H:\fnt\hp_fcopy   21  h:\fnt\PC06LN.FNT  %LPT%
    goto end
 
-   ask "Softfont-Version  [P]flichtenheft, [n]ormal oder [g]ro· ?  " p,n,g
+   ask "Softfont-Version  [P]flichtenheft, [n]ormal oder [g]ro√ü ?  " p,n,g
       H:
       if errorlevel 3 \fnt\docujet \fnt\fontlist
       if errorlevel 2 \fnt\docujet \fnt\fontlist.005

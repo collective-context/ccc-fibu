@@ -6,8 +6,8 @@ rem bstop
 
 if exist %1.obj del %1.obj
 if NOT X%2==X goto start
-echo ˇ
-echo Liybary-Modell angeben. Z.B. fÅr Large: Øupdate %1 LÆ
+echo ¬†
+echo Liybary-Modell angeben. Z.B. f√ºr Large: ¬ªupdate %1 L¬´
 goto ende
 
 :start
@@ -23,7 +23,7 @@ rem cl      -Zp  -Od   -G2 -Gt -Gs -A%2 -c -W4 %1.cpp >> %OUT%
 REM cl      -Zi  -Od       -Gt -Gs -A%2 -c -W4 %1.cpp == mit Debug-Information
 REM cl           -Ox       -Gt -Gs -A%2 -c -W4 %1.cpp == auch auf Geschwindigkeit
 REM cl           -Os       -Gt -Gs -A%2 -c -W4 %1.cpp == nur auf Geschwindigkeit
-REM cl           -Oals     -Gt -Gs -A%2 -c -W4 %1.cpp == besser fÅr Code-Grî·e=Lieferversion
+REM cl           -Oals     -Gt -Gs -A%2 -c -W4 %1.cpp == besser f√ºr Code-Gr√∂√üe=Lieferversion
 
 pause
 if %OUT%==con goto lib
@@ -37,8 +37,8 @@ echo Das war das Kompilieren im %2 - Modell.
 copy %1.obj \euro\c
 
  :ende
-  echo ˇ
-  echo Update wurde durchgefÅhrt.
+  echo ¬†
+  echo Update wurde durchgef√ºhrt.
   prompt $p$g
-  echo ˇ
+  echo ¬†
 

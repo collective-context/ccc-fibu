@@ -5,26 +5,26 @@ if X%1==X goto label1
 goto label2
 
 :label1
-echo ÿ
-if NOT EXIST %app%hlp10.%EXT% echo Datei nicht vorhanden: ¯%app%hlp10.%EXT%®
+echo Â 
+if NOT EXIST %app%hlp10.%EXT% echo Datei nicht vorhanden: Â»%app%hlp10.%EXT%Â«
 if NOT EXIST %app%hlp10.%EXT% goto ende
-if exist HELP.%EXT% echo L”schen: ¯HELP.%EXT%®
-if exist HELP.%EXT% echo ÿ
-echo Laden: ¯%app%hlp10.%EXT%®
-echo ÿ
+if exist HELP.%EXT% echo LÃ¶schen: Â»HELP.%EXT%Â«
+if exist HELP.%EXT% echo Â 
+echo Laden: Â»%app%hlp10.%EXT%Â«
+echo Â 
 pause
-if exist HELP.%EXT% del HELP.%EXT% ÿ
+if exist HELP.%EXT% del HELP.%EXT% Â 
 ren %app%hlp10.%EXT% HELP.%EXT%
 goto start
 
 :label2
-echo ÿ
-if NOT EXIST %app%hlp%1.%EXT% echo Datei nicht vorhanden: ¯%app%hlp%1.%EXT%®
+echo Â 
+if NOT EXIST %app%hlp%1.%EXT% echo Datei nicht vorhanden: Â»%app%hlp%1.%EXT%Â«
 if NOT EXIST %app%hlp%1.%EXT% goto ende
-if exist HELP.%EXT% echo L”schen: ¯HELP.%EXT%®
-if exist HELP.%EXT% echo ÿ
-echo Laden: ¯%app%hlp%1.%EXT%®
-echo ÿ
+if exist HELP.%EXT% echo LÃ¶schen: Â»HELP.%EXT%Â«
+if exist HELP.%EXT% echo Â 
+echo Laden: Â»%app%hlp%1.%EXT%Â«
+echo Â 
 pause
 ren %app%hlp%1.%EXT% HELP.%EXT%
 goto start
@@ -45,5 +45,5 @@ goto ende
 ren HELP.%EXT% %app%hlp%1.%EXT%
 
 :ende
-echo ÿ
+echo Â 
 cd %user%

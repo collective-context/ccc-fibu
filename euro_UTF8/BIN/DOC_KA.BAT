@@ -10,13 +10,13 @@ del %app%doc??.pro
 ..\exe\stdoc ..\hlp\%app%doc03.txt %app%doc03.pro
 ..\exe\stdoc ..\hlp\%app%doc04.txt %app%doc04.pro
 
-echo �
-echo �
-echo ����������������������Ŀ
-echo � [d] == Druck � LPT1  �
-echo � [a] == Abbruch � DOS �
-echo ������������������������
-echo �
+echo  
+echo  
+echo ┌──────────────────────┐
+echo │ [d] == Druck » LPT1  │
+echo │ [a] == Abbruch » DOS │
+echo └──────────────────────┘
+echo  
 \%smd%DOS\ask "a/d " d,a
 if errorlevel 2 goto ende
 if errorlevel 1 goto druck

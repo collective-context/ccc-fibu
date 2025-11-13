@@ -4,20 +4,20 @@ cd \euro\exe
 goto %1
 
 :1
-           FI1100 1300SSL  ö÷ Sachkont-Stamm          FI130,131,132
-rem        FI3100 0600EL   ö÷ AFA verbuchen           FI4360
-rem        FI1100 1300SSL  ö÷ Sachkont-Stamm          FI130,131,132
-rem        FI1500 0220EL    ÷ Erf. Rechnungsbuchungen FI250,251,252,254
+           FI1100 1300SSL  Ã·Â¸ Sachkont-Stamm          FI130,131,132
+rem        FI3100 0600EL   Ã·Â¸ AFA verbuchen           FI4360
+rem        FI1100 1300SSL  Ã·Â¸ Sachkont-Stamm          FI130,131,132
+rem        FI1500 0220EL    Â¸ Erf. Rechnungsbuchungen FI250,251,252,254
 goto end
 
 :2
-           FI1100 1450ESL  ö÷ -"- mit Vorjahren       FI145,146
-rem        FI4100 2100EL   ö÷ Protokoll Soll/Haben    FI4210             FI2100   0011
-rem        FI3100 0500EL    ÷ Ver. Rechnungsbuchungen FI4350,4351,4352
+           FI1100 1450ESL  Ã·Â¸ -"- mit Vorjahren       FI145,146
+rem        FI4100 2100EL   Ã·Â¸ Protokoll Soll/Haben    FI4210             FI2100   0011
+rem        FI3100 0500EL    Â¸ Ver. Rechnungsbuchungen FI4350,4351,4352
 goto end
 
 :3
-rem        FI1100 1600EL    ÷ Anlagenstamm            FI160
+rem        FI1100 1600EL    Â¸ Anlagenstamm            FI160
 goto end
 
 :end

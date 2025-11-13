@@ -2,11 +2,11 @@ cls
 @echo off
 SET JAHR=1991
 
-echo ÿ
+echo Â 
 echo del \euro\dat\d01\%JAHR%\*.*
-echo ÿ
+echo Â 
 del \euro\dat\d01\%JAHR%\*.*
 ncopy \euro\dat\d01\%JAHR%.BAK\*.* \euro\dat\d01\%JAHR%
-echo ÿ
+echo Â 
 
 

@@ -12,9 +12,9 @@ if X%1==Xa shift
 if exist BILD0%1.TXT goto kopie
 :frage
   if X%1==X goto ende
-  echo ÿ
-  echo Fehler: Datei ¯BILD0%1.TXT® nicht vorhanden!
-  echo ÿ
+  echo Â 
+  echo Fehler: Datei Â»BILD0%1.TXTÂ« nicht vorhanden!
+  echo Â 
   ask "Batch-Job beenden j/n ",jn
     if errorlevel 2 goto weiter
     if errorlevel 1 goto ende
@@ -29,9 +29,9 @@ if exist BILD0%1.TXT goto kopie
   goto auto
 
 :error
-echo ÿ
-echo ¯¯¯ Fehler aufgetreten ®®®
-echo ÿ
+echo Â 
+echo Â»Â»Â» Fehler aufgetreten Â«Â«Â«
+echo Â 
 pause
 
 :ende

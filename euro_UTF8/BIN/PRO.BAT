@@ -9,7 +9,7 @@ goto %ART%
 if X%1==X  goto start
 if X%1==Xe goto start
 set app=%1
-echo APP wird tempor„r auf %1 umgestellt.
+echo APP wird temporÃ¤r auf %1 umgestellt.
 SHIFT
 
 :START
@@ -28,13 +28,13 @@ goto END
 :FORM
 if     X%1==Xe edit %user%\%app%form.pro
 if NOT X%1==Xe show %user%\%app%form.pro
-echo ÿ
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo     [d] == Druck ¯ %LPT%
+echo Â 
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo     [d] == Druck Â» %LPT%
 echo     [i] == Initialisieren
-echo     [a] == Abbruch ¯ DOS
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo ÿ
+echo     [a] == Abbruch Â» DOS
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo Â 
 \%smd%DOS\ask "i/d/a " d,i,a
 if errorlevel 3 goto end
 if errorlevel 2 copy ..\DRU\pro.%DRUCK% %LPT%
@@ -44,13 +44,13 @@ goto END
 :MASK
 if     X%1==Xe edit %user%\%app%mask.pro
 if NOT X%1==Xe show %user%\%app%mask.pro
-echo ÿ
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo     [d] == Druck ¯ %LPT%
+echo Â 
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo     [d] == Druck Â» %LPT%
 echo     [i] == Initialisieren
-echo     [a] == Abbruch ¯ DOS
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo ÿ
+echo     [a] == Abbruch Â» DOS
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo Â 
 \%smd%DOS\ask "i/d/a " d,i,a
 if errorlevel 3 goto end
 if errorlevel 2 copy ..\DRU\pro.%DRUCK% %LPT%
@@ -60,13 +60,13 @@ goto END
 :PRINT
 if     X%1==Xe edit %user%\%app%print.pro
 if NOT X%1==Xe show %user%\%app%print.pro
-echo ÿ
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo     [d] == Druck ¯ %LPT%
+echo Â 
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo     [d] == Druck Â» %LPT%
 echo     [i] == Initialisieren
-echo     [a] == Abbruch ¯ DOS
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo ÿ
+echo     [a] == Abbruch Â» DOS
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo Â 
 \%smd%DOS\ask "i/d/a " d,i,a
 if errorlevel 3 goto end
 if errorlevel 2 copy ..\DRU\pro.%DRUCK% %LPT%

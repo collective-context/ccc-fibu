@@ -1,33 +1,33 @@
 : MAKELIB.BAT
 :
-: Mit dieser Batch-Datei k”nnen leicht und einfach Komplett-
-: bibliotheken fr die euroSOFT-CASEbox erstellt werden.
-: MAKELIB erh„lt als Argument einen Buchstaben, der das Speicher-
-: modell definiert, fr das die Bibliothek erstellt werden soll.
+: Mit dieser Batch-Datei kÃ¶nnen leicht und einfach Komplett-
+: bibliotheken fÃ¼r die euroSOFT-CASEbox erstellt werden.
+: MAKELIB erhÃ¤lt als Argument einen Buchstaben, der das Speicher-
+: modell definiert, fÃ¼r das die Bibliothek erstellt werden soll.
 :
 :         MAKELIB S, M, C, L
 :
-: Die Angabe des Speichermodells muá in Grossbuchstaben erfolgen.
+: Die Angabe des Speichermodells muÃŸ in Grossbuchstaben erfolgen.
 :
 : Die Batch-Datei setzt voraus, das alle Source-Dateien im
-: aktuellen Verzeichnis sind und die Deklarationsdateien ber
+: aktuellen Verzeichnis sind und die Deklarationsdateien Ã¼ber
 : die Umgebungsvariable INCLUDE erreichbar sind.
 : Mit dieser Batch-Datei werden die C-Dateien aufgebaut.
-: Wenn Sie eine ge„nderte Version der Assembler-Datei vio.asm mit
-: aufnehmen wollen, mssen Sie den entsprechenden Aufruf „ndern.
+: Wenn Sie eine geÃ¤nderte Version der Assembler-Datei vio.asm mit
+: aufnehmen wollen, mÃ¼ssen Sie den entsprechenden Aufruf Ã¤ndern.
 : Der C 5.1 Compiler erzeugt beim Kompilieren der Datei dl_laden.cpp
-: eine interne Fehlermeldung. Aus diesem Grund wird diese Datei fr
+: eine interne Fehlermeldung. Aus diesem Grund wird diese Datei fÃ¼r
 : das Compact- und Large Speichermodell mit dem QCL-Compiler aufgebaut.
 @echo off
 REM SET OUT=CON
 REM SET OUT=LPT1
     SET OUT=PROTO.TXT
-REM frher:cl -Zpi -Oals -G2 -Gt -Gs -A%1 -c -W4 dl_*.cpp
+REM frÃ¼her:cl -Zpi -Oals -G2 -Gt -Gs -A%1 -c -W4 dl_*.cpp
 rem bstop
 prompt $h$h
 echo Makelib.BAT
-echo Batch-Datei zur Erstellung einer Bibliothek fr die C-Toolbox
-echo ÿ
+echo Batch-Datei zur Erstellung einer Bibliothek fÃ¼r die C-Toolbox
+echo Â 
 if exist proto.txt del proto.txt
 :test1
 if not "%1"=="A" goto test2
@@ -73,7 +73,7 @@ REM if errorlevel 1 goto comperror
 
 REM Kompiliere das MN-Modul
 :mnu
-echo Das Men-Modul wird kompiliert.
+echo Das MenÃ¼-Modul wird kompiliert.
 echo Dies sind nur zehn Dateien.
 cl -Zpi -Ox   -G3 -Gt -Gs -A%1 -c -W4 mn_*.cpp >> %OUT%
 REM if errorlevel 1 goto comperror
@@ -105,7 +105,7 @@ REM if errorlevel 1 goto comperror
 
 REM Kompiliere das WI-Modul
 :win
-echo Zum Schluá wird das Window-Modul kompiliert.
+echo Zum SchluÃŸ wird das Window-Modul kompiliert.
 cl -Zpi -Ox   -G3 -Gt -Gs -A%1 -c -W4 wi_*.cpp >> %OUT%
 REM if errorlevel 1 goto comperror
 

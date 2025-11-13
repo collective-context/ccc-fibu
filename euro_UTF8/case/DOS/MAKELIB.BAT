@@ -1,33 +1,33 @@
 : MAKELIB.BAT
 :
-: Mit dieser Batch-Datei kînnen leicht und einfach Komplett-
-: bibliotheken fÅr die euroSOFT-CASEbox erstellt werden.
-: MAKELIB erhÑlt als Argument einen Buchstaben, der das Speicher-
-: modell definiert, fÅr das die Bibliothek erstellt werden soll.
+: Mit dieser Batch-Datei k√∂nnen leicht und einfach Komplett-
+: bibliotheken f√ºr die euroSOFT-CASEbox erstellt werden.
+: MAKELIB erh√§lt als Argument einen Buchstaben, der das Speicher-
+: modell definiert, f√ºr das die Bibliothek erstellt werden soll.
 :
 :         MAKELIB S, M, C, L
 :
-: Die Angabe des Speichermodells mu· in Grossbuchstaben erfolgen.
+: Die Angabe des Speichermodells mu√ü in Grossbuchstaben erfolgen.
 :
 : Die Batch-Datei setzt voraus, das alle Source-Dateien im
-: aktuellen Verzeichnis sind und die Deklarationsdateien Åber
+: aktuellen Verzeichnis sind und die Deklarationsdateien √ºber
 : die Umgebungsvariable INCLUDE erreichbar sind.
 : Mit dieser Batch-Datei werden die C-Dateien aufgebaut.
-: Wenn Sie eine geÑnderte Version der Assembler-Datei vio.asm mit
-: aufnehmen wollen, mÅssen Sie den entsprechenden Aufruf Ñndern.
+: Wenn Sie eine ge√§nderte Version der Assembler-Datei vio.asm mit
+: aufnehmen wollen, m√ºssen Sie den entsprechenden Aufruf √§ndern.
 : Der C 5.1 Compiler erzeugt beim Kompilieren der Datei dl_laden.cpp
-: eine interne Fehlermeldung. Aus diesem Grund wird diese Datei fÅr
+: eine interne Fehlermeldung. Aus diesem Grund wird diese Datei f√ºr
 : das Compact- und Large Speichermodell mit dem QCL-Compiler aufgebaut.
 @echo off
 REM SET OUT=CON
 REM SET OUT=LPT1
     SET OUT=PROTO.TXT
-REM frÅher:cl -Zpi -Oals -G2 -Gt -Gs -A%1 -c -W4 S_*.cpp
+REM fr√ºher:cl -Zpi -Oals -G2 -Gt -Gs -A%1 -c -W4 S_*.cpp
 rem bstop
 prompt $h$h
 echo Makelib.BAT
-echo Batch-Datei zur Erstellung einer Bibliothek fÅr die C-Toolbox
-echo ˇ
+echo Batch-Datei zur Erstellung einer Bibliothek f√ºr die C-Toolbox
+echo ¬†
 if exist proto.txt del proto.txt
 :test1
 if not "%1"=="A" goto test2

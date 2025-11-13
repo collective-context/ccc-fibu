@@ -1,19 +1,19 @@
 @echo off
 if exist temp del temp
 if NOT X%2==X goto start
-echo ÿ
-echo Liybary-Modell angeben. Z.B. fr Large: ¯update %1 L®
+echo Â 
+echo Liybary-Modell angeben. Z.B. fÃ¼r Large: Â»update %1 LÂ«
 goto ende
 
 :start
 prompt Arbeit: 
 
 :lib
-echo %2 - Modell: Jetzt wird das Update der LIB durchgefhrt.
+echo %2 - Modell: Jetzt wird das Update der LIB durchgefÃ¼hrt.
 echo on
 lib \euro\LIB\saa_m70%2.lib - %1.obj  >> %OUT%
 @echo off
-pause Einzelbibliothek-Update wurde durchgefhrt.
+pause Einzelbibliothek-Update wurde durchgefÃ¼hrt.
 prompt $p$g
 
 if %OUT%==con goto dos
@@ -28,7 +28,7 @@ if %OUT%==Con goto dos
   libcopy \euro\LIB\saa_m70%2.lib
 
  :ende
-  echo ÿ
+  echo Â 
   echo on
 
 

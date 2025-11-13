@@ -1,12 +1,12 @@
 @echo off
 REM Tool-Programme:
-rem %1 %2 LKF1100 0100EL   ö÷ Anlegen UStVA           FI015
-rem %1 %2 LKF1500 0200EL   ö÷ Erfassen Buchungen      FI210,211,212
-rem %1 %2 LKF3100 0100EL   ö÷ Verarbeiten Buchungen   FI4310,4311,4312
-rem %1 %2 LKF3110 0600EL   ö÷ AFA verbuchen           FI4360
-rem %1 %2 LKF4100 0300LL   ö÷ Liste Sachkontenbasis   FI4030,030         FI0300   0010
-rem %1 %2 LKF4100 1300LL   ö÷ Liste Sachkonten        FI4130,130         FI1300   0010
-rem %1 %2 LKF4110 5000L    ö  Jahresauswertungen      FI4150,150         FI1500   0010
+rem %1 %2 LKF1100 0100EL   Ã·Â¸ Anlegen UStVA           FI015
+rem %1 %2 LKF1500 0200EL   Ã·Â¸ Erfassen Buchungen      FI210,211,212
+rem %1 %2 LKF3100 0100EL   Ã·Â¸ Verarbeiten Buchungen   FI4310,4311,4312
+rem %1 %2 LKF3110 0600EL   Ã·Â¸ AFA verbuchen           FI4360
+rem %1 %2 LKF4100 0300LL   Ã·Â¸ Liste Sachkontenbasis   FI4030,030         FI0300   0010
+rem %1 %2 LKF4100 1300LL   Ã·Â¸ Liste Sachkonten        FI4130,130         FI1300   0010
+rem %1 %2 LKF4110 5000L    Ã·  Jahresauswertungen      FI4150,150         FI1500   0010
 
 rem %1 %2    ASC2EURO A10110.SEQ
 REM %1 %2    EUROINST i
@@ -15,5 +15,5 @@ REM %1 %2    TEST \AUS_B \AUS_B b
 
     %1 %2  ST1100 1120E       VS Verstriebssteuerung  ST110,VS111,112,113
 
-REM [ö == FIBU/AUFTRAG]
+REM [Ã· == FIBU/AUFTRAG]
 

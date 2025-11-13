@@ -4,11 +4,11 @@ set itmp=%id%
 set app=TP
 
 if X%1==Xed edit \euro\bin\mmfi.bat
-echo ÿ
-echo Erstellen der Maskenbibliothek: ¯\euro\EXE\%app%MASK.%EXT%®
-echo ÿ
+echo Â 
+echo Erstellen der Maskenbibliothek: Â»\euro\EXE\%app%MASK.%EXT%Â«
+echo Â 
 ask "Starten j/n ",j,n
-echo ÿ
+echo Â 
 if errorlevel 2 goto end
 
 set id=TP

@@ -36,8 +36,8 @@ if exist %USER%\TEMP del %USER%\TEMP
           set LiAn=%App%%2
 if X%2==X set LiAn=%App%%1
 
- echo User: ¯%user%®  /  Source-File: ¯%So%\%ID%%1.%MSC%® / ¯%LiAn%®
- echo ÿ
+ echo User: Â»%user%Â«  /  Source-File: Â»%So%\%ID%%1.%MSC%Â« / Â»%LiAn%Â«
+ echo Â 
    if %sA%==S set LIB=F:\euro\lib
    if %sA%==S set CoOp=  -Zpi -Otials  -G2    -Gs -A%sA% -c -W4
    if %sA%==S set LiOp=/NOD /E /F
@@ -68,22 +68,22 @@ rem f errorlevel 1 set CoOp=-Zpi -Od -G2 -Gt -Ge -A%sA% -c -W4
    REM -Zp=Set structure packing        -Ze=Enable MS language extensions
    REM -Zi=Code View ein                -Ox=-Gs und folgende vier Optionen:
    REM -Oa lockere sonstige Kontrollen, -Oi=Generieren interne Routienen ein
-   REM -Ol Schleifenoptimierung ein,    -Ot=gr”áte Geschwindigkeit
+   REM -Ol Schleifenoptimierung ein,    -Ot=grÃ¶ÃŸte Geschwindigkeit
    REM -Oq P-Code ein
-   REM -Od=Optimierung aus,             -Ge=Aufruf der Stack-Prfung
-   REM -Gt=Daten in neues Segment       -Gs=Nimmt Stack-Checkingroutinen zurck
+   REM -Od=Optimierung aus,             -Ge=Aufruf der Stack-PrÃ¼fung
+   REM -Gt=Daten in neues Segment       -Gs=Nimmt Stack-Checkingroutinen zurÃ¼ck
    REM -G2=Generiert 80286 Code
    REM -G3=Generiert 80386 Code
 
  :frage
- echo ÿ
+ echo Â 
  \euro\bin\ask "Nur [c]ompilieren oder nur [l]inken, oder [b]eides? " c,l,b
    if errorlevel 3 goto beides
    if errorlevel 2 goto linker
    if errorlevel 1 goto compiler
 
  :beides
- echo ÿ
+ echo Â 
  if exist %ID%%1.obj del %ID%%1.obj
  REM  cl -EM %CoOp%  %So%\%ID%%1.%MSC% >> %OUT%
  echo cl     %CoOp%  %So%\%ID%%1.%MSC% >> %OUT%
@@ -94,13 +94,13 @@ rem f errorlevel 1 set CoOp=-Zpi -Od -G2 -Gt -Ge -A%sA% -c -W4
  if "%So%"=="\case\C" copy %So%\%ID%%1.obj \euro\c
  if "%So%"=="\case\C" cd \euro\C
  if "%So%"=="\case\C" set So=\euro\C
- echo ÿ
- echo Linken im %sA%-Modell.ÿ
+ echo Â 
+ echo Linken im %sA%-Modell.Â 
    if %sA%==h set sA=L
    if %sA%==H set sA=L
 
 REM set link=%LiOp%
- echo ÿ
+ echo Â 
 set sC=..\EXE\%LiAn%.EXE,..\exe\,@%USER%\%LW%_M80_%sA%.LNK;
 echo on
 link %LiOp% %sB%@%So%\%LiAn% %sC%
@@ -111,7 +111,7 @@ rem   link %LiOp% @%So%\%LiAn% ..\EXE\%LiAn%.EXE, ,@%USER%\%LW%_M80_%sA%.LNK, %S
    goto end
 
  :compiler
- echo ÿ
+ echo Â 
  if exist %ID%%1.obj del %ID%%1.obj
  rem  cl -EM %CoOp%  %So%\%ID%%1.%MSC%  >> %OUT%
  echo cl     %CoOp%  %So%\%ID%%1.%MSC%  >> %OUT%
@@ -119,7 +119,7 @@ rem   link %LiOp% @%So%\%LiAn% ..\EXE\%LiAn%.EXE, ,@%USER%\%LW%_M80_%sA%.LNK, %S
       goto end
 
  :end
- echo ÿ
+ echo Â 
   rem cd %user%
   if %OUT%==CON goto dos
 

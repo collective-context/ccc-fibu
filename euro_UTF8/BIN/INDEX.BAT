@@ -14,11 +14,11 @@ shift
 :edit
 if not exist %app%DOC%1.pro goto ende
 edit %app%DOC%1.pro
-echo ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-echo ³ [d] == Druck ¯ LPT1  ³
-echo ³ [a] == Abbruch ¯ DOS ³
-echo ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-echo ÿ
+echo â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+echo â”‚ [d] == Druck Â» LPT1  â”‚
+echo â”‚ [a] == Abbruch Â» DOS â”‚
+echo â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+echo Â 
 \%smd%DOS\ask "a/d " d,a
 if errorlevel 2 goto ende
 if errorlevel 1 goto druck

@@ -33,12 +33,12 @@ copy !.tmp !
 goto ende
 
 :syntax
-echo ÿ
-echo Syntax:  inst ®Quelle¯ [BBS:Ziel]
+echo Â 
+echo Syntax:  inst Â«QuelleÂ» [BBS:Ziel]
 echo Beispiel inst sy_01
-echo Beispiel inst sy_01 h   ---¯ kopiert auf H:\max\file\hotline
-echo Beispiel inst sy_01 u   ---¯ kopiert auf H:\max\file\newup
-echo ÿ
+echo Beispiel inst sy_01 h   ---Â» kopiert auf H:\max\file\hotline
+echo Beispiel inst sy_01 u   ---Â» kopiert auf H:\max\file\newup
+echo Â 
 
 :ende
 

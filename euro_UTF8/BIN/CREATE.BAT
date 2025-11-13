@@ -12,7 +12,7 @@ goto ende
 if not exist \euro\mask\0%App%%1 goto ende
 butil -create \euro\dat\0%App%%1.btr \euro\mask\0%App%%1
 echo ----------------------------------------------------------------
-echo    FÅr \euro\mask\0%App%%1  -CREATE erfolgreich durchgefÅhrt!
+echo    F√ºr \euro\mask\0%App%%1  -CREATE erfolgreich durchgef√ºhrt!
 echo ----------------------------------------------------------------
 shift
 pause

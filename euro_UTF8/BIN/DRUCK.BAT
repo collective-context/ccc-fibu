@@ -1,21 +1,21 @@
 echo off
 \msdos\brequest /D:22000
 cls
-echo ÿ
-echo ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-echo ³ [a] == VS - Konvertierung ¯ Word-Datei        ³
-echo ³ [b] == VS - Formular Vertriebsst.-Stammblatt  ³
-echo ³ [c] == FI - Formular Verrechnungs-Scheck      ³
-echo ³ [d] == ST - Liste Kunden nach Kurzbezeichnung ³
-echo ³ [e] == ST - Liste Kunden nach Kundennummer    ³
-echo ³ [f] == ST - Liste Kunden-Adressen             ³
-echo ³ [g] == ST - Etikett Kunden-Adressen           ³
-echo ³ [h] == ST - Etikett BH-Ordner Beschriftung    ³
-echo ³ [i] == KA - Kassa-Buch                        ³
-echo ³ [j] == SY - Daten-Lexikon                     ³
-echo ³ [k] == AU - Angebote, Auftr„ge, Rechnungen .. ³
-echo ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-echo ÿ
+echo Â 
+echo â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+echo â”‚ [a] == VS - Konvertierung Â» Word-Datei        â”‚
+echo â”‚ [b] == VS - Formular Vertriebsst.-Stammblatt  â”‚
+echo â”‚ [c] == FI - Formular Verrechnungs-Scheck      â”‚
+echo â”‚ [d] == ST - Liste Kunden nach Kurzbezeichnung â”‚
+echo â”‚ [e] == ST - Liste Kunden nach Kundennummer    â”‚
+echo â”‚ [f] == ST - Liste Kunden-Adressen             â”‚
+echo â”‚ [g] == ST - Etikett Kunden-Adressen           â”‚
+echo â”‚ [h] == ST - Etikett BH-Ordner Beschriftung    â”‚
+echo â”‚ [i] == KA - Kassa-Buch                        â”‚
+echo â”‚ [j] == SY - Daten-Lexikon                     â”‚
+echo â”‚ [k] == AU - Angebote, AuftrÃ¤ge, Rechnungen .. â”‚
+echo â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+echo Â 
 \%smd%DOS\ask "a/b/c/d/e/f/g/h/i/j/k " a,b,c,d,e,f,g,h,i,j,k
 if errorlevel 11 goto 11
 if errorlevel 10 goto 10

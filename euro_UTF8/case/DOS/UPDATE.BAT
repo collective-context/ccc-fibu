@@ -6,8 +6,8 @@ rem bstop
 
 if exist %1.obj del %1.obj
 if NOT X%2==X goto start
-echo ˇ
-echo Liybary-Modell angeben. Z.B. fÅr Large: Øupdate %1 LÆ
+echo ¬†
+echo Liybary-Modell angeben. Z.B. f√ºr Large: ¬ªupdate %1 L¬´
 goto ende
 
 :start
@@ -20,7 +20,7 @@ echo on
 REM cl      -Zi  -Od       -Gt -Gs -A%2 -c -W4 %1.cpp == mit Debug-Information
 REM cl           -Ox       -Gt -Gs -A%2 -c -W4 %1.cpp == auch auf Geschwindigkeit
 REM cl           -Os       -Gt -Gs -A%2 -c -W4 %1.cpp == nur auf Geschwindigkeit
-REM cl           -Oals     -Gt -Gs -A%2 -c -W4 %1.cpp == besser fÅr Code-Grî·e=Lieferversion
+REM cl           -Oals     -Gt -Gs -A%2 -c -W4 %1.cpp == besser f√ºr Code-Gr√∂√üe=Lieferversion
          
 
 pause
@@ -32,7 +32,7 @@ rem pause
 
 :lib
 echo Das war das Kompilieren im %2 - Modell.
-echo %2 - Modell: Jetzt wird das Update der LIB durchgefÅhrt.
+echo %2 - Modell: Jetzt wird das Update der LIB durchgef√ºhrt.
 echo on
 lib \euro\LIB\DOS_M80%2.lib - %1.obj + %1.obj; >> %OUT%
 echo off
@@ -40,7 +40,7 @@ rem ask "DEL *.OBJ [j/n] " j,n
 rem  if errorlevel 2 goto ende
 rem  if errorlevel 1 del *.obj
 
-echo Einzelbibliothek-Update wurde durchgefÅhrt.
+echo Einzelbibliothek-Update wurde durchgef√ºhrt.
 
 if %OUT%==con goto dos
 if %OUT%==CON goto dos

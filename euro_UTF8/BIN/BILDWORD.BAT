@@ -25,9 +25,9 @@ if X%1==Xa shift
 
 :frage
   if X%1==X goto ende
-  echo ÿ
-  echo Fehler: Bild Nummer ¯%1® nicht vorhanden!
-  echo ÿ
+  echo Â 
+  echo Fehler: Bild Nummer Â»%1Â« nicht vorhanden!
+  echo Â 
   ask "Batch-Job beenden j/n ",jn
     if errorlevel 2 goto weiter
     if errorlevel 1 goto ende
@@ -37,9 +37,9 @@ if X%1==Xa shift
   goto auto
 
 :error
-echo ÿ
-echo ¯¯¯ Fehler aufgetreten ®®®
-echo ÿ
+echo Â 
+echo Â»Â»Â» Fehler aufgetreten Â«Â«Â«
+echo Â 
 pause
 
 :ende

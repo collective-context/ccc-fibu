@@ -17,12 +17,12 @@ IF X%MAN%==X goto start
 
 :start
 edit %USER%\katalog.pro
-echo ÿ
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo     [d] == Druck ¯ %LPT%
-echo     [a] == Abbruch ¯ DOS
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo ÿ
+echo Â 
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo     [d] == Druck Â» %LPT%
+echo     [a] == Abbruch Â» DOS
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo Â 
 \%smd%DOS\ask "a/d " d,a
 if errorlevel 2 goto abbruch
 if errorlevel 1 goto druck

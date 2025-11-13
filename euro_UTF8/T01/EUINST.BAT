@@ -1,28 +1,28 @@
 @echo off
 cls
-echo ÿ
-echo ÿÚÄÄÄÄÄÄÄÄÄÄÄ¿ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo  ³euroSOFT-  ³	     euroSOFT-WARE Servicetelefon: 03116/27 5 11
-echo  ³MODULsystem³	 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo  ³        3  ³
-echo ÿ³     2 ²²² ³
-echo ÿ³  1 ²²²²²² ³	 ... euroSOFT-WARE
-echo ÿ³ ²²²²²²²²² ³	 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo ÿÀÄÄÄÄÄÄÄÄÄÄÄÙ			  ... Software-Engineering aus ™sterreich!
-echo ÿ
-echo  Ú Wie kann ich das Installationsprogramm abbrechen?
-echo  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo  Sie k”nnen jederzeit mit den Tasten [Strg]+[C] die Installation abbrechen!
-echo  Nach einem Abbruch stehen Sie im DOS-Betriebssytem und k”nnen das Men
-echo  wieder durch die Eingabe von [START]+[Ù] starten.
-echo ÿ
-echo ÿ
-echo  Ú Wie wird das Installationsprogramm gestartet?
-echo  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+echo Â 
+echo Â â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo  â”‚euroSOFT-  â”‚	     euroSOFT-WARE Servicetelefon: 03116/27 5 11
+echo  â”‚MODULsystemâ”‚	 â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo  â”‚        3  â”‚
+echo Â â”‚     2 â–“â–“â–“ â”‚
+echo Â â”‚  1 â–“â–“â–“â–“â–“â–“ â”‚	 ... euroSOFT-WARE
+echo Â â”‚ â–“â–“â–“â–“â–“â–“â–“â–“â–“ â”‚	 â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo Â â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜			  ... Software-Engineering aus Ã–sterreich!
+echo Â 
+echo  â”Œ Wie kann ich das Installationsprogramm abbrechen?
+echo  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo  Sie kÃ¶nnen jederzeit mit den Tasten [Strg]+[C] die Installation abbrechen!
+echo  Nach einem Abbruch stehen Sie im DOS-Betriebssytem und kÃ¶nnen das MenÃ¼
+echo  wieder durch die Eingabe von [START]+[â”˜] starten.
+echo Â 
+echo Â 
+echo  â”Œ Wie wird das Installationsprogramm gestartet?
+echo  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 echo  Wenn Sie die Frage nach dem Diskettenlaufwerk mit [A] oder [B] beantwortet
-echo  haben, wird das Installationsprogramm automatisch gestartet. ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-echo  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-echo ÿ
+echo  haben, wird das Installationsprogramm automatisch gestartet. â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+echo  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+echo Â 
 ask " Programme vom Diskettenlaufwerk [A] oder [B] einkopieren? ",ab
 cls
 if errorlevel 2 B:INSTALL

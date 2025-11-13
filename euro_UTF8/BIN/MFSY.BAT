@@ -4,12 +4,12 @@ set itmp=%id%
 set app=SY
 
 if X%1==Xed edit \euro\bin\mfsy.bat
-echo ÿ
-if X%MAN%==X echo Erstellen der Formularbibliothek: ¯\euro\DAT\%app%FORM.%EXT%®
-if NOT X%MAN%==X echo Erstellen der Formularbibliothek: ¯\euro\DAT\D%MAN%\%app%FORM.%EXT%®
-echo ÿ
+echo Â 
+if X%MAN%==X echo Erstellen der Formularbibliothek: Â»\euro\DAT\%app%FORM.%EXT%Â«
+if NOT X%MAN%==X echo Erstellen der Formularbibliothek: Â»\euro\DAT\D%MAN%\%app%FORM.%EXT%Â«
+echo Â 
 ask "Starten j/n ",j,n
-echo ÿ
+echo Â 
 if errorlevel 2 goto end
 
 set id=SY

@@ -1,5 +1,5 @@
 @echo off
-REM Nur Formular „nderbar
+REM Nur Formular Ã¤nderbar
 if exist EU_03.exe del EU_03.exe
 if exist EU_03.lzh del EU_03.lzh
 lharc a /x EU_03.lzh !

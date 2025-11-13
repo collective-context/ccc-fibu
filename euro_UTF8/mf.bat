@@ -1,7 +1,7 @@
 @echo off
 \EURO\BTRIEVE /U:22 /P:2048 /T:\EURO\EXE\BTRIEVE.TRN
-echo ÿ
-echo ÿ
+echo Â 
+echo Â 
 
 SET ID=FI
 SET APP=FI
@@ -19,10 +19,10 @@ echo FC [- ]formularnummer
 echo --------------------------------------------------------------------
 echo z.B.: FC 2100 fuer das Rechnunsformular
 echo oder: FC - 2100 um das Rechnungsformular zu entfernen.
-echo ÿ
+echo Â 
 echo ID=%ID% APP=%APP% EXT=%EXT% MAN=%MAN%
 echo --------------------------------------------------------------------
-echo ÿ
+echo Â 
 goto ende
 
 :anfang
@@ -31,9 +31,9 @@ goto ende
 
 :frage
 if X%1==X goto ende
-echo ÿ
+echo Â 
 echo Datei \euro\form\%ID%\%ID%f%1.M%MAN% nicht vorhanden!
-echo ÿ
+echo Â 
 ask "Batch-Job beenden j/n ",jn
 if errorlevel 2 goto weiter
 if errorlevel 1 goto ende
@@ -63,7 +63,7 @@ goto anfang
 pause
 
 :ende
-    echo ÿ
+    echo Â 
 
 :stop
 @echo on

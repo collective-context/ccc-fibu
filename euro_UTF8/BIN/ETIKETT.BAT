@@ -1,21 +1,21 @@
 echo off
 \msdos\brequest /D:22000
 cls
-echo �
-echo �
-echo ������������������������������Ŀ
-echo � [a] == FIBU      (5,25 Zoll) �
-echo � [b] == AUFTRAG   (5,25 Zoll) �
-echo � [c] == TEXT      (5,25 Zoll) �
-echo � [d] == TOOLS     (5,25 Zoll) �
-echo � [e] == FIBU      ( 3,5 Zoll) �
-echo � [f] == AUFTRAG   ( 3,5 Zoll) �
-echo � [g] == TEXT      ( 3,5 Zoll) �
-echo � [h] == TOOLS     ( 3,5 Zoll) �
-echo � [i] == CASEbox   ( 3,5 Zoll) �
-echo � [j] == SICHERUNG ( 3,5 Zoll) �
-echo ��������������������������������
-echo �
+echo  
+echo  
+echo ┌──────────────────────────────┐
+echo │ [a] == FIBU      (5,25 Zoll) │
+echo │ [b] == AUFTRAG   (5,25 Zoll) │
+echo │ [c] == TEXT      (5,25 Zoll) │
+echo │ [d] == TOOLS     (5,25 Zoll) │
+echo │ [e] == FIBU      ( 3,5 Zoll) │
+echo │ [f] == AUFTRAG   ( 3,5 Zoll) │
+echo │ [g] == TEXT      ( 3,5 Zoll) │
+echo │ [h] == TOOLS     ( 3,5 Zoll) │
+echo │ [i] == CASEbox   ( 3,5 Zoll) │
+echo │ [j] == SICHERUNG ( 3,5 Zoll) │
+echo └──────────────────────────────┘
+echo  
 \%smd%DOS\ask "a/b/c/d/e/f/g/h " a,b,c,d,e,f,g,h,i,j
 if errorlevel 10 \euro\exe\st2300 0121
 if errorlevel  9 \euro\exe\st2300 0120

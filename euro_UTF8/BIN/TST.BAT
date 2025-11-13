@@ -4,7 +4,7 @@ bchk \euro\exe\ut_tag.exe
 
 f:
 
-rem %1 %2  EU1100 2300E    û           Lagerbewegungen erf.    M:230
+rem %1 %2  EU1100 2300E    Â¹           Lagerbewegungen erf.    M:230
 rem call test 041 042 043 044 045      KSY Mandantenstamm 1-5/5
 rem call test 210                      KA  Kassagrundlage 1/1
 rem call test 220                      KA  Kassagrundlage 1/1
@@ -158,20 +158,20 @@ goto %1
 
 :1
 SHIFT
-    %1 %2 FKO4100 2600E    ù  DRUCK Kontrakte         M:4260             F:2600
-rem %1 %2  ST1100 1310L/E  ûö LK-Artikel-Stamm        M:134,135,133
-REM %1 %2  ST1100 1300E    ù  STAMM Artikel           M:130,AU131
-REM %1 %2  FI1100 1100ESL  ûö Kunden-Konten           M:ST110,111,112,113
-REM %1 %2  FI1100 1200SEL  ûö Lieferanten-Konten      M:ST120,121,122,123
-REM %1 %2  FI1100 1300ESL  ûö Sachkont-Stamm          M:130,131,132
+    %1 %2 FKO4100 2600E    Â¨  DRUCK Kontrakte         M:4260             F:2600
+rem %1 %2  ST1100 1310L/E  Â¹Ã· LK-Artikel-Stamm        M:134,135,133
+REM %1 %2  ST1100 1300E    Â¨  STAMM Artikel           M:130,AU131
+REM %1 %2  FI1100 1100ESL  Â¹Ã· Kunden-Konten           M:ST110,111,112,113
+REM %1 %2  FI1100 1200SEL  Â¹Ã· Lieferanten-Konten      M:ST120,121,122,123
+REM %1 %2  FI1100 1300ESL  Â¹Ã· Sachkont-Stamm          M:130,131,132
 goto ende
 
 :2
 SHIFT
-rem %1 %2  ST1100 3350E/L  û  Ersterfassung Artikel   M:335
-REM %1 %2  FI1100 3100E/E  ûö Ersterfassung Kunde     M:310,311,312
-REM %1 %2  FI1100 3200E/E  ûö Ersterfassung Liefera.  M:320,321,322
-REM %1 %2  FI1100 2200E/E  ûö Ersterfassung Sachk.    M:330,331,332
+rem %1 %2  ST1100 3350E/L  Â¹  Ersterfassung Artikel   M:335
+REM %1 %2  FI1100 3100E/E  Â¹Ã· Ersterfassung Kunde     M:310,311,312
+REM %1 %2  FI1100 3200E/E  Â¹Ã· Ersterfassung Liefera.  M:320,321,322
+REM %1 %2  FI1100 2200E/E  Â¹Ã· Ersterfassung Sachk.    M:330,331,332
 goto ende
 
 :edit

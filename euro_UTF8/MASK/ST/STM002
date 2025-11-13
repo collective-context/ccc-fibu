@@ -2,7 +2,7 @@
 
 
 
-              ù                                             ù
+              Â¨                                             Â¨
                 KUNDE      : @@@@@@@@@@@@@@@@@@@@ (= Kunde)
                              ^ ^
                 DIENSTAG   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -16,7 +16,7 @@
                 SAMSTAG    : @@@@@@@@@@
 
                 SONNTAG    : @@@@@@@@@@
-              ù                                             ù
+              Â¨                                             Â¨
 
 
 
@@ -38,7 +38,7 @@
 &REC_KEY    (0)
 &REC_MATCH  (+-) = "Kundennummer ", 0, KUNDE
 &ADD_MATCH  (+-) = "Kurzbezeichnung               ", 0, MATCH_CODE
-&ADD_MATCH  (+-) = "Straáe                  ", 0, STRASSE
+&ADD_MATCH  (+-) = "StraÃŸe                  ", 0, STRASSE
   &HELPTEXT (+-) = STHLP10, 110, 0
   &DATA     (+-) = 0, KUNDE
   &MODUS    (+-) = PREPARE

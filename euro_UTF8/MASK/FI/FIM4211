@@ -6,13 +6,13 @@
 
 
 
-              ù
-                Von Satz-Nr : #####›     Bis Satz-Nr : #####›
-                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+              Â¨
+                Von Satz-Nr : #####Ã¸     Bis Satz-Nr : #####Ã¸
+                â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
                 Kopien      :   ##
                 von Seite   : ####       Bis Seite   : ####
-              ù                                                  ù
+              Â¨                                                  Â¨
 
 ^ ^ ``.``.``  ``.``.``  ``.``.``
 ^ ^ ^ ^ ^ ^
@@ -24,12 +24,12 @@
 >>Update: 10.06.91
 
 &TITEL    = "FI  DRUCK Buchungserf.-Kontrolldatei"
-&FRAME    = 0, 0, 0, 0, "ÄDruck Buchungserfassungs-Kontrolldatei", 2
+&FRAME    = 0, 0, 0, 0, "â”€Druck Buchungserfassungs-Kontrolldatei", 2
 &MASKHELP = FIHLP10, buer-dr
 &INDEX    = BASIS
 
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI2100A
 &DRU_DATEI  (1)  = MASK, D.FI4210
@@ -69,7 +69,7 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)                   >>Satznummer(Match-Code)
 >>REC_MATCH (+-) = "Satz-Nr ", 0, :SATZ_NR
 >>ADD_MATCH (+-) = "Beleg-Nr  ", 0, :BELEG_NR
@@ -91,18 +91,18 @@
 
 >>&REF_KEY  (+)                    >>Kontobezeichung(Match-Code)
 >>&DATA_H   (+-) = 0, :KONTO_BEZ
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _SEITE       >>Seite
   &DATA_H   (+)  = 1, _NR_MAND     >>Mandanten-Nummer
   &DATA_H   (+)  = 1, _MANDANT     >>Mandanten-Kurzbez.
   &DATA_H   (+)  = 1, _TEILN       >>Teilnehmer-Nummer
   &DATA_H   (+)  = 1, _COPYRIGHT   >>Nutzungs-Berechtigung
   &DATA_H   (+)  = 1, _NUTZUNG     >>Nutzungs-Berechtigung
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)                    >>Mandanten-Nummer
   &DATA_H   (+-) = 2, MAND_01
   &DATA_H   (+)  = 2, UST_1        >>Steuersatz 1
@@ -114,9 +114,9 @@
   &DATA_H   (+)  = 2, UST_6        >>Steuersatz 6
   &DATA_H   (+)  = 2, UST_7        >>Steuersatz 7
   &DATA_H   (+)  = 2, UST_8        >>Steuersatz 8
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  4. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 0, :SKO_BET1
   &DATA_H   (+)  = 0, :SKO_BET2
   &DATA_H   (+)  = 0, :SKO_BET3
@@ -126,5 +126,5 @@
 
   &DATA_H   (+)  = 0, :SKO_BET7
   &DATA_H   (+)  = 0, :SKO_BET8
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

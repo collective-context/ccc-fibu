@@ -3,18 +3,18 @@
 
 
 
-    ù
-      von Konto-Nummer    : Kïïïïïïïï     bis Konto-Nummer    : Kïïïïïïïï
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    Â¨
+      von Konto-Nummer    : KÂ´Â´Â´Â´Â´Â´Â´Â´     bis Konto-Nummer    : KÂ´Â´Â´Â´Â´Â´Â´Â´
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       von PLZ/Ort         : @@@@@@@@@@@@@@@@@@@@@@@@@@@@       Kopien: ##
       bis PLZ/Ort         : @@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-      von Kundengruppe    : ïïïïïïïïïï    bis Kundengruppe    : ïïïïïïïïïï
-      von Auswertungs-KZ. : ïïïïïïïïïï    bis Auswertungs-KZ. : ïïïïïïïïïï
+      von Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´    bis Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+      von Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´    bis Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
 
       Kopien              :   ##
       von Seite           : ####          bis Seite           : ####
-    ù                                                                     ù
+    Â¨                                                                     Â¨
 
 
 ^ ^ ^ 
@@ -26,13 +26,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "FI  DRUCK Kundenkonten n. Konto-Nummer"
-&FRAME    = 0, 0, 0, 0, "ÄKundenkonten-Liste nach Kontonummern", 2
+&FRAME    = 0, 0, 0, 0, "â”€Kundenkonten-Liste nach Kontonummern", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, kund-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1110
 &DRU_DATEI  (1)  = MASK, D.FI4110
@@ -116,8 +116,8 @@
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
 
 >>3.Zeile:
-  &DATA_H   (+)  = 4, FRWŽ_BE_00  >>Fremdw„hrung 0-9
-  &DATA_H   (+)  = 0, WŽHRUNG     >>W„hrung
+  &DATA_H   (+)  = 4, FRWÃ„_BE_00  >>FremdwÃ¤hrung 0-9
+  &DATA_H   (+)  = 0, WÃ„HRUNG     >>WÃ¤hrung
   &DATA_H   (+)  = 2, KUNDEN_GR   >>Kundengruppe
   &DATA_H   (+)  = 2, AUSWERTUNG  >>Auswerutungskennzeichen
   &DATA_H   (+)  = 2, PLZ_ORT     >>Postleitzahl/Ort

@@ -3,24 +3,24 @@
 
 
 
-       ù                                                             ù
-           Stammdaten     ge„nderte Nummer      gespeicherte Nummer
+       Â¨                                                             Â¨
+           Stammdaten     geÃ¤nderte Nummer      gespeicherte Nummer
     
            Kunden      : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^
            Lieferanten : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^
            Artikel     : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^
            Mitarbeiter : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^
 
-           ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+           â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
            Bewegungsdaten:
           
            Angebote      :     @@@@@@                 ^^^^^^^
-           Auftr„ge      :     @@@@@@                 ^^^^^^^
+           AuftrÃ¤ge      :     @@@@@@                 ^^^^^^^
            Lieferscheine :     @@@@@@                 ^^^^^^^
            Rechnungen    :     @@@@@@                 ^^^^^^^
            RA-BUCH       :     @@@@@@                 ^^^^^^^
-       ù                                                             ù
+       Â¨                                                             Â¨
 
 ``
 
@@ -28,14 +28,14 @@
 >>Prog.:  ST1100.C
 >>Update: 6.08.91
 
-&TITEL    = "ST  STAMM Žndern Nummernkreise"
-&FRAME    = 0, 0, 0, 0, "ÄNummernkreise" 2
+&TITEL    = "ST  STAMM Ã„ndern Nummernkreise"
+&FRAME    = 0, 0, 0, 0, "â”€Nummernkreise" 2
 >>SEQUENZ =
 
 &MASKHELP = STHLP10, num-inf
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYP_02
 &DRU_DATEI  (1)  = MASK, D.DU1100
@@ -65,10 +65,10 @@
   &DATA     (+-) = 1, FELD_5
   &DATA     (+)  = 0, NR_ANGEBOT  >>Angebote
 
->>Auftr„ge(Feld zur Eingabe der neuen Nummer)
+>>AuftrÃ¤ge(Feld zur Eingabe der neuen Nummer)
   &HELPTEXT (+)  = STHLP10, 191, 1
   &DATA     (+-) = 1, FELD_6
-  &DATA     (+)  = 0, NR_AUFTRAG  >>Auftr„ge
+  &DATA     (+)  = 0, NR_AUFTRAG  >>AuftrÃ¤ge
 
 >>Lieferscheine(Feld zur Eingabe der neuen Nummer)
   &HELPTEXT (+)  = STHLP10, 191, 1
@@ -85,8 +85,8 @@
   &DATA     (+-) = 1, FELD_9
   &DATA     (+)  = 0, RA_RECH     >>RA-Buch
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REC_KEY   (+)                    >>Mandanten-Nummer
   &DATA_H  (+-)  = 0, MAND_02
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

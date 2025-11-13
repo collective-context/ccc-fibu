@@ -3,11 +3,11 @@
                  Maksen zur Applikation ST (Stammdaten)
                  ======================================
 
-STM198           &TITEL = "ST-Anlegen/Ändern UST-VA Kennzeichen"
-STM197           &TITEL = "ST-Anlegen/Ändern Mahntexte"
-STM196           &TITEL = "ST-Anlegen/Ändern Buchungstexte"
-STM195           &TITEL = "ST-Anlegen/Ändern Festkonten"
-STM194           &TITEL = "ST-Anlegen/Ändern Kundenvermerke"
+STM198           &TITEL = "ST-Anlegen/├ändern UST-VA Kennzeichen"
+STM197           &TITEL = "ST-Anlegen/├ändern Mahntexte"
+STM196           &TITEL = "ST-Anlegen/├ändern Buchungstexte"
+STM195           &TITEL = "ST-Anlegen/├ändern Festkonten"
+STM194           &TITEL = "ST-Anlegen/├ändern Kundenvermerke"
 
 
 

@@ -7,11 +7,11 @@
 
 
 
-                                 ˘
+                                 ¬®
 
                                    Aktuelles Datum : ##.##.##
 
-                                 ˘                             ˘
+                                 ¬®                             ¬®
 
 ^^^^^^^^ ^^^^^^^^ ^ ^ ^
 ^ ^ ^ ^ ^ ^ ^
@@ -23,13 +23,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "FI  UPDATE EBK aus Vorjahr"
-&FRAME    = 0, 0, 0, 0, "ƒEBK aus Vorjahr", 2
+&FRAME    = 0, 0, 0, 0, "‚îÄEBK aus Vorjahr", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, sach-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &WORK_DATEI (0)  = MASK, D.FI1310
 &DRU_DATEI  (1)  = MASK, D.FI4210

@@ -7,25 +7,25 @@
 
 
 
-               ˘
+               ¬®
                  Kostenstelle            : T@@@@@@@@
-                 ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                 ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
 
                  Bezeichnung             : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-               ˘                                                          ˘
+               ¬®                                                          ¬®
 
 
 
 &TITEL    = "FI  STAMM Anlegen Kostenstellen 1/1"
-&FRAME    = 0, 0, 0, 0, "ƒAnlegen/éndern Kostenstellen", 2
+&FRAME    = 0, 0, 0, 0, "‚îÄAnlegen/√Ñndern Kostenstellen", 2
 >>SEQUENZ =
 
 
 &MASKHELP = FIHLP10, kost-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1700
 

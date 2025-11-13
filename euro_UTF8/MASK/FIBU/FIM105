@@ -4,32 +4,32 @@
 
      A C H T U N G !
      ===============
-     Mit diesem Programm werden die JahresumsÑtze aller Stammdaten
-     gelîscht.
+     Mit diesem Programm werden die Jahresums√§tze aller Stammdaten
+     gel√∂scht.
      Bei den Kontokorrentkonten wird der aktuelle Saldo als Saldovortrag
      eingetragen.
-     Bei den Bilanzkonten kann gewÑhlt werden, ob der aktuelle Saldo
+     Bei den Bilanzkonten kann gew√§hlt werden, ob der aktuelle Saldo
      als Saldovortrag eingetragen werden soll.
      Bei den G.U.V.-Konten werden Saldovortrag und aktueller Saldo
-     gelîscht.
-     Saldi werden fÅr Vorjahresvergleich gespeichert.
-     DafÅr mu· der Monatsabschlu· fÅr die letze Periode durchgefÅhrt sein!
+     gel√∂scht.
+     Saldi werden f√ºr Vorjahresvergleich gespeichert.
+     Daf√ºr mu√ü der Monatsabschlu√ü f√ºr die letze Periode durchgef√ºhrt sein!
 
-   ˘			      Weiter im Programm ?  @  (J/N)		   ˘
+   ¬®			      Weiter im Programm ?  @  (J/N)		   ¬®
 
-&TITEL = "FI-Jahres -Abschlu·"
+&TITEL = "FI-Jahres -Abschlu√ü"
 &REM   Source:  FIM105
 &REM   Maske :  #105
 
 &REM Historie
 &REM Stand: 06.06.88
 
-&REM Palette fÅr Zusatzeingaben
+&REM Palette f√ºr Zusatzeingaben
 &BACKGROUND = 16
 &INPUTPALETTE = 40
 
 &REM ORIGIN = 5, 43, 8, 78
-&FRAME = 0, 0, 0, 0, "Jahres - Abschlu·", 2
+&FRAME = 0, 0, 0, 0, "Jahres - Abschlu√ü", 2
 &INDEX = "FI105"
 
 &REM  J/N

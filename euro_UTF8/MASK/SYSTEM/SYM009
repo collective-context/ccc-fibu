@@ -9,30 +9,30 @@
 
 
 
-       ù                    Laufwerk wechseln                          ù
-        ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-	Laufwerk und Pfad fr Dateien  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-	Laufwerk und Pfad fr Programme: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-       ù  <ÄÙ=Eingabe  Esc= Abbruch  F1=Hilfe                          ù
+       Â¨                    Laufwerk wechseln                          Â¨
+        â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+	Laufwerk und Pfad fÃ¼r Dateien  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	Laufwerk und Pfad fÃ¼r Programme: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+       Â¨  <â”€â”˜=Eingabe  Esc= Abbruch  F1=Hilfe                          Â¨
 
 
 
 
-&TITEL = "SYÍArbeit Manueller Programm-Start 1/1"
+&TITEL = "SYâ•Arbeit Manueller Programm-Start 1/1"
 &REM   Maske    :  SYM009
 &REM   Programm:  SY1000 / 09000
 &REM   Datei    : SYTEIL
 
-&FRAME = 0,0,0,0, "Ä", 2
+&FRAME = 0,0,0,0, "â”€", 2
 &INDEX = "SY009"
 
 &DATEI (0) = EURODATA, L.SYTEIL
 
-&REM  Laufwerk u. Pfad fr Dateien
+&REM  Laufwerk u. Pfad fÃ¼r Dateien
 &HELPTEXT (00) = SYHLP, 009, 00
 &DATA     (+-) = 0, DAT_G
 
-&REM  Laufwerk u. Pfad fr Programme
+&REM  Laufwerk u. Pfad fÃ¼r Programme
 &HELPTEXT (+)  = SYHLP, 009, 01
 &DATA     (+-) = 0, EXE_G

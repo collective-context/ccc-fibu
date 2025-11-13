@@ -17,7 +17,7 @@
 
 
       Bitte Beachten ! Dieser Werbetext wird auf allen Angeboten,
-    ˘                  AuftrÑgen und Rechnungen ausgedruckt.                ˘
+    ¬®                  Auftr√§gen und Rechnungen ausgedruckt.                ¬®
 
 
 
@@ -25,14 +25,14 @@
 >>Prog.:  ST1100.C
 >>Update: 20.01.91
 
-&TITEL    = "ST  Anlegen/éndern Werbetexte"
-&FRAME    = 0, 0, 0, 0, "ƒAnlegen/éndern Werbetexte" 2
+&TITEL    = "ST  Anlegen/√Ñndern Werbetexte"
+&FRAME    = 0, 0, 0, 0, "‚îÄAnlegen/√Ñndern Werbetexte" 2
 >>SEQUENZ =
 
 &MASKHELP = STHLP10, wer-inf
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYP_01
 

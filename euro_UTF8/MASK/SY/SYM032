@@ -3,7 +3,7 @@
 
 
 
-   ˘
+   ¬®
     Seitensteuerung
   
     Initialisierung alle Seiten   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -12,26 +12,26 @@
     Deinitialisierung letzte Seite: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
-    Ladbare ZeichensÑtze verwenden: @@@@
+    Ladbare Zeichens√§tze verwenden: @@@@
 
-    Zeichensatz-Datei             : ÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔ
+    Zeichensatz-Datei             : ¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥
     Startsequenz                  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     Endsequenz                    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-   ˘                                                                        ˘
+   ¬®                                                                        ¬®
 
 >>Mask:   SYM032
 >>Prog.:  SY1100.C
 >>Update: 01.06.91
 
 &TITEL    = "SY  STAMM Anlegen Druckerparameter 3/3"
-&FRAME    = 0,0,0,0 "Anlegen/éndern Drucker-Parameter", 2
+&FRAME    = 0,0,0,0 "Anlegen/√Ñndern Drucker-Parameter", 2
 >>SEQUENZ = 01,02,03,04,05,06,07
 
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYPRINT
 

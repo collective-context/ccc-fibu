@@ -1,16 +1,16 @@
 
 
 
-   Kunden-Nr: Kïïïïïïïïïïïïïïïïïïïï
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³Konto-Nr: Kïïïïïïïï    Konto-Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   Kunden-Nr: KÂ´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚Konto-Nr: KÂ´Â´Â´Â´Â´Â´Â´Â´    Konto-Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
    Anrede    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
    Name      : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
    Zusatz    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
- ù                                                                            ù
+ Â¨                                                                            Â¨
 ^ ^
 ^ ^ ^ ^ ^ ^    ^
 
@@ -25,7 +25,7 @@
 &MASKHELP = XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  =   MASK, D.ST1100
 &DATEI      (1)  =   MASK, D.ST1110
@@ -35,7 +35,7 @@
 &REC_KEY    (0)
 &REC_MATCH  (+-) = "Kundennummer ", 0, KUNDE
 &ADD_MATCH  (+-) = "Kurzbezeichnung               ", 0, MATCH_CODE
-&ADD_MATCH  (+-) = "Straáe                  ", 0, STRASSE
+&ADD_MATCH  (+-) = "StraÃŸe                  ", 0, STRASSE
   &HELPTEXT (+-) = STHLP10, 110, 0
   &DATA     (+-) = 0, KUNDE
   &MODUS    (+-) = PREPARE
@@ -48,7 +48,7 @@
 &REC_KEY    (+)
 &REC_MATCH  (+-) = "Kurzbezeichnung               ", 0, MATCH_CODE
 &ADD_MATCH  (+-) = "Kundennummer", 0, KUNDE
-&ADD_MATCH  (+-) = "Straáe                  ", 0, STRASSE
+&ADD_MATCH  (+-) = "StraÃŸe                  ", 0, STRASSE
   &HELPTEXT (+-)  = STHLP10, 110, 1
   &DATA     (+-) = 0, MATCH_CODE
 
@@ -61,7 +61,7 @@
 &REC_KEY    (+)
 &REC_MATCH  (+-) = "Name                ", 0, NAME
 &ADD_MATCH  (+-) = "Kundennummer", 0, KUNDE
-&ADD_MATCH  (+-) = "Straáe                  ", 0, STRASSE
+&ADD_MATCH  (+-) = "StraÃŸe                  ", 0, STRASSE
   &HELPTEXT (+-) = STHLP10, 110, 4
   &DATA     (+-) = 0, NAME
   &MODUS    (+-) = PREPARE
@@ -72,11 +72,11 @@
   &MODUS    (+-) = PREPARE
 
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)                   >>Mandanten-Nummer 
   &DATA_H   (+-) = 2, MAND_02
   &DATA_H   (+)  = 2, NR_KUND     >>Nummernkreis Kundenstamm
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 >>Anrede
   &HELPTEXT (+)  = STHLP10, 110, 26
@@ -109,14 +109,14 @@
 
 
    Anrede Titel       Vorname       Zuname             Position    Geburtstag
-   ÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄ
+   â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€
    @@@@@@ @@@@@@@@@@@ @@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@ ##.##.##
- ù Anrede im Brief  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          ù
+ Â¨ Anrede im Brief  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          Â¨
 
   &DATA     (+-) = 0, BRANCHE_0
   &MODUS    (+-) = PREPARE
   &SELECT   (+-) = "Kundengruppe",\
-                 "Computer Herst. 3573",    1, "Br/Com-Fachh.  5081",    2,\
+                 "Computer Herst. 3573",    1, "BÃ¼r/Com-Fachh.  5081",    2,\
                  "Hold/Inv-Ges.   6711",    4, "Softwarehaus    7372",    8,\
                  "Computerdienste 7374",   16, "Forschung/Entw. 7391",   32,\
                  "Untern.-Berat.  7392",   64, "w. Meinungsbildner  ",  128,\

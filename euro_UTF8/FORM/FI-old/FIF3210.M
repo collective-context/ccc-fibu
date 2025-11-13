@@ -11,30 +11,30 @@
 &DATEI  (4)  = MASK, FI1110
 &DATEI  (5)  = MASK, FI1210
 
-&REM Die ersten 5 Zeilen müssen beim Scrollen stehen bleiben.
+&REM Die ersten 5 Zeilen m├╝ssen beim Scrollen stehen bleiben.
 &REM Endsaldo= aus FI1310  VOR_SALDO +(SOLL_01 + _02 ... +_12)-(HABEN_01 +_02 ... +_12)
 
 &KOPF (0)
-.AbZeile(3) .FussHöhe(1)
-┌─ KONTOBLATT - ¡@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Saldo: #.###.##ø,øø ─┐ ~0..KTO_ART ~0..KONTO_NR ~3.KONTO_BEZ ~1._END_SALDO
-└──────────────────────────────────────────────────────────────────────────────┘
+.AbZeile(3) .FussH├Âhe(1)
+ÔöîÔöÇ KONTOBLATT - ┬í@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Saldo: #.###.##├©,├©├© ÔöÇÔöÉ ~0..KTO_ART ~0..KONTO_NR ~3.KONTO_BEZ ~1._END_SALDO
+ÔööÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÿ
  Nummer    Datum    G-Kto     Buchungstext                           Umsatz S/H
 &END
 
 &RUMPF (0)
- @@@@@@@@@ ##.##.## ¡@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ #.###.###.##ø,øø @ \
+ @@@@@@@@@ ##.##.## ┬í@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ #.###.###.##├©,├©├© @ \
 ~0..BELEG_NR~0..BELEG_DAT~0..G_KTO_ART~0..GEGEN_KTO~0..BUCH_TEXT              ~0..BETRAG_BR~0..CODE_S_H
 &END
 &REM ~0..BELEG_NR~0..BELEG_DAT~1._KONTO_NR~0..BUCH_TEXT              ~0..BETRAG_BR~0..CODE_S_H
 
 &FUSS (0)
 
-                            Umsatz im ausgewählten Zeitraum: #.###.###.##ø,øø <  ~1._SUMME
+                            Umsatz im ausgew├ñhlten Zeitraum: #.###.###.##├©,├©├© <  ~1._SUMME
 &END
 
 &REM 1._SUMME =  Summe aller 0..BETRAG_BR die im Formular vorkommen!
 
-&REM »EB-Wert: ###.###.##ø,øø«      »JVkz SOLL: ###.###.##ø,øø« / »JVkz HABEN: ###.###.##ø,øø«      »Saldo: ###.###.##ø,øø« ~1._A_EB_WERT~1._A_JVKZ_SO~1._A_JVKZ_HA~1._ANF_SALDO
-&REM »EB-Wert: ###.###.##ø,øø«      »JVkz SOLL: ###.###.##ø,øø« / »JVkz HABEN: ###.###.##ø,øø«      »Saldo: ###.###.##ø,øø« ~1._E_EB_WERT~1._E_JVKZ_SO~1._E_JVKZ_HA~1._END_SALDO
+&REM ┬╗EB-Wert: ###.###.##├©,├©├©┬½      ┬╗JVkz SOLL: ###.###.##├©,├©├©┬½ / ┬╗JVkz HABEN: ###.###.##├©,├©├©┬½      ┬╗Saldo: ###.###.##├©,├©├©┬½ ~1._A_EB_WERT~1._A_JVKZ_SO~1._A_JVKZ_HA~1._ANF_SALDO
+&REM ┬╗EB-Wert: ###.###.##├©,├©├©┬½      ┬╗JVkz SOLL: ###.###.##├©,├©├©┬½ / ┬╗JVkz HABEN: ###.###.##├©,├©├©┬½      ┬╗Saldo: ###.###.##├©,├©├©┬½ ~1._E_EB_WERT~1._E_JVKZ_SO~1._E_JVKZ_HA~1._END_SALDO
 
 

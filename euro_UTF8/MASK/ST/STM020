@@ -5,22 +5,22 @@
 
        Saldovortrag      : S@@@@@@@@       Lieferanten-Skonto  : S@@@@@@@@
 
-   Ú Forderungen Inland  : S@@@@@@@@ ¿   Ú Kunden-Skonto UST 1 : S@@@@@@@@ ¿
-   À Forderungen Ausland : S@@@@@@@@ Ù   ³ Kunden-Skonto UST 2 : S@@@@@@@@ ³
-                                         ³ Kunden-Skonto UST 3 : S@@@@@@@@ ³
-   Ú Verbindlichk.Inland : S@@@@@@@@ ¿   ³ Kunden-Skonto UST 4 : S@@@@@@@@ ³
-   À Verbindlichk.Ausland: S@@@@@@@@ Ù   ³ Kunden-Skonto UST 5 : S@@@@@@@@ ³
-                                         ³ Kunden-Skonto UST 6 : S@@@@@@@@ ³
-     Vorsteuer           : S@@@@@@@@     ³ Kunden-Skonto UST 7 : S@@@@@@@@ ³
-                                         ³ Kunden-Skonto UST 8 : S@@@@@@@@ ³
-   Ú Mehrwertsteuer 1    : S@@@@@@@@ ¿   À Kunden-Skonto Stfr. : S@@@@@@@@ Ù
-   ³ Mehrwertsteuer 2    : S@@@@@@@@ ³
-   ³ Mehrwertsteuer 3    : S@@@@@@@@ ³     Zwischenkonto       : S@@@@@@@@
-   ³ Mehrwertsteuer 4    : S@@@@@@@@ ³
-   ³ Mehrwertsteuer 5    : S@@@@@@@@ ³     Kapitalkonto        : S@@@@@@@@
-   ³ Mehrwertsteuer 6    : S@@@@@@@@ ³     Anlagen Schadensfall: S@@@@@@@@
-   ³ Mehrwertsteuer 7    : S@@@@@@@@ ³     Anlagen Aufwand     : S@@@@@@@@
- ù À Mehrwertsteuer 8    : S@@@@@@@@ Ù     Anlagen Ertrag      : S@@@@@@@@    ù
+   â”Œ Forderungen Inland  : S@@@@@@@@ â”   â”Œ Kunden-Skonto UST 1 : S@@@@@@@@ â”
+   â”” Forderungen Ausland : S@@@@@@@@ â”˜   â”‚ Kunden-Skonto UST 2 : S@@@@@@@@ â”‚
+                                         â”‚ Kunden-Skonto UST 3 : S@@@@@@@@ â”‚
+   â”Œ Verbindlichk.Inland : S@@@@@@@@ â”   â”‚ Kunden-Skonto UST 4 : S@@@@@@@@ â”‚
+   â”” Verbindlichk.Ausland: S@@@@@@@@ â”˜   â”‚ Kunden-Skonto UST 5 : S@@@@@@@@ â”‚
+                                         â”‚ Kunden-Skonto UST 6 : S@@@@@@@@ â”‚
+     Vorsteuer           : S@@@@@@@@     â”‚ Kunden-Skonto UST 7 : S@@@@@@@@ â”‚
+                                         â”‚ Kunden-Skonto UST 8 : S@@@@@@@@ â”‚
+   â”Œ Mehrwertsteuer 1    : S@@@@@@@@ â”   â”” Kunden-Skonto Stfr. : S@@@@@@@@ â”˜
+   â”‚ Mehrwertsteuer 2    : S@@@@@@@@ â”‚
+   â”‚ Mehrwertsteuer 3    : S@@@@@@@@ â”‚     Zwischenkonto       : S@@@@@@@@
+   â”‚ Mehrwertsteuer 4    : S@@@@@@@@ â”‚
+   â”‚ Mehrwertsteuer 5    : S@@@@@@@@ â”‚     Kapitalkonto        : S@@@@@@@@
+   â”‚ Mehrwertsteuer 6    : S@@@@@@@@ â”‚     Anlagen Schadensfall: S@@@@@@@@
+   â”‚ Mehrwertsteuer 7    : S@@@@@@@@ â”‚     Anlagen Aufwand     : S@@@@@@@@
+ Â¨ â”” Mehrwertsteuer 8    : S@@@@@@@@ â”˜     Anlagen Ertrag      : S@@@@@@@@    Â¨
 
 
 
@@ -28,15 +28,15 @@
 >>Prog.:  ST1100.C
 >>Update: 6.08.91
 
-&TITEL    = "ST  STAMM Žndern Festkonten"
-&FRAME    = 0,0,0,0, "Anlegen/Žndern Festkonten", 2
+&TITEL    = "ST  STAMM Ã„ndern Festkonten"
+&FRAME    = 0,0,0,0, "Anlegen/Ã„ndern Festkonten", 2
 &SEQUENZ  = 00,01,02,04,06,09,11,14,17,19,20,22,23,25,26,27\
             03,05,07,08,10,12,13,15,16,18,21,24
 
 &MASKHELP = FIHLP10, kons-an
 &INDEX    = "BASIS"
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYPARA
 &DATEI      (1)  = MASK, L.SYP_01
@@ -204,10 +204,10 @@
 
 >>&PARA_READ  (2)  = MASK, L.SYP_02
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>Mandanten-Nummer
 >>&REF_KEY     (+)
 >>  &DATA_H    (+-) = 2, MAND_02
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 

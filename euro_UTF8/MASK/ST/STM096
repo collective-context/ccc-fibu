@@ -4,9 +4,9 @@
 
 
 
-                      ù
+                      Â¨
                            Bezeichnung zu den 5 Artikel-Vk-Preisen
-                           ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                           â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                            Verkaufs-Preis ^:   @@@@@@@@@@@
 
                            Verkaufs-Preis ^:   @@@@@@@@@@@
@@ -17,7 +17,7 @@
 
                            Verkaufs-Preis ^:   @@@@@@@@@@@  ^
 
-                      ù                                                     ù
+                      Â¨                                                     Â¨
 
 ^
 
@@ -26,13 +26,13 @@
 >>Update: 6.08.91
 
 &TITEL    = "ST  STAMM Bezeichnung der VK-Preise"
-&FRAME    = 0, 0, 0, 0, "ÄBezeichnung der Artikel VK-Preise" 2
+&FRAME    = 0, 0, 0, 0, "â”€Bezeichnung der Artikel VK-Preise" 2
 >>SEQUENZ =
 
 &MASKHELP = STHLP10, art-anl
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYP_01
 
@@ -76,12 +76,12 @@
   &HELPTEXT (+)  = STHLP10, 096, 001
   &DATA     (+-) = 0, TXT_VKP_05
 
->>Endmarke fr DyChoice
+>>Endmarke fÃ¼r DyChoice
   &DATA_H   (+)  = 0, TXT_VKP_N
   &DEFAULT  (+-) = "(null)"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REC_KEY    (+)                   >>Mandanten-Nummer
   &DATA_H   (+-) = 0, MAND_01
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

@@ -1,15 +1,15 @@
 
 
 
- ù
+ Â¨
 
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄSOLL-BUCHUNGÄÄÄ
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€SOLL-BUCHUNGâ”€â”€â”€
   Konto Eigenverbrauch: S@@@@@@@@    Beleg-Nr: @@@@@@@@@@ Belegdatum: ##.##.##
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^ ^
   ^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄHABEN-BUCHUNGÄÄ
-  Produkt^ ^ ^ ^ ^ ^ ^ ^ ^Konto^ ^ ^Menge EH ^ ^ ^  Preis/EH N U% ^  Betrag ™S
-  @@@@@@@ @@@@@@@@@@@@@@@ @@@@ ###.##›,›› @@@@@ #.###.##›,›› @ @@ #.###.##›,››
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€HABEN-BUCHUNGâ”€â”€
+  Produkt^ ^ ^ ^ ^ ^ ^ ^ ^Konto^ ^ ^Menge EH ^ ^ ^  Preis/EH N U% ^  Betrag Ã–S
+  @@@@@@@ @@@@@@@@@@@@@@@ @@@@ ###.##Ã¸,Ã¸Ã¸ @@@@@ #.###.##Ã¸,Ã¸Ã¸ @ @@ #.###.##Ã¸,Ã¸Ã¸
 
 
 
@@ -20,14 +20,14 @@
 
 
 
- ù                                                                            ù
+ Â¨                                                                            Â¨
 
 >>Mask:   FIM254
 >>Prog.:  FI1500.C
 >>Update: 2.08.91
 
 &TITEL    = "FI  WORK Erfassen Eigenverbrauch"
-&FRAME    = 0, 0, 0, 0, "ÄErfassen Eigenverbrauch", 2
+&FRAME    = 0, 0, 0, 0, "â”€Erfassen Eigenverbrauch", 2
 >>SEQUENZ =
 
 &BLOCK    = 31,39
@@ -36,7 +36,7 @@
 &MASKHELP = FIHLP10, eige-er
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI2540
 &REF_DATEI  (1)  = MASK, D.ST1300
@@ -65,16 +65,16 @@
 >>Bezeichnung-Geldkonto (aus Referenz-Datei: Sachkontenstamm)
   &DATA     (+)  = 0, EIGEN_BEZ
 
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REC_KEY    (+)                    >>Erfassungsnummer
   &DATA_H   (+-) = 0, SATZ_NR
   &DATA_H   (+)  = 0, BUCH_DATUM  >>Buchungsdatum
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)                   >>Mandanten-Nummer
   &DATA_H   (+-) = 4, MAND_01
-  &DATA_H   (+)  = 4, UST_1       >>Steuers„tze
+  &DATA_H   (+)  = 4, UST_1       >>SteuersÃ¤tze
   &DATA_H   (+)  = 4, UST_2
   &DATA_H   (+)  = 4, UST_3
   &DATA_H   (+)  = 4, UST_4
@@ -82,9 +82,9 @@
   &DATA_H   (+)  = 4, UST_6
   &DATA_H   (+)  = 4, UST_7
   &DATA_H   (+)  = 4, UST_8
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)                   >>Eigenverbrauchs-Konto
 &REF_MATCH  (+-) = "Konto-Nummer", 2, KONTONR
 &ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 2, KONTO_BEZ
@@ -119,7 +119,7 @@
   &DATA_H   (+)  = 3, BASIS_EH
 
   &DATA_H   (+)  = 0, AR_BASIS     >>Basiseinheit
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 >>----- Positionsteil
 >>Artikel-Nummer
@@ -152,11 +152,11 @@
   &CHOICE    (+-) = "Netto/Brutto",\
                     "Netto = plus MwSt",n,  "Brutto = incl. MwSt",b
 
->>Umsatzsteuer-Schlssel
+>>Umsatzsteuer-SchlÃ¼ssel
   &HELPTEXT  (+)  = FIHLP10, 250, 15
   &DATA      (+-) = 0, UST_SATZ
 
->>Betrag in ™S
+>>Betrag in Ã–S
   &HELPTEXT  (+)  = FIHLP10, 250, 16
   &DATA      (+-) = 0, BETRAG
 

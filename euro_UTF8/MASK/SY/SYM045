@@ -12,10 +12,10 @@
 
 
 
-                      ˘
+                      ¬®
                         Mandanten-Nr : ##
                         Bezeichnung  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                      ˘                                               ˘
+                      ¬®                                               ¬®
 ^ ^ ^ ^ ^ ^    ^ ^ ^ ^ ^
 
 >>Mask:   SYM041
@@ -29,7 +29,7 @@
 &MASKHELP = SYHLP10, mand-in
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYPARA
 

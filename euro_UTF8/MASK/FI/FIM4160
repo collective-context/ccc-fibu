@@ -7,15 +7,15 @@
 
 
 
-                            ù
+                            Â¨
                                     Von Anlage: @@@@@@@@@@
                                     Bis Anlage: @@@@@@@@@@
-                              ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                              â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
                                      Kopien   :   ##
                                      von Seite: ####
                                      bis Seite: ####
-                            ù                                  ù
+                            Â¨                                  Â¨
 ^ ^
 
 ``.``.``  ^ ^ ^ ^ ^ ^
@@ -25,13 +25,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "FI  DRUCK Liste Anlagenstamm"
-&FRAME    = 0, 0, 0, 0, "ÄDruck Liste Anlagenstamm", 2
+&FRAME    = 0, 0, 0, 0, "â”€Druck Liste Anlagenstamm", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, bank-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1600
 &DRU_DATEI  (1)  = MASK, D.FI4130
@@ -61,9 +61,9 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
-&REC_KEY   (+)                    >>Bankleitzahl (fr Match-Code-Suche)
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
+&REC_KEY   (+)                    >>Bankleitzahl (fÃ¼r Match-Code-Suche)
 &REC_MATCH (+-) = "Inv.-Nummer", 0, INVENT_NR
 &ADD_MATCH (+-) = "Bezeichnung                        ", 0, MATCH_CODE
   &DATA_H  (+-) = 0, INVENT_NR
@@ -71,7 +71,7 @@
 &REC_KEY   (+)
   &DATA_H  (+-) = 0, MATCH_CODE
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -79,6 +79,6 @@
   &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
  
 

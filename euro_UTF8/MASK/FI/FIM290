@@ -1,16 +1,16 @@
 
 
 
- ù
+ Â¨
 
   Geldkonto    : S@@@@@@@@        Beleg-Nr: @@@@@@@@@@    Belegdatum: ##.##.##
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^Ein/Aus : @@@  Zahlungsbetrag:###.###.##›,››
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  Kunde/Lieferant: ï@@@@@@@@      Rechn-Nr: @@@@@@@@@@    Rech.Datum: ##.##.##
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                Rechnungsbetrag:###.###.##›,››
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  Produkt ``.``.``        Konto     Menge EH        Preis/EH N U%    Betrag ™S
-  @@@@@@@ @@@@@@@@@@@@@@@ @@@@ ###.##›,›› @@@@@ #.###.##›,›› @ `` #.###.##›,››
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^Ein/Aus : @@@  Zahlungsbetrag:###.###.##Ã¸,Ã¸Ã¸
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  Kunde/Lieferant: Â´@@@@@@@@      Rechn-Nr: @@@@@@@@@@    Rech.Datum: ##.##.##
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                Rechnungsbetrag:###.###.##Ã¸,Ã¸Ã¸
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  Produkt ``.``.``        Konto     Menge EH        Preis/EH N U%    Betrag Ã–S
+  @@@@@@@ @@@@@@@@@@@@@@@ @@@@ ###.##Ã¸,Ã¸Ã¸ @@@@@ #.###.##Ã¸,Ã¸Ã¸ @ `` #.###.##Ã¸,Ã¸Ã¸
 
 
 
@@ -20,7 +20,7 @@
 
 
 
- ù                                                                            ù
+ Â¨                                                                            Â¨
 
 &TITEL = "FI-Kontrolle Rechnungs-Buchungen"
 &REM   Source:  FIM251
@@ -56,12 +56,12 @@
 &REM Bezeichnung-Geldkonto (aus Referenz-Datei: Sachkontenstamm)
 &DATA     (+)  = 0, GELDK_BEZ
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM - Erfassungsnummer
 &HIDE      (+)
 &REC_KEY   (+-)
 &DATA      (+-) = 0, SATZ_NR
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 &REM Ein/Aus
 &HELPTEXT (+)  = FIHLP10, 250, 3
@@ -97,12 +97,12 @@
 &HELPTEXT  (+) = FIHLP10, 250, 8
 &DATA      (+-) = 0, RECH_BETR
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM Buchungsdatum
 &HIDE      (+)
 &REC_KEY   (+-)
 &DATA      (+-) = 0, BUCH_DATUM
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 &REM ------------------------------
 &REM Positionsteil
@@ -135,12 +135,12 @@
 &CHOICE    (+-) = "Netto/Brutto","Netto = plus MwSt","n","Brutto = incl. MwSt","b"
 &DATA      (+-) = 0, NETTO_BRUT
 
-&REM Umsatzsteuer-Schlssel
+&REM Umsatzsteuer-SchlÃ¼ssel
 &HELPTEXT  (+)  = AUHLP10, 250, 15
 &CHOICE    (+-) = "MWST-Satz %","20%","1","10%","2","32%","3"
 &DATA      (+-) = 0, UST_ART
 
-&REM Betrag in ™S
+&REM Betrag in Ã–S
 &HELPTEXT  (+)  = AUHLP10, 250, 16
 &DATA      (+-) = 0, BETRAG
 

@@ -1,11 +1,11 @@
 
 
 
- ˘                                                                            ˘
+ ¬®                                                                            ¬®
 
-   Fehler-Nummer:  #####õ    Programm-Konstante: @@@@@@@@@@@@@@@@@@@@
+   Fehler-Nummer:  #####√∏    Programm-Konstante: @@@@@@@@@@@@@@@@@@@@
 
-      Fehlermeldungen fÅr den Entwickler:
+      Fehlermeldungen f√ºr den Entwickler:
 
       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -20,7 +20,7 @@
 
 
 
- ˘                                                                            ˘
+ ¬®                                                                            ¬®
 
 
 >>Mask:   SYM910
@@ -28,7 +28,7 @@
 >>Update: 06.08.91
 
 &TITEL    = "SY  STAMM Anlegen Fehler-Meldungen 1/1"
-&FRAME    = 0, 0, 0, 0, "Anlegen/éndern Fehler-Meldungen", 2
+&FRAME    = 0, 0, 0, 0, "Anlegen/√Ñndern Fehler-Meldungen", 2
 &SEQUENZ  = 00,02
 
 &BLOCK    = 2,2
@@ -37,7 +37,7 @@
 >>MASKHELP= SYHLP10, men-inf
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, E.ERROR
 

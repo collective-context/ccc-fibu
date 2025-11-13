@@ -3,8 +3,8 @@
 
 
 
-   Jahr     Wert Anfang      Zug„nge    a.o. Abg.          Afa     Wert Ende
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Jahr     Wert Anfang      ZugÃ¤nge    a.o. Abg.          Afa     Wert Ende
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    @@@@@@@ #.```.``|,|| `.```.``|,|| `.```.``|,|| `.```.``|,||  `.```.``|,||
 
 
@@ -19,20 +19,20 @@
 
 
 
-  ù                                                                        ù
+  Â¨                                                                        Â¨
 
 >>Mask:   FIM161
 >>Prog.:  FI1100.C
 >>Update: 2.08.91
 
 &TITEL    = "FI  STAMM Anlegen Anlagenstamm 2/2"
-&FRAME    = 0, 0, 0, 0, "ÄAnlegen/ndern Anlagenstamm", 2
+&FRAME    = 0, 0, 0, 0, "â”€Anlegen/Ã„ndern Anlagenstamm", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, bila-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &BLOCK  = 0,5
 &SCROLL = 6,0,20,79
@@ -45,7 +45,7 @@
 
   &DATA     (+)  = 0, WJ_ANFANG   >>Wirtschaftsjahr Anfang
   &DATA     (+)  = 0, WJ_ZUGANG   >>Zugang
-  &DATA     (+)  = 0, AO_ABGANG   >>auáerordentlicher Abgang
+  &DATA     (+)  = 0, AO_ABGANG   >>auÃŸerordentlicher Abgang
   &DATA     (+)  = 0, WJ_AFA      >>Abschreibung
   &DATA     (+)  = 0, WJ_ENDE     >>Wirtschaftsjahr Ende
 

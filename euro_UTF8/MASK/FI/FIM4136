@@ -1,7 +1,7 @@
 
 
 
- ˘
+ ¬®
    1: @ @ @ @ @     @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @
    2: @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @
    3: @ @ @ @ @     @ @ @ @ @   @ @ @ @ @   @ @ @ @ @   @ @ @ @
@@ -10,13 +10,13 @@
 
 
 
- ˘                                                                            ˘
+ ¬®                                                                            ¬®
 
 >>Mask:   FIM4136
 >>Prog.:  FI4100.C
 >>Update: 4.08.91
 
-&TITEL    = "FI  DRUCK Dummy-Maske fÅr FIM4132/34"
+&TITEL    = "FI  DRUCK Dummy-Maske f√ºr FIM4132/34"
 
 &DATEI      (0) = MASK, D.FI1310
 &DRU_DATEI  (1) = MASK, D.FI4135

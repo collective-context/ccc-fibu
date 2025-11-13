@@ -2,8 +2,8 @@
 
 
   Kunden-Nr Matchcode                            Saldo-Vortrag          Betrag
-  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
-  KÔÔÔÔÔÔÔÔ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      ``.```.``|,||   ##.###.##õ,õõ
+  ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  K¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      ``.```.``|,||   ##.###.##√∏,√∏√∏
   K
   K
   K
@@ -20,7 +20,7 @@
   K
   K
   K
- ˘K                                                                           ˘
+ ¬®K                                                                           ¬®
 
 ^ ^ ^ ^ ^
 ^ ^ ^ ^ ^ ^ ^
@@ -40,7 +40,7 @@
 &MASKHELP = FIHLP10, sach-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1110
 &DRU_DATEI  (1)  = MASK, D.FI4500
@@ -73,7 +73,7 @@
   &HELPTEXT (+) = FIHLP10, 112, 1
   &DATA     (+-) = 1, _VOR_SALDO
 
->>⁄ƒƒƒƒƒƒƒ  1. Zeile: ƒƒƒƒƒƒƒø
+>>‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ  1. Zeile: ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
 >>OP-Kennzeichen
   &HELPTEXT (+)  = FIHLP10, 111, 4
   &DATA_H   (+-) = 0, OP_KENNZEI
@@ -81,10 +81,10 @@
   &CHOICE   (+-) = "OP Kennzeichen", "ohne offene Posten",0, \
                    "mit Mahnung",1, "OP's ohne Mahnung",2
 
->>WÑhrung (aus der Datei SYP_01, DyChoice-Feld)
+>>W√§hrung (aus der Datei SYP_01, DyChoice-Feld)
   &HELPTEXT (+)  = FIHLP10, 111, 1
   &DEFAULT  (+-) = "0"
-  &DATA_H   (+-) = 0, WéHRUNG
+  &DATA_H   (+-) = 0, W√ÑHRUNG
 
 >>MWST-Kennzeichen
   &HELPTEXT (+)  = FIHLP10, 111, 2
@@ -101,7 +101,7 @@
                    "nein",n,   "ja",j
 
 >>Zahlungskonditionen TT%%TTT
->>** Eventuell öberprÅfung auf ZulÑssigkeit **
+>>** Eventuell √úberpr√ºfung auf Zul√§ssigkeit **
   &HELPTEXT (+)  = FIHLP10, 111, 5
   &DATA_H   (+-) = 0, KONDITION
   &DEFAULT  (+-) = "05-20-010"
@@ -111,7 +111,7 @@
 >>&DATA_H   (+-) = 0, KREDIT
 >>&DEFAULT  (+-) = "10000"
 
->>⁄ƒƒƒƒƒƒƒ  2 Zeile: ƒƒƒƒƒƒƒø
+>>‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ  2 Zeile: ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
   &DATA_H   (+)  = 3, PLZ_ORT
   &DATA_H   (+)  = 3, BRIEFANR_1
   &DATA_H   (+)  = 3, ANREDE_1
@@ -120,18 +120,18 @@
   &DATA_H   (+)  = 4, KONTONR
   &DATA_H   (+)  = 4, VOR_SALDO
 
->>⁄ƒƒƒƒƒƒƒ  3. Zeile: ƒƒƒƒƒƒƒø
+>>‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ  3. Zeile: ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
   &DATA_H   (+)  = 5, KAPIT_KTO   >>Kapitlakonto
   &DATA_H   (+)  = 5, FORDER_IN
   &DATA_H   (+)  = 5, VERBIN_IN
   &DATA_H   (+)  = 6, MAND_02     >>Kunden-Nummer
   &DATA_H   (+)  = 6, NR_KUND     >>Kunden-Nummer
   &DATA_H   (+)  = 7, Y_CLOSED
->>¿ƒƒƒƒƒƒƒ Ende Dummy-Felder! ƒƒƒƒƒƒƒŸ
+>>‚îî‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ Ende Dummy-Felder! ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îò
 
 
 >>&MODUS    (+-) = PREPARE
 >>&DEFAULT  (+-) = "n"
->>&ADD_MATCH  (+-) = "Stra·e                  ", 3, STRASSE
+>>&ADD_MATCH  (+-) = "Stra√üe                  ", 3, STRASSE
   &DATA_H   (+)  = 3, STRASSE
 

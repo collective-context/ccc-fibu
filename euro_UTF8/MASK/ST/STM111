@@ -4,18 +4,18 @@
 
 
 
-    ù
-     Grundrabatt      : ##›,›› %          Zahlungskondition: @@-@@-@@@
-    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    Â¨
+     Grundrabatt      : ##Ã¸,Ã¸Ã¸ %          Zahlungskondition: @@-@@-@@@
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-     W„hrung          : @@@@              MwSt.-Kennzeichen  : @@@@@@@@@@
+     WÃ¤hrung          : @@@@              MwSt.-Kennzeichen  : @@@@@@@@@@
      Auslandskunde    : ^^^^              Fibu Kontonummer   : @@@@@@@@
-    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-     Artikel VK-Preis   : @@@@@@@@@@@@@   Kreditlimit in T™S : ###.##›,››
-    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+     Artikel VK-Preis   : @@@@@@@@@@@@@   Kreditlimit in TÃ–S : ###.##Ã¸,Ã¸Ã¸
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   ù Datum letz. Umsatz : ##.##.##                                          ù
+   Â¨ Datum letz. Umsatz : ##.##.##                                          Â¨
 
 ^ ^ ^ ^ ^ ^
 
@@ -30,7 +30,7 @@
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 >> TEI      (0)  =   MASK, D.ST1100
 >> RA_DATEI (1)  =   MASK, L.SYP_02
@@ -55,9 +55,9 @@
   &DEFAULT  (+-) = "10-30-030"
   &INSERT   (+-) = OVERWRITE
 
->>W„hrung (aus der Datei SYP_01, DyChoice())
+>>WÃ¤hrung (aus der Datei SYP_01, DyChoice())
   &HELPTEXT (+)  = AUHLP10, 111, 6
-  &DATA     (+-) = 3, WŽHRUNG
+  &DATA     (+-) = 3, WÃ„HRUNG
   &DEFAULT  (+-) = "0"
 
 >>MWST-Kennzeichen
@@ -82,7 +82,7 @@
   &DATA     (+-) = 1, PREIS_GR
   &DEFAULT  (+-) = "1"
 
->>Kreditlimit in T™S
+>>Kreditlimit in TÃ–S
   &HELPTEXT (+)  = AUHLP10, 111, 8
   &DATA     (+-) = 1, KREDIT
   &DEFAULT  (+-) = "20"
@@ -91,16 +91,16 @@
   &HELPTEXT (+)  = AUHLP10, 111, 12
   &DATA     (+-) = 1, LET_BEWEG
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>&REF_KEY    (+)                   >>Mandanten-Nummer
 >>  &DATA_H   (+-) = 2, MAND_01
-  &DATA_H   (+)  = 2, FRWŽ_BE_00  >>Fremdw„hrung 0 - 9
+  &DATA_H   (+)  = 2, FRWÃ„_BE_00  >>FremdwÃ¤hrung 0 - 9
   &DATA_H   (+)  = 2, TXT_VKP_01  >>Artikel-Preis-Texte
   &DATA_H   (+)  = 2, WER_VKP_01
   &DATA_H   (+)  = 3, FI_KUNDE
   &DATA_H   (+)  = 3, KU_KONTO
   &DATA_H   (+)  = 3, KURZ_BEZ
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
-   ù Umsatz           : ``.```.``|,||     Datum letz. Umsatz : ``.``.``     ù
+   Â¨ Umsatz           : ``.```.``|,||     Datum letz. Umsatz : ``.``.``     Â¨

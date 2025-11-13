@@ -3,14 +3,14 @@
 
 
 
-  ˘
+  ¬®
 
    Scroll:
-   @@@@@@@@@@@@@@ ^ ^ ###.###.##,õõ
+   @@@@@@@@@@@@@@ ^ ^ ###.###.##,√∏√∏
 
 
 
-  ˘                                                                          ˘
+  ¬®                                                                          ¬®
 
 ^ ^ ^ ^ ^     ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^
 ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^
@@ -20,7 +20,7 @@
 >>Prog.:  FI4100.C
 >>Update: 4.08.91
 
-&TITEL    = "FI  DRUCK Dummy-Maske fÅr FIM4124/25"
+&TITEL    = "FI  DRUCK Dummy-Maske f√ºr FIM4124/25"
 &FRAME    = 
 >>SEQUENZ =
 
@@ -30,7 +30,7 @@
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1210
 &DRU_DATEI  (1)  = MASK, D.FI4120

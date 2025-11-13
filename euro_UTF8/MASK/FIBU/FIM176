@@ -7,15 +7,15 @@
 
 
                   Auswertungs-Kennz. : ####
-                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
                   Auswertungs-Art    : @
 
-                ù Auswertungs-Text   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ù
+                Â¨ Auswertungs-Text   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Â¨
 
 
 
-&TITEL = "ST-Anlegen/ndern Auswertungs-Texte"
+&TITEL = "ST-Anlegen/Ã„ndern Auswertungs-Texte"
 &REM   Source:  STM1176
 &REM   Maske :  #176
 
@@ -23,14 +23,14 @@
 &REM Stand: 31.05.89
 
 &REM ORIGIN = 4, 1, 22, 80
-&FRAME = 0, 0, 0, 0, "Anlegen/ndern Auswertungs-Texte 1/1" 2
+&FRAME = 0, 0, 0, 0, "Anlegen/Ã„ndern Auswertungs-Texte 1/1" 2
 &INDEX = "FI176"
 
 &NUMMER  = 00,01,02
 &SEQUENZ = 00,01,02
 
 &HELP Auswertungs-Kennzeichen
-&HELP An dieser Stelle k”nnen Sie ein 2 stelliges Auswertungs-Kennzeichen
+&HELP An dieser Stelle kÃ¶nnen Sie ein 2 stelliges Auswertungs-Kennzeichen
 &HELP eingeben. Die Eingabe kann alpha-numerisch sein.
 &HELP Beim Ausdruck werden die Auswertungen in aufsteigender Reihenfolge
 &HELP der Auswertungskennzeichen sortiert.
@@ -45,8 +45,8 @@
 &HELPTEXT (00) = STHLP10, 176, 0
 
 &HELP Auswertungs-Art
-&HELP An dieser Stelle k”nnen Sie die Funktion des Feldes bestimmen.
-&HELP Folgende Funktionen sind m”glich:
+&HELP An dieser Stelle kÃ¶nnen Sie die Funktion des Feldes bestimmen.
+&HELP Folgende Funktionen sind mÃ¶glich:
 &HELP           T = Textposition
 &HELP           W = Wertposition
 &HELP           G = Gruppensumme
@@ -60,7 +60,7 @@
 
 
 &HELP Auswertungs-Text
-&HELP An dieser Stelle k”nnen Sie einen 30 stelligen Auswertungstext ein-
+&HELP An dieser Stelle kÃ¶nnen Sie einen 30 stelligen Auswertungstext ein-
 &HELP geben.
 &HELP Die Position wird mit dem angelegten Text in der Bilanz-Auswertung
 &HELP ausgedruckt.

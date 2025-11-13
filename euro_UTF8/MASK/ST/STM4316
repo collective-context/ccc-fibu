@@ -5,19 +5,19 @@
 
 
 
-    ù
-      von bis Straáe : @@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@
+    Â¨
+      von bis StraÃŸe : @@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@
       von bis Land   : @@@                       @@@
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       Beginn bei Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
       Beenden b. Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
       Freigabe       : @@@@
 
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       von Seite      : ####          bis Seite : ####
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-    ù ^ ^                                                                 ù
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    Â¨ ^ ^                                                                 Â¨
 
 
 ^ ^ ^ ^ ^
@@ -30,7 +30,7 @@
 >>Update: 20.09.92
 
 &TITEL    = "ST  RECHERCHE n. Plz"
-&FRAME    = 0, 0, 0, 0, "ÄRecherche nach Postleitzahl", 2
+&FRAME    = 0, 0, 0, 0, "â”€Recherche nach Postleitzahl", 2
 >>SEQUENZ =
 
 &MASKHELP = STHLP10, kundbez
@@ -70,7 +70,7 @@
 >>Freigabe Vermerk
   &HELPTEXT (+)  = STHLP10, 110, 21
   &DATA     (+-) = 1, _W_FREIGAB
-  &CHOICE   (+-) = "Freigabe", "ja, Freigabe",j, "nicht geprft",n\
+  &CHOICE   (+-) = "Freigabe", "ja, Freigabe",j, "nicht geprÃ¼ft",n\
                    "gesperrt",g, "unbekannt",u,
   &DEFAULT  (+-) = j
 
@@ -88,15 +88,15 @@
   &HELPTEXT (+)  = STHLP10, 411, 18
   &DATA_H   (+-) = 1, _ANSCHRMIT
   &DEFAULT  (+-) = "0"
-  &CHOICE   (+-) = "Anschrift mit",  "Straáe",0,  "Postfach",1
+  &CHOICE   (+-) = "Anschrift mit",  "StraÃŸe",0,  "Postfach",1
 
 >>Text Kopfzeile
   &HELPTEXT (+)  = STHLP10, 411, 19
   &DATA_H   (+-) = 1, _KOPF
 
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY    (+)                   >>von Kunden-Nummer
 &REC_MATCH  (+-) = "Kurzbezeichnung                ", 0, MATCH_CODE
 &ADD_MATCH  (+-) = "Kunden-Nr", 0, KUNDE
@@ -121,7 +121,7 @@
   &DATA_H   (+-) = 0, PLZ_ORT
 
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -131,7 +131,7 @@
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
   &DATA_H   (+)  = 1, _PROBE      >>Probedruck
 
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _NAME_1
   &DATA_H   (+)  = 1, _NAME_2
   &DATA_H   (+)  = 1, _NAME_3
@@ -144,9 +144,9 @@
   &DATA_H   (+)  = 2, ANREDE_2
   &DATA_H   (+)  = 0, LAND
   &DATA_H   (+)  = 0, FREIGABE
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  4. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>von Kundengruppe
   &HELPTEXT (+)  = STHLP10, 411, 2
   &DATA_H   (+-) = 1, _V_KUNDGR

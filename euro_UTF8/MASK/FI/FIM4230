@@ -5,17 +5,17 @@
 
 
 
-                                 ù
+                                 Â¨
                                    Kontenart: @@@@@@@@@@@@@@@@
 
-                                   Von Konto-Nummer: ïïïïïïïïï
-                                   Bis Konto-Nummer: ïïïïïïïïï
-                                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                                   Von Konto-Nummer: Â´Â´Â´Â´Â´Â´Â´Â´Â´
+                                   Bis Konto-Nummer: Â´Â´Â´Â´Â´Â´Â´Â´Â´
+                                  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                                    Kopien          :   ##
 
                                    von Seite       : ####
                                    bis Seite       : ####
-                                 ù                             ù
+                                 Â¨                             Â¨
 
 ^ ^ ^ ^ ^ ^
 ^ ^ 
@@ -30,13 +30,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "FI  DRUCK Kontoauszug"
-&FRAME    = 0, 0, 0, 0, "ÄDruck Kontoauszug", 2
+&FRAME    = 0, 0, 0, 0, "â”€Druck Kontoauszug", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, sach-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI3100
 &DRU_DATEI  (1)  = MASK, D.FI4136
@@ -50,7 +50,7 @@
   &HELPTEXT (0)  = FIHLP10, 413, 00
   &DATA     (+-) = 1, _KTO_ART     >>Kontoart
   &DEFAULT  (+-) = "s"
-  &CHOICE   (+-) = "ÄArt des Personenkontos", "Kundenkonto",k,\
+  &CHOICE   (+-) = "â”€Art des Personenkontos", "Kundenkonto",k,\
                    "Lieferantenkonto",l,  "Sachkonto",s
 
 >>Von Kontomunner S
@@ -78,8 +78,8 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REF_KEY    (+)    >>Kontonummer Sachkontenstamm
 &REF_MATCH  (+-) = "Konto-Nr.  ", 3, KONTONR
 &ADD_MATCH  (+-) = "Bezeichnung                    ", 3, KONTO_BEZ
@@ -104,14 +104,14 @@
 &REF_KEY    (+)  = 
   &DATA_H   (+-) = 5, KURZ_BEZ
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)
   &DATA_H   (+-) = 0, .SATZ_NR     >>Satznummer
 
 &REF_KEY    (+)
   &DATA_H   (+-) = 0, .KONTO_NR    >>Sachkonto-Nummer
 
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT   >>Datum
   &DATA_H   (+)  = 1, _SEITE       >>Seite
   &DATA_H   (+)  = 1, _NR_MAND     >>Mandanten-Nummer
@@ -120,13 +120,13 @@
   &DATA_H   (+)  = 1, _COPYRIGHT   >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG     >>Nutzungs-Berechtigung
 
->>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  4. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _UMSATZ_SO   >>Umsatz Soll
   &DATA_H   (+)  = 1, _UMSATZ_HA   >>Umsatz Haben
   &DATA_H   (+)  = 0, .BETRAG_BR   >>Betrag Brutto
   &DATA_H   (+)  = 0, .CODE_S_H    >>Code Soll/Haben
-  &DATA_H   (+)  = 1, _A_EB_WERT   >>Anfangs-Er”ffnungs-Bilanz-Wert
-  &DATA_H   (+)  = 1, _E_EB_WERT   >>End-Er”ffnungs-Bilanz-Wert
+  &DATA_H   (+)  = 1, _A_EB_WERT   >>Anfangs-ErÃ¶ffnungs-Bilanz-Wert
+  &DATA_H   (+)  = 1, _E_EB_WERT   >>End-ErÃ¶ffnungs-Bilanz-Wert
 
   &DATA_H   (+)  = 1, _A_JVKZ_SO   >>Anfangs-Jahresverkehrszahlen SOLL
   &DATA_H   (+)  = 1, _E_JVKZ_SO   >>End-Jahresverkehrszahlen SOLL
@@ -147,13 +147,13 @@
   &DATA_H   (+)  = 0, .BELEG_NR    >>Belegnummer
   &DATA_H   (+)  = 0, .BUCH_TEXT   >>Buchungstext
 
->>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  5. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 2, SALDO_VOR    >>Eroeffnungsbilanzkonto
   &DATA_H   (+)  = 0, .UST_SATZ
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
->>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  4. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)
   &DATA_H   (+-) = 2, MAND_01     >>Mandanten-Nummer
   &DATA_H   (+)  = 2, UST_1       >>Steuersatz 1 - 8
@@ -165,5 +165,5 @@
   &DATA_H   (+)  = 2, UST_6
   &DATA_H   (+)  = 2, UST_7
   &DATA_H   (+)  = 2, UST_8
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

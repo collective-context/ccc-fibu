@@ -1,17 +1,17 @@
 
 
 
- ù
+ Â¨
   ####
   Beleg-Nr : @@@@@@@@@@           Belegdatum: ##.##.##           Ein/Aus : @@@
-  Geldkonto: S@@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^ Zahlungsbetrag:###.###.##›,››
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  Kunde/Lieferant: ï@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       ^ ^ ^     ^
+  Geldkonto: S@@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^ Zahlungsbetrag:###.###.##Ã¸,Ã¸Ã¸
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  Kunde/Lieferant: Â´@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^       ^ ^ ^     ^
   Rechn-Nr : @@@@@@@@@@       Rech.Datum: ##.##.##   ^ ^   ^   ^ ^ ^ ^ ^ ^ ^
   ^ ^ ^ ^ ^ ^                ^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  Produkt ``.``.``        Konto^ ^ ^Menge EH^ ^ ^ ^ Preis/EH N U%^ ^ Betrag^™S
-  @@@@@@@ @@@@@@@@@@@@@@@ @@@@ ###.##›,›› @@@@@ #.###.##›,›› @ @@ #.###.##›,››
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  Produkt ``.``.``        Konto^ ^ ^Menge EH^ ^ ^ ^ Preis/EH N U%^ ^ Betrag^Ã–S
+  @@@@@@@ @@@@@@@@@@@@@@@ @@@@ ###.##Ã¸,Ã¸Ã¸ @@@@@ #.###.##Ã¸,Ã¸Ã¸ @ @@ #.###.##Ã¸,Ã¸Ã¸
 
 
 
@@ -20,7 +20,7 @@
 
 
 
- ù                                                                            ù
+ Â¨                                                                            Â¨
 
 &TITEL = "frei"
 &REM   Source:  FIM250
@@ -44,12 +44,12 @@
 
 &SEQUENZ = 01,02,03,04,06,07,13,14,51,52,53,54,55,56,57,58,59
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM - Erfassungsnummer
 &REM HIDE      (0)
 &REC_KEY   (0)
 &DATA      (+-) = 0, SATZ_NR
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 &REM Beleg-Nummer
 &HELPTEXT  (+)  = FIHLP10, 250, 1
@@ -89,7 +89,7 @@
 &REM Bezeichnung-Kunde/Lieferant (aus Referenz-Datei: Kunden/Lieferantenstamm)
 &DATA      (+)  = 0, KULI_BEZ
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM Geld-Konto
 &HIDE      (+)
 &REF_KEY   (+-)
@@ -105,13 +105,13 @@
 &REM Bezeichnung-Geldkonto (aus Referenz-Datei: Sachkontenstamm)
 &HIDE      (+)
 &DATA      (+-) = 2, UST_KZ
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
-&REM  Fr Geldkonto (Dummy-Feld)
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
+&REM  FÃ¼r Geldkonto (Dummy-Feld)
 &HIDE      (+)
 &DATA      (+-) =  2, KONTENART
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 &REM Rechnungs-Nummer
@@ -128,7 +128,7 @@
 &HELPTEXT  (+) = FIHLP10, 250, 7
 &DATA      (+-) = 0, RECH_DAT
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM Artikelnummer (Dummy - Feld)
 &HIDE      (+)
 &REF_KEY   (+-)
@@ -140,15 +140,15 @@
 &HIDE      (+)
 &REF_KEY   (+-)
 &DATA      (+-) = 1, MATCH_CODE
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM Kontonummer (Dummy - Feld)
 &HIDE      (+)
 &DATA      (+-) = 1, ERLOES_KT
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM Kontonummer (Dummy - Feld)
 &HIDE      (+)
 &DATA      (+-) = 1, AUFWAND_KT
@@ -176,9 +176,9 @@
 &REM Umsatzsteuerbetrag
 &HIDE      (+)
 &DATA      (+-) = 0, UST_BETRAG
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM  Kunden Konto (Dummy-Feld)
 &HIDE      (+)
 &REF_KEY   (+-)
@@ -212,15 +212,15 @@
 &REM  Lieferanten Nummer (Dummy-Feld)
 &HIDE      (+)
 &DATA      (+-) = 4, LI_KONTO
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM - Mandanten-Nummer
 &REF_KEY   (+)
 &HIDE      (+-)
 &DATA      (+-) = 6, MAND_01
 
-&REM - Steuers„tze
+&REM - SteuersÃ¤tze
 &HIDE      (+)
 &DATA      (+-) = 6, UST_1
 &HIDE      (+)
@@ -237,9 +237,9 @@
 &DATA      (+-) = 6, UST_7
 &HIDE      (+)
 &DATA      (+-) = 6, UST_8
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM Buchungsdatum
 &HIDE      (+)
 &DATA      (+-) = 0, BUCH_DATUM
@@ -287,7 +287,7 @@
 &REM Basiseinheit
 &HIDE      (+)
 &DATA      (+-) = 0, AR_BASIS
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 &REM ------------------------------
 &REM Positionsteil
@@ -320,11 +320,11 @@
 &CHOICE    (+-) = "Netto/Brutto","Netto = plus MwSt","n","Brutto = incl. MwSt","b"
 &DATA      (+-) = 0, NETTO_BRUT
 
-&REM Umsatzsteuer-Schlssel (0/1-8)
+&REM Umsatzsteuer-SchlÃ¼ssel (0/1-8)
 &HELPTEXT  (+)  = AUHLP10, 250, 15
 &DATA      (+-) = 0, UST_SATZ
 
-&REM Betrag in ™S
+&REM Betrag in Ã–S
 &HELPTEXT  (+)  = AUHLP10, 250, 16
 &DATA      (+-) = 0, BETRAG
 

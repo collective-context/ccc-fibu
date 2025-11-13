@@ -2,35 +2,35 @@
 
 
 
-       ˘
+       ¬®
 
           Passwort beim Menuestart              :  @@@@
 
           Datum automatisch aktualisieren       :  @@@@
 
-          Logbuch fÅhren                        :  @@@@
-          Logbuch-Druckmeldung nach n-EintrÑgen :  ####õ
+          Logbuch f√ºhren                        :  @@@@
+          Logbuch-Druckmeldung nach n-Eintr√§gen :  ####√∏
                                            
           Hilfetexte                            :  @@@@@@@@@@@@@@
-          Fehlermeldung fÅr                     :  @@@@@@@@@@
+          Fehlermeldung f√ºr                     :  @@@@@@@@@@
   
-          Warten bei gesperrtem Datensatz       : ####õ Zyklen
-          Erneuter Leseversuch                  : ####õ Zyklen
+          Warten bei gesperrtem Datensatz       : ####√∏ Zyklen
+          Erneuter Leseversuch                  : ####√∏ Zyklen
   
-       ˘                                                              ˘
+       ¬®                                                              ¬®
 
 
-&TITEL = "SYÕStamm éndern Programm-Parameter 1/1"
+&TITEL = "SY‚ïêStamm √Ñndern Programm-Parameter 1/1"
 &REM   Maske    :  SYM040
 &REM   Programm:  SYS0040 / 00000
 &REM   Datei    :  
 
-&FRAME = 0,0,0,0, "Anlegen/éndern Programm-Parameter", 2
+&FRAME = 0,0,0,0, "Anlegen/√Ñndern Programm-Parameter", 2
 &INDEX = "SY040"
 
 &SEQUENZ = 00,01,02,03,04,05,06,07
 
-&OK = "Abspeicherung der Daten", "Abbruch ohne Speicherung", "zurÅck zur Eingabe"
+&OK = "Abspeicherung der Daten", "Abbruch ohne Speicherung", "zur√ºck zur Eingabe"
 
 &REM Passwort 
 &HELPTEXT (00) = SYHLP10, 040, 00
@@ -44,7 +44,7 @@
 &REM &CHOICE   (+-) = "ja",1,"nein","0"
 &REM &DEFAULT  (+-) = 1
 
-&REM Logbuch fÅhren
+&REM Logbuch f√ºhren
 &HELPTEXT (+)  = SYHLP10, 040, 02
 &REM &DATA     (+-) =
 &REM &CHOICE   (+-) = "ja",1,"nein",0
@@ -59,7 +59,7 @@
 &REM Hilfetexte
 &HELPTEXT (+)  = SYHLP10, 040, 04
 &REM &DATA   (+-) = 1,1
-&REM &CHOICE   (+-) = "nicht Ñnderbar","0","Ñnderbar","1"
+&REM &CHOICE   (+-) = "nicht √§nderbar","0","√§nderbar","1"
 &REM &DEFAULT  (+-) = "0"
 
 &REM Fehlermeldung

@@ -1,7 +1,7 @@
 
 
 
- ˘          wird nicht verwendet  PM 19.4.1993
+ ¬®          wird nicht verwendet  PM 19.4.1993
    1: @ @
    2: @ @ @ @ @ @   @ @ @ @ @ @   @ @ @
    3: @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @
@@ -10,10 +10,10 @@
 
 
 
- ˘                                                                            ˘
+ ¬®                                                                            ¬®
 
 
-&TITEL = "FI=WORK Dummy-Maske fÅr STM4310"
+&TITEL = "FI=WORK Dummy-Maske f√ºr STM4310"
 &REM   Maske :  STM4311
 &REM   Source:  FI4100.C
 
@@ -50,8 +50,8 @@
 &REM --- 3. Zeile
 &DATA  (+) = 2, .MATCH_COD
 &DATA  (+) = 0,  MATCH_CODE
-&DATA  (+) = 2, .WéHRUNG
-&DATA  (+) = 4,  WéHRUNG
+&DATA  (+) = 2, .W√ÑHRUNG
+&DATA  (+) = 4,  W√ÑHRUNG
 &DATA  (+) = 2, .MWST
 &DATA  (+) = 3,  MWST
 
@@ -76,7 +76,7 @@
 &DATA  (+) = 2, .KREDIT
 &DATA  (+) = 2, .LE_KONTAK
 
-&DATA  (+) = 2, .EMPFéNGER
+&DATA  (+) = 2, .EMPF√ÑNGER
 &DATA  (+) = 2, .UMSATZ_JA
 &DATA  (+) = 2, .ABSPEICH
 &DATA  (+) = 2, .SAMMEL_RE

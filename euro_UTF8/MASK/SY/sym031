@@ -2,15 +2,15 @@
 
 
 
-  ˘
+  ¬®
      Schmal   LineDraw         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
      Normal   LineDraw         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
      Optional LineDraw         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-     Gro·     LineDraw         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-     öberschriften 1           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-     öberschriften 2           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-     öberschriften 3           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-     öberschriften 4           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Gro√ü     LineDraw         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     √úberschriften 1           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     √úberschriften 2           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     √úberschriften 3           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     √úberschriften 4           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
      Texte 1                   :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
      Texte 2                   :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
      Texte 3                   :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -19,20 +19,20 @@
      Sonderschriften 2         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
      Sonderschriften 3         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
      Sonderschriften 4         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-  ˘                                                                          ˘
+  ¬®                                                                          ¬®
 
 >>Mask:   SYM031
 >>Prog.:  SY1100.C
 >>Update: 06.08.91
 
 &TITEL    = "SY  STAMM Anlegen Druckerparameter 2/3"
-&FRAME    = 0,0,0,0 "Anlegen/éndern Drucker-Parameter", 2
+&FRAME    = 0,0,0,0 "Anlegen/√Ñndern Drucker-Parameter", 2
 &SEQUENZ  = 
 
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYPRINT
 

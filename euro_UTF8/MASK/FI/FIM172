@@ -3,30 +3,30 @@
 
       Kostenstelle ^    : T@@@@@@@@
       Bezeichnung       : ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
       Kostenart               : S@@@@@@@@
       Bezeichnung             : ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
       ^ ^
-    Ú Budget Monat 01 in T™S  : ####›,›› ¿
-    ³ Budget Monat 02 in T™S  : ####›,›› ³
-    ³ Budget Monat 03 in T™S  : ####›,›› ³
-    ³ Budget Monat 04 in T™S  : ####›,›› ³
-    ³ Budget Monat 05 in T™S  : ####›,›› ³
-    ³ Budget Monat 06 in T™S  : ####›,›› ³
-    ³ Budget Monat 07 in T™S  : ####›,›› ³
-    ³ Budget Monat 08 in T™S  : ####›,›› ³
-    ³ Budget Monat 09 in T™S  : ####›,›› ³
-    ³ Budget Monat 10 in T™S  : ####›,›› ³
-    ³ Budget Monat 11 in T™S  : ####›,›› ³
-    À Budget Monat 12 in T™S  : ####›,›› Ù
- ù                                                                            ù
+    â”Œ Budget Monat 01 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”
+    â”‚ Budget Monat 02 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”‚
+    â”‚ Budget Monat 03 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”‚
+    â”‚ Budget Monat 04 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”‚
+    â”‚ Budget Monat 05 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”‚
+    â”‚ Budget Monat 06 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”‚
+    â”‚ Budget Monat 07 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”‚
+    â”‚ Budget Monat 08 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”‚
+    â”‚ Budget Monat 09 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”‚
+    â”‚ Budget Monat 10 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”‚
+    â”‚ Budget Monat 11 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”‚
+    â”” Budget Monat 12 in TÃ–S  : ####Ã¸,Ã¸Ã¸ â”˜
+ Â¨                                                                            Â¨
 
 &TITEL = "FI=Anlegen K-stellen/K-arten 1/1"
 &REM   Source:  STM172
 &REM   Maske :  #172
 
-&FRAME = 0, 0, 0, 0, "Anlegen/ndern Kostenstellen-Kostenarten" 2
+&FRAME = 0, 0, 0, 0, "Anlegen/Ã„ndern Kostenstellen-Kostenarten" 2
 &INDEX = "AU110"
 
 &DATEI     (0) = EURODATA, D.FI1720
@@ -35,10 +35,10 @@
 &NUMMER  = 00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15
 &SEQUENZ = 00,02,04,05,06,07,08,09,10,11,12,13,14,15
 
-&REM Prim„ry_Key
+&REM PrimÃ¤ry_Key
 &HIDE      (00)
 &REC_KEY   (+-)
-&DATA      (+-) = 0, PRIMR_KEY
+&DATA      (+-) = 0, PRIMÃ„R_KEY
 
 &REM  Kostenstelle
 &HELPTEXT  (+) = FIHLP10, 172, 0
@@ -72,50 +72,50 @@
 &REF_KEY   (+-)
 &DATA      (+-) = 1, KONTO_BEZ
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT  (+)  = FIHLP10, 172, 4
 &DATA      (+-) = 0, BUDGET_M1
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT  (+)  = FIHLP10, 172, 4
 &DATA      (+-) = 0, BUDGET_M2
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT  (+)  = FIHLP10, 172, 4
 &DATA      (+-) = 0, BUDGET_M3
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT  (+)  = FIHLP10, 172, 4
 &DATA      (+-) = 0, BUDGET_M4
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT  (+)  = FIHLP10, 172, 4
 &DATA      (+-) = 0, BUDGET_M5
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT  (+)  = FIHLP10, 172, 4
 &DATA      (+-) = 0, BUDGET_M6
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT  (+)  = FIHLP10, 172, 4
 &DATA      (+-) = 0, BUDGET_M7
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT (+)  = FIHLP10, 172, 4
 &DATA     (+-) = 0, BUDGET_M8
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT (+)  = FIHLP10, 172, 4
 &DATA     (+-) = 0, BUDGET_M9
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT (+)  = FIHLP10, 172, 4
 &DATA     (+-) = 0, BUDGET_M10
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT (+)  = FIHLP10, 172, 4
 &DATA     (+-) = 0, BUDGET_M11
 
-&REM  Budget Monat 01-12 in T™S
+&REM  Budget Monat 01-12 in TÃ–S
 &HELPTEXT (+)  = FIHLP10, 172, 4
 &DATA     (+-) = 0, BUDGET_M12

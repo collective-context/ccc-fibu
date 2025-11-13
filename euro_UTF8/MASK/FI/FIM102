@@ -12,7 +12,7 @@
 
                                    Monat    : ##
                                    ab LfdNr.: #####
-                                  ˘Konto    : @@@@@@@@@@@@@@@@@@@@˘
+                                  ¬®Konto    : @@@@@@@@@@@@@@@@@@@@¬®
 
 &TITEL = "FI-Drucken Kosten-Erfassungs-Protokoll"
 &REM   Source:  FIM102
@@ -21,7 +21,7 @@
 &REM Historie
 &REM Stand: 06.06.88
 
-&REM Palette fÅr Zusatzeingaben
+&REM Palette f√ºr Zusatzeingaben
 &BACKGROUND = 16
 &INPUTPALETTE = 40
 

@@ -6,13 +6,13 @@
 
 
 
-              ù
-                 Von Satz-Nr : #####›      Bis Satz-Nr : #####›
-                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+              Â¨
+                 Von Satz-Nr : #####Ã¸      Bis Satz-Nr : #####Ã¸
+                â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
                  Kopien      :   ##
                  von Seite   : ####        Bis Seite   : ####
-              ù                                                  ù
+              Â¨                                                  Â¨
 
 ^ ^ ^   ^
 ``.``.``  ^ ^ ^ ^ ^ ^
@@ -25,13 +25,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "FI  DRUCK Protokoll Journal"
-&FRAME    = 0, 0, 0, 0, "ÄProtokoll Journal", 2
+&FRAME    = 0, 0, 0, 0, "â”€Protokoll Journal", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, buer-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI3100
 &DRU_DATEI  (1)  = MASK, D.FI4210
@@ -74,7 +74,7 @@
   &DEFAULT  (+-) = "9999"
 
 
->>Dummy Felder fr Match-Code-Suche:
+>>Dummy Felder fÃ¼r Match-Code-Suche:
 >>REF_KEY   (+)
 >>REC_MATCH (+-) = "Konto-Nr.  ", 0, .KONTONR
 >>ADD_MATCH (+-) = "Bezeichnung                    ", 0, .KONTO_BEZ
@@ -95,7 +95,7 @@
 &REF_KEY    (+)
   &DATA_H   (+-) = 0, .KONTO_NR   >>Sachkonto-Nummer
 
->>Dummy-Felder fr Point-Anweisungen:
+>>Dummy-Felder fÃ¼r Point-Anweisungen:
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer
@@ -128,9 +128,9 @@
   &DATA_H   (+)  = 1, _SAMMEL_HA  >>Journal-Kontrolle Sammel-Haben
   &DATA_H   (+)  = 1, _SAMMEL_TX  >>Journal-Kontrolle Sammel-Text
 
->>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  5. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 0, .KTO_ART
   &CHOICE   (+-) = "Konto-Art",\
                    "Sachkonto",s,  "Kundenkonto",k,  "Lieferantenkonto",l
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

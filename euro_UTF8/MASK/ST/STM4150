@@ -4,17 +4,17 @@
 
 
 
-         ù
-           von Artikel-Nr.  : ïïïïïïïïïïïïïïïïïïïï
-           bis Artikel-Nr.  : ïïïïïïïïïïïïïïïïïïïï
-          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-           von Lieferant    : ïïïïïïïïïïïïïïïïïïïï
-           bis Lieferant    : ïïïïïïïïïïïïïïïïïïïï
-          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+         Â¨
+           von Artikel-Nr.  : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+           bis Artikel-Nr.  : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+          â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+           von Lieferant    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+           bis Lieferant    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+          â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
            von Artikelgruppe: ###       bis Artikelgruppe: ###
-           von Lagerort     : ïïïïïï    bis Lagerort     : ïïïïïï
+           von Lagerort     : Â´Â´Â´Â´Â´Â´    bis Lagerort     : Â´Â´Â´Â´Â´Â´
            von Seite        : ####      bis Seite        : ####
-         ù                                                         ù
+         Â¨                                                         Â¨
 
 ^ ^
 ``.``.`` ^ ^ ^ ^ ^ ^
@@ -27,13 +27,13 @@
 >>Update: 20.01.91
 
 &TITEL    = "ST  Liste Inventur nach Artikelnummer 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄListe Inventur nach Artikelnummer", 2
+&FRAME    = 0, 0, 0, 0, "â”€Liste Inventur nach Artikelnummer", 2
 >>SEQUENZ =
 
 &MASKHELP = STHLP10, artnr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1300
 &DRU_DATEI  (1)  = MASK, D.ST4140
@@ -82,8 +82,8 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY   (+)                    >>Artikel-Nummer 
 &REC_MATCH (+-) = "Artikel-Nummer ", 0, ARTNR
 &ADD_MATCH (+-) = "Kurzbezeichnung      ", 0, MATCH_CODE
@@ -92,7 +92,7 @@
 &REC_KEY   (+)                    >>Artikel-Bezeichnung 
   &DATA_H  (+-) = 0, MATCH_CODE
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -101,7 +101,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
  
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 2, UST_1       >>Steuersatz 1 - 8
   &DATA_H   (+)  = 2, UST_2
   &DATA_H   (+)  = 2, UST_3
@@ -111,7 +111,7 @@
   &DATA_H   (+)  = 2, UST_7
   &DATA_H   (+)  = 2, UST_8
 
->>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  4. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 0, PREINHKZ
   &DATA_H   (+)  = 0, MWST
   &DATA_H   (+)  = 0, SOLL_BEST   >>Bestand aktuell
@@ -130,7 +130,7 @@
   &DATA_H   (+)  = 1, _FELD_4     >>Preis-Text 4
   &DATA_H   (+)  = 1, _FELD_5     >>Preis-Text 5
 
->>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  5. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 2, TXT_VKP_01  >>Artikel-Preis-Text 1
   &DATA_H   (+)  = 2, TXT_VKP_02  >>Artikel-Preis-Text 2
   &DATA_H   (+)  = 2, TXT_VKP_03  >>Artikel-Preis-Text 3

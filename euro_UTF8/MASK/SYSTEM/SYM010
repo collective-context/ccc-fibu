@@ -10,21 +10,21 @@
 
 
 
-       ù                                    ù
+       Â¨                                    Â¨
           Zeichensatz ^^^^^^^^^^^^^^^^^^^^
                 wird auf Drucker
           ^^^^^^^^^^^^^^^^^^^^^ kopiert
 
                     OK?  @@@@
-       ù                                    ù
+       Â¨                                    Â¨
 
 
-&TITEL = "SYÍKopieren des Zeichensatzes"
+&TITEL = "SYâ•Kopieren des Zeichensatzes"
 &REM   Maske    :  SYM010
 &REM   Programm:  SY1100
 &REM   Datei    : SYRINT
 
-&FRAME = 0,0,0,0, "Ä", 2
+&FRAME = 0,0,0,0, "â”€", 2
 
 &DATEI (0) = EURODATA, L.SYPRINT
 &DATEI (1) = EURODATA, L.SYARBEIT

@@ -16,7 +16,7 @@ Kopf 1
 &END
 
 &RUMPF (0)
-¸- ¸;¸;¸;¸;¸;¸;¸ ~0.LAND ~0.PLZ_ORT ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~1._NAME_5 ~0.TELEFON ~0.BRIEFANR_1
+┬©- ┬©;┬©;┬©;┬©;┬©;┬©;┬© ~0.LAND ~0.PLZ_ORT ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~1._NAME_5 ~0.TELEFON ~0.BRIEFANR_1
 &END
 
 &FUSS (0)

@@ -1,39 +1,39 @@
 
 
 
- ù
+ Â¨
       Kostenstelle: T@@@@@@@@
       Bezeichnung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       Kostenart   : S@@@@@@@@
       Bezeichnung : ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-                  Ú Budget Monat 01 in ™S: ###.###.##› ¿
-                  ³ Budget Monat 02 in ™S: ###.###.##› ³
-                  ³ Budget Monat 03 in ™S: ###.###.##› ³
-                  ³ Budget Monat 04 in ™S: ###.###.##› ³
-                  ³ Budget Monat 05 in ™S: ###.###.##› ³
-                  ³ Budget Monat 06 in ™S: ###.###.##› ³
-                  ³ Budget Monat 07 in ™S: ###.###.##› ³
-                  ³ Budget Monat 08 in ™S: ###.###.##› ³
-                  ³ Budget Monat 09 in ™S: ###.###.##› ³
-                  ³ Budget Monat 10 in ™S: ###.###.##› ³
-                  ³ Budget Monat 11 in ™S: ###.###.##› ³
-                  À Budget Monat 12 in ™S: ###.###.##› Ù
- ù                                                                            ù
+                  â”Œ Budget Monat 01 in Ã–S: ###.###.##Ã¸ â”
+                  â”‚ Budget Monat 02 in Ã–S: ###.###.##Ã¸ â”‚
+                  â”‚ Budget Monat 03 in Ã–S: ###.###.##Ã¸ â”‚
+                  â”‚ Budget Monat 04 in Ã–S: ###.###.##Ã¸ â”‚
+                  â”‚ Budget Monat 05 in Ã–S: ###.###.##Ã¸ â”‚
+                  â”‚ Budget Monat 06 in Ã–S: ###.###.##Ã¸ â”‚
+                  â”‚ Budget Monat 07 in Ã–S: ###.###.##Ã¸ â”‚
+                  â”‚ Budget Monat 08 in Ã–S: ###.###.##Ã¸ â”‚
+                  â”‚ Budget Monat 09 in Ã–S: ###.###.##Ã¸ â”‚
+                  â”‚ Budget Monat 10 in Ã–S: ###.###.##Ã¸ â”‚
+                  â”‚ Budget Monat 11 in Ã–S: ###.###.##Ã¸ â”‚
+                  â”” Budget Monat 12 in Ã–S: ###.###.##Ã¸ â”˜
+ Â¨                                                                            Â¨
 
 >>Mask:   FIM171
 >>Prog.:  FI1100.C
 >>Update: 2.08.91
 
 &TITEL    = "FI  STAMM Anlegen K-Stellen/K-Arten 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄAnlegen/Žndern Kostenstellen-Kostenarten" 2
+&FRAME    = 0, 0, 0, 0, "â”€Anlegen/Ã„ndern Kostenstellen-Kostenarten" 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, koka-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1710
 &REF_DATEI  (1)  = MASK, D.FI1310
@@ -61,51 +61,51 @@
   &HELPTEXT (+-) = FIHLP10, 171, 3
   &REF_DATA (+-) = 1, KONTO_BEZ, 0, K_ART_BEZ
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M1
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M2
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M3
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M4
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M5
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M6
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M7
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M8
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M9
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M10
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M11
 
->>Budget Monat 01-12 in T™S
+>>Budget Monat 01-12 in TÃ–S
   &HELPTEXT  (+)  = FIHLP10, 171, 4
   &DATA      (+-) = 0, BUDGET_M12
 

@@ -1,14 +1,14 @@
 
 
 
- �
+ ¨
 
-  ����������������������������������������������������������������������������
+  ────────────────────────────────────────────────────────────────────────────
   Soll      Beleg      Beleg     Haben                         U-Art   U-Satz
   Konto     Nummer     Datum     Konto                Betrag       Ust-Betrag
-  ����������������������������������������������������������������������������
-  ������� ^ @@@@@@@@@@ ##.##.##  ���������     ##.###.##�,��   @@@@  @@@@@@@@
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ##.###.##�,��
+  ────────────────────────────────────────────────────────────────────────────
+  ´´´´´´´ ^ @@@@@@@@@@ ##.##.##  ´´´´´´´´´     ##.###.##ø,øø   @@@@  @@@@@@@@
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ##.###.##ø,øø
   ^ ^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
   ``.``.`` ^ ^ ^ ^ ^ ^ ^ ^ ^   ^ ^     B-Text: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -20,20 +20,20 @@
 
 
 
- �                                                                            �
+ ¨                                                                            ¨
 
 >>Mask:   FIM210
 >>Prog.:  FI1500.C
 >>Update: 10.06.91
 
 &TITEL = "FI-Erfassen Buchungen"
-&FRAME    = 0, 0, 0, 0, "�Erfassen Buchungen", 2
+&FRAME    = 0, 0, 0, 0, "─Erfassen Buchungen", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, buch-er
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zur�ck zur Eingabe"
+            "zurück zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI2100
 &REF_DATEI  (1)  = MASK, D.ST1300
@@ -49,11 +49,11 @@
   &HELPTEXT (0)  = FIHLP10, 210, 0
   &DATA     (+-) = 0, :SOL_KONTO
 
->>��������  Dummy Felder: ������Ŀ
+>>┌───────  Dummy Felder: ───────┐
 >>Erfassungsnummer
 &REC_KEY    (+)
   &DATA_H   (+-) = 0, :SATZ_NR
->>�������� Ende Dummy-Felder! ��������
+>>└─────── Ende Dummy-Felder! ───────┘
 
 >>Beleg-Nummer
 &REC_KEY    (+)
@@ -101,7 +101,7 @@
   &HELPTEXT (+)  = FIHLP10, 210, 7
   &DATA     (+-) = 0, :UST_BETR
 
->>��������  Dummy Felder: ������Ŀ
+>>┌───────  Dummy Felder: ───────┐
 >>UST-Kennzeichen  (0/1-8)
   &DATA_H   (+)  = 2, UST_KZ
 
@@ -109,7 +109,7 @@
 &REF_KEY    (+)
   &DATA_H   (+-) = 5, MAND_01
 
->>Steuers�tze
+>>Steuersätze
   &DATA_H   (+)  = 5, UST_1
   &DATA_H   (+)  = 5, UST_2
   &DATA_H   (+)  = 5, UST_3
@@ -118,9 +118,9 @@
   &DATA_H   (+)  = 5, UST_6
   &DATA_H   (+)  = 5, UST_7
   &DATA_H   (+)  = 5, UST_8
->>�������� Ende Dummy-Felder! ��������
+>>└─────── Ende Dummy-Felder! ───────┘
 
->>��������  Dummy Felder: ������Ŀ
+>>┌───────  Dummy Felder: ───────┐
 >>Buchungsdatum
   &DATA_H   (+)  = 0, :BUCH_DAT
 
@@ -164,9 +164,9 @@
 >>Sachkonten Bezeichnung
 &REF_KEY     (+)
   &DATA_H    (+-) = 2, KONTO_BEZ
->>�������� Ende Dummy-Felder! ��������
+>>└─────── Ende Dummy-Felder! ───────┘
 
->>��������  Dummy Felder: ������Ŀ
+>>┌───────  Dummy Felder: ───────┐
   &DATA_H   (+) = 6, MAND_02
   &DATA_H   (+) = 6, SALDO_VOR
 

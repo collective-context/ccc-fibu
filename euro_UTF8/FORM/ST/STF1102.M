@@ -11,7 +11,7 @@
 >>Name
 >>Zusatz
 >>Ansprechpartner: Anrede, Titel, Zuname
->>Straße
+>>Stra├ƒe
 >>Land - PLZ/Ort
 
 &KOPF (0)
@@ -29,7 +29,7 @@
 &END
 
 &FUSS (0)
-... es soll kein Fuss gedruckt werden! 
+... es soll kein Fuss gedruckt werden!┬á
 &END
 
 

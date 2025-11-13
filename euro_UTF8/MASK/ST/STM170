@@ -1,26 +1,26 @@
 
 
 
- ù
-     Mitarbeiter-Nr.: ïïïïïïïïïïïïïïïïïï
+ Â¨
+     Mitarbeiter-Nr.: Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
      Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
-    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 
-     Anrede    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@       Sprach-Code: ›››
+     Anrede    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@       Sprach-Code: Ã¸Ã¸Ã¸
      Name      : @@@@@@@@@@@@@@@@@@@@@@@@@@@@
      Zusatz    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-     Straáe    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     StraÃŸe    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@
      Ld/PLZ/Ort: @@@ - @@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
-    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
      Telefon   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@       Geburtstag : ##.##.##
- ù                                                                            ù
+ Â¨                                                                            Â¨
 
 ^ ^
 
@@ -29,13 +29,13 @@
 >>Update: 01.06.91
 
 &TITEL    = "ST  STAMM Anlegen Personal-Stamm 1/5"
-&FRAME    = 0,0,0,0, "ÄAnlegen/Žndern Personal-Stamm", 2
+&FRAME    = 0,0,0,0, "â”€Anlegen/Ã„ndern Personal-Stamm", 2
 >>&SEQUENZ= 00,02,04,05,06,08,01,11,12
 
 &MASKHELP = AUHLP10, mit-st
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1700
 &PARA_DATEI (1)  = MASK, L.SYP_02
@@ -44,7 +44,7 @@
 &REC_KEY    (0)
 &REC_MATCH  (+-) = "Mitarbeiter-Nummer  ", 0, PERSONNR
 &ADD_MATCH  (+-) = "Kurzbezeichnung     ", 0, MATCH_CODE
-&ADD_MATCH  (+-) = "Straáe              ", 0, STRASSE
+&ADD_MATCH  (+-) = "StraÃŸe              ", 0, STRASSE
   &HELPTEXT (+-) = STHLP10, 170, 0
   &DATA     (+-) = 0, PERSONNR
 
@@ -52,7 +52,7 @@
 &REC_KEY    (+)
 &REC_MATCH  (+-) = "Kurzbezeichnung     ", 0, MATCH_CODE
 &ADD_MATCH  (+-) = "Mitarbeiter-Nummer  ", 0, PERSONNR
-&ADD_MATCH  (+-) = "Straáe              ", 0, STRASSE
+&ADD_MATCH  (+-) = "StraÃŸe              ", 0, STRASSE
   &HELPTEXT (+-)  = STHLP10, 170, 1
   &DATA     (+-) = 0, MATCH_CODE
 
@@ -73,11 +73,11 @@
   &HELPTEXT (+)  = STHLP10, 170, 5
   &DATA     (+-) = 0, ZUSATZ
 
->>Straáe
+>>StraÃŸe
   &HELPTEXT (+)  = STHLP10, 170, 9
   &DATA     (+-) = 0, STRASSE
 
->>Landkrzel
+>>LandkÃ¼rzel
   &HELPTEXT (+)  = STHLP10, 170, 10
   &DATA     (+-) = 0, LAND
   &DEFAULT  (+-) = "A"
@@ -95,10 +95,10 @@
   &HELPTEXT (+)  = STHLP10, 170, 6
   &DATA     (+-) = 0, GEBURTSTAG
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)                   >>Mandanten-Nummer
   &DATA_H   (+-) = 1, MAND_02
   &DATA_H   (+)  = 1, NR_MITARB   >>Nummernkreis Mitarbeiterstamm 
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 

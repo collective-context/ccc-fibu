@@ -1,26 +1,26 @@
 
 
 
- ù
-   Kontonummer /  Bezeichnung: Sïïïïïïïï @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ Â¨
+   Kontonummer /  Bezeichnung: SÂ´Â´Â´Â´Â´Â´Â´Â´ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
    Zuordnung zur Kontoklasse:   @@@@
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ ^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ ^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
    Die Werte dieser Kontoklasse bzw. des Kontos:
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Buchungs-Art   ^^^^   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@³
-   ³ UST-Kennz.            : @@@@@@@@@@@@@@@@@@@@ ^                          ³
-   ³                                                                         ³
-   ³ Umsatzst.-Voranmeldung: @@@ / ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  ³
-   ³^ ^ ^ ^                                                                  ³
-   ³ Kostenvergleich      ^: @@@@@@@@@@@@@@@@@@@@@@@@@@    ^  S-Vortrag: @@@@³
-   ³ Kapitalfluárechnung  ^: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                  ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
- ù                                                                            ù
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Buchungs-Art   ^^^^   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@â”‚
+   â”‚ UST-Kennz.            : @@@@@@@@@@@@@@@@@@@@ ^                          â”‚
+   â”‚                                                                         â”‚
+   â”‚ Umsatzst.-Voranmeldung: @@@ / ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  â”‚
+   â”‚^ ^ ^ ^                                                                  â”‚
+   â”‚ Kostenvergleich      ^: @@@@@@@@@@@@@@@@@@@@@@@@@@    ^  S-Vortrag: @@@@â”‚
+   â”‚ KapitalfluÃŸrechnung  ^: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                  â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+ Â¨                                                                            Â¨
 
 ^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
 ^ ^ ^ ^ ^ ^    ^ ^ ^ ^ ^
@@ -30,13 +30,13 @@
 >>Update: 10.07.91
 
 &TITEL    = "FI  STAMM Anlegen Sachkonten 1/x"
-&FRAME    = 0, 0, 0, 0, "Anlegen/Žndern Sachkonto" 2
+&FRAME    = 0, 0, 0, 0, "Anlegen/Ã„ndern Sachkonto" 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, sach-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1310
 &PARA_READ  (1)  = MASK, L.SYP_01
@@ -60,10 +60,10 @@
   &MODUS    (+-) = PREPARE
 
 
->>Werte aus Kontolassen bernehmen
+>>Werte aus Kontolassen Ã¼bernehmen
   &DATA     (+)  = 0, KTO_KLASS
   &HELPTEXT (+-) = FIHLP10, 130, 15
-  &CHOICE   (+-) = "šbernehmen aus Kontoklassen",\
+  &CHOICE   (+-) = "Ãœbernehmen aus Kontoklassen",\
                    "ja",j,  "nein",n
 
 &REF_KEY    (+)
@@ -119,7 +119,7 @@
 &HELPTEXT   (+)  = FIHLP10, 130, 19
   &DATA     (+-) = 0, KOSTENVERG
   &CHOICE   (+-) = "Kostenvergleich",\
-                   "Bilanzkonto",b,           "Verkauf/Erl”se",v,\
+                   "Bilanzkonto",b,           "Verkauf/ErlÃ¶se",v,\
                    "Einkauf",e,               "Personalkosten",p,\
                    "Fremdarbeit",f,           "Transporte",t,\
                    "Hilfs-/Betriebsmittel",h, "Werbung",w,\
@@ -130,24 +130,24 @@
   &DATA_H   (+)  = 3, .S_VOR
 
 
->>Saldovortrag - Jahresbertrag
+>>Saldovortrag - JahresÃ¼bertrag
   &DATA     (+)  = 0, S_VOR
   &HELPTEXT (+-) = FIHLP10, 130, 21
   &CHOICE   (+-) = "Neus Jahr: Saldovortrag",\
                    "ja",j,  "nein",n
 
->>Kopie: Kapitalfluárechnung
+>>Kopie: KapitalfluÃŸrechnung
   &DATA_H   (+)  = 3, .KAPITAL_R
 
->>Kapitalfluárechnung
+>>KapitalfluÃŸrechnung
 &HELPTEXT   (+)  = FIHLP10, 130, 20
   &DATA     (+-) = 0, KAPITAL_RE
-  &CHOICE   (+-) = "Kapitalfluárechnung",\
-                   "fr KFR keine Bedeutung",k,   "Geldkonto",g,\
+  &CHOICE   (+-) = "KapitalfluÃŸrechnung",\
+                   "fÃ¼r KFR keine Bedeutung",k,   "Geldkonto",g,\
                    "laufender Betrieb",l,   "Investitionen",i,\
                    "Privatkonto","p"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)
   &DATA_H   (+-) = 1, MAND_01     >>Mandanten-Nummer
   &DATA_H   (+)  = 1, UST_1       >>Steuersatz 1 - 8
@@ -161,7 +161,7 @@
   &DATA_H   (+)  = 1, UST_8
 
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 4, MAND_50
   &DATA_H   (+)  = 4, KLASSE_0
   &DATA_H   (+)  = 4, KLASSE_1
@@ -174,7 +174,7 @@
   &DATA_H   (+)  = 4, KLASSE_7
   &DATA_H   (+)  = 4, KLASSE_8
   &DATA_H   (+)  = 4, KLASSE_9
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 >>   Sammel-Kennz.      : @@@@                 Kostenstellen: @@@@
@@ -193,8 +193,8 @@
 >>&DEFAULT  (+-) = "n"
 >>&CHOICE   (+-) = "Kostenstellen-KZ",   "nein",n,   "ja",j
 
->>   Bilanz-Kennz. Soll : ïïïïïï ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->>   Bilanz-Kennz. Haben: ïïïïïï ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>>   Bilanz-Kennz. Soll : Â´Â´Â´Â´Â´Â´ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>>   Bilanz-Kennz. Haben: Â´Â´Â´Â´Â´Â´ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 >>Auswertungs-Kennz. Soll
 >>&HELPTEXT (+)  = FIHLP10, 130, 7
@@ -217,9 +217,9 @@
 >> ^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
 
 
-   ³ Buchungs-Art          : ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ³
+   â”‚ Buchungs-Art          : ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ â”‚
 
-   ³ Kontoklasse/ Bezeichnung: S^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^³
+   â”‚ Kontoklasse/ Bezeichnung: S^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^â”‚
 
 >>&REF_DATA (+)  = 3, .UST_KZ  0, UST_KZ
 >>&REF_DATA (+-) = 3, .USTVA_KZ,  0, USTVA_KZ

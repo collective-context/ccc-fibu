@@ -6,14 +6,14 @@
 
 
 
-              ù
+              Â¨
 
-                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-                   von Kunden-Nummer   : ïïïïïïïïïïïïïïïïïïïï
-                   bis Kunden-Nummer   : ïïïïïïïïïïïïïïïïïïïï
-                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+                   von Kunden-Nummer   : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+                   bis Kunden-Nummer   : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+                â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                 ^ ^ ``.``.`` ^ ^ ^ ^ ^ ^ ^ ^
-              ù                                                  ù
+              Â¨                                                  Â¨
 
 
 &TITEL = "FI=WORK ASCII/Btrieve - Kunden"
@@ -27,7 +27,7 @@
 &DATEI     (4) = EURODATA, D.AU1110
 &DATEI     (5) = EURODATA, D.FI1110
 
-&FRAME    = 0, 0, 0, 0, "ÄKonvertieren ASCII-Datei in euroSOFT-Datei", 2
+&FRAME    = 0, 0, 0, 0, "â”€Konvertieren ASCII-Datei in euroSOFT-Datei", 2
 &MASKHELP = FIHLP10, buer-dr
 &INDEX    = BASIS
 
@@ -44,7 +44,7 @@
 &DATA      (+-) = 1, _B_KUNDE
 
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM Kunden-Nummer (Dummy-Feld fuer Kundennummer)
 &REC_KEY  (+)
 &HIDE     (+-)
@@ -82,9 +82,9 @@
 &REM Nutzungs-Berechtigung (Standard-Dummy-Feld fuer Point-Anweisung)
 &HIDE     (+)
 &DATA     (+-) = 1, _NUTZUNG
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
-&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REM  von Seite
 &HIDE     (+)
 &HELPTEXT (+-)  = STHLP10, 421, 9
@@ -96,5 +96,5 @@
 &HELPTEXT (+-) = STHLP10, 421, 10
 &DEFAULT  (+-) = "9999"
 &DATA     (+-) = 1, _BIS_SEITE
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

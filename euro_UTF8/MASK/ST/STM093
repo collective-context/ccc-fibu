@@ -5,7 +5,7 @@
 
 
 
-                                ˘ ``                                  ˘
+                                ¬® ``                                  ¬®
                                   Versandart 1 : @@@@@@@@@@@@@@@@@@@@
 
                                   Versandart 2 : @@@@@@@@@@@@@@@@@@@@
@@ -17,21 +17,21 @@
                                   Versandart 5 : @@@@@@@@@@@@@@@@@@@@
 
                                   Versandart 6 : @@@@@@@@@@@@@@@@@@@@
-                                ˘                                     ˘
+                                ¬®                                     ¬®
 
 
 >>Mask:   STM093
 >>Prog.:  ST1100.C
 >>Update: 20.01.91
 
-&TITEL    = "ST  Anlegen/éndern Versandarten"
-&FRAME    = 0, 0, 0, 0, "ƒAnlegen/éndern Versandarten" 2
+&TITEL    = "ST  Anlegen/√Ñndern Versandarten"
+&FRAME    = 0, 0, 0, 0, "‚îÄAnlegen/√Ñndern Versandarten" 2
 >>SEQUENZ =
 
 &MASKHELP = STHLP10, ver-inf
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYP_01
 

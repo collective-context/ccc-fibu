@@ -1,26 +1,26 @@
 
 
 
- ù                                                                            ù
-    Teilnehmer Nr.: ïïï       Arbeitsplatz Name: @@@@@@@@@@@@@@@@@@@@@@@@@@@
+ Â¨                                                                            Â¨
+    Teilnehmer Nr.: Â´Â´Â´       Arbeitsplatz Name: @@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-    DOS L„ndercode           : ›››
-    Hilfetext „nderbar       : @@@@
+    DOS LÃ¤ndercode           : Ã¸Ã¸Ã¸
+    Hilfetext Ã¤nderbar       : @@@@
 
-    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-    Fehlermeldung fr        : @@@               Testmodus ein/aus : @@@
+    Fehlermeldung fÃ¼r        : @@@               Testmodus ein/aus : @@@
 
-    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-    Pfad fr Daten           : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    Pfad fr Programme       : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    Pfad fr Hilfstexte      : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    Pfad fr Text-Dateien    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    Pfad fr Datenzugang     : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
- ù                                                                            ù
+    Pfad fÃ¼r Daten           : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Pfad fÃ¼r Programme       : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Pfad fÃ¼r Hilfstexte      : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Pfad fÃ¼r Text-Dateien    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Pfad fÃ¼r Datenzugang     : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ Â¨                                                                            Â¨
 
 ^ ^
 
@@ -29,13 +29,13 @@
 >>Update: 06.08.91
 
 &TITEL    = "SY  STAMM Anlegen Programm-Parameter 1/1"
-&FRAME    = 0,0,0,0, "ÄAnlegen/Žndern Programm-Parameter", 2
+&FRAME    = 0,0,0,0, "â”€Anlegen/Ã„ndern Programm-Parameter", 2
 >>SEQUENZ = 00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19
 
 &MASKHELP = SYHLP10, par-anl
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYTEIL
 
@@ -50,12 +50,12 @@
   &HELPTEXT (+)  = SYHLP10, 025, 01
   &DATA     (+-) = 0, PLATZ_NAME
 
->>DOS-L„nder-Code
+>>DOS-LÃ¤nder-Code
   &HELPTEXT (+)  = SYHLP10, 025, 02
   &DATA     (+-) = 0, EXT_G
   &DEFAULT  (+-) = "043"
 
->>Hilfstext „nderbar
+>>Hilfstext Ã¤nderbar
   &HELPTEXT (+)  = SYHLP10, 025, 04
   &DATA     (+-) = 0, HILFS_TEXT
   &DEFAULT  (+-) = "n"
@@ -65,7 +65,7 @@
   &HELPTEXT (+)  = SYHLP10, 025, 03
   &DATA     (+-) = 0, KUNDENTEST
   &DEFAULT  (+-) = "e"
-  &CHOICE   (+-) = "Fehlermeldungen fr:",  "Anwender",e,  "Programmierer",a
+  &CHOICE   (+-) = "Fehlermeldungen fÃ¼r:",  "Anwender",e,  "Programmierer",a
 
 >>Test-Modus Entwickler
   &HELPTEXT (+)  = SYHLP10, 025, 03
@@ -93,16 +93,16 @@
   &HELPTEXT (+)  = SYHLP10, 025, 14
   &DATA     (+-) = 0, ZUG_G
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 0, PRT_G        >>Drucker aktuell
   &DATA_H   (+)  = 0, TEILN_G      >>Teilnehmerverzeichnis
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
     Bildschirmtyp      : @@@@@@@@@          Bildschirmadresse   : @@@@@
-    Logbuch fhren     : @@@@               Drucken Logbuch     : ###
+    Logbuch fÃ¼hren     : @@@@               Drucken Logbuch     : ###
     Datei-Modus        : @
-    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     Neuer Lesev. bei gesp. Datensatz: #     Warten bei gesp. Datensatz: #
 
     Datum aktualisieren : @@@@
@@ -117,9 +117,9 @@
   &HELPTEXT (+)  = SYHLP10, 025, 07
   &DATA     (+-) = 0, VIO_ADRESS
 
->>Logbuch fhren
+>>Logbuch fÃ¼hren
   &HELPTEXT (+)  = SYHLP10, 025, 08
-  &DATA     (+-) = 0, LOGBUCH_ŽN
+  &DATA     (+-) = 0, LOGBUCH_Ã„N
   &DEFAULT  (+-) = "n"
   &CHOICE   (+-) = "Logbuch ?",  "nein",n,  "ja",j
 

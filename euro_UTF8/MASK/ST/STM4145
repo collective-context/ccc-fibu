@@ -5,12 +5,12 @@
 
 
 
-         ù
-                  von Artikel-Nr.  : ïïïïïïïïïïïïïïïïïïïï
-                  bis Artikel-Nr.  : ïïïïïïïïïïïïïïïïïïïï
+         Â¨
+                  von Artikel-Nr.  : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+                  bis Artikel-Nr.  : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
 
                   Kopien           : ##
-         ù                                                         ù
+         Â¨                                                         Â¨
 
 ^ ^ 
 ``.``.``  ^ ^ ^ ^ ^ ^
@@ -22,13 +22,13 @@
 >>Update: 6.08.91
 
 &TITEL    = "ST  DRUCK Artikel nach Artikelnummer 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄListe Artikel nach Artikelnummer", 2
+&FRAME    = 0, 0, 0, 0, "â”€Liste Artikel nach Artikelnummer", 2
 >>SEQUENZ = 00,01,13,14,15,17,16,18
 
 &MASKHELP = STHLP10, artnr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1300
 &DRU_DATEI  (1)  = MASK, D.ST4140
@@ -48,8 +48,8 @@
   &DATA     (+-) = 1, _KOPIEN
   &DEFAULT  (+-) = "1"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY    (+)                   >>Artikel Nummer
 &REC_MATCH  (+-)  = "Artikel-Nummer ", 0, ARTNR
 &ADD_MATCH  (+-) = "Kurzbezeichnung      ", 0, MATCH_CODE
@@ -58,7 +58,7 @@
 &REC_KEY    (+)                   >>Match-Code
   &DATA_H   (+-) = 0, MATCH_CODE
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -67,7 +67,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
 
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)                   >>Mandanten-Nummer
   &DATA_H   (+-) = 3, MAND_01
   &DATA_H   (+)  = 3, TXT_VKP_01  >>Artikel-Preis-Text 1
@@ -82,7 +82,7 @@
   &DATA_H   (+)  = 1, _FELD_4     >>Preis-Text 4
   &DATA_H   (+)  = 1, _FELD_5     >>Preis-Text 5
 
->>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  4. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)                   >>Artikel-Nummer
   &DATA_H   (+-) = 2, ARTNR_Z
   &DATA_H   (+)  = 2, ART_ZUTXT   >>Artikel-Zusatztext

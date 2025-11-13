@@ -4,30 +4,30 @@
 
 
 
-      ù ^
+      Â¨ ^
 
           Summe Konten excl. UST                     ```.```.``|,||
           + UST `|,||                                ```.```.``|,||
           + UST `|,||                                ```.```.``|,||
           + UST `|,||                                ```.```.``|,||
           + UST `|,|| ^ ^ ^ ^                        ```.```.``|,||
-         ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+         â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           = Summe Konten incl. UST                   ```.```.``|,||
           - Zahlungsbetrag incl. UST                 ```.```.``|,||
-         ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-          = Skonto incl. MwSt                        ###.###.##›,››
+         â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          = Skonto incl. MwSt                        ###.###.##Ã¸,Ã¸Ã¸
 
-      ù ^                                                            ^ ù
+      Â¨ ^                                                            ^ Â¨
 
 
-­­
+Â¡Â¡
 
 >>Mask:   FIM251
 >>Prog.:  FI1500.C
 >>Update: 2.08.91
 
 &TITEL    = "FI  WORK Kontrolle Rechnungs-Buchungen"
-&FRAME    = 0, 0, 0, 0, "ÄKontrolle Rechnungs-Buchungen", 2
+&FRAME    = 0, 0, 0, 0, "â”€Kontrolle Rechnungs-Buchungen", 2
 >>SEQUENZ =
 
 &BLOCK    = 17,18
@@ -36,7 +36,7 @@
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI2500
 &REF_DATEI  (1)  = MASK, D.ST1300
@@ -57,12 +57,12 @@
   &DATA     (+)  = 0, UST_S3
   &DATA     (+)  = 7, UST_4
 
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 0, UST_S5
   &DATA_H   (+)  = 0, UST_S6
   &DATA_H   (+)  = 0, UST_S7
   &DATA_H   (+)  = 0, UST_S8
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
   &DATA     (+)  = 0, UST_S4
 
@@ -72,12 +72,12 @@
 
 >>------------------------------
 >>Positionsteil
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 0, PO_ART      >>Postions-Art
   &DATA_H   (+)  = 0, PO_EIN_AUS  >>Position-Ein/Aus
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY   (+)                    >>Aufteilungsbuchung Sachkonto
 &REF_MATCH (+-) = "Konto-Nummer", 2, KONTONR
 &ADD_MATCH (+-) = "Konten-Bezeichnung            ", 2, KONTO_BEZ
@@ -85,7 +85,7 @@
 
 &REF_KEY   (+)
   &DATA_H  (+-) = 2, KONTO_BEZ    >>Bezeichnung-Geldkonto (Sachkontenstamm)
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 

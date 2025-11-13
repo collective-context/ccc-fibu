@@ -2,7 +2,7 @@
 
 
 
-   ù
+   Â¨
       Text 01 : @@@@@@@@@@@@@@@@@@@@      Text 10 : @@@@@@@@@@@@@@@@@@@@
 
       Text 02 : @@@@@@@@@@@@@@@@@@@@      Text 11 : @@@@@@@@@@@@@@@@@@@@
@@ -20,7 +20,7 @@
       Text 08 : @@@@@@@@@@@@@@@@@@@@      Text 17 : @@@@@@@@@@@@@@@@@@@@
 
       Text 09 : @@@@@@@@@@@@@@@@@@@@      Text 18 : @@@@@@@@@@@@@@@@@@@@
-   ù                                                                     ù
+   Â¨                                                                     Â¨
 
 ^
 
@@ -28,14 +28,14 @@
 >>Prog.:  ST1100.C
 >>Update: 6.08.91
 
-&TITEL    = "ST  STAMM Žndern Buchungstexte"
-&FRAME    = 0, 0, 0, 0, "ÄAnlegen/Žndern Buchungstexte" 2
+&TITEL    = "ST  STAMM Ã„ndern Buchungstexte"
+&FRAME    = 0, 0, 0, 0, "â”€Anlegen/Ã„ndern Buchungstexte" 2
 >>SEQUENZ = 00,02,04,06,08,10,12,14,16,01,03,05,07,09,11,13,15,17
 
 &MASKHELP = FIHLP10, bute-an
 &INDEX    = "BASIS"
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYP_03
 
@@ -111,9 +111,9 @@
   &HELPTEXT (+)  = FIHLP10, 030, 0
   &DATA     (+-) = 0, BU_TXT_18
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REC_KEY    (+)                   >>Mandanten-Nummer
   &DATA_H   (+-) = 0, MAND_03
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 

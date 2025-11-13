@@ -9,9 +9,9 @@
 
 
 
-                         ù
-                              Landesw„hrung  :     @@@@
-                         ù                                 ù
+                         Â¨
+                              LandeswÃ¤hrung  :     @@@@
+                         Â¨                                 Â¨
 
 ^
 
@@ -19,25 +19,25 @@
 >>Prog.:  ST1100.C
 >>Update: 6.08.91
 
-&TITEL    = "ST  STAMM Žndern Landesw„hrung"
-&FRAME    = 0, 0, 0, 0, "ÄLandesw„hrung" 2
+&TITEL    = "ST  STAMM Ã„ndern LandeswÃ¤hrung"
+&FRAME    = 0, 0, 0, 0, "â”€LandeswÃ¤hrung" 2
 >>SEQUENZ =
 
-&MASKHELP = STHLP10, law„-an
+&MASKHELP = STHLP10, lawÃ¤-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYP_01
 
 &REM  Bezeichnung 1
   &HELPTEXT (0)  = STHLP10, 095, 0
-  &DATA     (+-) = 0, FRWŽ_BE_00
-  &DEFAULT  (+-) = "™S"
+  &DATA     (+-) = 0, FRWÃ„_BE_00
+  &DEFAULT  (+-) = "Ã–S"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REC_KEY    (+) >>Mandanten-Nummer
   &DATA_H   (+-) = 0, MAND_01
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 

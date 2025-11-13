@@ -17,81 +17,81 @@
 ^@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~2E ~3.KOPFTEXT_7
 ^@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~2E ~3.KOPFTEXT_8
 ^Abs.: euroSOFT-WARE P.Mayer, A-8082 Kirchbach 126 ~3E
-^───────────────────────────────────────────────── ~3E
+^ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ ~3E
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                    ~0.ANREDE
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            ┌────────────┬──────────┬───────┐       ~0.NAME
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            │ Kunden-Nr. │    Datum │ Seite │       ~0.ZUSATZ
-                                               │ ´´´´´´´´´´ │  6.08.92 │ 00001 │       ~0.KUNDE
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            └────────────┴──────────┴───────┘       ~0.STRASSE
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            ÔöîÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔö¼ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔö¼ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÉ       ~0.NAME
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            Ôöé Kunden-Nr. Ôöé    Datum Ôöé Seite Ôöé       ~0.ZUSATZ
+                                               Ôöé ┬┤┬┤┬┤┬┤┬┤┬┤┬┤┬┤┬┤┬┤ Ôöé  6.08.92 Ôöé 00001 Ôöé       ~0.KUNDE
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            ÔööÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔö┤ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔö┤ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÿ       ~0.STRASSE
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                            ~0.PLZ_ORT
-      
-       
+┬á┬á┬á┬á┬á┬á
+┬á┬á┬á┬á┬á┬á┬á
                                                 ^MAHNUNG  ^                 ^           ~BE ~OP ~NO
-       
-────────────────────────────────────────────────────────────────────────────────
-Beleg-     Beleg-     Fällig    Zins
+┬á┬á┬á┬á┬á┬á┬á
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+Beleg-     Beleg-     F├ñllig    Zins
 Datum      Nummer     am        Tage     Rechnung     Zahlung   Restbetrag    MK
-────────────────────────────────────────────────────────────────────────────────
- 
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+┬á
 &END
 
 &RUMPF (0)
  2.07.92   AR/166      6.07.92    30    18.396,00        0,00    18.396,00    1
- 
- 
- 
- 
- 
- 
- 
- 
+┬á
+┬á
+┬á
+┬á
+┬á
+┬á
+┬á
+┬á
                                        Zwischensumme             18.396,00
- 
+┬á
                                        Verzugszinsen 14,00 %        214,60
-                                       Mahngebühr                    50,00
- 
+                                       Mahngeb├╝hr                    50,00
+┬á
                                        Gesamtsumme               18.660,60
- 
- 
+┬á
+┬á
 
 
 
 
 
-             Sehr geehrter Herr Ing. Stöller!
+             Sehr geehrter Herr Ing. St├Âller!
 
-             Sicher haben Sie übersehen, daß die oben angeführte
-             Rechnung zur Zahlung fällig geworden ist. Ich bitte
-             Sie daher um Überweisung des fälligen Betrages auf
+             Sicher haben Sie ├╝bersehen, da├ƒ die oben angef├╝hrte
+             Rechnung zur Zahlung f├ñllig geworden ist. Ich bitte
+             Sie daher um ├£berweisung des f├ñlligen Betrages auf
              mein Konto RAIKA Kirchbach, BLZ:38170, Kto:9.332.
      
-             Mit freundlichen Grüßen
+             Mit freundlichen Gr├╝├ƒen
 &END
 
 &FUSS (0)
- 
-────────────────────────────────────────────────────────────────────────────────
+┬á
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~2.WERB_TXT_1
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~2.WERB_TXT_2
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~2.WERB_TXT_3
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~2.WERB_TXT_4
- 
+┬á
 ^Gelieferte Ware bleibt bis zur Bezahlung unserer gesamten,  auch aus anderen Lieferungen resultierenden Forderungen,  unser  Eigen-   ~4E
 ^tum.  Unsere  Verkaufs-  und  Zahlungsbedingungen  gelten als anerkannt, wenn innerhalb von 8 Tagen mittels eingeschriebenen Brief    ~4E
-^kein Einwand erhoben wird.  Bei Softwarelieferungen und Dienstleistungen beschränkt sich jeder Garantieanspruch auf den Ersatz von    ~4E
-^Disketten! Für Software wird eine Benützungs-Lizenz vergeben, die Programme bleiben in unserem Eigentum. Gerichtsstand ist Graz.     ~4E
+^kein Einwand erhoben wird.  Bei Softwarelieferungen und Dienstleistungen beschr├ñnkt sich jeder Garantieanspruch auf den Ersatz von    ~4E
+^Disketten! F├╝r Software wird eine Ben├╝tzungs-Lizenz vergeben, die Programme bleiben in unserem Eigentum. Gerichtsstand ist Graz.     ~4E
 &END
 
 
 
 >>             leider konnten wir nach unserer ersten Mahnung bis heute noch
->>             keinen Zahlungseingang der fälligen Rechnung feststellen.
+>>             keinen Zahlungseingang der f├ñlligen Rechnung feststellen.
 >>             Wir bitten Sie deshalb nochmals um sofortigen Ausgleich.
->>             Mit freundlichen Grüßen
+>>             Mit freundlichen Gr├╝├ƒen
 >>
->>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            │ ´´´´´´´´´´ │ ##.##.## │ ##### │       ~0.ZU_HANDEN ~0.KUNDEN_NUM ~0.DATUMDRUCK ~1._SEITE
+>>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            Ôöé ┬┤┬┤┬┤┬┤┬┤┬┤┬┤┬┤┬┤┬┤ Ôöé ##.##.## Ôöé ##### Ôöé       ~0.ZU_HANDEN ~0.KUNDEN_NUM ~0.DATUMDRUCK ~1._SEITE
 >>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                 ~1._FREI_1 == LAND+PLZ+ORT
 >>!R!FONT52;EXIT;
 >>!R!FONT52;EXIT;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~3.KOPFTEXT_0
@@ -104,12 +104,12 @@ Datum      Nummer     am        Tage     Rechnung     Zahlung   Restbetrag    MK
 >>!R!FONT53;EXIT;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~3.KOPFTEXT_7
 >>!R!FONT53;EXIT;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~3.KOPFTEXT_8
 >>!R!FONT62;EXIT;Abs.: euroSOFT-WARE A-8010 Graz, Kastellfeldgasse 23
->>!R!FONT62;EXIT;────────────────────────────────────────────────────
+>>!R!FONT62;EXIT;ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 
 >>&FUSS (0)
->> 
->>             FÄLLIGKEITSANALYSE:   MAHNSTUFE 1
->>────────────────────────────────────────────────────────────────────────────────
+>>┬á
+>>             F├äLLIGKEITSANALYSE:   MAHNSTUFE 1
+>>ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 >>A- 8054 Pirka                                                                          ~1._FREI_1
 
 

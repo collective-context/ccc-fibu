@@ -2,24 +2,24 @@
 
 
 
-     MenÅ-Nummer: ^^^^^^^
+     Men√º-Nummer: ^^^^^^^
 
-   MenÅ-Bezeich.≥ Fu·zeilen
-  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒ≈ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
-  @@@@@@@@@@@@@@≥@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                ≥
-                ≥
-                ≥
-                ≥
-                ≥
-                ≥
-                ≥
-                ≥
-                ≥
-                ≥
-                ≥
-                ≥
-  ˘             ≥                                                            ˘
+   Men√º-Bezeich.‚îÇ Fu√üzeilen
+  ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îº‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  @@@@@@@@@@@@@@‚îÇ@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                ‚îÇ
+                ‚îÇ
+                ‚îÇ
+                ‚îÇ
+                ‚îÇ
+                ‚îÇ
+                ‚îÇ
+                ‚îÇ
+                ‚îÇ
+                ‚îÇ
+                ‚îÇ
+                ‚îÇ
+  ¬®             ‚îÇ                                                            ¬®
 
 
 >>Mask:   SYM021
@@ -29,22 +29,22 @@
 &BLOCK    = 1,2
 &SCROLL   = 7,0,20,79
 
-&TITEL    = "SY  STAMM Anlegen MenÅ-Stamm 2/2"
-&FRAME    = 0, 0, 0, 0, "Anlegen/éndern MenÅ-Stamm", 2
+&TITEL    = "SY  STAMM Anlegen Men√º-Stamm 2/2"
+&FRAME    = 0, 0, 0, 0, "Anlegen/√Ñndern Men√º-Stamm", 2
 >>SEQUENZ =
  
 &DATEI      (0)  = MASK, T.MENU
 
->>MenÅgruppen-Nummer
+>>Men√ºgruppen-Nummer
   &HELPTEXT (0)  = SYHLP10, 021, 00
-  &DATA     (+-) = 0, MENöGRUPPE
+  &DATA     (+-) = 0, MEN√úGRUPPE
 
 >> --- Positionsteil ---
->>MenÅzeilen-Bezeichnung
+>>Men√ºzeilen-Bezeichnung
   &HELPTEXT (+)  = SYHLP10, 021, 01
   &DATA     (+-) = 0, BEZEICH
 
->>Fu·zeile
+>>Fu√üzeile
   &HELPTEXT (+)  = SYHLP10, 021, 02
   &DATA     (+-) = 0, FUSSZEILE
 

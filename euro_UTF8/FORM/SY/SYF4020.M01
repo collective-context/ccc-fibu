@@ -1,4 +1,4 @@
-&TITEL = "ST�Druck Men�eintraege"
+&TITEL = "ST═Druck Menüeintraege"
 &FORMULAR = 10
 
 &DATEI (0) = EURODATA, MENUE
@@ -10,31 +10,31 @@
 
 
 &KOPF (0)
-������
-��DRUCK MEN�EINTR�GE                                                                                        Seite: ������ ~1.SEITE
-����������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                           Teilnehmer: ����� ~1.NR_MANDANT ~1.MANDANT ~1.TEILNEHMER
- �����������������������������������������������������������������������������������������������������������������������
- �
-Men�-Nr Men�zeilen-Bezeichnung    Folgel. Progr.-Name   Fu�zeile
-�������������������������������������������������������������������������������������������������������������������������
-��
-��
+      
+┌┘DRUCK MENÜEINTRÄGE                                                                                        Seite: øøøø└┐ ~1.SEITE
+│┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                           Teilnehmer: øøø├┘ ~1.NR_MANDANT ~1.MANDANT ~1.TEILNEHMER
+ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  
+Menü-Nr Menüzeilen-Bezeichnung    Folgel. Progr.-Name   Fußzeile
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  
+  
 &END
 
 &RUMPF (0)
-@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@ @@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~0.MEN�GRUPPE  ~0.BEZEICH ~0.APP_MEN� ~1._PROG_NAME ~0.FUSSZEILE
+@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@ @@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~0.MENÜGRUPPE  ~0.BEZEICH ~0.APP_MENÜ ~1._PROG_NAME ~0.FUSSZEILE
 &END
 
 &FUSS (0)
-�
-�����������������������������������������������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@��   ~1.NUTZUNG  ~1.COPYRIGHT
+ 
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@┌┘   ~1.NUTZUNG  ~1.COPYRIGHT
 &END
 
 &FUSS (1)
 ...(Ende)
 .....(Ende)
 &END
-&REM�
+&REM 
 

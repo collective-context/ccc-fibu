@@ -1,4 +1,4 @@
-&TITEL = "ST�Adress-Liste Kunden"
+&TITEL = "ST═Adress-Liste Kunden"
 &FORMULAR = 10
 
 &DATEI (0) = EURODATA, ST1100
@@ -10,21 +10,21 @@
 
 
 &KOPF (0)
-��
-^��ADRESS-LISTE KUNDEN                                 Datum: @@@@@@@@ - SEITE ������ ~NO ~1._DATUM_AKT ~1._SEITE
-���������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ����������������������������������������������������������������������������������
+  
+^┌┘ADRESS-LISTE KUNDEN                                 Datum: @@@@@@@@ - SEITE øøøø└┐ ~NO ~1._DATUM_AKT ~1._SEITE
+│┌────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └────────────────────────────────────────────────────────────────────────────────┘
 Kunden-Kurzbezeichnung         Kunden-Nummer
-Name                           Stra�e
+Name                           Straße
 Zusatz                         Land - PLZ/Ort                 Telefon
-������������������������������������������������������������������������������������
+────────────────────────────────────────────────────────────────────────────────────
 .
 &END
 
 
 &RUMPF (0)
-�
+ 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@                                   ~0.MATCH_CODE ~0.KUNDE
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@@@@@                           ~0.NAME ~0.STRASSE
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@   @@@ - @@@@@@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@@@@@@  ~0.ZUSATZ ~0.LAND ~0.PLZ_ORT ~0.TELEFON
@@ -32,8 +32,8 @@ Zusatz                         Land - PLZ/Ort                 Telefon
 
 
 &FUSS (0)
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 .
 &END
 

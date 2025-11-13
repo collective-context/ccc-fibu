@@ -4,19 +4,19 @@
 
 
 
-   ù
+   Â¨
      von Lieferanten-Bez.: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
      bis Lieferanten-Bez.: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Kopien: ##
-     ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+     â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
      von bis Land        : @@@                    @@@
      von bis Plz/Ort     : @@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@
-     ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+     â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-     von Lieferanten-Gr. : ïïïïïïïïïï   von Auswertungs-Kz. : ïïïïïïïïïï
-     bis Lieferanten-Gr. : ïïïïïïïïïï   bis Auswertungs-Kz. : ïïïïïïïïïï
+     von Lieferanten-Gr. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´   von Auswertungs-Kz. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+     bis Lieferanten-Gr. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´   bis Auswertungs-Kz. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
      von Seite           : ####         bis Seite           : ####
-   ù                                                                     ù
+   Â¨                                                                     Â¨
 
 ^ ^
 ``.``.`` ^ ^ ^ ^ ^ ^ ^
@@ -27,13 +27,13 @@
 >>Update: 01.06.91
 
 &TITEL    = "ST  DRUCK Adressen-/Telefonl. Lieferanten 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄTelefon/Adressenliste Lieferanten", 2
+&FRAME    = 0, 0, 0, 0, "â”€Telefon/Adressenliste Lieferanten", 2
 &SEQUENZ = 00,01,02,03,04,06,05,07,08,09
 
 &MASKHELP = STHLP10, liefadr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1200
 &DRU_DATEI  (1)  = MASK, D.ST4120
@@ -94,8 +94,8 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY    (+)
 &REC_MATCH  (+-) = "Kurzbezeichnung      ", 0, MATCH_CODE
 &ADD_MATCH  (+-) = "Lieferanten-Nummer   ", 0, LIEFNR
@@ -103,7 +103,7 @@
 
   &DATA_H   (+)  = 0, LIEFNR      >>Lieferanten-Nummer
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -113,11 +113,11 @@
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
   &DATA_H   (+)  = 1, _PROBE      >>Probedruck
 
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _NAME_1
   &DATA_H   (+)  = 1, _NAME_2
   &DATA_H   (+)  = 1, _ORT
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 
@@ -125,15 +125,15 @@
 
 
 
-     ù
+     Â¨
        von Kurzbezeichnung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
        bis Kurzbezeichnung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-       ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-       von Liefer.-Gruppe  : ïïïïïïïïïï von Auswertungs-KZ. : ïïïïïïïïïï
-       bis Liefer.-Gruppe  : ïïïïïïïïïï bis Auswertungs-KZ. : ïïïïïïïïïï
+       â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+       von Liefer.-Gruppe  : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´ von Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+       bis Liefer.-Gruppe  : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´ bis Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
 
        von Seite           : ####       bis Seite           : ####
-     ù                                                                    ù
+     Â¨                                                                    Â¨
 
 ^ ^ 
 ``.``.`` ^ ^ ^ ^ ^ ^ ^
@@ -143,13 +143,13 @@
 >>Update: 01.06.91
 
 &TITEL    = "ST  DRUCK Lieferanten nach Kurzbezeichnung"
-&FRAME    = 0, 0, 0, 0, "ÄListe Lieferanten nach Kurzbezeichnung", 2
+&FRAME    = 0, 0, 0, 0, "â”€Liste Lieferanten nach Kurzbezeichnung", 2
 &SEQUENZ  = 00,01,02,04,03,05,06,07
 
 &MASKHELP = STHLP10, liefbez
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1200
 &DRU_DATEI  (1)  = MASK, D.ST4120
@@ -188,8 +188,8 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY    (+)
 &REC_MATCH  (+-) = "Kurzbezeichnung      ", 0, MATCH_CODE
 &ADD_MATCH  (+-) = "Lieferanten-Nummer   ", 0, LIEFNR
@@ -197,8 +197,8 @@
 
   &DATA_H   (+)  = 0, LIEFNR
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -207,5 +207,5 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
   &DATA_H   (+)  = 1, _PROBE      >>Probedruck
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

@@ -9,22 +9,22 @@
 
 
 
-           ù                manueller Programmaufruf                ù
-            ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+           Â¨                manueller Programmaufruf                Â¨
+            â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
               Programm-Name :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
               Steuerzeichen :  @@@@@
-            ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-           ù  <ÄÙ=Eingabe  Esc= Abbruch  F1=Hilfe                   ù
+            â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+           Â¨  <â”€â”˜=Eingabe  Esc= Abbruch  F1=Hilfe                   Â¨
 
 
 
 
-&TITEL = "SYÍArbeit Manueller Programm-Start 1/1"
+&TITEL = "SYâ•Arbeit Manueller Programm-Start 1/1"
 &REM   Maske    :  SYM007
 &REM   Programm:  SY1000 / 07000
 &REM   Datei    : SYARBEIT
 
-&FRAME = 0,0,0,0, "Ä", 2
+&FRAME = 0,0,0,0, "â”€", 2
 &INDEX = "SY007"
 
 &DATEI (0) = EURODATA, L.SYARBEIT

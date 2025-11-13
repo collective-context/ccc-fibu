@@ -6,34 +6,34 @@
 
 
 
-  ùÚÄÄUM VorjahrÄÄ¿  ÚÄÄUmsatz-PLANÄ¿  ÚÄErzielter UMÄ¿  ÚÄÄÄRohertragÄÄ¿ ù
-   À```.```.``|,||Ù  À```.```.``|,||Ù  À```.```.``|,||Ù  À```.```.``|,||Ù
-         J„nner   :   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||
-         Februar  :   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||
-         M„rz     :   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||
-         April    :   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||
-         Mai      :   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||
-         Juni     :   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||
-         Juli     :   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||
-         August   :   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||
-         September:   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||
-         Oktober  :   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||
-         November :   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||
-  ù      Dezember :   ###.###.##›,››    ```.```.``|,||    ```.```.``|,||  ù
+  Â¨â”Œâ”€â”€UM Vorjahrâ”€â”€â”  â”Œâ”€â”€Umsatz-PLANâ”€â”  â”Œâ”€Erzielter UMâ”€â”  â”Œâ”€â”€â”€Rohertragâ”€â”€â” Â¨
+   â””```.```.``|,||â”˜  â””```.```.``|,||â”˜  â””```.```.``|,||â”˜  â””```.```.``|,||â”˜
+         JÃ¤nner   :   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||
+         Februar  :   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||
+         MÃ¤rz     :   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||
+         April    :   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||
+         Mai      :   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||
+         Juni     :   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||
+         Juli     :   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||
+         August   :   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||
+         September:   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||
+         Oktober  :   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||
+         November :   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||
+  Â¨      Dezember :   ###.###.##Ã¸,Ã¸Ã¸    ```.```.``|,||    ```.```.``|,||  Â¨
 
 >>Mask:   STM112
 >>Prog.:  ST1100.CPP
 >>Update: 28.09.94
 
 
-&TITEL    = "ST  STAMM Kunden-Ums„tze"
-&FRAME    = 0, 0, 0, 0, "Kunden-Ums„tze", 2
+&TITEL    = "ST  STAMM Kunden-UmsÃ¤tze"
+&FRAME    = 0, 0, 0, 0, "Kunden-UmsÃ¤tze", 2
 >>SEQUENZ =
 
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1100
 &DATEI      (1)  = MASK, D.ST1110
@@ -51,19 +51,19 @@
   &HELPTEXT (+) = STHLP10, 112, 2
   &DATA     (+-) = 2, _UMSATZ
 
->>Roherl”s
+>>RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 3
   &DATA     (+-) = 2, _ROH_ERL
 
->>J„n Umsatz-Plan
+>>JÃ¤n Umsatz-Plan
   &HELPTEXT (+) = STHLP10, 112, 4
   &DATA     (+-) = 1, UM_PLAN_01
 
->>J„n Umsatz erzielt
+>>JÃ¤n Umsatz erzielt
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_01
 
->>J„n Roherl”s
+>>JÃ¤n RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_01
 
@@ -75,7 +75,7 @@
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_02
 
->>Feb Roherl”s
+>>Feb RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_02
 
@@ -87,7 +87,7 @@
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_03
 
->>Mrz Roherl”s
+>>Mrz RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_03
 
@@ -99,7 +99,7 @@
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_04
 
->>Apr Roherl”s
+>>Apr RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_04
 
@@ -111,7 +111,7 @@
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_05
 
->>Mai Roherl”s
+>>Mai RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_05
 
@@ -123,7 +123,7 @@
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_06
 
->>Jun Roherl”s
+>>Jun RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_06
 
@@ -135,7 +135,7 @@
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_07
 
->>Jul Roherl”s
+>>Jul RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_07
 
@@ -147,7 +147,7 @@
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_08
 
->>Aug Roherl”s
+>>Aug RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_08
 
@@ -159,7 +159,7 @@
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_09
 
->>Sep Roherl”s
+>>Sep RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_09
 
@@ -171,7 +171,7 @@
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_10
 
->>Okt Roherl”s
+>>Okt RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_10
 
@@ -183,7 +183,7 @@
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_11
 
->>Nov Roherl”s
+>>Nov RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_11
 
@@ -195,12 +195,12 @@
   &HELPTEXT (+) = STHLP10, 112, 5
   &DATA     (+-) = 1, UMSATZ_12
 
->>Dez Roherl”s
+>>Dez RoherlÃ¶s
   &HELPTEXT (+) = STHLP10, 112, 6
   &DATA     (+-) = 1, ROH_ERL_12
 
 
-  ù Kunde: K^^^^^^^^^^^ Kurzbezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ù
+  Â¨ Kunde: K^^^^^^^^^^^ Kurzbezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Â¨
 
 >>Kunden-Nummer (S)
   &DATA     (0) = 1, KUNDE_ST1

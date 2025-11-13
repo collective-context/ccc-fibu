@@ -2,7 +2,7 @@
 
 
  Textbaustein-Nummer: @@@@@@@@@@   Bezeichnung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
- ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+ ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
 
       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -20,7 +20,7 @@
 
 
 
- ˘                                                                            ˘
+ ¬®                                                                            ¬®
 
 
 >>Mask:   STM180
@@ -28,7 +28,7 @@
 >>Update: 01.06.91
 
 &TITEL    = "ST  STAMM Anlegen Textbausteine"
-&FRAME    = 0, 0, 0, 0, "ƒAnlegen/éndern Textbausteine", 2
+&FRAME    = 0, 0, 0, 0, "‚îÄAnlegen/√Ñndern Textbausteine", 2
 >>SEQUENZ =
 
 &BLOCK    = 2,2
@@ -37,7 +37,7 @@
 &MASKHELP = STHLP10, num-inf
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1800
 

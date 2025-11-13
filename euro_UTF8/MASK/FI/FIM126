@@ -2,11 +2,11 @@
 
 
 
-  ˘
+  ¬®
    Liefer-Nr: L@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
                @@@@@@@@@@@@@@
-  ˘                                                                        ˘
+  ¬®                                                                        ¬®
 
 
 >>Mask:   FIM
@@ -20,7 +20,7 @@
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1210
 

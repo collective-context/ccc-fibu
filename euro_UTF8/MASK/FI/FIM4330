@@ -7,11 +7,11 @@
 
 
 
-                                 ˘
+                                 ¬®
 
                                    Aktuelles Datum : ##.##.##
 
-                                 ˘                             ˘
+                                 ¬®                             ¬®
 
 ^^^^^^^^ ^^^^^^^^
 ^ ^
@@ -22,14 +22,14 @@
 >>Prog.:  FI3100.C
 >>Update: 4.08.91
 
-&TITEL    = "FI  LôSCH Monatsabschlu·"
-&FRAME    = 0, 0, 0, 0, "ƒMonatsabschlu·", 2
+&TITEL    = "FI  L√ñSCH Monatsabschlu√ü"
+&FRAME    = 0, 0, 0, 0, "‚îÄMonatsabschlu√ü", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, sach-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &WORK_DATEI (0)  = MASK, D.FI1310
 &DRU_DATEI  (1)  = MASK, D.FI4210

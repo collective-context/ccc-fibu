@@ -3,15 +3,15 @@
 
 
 
-  ù Konto-Nr: K^^^^^^^^ Konto-Bezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ù
+  Â¨ Konto-Nr: K^^^^^^^^ Konto-Bezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Â¨
 
-   ÚÄSaldo inkl. den noch nicht verarbeiteten Buchungen:  ```.```.``|,||¿
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   ÚÄSaldovortragÄ¿  ÚÄÄJahres-SOLLÄ¿  ÚÄJahres-HABENÄ¿  ÚÄÄÄÄÄÄÄÄSaldoÄ¿
-   À```.```.``|,||Ù  À```.```.``|,||Ù  À```.```.``|,||Ù  À###.###.##›,››Ù
-         J„nner   :   ```.```.``|,||    ```.```.``|,||    ###.###.##›,››
+   â”Œâ”€Saldo inkl. den noch nicht verarbeiteten Buchungen:  ```.```.``|,||â”
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   â”Œâ”€Saldovortragâ”€â”  â”Œâ”€â”€Jahres-SOLLâ”€â”  â”Œâ”€Jahres-HABENâ”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€Saldoâ”€â”
+   â””```.```.``|,||â”˜  â””```.```.``|,||â”˜  â””```.```.``|,||â”˜  â””###.###.##Ã¸,Ã¸Ã¸â”˜
+         JÃ¤nner   :   ```.```.``|,||    ```.```.``|,||    ###.###.##Ã¸,Ã¸Ã¸
          Februar  :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
-         M„rz     :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
+         MÃ¤rz     :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
          April    :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
          Mai      :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
          Juni     :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
@@ -20,7 +20,7 @@
          September:   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
          Oktober  :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
          November :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
-  ù      Dezember :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||  ù
+  Â¨      Dezember :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||  Â¨
 
 >>Mask:   FIM112
 >>Prog.:  FI1100.C
@@ -34,7 +34,7 @@
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1100
 &DATEI      (1)  = MASK, D.ST1110
@@ -67,15 +67,15 @@
   &HELPTEXT (+) = FIHLP10, 112, 4
   &DATA     (+-) = 3, JHR_SALDO
 
->>SOLL J„nner
+>>SOLL JÃ¤nner
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 2, SOLL_01
 
->>HABEN J„nner
+>>HABEN JÃ¤nner
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 2, HABEN_01
 
->>SALDO J„nner
+>>SALDO JÃ¤nner
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 3, SALDO_01
 
@@ -91,15 +91,15 @@
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 3, SALDO_02
 
->>SOLL M„rz
+>>SOLL MÃ¤rz
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 2, SOLL_03
 
->>HABEN M„rz
+>>HABEN MÃ¤rz
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 2, HABEN_03
 
->>SALDO M„rz
+>>SALDO MÃ¤rz
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 3, SALDO_03
 

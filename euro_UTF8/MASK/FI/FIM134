@@ -2,12 +2,12 @@
 
 
 
- ˘ Konto: S@@@@@@@@ Bezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  ˘
+ ¬® Konto: S@@@@@@@@ Bezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  ¬®
 
-   ⁄ƒSaldo inkl. den noch nicht verarbeiteten Buchungen #.###.###.##õ,õõø
-   ¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ
+   ‚îå‚îÄSaldo inkl. den noch nicht verarbeiteten Buchungen #.###.###.##√∏,√∏√∏‚îê
+   ‚îî‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îò
 
- ˘                                                                         ˘
+ ¬®                                                                         ¬®
 
 >>Mask:   FIM131
 >>Prog.:  FI1100.C
@@ -21,7 +21,7 @@
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1310
 &DRU_DATEI  (1)  = MASK, D.FI4500

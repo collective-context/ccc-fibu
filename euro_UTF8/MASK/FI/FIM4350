@@ -5,19 +5,19 @@
 
 
 
-         ù
-               ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-               ÀÄ 1. Verarbeitungschritt: Rechnungsbuchungen.ÄÄÙ
+         Â¨
+               â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+               â””â”€ 1. Verarbeitungschritt: Rechnungsbuchungen.â”€â”€â”˜
 
-                Aus den erfaáten Rechnungsbuchungen werden die
-                Buchungss„tze fr die Buchhaltung erzeugt und
+                Aus den erfaÃŸten Rechnungsbuchungen werden die
+                BuchungssÃ¤tze fÃ¼r die Buchhaltung erzeugt und
                 die Lagerbewegungen bei den Artikeln gebucht.
 
 
                 Verarbeiten Monat: @@@@@@@@@@@@@@@@@@@@@@@@
-               ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+               â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                 Von Datum: ##.##.##          Bis Datum: ##.##.##
-         ù                                                           ù
+         Â¨                                                           Â¨
 
 ^ ^ ^ ^ ^ ^  ``.``.`` ^ ^ ^ ^ ^
 ^ ^ ^ ^ ^ ^   ^ ^
@@ -28,13 +28,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "FI  WORK Verarbeiten Rechnungsbuchungen"
-&FRAME    = 0, 0, 0, 0, "ÄVerarbeiten Rechnungsbuchungen", 2
+&FRAME    = 0, 0, 0, 0, "â”€Verarbeiten Rechnungsbuchungen", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, buer-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK,   D.FI2500     >>Erfassen Rechnungsbuchungen
 &DRU_DATEI  (1)  = MASK,   D.FI4210     >>Dummy-Datei
@@ -42,7 +42,7 @@
 &WORK_DATEI (3)  = MASK,   D.ST1300     >>Artikelstamm
 &REF_DATEI  (4)  = MASK,   D.ST1400     >>Einheitenstamm
 &REF_DATEI  (5)  = MASK,   D.FI1210     >>Lieferantenkonten
-&WORK_DATEI (6)  = MASK,   D.FI2500A    >>Tempor„re Erfassungsdatei
+&WORK_DATEI (6)  = MASK,   D.FI2500A    >>TemporÃ¤re Erfassungsdatei
 &PARA_READ  (7)  = MASK,   L.SYP_01     >>Konsten Festkonten, MWST, ...
 &WORK_DATEI (8)  = MASK,   D.FI1600     >>Anlagenstamm
 &PARA_READ  (9)  = MASK,   D.SYP_50  >>Konsten des aktuellen Jahres
@@ -52,7 +52,7 @@
   &DATA     (+-) = 1, _MONAT
 >>  &DEFAULT  (+-) = "1"
   &CHOICE   (+-) = "Verarbeiten Monat",\
-                   "J„nner",1,  "Februar",2,  "M„rz",3,  "April",4,\
+                   "JÃ¤nner",1,  "Februar",2,  "MÃ¤rz",3,  "April",4,\
                    "Mai",5,  "Juni",6,  "Juli",7,  "August",8,\
                    "September",9,  "Oktober",A,  "November",B,  "Dezember",C
 
@@ -64,20 +64,20 @@
   &HELPTEXT (+)  = FIHLP10, 431, 2
   &DATA     (+-) = 1, _B_DATUM
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
-&REC_KEY    (+)                   >>Satznummer (fr Point-Anweisung)
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+&REC_KEY    (+)                   >>Satznummer (fÃ¼r Point-Anweisung)
   &DATA_H   (+-) = 0, SATZ_NR
 
-&REC_KEY    (+)                   >>Belegnummer (fr Point-Anweisung)
+&REC_KEY    (+)                   >>Belegnummer (fÃ¼r Point-Anweisung)
   &DATA_H   (+-) = 0, BELEG_NR
 
-&REC_KEY    (+)                   >>Buchungsdatum (fr Point-Anweisung)
+&REC_KEY    (+)                   >>Buchungsdatum (fÃ¼r Point-Anweisung)
   &DATA_H   (+-) = 0, BELEG_DAT
 
-&REC_KEY    (+)                   >>Belegdatum (fr Point-Anweisung)
+&REC_KEY    (+)                   >>Belegdatum (fÃ¼r Point-Anweisung)
   &DATA_H   (+-) = 0, RECH_NR
-  &DATA_H   (+)  = 0, BUCH_DATUM  >>Buchungsdatum (fr Point-Anweisung)
-  &DATA_H   (+)  = 0, FIRMA       >>Buchungsdatum (fr Point-Anweisung)
+  &DATA_H   (+)  = 0, BUCH_DATUM  >>Buchungsdatum (fÃ¼r Point-Anweisung)
+  &DATA_H   (+)  = 0, FIRMA       >>Buchungsdatum (fÃ¼r Point-Anweisung)
 
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer
@@ -86,7 +86,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>Nutzungs-Berechtigung
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>&REF_KEY  (+)                   >>Mandanten-Nummer (Dummy Feld)
 >>  &DATA_H (+-) = 6, MAND_01
   &DATA_H   (+)  = 7, UST_1       >>Steuersatz 1
@@ -98,12 +98,12 @@
   &DATA_H   (+)  = 7, UST_7       >>Steuersatz 7
   &DATA_H   (+)  = 7, UST_8       >>Steuersatz 8
 
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 8, INVENT_NR   >>Anlagen/Inventurnummer
   &DATA_H   (+)  = 8, MATCH_CODE  >>Datum Ersterfassung
   &DATA_H   (+)  = 8, AN_WERT     >>Anschaffungswert
   &DATA_H   (+)  = 8, AN_DATUM    >>Datum Ersterfassung
-  &DATA_H   (+)  = 8, ZUGANG      >>Zug„nge
+  &DATA_H   (+)  = 8, ZUGANG      >>ZugÃ¤nge
   &DATA_H   (+)  = 8, AKTIVIERT   >>Aktiviert
 
   &DATA_H   (+)  = 8, ZEITW_ANF
@@ -117,6 +117,6 @@
   &DATA_H   (+)  = 8, BUCH_JAHR
   &DATA_H   (+)  = 8, DAT_AKTIV
   &DATA_H   (+)  = 9, Y_CLOSED
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 

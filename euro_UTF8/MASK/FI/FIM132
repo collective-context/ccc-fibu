@@ -3,15 +3,15 @@
 
 
 
- ù Konto: S^^^^^^^^ Bezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ù
+ Â¨ Konto: S^^^^^^^^ Bezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Â¨
 
-   ÚÄSalden aus der KapitalfluárechnungÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   ÚÄSaldovortragÄ¿  ÚÄÄJahres-SOLLÄ¿  ÚÄJahres-HABENÄ¿  ÚÄÄÄÄÄÄÄÄSaldoÄ¿
-   À```.```.``|,||Ù  À```.```.``|,||Ù  À```.```.``|,||Ù  À###.###.##›,››Ù
-         J„nner   :   ```.```.``|,||    ```.```.``|,||    ###.###.##›,››
+   â”Œâ”€Salden aus der KapitalfluÃŸrechnungâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   â”Œâ”€Saldovortragâ”€â”  â”Œâ”€â”€Jahres-SOLLâ”€â”  â”Œâ”€Jahres-HABENâ”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€Saldoâ”€â”
+   â””```.```.``|,||â”˜  â””```.```.``|,||â”˜  â””```.```.``|,||â”˜  â””###.###.##Ã¸,Ã¸Ã¸â”˜
+         JÃ¤nner   :   ```.```.``|,||    ```.```.``|,||    ###.###.##Ã¸,Ã¸Ã¸
          Februar  :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
-         M„rz     :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
+         MÃ¤rz     :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
          April    :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
          Mai      :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
          Juni     :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
@@ -20,7 +20,7 @@
          September:   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
          Oktober  :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
          November :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||
- ù       Dezember :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||  ù
+ Â¨       Dezember :   ```.```.``|,||    ```.```.``|,||    ```.```.``|,||  Â¨
 
 >>Mask:   FIM131
 >>Prog.:  FI1100.C
@@ -28,13 +28,13 @@
 
 
 &TITEL    = "FI  STAMM Salden Sachk. Kapitalfl.R."
-&FRAME    = 0, 0, 0, 0, "Salden / Kapitalfluárechnung", 2
+&FRAME    = 0, 0, 0, 0, "Salden / KapitalfluÃŸrechnung", 2
 >>SEQUENZ =
 
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1310
 &DRU_DATEI  (1)  = MASK, D.FI4500
@@ -63,15 +63,15 @@
   &HELPTEXT (+) = FIHLP10, 112, 4
   &DATA     (+-) = 1, K_JHR_SAL
 
->>SOLL J„nner
+>>SOLL JÃ¤nner
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 0, K_SOLL_01
 
->>HABEN J„nner
+>>HABEN JÃ¤nner
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 0, K_HABEN_01
 
->>SALDO J„nner
+>>SALDO JÃ¤nner
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 1, K_SALDO_01
 
@@ -87,15 +87,15 @@
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 1, K_SALDO_02
 
->>SOLL M„rz
+>>SOLL MÃ¤rz
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 0, K_SOLL_03
 
->>HABEN M„rz
+>>HABEN MÃ¤rz
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 0, K_HABEN_03
 
->>SALDO M„rz
+>>SALDO MÃ¤rz
   &HELPTEXT (+) = FIHLP10, 112, 5
   &DATA     (+-) = 1, K_SALDO_03
 

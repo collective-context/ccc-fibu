@@ -2,24 +2,24 @@
 
 
 
-  ù
+  Â¨
    Kunden-Nr: K^^^^^^^^^^^^^^^^^^^^
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³Konto-Nr: K^^^^^^^^ Konto-Bezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚Konto-Nr: K^^^^^^^^ Konto-Bezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
-    OP-Kennzeichen   : @@@@@@@@@@@@@@@@@@@    Fibu-Saldo  : ###.###.##›,››
-    W„hrung          : @@@@                   MwSt.-Code  : @@@@@@@@@@
+    OP-Kennzeichen   : @@@@@@@@@@@@@@@@@@@    Fibu-Saldo  : ###.###.##Ã¸,Ã¸Ã¸
+    WÃ¤hrung          : @@@@                   MwSt.-Code  : @@@@@@@@@@
     Auslandskunde    : ^^^^
 
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-    Zahlungskondition: @@@@@@@@@              Kredit-Limit: ###.###.##›,››
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    Zahlungskondition: @@@@@@@@@              Kredit-Limit: ###.###.##Ã¸,Ã¸Ã¸
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 ^ ^ ^ ^
     Bankleitzahl     : @@@@@@@@               Bankkonto-Nr: @@@@@@@@@@@@@@
     Postscheck-Kto   : @@@@@@@@@@@@@@         Postsch.-Amt: @@@@@
-  ù                                                                        ù
+  Â¨                                                                        Â¨
 
 
 >>Mask:   FIM111
@@ -33,7 +33,7 @@
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1100
 &DATEI      (1)  = MASK, D.ST1110
@@ -60,10 +60,10 @@
   &HELPTEXT (+) = FIHLP10, 111, 10
   &DATA     (+-) = 2, SALDO
 
->>W„hrung (aus der Datei SYP_01, Dychoice-Feld)
+>>WÃ¤hrung (aus der Datei SYP_01, Dychoice-Feld)
   &HELPTEXT (+)  = FIHLP10, 111, 1
   &DEFAULT  (+-) = "0"
-  &DATA     (+-) = 2, WŽHRUNG
+  &DATA     (+-) = 2, WÃ„HRUNG
 
 >>MWST-Kennzeichen
   &HELPTEXT (+)  = FIHLP10, 111, 2
@@ -80,7 +80,7 @@
                    "nein",n,   "ja",j
 
 >>Zahlungskonditionen TT%%TTT
->>** Eventuell šberprfung auf Zul„ssigkeit **
+>>** Eventuell ÃœberprÃ¼fung auf ZulÃ¤ssigkeit **
   &HELPTEXT (+)  = FIHLP10, 111, 5
   &DATA     (+-) = 2, KONDITION
   &DEFAULT  (+-) = "05-20-010"
@@ -91,15 +91,15 @@
   &DATA     (+-) = 1, KREDIT
   &DEFAULT  (+-) = "10000"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>Dummy Felder:
   &DATA_H   (+)  = 2, KU_KONTO     >>Konto-Nummer  Datei FI1110
   &DATA_H   (+)  = 2, FI_KUNDE     >>Kunden-Nummer Datei FI1110
   &DATA_H   (+)  = 2, KURZ_BEZ     >>Matchcode     Datei FI1110
 
 >>Mandanten-Nummer (Dummy Feld)
-  &DATA_H   (+)  = 3, FRWŽ_BE_00   >>Fremdw„hrung (Dummy Feld)
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+  &DATA_H   (+)  = 3, FRWÃ„_BE_00   >>FremdwÃ¤hrung (Dummy Feld)
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 >>Bankleitzahl
 >>** Eventuell Test, ob im Bankenstamm angelegt **

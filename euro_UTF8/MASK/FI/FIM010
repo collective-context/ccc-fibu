@@ -2,7 +2,7 @@
 
 
 
-                           ù
+                           Â¨
                             ``Zeile 01 : @@@@      Zeile 17 : @@@@
                               Zeile 02 : @@@@      Zeile 18 : @@@@
                               Zeile 03 : @@@@      Zeile 19 : @@@@
@@ -19,7 +19,7 @@
                               Zeile 14 : @@@@      Zeile 30 : @@@@
                               Zeile 15 : @@@@      Zeile 31 : @@@@
                               Zeile 16 : @@@@      Zeile 32 : @@@@
-                           ù                                        ù
+                           Â¨                                        Â¨
 
 
 
@@ -27,7 +27,7 @@
 &REM   Source:  STM010
 &REM   Maske :  #010
 
-&FRAME  = 0, 0, 0, 0, "Anlegen/Žndern USTVA Kennzeichen" 2
+&FRAME  = 0, 0, 0, 0, "Anlegen/Ã„ndern USTVA Kennzeichen" 2
 &INDEX  = "FI110"
 
 &DATEI (0) = EURODATA, L.SYP_10

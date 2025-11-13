@@ -12,8 +12,8 @@
 
                                 ACHTUNG! Vor der Verarbeitung
                                 unbedint eine Datensicherung
-				durchfhren!
-                               ùWeiter mit der Verarbeitung? @@@@ (J/N)ù
+				durchfÃ¼hren!
+                               Â¨Weiter mit der Verarbeitung? @@@@ (J/N)Â¨
 
 &TITEL = "FI-Verarbeiten Buchungen bzw. Verarbeiten Kosten"
 &REM   Source:  FIM104
@@ -22,7 +22,7 @@
 &REM Historie
 &REM Stand: 06.06.88
 
-&REM Palette fr Zusatzeingaben
+&REM Palette fÃ¼r Zusatzeingaben
 &BACKGROUND = 16
 &INPUTPALETTE = 40
 

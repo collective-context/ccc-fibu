@@ -1,4 +1,4 @@
-&TITEL = "ST�Stamm Testeintrag"
+&TITEL = "ST═Stamm Testeintrag"
 &FORMULAR = 10
 &LIRAND = 5
 &REM SCHACHT = 1
@@ -15,24 +15,24 @@
 &REM Seitenfuss mit Zahlungskonditionen und 4 Zeilen Werbetext
 &REM FFU
 
-^������������������������������������������������������������������������������������������~NOM
+^──────────────────────────────────────────────────────────────────────────────────────────~NOM
 &REM END
 &REM ---
 &DATEI (0) = EURODATA, ST1100
 &DATEI (1) = EURODATA, VS1110
 &REM ---
-                                                ��������������������������������Ŀ
-                                                � Liefer-Nr.  �    Datum � Seite �
-   @@@@@@@@@@@@@@@@@@@@@@@@@@@@                 � @@@@@@@@@@  � ##.##.## � ##### �         ~0.STRASSE ~0.KUNDE ~1.MITARBEIT ~1.UMSATZ_MIO
-   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            ����������������������������������         ~0.PLZ_ORT
+                                                ┌─────────────┬──────────┬───────┐
+                                                │ Liefer-Nr.  │    Datum │ Seite │
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@                 │ @@@@@@@@@@  │ ##.##.## │ ##### │         ~0.STRASSE ~0.KUNDE ~1.MITARBEIT ~1.UMSATZ_MIO
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            └─────────────┴──────────┴───────┘         ~0.PLZ_ORT
 
 
 
 Projekt:^ @@@@@@@@@@@@@@@@@@@@                                ^ANGEBOT^   Nr. ########     ~ENG  ~0.TELEFON  ~DOP ~NOM  ~0.ANREDE
             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                     ~0.NAME
-������������������������������������������������������������������������������������������
-Position   Menge      Artikelbezeichnung                     Betrag �S    Summe �S ^       ~NOM
-������������������������������������������������������������������������������������������
+──────────────────────────────────────────────────────────────────────────────────────────
+Position   Menge      Artikelbezeichnung                     Betrag ÖS    Summe ÖS ^       ~NOM
+──────────────────────────────────────────────────────────────────────────────────────────
 
 
  1

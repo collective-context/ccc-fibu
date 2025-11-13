@@ -7,11 +7,11 @@
 
 
 
-                                 �
+                                 ¨
 
                                    Aktuelles Datum : ##.##.##
 
-                                 �                             �
+                                 ¨                             ¨
 
 ^^^^^^^^ ^^^^^^^^ ^
 ^ ^ ^ ^ ^ ^ ^
@@ -23,14 +23,14 @@
 >>Prog.:  FI3100.C
 >>Update: 4.08.91
 
-&TITEL    = "FI  L�SCH Jahresabschlu�"
-&FRAME    = 0, 0, 0, 0, "�Jahresabschlu�", 2
+&TITEL    = "FI  LÖSCH Jahresabschluß"
+&FRAME    = 0, 0, 0, 0, "─Jahresabschluß", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, sach-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zur�ck zur Eingabe"
+            "zurück zur Eingabe"
 
 &WORK_DATEI (0)  = MASK, D.FI1310
 &DRU_DATEI  (1)  = MASK, D.FI4210
@@ -46,12 +46,12 @@
 &DATA       (0)  = 1, _DATUM      >>Datum -> wenigstens ein Ausgabefeld
 &DEFAULT    (+-) = "s"
 
->>��������  1. Zeile: ������Ŀ
+>>┌───────  1. Zeile: ───────┐
   &DATA_H   (+)  = 1, _V_KTONR    >>Von Kontomunner S
   &DATA_H   (+)  = 1, _B_KTONR    >>Bis Kontonummer S
   &DATA_H   (+)  = 0, KONTONR     >>Sachkonto-Nummer
 
->>��������  2. Zeile: ������Ŀ
+>>┌───────  2. Zeile: ───────┐
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer
@@ -60,7 +60,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
 
->>��������  3. Zeile: ������Ŀ
+>>┌───────  3. Zeile: ───────┐
   &DATA_H   (+)  = 0, K_VOR_SAL
   &DATA_H   (+)  = 0, K_SOLL_01
   &DATA_H   (+)  = 0, K_HABEN_01
@@ -91,7 +91,7 @@
   &DATA_H   (+)  = 0, K_SOLL_12
   &DATA_H   (+)  = 0, K_HABEN_12
 
->>��������  4. Zeile: ������Ŀ
+>>┌───────  4. Zeile: ───────┐
   &DATA_H   (+)  = 4, INVENT_NR
   &DATA_H   (+)  = 4, ZEITW_ANF
   &DATA_H   (+)  = 4, ZUGANG
@@ -99,7 +99,7 @@
   &DATA_H   (+)  = 4, AFA
   &DATA_H   (+)  = 4, ZEIT_WERT
 
->>��������  5. Zeile: ������Ŀ
+>>┌───────  5. Zeile: ───────┐
   &DATA_H   (+)  = 5, ARTNR
   &DATA_H   (+)  = 5, EINKAUFMEN
   &DATA_H   (+)  = 5, EKPRMIT

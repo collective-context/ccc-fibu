@@ -1,28 +1,28 @@
 
 
 
- ù­^^^^^^^^ ^^^^^^^^^^ ``.``.``  ­^^^^^^^^    ```.```.``|,||   ^^^^   ^^^^^^^
+ Â¨Â¡^^^^^^^^ ^^^^^^^^^^ ``.``.``  Â¡^^^^^^^^    ```.```.``|,||   ^^^^   ^^^^^^^
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ``.```.``|,||
 
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   Soll  ^   Beleg      Beleg     Haben                         U-Art   U-Satz
   Konto     Nummer     Datum     Konto                Betrag       Ust-Betrag
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  Ÿïïïïïïïï @@@@@@@@@@ ##.##.##  Ÿïïïïïïïï    ###.###.##›,››   ^^^^   @@@@@@@
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ##.###.##›,››
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  Æ’Â´Â´Â´Â´Â´Â´Â´Â´ @@@@@@@@@@ ##.##.##  Æ’Â´Â´Â´Â´Â´Â´Â´Â´    ###.###.##Ã¸,Ã¸Ã¸   ^^^^   @@@@@@@
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ##.###.##Ã¸,Ã¸Ã¸
 
                                        B-Text: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-  ÄÄÄÄÄÄSkonto MwSt 0-3 ÄÄÄÄÄ¿
-  `.```.``|,||  `.```.``|,|| ³
-  `.```.``|,||  `.```.``|,|| ³
+  â”€â”€â”€â”€â”€â”€Skonto MwSt 0-3 â”€â”€â”€â”€â”€â”
+  `.```.``|,||  `.```.``|,|| â”‚
+  `.```.``|,||  `.```.``|,|| â”‚
 
 
   Saldo am Konto: ^^^^^^^^^^^^^^^^^^^^^^^^^^^ ```.```.``|,||
   Saldo am Konto: ^^^^^^^^^^^^^^^^^^^^^^^^^^^ ```.```.``|,||
- ù                                                                            ù
+ Â¨                                                                            Â¨
 
-^ ^ #›,›› #›,›› #›,›› #›,›› #›,›› #›,›› #›,›› #›,››
+^ ^ #Ã¸,Ã¸Ã¸ #Ã¸,Ã¸Ã¸ #Ã¸,Ã¸Ã¸ #Ã¸,Ã¸Ã¸ #Ã¸,Ã¸Ã¸ #Ã¸,Ã¸Ã¸ #Ã¸,Ã¸Ã¸ #Ã¸,Ã¸Ã¸
 ``.``.`` ^ ^ ^ ^ ^ ^ ^ ^ ^
 ^ ^ ^ ^ ^   ^   ^ ^ ^ ^ ^ ^   ^ ^ ^
 ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^
@@ -33,13 +33,13 @@
 >>Update: 10.06.91
 
 &TITEL    = "FI  WORK Erfassen Buchungen"
-&FRAME    = 0, 0, 0, 0, "ÄErfassen Buchungen", 2
+&FRAME    = 0, 0, 0, 0, "â”€Erfassen Buchungen", 2
 &SEQUENZ  = 13,14,15,16,17,18,19,20,21,24,25
 
 &MASKHELP = FIHLP10, buch-er
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  =   MASK, D.FI2100
 &REF_DATEI  (1)  =   MASK, D.ST1300  >>FI1500
@@ -55,7 +55,7 @@
 >>Soll-Konto
   &DATA     (0)  = 0, _SOLL_ART
   &MODUS    (+-) = PREPARE
-  &CHOICE   (+-) = "ÄKonto-Art",\
+  &CHOICE   (+-) = "â”€Konto-Art",\
                    "Sachkonto",s,  "Kundenkonto",k,  "Lieferantenkonto",l
 
 >>Soll-Konto
@@ -73,7 +73,7 @@
 >>Haben-Konto
   &DATA     (+)  = 0, _HABEN_ART
   &MODUS    (+-) = PREPARE
-  &CHOICE   (+-) = "ÄKonto-Art",\
+  &CHOICE   (+-) = "â”€Konto-Art",\
                    "Sachkonto",s,  "Kundenkonto",k,  "Lieferantenkonto",l
 
 >>Haben Konto
@@ -105,18 +105,18 @@
   &DATA     (+)  = 0, _UST_BETR
   &MODUS    (+-) = PREPARE
 
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 >>Erfassungsnummer
 &REC_KEY    (+)
   &DATA_H   (+-) = 0, :SATZ_NR
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 >>Soll-Konto
   &HELPTEXT (+)  = FIHLP10, 210, 0
   &DATA     (+-) = 0, :SOLL_ART
   &DEFAULT  (+-) = "S"
   &MODUS    (+-) = PREPARE
-  &CHOICE   (+-) = "ÄKonto-Art",\
+  &CHOICE   (+-) = "â”€Konto-Art",\
                    "Sachkonto",s,  "Kundenkonto",k,  "Lieferantenkonto",l
 
 >>Soll-Konto
@@ -150,7 +150,7 @@
   &DATA     (+-) = 0, :HABEN_ART
   &DEFAULT  (+-) = "S"
   &MODUS    (+-) = PREPARE
-  &CHOICE   (+-) = "ÄKonto-Art",\
+  &CHOICE   (+-) = "â”€Konto-Art",\
                    "Sachkonto",s,  "Kundenkonto",k,  "Lieferantenkonto",l
 
 >>Haben Konto
@@ -206,13 +206,13 @@
   &HELPTEXT (+)  = FIHLP10, 210, 9
   &DATA     (+-) = 0, :SALDO_HAB
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>UST-Kennzeichen  (0/1-8)
   &DATA_H   (+)  = 2, UST_KZ
 
 >>Mandanten-Nummer
 &REF_KEY    (+)
-  &DATA_H   (+-) = 5, MAND_01     >>Steuers„tze
+  &DATA_H   (+-) = 5, MAND_01     >>SteuersÃ¤tze
   &DATA_H   (+)  = 5, UST_1
   &DATA_H   (+)  = 5, UST_2
   &DATA_H   (+)  = 5, UST_3
@@ -222,7 +222,7 @@
   &DATA_H   (+)  = 5, UST_7
   &DATA_H   (+)  = 5, UST_8
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>Buchungsdatum
   &DATA_H   (+)  = 0, :BUCH_DAT
 
@@ -269,7 +269,7 @@
 &REF_KEY     (+)
   &DATA_H    (+-) = 2, KONTO_BEZ
 
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 5, SALDO_VOR
   &DATA_H   (+)  = 0, :SOLL_UST
   &DATA_H   (+)  = 0, :HABEN_UST
@@ -289,10 +289,10 @@
   &DATA_H   (+)  = 0, :ZAHL_KO
   &DATA_H   (+)  = 0, :BUART_SOL
   &DATA_H   (+)  = 0, :BUART_HAB
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
->>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  4. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 9, MAND_50
   &DATA_H   (+)  = 9, KLASSE_0
   &DATA_H   (+)  = 9, KLASSE_1
@@ -307,14 +307,14 @@
   &DATA_H   (+)  = 9, KLASSE_9
 
 
->>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  5. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 0, :SKO_BET4
   &DATA_H   (+)  = 0, :SKO_BET5
   &DATA_H   (+)  = 0, :SKO_BET6
   &DATA_H   (+)  = 0, :SKO_BET7
   &DATA_H   (+)  = 0, :SKO_BET8
 
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 >>                                    OP-Nr : @@@@@@@@@@@@    ZKD: @@@@@@@@@
 >>OP-Nummer
 >>HELPTEXT (+) = FIHLP10, 210, 9

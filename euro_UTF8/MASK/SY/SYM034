@@ -3,34 +3,34 @@
 
 
 
-  ù                                                                         ù
-  Formular-Nr.        :  ››››                       ÚÄÄÄÂLinker Rand
-                                                    ÉÍÍÍÍÍÍÍÍÍÍÍÍÍ»Ä¿
-  Formularbezeichnung :  @@@@@@@@@@@@@@@@@@@@@@@@@  º   ³         º ÃOberer
-                                                    º   ÃÄÄÄÄÄÄÄÄÄºÄÙRand
-  Oberer Rand         :   #›                        º   ³         º
-  Unterer Rand        :   #›                        º   ³         º
-                                                    º   ³         º
-  Linker Rand         :  ##›                        º   ³         º
-                                                    º   ³         º
-  Formularh”he        :  ##›                        º   ³         º
-                                                    º   ÃÄÄÄÄÄÄÄÄÄºÄ¿
-  Standardschrift     :  @@@@@@                     º   ³         º ÃUnterer
-  Seiten-Steuerzeichen:  @@@@                       ÈÍÍÍÍÍÍÍÍÍÍÍÍÍ¼ÄÙRand
-  ù                                                                         ù
+  Â¨                                                                         Â¨
+  Formular-Nr.        :  Ã¸Ã¸Ã¸Ã¸                       â”Œâ”€â”€â”€â”¬Linker Rand
+                                                    â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•—â”€â”
+  Formularbezeichnung :  @@@@@@@@@@@@@@@@@@@@@@@@@  â•‘   â”‚         â•‘ â”œOberer
+                                                    â•‘   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â•‘â”€â”˜Rand
+  Oberer Rand         :   #Ã¸                        â•‘   â”‚         â•‘
+  Unterer Rand        :   #Ã¸                        â•‘   â”‚         â•‘
+                                                    â•‘   â”‚         â•‘
+  Linker Rand         :  ##Ã¸                        â•‘   â”‚         â•‘
+                                                    â•‘   â”‚         â•‘
+  FormularhÃ¶he        :  ##Ã¸                        â•‘   â”‚         â•‘
+                                                    â•‘   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â•‘â”€â”
+  Standardschrift     :  @@@@@@                     â•‘   â”‚         â•‘ â”œUnterer
+  Seiten-Steuerzeichen:  @@@@                       â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â”€â”˜Rand
+  Â¨                                                                         Â¨
 
 >>Mask:   SYM034
 >>Prog.:  SY1100.C
 >>Update: 06.08.91
 
 &TITEL    = "SY  STAMM Anlegen Formularparameter 1/1"
-&FRAME    = 0,0,0,0 "ÄAnlegen/Žndern Formularparameter", 2
+&FRAME    = 0,0,0,0 "â”€Anlegen/Ã„ndern Formularparameter", 2
 >>SEQUENZ =
 
 &MASKHELP = SYHLP10, form-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYFORM
 
@@ -70,7 +70,7 @@
   &DATA     (+-) = 0, STANDARD
   &DEFAULT  (+-) = 1
   &CHOICE   (+-) = "Schriftart",\
-                 "normal",1,  "sch”n",2,  "schmal",3, "optional",4
+                 "normal",1,  "schÃ¶n",2,  "schmal",3, "optional",4
                 
 >>Seiten-Steuerzeichen
   &HELPTEXT (+)  = SYHLP10, 034, 08

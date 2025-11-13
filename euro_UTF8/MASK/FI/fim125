@@ -1,14 +1,14 @@
 
 
 
- ˘
-    Kontonummer: LÔÔÔÔÔÔÔÔ  Kontobezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ ¬®
+    Kontonummer: L¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥  Kontobezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-    ^ ^ ^ ^                                           OP-SALDO : ##.###.##õ,õõ
+    ^ ^ ^ ^                                           OP-SALDO : ##.###.##√∏,√∏√∏
 
     OP-Nummer  BEL-Nummer BEL-Dat.     RG-Betrag       Zahlung        Skonto
-    ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕ
-    @@@@@@@@@@ @@@@@@@@@@ ##.##.##  #.###.##õ,õõ  #.###.##õ,õõ  #.###.##õ,õõ
+    ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+    @@@@@@@@@@ @@@@@@@@@@ ##.##.##  #.###.##√∏,√∏√∏  #.###.##√∏,√∏√∏  #.###.##√∏,√∏√∏
 
 
 
@@ -20,7 +20,7 @@
 
 
 
- ˘                                                                            ˘
+ ¬®                                                                            ¬®
 
 
 >>Mask:   FIM125
@@ -28,13 +28,13 @@
 >>Update: 2.08.91
 
 &TITEL    = "FI  STAMM Offene Posten Lieferanten"
-&FRAME    = 0, 0, 0, 0, "ƒOffene-Posten Lieferanten", 2
+&FRAME    = 0, 0, 0, 0, "‚îÄOffene-Posten Lieferanten", 2
 >>SEQUENZ =
 
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &BLOCK = 7,12
 &SCROLL = 9,0,21,79

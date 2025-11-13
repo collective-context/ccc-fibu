@@ -5,22 +5,22 @@
   Demo-Version  :  @@@@       Nutzungsrecht  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                               Kopier-Lizenz  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   Name          :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-  Stra·e        :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  Stra√üe        :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   PLZ Ort       :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
   E-Mail        :  @@@@@@@@@@@@@@@@@@@@
 
   Telefon       :  @@@@@@@@@@@@@@@@@@@@          Vorgedrucktes Papier :  @@@@
   Telex/Telefax :  @@@@@@@@@@@@@@@@@@@@          Copyright: @@@@@@@@@@@@@@@@@
-  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+  ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
 
-  Konstanter Wert 1: ###.###.##õ,õõ         Konstanter Wert 2: ###.###.##õ,õõ
-  Konstanter Wert 3: ###.###.##õ,õõ         Konstanter Wert 4: ###.###.##õ,õõ
-
-
+  Konstanter Wert 1: ###.###.##√∏,√∏√∏         Konstanter Wert 2: ###.###.##√∏,√∏√∏
+  Konstanter Wert 3: ###.###.##√∏,√∏√∏         Konstanter Wert 4: ###.###.##√∏,√∏√∏
 
 
- ˘                                                                            ˘
+
+
+ ¬®                                                                            ¬®
 
 >>Mask:   SYM042
 >>Prog.:  SY1100.C
@@ -33,7 +33,7 @@
 &MASKHELP = SYHLP10, mand-in
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYPARA
 
@@ -65,7 +65,7 @@
   &HELPTEXT (+)  = SYHLP10, 041, 02
   &DATA     (+-) = 0, ZUSATZ
 
->>Stra·e
+>>Stra√üe
   &HELPTEXT (+)  = SYHLP10, 041, 03
   &DATA     (+-) = 0, STRASSE
 

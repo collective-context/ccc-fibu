@@ -5,14 +5,14 @@
 
 
 
-                  ù
+                  Â¨
 
                      Wollen Sie wirklich drucken?
-                    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                                  @@@@
 
                      Kopien:     ##
-                  ù                                ù
+                  Â¨                                Â¨
 
 ``.``.`` ^ ^ ^ ^ ^ ^
 ^ ^
@@ -21,13 +21,13 @@
 >>Prog.:  SY4100.C
 >>Update: 6.08.91
 
-&TITEL    = "ST  DRUCK Fremdw„hrung"
-&FRAME    = 0, 0, 0, 0, "ÄÄ" 2
+&TITEL    = "ST  DRUCK FremdwÃ¤hrung"
+&FRAME    = 0, 0, 0, 0, "â”€â”€" 2
 
-&MASKHELP = STHLP10, drw„hr
+&MASKHELP = STHLP10, drwÃ¤hr
 &INDEX    = BASIS
 
-&PARA_READ  (0)  = MASK, L.SYP_01     >>Fremdw„hrung
+&PARA_READ  (0)  = MASK, L.SYP_01     >>FremdwÃ¤hrung
 &DRU_DATEI  (1)  = MASK, D.ST4110     >>Dummy Druckdatei
 
 >>Druck Starten?
@@ -41,7 +41,7 @@
   &DATA     (+-) = 1, _KOPIEN
   &DEFAULT  (+-) = "1"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -51,7 +51,7 @@
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
 
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>von Seite
   &HELPTEXT (+)  = SYHLP10, 100, 100
   &DATA_H   (+-) = 1, _VON_SEITE
@@ -63,11 +63,11 @@
   &DEFAULT  (+-) = "9999"
 
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>&REF_KEY    (+)                   >>Mandanten-Nummer
 >>  &DATA_H   (+-) = 0, MAND_01
 ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^
-  &DATA_H   (+)  = 1, _FREMDW0_E  >>Fremdw„hrung 0 - 9
+  &DATA_H   (+)  = 1, _FREMDW0_E  >>FremdwÃ¤hrung 0 - 9
   &DATA_H   (+)  = 1, _FREMDW1_E
   &DATA_H   (+)  = 1, _FREMDW2_E
   &DATA_H   (+)  = 1, _FREMDW3_E
@@ -78,5 +78,5 @@
   &DATA_H   (+)  = 1, _FREMDW7_E
   &DATA_H   (+)  = 1, _FREMDW8_E
   &DATA_H   (+)  = 1, _FREMDW9_E
-  &DATA_H   (+)  = 1, _NULL       >>Null & Fremdw„hrung (Fr Feld in sCho() )
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+  &DATA_H   (+)  = 1, _NULL       >>Null & FremdwÃ¤hrung (FÃ¼r Feld in sCho() )
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜

@@ -8,13 +8,13 @@
 
 
 
-              ˘                                                        ˘
+              ¬®                                                        ¬®
                    ``
-                      öbergabe in Mandant Nr. : #
+                      √úbergabe in Mandant Nr. : #
                       Datenverzeichnis KHK    : @@@@@@@@@@@@@@@@@@@@@
-                      Kontenklasse Erlîs      : #
+                      Kontenklasse Erl√∂s      : #
 
-              ˘                                                        ˘
+              ¬®                                                        ¬®
 
 
 >>Mask:   SYM043
@@ -22,13 +22,13 @@
 >>Update: 06.08.91
 
 &TITEL    = "SY  STAMM Mandant-Uebergabe in KHK-Fibu"
-&FRAME    = 0, 0, 0, 0, "öbergabe Rechnungen an KHK-Fibu", 2
+&FRAME    = 0, 0, 0, 0, "√úbergabe Rechnungen an KHK-Fibu", 2
 >>SEQUENZ =
 
 >>MASKHELP= SYHLP10, men-inf
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYP_13
 >>PARA_READ (0)  = MASK, L.SYP_13
@@ -46,7 +46,7 @@
   &HELPTEXT (+)  = AUHLP20, 422, 04
   &DATA     (+-) = 0, BUCHDATEI
 
->>Kontenklasse Erlîs
+>>Kontenklasse Erl√∂s
   &HELPTEXT (+)  = AUHLP20, 422, 05
   &DATA     (+-) = 0, BUCHERLS
 

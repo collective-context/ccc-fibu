@@ -4,21 +4,21 @@
 
       von Kunden-Bez.: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
       bis Kunden-Bez.: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       von bis Land   : @@@                       @@@
       von bis Plz/Ort: @@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       
-      von Kundengruppe    : ïïïïïïïïïï    bis Kundengruppe    : ïïïïïïïïïï
-      von Auswertungs-KZ  : ïïïïïïïïïï    bis Auswertungs-KZ. : ïïïïïïïïïï
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      von Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´    bis Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+      von Auswertungs-KZ  : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´    bis Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Etikettenh”he       : ##      ^ ^   Kopien              : ####
+      EtikettenhÃ¶he       : ##      ^ ^   Kopien              : ####
       Etikettenbreite     : ##            Anzahl Bahnen       : @@@@@@@@
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       Anschrift mit       : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
       Text Kopfzeile      : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-   ù                                                                        ù
+   Â¨                                                                        Â¨
 
 ^ ^ 
 ``.``.``  ^ ^ ^ ^ ^ ^
@@ -30,13 +30,13 @@
 >>Update: 8.06.91
 
 &TITEL    = "ST  DRUCK Kunden Adressetiketten 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄKunden Adressetiketten", 2
+&FRAME    = 0, 0, 0, 0, "â”€Kunden Adressetiketten", 2
 >>&SEQUENZ  = 00,01,11,12,13,15,14,16,23,25,24,26,27
 
 &MASKHELP = STHLP10, kundet
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1100
 &DRU_DATEI  (1)  = MASK, D.ST4110
@@ -83,9 +83,9 @@
   &HELPTEXT (+)  = STHLP10, 411, 8
   &DATA     (+-) = 1, _B_AUSWKZ
 
->>Formularh”he
+>>FormularhÃ¶he
   &HELPTEXT (+)  = STHLP10, 411, 14
-  &DATA     (+-) = 1, _H™HE
+  &DATA     (+-) = 1, _HÃ–HE
   &DEFAULT  (+-) = "9"
 
 >>Anzahl Etiketten
@@ -120,14 +120,14 @@
   &HELPTEXT (+)  = STHLP10, 411, 18
   &DATA     (+-) = 1, _ANSCHRMIT
   &DEFAULT  (+-) = "0"
-  &CHOICE   (+-) = "Anschrift mit",  "Straáe",0,  "Postfach",1
+  &CHOICE   (+-) = "Anschrift mit",  "StraÃŸe",0,  "Postfach",1
 
 >>Text Kopfzeile
   &HELPTEXT (+)  = STHLP10, 411, 20
   &DATA     (+-) = 1, _KOPF
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY    (+)                   >>Kunden-Nummer
 &REC_MATCH  (+-) = "Kunden-Bezeichnung    ", 0, MATCH_CODE
 &ADD_MATCH  (+-) = "Kunden-Nummer     ", 0, KUNDE
@@ -136,7 +136,7 @@
 &REC_KEY    (+)                   >>Kunden-Bezeichnung
   &DATA_H   (+-) = 0, KUNDE
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -145,7 +145,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
  
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>Dummy-Feld fuer Point-Anweisung
   &DATA_H   (+)  = 0, ANREDE
   &DATA_H   (+)  = 0, NAME
@@ -167,9 +167,9 @@
   &DATA_H   (+)  = 1, _NAME_5
   &DATA_H   (+)  = 1, _STRASSE_1
   &DATA_H   (+)  = 1, _ORT
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  4. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>von Seite
   &HELPTEXT (+)  = STHLP10, 413, 9
   &DATA_H   (+-) = 1, _VON_SEITE
@@ -184,7 +184,7 @@
 >>  &DATA     (+-) = 1, _V_KUNDNR
 >>  &DATA     (+-) = 1, _B_KUNDNR
 
->>Dummy Felder fr Match-Code-Suche
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY    (+)                   >>Kunden-Nummer
 &REC_MATCH  (+-) = "Kunden-Bezeichnung    ", 0, KUNDE
 &ADD_MATCH  (+-) = "Kunden-Nummer     ", 0, MATCH_CODE

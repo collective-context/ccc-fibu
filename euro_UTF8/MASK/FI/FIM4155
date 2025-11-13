@@ -7,15 +7,15 @@
 
 
 
-                            ù
+                            Â¨
                                 Von Bankleitzahl: @@@@@@@@@@
                                 Bis Bankleitzahl: @@@@@@@@@@
-                              ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                              â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
                                        Kopien   :   ##
                                        von Seite: ####
                                        bis Seite: ####
-                            ù                                  ù
+                            Â¨                                  Â¨
 
 ^ ^
 ``.``.``  ^ ^ ^ ^ ^ ^
@@ -26,13 +26,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "FI  DRUCK Liste Bankenstamm"
-&FRAME    = 0, 0, 0, 0, "ÄDruck Liste Bankenstamm", 2
+&FRAME    = 0, 0, 0, 0, "â”€Druck Liste Bankenstamm", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, bank-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1400
 &DRU_DATEI  (1)  = MASK, D.FI4130
@@ -62,9 +62,9 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
-&REC_KEY   (+)                    >>Bankleitzahl (fr Match-Code-Suche)
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
+&REC_KEY   (+)                    >>Bankleitzahl (fÃ¼r Match-Code-Suche)
 &REC_MATCH (+-) = "Bankleitzahl", 0, BANKLEITZ
 &ADD_MATCH (+-) = "Bank-Bezeichnung                        ", 0, BANK_BEZ
   &DATA_H  (+-) = 0, BANKLEITZ
@@ -72,7 +72,7 @@
 &REC_KEY   (+)                    >>Bank-Bezeichnung
   &DATA_H  (+-) = 0, BANK_BEZ
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -81,7 +81,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
  
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)                   >>Mandanten-Nummer
   &DATA_H   (+-) = 2, MAND_01
   &DATA_H   (+)  = 2, UST_1       >>Steuersatz 1 - 8
@@ -93,4 +93,4 @@
   &DATA_H   (+)  = 2, UST_6
   &DATA_H   (+)  = 2, UST_7
   &DATA_H   (+)  = 2, UST_8
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜

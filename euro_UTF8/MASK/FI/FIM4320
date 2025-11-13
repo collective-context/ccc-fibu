@@ -7,11 +7,11 @@
 
 
 
-                                 �
+                                 ¨
 
                                    Aktuelles Datum : ##.##.##
 
-                                 �                             �
+                                 ¨                             ¨
 
 ^^^^^^^^ ^^^^^^^^
 ^ ^
@@ -25,14 +25,14 @@
 >>Prog.:  FI3100.C
 >>Update: 4.08.91
 
-&TITEL    = "FI  L�SCH Finanzbuchhaltung"
-&FRAME    = 0, 0, 0, 0, "�L�schen Finanzbuchhaltung", 2
+&TITEL    = "FI  LÖSCH Finanzbuchhaltung"
+&FRAME    = 0, 0, 0, 0, "─Löschen Finanzbuchhaltung", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, sach-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zur�ck zur Eingabe"
+            "zurück zur Eingabe"
 
 &WORK_DATEI (0)  = MASK, D.FI1310
 &DRU_DATEI  (1)  = MASK, D.FI4210
@@ -46,7 +46,7 @@
 &DATA       (0)  = 1, _DATUM      >>Datum
 &DEFAULT    (+-) = "s"
 
->>��������  1. Zeile: ������Ŀ
+>>┌───────  1. Zeile: ───────┐
 >>Von Kontomunner S
   &HELPTEXT (+)  = FIHLP10, 413, 00
   &DATA_H   (+-) = 1, _V_KTONR
@@ -55,7 +55,7 @@
   &HELPTEXT (+)  = FIHLP10, 413, 1
   &DATA_H   (+-) = 1, _B_KTONR
 
->>��������  2. Zeile: ������Ŀ
+>>┌───────  2. Zeile: ───────┐
 &REF_KEY    (+)                   >>Bezeichnung
 &REF_MATCH  (+-) = "Konto-Nr.  ", 0, KONTONR
 &ADD_MATCH  (+-) = "Bezeichnung                    ", 0, KONTO_BEZ
@@ -64,7 +64,7 @@
 &REF_KEY    (+)
   &DATA_H   (+-) = 0, KONTO_BEZ   >>Bezeichnung
 
->>��������  3. Zeile: ������Ŀ
+>>┌───────  3. Zeile: ───────┐
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer
@@ -73,7 +73,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
 
->>��������  4. Zeile: ������Ŀ
+>>┌───────  4. Zeile: ───────┐
   &HELPTEXT (+)  = STHLP10, 413, 9
   &DATA_H   (+-) = 1, _VON_SEITE
   &DEFAULT  (+-) = "0001"
@@ -83,7 +83,7 @@
   &DATA_H   (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>��������  5. Zeile: ������Ŀ
+>>┌───────  5. Zeile: ───────┐
 &DATA_H  (+) = 0, K_VOR_SAL
 &DATA_H  (+) = 0, K_SOLL_01
 &DATA_H  (+) = 0, K_HABEN_01
@@ -115,7 +115,7 @@
 &DATA_H  (+) = 0, K_HABEN_12
 
 
->>��������  6. Zeile: ������Ŀ
+>>┌───────  6. Zeile: ───────┐
   &DATA_H   (+)  = 4, INVENT_NR
   &DATA_H   (+)  = 4, ZEITW_ANF
   &DATA_H   (+)  = 4, ZUGANG
@@ -123,7 +123,7 @@
   &DATA_H   (+)  = 4, AFA
   &DATA_H   (+)  = 4, ZEIT_WERT
 
->>��������  7. Zeile: ������Ŀ
+>>┌───────  7. Zeile: ───────┐
   &DATA_H   (+)  = 5, ARTNR
   &DATA_H   (+)  = 5, EINKAUFMEN
   &DATA_H   (+)  = 5, EKPRMIT

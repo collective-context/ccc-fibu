@@ -3,20 +3,20 @@
 
 
 
-          ù
-                 Menge Einheit      Preis/EH     MWSt %%     Betrag ™S
-            ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-            ###.##›,›› @@@@@@@ ##.###.##›,››  ^  @@@@ @@ ##.###.##›,››
-          ù ^                                                             ù
+          Â¨
+                 Menge Einheit      Preis/EH     MWSt %%     Betrag Ã–S
+            â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+            ###.##Ã¸,Ã¸Ã¸ @@@@@@@ ##.###.##Ã¸,Ã¸Ã¸  ^  @@@@ @@ ##.###.##Ã¸,Ã¸Ã¸
+          Â¨ ^                                                             Â¨
 
-­­­­
+Â¡Â¡Â¡Â¡
 
 >>Mask:   UABM252
 >>Prog.:  FI1500.C
 >>Update: 21.02.92
 
 &TITEL    = "FI  WORK Rechnungs-Buchungen Artikel"
-&FRAME    = 0, 0, 0, 0, "ÄErfassen Artikelbewegungù0", 2
+&FRAME    = 0, 0, 0, 0, "â”€Erfassen ArtikelbewegungÂ¨0", 2
 >>&SEQUENZ  = 01,02,03,04,06,07,13,14,51,52,53,54,55,56,57,58,59
 
 >>&BLOCK    = 7,8
@@ -37,21 +37,21 @@
   &HELPTEXT  (+) = AUHLP10, 250, 13
   &DATA      (+-) = 0, _PREIS_EIN
 
->>Preis-Basis (fr Testzwecke)
+>>Preis-Basis (fÃ¼r Testzwecke)
   &DATA_H    (+)  = 0, _AR_BASIS
 
 >>Netto/Brutto
   &HELPTEXT  (+)  = AUHLP10, 250, 14
   &DATA      (+-) = 0, _NETTO_BRU
   &DEFAULT   (+-) = "b"
-  &CHOICE    (+-) = "ÄMehrwertsteuer",\
+  &CHOICE    (+-) = "â”€Mehrwertsteuer",\
                     "excl. MWSt",n,  "incl. MWSt",b
 
->>Umsatzsteuer-Schlssel (0/1-8)
+>>Umsatzsteuer-SchlÃ¼ssel (0/1-8)
   &HELPTEXT  (+)  = AUHLP10, 250, 15
   &DATA      (+-) = 0, _UST_SATZ
 
->>Betrag in ™S
+>>Betrag in Ã–S
   &HELPTEXT  (+)  = AUHLP10, 250, 16
   &DATA      (+-) = 0, _BETRAG
 
@@ -60,14 +60,14 @@
 
 >>------------------------------
 >>Positionsteil
->>       ù ^                                                     ^       ù
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>       Â¨ ^                                                     ^       Â¨
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 >>&DATA_H   (+)  = 0, PO_ART      >>Postions-Art
 >>&DATA_H   (+)  = 0, PO_EIN_AUS  >>Position-Ein/Aus
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REF_KEY    (+)                   >>Mengen-Einheit
 &REF_MATCH  (+-) = "Match-Code                                 ", 1, MG_MATCH
 &ADD_MATCH  (+-) = "Bezeichnung   ", 1, MG_BEZ
@@ -79,7 +79,7 @@
   &DATA_H   (+)  = 0, AR_BASIS    >>Basiseinheit
   &DATA_H   (+)  = 1, BASIS_EH
   &CHOICE   (+-) = "Basis-Einheit",\
-                 "l","1",  "kg","2",  "mý","3",  "Stk","4",\
+                 "l","1",  "kg","2",  "mÂ²","3",  "Stk","4",\
                  "m","5",  "m3","6",  "KW","7",  "min","8"
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

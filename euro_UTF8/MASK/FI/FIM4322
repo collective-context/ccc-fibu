@@ -1,27 +1,27 @@
 
 
- ˘
+ ¬®
    1: @ @ @ @ @     @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @
    2: @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @
    3: @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @
 
 
 
- ˘                                                                            ˘
+ ¬®                                                                            ¬®
 
 
 >>Mask:   FIM4321
 >>Prog.:  FI4100.C
 >>Update: 4.08.91
 
-&TITEL    = "FI  WORK Dummy-Maske fÅr FIM4320"
+&TITEL    = "FI  WORK Dummy-Maske f√ºr FIM4320"
 &FRAME    = 
 >>SEQUENZ =
 
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &WORK_DATEI (0)  = MASK, D.FI1310
 &DRU_DATEI  (1)  = MASK, D.FI4210

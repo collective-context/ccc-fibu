@@ -1,7 +1,7 @@
 
 
 
- ù
+ Â¨
    1: @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @
    2: @ @ @ @ @     @ @ @ @ @   @ @
    3: @ @ @ @ @     @ @ @ @ @   @ @ @ @ @
@@ -11,20 +11,20 @@
    7: @ @
 
 
- ù                                                                            ù
+ Â¨                                                                            Â¨
 
 >>Mask:   FIM4311
 >>Prog.:  FI3100.C
 >>Update: 4.08.91
 
-&TITEL    = "FI  WORK Dummy-Maske fr FIM4310 1"
+&TITEL    = "FI  WORK Dummy-Maske fÃ¼r FIM4310 1"
 &FRAME    = 
 >>SEQUENZ =
 
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK,   D.FI2100     >>Erfassen Buchungen
 &DRU_DATEI  (1)  = MASK,   D.FI4210     >>Dummy-Datei
@@ -32,7 +32,7 @@
 &WORK_DATEI (3)  = MASK,   D.FI1310     >>Sachkontenstamm
 &WORK_DATEI (4)  = MASK,   D.FI1210     >>Lieferantenkonten
 &WORK_DATEI (5)  = MASK,   D.FI1110     >>Kundenkonten
-&WORK_DATEI (6)  = MASK,   D.FI2100A    >>Tempor„re Erfassungsdatei
+&WORK_DATEI (6)  = MASK,   D.FI2100A    >>TemporÃ¤re Erfassungsdatei
 &PARA_READ  (7)  = MASK,   L.SYP_01     >>Konsten Festkonten, MWST, ...
 
 >>ATEI      (0)  =   MASK, D.FI2100     >>Erfassen Buchungen
@@ -41,9 +41,9 @@
 >>ORK_DATEI (3)  =   MASK, D.FI1310     >>Sachkonten
 >>ORK_DATEI (4)  =   MASK, D.FI1210     >>Lieferantenkonten
 >>ORK_DATEI (5)  =   MASK, D.FI1110     >>Kundenkonten
->>ARA_READ  (6)  =   MASK, L.SYP_01     >>UST - S„tze
+>>ARA_READ  (6)  =   MASK, L.SYP_01     >>UST - SÃ¤tze
 >>EF_DATEI  (7)  =   MASK, L.SYP_02     >>Festkonten
->>ORK_DATEI (8)  =   MASK, D.FI2100A    >>Tempor„re Erfassungsdatei
+>>ORK_DATEI (8)  =   MASK, D.FI2100A    >>TemporÃ¤re Erfassungsdatei
 >>EF_DATEI  (9)  =   MASK, L.SYPARA     >>Kennzeichen im Mandantenstamm
 
 >>--- 1. Zeile
@@ -146,11 +146,11 @@
 &DATA  (+) = 2, .SKO_BET8
 
 &DATA  (+)  = 7, KZ_FIBU_BA  >>Kennzeichen Fibu-Basiswerte
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 >>--- 6. Zeile
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 >>&REF_KEY    (+)                   >>Mandanten-Nummer (Dummy Feld)
 >>  &DATA_H   (+-) = 6, MAND_01
   &DATA_H   (+)  = 7, UST_1       >>Steuersatz 1
@@ -165,6 +165,6 @@
 >>--- 7. Zeile
 &DATA  (+) = 3, KONTONR
 &DATA  (+) = 3, KAPITAL_RE
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 

@@ -9,20 +9,20 @@
 
 
 
-       ù                                       ù
-          Fr den Drucker ^^^^^^^^^^^^^^^^^^^^
+       Â¨                                       Â¨
+          FÃ¼r den Drucker ^^^^^^^^^^^^^^^^^^^^
           wurde kein Zeichensatz eingetragen.
 
-       ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-       ù      Weiter mit beliebiger Taste      ù
+       â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+       Â¨      Weiter mit beliebiger Taste      Â¨
 
 
-&TITEL = "SYÍFehlermeldung bei keinem Zeichensatzes"
+&TITEL = "SYâ•Fehlermeldung bei keinem Zeichensatzes"
 &REM   Maske    :  SYM011
 &REM   Programm:  SY1100
 &REM   Datei    : SYRINT
 
-&FRAME = 0,0,0,0, "Ä", 2
+&FRAME = 0,0,0,0, "â”€", 2
 
 &DATEI (0) = EURODATA, L.SYPRINT
 

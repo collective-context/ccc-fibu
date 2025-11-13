@@ -19,19 +19,19 @@
 
      Preisgrundlage   :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
      Optionen         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-   ù                                                                        ù
+   Â¨                                                                        Â¨
 
 >>Mask:   STM4152
 >>Prog.:  ST4100.C
 
 &TITEL    = "ST  Liste Inventur nach Bezeichnung 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄListe Inventur nach Artikelbezeichnung", 2
+&FRAME    = 0, 0, 0, 0, "â”€Liste Inventur nach Artikelbezeichnung", 2
 >>SEQUENZ =
 
 &MASKHELP = STHLP10, inven
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 >> &DATEI      (0)  = MASK, D.ST1300
 &DRU_DATEI  (0)  = MASK, D.ST4140

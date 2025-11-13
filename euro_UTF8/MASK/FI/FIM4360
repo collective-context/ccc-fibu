@@ -7,11 +7,11 @@
 
 
 
-                                 ù
+                                 Â¨
 
                                    Aktuelles Datum : ##.##.##
 
-                                 ù                             ù
+                                 Â¨                             Â¨
 
 ^^^^^^^^ ^^^^^^^^ ^
 ^ ^ ^ ^ ^ ^ ^
@@ -25,13 +25,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "FI  Verbuchen AFA"
-&FRAME    = 0, 0, 0, 0, "ÄVerbuchen AFA", 2
+&FRAME    = 0, 0, 0, 0, "â”€Verbuchen AFA", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, sach-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &WORK_DATEI (0)  =   MASK, D.FI1600
 &DRU_DATEI  (1)  =   MASK, D.FI4210
@@ -64,7 +64,7 @@
   &DATA_H   (+)  = 1, _BIS_SEITE  >>bis Seite
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  4. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)
   &DATA_H   (+-) = 2, :SATZ_NR
   &DATA_H   (+)  = 2, :SOLL_ART
@@ -89,7 +89,7 @@
 
   &DATA_H   (+)  = 3, KONTONR     >>Kontobezeichnung */
 
->>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  5. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 0, AFA_KONTO
   &DATA_H   (+)  = 0, AFA_K_BEZ
   &DATA_H   (+)  = 0, ANL_KONTO
@@ -106,13 +106,13 @@
 
   &DATA_H   (+)  = 0, BUCH_JAHR
   &DATA_H   (+)  = 0, NUTZ_GES
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  6. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  6. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 4, SALDO_VOR
   &DATA_H   (+)  = 4, AN_ERTRAG
   &DATA_H   (+)  = 4, AN_AUFWAND
   &DATA_H   (+)  = 4, AN_SCHADEN
   &DATA_H   (+)  = 5, Y_CLOSED
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

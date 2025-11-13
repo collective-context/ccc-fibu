@@ -5,19 +5,19 @@
 
 
 
-    ù
+    Â¨
       von STRASSE         : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
       bis STRASSE         : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       von bis Land        : @@@                    @@@
       von bis Plz/Ort     : @@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@
 
       Freigabe            : @@@@         Kopien              : ##
 
-      von Kundengruppe    : ïïïïïïïïïï   bis Kundengruppe    : ïïïïïïïïïï
-      von Auswertungs-KZ. : ïïïïïïïïïï   bis Auswertungs-KZ. : ïïïïïïïïïï
+      von Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´   bis Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+      von Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´   bis Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
       von Seite           : ####         bis Seite           : ####
-    ù                                                                     ù
+    Â¨                                                                     Â¨
 
 
 ^ ^ ^ ^ ^ ^ ^
@@ -28,14 +28,14 @@
 >>Prog.:  ST4100.C
 >>Update: 01.06.91
 
-&TITEL    = "ST  Word nach Straáe"
-&FRAME    = 0, 0, 0, 0, "ÄListe Word nach Straáe", 2
+&TITEL    = "ST  Word nach StraÃŸe"
+&FRAME    = 0, 0, 0, 0, "â”€Liste Word nach StraÃŸe", 2
 >>SEQUENZ =
 
 &MASKHELP = STHLP10, kundbez
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, T.ST1100A
 &DRU_DATEI  (1)  = MASK, D.ST4110
@@ -70,7 +70,7 @@
 >>Freigabe Vermerk
   &HELPTEXT (+)  = STHLP10, 411, 10
   &DATA     (+-) = 1, _W_FREIGAB
-  &CHOICE   (+-) = "Freigabe", "ja, Freigabe",j, "nicht geprft",n\
+  &CHOICE   (+-) = "Freigabe", "ja, Freigabe",j, "nicht geprÃ¼ft",n\
                    "gesperrt",g, "unbekannt",u,
   &DEFAULT  (+-) = j
 
@@ -110,15 +110,15 @@
 >>&HELPTEXT (+)  = STHLP10, 110, 24
 >>&DATA     (+-) = 0, BRANCHE
 >>&SELECT   (+-) = "Kundengruppe",\
->>               "Computer Herst. 3573",    1, "Br/Com-Fachh.  5081",    2,\
+>>               "Computer Herst. 3573",    1, "BÃ¼r/Com-Fachh.  5081",    2,\
 >>               "Hold/Inv-Ges.   6711",    4, "Softwarehaus    7372",    8,\
 >>               "Computerdienste 7374",   16, "Forschung/Entw. 7391",   32,\
 >>               "Untern.-Berat.  7392",   64, "w. Meinungsbildner  ",  128,\
 >>               "Verlag          2721",  256
 
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY    (+)                   >>von Kunden-Nummer
 &REC_MATCH  (+-) = "Kurzbezeichnung                ", 0, MATCH_CODE
 &ADD_MATCH  (+-) = "Kunden-Nr", 0, KUNDE
@@ -145,7 +145,7 @@
   &DATA_H   (+)  = 1, _V_KURZBEZ  >>
   &DATA_H   (+)  = 1, _B_KURZBEZ >>
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -154,7 +154,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
 
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>Dummy-Feld fuer Point-Anweisung
   &DATA_H   (+)  = 0, ANREDE
   &DATA_H   (+)  = 0, ZUSATZ
@@ -181,6 +181,6 @@
   &DATA_H   (+)  = 1, _FAX_NAME
   &DATA_H   (+)  = 1, _FAX_NR
   &DATA_H   (+)  = 0, TELEFAX
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 

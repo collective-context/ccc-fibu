@@ -1,26 +1,26 @@
 
 
 
-   Kunde: Kïïïïïïïïïïïïïïïïï  Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Kunde: KÂ´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´  Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Anrede    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Kunden-Gr : ïïïïïïïïïï
-   Name      : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Auswertung: ïïïïïïïïïï
+   Anrede    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Kunden-Gr : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+   Name      : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Auswertung: Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
    Zusatz    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Freigabe  : @@@@@@@@@@
 
-   Straáe    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     ® Postfach : @@@@@@@@@
-   Ld/PLZ/Ort: @@@ - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Sprache  : ›››
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   StraÃŸe    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Â« Postfach : @@@@@@@@@
+   Ld/PLZ/Ort: @@@ - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Sprache  : Ã¸Ã¸Ã¸
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Telefon   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Telex : @@@@@@@@@@@@@@@@@@@@@@@@
    Telefax   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ E-Mail: @@@@@@@@@@@@@@@@@@@@@@@@
    Branche   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                        
    Anrede Titel       Vorname       Zuname             Position    Geburtstag
-   ÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄ
+   â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€
    @@@@@@ @@@@@@@@@@@ @@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@ ##.##.##
- ù Anrede im Brief  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          ù
+ Â¨ Anrede im Brief  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          Â¨
 
 ^ ^
 
@@ -35,7 +35,7 @@
 &MASKHELP = XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  =   MASK, D.ST1100
 &PARA_DATEI (1)  =   MASK, L.SYP_02
@@ -44,7 +44,7 @@
 &REC_KEY    (0)
 &REC_MATCH  (+-) = "Kundennummer ", 0, KUNDE
 &ADD_MATCH  (+-) = "Kurzbezeichnung               ", 0, MATCH_CODE
-&ADD_MATCH  (+-) = "Straáe                  ", 0, STRASSE
+&ADD_MATCH  (+-) = "StraÃŸe                  ", 0, STRASSE
   &HELPTEXT (+-) = STHLP10, 110, 0
   &DATA     (+-) = 0, KUNDE
   &MODUS    (+-) = PREPARE
@@ -53,7 +53,7 @@
 &REC_KEY    (+)
 &REC_MATCH  (+-) = "Kurzbezeichnung               ", 0, MATCH_CODE
 &ADD_MATCH  (+-) = "Kundennummer", 0, KUNDE
-&ADD_MATCH  (+-) = "Straáe                  ", 0, STRASSE
+&ADD_MATCH  (+-) = "StraÃŸe                  ", 0, STRASSE
   &HELPTEXT (+-)  = STHLP10, 110, 1
   &DATA     (+-) = 0, MATCH_CODE
 
@@ -66,22 +66,22 @@
   &HELPTEXT (+)  = STHLP10, 110, 19
 >>&DATA     (+-) = 0, KUNDEN_GR
   &DATA     (+-) = 0, KONTAKT_AR
-  &SELECT   (+-) = "ÄKontaktart",\
+  &SELECT   (+-) = "â”€Kontaktart",\
                  "ja, K-Mappe angelegt",     1, "s = Sonderkennzeichen"    2,\
-                 "Infobroschre gesend.",    4, "Konkretes Angebot ges",   8,\
+                 "InfobroschÃ¼re gesend.",    4, "Konkretes Angebot ges",   8,\
                  "Mailing -> K",            16, "Tel.-Marketing -> K",    32,\
-                 "Gespr„ch beim -> K",      64, "ÿ",                     128,\
+                 "GesprÃ¤ch beim -> K",      64, "Â ",                     128,\
                  "FAX/Antwortkarte <- K",  256, "Anfrage per Tel <- K",  512,\
-                 "Besuch vom <- K",       1024, "ÿ",                    2048,\
+                 "Besuch vom <- K",       1024, "Â ",                    2048,\
                  "Durch Messe/Ausstell.", 4096, "Empfehlung/Tip",       8192,\
-                 "ÿ",                    16384, "ÿ",                   32768,\
+                 "Â ",                    16384, "Â ",                   32768,\
                  "Schon gekauft <- K",   65536
 
 >>Name
 &REC_KEY    (+)
 &REC_MATCH  (+-) = "Name                ", 0, NAME
 &ADD_MATCH  (+-) = "Kundennummer", 0, KUNDE
-&ADD_MATCH  (+-) = "Straáe                  ", 0, STRASSE
+&ADD_MATCH  (+-) = "StraÃŸe                  ", 0, STRASSE
   &HELPTEXT (+-) = STHLP10, 110, 4
   &DATA     (+-) = 0, NAME
   &MODUS    (+-) = PREPARE
@@ -103,16 +103,16 @@
 >>Freigabe Vermerk
   &HELPTEXT (+)  = STHLP10, 110, 21
   &DATA     (+-) = 0, FREIGABE
-  &CHOICE   (+-) = "ÄFreigabe", "ja, Freigabe",j, "H„ndler, Freigabe",h, \
+  &CHOICE   (+-) = "â”€Freigabe", "ja, Freigabe",j, "HÃ¤ndler, Freigabe",h, \
                    "Privat, Freigabe",p, \
-                   "nicht geprft",n, "gesperrt",g, "unbekannt",u, \
+                   "nicht geprÃ¼ft",n, "gesperrt",g, "unbekannt",u, \
                    "verzogen",v, "besteht nicht mehr",b, \
                    "retour/nicht angenommen",r, "Zweit - Adresse/Firma",z
 >>  &DEFAULT  (+-) = n
 
->>Straáe
+>>StraÃŸe
 &REC_KEY    (+)
-&REC_MATCH  (+-) = "Straáe                 ", 0, STRASSE
+&REC_MATCH  (+-) = "StraÃŸe                 ", 0, STRASSE
 &ADD_MATCH  (+-) = "Kunden-Nr", 0, KUNDE
 &ADD_MATCH  (+-) = "Kurzbezeichnung             ", 0, MATCH_CODE
   &HELPTEXT (+-) = STHLP10, 110, 10
@@ -123,7 +123,7 @@
   &HELPTEXT (+)  = STHLP10, 110, 11
   &DATA     (+-) = 0, POSTFACH
 
->>Landkrzel
+>>LandkÃ¼rzel
   &HELPTEXT (+)  = STHLP10, 110, 12
   &DATA     (+-) = 0, LAND
   &DEFAULT  (+-) = "A"
@@ -167,7 +167,7 @@
   &DATA     (+-) = 0, BRANCHE
   &MODUS    (+-) = PREPARE
   &SELECT   (+-) = "Kundengruppe",\
-                 "Computer Herst. 3573",    1, "Br/Com-Fachh.  5081",    2,\
+                 "Computer Herst. 3573",    1, "BÃ¼r/Com-Fachh.  5081",    2,\
                  "Hold/Inv-Ges.   6711",    4, "Softwarehaus    7372",    8,\
                  "Computerdienste 7374",   16, "Forschung/Entw. 7391",   32,\
                  "Untern.-Berat.  7392",   64, "w. Meinungsbildner  ",  128,\
@@ -202,10 +202,10 @@
   &DATA     (+-) = 0, BRIEFANR_1
   &DEFAULT  (+-) = "Sehr geehrte Damen und Herren"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)                   >>Mandanten-Nummer 
   &DATA_H   (+-) = 1, MAND_02
   &DATA_H   (+)  = 1, NR_KUND     >>Nummernkreis Kundenstamm
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 

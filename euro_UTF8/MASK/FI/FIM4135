@@ -4,18 +4,18 @@
 
 
 
-                                 ù
+                                 Â¨
                                    Von Konto-Nummer: S@@@@@@@@
                                    Bis Konto-Nummer: S@@@@@@@@
-                                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                                  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                                    Periode / Monat : @@@@@@@@@
                                    Druckdatum      : ##.##.##
-                                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                                  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                                    Kopien          :   ##
 
                                    von Seite       : ####
                                    bis Seite       : ####
-                                 ù                             ù
+                                 Â¨                             Â¨
 
 ^ ^ 
 ``.``.``  ^ ^ ^ ^ ^ ^
@@ -26,13 +26,13 @@
 >>Update: 5.08.91
 
 &TITEL    = "FI  DRUCK Kostenvergleich"
-&FRAME    = 0, 0, 0, 0, "ÄDrucken Kostenvergleich", 2
+&FRAME    = 0, 0, 0, 0, "â”€Drucken Kostenvergleich", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, sach-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1310
 &DRU_DATEI  (1)  = MASK, D.FI4137
@@ -52,7 +52,7 @@
   &DATA     (+-) = 1, _W_MONAT
   &DEFAULT  (+-) = "01"
   &CHOICE   (+-) = "Verarbeiten Monat",\
-                 "J„nner",01,  "Februar",02,  "M„rz",03,  "April",04,\ 
+                 "JÃ¤nner",01,  "Februar",02,  "MÃ¤rz",03,  "April",04,\ 
                  "Mai",05,  "Juni",06,  "Juli",07,  "August",08,\
                  "September",09,  "Oktober",10,  "November",11,  "Dezember",12
 
@@ -76,8 +76,8 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY    (+)                   >>Sachkonto-Nummer
 &REC_MATCH  (+-) = "Konto-Nr.  ", 0, KONTONR
 &ADD_MATCH  (+-) = "Bezeichnung                    ", 0, KONTO_BEZ
@@ -86,7 +86,7 @@
 &REC_KEY    (+)                   >>Bezeichnung
   &DATA_H   (+-) = 0, KONTO_BEZ
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -95,7 +95,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
  
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
-  &DATA_H   (+)  = 1, _MONAT       >>Dummyfeld fr Monat
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+  &DATA_H   (+)  = 1, _MONAT       >>Dummyfeld fÃ¼r Monat
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

@@ -7,15 +7,15 @@
 
 
 
-                                 ù
-                                   Druck von Men: ïïïïïïï
-                                   Druck bis Men: ïïïïïïï
-                                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                                 Â¨
+                                   Druck von MenÃ¼: Â´Â´Â´Â´Â´Â´Â´
+                                   Druck bis MenÃ¼: Â´Â´Â´Â´Â´Â´Â´
+                                  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                                    Kopien        :   ##
 
                                    Von Seite     : ####
                                    Bis Seite     : ####
-                                 ù                        ù
+                                 Â¨                        Â¨
 
 ^ ^ ^ ^ 
 ``.``.`` ^ ^ ^ ^ ^ ^ 
@@ -25,25 +25,25 @@
 >>Prog.:  SY4100.C
 >>Update: 06.08.91
 
-&TITEL    = "SY  DRUCK Men-Datei 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄDruck Meneintr„ge", 2
+&TITEL    = "SY  DRUCK MenÃ¼-Datei 1/1"
+&FRAME    = 0, 0, 0, 0, "â”€Druck MenÃ¼eintrÃ¤ge", 2
 >>SEQUENZ =
 
-&MASKHELP = SYHLP10, men-in
+&MASKHELP = SYHLP10, menÃ¼-in
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, T.MENU
 &DRU_DATEI  (1)  = MASK, D.SY4020
 
->>Von Men
+>>Von MenÃ¼
   &HELPTEXT (0)  = SYHLP10, 402, 00
-  &DATA     (+-) = 1, _VON-MENš
+  &DATA     (+-) = 1, _VON-MENÃœ
 
->>Bis Men
+>>Bis MenÃ¼
   &HELPTEXT (+)  = SYHLP10, 402, 01
-  &DATA     (+-) = 1, _BIS-MENš
+  &DATA     (+-) = 1, _BIS-MENÃœ
 
 >>Kopien
   &HELPTEXT (+)  = SYHLP10, 402, 04
@@ -60,24 +60,24 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
-&REC_KEY    (+)                   >>Men-Nummer
-&REC_MATCH  (+-) = "Men-Nr",  0, MENšGRUPPE
-&ADD_MATCH  (+-) = "Menzeilen-Bezeichnung", 0, BEZEICH
-&ADD_MATCH  (+-) = "Folgesatz", 0, APP_MENš
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
+&REC_KEY    (+)                   >>MenÃ¼-Nummer
+&REC_MATCH  (+-) = "MenÃ¼-Nr",  0, MENÃœGRUPPE
+&ADD_MATCH  (+-) = "MenÃ¼zeilen-Bezeichnung", 0, BEZEICH
+&ADD_MATCH  (+-) = "Folgesatz", 0, APP_MENÃœ
 &ADD_MATCH  (+-) = "Prog-Name", 0, PROG_NAME
-  &DATA_H   (+-) = 0, MENšGRUPPE
+  &DATA_H   (+-) = 0, MENÃœGRUPPE
 
-&REC_KEY    (+)                   >>Menzeilen-Bezeichnung
+&REC_KEY    (+)                   >>MenÃ¼zeilen-Bezeichnung
   &DATA_H   (+-) = 0, BEZEICH
 
-  &DATA_H   (+)  = 0, APP_MENš    >>Applikations-Men Folgesatz
+  &DATA_H   (+)  = 0, APP_MENÃœ    >>Applikations-MenÃ¼ Folgesatz
 
 &REC_KEY    (+)                   >>Programmname
   &DATA_H   (+-) = 0, PROG_NAME
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -86,7 +86,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
  
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _PROG_NAME  >>Programmname + Steuerkennzeichen
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

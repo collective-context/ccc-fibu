@@ -7,18 +7,18 @@
 
 
 
-     ù
-       von Konto-Nummer    : Kïïïïïïïï     bis Konto-Nummer    : Kïïïïïïïï
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+     Â¨
+       von Konto-Nummer    : KÂ´Â´Â´Â´Â´Â´Â´Â´     bis Konto-Nummer    : KÂ´Â´Â´Â´Â´Â´Â´Â´
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        von PLZ/Ort         : @@@@@@@@@@@@@@@@@@@@@@@@@@@@
        bis PLZ/Ort         : @@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-       von Kundengruppe    : ïïïïïïïïïï    bis Kundengruppe    : ïïïïïïïïïï
-       von Auswertungs-KZ. : ïïïïïïïïïï    bis Auswertungs-KZ. : ïïïïïïïïïï
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+       von Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´    bis Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+       von Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´    bis Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        Kopien              :   ##
        von Seite           : ####          bis Seite           : ####
-     ù                                                                     ù
+     Â¨                                                                     Â¨
 
 ^ ^ ^ 
 ``.``.``  ^ ^ ^ ^ ^ ^
@@ -29,13 +29,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "FI  DRUCK OP-Liste Kunden"
-&FRAME    = 0, 0, 0, 0, "ÄOffene Posten-Liste Kunden", 2
+&FRAME    = 0, 0, 0, 0, "â”€Offene Posten-Liste Kunden", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, kund-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1110
 &DRU_DATEI  (1)  = MASK, D.FI4110
@@ -91,8 +91,8 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY   (+)                    >>von Kunden-Nummer
 &REC_MATCH (+-) = "Konto-Nr.", 0, KU_KONTO
 &ADD_MATCH (+-) = "Kurzbezeichnung      ", 0, KURZ_BEZ
@@ -105,7 +105,7 @@
 &REC_KEY   (+)                    >>Kurzbezeichnung
   &DATA_H  (+-) = 0, KURZ_BEZ
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -114,12 +114,12 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
  
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>Mandanten-Nummer
-  &DATA_H   (+)  = 5, FRWŽ_BE_00    >>Fremdw„hrung 0 - 9
+  &DATA_H   (+)  = 5, FRWÃ„_BE_00    >>FremdwÃ¤hrung 0 - 9
   &DATA_H   (+)  = 4, OP_KUNDE    >>OP-Kunde
-  &DATA_H   (+)  = 0, WŽHRUNG     >>W„hrung
-  &DATA_H   (+)  = 1, _WŽHRUNG    >>W„hrung
+  &DATA_H   (+)  = 0, WÃ„HRUNG     >>WÃ¤hrung
+  &DATA_H   (+)  = 1, _WÃ„HRUNG    >>WÃ¤hrung
   &DATA_H   (+)  = 0, AUSLANDSKU  >>Auslandskunde
   &DATA_H   (+)  = 1, _AUSLANDSK
 
@@ -127,4 +127,4 @@
   &DATA_H   (+)  = 2, AUSWERTUNG  >>Auswerutungskennzeichen
   &DATA_H   (+)  = 2, PLZ_ORT     >>Postleitzahl/Ort
   &DATA_H   (+)  = 3, LET_BEWEG   >>Datum letzte Bewegung
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜

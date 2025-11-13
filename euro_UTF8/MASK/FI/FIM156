@@ -7,27 +7,27 @@
 
 
 
-               ˘
+               ¬®
 
                    Bankleitzahl     : @@@@@@@@
-                   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                   ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
 
                    Bankbezeichnung  : @@@@@@@@@@@@@@@@@@@@@@@@@@
 
-               ˘                                                    ˘
+               ¬®                                                    ¬®
 
 >>Mask:   FIM140
 >>Prog.:  FI1100.C
 >>Update: 2.08.91
 
 &TITEL    = "FI  STAMM Anlegen Banken 1/1"
-&FRAME    = 0, 0, 0, 0, "ƒAnlegen/éndern Banken" 2
+&FRAME    = 0, 0, 0, 0, "‚îÄAnlegen/√Ñndern Banken" 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, bank-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1400
 

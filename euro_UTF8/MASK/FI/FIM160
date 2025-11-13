@@ -1,26 +1,26 @@
 
 
 
-  ù
-   Anlage: ïïïïïïïïïï       Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Â¨
+   Anlage: Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´       Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Anlagenkonto : Sïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   Abschreibung : Sïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Anlagenkonto : SÂ´Â´Â´Â´Â´Â´Â´Â´  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   Abschreibung : SÂ´Â´Â´Â´Â´Â´Â´Â´  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Anlage aktiviert   : @@@@              Buchfhrungsjahr : ^^^^^^^^^
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Anlage aktiviert   : @@@@              BuchfÃ¼hrungsjahr : ^^^^^^^^^
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Datum Ersterfassung: ``.``.``          Zeitwert Anfang  : `.```.``|,||
-   Datum Aktivierung  : ##.##.##          Zug„nge          : `.```.``|,||
-                                          a.o. Abg„nge     : `.```.``|,||
-   Anschaffungswert   : #.###.##›,››      Abschreibung     : `.```.``|,||
+   Datum Aktivierung  : ##.##.##          ZugÃ¤nge          : `.```.``|,||
+                                          a.o. AbgÃ¤nge     : `.```.``|,||
+   Anschaffungswert   : #.###.##Ã¸,Ã¸Ã¸      Abschreibung     : `.```.``|,||
    Nutzungsdauer      : ### Jahre         Zeitwert derzeit : `.```.``|,||
    Restnutzungsdauer  : `` Jahre
 
-   j„hrliche AFA in % : ##›,››            j„hrliche AFA    : `.```.``|,||
- ù                                                                            ù
+   jÃ¤hrliche AFA in % : ##Ã¸,Ã¸Ã¸            jÃ¤hrliche AFA    : `.```.``|,||
+ Â¨                                                                            Â¨
 
 ^ ^ ^ ^ ^ ^
 
@@ -28,14 +28,14 @@
 >>Prog.:  FI1100.C
 >>Update: 2.08.91
 
-&TITEL    = "FI  STAMM Ersterfaáung Anlagen 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄErsterfaáung Anlagen", 2
+&TITEL    = "FI  STAMM ErsterfaÃŸung Anlagen 1/1"
+&FRAME    = 0, 0, 0, 0, "â”€ErsterfaÃŸung Anlagen", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, bila-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1600
 &REF_DATEI  (1)  = MASK, D.FI1310
@@ -78,7 +78,7 @@
   &DEFAULT   (+-) = "n"
   &CHOICE    (+-) = "Anlage aktiviert?",   "ja",j,   "nein",n
 
->>Buchfhrungsjahr
+>>BuchfÃ¼hrungsjahr
   &HELPTEXT (+)  = FIHLP10, 160, 8
   &DATA     (+-) = 0, BUCH_JAHR
 
@@ -95,11 +95,11 @@
   &HELPTEXT (+)  = FIHLP10, 160, 16
   &DATA     (+-) = 0, DAT_AKTIV
 
->>Zug„nge
+>>ZugÃ¤nge
   &HELPTEXT (+)  = FIHLP10, 160, 17
   &DATA     (+-) = 0, ZUGANG
   
->>Ausserordentliche Abg„nge
+>>Ausserordentliche AbgÃ¤nge
   &HELPTEXT (+)  = FIHLP10, 160, 19
   &DATA     (+-) = 0, ABGANG
   
@@ -107,7 +107,7 @@
   &HELPTEXT (+)  = FIHLP10, 160, 21
   &DATA     (+-) = 0, AN_WERT
 
->>Abschreibung aktuell (diesj„hrige AFA)
+>>Abschreibung aktuell (diesjÃ¤hrige AFA)
   &HELPTEXT (+)  = FIHLP10, 160, 20
   &DATA     (+-) = 0, AFA
   
@@ -123,17 +123,17 @@
   &HELPTEXT (+)  = FIHLP10, 160, 14
   &DATA     (+-) = 0, NUTZ_RES
 
->>j„hrliche Abschreibung in %
+>>jÃ¤hrliche Abschreibung in %
   &HELPTEXT (+)  = FIHLP10, 160, 15
   &DATA     (+-) = 0, JAHR_AFA_P
 
->>j„hrliche Abschreibung in S
+>>jÃ¤hrliche Abschreibung in S
   &HELPTEXT (+)  = FIHLP10, 160, 15
   &DATA     (+-) = 0, JAHR_AFA
 
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 >>Sachkonto
 &REF_KEY     (+)
 &REF_MATCH   (+-) = "Konto-Nummer", 1, KONTONR
@@ -148,7 +148,7 @@
   &DATA_H    (+)  = 3, KAPIT_KTO
   &DATA_H    (+)  = 0, AB_DATUM
   &DATA_H    (+)  = 4, Y_CLOSED
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 >>Vorzeitige Afa
@@ -167,7 +167,7 @@
   &HELPTEXT (+)  = FIHLP10, 160, 4
   &DATA     (+-) = 0, STANDORT
 
-   Kostenstelle : Tïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^ ^
+   Kostenstelle : TÂ´Â´Â´Â´Â´Â´Â´Â´  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^ ^
 
 >>Kostenstelle
 &REF_KEY    (+)
@@ -189,21 +189,21 @@
 
 
 
-   Anlage: ïïïïïïïïïï       Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Anlage: Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´       Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Anlagenkonto : Sïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   Abschreibung : Sïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-   Anlage aktiviert   : @@@@              Buchfhrungsjahr : ^^^^^^^^^
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-   Datum Ersterfassung: ``.``.``          Zeitwert Anfang  : #.###.##›,››
-   Datum Aktivierung  : ##.##.##          Zug„nge          : #.###.##›,››
-   Datum Ausscheiden  : ##.##.##          a.o. Abg„nge     : #.###.##›,››
-                                          Abschreibung     : #.###.##›,››
-   Anschaffungswert   : #.###.##›,››      Zeitwert derzeit : `.```.``|,||
+   Anlagenkonto : SÂ´Â´Â´Â´Â´Â´Â´Â´  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   Abschreibung : SÂ´Â´Â´Â´Â´Â´Â´Â´  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Anlage aktiviert   : @@@@              BuchfÃ¼hrungsjahr : ^^^^^^^^^
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Datum Ersterfassung: ``.``.``          Zeitwert Anfang  : #.###.##Ã¸,Ã¸Ã¸
+   Datum Aktivierung  : ##.##.##          ZugÃ¤nge          : #.###.##Ã¸,Ã¸Ã¸
+   Datum Ausscheiden  : ##.##.##          a.o. AbgÃ¤nge     : #.###.##Ã¸,Ã¸Ã¸
+                                          Abschreibung     : #.###.##Ã¸,Ã¸Ã¸
+   Anschaffungswert   : #.###.##Ã¸,Ã¸Ã¸      Zeitwert derzeit : `.```.``|,||
    Nutzungsdauer      : ## Jahre
- ù J„hrl. Abschreibung: #.###.##›,››      Restnutzungsdauer: `` Jahre        ù
+ Â¨ JÃ¤hrl. Abschreibung: #.###.##Ã¸,Ã¸Ã¸      Restnutzungsdauer: `` Jahre        Â¨
 
 ^ ^ ^
 
@@ -212,13 +212,13 @@
 >>Update: 2.08.91
 
 &TITEL    = "FI  STAMM Anlegen Anlagenstamm 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄAnlegen/Žndern Anlagenstamm", 2
+&FRAME    = 0, 0, 0, 0, "â”€Anlegen/Ã„ndern Anlagenstamm", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, bila-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1600
 &REF_DATEI  (1)  = MASK, D.FI1310
@@ -260,7 +260,7 @@
   &DEFAULT   (+-) = "n"
   &CHOICE    (+-) = "Anlage aktiviert?",   "ja",j,   "nein",n
 
->>Buchfhrungsjahr
+>>BuchfÃ¼hrungsjahr
   &HELPTEXT (+)  = FIHLP10, 160, 8
   &DATA     (+-) = 0, BUCH_JAHR
 
@@ -276,7 +276,7 @@
   &HELPTEXT (+)  = FIHLP10, 160, 16
   &DATA     (+-) = 0, DAT_AKTIV
 
->>Zug„nge
+>>ZugÃ¤nge
   &HELPTEXT (+)  = FIHLP10, 160, 17
   &DATA     (+-) = 0, ZUGANG
   
@@ -284,11 +284,11 @@
   &HELPTEXT (+)  = FIHLP10, 160, 18
   &DATA     (+-) = 0, DAT_AUS
   
->>Ausserordentliche Abg„nge
+>>Ausserordentliche AbgÃ¤nge
   &HELPTEXT (+)  = FIHLP10, 160, 19
   &DATA     (+-) = 0, ABGANG
   
->>Abschreibung aktuell (diesj„hrige AFA)
+>>Abschreibung aktuell (diesjÃ¤hrige AFA)
   &HELPTEXT (+)  = FIHLP10, 160, 20
   &DATA     (+-) = 0, AFA
   
@@ -305,7 +305,7 @@
   &HELPTEXT (+)  = FIHLP10, 160, 12
   &DATA     (+-) = 0, NUTZ_GES
 
->>j„hrliche Abschreibung
+>>jÃ¤hrliche Abschreibung
   &HELPTEXT (+)  = FIHLP10, 160, 15
   &DATA     (+-) = 0, JAHR_AFA
 
@@ -313,8 +313,8 @@
   &HELPTEXT (+)  = FIHLP10, 160, 14
   &DATA     (+-) = 0, NUTZ_RES
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 >>Sachkonto
 &REF_KEY     (+)
 &REF_MATCH   (+-) = "Konto-Nummer", 1, KONTONR
@@ -325,6 +325,6 @@
 &REF_KEY     (+)
   &DATA_H    (+-) = 1, KONTO_BEZ
 
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 

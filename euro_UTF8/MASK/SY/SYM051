@@ -7,18 +7,18 @@
 
 
 
-    ˘
+    ¬®
       Mandanten-Nr  :  ``      Kurzbezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
       Finanzbuchhaltung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
       Wirtschaftsjahr ab: @@@@@@@@@   ||||
 
-     ⁄ƒ Fibu-Jahresabschlu· ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒø
-     ¿ƒ altes Jahr abgeschlossen: @@@@   /   neues Jahr angelegt: @@@@ ƒƒƒƒŸ
+     ‚îå‚îÄ Fibu-Jahresabschlu√ü ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
+     ‚îî‚îÄ altes Jahr abgeschlossen: @@@@   /   neues Jahr angelegt: @@@@ ‚îÄ‚îÄ‚îÄ‚îÄ‚îò
 
-     ⁄ƒ Druck Rechnungsausgangsbuch ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒø
-     ¿ƒ öbergabe in die Fibu-Erlîskonto-Klasse: @@ ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ
-    ˘                                                                       ˘
+     ‚îå‚îÄ Druck Rechnungsausgangsbuch ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
+     ‚îî‚îÄ √úbergabe in die Fibu-Erl√∂skonto-Klasse: @@ ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îò
+    ¬®                                                                       ¬®
 
 >>Mask:   SYM051
 >>Prog.:  SY1100.C
@@ -31,7 +31,7 @@
 &MASKHELP = SYHLP10, mand-in
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, L.SYPARA
 &DATEI      (1)  = MASK, L.SYP_01
@@ -47,15 +47,15 @@
   &HELPTEXT (+)  = SYHLP10, 050, 01
   &DATA     (+-) = 1, KZ_FIBU_BA
   &SELECT   (+-) = "Finanzbuchhaltung-Basiswerte",\
-                 "Offene Posten",           1, "Erlîs/Aufwand brutto",    2,\
+                 "Offene Posten",           1, "Erl√∂s/Aufwand brutto",    2,\
                  "Kontrolldatei BU-Erf",    4, "Kontrolldatei RE-Buc",    8
 
->>Wirtschaftsjahr temporÑr (Choice)
+>>Wirtschaftsjahr tempor√§r (Choice)
   &HELPTEXT (+)  = SYHLP10, 050, 02
   &DATA     (+-) = 0, WIRT_J_TMP
   &DEFAULT  (+-) = 1
   &CHOICE   (+-) = "Wirtschaftsjahr",\
-                   "JÑnner",1,  "Februar",2,  "MÑrz",3,  "April",4,\
+                   "J√§nner",1,  "Februar",2,  "M√§rz",3,  "April",4,\
                    "Mai",5,  "Juni",6,  "Juli",7,  "August",8,\
                    "September",9,  "Oktober",A,  "November",B,  "Dezember",C
 
@@ -74,22 +74,22 @@
   &CHOICE    (+-) = "Fibu/ neues Jahr ist bereits kopiert", "ja",j,  "nein",n
   &DEFAULT   (+-) = n
 
->>Kontenklasse Erlîs
+>>Kontenklasse Erl√∂s
   &HELPTEXT (+)  = SYHLP10, 050, 05
   &DATA     (+-) = 0, BUCHERLS
   &DEFAULT   (+-) = 4
 
       Finanzbuchhaltung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-     ¿ƒ altes Jahr abgeschlossen: @@@@   /   neues Jahr angelegt: @@@@ ƒƒƒƒŸ
+     ‚îî‚îÄ altes Jahr abgeschlossen: @@@@   /   neues Jahr angelegt: @@@@ ‚îÄ‚îÄ‚îÄ‚îÄ‚îò
 
 Wirtschaftsjahr ab: @@@@@@@@@ = |||| (MMTT)
 
-⁄ƒ Druck Rechnungsausgangsbuch ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒø
-öbergabe in Mandant Nr. : #
+‚îå‚îÄ Druck Rechnungsausgangsbuch ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
+√úbergabe in Mandant Nr. : #
 Datenverzeichnis KHK    : @@@@@@@@@@@@@@@@@@@@@
-Kontenklasse Erlîs      : #
+Kontenklasse Erl√∂s      : #
 
-&DATEI      (0)  = MASK, L.SYP_13  // frÅher
+&DATEI      (0)  = MASK, L.SYP_13  // fr√ºher
 >>Mandant KHK
   &HELPTEXT (+)  = AUHLP20, 422, 03
   &DATA     (+-) = 0, BUCHMAND
@@ -98,7 +98,7 @@ Kontenklasse Erlîs      : #
   &HELPTEXT (+)  = AUHLP20, 422, 04
   &DATA     (+-) = 0, BUCHDATEI
 
->>Kontenklasse Erlîs
+>>Kontenklasse Erl√∂s
   &HELPTEXT (+)  = AUHLP20, 422, 05
   &DATA     (+-) = 0, BUCHERLS
 

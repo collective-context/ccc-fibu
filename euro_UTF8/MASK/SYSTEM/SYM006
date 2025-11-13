@@ -9,14 +9,14 @@
 
 
 
-       ù                         ù
+       Â¨                         Â¨
 
           Datum :  ##.##.##
 
-       ù                         ù
+       Â¨                         Â¨
 
 
-&TITEL = "SYÍndern Erfassungs-Datum 1/1"
+&TITEL = "SYâ•Ã„ndern Erfassungs-Datum 1/1"
 &REM   Maske    :  SYM006
 &REM   Programm:  SY1100 / 50000
 &REM   Datei    : SYTEIL

@@ -5,14 +5,14 @@
 
 
 
-     Grundrabatt      : ##õ,õõ %           Zahlungskondition: @@@@@@@@@
-    ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+     Grundrabatt      : ##√∏,√∏√∏ %           Zahlungskondition: @@@@@@@@@
+    ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
      
      eigene Kundennr. : @@@@@@@@@@
-     Kurz-Symbol      : @@                 WÑhrung          : @@@@@@@@@@
-    ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+     Kurz-Symbol      : @@                 W√§hrung          : @@@@@@@@@@
+    ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
 
-   ˘ Datum l. Einkauf : ##.##.##                                           ˘
+   ¬® Datum l. Einkauf : ##.##.##                                           ¬®
 
 ^ ^ ^ ^ ^
 
@@ -27,7 +27,7 @@
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1200
 &DATEI      (1)  = MASK, D.ST1210
@@ -39,7 +39,7 @@
   &DEFAULT  (+-) = 0
   &DATA     (+-) = 1, GRUNDRAB
 
->>Zahlungskonditionen TT%%TTT     ** Eventuell öberprÅfung auf ZulÑssigkeit **
+>>Zahlungskonditionen TT%%TTT     ** Eventuell √úberpr√ºfung auf Zul√§ssigkeit **
   &HELPTEXT (+)  = AUHLP10, 121, 2
   &DATA     (+-) = 3, KONDITION
   &DEFAULT  (+-) = "14-30-060"
@@ -52,9 +52,9 @@
   &HELPTEXT (+)  = AUHLP10, 121, 4
   &DATA     (+-) = 0, KURZSYMBOL
 
->>WÑhrungs-Nummer
+>>W√§hrungs-Nummer
   &HELPTEXT (+)  = AUHLP10, 121, 11
-  &DATA     (+-) = 3, WéHRUNG
+  &DATA     (+-) = 3, W√ÑHRUNG
   &DEFAULT  (+-) = "0"
 
 >>Umsatz Periode
@@ -66,21 +66,21 @@
   &DATA     (+-) = 1, LET_EK
 
 
->>⁄ƒƒƒƒƒƒƒ  1. Zeile: ƒƒƒƒƒƒƒø
+>>‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ  1. Zeile: ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
   &DATA_H   (+)  = 1, FI_LI_KTO
-  &DATA_H   (+)  = 2, FRWé_BE_00  >>FremdwÑhrung 0 - 9
+  &DATA_H   (+)  = 2, FRW√Ñ_BE_00  >>Fremdw√§hrung 0 - 9
   &DATA_H   (+)  = 3, FI_LIEFER
   &DATA_H   (+)  = 3, LI_KONTO
   &DATA_H   (+)  = 3, KURZ_BEZ
->>¿ƒƒƒƒƒƒƒ Ende Dummy-Felder! ƒƒƒƒƒƒƒŸ
+>>‚îî‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ Ende Dummy-Felder! ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îò
 
 
->>Vorsteuer-SchlÅssel
+>>Vorsteuer-Schl√ºssel
   &HELPTEXT (+)  = AUHLP10, 121, 1
   &DATA     (+-) = 1, VST
   &DEFAULT  (+-) = "1"
-  &CHOICE   (+-) = "VST-SchlÅssel",\
+  &CHOICE   (+-) = "VST-Schl√ºssel",\
                    "mit MwSt",1,   "ohne MwSt",0,   "incl. MwSt",2
 
-     Grundrabatt      : ##õ,õõ %           VSt.-SchlÅssel   : @@@@@@@@@@
+     Grundrabatt      : ##√∏,√∏√∏ %           VSt.-Schl√ºssel   : @@@@@@@@@@
 

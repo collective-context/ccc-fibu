@@ -3,19 +3,19 @@
 
 
 
-    ù
-      von Kunden-Nummer   : ïïïïïïïïïïïïïïïïïïïï
-      bis Kunden-Nummer   : ïïïïïïïïïïïïïïïïïïïï               Kopien: ##
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    Â¨
+      von Kunden-Nummer   : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+      bis Kunden-Nummer   : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´               Kopien: ##
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       von bis Land        : @@@                    @@@
       von bis Plz/Ort     : @@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@
 
-      von Kundengruppe    : ïïïïïïïïïï   bis Kundengruppe    : ïïïïïïïïïï
-      von Auswertungs-KZ. : ïïïïïïïïïï   bis Auswertungs-KZ. : ïïïïïïïïïï
+      von Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´   bis Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+      von Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´   bis Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
 
       Kopien              :   ##
       von Seite           : ####         bis Seite           : ####
-    ù                                                                     ù
+    Â¨                                                                     Â¨
 
 ^ ^
 ``.``.`` ^ ^ ^ ^ ^ ^
@@ -26,13 +26,13 @@
 >>Update: 01.06.91
 
 &TITEL    = "VS  DRUCK Kundenliste n. Knd.-Nummer 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄListe Kunde nach Kundennummer 1/1", 2
+&FRAME    = 0, 0, 0, 0, "â”€Liste Kunde nach Kundennummer 1/1", 2
 >>SEQUENZ =
 
 >>MASKHELP= STHLP10, kundnr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1100
 &DRU_DATEI  (1)  = MASK, D.ST4110
@@ -99,8 +99,8 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY    (+)                   >>Kunden-Nummer
 &REC_MATCH  (+-) = "Kunden-Nummer   ", 0, KUNDE
 &ADD_MATCH  (+-) = "Kurzbezeichnung      ", 0, MATCH_CODE
@@ -108,7 +108,7 @@
 
   &DATA_H   (+)  = 0, MATCH_CODE  >>Kurzbezeichnung
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -116,13 +116,13 @@
   &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 >>Branche
   &HELPTEXT (+)  = STHLP10, 110, 24
   &DATA_H   (+-) = 1, _W_BRANCHE
   &SELECT   (+-) = "Kundengruppe",\
-                 "Computer Herst. 3573",    1, "Br/Com-Fachh.  5081",    2,\
+                 "Computer Herst. 3573",    1, "BÃ¼r/Com-Fachh.  5081",    2,\
                  "Hold/Inv-Ges.   6711",    4, "Softwarehaus    7372",    8,\
                  "Computerdienste 7374",   16, "Forschung/Entw. 7391",   32,\
                  "Untern.-Berat.  7392",   64, "w. Meinungsbildner  ",  128,\
@@ -156,18 +156,18 @@
 
 
 
-    ù
-      von Kunden-Nummer   : ïïïïïïïïïïïïïïïïïïïï
-      bis Kunden-Nummer   : ïïïïïïïïïïïïïïïïïïïï
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    Â¨
+      von Kunden-Nummer   : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+      bis Kunden-Nummer   : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       von bis Land        : @@@                    @@@
       von bis Plz/Ort     : @@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@
 
-      von Kundengruppe    : ïïïïïïïïïï   bis Kundengruppe    : ïïïïïïïïïï
-      von Auswertungs-KZ. : ïïïïïïïïïï   bis Auswertungs-KZ. : ïïïïïïïïïï
+      von Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´   bis Kundengruppe    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+      von Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´   bis Auswertungs-KZ. : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
 
       von Seite           : ####         bis Seite           : ####
-    ù                                                                     ù
+    Â¨                                                                     Â¨
 
 ^ ^
 ``.``.`` ^ ^ ^ ^ ^ ^
@@ -177,13 +177,13 @@
 >>Update: 01.06.91
 
 &TITEL    = "ST  DRUCK Kundenliste n. Knd.-Nummer 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄListe Kunde nach Kundennummer 1/1", 2
+&FRAME    = 0, 0, 0, 0, "â”€Liste Kunde nach Kundennummer 1/1", 2
 >>SEQUENZ =
 
 >>MASKHELP= STHLP10, kundnr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1100
 &DRU_DATEI  (1)  = MASK, D.ST4110
@@ -239,8 +239,8 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY    (+)                   >>Kunden-Nummer
 &REC_MATCH  (+-) = "Kunden-Nummer   ", 0, KUNDE
 &ADD_MATCH  (+-) = "Kurzbezeichnung      ", 0, MATCH_CODE
@@ -248,7 +248,7 @@
 
   &DATA_H   (+)  = 0, MATCH_CODE  >>Kurzbezeichnung
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -256,4 +256,4 @@
   &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜

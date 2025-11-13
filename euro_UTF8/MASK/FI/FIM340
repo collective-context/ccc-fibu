@@ -2,8 +2,8 @@
 
 
   Artikel Bezeichnung       Konto      Menge EH         Preis/EH        Betrag
-  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
-  ÔÔÔÔÔÔÔ @@@@@@@@@@@@@@@@@ @@@@@ ###.##õ,õõ @@@@@ ##.###.##õ,õõ ``.```.``|,||
+  ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  ¬¥¬¥¬¥¬¥¬¥¬¥¬¥ @@@@@@@@@@@@@@@@@ @@@@@ ###.##√∏,√∏√∏ @@@@@ ##.###.##√∏,√∏√∏ ``.```.``|,||
 
 
 
@@ -20,7 +20,7 @@
 
 
 
- ˘                                                                            ˘
+ ¬®                                                                            ¬®
 
 ^ ^ ^ ^ ^ ^ ^ ^   ^ ^
 ^ ^ ^
@@ -30,8 +30,8 @@
 >>Prog.:  ST1100.C
 >>Update: 01.06.91
 
-&TITEL    = "FI  STAMM Erîffnungsbilanz Artikel"
-&FRAME    = 0,0,0,0, "Erîffnungsbilanz Artikel", 2
+&TITEL    = "FI  STAMM Er√∂ffnungsbilanz Artikel"
+&FRAME    = 0,0,0,0, "Er√∂ffnungsbilanz Artikel", 2
 >>&SEQUENZ  = 00,04
 
 &BROWSE     = 0,6
@@ -40,7 +40,7 @@
 &MASKHELP = FIHLP10, sach-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1300
 &DRU_DATEI  (1)  = MASK, D.ST4500
@@ -64,7 +64,7 @@
   &HELPTEXT (+)  = STHLP10, 130, 1
   &DATA     (+-) = 0, MATCH_CODE
 
->>Konto-Nr fÅr Bestandsbuchungen
+>>Konto-Nr f√ºr Bestandsbuchungen
 &REF_KEY    (+)                   >>Sachkonten Konto
 &REF_MATCH  (+-) = "Konto-Nummer", 3, KONTONR
 &ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 3, KONTO_BEZ
@@ -90,8 +90,8 @@
 >>Summe = Menge*EKPR1
   &DATA     (+)  = 1, _SUMME
 
->>⁄ƒƒƒƒƒƒƒ  1. Zeile: ƒƒƒƒƒƒƒø
-  &DATA_H   (+)  = 1, _ANDERUNG   >>énderung Menge*EKPR1
+>>‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ  1. Zeile: ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
+  &DATA_H   (+)  = 1, _ANDERUNG   >>√Ñnderung Menge*EKPR1
   &DATA_H   (+)  = 0, INVEN_ANF   >>Inventur-Anfangsbestand
   &DATA_H   (+)  = 0, BESTAND_KT  >>Bezeichnung Mengeneinheit
   &DATA_H   (+)  = 0, MENGENEINH  >>Bezeichnung Mengeneinheit
@@ -103,12 +103,12 @@
   &DATA_H   (+)  = 4, MAND_01     >>Mandanten-Nummer Festkonten
   &DATA_H   (+)  = 4, KAPIT_KTO   >>Kapitlakonto
 
->>⁄ƒƒƒƒƒƒƒ  2. Zeile: ƒƒƒƒƒƒƒø
->>Kennzeichen TextergÑnzung
+>>‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ  2. Zeile: ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
+>>Kennzeichen Texterg√§nzung
   &HELPTEXT (+)  = STHLP10, 131, 19
   &DATA_H   (+-) = 0, ARTTEXTKZ
   &DEFAULT  (+-) = "n"
-  &CHOICE   (+-) = "Kennzeichen TextergÑnzung",  "ja",j,  "nein",n
+  &CHOICE   (+-) = "Kennzeichen Texterg√§nzung",  "ja",j,  "nein",n
 
 >>Bewertungs-Satz
   &HELPTEXT (+)  = STHLP10, 131, 13
@@ -116,14 +116,14 @@
   &DEFAULT  (+-) = "0"
   &CHOICE   (+-) = "Bewertungs-Satz",  "0",0,  "1",1,  "2",2,  "3",3
 
->>LagerfÅhrung j/n
+>>Lagerf√ºhrung j/n
   &HELPTEXT (+)  = STHLP10, 131, 24
   &DATA_H   (+-) = 0, LAGERKZ
   &DEFAULT  (+-) = "j"
-  &CHOICE   (+-) = "LagerfÅhrung",  "ja",j,  "nein",n
->>¿ƒƒƒƒƒƒƒ Ende Dummy-Felder! ƒƒƒƒƒƒƒŸ
+  &CHOICE   (+-) = "Lagerf√ºhrung",  "ja",j,  "nein",n
+>>‚îî‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ Ende Dummy-Felder! ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îò
 
->>⁄ƒƒƒƒƒƒƒ  4. Zeile: ƒƒƒƒƒƒƒø
+>>‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ  4. Zeile: ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
   &DATA_H   (+)  = 0, INVEN_AKT
   &DATA_H   (+)  = 0, IN_ANF_EKP
   &DATA_H   (+)  = 0, IN_AKT_EKP
@@ -136,14 +136,14 @@
 
   &DATA_H   (+)  = 1, _STARTFLAG
   &DATA_H   (+)  = 5, Y_CLOSED
->>¿ƒƒƒƒƒƒƒ Ende Dummy-Felder! ƒƒƒƒƒƒƒŸ
+>>‚îî‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ Ende Dummy-Felder! ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îò
 
 
 >>&MODUS    (+-) = PREPARE
 >>&DEFAULT  (+-) = "n"
   Artikel Kurzbezeichnung Konto   Inventur      Menge EH         Preis/EH N U%
-  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
-  ÔÔÔÔÔÔÔ @@@@@@@@@@@@@@@ @@@@@ ```.``|,|| ###.##õ,õõ @@@@@ ##.###.##õ,õõ @ @@
+  ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  ¬¥¬¥¬¥¬¥¬¥¬¥¬¥ @@@@@@@@@@@@@@@ @@@@@ ```.``|,|| ###.##√∏,√∏√∏ @@@@@ ##.###.##√∏,√∏√∏ @ @@
 
 >>Netto/Brutto
   &HELPTEXT  (+)  = AUHLP10, 250, 14
@@ -152,7 +152,7 @@
   &CHOICE    (+-) = "Netto/Brutto",\
                     "Netto = plus MwSt",n,  "Brutto = incl. MwSt",b
 
->>Umsatzsteuer-SchlÅssel (0/1-8)
+>>Umsatzsteuer-Schl√ºssel (0/1-8)
   &HELPTEXT  (+)  = AUHLP10, 250, 15
   &DATA      (+-) = 0, UST_SATZ
 

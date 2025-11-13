@@ -1,26 +1,26 @@
 
 
 
-  Konto-Nr  Matchcode           ³ Kostenvergleich   ³ Kaptialfluárechnung
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  Sïïïïïïïï @@@@@@@@@@@@@@@@@@@ ³ @@@@@@@@@@@@@@@@@ ³ @@@@@@@@@@@@@@@@@@@@@@@@
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
-  S                             ³                   ³
- ùS                             ³                   ³                         ù
+  Konto-Nr  Matchcode           â”‚ Kostenvergleich   â”‚ KaptialfluÃŸrechnung
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  SÂ´Â´Â´Â´Â´Â´Â´Â´ @@@@@@@@@@@@@@@@@@@ â”‚ @@@@@@@@@@@@@@@@@ â”‚ @@@@@@@@@@@@@@@@@@@@@@@@
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+  S                             â”‚                   â”‚
+ Â¨S                             â”‚                   â”‚                         Â¨
 
   ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^  ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^
 
@@ -38,7 +38,7 @@
 &MASKHELP = FIHLP10, sach-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1310
 
@@ -66,32 +66,32 @@
   &HELPTEXT (+)  = FIHLP10, 130, 5
   &DATA     (+-) = 0, KOSTENVERG
   &DEFAULT  (+-) = "b"
-  &CHOICE   (+-) = "ÄKostenvergleich",\
-                   "Bilanzkonto",b,           "Verkauf/Erl”se",v,\
+  &CHOICE   (+-) = "â”€Kostenvergleich",\
+                   "Bilanzkonto",b,           "Verkauf/ErlÃ¶se",v,\
                    "Einkauf",e,               "Personalkosten",p,\
                    "Fremdarbeit",f,           "Transporte",t,\
                    "Hilfs-/Betriebsmittel",h, "Werbung",w,\
                    "Verwaltung",k,            "Steuern/Versicherung",a,\
                    "Finanzspesen",s,          "Neutraler Aufwand/Ertrag",n
 
->>Kapitalfluárechnung
+>>KapitalfluÃŸrechnung
   &HELPTEXT (+)  = FIHLP10, 130, 9
   &DATA     (+-) = 0, KAPITAL_RE
   &DEFAULT  (+-) = "k"
-  &CHOICE   (+-) = "ÄKapitalfluárechnung",\
-                   "fr KFR keine Bedeutung",k,   "Geldkonto",g,\
+  &CHOICE   (+-) = "â”€KapitalfluÃŸrechnung",\
+                   "fÃ¼r KFR keine Bedeutung",k,   "Geldkonto",g,\
                    "laufender Betrieb",l,   "Investitionen",i,\
                    "Privatkonto","p"
 
 >> 1.Zeile
   &DATA_H   (+)  = 0, K_VOR_SAL     >>Saldovortrag
-  &DATA_H   (+)  = 0, K_SOLL_01     >>SOLL J„nner
-  &DATA_H   (+)  = 0, K_HABEN_01    >>HABEN J„nner
+  &DATA_H   (+)  = 0, K_SOLL_01     >>SOLL JÃ¤nner
+  &DATA_H   (+)  = 0, K_HABEN_01    >>HABEN JÃ¤nner
   &DATA_H   (+)  = 0, K_SOLL_02     >>SOLL Februar
   &DATA_H   (+)  = 0, K_HABEN_02    >>HABEN Februar
 
-  &DATA_H   (+)  = 0, K_SOLL_03     >>SOLL M„rz
-  &DATA_H   (+)  = 0, K_HABEN_03    >>HABEN M„rz
+  &DATA_H   (+)  = 0, K_SOLL_03     >>SOLL MÃ¤rz
+  &DATA_H   (+)  = 0, K_HABEN_03    >>HABEN MÃ¤rz
   &DATA_H   (+)  = 0, K_SOLL_04     >>SOLL April
   &DATA_H   (+)  = 0, K_HABEN_04    >>HABEN April
   &DATA_H   (+)  = 0, K_SOLL_05     >>SOLL Mai

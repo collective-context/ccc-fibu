@@ -2,24 +2,24 @@
 
 
 
-                      ˘
+                      ¬®
                                                 Bez.  Einheit   Kurs
-                           ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
-                           LandeswÑhrung  :     @@@@  ^^^^^^^ = ``|,|||
-                           FremdwÑhrung 1 :     @@@@  @@@@@@@ = ##õ,õõõ
+                           ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+                           Landesw√§hrung  :     @@@@  ^^^^^^^ = ``|,|||
+                           Fremdw√§hrung 1 :     @@@@  @@@@@@@ = ##√∏,√∏√∏√∏
 
-                           FremdwÑhrung 2 :     @@@@  @@@@@@@ = ##õ,õõõ
-                           FremdwÑhrung 3 :     @@@@  @@@@@@@ = ##õ,õõõ
+                           Fremdw√§hrung 2 :     @@@@  @@@@@@@ = ##√∏,√∏√∏√∏
+                           Fremdw√§hrung 3 :     @@@@  @@@@@@@ = ##√∏,√∏√∏√∏
 
-                           FremdwÑhrung 4 :     @@@@  @@@@@@@ = ##õ,õõõ
-                           FremdwÑhrung 5 :     @@@@  @@@@@@@ = ##õ,õõõ
+                           Fremdw√§hrung 4 :     @@@@  @@@@@@@ = ##√∏,√∏√∏√∏
+                           Fremdw√§hrung 5 :     @@@@  @@@@@@@ = ##√∏,√∏√∏√∏
 
-                           FremdwÑhrung 6 :     @@@@  @@@@@@@ = ##õ,õõõ
-                           FremdwÑhrung 7 :     @@@@  @@@@@@@ = ##õ,õõõ
+                           Fremdw√§hrung 6 :     @@@@  @@@@@@@ = ##√∏,√∏√∏√∏
+                           Fremdw√§hrung 7 :     @@@@  @@@@@@@ = ##√∏,√∏√∏√∏
 
-                           FremdwÑhrung 8 :     @@@@  @@@@@@@ = ##õ,õõõ
-                           FremdwÑhrung 9 :     @@@@  @@@@@@@ = ##õ,õõõ ^
-                      ˘                                                     ˘
+                           Fremdw√§hrung 8 :     @@@@  @@@@@@@ = ##√∏,√∏√∏√∏
+                           Fremdw√§hrung 9 :     @@@@  @@@@@@@ = ##√∏,√∏√∏√∏ ^
+                      ¬®                                                     ¬®
 ^
 
 
@@ -27,25 +27,25 @@
 >>Prog.:  ST1100.C
 >>Update: 06.08.91
 
-&TITEL    = "ST  STAMM éndern FremdwÑhrungskurse"
-&FRAME    = 0, 0, 0, 0, "ƒFremdwÑhrungskurse" 2
+&TITEL    = "ST  STAMM √Ñndern Fremdw√§hrungskurse"
+&FRAME    = 0, 0, 0, 0, "‚îÄFremdw√§hrungskurse" 2
 &SEQUENZ  = 
 
 &MASKHELP = STHLP10, fremd-i
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
-&DATEI      (0)  = MASK, L.SYP_01     >>FremdwÑhrung
+&DATEI      (0)  = MASK, L.SYP_01     >>Fremdw√§hrung
 
 >>Bezeichnung 1
   &HELPTEXT (0)  = STHLP10, 094, 0
-  &DATA     (+-) = 0, FRWé_BE_00
-  &DEFAULT  (+-) = "ôS"
+  &DATA     (+-) = 0, FRW√Ñ_BE_00
+  &DEFAULT  (+-) = "√ñS"
 
 >>Einheit 1
   &HELPTEXT (+)  = STHLP10, 094, 1
-  &DATA     (+-) = 0, FRWé_EH_00
+  &DATA     (+-) = 0, FRW√Ñ_EH_00
   &DEFAULT  (+-) = "3"
   &CHOICE   (+-) = "Einheit",\
                  "0,001","0",  "0,01","1",  "0,1","2",  "1 ","3",\
@@ -53,16 +53,16 @@
 
 >>Kurs 1
   &HELPTEXT (+)  = STHLP10, 094, 2
-  &DATA     (+-) = 0, FRWé_KU_00
+  &DATA     (+-) = 0, FRW√Ñ_KU_00
   &DEFAULT  (+-) = 1.0
 
 >>Bezeichnung 2
   &HELPTEXT (+)  = STHLP10, 094, 0
-  &DATA     (+-) = 0, FRWé_BE_01
+  &DATA     (+-) = 0, FRW√Ñ_BE_01
 
 >>Einheit 2
   &HELPTEXT (+)  = STHLP10, 094, 1
-  &DATA     (+-) = 0, FRWé_EH_01
+  &DATA     (+-) = 0, FRW√Ñ_EH_01
   &DEFAULT  (+-) = "3"
   &CHOICE   (+-) = "Einheit",\
                  "0,001","0",  "0,01","1",  "0,1","2",  "1 ","3",\
@@ -70,15 +70,15 @@
 
 >>Kurs 2
   &HELPTEXT (+)  = STHLP10, 094, 2
-  &DATA     (+-) = 0, FRWé_KU_01
+  &DATA     (+-) = 0, FRW√Ñ_KU_01
 
 >>Bezeichnung 3
   &HELPTEXT (+)  = STHLP10, 094, 0
-  &DATA     (+-) = 0, FRWé_BE_02
+  &DATA     (+-) = 0, FRW√Ñ_BE_02
 
 >>Einheit 3
   &HELPTEXT (+)  = STHLP10, 094, 1
-  &DATA     (+-) = 0, FRWé_EH_02
+  &DATA     (+-) = 0, FRW√Ñ_EH_02
   &DEFAULT  (+-) = "3"
   &CHOICE   (+-) = "Einheit",\
                  "0,001","0",  "0,01","1",  "0,1","2",  "1 ","3",\
@@ -86,15 +86,15 @@
 
 >>Kurs 3
   &HELPTEXT (+)  = STHLP10, 094, 2
-  &DATA     (+-) = 0, FRWé_KU_02
+  &DATA     (+-) = 0, FRW√Ñ_KU_02
 
 >>Bezeichnung 4
   &HELPTEXT (+)  = STHLP10, 094, 0
-  &DATA     (+-) = 0, FRWé_BE_03
+  &DATA     (+-) = 0, FRW√Ñ_BE_03
 
 >>Einheit 4
   &HELPTEXT (+)  = STHLP10, 094, 1
-  &DATA     (+-) = 0, FRWé_EH_03
+  &DATA     (+-) = 0, FRW√Ñ_EH_03
   &DEFAULT  (+-) = "3"
   &CHOICE   (+-) = "Einheit",\
                  "0,001","0",  "0,01","1",  "0,1","2",  "1 ","3",\
@@ -102,15 +102,15 @@
 
 >>Kurs 4
   &HELPTEXT (+)  = STHLP10, 094, 2
-  &DATA     (+-) = 0, FRWé_KU_03
+  &DATA     (+-) = 0, FRW√Ñ_KU_03
 
 >>Bezeichnung 5
   &HELPTEXT (+)  = STHLP10, 094, 0
-  &DATA     (+-) = 0, FRWé_BE_04
+  &DATA     (+-) = 0, FRW√Ñ_BE_04
 
 >>Einheit 5
   &HELPTEXT (+)  = STHLP10, 094, 1
-  &DATA     (+-) = 0, FRWé_EH_04
+  &DATA     (+-) = 0, FRW√Ñ_EH_04
   &DEFAULT  (+-) = "3"
   &CHOICE   (+-) = "Einheit",\
                  "0,001","0",  "0,01","1",  "0,1","2",  "1 ","3",\
@@ -118,15 +118,15 @@
 
 >>Kurs 5
   &HELPTEXT (+)  = STHLP10, 094, 2
-  &DATA     (+-) = 0, FRWé_KU_04
+  &DATA     (+-) = 0, FRW√Ñ_KU_04
 
 >>Bezeichnung 6
   &HELPTEXT (+)  = STHLP10, 094, 0
-  &DATA     (+-) = 0, FRWé_BE_05
+  &DATA     (+-) = 0, FRW√Ñ_BE_05
 
 >>Einheit 6
   &HELPTEXT (+)  = STHLP10, 094, 1
-  &DATA     (+-) = 0, FRWé_EH_05
+  &DATA     (+-) = 0, FRW√Ñ_EH_05
   &DEFAULT  (+-) = "3"
   &CHOICE   (+-) = "Einheit",\
                  "0,001","0",  "0,01","1",  "0,1","2",  "1 ","3",\
@@ -134,15 +134,15 @@
 
 >>Kurs 6
   &HELPTEXT (+)  = STHLP10, 094, 2
-  &DATA     (+-) = 0, FRWé_KU_05
+  &DATA     (+-) = 0, FRW√Ñ_KU_05
 
 >>Bezeichnung 7
   &HELPTEXT (+)  = STHLP10, 094, 0
-  &DATA     (+-) = 0, FRWé_BE_06
+  &DATA     (+-) = 0, FRW√Ñ_BE_06
 
 &REM  Einheit 7
 &HELPTEXT (+)  = STHLP10, 094, 1
-  &DATA     (+-) = 0, FRWé_EH_06
+  &DATA     (+-) = 0, FRW√Ñ_EH_06
   &DEFAULT  (+-) = "3"
   &CHOICE   (+-) = "Einheit",\
                  "0,001","0",  "0,01","1",  "0,1","2",  "1 ","3",\
@@ -150,15 +150,15 @@
 
 >>Kurs 7
   &HELPTEXT (+)  = STHLP10, 094, 2
-  &DATA     (+-) = 0, FRWé_KU_06
+  &DATA     (+-) = 0, FRW√Ñ_KU_06
 
 >>Bezeichnung 8
   &HELPTEXT (+)  = STHLP10, 094, 0
-  &DATA     (+-) = 0, FRWé_BE_07
+  &DATA     (+-) = 0, FRW√Ñ_BE_07
 
 >>Einheit 8
   &HELPTEXT (+)  = STHLP10, 094, 1
-  &DATA     (+-) = 0, FRWé_EH_07
+  &DATA     (+-) = 0, FRW√Ñ_EH_07
   &DEFAULT  (+-) = "3"
   &CHOICE   (+-) = "Einheit",\
                  "0,001","0",  "0,01","1",  "0,1","2",  "1 ","3",\
@@ -166,15 +166,15 @@
 
 >>Kurs 8
   &HELPTEXT (+)  = STHLP10, 094, 2
-  &DATA     (+-) = 0, FRWé_KU_07
+  &DATA     (+-) = 0, FRW√Ñ_KU_07
 
 >>Bezeichnung 9
   &HELPTEXT (+)  = STHLP10, 094, 0
-  &DATA     (+-) = 0, FRWé_BE_08
+  &DATA     (+-) = 0, FRW√Ñ_BE_08
 
 >>Einheit 9
   &HELPTEXT (+)  = STHLP10, 094, 1
-  &DATA     (+-) = 0, FRWé_EH_08
+  &DATA     (+-) = 0, FRW√Ñ_EH_08
   &DEFAULT  (+-) = "3"
   &CHOICE   (+-) = "Einheit",\
                  "0,001","0",  "0,01","1",  "0,1","2",  "1 ","3",\
@@ -182,15 +182,15 @@
 
 >>Kurs 9
   &HELPTEXT (+)  = STHLP10, 094, 2
-  &DATA     (+-) = 0, FRWé_KU_08
+  &DATA     (+-) = 0, FRW√Ñ_KU_08
 
 >>Bezeichnung 10
   &HELPTEXT (+)  = STHLP10, 094, 0
-  &DATA     (+-) = 0, FRWé_BE_09
+  &DATA     (+-) = 0, FRW√Ñ_BE_09
 
 >>Einheit 10
   &HELPTEXT (+)  = STHLP10, 094, 1
-  &DATA     (+-) = 0, FRWé_EH_09
+  &DATA     (+-) = 0, FRW√Ñ_EH_09
   &DEFAULT  (+-) = "3"
   &CHOICE   (+-) = "Einheit",\
                  "0,001","0",  "0,01","1",  "0,1","2",  "1 ","3",\
@@ -198,17 +198,17 @@
 
 >>Kurs 10
   &HELPTEXT (+)  = STHLP10, 094, 2
-  &DATA     (+-) = 0, FRWé_KU_09
+  &DATA     (+-) = 0, FRW√Ñ_KU_09
 
 >>Bezeichnung Endmarkierung
-  &DATA_H   (+)  = 0, FRWé_BE_N
+  &DATA_H   (+)  = 0, FRW√Ñ_BE_N
   &DEFAULT  (+-) = "(null)"
 
->>⁄ƒƒƒƒƒƒƒ  1. Zeile: ƒƒƒƒƒƒƒø
->>Wird in Read_Default() benîtigt um den Key 0 zu finden:
+>>‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ  1. Zeile: ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê
+>>Wird in Read_Default() ben√∂tigt um den Key 0 zu finden:
 &REC_KEY    (+)                   >>Mandanten-Nummer
   &DATA_H   (+-) = 0, MAND_01
->>¿ƒƒƒƒƒƒƒ Ende Dummy-Felder! ƒƒƒƒƒƒƒŸ
+>>‚îî‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ Ende Dummy-Felder! ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îò
 
->>                           LandeswÑhrung  :     @@@@  ^^^^^^^ = ``|,|||
+>>                           Landesw√§hrung  :     @@@@  ^^^^^^^ = ``|,|||
 

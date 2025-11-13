@@ -1,7 +1,7 @@
 
 
 
- ˘
+ ¬®
 
    1: @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @
    2: @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @
@@ -10,20 +10,20 @@
 
 
 
- ˘                                                                            ˘
+ ¬®                                                                            ¬®
 
 >>Mask:   FIM4137
 >>Prog.:  FI4100.C
 >>Update: 5.08.91
 
-&TITEL    = "FI  DRUCK Dummy-Maske fÅr FIM4135"
+&TITEL    = "FI  DRUCK Dummy-Maske f√ºr FIM4135"
 &FRAME    = 
 >>SEQUENZ =
 
 >>MASKHELP= XXHLP10, kund-al
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI1310
 &DRU_DATEI  (1)  = MASK, D.FI4137

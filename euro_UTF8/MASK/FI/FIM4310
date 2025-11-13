@@ -6,11 +6,11 @@
 
 
 
-              ù
+              Â¨
                 Verarbeiten Monat: @@@@@@@@@@@@@@@@@@@@@@@@
-                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                 Von Datum: ##.##.##          Bis Datum: ##.##.##
-              ù                                                  ù
+              Â¨                                                  Â¨
 
 ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
 ^ ```````` ``.``.`` ``.``.`` ``.``.`` ^ ^ ^
@@ -21,13 +21,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "FI  WORK Verarbeiten Buchungen"
-&FRAME    = 0, 0, 0, 0, "ÄVerarbeiten Buchungen", 2
+&FRAME    = 0, 0, 0, 0, "â”€Verarbeiten Buchungen", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, buer-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK,   D.FI2100     >>Erfassen Buchungen
 &DRU_DATEI  (1)  = MASK,   D.FI4210     >>Dummy-Datei
@@ -35,7 +35,7 @@
 &WORK_DATEI (3)  = MASK,   D.FI1310     >>Sachkontenstamm
 &WORK_DATEI (4)  = MASK,   D.FI1210     >>Lieferantenkonten
 &WORK_DATEI (5)  = MASK,   D.FI1110     >>Kundenkonten
-&WORK_DATEI (6)  = MASK,   D.FI2100A    >>Tempor„re Erfassungsdatei
+&WORK_DATEI (6)  = MASK,   D.FI2100A    >>TemporÃ¤re Erfassungsdatei
 &PARA_READ  (7)  = MASK,   L.SYP_01     >>Konsten Festkonten, MWST, ...
 &PARA_READ  (8)  =   MASK, D.SYP_50  >>Konsten des aktuellen Jahres
 
@@ -45,9 +45,9 @@
 >>ORK_DATEI (3)  =   MASK, D.FI1310     >>Sachkonten
 >>ORK_DATEI (4)  =   MASK, D.FI1210     >>Lieferantenkonten
 >>ORK_DATEI (5)  =   MASK, D.FI1110     >>Kundenkonten
->>ARA_READ  (6)  =   MASK, L.SYP_01     >>UST - S„tze
+>>ARA_READ  (6)  =   MASK, L.SYP_01     >>UST - SÃ¤tze
 >>ARA_READ  (7)  =   MASK, L.SYP_02     >>Festkonten
->>ORK_DATEI (8)  =   MASK, D.FI2100A    >>Tempor„re Erfassungsdatei
+>>ORK_DATEI (8)  =   MASK, D.FI2100A    >>TemporÃ¤re Erfassungsdatei
 >>ARA_READ  (9)  =   MASK, L.SYPARA     >>Kennzeichen im Mandantenstamm
 
 >>Verarbeiten Monat
@@ -55,7 +55,7 @@
   &DATA     (+-) = 1, _MONAT
 >>&DEFAULT  (+-) = "1"
   &CHOICE   (+-) = "Verarbeiten Monat",\
-                   "J„nner",1,  "Februar",2,  "M„rz",3,  "April",4,\
+                   "JÃ¤nner",1,  "Februar",2,  "MÃ¤rz",3,  "April",4,\
                    "Mai",5,  "Juni",6,  "Juli",7,  "August",8,\
                    "September",9,  "Oktober",A,  "November",B,  "Dezember",C
 
@@ -67,7 +67,7 @@
   &HELPTEXT (+)  = FIHLP10, 431, 2
   &DATA     (+-) = 1, _B_DATUM
 
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 7, SALDO_VOR
   &DATA_H   (+)  = 7, FORDER_IN
   &DATA_H   (+)  = 7, FORDER_AUS
@@ -95,9 +95,9 @@
   &DATA_H   (+)  = 7, ZWISCH_KTO
   &DATA_H   (+)  = 7, KAPIT_KTO
   &DATA_H   (+)  = 7, AN_ERTRAG
->>ÀÄÄÄÄÄÄÄ Ende  Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende  Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REC_KEY    (+)                   >>Satznummer (Match-Code-Suche)
   &DATA_H   (+-) = 0, :SATZ_NR
 
@@ -113,9 +113,9 @@
   &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer
   &DATA_H   (+)  = 1, _COPYRIGHT  >>Nutzungs-Berechtigung
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 >>&REF_KEY  (+)                     >>Mandanten-Nummer (Dummy Feld)
 >>  &DATA_H     (+-) = 6, MAND_01
   &DATA_H     (+)  = 7, UST_1     >>Steuersatz 1
@@ -127,6 +127,6 @@
   &DATA_H     (+)  = 7, UST_7     >>Steuersatz 7
   &DATA_H     (+)  = 7, UST_8     >>Steuersatz 8
   &DATA_H     (+)  = 8, Y_CLOSED
-&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+&REM â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 

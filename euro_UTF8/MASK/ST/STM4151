@@ -4,18 +4,18 @@
 
 
 
-         ù
+         Â¨
            von Artikel-Bez. : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
            bis Artikel-Bez. : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+          â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-           von Lieferant    : ïïïïïïïïïïïïïïïïïïïï     Kopien: ##
-           bis Lieferant    : ïïïïïïïïïïïïïïïïïïïï
+           von Lieferant    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´     Kopien: ##
+           bis Lieferant    : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
 
-          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-           von Lagerort     : ïïïïïï    bis Lagerort     : ïïïïïï
+          â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+           von Lagerort     : Â´Â´Â´Â´Â´Â´    bis Lagerort     : Â´Â´Â´Â´Â´Â´
            von Seite        : ####      bis Seite        : ####
-         ù                                                         ù
+         Â¨                                                         Â¨
 
 ^ ^ 
 ``.``.``  ^ ^ ^ ^ ^ ^ 
@@ -28,13 +28,13 @@
 >>Update: 6.08.91
 
 &TITEL    = "ST  Liste Inventur nach Bezeichnung 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄListe Inventur nach Artikelbezeichnung", 2
+&FRAME    = 0, 0, 0, 0, "â”€Liste Inventur nach Artikelbezeichnung", 2
 >>SEQUENZ =
 
 &MASKHELP = STHLP10, artbez
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1300
 &DRU_DATEI  (1)  = MASK, D.ST4140
@@ -73,11 +73,11 @@
 >>&DATA     (+-) = 1, _B_ARTGR
 >>&DEFAULT  (+-) = "999"
 
->>von Erl”scode
+>>von ErlÃ¶scode
   &HELPTEXT (+)  = STHLP10, 414, 7
   &DATA     (+-) = 1, _V_LAGEROR
 
->>bis Erl”scode
+>>bis ErlÃ¶scode
   &HELPTEXT (+)  = STHLP10, 414, 9
   &DATA     (+-) = 1, _B_LAGEROR
 
@@ -91,8 +91,8 @@
   &DATA     (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REC_KEY    (+)                   >>Artikel-Nummer
 &REC_MATCH  (+-) = "Artikel-Bezeichnung", 0, MATCH_CODE
 &ADD_MATCH  (+-) = "Artikel-Nummer", 0, ARTNR
@@ -101,7 +101,7 @@
 &REC_KEY    (+)                   >>Artikel-Bezeichnung
   &DATA_H   (+-) = 0, MATCH_CODE
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -110,7 +110,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
  
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>&REF_KEY    (+)
 >>  &DATA_H   (+-) = 2, MAND_01     >>Mandanten-Nummer
   &DATA_H   (+)  = 2, UST_1       >>Steuersatz 1 - 8
@@ -123,7 +123,7 @@
   &DATA_H   (+)  = 2, UST_7
   &DATA_H   (+)  = 2, UST_8
 
->>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  4. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>&REF_KEY    (+)                   >>Mandanten-Nummer
 >>  &DATA_H   (+-) = 2, MAND_01
   &DATA_H   (+)  = 2, TXT_VKP_01  >>Artikel-Preis-Text 1
@@ -143,7 +143,7 @@
   &DATA_H   (+)  = 0, MWST        >>Mehrwertsteuer
   &DATA_H   (+)  = 1, _MWST       >>Mehrwertsteuer
 
->>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  5. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 0, SOLL_BEST   >>Bestand aktuell
   &DATA_H   (+)  = 0, INVEN_AKT   >>Inventur aktuell
   &DATA_H   (+)  = 0, EKPR1       >>Einkaufspreis
@@ -152,5 +152,5 @@
   &DATA_H   (+)  = 1, _IN_BETRAG  >>Inventur-Betrag
 
   &DATA_H   (+)  = 1, _IN_SUMME   >>Inventur-Summe
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

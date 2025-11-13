@@ -7,29 +7,29 @@
 
 
 
-    ˘
+    ¬®
 
-      USt-VA-Kennzeichen : õõõ
-      ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+      USt-VA-Kennzeichen : √∏√∏√∏
+      ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
 
       Zeilen-Art         : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
       Zeilen-Text        : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-    ˘                                                                    ˘
+    ¬®                                                                    ¬®
 
 >>Mask:   FIM015
 >>Prog.:  FI1100.C
 >>Update: 25.07.91
 
 &TITEL    = "FI  BASIS Anlegen USt-VA-Kennzeichen 1/1"
-&FRAME    = 0, 0, 0, 0, "ƒAnlegen USt-VA-Kennzeichen", 2
+&FRAME    = 0, 0, 0, 0, "‚îÄAnlegen USt-VA-Kennzeichen", 2
 &SEQUENZ  = 00,01,02
 
 &MASKHELP = FIHLP10, uva-an
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.FI0150
 
@@ -46,7 +46,7 @@
   &DATA     (+-) = 0, ZEIL_ART
   &DEFAULT  (+-) = "k"
   &CHOICE   (+-) = "USt-VA-Art",\
-                   "keine Bedeutung fÅr USt-VA",k,   "MwSt-pflichtig",e, \
+                   "keine Bedeutung f√ºr USt-VA",k,   "MwSt-pflichtig",e, \
                    "Kunden-Skonto",s,   "Vorsteuer-Konto",v, \
                    "Einfuhrumsatzsteuer-Konto",f,   "MwSt-Konto",m
 

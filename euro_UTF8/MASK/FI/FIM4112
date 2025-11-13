@@ -4,18 +4,18 @@
 
 
 
-    ˘
+    ¬®
       von Kunden-Bezeichnung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
       bis Kunden-Bezeichnung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    Kopien: ##
-      ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+      ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
       von Plz/Ort            : @@@@@@@@@@@@@@@@@@@@@@@@@
       bis Plz/Ort            : @@@@@@@@@@@@@@@@@@@@@@@@@
-      ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
-      von Kundengruppe       : ÔÔÔÔÔÔÔÔÔÔ  bis Kundengruppe    : ÔÔÔÔÔÔÔÔÔÔ
-      von Auswertungs-KZ.    : ÔÔÔÔÔÔÔÔÔÔ  bis Auswertungs-KZ. : ÔÔÔÔÔÔÔÔÔÔ
+      ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+      von Kundengruppe       : ¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥  bis Kundengruppe    : ¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥
+      von Auswertungs-KZ.    : ¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥  bis Auswertungs-KZ. : ¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥¬¥
 
       von Seite              : ####        bis Seite           : ####
-    ˘                                                                       ˘
+    ¬®                                                                       ¬®
 
 ^ ^ 
 ``.``.``  ^ ^ ^ ^ ^ ^
@@ -26,13 +26,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "FI  DRUCK Adressen der Kundenkonten"
-&FRAME    = 0, 0, 0, 0, "ƒAdressenliste fÅr Kundenkonten", 2
+&FRAME    = 0, 0, 0, 0, "‚îÄAdressenliste f√ºr Kundenkonten", 2
 >>SEQUENZ =
 
 &MASKHELP = FIHLP10, kund-dr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurÅck zur Eingabe"
+            "zur√ºck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1100
 &DRU_DATEI  (1)  = MASK, D.FI4110

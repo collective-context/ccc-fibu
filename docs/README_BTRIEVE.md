@@ -93,6 +93,37 @@ if (wStatus == 0) {
 
 ---
 
+### 3. [BTRIEVE_FILE_HIERARCHY.md](BTRIEVE_FILE_HIERARCHY.md)
+
+**Zweck:** Dokumentation der **hierarchischen Datei-Organisation** und Multi-Tenancy
+
+**Inhalt:**
+- Hierarchie-Stufen (Jahr / Mandant / Global)
+- Lookup-Algorithmus (DAT/D01/2024 → DAT/D01 → DAT)
+- Mandanten-Struktur (Multi-Tenancy)
+- Jahresabgrenzung (Geschäftsjahre)
+- Datei-Kategorien (FI*, ST*, SY*)
+- Alle 64 Btrieve-Dateien kategorisiert
+- Migration-Strategien für hierarchische Daten
+- Best Practices für SQL-Export
+
+**Zielgruppe:**
+- Entwickler, die die **System-Architektur** verstehen wollen
+- Export-Tool-Entwicklung (Multi-Jahr, Multi-Mandant)
+- Daten-Migration mit Hierarchie-Support
+- SQL-Schema-Design für konsolidierte Daten
+
+**Beispiel aus dieser Doku:**
+```
+Lookup-Reihenfolge für FI3100.btr:
+1. DAT/D01/2024/FI3100.btr  ← Höchste Priorität (Jahr-spezifisch)
+2. DAT/D01/FI3100.btr       ← Mandanten-spezifisch
+3. DAT/FI3100.btr           ← Global (alle Mandanten)
+4. Nicht gefunden → Erstelle in DAT/D01/2024/
+```
+
+---
+
 ## 🔗 Zusammenhang der Dokumente
 
 ```
@@ -104,9 +135,25 @@ if (wStatus == 0) {
 │       ├─► Verwendet: BTRIEVE_ISAM_INTERFACE.md              │
 │       │   (Db_Open, Db_Insert, Db_GetEq, etc.)              │
 │       │                                                      │
-│       └─► Greift auf: BTRIEVE_RECORD_STRUCTURES.md          │
-│           (FI2100_RECORD, FI1310_RECORD, pt(), ptD())        │
+│       ├─► Greift auf: BTRIEVE_RECORD_STRUCTURES.md          │
+│       │   (FI2100_RECORD, FI1310_RECORD, pt(), ptD())        │
+│       │                                                      │
+│       └─► Nutzt: BTRIEVE_FILE_HIERARCHY.md                  │
+│           (Datei-Lookup: Jahr → Mandant → Global)           │
 └─────────────────────────────────────────────────────────────┘
+</thinking>
+
+<old_text line=125>
+┌─────────────────────────────────────────────────────────────┐
+│  .BTR DATEIEN                                               │
+│  ─────────────────────────────────────────────────────────  │
+│  - FI2100.btr (Erfassung)                                   │
+│  - FI1310.btr (Sachkonten)                                  │
+│  - FI1110.btr (Kunden)                                      │
+│  - FI3100.btr (Journal)                                     │
+│  - ...                                                      │
+└─────────────────────────────────────────────────────────────┘
+```
          │                                │
          ▼                                ▼
 ┌──────────────────────┐      ┌──────────────────────────────┐
@@ -148,19 +195,24 @@ if (wStatus == 0) {
 
 ### Für **Daten-Migration** (Btrieve → SQLite):
 
-1. ✅ **Zuerst:** [BTRIEVE_RECORD_STRUCTURES.md](BTRIEVE_RECORD_STRUCTURES.md)
+1. ✅ **Zuerst:** [BTRIEVE_FILE_HIERARCHY.md](BTRIEVE_FILE_HIERARCHY.md)
+   - Verstehe Hierarchie (Jahr/Mandant/Global)
+   - Identifiziere alle relevanten Dateien
+   - Verstehe Multi-Tenancy-Architektur
+
+2. ✅ **Dann:** [BTRIEVE_RECORD_STRUCTURES.md](BTRIEVE_RECORD_STRUCTURES.md)
    - Verstehe die Record-Strukturen
    - Identifiziere Primär- und Sekundärschlüssel
    - Mappe Datentypen (CHAR, SWORD, DOUBLE)
 
-2. ✅ **Dann:** [BTRIEVE_ISAM_INTERFACE.md](BTRIEVE_ISAM_INTERFACE.md)
+3. ✅ **Dann:** [BTRIEVE_ISAM_INTERFACE.md](BTRIEVE_ISAM_INTERFACE.md)
    - Verstehe Dateiformat (.BTR Header)
    - Lerne Encoding (CP850)
    - Verstehe Key-Definitionen
 
-3. ✅ **Entwickle:** Python Btrieve-Parser
-   - Basierend auf beiden Dokumenten
-   - Export nach SQLite/PostgreSQL
+4. ✅ **Entwickle:** Python Btrieve-Parser
+   - Basierend auf allen drei Dokumenten
+   - Export nach SQLite/PostgreSQL mit Hierarchie-Support
 
 ---
 
@@ -183,17 +235,23 @@ if (wStatus == 0) {
 
 ### Für **Neue Implementierung** (Modern Stack):
 
-1. ✅ **Zuerst:** [BTRIEVE_RECORD_STRUCTURES.md](BTRIEVE_RECORD_STRUCTURES.md)
+1. ✅ **Zuerst:** [BTRIEVE_FILE_HIERARCHY.md](BTRIEVE_FILE_HIERARCHY.md)
+   - Verstehe Multi-Tenancy und Jahresabgrenzung
+   - Design SQL-Schema für hierarchische Daten
+   - Plane Konsolidierungs-Strategie
+
+2. ✅ **Dann:** [BTRIEVE_RECORD_STRUCTURES.md](BTRIEVE_RECORD_STRUCTURES.md)
    - Design SQLite/PostgreSQL Schema
    - Definiere Datenmodell
 
-2. ✅ **Dann:** [BTRIEVE_ISAM_INTERFACE.md](BTRIEVE_ISAM_INTERFACE.md)
+3. ✅ **Dann:** [BTRIEVE_ISAM_INTERFACE.md](BTRIEVE_ISAM_INTERFACE.md)
    - Verstehe Business-Rules (Locking, Transaktionen)
    - Implementiere äquivalente Logik in modernem Stack
    - REST API / GraphQL Design
 
-3. ✅ **Migriere:** Daten von .BTR → SQL
-   - Python-Parser aus beiden Dokumenten entwickeln
+4. ✅ **Migriere:** Daten von .BTR → SQL
+   - Python-Parser aus allen drei Dokumenten entwickeln
+   - Multi-Jahr-Export implementieren
 
 ---
 
@@ -336,6 +394,9 @@ euro_UTF8/INCLUDE/
 
 | Wenn du wissen willst... | Lies... |
 |--------------------------|---------|
+| Wo das System nach Dateien sucht | [BTRIEVE_FILE_HIERARCHY.md](BTRIEVE_FILE_HIERARCHY.md) § 2 |
+| Wie Multi-Tenancy funktioniert | [BTRIEVE_FILE_HIERARCHY.md](BTRIEVE_FILE_HIERARCHY.md) § 3 |
+| Alle verfügbaren .BTR-Dateien | [BTRIEVE_FILE_HIERARCHY.md](BTRIEVE_FILE_HIERARCHY.md) § 5 |
 | Wie man eine Datei öffnet | [BTRIEVE_ISAM_INTERFACE.md](BTRIEVE_ISAM_INTERFACE.md) § 3.1 |
 | Welche Felder in FI2100.BTR sind | [BTRIEVE_RECORD_STRUCTURES.md](BTRIEVE_RECORD_STRUCTURES.md) § 1 |
 | Wie Locking funktioniert | [BTRIEVE_ISAM_INTERFACE.md](BTRIEVE_ISAM_INTERFACE.md) § 6 |
@@ -344,6 +405,7 @@ euro_UTF8/INCLUDE/
 | Offset von BETRAG_BR in FI2100 | [BTRIEVE_RECORD_STRUCTURES.md](BTRIEVE_RECORD_STRUCTURES.md) § 1 |
 | Status-Codes Bedeutung | [BTRIEVE_ISAM_INTERFACE.md](BTRIEVE_ISAM_INTERFACE.md) § 8 |
 | Sachkonten-Struktur | [BTRIEVE_RECORD_STRUCTURES.md](BTRIEVE_RECORD_STRUCTURES.md) § 3 |
+| Jahresabgrenzung verstehen | [BTRIEVE_FILE_HIERARCHY.md](BTRIEVE_FILE_HIERARCHY.md) § 4 |
 
 ---
 
@@ -353,12 +415,16 @@ Diese Dokumentation ist das Ergebnis der **vollständigen Analyse** des Btrieve-
 
 - ✅ **245 C-Dateien** analysiert
 - ✅ **28 .ORG Textdateien** von CP850 → UTF-8 konvertiert
+- ✅ **440 MASK/FORM-Dateien** konvertiert
+- ✅ **64 Btrieve-Dateien** in Hierarchie kategorisiert
 - ✅ **Low-Level Interrupts** dokumentiert
 - ✅ **High-Level API** dokumentiert
 - ✅ **Alle Record-Strukturen** extrahiert
+- ✅ **Hierarchische Datei-Organisation** dokumentiert
+- ✅ **Multi-Tenancy-Architektur** verstanden
 - ✅ **Best Practices** für Migration identifiziert
 
-**Nächster Schritt:** Python Btrieve-Parser für Export nach SQLite/PostgreSQL
+**Nächster Schritt:** Python Btrieve-Parser für Export nach SQLite/PostgreSQL mit Multi-Jahr/Multi-Mandant-Support
 
 ---
 

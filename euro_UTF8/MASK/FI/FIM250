@@ -1,14 +1,14 @@
 
 
 
- ù
+ Â¨
   Beleg-Nr : @@@@@@@@@@  ^        Belegdatum: ##.##.##           Ein/Aus : @@@
-  Geldkonto: S@@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^ Zahlungsbetrag:###.###.##›,››
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  Firma: @@@@ ­@@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^            ^ ^
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  Art Nummer    Buchungstext                Konto    MWSt %%     Betrag ™S E/A
-  @@@ ïïïïïïïïï @@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@ @@@@ @@ ##.###.##›,›› @@@
+  Geldkonto: S@@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^ Zahlungsbetrag:###.###.##Ã¸,Ã¸Ã¸
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  Firma: @@@@ Â¡@@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^            ^ ^
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  Art Nummer    Buchungstext                Konto    MWSt %%     Betrag Ã–S E/A
+  @@@ Â´Â´Â´Â´Â´Â´Â´Â´Â´ @@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@ @@@@ @@ ##.###.##Ã¸,Ã¸Ã¸ @@@
 
 
 
@@ -19,29 +19,29 @@
 
 
 
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
- ùincl. MWSt / Summe Konten: ```.```.``|,|| - Zahlung = Skonto: ```.```.``|,||ù
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+ Â¨incl. MWSt / Summe Konten: ```.```.``|,|| - Zahlung = Skonto: ```.```.``|,||Â¨
 
-­­­­­  ­­
-­­­­­  ­­­
-­­­­­  ­
+Â¡Â¡Â¡Â¡Â¡  Â¡Â¡
+Â¡Â¡Â¡Â¡Â¡  Â¡Â¡Â¡
+Â¡Â¡Â¡Â¡Â¡  Â¡
 ^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
 ``.``.`` `|,|| ^ `|,||
-­­­­­  ­­
-­­­­­  ­­­­­­­
+Â¡Â¡Â¡Â¡Â¡  Â¡Â¡
+Â¡Â¡Â¡Â¡Â¡  Â¡Â¡Â¡Â¡Â¡Â¡Â¡
 
 >>Mask:   UABM250
 >>Prog.:  UAB4100.C
 >>Update: 10.06.91
 
 &TITEL    = "FI  WORK Erfassen Rechnungs-Buchungen"
-&FRAME    = 0, 0, 0, 0, "ÄErfassen Rechnungs-Buchungen", 2
+&FRAME    = 0, 0, 0, 0, "â”€Erfassen Rechnungs-Buchungen", 2
 >>&SEQUENZ  = 01,02,03,04,06,07,13,14,51,52,53,54,55,56,57,58,59
 
 &MASKHELP = FIHLP10, gebu-er
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &BLOCK  = 13,20
 &SCROLL =  9,0,19,79
@@ -68,10 +68,10 @@
   &DATA     (+-) = 0, BELEG_NR
   &MODUS    (+-) = PREPARE
 
->>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  Dummy Felder: â”€â”€â”€â”€â”€â”€â”€â”
 &REC_KEY    (+)                   >>Erfassungsnummer
   &DATA_H   (+-) = 0, SATZ_NR
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 >>Beleg-Datum
 &REC_KEY    (+)
@@ -103,14 +103,14 @@
   &DATA     (+-) = 0, FIRMA
   &DEFAULT  (+-) = "n"
   &MODUS    (+-) = PREPARE
-  &CHOICE   (+-) = "ÄBuchung mit Personenkonto", "ja",j, "nein",n
+  &CHOICE   (+-) = "â”€Buchung mit Personenkonto", "ja",j, "nein",n
 
 >>Kunde/Lieferant Art
   &HELPTEXT (+)  = FIHLP10, 250, 2
   &DATA     (+-) = 0, KULI_ART
   &DEFAULT  (+-) = "b"
   &MODUS    (+-) = PREPARE
-  &CHOICE   (+-) = "ÄArt des Personenkontos", "Kundenkonto",k,\
+  &CHOICE   (+-) = "â”€Art des Personenkontos", "Kundenkonto",k,\
                    "Lieferantenkonto",l,  " kein Personenkonto",b
 
 >>Kunde/Lieferant
@@ -142,7 +142,7 @@
 >>Positionsart: Artikel, Investition, Sachkonto
   &HELPTEXT  (+)  = AUHLP10, 250, 17
   &DATA      (+-) = 0, PO_ART
-  &CHOICE    (+-) = "ÄBuchungsart",\
+  &CHOICE    (+-) = "â”€Buchungsart",\
                     "Artikel",a, "Investition",i, "Konto",s
 
 >>Artikel-Nummer
@@ -160,14 +160,14 @@
 >>Netto/Brutto
   &HELPTEXT  (+)  = AUHLP10, 250, 14
   &DATA      (+-) = 0, NETTO_BRUT
-  &CHOICE    (+-) = "ÄMehrwertsteuer",\
+  &CHOICE    (+-) = "â”€Mehrwertsteuer",\
                     "excl. MWSt",n,  "incl. MWSt",b
 
->>Umsatzsteuer-Schlssel (0/1-8)
+>>Umsatzsteuer-SchlÃ¼ssel (0/1-8)
   &HELPTEXT  (+)  = AUHLP10, 250, 15
   &DATA      (+-) = 0, UST_SATZ
 
->>Betrag in ™S
+>>Betrag in Ã–S
   &HELPTEXT  (+)  = AUHLP10, 250, 16
   &DATA      (+-) = 0, BETRAG
 
@@ -179,8 +179,8 @@
   &DATA     (+)  = 0, S_KON_INCL
   &DATA     (+)  = 0, SKONTO
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 &REF_KEY    (+)                   >>Geld-Konto
 &REF_MATCH  (+-) = "Konto-Nummer", 2, KONTONR
 &ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 2, KONTO_BEZ
@@ -198,10 +198,10 @@
 &REF_KEY    (+)                   >>Bezeichnung (Dummy - Feld)
   &DATA_H   (+-) = 1, MATCH_CODE
 
-  &DATA_H   (+)  = 1, ERLOES_KT   >>Erl”skonto
+  &DATA_H   (+)  = 1, ERLOES_KT   >>ErlÃ¶skonto
   &DATA_H   (+)  = 1, LAGERKZ     >>Lagerkennzeichen
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, MEHR_MI_KT  >>Aufwandskonto
   &DATA_H   (+)  = 1, AUFWAND_KT  >>Aufwandskonto
   &DATA_H   (+)  = 1, BESTAND_KT  >>Bestandskonto
@@ -212,7 +212,7 @@
   &DATA_H   (+)  = 0, ART_BUCH    >>Art - Buchungen (Buchungsart im Kopf)
   &DATA_H   (+)  = 0, UST_BETRAG  >>Umsatzsteuerbetrag
 
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 &REF_KEY    (+)                   >>Kunden Konto (Dummy-Feld)
 &REF_MATCH  (+-) = "Bezeichnung                   ", 3, KURZ_BEZ
 &ADD_MATCH  (+-) = "Kunden-Nummer      ", 3, FI_KUNDE
@@ -233,9 +233,9 @@
   &DATA_H   (+-) = 4, KURZ_BEZ
   &DATA_H   (+)  = 4, LI_KONTO    >>Lieferanten Nummer (Dummy-Feld)
 
->>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  4. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 7, SALDO_VOR
-  &DATA_H   (+)  = 7, UST_1       >>Steuers„tze
+  &DATA_H   (+)  = 7, UST_1       >>SteuersÃ¤tze
   &DATA_H   (+)  = 7, UST_2
   &DATA_H   (+)  = 7, UST_3
   &DATA_H   (+)  = 7, UST_4
@@ -243,15 +243,15 @@
   &DATA_H   (+)  = 7, UST_6
   &DATA_H   (+)  = 7, UST_7
   &DATA_H   (+)  = 7, UST_8
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
->>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  5. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 0, BUCH_DATUM  >>Buchungsdatum
   &DATA_H   (+)  = 0, AR_MENGE    >>Menge
   &DATA_H   (+)  = 0, AR_EINHEIT  >>Mengen-Einheit
   &DATA_H   (+)  = 0, PREIS_EINH  >>Preis/Einheit
 
->>ÚÄÄÄÄÄÄÄ  6. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  6. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, MENGENBAS   >>Mengeneiheit (Dummy - Feld)
   &DATA_H   (+)  = 1, VKPR1       >>Preis/Einheit (Dummy - Feld)
   &DATA_H   (+)  = 1, EKPR1       >>Einkaufspreis (Dummy-Feld)
@@ -261,8 +261,8 @@
   &DATA_H   (+)  = 0, AR_KENNZ    >>Artikelkennzeichen (Gruppe) (Dummy - Feld)
   &DATA_H   (+)  = 2, K_BUCH_ART
 
->>ÚÄÄÄÄÄÄÄ  7. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  7. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 >>Inventar/Projekt NR
 &REF_KEY    (+)
 &REF_MATCH  (+-) = "Projekt-Nr", 6, INVENT_NR
@@ -304,11 +304,11 @@
   &DEFAULT   (+-) = "n"
   &CHOICE    (+-) = "Anlage aktiviert?",   "ja",j,   "nein",n
 
->>Zug„nge
+>>ZugÃ¤nge
   &HELPTEXT (+)  = FIHLP10, 160, 17
   &DATA_H   (+-) = 6, ZUGANG
   
->>Ausserordentliche Abg„nge
+>>Ausserordentliche AbgÃ¤nge
   &HELPTEXT (+)  = FIHLP10, 160, 19
   &DATA_H   (+-) = 6, ABGANG
 
@@ -319,14 +319,14 @@
   &DATA_H   (+-) = 0, PREPARE
 
   &DATA_H   (+)  = 8, Y_CLOSED
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 &BLOCK  = 55,61
 
-  Nummer  Buchungstext  ^ Konto^ ^ ^Menge EH^ ^ ^ ^ Preis/EH N U%^ ^ Betrag^™S
-  Ÿïïïïïï @@@@@@@@@@@@@@@ @@@@ ###.##›,›› @@@@@ #.###.##›,›› @ @@ #.###.##›,››
+  Nummer  Buchungstext  ^ Konto^ ^ ^Menge EH^ ^ ^ ^ Preis/EH N U%^ ^ Betrag^Ã–S
+  Æ’Â´Â´Â´Â´Â´Â´ @@@@@@@@@@@@@@@ @@@@ ###.##Ã¸,Ã¸Ã¸ @@@@@ #.###.##Ã¸,Ã¸Ã¸ @ @@ #.###.##Ã¸,Ã¸Ã¸
 
-  Art/Nummer  Buchungstext  ^   ^ ^ ^        Konto^ ^ ^ ^   N U% ^ ^ Betrag^™S
-  ïïïïïïïïïï @@@@@@ @@@@@@@@ ###.##›,›› @@@@@ #.###.##›,›› @ @@ ##.###.##›,››
+  Art/Nummer  Buchungstext  ^   ^ ^ ^        Konto^ ^ ^ ^   N U% ^ ^ Betrag^Ã–S
+  Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´ @@@@@@ @@@@@@@@ ###.##Ã¸,Ã¸Ã¸ @@@@@ #.###.##Ã¸,Ã¸Ã¸ @ @@ ##.###.##Ã¸,Ã¸Ã¸
 

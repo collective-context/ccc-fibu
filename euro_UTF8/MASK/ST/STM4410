@@ -9,13 +9,13 @@
 
 
 
-              ù
-                von Kunden-Nummer   : ïïïïïïïïïïïïïïïïïïïï
-                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-                bis Kunden-Nummer   : ïïïïïïïïïïïïïïïïïïïï
+              Â¨
+                von Kunden-Nummer   : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
+                â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+                bis Kunden-Nummer   : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´
 
                 Kopien              : ##
-              ù                                            ù
+              Â¨                                            Â¨
 
 ^ ^ 
 ``.``.`` ^ ^ ^ ^ ^ ^ 
@@ -26,13 +26,13 @@
 >>Update: 4.08.91
 
 &TITEL    = "ST  DRUCK Mahnungen 1/1"
-&FRAME    = 0, 0, 0, 0, "ÄDrucken Mahnungen", 2
+&FRAME    = 0, 0, 0, 0, "â”€Drucken Mahnungen", 2
 >>SEQUENZ =
 
 >>MASKHELP= STHLP10, artnr
 &INDEX    = BASIS
 &OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
-            "zurck zur Eingabe"
+            "zurÃ¼ck zur Eingabe"
 
 &DATEI      (0)  = MASK, D.ST1100
 &DRU_DATEI  (1)  = MASK, D.ST4110
@@ -52,8 +52,8 @@
   &DATA     (+-) = 1, _KOPIEN
   &DEFAULT  (+-) = "1"
 
->>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
->>Dummy Felder fr Match-Code-Suche
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  1. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
+>>Dummy Felder fÃ¼r Match-Code-Suche
 
 >>Kunden-Nummer (Dummy-Feld fuer Kundennummer)
 &REC_KEY    (+)                   >>von Kunden-Nummer
@@ -65,7 +65,7 @@
   &DATA_H   (+-) = 0, MATCH_CODE
 
 
->>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  2. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
   &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
   &DATA_H   (+)  = 1, _SEITE      >>Seite 
   &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
@@ -74,7 +74,7 @@
   &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
   &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
 
->>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>â”Œâ”€â”€â”€â”€â”€â”€â”€  3. Zeile: â”€â”€â”€â”€â”€â”€â”€â”
 >>von Seite
   &HELPTEXT (+)  = STHLP10, 413, 9
   &DATA_H   (+-) = 1, _VON_SEITE
@@ -84,5 +84,5 @@
   &HELPTEXT (+)  = STHLP10, 413, 10
   &DATA_H   (+-) = 1, _BIS_SEITE
   &DEFAULT  (+-) = "9999"
->>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+>>â””â”€â”€â”€â”€â”€â”€â”€ Ende Dummy-Felder! â”€â”€â”€â”€â”€â”€â”€â”˜
 

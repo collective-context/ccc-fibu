@@ -122,7 +122,10 @@ Header-Datei nur einmal eingebunden wird.
 Bei der Namensvergabe der Funktionen haben wir uns die Fähigkeit des
 Microsoft-C Compilers und des Linkers zunutze gemacht, 31 siginifikante
 Stellen zu unterscheiden. Die Funktionsnamen wurden dadurch zwar länger,
-verdeutlichen jedoch gleichzeitig besser den Verwendungszweck der Funktion.
+verdeutlichen jedoch gleichze
+
+
+itig besser den Verwendungszweck der Funktion.
 (Beispiel: Ms_CursorOff(): schaltet den Maus-Cursor aus).
 Die Funktionsnamen verwenden eine Mischung aus Klein- und Großschreibung,
 wobei diese Notation die Funktionsnamen in einzelne Worte teilt.
@@ -292,4 +295,3 @@ program interface) für den Presentation Manager des Betriebssystems OS/2.
 Anwendungen, die mit diesem Werkzeug erstellt werden, sollen in Zukunft
 ohne große Schwirigkeiten auf alle IBM Hardware-Architekturen portierbar
 sein.
-

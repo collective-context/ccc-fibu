@@ -1,4 +1,4 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 19:13:27 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 19:13:27 - Tue
 
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║  Dateiname:        E_GLOBAL.C                     Datum: 07.01.89      ║

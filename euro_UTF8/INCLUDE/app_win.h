@@ -1,18 +1,18 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:27:37 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:27:37 - Tue
 
 /*.ta app_win.h
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  app_win.h    ... Headerdatei für euroSOFT-TOOLbox Window-Funktionen.        ║
+║  app_win.h    ... Headerdatei für FiCore-TOOLbox Window-Funktionen.        ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Beschreibung:
 ────────────────────────────────────────────────────────────────────────────────
 Die Datei enthält die symbolischen Konstanten, Makros und Funktionsprototypen
-für die Window-Funktion der euroSOFT-TOOLbox.
+für die Window-Funktion der FiCore-TOOLbox.
 
 Copyright (c) 1989 appoSOFT
 ────────────────────────────────────────────────────────────────────────────────
-euroSOFT-WAREvertrieb, Peter Mayer, A-8020 Graz
+FiCore-WAREvertrieb, Peter Mayer, A-8020 Graz
 
 .te*/
 #ifndef APP_WIN_HEADER                 /* wiederholtes Einlesen vermeiden */

@@ -1,7 +1,7 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔════════════════════════════════════════════════════════════════════════╗
-  ║  Funktionsname:    euroSOFT Masken-Compiler       Datum: 01.05.89      ║
+  ║  Funktionsname:    FiCore Masken-Compiler       Datum: 01.05.89      ║
   ║────────────────────────────────────────────────────────────────────────║
   ║                                                                        ║
   ║                                                                        ║
@@ -193,7 +193,7 @@ pstrMan_m=getenv("MAN");
 if (argc < 4)
     {Ut_Beep();
     printf("\n!!! Fehler:"
-	   "\neuroSOFT Masken-Compiler Rel. 1.00"
+	   "\nFiCore Masken-Compiler Rel. 1.00"
 	   "\nSyntax: MC <[-]eingabedatei> <ausgabedatei> <maskennummer> [<protokolldatei>]\n");
     exit (-1);
     }

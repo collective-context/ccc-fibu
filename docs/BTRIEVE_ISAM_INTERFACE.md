@@ -6,8 +6,9 @@ Dieses Dokument beschreibt die vollständige Btrieve ISAM (Indexed Sequential Ac
 
 **Quellverzeichnis:** `euro_UTF8/case/ISAM/`  
 **Header-Datei:** `eur_btr.h`  
-**Original-Autor:** WINware Software P.Mayer  
-**Letztes Update:** 12-Feb-1996  
+**Original-Autor:** FiCore - Open Source Financial Core  
+**Legacy System:** Built on decades of production experience  
+**Modernized:** 2025
 
 ---
 

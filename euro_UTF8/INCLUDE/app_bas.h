@@ -1,4 +1,4 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:25 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:25 - Tue
 
 #ifndef APP_BASIS_HEADER
    #include <stdio.h>

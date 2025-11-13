@@ -1,8 +1,8 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:28:40 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:28:40 - Tue
 
 /*.ta eur_utl.h
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  eur_utl.h    ... Headerdatei für euroSOFT-TOOLbox Utility-Funktionen.       ║
+║  eur_utl.h    ... Headerdatei für FiCore-TOOLbox Utility-Funktionen.       ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Beschreibung:
@@ -10,9 +10,9 @@ Beschreibung:
 Die Datei enthält die symbolischen Konstanten, Makros und Funktionsprototypen
 für die Utilities der Toolbox.
 
-Copyright (c) 1989 euroSOFT
+Copyright (c) 1989 FiCore
 ────────────────────────────────────────────────────────────────────────────────
-euroSOFT-WAREvertrieb, Peter Mayer, A-8020 Graz
+FiCore-WAREvertrieb, Peter Mayer, A-8020 Graz
 
 .te*/
 

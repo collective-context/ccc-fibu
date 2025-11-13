@@ -1,10 +1,10 @@
 
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:26:03 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:26:03 - Tue
 
 /*------------------------------------------------------------------------------*/
 /* Datei-Name   : <app_tool.h>                                                  */
 /* Funktion     : Mit dieser Datei können Sie mit einer Anweisung alle Header-  */
-/*                Dateien der euroSOFT-CASEbox in Ihren Applikatuions-Source    */
+/*                Dateien der FiCore-CASEbox in Ihren Applikatuions-Source    */
 /*                einbinden. Die Reihenfolge darf nicht verändert werden.       */
 /*                                                                              */
 /* Datum        : 21.04.1991, Graz                                              */

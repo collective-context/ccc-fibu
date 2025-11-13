@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*.ta Dl_Hilfe()
 ╔══════════════════════════════════════════════════════════════════════════════╗
@@ -446,10 +446,10 @@ Diese Funktion verwendet keine globalen Variablen.
 STATIC VOID PresentText(VOID)
 {
 PSSTR apstrPresentText[100];
-PSSTR pstrPresentTitel=strdup("Hilfe für die WINware Präsentation.");
+PSSTR pstrPresentTitel=strdup("Hilfe für die FiCore Präsentation.");
 
 Ut_SchreibArray(apstrPresentText,
-  "Die WINware Präsentation ist aufgebaut wie eine Dia-Show.",
+  "Die FiCore Präsentation ist aufgebaut wie eine Dia-Show.",
   " ",
   "Nach dem Start der Präsentation wird Ihnen das nächste Bild durch",
   "Drücken einer beliebigen Taste angezeigt.",

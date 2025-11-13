@@ -1,12 +1,12 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programme-Name: BA_PRN1.C       Revision: 1.3         (C) 1989/1991    ║
-  ║  Function      : euroSOFT Print ...                                     ║
+  ║  Function      : FiCore Print ...                                     ║
   ║                                                                         ║
   ║  Rev.-Date     : 01.05.1991, Graz           Update: 16.07.1991, Graz    ║
   ║  Author        : Peter Mayer                Author: Peter Mayer         ║
-  ║  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    ║
+  ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz    ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

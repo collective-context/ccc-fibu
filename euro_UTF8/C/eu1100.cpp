@@ -1,14 +1,14 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:18:27 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:18:27 - Wed
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║  Programme-Name: EU1100.C	      Revision: 1.3	    (C) 1989/1991     ║
-// ║  Function	    : euroSOFT Stammdaten für:				      ║
+// ║  Function	    : FiCore Stammdaten für:				      ║
 // ║		      Anlegen, Ändern Kunden, Lieferanten, Artikel,	      ║
 // ║			Mitarbeiter, ...				      ║
 // ║									      ║
 // ║  Rev.-Date     : 01.05.1991, Graz		 Update: 06.08.1991, Graz     ║
 // ║  Author	    : Peter Mayer		 Author: Peter Mayer	      ║
-// ║  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz     ║
+// ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz     ║
 // ╚══════════════════════════════════════════════════════════════════════════╝
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║			     Deklarations-Dateien			      ║

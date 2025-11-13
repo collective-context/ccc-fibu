@@ -1,4 +1,4 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:51:41 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:51:41 - Tue
 
 //======================================================================
 // Definitionen fuer Novell Btrieve-Tool: Dateimanagement

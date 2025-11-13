@@ -1,4 +1,4 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:20:58 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:20:58 - Wed
 
 #include <stdlib.h>
 #include <stdio.h>

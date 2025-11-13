@@ -1,8 +1,8 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:21:28 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:21:28 - Wed
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programm-Name: AU1100	    Rel.: 1.2				    ║
-  ║  Funktion     : euroSOFT Stammdaten für Auftragsbearbeitung             ║
+  ║  Funktion     : FiCore Stammdaten für Auftragsbearbeitung             ║
   ║                 Anlegen, Ändern Kunden                                  ║
   ║                                 Lieferanten                             ║
   ║                                 Aritkel                                 ║
@@ -10,7 +10,7 @@
   ║                                                                         ║
   ║  Datum	  : 04.01.1989, Graz	       Update: 28.09.1990, Graz     ║
   ║  Author	  : Peter Mayer 	       Author: Peter Mayer	    ║
-  ║  Copyright(C) : euroSOFT-WAREengineering,  Peter Mayer, A-8020 Graz     ║
+  ║  Copyright(C) : FiCore-WAREengineering,  Peter Mayer, A-8020 Graz     ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

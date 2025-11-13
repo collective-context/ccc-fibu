@@ -1,6 +1,6 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
-/////////////////// (c) 1988/94 WINware Software, P.Mayer /////////////////////
+/////////////////// (c) 1988/94 FiCore, P.Mayer /////////////////////
 /*.ta Fo_Print()
 ╔═════════════════════════════════════════════════════════════════════════════╗
 ║  Fo_Print()								      ║

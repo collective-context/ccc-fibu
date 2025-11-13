@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║                                                                        ║
@@ -33,7 +33,7 @@ PSSTR pstrEinAus=argv[3];
 CHAR strFileBlock[128], strError[TB_MAX], strNull[TB_MAX];
 
 if(argc<3 || argc>4) {printf("\a\n!!! Fehler:"
-  "\neuroSOFT OWNER Rel. 1.10"
+  "\nFiCore OWNER Rel. 1.10"
   "\n────────────────────────────────────────────────────────"
   "\nSyntax : OWNER <Btrievedatei> <Ownername> [/A]"
   "\n[/A] ==  Ownername wieder ausschalten (Aus)!"

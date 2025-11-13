@@ -1,4 +1,4 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:18:38 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:18:38 - Wed
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programme-Name: ST_4100.C       Revision: 1.3         (C) 1989/1991    ║
@@ -6,7 +6,7 @@
   ║                                                                         ║
   ║  Rev.-Date     : 01.05.1991, Graz           Update: 04.08.1991, Graz    ║
   ║  Author        : Peter Mayer                Author: Peter Mayer         ║
-  ║  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    ║
+  ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz    ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║
@@ -50,7 +50,7 @@ sprintf(pstrSpecialKeyCodes,                         /* erlaubte Funktions-  */
 wNdx_g=0;                                            /* nach Key 1           */
 switch(*pwSteuerKz)
   {
-  case 10:                                           /* euroSOFT Drucke      */
+  case 10:                                           /* FiCore Drucke      */
     iInit(pstrApp, "EU", pstrAppDru, "EU", awMasks,  /* Etiketten / Demo-    */
       "4200", "36", _N);
 
@@ -58,7 +58,7 @@ switch(*pwSteuerKz)
       {case '0': *pwForm=5000; break;}               /* disketten            */
     break;
 
-  case 20:                                           /* euroSOFT Drucke      */
+  case 20:                                           /* FiCore Drucke      */
     iInit(pstrApp, "EU", pstrAppDru, "EU", awMasks,  /* Etiketten / Faktura  */
       "4210", "36", _N);
 

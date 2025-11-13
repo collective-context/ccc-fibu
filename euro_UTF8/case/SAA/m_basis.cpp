@@ -1,4 +1,4 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 02-Mar-1996 / 16:05:38 - Sat
+// (C) FiCore - Open Source Financial Core  Letztes Update am 02-Mar-1996 / 16:05:38 - Sat
 
 /*.ta M_ParameterUebergabe
 ╔══════════════════════════════════════════════════════════════════════════════╗

@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║  Funktionsname:    Dokumentationserstellung       Datum: 18.06.89      ║
@@ -38,7 +38,7 @@
 #define INDEX_HOLEN ".hi"
 #define FORM_FEED ".ff"
 #define FONT "!R!FTMD15;FONT15;SLM0.7;STM0.2;MAP0,0;EXIT;"
-#define KOPF "euroSOFT (C) 1989/1990"
+#define KOPF "FiCore (C) 1989/1990"
 #define TRENNZEILE "────────────────────────────────────────────────────────────────────────────────\n\n"
 #define SEITENLAENGE 70
 #define MAX_ZEILEN 1500
@@ -104,7 +104,7 @@ Dl_GetInstallation("euroINST");
 if (argc != 3)
     {
     printf ("\a\n!!! Fehler:"
-            "\neuroSOFT Dokumentationserstellung Rel. 1.00"
+            "\nFiCore Dokumentationserstellung Rel. 1.00"
             "\nSyntax: STDOC <eingabedatei> <protokolldateidatei>\n");
     exit (-1);
     }

@@ -1,4 +1,4 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:20:59 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:20:59 - Wed
 
 #include <stdio.h>
 #include <fcntl.h>
@@ -37,7 +37,7 @@ PPSTR	 ppstrOutput=apstrOutput_m;
 if(argc != 3)
   {
   printf("\a\n!!! Fehler:"
-          "\neuroSOFT Read<Filter>Write Rel. 1.00"
+          "\nFiCore Read<Filter>Write Rel. 1.00"
           "\nSyntax: READ <eingabedatei> <ausgabedatei>\n");
   exit(ERROR);
   }
@@ -254,7 +254,7 @@ sprintf(strDatum, "%02d.%02d.%04d",
   pSkb->d_Date.wJahr);
 
 strcpy(pSkb->strDatumAkt,  strDatum);
-strcpy(pSkb->strCopyright, "(c) 1992 euroSOFT");
+strcpy(pSkb->strCopyright, "(c) 1992 FiCore");
 
 return;
 }

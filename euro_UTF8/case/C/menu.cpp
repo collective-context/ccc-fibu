@@ -1,13 +1,13 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║ Programm-Name: MENU.C                                                  ║
-  ║ Funktion     : euroSOFT Programm-Wahl                                  ║
+  ║ Funktion     : FiCore Programm-Wahl                                  ║
   ║                                                                        ║
   ║                                                                        ║
   ║ Datum        : 19.05.1989, Graz           Update: 19.05.1989, Graz     ║
   ║ Author       : Peter Mayer                Author:                      ║
-  ║ Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      ║
+  ║ Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                      ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
 
 /*.ta Menüprogramm
@@ -887,7 +887,7 @@ VOID SchreibBat(VOID)
 SREGISTER i;
 
          Mn_Entfernen(HAUPTMENU);
-         /* Vi_Spza(' ', NORMAL); */        /* Nicht bei euroSOFT Programmen */
+         /* Vi_Spza(' ', NORMAL); */        /* Nicht bei FiCore Programmen */
 
 	 pFileHandle=fopen(strDateiName_m, "w");   /* Datei öffnen	   */
 	 if ( pFileHandle==NULL )
@@ -1186,14 +1186,14 @@ VOID About(VOID)
 PSSTR apstrText[25];
 
 Ut_SchreibArray (apstrText,  "       ┌──────────────────────────┐ ",
-                             "       │ euroSOFT-WARE ...        │ ",
+                             "       │ FiCore-WARE ...        │ ",
                              "       │                          │ ",
                              "       │    ...der neue Standard! │ ",
                              "       ├──────────────────────────┤ ",
                              "       │    Programmversion: 2.1. │ ",
                              "       └──────────────────────────┘ ",
                              "",
-                             "(c) copyright 1992 euroSOFT-WARE A-8041 Graz",
+                             "(c) copyright 1992 FiCore-WARE A-8041 Graz",
 			     _N );
 
 Dl_Info(apstrText, DLG_INFO);                   /* Programm ausgeben    */

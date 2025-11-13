@@ -1,12 +1,12 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:20:48 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:20:48 - Wed
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programm-Name: PB4150						    ║
-  ║  Funktion	  : euroSOFT Prüfbau / Asphalt Grafik			    ║
+  ║  Funktion	  : FiCore Prüfbau / Asphalt Grafik			    ║
   ║                                                                         ║
   ║  Datum        :                            Update:                      ║
   ║  Author       :                            Author:                      ║
-  ║  Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      ║
+  ║  Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                      ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

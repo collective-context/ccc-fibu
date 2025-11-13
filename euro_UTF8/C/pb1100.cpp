@@ -1,15 +1,15 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:20:43 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:20:43 - Wed
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programm-Name: PB1100                                                  ║
-  ║  Funktion     : euroSOFT Stammdaten                                     ║
+  ║  Funktion     : FiCore Stammdaten                                     ║
   ║                 Anlegen, Ändern Pyknometer Daten                        ║
   ║                 Anlegen, Ändern Messprotokolle                          ║
   ║		    Anlegen, Ändern Gut für grafischen Druck		    ║
   ║                                                                         ║
   ║  Datum        : 25.07.1990, Graz           Update:                      ║
   ║  Author       :                            Author:                      ║
-  ║  Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      ║
+  ║  Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                      ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

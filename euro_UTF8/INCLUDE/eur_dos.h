@@ -1,18 +1,18 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:27:48 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:27:48 - Tue
 
 /*.ta eur_dos.h
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  eur_dos.h    ... Headerdatei für euroSOFT-TOOLbox DOS-Funktionen.           ║
+║  eur_dos.h    ... Headerdatei für FiCore-TOOLbox DOS-Funktionen.           ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Beschreibung:
 ────────────────────────────────────────────────────────────────────────────────
 Die Datei enthält die symbolischen Konstanten, Makros und Funktionsprototypen
-für die Prozess-Steuerung der euroSOFT-TOOLbox.
+für die Prozess-Steuerung der FiCore-TOOLbox.
 
-Copyright (c) 1989/91 euroSOFT - Peter Mayer
+Copyright (c) 1989/91 FiCore - Peter Mayer
 ────────────────────────────────────────────────────────────────────────────────
-euroSOFT-WAREvertrieb, Peter Mayer, A-8020 Graz
+FiCore-WAREvertrieb, Peter Mayer, A-8020 Graz
 
 .te*/
 

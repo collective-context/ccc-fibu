@@ -1,14 +1,14 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:38 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:38 - Tue
 
 /*.ta app_dlg.h
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  app_dlg.h    ... Headerdatei für die euroSOFT CASEbox Masken-Funktionen.    ║
+║  app_dlg.h    ... Headerdatei für die FiCore CASEbox Masken-Funktionen.    ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Beschreibung:
 ────────────────────────────────────────────────────────────────────────────────
 Die Datei enthält die symbolischen Konstanten, Makros und Funktionsprototypen
-für die Dialog-Funktionen der euroSOFT-CASEbox.
+für die Dialog-Funktionen der FiCore-CASEbox.
 
 Copyright (c) 1989 appoSOFT
 ────────────────────────────────────────────────────────────────────────────────

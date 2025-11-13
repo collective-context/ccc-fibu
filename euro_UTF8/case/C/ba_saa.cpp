@@ -1,12 +1,12 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 19-Mar-1996 / 10:42:57 - Tue
+// (C) FiCore - Open Source Financial Core  Letztes Update am 19-Mar-1996 / 10:42:57 - Tue
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║  Programme-Name: BA_SAA.C	      Revision: 1.3	    (C) 1989/1991     ║
-// ║  Function	    : euroSOFT Basisprogramm				      ║
+// ║  Function	    : FiCore Basisprogramm				      ║
 // ║									      ║
 // ║  Rev.-Date     : 01.05.1991, Graz		 Update: 16.07.1991, Graz     ║
 // ║  Author	    : Peter Mayer		 Author: Peter Mayer	      ║
-// ║  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz     ║
+// ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz     ║
 // ╚══════════════════════════════════════════════════════════════════════════╝
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║			     Deklarations-Dateien			      ║

@@ -1,4 +1,4 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:26:01 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:26:01 - Tue
 
 /*------------------------------------------------------------------------------*/
 /* Datei-Name   : <app_str.h>                                                   */
@@ -7,7 +7,7 @@
 /*                                                                              */
 /* Datum        : 27.03.1989, Graz                                              */
 /* Author       : Peter Mayer                                                   */
-/* Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                            */
+/* Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                            */
 /*------------------------------------------------------------------------------*/
 
 #ifndef APP_STR_HEADER

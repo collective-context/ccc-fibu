@@ -1,8 +1,8 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:27:31 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:27:31 - Tue
 
 /*.ta app_utl.h
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  app_utl.h    ... Headerdatei für euroSOFT-TOOLbox Utility-Funktionen.       ║
+║  app_utl.h    ... Headerdatei für FiCore-TOOLbox Utility-Funktionen.       ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Beschreibung:
@@ -12,7 +12,7 @@ für die Utilities der Toolbox.
 
 Copyright (c) 1989 appoSOFT
 ────────────────────────────────────────────────────────────────────────────────
-euroSOFT-WAREvertrieb, Peter Mayer, A-8020 Graz
+FiCore-WAREvertrieb, Peter Mayer, A-8020 Graz
 
 .te*/
 

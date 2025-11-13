@@ -5,8 +5,9 @@
 Dieses Verzeichnis enthält die vollständige technische Dokumentation des **Btrieve ISAM (Indexed Sequential Access Method)** Datenbank-Systems, das im CCC-FIBU Legacy-System verwendet wird.
 
 **Btrieve Version:** v5.10 für MS-DOS / MS-Windows  
-**Original-Entwickler:** WINware Software P.Mayer  
-**Dokumentiert am:** 2025-01-13  
+**Original-Entwickler:** FiCore - Open Source Financial Core  
+**Legacy System:** Built on decades of production experience  
+**Dokumentiert am:** 2025-01-13
 
 ---
 

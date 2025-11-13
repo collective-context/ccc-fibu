@@ -1,12 +1,12 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:21:45 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:21:45 - Wed
 
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║ Programm-Name: TL1100						   ║
-  ║ Funktion       : euroSOFT Dateikonvertierung                           ║
+  ║ Funktion       : FiCore Dateikonvertierung                           ║
   ║                                                                        ║
   ║ Datum        : 10.07.1989, Graz                                        ║
   ║ Author       : Peter Mayer                Author:                      ║
-  ║ Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      ║
+  ║ Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                      ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║                        DEKLARATIONS-DATEIEN                            ║

@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*-------------- BeginnTransaction - E-4 --- (19) / 5-5 ----------------*/
 /* Siehe AbortTransaction und EndTransaction                            */

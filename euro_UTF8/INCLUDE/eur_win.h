@@ -1,18 +1,18 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:28:48 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:28:48 - Tue
 
 /*.ta eur_win.h
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  eur_win.h    ... Headerdatei für euroSOFT-TOOLbox Window-Funktionen.        ║
+║  eur_win.h    ... Headerdatei für FiCore-TOOLbox Window-Funktionen.        ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Beschreibung:
 ────────────────────────────────────────────────────────────────────────────────
 Die Datei enthält die symbolischen Konstanten, Makros und Funktionsprototypen
-für die Window-Funktion der euroSOFT-TOOLbox.
+für die Window-Funktion der FiCore-TOOLbox.
 
-Copyright (c) 1989 euroSOFT
+Copyright (c) 1989 FiCore
 ────────────────────────────────────────────────────────────────────────────────
-euroSOFT-WAREvertrieb, Peter Mayer, A-8020 Graz
+FiCore-WAREvertrieb, Peter Mayer, A-8020 Graz
 
 .te*/
 #ifndef EUR_WIN_HEADER                 /* wiederholtes Einlesen vermeiden */

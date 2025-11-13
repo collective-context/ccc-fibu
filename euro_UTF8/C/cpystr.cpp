@@ -1,4 +1,4 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:18:25 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:18:25 - Wed
 
 /* CPYSTR.C illustrates memory and string copy functions including:
  *      _memccpy        memcpy          memmove

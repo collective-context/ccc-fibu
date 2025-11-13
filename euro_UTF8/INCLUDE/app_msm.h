@@ -1,18 +1,18 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:56 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:56 - Tue
 
 /*.ta app_msm.h
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  app_msm.h   ... Headerdatei für euroSOFT-TOOLbox Microsoft-Maus Funktionen. ║
+║  app_msm.h   ... Headerdatei für FiCore-TOOLbox Microsoft-Maus Funktionen. ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Beschreibung:
 ────────────────────────────────────────────────────────────────────────────────
 Die Datei enthält die symbolischen Konstanten, Makros und Funktionsprototypen
-für die Microsoft-Maus Funktionen der euroSOFT-TOOLbox.
+für die Microsoft-Maus Funktionen der FiCore-TOOLbox.
 
-Copyright (c) 1989 euroSOFT
+Copyright (c) 1989 FiCore
 ────────────────────────────────────────────────────────────────────────────────
-euroSOFT-WAREvertrieb, Peter Mayer, A-8020 Graz
+FiCore-WAREvertrieb, Peter Mayer, A-8020 Graz
 
 .te*/
 

@@ -1,4 +1,4 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:28:06 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:28:06 - Tue
 
 /*------------------------------------------------------------------------------*/
 /* Datei-Name   : <eur_str.h>                                                   */
@@ -7,7 +7,7 @@
 /*                                                                              */
 /* Datum        : 27.03.1989, Graz                                              */
 /* Author       : Peter Mayer                                                   */
-/* Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                            */
+/* Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                            */
 /*------------------------------------------------------------------------------*/
 
 #ifndef EUR_STR_HEADER

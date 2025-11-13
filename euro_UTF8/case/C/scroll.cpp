@@ -1,14 +1,14 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*------------------------------------------------------------------------------*/
 /* Programm-Name: DmoScrol.C                                                    */
-/* Funktion     : euroSOFT TOOLBOX                                              */
+/* Funktion     : FiCore TOOLBOX                                              */
 /*                Demo-Programm                                                 */
 /*                                                                              */
 /*                                                                              */
 /* Datum        : 18.03.1989, Graz                                              */
 /* Author       : Peter Mayer                                                   */
-/* Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                            */
+/* Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                            */
 /*------------------------------------------------------------------------------*/
 
 /*╔════════════════════════════════════════════════════════════════════════╗

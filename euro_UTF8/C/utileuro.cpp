@@ -1,14 +1,14 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:22:07 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:22:07 - Wed
 
 /*------------------------------------------------------------------------------*/
 /* Programm-Name: UTILeuro.c							*/
-/* Funktion     : euroSOFT TOOLBOX                                              */
+/* Funktion     : FiCore TOOLBOX                                              */
 /*		  Butil-Dateien bearbeiten					*/
 /*                                                                              */
 /*                                                                              */
 /* Datum	: 01.04.1990, Graz						*/
 /* Author       : Peter Mayer                                                   */
-/* Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                            */
+/* Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                            */
 /*------------------------------------------------------------------------------*/
 #include <stdio.h>
 #include <stdlib.h>
@@ -43,7 +43,7 @@ else
   exit(0);
   }
 
-printf ("\n\nDatei <%s> für euroSOFT aufbereiten: ", pstrDateiAus_m);
+printf ("\n\nDatei <%s> für FiCore aufbereiten: ", pstrDateiAus_m);
 
 Dateien_Bearbeiten();
 

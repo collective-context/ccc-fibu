@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║                        DEKLARATIONS-DATEIEN                            ║
@@ -38,7 +38,7 @@ Dl_GetInstallation("euroINST");           /* lesen der Installation */
 if(argc != 3)
   {
   printf("\a\n!!! Fehler:"
-    "\neuroSOFT Katalog Rel. 1.2"
+    "\nFiCore Katalog Rel. 1.2"
     "\n────────────────────────────────────────────────────────────"
     "\nSyntax  : KATALOG <Masken-Bibliothek> <Ausgabe-Datei>"
     "\nBeispiel: katalog \\euro\\EXE\\SYMASK.043 \\euro\\T02\\KATALOG.PRO\n");

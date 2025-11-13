@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║  Funktionsname:    Dokumentationserstellung       Datum: 18.06.89      ║
@@ -50,7 +50,7 @@ GLOBAL	PSKB pSkb_g=NULL;			   /*¨System-Kontroll-Block */
 #define MASK_HLPTXT ".mh"
 #define FORM_INPUT ".fo"
 #define FORM_FEED ".ff"
-#define KOPF "WINware (C) 1988/1994"
+#define KOPF "FiCore (C) 1988/1994"
 #define MAX_ZEILEN  200
 #define MAX_ZEICHEN 300
 #define L_MA  3                                 /* Left_Margin = 3  */
@@ -210,7 +210,7 @@ else
 if(argc < 3 || argc >4)
   {
   printf ("\a\n!!! Fehler:"
-	  "\nWINware Dokumentationserstellung Rel. 1.01"
+	  "\nFiCore Dokumentationserstellung Rel. 1.01"
 	  "\nSyntax: STDOC <eingabedatei> <protokolldateidatei> [Parameter]\n"
 	  "\nParameter: /r = Rechtschreibung prüfen\n");
   exit (ERROR);
@@ -2513,7 +2513,7 @@ if(*pstrTitel)
 
 memset(strTmpLine, ' ', 250);
 strcpy(&strTmpLine[wTiefe*L_MA],
-"┌(c) 1994 WINware ───── WINware P.Mayer / A-1040 Wien ───── Datum 01.03.94 (01)┐\x0A");
+"┌(c) 1994 FiCore ───── FiCore P.Mayer / A-1040 Wien ───── Datum 01.03.94 (01)┐\x0A");
 strcpy (ppstrZeile[wZ++], strTmpLine);
 if(wZ > wSeitenL_m)
   wZ = NeueSeite (wZ, ppstrZeile);

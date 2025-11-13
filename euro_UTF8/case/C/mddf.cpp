@@ -1,11 +1,11 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 //╔═══════════════════════════════════════════════════════════════════════════╗
 //║ MakeDDF()					   Datum: 19.05.94 / xx.xx.xx ║
 //║───────────────────────────────────────────────────────────────────────────║
 //║									      ║
 //║ mddf	= Zeige Inhalt von FILE.DDF				      ║
-//║ mddf X$FILE G:\WINware\FILE.DDF = Ändere Eintrag in FILE.DDF	      ║
+//║ mddf X$FILE G:\FiCore\FILE.DDF = Ändere Eintrag in FILE.DDF	      ║
 //║ mddf ST1100 = Ändere Einträge: FILE.DDF & FIELD.DDF aus EURODATA.BTR      ║
 //║ mddf ST1111 /Nr:4 = Ändere Einträge: FILE.DDF & FIELD.DDF aus EURODATA.BTR║
 //║ mddf ST1111 /del = Delete: löschen in FILE.DDF & FIELD.DDF.\n\n");        ║
@@ -145,7 +145,7 @@ SWORD  wRetCode=0;
 if(argc==2)
   if(*argv[1]=='?' || *(argv[1]+1)=='?')
     {printf("\n»mddf«        = Zeige Inhalt von FILE.DDF");
-    printf("\n»mddf X$FILE C:\\WINware\\FILE.DDF« = Ändere Eintrag in FILE.DDF");
+    printf("\n»mddf X$FILE C:\\FiCore\\FILE.DDF« = Ändere Eintrag in FILE.DDF");
     printf("\n»mddf ST1100« Ändere Einträge: FILE.DDF & FIELD.DDF aus EURODATA.BTR");
     printf("\n»mddf ST1111 /Nr:4« = Ändere Einträge: FILE.DDF & FIELD.DDF aus EURODATA.BTR");
     printf("\n»mddf ST1111 /del« = Delete: löschen in FILE.DDF & FIELD.DDF.\n\n");
@@ -169,7 +169,7 @@ if(argc>=3)
 Ut_Calloc(pstrBuffer, wFileLen_m+1, CHAR);
 Ut_Calloc(pDdfFile_m, 1, DDF_FILE);
 
-stradd(strFileName, "G:\\winware\\dat\\", "FILE", ".DDF", _N);
+stradd(strFileName, "G:\\FiCore\\dat\\", "FILE", ".DDF", _N);
 DDF_Open(strFileBlk, strFileName, pstrBuffer);
 
 wRetCode=0;
@@ -207,7 +207,7 @@ if(pstrFile && pstrDir==NULL)	    // Mehr als nur FILE.DDF anschauen/ändern
 //Ut_Calloc(pDataFile_m, 1, DATA_FILE);
   Ut_Calloc(pDataField_m, 1, DATA_FIELD);
 
-  stradd(strFileName, "G:\\winware\\dat\\", "FIELD", ".DDF", _N);
+  stradd(strFileName, "G:\\FiCore\\dat\\", "FIELD", ".DDF", _N);
   DDF_Open(strFileBlk, strFileName, pstrBuffer);
 
   wRetCode=0;

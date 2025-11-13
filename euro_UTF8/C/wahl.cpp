@@ -1,4 +1,4 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:22:08 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:22:08 - Wed
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programm-Name: STMODEM                                                 ║
@@ -8,7 +8,7 @@
   ║                                                                         ║
   ║  Datum        : 17.07.1990, Graz           Update:                      ║
   ║  Author       : Peter Mayer                Author:                      ║
-  ║  Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      ║
+  ║  Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                      ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

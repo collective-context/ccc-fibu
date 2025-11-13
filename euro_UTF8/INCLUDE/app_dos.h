@@ -1,8 +1,8 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:41 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:41 - Tue
 
 /*.ta app_dos.h
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  app_dos.h    ... Headerdatei für euroSOFT-TOOLbox DOS-Funktionen.           ║
+║  app_dos.h    ... Headerdatei für FiCore-TOOLbox DOS-Funktionen.           ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Beschreibung:
@@ -10,9 +10,9 @@ Beschreibung:
 Die Datei enthält die symbolischen Konstanten, Makros und Funktionsprototypen
 für die Prozess-Steuerung der appoSOFT-TOOLbox.
 
-Copyright (c) 1989/91 euroSOFT - Peter Mayer
+Copyright (c) 1989/91 FiCore - Peter Mayer
 ────────────────────────────────────────────────────────────────────────────────
-euroSOFT-WAREvertrieb, Peter Mayer, A-8020 Graz
+FiCore-WAREvertrieb, Peter Mayer, A-8020 Graz
 
 .te*/
 

@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*.ta Dl_ErrorHandler()
 ╔══════════════════════════════════════════════════════════════════════════════╗
@@ -15,7 +15,7 @@ SWORD  wFehlerNr	  Art des Fehlers.
 SWORD  wHandle		  Bestimmt die Reaktion auf die Fehler-Nummer.
 PSSTR  pstrFunktion	  Funktion, in der der Fehler auftrat.
 PSSTR  pstrDateiname	  Source-Dateiname der Funktion.
-SWORD  wZeile		  Zeilennummer im Source-Modul der euroSOFT-TOOLbox.
+SWORD  wZeile		  Zeilennummer im Source-Modul der FiCore-TOOLbox.
 
 
 Beschreibung:
@@ -167,7 +167,7 @@ if((pWkbDlg_m = Wi_Einrichten(SPA, ZEI,                /*                      *
   {                                                  /*                      */
   printf("Das Programm wurde abgebrochen.\n");       /*                      */
   printf("Ursache: schwerer Laufzeitfehler in der "  /*                      */
-         "euroSOFT-TOOLbox.\n");
+         "FiCore-TOOLbox.\n");
   Dl_Abbruch("Zuwenig Speicher", _L, _F, "pWkbDlg_m");
   }
 
@@ -188,7 +188,7 @@ Wi_Aktivieren(pWkbDlg_m);                              /* Dialog aktivieren    *
 
 Wi_Swa(0,0,BRE-2,1, VH(HELLWEISS, SCHWARZ));         /*                      */
 Wi_Swz(0,1,BRE,1,'─');			      /*		      */
-Wi_Ss(17,0, "euroSOFT-TOOLbox Laufzeitfehler");      /*                      */
+Wi_Ss(17,0, "FiCore-TOOLbox Laufzeitfehler");      /*                      */
 Wi_SetCursorPos(0,2);                                /*                      */
 
 Wi_Printf("  Fehler (%d) «» %s\n",                   /*                      */
@@ -451,7 +451,7 @@ if((pWkbDlg_m = Wi_Einrichten(SPA, ZEI,                /*                      *
   {                                                  /*                      */
   printf("Das Programm wurde abgebrochen.\n");       /*                      */
   printf("Ursache: schwerer Laufzeitfehler in der "  /*                      */
-         "euroSOFT-TOOLbox.\n");
+         "FiCore-TOOLbox.\n");
   Dl_Abbruch("Zuwenig Speicher", _L, _F, "pWkbDlg_m");
   }
 
@@ -473,7 +473,7 @@ Wi_Aktivieren(pWkbDlg_m);                              /* Dialog aktivieren    *
 
 Wi_Swa(0,0,BRE-2,1, VH(HELLWEISS, SCHWARZ));         /*                      */
 Wi_Swz(0,1,BRE,1,'─');			      /*		      */
-Wi_Ss(17,0, "euroSOFT-TOOLbox Laufzeitfehler");      /*                      */
+Wi_Ss(17,0, "FiCore-TOOLbox Laufzeitfehler");      /*                      */
 Wi_SetCursorPos(0,2);                                /*                      */
 
 Wi_Printf("  Fehler »%d« bei Position: "             /*                      */

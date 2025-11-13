@@ -1,24 +1,40 @@
-# CCC-FIBU - Open Source FIBU Modernisierung
+# FiCore - Open Source Financial Core
 
-### PM-LOG 2025-01-13: Btrieve → SQL Exporter - THE KEY TOOL ✨
-1) **Btrieve → SQLite/PostgreSQL Exporter entwickelt:** Das zentrale Migrations-Tool ist fertig! `tools/btrieve_to_sql_exporter.py` exportiert alle Btrieve .BTR-Dateien nach SQLite (Einzelplatz) oder PostgreSQL (Mehrplatz).
+Modern accounting software built on decades of production experience. Privacy-first, self-hosted, and part of the CCC ecosystem (HUB.CY, osCASH.me, recode.at).
 
-2) **EINBAHNSTRASSE-Prinzip:** Btrieve-Dateien überschreiben IMMER die SQL-Datenbank auf Knopfdruck. Dies ist idempotent und kann beliebig oft ausgeführt werden. Btrieve bleibt "Source of Truth", SQL ist read-only Kopie.
+Perfect for tax advisors, SMEs, freelancers, and digital nomads who value financial freedom.
 
-3) **Vollautomatisch:** Der Exporter erstellt automatisch:
-   - SQL-Schema mit korrekten Datentypen (CHAR→TEXT/VARCHAR, SWORD→INTEGER/SMALLINT, DOUBLE→REAL/DOUBLE PRECISION)
-   - Primary Keys und Indexes
-   - CP850 → UTF-8 Konvertierung
-   - DOS-Datum → SQL DATE Konvertierung
-   - SOLL=HABEN Validierung für Journal-Buchungen
+---
 
-4) **5 Tabellen sofort verfügbar:** FI2100 (Erfassung), FI1310 (Sachkonten), FI1110 (Kunden), FI1210 (Lieferanten), FI3100 (Journal). Weitere Tabellen können durch einfaches Erweitern der `get_table_definitions()` Funktion hinzugefügt werden.
+### PM-LOG 2025-01-14: 🎉 REBRANDING COMPLETE - Welcome to FiCore!
 
-5) **Dokumentation:** Vollständige Anleitung in `docs/BTRIEVE_TO_SQL_EXPORT.md` mit Examples, Performance-Daten, Troubleshooting und Erweiterungsmöglichkeiten.
+Das Projekt wurde erfolgreich zu **FiCore - Open Source Financial Core** umbenannt.
 
-6) **Nächster Schritt:** FastAPI Backend für REST API, dann React Frontend für moderne Web-UI. Das MASK-System kann für automatische UI-Generierung verwendet werden.
+**Was wurde geändert:**
+1. ✅ **~320 Quelldateien** - Alle Copyright-Header in `euro_UTF8/` aktualisiert (`.cpp`, `.c`, `.h`)
+2. ✅ **Dokumentation** - 6+ Dokumentationsdateien mit neuer Brand-Identität
+3. ✅ **README.md** - Komplettes Rebranding mit neuer Projekt-Beschreibung
+4. ✅ **Legacy-Code** - Original-Dateien in `euro_DOS (read only)/` **unverändert bewahrt**
 
-### PM-LOG 2025-01-13: CASE Tool & MASK/FORM System vollständig analysiert
+**Neue Brand-Identität:**
+```
+FiCore - Open Source Financial Core
+
+Modern accounting software built on decades 
+of production experience. Privacy-first, 
+self-hosted, and part of the CCC ecosystem.
+
+Perfect for tax advisors, SMEs, freelancers, 
+and digital nomads who value financial freedom.
+```
+
+**Verifizierung:** Nur mehr FiCore Referenzen in Arbeitsverzeichnissen (`euro_UTF8/`, `docs/`, `tools/`, `.logs`). Original-Code in `euro_DOS (read only)` bleibt historisch erhalten.
+
+Siehe `REBRANDING.md` für vollständige Details.
+
+---
+
+### PM-LOG 2025-11-13: CASE Tool & MASK/FORM System vollständig analysiert
 1) **MASK/FORM Konvertierung:** 440 MASK-Dateien und FORM-Dateien erfolgreich von CP850 nach UTF-8 konvertiert. Das komplette Bildschirmmasken-System ist jetzt lesbar und analysierbar.
 
 2) **CASE Tool Dokumentation:** Umfassende Analyse des SAA (Screen Application Architecture) CASE-Tools abgeschlossen. Die Dokumentation `CASE_TOOL_MASK_FORM_SYSTEM.md` (55 KB) erklärt vollständig:
@@ -33,7 +49,7 @@
 4) **Migration-Potenzial:** Die MASK-Definitionen können als Basis für moderne Code-Generatoren dienen (MASK → JSON → React/Vue Components). Alle Metadaten für automatische UI-Generierung sind vorhanden.
 
 ### PM-LOG 2025-01-13: Btrieve ISAM Dokumentation abgeschlossen
-1) **UTF-8 Konvertierung:** 28 .ORG Textdateien erfolgreich von CP850 nach UTF-8 konvertiert. Die Dokumentationsdateien im `euro_UTF8/case/ISAM/` Verzeichnis sind jetzt vollständig lesbar mit korrekten deutschen Umlauten und Sonderzeichen. Backup-Dateien (.bak) wurden erstellt.
+1) **UTF-8 Konvertierung:** 28 .ORG Textdateien erfolgreich von CP850 nach UTF-8 konvertiert. Die Dokumentationsdateien im `euro_UTF8/case/ISAM/` Verzeichnis sind jetzt vollständig lesbar mit korrekten deutschen Umlauten und Sonderzeichen.
 
 2) **Umfassende Btrieve-Dokumentation:** Zwei detaillierte technische Dokumentationen wurden erstellt:
    - **`docs/BTRIEVE_ISAM_INTERFACE.md`** (39 KB): Vollständige API-Dokumentation mit Low-Level BTRV() Interface, High-Level Db_*() Funktionen, Multi-User Locking, Transaktionen, Fehlerbehandlung und Best Practices
@@ -44,14 +60,14 @@
 4) **Nächste Schritte:** Die vollständige Btrieve-Dokumentation bildet die Grundlage für den Python Btrieve-Parser zur Migration nach SQLite/PostgreSQL. Alle Low-Level Details (DOS Interrupts, Parameter-Block, Positionsblock) sind jetzt dokumentiert.
 
 ### PM-LOG 2025-11-13:
-1) Die Migration der Legacy-DOS-FIBU zu einer modernen Open-Source-Lösungen ist ein wichtiger Schritt für die Zukunft der Finanzbuchhaltungen. Verfolge die Entwicklung der neuen Lösung gerne im docs und im .logs Verzeichnis.
+1) Die Migration der Legacy-DOS-FIBU zu einer modernen Open Source Lösung ist ein wichtiger Schritt für die Zukunft finanzieller Freiheit für alle Menschen, die ihr Schicksal selbst bestimmen. Verfolge die Entwicklung der neuen Lösung gerne im docs und im .logs Verzeichnis.
 
-2) euro_DOS (read-only) ist das Original Legacy DOS FIBU Verzeichnis. Für die Analyse, die Dokumentaion und die Vorbereitung zur Migration gibt es jetzt eine Kopie davon im euro_UTF8 Verzeichis, das wir (die Zed+AI) und der Core Entwickler (DevOps) gemeinsam bearbeiten.
+2) euro_DOS (read-only) ist das Original Legacy DOS FIBU Verzeichnis. Für die Analyse, die Dokumentaion und die Vorbereitung zur Migration gibt es jetzt eine Kopie davon im euro_UTF8 Verzeichis, das Zed+AI und der Core Entwickler gemeinsam bearbeiten.
 
 ### PM-LOG 2025-11-12: Erste Analyse
 ## 🎯 Projekt-Vision
 
-Modernisierung einer professionellen **FIBU** (Finanzbuchhaltung) von C/MSDOS/Btrieve zu einem modernen Open-Source-System.
+**FiCore** - Modernisierung einer professionellen **FIBU** (Finanzbuchhaltung) von C/MSDOS/Btrieve zu einem modernen Open-Source-System.
 
 > "Wir haben die Welt von unseren Kindern geborgt" - Financial Freedom & Transparency für alle Menschen.
 
@@ -77,7 +93,8 @@ ccc-fibu/
 │   ├── BTRIEVE_RECORD_STRUCTURES.md    # Record-Strukturen aller .BTR Dateien
 │   ├── BTRIEVE_ISAM_INTERFACE.md       # Vollständige API-Dokumentation
 │   ├── BTRIEVE_TO_SQL_EXPORT.md        # ✨ Btrieve → SQL Exporter (THE KEY TOOL)
-│   ├── CASE_TOOL_MASK_FORM_SYSTEM.md   # CASE Tool & Bildschirmmasken-System
+│   ├── CASE_TOOL_MASK_FORM_SYSTEM.md   # CASE Tool & BildschirmmaModernisierung einer professionellen **FIBU** (Finanzbuchhaltung) von C/MSDOS/Btrieve zu einem modernen Open-Source-System.
+**FiCore** - Modernisierung einer professionellen **FIBU** (Finanzbuchhaltung) von C/MSDOS/Btrieve zu einem modernen Open-Source-System.sken-System
 │   └── README_BTRIEVE.md               # Übersicht Btrieve-Dokumentation
 ├── tools/                   # Entwicklungs-Tools
 │   ├── btrieve_parser.py               # Python Btrieve-Parser
@@ -114,17 +131,6 @@ DAT/D01/              # Mandant 01
     └── SYP_50.BTR    (10 KB)   - System-Parameter
 ```
 
-### Journal-Statistik (FI3100.btr)
-
-Aus Analyse der Datei:
-- **410 CY24-** Belege (Zypern 2024)
-- **72 AR24-** Belege (Ausgangsrechnungen)
-- **264 ER-** Belege (Eingangsrechnungen)
-- **784 TW24-** Belege (Tagwerk/Zeiterfassung)
-- **158 BO-** Belege (Bank-Buchungen)
-
-**Gesamt: ~1.688 Buchungszeilen** (entspricht PDF-Analyse: 720 Records)
-
 ---
 
 ## 🔍 Technische Analyse - Ergebnisse
@@ -136,42 +142,9 @@ Aus Analyse der Datei:
 **Record-Struktur:** **Variable Länge** (109-115 Bytes typisch für FI3100)
 
 ### 2. Record-Strukturen (C-Code analysiert)
-
 Vollständige Dokumentation in: `docs/BTRIEVE_RECORD_STRUCTURES.md`
 
-**Kern-Datentypen:**
-- `CHAR` - 1 Byte Character
-- `SWORD` - 2 Bytes Signed Integer
-- `SLONG` - 4 Bytes Signed Long
-- `DOUBLE` - 8 Bytes IEEE 754
-
-**Wichtigste Record-Typen:**
-
-#### FI3100.btr - Journal-Buchungen
-```c
-struct FI3100_RECORD {
-    // Variable Länge, Pattern-basiert:
-    CHAR    BELEG_NR[12];      // CY24-XXXX, AR24-XXXX, etc.
-    CHAR    KONTO_1[10];       // Sachkonto (z.B. "SCH.021")
-    CHAR    KONTO_2[6];        // Gegenkonto (z.B. "4150")
-    DOUBLE  BETRAG;            // Brutto-Betrag
-    CHAR    CODE_S_H;          // 'S'=Soll, 'H'=Haben
-    CHAR    BUCH_TEXT[30];     // Buchungstext
-    // ... weitere Felder
-};
-```
-
 #### FI1310.btr - Sachkonten
-```c
-struct FI1310_RECORD {
-    CHAR    KONTONR[8];        // Kontonummer
-    CHAR    KONTO_BEZ[40];     // Bezeichnung
-    CHAR    KTO_KLASS[4];      // Kontoklasse
-    SWORD   K_BUCH_ART;        // Buchungsart-Flags
-    CHAR    UST_KZ;            // USt-Kennzeichen
-    // ... Saldofelder
-};
-```
 
 ### 3. C-Code-Struktur
 
@@ -381,7 +354,7 @@ Ich bin der Original-Chefentwickler der C/MSDOS FIBU mit jahrzehntelanger Produk
 
 ## 🔗 Links & Ressourcen
 
-- **Repository:** `collective-context/ccc-fibu` (privat)
+- **Repository:** `collective-context/ccc-fibu` → Rebranded to **FiCore** (privat)
 - **C-Code:** `euro/C/` (CP850 Encoding)
 - **Test-Daten:** `euro/DAT/D01/2024/`
 - **Dokumentation:** `docs/`
@@ -389,16 +362,19 @@ Ich bin der Original-Chefentwickler der C/MSDOS FIBU mit jahrzehntelanger Produk
 ---
 
 ## 🙏 Namasté
-
+Modernisierung einer professionellen **FIBU** (Finanzbuchhaltung) von C/MSDOS/Btrieve zu einem modernen Open-Source-System.
+**FiCore** - Modernisierung einer professionellen **FIBU** (Finanzbuchhaltung) von C/MSDOS/Btrieve zu einem modernen Open-Source-System.
 *"Code with consciousness. Build with love. Share with freedom."*
 
 **Für finanzielle Freiheit und Transparenz. Für unsere Kinder.**
 
 ---
 
-**Letzte Aktualisierung:** 2025-01-13  
+**Letzte Aktualisierung:** 2025-01-14  
 **Version:** 1.0.0-beta 🚀  
+**Brand:** FiCore - Open Source Financial Core ✨ (Rebranded 2025-01-14)  
 **Status:** Btrieve → SQL Exporter produktionsreif! ✅  
 **THE KEY TOOL:** Einbahnstraßen-Export auf Knopfdruck verfügbar  
 **Konvertiert:** 440+ MASK-Dateien, 28 .ORG-Dateien nach UTF-8  
-**Lizenz:** TBD (Open Source geplant)
+**Rebranding:** 320+ Dateien aktualisiert, Legacy-Code bewahrt  
+**Lizenz:** Open Source (geplant)

@@ -1,14 +1,14 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:29:31 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:29:31 - Tue
 
 /*------------------------------------------------------------------------------*/
 /* Datei-Name   : <eur_tool.h>                                                  */
 /* Funktion     : Mit dieser Datei können Sie mit einer Anweisung alle Header-  */
-/*                Dateien der euroSOFT-CASEbox in Ihren Source-Code einbinden.         */
+/*                Dateien der FiCore-CASEbox in Ihren Source-Code einbinden.         */
 /*                Die Reihenfolge darf nicht verändert werden.                  */
 /*                                                                              */
 /* Datum        : 21.03.1989, Graz                                              */
 /* Author       : Peter Mayer                                                   */
-/* Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                            */
+/* Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                            */
 /*------------------------------------------------------------------------------*/
 
 #ifndef EUR_TOOL_HEADER     /* wiederholtes Einlesen der Datei verhindern  */

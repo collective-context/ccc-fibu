@@ -1,7 +1,7 @@
 # Btrieve Datei-Hierarchie und Multi-Tenancy Architektur
 
 **Datum:** 2025-01-13  
-**System:** CCC-FIBU (euroSOFT)  
+**System:** FiCore - Open Source Financial Core  
 **Verzeichnis:** DAT/
 
 ---

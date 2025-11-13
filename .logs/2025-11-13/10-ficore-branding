@@ -1,0 +1,45 @@
+╔════════════════════════════════════════════════════════════════════════╗
+║                  FiCore - Open Source Financial Core                   ║
+║                                                                        ║
+║  Modern accounting software built on decades of production experience ║
+║  Privacy-first, self-hosted, part of the CCC ecosystem                ║
+║                                                                        ║
+║  Perfect for tax advisors, SMEs, freelancers, and digital nomads      ║
+║  who value financial freedom.                                          ║
+╚════════════════════════════════════════════════════════════════════════╝
+
+🎯 Rebranding Complete: 2025-01-14
+
+Previous Names:
+  • CCC-FIBU
+  • WINware Software
+  • euroSOFT
+
+New Identity:
+  • FiCore - Open Source Financial Core
+
+Statistics:
+  • 334 source files scanned
+  • 319 files updated with FiCore branding
+  • 287 original files preserved in euro_DOS (read only)
+  • 0 WINware/euroSOFT references remaining in working directories
+
+Key Changes:
+  ✓ All C/C++ copyright headers updated
+  ✓ Documentation rebranded
+  ✓ README.md completely updated
+  ✓ Legacy code preserved untouched
+  ✓ Brand positioning established
+
+Ecosystem:
+  • HUB.CY - Business Setup & Cyprus
+  • recode.at - Privacy-First Digitalization
+  • osCASH.me - Privacy Payments
+  • FiCore - Open Source Accounting ⭐
+
+Repository: collective-context/ccc-fibu
+Product: FiCore
+Status: Beta v1.0.0
+License: Open Source (planned)
+
+For details see: REBRANDING.md

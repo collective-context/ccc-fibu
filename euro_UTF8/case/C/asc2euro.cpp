@@ -27,7 +27,7 @@
 │ DATEINUMMER  FIMASK.043  Dateiname                                           │
 │ └────────┘  └───────┘  └──────┘                                           │
 │ &DATEI (0) = FIMASK, ST1100 ──┐                                              │
-│ &DATEI (1) = FIMASK, ST1110   ├ euroSOFT »ZIELDATEIEN«                      │
+│ &DATEI (1) = FIMASK, ST1110   ├ FiCore »ZIELDATEIEN«                      │
 │ &DATEI (2) = FIMASK, FI1110 ──┘                                              │
 │                                                                              │
 │ &FELDER ─── Damit beginnt die Beschreibung der »QUELLDATEI«                 │
@@ -44,7 +44,7 @@
 │ 0000.0  ~1.FI_KU_KTO=~0.KUNDE ─────┐                                         │
 │ 0000.0  ~2.KU_KONTO=~0.KUNDE       ├ Kopiert Inhalt des 2. aufs 1. Feld.    │
 │ 0000.0  ~2.KURZ_BEZ=~0.MATCH_CODE ─┘                                         │
-│         ─── Dateinummer der euroSOFT Zieldatei.                            │
+│         ─── Dateinummer der FiCore Zieldatei.                            │
 │ └── Feldlänge zählt Offset der Quelldatei hoch. Ab dem Punkt ein Remark.     │
 └──────────────────────────────────────────────────────────────────────────────┘
 */
@@ -117,7 +117,7 @@ PSSTR pstrUSER=getenv("USER");
 Dl_GetInstallation("euroINST"); 		     // liest glob. Werte
 
 if(argc<2 || argc>3) {printf("\a\n!!! Fehler:"
-  "\neuroSOFT ASCII TO EUROSOFT Rel. 1.11"
+  "\nFiCore - Open Source Financial Core - ASCII Import Tool Rel. 1.11"
   "\nSyntax: ASC2EURO <eingabedatei> [/B]"
   "\n[/B] == Quelldatei von Btrieve (BUTIL -save)!"
   "\n"

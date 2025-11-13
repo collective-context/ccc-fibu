@@ -1,4 +1,4 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:26:09 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:26:09 - Tue
 
 //------------------------------------------------------------------------------
 // Datei-Name   : <app_type.h>
@@ -7,7 +7,7 @@
 //
 // Datum        : 30.04.1991, Graz
 // Author       : Peter Mayer
-// Copyright(C) : euroSOFT-WAREvertrieb, A-8010 Graz
+// Copyright(C) : FiCore-WAREvertrieb, A-8010 Graz
 //------------------------------------------------------------------------------
 
 #ifndef APP_TYPE_HEADER

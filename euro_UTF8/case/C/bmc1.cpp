@@ -1,7 +1,7 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔════════════════════════════════════════════════════════════════════════╗
-  ║  Funktionsname:    euroSOFT Masken-Compiler       Datum: 01.05.89      ║
+  ║  Funktionsname:    FiCore Masken-Compiler       Datum: 01.05.89      ║
   ║────────────────────────────────────────────────────────────────────────║
   ║                                                                        ║
   ║  Parameter:                                                            ║
@@ -30,7 +30,7 @@
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║                        KONSTANTEN UND MAKROS                           ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
-#define OPTSIGNATUR "WINware(C) Install"	   /* Signatur für Struktur */
+#define OPTSIGNATUR "FiCore(C) Install"	   /* Signatur für Struktur */
 
 
 /*╔════════════════════════════════════════════════════════════════════════╗

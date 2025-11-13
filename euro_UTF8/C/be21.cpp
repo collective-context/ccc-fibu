@@ -1,4 +1,4 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:18:03 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:18:03 - Wed
 
 // Beispiel 2.1
 // Programm mit voreingestelltem Funktionsparameter

@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 13-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 13-Feb-1996
 
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║  Funktionsname:    M_MakeChoice                   Datum:  9.08.90      ║

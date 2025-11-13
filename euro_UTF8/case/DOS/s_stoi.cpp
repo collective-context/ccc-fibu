@@ -2,13 +2,13 @@
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programme-Name: S_STOI.C                                               ║
-  ║  Function      : euroSOFT String-Tools                                  ║
+  ║  Function      : FiCore String-Tools                                  ║
   ║                  Standard-Stringfunktionen fuer EUR_M51x.LIB            ║
   ║                                                                         ║
   ║                                                                         ║
   ║  Date          : 04.11.1991, Graz           Update: 04.11.1991, Graz    ║
   ║  Author        : Peter Mayer                Author: Peter Mayer         ║
-  ║  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    ║
+  ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz    ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

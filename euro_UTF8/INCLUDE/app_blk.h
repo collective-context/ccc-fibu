@@ -1,18 +1,18 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:30 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:30 - Tue
 
 /*.ta app_blk.h
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  app_blk.h    ... Headerdatei für die euroSOFT CASEbox Block-Funktionen.     ║
+║  app_blk.h    ... Headerdatei für die FiCore CASEbox Block-Funktionen.     ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Beschreibung:
 ────────────────────────────────────────────────────────────────────────────────
 Die Datei enthält die symbolischen Konstanten, Makros und Funktionsprototypen
-für die Block-Funktionen der euroSOFT-CASEbox.
+für die Block-Funktionen der FiCore-CASEbox.
 
 Copyright (c) 1989 appoSOFT
 ────────────────────────────────────────────────────────────────────────────────
-euroSOFT-WAREvertrieb, Peter Mayer, A-8020 Graz
+FiCore-WAREvertrieb, Peter Mayer, A-8020 Graz
 
 .te*/
 

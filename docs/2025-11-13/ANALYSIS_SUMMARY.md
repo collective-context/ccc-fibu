@@ -104,7 +104,7 @@ Das System hat **jahrzehntelange Produktionserfahrung** und enthält:
 **Modularer Aufbau:**
 - `fi*.cpp` - FIBU-spezifische Module
 - `app_*.h` - Application Framework
-- `eur_*.h` - euroSOFT Toolbox
+- `eur_*.h` - FiCore Toolbox
 - `ba_*.cpp` - Basis-Funktionen
 
 **Verwendete Patterns:**

@@ -18,7 +18,7 @@ cgi_main(cgi_info *ci) {
 
   print_mimeheader("text/html");
 
-  puts("<title>WINware Titel</title>");
+  puts("<title>FiCore - Open Source Financial Core</title>");
   puts("<h1>Das ist eine Ueberschrift</h1>");
 
   parms = get_form_entries(ci);

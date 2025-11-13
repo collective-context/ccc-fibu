@@ -1,12 +1,12 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:21:47 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:21:47 - Wed
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programm-Name: TL2300						    ║
-  ║  Funktion	  : euroSOFT - allgemeine Dateikonvertierung		    ║
+  ║  Funktion	  : FiCore - allgemeine Dateikonvertierung		    ║
   ║                                                                         ║
   ║  Datum	  : 20.01.1990, Graz	       Update: 20.01.1990, Graz     ║
   ║  Author       : Peter Mayer                Author:                      ║
-  ║  Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      ║
+  ║  Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                      ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

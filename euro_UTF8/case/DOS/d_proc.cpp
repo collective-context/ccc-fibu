@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*****************************************************************
  *   Programmname:    D_PROC.C					  *
@@ -19,7 +19,7 @@
  *   muß beim Linken DOSLIBS.LIB als Library zusätzlich angege-  *
  *   ben werden.                                                 *
  *                                                               *
- *   Copyright (C):    euroSOFT-WAREvertrieb - A-8020 Graz       *
+ *   Copyright (C):    FiCore-WAREvertrieb - A-8020 Graz       *
  *   Stand:            14.5.89                                   *
  *****************************************************************/
 

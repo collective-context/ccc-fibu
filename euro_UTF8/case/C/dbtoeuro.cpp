@@ -1,14 +1,14 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*------------------------------------------------------------------------------*/
 /* Programm-Name: dBtoEuro.c							*/
-/* Funktion     : euroSOFT TOOLBOX                                              */
+/* Funktion     : FiCore TOOLBOX                                              */
 /*		  wandelt z.B. für dBASE alle \x01 in \x00 um!			*/
 /*                                                                              */
 /*                                                                              */
 /* Datum	: 01.04.1990, Graz						*/
 /* Author       : Peter Mayer                                                   */
-/* Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                            */
+/* Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                            */
 /*------------------------------------------------------------------------------*/
 #include <stdio.h>
 #include <stdlib.h>
@@ -42,7 +42,7 @@ else
   exit(0);
   }
 
-printf ("\n\nDatei <%s> für euroSOFT aufbereiten: ", pstrDateiAus_m);
+printf ("\n\nDatei <%s> für FiCore aufbereiten: ", pstrDateiAus_m);
 
 Dateien_Bearbeiten();
 

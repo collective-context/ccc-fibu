@@ -1,12 +1,12 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 02-Mar-1996 / 16:04:18 - Sat
+// (C) FiCore - Open Source Financial Core  Letztes Update am 02-Mar-1996 / 16:04:18 - Sat
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programme-Name: BAB_ISAM.C      Revision: 1.3	   (C) 1989/1991    ║
-  ║  Function      : euroSOFT Basisprogramm                                 ║
+  ║  Function      : FiCore Basisprogramm                                 ║
   ║                                                                         ║
   ║  Rev.-Date     : 01.05.1991, Graz           Update: 16.07.1991, Graz    ║
   ║  Author        : Peter Mayer                Author: Peter Mayer         ║
-  ║  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    ║
+  ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz    ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

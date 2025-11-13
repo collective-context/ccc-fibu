@@ -1,8 +1,8 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:20:46 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:20:46 - Wed
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programm-Name: PB4100                                                  ║
-  ║  Funktion     : euroSOFT Prüfbau / Drucken Pyknometerdaten              ║
+  ║  Funktion     : FiCore Prüfbau / Drucken Pyknometerdaten              ║
   ║                                    Druck Liste Antragsteller            ║
   ║                                    Asphalt-Messprotokoll                ║
   ║                                    Asphalt-Prüfprotokoll                ║
@@ -12,7 +12,7 @@
   ║                                                                         ║
   ║  Datum        :                            Update:                      ║
   ║  Author       :                            Author:                      ║
-  ║  Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      ║
+  ║  Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                      ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

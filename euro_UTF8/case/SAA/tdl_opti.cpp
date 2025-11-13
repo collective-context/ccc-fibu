@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║  Funktionsname:    Dl_GetOptionen		      Datum: 25.10.88	   ║
@@ -62,7 +62,7 @@
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║                        KONSTANTEN UND MAKROS                           ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
-#define OPTSIGNATUR "euroSOFT - Install"           /* Signatur für Struktur */
+#define OPTSIGNATUR "FiCore - Install"           /* Signatur für Struktur */
 
 
 /*╔════════════════════════════════════════════════════════════════════════╗

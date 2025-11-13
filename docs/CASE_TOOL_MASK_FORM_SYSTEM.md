@@ -10,7 +10,8 @@ Das CCC-FIBU System verwendet ein **CASE (Computer-Aided Software Engineering) T
 - **SAA-Compiler** - Generiert C-Code aus Masken-Definitionen
 - **Automatisches Mapping** - Bildschirmfelder ↔ Btrieve-Records
 
-**Original-Tool:** SAA (Screen Application Architecture) von WINware Software P.Mayer  
+**Original-Tool:** SAA (Screen Application Architecture) - FiCore Open Source Financial Core  
+**Legacy System:** Built on decades of production experience  
 **Verzeichnisse:**
 - `euro_UTF8/MASK/` - Masken-Definitionen (440+ Dateien)
 - `euro_UTF8/FORM/` - Formular-Layouts

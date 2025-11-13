@@ -1,13 +1,13 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programm-Name: HP_FCOPY						    ║
-  ║  Funktion	  : euroSOFT-FONTcopy					    ║
+  ║  Funktion	  : FiCore-FONTcopy					    ║
   ║		    Kopiert Fonts für HP-Laser-Jet			    ║
   ║                                                                         ║
   ║  Datum	  : 07.08.1990, Graz	       Update:	 .  .	 , Graz     ║
   ║  Author       :                            Author:                      ║
-  ║  Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                      ║
+  ║  Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                      ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║
@@ -41,7 +41,7 @@ PSSTR pstrOutDevice=argv[3];
 if(argc != 4)
   {
   printf ("\a\n!!! Fehler:"
-	  "\neuroSOFT-FONTcopy Rel. 1.00\n"
+	  "\nFiCore-FONTcopy Rel. 1.00\n"
 	  "\nSyntax:   HP_FCOPY  <ID-Nummer>  <[Pfad]Font-Datei>  <OUT-DEVICE>\n"
 	  "\nBeispiel: HP_FCOPY  80  \\euro\\fnt\\PC08PN  LPT1\n\n");
   exit (ERROR);

@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║  Funktionsname:    Dokumentationserstellung       Datum: 18.06.89      ║
@@ -47,7 +47,7 @@
 #define DATA_HOLEN ".da"
 #define MASK_INPUT ".ma"
 #define FORM_FEED ".ff"
-#define KOPF "euroSOFT (C) 1989/1990"
+#define KOPF "FiCore (C) 1989/1990"
 #define MAX_ZEILEN  100
 #define MAX_ZEICHEN 300
 #define L_MA  3                                 /* Left_Margin = 3  */
@@ -195,7 +195,7 @@ else
 if (argc != 3)
     {
     printf ("\a\n!!! Fehler:"
-            "\neuroSOFT Dokumentationserstellung Rel. 1.00"
+            "\nFiCore Dokumentationserstellung Rel. 1.00"
             "\nSyntax: STDOC <eingabedatei> <protokolldateidatei>\n");
     exit (ERROR);
     }
@@ -2086,7 +2086,7 @@ if(*pstrTitel)
 
 memset(strTmp, ' ', 250);
 strcpy(&strTmp[(wTiefe*L_MA)],
-"┌(c) 1990 euroSOFT ───── ...euroSOFT-WARE - 8010 Graz ───── Datum 08.08.90 (01)┐\x0A");
+"┌(c) 1990 FiCore ───── ...FiCore-WARE - 8010 Graz ───── Datum 08.08.90 (01)┐\x0A");
 strcpy (ppstrZeile[wZ++], strTmp);
 if(wZ > wSeitenL_m)
   wZ = NeueSeite (wZ, ppstrZeile);

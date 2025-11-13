@@ -1,13 +1,13 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programm-Name: PREPARE						    ║
-  ║  Funktion	  : WINware-PREPARE					    ║
+  ║  Funktion	  : FiCore-PREPARE					    ║
   ║		    Vorbereiten und editiern von Demoseiten		    ║
   ║                                                                         ║
   ║  Datum	  : 05.03.1990, Graz	       Update: 05.03.1990, Graz     ║
   ║  Author       : Peter Mayer                Author:                      ║
-  ║  Copyright(C) : WINware Software, P.Mayer, A-8020 Graz		    ║
+  ║  Copyright(C) : FiCore, P.Mayer, A-8020 Graz		    ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║
@@ -80,7 +80,7 @@ if(wCSInd_g == NICHT_INIT)	  // in i_InitVars() // Ist schon eine Farb-
 if (argc < 2 || argc > 3)
     {
     printf ("\a\n!!! Fehler:"
-	    "\nWINware-CASEbox Präsentationsprogramm Rel. 1.10"
+	    "\nFiCore-CASEbox Präsentationsprogramm Rel. 1.10"
 	    "\nSyntax: PRESENT <Steuerdatei> [<Bildschirmadapter>]\n"
 	    "\nBereich: <Steuerdatei>       = DOS-FILE-SYNTAX\n"
 	    "\nBereich: <Bildschirmadapter> = e für EGA"

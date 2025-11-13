@@ -1,13 +1,13 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programm-Name: PREPARE                                                 ║
-  ║  Funktion	  : WINware-PREPARE					    ║
+  ║  Funktion	  : FiCore-PREPARE					    ║
   ║                 Vorbereiten und editiern von Demoseiten                 ║
   ║                                                                         ║
   ║  Datum        : 05.03.1990, Graz           Update: 05.03.1990, Graz     ║
   ║  Author       : Peter Mayer                Author:                      ║
-  ║  Copyright(C) : WINware Software, P.Mayer, A-8020 Graz		    ║
+  ║  Copyright(C) : FiCore, P.Mayer, A-8020 Graz		    ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║
@@ -150,7 +150,7 @@ i_InitVars();
 if (argc < 2 || argc > 5)
     {
     printf ("\a\n!!! Fehler:"
-	    "\nWINware-CASEbox Presentationsprogramm Rel. 1.10"
+	    "\nFiCore-CASEbox Presentationsprogramm Rel. 1.10"
             "\nSyntax: PREPARE <PictureSource> <Bibliothek> [<Bildschirm> [<Steuerdatei>] ]\n"
             "\nBereich: <PictureSource>     = DOS-FILE-SYNTAX ohne Extension\n"
             "\nBereich: <Bibliothek>        = DOS-FILE-SYNTAX\n"

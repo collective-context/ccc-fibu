@@ -1,4 +1,4 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /* ermitteln des gesamten freien Speichers und Anzeige der */
 /* vorhandenen Programme  \\\  6.7.1990,		   */
@@ -42,7 +42,7 @@ wSeg = (UWORD) lRetCode;
 pstrOldMcb = (CHAR *) MK_FP(wSeg, 0);
 pwOldPsp = (UWORD *) MK_FP(wSeg, 1);
 
-printf("\nShowMemory - Anzeige speicherresidenter Programme             (c) 1990 euroSOFT");
+printf("\nShowMemory - Anzeige speicherresidenter Programme             (c) 1990 FiCore");
 printf("\n═══════════════════════════════════════════════════════════════════════════════\n");
 printf("\n PSP  Größe   Programm     Übergabeparameter");
 printf("\n───────────────────────────────────────────────────────────────────────────────");

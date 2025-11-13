@@ -1,4 +1,4 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:51:08 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:51:08 - Wed
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║  Programme-Name: FI1100.CPP      Revision: 2.0	    (C) 1989/1993     ║

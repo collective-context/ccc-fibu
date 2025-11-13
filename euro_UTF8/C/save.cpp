@@ -1,4 +1,4 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:21:11 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:21:11 - Wed
 
 #include <stdio.h>
 #include <string.h>
@@ -36,7 +36,7 @@ SWORD  main (SWORD  argc, PSSTR  argv[])
 if(argc != 3)
   {
   printf ("\a\n!!! Fehler:"
-	  "\neuroSOFT-SAVE Rel. 1.00"
+	  "\nFiCore-SAVE Rel. 1.00"
 	  "\nSyntax: SAVE <eingabedatei> <ausgabedatei>\n");
   exit (ERROR);
   }

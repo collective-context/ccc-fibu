@@ -1,7 +1,7 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 //╔═══════════════════════════════════════════════════════════════════════════╗
-//║  Funktionsname:    euroSOFT Block-Masken-Compiler	      Datum: 01.11.89 ║
+//║  Funktionsname:    FiCore Block-Masken-Compiler	      Datum: 01.11.89 ║
 //║───────────────────────────────────────────────────────────────────────────║
 //║									      ║
 //║  Benutzte globale							      ║
@@ -22,7 +22,7 @@
 /*╔════════════════════════════════════════════════════════════════════════╗
   ║                        KONSTANTEN UND MAKROS                           ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
-#define OPTSIGNATUR "WINware(C) Install"	   /* Signatur für Struktur */
+#define OPTSIGNATUR "FiCore(C) Install"	   /* Signatur für Struktur */
 
 
 /*╔════════════════════════════════════════════════════════════════════════╗
@@ -190,7 +190,7 @@ for (i=0; i<100; i++)
 if (argc < 4)
     {
     printf ("\a\n!!! Fehler:"
-            "\neuroSOFT Blockmasken-Compiler Rel. 1.00"
+            "\nFiCore Blockmasken-Compiler Rel. 1.00"
             "\nSyntax: BMC <eingabedatei> <ausgabedatei> <maskennummer> [<protokolldatei>]\n");
     exit (-1);
     }

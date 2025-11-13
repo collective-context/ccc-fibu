@@ -1,18 +1,18 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:43 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:43 - Tue
 
 /*.ta app_int.h
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  app_int.h    ... Headerdatei für euroSOFT-TOOL Interne-Funktionen.          ║
+║  app_int.h    ... Headerdatei für FiCore-TOOL Interne-Funktionen.          ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Beschreibung:
 ────────────────────────────────────────────────────────────────────────────────
 Die Datei enthält die symbolischen Konstanten, Makros und Funktionsprototypen
-für die internen Funktionen der euroSOFT-TOOLbox.
+für die internen Funktionen der FiCore-TOOLbox.
 
-Copyright (c) 1989 euroSOFT
+Copyright (c) 1989 FiCore
 ────────────────────────────────────────────────────────────────────────────────
-euroSOFT-WAREvertrieb, Peter Mayer, A-8020 Graz
+FiCore-WAREvertrieb, Peter Mayer, A-8020 Graz
 
 .te*/
 #ifndef APP_INT_HEADER

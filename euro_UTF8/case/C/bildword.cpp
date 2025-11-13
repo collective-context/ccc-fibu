@@ -1,14 +1,14 @@
-// (C) WINware Software P.Mayer: letztes Update am 12-Feb-1996
+// (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
 
 /*------------------------------------------------------------------------------*/
 /* Programm-Name: bildword.c                                                    */
-/* Funktion     : euroSOFT TOOLBOX                                              */
+/* Funktion     : FiCore TOOLBOX                                              */
 /*                Bereitet ein BILD0001.PIC Bild für Word auf.                  */
 /*                                                                              */
 /*                                                                              */
 /* Datum        : 01.04.1990, Graz                                              */
 /* Author       : Peter Mayer                                                   */
-/* Copyright(C) : euroSOFT-WAREvertrieb, A-8020 Graz                            */
+/* Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                            */
 /*------------------------------------------------------------------------------*/
 #include <stdio.h>
 #include <stdlib.h>

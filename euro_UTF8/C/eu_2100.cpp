@@ -1,10 +1,10 @@
-// (C)WINware Software, P.Mayer  Letztes Update am 14-Feb-1996 / 11:18:37 - Wed
+// (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:18:37 - Wed
 
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║  Programme-Name: EU_1100.C       Revision: 1.3	    (C) 1989/1991     ║
-// ║  Function	    : euroSOFT - CASEbox Programme			      ║
+// ║  Function	    : FiCore - CASEbox Programme			      ║
 // ║		      EU Anlegen/Ändern Datenlexikon			      ║
-// ║		      EU Vertriebssteuerung euroSOFT			      ║
+// ║		      EU Vertriebssteuerung FiCore			      ║
 // ║		      LE Lernprogramm - Lexikon 			      ║
 // ║		      PBA Prüfbau - Preisbasis				      ║
 // ║		      LKS Obstsorten - Obstinfo 			      ║
@@ -13,7 +13,7 @@
 // ║									      ║
 // ║  Rev.-Date     : 01.05.1991, Graz		 Update: 05.08.1991, Graz     ║
 // ║  Author	    : Peter Mayer		 Author: Peter Mayer	      ║
-// ║  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz     ║
+// ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz     ║
 // ╚══════════════════════════════════════════════════════════════════════════╝
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║			     Deklarations-Dateien			      ║

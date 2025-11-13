@@ -1,18 +1,18 @@
-// (C) WINware Software, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:54 - Tue
+// (C) FiCore - Open Source Financial Core, P.Mayer!  Letztes Update am 13-Feb-1996 / 18:25:54 - Tue
 
 /*.ta app_msk.h
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  app_msk.h    ... Headerdatei für euroSOFT-TOOLbox Masken-Funktionen.        ║
+║  app_msk.h    ... Headerdatei für FiCore-TOOLbox Masken-Funktionen.        ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Beschreibung:
 ────────────────────────────────────────────────────────────────────────────────
 Die Datei enthält die symbolischen Konstanten, Makros und Funktionsprototypen
-für die Dialog-Funktionen der euroSOFT-TOOLbox.
+für die Dialog-Funktionen der FiCore-TOOLbox.
 
-Copyright (c) 1989 euroSOFT
+Copyright (c) 1989 FiCore
 ────────────────────────────────────────────────────────────────────────────────
-euroSOFT-WAREvertrieb, Peter Mayer, A-8020 Graz
+FiCore-WAREvertrieb, Peter Mayer, A-8020 Graz
 
 .te*/
 

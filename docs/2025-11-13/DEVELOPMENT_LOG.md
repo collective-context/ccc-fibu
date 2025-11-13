@@ -121,7 +121,7 @@ Migration einer professionellen FIBU (Finanzbuchhaltung) von C/MSDOS/Btrieve zu 
 **Modularer Aufbau:**
 - `fi*.cpp` - FIBU-Module
 - `app_*.h` - Application Framework  
-- `eur_*.h` - euroSOFT Toolbox
+- `eur_*.h` - FiCore Toolbox
 - `ba_*.cpp` - Basis-Funktionen
 
 **Field-Access-Makros:**

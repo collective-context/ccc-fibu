@@ -1,0 +1,10 @@
+copy g:\work\exe\hwpmask.049
+:anfang
+if not exist hwpm%1 goto ende
+mc hwpm%1 hwpmask.049 %1 hwpmask.pro
+shift
+goto anfang
+:ende
+copy hwpmask.049 g:\work\exe
+
+

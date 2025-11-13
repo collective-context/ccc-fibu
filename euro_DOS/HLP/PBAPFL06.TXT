@@ -1,0 +1,24 @@
+/*.ta,F02,III. euroSOFT-PROGRAMMbeschreibung / 4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE PB-Prfbau                                                         บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+Anlegen, ndern oder L”schen von ASPHALT-Prfbericht
+ออออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+Detailbeschreibungen
+ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+
+.ma (\euro\mask\PBM170),1.
+
+.ma (\euro\mask\PBM171),1.
+.ff
+.ma (\euro\mask\PBM172),1.
+
+.ma (\euro\mask\PBM173),1.
+
+.hd (PB,prf),PB,as-prf.
+
+.te*/
+
+

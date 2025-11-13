@@ -1,0 +1,61 @@
+/*.ta,F02,VI. Bereich: Stammdaten / 2.3.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-103),1,Stammdaten/Konstanten,Liste n Artikel-Nr.
+.mh (\euro\mask\AUF\AUFM431),1,Liste n Artikel-Nr.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.3.3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-103),1,Stammdaten/Konstanten,Liste n Bezeichnung.
+.mh (\euro\mask\AUF\AUFM432),1,Liste n Bezeichnung.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.3.4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-103),1,Stammdaten/Konstanten,Liste n Hersteller.
+.mh (\euro\mask\AUF\AUFM433),1,Liste n Hersteller.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.3.5.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-103),1,Stammdaten/Konstanten,Liste n Lieferant.
+.mh (\euro\mask\AUF\AUFM434),1,Liste n Lieferant.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.3.6.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-103),1,Stammdaten/Konstanten,Liste n Stellplatz.
+.mh (\euro\mask\AUF\AUFM435),1,Liste n Stellplatz.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.3.6.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-103),1,Stammdaten/Konstanten,Etiketten.
+.mh (\euro\mask\ST\STM4143),1,Etiketten.
+   ---------------------------------------------------
+.te*/
+
+

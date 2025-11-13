@@ -1,0 +1,36 @@
+/*.ta,F02,IV. euroSOFT-FIBU Verarbeiten Buchungen / 1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-Finanzbuchhaltung                                                       บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+
+.fo (\euro\form\FI\FIB4160.M),1,S0,Z0,B118,H71,Druck Kostenvergleich.
+.fo (\euro\form\FI\FIB4170.M),1,S0,Z0,B118,H30,Druck Kostenvergleich Summen.
+.te*/
+
+.me (MENU,FI-062),1,Finanzbuchhaltung,Buchungen.
+.da (EURODATA,FI3100),1,Buchungsjournal/Kontoauszug.
+.hd (FI,AU110),FI,bu-vera.
+.fo (\euro\form\FI\FIB2100.M),1,S5,Z0,B118,H25,Druck Buchungserfassungs-Protokoll.
+.fo (\euro\form\FI\FIB3100.M),1,S5,Z0,B118,H46,Druck Buchungsjournal.
+.fo (\euro\form\FI\FIB3110.M),1,S5,Z0,B118,H23,Druck Kontoauszug.
+.me (MENU,FI-032),1,Finanzbuchhaltung,Saldenlisten.
+.fo (\euro\form\FI\FIB4120.M),1,S5,Z0,B123,H16,Druck Kunden-Saldenlisten.
+.fo (\euro\form\FI\FIB4130.M),1,S5,Z0,B123,H16,Druck Lieferanten-Saldenlisten.
+.fo (\euro\form\FI\FIB4110.M),1,S5,Z0,B123,H27,Druck Sachkonten-Saldenlisten.
+.fo (\euro\form\FI\FIB4111.M),1,S0,Z0,B79,H56,Druck Umsatzsteuer-Voranmeldung.
+.te*/
+
+
+fo (\euro\form\FIB4140.M),1,S0,Z0,B118,H45,Druck Offene Posten Kunden.
+fo (\euro\form\FIB4150.M),1,S0,Z0,B118,H35,Druck Offene Posten Lieferanten.
+fo (\euro\form\FIB4180.M),1,S0,Z0,B118,H29,Druck Bilanz Aktiva.
+fo (\euro\form\FIB4182.M),1,S0,Z0,B118,H32,Druck Bilanz Passiva.
+fo (\euro\form\FIB4184.M),1,S0,Z0,B118,H55,Druck Bilanz Aufwand.
+fo (\euro\form\FIB4186.M),1,S0,Z0,B118,H20,Druck Bilanz Ertrag.
+
+da (EURODATA,FI2100),1,Buchungserfassung.
+ma (\euro\mask\FIM210),1,Erfassen Buchungen 1/1.
+hd (FI,AU110),FI,erfass.
+
+

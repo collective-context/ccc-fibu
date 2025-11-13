@@ -1,0 +1,117 @@
+
+
+
+
+     Artikelnummer    :  von @@@@@@@@@@@@@@@@@@    bis @@@@@@@@@@@@@@@@@@@@
+     Hersteller       :  von @@@@@@@@@@@@@@@@@@    bis @@@@@@@@@@@@@@@@@@@@
+     Artikelgruppe    :  von @@@                   bis @@@
+
+     Bewertungssatz 0 :  @@@@@@ %                  Kopien: ##
+     Bewertungssatz 1 :  @@@@@@ %
+     Bewertungssatz 2 :  @@@@@@ %
+     Bewertungssatz 3 :  @@@@@@ %
+     Bewertungssatz 4 :  @@@@@@ %
+     Bewertungssatz 5 :  @@@@@@ %
+     Bewertungssatz 6 :  @@@@@@ %
+     Bewertungssatz 7 :  @@@@@@ %
+     Bewertungssatz 8 :  @@@@@@ %
+     Bewertungssatz 9 :  @@@@@@ %
+
+     Preisgrundlage   :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Optionen         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ù                                                                        ù
+
+>>Mask:   STM4152
+>>Prog.:  ST4100.C
+
+&TITEL    = "ST  Liste Inventur nach Bezeichnung 1/1"
+&FRAME    = 0, 0, 0, 0, "ÄListe Inventur nach Artikelbezeichnung", 2
+>>SEQUENZ =
+
+&MASKHELP = STHLP10, inven
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+>> &DATEI      (0)  = MASK, D.ST1300
+&DRU_DATEI  (0)  = MASK, D.ST4140
+>> &PARA_READ  (2)  = MASK, L.SYP_01
+
+
+>> von Art.Nummer
+  &HELPTEXT (0)  = STHLP10, 415, 1
+  &DATA   (+-)  = 0, FILLER
+
+>> bis Art.Nummer
+  &HELPTEXT (+)  = STHLP10, 415, 1
+  &DATA   (+-)  = 0, FILLER
+
+>> von Hersteller Nummer
+  &HELPTEXT (+)  = STHLP10, 415, 2
+  &DATA   (+-)  = 0, FILLER
+
+>> bis Hersteller Nummer
+  &HELPTEXT (+)  = STHLP10, 415, 2
+  &DATA   (+-)  = 0, FILLER
+
+>> von Art. Gruppe
+  &HELPTEXT (+)  = STHLP10, 415, 3
+  &DATA   (+-)  = 0, FILLER
+
+>> bis Art. Gruppe
+  &HELPTEXT (+)  = STHLP10, 415, 3
+  &DATA   (+-)  = 0, FILLER
+
+>> Bewertungssatz 0
+  &HELPTEXT (+)  = STHLP10, 415, 4
+  &DATA   (+-)  = 0, FILLER
+
+>>Kopien
+  &HELPTEXT (+)  = SYHLP10, 402, 04
+  &DATA     (+-) = 0, _KOPIEN
+  &DEFAULT  (+-) = "1"
+
+>> Bewertungssatz 1
+  &HELPTEXT (+)  = STHLP10, 415, 4
+  &DATA   (+-)  = 0, FILLER
+
+>> Bewertungssatz 2
+  &HELPTEXT (+)  = STHLP10, 415, 4
+  &DATA   (+-)  = 0, FILLER
+
+>> Bewertungssatz 3
+  &HELPTEXT (+)  = STHLP10, 415, 4
+  &DATA   (+-)  = 0, FILLER
+
+>> Bewertungssatz 4
+  &HELPTEXT (+)  = STHLP10, 415, 4
+  &DATA   (+-)  = 0, FILLER
+
+>> Bewertungssatz 5
+  &HELPTEXT (+)  = STHLP10, 415, 4
+  &DATA   (+-)  = 0, FILLER
+
+>> Bewertungssatz 6
+  &HELPTEXT (+)  = STHLP10, 415, 4
+  &DATA   (+-)  = 0, FILLER
+
+>> Bewertungssatz 7
+  &HELPTEXT (+)  = STHLP10, 415, 4
+  &DATA   (+-)  = 0, FILLER
+
+>> Bewertungssatz 8
+  &HELPTEXT (+)  = STHLP10, 415, 4
+  &DATA   (+-)  = 0, FILLER
+
+>> Bewertungssatz 9
+  &HELPTEXT (+)  = STHLP10, 415, 4
+  &DATA   (+-)  = 0, FILLER
+
+>> Preisgrundlage
+  &HELPTEXT (+)  = STHLP10, 415, 5
+  &DATA   (+-)  = 0, FILLER
+
+>> Optionen
+  &HELPTEXT (+)  = STHLP10, 415, 6
+  &DATA   (+-)  = 0, FILLER
+

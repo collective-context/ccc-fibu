@@ -1,0 +1,79 @@
+
+
+
+   Mennummer : ïïïïïïï
+                             ID-Men³  Programm  ³Steu.
+   Menzeilen - Bezeichnung ³Folges.³    Name    ³Kennz³ Passwort ³  Hilfe
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄ
+   @@@@@@@@@@@@@@@@@@@@@@@@@³ïïïïïïï³@@@@@@@@@@@@³ïïïïï³@@@@@@@@@@³@@@@@@@@@@
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+                            ³       ³            ³     ³          ³
+ ù                          ³       ³            ³     ³          ³           ù
+
+
+>>Mask:   SYM020
+>>Prog.:  SY1100.C
+>>Update: 06.08.91
+
+&TITEL    = "SY  STAMM Anlegen Men-Stamm 1/2"
+&FRAME    = 0, 0, 0, 0, "Anlegen/Žndern Men-Stamm", 2
+>>SEQUENZ =
+
+&BLOCK    = 1,6
+&SCROLL   = 6,0,21,79
+
+&MASKHELP = SYHLP10, men-inf
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, T.MENU
+
+>>Mengruppen-Nummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Mennummer", 0, MENšGRUPPE
+&ADD_MATCH  (+-) = "Menzeilen Bezeichnung ", 0, BEZEICH
+  &HELPTEXT (+-) = SYHLP10, 020, 00
+  &DATA     (+-) = 0, MENšGRUPPE
+
+>> --- Positionsteil ---
+
+>>Menzeilen-Bezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Menzeilen Bezeichnung ", 0, BEZEICH
+&ADD_MATCH  (+-) = "Mennummer", 0, MENšGRUPPE
+  &HELPTEXT (+-) = SYHLP10, 020, 01
+  &DATA     (+-) = 0, BEZEICH
+
+>>Applikationsmen-Folgesatz
+  &HELPTEXT (+)  = SYHLP10, 020, 02
+  &DATA     (+-) = 0, APP_MENš
+
+>>Programm-Name
+  &HELPTEXT (+)  = SYHLP10, 020, 03
+  &DATA     (+-) = 0, PROG_NAME
+
+>>Steuer-Kennzeichen
+  &HELPTEXT (+)  = SYHLP10, 020, 04
+  &DATA     (+-) = 0, STEUER_KZ
+
+>>Passwort
+  &HELPTEXT (+)  = SYHLP10, 020, 05
+  &DATA     (+-) = 0, PASSWORT
+
+>>Fuázeile
+  &HELPTEXT (+)  = SYHLP10, 020, 06
+  &DATA     (+-) = 0, FUSSZEILE
+

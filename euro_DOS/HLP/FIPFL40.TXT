@@ -1,0 +1,19 @@
+/*.ta,F02,IV. STAMMDATEN Anlagenstamm / 5.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE LK-Fibu                                                            บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.da (EURODATA,FI1610),1,Anlagenstamm.
+.te*/
+
+
+da (EURODATA,ST1100),1,Kundenstamm.
+da (EURODATA,ST1110),1,.
+da (EURODATA,FI1110),1,.
+da (EURODATA,FI1115),1,.
+ma (\euro\mask\STM110),1,Anlegen/ndern Kundenstamm 1/4.
+ma (\euro\mask\FIM111),1,Anlegen/ndern Debitor-Stamm 2/4.
+ma (\euro\mask\FIM112),1,Gebuchte Debitor-Umstze 3/4.
+ma (\euro\mask\FIM113),1,Offene Posten Debitoren 4/4.
+hd (FI,kund-st),FI,kund-an.
+

@@ -1,0 +1,45 @@
+
+.ko(<null>)
+
+       ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+       บ  Preisliste                                              บ
+       ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+
+     Die Preise sind gltig ...
+.ff
+.ko(Preisliste von <datum>      Seite: -1.<seite:2>-)
+
+In den Prfungsgebhren sind folgende Leistungen enthalten:
+
+1
+2
+3
+
+
+
+                                                        PEH      S
+
+.ar(D.ST1300,ART-NR,BEZEICHNUNG,EINHEIT,BETRAG)
+.vb(ART-NR,X100,X199)
+#### @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@  ##.###.##
+
+
+.fr(03)
+
+
+.me (MENUE,PB-010),1.
+
+.me (MENUE,PB-030),1.
+
+.me (MENUE,PB-020),1.
+
+.me (MENUE,PB-018),1.
+
+.ko(Preisliste von <datum>      Seite: -1.<seite:1>-)
+
+.in()
+.te*/
+
+
+

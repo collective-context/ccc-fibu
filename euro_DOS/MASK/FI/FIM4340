@@ -1,0 +1,140 @@
+
+
+
+
+
+
+
+
+
+                                 ù
+
+                                   Aktuelles Datum : ##.##.##
+
+                                 ù                             ù
+
+^^^^^^^^ ^^^^^^^^ ^
+^ ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^     ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^
+^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^
+
+>>Mask:   FIM4330
+>>Prog.:  FI3100.C
+>>Update: 4.08.91
+
+&TITEL    = "FI  L™SCH Jahresabschluá"
+&FRAME    = 0, 0, 0, 0, "ÄJahresabschluá", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, sach-dr
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&WORK_DATEI (0)  = MASK, D.FI1310
+&DRU_DATEI  (1)  = MASK, D.FI4210
+&WORK_DATEI (2)  = MASK, D.FI1210
+&WORK_DATEI (3)  = MASK, D.FI1110
+&WORK_DATEI (4)  = MASK, D.FI1600
+&WORK_DATEI (5)  = MASK, D.ST1300
+&PARA_READ  (6)  = MASK, D.SYP_50  >>Konsten des aktuellen Jahres
+&PARA_READ  (7)  = MASK, L.SYP_01  >>Festkonten, ...
+&WORK_DATEI (8)  = MASK, D.FI1115  >>OP's Kunde
+
+
+&DATA       (0)  = 1, _DATUM      >>Datum -> wenigstens ein Ausgabefeld
+&DEFAULT    (+-) = "s"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _V_KTONR    >>Von Kontomunner S
+  &DATA_H   (+)  = 1, _B_KTONR    >>Bis Kontonummer S
+  &DATA_H   (+)  = 0, KONTONR     >>Sachkonto-Nummer
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 0, K_VOR_SAL
+  &DATA_H   (+)  = 0, K_SOLL_01
+  &DATA_H   (+)  = 0, K_HABEN_01
+  &DATA_H   (+)  = 0, K_SOLL_02
+  &DATA_H   (+)  = 0, K_HABEN_02
+
+  &DATA_H   (+)  = 0, K_SOLL_03
+  &DATA_H   (+)  = 0, K_HABEN_03
+  &DATA_H   (+)  = 0, K_SOLL_04
+  &DATA_H   (+)  = 0, K_HABEN_04
+  &DATA_H   (+)  = 0, K_SOLL_05
+  &DATA_H   (+)  = 0, K_HABEN_05
+
+  &DATA_H   (+)  = 0, K_SOLL_06
+  &DATA_H   (+)  = 0, K_HABEN_06
+  &DATA_H   (+)  = 0, K_SOLL_07
+  &DATA_H   (+)  = 0, K_HABEN_07
+  &DATA_H   (+)  = 0, K_SOLL_08
+  &DATA_H   (+)  = 0, K_HABEN_08
+
+  &DATA_H   (+)  = 0, K_SOLL_09
+  &DATA_H   (+)  = 0, K_HABEN_09
+  &DATA_H   (+)  = 0, K_SOLL_10
+  &DATA_H   (+)  = 0, K_HABEN_10
+  &DATA_H   (+)  = 0, K_SOLL_11
+  &DATA_H   (+)  = 0, K_HABEN_11
+
+  &DATA_H   (+)  = 0, K_SOLL_12
+  &DATA_H   (+)  = 0, K_HABEN_12
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 4, INVENT_NR
+  &DATA_H   (+)  = 4, ZEITW_ANF
+  &DATA_H   (+)  = 4, ZUGANG
+  &DATA_H   (+)  = 4, ABGANG
+  &DATA_H   (+)  = 4, AFA
+  &DATA_H   (+)  = 4, ZEIT_WERT
+
+>>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 5, ARTNR
+  &DATA_H   (+)  = 5, EINKAUFMEN
+  &DATA_H   (+)  = 5, EKPRMIT
+  &DATA_H   (+)  = 5, UMSATZMEN
+  &DATA_H   (+)  = 5, UMSATZK
+  &DATA_H   (+)  = 5, LETZ_INVEN
+
+  &DATA_H   (+)  = 5, INVEN_ANF
+  &DATA_H   (+)  = 5, IN_ANF_EKP
+  &DATA_H   (+)  = 5, INVEN_AKT
+  &DATA_H   (+)  = 5, IN_AKT_EKP
+  &DATA_H   (+)  = 6, Y_CLOSED
+  &DATA_H   (+)  = 6, Y_COPIED
+
+  &DATA_H   (+)  = 7, SALDO_VOR
+  &DATA_H   (+)  = 7, KAPIT_KTO
+  &DATA_H   (+)  = 8, OP_KUNDE
+
+>>Von Kontomunner S
+  &HELPTEXT (+)  = FIHLP10, 413, 00
+  &DATA_H   (+-) = 1, _V_KTONR
+  &DEFAULT  (+-) = "!!!!!!!!"
+
+>>Bis Kontonummer S
+  &HELPTEXT (+)  = FIHLP10, 413, 1
+  &DATA_H   (+-) = 1, _B_KTONR
+  &DEFAULT  (+-) = "zzzzzzzz"
+
+>>von Seite
+  &HELPTEXT (+)  = STHLP10, 413, 9
+  &DATA_H   (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = STHLP10, 413, 10
+  &DATA_H   (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+

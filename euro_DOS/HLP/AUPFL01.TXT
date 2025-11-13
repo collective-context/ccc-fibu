@@ -1,0 +1,148 @@
+/*.ta,F02,I. Auftragsbearbeitung / 1.,1
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º  WINware Auftragsbearbeitung                                                      º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+
+                                  Pflichtenheft
+                           "WINware Auftragsbearbeitung"
+
+
+                                  Fr die Firma
+                            WINware Software, P.Mayer
+
+                                 Grazerstraáe 126
+                                 A-8082 Kirchbach
+
+
+Dieses Pflichtenheft ist eine detailierte Beschreibung des Programmpaketes
+WINware Auftragsbearbeitung. Diese Programmpaket ist innerhalb eines v”llig
+neuen Programmierkonzeptes mit Hilfe der WINware CASEbox erstellt worden und
+erschlieát sowohl fr den Kunden als auch fr den Programmierer vollkommen
+neue M”glichkeiten.
+
+Man kann den Produktlebenszyklus in sechs verschiedene Phasen aufteilen:
+
+                               ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                               ³ 6) nderung ³
+                               ³ 5) Wartung  ³
+                   ÚÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿
+                   ³         4) Test/Debugging           ³
+                   ³  3) Implementierung/Programmierung  ³
+            ÚÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄ¿
+            ³              2) Konzept-Erstellung              ³
+            ³          1) Anforderungsspezifikation           ³
+            ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+Fr die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
+und Konzepterstellung - wird meist eine Textverarbeitung verwendet. Fort-
+schrittlichere Programmierkonzepte setzten hier bereits CASE-Tools ein.
+
+Die beiden nachfolgenden Phasen - Implementierung/Programmierung und Test/De-
+bugging - finden in der Anwendungs-Entwicklungsumgebung statt. Das Problem
+dabei ist nur: Die Brcke zwischen den ersten beiden Planungs-Phasen und den
+n„chsten beiden Phasen der Programmerstellung kann man bei den herk”mmlichen
+Programmerstellungs-Mitteln nicht als tragf„hig bezeichnen.
+
+Das erarbeitete Konzept muá mit groáem Aufwand in die Anwendungs-Enwicklungs-
+umgebung bernommen werden. Das n„chste Problem taucht auf, wenn sich in den
+Phasen der Implementierung und des Test/Debugging nderungen ergeben. Wenn
+sich diese nderungen auf das Konzept zurckschlagen, mssen diese im Planungs-
+teil "von Hand nachgefahren" werden. Unterbleibt dies, kommt es zur Inkon-
+sistenz zwischen Konzept und Realisierung, was in der Praxis ein durchaus
+blicher Zustand ist.
+
+Diese Inkonsistenz r„cht sich aber sp„testens dann, wenn es um die Wartung der
+Software geht. ndern sich beispielsweise die Anforderungen an das Produkt,
+hat dies zun„chst Auswirkungen auf das Konzept und schlieálich auf die
+Implementierung. Wenn die Brcke zwischen der Planungs- und Anwendungs-
+Entwicklungsumgebung fehlt oder unvollst„ndig ist, wird man direkt die
+Implementierung ver„ndern und das Konzept somit veraltern lassen. Wiederholt
+sich dieser Vorgang einige Male, kann man das Konzept praktisch wegwerfen.
+
+Die Forderung nach einer integrierten Umgebung, die sowohl die Planungsphasen
+als auch die Entwicklungsphasen umfaát - einschlieálich Wartung -, ist somit
+sehr sinnvoll. Genau dieses Ziel ist mit der WINware CASEbox verwirklicht.
+.ff
+Der Kern der WINware CASEbox ist das Datenlexikon. Es gibt also nur eine
+einzige Stelle, an der die Datenfelder fr jede Datei beschrieben werden.
+Der Masken-Compiler, der Formular-Compiler und der Programm-Quellcode greifen
+bereits auf diese Informationen zu.
+
+Doch damit nicht genug. Selbst das Druckprogramm fr dieses Pflichtenheft
+holt sich die Dateiinforamtion w„hrend des Ausdruckes direkt aus dem Daten-
+lexikon. Dasselbe gilt fr Masken-Abbildungen oder Meninformationen.
+
+Fr den Kunden und fr den Applikations-Programmierer bringt die WINware-
+CASEbox eine Reihe von Vorteilen. Der frhzeitige Einsatz eines professionellen
+Werkzeuges bereits in der Planung eines Softwareprojektes reduziert konzeptio-
+nelle Fehler. Durch den "weichen šbergang" zwischen Planungs- und Entwicklungs-
+werkzeug l„át sich das erarbeitete Konzept ohne Einschr„nkungen fr die
+Implementierung verwenden. Hiezu geh”rt beispielsweise, daá die WINware
+CASEbox automatisch die Datenbanken und die Bildschirm-Masken in der im
+Konzept angegebenen Form anlegt.
+
+Stellen sich w„hrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
+Ursprungs sind, stellt die integrierte L”sung sicher, daá notwendige nderungen
+am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daá
+diese Methode die Produktivit„t bei der Software-Entwicklung drastisch steigert.
+
+
+Zielsetzung: WINware Auftragsbearbeitung
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+Struktur des Rechnungswesens
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+ Erfassen             Verarbeiten               Auswertungen        Stammdaten
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ Buchungen ÄÄÄÄÄÄÂÄÂÄ Buchungen ÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄ Kundensalden ÄÄÄÄÄÂ Kunden ÄÄÄÙ
+                 ³ ³                         ³  Lieferantensalden ³ Lieferanten
+ Protokoll       ³ ³  Druck Buchungsjournal  ³  Sachkontensalden  ³ Sachkonten
+ Buchungen ÄÄÄÄÄÄÙ ³  Druck Kontobl„tter     ³                    ³
+                   ³                         ³  UST-Voranmeldung  ³ Konstanten
+                   ³  Monatsabschluá         ³  Kostenvergleich   ³
+                   ÀÄ Jahresabschluá ÄÄÄÄÄÄÄÄÁÄ Bilanzauswertung ÄÙ
+
+.te*/
+
+
+/*.ta,F02,II. WINware MENš / 1.,1
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º  WINware Auftragsbearbeitung                                                      º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+Bentzeroberfl„che WINware MENš
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+Der Aufruf der jeweiligen Funktionen erfolgt ber das WINware MENš. Dabei sind
+die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
+
+
+.mi (MENUE,FI-L000),1,¯WINware Auftragsbearbeitung®.
+.mi (MENUE,FI-L011),1,¯Stammdaten/Konstanten®.
+.mi (MENUE,FI-L010),1,¯Installation®.
+.te*/
+
+
+me (MENUE,FI-030),1.
+me (MENUE,FI-050),1.
+me (MENUE,FI-040),1.
+me (MENUE,FI-042),1.
+me (MENUE,FI-044),1.
+me (MENUE,FI-052),1.
+me (MENUE,FI-046),1.
+me (MENUE,FI-060),1.
+me (MENUE,FI-062),1.
+me (MENUE,FI-032),1.
+me (MENUE,FI-070),1.
+me (MENUE,FI-072),1.
+me (MENUE,FI-076),1.
+me (MENUE,FI-078),1.
+me (MENUE,FI-074),1.
+me (MENUE,FI-080),1.
+me (MENUE,FI-082),1.
+
+
+

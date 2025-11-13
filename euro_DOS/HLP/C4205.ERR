@@ -1,0 +1,16 @@
+
+  ³      Compiler warning (level 4) C4205
+  ³
+  ³      statement has no effect
+  ³
+  ³      The indicated statement will have no effect on the program
+  ³      execution.
+  ³
+  ³      Some examples of statements with no effect:
+  ³
+  ³           1;
+  ³           a + 1;
+  ³           b == c;
+  ³                                     --
+
+

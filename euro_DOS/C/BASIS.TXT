@@ -1,0 +1,349 @@
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ     Grund-Initialisierungen  == Programmstart                           บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+VOID main(WORD argc, PSTR argv[])
+{
+ba_Init(argc, argv);
+while(wSteuerKz_g >= 0)
+  {
+  i_main_init(&wSteuerKz_g, &wDruckKz_g, strApp_g,
+    strAppDru_g, awMasks_g, &wFormular_m,
+    strSpecialKeyCodes_g);
+
+  if(wSteuerKz_g >= 0)
+    {
+    if(Application_Init())
+      Application_Mask();                            /* Start der Applikation*/
+
+    Application_Close();
+    }
+
+  i_main_while(&wSteuerKz_g, &wDruckKz_g);     /*                      */
+  } /* end While == Programmende */                  /*                      */
+
+Mn_Entfernen(1);                                     /* Menzeile l”schen    */
+Wi_Entfernen(pWkbInfo_g);                            /* WindowKontollBlock   */
+D_end_process(0);                                    /*                      */
+} /*end main*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Application_Set()                                                       บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Fhrt applikationsabhngige Vorbelegungen fr bestimmte Felder          บ
+  บ durch. Die Routiene wird !!! vor !!! jedem Feld angesprungen.           บ
+  บ ฏwMskฎ und ฏwFldฎ sind die Nummern des Feldes und der Maske, die als    บ
+  บ nchstes vom Interpreter angesprungen werden wrde.                     บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ KeyCode_Handler()                                                       บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ All_Fields_Handler()                                                    บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Special_Functions (02)                                                บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine wird angesprungen, wenn vom Anwender eine Sonderfunk-     บ
+  บ tionstaste bettigt wurde, die fr die Applikation eine bestimmte       บ
+  บ Bedeutung hat.                                                          บ
+  บ Wenn Special_Functions() ausgeschaltet werden soll, dann muแ (OK) zu-   บ
+  บ rckgegeben werden. Wird von der Funktion (NULL) zurckgegeben, dann    บ
+  บ wird zustzlich die Special_Functions in der Standard-Version druch-    บ
+  บ laufen.                                                                 บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Field_Classification()                                                บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Field_Classification() teilt das vom Anwender gerade verlassene Feld in บ
+  บ eine der Kategorien "Schlssel zum Stammsatz", "Schlsselfeld mit Ver-  บ
+  บ weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     บ
+  บ Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  บ
+  บ auf den Primarkey in der Reference-Datei beziehen, so muแ dies in der   บ
+  บ Sub-Funktion i_Field_Classification nachgetragen werden.                บ
+  บ Auch bei scrollbaren Zeilen im Maskentyp 1 muแe bei einem Verweis auf   บ
+  บ Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Validate_Primary_Key()                                                  บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Primrschlssel auf zulssige Eingabe prfen.                           บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Primary_KeyHandler()                                                    บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Funktion wird aufgerufen, wenn das Primrkeyfeld verlassen wird.  บ
+  บ Hier k”nnen Funktionen wie beispielsweise das Hochzhlen der Nummern-   บ
+  บ kreise nachgetragen werden.                                             บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Reference_Key_Handler()                                               บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Reference_Key_Handler() behandelt die Eingaben, die in einem Schlssel- บ
+  บ feld auf eine Referenz-Datei gemacht wurden.                            บ
+  บ Es werden Referenz-Zugriffe (sofern erwnscht) auf die jeweiligen       บ
+  บ Dateien vorgenommen.                                                    บ
+  บ Der laut Field_Classification() oder Matchcode_Handler gewhlte Primr- บ
+  บ key in der Reference-Datei wird geladen.                                บ
+  บ In i_Reference_Key_Handler() k”nnen etwaige Feldzuordnungen nachgetra-  บ
+  บ gen werden.                                                             บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Other_Fields_Handler()                                                  บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine behandelt die Eingaben, die in die normalen Stamm-        บ
+  บ datenfelder gemacht wurden.                                             บ
+  บ Hier k”nnen applikationsabhngige Plausibilittstests und Folgereak-    บ
+  บ tionen zu den einzelnen Feldern angegeben werden.                       บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Set_Default()                                                           บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine belegt die Defaultfelder vor.                             บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Semantic_Check()                                                        บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine berprft vor dem Abspeichern die sematische Gltigkeit   บ
+  บ des Stammsatzes. Unter die sematischen Abprfungen fallen Plausitests   บ
+  บ zur Erfllung von Pflichtfeldern und widersprchliche Feldinhalte.      บ
+  บ Bei erfolgreicher Prfung muแ wValid auf JA (1) gesetzt werden.         บ
+  บ Fllt die Prfung durch muแ wVailid auf NEIN (0) gesetzt werden.        บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Read_Next()                                                           บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Soll die Read_Next() Funktion nicht in der Standardaufgabe mit der      บ
+  บ Synchronisierung der REC-Dateien verwendet werden, dann kann hier eine  บ
+  บ Funktion die neue Aufgabe bernehmen. Um die Standardfunktion auszu-    บ
+  บ schalten, muแ dann ein ฏreturn(OK)ฎ zurckgegeben werden.               บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Read_Previous()                                                       บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Soll die Read_Previous() Funktion nicht in der Standardaufgabe mit der  บ
+  บ Synchronisierung der REC-Dateien verwendet werden, dann kann hier eine  บ
+  บ Funktion die neue Aufgabe bernehmen. Um die Standardfunktion auszu-    บ
+  บ schalten, muแ dann ein ฏreturn(OK)ฎ zurckgegeben werden.               บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Write_Work ()                                                           บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Sollen verarbeitete Teile in Dateien gespeichert werden, so ist der     บ
+  บ entsprechende Teil hier einzutragen.                                    บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Read_Default()                                                          บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Legt fest, ob beim Aufruf eines Programmes bereits ein Datensatz gele-  บ
+  บ sen werden soll.                                                        บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Validate_Read()                                                         บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Fr Read_Record(), Read_Next() und fr Read_Previous kann hier kontrol- บ
+  บ liert werden ob der gelesene Satz gltig ist.                           บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Read_Calc (22)                                                          บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine liest die Datenstze aus der Stammdatei, die zum berech-  บ
+  บ nen von Vorgabe-Daten fr die Maske ben”tigt werden.                    บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Matchcode_Handler_1()                                                   บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Wenn vor der Wahl anderes als im Maskensource definiert werden soll, so บ
+  บ kann das hier erfolgen.                                                 บ
+  บ Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    บ
+  บ Fr scrollbare Zeilen im Maskentyp 1 und fr spezielle Wnsche bei      บ
+  บ Zugriffen auf Referenz-Dateien k”nnen in Matchcode_Handler_1() Eintrge บ
+  บ erfolgen.                                                               บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Matchcode_Handler_2                                                     บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Wenn nach der Wahl nicht der Primrkey kopiert werden soll, so ist dies บ
+  บ hier nachzutragen.                                                      บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Match_Check_OK()                                                        บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Schlieแt fr den Matchcode die gewnschten Eintrge aus.                บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ     Application_Mask()                                                  บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+GLOBAL
+WORD Application_Mask()
+{
+Read_Default();
+ReadSelect();
+while(!wFinis_g)                                     /* Haupt-Eingabe-Schl.  */
+  {
+  Set_Default();
+
+  while(wKeyCode_g!=9999 && !wEscFlag_g)             /* ESC-Taste gedrckt   */
+    {
+    M_KeyCode(apWkbMask_g, wKeyCode_g,               /* Fr Application_Set  */
+      &wNextMaskNumber, &wNextFieldNumber,
+      &wNextBlockNumber_g, apTextBox_g,
+      apstrRecord_g, awRecLength_g, awBlocks_g );    /* Key-Code auswerten   */
+
+    Application_Set(wNextMaskNumber,
+      wNextFieldNumber);                             /* Vorbelegungen        */
+
+    M_Input(apWkbMask_g, &wMaskNumber_g,             /* Masken-Interpreter   */
+      apstrRecord_g, apstrMaskText_g,                /*                      */
+      apstrBrowseText_g,apTextBox_g,&wFieldNumber_g, /*                      */
+      strOldString_g, strNewString_g, &wKeyCode_g,   /*                      */
+      awBlocks_g, awScroll_g, awRecLength_g,         /*                      */
+      &wBlockNumber_g, strApp_g, pstrIndexKey_g);    /*                      */
+
+    KeyCode_Handler();
+    if(strchr(strSpecialKeyCodes_g,wKeyCode_g ) > 0) /* Wenn Funktionstaste  */
+      Special_Functions();                           /* gedrckt dann aus-   */
+    else                                             /* werten sonst:        */
+      {                                              /* Feldnummer auf Key-  */
+      Field_Classification();                        /* Feld prfen          */
+      if(wRecKey_g>0 && boRecMask_g)                 /* Wenn Stammschlssel  */
+        Record_Key_Handler();                        /* dann abhandeln       */
+      else                                           /* sonst: wenn Referenz-*/
+        if(wRefKey_g>0)                              /* schlssel dann such  */
+          Reference_Key_Handler();                   /* Referenzdatei        */
+        else                                         /* sonst: andere Felder */
+          Other_Fields_Handler();                    /* abhandeln            */
+
+      Browse_Handling();
+      } /*end ! strSpecialKeyCodes */                /*                      */
+
+    All_Fields_Handler();
+    } /*end: while(!wEscFlag_g)*/
+
+  Store();                                           /* speichern, wenn      */
+  } /*end while(wFinis_g)*/                          /* !wFinis dann Eingabe */
+
+StoreSelect();
+return(OK);
+} /*end Application_Mask() */
+
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Special_Functions()                                                     บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine wird angesprungen, wenn vom Anwender eine Sonderfunk-     บ
+  บ tionstaste bettigt wurde, die fr die Applikation eine bestimmte       บ
+  บ Bedeutung hat.                                                          บ
+  บ Siehe Konstanten-Deklaration                                            บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Field_Classification()                                                  บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Field_Classification() teilt das vom Anwender gerade verlassene Feld in บ
+  บ eine der Kategorien "Schlssel zum Stammsatz", "Schlsselfeld mit Ver-  บ
+  บ weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     บ
+  บ Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  บ
+  บ auf den Primarkey in der Reference-Datei beziehen, so muแ dies in der   บ
+  บ Sub-Funktion i_Field_Classification nachgetragen werden.                บ
+  บ Auch bei scrollbaren Zeilen im Maskentyp 1 muแe bei einem Verweis auf   บ
+  บ Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Copy_Selection()                                                        บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Funktion wird nach drcken der [F2]-Taste nach Ausfhrung der     บ
+  บ Funktion Matchcode_Handler() in der Funktion Special_Funktions() vor    บ
+  บ der Funktion Reference_Key_Handler() aufgerufen.                        บ
+  บ Weiters wird die Funktion in der Funktion Field_Classification() und    บ
+  บ damit ebenfalls vor Reference_Key_Handler() aufgerufen.                 บ
+  บ Aufgabe:                                                                บ
+  บ   1) In der Funktion Matchcode_Handler wird nach einem beliebigen       บ
+  บ      Schlssel in der angebenen Datei gesucht. Unter strSelection_g     บ
+  บ      wird vom gewhlten Datensatz der Primrkey der Datei zurckgegeben.บ
+  บ oder: (R-2)                                                             บ
+  บ   2) In der Funktion Field_Classification() wird nach einem beliebigen  บ
+  บ      Schlssel in der angebenen Datei gesucht. Unter strSelection_g     บ
+  บ      wird vom gewhlten Datensatz der Primrkey der Datei zurckgegeben.บ
+  บ In beiden Fllen kopiert diese Funktion strSelection_g an die Primarkey-บ
+  บ stelle des Records sowie auf die Varaiblen strKey_Value_g und strNew-   บ
+  บ string_g.                                                               บ
+  บ Danach steht der Primrkey nach der Wahl fr die Funktion Referenc_Key- บ
+  บ Handler() an der richtigen Stelle.                                      บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Record_Key_Handler()                                                    บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine behandelt die Eingaben, die in einem Schlsselfeld        บ
+  บ zum Stammsatz gemacht wurden.                                           บ
+  บ Hier wird berprft, ob der Schlssel Gltigkeit besitzt und in         บ
+  บ der Stammdaten-Datei vorhanden ist. Danach wird entschieden, ob ein     บ
+  บ bestehender Satz mutiert werden soll, oder ob ein neuer Satz ange-      บ
+  บ legt werden soll.                                                       บ
+  บ Bei Leereingaben ohne aktuellen Datensatz wird in das nchste           บ
+  บ Schlsselfeld zum Stammdaten-Satz verzweigt.                            บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Primary_KeyHandler()                                                    บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Funktion wird aufgerufen, wenn das Primrkeyfeld verlassen wird.  บ
+  บ Der Primary_KeyHandler wird auch in einem Rec-Schlsselfeld nach dem    บ
+  บ Drcken der [F2]-Taste angesprungen.                                    บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Reference_Key_Handler()                                                 บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Reference_Key_Handler() behandelt die Eingaben, die in einem Schlssel- บ
+  บ feld auf eine Referenz-Datei gemacht wurden.                            บ
+  บ Es werden Referenz-Zugriffe (sofern erwnscht) auf die jeweiligen       บ
+  บ Dateien vorgenommen.                                                    บ
+  บ Der laut Field_Classification() oder Matchcode_Handler gewhlte Primr- บ
+  บ key in der Reference-Datei wird geladen.                                บ
+  บ In i_Reference_Key_Handler() k”nnen etwaige Feldzuordnungen nachgetra-  บ
+  บ gen werden.                                                             บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Next_Key_Field ()                                                       บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Diese Routine setzt den Feld-Cursor auf das nchste Schlsselfeld.      บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ Matchcode_Handler()                                                     บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    บ
+  บ Fr scrollbare Zeilen im Maskentyp 1 und fr spezielle Wnsche bei      บ
+  บ Zugriffen auf Referenz-Dateien k”nnen in i_Matchcode_Handler() Eintrge บ
+  บ erfolgen.                                                               บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+
+/*ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+  บ i_Read_Default()                                                        บ
+  บ ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ บ
+  บ Legt fest, ob beim Aufruf eines Programmes bereits ein Datensatz gele-  บ
+  บ sen werden soll.                                                        บ
+  ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+

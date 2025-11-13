@@ -1,0 +1,127 @@
+
+
+
+  Mandanten-Nr  :  ##         Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  Demo-Version  :  @@@@       Nutzungsrecht:   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  Name          :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  Straáe        :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  PLZ Ort       :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+  Telefon       :  @@@@@@@@@@@@@@@@@@@@          E-Mail : @@@@@@@@@@@@@@@@@@@
+  Telex/Telefax :  @@@@@@@@@@@@@@@@@@@@          Copyright: ^^^^^^^^^^^^^^^^^
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ ù                                                                            ù
+
+>>Mask:   SYM041
+>>Prog.:  SY1100.C
+>>Update: 06.08.91
+
+&TITEL    = "SY  STAMM Mandantenstamm 1/1"
+&FRAME    = 0, 0, 0, 0, "Mandantenstamm", 2
+>>SEQUENZ =
+
+&MASKHELP = SYHLP10, mand-in
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, L.SYPARA
+
+>>Mandanten-Nummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Mandanten-Nr.", 0, MAND_PARA
+&ADD_MATCH  (+-) = "Bezeichnung                   ", 0, MATCH_CODE
+  &HELPTEXT (+-) = SYHLP10, 041, 00
+  &DATA     (+-) = 0, MAND_PARA
+
+>>Bezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Bezeichnung                   ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Mandanten-Nr.", 0, MAND_PARA
+  &HELPTEXT (+-) = SYHLP10, 041, 01
+  &DATA     (+-) = 0, MATCH_CODE
+
+>>Demo-Version
+  &DATA     (+)  = 0, DEMO_KZ
+  &CHOICE   (+-) = "Demo-Version ?",  "nein","n",  "ja","j"
+  &DEFAULT  (+-) = "n"
+
+>>Nutzungs-Berechtigung
+  &DATA     (+)  = 0, NUTZUNG
+  &DEFAULT  (+-) = "4win Software  www.4win.com/at"
+
+>>Name
+  &HELPTEXT (+)  = SYHLP10, 041, 02
+  &DATA     (+-) = 0, ZUSATZ
+
+>>Straáe
+  &HELPTEXT (+)  = SYHLP10, 041, 03
+  &DATA     (+-) = 0, STRASSE
+
+>>PLZ Ort
+  &HELPTEXT (+)  = SYHLP10, 041, 04
+  &DATA     (+-) = 0, PLZ_ORT
+
+>>Telefon
+  &HELPTEXT (+)  = SYHLP10, 041, 06
+  &DATA     (+-) = 0, TELEFON
+
+>>E-Mail
+  &HELPTEXT (+)  = SYHLP10, 041, 05
+  &DATA     (+-) = 0, E_MAIL
+
+>>Telefax
+  &HELPTEXT (+)  = SYHLP10, 041, 07
+  &DATA     (+-) = 0, TELEFAX
+
+>>Copyright
+  &DATA     (+)  = 0, COPYRIGHT
+  &DEFAULT  (+-) = "(c) 1988-96 4win"
+
+>>Kopfzeile 0
+  &HELPTEXT (+)  = SYHLP10, 041, 09
+  &DATA     (+-) = 0, KOPFTEXT_0
+
+>>Kopfzeile 1
+  &HELPTEXT (+)  = SYHLP10, 041, 09
+  &DATA     (+-) = 0, KOPFTEXT_1
+
+>>Kopfzeile 2
+  &HELPTEXT (+)  = SYHLP10, 041, 09
+  &DATA     (+-) = 0, KOPFTEXT_2
+
+>>Kopfzeile 3
+  &HELPTEXT (+)  = SYHLP10, 041, 09
+  &DATA     (+-) = 0, KOPFTEXT_3
+
+>>Kopfzeile 4
+  &HELPTEXT (+)  = SYHLP10, 041, 09
+  &DATA     (+-) = 0, KOPFTEXT_4
+
+>>Kopfzeile 5
+  &HELPTEXT (+)  = SYHLP10, 041, 09
+  &DATA     (+-) = 0, KOPFTEXT_5
+
+>>Kopfzeile 6
+  &HELPTEXT (+)  = SYHLP10, 041, 09
+  &DATA     (+-) = 0, KOPFTEXT_6
+
+>>Kopfzeile 7
+  &HELPTEXT (+)  = SYHLP10, 041, 09
+  &DATA     (+-) = 0, KOPFTEXT_7
+
+>>Kopfzeile 8
+  &HELPTEXT (+)  = SYHLP10, 041, 09
+  &DATA     (+-) = 0, KOPFTEXT_8
+
+

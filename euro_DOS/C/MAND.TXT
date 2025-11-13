@@ -1,0 +1,14 @@
+ST1500.C:for (i=0; strcmp(apTextBox_m[0][i]->strDatenfeld, "MANDANT") &&
+ST4150.C:for (i=0; strcmp(apTextBox_m[1][i]->strDatenfeld, "MAND") &&
+SV1100.C:for (i=0; strcmp(apTextBox_m[0][i]->strDatenfeld, "MANDANT") &&
+SV1100.C:for (i=0; strcmp(apTextBox_m[0][i]->strDatenfeld, "MAND") &&
+UB2100.C:       pTBI && (strcmp(pTBI->strDatenfeld, "MAND_PT") ||
+PB1100.C:for (i=0; strcmp(apTextBox_m[0][i]->strDatenfeld, "MANDANT") &&
+AK1100.C:for (i=0; strcmp(apTextBox_m[0][i]->strDatenfeld, "MANDANT") &&
+ZE1100.C:for (i=0; strcmp(apTextBox_m[0][i]->strDatenfeld, "MANDANT") &&
+UB1100.C:for (i=0; strcmp(apTextBox_m[0][i]->strDatenfeld, "MANDANT") &&
+FI1110.C:for (i=0; strcmp(apTextBox_m[0][i]->strDatenfeld, "MANDANT") &&
+BS1100.C:for (i=0; strcmp(apTextBox_m[0][i]->strDatenfeld, "MANDANT") &&
+EU0100.C:for (i=0; strcmp(apTextBox_m[0][i]->strDatenfeld, "MANDANT") &&
+
+

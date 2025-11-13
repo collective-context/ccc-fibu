@@ -1,0 +1,194 @@
+/*.ta,F02,I. Einfhrung / 1.,1
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º  euroSOFT LK-Fibu                                                                 º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+
+                                  Pflichtenheft
+                   "Landwirtschaftliches Buchfhrungsprogramm"
+
+
+                                    Fr Firma
+                       LK-DATA, Landwirtschaftskammer fr
+                            Land- und Forstwirtschaft
+
+                                Hammerlinggasse 3
+                                   A-8010 Graz
+
+
+Dieses Pflichtenheft ist eine detailierte Beschreibung des Projektes "LK-Fibu".
+Es ist innerhalb eines v”llig neuen Programmierkonzeptes mit Hilfe der
+euroSOFT-CASEbox erstellt worden und erschlieát sowohl fr den Kunden als
+auch fr den Programmierer vollkommen neue M”glichkeiten.
+
+Man kann den Produktlebenszyklus in sechs verschiedene Phasen aufteilen:
+
+                               ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                               ³ 6) nderung ³
+                               ³ 5) Wartung  ³
+                   ÚÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿
+                   ³         4) Test/Debugging           ³
+                   ³  3) Implementierung/Programmierung  ³
+            ÚÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄ¿
+            ³              2) Konzept-Erstellung              ³
+            ³          1) Anforderungsspezifikation           ³
+            ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+Fr die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
+und Konzepterstellung - wird meist eine Textverarbeitung verwendet. Fort-
+schrittlichere Programmierkonzepte setzten hier bereits CASE-Tools ein.
+
+Die beiden nachfolgenden Phasen - Implementierung/Programmierung und Test/De-
+bugging - finden in der Anwendungs-Entwicklungsumgebung statt. Das Problem
+dabei ist nur: Die Brcke zwischen den ersten beiden Planungs-Phasen und den
+n„chsten beiden Phasen der Programmerstellung kann man bei den herk”mmlichen
+Programmerstellungs-Mitteln nicht als tragf„hig bezeichnen.
+
+Das erarbeitete Konzept muá mit groáem Aufwand in die Anwendungs-Enwicklungs-
+umgebung bernommen werden. Das n„chste Problem taucht auf, wenn sich in den
+Phasen der Implementierung und des Test/Debugging nderungen ergeben. Wenn
+sich diese nderungen auf das Konzept zurckschlagen, mssen diese im Planungs-
+teil "von Hand nachgefahren" werden. Unterbleibt dies, kommt es zur Inkon-
+sistenz zwischen Konzept und Realisierung, was in der Praxis ein durchaus
+blicher Zustand ist.
+
+Diese Inkonsistenz r„cht sich aber sp„testens dann, wenn es um die Wartung der
+Software geht. ndern sich beispielsweise die Anforderungen an das Produkt,
+hat dies zun„chst Auswirkungen auf das Konzept und schlieálich auf die
+Implementierung. Wenn die Brcke zwischen der Planungs- und Anwendungs-
+Entwicklungsumgebung fehlt oder unvollst„ndig ist, wird man direkt die
+Implementierung ver„ndern und das Konzept somit veraltern lassen. Wiederholt
+sich dieser Vorgang einige Male, kann man das Konzept praktisch wegwerfen.
+
+Die Forderung nach einer integrierten Umgebung, die sowohl die Planungsphasen
+als auch die Entwicklungsphasen umfaát - einschlieálich Wartung -, ist somit
+sehr sinnvoll. Genau dieses Ziel ist mit der euroSOFT-CASEbox verwirklicht.
+.ff
+Der Kern der euroSOFT-CASEbox ist das Datenlexikon. Es gibt also nur eine
+einzige Stelle, an der die Datenfelder fr jede Datei beschrieben werden.
+Der Masken-Compiler, der Formular-Compiler und der Programm-Quellcode greifen
+bereits auf diese Informationen zu.
+
+Doch damit nicht genug. Selbst das Druckprogramm fr dieses Pflichtenheft
+holt sich die Dateiinforamtion w„hrend des Ausdruckes direkt aus dem Daten-
+lexikon. Dasselbe gilt fr Masken-Abbildungen oder Meninformationen.
+
+Fr den Kunden und fr den Applikations-Programmierer bringt die euroSOFT-
+CASEbox eine Reihe von Vorteilen. Der frhzeitige Einsatz eines professionellen
+Werkzeuges bereits in der Planung eines Softwareprojektes reduziert konzeptio-
+nelle Fehler. Durch den "weichen šbergang" zwischen Planungs- und Entwicklungs-
+werkzeug l„át sich das erarbeitete Konzept ohne Einschr„nkungen fr die
+Implementierung verwenden. Hiezu geh”rt beispielsweise, daá die eruoSOFT-
+CASEbox automatisch die Datenbanken und die Bildschirm-Masken in der im
+Konzept angegebenen Form anlegt.
+
+Stellen sich w„hrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
+Ursprungs sind, stellt die integrierte L”sung sicher, daá notwendige nderungen
+am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daá
+diese Methode die Produktivit„t bei der Software-Entwicklung drastisch steigert.
+
+
+.ff
+Zielsetzung: LK-Fibu
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+Nach Ihren Vorstellungen ist die LK-Fibu fr drei verschiedene Zielgruppen
+konzipiert:
+
+  a) Betriebe mit Einnahmen/Ausgaben-Rechnung
+  b) Optierende Betriebe
+  c) Steuerpflichtige Betriebe
+
+Alle drei Gruppen von Anwendern sollen mit der LK-Fibu Ihre Aufzeichnungen
+fhren k”nnen.
+
+
+Struktur des Rechnungswesens
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+        Eingaben             Bereich/Buchungen         Auswertungen
+        ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        Einnahmen ÄÄÄÄÄÄÂÄÂÄ Buchungen auf ÄÄÄÄÄÄÄÄÄÂÄ Geldrechnung
+        Ausgaben        ³ ³  Geld-/Aufwands-, Be-   ³  Bestandsrechnung
+                        ³ ³  stands-, Ertragskonten ³  Erfolgsrechnung
+                        ³ ³                         ³
+        Bewegungen      ³ ³  Buchungen der Best„nde ÃÄ Mengenrechnung
+        Inventur/Waren ÄÙ ³  (Lager/Anlagen, wert-  ³
+                          ÀÄ und mengenm„áig) ÄÄÄÄÄÄÙ
+
+        Arbeits- ÄÄÄÄÄÄÄÂÄÄÄ Arbeitsbuchungen ÄÄÄÄÄÄÄÄ Kostenrechnung
+        aufzeichnungen ÄÙ
+
+
+
+Die LK-Fibu umfaát die Bereiche:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+ÚÄ Geldrechnung (Einnahmen/Ausgaben) = AKTIV/PASSIV Konten (KL 2,3) ÄÄÄÄÄÄÄ¿
+ÀÄ Bestandsrechnung (Bilanz)         = AKTIV/PASSIV Konten (KL 0,1,9) ÄÄÄÄÄÙ
+   Erfolgsrechnung (Einkommen)       = AUFWAND/ERTRAGS Konten (KL 4,5,6,7,8)
+   Mengenrechnung (Artikelstamm)       wert- und mengen„áig
+
+Die Betriebe mit Einnahmen/Ausgaben-Rechnung sollen auf Grund der Programm-
+konzeption auch ohne Kenntnisse der doppelten Buchfhrung die LK-Fibu ein-
+setzen k”nnen.
+Bereiche der LK-Fibu
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+ Erfassen             Verarbeiten               Auswertungen        Stammdaten
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ Geldbuchungen ÄÄÄÄÂÄ Verarbeiten Buchungen ÄÂÄ Kundensalden ÄÄÄÄÄÂ Kunden ÄÄÄÄÄÙ
+ Andere Buchungen  ³  Druck Buchungs-Journal ³  Lieferantensalden ³ Lieferanten
+ Protokolldruck    ³                         ³  Sachkontensalden  ³ Sachkonten
+                   ³  Druck Kontobl„tter     ³                    ³ Artikelstamm
+ Soll/Haben Buch.  ³                         ³  UST-Voranmeldung  ³
+ Protokolldruck    ³  Monatsabschluá         ³                    ³ Konstanten
+                   ÃÄ Jahresabschluá ÄÄÄÄÄÄÄÄ´  Kapitalfluárechn. ³
+ Inventur-Liste    ³                         ³  Betriebsw. Ausw.  ³ Anlagenstamm
+ ndern Inventur   ³                         ÀÄ Bilanzauswertung  Á Druck Anlagen
+ Inventurdifferenz Ù
+
+.te*/
+
+
+/*.ta,F02,II. euroSOFT-MENš / 1.,1
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º  euroSOFT LK-Fibu                                                                 º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+
+Bentzeroberfl„che euroSOFT-MENš
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+Der Aufruf der jeweiligen Funktionen erfolgt ber das euroSOFT-MENš. Dabei sind
+die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
+
+
+.mi (MENUE,LK-L000),1,¯euroSOFT LK-Fibu®.
+.mi (MENUE,LK-L011),1,¯Stammdaten/Kontstanten®.
+.mi (MENUE,LK-L010),1,¯Installation®.
+
+.te*/
+
+
+me (MENUE,FI-030),1.
+me (MENUE,FI-050),1.
+me (MENUE,FI-040),1.
+me (MENUE,FI-042),1.
+me (MENUE,FI-044),1.
+me (MENUE,FI-052),1.
+me (MENUE,FI-046),1.
+me (MENUE,FI-060),1.
+me (MENUE,FI-062),1.
+me (MENUE,FI-032),1.
+me (MENUE,FI-070),1.
+me (MENUE,FI-072),1.
+me (MENUE,FI-076),1.
+me (MENUE,FI-078),1.
+me (MENUE,FI-074),1.
+me (MENUE,FI-080),1.
+me (MENUE,FI-082),1.
+
+
+

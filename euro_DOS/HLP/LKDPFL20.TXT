@@ -1,0 +1,10 @@
+/*.ta,F02,Anhang / Beispielausdrucke 1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE LK-Fibu                                                            บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.fo (\euro\form\FIB4140.M03),1,S0,Z0,B118,H45,Druck Offene Posten Kunden.
+.fo (\euro\form\FIB4150.M03),1,S0,Z0,B118,H35,Druck Offene Posten Lieferanten.
+.te*/
+
+

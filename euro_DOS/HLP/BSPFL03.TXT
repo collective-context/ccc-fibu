@@ -1,0 +1,25 @@
+/*.ta,F02,II. euroSOFT-MEN / 3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE BS-buerliche Selbstvermarkter                                     บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+
+                                  K O N S T A N T E N
+                                  อออออออออออออออออออ
+
+Zustzlich zu den Konstanten die in der BASIS-Auftragsbearbeitung existieren, k”nnen
+Sie im euroSOFT-Programmpaket ฏbuerliche Selbstvermarkterฎ folgende konstanten Werte
+anlegen:
+
+Anlegen Mahntext
+ออออออออออออออออ
+
+.da (EURODATA,SYP_04),1, Mahntexte.
+.ma (\euro\mask\FIM040),1,Anlegen/ndern Mahntexte.
+.hd (BS,konst),FI,mate-an.
+.ff
+
+.te*/
+
+
+

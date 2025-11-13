@@ -1,0 +1,10 @@
+ MENU       DL_HTOOL                        +
+ MA_MEMO    MA_HILFE   MA_INDEX             +
+ MA_MKSEL   DL_MASK    DL_FORM    DL_LADEN
+
+ in_liesz   m_input    MA_MKSEL
+
+(MA_MATCH) (MA_MEMO)  (MA_HILFE) (MA_INDEX) +
+(MA_MKSEL) (MA_MKCHO)                       +
+(DB_OPEN)  (DL_LADEN) (DL_HTOOL)
+

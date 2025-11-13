@@ -1,0 +1,35 @@
+Directory of  F:\EURO\SAA
+
+UT_CRERR C      UT_KBFLG C      UT_LINIE C      UT_ALTCD C      UT_DRIVE C  
+UT_STOP  C      UT_SHELL C      UT_DNGUE C      UT_KLEIN C      UT_EVENT C  
+UT_STRLW C      UT_STRUP C      UT_TON   C      UT_EUR   C      UT_TTS   C  
+UT_ARRAY C      UT_SCHAT C      UT_UHRTK C      UT_TASTE C      UT_GROSS C  
+UT_CURS  C      UT_PAUSE C      UT_CLRAN C      UT_RAHME C      
+
+MS_BASIS C      
+
+MN_OPTIO C      MN_SRTYP C      MN_SPALE C      MN_INIT  C      MN_ENTF  C  
+MN_MARK  C      MN_EINGA C      MN_EINR  C      MN_AKTIV C      MN_DEAKT C  
+MN_SSCHA C      
+
+M_OKQUES C      M_MKSEL  C      M_INIT   C      M_INPUT  C      M_BASIS  C  
+M_HILFE  C      M_BINPUT C      M_MKCHOI C      M_DEFAUL C      M_PRESET C  
+M_MESSAG C      M_MATCH  C      M_MEMO   C      M_DELMES C      
+
+DL_LADEN C      DL_PALET C      DL_HTOOL C      DL_OPTIO C      DL_MAUS  C  
+DL_INDEX C      DL_WARN  C      DL_OPT   C      DL_NACHR C      DL_HILFE C  
+DL_ERROR C      DL_INFO  C      DL_SHELL C      DL_SPEIC C      
+
+
+E_GLOBAL C      VI_BASIS C
+
+WI_SCHAT C      WI_SCRDN C      WI_PRNTF C      WI_SCPOS C      WI_SATT  C  
+WI_GCURS C      WI_EINR  C      WI_CLS   C      WI_ZLOES C      WI_ISAKT C  
+WI_STITL C      WI_CPUTS C      WI_SCRUP C      WI_SCTYP C      WI_ENTF  C  
+WI_AKTIV C      WI_SRAHM C      WI_CURS  C      WI_BASIS C      WI_PUTCH C  
+WI_ZEINF C      WI_VERST C      
+
+IN_ERROR C      IN_INITV C      IN_MAUS  C      IN_LIESZ C      IN_MENUE C  
+IN_BEEP  C      IN_DIAL  C      
+
+

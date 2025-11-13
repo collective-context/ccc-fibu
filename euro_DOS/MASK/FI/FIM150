@@ -1,0 +1,112 @@
+
+
+
+  Nr.: ›››.›    Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    Art: @@@@@@@@@
+
+  Text                                                 Kennz. Konten
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@³@@³ïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïï
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+                                       ³  ³
+ ù                                     ³  ³                                   ù
+
+^ ^
+
+>>Mask:   FIM151
+>>Prog.:  FI1100.C
+>>Update: 2.08.91
+
+&TITEL    = "FI  STAMM Anlegen Auswertungs-KZ 1/1"
+&FRAME    = 0, 0, 0, 0, "ÄAnlegen/Žndern Auswertungs-KZ", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, ausw-an
+&INDEX    = BASIS
+
+&BLOCK    = 3,5
+&SCROLL   = 6,0,21,79
+
+&DATEI      (0)  = MASK, D.FI1500
+&REF_DATEI  (1)  = MASK, D.FI1310
+
+>>Auswertungs-NR
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Nummer", 0, NUMMER
+&ADD_MATCH  (+-) = "Bezeichnung                         ", 0, BEZEICH
+  &HELPTEXT (+-) = FIHLP10, 151, 0
+  &DATA     (+-) = 0, NUMMER
+
+>>Auswertungs-Bezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Bezeichnung                         ", 0, BEZEICH
+&ADD_MATCH  (+-) = "Nummer", 0, NUMMER
+  &HELPTEXT (+-) = FIHLP10, 151, 1
+  &DATA     (+-) = 0, BEZEICH
+
+>>Auswertungs-Art
+  &HELPTEXT (+)  = FIHLP10, 151, 2
+  &DATA     (+-) = 0, AUSW_ART
+  &DEFAULT  (+-) = "s"
+  &CHOICE   (+-) = "ÄArt der Auswertung",\
+                   "Bilanz",b,  "Sonstige Auswertung",s
+
+>>--- Positionsteil
+>>Auswertungs-Text
+  &HELPTEXT (+)  = FIHLP10, 151, 2
+  &DATA     (+-) = 0, TEXT
+
+>>Auswertungs-Bezeichnung
+  &HELPTEXT (+)  = FIHLP10, 151, 3
+  &DATA     (+-) = 0, KZ
+  &SELECT   (+-) = "Auswertungs-KZ",\
+                 "Wert der Salden",         1, "Wert aus KFR",            2,\
+                 "Vorz. drehen (+/-)",      4, "Zwischensumme (ZS)",      8,\
+                 "Summe",                  16, "Bilanzsumme",            32,\
+                 "Basis ist 100 %",        64, "Prozente drucken",      128,\
+                 "Seitenwechsel",         256, "Zeile nicht drucken",   512
+
+>>Kontenzuordnung
+  &HELPTEXT (+)  = FIHLP10, 151, 6
+  &DATA     (+-) = 0, KONTEN
+
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+>>Sachkonten Konto
+&REF_KEY     (+)
+&REF_MATCH   (+-) = "Konto-Nummer", 1, KONTONR
+&ADD_MATCH   (+-) = "Konten-Bezeichnung            ", 1, KONTO_BEZ
+  &DATA_H    (+-) = 1, KONTONR
+
+>>Sachkonten Bezeichnung
+&REF_KEY     (+)
+  &DATA_H    (+-) = 1, KONTO_BEZ
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+
+  Text                        ³KZ³     Wert     ³Zwischen-Summe³     Summe
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@³@@³###.###.##›,››³###.###.##›,››³###.###.##›,››
+                              ³  ³              ³              ³
+
+
+>>Auswertungs-Bezeichnung
+  &HELPTEXT (+)  = FIHLP10, 151, 3
+  &DATA     (+-) = 0, BILANZ_KZ
+  &SELECT   (+-) = "Bilanz-KZ",\
+                 "Wertposition",            1, "Zwischensumme",           2,\
+                 "Summe",                   4, "Bilanzsumme",             8,\
+                 "Seitenwechsel",          16
+

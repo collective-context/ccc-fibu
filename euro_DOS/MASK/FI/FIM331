@@ -1,0 +1,120 @@
+
+
+
+  Konto-Nr  Matchcode           ³ BU-Erlaub. UST-KZ ³ Kennz. fr die USt-VA
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Sïïïïïïïï @@@@@@@@@@@@@@@@@@@ ³ @@@@@@@@@@ @@@@@@ ³ ››› ^^^^^^^^^^^^^^^^^^^^
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+  S                             ³                   ³
+ ùS                             ³                   ³                         ù
+
+^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^  ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^
+
+>>Mask:   FIM331
+>>Prog.:  FI1100.C
+>>Update: 01.06.91
+
+&TITEL    = "FI  STAMM Ersterfassung Sachkonten"
+&FRAME    = 0,0,0,0, "Ersterfassung Sachkonten", 2
+>>&SEQUENZ  = 00,04
+
+&BROWSE     = 0,5
+&SCROLL     = 4,1,21,78
+
+&MASKHELP = FIHLP10, sach-an
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI1310
+&REF_DATEI  (1)  = MASK, D.FI0150
+
+>>--- Positionsteil
+>>Konto-Nummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Konto-Nummer", 0, KONTONR
+&ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 0, KONTO_BEZ
+  &HELPTEXT (+-) = FIHLP10, 130, 0
+  &DATA     (+-) = 0, KONTONR
+
+>>Konten-Bezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Konten-Bezeichnung            ", 0, KONTO_BEZ
+&ADD_MATCH  (+-) = "Konto-Nummer", 0, KONTONR
+  &HELPTEXT (+-) = FIHLP10, 130, 1
+  &DATA     (+-) = 0, KONTO_BEZ
+
+>>Buchungsart
+&HELPTEXT   (+)  = FIHLP10, 130, 12
+  &DATA     (+-) = 0, K_BUCH_ART
+  &SELECT   (+-) = "Buchungsart",\
+                 "Nicht direkt bebuchen",   1, "Geldkonto",               2,\
+                 "Eigenverbrauchskonto",    4
+
+>>UST-Kennzeichen  (0/1-8)
+  &HELPTEXT (+)  = FIHLP10, 130, 3
+  &DATA     (+-) = 0, UST_KZ
+  &DEFAULT  (+-) = "0"
+
+>>USTVA-Kennzeichen
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "KZ    ", 1, UVA_KZ
+&ADD_MATCH  (+-) = "Text                                         ", 1, ZEIL_TEXT
+  &HELPTEXT (+-) = FIHLP10, 130, 2
+  &REF_DATA (+-) = 1, UVA_KZ, 0, USTVA_KZ
+
+>>USTVA-Kennz. - TEXT
+  &HELPTEXT (+)  = FIHLP10, 130, 11
+  &DATA     (+-) = 1, ZEIL_TEXT
+
+>> 1.Zeile
+  &DATA_H   (+)  = 0, USTVA_KZ    >>USTVA-Kz. - (Dummy-Feld)
+
+>> 2.Zeile
+  &DATA_H   (+)  = 0, SALDO       >>(Schatten-) Saldo
+  &DATA_H   (+)  = 0, VOR_SALDO   >>Saldovortrag
+  &DATA_H   (+)  = 0, SOLL_01     >>SOLL J„nner
+  &DATA_H   (+)  = 0, HABEN_01    >>HABEN J„nner
+  &DATA_H   (+)  = 0, SOLL_02     >>SOLL Februar
+  &DATA_H   (+)  = 0, HABEN_02    >>HABEN Februar
+
+  &DATA_H   (+)  = 0, SOLL_03     >>SOLL M„rz
+  &DATA_H   (+)  = 0, HABEN_03    >>HABEN M„rz
+  &DATA_H   (+)  = 0, SOLL_04     >>SOLL April
+  &DATA_H   (+)  = 0, HABEN_04    >>HABEN April
+  &DATA_H   (+)  = 0, SOLL_05     >>SOLL Mai
+  &DATA_H   (+)  = 0, HABEN_05    >>HABEN Mai
+
+  &DATA_H   (+)  = 0, SOLL_06     >>SOLL Juni
+  &DATA_H   (+)  = 0, HABEN_06    >>HABEN Juni
+  &DATA_H   (+)  = 0, SOLL_07     >>SOLL Juli
+  &DATA_H   (+)  = 0, HABEN_07    >>HABEN Juli
+  &DATA_H   (+)  = 0, SOLL_08     >>SOLL August
+  &DATA_H   (+)  = 0, HABEN_08    >>HABEN August
+
+  &DATA_H   (+)  = 0, SOLL_09     >>SOLL September
+  &DATA_H   (+)  = 0, HABEN_09    >>HABEN September
+  &DATA_H   (+)  = 0, SOLL_10     >>SOLL Oktober
+  &DATA_H   (+)  = 0, HABEN_10    >>HABEN Oktober
+  &DATA_H   (+)  = 0, SOLL_11     >>SOLL November
+  &DATA_H   (+)  = 0, HABEN_11    >>HABEN November
+
+  &DATA_H   (+)  = 0, SOLL_12     >>SOLL Dezember
+  &DATA_H   (+)  = 0, HABEN_12    >>HABEN Dezember
+
+

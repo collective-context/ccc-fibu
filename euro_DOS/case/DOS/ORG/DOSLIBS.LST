@@ -1,0 +1,79 @@
+_D_alloc_para.....allocm            _D_alloc_strategy..allocm
+_D_aux_input......con_io            _D_aux_output.....con_io
+_D_buf_kbd_input..con_io            _D_change_dir_entry..direc
+_D_change_para....allocm            _D_check_ctrl_brk..flags
+_D_chk_kbd_stat...con_io            _D_ch_dir.........direc
+_D_ch_verify......flags             _D_console_io.....con_io
+_D_con_input......con_io            _D_creat_new......handle
+_D_creat_tmp......handle            _D_def_drive_data..disk
+_D_delete.........direc             _D_display_char...con_io
+_D_display_string..con_io           _D_drive_data.....disk
+_D_end_process....proc              _D_ext_error......flags
+_D_find_first.....direc             _D_find_next......direc
+_D_flush_kbd......con_io            _D_free_para......allocm
+_D_get_country....flags             _D_get_cur_dir....direc
+_D_get_cur_disk...disk              _D_get_date.......datetime
+_D_get_disk_free..disk              _D_get_dos_ver....flags
+_D_get_dta........disk              _D_get_int_vec....proc
+_D_get_ret_code...proc              _D_get_set_fattr..direc
+_D_get_time.......datetime          _D_get_verify.....flags
+_D_h_close........handle            _D_h_creat........handle
+_D_h_dup..........handle            _D_h_fdate........handle
+_D_h_force_dup....handle            _D_h_open.........handle
+_D_h_read.........handle            _D_h_write........handle
+_D_ioctl_get_block..ioctl           _D_ioctl_get_chars..ioctl
+_D_ioctl_get_data..ioctl            _D_ioctl_is_change..ioctl
+_D_ioctl_put_block..ioctl           _D_ioctl_put_chars..ioctl
+_D_ioctl_red_block..ioctl           _D_ioctl_red_handle..ioctl
+_D_ioctl_retry....ioctl             _D_ioctl_set_data..ioctl
+_D_ioctl_stat.....ioctl             _D_keep_process...proc
+_D_load_ovr.......proc              _D_make_dir.......direc
+_D_move_fptr......handle            _D_print_char.....con_io
+_D_read_echo......con_io            _D_read_kbd.......con_io
+_D_remove_dir.....direc             _D_reset_disk.....disk
+_D_select_disk....disk              _D_set_country....flags
+_D_set_date.......datetime          _D_set_dta........disk
+_D_set_int_vec....proc              _D_set_time.......datetime
+
+
+con_io            Offset: 00000010H  Code and data size: 1a0H
+  _D_aux_input      _D_aux_output     _D_buf_kbd_input  _D_chk_kbd_stat
+  _D_console_io     _D_con_input      _D_display_char   _D_display_string
+  _D_flush_kbd      _D_print_char     _D_read_echo      _D_read_kbd
+
+disk              Offset: 000004a0H  Code and data size: 1f6H
+  _D_def_drive_data                   _D_drive_data     _D_get_cur_disk
+  _D_get_disk_free  _D_get_dta        _D_reset_disk     _D_select_disk
+  _D_set_dta      
+
+direc             Offset: 00000900H  Code and data size: 2b4H
+  _D_change_dir_entry                 _D_ch_dir         _D_delete
+  _D_find_first     _D_find_next      _D_get_cur_dir    _D_get_set_fattr
+  _D_make_dir       _D_remove_dir   
+
+ioctl             Offset: 00000e70H  Code and data size: 338H
+  _D_ioctl_get_block                  _D_ioctl_get_chars
+  _D_ioctl_get_data                   _D_ioctl_is_change
+  _D_ioctl_put_block                  _D_ioctl_put_chars
+  _D_ioctl_red_block                  _D_ioctl_red_handle
+  _D_ioctl_retry    _D_ioctl_set_data                   _D_ioctl_stat
+
+proc              Offset: 000014b0H  Code and data size: 112H
+  _D_end_process    _D_get_int_vec    _D_get_ret_code   _D_keep_process
+  _D_load_ovr       _D_set_int_vec  
+
+allocm            Offset: 000017d0H  Code and data size: 126H
+  _D_alloc_para     _D_alloc_strategy                   _D_change_para
+  _D_free_para    
+
+datetime          Offset: 00001aa0H  Code and data size: 132H
+  _D_get_date       _D_get_time       _D_set_date       _D_set_time
+
+flags             Offset: 00001d70H  Code and data size: 1c8H
+  _D_check_ctrl_brk                   _D_ch_verify      _D_ext_error
+  _D_get_country    _D_get_dos_ver    _D_get_verify     _D_set_country
+
+handle            Offset: 00002170H  Code and data size: 388H
+  _D_creat_new      _D_creat_tmp      _D_h_close        _D_h_creat
+  _D_h_dup          _D_h_fdate        _D_h_force_dup    _D_h_open
+  _D_h_read         _D_h_write        _D_move_fptr    

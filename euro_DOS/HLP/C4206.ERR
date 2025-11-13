@@ -1,0 +1,26 @@
+
+  ³      Compiler warning (level 4) C4206
+  ³
+  ³      assignment within conditional expression
+  ³
+  ³      The test value in a conditional expression was the result of an
+  ³      assignment.
+  ³
+  ³      This warning is informational.
+  ³
+  ³      An assignment has a value (the value at the left side of the
+  ³      assignment) that can be used legally in another expression,
+  ³      including a test expression. However, the intention may have been
+  ³      to test a relation instead of an assignment.
+  ³
+  ³      For example, the following line, which causes this warning,
+  ³      assigns b to a and compares the value of a with 0:
+  ³
+  ³           if (a = b) ...
+  ³
+  ³      However, the following line tests whether a and b are equal:
+  ³
+  ³           if (a == b) ...                                                        
+  ³                                     --
+
+

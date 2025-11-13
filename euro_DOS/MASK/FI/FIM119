@@ -1,0 +1,79 @@
+
+
+
+
+
+
+   ù
+     Kunden-Nummer  : @@@@@@@@@@@@@@@@@@@@
+     Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+     Konto-Nummer   : K@@@@@@@@
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+     OP-Kennzeichen: @@@@@@@@@@@@@@@@@@@@@         Kredit-Limit T™S : #####
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+     Bankleitzahl  : @@@@@@@@               Bank-Konto-Nummer: @@@@@@@@@@@@
+     Postscheck-Kto: @@@@@@@@@@@@@@
+   ù                                                                       ù
+
+
+
+
+
+&TITEL = "FI=SERVICE Fibu-Kundenkonten 1/x"
+&REM   Maske:   FIM119
+&REM   Progr.:  TEST
+
+&FRAME = 0, 0, 0, 0, "Service/Kunden-Daten", 2
+&INDEX = "BASIS"
+
+&DATEI     (0) = EURODATA, D.FI1110
+
+&REM  Kunden-Nummer
+&HELPTEXT  (0)  = FIHLP10, 119, 0
+&REC_KEY   (+-)
+&REC_MATCH (+-) = "Kunden-Nr.    ", 0, FI_KUNDE
+&ADD_MATCH (+-) = "Kurzbezeichnung      ", 0, KURZ_BEZ
+&ADD_MATCH (+-) = "Konto-Nr.", 0, KU_KONTO
+&DATA      (+-) = 0, FI_KUNDE
+
+&REM  Matchcode
+&HELPTEXT  (+)  = FIHLP10, 119, 0
+&REC_KEY   (+-)
+&REC_MATCH (+-) = "Kurzbezeichnung      ", 0, KURZ_BEZ
+&ADD_MATCH (+-) = "Konto-Nr.", 0, KU_KONTO
+&ADD_MATCH (+-) = "Kunden-Nr.    ", 0, FI_KUNDE
+&DATA      (+-) = 0, KURZ_BEZ
+
+&REM  Kunden-Konto
+&HELPTEXT  (+)  = FIHLP10, 119, 0
+&REC_KEY   (+-)
+&REC_MATCH (+-) = "Konto-Nr.", 0, KU_KONTO
+&ADD_MATCH (+-) = "Kurzbezeichnung      ", 0, KURZ_BEZ
+&ADD_MATCH (+-) = "Lieferanten-Nr", 0, FI_KUNDE
+&DATA      (+-) = 0, KU_KONTO
+
+&REM  OP-Kennzeichen
+&HELPTEXT (+)  = FIHLP10, 111, 4
+&CHOICE   (+-) = "OP Kennzeichen","ohne offene Posten","0","mit Mahnung","1","OP's ohne Mahnung","2"
+&DATA     (+-) = 0, OP_KENNZEI
+
+&REM  Kredit-Limit T™S
+&HELPTEXT (+)  = FIHLP10, 111, 6
+&DATA     (+-) = 0, KREDIT
+
+&REM  Bankleitzahl
+&HELPTEXT (+)  = FIHLP10, 121, 6
+&DATA     (+-) = 0, BANKLEIT
+
+&REM  Bank-Kto.-Nr.
+&HELPTEXT (+)  = FIHLP10, 121, 7
+&DATA     (+-) = 0, BKONTO_NR
+
+&REM  Postscheck-Konto.-Nr.
+&HELPTEXT (+)  = FIHLP10, 121, 8
+&DATA     (+-) = 0, POSTSCHECK
+
+

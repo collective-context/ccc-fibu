@@ -1,0 +1,168 @@
+
+
+
+   Konto: ïïïïïïïï   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@ @@@@@@@@
+
+       ^ ^ ^                     ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                                 ³ Konten-Saldo³  Schatten-S. ³      OP-Saldo
+                                 ³``.```.``|,||³``.```.``|,|| ³ ``.```.``|,||
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   OP-Nummer  BEL-Nr. Mw BEL-Dat.     RG-Betrag       Zahlung ³        Skonto
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   @@@@@@@@@@ @@@@@@@ @@ ##.##.## ##.###.##›,›› ##.###.##›,›› ³ ##.###.##›,››
+                                                              ³
+                                                              ³
+                                                              ³
+                                                              ³
+                                                              ³
+                                                              ³
+                                                              ³
+                                                              ³
+                                                              ³
+                                                              ³
+ ù                                                            ³               ù
+
+^ #›,›› #›,›› #›,›› #›,›› #›,›› #›,›› #›,›› #›,››
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^
+
+>>Mask:   FIM211
+>>Prog.:  FI1500.C
+>>Update: 2.08.91
+
+&TITEL    = "FI  Ersterf. OP's Lieferanten"
+&FRAME    = 0, 0, 0, 0, "ÄErsterfassung OP's Lieferanten", 2
+>>SEQUENZ =
+
+>>MASKHELP= FIHLP10, bear-op
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&BLOCK    = 10,16
+&SCROLL   = 10,0,21,79
+
+&DATEI      (0)  =   MASK, D.FI1210
+&DATEI      (1)  =   MASK, D.FI1215
+&PARA_READ  (2)  =   MASK, L.SYP_01  >>Festkonten, ...
+&DRU_DATEI  (3)  =   MASK, D.FI4500
+
+
+>>Lieferantennummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Lieferanten-Nr. ", 0, FI_LIEFER
+&ADD_MATCH  (+-) = "Kurzbezeichnung               ", 0, KURZ_BEZ
+&ADD_MATCH  (+-) = "Konto-Nr", 0, LI_KONTO
+  &HELPTEXT (+-) = FIHLP10, 221, 0
+  &DATA     (+-) = 0, FI_LIEFER
+
+>>Kurzbezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Kurzbezeichnung               ", 0, KURZ_BEZ
+&ADD_MATCH  (+-) = "Lieferanten-Nr. ", 0, FI_LIEFER
+&ADD_MATCH  (+-) = "Konto-Nr", 0, LI_KONTO
+  &HELPTEXT (+-)  = FIHLP10, 221, 1
+  &DATA     (+-) = 0, KURZ_BEZ
+
+  &DATA_H   (+)  = 1, OP_KTO_LIE
+  &DATA_H   (+)  = 0, LI_KONTO
+
+>>Konto-Nummer
+  &DATA_H   (+)  = 1, OP_LIEFER
+  &DATA_H   (+)  = 1, KURZ_BEZ
+  &DATA_H   (+)  = 0, SALDO
+  &DATA     (+)  = 3, JHR_SALDO
+
+>>Schatten-Saldo
+  &HELPTEXT (+)  = FIHLP10, 221, 2
+  &DATA     (+-) = 1, SCH_SALDO
+
+>>OP-Saldo
+  &HELPTEXT (+)  = FIHLP10, 221, 3
+  &DATA     (+-) = 1, OP_SALDO
+
+>>----- Beginn Positionsteil -----
+>>OP-Nummer
+  &HELPTEXT (+)  = FIHLP10, 221, 4
+  &DATA     (+-) = 1, OP_NUMMER
+
+>>BEL-Nummer
+  &HELPTEXT (+)  = FIHLP10, 221, 5
+  &DATA     (+-) = 1, BELEG_NR
+
+>>MwSt-Satz
+  &HELPTEXT (+)  = FIHLP10, 221, 6
+  &DATA     (+-) = 1, MWST_SATZ
+
+>>BEL-Datum
+  &HELPTEXT (+)  = FIHLP10, 221, 7
+  &DATA     (+-) = 1, BELEG_DAT
+>>&DEFAULT  (+-) = s
+
+>>RG-Betrag
+  &HELPTEXT (+)  = FIHLP10, 221, 8
+  &DATA     (+-) = 1, RECH_BETR
+
+>>Zahlung
+  &HELPTEXT (+)  = FIHLP10, 221, 9
+  &DATA     (+-) = 1, ZAHL_BETR
+
+>>Skonto-Betrag
+  &HELPTEXT (+)  = FIHLP10, 221, 10
+  &DATA     (+-) = 1, SKONTO_BET
+
+>>1. Zeile
+>>Mandanten-Nummer
+&REF_KEY    (+)
+  &DATA_H   (+-) = 2, MAND_01     >>Steuers„tze
+  &DATA_H   (+)  = 2, UST_1
+  &DATA_H   (+)  = 2, UST_2
+  &DATA_H   (+)  = 2, UST_3
+  &DATA_H   (+)  = 2, UST_4
+  &DATA_H   (+)  = 2, UST_5
+  &DATA_H   (+)  = 2, UST_6
+  &DATA_H   (+)  = 2, UST_7
+  &DATA_H   (+)  = 2, UST_8
+
+>>2. Zeile
+  &DATA_H   (+)  = 0, SOLL_01
+  &DATA_H   (+)  = 0, HABEN_01
+  &DATA_H   (+)  = 0, SOLL_02
+  &DATA_H   (+)  = 0, HABEN_02
+  &DATA_H   (+)  = 0, SOLL_03
+  &DATA_H   (+)  = 0, HABEN_03
+
+  &DATA_H   (+)  = 0, SOLL_04
+  &DATA_H   (+)  = 0, HABEN_04
+  &DATA_H   (+)  = 0, SOLL_05
+  &DATA_H   (+)  = 0, HABEN_05
+  &DATA_H   (+)  = 0, SOLL_06
+  &DATA_H   (+)  = 0, HABEN_06
+
+  &DATA_H   (+)  = 0, SOLL_07
+  &DATA_H   (+)  = 0, HABEN_07
+  &DATA_H   (+)  = 0, SOLL_08
+  &DATA_H   (+)  = 0, HABEN_08
+  &DATA_H   (+)  = 0, SOLL_09
+  &DATA_H   (+)  = 0, HABEN_09
+
+  &DATA_H   (+)  = 0, SOLL_10
+  &DATA_H   (+)  = 0, HABEN_10
+  &DATA_H   (+)  = 0, SOLL_11
+  &DATA_H   (+)  = 0, HABEN_11
+  &DATA_H   (+)  = 0, SOLL_12
+  &DATA_H   (+)  = 0, HABEN_12
+
+  &DATA_H   (+)  = 0, VOR_SALDO
+
+   Konto: ïïïïïïïï   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@ @@@@@@@@
+                                                ³`.```.``|,|| ³  `.```.``|,||
+
+   Konto: Ÿïïïïïïïï   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    Art: @@@@@@@@@@@
+>>Konto
+  &HELPTEXT (0)  = FIHLP10, 220, 0
+  &DATA     (+-) = 0, :SOLL_ART
+  &DEFAULT  (+-) = "k"
+  &MODUS    (+-) = PREPARE
+  &CHOICE   (+-) = "ÄKonto-Art",\
+                   "Kundenkonto",k,  "Lieferantenkonto",l
+

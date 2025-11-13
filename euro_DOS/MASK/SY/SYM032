@@ -1,0 +1,71 @@
+
+
+
+
+
+   ù
+    Seitensteuerung
+  
+    Initialisierung alle Seiten   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Deinitialisierung alle Seiten : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Initialisierung erste Seite   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Deinitialisierung letzte Seite: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+    Ladbare Zeichens„tze verwenden: @@@@
+
+    Zeichensatz-Datei             : ïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïï
+    Startsequenz                  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Endsequenz                    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+   ù                                                                        ù
+
+>>Mask:   SYM032
+>>Prog.:  SY1100.C
+>>Update: 01.06.91
+
+&TITEL    = "SY  STAMM Anlegen Druckerparameter 3/3"
+&FRAME    = 0,0,0,0 "Anlegen/Žndern Drucker-Parameter", 2
+>>SEQUENZ = 01,02,03,04,05,06,07
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, L.SYPRINT
+
+>>Init alle Seiten
+  &HELPTEXT (00)  = SYHLP10, 033, 00
+  &DATA     (+-) = 0, INIT_ALLE
+
+>>Deinit alle Seiten
+  &HELPTEXT (+)  = SYHLP10, 033, 01
+  &DATA     (+-) = 0, DEINIT_ALL
+
+>>Init erste Seite
+  &HELPTEXT (+)  = SYHLP10, 033, 02
+  &DATA     (+-) = 0, INIT_ERSTE
+
+>>Deinit letzte Seite
+  &HELPTEXT (+)  = SYHLP10, 033, 03
+  &DATA     (+-) = 0, DEINIT_ERS
+
+>>Zeichensatz laden
+  &HELPTEXT (+)  = SYHLP10, 033, 07
+  &DATA     (+-) = 0, ZEICH_SATZ
+  &CHOICE   (+-) = "Zeichensatz laden?",  "ja","j",  "nein","n"
+
+>>Dateiname
+  &HELPTEXT (+)  = SYHLP10, 033, 04
+  &DATA     (+-) = 0, ZEICH_DAT
+
+>>Startsequenz
+  &HELPTEXT (+)  = SYHLP10, 033, 05
+  &DATA     (+-) = 0, SEQU_START
+
+>>Endsequenz
+  &HELPTEXT (+)  = SYHLP10, 033, 06
+  &DATA     (+-) = 0, SEQU_END
+
+

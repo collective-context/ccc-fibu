@@ -1,0 +1,46 @@
+&TITEL = "STмStamm Testeintrag"
+&FORMULAR = 10
+&LIRAND = 5
+&REM SCHACHT = 1
+&REM ---
+&REM Formular fuer Testdruck
+&REM FKO
+&REM VA1
+&REM END
+&REM ---
+&REM FRU
+&REM VA2
+&REM END
+&REM ---
+&REM Seitenfuss mit Zahlungskonditionen und 4 Zeilen Werbetext
+&REM FFU
+
+^дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд~NOM
+&REM END
+&REM ---
+&DATEI (0) = EURODATA, ST1100
+&DATEI (1) = EURODATA, VS1110
+&REM ---
+                                                здддддддддддддбддддддддддбддддддд©
+                                                Ё Liefer-Nr.  Ё    Datum Ё Seite Ё
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@                 Ё @@@@@@@@@@  Ё ##.##.## Ё ##### Ё         ~0.STRASSE ~0.KUNDE ~1.MITARBEIT ~1.UMSATZ_MIO
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            юдддддддддддддаддддддддддаддддддды         ~0.PLZ_ORT
+
+
+
+Projekt:^ @@@@@@@@@@@@@@@@@@@@                                ^ANGEBOT^   Nr. ########     ~ENG  ~0.TELEFON  ~DOP ~NOM  ~0.ANREDE
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                     ~0.NAME
+дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+Position   Menge      Artikelbezeichnung                     Betrag ≥S    Summe ≥S ^       ~NOM
+дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+
+
+ 1
+ 22
+ 333
+ 4444
+ 55555
+Formularende
+Formularende
+&REM Ende
+

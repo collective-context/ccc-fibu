@@ -1,0 +1,5 @@
+ STA1100     BA_ISAM    BA_SAA               +
+(STA_1100)  (BA_INIT)                        +
+(STA1100A)                                   +
+(MA_MATCH) (MA_MEMO)  (MA_HILFE) (MA_INDEX) +
+(MA_MKSEL) (DB_OPEN)  (DL_LADEN) (DL_HTOOL)

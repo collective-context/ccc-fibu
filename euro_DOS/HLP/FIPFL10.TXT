@@ -1,0 +1,22 @@
+/*.ta,F02,ANHANG Erfassen Geldbuchungen / 3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE LK-Fibu / Zusatz                                                   บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.da (EURODATA,FI2500),1,Erfassen Geldbuchungen.
+.ma (\euro\mask\FIM250),1,Erfassen Geldbuchungen 1/1.
+.hd (FI,bu-erfa),FI,ge_erfa.
+.te*/
+
+
+/*.ta,F02,ANHANG Erfassen Eigenverbrauch / 4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE LK-Fibu / Zusatz                                                   บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.da (EURODATA,FI2540),1,Erfassen Eigenverbrauch.
+.ma (\euro\mask\FIM254),1,Erfassen Eigenverbrauch 1/1.
+.hd (FI,bu-erfa),FI,ei_erfa.
+.te*/
+
+

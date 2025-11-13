@@ -1,0 +1,8 @@
+# Make File fÅr TALLOCM.EXE
+
+COMP=CL
+
+TALLOCM.EXE: TALLOCM.C SHOWHELP.C
+      $(COMP) /Ot tallocm.c /link DOSLIBS.LIB
+
+

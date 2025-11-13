@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+                  ù
+
+                    Von Konto-Nummer: T@@@@@@@@ - S@@@@@@@@
+                    ^ ^ ``.``.`` ^ ^ ^ ^ ^ ^
+                    Bis Konto-Nummer: T@@@@@@@@ - S@@@@@@@@
+
+                  ù                                         ù
+
+
+&TITEL = "FI=Drucken Kostenarten 1/1"
+&REM   Source:  FIM4172
+&REM   Maske :  #4172
+
+&DATEI (0) = EURODATA, D.FI1720
+&DATEI (1) = EURODATA, D.FI4100
+
+&FRAME = 0, 0, 0, 0, "-Drucken Kostenstellen", 2
+&INDEX = "FI110"
+
+&REM Von Kostenstelle T
+&HELPTEXT  (00) = FIHLP10, 472, 00
+&REC_MATCH (+-) = "Kostenstellen-Nr.", 0,
+&ADD_MATCH (+-) = "Kostenart        ", 0,
+&DATA      (+-) = 1, _V_KONTO
+
+&REM Von Kontonummer S
+&HELPTEXT  (+)  = FIHLP10, 472, 01
+&DATA      (+-) = 1, _V_KONTONR
+
+&REM Kostenstellen-Nummer (Dummy Feld fuer Match-Code-Suche)
+&REC_KEY  (+)
+&HIDE     (+-)
+&DATA     (+-) = 0, KOSTENSTEL
+
+&REM Bezeichnung (Dummy Feld fuer Match-Code-Suche)
+&REC_KEY  (+)
+&HIDE     (+-)
+&DATA     (+-) = 0, KOST_BEZ
+
+&REM Datum (Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _DATUM_AKT
+
+&REM Seite (Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _SEITE
+
+&REM Mandanten-Nummer (Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _NR_MAND
+
+&REM Mandanten-Kurzbez. (Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _MANDANT
+
+&REM Teilnehmer-Nummer (Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _TEILN
+
+&REM Nutzungs-Berechtigung (Standard-Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _COPYRIGHT
+
+&REM Nutzungs-Berechtigung (Standard-Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _NUTZUNG
+
+&REM Bis Kostenstelle T
+&HELPTEXT  (+)  = FIHLP10, 472, 02
+&REC_MATCH (+-) = "Kostenstellen-Nr.", 0, KOSTENSTEL
+&ADD_MATCH (+-) = "Bezeichnung                    ", 0, KOST_BEZ
+&DATA      (+-) = 1, _B_KONTO
+
+&REM Von Kontonummer S
+&HELPTEXT  (+)  = FIHLP10, 472, 03
+&DATA      (+-) = 1, _B_KONTONR
+

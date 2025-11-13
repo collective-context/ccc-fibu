@@ -1,0 +1,132 @@
+
+
+
+
+
+
+
+
+              ù
+                Verarbeiten Monat: @@@@@@@@@@@@@@@@@@@@@@@@
+                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                Von Datum: ##.##.##          Bis Datum: ##.##.##
+              ù                                                  ù
+
+^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+^ ```````` ``.``.`` ``.``.`` ``.``.`` ^ ^ ^
+^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+
+>>Mask:   FIM4310
+>>Prog.:  FI3100.C
+>>Update: 4.08.91
+
+&TITEL    = "FI  WORK Verarbeiten Buchungen"
+&FRAME    = 0, 0, 0, 0, "ÄVerarbeiten Buchungen", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, buer-dr
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK,   D.FI2100     >>Erfassen Buchungen
+&DRU_DATEI  (1)  = MASK,   D.FI4210     >>Dummy-Datei
+&WORK_DATEI (2)  = MASK,   D.FI3100     >>Journaldatei
+&WORK_DATEI (3)  = MASK,   D.FI1310     >>Sachkontenstamm
+&WORK_DATEI (4)  = MASK,   D.FI1210     >>Lieferantenkonten
+&WORK_DATEI (5)  = MASK,   D.FI1110     >>Kundenkonten
+&WORK_DATEI (6)  = MASK,   D.FI2100A    >>Tempor„re Erfassungsdatei
+&PARA_READ  (7)  = MASK,   L.SYP_01     >>Konsten Festkonten, MWST, ...
+&PARA_READ  (8)  =   MASK, D.SYP_50  >>Konsten des aktuellen Jahres
+
+>>ATEI      (0)  =   MASK, D.FI2100     >>Erfassen Buchungen
+>>RU_DATEI  (1)  =   MASK, D.FI4210     >>Dummy-Datei
+>>ORK_DATEI (2)  =   MASK, D.FI3100     >>Journaldatei
+>>ORK_DATEI (3)  =   MASK, D.FI1310     >>Sachkonten
+>>ORK_DATEI (4)  =   MASK, D.FI1210     >>Lieferantenkonten
+>>ORK_DATEI (5)  =   MASK, D.FI1110     >>Kundenkonten
+>>ARA_READ  (6)  =   MASK, L.SYP_01     >>UST - S„tze
+>>ARA_READ  (7)  =   MASK, L.SYP_02     >>Festkonten
+>>ORK_DATEI (8)  =   MASK, D.FI2100A    >>Tempor„re Erfassungsdatei
+>>ARA_READ  (9)  =   MASK, L.SYPARA     >>Kennzeichen im Mandantenstamm
+
+>>Verarbeiten Monat
+  &HELPTEXT (0)  = FIHLP10, 431, 1
+  &DATA     (+-) = 1, _MONAT
+>>&DEFAULT  (+-) = "1"
+  &CHOICE   (+-) = "Verarbeiten Monat",\
+                   "J„nner",1,  "Februar",2,  "M„rz",3,  "April",4,\
+                   "Mai",5,  "Juni",6,  "Juli",7,  "August",8,\
+                   "September",9,  "Oktober",A,  "November",B,  "Dezember",C
+
+>>Verarbeiten - Von Datum
+  &HELPTEXT (+)  = FIHLP10, 431, 2
+  &DATA     (+-) = 1, _V_DATUM
+
+>>Verarbeiten - Bis Datum
+  &HELPTEXT (+)  = FIHLP10, 431, 2
+  &DATA     (+-) = 1, _B_DATUM
+
+>>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 7, SALDO_VOR
+  &DATA_H   (+)  = 7, FORDER_IN
+  &DATA_H   (+)  = 7, FORDER_AUS
+  &DATA_H   (+)  = 7, VERBIN_IN
+  &DATA_H   (+)  = 7, VERBIN_AUS
+  &DATA_H   (+)  = 7, VORSTEUER
+  &DATA_H   (+)  = 7, KTO_MWST_1
+  &DATA_H   (+)  = 7, KTO_MWST_2
+  &DATA_H   (+)  = 7, KTO_MWST_3
+  &DATA_H   (+)  = 7, KTO_MWST_4
+  &DATA_H   (+)  = 7, KTO_MWST_5
+  &DATA_H   (+)  = 7, KTO_MWST_6
+  &DATA_H   (+)  = 7, KTO_MWST_7
+  &DATA_H   (+)  = 7, KTO_MWST_8
+  &DATA_H   (+)  = 7, LIEF_SKONT
+  &DATA_H   (+)  = 7, KU_SKONT_1
+  &DATA_H   (+)  = 7, KU_SKONT_2
+  &DATA_H   (+)  = 7, KU_SKONT_3
+  &DATA_H   (+)  = 7, KU_SKONT_4
+  &DATA_H   (+)  = 7, KU_SKONT_5
+  &DATA_H   (+)  = 7, KU_SKONT_6
+  &DATA_H   (+)  = 7, KU_SKONT_7
+  &DATA_H   (+)  = 7, KU_SKONT_8
+  &DATA_H   (+)  = 7, KU_SKONT_S
+  &DATA_H   (+)  = 7, ZWISCH_KTO
+  &DATA_H   (+)  = 7, KAPIT_KTO
+  &DATA_H   (+)  = 7, AN_ERTRAG
+>>ÀÄÄÄÄÄÄÄ Ende  Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REC_KEY    (+)                   >>Satznummer (Match-Code-Suche)
+  &DATA_H   (+-) = 0, :SATZ_NR
+
+&REC_KEY    (+)                   >>Belegnummer (Match-Code-Suche)
+  &DATA_H   (+-) = 0, :BELEG_NR
+
+&REC_KEY    (+)                   >>Belegnummer (Match-Code-Suche)
+  &DATA_H   (+-) = 0, :BELEG_DAT
+  &DATA_H   (+)  = 0, :BUCH_DAT   >>Belegnummer (Match-Code-Suche)
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>Nutzungs-Berechtigung
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>&REF_KEY  (+)                     >>Mandanten-Nummer (Dummy Feld)
+>>  &DATA_H     (+-) = 6, MAND_01
+  &DATA_H     (+)  = 7, UST_1     >>Steuersatz 1
+  &DATA_H     (+)  = 7, UST_2     >>Steuersatz 2
+  &DATA_H     (+)  = 7, UST_3     >>Steuersatz 3
+  &DATA_H     (+)  = 7, UST_4     >>Steuersatz 4
+  &DATA_H     (+)  = 7, UST_5     >>Steuersatz 5
+  &DATA_H     (+)  = 7, UST_6     >>Steuersatz 6
+  &DATA_H     (+)  = 7, UST_7     >>Steuersatz 7
+  &DATA_H     (+)  = 7, UST_8     >>Steuersatz 8
+  &DATA_H     (+)  = 8, Y_CLOSED
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+

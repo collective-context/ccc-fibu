@@ -1,0 +1,104 @@
+
+
+
+
+
+
+
+
+
+    ù
+      Mandanten-Nr  :  ``      Kurzbezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      Finanzbuchhaltung : ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      Wirtschaftsjahr ab: @@@@@@@@@   ||||
+
+     ÚÄ Fibu-Jahresabschluá ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+     ÀÄ altes Jahr abgeschlossen: ^^^^   /   neues Jahr angelegt: ^^^^ ÄÄÄÄÙ
+
+     ÚÄ Druck Rechnungsausgangsbuch ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+     ÀÄ šbergabe in die Fibu-Erl”skonto-Klasse: @@ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+    ù                                                                       ù
+
+>>Mask:   SYM051
+>>Prog.:  SY1100.C
+>>Update: 06.08.91
+
+&TITEL    = "SY  STAMM Mandantenstamm 2/2"
+&FRAME    = 0, 0, 0, 0, "Mandantenstamm", 2
+>>SEQUENZ =
+
+&MASKHELP = SYHLP10, mand-in
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, L.SYPARA
+&DATEI      (1)  = MASK, L.SYP_01
+&DATEI      (2)  = MASK, D.SYP_50
+
+>>Mandanten-Nummer
+  &DATA     (0)  = 1, MAND_01
+
+>>Bezeichnung
+  &DATA     (+)  = 0, MATCH_CODE
+
+>>Kennzeichnen Fibu Basiswerte
+  &HELPTEXT (+)  = SYHLP10, 050, 01
+  &DATA     (+-) = 1, KZ_FIBU_BA
+  &SELECT   (+-) = "Finanzbuchhaltung-Basiswerte",\
+                 "Offene Posten",           1, "Erl”s/Aufwand brutto",    2,\
+                 "Kontrolldatei BU-Erf",    4, "Kontrolldatei RE-Buc",    8
+
+>>Wirtschaftsjahr tempor„r (Choice)
+  &HELPTEXT (+)  = SYHLP10, 050, 02
+  &DATA     (+-) = 0, WIRT_J_TMP
+  &DEFAULT  (+-) = 1
+  &CHOICE   (+-) = "Wirtschaftsjahr",\
+                   "J„nner",1,  "Februar",2,  "M„rz",3,  "April",4,\
+                   "Mai",5,  "Juni",6,  "Juli",7,  "August",8,\
+                   "September",9,  "Oktober",A,  "November",B,  "Dezember",C
+
+>>Wirtschaftsjahr MMTT als Word-Wert
+  &DATA_H   (+)  = 0, WIRT_JAHR
+
+>>Fibu Jahr abgeschlossen
+  &HELPTEXT  (+)  = SYHLP10, 050, 03
+  &DATA      (+-) = 2, Y_CLOSED
+  &CHOICE    (+-) = "Jahr ist bereits abgeschlossen", "ja",j,  "nein",n
+  &DEFAULT   (+-) = n
+
+>>Fibu neues Jahr kopiert
+  &HELPTEXT  (+)  = SYHLP10, 050, 03
+  &DATA      (+-) = 2, Y_COPIED
+  &CHOICE    (+-) = "Fibu/ neues Jahr ist bereits kopiert", "ja",j,  "nein",n
+  &DEFAULT   (+-) = n
+
+>>Kontenklasse Erl”s
+  &HELPTEXT (+)  = SYHLP10, 050, 05
+  &DATA     (+-) = 0, BUCHERLS
+  &DEFAULT   (+-) = 4
+
+      Finanzbuchhaltung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     ÀÄ altes Jahr abgeschlossen: @@@@   /   neues Jahr angelegt: @@@@ ÄÄÄÄÙ
+
+Wirtschaftsjahr ab: @@@@@@@@@ = |||| (MMTT)
+
+ÚÄ Druck Rechnungsausgangsbuch ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+šbergabe in Mandant Nr. : #
+Datenverzeichnis KHK    : @@@@@@@@@@@@@@@@@@@@@
+Kontenklasse Erl”s      : #
+
+&DATEI      (0)  = MASK, L.SYP_13  // frher
+>>Mandant KHK
+  &HELPTEXT (+)  = AUHLP20, 422, 03
+  &DATA     (+-) = 0, BUCHMAND
+
+>>Datenverzeichnis KHK
+  &HELPTEXT (+)  = AUHLP20, 422, 04
+  &DATA     (+-) = 0, BUCHDATEI
+
+>>Kontenklasse Erl”s
+  &HELPTEXT (+)  = AUHLP20, 422, 05
+  &DATA     (+-) = 0, BUCHERLS
+

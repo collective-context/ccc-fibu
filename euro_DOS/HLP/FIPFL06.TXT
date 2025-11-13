@@ -1,0 +1,40 @@
+/*.ta,F02,V. euroSOFT-FIBU Stamm: Sachkonten / 3.,1
+ﾉﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍｻ
+ｺ  euroSOFT-Finanzbuchhaltung                                                       ｺ
+ﾈﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍｼ
+
+.me (MENUE,FI-030),1,Finanzbuchhaltung,始dern Sachkonten.
+.me (MENUE,FI-042),1,Kontenstamm,始dern Sachkonten.
+.da (EURODATA,FI1310),1,Sachkontenstamm.
+.da (EURODATA,FI1311),1,Sachkontenstamm Zusatz.
+.ma (\euro\mask\FIM130),1,Anlegen/始dern Sachkontenstamm 1/2.
+.ma (\euro\mask\FIM131),1,Umsдze Sachkontenstamm 2/2.
+.hd (FI,sach-st),FI,sach-an.
+.hd (FI,sach-st),FI,sach-dr.
+.fo (\euro\form\FIB1310.M03),1,S0,Z0,B84,H65,Druck Sachkonten-Stamm.
+
+.te*/
+
+me (MENUE,FI-042),1,Kontenstamm,始dern Bankenstamm.
+da (EURODATA,FI1400),1,Bankenstamm.
+ma (\euro\mask\FIM140),1,Anlegen/始dern Bankenstamm 1/1.
+hd (FI,sach-st),FI,bank-an.
+hd (FI,sach-st),FI,bank-dr.
+fo (\euro\form\FIB1400.M03),1,S0,Z0,B84,H13,Druck Banken-Stamm.
+
+ma \euro\mask\STM110
+hd (SY,vorwort),SYHLP10,dateien.
+hi (SY,SY110)
+ff
+
+
+da (EURODATA,FI1610),1.
+da (EURODATA,FI1710),1.
+da (EURODATA,FI2100),1.
+da (EURODATA,FI3100),1.
+da (EURODATA,FI3100K),1.
+da (EURODATA,SYP_01),1.
+da (EURODATA,SYPARA),1.
+
+
+

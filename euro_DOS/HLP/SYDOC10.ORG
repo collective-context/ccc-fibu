@@ -1,0 +1,15 @@
+/*.ta Anlegen/ndern Mendatei
+ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  Hilfsindex: Detailbeschreibung [ndern Men-Datei].                         บ
+ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+Ausdruck der Bildschirmhilfstexte des euroSOFT-MENs
+ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+
+.hi (SY,men-det)
+.te*/
+
+
+hi (VS,ST110)
+hi (VS,stammbl)
+

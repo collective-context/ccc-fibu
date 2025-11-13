@@ -1,0 +1,73 @@
+&TITEL = "SYÍKonstantendruck"
+&FORMULAR = 10
+
+&DATEI (0) = EURODATA, SYP_01     /* Steuers„tze */
+&DATEI (1) = EURODATA, ST4110
+&DATEI (2) = EURODATA, SYP_05     /* Nummernkreise */
+&DATEI (3) = EURODATA, SYP_06     /* Werbetexte */
+&DATEI (4) = EURODATA, SYP_07     /* Versandarten */
+
+&LIRAND = 8
+&R_ZEILEN = 66
+&REM SCHACHT = 1
+
+
+&KOPF (0)
+ÿ
+^ÚÙLISTE KONSTANTEN                                    Datum: @@@@@@@@ - SEITE ››››À¿ ~NO ~1._DATUM_AKT ~1._SEITE
+³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
+À´Mandant (››) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: ›››ÃÙ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+.
+&END
+
+
+&RUMPF (0)
+
+ÿ
+Steuer-S„tze:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Steuersatz 1 :  #›,›› %                Steuersatz 5 :  #›,›› %     ~0.UST_1 ~0.UST_5
+Steuersatz 2 :  #›,›› %                Steuersatz 6 :  #›,›› %     ~0.UST_2 ~0.UST_6
+Steuersatz 3 :  #›,›› %                Steuersatz 7 :  #›,›› %     ~0.UST_3 ~0.UST_7
+Steuersatz 4 :  #›,›› %                Steuersatz 8 :  #›,›› %     ~0.UST_4 ~0.UST_8
+
+ÿ
+Versandarten:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Versandart 1 :  @@@@@@@@@@@@@@@@@@@@   Versandart 4 :  @@@@@@@@@@@@@@@@@@@@  ~4.VERSAND_1 ~4.VERSAND_4
+Versandart 2 :  @@@@@@@@@@@@@@@@@@@@   Versandart 5 :  @@@@@@@@@@@@@@@@@@@@  ~4.VERSAND_2 ~4.VERSAND_5
+Versandart 3 :  @@@@@@@@@@@@@@@@@@@@   Versandart 6 :  @@@@@@@@@@@@@@@@@@@@  ~4.VERSAND_3 ~4.VERSAND_6
+
+ÿ
+Werbetexte Zeile 1-4:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+^@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~SM ~3.WERB_TXT_1
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~3.WERB_TXT_2
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ~3.WERB_TXT_3
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ^ ~3.WERB_TXT_4 ~NO
+
+ÿ
+Nummernkreise:
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Stammdaten:      Kunden        :  @@@@@@@@@@@@@@@@@@@@   ~2.NR_KUND
+                 Lieferanten   :  @@@@@@@@@@@@@@@@@@@@   ~2.NR_LIEF
+                 Artikel       :  @@@@@@@@@@@@@@@@@@@@   ~2.NR_ART
+                 Mitarbeiter   :  @@@@@@@@@@@@@@@@@@@@   ~2.NR_MITARB
+ÿ
+Bewegungsdaten:  Angebote      :  ######                 ~2.NR_ANGEBOT
+                 Auftr„ge      :  ######                 ~2.NR_AUFTRAG
+                 Lieferscheine :  ######                 ~2.NR_LIEFER
+                 Rechnungen    :  ######                 ~2.NR_RECH
+ÿ
+&END
+
+
+&FUSS (0)
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+À¿Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@ÚÙ ~1._NUTZUNG  ~1._COPYRIGHT
+.
+&END
+
+&REM
+

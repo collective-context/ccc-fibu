@@ -1,0 +1,9 @@
+#   Make File fÅr THANDLE.EXE
+
+
+COMP=CL
+
+THANDLE.EXE: THANDLE.C SHOWHELP.C
+  $(COMP)  THANDLE.C /link DOSLIBS.LIB
+
+

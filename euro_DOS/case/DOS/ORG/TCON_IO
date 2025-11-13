@@ -1,0 +1,10 @@
+# Make File fÅr TCON_IO.EXE
+
+
+COMP=CL
+
+tcon_io.exe: tcon_io.c  showhelp.c
+   $(COMP) /AS tcon_io.c /link doslibs.lib
+
+
+

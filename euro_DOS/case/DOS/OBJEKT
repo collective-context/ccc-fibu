@@ -1,0 +1,7 @@
+DOS_M80L
+y
+D_CALLOC +D_DATE   +D_PROC   +D_READ   &
+D_SHMEM  +D_WRITE                      &
+S_ABRT   +S_FPE    +S_ILL    +S_INT    &
+S_SEGV   +S_STOI   +S_STRING +S_TERM
+DOS_M80L.pub

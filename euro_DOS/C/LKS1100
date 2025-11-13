@@ -1,0 +1,10 @@
+ ST1100     BA_ISAM    BA_SAA               +
+(ST_1100)  (BA_INIT)                        +
+(ST1100A)                                   +
+(MA_MATCH) (MA_MEMO)  (MA_HILFE) (MA_INDEX) +
+(MA_MKSEL) (DB_OPEN)  (DL_LADEN) (DL_HTOOL)
+
+ 63,9      22,2                  ==  86,1 + (30,2) = 116,3 KB
+(11,9      18,3   ) (24,6  )
+
+

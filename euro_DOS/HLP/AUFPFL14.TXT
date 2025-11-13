@@ -1,0 +1,101 @@
+/*.ta,F02,VI. Bereich: Stammdaten / 2.6.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-106),1,Stammdaten/Konstanten,Nummernkreise.
+.mh (\euro\mask\AUF\AUFM101),1,Anlegen Nummernkreise.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.6.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-106),1,Stammdaten/Konstanten,Steuerstze.
+.mh (\euro\mask\AUF\AUFM100),1,Anlegen Steuerstze.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.6.3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-106),1,Stammdaten/Konstanten,Kundensperrvermerke.
+.mh (\euro\mask\AUF\AUFM105),1,Anlegen Kundensperrvermerke.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.6.4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-106),1,Stammdaten/Konstanten,Werbetexte.
+.mh (\euro\mask\AUF\AUFM102),1,Anlegen Werbetexte.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.6.5.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-106),1,Stammdaten/Konstanten,Versandart.
+.mh (\euro\mask\AUF\AUFM103),1,Anlegen Versandart.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.6.6.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-106),1,Stammdaten/Konstanten,Landeswhrung.
+.mh (\euro\mask\ST\STM095),1,Anlegen Landeswhrung.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.6.7.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-106),1,Stammdaten/Konstanten,Artikel-Preis-Text.
+.mh (\euro\mask\ST\STM096),1,Anlegen Artikel-Preis-Text.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.6.8.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-106),1,Stammdaten/Konstanten,Drucken Konstanten.
+.mh (\euro\mask\ST\STM4010),1,Drucken Konstanten.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.6.9.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-106),1,Stammdaten/Konstanten,Fremdwhrung.
+.mh (\euro\mask\AUF\AUFM104),1,Anlegen Fremdwhrung.
+   ---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 2.6.10.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-106),1,Stammdaten/Konstanten,Drucken Fremdwhrung.
+.mh (\euro\mask\ST\STM4011),1,Drucken Fremdwhrung.
+   ---------------------------------------------------
+.te*/
+
+

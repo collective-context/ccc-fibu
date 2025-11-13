@@ -1,0 +1,19 @@
+ÚÄ Programmname, Steuerkennzeichen, Masken und Formulare: ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+  REM %A% uab1100 04       ¯Mahntexte               M:040
+  REM %A% uab1100 08       ¯Nummernkreise           M:091
+  REM %A% uab1100 09       ¯Werbetexte              M:ST092
+      %A% uab1100 10     * ¯ndern Kunden           M:110,111,112,113
+  REM %A% uab1100 20       ¯ndern Betriebe         M:120,121,122,123
+  REM %A% uab1100 30       ¯ndern Regionen         M:130
+  REM %A% uab1100 40       ¯Mahnwesen               M:210
+
+  REM %A% uab4100 1010     ¯Liste Regionen          M:4130,130           F:1300
+  REM %A% uab4100 2010     ¯Liste Mitglieder        M:4120               F:1200
+  REM %A% uab4100 2020   * ¯Betriebsempfehlung      M:4120               F:1201
+  REM %A% uab4100 3010     ¯Liste Kunden            M:4111               F:1100
+      %A% uab4100 3110     ¯Kundenstammblatt        M:4110,110,111       F:1101
+  REM %A% uab4100 4010     ¯Mitgliedsbeitrag        M:4140,110           F:1400
+  REM %A% uab4100 5010     ¯Mahnungen               M:4210,110           F:2100
+

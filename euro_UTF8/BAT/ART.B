@@ -48,21 +48,21 @@ goto fehler
   goto meldung
 
 :fehler
-  echo ÿ
-  echo Fehler ¯%1®    Werte: ART=%art%   (ID=%id% / APP=%app% / AP2=%ap2%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo Syntax    : art ®Wahl¯          oder: art ®s/h¯ (fr show bzw. help)
-  echo fr ®Wahl¯: ¯mask, form, bei, batch oder print®
-  echo ÿ
+  echo Â 
+  echo Fehler Â»%1Â«    Werte: ART=%art%   (ID=%id% / APP=%app% / AP2=%ap2%)
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Syntax    : art Â«WahlÂ»          oder: art Â«s/hÂ» (fÃ¼r show bzw. help)
+  echo fÃ¼r Â«WahlÂ»: Â»mask, form, bei, batch oder printÂ«
+  echo Â 
   echo Beispiel  : ap mask
-  echo ÿ
+  echo Â 
   goto end
 
 :meldung
-  echo ÿ
+  echo Â 
   echo Werte: ART=%art%   (ID=%id% / APP=%app% / AP2=%ap2%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Â 
 
 :end
 

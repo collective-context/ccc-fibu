@@ -1,9 +1,9 @@
 /*
- *  showhelp.c -- Liest aus name Zeile fÅr Zeile ein und
+ *  showhelp.c -- Liest aus name Zeile f√ºr Zeile ein und
  *                zeigt sie am Bildschirm
  */
 
-/* Aufrufendes Programm mu· #include <stdio.h> enthalten */
+/* Aufrufendes Programm mu√ü #include <stdio.h> enthalten */
 
 char ansicls [] = "\x1B[2J";
 char buf [80];   /* Zeilenpuffer */

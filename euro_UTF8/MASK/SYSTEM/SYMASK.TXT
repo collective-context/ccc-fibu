@@ -2,12 +2,12 @@
                  Masken zur Applikation SY
                  =========================
 
-SYM010           &TITEL = "SY�Kopieren des Zeichensatzes"
-SYM011           &TITEL = "SY�Fehlermeldung bei keinem Zeichensatzes"
-SYM009           &TITEL = "SY�Arbeit Manueller Programm-Start 1/1"
-SYM008           &TITEL = "SY͎ndern Testmodus 1/1"
-SYM007           &TITEL = "SY�Arbeit Manueller Programm-Start 1/1"
-SYM006           &TITEL = "SY͎ndern Erfassungs-Datum 1/1"
-SYM005           &TITEL = "SY�Meldung nach Systemabsturz 1/1"
+SYM010           &TITEL = "SY═Kopieren des Zeichensatzes"
+SYM011           &TITEL = "SY═Fehlermeldung bei keinem Zeichensatzes"
+SYM009           &TITEL = "SY═Arbeit Manueller Programm-Start 1/1"
+SYM008           &TITEL = "SY═Ändern Testmodus 1/1"
+SYM007           &TITEL = "SY═Arbeit Manueller Programm-Start 1/1"
+SYM006           &TITEL = "SY═Ändern Erfassungs-Datum 1/1"
+SYM005           &TITEL = "SY═Meldung nach Systemabsturz 1/1"
 
 

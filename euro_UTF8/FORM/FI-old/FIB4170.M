@@ -1,10 +1,10 @@
-��KOSTENVERGLEICH SUMMEN                                                                Datum: 04.09.90 - SEITE 0001��
-�������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (01) ...euroSOFT-WARE - 8010 Graz                                                          Teilnehmer: 002��
- ��������������������������������������������������������������������������������������������������������������������
+┌┘KOSTENVERGLEICH SUMMEN                                                                Datum: 04.09.90 - SEITE 0001└┐
+│┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (01) ...euroSOFT-WARE - 8010 Graz                                                          Teilnehmer: 002├┘
+ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
                                         Monats-  Anteil  Anteil  Anteil          Jahres-  Anteil  Anteil  Anteil
        Bezeichnung                        Saldo  Gruppe  zu  VK  zu  EK            Saldo  Gruppe  zu  VK  zu  EK
-����������������������������������������������������������������������������������������������������������������������
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
 
@@ -26,6 +26,6 @@
 
 
 
-��������������������������������������������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: euroSOFT Graz                                                              (c) 1990 euroSOFT��
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: euroSOFT Graz                                                              (c) 1990 euroSOFT┌┘
 

@@ -1,23 +1,23 @@
 /*.ta,F02,V. euroSOFT-FIBU Stamm: Sachkonten / 3.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-Finanzbuchhaltung                                                       บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-Finanzbuchhaltung                                                       โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-.me (MENUE,FI-030),1,Finanzbuchhaltung,ndern Sachkonten.
-.me (MENUE,FI-042),1,Kontenstamm,ndern Sachkonten.
+.me (MENUE,FI-030),1,Finanzbuchhaltung,รndern Sachkonten.
+.me (MENUE,FI-042),1,Kontenstamm,รndern Sachkonten.
 .da (EURODATA,FI1310),1,Sachkontenstamm.
 .da (EURODATA,FI1311),1,Sachkontenstamm Zusatz.
-.ma (\euro\mask\FIM130),1,Anlegen/ndern Sachkontenstamm 1/2.
-.ma (\euro\mask\FIM131),1,Umstze Sachkontenstamm 2/2.
+.ma (\euro\mask\FIM130),1,Anlegen/รndern Sachkontenstamm 1/2.
+.ma (\euro\mask\FIM131),1,Umsรคtze Sachkontenstamm 2/2.
 .hd (FI,sach-st),FI,sach-an.
 .hd (FI,sach-st),FI,sach-dr.
 .fo (\euro\form\FIB1310.M03),1,S0,Z0,B84,H65,Druck Sachkonten-Stamm.
 
 .te*/
 
-me (MENUE,FI-042),1,Kontenstamm,ndern Bankenstamm.
+me (MENUE,FI-042),1,Kontenstamm,รndern Bankenstamm.
 da (EURODATA,FI1400),1,Bankenstamm.
-ma (\euro\mask\FIM140),1,Anlegen/ndern Bankenstamm 1/1.
+ma (\euro\mask\FIM140),1,Anlegen/รndern Bankenstamm 1/1.
 hd (FI,sach-st),FI,bank-an.
 hd (FI,sach-st),FI,bank-dr.
 fo (\euro\form\FIB1400.M03),1,S0,Z0,B84,H13,Druck Banken-Stamm.

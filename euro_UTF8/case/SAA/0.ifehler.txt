@@ -1,6 +1,6 @@
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ            Konstanten zur bergabe der Fehlerart an i_Fehler()         บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘            Konstanten zur รbergabe der Fehlerart an i_Fehler()         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
    #define I_FEHLER_MEM        0
    #define I_FEHLER_SIGN       1
    #define I_FEHLER_MNHOEHE    2
@@ -12,20 +12,20 @@
    #define I_FEHLER_KETTE_PUTT 8
    #define I_FEHLER_DOPPEL_ID  9
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                        MODULGLOBALE VARIABLEN                          บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                        MODULGLOBALE VARIABLEN                          โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 PSTR pstrErrorText_m[] =
 {
 /*00*/  "Speicherplatz konnte nicht allokiert werden.",
 /*01*/  "Zeiger zeigt nicht mehr auf Struktur.",
-/*02*/  "Initialisiertes Men ist in der H”he zu groแ.",
-/*03*/  "Menoption ist zu lang.",
+/*02*/  "Initialisiertes Menรผ ist in der Hรถhe zu groร.",
+/*03*/  "Menรผoption ist zu lang.",
 /*04*/  "Anzahl der Hilfstexte ist nicht identisch mit Anzahl Optionen.",
 /*05*/  "Der erforderliche Zeiger war nicht mehr da.",
 /*06*/  "Es konnte kein Index zugeordnet werden.",
 /*07*/  "Zum angegebenen Index existiert keine Funktion",
-/*08*/  "Verkettete Liste MKBs zerst”rt",
+/*08*/  "Verkettete Liste MKBs zerstรถrt",
 /*09*/  "Doppelte FensterID",
         NULL
 };
@@ -38,7 +38,7 @@ PSTR pstrErrorText_m[] =
 
          Ursache des Fehlers:  %s
 
- Die Ausfhrung des Programms wurde beendet.
+ Die Ausfรผhrung des Programms wurde beendet.
 
 
     if ( fpwCopyBuffer_g == 0L )                    /* Ist CopyBuffer schon */
@@ -53,17 +53,17 @@ PSTR pstrErrorText_m[] =
 
 
    /*------------------------------------------------------------------------------*/
-   /*           M”gliche Werte von wFehler_g nach Funktionsaufrufen                */
+   /*           Mรถgliche Werte von wFehler_g nach Funktionsaufrufen                */
    /*------------------------------------------------------------------------------*/
    #define WIN_KEIN_FEHLER     0  /* kein Fehler aufgetreten                   */
-   #define WIN_KEIN_PWKB       1  /* kein gltiger Zeiger auf einen WKB        */
-   #define WIN_ZU_GROSS        2  /* Fensterdimensionen ungltig               */
+   #define WIN_KEIN_PWKB       1  /* kein gรผltiger Zeiger auf einen WKB        */
+   #define WIN_ZU_GROSS        2  /* Fensterdimensionen ungรผltig               */
    #define WIN_KEIN_SPEICHER   3  /* Ihr Rechner kann sich nichts merken       */
-   #define WIN_FALSCHE_OPT     4  /* gewhlte Option nicht vorhanden           */
+   #define WIN_FALSCHE_OPT     4  /* gewรคhlte Option nicht vorhanden           */
    #define WIN_TITEL_LAENGE    5  /* Titel zu lang                             */
-   #define WIN_AUSSERHALB      6  /* Koordinaten liegen auแerhalb des Windows  */
+   #define WIN_AUSSERHALB      6  /* Koordinaten liegen auรerhalb des Windows  */
    #define WIN_LIMIT           7  /* zu viele Fenster sichtbar                 */
-   #define WIN_NICHT_SICHTBAR  8  /* Inaktive Fenster k”nnen nicht versteckt w.*/
+   #define WIN_NICHT_SICHTBAR  8  /* Inaktive Fenster kรถnnen nicht versteckt w.*/
    #define WIN_NICHT_REG       9  /* Das W. ist nicht als sichtbar registriert */
 
 

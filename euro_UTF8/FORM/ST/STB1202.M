@@ -2,7 +2,7 @@
     Firma
     A-Consult EDV-Beratungs-GmbH
          
-    KÑrntnerstra·e 1
+    K√§rntnerstra√üe 1
     A - 1010 Wien
 
 
@@ -10,7 +10,7 @@
     A.C.O.
     Computer Systeme GmbH
          
-    Pfingstrosenstra·e 29
-    D - 8000 MÅnchen 70
+    Pfingstrosenstra√üe 29
+    D - 8000 M√ºnchen 70
 
 

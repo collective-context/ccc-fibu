@@ -8,15 +8,15 @@
 &DATEI (1) = MASK, ST4120
 
 &KOPF (0)
-�
-^��LISTE LIEFERANTEN NACH KURZBEZEICHNUNG              Datum: @@@@@@@@ - SEITE ������ ~NO ~1._DATUM_AKT ~1._SEITE
-���������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ����������������������������������������������������������������������������������
+ 
+^┌┘LISTE LIEFERANTEN NACH KURZBEZEICHNUNG              Datum: @@@@@@@@ - SEITE øøøø└┐ ~NO ~1._DATUM_AKT ~1._SEITE
+│┌────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └────────────────────────────────────────────────────────────────────────────────┘
 Lieferanten-Kurzbezeichnung    Lieferanten-Nummer    Lief.   Aus-     Branche  Kurz-
                                                      Gruppe  wertung            Sym.
-������������������������������������������������������������������������������������
-�
+────────────────────────────────────────────────────────────────────────────────────
+ 
 &END
 
 
@@ -26,8 +26,8 @@ Lieferanten-Kurzbezeichnung    Lieferanten-Nummer    Lief.   Aus-     Branche  K
 
 
 &FUSS (0)
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 

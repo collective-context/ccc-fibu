@@ -1,28 +1,28 @@
-Identifiaktionen (ID's) fÅr euroSOFT Standard Module:
-ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+Identifiaktionen (ID's) f√ºr euroSOFT Standard Module:
+‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
 BA = BAse                = BAsis               > Basismodule (Source *.C)
-SY = SYstem programms    = SYstem              > MenÅ, Mandanten, Drucker ...
-ƒƒƒƒƒ
-ST = STandard solution   = STandard-Lîsung     > Stammmodule fÅr gemeins. Nutz.
-ƒƒƒƒƒ
-AR = ARticle control     = ARtikel-FÅhrung     > AUFTRAG, Faktura, Bestellwesen
+SY = SYstem programms    = SYstem              > Men√º, Mandanten, Drucker ...
+‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+ST = STandard solution   = STandard-L√∂sung     > Stammmodule f√ºr gemeins. Nutz.
+‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+AR = ARticle control     = ARtikel-F√ºhrung     > AUFTRAG, Faktura, Bestellwesen
 FI = FInance bookkeeping = FInanz-Buchhaltung  > FIBU, Kassa
 TE = TExt editor         = TExt-Verarbeitung   > TEXT
 
-Identifiaktionen (ID's) fÅr euroSOFT Brachen Module:
-ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+Identifiaktionen (ID's) f√ºr euroSOFT Brachen Module:
+‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
 EU = EUroSOFT-CASEbox    = EUroSOFT-CASEbox    > interne Toolprogramme
 LI = LIcence card-index  = LIzenzkartei        > Lizenzkartei
 MM = Marketing Mix       = Marketing Mix       > Vertriebssteuerung
 PD = Personal Data       = Personal-Daten      > Zeiterfassung, ...
 
-Identifiaktionen (ID's) fÅr euroSOFT Individual Module:
-ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+Identifiaktionen (ID's) f√ºr euroSOFT Individual Module:
+‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
 AKV = AKV-Programme
-FDI = FrÅhstÅcksDIenst
+FDI = Fr√ºhst√ºcksDIenst
 LKF = LK-Fibu
 KHK = KHK Programme > Schnittstellen zu KHK Programmen
-PBA = PrÅfBAu
+PBA = Pr√ºfBAu
 ROC = ROtary-Club
 VSV = Verein Selbstvermarkter
 UAB = Urlaub Am Bauernhof

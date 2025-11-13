@@ -1,6 +1,6 @@
 /************************************************************
  *   FCB.C
- *   C-Funktionen zur Dateiein- und ausgabe Åber die
+ *   C-Funktionen zur Dateiein- und ausgabe √ºber die
  *   File Control Blocks (FCB)
  *   14.3.88    18:13
  ************************************************************/
@@ -31,7 +31,7 @@
 
 
 /* ----------------------------------------------------------
- *  F 0Fh - ôffnet Datei mit File Control Block
+ *  F 0Fh - √ñffnet Datei mit File Control Block
  * ---------------------------------------------------------- */
 
 struct FCB *D_fcb_open (char *name, BYTE recsize)
@@ -53,7 +53,7 @@ return (fcb);
 }
 
 /* ----------------------------------------------------------
- *  F 10h - Schlie·t Datei Åber FCB
+ *  F 10h - Schlie√üt Datei √ºber FCB
  * ---------------------------------------------------------- */
 
 
@@ -81,7 +81,7 @@ else
 
 
 /* ----------------------------------------------------------
- *  F 12h - Sucht den nÑchsten passenden Dir-Eintrag
+ *  F 12h - Sucht den n√§chsten passenden Dir-Eintrag
  * ---------------------------------------------------------- */
 
 int D_fcb_search_next (struct FCB *fcb)
@@ -91,7 +91,7 @@ return ((bdos (FCB_SEARCH_NEXT, (WORD) fcb, 0) & 0x00ff) != 0x00ff);
 
 
 /* ----------------------------------------------------------
- *  F 13h - Lîscht Datei Åber FCB
+ *  F 13h - L√∂scht Datei √ºber FCB
  * ---------------------------------------------------------- */
 
 int D_fcb_delete_file (char *name)
@@ -110,7 +110,7 @@ return (ret);
 
 
 /* ----------------------------------------------------------
- *  F 14h - Liest sequentiell Datei Åber FCB
+ *  F 14h - Liest sequentiell Datei √ºber FCB
  * ---------------------------------------------------------- */
 
 int D_fcb_seq_read (struct FCB *fcb)
@@ -120,7 +120,7 @@ return (bdos (FCB_SEQ_READ, (WORD) fcb, 0) & 0x00ff);
 
 
 /* ----------------------------------------------------------
- *  F 15h - Schreibt sequentiell auf Datei Åber FCB
+ *  F 15h - Schreibt sequentiell auf Datei √ºber FCB
  * ---------------------------------------------------------- */
 
 int D_fcb_seq_write (struct FCB *fcb)
@@ -130,7 +130,7 @@ return (bdos (FCB_SEQ_WRITE, (WORD) fcb, 0) & 0x00ff);
 
 
 /* ----------------------------------------------------------
- *  F 16h - Erîffnet neue Datei Åber FCB
+ *  F 16h - Er√∂ffnet neue Datei √ºber FCB
  * ---------------------------------------------------------- */
 
 struct FCB *D_fcb_creat_file (char *name)
@@ -171,7 +171,7 @@ return ((bdos (FCB_RENAME_FILE,
 }
 
 /* ----------------------------------------------------------
- *  F 21h - Wahlfreies Lesen einer Datei Åber FCB
+ *  F 21h - Wahlfreies Lesen einer Datei √ºber FCB
  * ---------------------------------------------------------- */
 
 int D_fcb_rand_read (struct FCB *fcb)
@@ -181,7 +181,7 @@ return (bdos (FCB_RAND_READ, (WORD) fcb, 0) & 0x00ff);
 
 
 /* ----------------------------------------------------------
- *  F 22h - Wahlfreies Schreiben auf eine Datei Åber FCB
+ *  F 22h - Wahlfreies Schreiben auf eine Datei √ºber FCB
  * ---------------------------------------------------------- */
 
 int D_fcb_rand_write (struct FCB *fcb)
@@ -191,7 +191,7 @@ return (bdos (FCB_RAND_WRITE, (WORD) fcb, 0) & 0x00ff);
 
 
 /* ----------------------------------------------------------
- *  F 23h - bestimmt Grî·e einer Datei Åber FCB
+ *  F 23h - bestimmt Gr√∂√üe einer Datei √ºber FCB
  * ---------------------------------------------------------- */
 
 int D_fcb_fsize (struct FCB *fcb)
@@ -201,7 +201,7 @@ return ((bdos (FCB_GET_FILE_SIZE, (WORD) fcb, 0) & 0x00ff) != 0x00ff);
 
 
 /* ----------------------------------------------------------
- *  F 24h - setzt relative Record Grî·e eines FCB
+ *  F 24h - setzt relative Record Gr√∂√üe eines FCB
  * ---------------------------------------------------------- */
 
 void D_fcb_set_rel_rec (struct FCB *fcb)
@@ -211,7 +211,7 @@ bdos (FCB_SET_REL_REC, (WORD) fcb, 0);
 
 
 /* ----------------------------------------------------------
- *  F 27h - Wahlfreies Lesen eines Blocks Åber FCB
+ *  F 27h - Wahlfreies Lesen eines Blocks √ºber FCB
  * ---------------------------------------------------------- */
 
 int D_fcb_rand_blk_read (struct FCB *fcb, WORD bloecke, int *erg)
@@ -230,7 +230,7 @@ return (inregs.h.al & 0x00ff);
 
 
 /* ----------------------------------------------------------
- *  F 28h - Wahlfreies Schreiben eines Blocks Åber FCB
+ *  F 28h - Wahlfreies Schreiben eines Blocks √ºber FCB
  * ---------------------------------------------------------- */
 
 int D_fcb_rand_blk_write (struct FCB *fcb, WORD bloecke, int *erg)

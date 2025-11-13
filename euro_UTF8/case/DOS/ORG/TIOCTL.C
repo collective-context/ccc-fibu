@@ -4,7 +4,7 @@
  *   Memory Model:    SMALL                                   *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC      *
  *   Compilieren:     (Q)CL TIOCTL.C /link DOSLIBS.LIB        *
- *   Programmautor:   Heinrich Gîbl                           *
+ *   Programmautor:   Heinrich G√∂bl                           *
  *   Stand:           27.6.88                                 *
  **************************************************************/
 
@@ -13,7 +13,7 @@
 
 #include "showhelp.c"
 
-char *dev [] = {                   /* Die fÅnf ersten Handles */
+char *dev [] = {                   /* Die f√ºnf ersten Handles */
     "STDIN", "STDOUT", "STDERR", "STDAUX", "STDPRN"
                };
 char j[] = "ja";
@@ -22,7 +22,7 @@ char n[] = "nein";
 #define CTLSTR "\tCtrl-Strings          %s\n"
 #define CHADEV "\tChar-Device           %s\n"
 #define EOFINP "\tEOF bei Input         %s\n"
-#define CHKCTL "\tPrÅft auf Ctrl-chars  %s\n"
+#define CHKCTL "\tPr√ºft auf Ctrl-chars  %s\n"
 #define CLKDEV "\tClock-Device          %s\n"
 #define CONINP "\tConsole Input Device  %s\n"
 #define CONOUT "\tConsole Output Device %s\n"

@@ -1,19 +1,19 @@
 /*.ta,F02,III. euroSOFT-PROGRAMMbeschreibung / 5.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE PB-Prfbau                                                         บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE PB-Prรผfbau                                                         โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-Anlegen, ndern oder L”schen von BETON-Prfbericht
-ออออออออออออออออออออออออออออออออออออออออออออออออออ
+Anlegen, รndern oder Lรถschen von BETON-Prรผfbericht
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 Dateibeschreibungen
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
 .da (EURODATA,PB1600),1.
 
 
 Detailbeschreibungen
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
 .ma (\euro\mask\PBM160),1.
 
@@ -23,7 +23,7 @@ Detailbeschreibungen
 
 .ma (\euro\mask\PBM163),1.
 
-.hd (PB,prf),PB,bet-pr.
+.hd (PB,prรผf),PB,bet-prรผ.
 
 
 
@@ -34,8 +34,8 @@ Detailbeschreibungen
 
 
              Mit meiner Unterschrift nehme ich das Plichtenheft zur Kenntnis
-             und erklre mich einverstanden, daแ smtliche nachtrglichen
-             nderungen zustzlich in Rechnung gestellt werden.
+             und erklรคre mich einverstanden, daร sรคmtliche nachtrรคglichen
+             รnderungen zusรคtzlich in Rechnung gestellt werden.
 
 
 

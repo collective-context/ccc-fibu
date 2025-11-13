@@ -16,7 +16,7 @@ Kopf 1
 &END
 
 &RUMPF (0)
-÷;÷;÷;÷;÷;÷;÷;÷;÷; ~1._ORT ~1._STRASSE_1 ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~1._NAME_5 ~0.TELEFON ~0.BRIEFANR_1
+Â¸;Â¸;Â¸;Â¸;Â¸;Â¸;Â¸;Â¸;Â¸; ~1._ORT ~1._STRASSE_1 ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~1._NAME_5 ~0.TELEFON ~0.BRIEFANR_1
 &END
 
 &FUSS (0)
@@ -25,5 +25,5 @@ Kopf 1
 
 
 Land;Plz_Ort;Name1;Name2;Name3;Name4;Name5;Telefon;Briefanrede
-÷;÷;÷;÷;÷;÷;÷;÷;÷ ~0.LAND ~0.PLZ_ORT ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~1._NAME_5 ~0.TELEFON ~0.BRIEFANR_1
+Â¸;Â¸;Â¸;Â¸;Â¸;Â¸;Â¸;Â¸;Â¸ ~0.LAND ~0.PLZ_ORT ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~1._NAME_5 ~0.TELEFON ~0.BRIEFANR_1
 

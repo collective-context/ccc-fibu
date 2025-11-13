@@ -1,7 +1,7 @@
 /*****************************************************************
  *   Programmname:    CON_IO.C                                   *
  *   Aufgabe:         Stellt eine Reihe von C-Funktionen zur     *
- *                    VerfÅgung, die Ein- und Ausgabe auf CON,   *
+ *                    Verf√ºgung, die Ein- und Ausgabe auf CON,   *
  *                    AUX und PRN erledigen.                     *
  *   Memory Model:    SMALL                                      *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC         *
@@ -13,10 +13,10 @@
  *    wobei options:  COMP=QCL  (falls QuickC verwendet wird)    *
  *                                                               *
  *   Sollen Routinen in anderen Programmen verwendet werden, so  *
- *   mu· beim Linken DOSLIBS.LIB als Library zusÑtzlich angege-  *
+ *   mu√ü beim Linken DOSLIBS.LIB als Library zus√§tzlich angege-  *
  *   ben werden.                                                 *
  *                                                               *
- *   Programmautor:    Heinrich Gîbl                             *
+ *   Programmautor:    Heinrich G√∂bl                             *
  *   Stand:            27.6.88                                   *
  *****************************************************************/
 
@@ -39,7 +39,7 @@
 
 /* ---------------------------------------------------------- *
  *  F 01h - liest Zeichen von STDIN und gibt es auf STDOUT    *
- *          aus. Bei ^C wird INT 23h ausgelîst.               *
+ *          aus. Bei ^C wird INT 23h ausgel√∂st.               *
  * ---------------------------------------------------------- */
 
 int
@@ -47,7 +47,7 @@ D_read_echo (void)
 {
 int i;
 
-/* Bei erweitertem ASCII-Code mu· Funktion noch einmal aufgerufen
+/* Bei erweitertem ASCII-Code mu√ü Funktion noch einmal aufgerufen
    werden  */
 
 i = bdos (READ_AND_ECHO, 0, 0) & 0x00ff;
@@ -57,7 +57,7 @@ return (i ? i : (0x0100 | (bdos (READ_AND_ECHO, 0, 0) & 0x00ff)));
 
 /* ---------------------------------------------------------- *
  *  F 02h - gibt Zeichen auf STDOUT aus.                      *
- *          ^C lîst INT 23h aus.                              *
+ *          ^C l√∂st INT 23h aus.                              *
  * ---------------------------------------------------------- */
 
 void
@@ -69,7 +69,7 @@ bdos (DISPLAY_CHAR, (WORD) c, 0);
 
 
 /* ---------------------------------------------------------- *
- *  F 03h - liest Zeichen von AUX. ^C lîst INT 23h aus.       *
+ *  F 03h - liest Zeichen von AUX. ^C l√∂st INT 23h aus.       *
  * ---------------------------------------------------------- */
 
 char
@@ -80,7 +80,7 @@ return ((char)(bdos (AUX_INPUT, 0, 0) & 0x00ff));
 
 
 /* ---------------------------------------------------------- *
- *  F 04h - sendet Zeichen zu AUX. ^C lîst INT 23h aus.       *
+ *  F 04h - sendet Zeichen zu AUX. ^C l√∂st INT 23h aus.       *
  * ---------------------------------------------------------- */
 
 void
@@ -92,7 +92,7 @@ bdos (AUX_OUTPUT, (WORD) c, 0);
 
 /* ---------------------------------------------------------- *
  *  F 05h - sendet Zeichen zu PRN. Wird an CON ^C einge-      *
- *          geben, so wird INT 23h ausgelîst.                 *
+ *          geben, so wird INT 23h ausgel√∂st.                 *
  * ---------------------------------------------------------- */
 
 void
@@ -105,7 +105,7 @@ bdos (PRINT_CHAR, (WORD) c, 0);
 
 /* ---------------------------------------------------------- *
  *  F 06h - liest/sendet Zeichen von/zu STDIN/STDOUT.         *
- *          ^C wird Åbergangen.                               *
+ *          ^C wird √ºbergangen.                               *
  * ---------------------------------------------------------- */
 
 char
@@ -117,7 +117,7 @@ return ((char)(bdos (CONSOLE_IO, (WORD) io, 0) & 0x00ff));
 
 
 /* ---------------------------------------------------------- *
- *  F 07h - liest Zeichen von STDIN. Keine ^C öberprÅfung.    *
+ *  F 07h - liest Zeichen von STDIN. Keine ^C √úberpr√ºfung.    *
  * ---------------------------------------------------------- */
 
 int
@@ -125,7 +125,7 @@ D_con_input (void)
 {
 int i;
 
-/* Bei erweitertem ASCII-Code mu· Funktion noch einmal aufgerufen
+/* Bei erweitertem ASCII-Code mu√ü Funktion noch einmal aufgerufen
    werden  */
 i = bdos (CON_INPUT, 0, 0) & 0x00ff;
 return (i ? i : (0x0100 | (bdos (CON_INPUT, 0, 0) & 0x00ff)));
@@ -141,7 +141,7 @@ D_read_kbd (void)
 {
 int i;
 
-/* Bei erweitertem ASCII-Code mu· Funktion noch einmal aufgerufen
+/* Bei erweitertem ASCII-Code mu√ü Funktion noch einmal aufgerufen
    werden  */
 i = bdos (READ_KBD, 0, 0) & 0x00ff;
 return (i ? i : (0x0100 | (bdos (READ_KBD, 0, 0) & 0x00ff)));
@@ -178,7 +178,7 @@ return (++c);
 
 
 /* ---------------------------------------------------------- *
- *  F 0Bh - ÅberprÅft den Status von STDIN.                   *
+ *  F 0Bh - √ºberpr√ºft den Status von STDIN.                   *
  * ---------------------------------------------------------- */
 
 int

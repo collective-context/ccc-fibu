@@ -1,20 +1,20 @@
 /*.ta,F02,III. euroSOFT-PROGRAMMbeschreibung / 7.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE UB-Urlaub am Bauernhof                                             บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE UB-Urlaub am Bauernhof                                             โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 Kunden Statistiken
-ออออออออออออออออออ
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 Unter dem Punkt Kunden Statistiken existieren folgende Auswertungsprogramme:
-a) Liste nach Hufigkeit der Anfrage
-b) Liste nach Information: Liste der Kunden sortiert nach dem Feld ฏInformationฎ.
-                           Die Information ber den Verein ฏUrlaub am Bauernhofฎ
-                           kann der Kunde ber einen Pressetext, eine Messever-
-                           anstaltung, ber Mundpropaganda, LFVV, oder sonstige
+a) Liste nach Hรคufigkeit der Anfrage
+b) Liste nach Information: Liste der Kunden sortiert nach dem Feld ยปInformationยซ.
+                           Die Information รผber den Verein ยปUrlaub am Bauernhofยซ
+                           kann der Kunde รผber einen Pressetext, eine Messever-
+                           anstaltung, รผber Mundpropaganda, LFVV, oder sonstige
                            Informationsquellen erhalten haben.
 c) Liste nach Regionen
-d) Liste nach Anfrage per: Die Anfrage kann per Telefon oder per Post gettigt
+d) Liste nach Anfrage per: Die Anfrage kann per Telefon oder per Post getรคtigt
                            werden.
 .te*/
 

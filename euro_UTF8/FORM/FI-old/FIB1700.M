@@ -1,14 +1,14 @@
-��KOSTENSTELLEN-LISTE                                 Datum: 04.09.90 - SEITE 0001��
-���������������������������������������������������������������������������������Ŀ�
-��Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002��
- ����������������������������������������������������������������������������������
+┌┘KOSTENSTELLEN-LISTE                                 Datum: 04.09.90 - SEITE 0001└┐
+│┌────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002├┘
+ └────────────────────────────────────────────────────────────────────────────────┘
 Konto-
  Nummer   Bezeichnung
-������������������������������������������������������������������������������������
+────────────────────────────────────────────────────────────────────────────────────
 T100      Kost 1
 
 
 
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFT��
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFT┌┘
 

@@ -1,10 +1,10 @@
 /*----------------------------------------------------------------------------
 
-              Programm fr die Definition eigener Druckertreiber
+              Programm fÃ¼r die Definition eigener Druckertreiber
 
-                      fr die Ausgabe von PCX-Graphiken
+                      fÃ¼r die Ausgabe von PCX-Graphiken
 
-                          (c) 1992/93 by Markus Mck
+                          (c) 1992/93 by Markus MÃ¼ck
 
 -----------------------------------------------------------------------------*/
 
@@ -46,19 +46,19 @@
   CHAR     PrinterName[8+3];        /* Name des Druckers = Filename  + Endung 'PX'*/
   BYTE     PrinterType   = 0;       /* Art des Bewegungscodes: MM_HP oder MM_ESC..*/
 
-  CHAR     *NoLineSpace  = NULL;    /* [EPSON] Code fr Zeilenabstand 7/72 ''     */
-  CHAR     *NewLine      = NULL;    /* [EPSON] Code fr neue Zeile                */
-  CHAR     *GraphicOn    = NULL;    /* [EPSON,HP] Code fr 'Graphikmodus ein'     */
-  CHAR     *LineSpace    = NULL;    /* [EPSON] Code fr normalen Zeilenabstand    */
-  WORD     Resolution    = 0;       /* [EPSON,HP] Aufl”sung der Graphik           */
+  CHAR     *NoLineSpace  = NULL;    /* [EPSON] Code fÃ¼r Zeilenabstand 7/72 ''     */
+  CHAR     *NewLine      = NULL;    /* [EPSON] Code fÃ¼r neue Zeile                */
+  CHAR     *GraphicOn    = NULL;    /* [EPSON,HP] Code fÃ¼r 'Graphikmodus ein'     */
+  CHAR     *LineSpace    = NULL;    /* [EPSON] Code fÃ¼r normalen Zeilenabstand    */
+  WORD     Resolution    = 0;       /* [EPSON,HP] AuflÃ¶sung der Graphik           */
 
-  CHAR     *PreYRes      = NULL;    /* [HP] Code VOR Y-Aufl”sung ( ESC & a )      */
-  CHAR     *AftYRes      = NULL;    /* [HP] Code NACH Y-Aufl”sung ( H )           */
-  CHAR     *PreDPIRes    = NULL;    /* [HP] Code VOR Druckaufl”sung in DPI        */
-  CHAR     *AftDPIRes    = NULL;    /* [HP] Code NACH Druckaufl”sung in DPI       */
+  CHAR     *PreYRes      = NULL;    /* [HP] Code VOR Y-AuflÃ¶sung ( ESC & a )      */
+  CHAR     *AftYRes      = NULL;    /* [HP] Code NACH Y-AuflÃ¶sung ( H )           */
+  CHAR     *PreDPIRes    = NULL;    /* [HP] Code VOR DruckauflÃ¶sung in DPI        */
+  CHAR     *AftDPIRes    = NULL;    /* [HP] Code NACH DruckauflÃ¶sung in DPI       */
   CHAR     *PreBytes     = NULL;    /* [HP] Code VOR Anzahl Graphicbytes          */
   CHAR     *AftBytes     = NULL;    /* [HP] Code NACH Anzahl Graphicbytes         */
-  CHAR     *CodeEnd      = NULL;    /* [HP] Code fr Graphic-Ende                 */
+  CHAR     *CodeEnd      = NULL;    /* [HP] Code fÃ¼r Graphic-Ende                 */
 
   CHAR     Z[4];                    /* Hilfsvariable                              */
   SWORD    *Zeiger;                 /* Hilfsvariable                              */
@@ -68,9 +68,9 @@
 
   VOID HeadLine ( VOID )
   {
-       /* clrscr();  /* Muá bei MS-Compilern entfallen ! */
+       /* clrscr();  /* MuÃŸ bei MS-Compilern entfallen ! */
        printf("--------------------------------------------------------------------------------");
-       printf("                   Mck Softwareentwicklung C - Druckertoolbox\n\r" );
+       printf("                   MÃ¼ck Softwareentwicklung C - Druckertoolbox\n\r" );
        printf("                              PCX-Druckerdefinition\n\r");
        printf("--------------------------------------------------------------------------------\n\r");
   }
@@ -238,7 +238,7 @@
   CHAR YesNo( VOID )
   {
        printf("\n\r\n\r");
-       printf("                            Werte bernehmen (J/N)?");
+       printf("                            Werte Ã¼bernehmen (J/N)?");
        return ( JaNein() );
   }
 
@@ -438,37 +438,37 @@
             {
 
                 printf("\n\r\n\r");
-                printf("Code VOR Aufl”sung in DPI (Hex): ");
+                printf("Code VOR AuflÃ¶sung in DPI (Hex): ");
                 EnterHexCode( &PreDPIRes, 19 );
 
                 printf("\n\r\n\r");
-                printf("Code NACH Aufl”sung in DPI (Hex): ");
+                printf("Code NACH AuflÃ¶sung in DPI (Hex): ");
                 EnterHexCode( &AftDPIRes, 19 );
 
                 printf("\n\r\n\r");
-                printf("Code fr 'Graphikmodus an' (Hex): ");
+                printf("Code fÃ¼r 'Graphikmodus an' (Hex): ");
                 EnterHexCode( &GraphicOn, 19 );
             }
             else
             {
                 printf("\n\r\n\r");
-                printf("Code fr Zeilenabstand 7/72 '' (Hex): ");
+                printf("Code fÃ¼r Zeilenabstand 7/72 '' (Hex): ");
                 EnterHexCode( &NoLineSpace, 19 );
 
                 printf("\n\r\n\r");
-                printf("Code fr 'Neue Zeile' (Hex): ");
+                printf("Code fÃ¼r 'Neue Zeile' (Hex): ");
                 EnterHexCode( &NewLine, 19 );
 
                 printf("\n\r\n\r");
-                printf("Code fr 'Graphikmodus an' (Hex): ");
+                printf("Code fÃ¼r 'Graphikmodus an' (Hex): ");
                 EnterHexCode( &GraphicOn, 19 );
 
                 printf("\n\r\n\r");
-                printf("Code fr normalen Zeilenabstand (Hex): ");
+                printf("Code fÃ¼r normalen Zeilenabstand (Hex): ");
                 EnterHexCode( &LineSpace, 19 );
 
                 printf("\n\r\n\r");
-                printf("Graphikaufl”sung in DPI: ");
+                printf("GraphikauflÃ¶sung in DPI: ");
                 if ( Resolution > 0 )
                 {
                      itoa( Resolution, Z, 10 );
@@ -506,11 +506,11 @@
             EnterHexCode( &AftBytes, 19 );
 
             printf("\n\r\n\r");
-            printf("Code fr Graphik-Ende (Hex): ");
+            printf("Code fÃ¼r Graphik-Ende (Hex): ");
             EnterHexCode( &CodeEnd, 19 );
 
             printf("\n\r\n\r");
-            printf("Graphikaufl”sung in DPI: ");
+            printf("GraphikauflÃ¶sung in DPI: ");
             if ( Resolution > 0 )
             {
                  itoa( Resolution, Z, 10 );

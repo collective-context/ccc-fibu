@@ -24,21 +24,21 @@ set lpt=%1
   goto meldung
 
 :fehler
-  echo ÿ
+  echo Â 
   echo Werte       : LPT=%lpt%    (OUT=%out%,   DRUCK=%druck%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo Syntax      : lpt ®Device¯        oder: lpt ®s/h¯ (fr show bzw. help)
-  echo Fr ®Device¯: Dateiname oder lpt1, lpt2, lpt3, com1, com2.
-  echo ÿ
-  echo Beispiele   : ¯lpt PRINT® oder ¯lpt lpt1® ...
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Syntax      : lpt Â«DeviceÂ»        oder: lpt Â«s/hÂ» (fÃ¼r show bzw. help)
+  echo FÃ¼r Â«DeviceÂ»: Dateiname oder lpt1, lpt2, lpt3, com1, com2.
+  echo Â 
+  echo Beispiele   : Â»lpt PRINTÂ« oder Â»lpt lpt1Â« ...
+  echo Â 
   goto end
 
 :meldung
-  echo ÿ
+  echo Â 
   echo Werte:   LPT=%lpt%    (OUT=%out%,   DRUCK=%druck%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Â 
 
 :end
 

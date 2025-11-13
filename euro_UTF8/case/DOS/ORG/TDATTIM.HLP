@@ -1,19 +1,19 @@
 +-------------------------------------------------------------------------+
-|                      PC/MS-DOS  fÅr Insider                           |
+|                      PC/MS-DOS  f√ºr Insider                           |
 |-------------------------------------------------------------------------|
-| Testprogramm fÅr die Funktion-Calls 2Ah-2Dh                             |
+| Testprogramm f√ºr die Funktion-Calls 2Ah-2Dh                             |
 |                                                                         |
 | Die Funktionen befinden sich im Quelltext unter dem Namen DATETIME.C    |
-| Sie kînnen in Programmen verwendet werden, indem man die Library        |
-| DOSLIBS.LIB beim Linken als zusÑtzliche Library angibt.                 |
+| Sie k√∂nnen in Programmen verwendet werden, indem man die Library        |
+| DOSLIBS.LIB beim Linken als zus√§tzliche Library angibt.                 |
 +-------------------------------------------------------------------------+
 
 Dieses Programm gibt Datum und Uhrzeit des Systems aus. Zu beachten ist
-(gilt nur fÅr AT-Benutzer), da· durch VerÑnderung dieser Zeit nicht die
-Zeit in der batteriegepufferten Uhr verÑndert wird, sondern nur die Zeit,
+(gilt nur f√ºr AT-Benutzer), da√ü durch Ver√§nderung dieser Zeit nicht die
+Zeit in der batteriegepufferten Uhr ver√§ndert wird, sondern nur die Zeit,
 die von DOS benutzt wird, also die im RAM liegende. Da diese Zeit von einem
-Quarz gebildet wird, dessen Frequenz nicht genau angepa·t ist, kann es
-sein, da· die Uhr nicht genau geht. Die CMOS-Uhr im AT lÑuft unabhÑngig
+Quarz gebildet wird, dessen Frequenz nicht genau angepa√üt ist, kann es
+sein, da√ü die Uhr nicht genau geht. Die CMOS-Uhr im AT l√§uft unabh√§ngig
 von der DOS-Uhr weiter.
 
 

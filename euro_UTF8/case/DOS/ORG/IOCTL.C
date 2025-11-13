@@ -1,7 +1,7 @@
 /*****************************************************************
  *   Programmname:    IOCTL.C                                    *
  *   Aufgabe:         Stellt eine Reihe von C-Funktionen zur     *
- *                    VerfÅgung, die direkte Ein- und Ausgabe    *
+ *                    Verf√ºgung, die direkte Ein- und Ausgabe    *
  *                    auf Treiber erledigen.                     *
  *   Memory Model:    SMALL                                      *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC         *
@@ -13,10 +13,10 @@
  *    wobei options:  COMP=QCL  (falls QuickC verwendet wird)    *
  *                                                               *
  *   Sollen Routinen in anderen Programmen verwendet werden, so  *
- *   mu· beim Linken DOSLIBS.LIB als Library zusÑtzlich angege-  *
+ *   mu√ü beim Linken DOSLIBS.LIB als Library zus√§tzlich angege-  *
  *   ben werden.                                                 *
  *                                                               *
- *   Programmautor:    Heinrich Gîbl                             *
+ *   Programmautor:    Heinrich G√∂bl                             *
  *   Stand:            27.6.88                                   *
  *****************************************************************/
 
@@ -57,7 +57,7 @@ if (inregs.x.cflag)                                 /* Fehler */
     *error = inregs.x.ax & 0x00ff;
     return (0);
     }
-else                        /* Funktion fehlerfrei ausgefÅhrt */
+else                        /* Funktion fehlerfrei ausgef√ºhrt */
     {
     *error = 0;
     return (inregs.x.dx);                     /* Attributwort */
@@ -151,7 +151,7 @@ if (inregs.x.cflag)                                 /* Fehler */
 else
     {
     *error = 0;
-    return (inregs.x.ax);      /* Zahl der Åbertragenen Bytes */
+    return (inregs.x.ax);      /* Zahl der √ºbertragenen Bytes */
     }
 }
 
@@ -184,7 +184,7 @@ if (inregs.x.cflag)                                 /* Fehler */
 else
     {
     *error = 0;
-    return (inregs.x.ax);      /* Zahl der Åbertragenen Bytes */
+    return (inregs.x.ax);      /* Zahl der √ºbertragenen Bytes */
     }
 }
 
@@ -217,7 +217,7 @@ if (inregs.x.cflag)                                 /* Fehler */
 else
     {
     *error = 0;
-    return (inregs.x.ax);      /* Zahl der Åbertragenen Bytes */
+    return (inregs.x.ax);      /* Zahl der √ºbertragenen Bytes */
     }
 }
 
@@ -225,7 +225,7 @@ else
 
 
 /* ---------------------------------------------------------- *
- *  F 44h (06h und 07h) - Ein-/Ausgabestatus prÅfen (IOCTL)   *
+ *  F 44h (06h und 07h) - Ein-/Ausgabestatus pr√ºfen (IOCTL)   *
  * ---------------------------------------------------------- */
 
 int
@@ -285,7 +285,7 @@ else
 
 
 /* ---------------------------------------------------------- *
- *  F 4409h - Fragt, ob GerÑt im Netzwerk ist (IOCTL)         *
+ *  F 4409h - Fragt, ob Ger√§t im Netzwerk ist (IOCTL)         *
  * ---------------------------------------------------------- */
 
 WORD

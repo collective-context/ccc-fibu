@@ -1,8 +1,8 @@
 #include "PRTTOOLS.C"
 char Ausgabe[6][3][13]={ { "Grand Plaza",  "0123/4567", "*****"},
                              { "Morning Star", "3210/7654", "****" },
-                             { "Zum TrÅffel",  "7654/3210", "***"  },
-                             { "Haus MÅller",  "1020/3040", "**"   },
+                             { "Zum Tr√ºffel",  "7654/3210", "***"  },
+                             { "Haus M√ºller",  "1020/3040", "**"   },
                              { "Zum Stroh",    "0102/0304", "*"    },
                              { "Zum Wirt",     "1122/3344", "-"    }
                            };

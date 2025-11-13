@@ -1,11 +1,11 @@
 
-     ��BUCHUNGSERFASSUNGS-PROTOKOLL                                                          Datum: 16.03.91 - SEITE 0001��
-     �������������������������������������������������������������������������������������������������������������������Ŀ�
-     ��Mandant (03) ... T�chtig & Co                                                                      Teilnehmer: 002��
-      ��������������������������������������������������������������������������������������������������������������������
+     ┌┘BUCHUNGSERFASSUNGS-PROTOKOLL                                                          Datum: 16.03.91 - SEITE 0001└┐
+     │┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+     └┤Mandant (03) ... Tüchtig & Co                                                                      Teilnehmer: 002├┘
+      └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
             Buch.-   Soll-     Beleg-     Beleg-   Haben-                                                 U U
      Lfd.Nr    Datum konto     Nummer        Datum Konto             Betrag Buchungstext                  A S    UST-Betrag
-     ����������������������������������������������������������������������������������������������������������������������
+     ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       
      000001  3.04.91 S2000     KO/001      3.04.91 S2100          10.000,00 KO Umbuchungen                  0          0,00
      000002  3.04.91 K105      EB/001      3.04.91 S9700           1.000,00 EB Saldovortrag Kunden        m 0          0,00
@@ -20,8 +20,8 @@
      000011  3.04.91 S4120     BA/001      3.04.91 S2000           1.200,00 BA Bareinkauf                 v 2        200,00
 
 
-     ��������������������������������������������������������������������������������������������������������������������Ŀ
-     ��Nutzungsberechtigung: euroSOFT Graz                                                              (c) 1990 euroSOFT��
+     ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+     └┐Nutzungsberechtigung: euroSOFT Graz                                                              (c) 1990 euroSOFT┌┘
 
 
 

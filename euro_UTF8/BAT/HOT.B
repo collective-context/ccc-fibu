@@ -13,39 +13,39 @@ set hot=%1
   goto meldung
 
 :fehler
-  echo ÿ
+  echo Â 
   echo Werte    : ID=%id%  HOT=%hot%   (ART=%art% / LPT=%lpt%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   echo Syntax    : hot [JJMM]           oder: hot [s/h]   (show/help)
-  echo fr [JJMM]: Jahr/Monat                 hot [d/l/a] (dir/last/all)
+  echo fÃ¼r [JJMM]: Jahr/Monat                 hot [d/l/a] (dir/last/all)
   echo                                        hot [p]     (pack with LHARC)
-  echo ÿ
-  echo Beispiele: ¯hot 9312®, ¯hot 9302® oder ¯hot l® ...
-  echo ÿ
+  echo Â 
+  echo Beispiele: Â»hot 9312Â«, Â»hot 9302Â« oder Â»hot lÂ« ...
+  echo Â 
   goto down
 
 :meldung
-  echo ÿ
+  echo Â 
   echo Werte:  ID=%id%  HOT=%hot%   (ART=%art% / LPT=%lpt%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Â 
   goto down
 
 :dir
   echo Werte:  ID=%id%  HOT=%hot%   (ART=%art% / LPT=%lpt%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if exist \euro\HOT\%ID%_*.* dir \euro\HOT\%ID%_*.* | sort | more
   goto down
 
 :dir_last
   echo Werte:  ID=%id%  HOT=%hot%   (ART=%art% / LPT=%lpt%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if exist \euro\HOT\%ID%_%HOT%.* dir \euro\HOT\%ID%_%HOT%.* | sort | more
   goto down
 
 :dir_alle
   echo Werte:  ID=%id%  HOT=%hot%   (ART=%art% / LPT=%lpt%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if exist \euro\HOT\??_*.* dir \euro\HOT\??_*.* | sort | more
   pause > NULL
   if exist \euro\HOT\???_*.* dir \euro\HOT\???_*.* | sort | more
@@ -53,11 +53,11 @@ set hot=%1
 
 :pack
   echo Werte:  ID=%id%  HOT=%hot%   (ART=%art% / LPT=%lpt%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if exist \euro\HOT\%ID%_%HOT%.* dir \euro\HOT\%ID%_%HOT%.* | sort | more
-  echo ÿ
+  echo Â 
   \DOS\ask "Dateien mit LHARC packen? [j/n] " j,n
-  echo ÿ
+  echo Â 
   if errorlevel 2 goto down
 
 if exist \euro\HOT\_%ID%%HOT%.lzh del \euro\HOT\_%ID%%HOT%.lzh
@@ -73,9 +73,9 @@ lharc a    \euro\HOT\_%ID%ALL.lzh   \euro\HOT\%ID%_*.*
 lharc s    \euro\HOT\_%ID%%HOT%.lzh
 lharc s    \euro\HOT\_%ID%ALL.lzh
 
-echo ÿ
+echo Â 
 \DOS\ask "Dateien in die WINware Mailbox legen? [j/n] " j,n
-echo ÿ
+echo Â 
 if errorlevel 2 goto down
 
 copy _%ID%%HOT%.exe h:\max\file\HOTLINE\%ID%_%HOT%.exe

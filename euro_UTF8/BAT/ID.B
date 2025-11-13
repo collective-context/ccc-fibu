@@ -8,21 +8,21 @@ set id=%1
   goto meldung
 
 :fehler
-  echo ÿ
+  echo Â 
   echo Werte    : ID=%id%     (APP=%app% / AP2=%ap2% / ART=%art%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo Syntax   : id [ID]                 oder: id ®s/h¯ (fr show bzw. help)
-  echo fr [ID] : Identifikation des Programm-, Masken- oder Formular-Source.
-  echo ÿ
-  echo Beispiele: ¯id BA®, ¯id SY®, ¯id FI® oder ¯id LKF® ...
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Syntax   : id [ID]                 oder: id Â«s/hÂ» (fÃ¼r show bzw. help)
+  echo fÃ¼r [ID] : Identifikation des Programm-, Masken- oder Formular-Source.
+  echo Â 
+  echo Beispiele: Â»id BAÂ«, Â»id SYÂ«, Â»id FIÂ« oder Â»id LKFÂ« ...
+  echo Â 
   goto end
 
 :meldung
-  echo ÿ
+  echo Â 
   echo Werte:  ID=%id%     (APP=%app% / AP2=%ap2% / ART=%art%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Â 
 
 :end
 

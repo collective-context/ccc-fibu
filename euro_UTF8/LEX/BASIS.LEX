@@ -36,40 +36,40 @@
 0000.0  ~0.ANREDE_1=ANREDE        \\Anrede zusammensetzen
 0000.0  ~0.BRIEFANR_1=BRIEFANREDE \\Briefanrede
 
- ÄÄ EOF, Nach einem End-Of-File Zeichen gilt alles als Remark!
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ DATEINUMMER  FIMASK.043  Dateiname                                           ³
-³ ÀÄÄÄÄÄÄÄÄÙ  ÀÄÄÄÄÄÄÄÙ  ÀÄÄÄÄÄÄÙ                                           ³
-³ &DATEI (0) = FIMASK, ST1100 ÄÄ¿                                              ³
-³ &DATEI (1) = FIMASK, ST1110   Ã euroSOFT ¯ZIELDATEIEN®                      ³
-³ &DATEI (2) = FIMASK, FI1110 ÄÄÙ                                              ³
-³                                                                              ³
-³ &FELDER ÄÄÄ Damit beginnt die Beschreibung der ¯QUELLDATEI®                 ³
-³ 0005.0  ~0.KUNDE                  \\Kundennummer ¿                           ³
-³ 0028.0  ~0.NAME                   \\Name1 ÄÄÄÄÄÄÄÁ Remarkzeichen: \\        ³
-³ 0028.0  ~0.ZUSATZ ÄÄÄÄ Dateinummer und Feldname in ST1100 (FIMASK.043).     ³
-³ 0001.0  ~1.PREIS_GR=1 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿                      ³
-³ 0006.0  ~1.KONDITION=10-30-030                        ³                      ³
-³ 0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren" Ã Defaultwerte        ³
-³ 0008.M  ~0.GEBURT_1=s                                 ³  s: Systemdatum      ³
-³ 0013.D  ~1.UMSATZ_PER=123.5 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ                      ³
-³ 0004.0  ~0. ÄÄ¿ Offset der Quelldatei hochz„hlen.                           ³
-³ 0003.0  ~0. ÄÄÙ                                                              ³
-³ 0000.0  ~1.FI_KU_KTO=~0.KUNDE ÄÄÄÄÄ¿                                         ³
-³ 0000.0  ~2.KU_KONTO=~0.KUNDE       Ã Kopiert Inhalt des 2. aufs 1. Feld.    ³
-³ 0000.0  ~2.KURZ_BEZ=~0.MATCH_CODE ÄÙ                                         ³
-³         ÄÄÄ Dateinummer der euroSOFT Zieldatei.                            ³
-³ ÀÄÄ Feldl„nge z„hlt Offset der Quelldatei hoch. Ab dem Punkt ein Remark.     ³
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ â”€â”€ EOF, Nach einem End-Of-File Zeichen gilt alles als Remark!
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ DATEINUMMER  FIMASK.043  Dateiname                                           â”‚
+â”‚ â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”˜                                           â”‚
+â”‚ &DATEI (0) = FIMASK, ST1100 â”€â”€â”                                              â”‚
+â”‚ &DATEI (1) = FIMASK, ST1110   â”œ euroSOFT Â»ZIELDATEIENÂ«                      â”‚
+â”‚ &DATEI (2) = FIMASK, FI1110 â”€â”€â”˜                                              â”‚
+â”‚                                                                              â”‚
+â”‚ &FELDER â”€â”€â”€ Damit beginnt die Beschreibung der Â»QUELLDATEIÂ«                 â”‚
+â”‚ 0005.0  ~0.KUNDE                  \\Kundennummer â”                           â”‚
+â”‚ 0028.0  ~0.NAME                   \\Name1 â”€â”€â”€â”€â”€â”€â”€â”´ Remarkzeichen: \\        â”‚
+â”‚ 0028.0  ~0.ZUSATZ â”€â”€â”€â”€ Dateinummer und Feldname in ST1100 (FIMASK.043).     â”‚
+â”‚ 0001.0  ~1.PREIS_GR=1 â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                      â”‚
+â”‚ 0006.0  ~1.KONDITION=10-30-030                        â”‚                      â”‚
+â”‚ 0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren" â”œ Defaultwerte        â”‚
+â”‚ 0008.M  ~0.GEBURT_1=s                                 â”‚  s: Systemdatum      â”‚
+â”‚ 0013.D  ~1.UMSATZ_PER=123.5 â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                      â”‚
+â”‚ 0004.0  ~0. â”€â”€â” Offset der Quelldatei hochzÃ¤hlen.                           â”‚
+â”‚ 0003.0  ~0. â”€â”€â”˜                                                              â”‚
+â”‚ 0000.0  ~1.FI_KU_KTO=~0.KUNDE â”€â”€â”€â”€â”€â”                                         â”‚
+â”‚ 0000.0  ~2.KU_KONTO=~0.KUNDE       â”œ Kopiert Inhalt des 2. aufs 1. Feld.    â”‚
+â”‚ 0000.0  ~2.KURZ_BEZ=~0.MATCH_CODE â”€â”˜                                         â”‚
+â”‚         â”€â”€â”€ Dateinummer der euroSOFT Zieldatei.                            â”‚
+â”‚ â””â”€â”€ FeldlÃ¤nge zÃ¤hlt Offset der Quelldatei hoch. Ab dem Punkt ein Remark.     â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 Beispiel Inhalt QUELLDATEI A10110.seq:
 
-  11000™sterr. Alpenverein         Ortsgruppe Kirchbach        Kirchbach             
+  11000Ã–sterr. Alpenverein         Ortsgruppe Kirchbach        Kirchbach             
            A-8082  Kirchbach           992    1306Alpenverein Kirchbach       1      
      1Herr List                                       99v                      110   
   00        0.00 000                                                                 
-  11001Agrarunion Sd-Ost          Lagerhaus KG                                      
-           A-8330  Feldbach            992    1306Agrarunion Sdost,Lagerhaus 1000   
+  11001Agrarunion SÃ¼d-Ost          Lagerhaus KG                                      
+           A-8330  Feldbach            992    1306Agrarunion SÃ¼dost,Lagerhaus 1000   
   0301                                                99w                      110   
   01        0.00 000                                                                 
 

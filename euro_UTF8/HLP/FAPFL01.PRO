@@ -1,9 +1,9 @@
-!R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                            I. euroSOFT-AUFTRAG Einf§hrung / 1.1
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+!R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                            I. euroSOFT-AUFTRAG EinfÂºhrung / 1.1
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  euroSOFT-WARE Basis Auftragsbearbeitung                                          º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  euroSOFT-WARE Basis Auftragsbearbeitung                                          â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
                                    Pflichtenheft
@@ -13,158 +13,158 @@
 
 
 Dieses Pflichtenheft ist eine detailierte Beschreibung des Projektes "Basis-
-Auftrag". Es ist innerhalb eines v¦llig neuen Programmierkonzeptes mit Hilfe 
-der euroSOFT-CASEbox erstellt worden und erschlie¨t sowohl f§r den Kunden als
-auch f§r den Programmierer vollkommen neue M¦glichkeiten.
+Auftrag". Es ist innerhalb eines vÂªllig neuen Programmierkonzeptes mit Hilfe 
+der euroSOFT-CASEbox erstellt worden und erschlieÂ¿t sowohl fÂºr den Kunden als
+auch fÂºr den Programmierer vollkommen neue MÂªglichkeiten.
 
 Man kann den Produktlebenszyklus in sechs verschiedene Phasen aufteilen:
 
-                               ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-                               ³ 6) ¢nderung ³
-                               ³ 5) Wartung  ³
-                   ÚÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿
-                   ³         4) Test/Debugging           ³
-                   ³  3) Implementierung/Programmierung  ³
-            ÚÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄ¿
-            ³              2) Konzept-Erstellung              ³
-            ³          1) Anforderungsspezifikation           ³
-            ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+                               â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                               â”‚ 6) Ã³nderung â”‚
+                               â”‚ 5) Wartung  â”‚
+                   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                   â”‚         4) Test/Debugging           â”‚
+                   â”‚  3) Implementierung/Programmierung  â”‚
+            â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”
+            â”‚              2) Konzept-Erstellung              â”‚
+            â”‚          1) Anforderungsspezifikation           â”‚
+            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
-F§r die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
+FÂºr die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
 und Konzepterstellung - wird meist eine Textverarbeitung verwendet. Fort-
 schrittlichere Programmierkonzepte setzten hier bereits CASE-Tools ein.
 
 Die beiden nachfolgenden Phasen - Implementierung/Programmierung und Test/De-
 bugging - finden in der Anwendungs-Entwicklungsumgebung statt. Das Problem
-dabei ist nur: Die Br§cke zwischen den ersten beiden Planungs-Phasen und den
-n¥chsten beiden Phasen der Programmerstellung kann man bei den herk¦mmlichen
-Programmerstellungs-Mitteln nicht als tragf¥hig bezeichnen.
+dabei ist nur: Die BrÂºcke zwischen den ersten beiden Planungs-Phasen und den
+nÃ‘chsten beiden Phasen der Programmerstellung kann man bei den herkÂªmmlichen
+Programmerstellungs-Mitteln nicht als tragfÃ‘hig bezeichnen.
 
-Das erarbeitete Konzept mu¨ mit gro¨em Aufwand in die Anwendungs-Enwicklungs-
-umgebung §bernommen werden. Das n¥chste Problem taucht auf, wenn sich in den
-Phasen der Implementierung und des Test/Debugging ¢nderungen ergeben. Wenn
-sich diese ¢nderungen auf das Konzept zur§ckschlagen, m§ssen diese im Planungs-
+Das erarbeitete Konzept muÂ¿ mit groÂ¿em Aufwand in die Anwendungs-Enwicklungs-
+umgebung Âºbernommen werden. Das nÃ‘chste Problem taucht auf, wenn sich in den
+Phasen der Implementierung und des Test/Debugging Ã³nderungen ergeben. Wenn
+sich diese Ã³nderungen auf das Konzept zurÂºckschlagen, mÂºssen diese im Planungs-
 teil "von Hand nachgefahren" werden. Unterbleibt dies, kommt es zur Inkon-
 sistenz zwischen Konzept und Realisierung, was in der Praxis ein durchaus
-§blicher Zustand ist.
+Âºblicher Zustand ist.
 
-Diese Inkonsistenz r¥cht sich aber sp¥testens dann, wenn es um die Wartung der
-Software geht. ¢ndern sich beispielsweise die Anforderungen an das Produkt,
-hat dies zun¥chst Auswirkungen auf das Konzept und schlie¨lich auf die
-Implementierung. Wenn die Br§cke zwischen der Planungs- und Anwendungs-
-Entwicklungsumgebung fehlt oder unvollst¥ndig ist, wird man direkt die
-Implementierung ver¥ndern und das Konzept somit veraltern lassen. Wiederholt
+Diese Inkonsistenz rÃ‘cht sich aber spÃ‘testens dann, wenn es um die Wartung der
+Software geht. Ã³ndern sich beispielsweise die Anforderungen an das Produkt,
+hat dies zunÃ‘chst Auswirkungen auf das Konzept und schlieÂ¿lich auf die
+Implementierung. Wenn die BrÂºcke zwischen der Planungs- und Anwendungs-
+Entwicklungsumgebung fehlt oder unvollstÃ‘ndig ist, wird man direkt die
+Implementierung verÃ‘ndern und das Konzept somit veraltern lassen. Wiederholt
 sich dieser Vorgang einige Male, kann man das Konzept praktisch wegwerfen.
 
 Die Forderung nach einer integrierten Umgebung, die sowohl die Planungsphasen
-als auch die Entwicklungsphasen umfa¨t - einschlie¨lich Wartung -, ist somit
+als auch die Entwicklungsphasen umfaÂ¿t - einschlieÂ¿lich Wartung -, ist somit
 sehr sinnvoll. Genau dieses Ziel ist mit der euroSOFT-CASEbox verwirklicht.
-!R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                            I. euroSOFT-AUFTRAG Einf§hrung / 1.2
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+!R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                            I. euroSOFT-AUFTRAG EinfÂºhrung / 1.2
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 Der Kern der euroSOFT-CASEbox ist das Datenlexikon. Es gibt also nur eine
-einzige Stelle, an der die Datenfelder f§r jede Datei beschrieben werden.
+einzige Stelle, an der die Datenfelder fÂºr jede Datei beschrieben werden.
 Der Masken-Compiler, der Formular-Compiler und der Programm-Quellcode greifen
 bereits auf diese Informationen zu.
 
-Doch damit nicht genug. Selbst das Druckprogramm f§r dieses Pflichtenheft
-holt sich die Dateiinforamtion w¥hrend des Ausdruckes direkt aus dem Daten-
-lexikon. Dasselbe gilt f§r Masken-Abbildungen oder Men§informationen.
+Doch damit nicht genug. Selbst das Druckprogramm fÂºr dieses Pflichtenheft
+holt sich die Dateiinforamtion wÃ‘hrend des Ausdruckes direkt aus dem Daten-
+lexikon. Dasselbe gilt fÂºr Masken-Abbildungen oder MenÂºinformationen.
 
-F§r den Kunden und f§r den Applikations-Programmierer bringt die euroSOFT-
-CASEbox eine Reihe von Vorteilen. Der fr§hzeitige Einsatz eines professionellen
+FÂºr den Kunden und fÂºr den Applikations-Programmierer bringt die euroSOFT-
+CASEbox eine Reihe von Vorteilen. Der frÂºhzeitige Einsatz eines professionellen
 Werkzeuges bereits in der Planung eines Softwareprojektes reduziert konzeptio-
-nelle Fehler. Durch den "weichen ¤bergang" zwischen Planungs- und Entwicklungs-
-werkzeug l¥¨t sich das erarbeitete Konzept ohne Einschr¥nkungen f§r die
-Implementierung verwenden. Hiezu geh¦rt beispielsweise, da¨ die eruoSOFT-
+nelle Fehler. Durch den "weichen Ã±bergang" zwischen Planungs- und Entwicklungs-
+werkzeug lÃ‘Â¿t sich das erarbeitete Konzept ohne EinschrÃ‘nkungen fÂºr die
+Implementierung verwenden. Hiezu gehÂªrt beispielsweise, daÂ¿ die eruoSOFT-
 CASEbox automatisch die Datenbanken und die Bildschirm-Masken in der im
 Konzept angegebenen Form anlegt.
 
-Stellen sich w¥hrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
-Ursprungs sind, stellt die integrierte L¦sung sicher, da¨ notwendige ¢nderungen
-am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, da¨
-diese Methode die Produktivit¥t bei der Software-Entwicklung drastisch steigert.
+Stellen sich wÃ‘hrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
+Ursprungs sind, stellt die integrierte LÂªsung sicher, daÂ¿ notwendige Ã³nderungen
+am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daÂ¿
+diese Methode die ProduktivitÃ‘t bei der Software-Entwicklung drastisch steigert.
 
-!R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                 II. euroSOFT-AUFTRAG Men§ / 1.1
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+!R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                 II. euroSOFT-AUFTRAG MenÂº / 1.1
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  euroSOFT-WARE Basis Auftragsbearbeitung                                          º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  euroSOFT-WARE Basis Auftragsbearbeitung                                          â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-Ben§tzeroberfl¥che euroSOFT-MEN¤
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+BenÂºtzeroberflÃ‘che euroSOFT-MENÃ±
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Der Aufruf der jeweiligen Funktionen erfolgt §ber das euroSOFT-MEN¤. Dabei sind
+Der Aufruf der jeweiligen Funktionen erfolgt Âºber das euroSOFT-MENÃ±. Dabei sind
 die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
 
 
 !R!FTMD13;FONT50080;SLS.122;EXIT;
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-  Men§leiste ¯Basis Auftragsbearbeitung®:
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  MenÂºleiste Â»Basis AuftragsbearbeitungÂ«:
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50080;SLS.122;EXIT;
-  ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿            ÚÄÄÄÄÄÄÄ¿                 ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿               ÚÄÄÄÄÄÄÄÄ¿                
-  ³ Auftrag... ³            ³ Lager ³                 ³ Auswertung ³               ³ Zusatz ³                
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄ¿  ÃÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿  ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ¿  ÃÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-  ³ Bearbeiten           ³  ³ Lagerbewegungen      ³  ³ Umsatzliste Kunden      ³  ³ Inventurabwicklung     ³
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ³ Protokoll Bewegungen ³  ³ Umsatzliste Lieferanten ³  ³ Artikel-/ Kundenkartei ³
-  ³ Druck Angebote       ³  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ³ Produktionsst§ckliste  ³
-  ³ Druck Angebote II    ³  ³ Druck Lagerbestand   ³  ³ Artikelstatistik        ³  ³ Zuschlagskalkulation   ³
-  ³ Druck Auftr¥ge       ³  ³ Druck Mindestbestand ³  ³ Vertreter - Umsatzliste ³  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-  ³ Druck Lieferscheine  ³  ³ Druck Inventur       ³  ³ Mitarbeiter Ums¥tze     ³  ³ Reparaturverwaltung    ³
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ³ Barverkauf/Kasse       ³
-  ³ Druck Rechnungen     ³                            ³ L¦schen Ums¥tze         ³  ³ Paketversand           ³
-  ³ Druck Erlagscheine   ³                            ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-  ³ Druck Gutschriften   ³                                                         ³ Verwaltung OP's        ³
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´                                                         ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-  ³ ¤bergabe in die Fibu ³                                                                                   
-  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ                                                                                   
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”            â”Œâ”€â”€â”€â”€â”€â”€â”€â”                 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”               â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”                
+  â”‚ Auftrag... â”‚            â”‚ Lager â”‚                 â”‚ Auswertung â”‚               â”‚ Zusatz â”‚                
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚ Bearbeiten           â”‚  â”‚ Lagerbewegungen      â”‚  â”‚ Umsatzliste Kunden      â”‚  â”‚ Inventurabwicklung     â”‚
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”‚ Protokoll Bewegungen â”‚  â”‚ Umsatzliste Lieferanten â”‚  â”‚ Artikel-/ Kundenkartei â”‚
+  â”‚ Druck Angebote       â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”‚ ProduktionsstÂºckliste  â”‚
+  â”‚ Druck Angebote II    â”‚  â”‚ Druck Lagerbestand   â”‚  â”‚ Artikelstatistik        â”‚  â”‚ Zuschlagskalkulation   â”‚
+  â”‚ Druck AuftrÃ‘ge       â”‚  â”‚ Druck Mindestbestand â”‚  â”‚ Vertreter - Umsatzliste â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+  â”‚ Druck Lieferscheine  â”‚  â”‚ Druck Inventur       â”‚  â”‚ Mitarbeiter UmsÃ‘tze     â”‚  â”‚ Reparaturverwaltung    â”‚
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”‚ Barverkauf/Kasse       â”‚
+  â”‚ Druck Rechnungen     â”‚                            â”‚ LÂªschen UmsÃ‘tze         â”‚  â”‚ Paketversand           â”‚
+  â”‚ Druck Erlagscheine   â”‚                            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+  â”‚ Druck Gutschriften   â”‚                                                         â”‚ Verwaltung OP's        â”‚
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤                                                         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+  â”‚ Ã±bergabe in die Fibu â”‚                                                                                   
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                                                                                   
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 !R!FTMD13;FONT50080;SLS.122;EXIT;
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-  Men§leiste ¯Stammdaten Auftragsbearbeitung®:
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  MenÂºleiste Â»Stammdaten AuftragsbearbeitungÂ«:
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50080;SLS.122;EXIT;
-  ÚÄÄÄÄÄÄÄÄ¿               ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿          ÚÄÄÄÄÄÄÄÄÄ¿                 ÚÄÄÄÄÄÄÄÄÄÄ¿               
-  ³ Kunden ³               ³ Lieferanten ³          ³ Artikel ³                 ³ Sonstige ³               
-  ÃÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ¿  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄ¿  ÃÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿  ÃÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-  ³ Anlegen/¢ndern      ³  ³ Anlegen/¢ndern      ³  ³ Anlegen/¢ndern         ³  ³ Anlegen Mengeneinheiten ³
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ³ Drucken Mengeneinheiten ³
-  ³ Liste numerisch     ³  ³ Liste numerisch     ³  ³ Liste nach Artikel-Nr. ³  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-  ³ Liste Bezeichnung   ³  ³ Liste Bezeichnung   ³  ³ Liste nach Bezeichnung ³  ³ Anlegen Textbausteine   ³
-  ³ Liste Adressen      ³  ³ Liste Adressen      ³  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ³ Drucken Textbausteine   ³
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ³ Etiketten              ³  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-  ³ Telefonliste        ³  ³ Telefonliste        ³  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ                             
-  ³ Etiketten           ³  ³ Etiketten           ³                                                         
-  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ                                                         
-!R!FTMD13;FONT50055;SLS.142;EXIT;
-
-!R!FTMD13;FONT50080;SLS.122;EXIT;
-!R!FTMD13;FONT50055;SLS.142;EXIT;
-   Men§fenster ¯Konstanten® / Konstanten (AU-048):¤bersicht
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-!R!FTMD13;FONT50080;SLS.122;EXIT;
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿           
-   ³ Konstanten ³              ... Anlegen, ¥ndern oder drucken der konstanten Werte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Nummernkreise         ³   ... ¢ndern der Nummernkreise.
-   ³ Steuers¥tze           ³   ... Anlegen, ¥ndern oder l¦schen der Steuers¥tze.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Werbetexte            ³   ... Anlegen, ¥ndern oder l¦schen der Werbetexte.
-   ³ Versandart            ³   ... Anlegen, ¥ndern oder l¦schen der Versandarten.
-   ³ Landesw¥hrung         ³   ... ¢ndern der Landesw¥hrung.
-   ³ Artikel-Preis-Text    ³   ... ¢ndern der Artikel-Verkaufspreis-Texte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Drucken Konstanten    ³   ... Ausdruck einer Liste der angelegten Konstanten.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Fremdw¥hrungen        ³   ... Anlegen, ¥ndern der Fremdw¥hrungen.
-   ³ Drucken Fremdw¥hrung  ³   ... Drucken der angelegten Fremdw¥hrungen.
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”               â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”                 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”               
+  â”‚ Kunden â”‚               â”‚ Lieferanten â”‚          â”‚ Artikel â”‚                 â”‚ Sonstige â”‚               
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚ Anlegen/Ã³ndern      â”‚  â”‚ Anlegen/Ã³ndern      â”‚  â”‚ Anlegen/Ã³ndern         â”‚  â”‚ Anlegen Mengeneinheiten â”‚
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”‚ Drucken Mengeneinheiten â”‚
+  â”‚ Liste numerisch     â”‚  â”‚ Liste numerisch     â”‚  â”‚ Liste nach Artikel-Nr. â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+  â”‚ Liste Bezeichnung   â”‚  â”‚ Liste Bezeichnung   â”‚  â”‚ Liste nach Bezeichnung â”‚  â”‚ Anlegen Textbausteine   â”‚
+  â”‚ Liste Adressen      â”‚  â”‚ Liste Adressen      â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”‚ Drucken Textbausteine   â”‚
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”‚ Etiketten              â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+  â”‚ Telefonliste        â”‚  â”‚ Telefonliste        â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                             
+  â”‚ Etiketten           â”‚  â”‚ Etiketten           â”‚                                                         
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                                                         
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 
-!R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                 II. euroSOFT-AUFTRAG Men§ / 1.2
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+!R!FTMD13;FONT50080;SLS.122;EXIT;
+!R!FTMD13;FONT50055;SLS.142;EXIT;
+   MenÂºfenster Â»KonstantenÂ« / Konstanten (AU-048):Ã±bersicht
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+!R!FTMD13;FONT50080;SLS.122;EXIT;
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”           
+   â”‚ Konstanten â”‚              ... Anlegen, Ã‘ndern oder drucken der konstanten Werte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Nummernkreise         â”‚   ... Ã³ndern der Nummernkreise.
+   â”‚ SteuersÃ‘tze           â”‚   ... Anlegen, Ã‘ndern oder lÂªschen der SteuersÃ‘tze.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Werbetexte            â”‚   ... Anlegen, Ã‘ndern oder lÂªschen der Werbetexte.
+   â”‚ Versandart            â”‚   ... Anlegen, Ã‘ndern oder lÂªschen der Versandarten.
+   â”‚ LandeswÃ‘hrung         â”‚   ... Ã³ndern der LandeswÃ‘hrung.
+   â”‚ Artikel-Preis-Text    â”‚   ... Ã³ndern der Artikel-Verkaufspreis-Texte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Drucken Konstanten    â”‚   ... Ausdruck einer Liste der angelegten Konstanten.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ FremdwÃ‘hrungen        â”‚   ... Anlegen, Ã‘ndern der FremdwÃ‘hrungen.
+   â”‚ Drucken FremdwÃ‘hrung  â”‚   ... Drucken der angelegten FremdwÃ‘hrungen.
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+!R!FTMD13;FONT50055;SLS.142;EXIT;
+
+!R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                 II. euroSOFT-AUFTRAG MenÂº / 1.2
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;

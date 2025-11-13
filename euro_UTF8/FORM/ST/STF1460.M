@@ -7,49 +7,49 @@
 &DATEI (1) = MASK, ST4140
 
 &KOPF (0)
-^��LISTE ANFANGSBESTAND-ENDBESTAND                                                         Datum: @@@@@@@@ - SEITE ������ ~SM ~1._DATUM_AKT ~1._SEITE
-���������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                          Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
-�����������������������������������������������������������������������������������������������������������������������
-Kurzbezeichnung              ����������� Anfangsbestand ���������Ŀ ������������ Endbestand �����������Ŀ Anfangsbestand
-   Art-Nr   Kontierung       ���� Menge     EK-Preis         Wert � ���� Menge    EK-Preis         Wert �   - Endbestand
-������������������������������������������������������������������������������������������������������������������������
-�
-�
+^┌┘LISTE ANFANGSBESTAND-ENDBESTAND                                                         Datum: @@@@@@@@ - SEITE øøøø└┐ ~SM ~1._DATUM_AKT ~1._SEITE
+│┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                          Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Kurzbezeichnung              ┌────────── Anfangsbestand ──────────┐ ┌─────────── Endbestand ────────────┐ Anfangsbestand
+   Art-Nr   Kontierung       └─── Menge     EK-Preis         Wert ┘ └─── Menge    EK-Preis         Wert ┘   - Endbestand
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
 &END
 
 &RUMPF (0)
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ###.##�,�� #.###.##�,�� ###.###.##�,�� ###.##�,�� #.###.##�,�� ##.###.##�,�� ###.###.##�,�� ~0.MATCH_CODE ~0.INVEN_ANF ~0.EKPR_ANF ~1._WERT_ANF ~0.INVEN_AKT ~0.EKPR1 ~1._WERT_AKT ~1._DIFF_BET
-�  @@@@@@@  @@@@@@@@@@@@@@@@@@@                                                                                           ~0.ARTNR ~1._KONTIER
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ###.##ø,øø #.###.##ø,øø ###.###.##ø,øø ###.##ø,øø #.###.##ø,øø ##.###.##ø,øø ###.###.##ø,øø ~0.MATCH_CODE ~0.INVEN_ANF ~0.EKPR_ANF ~1._WERT_ANF ~0.INVEN_AKT ~0.EKPR1 ~1._WERT_AKT ~1._DIFF_BET
+   @@@@@@@  @@@@@@@@@@@@@@@@@@@                                                                                           ~0.ARTNR ~1._KONTIER
 
 &END
 
 &KOPF (10)
-^��ANHANG: UMBUCHUNGS-KONTIERUNG                       Datum: @@@@@@@@ - SEITE ������ ~NO ~1._DATUM_AKT ~1._SEITE
-���������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
-�����������������������������������������������������������������������������������
+^┌┘ANHANG: UMBUCHUNGS-KONTIERUNG                       Datum: @@@@@@@@ - SEITE øøøø└┐ ~NO ~1._DATUM_AKT ~1._SEITE
+│┌────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └────────────────────────────────────────────────────────────────────────────────┘
  Soll-Konto                     / Haben-Konto
  Kontobezeichnung                 Kontobezeichnung                           Betrag
-������������������������������������������������������������������������������������
-�
-�
+────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
 &END
 
 &RUMPF (10)
  @@@@@@@@@                      / @@@@@@@@@   ~1._SOLL_NR ~1._HABEN_NR ~
-�@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     ###.###.##�,�� ~1._SOLL_BEZ ~1._HABEN_BEZ ~1._BU_BETRAG
-�
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     ###.###.##ø,øø ~1._SOLL_BEZ ~1._HABEN_BEZ ~1._BU_BETRAG
+ 
 &END
 
 &FUSS (0)
-����������������������������������������������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                          @@@@@@@@@@@@@@@@@�� ^  ~1._NUTZUNG  ~1._COPYRIGHT ~NO
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                          @@@@@@@@@@@@@@@@@┌┘ ^  ~1._NUTZUNG  ~1._COPYRIGHT ~NO
 &END
 
 &FUSS (10)
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@��   ~1._NUTZUNG  ~1._COPYRIGHT
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@┌┘   ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 &REM

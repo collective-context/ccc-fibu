@@ -4,7 +4,7 @@
  *   Memory Model:    SMALL                                   *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC      *
  *   Compilieren:     (Q)CL TPROC.C /link DOSLIBS.LIB         *
- *   Programmautor:   Heinrich G”bl                           *
+ *   Programmautor:   Heinrich GÃ¶bl                           *
  *   Stand:           27.6.88                                 *
  **************************************************************/
 

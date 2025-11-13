@@ -7,16 +7,16 @@ if X%1==Xh goto fehler
 goto end
 
 :fehler
-echo ÿ
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo   Erlaubte Eingabe ¯i [i][d]®, Fehler ¯%1®
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo ÿ
-echo   Steht fr: ¯Installation, Datum®
-echo ÿ
+echo Â 
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo   Erlaubte Eingabe Â»i [i][d]Â«, Fehler Â»%1Â«
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo Â 
+echo   Steht fÃ¼r: Â»Installation, DatumÂ«
+echo Â 
 goto end
 
 :end
-echo ÿ
+echo Â 
 
 

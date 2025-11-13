@@ -4,7 +4,7 @@
  *   Memory Model:    SMALL                                   *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC      *
  *   Compilieren:     (Q)CL TDATTIM.C /link DOSLIBS.LIB       *
- *   Programmautor:   Heinrich Gîbl                           *
+ *   Programmautor:   Heinrich G√∂bl                           *
  *   Stand:           27.6.88                                 *
  **************************************************************/
 
@@ -20,7 +20,7 @@ struct D_TIME *t;
 
 showhelp ("TDATTIM.HLP");
 
-t = D_get_time (NULL);        /* FÅllen der Strukturen D_TIME */
+t = D_get_time (NULL);        /* F√ºllen der Strukturen D_TIME */
 d = D_get_date (NULL);                          /* und D_DATE */
 
 printf ("\n\nDatum: %02d.%02d.%4d, %d. Tag der Woche\n",

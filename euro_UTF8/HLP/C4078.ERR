@@ -1,14 +1,14 @@
 
-  ³      Compiler warning (level 1) C4078
-  ³
-  ³      case constant 'value' too big for the type of switch expression
-  ³
-  ³      A value appearing in a case statement was larger than the size of
-  ³      the type in the switch expression. The compiler converted the case
-  ³      value to the type of the switch expression.
-  ³
-  ³      A problem can occur when two case constants have different values
-  ³      before being cast but the same value afterward.
-  ³                                     --
+  â”‚      Compiler warning (level 1) C4078
+  â”‚
+  â”‚      case constant 'value' too big for the type of switch expression
+  â”‚
+  â”‚      A value appearing in a case statement was larger than the size of
+  â”‚      the type in the switch expression. The compiler converted the case
+  â”‚      value to the type of the switch expression.
+  â”‚
+  â”‚      A problem can occur when two case constants have different values
+  â”‚      before being cast but the same value afterward.
+  â”‚                                     --
 
 

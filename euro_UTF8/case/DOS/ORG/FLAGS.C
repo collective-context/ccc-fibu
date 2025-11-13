@@ -1,7 +1,7 @@
 /*****************************************************************
  *   Programmname:    FLAGS.C                                    *
  *   Aufgabe:         Stellt eine Reihe von C-Funktionen zur     *
- *                    VerfÅgung, die DOS-Parameter verÑndern.    *
+ *                    Verf√ºgung, die DOS-Parameter ver√§ndern.    *
  *   Memory Model:    SMALL                                      *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC         *
  *   Library:         DOSLIBS.LIB                                *
@@ -12,10 +12,10 @@
  *    wobei options:  COMP=QCL  (falls QuickC verwendet wird)    *
  *                                                               *
  *   Sollen Routinen in anderen Programmen verwendet werden, so  *
- *   mu· beim Linken DOSLIBS.LIB als Library zusÑtzlich angege-  *
+ *   mu√ü beim Linken DOSLIBS.LIB als Library zus√§tzlich angege-  *
  *   ben werden.                                                 *
  *                                                               *
- *   Programmautor:    Heinrich Gîbl                             *
+ *   Programmautor:    Heinrich G√∂bl                             *
  *   Stand:            27.6.88                                   *
  *****************************************************************/
 
@@ -32,7 +32,7 @@
 
 
 /* ---------------------------------------------------------- *
- *  F 2Eh - éndert das Verify-Flag                            *
+ *  F 2Eh - √Ñndert das Verify-Flag                            *
  * ---------------------------------------------------------- */
 
 void
@@ -44,7 +44,7 @@ bdos (CH_VERIFY, 0, (BYTE) !flag);      /* 1=gesetzt, 0=nicht */
 
 
 /* ---------------------------------------------------------- *
- *  F 30h - Gibt die verwendete DOS-Version zurÅck            *
+ *  F 30h - Gibt die verwendete DOS-Version zur√ºck            *
  * ---------------------------------------------------------- */
 
 struct DOS_VER *
@@ -53,7 +53,7 @@ D_get_dos_ver (v)
 {
 union REGS outregs;
 
-/* Der Aufrufer kann NULL Åbergeben, dann fordert diese Funktion
+/* Der Aufrufer kann NULL √ºbergeben, dann fordert diese Funktion
    Speicher an */
 if (v == NULL &&
      (v = (struct DOS_VER *)
@@ -72,7 +72,7 @@ return (v);                           /* Adresse der Struktur */
 
 
 /* ---------------------------------------------------------- *
- *  F 33h - éndert/liest Status des Ctrl-Break-Flags          *
+ *  F 33h - √Ñndert/liest Status des Ctrl-Break-Flags          *
  * ---------------------------------------------------------- */
 
 int
@@ -94,7 +94,7 @@ return (inregs.h.al ==0xff ? -1 : inregs.h.dl);
 
 
 /* ---------------------------------------------------------- *
- *  F 38h - Gibt den Country-Code zurÅck                      *
+ *  F 38h - Gibt den Country-Code zur√ºck                      *
  * ---------------------------------------------------------- */
 
 int
@@ -148,9 +148,9 @@ else
 intdos (&inregs, &inregs);
 
 if (inregs.x.cflag)
-    return (FALSE);                /* UngÅltiger Country-Code */
+    return (FALSE);                /* Ung√ºltiger Country-Code */
 else
-    return (TRUE);                                  /* GÅltig */
+    return (TRUE);                                  /* G√ºltig */
 }
 
 
@@ -185,7 +185,7 @@ inregs.x.bx = 0;
 intdos (&inregs, &inregs);
 
 *class = inregs.h.bh;                         /* Fehlerklasse */
-*act   = inregs.h.bl;    /* Vorschlag fÅr Reaktion auf Fehler */
+*act   = inregs.h.bl;    /* Vorschlag f√ºr Reaktion auf Fehler */
 *loc   = inregs.h.ch;                       /* Fehlerposition */
 return  (inregs.x.ax);                         /* Fehler-Code */
 }

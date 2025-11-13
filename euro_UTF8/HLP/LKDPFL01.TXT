@@ -1,15 +1,15 @@
-/*.ta,F02,I. Einfhrung / 1.,1
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  euroSOFT LK-Fibu                                                                 º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+/*.ta,F02,I. EinfÃ¼hrung / 1.,1
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  euroSOFT LK-Fibu                                                                 â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
                                   Pflichtenheft
-                   "Landwirtschaftliches Buchfhrungsprogramm"
+                   "Landwirtschaftliches BuchfÃ¼hrungsprogramm"
 
 
-                                    Fr Firma
-                       LK-DATA, Landwirtschaftskammer fr
+                                    FÃ¼r Firma
+                       LK-DATA, Landwirtschaftskammer fÃ¼r
                             Land- und Forstwirtschaft
 
                                 Hammerlinggasse 3
@@ -17,83 +17,83 @@
 
 
 Dieses Pflichtenheft ist eine detailierte Beschreibung des Projektes "LK-Fibu".
-Es ist innerhalb eines v”llig neuen Programmierkonzeptes mit Hilfe der
-euroSOFT-CASEbox erstellt worden und erschlieát sowohl fr den Kunden als
-auch fr den Programmierer vollkommen neue M”glichkeiten.
+Es ist innerhalb eines vÃ¶llig neuen Programmierkonzeptes mit Hilfe der
+euroSOFT-CASEbox erstellt worden und erschlieÃŸt sowohl fÃ¼r den Kunden als
+auch fÃ¼r den Programmierer vollkommen neue MÃ¶glichkeiten.
 
 Man kann den Produktlebenszyklus in sechs verschiedene Phasen aufteilen:
 
-                               ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-                               ³ 6) nderung ³
-                               ³ 5) Wartung  ³
-                   ÚÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿
-                   ³         4) Test/Debugging           ³
-                   ³  3) Implementierung/Programmierung  ³
-            ÚÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄ¿
-            ³              2) Konzept-Erstellung              ³
-            ³          1) Anforderungsspezifikation           ³
-            ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+                               â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                               â”‚ 6) Ã„nderung â”‚
+                               â”‚ 5) Wartung  â”‚
+                   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                   â”‚         4) Test/Debugging           â”‚
+                   â”‚  3) Implementierung/Programmierung  â”‚
+            â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”
+            â”‚              2) Konzept-Erstellung              â”‚
+            â”‚          1) Anforderungsspezifikation           â”‚
+            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
-Fr die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
+FÃ¼r die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
 und Konzepterstellung - wird meist eine Textverarbeitung verwendet. Fort-
 schrittlichere Programmierkonzepte setzten hier bereits CASE-Tools ein.
 
 Die beiden nachfolgenden Phasen - Implementierung/Programmierung und Test/De-
 bugging - finden in der Anwendungs-Entwicklungsumgebung statt. Das Problem
-dabei ist nur: Die Brcke zwischen den ersten beiden Planungs-Phasen und den
-n„chsten beiden Phasen der Programmerstellung kann man bei den herk”mmlichen
-Programmerstellungs-Mitteln nicht als tragf„hig bezeichnen.
+dabei ist nur: Die BrÃ¼cke zwischen den ersten beiden Planungs-Phasen und den
+nÃ¤chsten beiden Phasen der Programmerstellung kann man bei den herkÃ¶mmlichen
+Programmerstellungs-Mitteln nicht als tragfÃ¤hig bezeichnen.
 
-Das erarbeitete Konzept muá mit groáem Aufwand in die Anwendungs-Enwicklungs-
-umgebung bernommen werden. Das n„chste Problem taucht auf, wenn sich in den
-Phasen der Implementierung und des Test/Debugging nderungen ergeben. Wenn
-sich diese nderungen auf das Konzept zurckschlagen, mssen diese im Planungs-
+Das erarbeitete Konzept muÃŸ mit groÃŸem Aufwand in die Anwendungs-Enwicklungs-
+umgebung Ã¼bernommen werden. Das nÃ¤chste Problem taucht auf, wenn sich in den
+Phasen der Implementierung und des Test/Debugging Ã„nderungen ergeben. Wenn
+sich diese Ã„nderungen auf das Konzept zurÃ¼ckschlagen, mÃ¼ssen diese im Planungs-
 teil "von Hand nachgefahren" werden. Unterbleibt dies, kommt es zur Inkon-
 sistenz zwischen Konzept und Realisierung, was in der Praxis ein durchaus
-blicher Zustand ist.
+Ã¼blicher Zustand ist.
 
-Diese Inkonsistenz r„cht sich aber sp„testens dann, wenn es um die Wartung der
-Software geht. ndern sich beispielsweise die Anforderungen an das Produkt,
-hat dies zun„chst Auswirkungen auf das Konzept und schlieálich auf die
-Implementierung. Wenn die Brcke zwischen der Planungs- und Anwendungs-
-Entwicklungsumgebung fehlt oder unvollst„ndig ist, wird man direkt die
-Implementierung ver„ndern und das Konzept somit veraltern lassen. Wiederholt
+Diese Inkonsistenz rÃ¤cht sich aber spÃ¤testens dann, wenn es um die Wartung der
+Software geht. Ã„ndern sich beispielsweise die Anforderungen an das Produkt,
+hat dies zunÃ¤chst Auswirkungen auf das Konzept und schlieÃŸlich auf die
+Implementierung. Wenn die BrÃ¼cke zwischen der Planungs- und Anwendungs-
+Entwicklungsumgebung fehlt oder unvollstÃ¤ndig ist, wird man direkt die
+Implementierung verÃ¤ndern und das Konzept somit veraltern lassen. Wiederholt
 sich dieser Vorgang einige Male, kann man das Konzept praktisch wegwerfen.
 
 Die Forderung nach einer integrierten Umgebung, die sowohl die Planungsphasen
-als auch die Entwicklungsphasen umfaát - einschlieálich Wartung -, ist somit
+als auch die Entwicklungsphasen umfaÃŸt - einschlieÃŸlich Wartung -, ist somit
 sehr sinnvoll. Genau dieses Ziel ist mit der euroSOFT-CASEbox verwirklicht.
 .ff
 Der Kern der euroSOFT-CASEbox ist das Datenlexikon. Es gibt also nur eine
-einzige Stelle, an der die Datenfelder fr jede Datei beschrieben werden.
+einzige Stelle, an der die Datenfelder fÃ¼r jede Datei beschrieben werden.
 Der Masken-Compiler, der Formular-Compiler und der Programm-Quellcode greifen
 bereits auf diese Informationen zu.
 
-Doch damit nicht genug. Selbst das Druckprogramm fr dieses Pflichtenheft
-holt sich die Dateiinforamtion w„hrend des Ausdruckes direkt aus dem Daten-
-lexikon. Dasselbe gilt fr Masken-Abbildungen oder Meninformationen.
+Doch damit nicht genug. Selbst das Druckprogramm fÃ¼r dieses Pflichtenheft
+holt sich die Dateiinforamtion wÃ¤hrend des Ausdruckes direkt aus dem Daten-
+lexikon. Dasselbe gilt fÃ¼r Masken-Abbildungen oder MenÃ¼informationen.
 
-Fr den Kunden und fr den Applikations-Programmierer bringt die euroSOFT-
-CASEbox eine Reihe von Vorteilen. Der frhzeitige Einsatz eines professionellen
+FÃ¼r den Kunden und fÃ¼r den Applikations-Programmierer bringt die euroSOFT-
+CASEbox eine Reihe von Vorteilen. Der frÃ¼hzeitige Einsatz eines professionellen
 Werkzeuges bereits in der Planung eines Softwareprojektes reduziert konzeptio-
-nelle Fehler. Durch den "weichen šbergang" zwischen Planungs- und Entwicklungs-
-werkzeug l„át sich das erarbeitete Konzept ohne Einschr„nkungen fr die
-Implementierung verwenden. Hiezu geh”rt beispielsweise, daá die eruoSOFT-
+nelle Fehler. Durch den "weichen Ãœbergang" zwischen Planungs- und Entwicklungs-
+werkzeug lÃ¤ÃŸt sich das erarbeitete Konzept ohne EinschrÃ¤nkungen fÃ¼r die
+Implementierung verwenden. Hiezu gehÃ¶rt beispielsweise, daÃŸ die eruoSOFT-
 CASEbox automatisch die Datenbanken und die Bildschirm-Masken in der im
 Konzept angegebenen Form anlegt.
 
-Stellen sich w„hrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
-Ursprungs sind, stellt die integrierte L”sung sicher, daá notwendige nderungen
-am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daá
-diese Methode die Produktivit„t bei der Software-Entwicklung drastisch steigert.
+Stellen sich wÃ¤hrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
+Ursprungs sind, stellt die integrierte LÃ¶sung sicher, daÃŸ notwendige Ã„nderungen
+am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daÃŸ
+diese Methode die ProduktivitÃ¤t bei der Software-Entwicklung drastisch steigert.
 
 
 .ff
 Zielsetzung: LK-Fibu
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Nach Ihren Vorstellungen ist die LK-Fibu fr drei verschiedene Zielgruppen
+Nach Ihren Vorstellungen ist die LK-Fibu fÃ¼r drei verschiedene Zielgruppen
 konzipiert:
 
   a) Betriebe mit Einnahmen/Ausgaben-Rechnung
@@ -101,73 +101,73 @@ konzipiert:
   c) Steuerpflichtige Betriebe
 
 Alle drei Gruppen von Anwendern sollen mit der LK-Fibu Ihre Aufzeichnungen
-fhren k”nnen.
+fÃ¼hren kÃ¶nnen.
 
 
 Struktur des Rechnungswesens
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         Eingaben             Bereich/Buchungen         Auswertungen
-        ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-        Einnahmen ÄÄÄÄÄÄÂÄÂÄ Buchungen auf ÄÄÄÄÄÄÄÄÄÂÄ Geldrechnung
-        Ausgaben        ³ ³  Geld-/Aufwands-, Be-   ³  Bestandsrechnung
-                        ³ ³  stands-, Ertragskonten ³  Erfolgsrechnung
-                        ³ ³                         ³
-        Bewegungen      ³ ³  Buchungen der Best„nde ÃÄ Mengenrechnung
-        Inventur/Waren ÄÙ ³  (Lager/Anlagen, wert-  ³
-                          ÀÄ und mengenm„áig) ÄÄÄÄÄÄÙ
+        â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        Einnahmen â”€â”€â”€â”€â”€â”€â”¬â”€â”¬â”€ Buchungen auf â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€ Geldrechnung
+        Ausgaben        â”‚ â”‚  Geld-/Aufwands-, Be-   â”‚  Bestandsrechnung
+                        â”‚ â”‚  stands-, Ertragskonten â”‚  Erfolgsrechnung
+                        â”‚ â”‚                         â”‚
+        Bewegungen      â”‚ â”‚  Buchungen der BestÃ¤nde â”œâ”€ Mengenrechnung
+        Inventur/Waren â”€â”˜ â”‚  (Lager/Anlagen, wert-  â”‚
+                          â””â”€ und mengenmÃ¤ÃŸig) â”€â”€â”€â”€â”€â”€â”˜
 
-        Arbeits- ÄÄÄÄÄÄÄÂÄÄÄ Arbeitsbuchungen ÄÄÄÄÄÄÄÄ Kostenrechnung
-        aufzeichnungen ÄÙ
+        Arbeits- â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€ Arbeitsbuchungen â”€â”€â”€â”€â”€â”€â”€â”€ Kostenrechnung
+        aufzeichnungen â”€â”˜
 
 
 
-Die LK-Fibu umfaát die Bereiche:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Die LK-Fibu umfaÃŸt die Bereiche:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-ÚÄ Geldrechnung (Einnahmen/Ausgaben) = AKTIV/PASSIV Konten (KL 2,3) ÄÄÄÄÄÄÄ¿
-ÀÄ Bestandsrechnung (Bilanz)         = AKTIV/PASSIV Konten (KL 0,1,9) ÄÄÄÄÄÙ
+â”Œâ”€ Geldrechnung (Einnahmen/Ausgaben) = AKTIV/PASSIV Konten (KL 2,3) â”€â”€â”€â”€â”€â”€â”€â”
+â””â”€ Bestandsrechnung (Bilanz)         = AKTIV/PASSIV Konten (KL 0,1,9) â”€â”€â”€â”€â”€â”˜
    Erfolgsrechnung (Einkommen)       = AUFWAND/ERTRAGS Konten (KL 4,5,6,7,8)
-   Mengenrechnung (Artikelstamm)       wert- und mengen„áig
+   Mengenrechnung (Artikelstamm)       wert- und mengenÃ¤ÃŸig
 
 Die Betriebe mit Einnahmen/Ausgaben-Rechnung sollen auf Grund der Programm-
-konzeption auch ohne Kenntnisse der doppelten Buchfhrung die LK-Fibu ein-
-setzen k”nnen.
+konzeption auch ohne Kenntnisse der doppelten BuchfÃ¼hrung die LK-Fibu ein-
+setzen kÃ¶nnen.
 Bereiche der LK-Fibu
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
  Erfassen             Verarbeiten               Auswertungen        Stammdaten
- ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
- Geldbuchungen ÄÄÄÄÂÄ Verarbeiten Buchungen ÄÂÄ Kundensalden ÄÄÄÄÄÂ Kunden ÄÄÄÄÄÙ
- Andere Buchungen  ³  Druck Buchungs-Journal ³  Lieferantensalden ³ Lieferanten
- Protokolldruck    ³                         ³  Sachkontensalden  ³ Sachkonten
-                   ³  Druck Kontobl„tter     ³                    ³ Artikelstamm
- Soll/Haben Buch.  ³                         ³  UST-Voranmeldung  ³
- Protokolldruck    ³  Monatsabschluá         ³                    ³ Konstanten
-                   ÃÄ Jahresabschluá ÄÄÄÄÄÄÄÄ´  Kapitalfluárechn. ³
- Inventur-Liste    ³                         ³  Betriebsw. Ausw.  ³ Anlagenstamm
- ndern Inventur   ³                         ÀÄ Bilanzauswertung  Á Druck Anlagen
- Inventurdifferenz Ù
+ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+ Geldbuchungen â”€â”€â”€â”€â”¬â”€ Verarbeiten Buchungen â”€â”¬â”€ Kundensalden â”€â”€â”€â”€â”€â”¬ Kunden â”€â”€â”€â”€â”€â”˜
+ Andere Buchungen  â”‚  Druck Buchungs-Journal â”‚  Lieferantensalden â”‚ Lieferanten
+ Protokolldruck    â”‚                         â”‚  Sachkontensalden  â”‚ Sachkonten
+                   â”‚  Druck KontoblÃ¤tter     â”‚                    â”‚ Artikelstamm
+ Soll/Haben Buch.  â”‚                         â”‚  UST-Voranmeldung  â”‚
+ Protokolldruck    â”‚  MonatsabschluÃŸ         â”‚                    â”‚ Konstanten
+                   â”œâ”€ JahresabschluÃŸ â”€â”€â”€â”€â”€â”€â”€â”€â”¤  KapitalfluÃŸrechn. â”‚
+ Inventur-Liste    â”‚                         â”‚  Betriebsw. Ausw.  â”‚ Anlagenstamm
+ Ã„ndern Inventur   â”‚                         â””â”€ Bilanzauswertung  â”´ Druck Anlagen
+ Inventurdifferenz â”˜
 
 .te*/
 
 
-/*.ta,F02,II. euroSOFT-MENš / 1.,1
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  euroSOFT LK-Fibu                                                                 º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+/*.ta,F02,II. euroSOFT-MENÃœ / 1.,1
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  euroSOFT LK-Fibu                                                                 â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
-Bentzeroberfl„che euroSOFT-MENš
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+BenÃ¼tzeroberflÃ¤che euroSOFT-MENÃœ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Der Aufruf der jeweiligen Funktionen erfolgt ber das euroSOFT-MENš. Dabei sind
+Der Aufruf der jeweiligen Funktionen erfolgt Ã¼ber das euroSOFT-MENÃœ. Dabei sind
 die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
 
 
-.mi (MENUE,LK-L000),1,¯euroSOFT LK-Fibu®.
-.mi (MENUE,LK-L011),1,¯Stammdaten/Kontstanten®.
-.mi (MENUE,LK-L010),1,¯Installation®.
+.mi (MENUE,LK-L000),1,Â»euroSOFT LK-FibuÂ«.
+.mi (MENUE,LK-L011),1,Â»Stammdaten/KontstantenÂ«.
+.mi (MENUE,LK-L010),1,Â»InstallationÂ«.
 
 .te*/
 

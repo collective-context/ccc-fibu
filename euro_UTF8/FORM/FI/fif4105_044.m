@@ -7,32 +7,32 @@
 &DATEI (1) = MASK, FI4135
 
 &KOPF (0)
-^��GENERAL BALANCES / Asset and Liability Accounts           	Month: @@@@@@@@@@                 Date: ##.##.## - PAGE ������ ~SM ~1�_W_MONAT ~1._DRUCK_DAT ~1._SEITE
-������������������������������������������������������������������������������������������������������������������������Ŀ�
-��Client (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Participant: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- �������������������������������������������������������������������������������������������������������������������������
+^┌┘GENERAL BALANCES / Asset and Liability Accounts           	Month: @@@@@@@@@@                 Date: ##.##.## - PAGE øøøø└┐ ~SM ~1°_W_MONAT ~1._DRUCK_DAT ~1._SEITE
+│┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Client (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Participant: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 Account                                  Opening        Monthly        Monthly            YTD            YTD        Closing
 Number    Description                    Balance          Debit         Credit          Debit         Credit        Balance
-���������������������������������������������������������������������������������������������������������������������������
-�
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 
 &END
 
 
 &RUMPF (0)
-S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
+S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
 &END
 
 &RUMPF (1)
-          �����������������������������������������������������������������������������������������������������������������
-          ** Subtotal             ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
+          ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+          ** Subtotal             ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
 
 &END
 
 
 &FUSS (0)
-          == Grand Total          ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1._VOR_SALDO~1._PER_SOLL~1._PER_HABEN~1._JHR_SOLL~1._JHR_HABEN~1._AKT_SALDO
-�������������������������������������������������������������������������������������������������������������������������Ŀ
-��User Authorization: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                               @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+          == Grand Total          ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1._VOR_SALDO~1._PER_SOLL~1._PER_HABEN~1._JHR_SOLL~1._JHR_HABEN~1._AKT_SALDO
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐User Authorization: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                               @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 

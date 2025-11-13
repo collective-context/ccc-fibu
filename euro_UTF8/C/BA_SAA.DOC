@@ -1,14 +1,14 @@
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º  Programme-Name: BA_SAA.C	      Revision: 1.3	    (C) 1989/1991     º
-// º  Function	    : euroSOFT Basisprogramm				      º
-// º									      º
-// º  Rev.-Date     : 01.05.1991, Graz		 Update: 16.07.1991, Graz     º
-// º  Author	    : Peter Mayer		 Author: Peter Mayer	      º
-// º  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz     º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
-// ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-// º			     Deklarations-Dateien			      º
-// ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘  Programme-Name: BA_SAA.C	      Revision: 1.3	    (C) 1989/1991     â•‘
+// â•‘  Function	    : euroSOFT Basisprogramm				      â•‘
+// â•‘									      â•‘
+// â•‘  Rev.-Date     : 01.05.1991, Graz		 Update: 16.07.1991, Graz     â•‘
+// â•‘  Author	    : Peter Mayer		 Author: Peter Mayer	      â•‘
+// â•‘  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz     â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+// â•‘			     Deklarations-Dateien			      â•‘
+// â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #define NDEBUG 1
 #include <string.h>
 #include <app_tool.h>
@@ -41,9 +41,9 @@ STATIC VOID ReadSelect(VOID);
 
 #pragma optimize("q", off)   /* P-Code ein */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º     Application_Mask()                                                  º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘     Application_Mask()                                                  â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Application_Mask()
 {
@@ -76,16 +76,16 @@ while(!wFinis_g)                                     /* Haupt-Eingabe-Schl.  */
     for(i=0; i<wFileHandler_g; i++)
       if(awFileMode_g[i] != PARA_F)                  /* Keine Parameter Datei*/
         memset(apstrRecord_g[i], '\0',
-        awRecLength_g[i]);                           /* Records l”schen      */
+        awRecLength_g[i]);                           /* Records lÃ¶schen      */
 
   if(!wOkAbort)
     {wFieldNumber_g=awFirstFieldNumber_g[0];         /* auf 1. Eingabefeld   */
     wMaskNumber_g=0;                                 /* und 1. Maske setzen  */
     Set_Default();}
 
-  wEscFlag_g=NO;                                     /* ESC-Taste rcksetzen */
+  wEscFlag_g=NO;                                     /* ESC-Taste rÃ¼cksetzen */
   wKeyCode_g=AUS;                                    /* Verweilen bis die    */
-  while(wKeyCode_g!=9999 && !wEscFlag_g)             /* ESC-Taste gedrckt   */
+  while(wKeyCode_g!=9999 && !wEscFlag_g)             /* ESC-Taste gedrÃ¼ckt   */
     {
     SWORD wNextFieldNumber=wFieldNumber_g;	      /*		      */
     SWORD wNextMaskNumber=wMaskNumber_g;	      /*		      */
@@ -94,7 +94,7 @@ while(!wFinis_g)                                     /* Haupt-Eingabe-Schl.  */
     memset(strOldString_g, '\0', TB_MAX);
     memset(strNewString_g, '\0', TB_MAX);
 
-    M_KeyCode(apWkbMask_g, wKeyCode_g,               /* Fr Application_Set  */
+    M_KeyCode(apWkbMask_g, wKeyCode_g,               /* FÃ¼r Application_Set  */
       &wNextMaskNumber, &wNextFieldNumber,
       &wNextBlockNumber_g, apTextBox_g,
       apstrRecord_g, awRecLength_g, awBlocks_g );    /* Key-Code auswerten   */
@@ -132,7 +132,7 @@ while(!wFinis_g)                                     /* Haupt-Eingabe-Schl.  */
 
     awChangeFlag_g[0]=(awChangeFlag_g[wR]||awChangeFlag_g[0]);
 
-    wFail_g=NO;                                      /* unglt.Eingabe zurck*/
+    wFail_g=NO;                                      /* ungÃ¼lt.Eingabe zurÃ¼ck*/
     if(pEvent_g->wArt==EVENT_WAHL)
       Menu_Handler(&wKeyCode_g, strApp_g,
                    pstrIndexKey_g);
@@ -147,17 +147,17 @@ while(!wFinis_g)                                     /* Haupt-Eingabe-Schl.  */
 
     KeyCode_Handler();
     if(strchr(strSpecialKeyCodes_g,wKeyCode_g ) > 0) /* Wenn Funktionstaste  */
-      Special_Functions();                           /* gedrckt dann aus-   */
+      Special_Functions();                           /* gedrÃ¼ckt dann aus-   */
     else                                             /* werten sonst:        */
       {                                              /* Feldnummer auf Key-  */
       BOOL boSh=pEvent_g->wKbflags & (LEFT_SHIFT|RIGHT_SHIFT) || boShift_g;
       if(boSh) Browse_Handling();
 
-      Field_Classification();                        /* Feld prfen          */
-      if(wRecKey_g>0 && boRecMask_g)                 /* Wenn Stammschlssel  */
+      Field_Classification();                        /* Feld prÃ¼fen          */
+      if(wRecKey_g>0 && boRecMask_g)                 /* Wenn StammschlÃ¼ssel  */
         Record_Key_Handler();                        /* dann abhandeln       */
       else                                           /* sonst: wenn Referenz-*/
-        if(wRefKey_g>0)                              /* schlssel dann such  */
+        if(wRefKey_g>0)                              /* schlÃ¼ssel dann such  */
           Reference_Key_Handler();                   /* Referenzdatei        */
         else                                         /* sonst: andere Felder */
           Other_Fields_Handler();                    /* abhandeln            */
@@ -169,13 +169,13 @@ while(!wFinis_g)                                     /* Haupt-Eingabe-Schl.  */
     All_Fields_Handler();
     boShift_g=NEIN;
 
-    if(wFail_g)                                    /* Wenn ungltige Ein-  */
+    if(wFail_g)                                    /* Wenn ungÃ¼ltige Ein-  */
       {                                            /* gabe                 */
       strcpy(apTextBox_g[_MSK][_FLD]->acText,      /*                      */
         strOldString_g);                           /*                      */
 
       wKeyCode_g=AUS;                              /*                      */
-      i_Beep();                                    /* Wenn erlaubt ¯ Ton   */
+      i_Beep();                                    /* Wenn erlaubt Â» Ton   */
       }
 
     } /*end: while(!wEscFlag_g)*/
@@ -190,11 +190,11 @@ return(OK);
 
 /* #pragma optimize("q", on)   /* P-Code ein */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º ReadSelect()                                                            º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ ReadSelect()                                                            â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID ReadSelect(VOID)
 {
@@ -244,11 +244,11 @@ return;
 } /* ReadSelect() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º StoreSelect()                                                           º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ StoreSelect()                                                           â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID StoreSelect(VOID)
 {
@@ -275,14 +275,14 @@ return;
 } /* StoreSelect() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Special_Functions()                                                     º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine wird angesprungen, wenn vom Anwender eine Sonderfunk-     º
-  º tionstaste bet„tigt wurde, die fr die Applikation eine bestimmte       º
-  º Bedeutung hat.                                                          º
-  º Siehe Konstanten-Deklaration                                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Special_Functions()                                                     â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine wird angesprungen, wenn vom Anwender eine Sonderfunk-     â•‘
+  â•‘ tionstaste betÃ¤tigt wurde, die fÃ¼r die Applikation eine bestimmte       â•‘
+  â•‘ Bedeutung hat.                                                          â•‘
+  â•‘ Siehe Konstanten-Deklaration                                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID Special_Functions()
 {
@@ -294,7 +294,7 @@ if(i_Special_Functions())
 if(wKeyCode_g==T_F3)                                /* wegen T_ESC in Read  */
   {                                                 /* Next wenn File leer. */
   if(awExistingRecord_g[0])                         /* Falls vorhanden      */
-    {Delete_Record();                               /* Satz l”schen und n„. */
+    {Delete_Record();                               /* Satz lÃ¶schen und nÃ¤. */
     wEscFlag_g=NO; wKeyCode_g=T_RETURN;             /* Satz lesen.          */
     wNdx_g=0; if(boReadNext_g) Read_Next();}
   }
@@ -304,9 +304,9 @@ switch(wKeyCode_g)                                   /*                      */
   case T_F2:					     /* Match-Code-Suche:    */
     if(Matchcode_Handler())                          /*                      */
       {
-      if(*strSelection_g)                            /* Wenn ein Schlssel ge*/
-        {                                            /* w„hlt wurde dann:    */
-        if(wRecKey_g > 0)                            /* Wenn Schlssel zum   */
+      if(*strSelection_g)                            /* Wenn ein SchlÃ¼ssel ge*/
+        {                                            /* wÃ¤hlt wurde dann:    */
+        if(wRecKey_g > 0)                            /* Wenn SchlÃ¼ssel zum   */
           {                                          /* Stammsatz:           */
           memcpy(&apstrRecord_g[0]                   /* Kopiere die Wahl auf */
             [awRecKeyOffset_g[0]], strSelection_g,   /* das Record           */
@@ -317,22 +317,22 @@ switch(wKeyCode_g)                                   /*                      */
           strcpy(strNewRecord_m, strSelection_g);    /* KeyValue und auf New-*/
           Primary_Key_Handler("Match_Code");         /* String und gehe      */
           }                                          /* zum Handler          */
-        else if(wRefKey_g > 0)                       /* Zeigt Schlssel in   */
+        else if(wRefKey_g > 0)                       /* Zeigt SchlÃ¼ssel in   */
           {                                          /* eine Referenzdatei   */
           Copy_Selection();
-          Reference_Key_Handler();                   /* ¯ Referenz-Datei ab- */
+          Reference_Key_Handler();                   /* Â» Referenz-Datei ab- */
           }                                          /* abhandlen            */
 
         } /* end if(strSelection_g[0]) */
       else
         if(wRecKey_g > 0 && !awChangeFlag_g[0] &&
-          (awNewRecord_g[0]                          /* Wenn nichts gew„hlt  */
-          || awExistingRecord_g[0]))                 /* die Pos-Info fr     */
+          (awNewRecord_g[0]                          /* Wenn nichts gewÃ¤hlt  */
+          || awExistingRecord_g[0]))                 /* die Pos-Info fÃ¼r     */
           Read_Record();                             /* Btrieve aktualisieren*/
       } /* end if(Matchcode_Handler()) */
     break;
 
-  case T_F4:                                         /* Memo „ndern, falls   */
+  case T_F4:                                         /* Memo Ã¤ndern, falls   */
     if(awNewRecord_g[0]||awExistingRecord_g[0])      /* Datensatz vorhanden  */
       if(pstrMemoFile_g)
         M_Memo(pstrMemoFile_g, apstrRecKey_g[0],
@@ -340,7 +340,7 @@ switch(wKeyCode_g)                                   /*                      */
     break;
 
 
-  case T_S_F4:                                       /* Memo „ndern, falls   */
+  case T_S_F4:                                       /* Memo Ã¤ndern, falls   */
     if(awNewRecord_g[0]||awExistingRecord_g[0])      /* Datensatz vorhanden  */
       {
       CHAR strMemoKey[TB_MAX];
@@ -354,7 +354,7 @@ switch(wKeyCode_g)                                   /*                      */
     break;
 
   case T_C_F4:
-    {                                                /* Memo „ndern, falls   */
+    {                                                /* Memo Ã¤ndern, falls   */
     CHAR strMemoFile[TB_MAX];
     CHAR strText[TB_MAX], strKey[TB_MAX];
     sprintf(strMemoFile,"%sEUROMEMO.BTR",strDat_g);
@@ -365,13 +365,13 @@ switch(wKeyCode_g)                                   /*                      */
     }
    break;
 
-  case T_A_F4:                                       /* Memo „ndern, falls   */
+  case T_A_F4:                                       /* Memo Ã¤ndern, falls   */
     {
     CHAR strMemoFile[TB_MAX];
     CHAR strText[TB_MAX];
     sprintf(strMemoFile,"%sEUROMEMO.BTR",strDat_g);
-    sprintf(strText, "Privates Notizfach fr den "
-       "Arbeitsplatz ¯%s®.", strNrTeil_g);
+    sprintf(strText, "Privates Notizfach fÃ¼r den "
+       "Arbeitsplatz Â»%sÂ«.", strNrTeil_g);
 
     M_Memo(strMemoFile, strNrTeil_g, strText);
     }
@@ -387,7 +387,7 @@ switch(wKeyCode_g)                                   /*                      */
   case T_F5:                                         /* Kopie des Datensatzes*/
     /* if(!awExistingRecord_g[0] || CopyDoesNotExist()) /* wenn Record da, dann */
     if(awExistingRecord_g[0] && CopyDoesNotExist())  /* wenn Record da, dann */
-      {                                              /* als ver„ndert, neu   */
+      {                                              /* als verÃ¤ndert, neu   */
       for(i=0; i<wFileHandler_g; i++)                /* und nicht existierend*/
         if(awChangeFlag_g[i] ||                      /* kennzeichenen, damit */
           awExistingRecord_g[i])                     /* unter dem eingegebe- */
@@ -405,7 +405,7 @@ switch(wKeyCode_g)                                   /*                      */
         Store();                                     /* Stammsatz beenden    */
         i_Read_Default(strKey);
         if(awExistingRecord_g[0])                    /* Falls vorhanden      */
-          {Delete_Record(); wEscFlag_g=NO;           /* Satz l”schen und n„. */
+          {Delete_Record(); wEscFlag_g=NO;           /* Satz lÃ¶schen und nÃ¤. */
           wNdx_g=0; if(boReadNext_g) Read_Next();}   /* Satz lesen.          */
         boStoreSelect_g=boDeleteSelect_g=JA;
         }
@@ -427,7 +427,7 @@ switch(wKeyCode_g)                                   /*                      */
     break;
 
   case T_ESC:
-    wFinis_g=( wMaskNumber_g==0 &&                   /* Prim„rschlssel und  */
+    wFinis_g=( wMaskNumber_g==0 &&                   /* PrimÃ¤rschlÃ¼ssel und  */
     wFieldNumber_g==awFirstFieldNumber_g[0] &&       /* kein Datensatz vor-  */
     !awNewRecord_g[0] && !awExistingRecord_g[0] );   /* handen, dann das     */
                                                      /* Programm verlassen.  */
@@ -445,33 +445,33 @@ return;
 } /*end Special_Functions() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_Read_Up()                                                             º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_Read_Up()                                                             â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_Read_Up(VOID)
 {
 SWORD wEmpty=NEIN;
 
-if(awNewRecord_g[0] || awExistingRecord_g[0])    /* satz bl„ttern, nur   */
+if(awNewRecord_g[0] || awExistingRecord_g[0])    /* satz blÃ¤ttern, nur   */
   {                                              /* wenn Datensatz vorha.*/
   strcpy(strKeyValue_g,                          /* Kopiere Wert aus Pri-*/
-    aFiles_g[0].apKeys[0]->acText);              /* m„rschlssel-Feld    */
+    aFiles_g[0].apKeys[0]->acText);              /* mÃ¤rschlÃ¼ssel-Feld    */
 
   if(boRecMask_g)                                /* Bei Stammdatenmasken */
-    wEmpty=Validate_Primary_Key();               /* Prim„rkey prfen     */
+    wEmpty=Validate_Primary_Key();               /* PrimÃ¤rkey prÃ¼fen     */
 
   if(!wFail_g && !wEmpty)                        /* Wenn nicht leer und  */
-    {                                            /* gltig, dann Daten-  */
+    {                                            /* gÃ¼ltig, dann Daten-  */
     SWORD wOkAbort=Store();			  /* satz speichern	  */
     if(!wOkAbort)                                /* Wenn nicht abgebro-  */
       {                                          /* chen dann ReadIndex  */
       Field_Classification();
 
       if(wRecKey_g > 0)                          /*!!!!!!!!!!!!!!!!!!!!!!*/
-        wNdx_g=wRecKey_g-1;                      /*! Stimmt nur fr max.!*/
+        wNdx_g=wRecKey_g-1;                      /*! Stimmt nur fÃ¼r max.!*/
       else                                       /*! ..... 2 Keys ..... !*/
         wNdx_g=0;                                /*!!!!!!!!!!!!!!!!!!!!!!*/
 
@@ -486,30 +486,30 @@ return;
 } /* end i_Read_Up() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_Read_Down()                                                           º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_Read_Down()                                                           â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID i_Read_Down(VOID)
 {
 SWORD wEmpty=NEIN;
 
-if(awNewRecord_g[0] || awExistingRecord_g[0])    /* satz bl„ttern, nur   */
+if(awNewRecord_g[0] || awExistingRecord_g[0])    /* satz blÃ¤ttern, nur   */
   {                                              /* wenn Datensatz vorha.*/
   strcpy(strKeyValue_g,                          /* Kopiere Wert aus Pri-*/
-    aFiles_g[0].apKeys[0]->acText);              /* m„rschlssel-Feld    */
+    aFiles_g[0].apKeys[0]->acText);              /* mÃ¤rschlÃ¼ssel-Feld    */
 
   if(boRecMask_g)                                /* Bei Stammdatenmasken */
-    wEmpty=Validate_Primary_Key();              /* Prim„rkey prfen     */
+    wEmpty=Validate_Primary_Key();              /* PrimÃ¤rkey prÃ¼fen     */
 
   if(!wFail_g && !wEmpty)                        /* Wenn nicht leer und  */
-    {                                            /* gltig, dann Daten-  */
+    {                                            /* gÃ¼ltig, dann Daten-  */
     SWORD wOkAbort=Store();			  /* satz speichern	  */
     if(!wOkAbort)                                /* Wenn nicht abgebro-  */
       {                                          /* chen dann ReadIndex  */
-      Field_Classification();                    /* auf Prim„r- oder     */
+      Field_Classification();                    /* auf PrimÃ¤r- oder     */
 
       if(wRecKey_g > 0)
         wNdx_g=wRecKey_g-1;
@@ -530,11 +530,11 @@ return;
 } /* end i_Read_Down() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Browse_Handling()                                                       º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Browse_Handling()                                                       â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID Browse_Handling(VOID)
 {
@@ -611,36 +611,36 @@ return;
 } /* end Browse_Handling() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Field_Classification()                                                  º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Field_Classification() teilt das vom Anwender gerade verlassene Feld in º
-  º eine der Kategorien "Schlssel zum Stammsatz", "Schlsselfeld mit Ver-  º
-  º weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     º
-  º Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  º
-  º auf den Primarkey in der Reference-Datei beziehen, so muá dies in der   º
-  º Sub-Funktion i_Field_Classification nachgetragen werden.                º
-  º Auch bei scrollbaren Zeilen im Maskentyp 1 muáe bei einem Verweis auf   º
-  º Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Field_Classification()                                                  â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Field_Classification() teilt das vom Anwender gerade verlassene Feld in â•‘
+  â•‘ eine der Kategorien "SchlÃ¼ssel zum Stammsatz", "SchlÃ¼sselfeld mit Ver-  â•‘
+  â•‘ weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     â•‘
+  â•‘ Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  â•‘
+  â•‘ auf den Primarkey in der Reference-Datei beziehen, so muÃŸ dies in der   â•‘
+  â•‘ Sub-Funktion i_Field_Classification nachgetragen werden.                â•‘
+  â•‘ Auch bei scrollbaren Zeilen im Maskentyp 1 muÃŸe bei einem Verweis auf   â•‘
+  â•‘ Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Field_Classification()
 {
 SLONG lBlock=BLOCK, lBrowse=BROWSE;
 SREGISTER i, j;
 
-wRecKey_g=0;                                         /* Stammsatz-Schlssel  */
-wRefKey_g=0;                                         /* Referenz-Schlssel   */
+wRecKey_g=0;                                         /* Stammsatz-SchlÃ¼ssel  */
+wRefKey_g=0;                                         /* Referenz-SchlÃ¼ssel   */
 
-memset(strKeyValue_g, '\0', TB_MAX);                 /* alte Werte l”schen   */
+memset(strKeyValue_g, '\0', TB_MAX);                 /* alte Werte lÃ¶schen   */
 
-for(i=0; i<wMaxRecKey_g; i++)                        /* fr alle Schlssel   */
-  if(awRecKeyField_g[i]==_FLD &&                     /* prfen, ob man in    */
+for(i=0; i<wMaxRecKey_g; i++)                        /* fÃ¼r alle SchlÃ¼ssel   */
+  if(awRecKeyField_g[i]==_FLD &&                     /* prÃ¼fen, ob man in    */
     (awRecKeyMask_g[i]==_MSK ||
     (lBlockVer_g&lBrowse && awBlocks_g[_MSK][1]) ))  /* einem Key-Feld steht */
-    {                                                /* Wenn JA, dann berge-*/
-    wRecKey_g=i+1;                                   /* ben ob 1,2... Schls */
-    i_Field_Classification(&wRefKey_g, &wRefFile_g); /* fr Browse in FI1100 */
+    {                                                /* Wenn JA, dann Ã¼berge-*/
+    wRecKey_g=i+1;                                   /* ben ob 1,2... SchlÃ¼s */
+    i_Field_Classification(&wRefKey_g, &wRefFile_g); /* fÃ¼r Browse in FI1100 */
     return(ABBRUCH);                                 /*                      */
     }
 
@@ -658,24 +658,24 @@ return(OK);
 } /*end Field_Classification() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_Field_Class()                                                         º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_Field_Class()                                                         â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID i_Field_Class(PSSTR  pFIELD, PSWORD pwRefKey, PSWORD pwRefFile)
 {
 PTEXTBOX pTB;
 SWORD wFH=99;
 
-if(isdigit(*pFIELD) && *(pFIELD+1)=='ø')
+if(isdigit(*pFIELD) && *(pFIELD+1)=='Â°')
   {wFH=atoi(pFIELD); pFIELD+=2;}
 
 pTB=TBpt(pFIELD, _MSK, wFH);
 
 memset(apstrRecord_g[pTB->wRecord],
-  '\0', awRecLength_g[pTB->wRecord]);              /* wenn Wahl ungltig   */
+  '\0', awRecLength_g[pTB->wRecord]);              /* wenn Wahl ungÃ¼ltig   */
 
 *pwRefKey=1;
 *pwRefFile=pTB->wRecord;
@@ -686,28 +686,28 @@ return;
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Copy_Selection()                                                        º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Funktion wird nach drcken der [F2]-Taste nach Ausfhrung der     º
-  º Funktion Matchcode_Handler() in der Funktion Special_Funktions() vor    º
-  º der Funktion Reference_Key_Handler() aufgerufen.                        º
-  º Weiters wird die Funktion in der Funktion Field_Classification() und    º
-  º damit ebenfalls vor Reference_Key_Handler() aufgerufen.                 º
-  º Aufgabe:                                                                º
-  º   1) In der Funktion Matchcode_Handler wird nach einem beliebigen       º
-  º      Schlssel in der angebenen Datei gesucht. Unter strSelection_g     º
-  º      wird vom gew„hlten Datensatz der Prim„rkey der Datei zurckgegeben.º
-  º oder: (R-2)                                                             º
-  º   2) In der Funktion Field_Classification() wird nach einem beliebigen  º
-  º      Schlssel in der angebenen Datei gesucht. Unter strSelection_g     º
-  º      wird vom gew„hlten Datensatz der Prim„rkey der Datei zurckgegeben.º
-  º In beiden F„llen kopiert diese Funktion strSelection_g an die Primarkey-º
-  º stelle des Records sowie auf die Varaiblen strKey_Value_g und strNew-   º
-  º string_g.                                                               º
-  º Danach steht der Prim„rkey nach der Wahl fr die Funktion Referenc_Key- º
-  º Handler() an der richtigen Stelle.                                      º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Copy_Selection()                                                        â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Funktion wird nach drÃ¼cken der [F2]-Taste nach AusfÃ¼hrung der     â•‘
+  â•‘ Funktion Matchcode_Handler() in der Funktion Special_Funktions() vor    â•‘
+  â•‘ der Funktion Reference_Key_Handler() aufgerufen.                        â•‘
+  â•‘ Weiters wird die Funktion in der Funktion Field_Classification() und    â•‘
+  â•‘ damit ebenfalls vor Reference_Key_Handler() aufgerufen.                 â•‘
+  â•‘ Aufgabe:                                                                â•‘
+  â•‘   1) In der Funktion Matchcode_Handler wird nach einem beliebigen       â•‘
+  â•‘      SchlÃ¼ssel in der angebenen Datei gesucht. Unter strSelection_g     â•‘
+  â•‘      wird vom gewÃ¤hlten Datensatz der PrimÃ¤rkey der Datei zurÃ¼ckgegeben.â•‘
+  â•‘ oder: (R-2)                                                             â•‘
+  â•‘   2) In der Funktion Field_Classification() wird nach einem beliebigen  â•‘
+  â•‘      SchlÃ¼ssel in der angebenen Datei gesucht. Unter strSelection_g     â•‘
+  â•‘      wird vom gewÃ¤hlten Datensatz der PrimÃ¤rkey der Datei zurÃ¼ckgegeben.â•‘
+  â•‘ In beiden FÃ¤llen kopiert diese Funktion strSelection_g an die Primarkey-â•‘
+  â•‘ stelle des Records sowie auf die Varaiblen strKey_Value_g und strNew-   â•‘
+  â•‘ string_g.                                                               â•‘
+  â•‘ Danach steht der PrimÃ¤rkey nach der Wahl fÃ¼r die Funktion Referenc_Key- â•‘
+  â•‘ Handler() an der richtigen Stelle.                                      â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Copy_Selection()
 {
@@ -725,11 +725,11 @@ wRefKey_g=1;
 memcpy(&apstrRecord_g[wRefFile_g][wOfs1],            /*                      */
   strSelection_g, wMaxL1);                           /*                      */
 
-strcpy(strKeyValue_g,strSelection_g);                /* Wahl auf Schlssel,  */
+strcpy(strKeyValue_g,strSelection_g);                /* Wahl auf SchlÃ¼ssel,  */
 strcpy(strNewString_g,strSelection_g);               /* und NewString kopi.  */
                                                      /* strNewString_g+wPre  */
 /* {BOOL boTest=boTestModus_g; boTestModus_g=JA;
-  Wi_TestPrintf(pWkbInfo_g, "\n¯%s®, wF(%d), wO(%d), wL(%d)",
+  Wi_TestPrintf(pWkbInfo_g, "\nÂ»%sÂ«, wF(%d), wO(%d), wL(%d)",
    strSelection_g, wRefFile_g, wOfs1, wMaxL1);
   boTestModus_g=boTest;} */
 
@@ -737,18 +737,18 @@ return(OK);
 } /* end Copy_Selection() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Record_Key_Handler()                                                    º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine behandelt die Eingaben, die in einem Schlsselfeld        º
-  º zum Stammsatz gemacht wurden.                                           º
-  º Hier wird berprft, ob der Schlssel Gltigkeit besitzt und in         º
-  º der Stammdaten-Datei vorhanden ist. Danach wird entschieden, ob ein     º
-  º bestehender Satz mutiert werden soll, oder ob ein neuer Satz ange-      º
-  º legt werden soll.                                                       º
-  º Bei Leereingaben ohne aktuellen Datensatz wird in das n„chste           º
-  º Schlsselfeld zum Stammdaten-Satz verzweigt.                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Record_Key_Handler()                                                    â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine behandelt die Eingaben, die in einem SchlÃ¼sselfeld        â•‘
+  â•‘ zum Stammsatz gemacht wurden.                                           â•‘
+  â•‘ Hier wird Ã¼berprÃ¼ft, ob der SchlÃ¼ssel GÃ¼ltigkeit besitzt und in         â•‘
+  â•‘ der Stammdaten-Datei vorhanden ist. Danach wird entschieden, ob ein     â•‘
+  â•‘ bestehender Satz mutiert werden soll, oder ob ein neuer Satz ange-      â•‘
+  â•‘ legt werden soll.                                                       â•‘
+  â•‘ Bei Leereingaben ohne aktuellen Datensatz wird in das nÃ¤chste           â•‘
+  â•‘ SchlÃ¼sselfeld zum Stammdaten-Satz verzweigt.                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD Record_Key_Handler()
 {
@@ -756,22 +756,22 @@ SWORD wEmpty;					      /*		      */
 
 switch(wRecKey_g)                                    /* Key im Stammsatz     */
   {
-  case 1:                                            /* Prim„rschlssel      */
+  case 1:                                            /* PrimÃ¤rschlÃ¼ssel      */
     strcpy(strKeyValue_g, strNewString_g);           /* Kopiere Eingabe und  */
-    wEmpty=Validate_Primary_Key();                   /* prfe Gltigkeit     */
+    wEmpty=Validate_Primary_Key();                   /* prÃ¼fe GÃ¼ltigkeit     */
 
-    if(!wFail_g  && !wEmpty)                         /* Bei gltig und !leer */
+    if(!wFail_g  && !wEmpty)                         /* Bei gÃ¼ltig und !leer */
       Primary_Key_Handler("Record_Key_Handler");     /* abhandeln sonst      */
     else if(wEmpty)                                  /* bei Leereingabe ins  */
-           Next_Key_Field();                         /* n„chste Key-Feld     */
+           Next_Key_Field();                         /* nÃ¤chste Key-Feld     */
   break;
 
-  default:                                           /* Sekund„rschlssel    */
+  default:                                           /* SekundÃ¤rschlÃ¼ssel    */
     awChangeFlag_g[0]=(strcmp(strNewString_g,        /* Wurde die Stammdatei */
-      strOldString_g)||awChangeFlag_g[0] );          /* ver„ndert ?          */
+      strOldString_g)||awChangeFlag_g[0] );          /* verÃ¤ndert ?          */
 
   if(!awNewRecord_g[0] && !awExistingRecord_g[0])    /* Bei Record nicht da  */
-    Next_Key_Field();                                /* ins n„chste Key-Feld */
+    Next_Key_Field();                                /* ins nÃ¤chste Key-Feld */
   break;                                             /*                      */
 
   }  /*end switch*/
@@ -780,13 +780,13 @@ return(OK);
 } /*end Record_Key_Handler (04) */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Primary_KeyHandler()                                                    º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Funktion wird aufgerufen, wenn das Prim„rkeyfeld verlassen wird.  º
-  º Der Primary_KeyHandler wird auch in einem Rec-Schlsselfeld nach dem    º
-  º Drcken der [F2]-Taste angesprungen.                                    º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Primary_KeyHandler()                                                    â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Funktion wird aufgerufen, wenn das PrimÃ¤rkeyfeld verlassen wird.  â•‘
+  â•‘ Der Primary_KeyHandler wird auch in einem Rec-SchlÃ¼sselfeld nach dem    â•‘
+  â•‘ DrÃ¼cken der [F2]-Taste angesprungen.                                    â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD Primary_Key_Handler(PSSTR  pstrCall)
 {
@@ -801,7 +801,7 @@ SWORD wOkAbort=NO;
     strOldString_g, strKeyValue_g, strNewString_g);
   boTestModus_g=boTest;} */
 
-if(strcmp(strOldString_g, strKeyValue_g) ||          /* neuer Schlssel wur- */
+if(strcmp(strOldString_g, strKeyValue_g) ||          /* neuer SchlÃ¼ssel wur- */
   (!awNewRecord_g[0] && !awExistingRecord_g[0]))     /* de eingegeben        */
   {
   if(awNewRecord_g[0] || awExistingRecord_g[0])      /*                      */
@@ -825,7 +825,7 @@ if(strcmp(strOldString_g, strKeyValue_g) ||          /* neuer Schlssel wur- */
       strNewRecord_m, wLen);                         /* Offset aus Fieldinput*/
 
     /*{BOOL boTest=boTestModus_g;boTestModus_g=EIN;
-    Wi_TestPrintf(pWkbInfo_g, "\napstrRecord_g[%d][%d]<%d>(%s), ¯%s|%s®[%s|%s].", wRec, wOff, wLen,
+    Wi_TestPrintf(pWkbInfo_g, "\napstrRecord_g[%d][%d]<%d>(%s), Â»%s|%sÂ«[%s|%s].", wRec, wOff, wLen,
       &apstrRecord_g[wRec][wOff], strOldRecord_m, strNewRecord_m, strOldString_g, strNewString_g);
     boTestModus_g=boTest;}*/
     }
@@ -839,7 +839,7 @@ if(strcmp(strOldString_g, strKeyValue_g) ||          /* neuer Schlssel wur- */
   if(!wOkAbort)                              /* neuen Datensatz aktivieren   */
     Read_Record();                           /* Neuen Datensatz lesen        */
   else                                       /* OK-Fenster wurde abgebrochen */
-    wFail_g=YES;                             /* Datensatz nicht gltig       */
+    wFail_g=YES;                             /* Datensatz nicht gÃ¼ltig       */
   }
 
 
@@ -847,18 +847,18 @@ return(OK);
 } /* end Primary_Key_Handler() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Reference_Key_Handler()                                                 º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Reference_Key_Handler() behandelt die Eingaben, die in einem Schlssel- º
-  º feld auf eine Referenz-Datei gemacht wurden.                            º
-  º Es werden Referenz-Zugriffe (sofern erwnscht) auf die jeweiligen       º
-  º Dateien vorgenommen.                                                    º
-  º Der laut Field_Classification() oder Matchcode_Handler gew„hlte Prim„r- º
-  º key in der Reference-Datei wird geladen.                                º
-  º In i_Reference_Key_Handler() k”nnen etwaige Feldzuordnungen nachgetra-  º
-  º gen werden.                                                             º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Reference_Key_Handler()                                                 â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Reference_Key_Handler() behandelt die Eingaben, die in einem SchlÃ¼ssel- â•‘
+  â•‘ feld auf eine Referenz-Datei gemacht wurden.                            â•‘
+  â•‘ Es werden Referenz-Zugriffe (sofern erwÃ¼nscht) auf die jeweiligen       â•‘
+  â•‘ Dateien vorgenommen.                                                    â•‘
+  â•‘ Der laut Field_Classification() oder Matchcode_Handler gewÃ¤hlte PrimÃ¤r- â•‘
+  â•‘ key in der Reference-Datei wird geladen.                                â•‘
+  â•‘ In i_Reference_Key_Handler() kÃ¶nnen etwaige Feldzuordnungen nachgetra-  â•‘
+  â•‘ gen werden.                                                             â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Reference_Key_Handler()
 {
@@ -879,16 +879,16 @@ return(OK);
 } /*end Reference_Key_Handler() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Next_Key_Field ()                                                       º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine setzt den Feld-Cursor auf das n„chste Schlsselfeld.      º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Next_Key_Field ()                                                       â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine setzt den Feld-Cursor auf das nÃ¤chste SchlÃ¼sselfeld.      â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 VOID Next_Key_Field ()
 {
 
-if(wRecKey_g>0)                                      /* Wenn ein Schlssel-  */
+if(wRecKey_g>0)                                      /* Wenn ein SchlÃ¼ssel-  */
   {
   /*  {BOOL boTest=boTestModus_g;boTestModus_g=EIN;
     Wi_TestPrintf(pWkbInfo_g, "\nwKeyCode=(%d).", wKeyCode_g);
@@ -900,9 +900,9 @@ if(wRecKey_g>0)                                      /* Wenn ein Schlssel-  */
     case T_TAB:
     case T_C_RIGHT:				     /* Cursor rechts und    */
     case T_RIGHT:				     /* Cursor rechts und    */
-    case T_DOWN:                                     /* Cursor abw„rts den   */
-      if(wRecKey_g<wMaxRecKey_g)                     /* Schlssel bis zum    */
-        wRecKey_g++;                                 /* Max-Wert erh”hen oder*/
+    case T_DOWN:                                     /* Cursor abwÃ¤rts den   */
+      if(wRecKey_g<wMaxRecKey_g)                     /* SchlÃ¼ssel bis zum    */
+        wRecKey_g++;                                 /* Max-Wert erhÃ¶hen oder*/
       else                                           /* 1 geben              */
         wRecKey_g=1;
       break;
@@ -910,8 +910,8 @@ if(wRecKey_g>0)                                      /* Wenn ein Schlssel-  */
     case T_SHIFT_TAB:
     case T_C_LEFT:
     case T_LEFT:				     /* Bei Cursor links     */
-    case T_UP:                                       /* Bei Cursor aufw„rts  */
-      if(wRecKey_g>1)                                /* den Schlsselwert    */
+    case T_UP:                                       /* Bei Cursor aufwÃ¤rts  */
+      if(wRecKey_g>1)                                /* den SchlÃ¼sselwert    */
         --wRecKey_g;                                 /* bis zum Minimalwert  */
       else                                           /* senken oder Maximal- */
         wRecKey_g=wMaxRecKey_g;                      /* wert geben           */
@@ -927,14 +927,14 @@ return;
 } /* end Next_Key_Field() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Matchcode_Handler()                                                     º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    º
-  º Fr scrollbare Zeilen im Maskentyp 1 und fr spezielle Wnsche bei      º
-  º Zugriffen auf Referenz-Dateien k”nnen in i_Matchcode_Handler() Eintr„ge º
-  º erfolgen.                                                               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Matchcode_Handler()                                                     â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    â•‘
+  â•‘ FÃ¼r scrollbare Zeilen im Maskentyp 1 und fÃ¼r spezielle WÃ¼nsche bei      â•‘
+  â•‘ Zugriffen auf Referenz-Dateien kÃ¶nnen in i_Matchcode_Handler() EintrÃ¤ge â•‘
+  â•‘ erfolgen.                                                               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Matchcode_Handler()
 {
@@ -983,7 +983,7 @@ if(pMatchCode)
   if(*strSelection_g && awFileMode_g[wNbFile]==REC_F && wReadIndex>0)
     wRetCode=Db_GetEq(wNbFile, apstrFileBlock_g,
       apstrRecord_g, awRecLength_g, awInitRecLen_g,
-      B_NO, strSelection_g, 0, _F, _L);   /* Fr [F2] in Druckprogramm */
+      B_NO, strSelection_g, 0, _F, _L);   /* FÃ¼r [F2] in Druckprogramm */
 
   memcpy(strNewRecord_m, strSelection_g, awRecKeyLength_g[0]);
   Matchcode_Handler_2();
@@ -997,11 +997,11 @@ return(wRetCode);
 } /* end Matchcode_Handler() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_Matchcode_Handler()                                                   º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine behandelt die Matchcode-Anfragen zu Key-Feldern           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_Matchcode_Handler()                                                   â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine behandelt die Matchcode-Anfragen zu Key-Feldern           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 PTEXTBOX i_Matchcode_Handler(PSSTR  pMATCH_FLD, PSSTR  pstrMatchTxt,
 			 PPMATCH ppMatchCode, PSWORD pwNbFile, PSWORD pwFileNb)
@@ -1024,7 +1024,7 @@ else
   if(isdigit(*pMATCH_FLD) && *(pMATCH_FLD+1)=='~')
     {wKey=atoi(pMATCH_FLD); pMATCH_FLD+=2;}
 
-  if(isdigit(*pMATCH_FLD) && *(pMATCH_FLD+1)=='ø')
+  if(isdigit(*pMATCH_FLD) && *(pMATCH_FLD+1)=='Â°')
     {wFH=atoi(pMATCH_FLD); pMATCH_FLD+=2;}
 
   pTB=TBpt(pMATCH_FLD, _MSK, wFH);}
@@ -1053,12 +1053,12 @@ return(pTB);
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_Read_Default()                                                        º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Legt fest, ob beim Aufruf eines Programmes bereits ein Datensatz gele-  º
-  º sen werden soll.                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_Read_Default()                                                        â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Legt fest, ob beim Aufruf eines Programmes bereits ein Datensatz gele-  â•‘
+  â•‘ sen werden soll.                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD i_Read_Default(PSSTR  pMATCH_FLD)
 {
@@ -1095,26 +1095,26 @@ return(wValid);                                      /*                      */
 }
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º MissingKey()                                                            º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ MissingKey()                                                            â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID MissingKey()
 {
 
-if(awNewRecord_g[0] || awExistingRecord_g[0])        /* falscher Schlssel   */
+if(awNewRecord_g[0] || awExistingRecord_g[0])        /* falscher SchlÃ¼ssel   */
   {
   PSSTR  apstrMessage[25];
-  wFail_g=YES;                                       /* ungltige Eingabe    */
+  wFail_g=YES;                                       /* ungÃ¼ltige Eingabe    */
   wMaskNumber_g=awRecKeyMask_g[0];
   wFieldNumber_g=awRecKeyField_g[0];
   wKeyCode_g=AUS;
 
   Ut_SchreibArray(apstrMessage,
-    "Unzul„ssiger Schlssel",
-    "Bitte einen gltigen Schlssel angeben", _N); /*			   */
+    "UnzulÃ¤ssiger SchlÃ¼ssel",
+    "Bitte einen gÃ¼ltigen SchlÃ¼ssel angeben", _N); /*			   */
 
   Dl_Info(apstrMessage, DLG_KRITISCH);
   Ut_LoeschArray(apstrMessage);
@@ -1124,11 +1124,11 @@ return;
 } /* end MissingKey() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º CopyDoesNotExist()                                                      º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ CopyDoesNotExist()                                                      â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 STATIC
 SWORD CopyDoesNotExist()
 {
@@ -1139,7 +1139,7 @@ SWORD wSelect;
 SWORD wKey=wRecKey_g- 1;
 
 Field_Classification();
-if(wKey != 0 || !memcmp(strOldRecord_m,              /* Kein Prim„rkey-Feld  */
+if(wKey != 0 || !memcmp(strOldRecord_m,              /* Kein PrimÃ¤rkey-Feld  */
   strNewRecord_m, awRecKeyLength_g[0]) )             /* oder keine Neueingabe*/
   return(NEIN);                                      /* A B B R U C H   !!!  */
 
@@ -1147,18 +1147,18 @@ if(wKeyCode_g==T_S_F5)
   M_OkQuestion(&wSelect,                            /* Antwort              */
     "Wollen Sie wirklich unbenennen:",               /* Titelzeile           */
     "#Ja, Datensatz unbenennen.",                    /* liste                */
-    "#Nein, Daten nicht ver„ndern.",_N);
+    "#Nein, Daten nicht verÃ¤ndern.",_N);
 else
   M_OkQuestion(&wSelect,                            /* Antwort              */
     "Wollen Sie wirklich kopieren:",                 /* Titelzeile           */
     "#Ja, Datensatz kopieren.",                      /* liste                */
-    "#Nein, Daten nicht ver„ndern.",_N);
+    "#Nein, Daten nicht verÃ¤ndern.",_N);
 
 if(wSelect!=0)
   {SWORD wRec=0, wOff=awRecKeyOffset_g[0];	      /* copy Old-Key	      */
   memcpy(&apstrRecord_g[wRec][wOff],
     strOldRecord_m, awRecKeyLength_g[0]);            /* Offset aus Fieldinput*/
-  Extract_Keys(wFH);                                 /* Schlssel eintragen  */
+  Extract_Keys(wFH);                                 /* SchlÃ¼ssel eintragen  */
   return(NEIN);}                                     /* A B B R U C H  !!!   */
 
 apstrRecord_g[wFH]=pstrDataBuffer;
@@ -1177,13 +1177,13 @@ else if(wRetCode==0)
     {
     PSSTR  apstrMessage[25];
     Ut_SchreibArray(apstrMessage,
-                  "  Der eingegebene Schlssel ",
+                  "  Der eingegebene SchlÃ¼ssel ",
                   "  existiert in dieser Datei schon!  ",
                   " ",
-                  "  Da hier zwei Datens„tze nicht den ",
-                  "  gleichen Schlssel haben drfen,  ",
-                  "  kann die Kopie  ¯n i c h t®",
-                  "  durchgefhrt werden!",
+                  "  Da hier zwei DatensÃ¤tze nicht den ",
+                  "  gleichen SchlÃ¼ssel haben dÃ¼rfen,  ",
+                  "  kann die Kopie  Â»n i c h tÂ«",
+                  "  durchgefÃ¼hrt werden!",
 		  _N);
     Dl_Info(apstrMessage, DLG_KRITISCH);
     Ut_LoeschArray(apstrMessage);
@@ -1203,17 +1203,17 @@ if(!wRetCode)                                        /* Wenn schon vorhanden */
   {SWORD wRec=0, wOff=awRecKeyOffset_g[0];	      /* copy Old-Key	      */
   memcpy(&apstrRecord_g[wRec][wOff],
     strOldRecord_m, awRecKeyLength_g[0]);            /* Offset aus Fieldinput*/
-  Extract_Keys(wFH);}                                /* Schlssel eintragen  */
+  Extract_Keys(wFH);}                                /* SchlÃ¼ssel eintragen  */
 
 return(wRetCode);
 } /* End CopyDoesNotExist() */
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Menu_Handler()                                                          º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º                                                                         º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Menu_Handler()                                                          â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘                                                                         â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Menu_Handler(PSWORD pwKeyCode, PSSTR  pstrApp, PSSTR  pstrIndexKey)
 {
@@ -1282,11 +1282,11 @@ return (OK);
 
 /* #pragma optimize("q", off)	/* P-Code aus */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_FieldClass                                                            º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º alternativ !!!                                                          º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_FieldClass                                                            â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ alternativ !!!                                                          â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 VOID i_FieldClass(PSWORD pwRefKey, PSWORD pwRefFile, PSSTR  pFIELD, PSSTR  pREF)
 {
@@ -1334,11 +1334,11 @@ if(*(pt("PO_ART")+wBlk)=='a')
     /* Db_SetRecLenth();                                      /*             */
     }
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Menu_Handler1()                                                         º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Ohne Hilfsindex im Erfassen Rechnungen                                  º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Menu_Handler1()                                                         â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Ohne Hilfsindex im Erfassen Rechnungen                                  â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 SWORD Menu_Handler1(PSWORD pwKeyCode)
 {
@@ -1402,7 +1402,7 @@ return (OK);
 /*SWORD wOff=aFiles_g[0].apKeys[0]->wOffset;	  /*			  */
 
 /* for(i=0; i<wFileHandler_g; i++)
-    if(awFileMode_g[i]==REC_F) Extract_Keys(i);    /* Schlssel filtern    */
+    if(awFileMode_g[i]==REC_F) Extract_Keys(i);    /* SchlÃ¼ssel filtern    */
 
 
 /*  if(awBlocks_g[_MSK][0]|awBlocks_g[_MSK][1])  Wenn Maske Blockmaske */
@@ -1461,11 +1461,11 @@ CHAR strFileBlock[128]; */
 
 
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_Matchcode_Handler()                                                   º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine behandelt die Matchcode-Anfragen zu Key-Feldern           º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_Matchcode_Handler()                                                   â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine behandelt die Matchcode-Anfragen zu Key-Feldern           â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 PTEXTBOX i_Matchcode_Handler(PSSTR  pMATCH_FLD, PSSTR  pstrMatchTxt,
 			 PPMATCH ppMatchCode, PSWORD pwNbFile, PSWORD pwFileNb)
@@ -1535,7 +1535,7 @@ return(pTB);
    BOOL boTest=boTestModus_g;  boTestModus_g=EIN;
       Wi_TestPrintf(pWkbInfo_g, "\n(%d) F:%d K:%d\n",
 	aFiles_g[wF].wNbKeyFields, wF, wK);
-      Wi_TestPrintf(pWkbInfo_g, "\ncmp(%d) F:%d K:%d ¯%s® \n(%d) %s",
+      Wi_TestPrintf(pWkbInfo_g, "\ncmp(%d) F:%d K:%d Â»%sÂ« \n(%d) %s",
 	!strcmp(aFiles_g[wF].apKeys[wK]->strDatenfeld,"PREPARE"),
 	wF, wK, aFiles_g[wF].apKeys[wK]->strDatenfeld,
 	awPreKey_m[wF], apTPre_m[wF]);

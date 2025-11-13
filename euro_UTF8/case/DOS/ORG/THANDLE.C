@@ -4,7 +4,7 @@
  *   Memory Model:    SMALL                                   *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC      *
  *   Compilieren:     (Q)CL THANDLE.C /link DOSLIBS.LIB       *
- *   Programmautor:   Heinrich Gîbl                           *
+ *   Programmautor:   Heinrich G√∂bl                           *
  *   Stand:           27.6.88                                 *
  **************************************************************/
 
@@ -31,7 +31,7 @@ puts ("Geben Sie den Namen einer vorhandenen Datei des"
       " aktuellen Ver-");
 puts ("zeichnisses ein!");
 scanf ("%64s", path);
-printf ("\n%s wird geîffnet und die ersten 512 Bytes "
+printf ("\n%s wird ge√∂ffnet und die ersten 512 Bytes "
         "gelesen\n", path);
 fhandle = D_h_open (path, (BYTE) H_READONLY, &error);
 if (error)
@@ -45,12 +45,12 @@ else
          printf ("Lesen erfolgreich\n");
     pos = D_move_fptr (fhandle, H_ENDE, 0L, &error);
     printf ("File Pointer jetzt an "
-            "Position %ld; = DateilÑnge\n", pos);
+            "Position %ld; = Dateil√§nge\n", pos);
     D_h_close (fhandle);
-    path [0] = '\0';   /* TemporÑre Datei im Hauptverzeichnis */
+    path [0] = '\0';   /* Tempor√§re Datei im Hauptverzeichnis */
     fhandle = D_creat_tmp (path, 0x20, &error);
     if (error)
-         printf ("Beim ôffnen einer TMP-Datei"
+         printf ("Beim √ñffnen einer TMP-Datei"
                  " tauchte Fehler %d auf\n", error);
     else
          {
@@ -65,7 +65,7 @@ else
          if (!D_h_close (fhandle))
               printf ("TMP-Datei wurde geschlossen\n");
          else
-              printf ("Fehler beim Schlie·en der TMP-Datei\n");
+              printf ("Fehler beim Schlie√üen der TMP-Datei\n");
          }
     }
 }

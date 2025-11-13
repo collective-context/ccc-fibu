@@ -1,6 +1,6 @@
 /**************************************************************
  *    HANDLE.H                                                *
- *    Definitionen fÅr Funktionen, die Åber Handles           *
+ *    Definitionen f√ºr Funktionen, die √ºber Handles           *
  *    auf Dateien zugreifen                                   *
  *    27.6.88                                                 *
  **************************************************************/

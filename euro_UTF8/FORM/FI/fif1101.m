@@ -10,26 +10,26 @@
 &DATEI (3) = MASK, ST1110
 
 &KOPF (0)
-^��LISTE KUNDENKONTEN NACH KURZBEZEICHNUNG             Datum: @@@@@@@@ - SEITE ������ ~NO ~1._DATUM_AKT ~1._SEITE
-���������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ����������������������������������������������������������������������������������
-Kurzbezeichnung                Konto-Nr  Kunden-Nr    Zahlungs- Ausl. W�hrung Kunden
+^┌┘LISTE KUNDENKONTEN NACH KURZBEZEICHNUNG             Datum: @@@@@@@@ - SEITE øøøø└┐ ~NO ~1._DATUM_AKT ~1._SEITE
+│┌────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └────────────────────────────────────────────────────────────────────────────────┘
+Kurzbezeichnung                Konto-Nr  Kunden-Nr    Zahlungs- Ausl. Währung Kunden
                                                       kondition kunde         gruppe
-������������������������������������������������������������������������������������
+────────────────────────────────────────────────────────────────────────────────────
 
 &END
 
 
 &RUMPF (0)
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ K@@@@@@@@ @@@@@@@@@@@@ @@@@@@@@@ @@@@  @@@@@@@ @@@@@@ ~0.KURZ_BEZ ~0.KU_KONTO ~2.KUNDE ~0.KONDITION ~0�AUSLANDSKU ~0�W�HRUNG ~2.KUNDEN_GR
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ K@@@@@@@@ @@@@@@@@@@@@ @@@@@@@@@ @@@@  @@@@@@@ @@@@@@ ~0.KURZ_BEZ ~0.KU_KONTO ~2.KUNDE ~0.KONDITION ~0°AUSLANDSKU ~0°WÄHRUNG ~2.KUNDEN_GR
 &END
 
-&REM @@@@  @@@@@@@ @@@@@@ ~1._AUSLANDSK ~1._W�HRUNG ~2.KUNDEN_GR
+&REM @@@@  @@@@@@@ @@@@@@ ~1._AUSLANDSK ~1._WÄHRUNG ~2.KUNDEN_GR
 
 &FUSS (0)
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 

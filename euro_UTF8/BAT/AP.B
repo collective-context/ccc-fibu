@@ -9,21 +9,21 @@ set ap2=%2
   goto meldung
 
 :fehler
-  echo ÿ
+  echo Â 
   echo Werte    : APP=%app%  AP2=%ap2%   (ID=%id% / ART=%art%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo Syntax   : ap [APP] [APP]     oder: ap ®s/h¯ (fr show bzw. help)
-  echo fr [APP]: Applikationsname fr Programme, Masken oder Formulare.
-  echo ÿ
-  echo Beispiele: ¯ap SY®, ¯ap FI® oder ¯ap LKF® ...
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Syntax   : ap [APP] [APP]     oder: ap Â«s/hÂ» (fÃ¼r show bzw. help)
+  echo fÃ¼r [APP]: Applikationsname fÃ¼r Programme, Masken oder Formulare.
+  echo Â 
+  echo Beispiele: Â»ap SYÂ«, Â»ap FIÂ« oder Â»ap LKFÂ« ...
+  echo Â 
   goto end
 
 :meldung
-  echo ÿ
+  echo Â 
   echo Werte:  APP=%app%  AP2=%ap2%   (ID=%id% / ART=%art%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Â 
 
 :end
 

@@ -4,7 +4,7 @@
  *   Memory Model:    SMALL                                   *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC      *
  *   Compilieren:     (Q)CL TDIR.C /link DOSLIBS.LIB          *
- *   Programmautor:   Heinrich Gîbl                           *
+ *   Programmautor:   Heinrich G√∂bl                           *
  *   Stand:           27.6.88                                 *
  **************************************************************/
 
@@ -26,9 +26,9 @@ char path [64];
 char path2 [64];
 char * msg [] = {
     "Anzulegendes Verzeichnis",
-    "Zu lîschendes Verzeichnis",
+    "Zu l√∂schendes Verzeichnis",
     "Neues Verzeichnis",
-    "Zu lîschende Datei(en)",
+    "Zu l√∂schende Datei(en)",
     "Name der Datei",
     "Suchname mit Pfad",
     "Name der alten Datei(en)"
@@ -104,7 +104,7 @@ dir (void)
 {
 struct FIND f;
 int nr = 0;
-                /* 63 schlie·t bei der Suche alle Dateien ein */
+                /* 63 schlie√üt bei der Suche alle Dateien ein */
 if (D_find_first (path, 63, &f) != 0)
     {
     printf ("Datei nicht gefunden\n\n");
@@ -143,10 +143,10 @@ printf ("Aktuelles Verzeichnis: \\%s\n\n", path);
 
 puts ("\t0 - Ende");
 puts ("\t1 - Lege neues Verzeichnis an");
-puts ("\t2 - Lîsche Verzeichnis");
+puts ("\t2 - L√∂sche Verzeichnis");
 puts ("\t3 - Wechsle Verzeichnis");
-puts ("\t4 - Lîsche Datei");
-puts ("\t5 - VerÑndere Dateiattribute");
+puts ("\t4 - L√∂sche Datei");
+puts ("\t5 - Ver√§ndere Dateiattribute");
 puts ("\t6 - Directory mit Attributen");
 puts ("\t7 - Datei umbenennen");
 

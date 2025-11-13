@@ -1,16 +1,16 @@
 /**************************************************************
  *   Programmname:    FILTER.C                                *
- *   Aufgabe:         Filtert die Eingabe fÅr FX-80 Drucker   *
+ *   Aufgabe:         Filtert die Eingabe f√ºr FX-80 Drucker   *
  *   Memory Model:    SMALL                                   *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC      *
  *   Compilieren:     (Q)CL FILTER.C                          *
- *   Programmautor:   Heinrich Gîbl                           *
+ *   Programmautor:   Heinrich G√∂bl                           *
  *   Stand:           27.6.88                                 *
  **************************************************************/
 
 #include <stdio.h>
 
-                               /* Makros fÅr Ein- und Ausgabe */
+                               /* Makros f√ºr Ein- und Ausgabe */
 #define deu   fputs (deutsch, stdout)
 #define usa   fputs (amerika, stdout); fputc ('\0', stdout)
 #define p(c)  fputc (c, stdout)
@@ -28,13 +28,13 @@ usa;
 while ((c = fgetc (stdin)) != EOF)
     switch (c)
          {
-         case 'Ñ': deu; p('{'); usa; break;
-         case 'î': deu; p('|'); usa; break;
-         case 'Å': deu; p('}'); usa; break;
-         case '·': deu; p('~'); usa; break;
-         case 'é': deu; p('['); usa; break;
-         case 'ô': deu; p('\\'); usa; break;
-         case 'ö': deu; p(']'); usa; break;
+         case '√§': deu; p('{'); usa; break;
+         case '√∂': deu; p('|'); usa; break;
+         case '√º': deu; p('}'); usa; break;
+         case '√ü': deu; p('~'); usa; break;
+         case '√Ñ': deu; p('['); usa; break;
+         case '√ñ': deu; p('\\'); usa; break;
+         case '√ú': deu; p(']'); usa; break;
          default : p (c); break;
          }
 deu;

@@ -1,17 +1,17 @@
 /*          Gilt fuer Programme,die den Blockmaskentyp 2 verwenden.         */
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           บ
-  บ    Die Informationen zur Installation sind in euroINST gespeichert.    บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘         GLOBALE DATEN, DIE AUS DER TOOLBOX IMPORTIERT WERDEN           โ•‘
+  โ•‘    Die Informationen zur Installation sind in euroINST gespeichert.    โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 IMPORT COLORSET   aCS_g[];              /* Array der Farbpaletten           */
 IMPORT SWORD	   wCSInd_g;		 /* Nummer der Farbpaletten	     */
 IMPORT BOOL       boBeepen_g;           /* Warnton ein/aus                  */
 IMPORT MENUSTATUS MS_g;
-IMPORT PSSTR	   pstrReturn_g;	 /* String fr Schaltflche	     */
+IMPORT PSSTR	   pstrReturn_g;	 /* String fรผr Schaltflรคche	     */
 IMPORT BOOL	  boTestModus_g;	/* Testmodus ein/aus Entwickler     */
 IMPORT BOOL	  boKundenTest_g;	/* Testmodus ein/aus Kunde	    */
 IMPORT BOOL	  boDemoVersion_g;	/* Demoversion ein/aus		    */
-IMPORT CHAR       strExt_g[];           /* Extention fr Landescode         */
+IMPORT CHAR       strExt_g[];           /* Extention fรผr Landescode         */
 IMPORT CHAR       strMan_g[];           /* Mandaten-Nummer                  */
 IMPORT CHAR       strTeiln_g[];         /* Teilnehmer-Verzeichnis           */
 IMPORT CHAR       strExe_g[];           /* Programm-Verzeichnis             */
@@ -21,13 +21,13 @@ IMPORT CHAR       strHdb_g[];           /* Handbuch-Tutor-Verzeichnis       */
 IMPORT SLONG	   lMinFreeMemory_g;
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                         KONSTANTEN                                     บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                         KONSTANTEN                                     โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 /* Datei-Handling */
 #define UPB_FILE_HANDLER 10     /* Obergrenze der Dateien in der Applikation  */
 #define UPB_REF_HANDLER 10      /* Obergrenze der Dateien in der Applikation  */
-#define UPB_REC_KEY 10          /* Obergrenze der Schlssel der Dateien       */
+#define UPB_REC_KEY 10          /* Obergrenze der Schlรผssel der Dateien       */
 
 /* Masken-Handling */
 #define UPB_MASK 10             /* Obergrenze der verwendeten Masken          */
@@ -37,10 +37,10 @@ IMPORT SLONG	   lMinFreeMemory_g;
 #define UPB_MATCH_FIELDS 20     /* Obergrenze der Felder bei Matchcode-Auswahl*/
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ         MODUL-GLOBALE VARIABLEN                                        บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
-MGLOBAL PWKB pWkbInfo_m = NULL;          /* Window fr Testmodus == ein       */
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘         MODUL-GLOBALE VARIABLEN                                        โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
+MGLOBAL PWKB pWkbInfo_m = NULL;          /* Window fรผr Testmodus == ein       */
 
 MGLOBAL CHAR    strApp_m[TB_MAX];        /* Applikations-Kennzeichen        */
 MGLOBAL SWORD   wMaskNumber_m;
@@ -49,17 +49,17 @@ MGLOBAL SWORD   wFieldNumber_m;
 MGLOBAL SWORD   wNextFieldNumber_m;
 MGLOBAL SWORD   wBlockNumber_m;
 MGLOBAL SWORD   wNextBlockNumber_m;
-MGLOBAL SWORD   wKeyCode_m;             /* Rckgabewert der gedrckten Eingabetaste */
+MGLOBAL SWORD   wKeyCode_m;             /* Rรผckgabewert der gedrรผckten Eingabetaste */
 MGLOBAL SWORD   wFinis_m;
 MGLOBAL SWORD   wEscFlag_m;
 MGLOBAL SWORD   wRecKey_m;
 MGLOBAL SWORD   wRefKey_m;
-MGLOBAL SWORD   wChangable_m;           /* Flag fr Memo nderbar                       */
-MGLOBAL SWORD   wReadIndex_m;           /* Flag fr PG_UP && PG_DN                      */
-MGLOBAL SWORD   wFail_m;                /* Flag fr ungltige Eingabe                   */
-MGLOBAL SWORD   wEmpty_m;               /* Flag fr leer in Validate_Primary_Key ()     */
-MGLOBAL SWORD   wOkAbort_m;             /* Flag fr vorzeiten Abbruch                   */
-MGLOBAL SWORD   wValid_m;               /* Flag ob Datensatz gltig                     */
+MGLOBAL SWORD   wChangable_m;           /* Flag fรผr Memo รคnderbar                       */
+MGLOBAL SWORD   wReadIndex_m;           /* Flag fรผr PG_UP && PG_DN                      */
+MGLOBAL SWORD   wFail_m;                /* Flag fรผr ungรผltige Eingabe                   */
+MGLOBAL SWORD   wEmpty_m;               /* Flag fรผr leer in Validate_Primary_Key ()     */
+MGLOBAL SWORD   wOkAbort_m;             /* Flag fรผr vorzeiten Abbruch                   */
+MGLOBAL SWORD   wValid_m;               /* Flag ob Datensatz gรผltig                     */
 MGLOBAL SWORD   wAccessMode_m;
 MGLOBAL SWORD   wOffset_m;
 MGLOBAL SWORD   wSuccess_m;
@@ -67,8 +67,8 @@ MGLOBAL SWORD   wUserBreak_m;
 MGLOBAL SWORD   wRecordLocked_m;
 MGLOBAL SWORD   wSteuerKennzeichen_m;   /* welcher Programmteil Verwendung findet */
 MGLOBAL SWORD   wDruckKennzeichen_m;    /* welches Druckformular Verwendung findet */
-MGLOBAL CHAR    strKeyValue_m[TB_MAX];   /* Schlsselwert fr Spezial_Functions, etc.    */
-MGLOBAL CHAR    strNewKey_m[TB_MAX];     /* Schlsselwert fr Read_Next (), etc.         */
+MGLOBAL CHAR    strKeyValue_m[TB_MAX];   /* Schlรผsselwert fรผr Spezial_Functions, etc.    */
+MGLOBAL CHAR    strNewKey_m[TB_MAX];     /* Schlรผsselwert fรผr Read_Next (), etc.         */
 MGLOBAL CHAR    strOldString_m[TB_MAX];
 MGLOBAL CHAR    strNewString_m[TB_MAX];
 MGLOBAL CHAR    strSelection_m[TB_MAX];
@@ -77,15 +77,15 @@ MGLOBAL SWORD wFileHandler_m;	    /* Verwendete Dateien in der Applikation  */
 MGLOBAL SWORD wMaxRecKey_m;	    /* Verwendete Dateien in der Applikation  */
 MGLOBAL SWORD wMaxRefKey_m;	    /* Verwendete Dateien in der Applikation  */
 MGLOBAL PSSTR pstrMemoFile_m;	    /* Dateiname der Memo-Bibliothek	      */
-MGLOBAL PSSTR pstrMemoTitel_m;	    /* Titel fr Memo-Window		      */
+MGLOBAL PSSTR pstrMemoTitel_m;	    /* Titel fรผr Memo-Window		      */
 MGLOBAL CHAR strSpecialKeyCodes_m[TB_MAX];
 
 MGLOBAL SWORD wRefHandler_m;	    /* Verwendete Referenz-Dateien im Programm */
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                       ARRAY - DEKLARATION                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                       ARRAY - DEKLARATION                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 /* Deklarationen des Datei-Handlings */
 
 MGLOBAL PSSTR	apstrFileName_m[UPB_FILE_HANDLER];   /* Dateinamen der log. Dateinummern	 */
@@ -95,38 +95,38 @@ GLOBAL PFSPEC  apfsFileBuffer_m[UPB_FILE_HANDLER];  /* BTRV-Dateiattribute fuer 
 
 MGLOBAL SWORD awAccessMode_m[UPB_FILE_HANDLER];    /* BTRV-Dateizugriffsatributte fuer B_OPEN()  */
 MGLOBAL PSSTR apstrRecord_m[UPB_FILE_HANDLER];	   /* Inhalt des Datei-Records		 */
-MGLOBAL SWORD awRecLength_m[UPB_FILE_HANDLER];	   /* Record-Lnge die mit CALLOC reserviert werden soll */
-MGLOBAL SWORD awInitRecLen_m[UPB_FILE_HANDLER];    /* Record-Lnge die mit CALLOC reserviert werden soll */
+MGLOBAL SWORD awRecLength_m[UPB_FILE_HANDLER];	   /* Record-Lรคnge die mit CALLOC reserviert werden soll */
+MGLOBAL SWORD awInitRecLen_m[UPB_FILE_HANDLER];    /* Record-Lรคnge die mit CALLOC reserviert werden soll */
 MGLOBAL PSSTR apstrOwner_m[UPB_FILE_HANDLER];	   /* Besitzernamen der Dateien 	 */
 
 MGLOBAL SWORD awRefAccess_m[UPB_REF_HANDLER];	   /* BTRV-Dateizugriffsatributte fuer B_OPEN()  */
 MGLOBAL PSSTR apstrRefRec_m[UPB_REF_HANDLER];	  /* Inhalt des Datei-Records		*/
-MGLOBAL SWORD awRefLength_m[UPB_REF_HANDLER];	  /* Record-Lnge die mit CALLOC reserviert werden soll */
+MGLOBAL SWORD awRefLength_m[UPB_REF_HANDLER];	  /* Record-Lรคnge die mit CALLOC reserviert werden soll */
 MGLOBAL PSSTR apstrRefOwner_m[UPB_REF_HANDLER];    /* Besitzernamen der Dateien 	 */
 
 MGLOBAL SWORD awNewRecord_m[UPB_FILE_HANDLER];
 MGLOBAL SWORD awExistingRecord_m[UPB_FILE_HANDLER];
 MGLOBAL SWORD awChangeFlag_m[UPB_FILE_HANDLER];
 
-MGLOBAL PSSTR apstrRecKey_m[UPB_REC_KEY];	/* Schlssel der ISAM-Verzeichnisse	 */
-MGLOBAL SWORD awRecKeyLength_m[UPB_REC_KEY];	/* Lnge des Primr und Sekundrschlssels	   */
-MGLOBAL SWORD awRecKeyOffset_m[UPB_REC_KEY];	/* Offsets der Primr- und Sekundr-Schlssel im Stammsatz */
-MGLOBAL SWORD awRecKeyField_m[UPB_REC_KEY];	/* Feldnummern der Schlsselfelder zum Stammsatz      */
-MGLOBAL SWORD awRecKeyMask_m[UPB_REC_KEY];	/* Masken-Nummern der Schlsselfelder zum Stammsatz	*/
+MGLOBAL PSSTR apstrRecKey_m[UPB_REC_KEY];	/* Schlรผssel der ISAM-Verzeichnisse	 */
+MGLOBAL SWORD awRecKeyLength_m[UPB_REC_KEY];	/* Lรคnge des Primรคr und Sekundรคrschlรผssels	   */
+MGLOBAL SWORD awRecKeyOffset_m[UPB_REC_KEY];	/* Offsets der Primรคr- und Sekundรคr-Schlรผssel im Stammsatz */
+MGLOBAL SWORD awRecKeyField_m[UPB_REC_KEY];	/* Feldnummern der Schlรผsselfelder zum Stammsatz      */
+MGLOBAL SWORD awRecKeyMask_m[UPB_REC_KEY];	/* Masken-Nummern der Schlรผsselfelder zum Stammsatz	*/
 
-MGLOBAL PSSTR apstrRefKey_m[UPB_REC_KEY];	/* Schlssel der ISAM-Verzeichnisse	 */
-MGLOBAL SWORD awRefKeyLength_m[UPB_REC_KEY];	/* ~ Lngen der Schlssel zu Referenz-Dateien  ~ f.sp.Ausbau	  */
-MGLOBAL SWORD awRefKeyOffset_m[UPB_REC_KEY];	/* ~ Offsets der Schlssel zu Referenz-Dateien	~ f.sp.Ausbau	    */
-MGLOBAL SWORD awRefKeyField_m[UPB_REC_KEY];	/* Feldnummern der Schlsselfelder zu anderen Dateien	*/
-MGLOBAL SWORD awRefKeyMask_m[UPB_REC_KEY];	/* Masken-Nummern der Schlsselfelder zu Referenz-Dateien	   */
-MGLOBAL SWORD awRefVirField_m[UPB_REC_KEY];	/* ~ Feldnummern der virtuellen Schlsselfelder zu anderen Dateien  ~f.sp.Ausbau */
+MGLOBAL PSSTR apstrRefKey_m[UPB_REC_KEY];	/* Schlรผssel der ISAM-Verzeichnisse	 */
+MGLOBAL SWORD awRefKeyLength_m[UPB_REC_KEY];	/* ~ Lรคngen der Schlรผssel zu Referenz-Dateien  ~ f.sp.Ausbau	  */
+MGLOBAL SWORD awRefKeyOffset_m[UPB_REC_KEY];	/* ~ Offsets der Schlรผssel zu Referenz-Dateien	~ f.sp.Ausbau	    */
+MGLOBAL SWORD awRefKeyField_m[UPB_REC_KEY];	/* Feldnummern der Schlรผsselfelder zu anderen Dateien	*/
+MGLOBAL SWORD awRefKeyMask_m[UPB_REC_KEY];	/* Masken-Nummern der Schlรผsselfelder zu Referenz-Dateien	   */
+MGLOBAL SWORD awRefVirField_m[UPB_REC_KEY];	/* ~ Feldnummern der virtuellen Schlรผsselfelder zu anderen Dateien  ~f.sp.Ausbau */
 
-MGLOBAL PSSTR apstrRecKeyPreset_m[UPB_REC_KEY]; /* Schlsselvorspann der Stammsatz-Schlssel fr Matchcode-Routine */
-MGLOBAL PSSTR apstrRefKeyPreset_m[UPB_REC_KEY]; /* ~ Schlsselvorspann der Referenz-Schlssel fr Matchcode-Routine ~f.sp. Ausbau */
+MGLOBAL PSSTR apstrRecKeyPreset_m[UPB_REC_KEY]; /* Schlรผsselvorspann der Stammsatz-Schlรผssel fรผr Matchcode-Routine */
+MGLOBAL PSSTR apstrRefKeyPreset_m[UPB_REC_KEY]; /* ~ Schlรผsselvorspann der Referenz-Schlรผssel fรผr Matchcode-Routine ~f.sp. Ausbau */
 
 
 MGLOBAL SWORD awRefFileHandler_m[UPB_REC_KEY];	/* ~ Logische Dateinummern der Referenz-Dateien   ~ f.sp.Ausbau      */
-MGLOBAL SWORD awRefIndex_m[UPB_REC_KEY];	/* ~ Nummer der ISAM-Verzeichnisse der Referenz-Schlssel  ~ f.sp.Ausbau*/
+MGLOBAL SWORD awRefIndex_m[UPB_REC_KEY];	/* ~ Nummer der ISAM-Verzeichnisse der Referenz-Schlรผssel  ~ f.sp.Ausbau*/
 
 /* Deklarationen des Block-handling */
 MGLOBAL SWORD awBlockLength_m[UPB_MASK];
@@ -145,12 +145,12 @@ MGLOBAL CHAR strMask_m[UPB_MASK][TB_MAX];      /* Applikations-Kennzeichen      
 MGLOBAL SWORD awMasks_m [UPB_MASK];		/* Nummern aller Masken die im Programm verwendet werden     */
 MGLOBAL SWORD awMaskSequence_m[UPB_MASK];	/* Masken des Stammsatzes		*/
 
-MGLOBAL PITEM apAppMenu_m[10][20];             /* Applikationsmen  fr Kundenstamm    */
-MGLOBAL SWORD  awEquPart_m[UPB_EQU_PART];	/* ~ Equivalenz-Werte fr CHOICE-Felder  ~ f.sp.Ausbau */
+MGLOBAL PITEM apAppMenu_m[10][20];             /* Applikationsmenรผ  fรผr Kundenstamm    */
+MGLOBAL SWORD  awEquPart_m[UPB_EQU_PART];	/* ~ Equivalenz-Werte fรผr CHOICE-Felder  ~ f.sp.Ausbau */
 MGLOBAL SWORD  awFirstFieldNumber_m[UPB_MASK];	/* Wert steht in der letzten TextBox */
 
 /* Deklarationen des Matchcode-Handlings */
-/* Feldbezeichnungen des Matchcodes pro Stammsatz-Schlssel */
+/* Feldbezeichnungen des Matchcodes pro Stammsatz-Schlรผssel */
 MGLOBAL PSSTR apstrRecFieldName_m[UPB_REC_KEY];
 
 /* Zusatz-Felder bei Matchcode-Suche in der Stammdatei */
@@ -162,27 +162,27 @@ MGLOBAL PSSTR apstrRefFieldName_m[UPB_REC_KEY];
 MGLOBAL SWORD awAddRefFields_m[UPB_REC_KEY][UPB_MATCH_FIELDS];
 MGLOBAL PSSTR apstrAddRefFieldNames_m[UPB_REC_KEY][5];
 
-/* Anzahl zustzlich anzuzeigender Felder fr MatchcodeSuche in der Stammdatei  */
+/* Anzahl zusรคtzlich anzuzeigender Felder fรผr MatchcodeSuche in der Stammdatei  */
 MGLOBAL SWORD  awNbOfAddRecFields_m[UPB_REC_KEY];
 
-/* Anzahl zustzlich anzuzeigender Felder fr MatchcodeSuche in einer Referenzedatei   */
+/* Anzahl zusรคtzlich anzuzeigender Felder fรผr MatchcodeSuche in einer Referenzedatei   */
 MGLOBAL SWORD  awNbOfAddRefFields_m[UPB_REC_KEY];
 
-/* Feldbezeichnungen des Matchcodes pro Referenz-Schlssel */
+/* Feldbezeichnungen des Matchcodes pro Referenz-Schlรผssel */
 MGLOBAL PSSTR apstrRefKeyText_m[UPB_REC_KEY];	       /* ~ f.sp. Ausbau */
 MGLOBAL SWORD awMatchcodeFields_m[UPB_MATCH_FIELDS];   /* ~ f.sp. Ausbau */
 MGLOBAL PSSTR apstrMatchcodeFieldNames_m[UPB_MATCH_FIELDS];  /* ~ f.sp.Ausbau */
 
 
 MGLOBAL PSSTR apstrFalscherName_m[]={
-             " Der eingegebene Schlssel ist ungltig.", NULL, };
+             " Der eingegebene Schlรผssel ist ungรผltig.", NULL, };
 
 MGLOBAL PSSTR pstrErrorModule[]={BLANK_100, BLANK_100, BLANK_100, BLANK_100, NULL};
 
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ                      FUNKTIONS-PROTOTYPEN                              บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘                      FUNKTIONS-PROTOTYPEN                              โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 	VOID main		   (SWORD argc, PSSTR argv[]);
 MGLOBAL VOID Application_Init      (VOID);
 MGLOBAL VOID Start_Application     (VOID);
@@ -227,9 +227,9 @@ MGLOBAL VOID Memo_Part             (VOID);
 MGLOBAL VOID Print_Record	   (SWORD[], SWORD, SWORD);
 MGLOBAL VOID Print_Data 	   (SWORD[], SWORD);
 
-/*ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-  บ         FUNKTIONS-DEFINITIONEN                                         บ
-  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ*/
+/*โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+  โ•‘         FUNKTIONS-DEFINITIONEN                                         โ•‘
+  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•*/
 /* ------ Unlock_Record () --------------------------------------------------*/
 /* aktuellen Datensatz entsperren, sofern erforderlich.                      */
 /*---------------------------------------------------------------------------*/

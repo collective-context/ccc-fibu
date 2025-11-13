@@ -1,8 +1,8 @@
 @echo off
 cls
-echo ÿ
-echo ÿ
-echo ÿ
+echo Â 
+echo Â 
+echo Â 
 IF NOT X%sA%==X SET sA=
 IF NOT X%sB%==X SET sB=
 cd \euro\exe
@@ -65,36 +65,36 @@ cd \euro\exe
   goto end
 
 :fehler
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   echo Es ist ein Fehler aufgetreten! (1=%1,  ART=%art%,  APP=%app%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Â 
   goto end
 
 :help
-  echo ÿ
+  echo Â 
   echo        Syntax:   t [b/c] [e/?] [m/f] [Steuerkennzeichen]
-  echo DOS-Variablen:   ¯ART® und ¯APP®
-  echo ÿ
-  echo Beispiele:  (Vorsicht, Hilfstext ist nicht gltig!!!)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  echo DOS-Variablen:   Â»ARTÂ« und Â»APPÂ«
+  echo Â 
+  echo Beispiele:  (Vorsicht, Hilfstext ist nicht gÃ¼ltig!!!)
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   echo test [b/c] e       == CD ins EXE-Verzeichnis.
   echo test [b/c] ?       == CD ins EXE-Verzeichnis - Ausgabe dieses Hilfs-Textes.
-  echo ÿ
-  echo test [b/c]         == call \EURO\MASK\¯APP®MASK.BAT - ¯ART®==mask
-  echo test [b/c]         == call \EURO\MASK\¯APP®FORM.BAT - ¯ART®==form
-  echo test [b/c] m       == call \EURO\MASK\¯APP®MASK.BAT
-  echo test [b/c] f       == call \EURO\FORM\¯APP®FORM.BAT
-  echo ÿ
-  echo test [b/c]   10    == ¯APP®1100.EXE 10              - ¯ART®==mask
-  echo test [b/c]   1010L == ¯APP®4100.EXE 1010L           - ¯ART®==form
-  echo test [b/c] m 10    == ¯APP®1100.EXE 10
-  echo test [b/c] f 1010L == ¯APP®4100.EXE 1010L
-  echo ÿ
-  echo Mit ¯b® erfolgt der Start mit dem Bereichs-Prfprogamm (bounds-checking).
-  echo Mit ¯c® erfolgt der Start mit dem Code-View-Debuger.
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo ÿ
+  echo Â 
+  echo test [b/c]         == call \EURO\MASK\Â»APPÂ«MASK.BAT - Â»ARTÂ«==mask
+  echo test [b/c]         == call \EURO\MASK\Â»APPÂ«FORM.BAT - Â»ARTÂ«==form
+  echo test [b/c] m       == call \EURO\MASK\Â»APPÂ«MASK.BAT
+  echo test [b/c] f       == call \EURO\FORM\Â»APPÂ«FORM.BAT
+  echo Â 
+  echo test [b/c]   10    == Â»APPÂ«1100.EXE 10              - Â»ARTÂ«==mask
+  echo test [b/c]   1010L == Â»APPÂ«4100.EXE 1010L           - Â»ARTÂ«==form
+  echo test [b/c] m 10    == Â»APPÂ«1100.EXE 10
+  echo test [b/c] f 1010L == Â»APPÂ«4100.EXE 1010L
+  echo Â 
+  echo Mit Â»bÂ« erfolgt der Start mit dem Bereichs-PrÃ¼fprogamm (bounds-checking).
+  echo Mit Â»cÂ« erfolgt der Start mit dem Code-View-Debuger.
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Â 
   goto end
 
 :end

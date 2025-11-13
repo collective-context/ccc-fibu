@@ -1,23 +1,23 @@
 +-------------------------------------------------------------------------+
-|                      PC/MS-DOS  f걊 Insider                           |
+|                      PC/MS-DOS  f체r Insider                           |
 |-------------------------------------------------------------------------|
-| Testprogramm f걊 die Funktion-Calls 0Dh,0Eh,19h,1Ah,1Bh,1Ch,2Fh,36h     |
+| Testprogramm f체r die Funktion-Calls 0Dh,0Eh,19h,1Ah,1Bh,1Ch,2Fh,36h     |
 |                                                                         |
 | Die Funktionen befinden sich im Quelltext unter dem Namen DISK.C        |
-| Sie k봭nen in Programmen verwendet werden, indem man die Library        |
-| DOSLIBS-LIB beim Linken als zus꼝zliche Library angibt.                 |
+| Sie k철nnen in Programmen verwendet werden, indem man die Library        |
+| DOSLIBS-LIB beim Linken als zus채tzliche Library angibt.                 |
 +-------------------------------------------------------------------------+
 
 Dieses Programm testet C-Funktionen, die mit den Daten eines Laufwerks zu
-tun haben, sowie Laufwerke ausw꼑len oder 꼑nliches.
-Zuerst werden einige Daten des aktuellen Laufwerks angezeigt. Danach k봭-
+tun haben, sowie Laufwerke ausw채hlen oder 채hnliches.
+Zuerst werden einige Daten des aktuellen Laufwerks angezeigt. Danach k철n-
 nen Sie ein vorhandenes Laufwerk Ihrer Wahl eingeben, wobei Sie aber die
-logische Nummer des Laufwerks angeben m걌sen, also
+logische Nummer des Laufwerks angeben m체ssen, also
 
-0 f걊 das aktuelle Laufwerk
-1 f걊 Laufwerk A
-2 f걊 Laufwerk B usw.
+0 f체r das aktuelle Laufwerk
+1 f체r Laufwerk A
+2 f체r Laufwerk B usw.
 
-F걊 das eingegebene Laufwerk erscheinen dann wiederum einige Daten.
+F체r das eingegebene Laufwerk erscheinen dann wiederum einige Daten.
 
 

@@ -1,16 +1,16 @@
 
 .ko(<null>)
 
-       ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-       บ  Preisliste                                              บ
-       ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+       โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+       โ•‘  Preisliste                                              โ•‘
+       โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 
-     Die Preise sind gltig ...
+     Die Preise sind gรผltig ...
 .ff
 .ko(Preisliste von <datum>      Seite: -1.<seite:2>-)
 
-In den Prfungsgebhren sind folgende Leistungen enthalten:
+In den Prรผfungsgebรผhren sind folgende Leistungen enthalten:
 
 1
 2
@@ -18,7 +18,7 @@ In den Prfungsgebhren sind folgende Leistungen enthalten:
 
 
 
-                                                        PEH      S
+                                                        PEH      ร–S
 
 .ar(D.ST1300,ART-NR,BEZEICHNUNG,EINHEIT,BETRAG)
 .vb(ART-NR,X100,X199)

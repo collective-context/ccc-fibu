@@ -1,8 +1,8 @@
 /*---------------------------------------------------------------------------
 
-           Programm f걊 die Definition eigener Druckertreiber
+           Programm f체r die Definition eigener Druckertreiber
 
-                      (c) 1992/93 by Markus M갷k
+                      (c) 1992/93 by Markus M체ck
 
 -----------------------------------------------------------------------------*/
 
@@ -42,25 +42,25 @@ typedef  void               VOID;
 
 CHAR     PrinterName[8];          /* Name des Druckers = Filename               */
 CHAR     Port[8];                 /* Druckerport, z.B. Lpt1                     */
-WORD     VerticalMoveUnit = 0;    /* Kleinstm봥liche vertikale Bewegungseinheit */
-WORD     VerUnitsPerLine  = 0;    /* Vertikale Bewegungseinheit f걊 1 Zeile     */
+WORD     VerticalMoveUnit = 0;    /* Kleinstm철gliche vertikale Bewegungseinheit */
+WORD     VerUnitsPerLine  = 0;    /* Vertikale Bewegungseinheit f체r 1 Zeile     */
 BYTE     VerMoveKind   = 0;       /* Art des Bewegungscodes: MM_HP oder MM_ESC  */
 CHAR     *PreVerCode   = NULL;    /* Code vor vertikaler Bewegung               */
 CHAR     *AftVerCode   = NULL;    /* Code nach vertikaler Bewegung              */
-CHAR     *Reset        = NULL;    /* Zeiger auf String f걊 Druckerreset         */
-CHAR     *BoldOn       = NULL;    /* Zeiger auf String f걊 Fettdruck ein        */
-CHAR     *BoldOff      = NULL;    /* Zeiger auf String f걊 Fettdruck aus        */
-CHAR     *UnderlineOn  = NULL;    /* Zeiger auf String f걊 Unterstreichen an    */
-CHAR     *UnderlineOff = NULL;    /* Zeiger auf String f걊 Unterstreichen aus   */
-CHAR     *ItalicOn     = NULL;    /* Zeiger auf String f걊 Kursiv ein           */
-CHAR     *ItalicOff    = NULL;    /* Zeiger auf String f걊 Kursiv aus           */
-CHAR     *BackSpace    = NULL;    /* Zeiger auf String f걊 "1 Zeichen zur갷k"   */
-CHAR     *NewPage      = NULL;	  /* Zeiger auf String f걊 "neue Seite"         */
+CHAR     *Reset        = NULL;    /* Zeiger auf String f체r Druckerreset         */
+CHAR     *BoldOn       = NULL;    /* Zeiger auf String f체r Fettdruck ein        */
+CHAR     *BoldOff      = NULL;    /* Zeiger auf String f체r Fettdruck aus        */
+CHAR     *UnderlineOn  = NULL;    /* Zeiger auf String f체r Unterstreichen an    */
+CHAR     *UnderlineOff = NULL;    /* Zeiger auf String f체r Unterstreichen aus   */
+CHAR     *ItalicOn     = NULL;    /* Zeiger auf String f체r Kursiv ein           */
+CHAR     *ItalicOff    = NULL;    /* Zeiger auf String f체r Kursiv aus           */
+CHAR     *BackSpace    = NULL;    /* Zeiger auf String f체r "1 Zeichen zur체ck"   */
+CHAR     *NewPage      = NULL;	  /* Zeiger auf String f체r "neue Seite"         */
 
 FILE     *Datei;
 
 WORD     AktFont;
-WORD     Fonts         = 0;       /* Anzahl verf갾barer Fonts                   */
+WORD     Fonts         = 0;       /* Anzahl verf체gbarer Fonts                   */
 
 typedef  struct FontFormat
 {
@@ -76,7 +76,7 @@ VOID HeadLine ( VOID )
 {
      clrscr();
      printf("--------------------------------------------------------------------------------");
-     printf("        M갷k Softwareentwicklung C - Druckertoolbox - Druckerdefinition\n\r");
+     printf("        M체ck Softwareentwicklung C - Druckertoolbox - Druckerdefinition\n\r");
      printf("--------------------------------------------------------------------------------\n\r");
 }
 
@@ -244,7 +244,7 @@ CHAR JaNein( VOID )
 CHAR YesNo( VOID )
 {
      printf("\n\r\n\r");
-     printf("                            Werte 갶ernehmen (J/N)?");
+     printf("                            Werte 체bernehmen (J/N)?");
      return ( JaNein() );
 }
 
@@ -462,11 +462,11 @@ VOID main ( VOID )
      do
      {
 	  HeadLine();
-	  printf("Code f걊 `1 Zeichen zur갷k` (Hex, meist 08): ");
+	  printf("Code f체r `1 Zeichen zur체ck` (Hex, meist 08): ");
 	  EnterHexCode( &BackSpace, 1 );
 
 	  printf("\n\r\n\r");
-	  printf("Code f걊 `neue Seite` (Hex, meist 0C): ");
+	  printf("Code f체r `neue Seite` (Hex, meist 0C): ");
 	  EnterHexCode( &NewPage, 1 );
 
 	  printf("\n\r\n\r");
@@ -524,7 +524,7 @@ VOID main ( VOID )
 	  EnterHexCode( &AftVerCode, 19 );
 
 	  printf("\n\r\n\r");
-	  printf("Z꼑ler갶ergabe auf (H)P-Laser oder (E)SC-Nadel Art: ");
+	  printf("Z채hler체bergabe auf (H)P-Laser oder (E)SC-Nadel Art: ");
 	  if ( VerMoveKind == MM_HP )
 	  {
 	       printf("HP%c%c", DELETE, DELETE);
@@ -583,7 +583,7 @@ VOID main ( VOID )
 	   }
 
 	   HeadLine();
-	   printf("Bitte editieren Sie Font %d von %d verf갾baren Fonts. Font 1 ist Standardfont", AktFont, Fonts );
+	   printf("Bitte editieren Sie Font %d von %d verf체gbaren Fonts. Font 1 ist Standardfont", AktFont, Fonts );
 	   printf("\n\r\n\r\n\r");
 	   printf("Name von Font %d: ", AktFont );
 	   Input( ( FontZeiger + AktFont - 1 ) -> FontName, 9 );

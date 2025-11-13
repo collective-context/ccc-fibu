@@ -1,206 +1,206 @@
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                   II. Bereich: Auftrag... / 1.1
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware Gro¨e Auftragsbearbeitung                                                º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware GroÂ¿e Auftragsbearbeitung                                                â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 !R!FTMD13;FONT50080;SLS.122;EXIT;
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-  Men§leiste ¯Gro¨e Auftragsbearbeitung®:
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  MenÂºleiste Â»GroÂ¿e AuftragsbearbeitungÂ«:
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50080;SLS.122;EXIT;
-  ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿              ÚÄÄÄÄÄÄÄ¿                 ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿                ÚÄÄÄÄÄÄÄÄ¿                 
-  ³ Auftrag... ³              ³ Lager ³                 ³ Auswertung ³                ³ Zusatz ³                 
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿  ÃÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿  ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄ¿  ÃÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-  ³ Angebote/Rechnungen... ³  ³ Lagerbewegungen      ³  ³ Umsatz...                ³  ³ Inventur...             ³
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ³ Protokoll Bewegungen ³  ³ Umsatz Vorjahresvergl... ³  ³ Kartei...               ³
-  ³ Auftragseingangsbuch   ³  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ³ Zuschlagskalkulation... ³
-  ³ Rechnungsausgangsbuch  ³  ³ Druck Mindestbestand ³  ³ Periodenabschlu¨         ³  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ³ Druck Artikelnummer  ³  ³ Jahresabschlu¨           ³  ³ Barverkauf/Kasse...     ³
-  ³ Statistiklauf          ³  ³ Druck Hersteller     ³  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ³ Barcode Etiketten...    ³
-  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  ³ Tagessummen              ³  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-                              ³ Bestellwesen...      ³  ³ Interne Rechnungen       ³  ³ Reparaturverwaltung...  ³
-                              ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ  ³ Gew¥hrleistungen         ³  ³ Paketversand...         ³
-                                                        ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ  ³ Seriennum.verwaltung... ³
-                                                                                      ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-                                                                                      ³ Verwaltung OP's         ³
-                                                                                      ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”              â”Œâ”€â”€â”€â”€â”€â”€â”€â”                 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”                 
+  â”‚ Auftrag... â”‚              â”‚ Lager â”‚                 â”‚ Auswertung â”‚                â”‚ Zusatz â”‚                 
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚ Angebote/Rechnungen... â”‚  â”‚ Lagerbewegungen      â”‚  â”‚ Umsatz...                â”‚  â”‚ Inventur...             â”‚
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”‚ Protokoll Bewegungen â”‚  â”‚ Umsatz Vorjahresvergl... â”‚  â”‚ Kartei...               â”‚
+  â”‚ Auftragseingangsbuch   â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”‚ Zuschlagskalkulation... â”‚
+  â”‚ Rechnungsausgangsbuch  â”‚  â”‚ Druck Mindestbestand â”‚  â”‚ PeriodenabschluÂ¿         â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”‚ Druck Artikelnummer  â”‚  â”‚ JahresabschluÂ¿           â”‚  â”‚ Barverkauf/Kasse...     â”‚
+  â”‚ Statistiklauf          â”‚  â”‚ Druck Hersteller     â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”‚ Barcode Etiketten...    â”‚
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”‚ Tagessummen              â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+                              â”‚ Bestellwesen...      â”‚  â”‚ Interne Rechnungen       â”‚  â”‚ Reparaturverwaltung...  â”‚
+                              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚ GewÃ‘hrleistungen         â”‚  â”‚ Paketversand...         â”‚
+                                                        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚ Seriennum.verwaltung... â”‚
+                                                                                      â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+                                                                                      â”‚ Verwaltung OP's         â”‚
+                                                                                      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 !R!FTMD13;FONT50080;SLS.122;EXIT;
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-  Men§leiste ¯Gro¨e Auftragsbearbeitung®:
-  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  MenÂºleiste Â»GroÂ¿e AuftragsbearbeitungÂ«:
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50080;SLS.122;EXIT;
-  ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿              
-  ³ Stammdaten ³              
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-  ³ ¢ndern Kundenstamm       ³
-  ³ ¢ndern Lieferantenstamm  ³
-  ³ ¢ndern Artikelstamm      ³
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-  ³ Stammdaten/Konstanten... ³
-  ³ Schnell¥nderungen...     ³
-  ³ Preise&Rabatte...        ³
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-  ³ ¢ndern Mitarbeiterstamm  ³
-  ³ Liste Mitarbeiter        ³
-  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-  ³ Vertreterstamm           ³
-  ³ Vertreterliste           ³
-  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”              
+  â”‚ Stammdaten â”‚              
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚ Ã³ndern Kundenstamm       â”‚
+  â”‚ Ã³ndern Lieferantenstamm  â”‚
+  â”‚ Ã³ndern Artikelstamm      â”‚
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+  â”‚ Stammdaten/Konstanten... â”‚
+  â”‚ SchnellÃ‘nderungen...     â”‚
+  â”‚ Preise&Rabatte...        â”‚
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+  â”‚ Ã³ndern Mitarbeiterstamm  â”‚
+  â”‚ Liste Mitarbeiter        â”‚
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+  â”‚ Vertreterstamm           â”‚
+  â”‚ Vertreterliste           â”‚
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 !R!FTMD13;FONT50055;SLS.142;EXIT;
    ---------------------------------------------------
 
 
 !R!FTMD13;FONT50080;SLS.122;EXIT;
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Men§fenster ¯Hauptmen§® / Auftrag... (AUF-001):Auftrag
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÂºfenster Â»HauptmenÂºÂ« / Auftrag... (AUF-001):Auftrag
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50080;SLS.122;EXIT;
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿             
-   ³ Auftrag... ³                ... Bearbeiten und drucken v. Auftr¥gen, Rechnungen u. Gutschriften.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Angebote/Rechnungen...  ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Auftragseingangsbuch    ³
-   ³ Rechnungsausgangsbuch   ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Statistiklauf           ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”             
+   â”‚ Auftrag... â”‚                ... Bearbeiten und drucken v. AuftrÃ‘gen, Rechnungen u. Gutschriften.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Angebote/Rechnungen...  â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Auftragseingangsbuch    â”‚
+   â”‚ Rechnungsausgangsbuch   â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Statistiklauf           â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                   II. Bereich: Auftrag... / 1.2
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;!R!FTMD13;FONT50055;SLS.142;EXIT;
-   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder f§r: Bearbeiten Angebote (AUFM200)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder fÂºr: Bearbeiten Angebote (AUFM200)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   À!R!FTMD13;FONT50255;EXIT;ğğF-TastenğğOptionenğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğF1=Hilfeğğğğ!R!FTMD13;FONT50055;SLS.142;EXIT;Ù
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄBearbeiten Angebote - 1/2Ä¿
-   ³  Vorgang   :@@@@@@@@@@@@                   Nummer    :@@@@@@@@@@@@           ³
-   ³                                                                              ³
-   ³  Empf¥nger : D@@@@@@@@@@                   Vertreter       :@@@@@@@@@@@@@@   ³
-   ³                                            Tour/Gebiet     :@@@@@@@@@@@@@@   ³
-   ³  Name 1    :@@@@@@@@@@@@                   Preisgruppe     :@@@@@@@@@@@@@@   ³
-   ³  Name 2    :@@@@@@@@@@@@                   Rabattgruppe    :@@@(0-8)         ³
-   ³  Strasse   :@@@@@@@@@@@@                   Zahlungskond.   :@@@@@@@          ³
-   ³  PLZ Ort   :@@@@@@@@@@@@                   USt.schl§ssel   :@@@@@@@          ³
-   ³  Kurzbez.  :@@@@@@@@@@@@                   Rechnungskreis  :@@@(0-9)         ³
-   ³                                            Rabattsatz      :@@@@@@@%         ³
-   ³  Datum     :@@@@@@@@@@@@                   Provision       :@@@@@@@%         ³
-   ³  Bearbeiter:@@@@@@@@@@@@                   W¥hrung         :@@@@@@@          ³
-   ³  Versand   :@@@@@@@@@@@@                   Sprachcode      :@@@@@@@          ³
-   ³  Rechnung  : D@@@@@@@@@@                                                     ³
-   ³  Kst.stelle: T@@@@@@@@@@                                                     ³
-   ³                                                                              ³
-   ³  Kopftextbaustein :@@@@@@@@@@@@@@@@@@@@                                      ³
-   ³  Fusstextbaustein :@@@@@@@@@@@@@@@@@@@@                                      ³
-   ³  Platzhalter 1    :@@@@@@@@@@@@@@@@@@@@                                      ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   !R!FTMD13;FONT50255;EXIT;ğ[F1]=Hilfeğğ[Alt]+[F1]=Indexğğ[F2]=Suchenğğ[F10]=Men§ğğ[ESC]=EndeğğğğğğğğğğT02ğ!R!FTMD13;FONT50055;SLS.142;EXIT;
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””!R!FTMD13;FONT50255;EXIT;Â­Â­F-TastenÂ­Â­OptionenÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­F1=HilfeÂ­Â­Â­Â­!R!FTMD13;FONT50055;SLS.142;EXIT;â”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Bearbeiten Angebote - 1/2â”€â”
+   â”‚  Vorgang   :@@@@@@@@@@@@                   Nummer    :@@@@@@@@@@@@           â”‚
+   â”‚                                                                              â”‚
+   â”‚  EmpfÃ‘nger : D@@@@@@@@@@                   Vertreter       :@@@@@@@@@@@@@@   â”‚
+   â”‚                                            Tour/Gebiet     :@@@@@@@@@@@@@@   â”‚
+   â”‚  Name 1    :@@@@@@@@@@@@                   Preisgruppe     :@@@@@@@@@@@@@@   â”‚
+   â”‚  Name 2    :@@@@@@@@@@@@                   Rabattgruppe    :@@@(0-8)         â”‚
+   â”‚  Strasse   :@@@@@@@@@@@@                   Zahlungskond.   :@@@@@@@          â”‚
+   â”‚  PLZ Ort   :@@@@@@@@@@@@                   USt.schlÂºssel   :@@@@@@@          â”‚
+   â”‚  Kurzbez.  :@@@@@@@@@@@@                   Rechnungskreis  :@@@(0-9)         â”‚
+   â”‚                                            Rabattsatz      :@@@@@@@%         â”‚
+   â”‚  Datum     :@@@@@@@@@@@@                   Provision       :@@@@@@@%         â”‚
+   â”‚  Bearbeiter:@@@@@@@@@@@@                   WÃ‘hrung         :@@@@@@@          â”‚
+   â”‚  Versand   :@@@@@@@@@@@@                   Sprachcode      :@@@@@@@          â”‚
+   â”‚  Rechnung  : D@@@@@@@@@@                                                     â”‚
+   â”‚  Kst.stelle: T@@@@@@@@@@                                                     â”‚
+   â”‚                                                                              â”‚
+   â”‚  Kopftextbaustein :@@@@@@@@@@@@@@@@@@@@                                      â”‚
+   â”‚  Fusstextbaustein :@@@@@@@@@@@@@@@@@@@@                                      â”‚
+   â”‚  Platzhalter 1    :@@@@@@@@@@@@@@@@@@@@                                      â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   !R!FTMD13;FONT50255;EXIT;Â­[F1]=HilfeÂ­Â­[Alt]+[F1]=IndexÂ­Â­[F2]=SuchenÂ­Â­[F10]=MenÂºÂ­Â­[ESC]=EndeÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­T02Â­!R!FTMD13;FONT50055;SLS.142;EXIT;
 
 
 
-   Hilfe f§r: ¯Angebotserfassung®
+   Hilfe fÂºr: Â»AngebotserfassungÂ«
    ------------------------------
 
    Angebotserfassung
                                                                        
    Ziel dieses Programms ist die  Verwaltung von Angeboten,            
-   Kostenvoranschl¥gen und Mehrfachvorg¥ngen.                          
+   KostenvoranschlÃ‘gen und MehrfachvorgÃ‘ngen.                          
                                                                        
    KOPFERFASSUNG                                                       
                                                                        
-   Geben Sie auf der 1. Bearbeitungsmaske die Eingaben zum Empf¥nger,  
+   Geben Sie auf der 1. Bearbeitungsmaske die Eingaben zum EmpfÃ‘nger,  
    der Versandart, evtl. Kopf- und Fusstexte oder einer abweichenden   
    Lieferadresse an.                                                   
                                                                        
    POSITIONSERFASSUNG                                                  
                                                                        
-   - Das Einlesen von Textbausteinen kann §ber die F2-Taste in (T)ext  
+   - Das Einlesen von Textbausteinen kann Âºber die F2-Taste in (T)ext  
      und (K)ommentar-Positionen erfolgen.                              
                                                                        
      Der Unterschied zwischen den Positionsarten (T)ext und (K)ommentar
-     besteht darin, da¨ Texte in einen weiteren Vorgang §bernommen     
+     besteht darin, daÂ¿ Texte in einen weiteren Vorgang Âºbernommen     
      werden, Kommentare nicht.                                         
                                                                        
    - Sprung nach Menge je nach Angabe im Artikelstamm                  
                                                                        
    - Alternativpositionen                                              
-     Im Unterschied zur Auftragsbearbeitung gibt es hier die M¦glich-  
+     Im Unterschied zur Auftragsbearbeitung gibt es hier die MÂªglich-  
      keit Alternativpositionen einzugeben, diese werden nicht berechnet
-     und bei ¤bernahme in die Auftragsbearbeitung unterdr§ckt.         
+     und bei Ã±bernahme in die Auftragsbearbeitung unterdrÂºckt.         
                                                                        
                                                                        
-   MEHRFACHVORG¢NGE                                                    
+   MEHRFACHVORGÃ³NGE                                                    
                                                                        
-   Ist das Zusatzpaket "Mehrfachvorg¥nge" installiert, so haben Sie die
-   M¦glichkeit, wiederholbare und neutrale Angebote zu erstellen.      
+   Ist das Zusatzpaket "MehrfachvorgÃ‘nge" installiert, so haben Sie die
+   MÂªglichkeit, wiederholbare und neutrale Angebote zu erstellen.      
                                                                        
    Bei Anwahl dieser Position werden Ihnen die Felder 27, 28 und 29 zu-
-   s¥tzlich eingeblendet.                                              
+   sÃ‘tzlich eingeblendet.                                              
                                                                        
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                   II. Bereich: Auftrag... / 1.3
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;                                                                       
 
-   Hilfe f§r: ¯Vorgang®
+   Hilfe fÂºr: Â»VorgangÂ«
    --------------------
 
-   Geben Sie hier den Vorgang an, den Sie bearbeiten m¦chten.
+   Geben Sie hier den Vorgang an, den Sie bearbeiten mÂªchten.
    
-   Folgende M¦glichkeiten stehen Ihnen zur Verf§gung:
+   Folgende MÂªglichkeiten stehen Ihnen zur VerfÂºgung:
    
      F2  =  Auswahl
             - Angebot
             - Kostenvoranschlag
             - Mehrfachvorgang.
    
-   Angebote u. Kostenvoranschl¥ge k¦nnen §ber F3 in Auftr¥ge und Vor-
-            g¥nge im Programm <Einzelauftr¥ge> §bernommen werden und
-            optional nach ¤bergabe gel¦scht werden.
+   Angebote u. KostenvoranschlÃ‘ge kÂªnnen Âºber F3 in AuftrÃ‘ge und Vor-
+            gÃ‘nge im Programm <EinzelauftrÃ‘ge> Âºbernommen werden und
+            optional nach Ã±bergabe gelÂªscht werden.
    
-   Mehrfachvorgang k¦nnen f§r bestimmte Kunden (Neutrale Vorg¥nge:
-           Nein) oder f§r alle Kunden (Neutraler Vorgang: Ja) angelegt
+   Mehrfachvorgang kÂªnnen fÂºr bestimmte Kunden (Neutrale VorgÃ‘nge:
+           Nein) oder fÂºr alle Kunden (Neutraler Vorgang: Ja) angelegt
             werden.
-            Aus bestehenden Mehrfachvorg¥ngen k¦nnen §ber das
-            Zusatzpaket <Mehrfachvorg¥nge> automatisch Auftr¥ge,
+            Aus bestehenden MehrfachvorgÃ‘ngen kÂªnnen Âºber das
+            Zusatzpaket <MehrfachvorgÃ‘nge> automatisch AuftrÃ‘ge,
             Lieferungen, Rechnungen oder Direktrechnungen generi-
             ert werden.
-            Diese stehen wie manuell erfa¨te Vorg¥nge zur weiteren
-            Verarbeitung zur Verf§gung.
+            Diese stehen wie manuell erfaÂ¿te VorgÃ‘nge zur weiteren
+            Verarbeitung zur VerfÂºgung.
    
    
 
-   Hilfe f§r: ¯Nummer®
+   Hilfe fÂºr: Â»NummerÂ«
    -------------------
 
-   Geben Sie hier die gew¥hlte Vorgangsnummer ein.
+   Geben Sie hier die gewÃ‘hlte Vorgangsnummer ein.
    
-   Folgende Auswahlm¦glichkeiten stehen Ihnen zur Verf§gung.
+   Folgende AuswahlmÂªglichkeiten stehen Ihnen zur VerfÂºgung.
    
      F2        =  Suche nach vorhandenem Angebot
    
-     F10       =  Neue Nummer zu gew¥hltem Vorgang
+     F10       =  Neue Nummer zu gewÃ‘hltem Vorgang
    
    Mit PFEIL OBEN / PFEIL UNTEN / ESC gelangen Sie wieder ins Feld
    "Vorgang".
    
    
 
-   Hilfe f§r: ¯Empf¥nger®
+   Hilfe fÂºr: Â»EmpfÃ‘ngerÂ«
    ----------------------
 
    Geben Sie hier die Nummer des Kunden an. Das Programm stellt Ihnen 5
-   Stellen zur Verf§gung.                                              
+   Stellen zur VerfÂºgung.                                              
                                                                        
-   Folgende Auswahlm¦glichkeiten stehen Ihnen zur Verf§gung:           
+   Folgende AuswahlmÂªglichkeiten stehen Ihnen zur VerfÂºgung:           
                                                                        
       F2        =  Suche nach Kurzbezeichnung                          
                                                                        
@@ -217,10 +217,10 @@
        angelegt werden soll, es wird automatisch in den <Kundenstamm>  
        zur Neuanlage verzweigt.                                        
                                                                        
-     - Wenn Sie eine g§ltige Nummer eingeben (Kunde ist im Kundenstamm 
+     - Wenn Sie eine gÂºltige Nummer eingeben (Kunde ist im Kundenstamm 
        vorhanden) springt das Programm in Feld 18.                     
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                   II. Bereich: Auftrag... / 1.4
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;                                                                       
        In die Felder 02 - 17 werden automatisch die Werte aus dem      
@@ -228,88 +228,88 @@
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Vertreter®
+   Hilfe fÂºr: Â»VertreterÂ«
    ----------------------
 
-   Hier wird der Vertreter gem¥¨ Ihrer Zuordnung im <Kundenstamm>
+   Hier wird der Vertreter gemÃ‘Â¿ Ihrer Zuordnung im <Kundenstamm>
    vorgeschlagen.                                                      
                                                                        
-   Sie k¦nnen eine ¢nderung vornehmen, die jedoch nur f§r diesen       
-   Vorgang g§ltig ist und nicht im Kundenstamm ge¥ndert wird.          
+   Sie kÂªnnen eine Ã³nderung vornehmen, die jedoch nur fÂºr diesen       
+   Vorgang gÂºltig ist und nicht im Kundenstamm geÃ‘ndert wird.          
                                                                        
-   Der Vertreter mu¨ im <Vertreterstamm> angelegt sein.                
+   Der Vertreter muÂ¿ im <Vertreterstamm> angelegt sein.                
                                                                        
-   F§r diesen Vertreter erfolgt die Provisionierung und die Abspeicher-
+   FÂºr diesen Vertreter erfolgt die Provisionierung und die Abspeicher-
    ung der Statistik.                                                  
                                                                        
    In Feld 22 dieser Bildschirmmaske, wird die Kostenstelle, die Sie im
-   <Vertreterstamm> zugeordnet haben, §bernommen.                      
+   <Vertreterstamm> zugeordnet haben, Âºbernommen.                      
                                                                        
    F2  =  Suche nach Vertreternummer.                                  
                                                                        
-   Wird "999" f§r "Sammelvertreter" eingetragen, erfolgt die Ab-       
-   speicherung der Statistik gem¥¨ Ihrer Festlegung im Programm        
+   Wird "999" fÂºr "Sammelvertreter" eingetragen, erfolgt die Ab-       
+   speicherung der Statistik gemÃ‘Â¿ Ihrer Festlegung im Programm        
    <Bearbeiten Mandant> Feld 08 (Seite 2/5).                           
                                                                        
-   Die Vertreternummer dient zus¥tzlich als Selektionskriterium f§r    
-   die Auswertung "Offene Auftr¥ge nach Kunde".                        
+   Die Vertreternummer dient zusÃ‘tzlich als Selektionskriterium fÂºr    
+   die Auswertung "Offene AuftrÃ‘ge nach Kunde".                        
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Tour/Gebiet®
+   Hilfe fÂºr: Â»Tour/GebietÂ«
    ------------------------
 
-   Dieses Feld enth¥lt die Nummer einer Tour oder eines Gebietes, die/
+   Dieses Feld enthÃ‘lt die Nummer einer Tour oder eines Gebietes, die/
    das Sie dem Kunden zugeordnet haben.                                
                                                                        
-   - Sie k¦nnen jedoch ¢nderungen vornehmen, die allerdings nur f§r    
+   - Sie kÂªnnen jedoch Ã³nderungen vornehmen, die allerdings nur fÂºr    
      diesen Vorgang gelten und nicht im Kundenstamm gespeichert werden.
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Name 1®
+   Hilfe fÂºr: Â»Name 1Â«
    -------------------
 
-   Dieses Feld enth¥lt den Namen des Kunden.
+   Dieses Feld enthÃ‘lt den Namen des Kunden.
                                                                    
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
 
-   Hilfe f§r: ¯Preisgruppe®
+   Hilfe fÂºr: Â»PreisgruppeÂ«
    ------------------------
 
-   Dieses Feld enth¥lt die Zuordnung f§r die Preisgruppe (Feld 15
+   Dieses Feld enthÃ‘lt die Zuordnung fÂºr die Preisgruppe (Feld 15
    Kundenstamm). Die Preisgruppe bestimmt den Verkaufspreis (aus dem
    Artikel stamm) der dem Kunden in Rechnung gestellt werden soll.  
                                                                     
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen 
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen 
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.    
                                                                     
-     F2  =  Auswahl aus den m¦glichen Preisgruppen                  
+     F2  =  Auswahl aus den mÂªglichen Preisgruppen                  
                                                                     
                                                                     
 
-   Hilfe f§r: ¯Name 2®
+   Hilfe fÂºr: Â»Name 2Â«
    -------------------
 
-   Dieses Feld enth¥lt einen Zusatz zum Kundennamen.
+   Dieses Feld enthÃ‘lt einen Zusatz zum Kundennamen.
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                   II. Bereich: Auftrag... / 1.5
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;                                                                   
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
 
-   Hilfe f§r: ¯Rabattgruppe®
+   Hilfe fÂºr: Â»RabattgruppeÂ«
    -------------------------
 
-   Dieses Feld enth¥lt die Nummer f§r eine Rabattgruppe.
+   Dieses Feld enthÃ‘lt die Nummer fÂºr eine Rabattgruppe.
                                                                        
-   Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen      
+   Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen      
    Vorgang gelten und nicht im Kundenstamm gespeichert werden.         
                                                                        
    Durch Zuordnung einer Nummer bestimmen Sie, ob dem Kunden ein Rabatt
@@ -317,104 +317,104 @@
    mit Ihrem Eintrag im Artikelstamm Feld 30 - Rabattgruppe) zugeordnet
    werden soll.                                                        
                                                                        
-   Sie haben die M¦glichkeit bis zu 8 Rabattgruppen in Verbindung mit  
+   Sie haben die MÂªglichkeit bis zu 8 Rabattgruppen in Verbindung mit  
    der Preisgruppe (Feld 17 Kundenstamm) zu 8 verschiedenen Artikel-   
    rabattgruppen anzulegen.                                            
-   Ihr Eintrag von "0" bedeutet hier, da¨ dieser Kunde keinen Kunden/  
+   Ihr Eintrag von "0" bedeutet hier, daÂ¿ dieser Kunde keinen Kunden/  
    Artikelgruppenrabatt bekommt.                                       
                                                                        
-   Der Artikel mu¨ im Artikelstamm (Feld 33) als rabattierf¥hig ausge- 
+   Der Artikel muÂ¿ im Artikelstamm (Feld 33) als rabattierfÃ‘hig ausge- 
    wiesen werden.                                                      
                                                                        
-   Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen Vor- 
+   Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen Vor- 
    gang gelten und nicht im Kundenstamm gespeichert werden.            
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Strasse/PLZ Ort®
+   Hilfe fÂºr: Â»Strasse/PLZ OrtÂ«
    ----------------------------
 
-   Diese Felder enthalten die vollst¥ndige Adresse des Kunden.
+   Diese Felder enthalten die vollstÃ‘ndige Adresse des Kunden.
                                                                    
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
 
-   Hilfe f§r: ¯Zahlungskonditionen®
+   Hilfe fÂºr: Â»ZahlungskonditionenÂ«
    --------------------------------
 
-   Dieses Feld enth¥lt einen Zahlencode f§r die Zahlungskonditionen des
+   Dieses Feld enthÃ‘lt einen Zahlencode fÂºr die Zahlungskonditionen des
    Kunden.                                                             
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
-     Dr§cken Sie die F2-Taste. Es ¦ffnet sich ein Fenster mit drei Ein-
+     DrÂºcken Sie die F2-Taste. Es Âªffnet sich ein Fenster mit drei Ein-
      gabefeldern:                                                      
                                                                        
      - ??? Tage Skonto                                                 
      - mit ?,? Prozent                                                 
      - ??? Tage ohne Skonto.                                           
                                                                        
-     1. Tragen Sie dort zun¥chst die Zahl der Tage ein, die der Kunde  
-        Skonto erhalten soll. Das Programm stellt daf§r 3 Stellen      
-        numerisch zur Verf§gung.                                       
+     1. Tragen Sie dort zunÃ‘chst die Zahl der Tage ein, die der Kunde  
+        Skonto erhalten soll. Das Programm stellt dafÂºr 3 Stellen      
+        numerisch zur VerfÂºgung.                                       
                                                                        
      2. Tragen Sie den Skonto-Prozentsatz ein. Das Programm stellt eine
-        Vor- und eine Nachkommastelle zur Verf§gung.                   
+        Vor- und eine Nachkommastelle zur VerfÂºgung.                   
                                                                        
      3. Setzen Sie im letzten Feld das Zahlungsziel "rein netto ohne   
         Abzug" ein (Anzahl Tage). Das Programm stellt maximal 3 Stellen
-        numerisch zur Verf§gung.                                       
+        numerisch zur VerfÂºgung.                                       
                                                                        
-     Sie k¦nnen die Verschl§sselung der Zahlungskonditionen auch direkt
+     Sie kÂªnnen die VerschlÂºsselung der Zahlungskonditionen auch direkt
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                   II. Bereich: Auftrag... / 1.6
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;     im Feld eingeben.                                                 
                                                                        
-     !!! WICHTIG !!!  In diesem Fall m§ssen Sie auch die f§hrenden     
+     !!! WICHTIG !!!  In diesem Fall mÂºssen Sie auch die fÂºhrenden     
                       Nullen mit eingeben.                             
                                                                        
-     Verschl§sselung: 008 25 030                                       
-                       ³  ³   ÀÄÄÄÄ  30 Tage ohne Skonto               
-                       ³  ³                                            
-                       ³  ÀÄÄÄÄÄÄÄÄ  2,5 % Skonto                      
-                       ³                                               
-                       ÀÄÄÄÄÄÄÄÄÄÄÄ  8 Tage Skonto                     
+     VerschlÂºsselung: 008 25 030                                       
+                       â”‚  â”‚   â””â”€â”€â”€â”€  30 Tage ohne Skonto               
+                       â”‚  â”‚                                            
+                       â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€  2,5 % Skonto                      
+                       â”‚                                               
+                       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  8 Tage Skonto                     
                                                                        
                                                                        
 
-   Hilfe f§r: ¯PLZ/Ort®
+   Hilfe fÂºr: Â»PLZ/OrtÂ«
    --------------------
 
-   Diese Felder enthalten die vollst¥ndige Adresse des Kunden.
+   Diese Felder enthalten die vollstÃ‘ndige Adresse des Kunden.
                                                                    
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
                                                                    
 
-   Hilfe f§r: ¯Umsatzsteuerschl§ssel®
+   Hilfe fÂºr: Â»UmsatzsteuerschlÂºsselÂ«
    ----------------------------------
 
-   Dieses Feld enth¥lt einen Schl§ssel f§r die Umsatzsteuerberechnung.
+   Dieses Feld enthÃ‘lt einen SchlÂºssel fÂºr die Umsatzsteuerberechnung.
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
      0  =  keine Umsatzsteuer                                          
            (= keine Berechnung der Umsatzsteuer, i.d.R. bei Auslands-  
            kunden)                                                     
                                                                        
-        !!! WICHTIG !!!  Sie k¦nnen einem Kunden kein Fremdw¥hrungs-   
+        !!! WICHTIG !!!  Sie kÂªnnen einem Kunden kein FremdwÃ‘hrungs-   
                          kennzeichen zuweisen, solange der Umsatz- bzw.
-                         Vorsteuerschl§ssel nicht auf "0" gesetzt ist! 
+                         VorsteuerschlÂºssel nicht auf "0" gesetzt ist! 
                                                                        
      1  =  mit Umsatzsteuer                                            
-           (= gesonderte Berechnung der Umsatzsteuer zus¥tzlich zu den 
+           (= gesonderte Berechnung der Umsatzsteuer zusÃ‘tzlich zu den 
            jeweiligen Artikelpreisen)                                  
                                                                        
      2  =  Bruttopreise                                                
@@ -426,53 +426,53 @@
                             Gegensatz zu den Nettoverkaufspreisen      
                             (excl. Umsatzsteuer) ist.                  
                                                                        
-     F2  =  Auswahl aus den m¦glichen Eingaben.                        
+     F2  =  Auswahl aus den mÂªglichen Eingaben.                        
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Kurzbezeichnung®
+   Hilfe fÂºr: Â»KurzbezeichnungÂ«
    ----------------------------
 
    - Falls dieser Kunde bereits im Kundenstamm angelegt ist, dient
      dieses Feld zu Ihrer Information.                             
-     Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+     Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
 
-   Hilfe f§r: ¯Rechnungskreis®
+   Hilfe fÂºr: Â»RechnungskreisÂ«
    ---------------------------
 
-   Dieses Feld enth¥lt den Rechnungskreis, den Sie im <Kundenstamm>
+   Dieses Feld enthÃ‘lt den Rechnungskreis, den Sie im <Kundenstamm>
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                   II. Bereich: Auftrag... / 1.7
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   festgelegt haben.                                                   
                                                                        
-   -Sie k¦nnen ¢nderungen vornehmen, die nur f§r diesen Vorgang        
+   -Sie kÂªnnen Ã³nderungen vornehmen, die nur fÂºr diesen Vorgang        
     gelten und nicht im Kundenstamm gespeichert werden.                
                                                                        
     Die Eingabe oder Auswahl (mit der F2-Taste) des Rechnungskreises   
     1 - 9 legt die entsprechenden Abrechnungsperioden fest. Bei Eingabe
-    eines Kennzeichens erfolgt sp¥ter eine Auswahlm¦glichkeit bei der  
+    eines Kennzeichens erfolgt spÃ‘ter eine AuswahlmÂªglichkeit bei der  
     <Stapelabrechnung> in den Feldern "Abrechnungskreis" von/bis".     
                                                                        
-    Sie k¦nnen die Vergabe eines Sammelrechnungskennzeichens z.B. nach 
+    Sie kÂªnnen die Vergabe eines Sammelrechnungskennzeichens z.B. nach 
     zeitlichen Kriterien vornehmen.                                    
                                                                        
-    Beispiel: 1 = w¦chentliche Berechnung                              
-              2 = zweiw¦chentliche Berechnung                          
+    Beispiel: 1 = wÂªchentliche Berechnung                              
+              2 = zweiwÂªchentliche Berechnung                          
               3 = monatliche Berechnung                                
               usw.                                                     
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Rabattsatz®
+   Hilfe fÂºr: Â»RabattsatzÂ«
    -----------------------
 
-   Dieses Feld enth¥lt den prozentualen Rabattsatz des Kunden.
+   Dieses Feld enthÃ‘lt den prozentualen Rabattsatz des Kunden.
                                                                      
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen  
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen  
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.     
                                                                      
    Der hier eingetragene Rabatt wird von dem Gesamtrechnungsbetrag in
@@ -480,7 +480,7 @@
                                                                      
                                                                      
 
-   Hilfe f§r: ¯Datum®
+   Hilfe fÂºr: Â»DatumÂ«
    ------------------
 
    Geben Sie hier das Datum ein,
@@ -497,33 +497,33 @@
                                           
                                           
 
-   Hilfe f§r: ¯Provision®
+   Hilfe fÂºr: Â»ProvisionÂ«
    ----------------------
 
-   Dieses Feld enth¥lt den prozentualen Provisionsanteil des
+   Dieses Feld enthÃ‘lt den prozentualen Provisionsanteil des
    Vertreters.                                                         
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
    - Wird hier eine Eingabe gemacht, so finden Ihre Angaben zum Pro-   
      visionssatz der einzelnen Artikel (Feld 06 Artikelstamm), sowie   
      beim jeweiligen Vertreter (Feld 02 Vertreterstamm) beim Gesamt-   
-     rechnungsbetrag keine Ber§cksichtigung.                           
+     rechnungsbetrag keine BerÂºcksichtigung.                           
                                                                        
    - Bei Eingabe des Provisionsatzes 0.00" wird der im Artikel hinter- 
-     legte Provisionssatz als Berechnungsgrundlage genommen, unabh¥ngig
+     legte Provisionssatz als Berechnungsgrundlage genommen, unabhÃ‘ngig
      von dem im Vertreterstamm eingetragenen Provisionssatz.           
                                                                        
-     Tragen Sie die Provision f§r diesen Vertreter in Prozenten ein.   
-     Das Programm stellt 2 Vor- und 2 Nachkommastellen zur Verf§gung.  
+     Tragen Sie die Provision fÂºr diesen Vertreter in Prozenten ein.   
+     Das Programm stellt 2 Vor- und 2 Nachkommastellen zur VerfÂºgung.  
                                                                        
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                   II. Bereich: Auftrag... / 1.8
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;                                                                       
 
-   Hilfe f§r: ¯Mitarbeiter®
+   Hilfe fÂºr: Â»MitarbeiterÂ«
    ------------------------
 
    Geben Sie hier den Mitarbeiter ein,
@@ -533,262 +533,262 @@
                                        
    Nach dem <Statistiklauf> werden im  
    <Mitarbeiterstamm> die dem jeweili- 
-   gen Mitarbeiter zugeordneten Ums¥tze
+   gen Mitarbeiter zugeordneten UmsÃ‘tze
    aktualisiert.                       
                                        
                                        
 
-   Hilfe f§r: ¯Versandart®
+   Hilfe fÂºr: Â»VersandartÂ«
    -----------------------
 
-   In diesem Feld k¦nnen Sie die Versandart angeben.
+   In diesem Feld kÂªnnen Sie die Versandart angeben.
                                                      
      F2  =  Auswahl aus den angelegten Versandarten  
                                                      
    Umfang und Inhalt dieser Auswahlliste richtet sich
-   nach Ihren eigenen Einstellungen beim Anlegen m¦g-
-   licher Versandarten. Dies k¦nnen Sie in der Auf-  
-   tragsbearbeitung in den Grundlagen im Men§punkt   
+   nach Ihren eigenen Einstellungen beim Anlegen mÂªg-
+   licher Versandarten. Dies kÂªnnen Sie in der Auf-  
+   tragsbearbeitung in den Grundlagen im MenÂºpunkt   
    <Versandarten> tun.                               
                                                      
                                                      
 
-   Hilfe f§r: ¯Sprachcode®
+   Hilfe fÂºr: Â»SprachcodeÂ«
    -----------------------
 
-   Dieses Feld enth¥lt die Sprache, in der der Schriftverkehr mit dem
+   Dieses Feld enthÃ‘lt die Sprache, in der der Schriftverkehr mit dem
    Kunden erfolgen soll.                                               
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
-       F2  =  Auswahl aus den m¦glichen Fremdsprachen                  
+       F2  =  Auswahl aus den mÂªglichen Fremdsprachen                  
                                                                        
      Die Auswahlwerte dieses Fensters richten sich nach Ihren Eingaben 
      in der "Finanzbuchhaltung" oder in der "Auftragsbearbeitung" in   
-     den Grundlagen im Programm <Fremdw¥hrung/sprache>.                
+     den Grundlagen im Programm <FremdwÃ‘hrung/sprache>.                
                                                                        
-   Beachten Sie bitte, da¨ bei Nutzung der Option "Fremdsprache" auch  
-   ein entsprechendes Formular f§r die gew¥hlte Sprache existieren mu¨.
+   Beachten Sie bitte, daÂ¿ bei Nutzung der Option "Fremdsprache" auch  
+   ein entsprechendes Formular fÂºr die gewÃ‘hlte Sprache existieren muÂ¿.
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Rechnung®
+   Hilfe fÂºr: Â»RechnungÂ«
    ---------------------
 
-   In diesem Feld k¦nnen Sie einen abweichenden Rechnungsempf¥nger
+   In diesem Feld kÂªnnen Sie einen abweichenden RechnungsempfÃ‘nger
    bestimmen.                                                          
                                                                        
    Haben Sie im Kundenstamm bereits eine Festlegung getroffen, wird    
-   hier die Kundennummer des abweichenden Rechnungsempf¥ngers ange-    
+   hier die Kundennummer des abweichenden RechnungsempfÃ‘ngers ange-    
    zeigt.                                                              
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
-   Bei der Bearbeitung einer Rechnung f§r einen Kunden mit abweichendem
-   Rechnungsempf¥nger werden die Angaben des Kunden, an den die Rech-  
+   Bei der Bearbeitung einer Rechnung fÂºr einen Kunden mit abweichendem
+   RechnungsempfÃ‘nger werden die Angaben des Kunden, an den die Rech-  
    nungsstellung erfolgen soll, im Anschriftenteil angezeigt.          
                                                                        
                                                                        
 
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                   II. Bereich: Auftrag... / 1.9
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-!R!FTMD13;FONT50055;SLS.142;EXIT;   Hilfe f§r: ¯Kostenstelle®
+!R!FTMD13;FONT50055;SLS.142;EXIT;   Hilfe fÂºr: Â»KostenstelleÂ«
    -------------------------
 
    Die Kostenstelle wird automatisch vorgeschlagen, wenn Sie bei dem
    Vertreter im <Vertreterstamm> eine Zuordnung vorgenommen haben.  
                                                                     
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen 
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen 
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.    
                                                                     
      F2  =  Auswahl aus den bestehenden Kostenstellen.              
                                                                     
-   Bei ¤bergabe in die Finanzbuchhaltung, werden die Erl¦se der     
+   Bei Ã±bergabe in die Finanzbuchhaltung, werden die ErlÂªse der     
    Fakturierung auf diese Kostenstelle verbucht.                    
                                                                     
-   Neue Kostenstellen k¦nnen Sie in der "Finanzbuchhaltung" im      
+   Neue Kostenstellen kÂªnnen Sie in der "Finanzbuchhaltung" im      
    Programm <Kostenstellenstamm> erfassen.                          
                                                                     
                                                                     
 
-   Hilfe f§r: ¯Kopftextbaustein®
+   Hilfe fÂºr: Â»KopftextbausteinÂ«
    -----------------------------
 
-   Hier haben Sie die M¦glichkeit einen Kopf-
-   textbaustein f§r diesen Vorgang anzugeben.       
+   Hier haben Sie die MÂªglichkeit einen Kopf-
+   textbaustein fÂºr diesen Vorgang anzugeben.       
                                                     
       F2 =  Suche nach Textbausteinen               
                                                     
    Dieser Textbaustein wird beim Ausdruck im        
    Kopfteil der Formulare gedruckt.                 
                                                     
-   Beachten Sie, da¨ Sie Platzhalter <{1} und {2}>  
-   in Ihre Textbausteine einsetzen k¦nnen. In diese 
+   Beachten Sie, daÂ¿ Sie Platzhalter <{1} und {2}>  
+   in Ihre Textbausteine einsetzen kÂªnnen. In diese 
    Platzhalter wird der Text, den Sie in den Feldern
    25 und 26 eingetragen haben, gedruckt.           
                                                     
                                                     
 
-   Hilfe f§r: ¯Fu¨textbaustein®
+   Hilfe fÂºr: Â»FuÂ¿textbausteinÂ«
    ----------------------------
 
-   Hier haben Sie die M¦glichkeit einen Fu¨-
-   textbaustein f§r diesen Vorgang anzugeben.       
+   Hier haben Sie die MÂªglichkeit einen FuÂ¿-
+   textbaustein fÂºr diesen Vorgang anzugeben.       
                                                     
       F2 =  Suche nach Textbausteinen               
                                                     
    Dieser Textbaustein wird beim Ausdruck im        
-   Fu¨teil der Formulare gedruckt.                  
+   FuÂ¿teil der Formulare gedruckt.                  
                                                     
-   Beachten Sie, da¨ Sie Platzhalter <{1} und {2}>  
-   in Ihre Textbausteine einsetzen k¦nnen. In diese 
+   Beachten Sie, daÂ¿ Sie Platzhalter <{1} und {2}>  
+   in Ihre Textbausteine einsetzen kÂªnnen. In diese 
    Platzhalter wird der Text, den Sie in den Feldern
    25 und 26 eingetragen haben, gedruckt.           
                                                     
                                                     
 
-   Hilfe f§r: ¯Platzhalter 1®
+   Hilfe fÂºr: Â»Platzhalter 1Â«
    --------------------------
 
-   Geben Sie hier den Inhalt f§r die Platz-
+   Geben Sie hier den Inhalt fÂºr die Platz-
    halter {1} und {2} ein.                 
                                            
-   Diese Platzhalter k¦nnen Sie bei der    
+   Diese Platzhalter kÂªnnen Sie bei der    
    Textbausteinanlage angeben.             
                                            
    Es stehen Ihnen jeweils 20 Stellen,     
-   die Sie alpha-numerisch angeben k¦nnen, 
-   f§r Ihre Eingabe zur Verf§gung.         
+   die Sie alpha-numerisch angeben kÂªnnen, 
+   fÂºr Ihre Eingabe zur VerfÂºgung.         
                                            
                                            
 
-   Hilfe f§r: ¯Platzhalter 2®
+   Hilfe fÂºr: Â»Platzhalter 2Â«
    --------------------------
 
-   Geben Sie hier den Inhalt f§r die Platz-
+   Geben Sie hier den Inhalt fÂºr die Platz-
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.10
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   halter {1} und {2} ein.                 
                                            
-   Diese Platzhalter k¦nnen Sie bei der    
+   Diese Platzhalter kÂªnnen Sie bei der    
    Textbausteinanlage angeben.             
                                            
    Es stehen Ihnen jeweils 20 Stellen,     
-   die Sie alpha-numerisch angeben k¦nnen, 
-   f§r Ihre Eingabe zur Verf§gung.         
+   die Sie alpha-numerisch angeben kÂªnnen, 
+   fÂºr Ihre Eingabe zur VerfÂºgung.         
                                            
                                            
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder f§r: Bearbeiten Angebote (AUFM271)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder fÂºr: Bearbeiten Angebote (AUFM271)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   À!R!FTMD13;FONT50255;EXIT;ğğF-TastenğğOptionenğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğF1=Hilfeğğğğ!R!FTMD13;FONT50055;SLS.142;EXIT;Ù
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄBearbeiten Angebote - 2/2Ä¿
-   ³                                                                              ³
-   ³  Vorgang: Angebot         Nummer: @@@@@@@@@                                  ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³  Artikel              Hrst. SS   Menge KW LO Rab.%    E-Preis PE    G-Preis  ³
-   ³ @ @@@@@@@@@@@@@@@     @@@@@ @@   @@@@@ @@ @@ @@@@@@@  @@@@@@@ @@    @@@@@ @  ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                  Gesamtbetrag   ^^^^^^^^^^   ³
-   ³                                                                              ³
-   ³ Bestand                                                                      ³
-   ³    ^^^^^^^^^^^                                                               ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   !R!FTMD13;FONT50255;EXIT;ğ[F1]=Hilfeğğ[Alt]+[F1]=Indexğğ[F2]=Suchenğğ[F10]=Men§ğğ[ESC]=EndeğğğğğğğğğğT02ğ!R!FTMD13;FONT50055;SLS.142;EXIT;
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””!R!FTMD13;FONT50255;EXIT;Â­Â­F-TastenÂ­Â­OptionenÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­F1=HilfeÂ­Â­Â­Â­!R!FTMD13;FONT50055;SLS.142;EXIT;â”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Bearbeiten Angebote - 2/2â”€â”
+   â”‚                                                                              â”‚
+   â”‚  Vorgang: Angebot         Nummer: @@@@@@@@@                                  â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚  Artikel              Hrst. SS   Menge KW LO Rab.%    E-Preis PE    G-Preis  â”‚
+   â”‚ @ @@@@@@@@@@@@@@@     @@@@@ @@   @@@@@ @@ @@ @@@@@@@  @@@@@@@ @@    @@@@@ @  â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                  Gesamtbetrag   ^^^^^^^^^^   â”‚
+   â”‚                                                                              â”‚
+   â”‚ Bestand                                                                      â”‚
+   â”‚    ^^^^^^^^^^^                                                               â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   !R!FTMD13;FONT50255;EXIT;Â­[F1]=HilfeÂ­Â­[Alt]+[F1]=IndexÂ­Â­[F2]=SuchenÂ­Â­[F10]=MenÂºÂ­Â­[ESC]=EndeÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­T02Â­!R!FTMD13;FONT50055;SLS.142;EXIT;
 
 
 
-   Hilfe f§r: ¯Angebotserfassung®
+   Hilfe fÂºr: Â»AngebotserfassungÂ«
    ------------------------------
 
    Angebotserfassung
                                                                        
    Ziel dieses Programms ist die  Verwaltung von Angeboten,            
-   Kostenvoranschl¥gen und Mehrfachvorg¥ngen.                          
+   KostenvoranschlÃ‘gen und MehrfachvorgÃ‘ngen.                          
                                                                        
    KOPFERFASSUNG                                                       
                                                                        
-   Geben Sie auf der 1. Bearbeitungsmaske die Eingaben zum Empf¥nger,  
+   Geben Sie auf der 1. Bearbeitungsmaske die Eingaben zum EmpfÃ‘nger,  
    der Versandart, evtl. Kopf- und Fusstexte oder einer abweichenden   
    Lieferadresse an.                                                   
                                                                        
    POSITIONSERFASSUNG                                                  
                                                                        
-   - Das Einlesen von Textbausteinen kann §ber die F2-Taste in (T)ext  
+   - Das Einlesen von Textbausteinen kann Âºber die F2-Taste in (T)ext  
      und (K)ommentar-Positionen erfolgen.                              
                                                                        
      Der Unterschied zwischen den Positionsarten (T)ext und (K)ommentar
-     besteht darin, da¨ Texte in einen weiteren Vorgang §bernommen     
+     besteht darin, daÂ¿ Texte in einen weiteren Vorgang Âºbernommen     
      werden, Kommentare nicht.                                         
                                                                        
    - Sprung nach Menge je nach Angabe im Artikelstamm                  
                                                                        
    - Alternativpositionen                                              
-     Im Unterschied zur Auftragsbearbeitung gibt es hier die M¦glich-  
+     Im Unterschied zur Auftragsbearbeitung gibt es hier die MÂªglich-  
      keit Alternativpositionen einzugeben, diese werden nicht berechnet
-     und bei ¤bernahme in die Auftragsbearbeitung unterdr§ckt.         
+     und bei Ã±bernahme in die Auftragsbearbeitung unterdrÂºckt.         
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.11
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;                                                                       
                                                                        
-   MEHRFACHVORG¢NGE                                                    
+   MEHRFACHVORGÃ³NGE                                                    
                                                                        
-   Ist das Zusatzpaket "Mehrfachvorg¥nge" installiert, so haben Sie die
-   M¦glichkeit, wiederholbare und neutrale Angebote zu erstellen.      
+   Ist das Zusatzpaket "MehrfachvorgÃ‘nge" installiert, so haben Sie die
+   MÂªglichkeit, wiederholbare und neutrale Angebote zu erstellen.      
                                                                        
    Bei Anwahl dieser Position werden Ihnen die Felder 27, 28 und 29 zu-
-   s¥tzlich eingeblendet.                                              
+   sÃ‘tzlich eingeblendet.                                              
                                                                        
                                                                        
 
-   Hilfe f§r: 
+   Hilfe fÂºr: 
    -----------
 
    WINware 1.Feld = EingabeFeld Wirklich = nur Ausgabefeld
 
-   Hilfe f§r: ¯Positionsart®
+   Hilfe fÂºr: Â»PositionsartÂ«
    -------------------------
 
-   Hier k¦nnen Sie die Positionsart festlegen :
+   Hier kÂªnnen Sie die Positionsart festlegen :
    
         A = Artikel
-        S = St§ckliste
+        S = StÂºckliste
         N = Seriennummer
         L = Langtext
-        T = Text (mit ¤bernahme)
-        K = Text (ohne ¤bernahme)
+        T = Text (mit Ã±bernahme)
+        K = Text (ohne Ã±bernahme)
         Z = Zwischensumme
         F = Fester Seitenumbruch
    
    
 
-   Hilfe f§r: ¯Artikelnummer®
+   Hilfe fÂºr: Â»ArtikelnummerÂ«
    --------------------------
 
-   Bezeichnung 1 + Bezeichnung 2 des Artikels / der St§ckliste
+   Bezeichnung 1 + Bezeichnung 2 des Artikels / der StÂºckliste
    
-   Wenn Sie die Positionsart "A" gew¥hlt haben, geben Sie bitte hier
-   die Artikelnummer ein, oder w¥hlen §ber die F2-Auswahl den
-   gew§nschten Artikel.
+   Wenn Sie die Positionsart "A" gewÃ‘hlt haben, geben Sie bitte hier
+   die Artikelnummer ein, oder wÃ‘hlen Âºber die F2-Auswahl den
+   gewÂºnschten Artikel.
    
-   Es wird die Bezeichnung 1+2 des Artikels oder der St§ckliste
+   Es wird die Bezeichnung 1+2 des Artikels oder der StÂºckliste
    angezeigt, die in den Stammdaten eingetragen ist.
    
    Mit der Taste " PFEIL OBEN" gelangen Sie wieder ins Feld "Positions-
@@ -796,65 +796,65 @@
    
    
 
-   Hilfe f§r: ¯Angebotserfassung®
+   Hilfe fÂºr: Â»AngebotserfassungÂ«
    ------------------------------
 
    Angebotserfassung
                                                                        
    Ziel dieses Programms ist die  Verwaltung von Angeboten,            
-   Kostenvoranschl¥gen und Mehrfachvorg¥ngen.                          
+   KostenvoranschlÃ‘gen und MehrfachvorgÃ‘ngen.                          
                                                                        
    KOPFERFASSUNG                                                       
                                                                        
-   Geben Sie auf der 1. Bearbeitungsmaske die Eingaben zum Empf¥nger,  
+   Geben Sie auf der 1. Bearbeitungsmaske die Eingaben zum EmpfÃ‘nger,  
    der Versandart, evtl. Kopf- und Fusstexte oder einer abweichenden   
    Lieferadresse an.                                                   
                                                                        
    POSITIONSERFASSUNG                                                  
                                                                        
-   - Das Einlesen von Textbausteinen kann §ber die F2-Taste in (T)ext  
+   - Das Einlesen von Textbausteinen kann Âºber die F2-Taste in (T)ext  
      und (K)ommentar-Positionen erfolgen.                              
                                                                        
      Der Unterschied zwischen den Positionsarten (T)ext und (K)ommentar
-     besteht darin, da¨ Texte in einen weiteren Vorgang §bernommen     
+     besteht darin, daÂ¿ Texte in einen weiteren Vorgang Âºbernommen     
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.12
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;     werden, Kommentare nicht.                                         
                                                                        
    - Sprung nach Menge je nach Angabe im Artikelstamm                  
                                                                        
    - Alternativpositionen                                              
-     Im Unterschied zur Auftragsbearbeitung gibt es hier die M¦glich-  
+     Im Unterschied zur Auftragsbearbeitung gibt es hier die MÂªglich-  
      keit Alternativpositionen einzugeben, diese werden nicht berechnet
-     und bei ¤bernahme in die Auftragsbearbeitung unterdr§ckt.         
+     und bei Ã±bernahme in die Auftragsbearbeitung unterdrÂºckt.         
                                                                        
                                                                        
-   MEHRFACHVORG¢NGE                                                    
+   MEHRFACHVORGÃ³NGE                                                    
                                                                        
-   Ist das Zusatzpaket "Mehrfachvorg¥nge" installiert, so haben Sie die
-   M¦glichkeit, wiederholbare und neutrale Angebote zu erstellen.      
+   Ist das Zusatzpaket "MehrfachvorgÃ‘nge" installiert, so haben Sie die
+   MÂªglichkeit, wiederholbare und neutrale Angebote zu erstellen.      
                                                                        
    Bei Anwahl dieser Position werden Ihnen die Felder 27, 28 und 29 zu-
-   s¥tzlich eingeblendet.                                              
+   sÃ‘tzlich eingeblendet.                                              
                                                                        
                                                                        
    
 
-   Hilfe f§r: ¯Menge®
+   Hilfe fÂºr: Â»MengeÂ«
    ------------------
 
-   Geben Sie hier die Menge dieser Artikel/St§cklistenposition ein.
+   Geben Sie hier die Menge dieser Artikel/StÂºcklistenposition ein.
    
    Die Menge dient zur Ermittlung des Gesamtpreises (G-Preis).
    
    Bei Artikel mit Preiserrechnung > 0 Feld 12 im <Artikel-
-   stamm> springt das Programm automatisch in die Fu¨zeile zur
+   stamm> springt das Programm automatisch in die FuÂ¿zeile zur
    Eingabe der Anzahl und der Dimensionen. Das Ergebnis wird dann
-   automatisch in diesem Feld §bernommen.
+   automatisch in diesem Feld Âºbernommen.
    
    Falls Sie im Feld 05 "Mengenformat" <Artikelstamm> Nachkomma-
-   stellen angegeben haben, beachten Sie dabei bitte, da¨ auf die
+   stellen angegeben haben, beachten Sie dabei bitte, daÂ¿ auf die
    letzte Nachkommastelle vom Programm die Rundung erfolgt; dies
    ist besonders bei der Preisberechnung von Artikeln mit Dimensionen
    von Bedeutung.
@@ -862,94 +862,94 @@
    Beispiele:
    
    1) Artikel mit 3 Nachkommastellen im Mengenformat
-      Anz  x  L¥nge  x  Breite  x  H¦he    Menge      E-Preis   G-Preis
+      Anz  x  LÃ‘nge  x  Breite  x  HÂªhe    Menge      E-Preis   G-Preis
        1       0,5       0,5       0,5     0,125      100,00     12,50
    
    2) Artikel mit 2 Nachkommastellen im Mengenformat
-      Anz  x  L¥nge  x  Breite  x  H¦he    Menge      E-Preis   G-Preis
+      Anz  x  LÃ‘nge  x  Breite  x  HÂªhe    Menge      E-Preis   G-Preis
        1       0,5       0,5       0,5     0,13       100,00     13,00
    
-   PFEIL OBEN   =  R§cksprung ins Feld "Positionsart"
-   PFEIL UNTEN  =  Sprung ins Feld "Positionsabschlu¨"
+   PFEIL OBEN   =  RÂºcksprung ins Feld "Positionsart"
+   PFEIL UNTEN  =  Sprung ins Feld "PositionsabschluÂ¿"
    
    
 
-   Hilfe f§r: ¯Lieferwoche®
+   Hilfe fÂºr: Â»LieferwocheÂ«
    ------------------------
 
-   Sie k¦nnen hier, manuell oder mit F2, die Lieferwoche f§r die Sie
-   die Lieferung eingetragen haben, w¥hlen.                            
+   Sie kÂªnnen hier, manuell oder mit F2, die Lieferwoche fÂºr die Sie
+   die Lieferung eingetragen haben, wÃ‘hlen.                            
                                                                        
-   Die F2 Funktion erm¦glicht Ihnen eine Einsicht §ber Auftragsbestand,
-   Bestellmenge und verf§gbare Menge, aus der 52 Wochendisposition des 
+   Die F2 Funktion ermÂªglicht Ihnen eine Einsicht Âºber Auftragsbestand,
+   Bestellmenge und verfÂºgbare Menge, aus der 52 Wochendisposition des 
    Artikels.                                                           
                                                                        
                                                                        
    
 
-   Hilfe f§r: ¯Lagerorte®
+   Hilfe fÂºr: Â»LagerorteÂ«
    ----------------------
 
-   Hier k¦nnen Sie entscheiden, von welchem Lagerort Ihr Artikel
+   Hier kÂªnnen Sie entscheiden, von welchem Lagerort Ihr Artikel
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.13
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   abgebucht werden soll.
    
-   Sie k¦nnen sich §ber die F2 Funktion Ihre 14 Lagerorte anzeigen
+   Sie kÂªnnen sich Âºber die F2 Funktion Ihre 14 Lagerorte anzeigen
    lassen.
    
    
 
-   Hilfe f§r: ¯Rabatt®
+   Hilfe fÂºr: Â»RabattÂ«
    -------------------
 
-   Hier wird evtl. §ber die Preisfindung ermittelter Rabatt-Prozentsatz
+   Hier wird evtl. Âºber die Preisfindung ermittelter Rabatt-Prozentsatz
    automatisch vom Programm vorgeschlagen.
    
-   ¤ber die Option "Preisnachweis" erfolgt die Anzeige wie dieser
+   Ã±ber die Option "Preisnachweis" erfolgt die Anzeige wie dieser
    Preis ermittelt wurde.
    
    
 
-   Hilfe f§r: ¯Angebotserfassung®
+   Hilfe fÂºr: Â»AngebotserfassungÂ«
    ------------------------------
 
    Angebotserfassung
                                                                        
    Ziel dieses Programms ist die  Verwaltung von Angeboten,            
-   Kostenvoranschl¥gen und Mehrfachvorg¥ngen.                          
+   KostenvoranschlÃ‘gen und MehrfachvorgÃ‘ngen.                          
                                                                        
    KOPFERFASSUNG                                                       
                                                                        
-   Geben Sie auf der 1. Bearbeitungsmaske die Eingaben zum Empf¥nger,  
+   Geben Sie auf der 1. Bearbeitungsmaske die Eingaben zum EmpfÃ‘nger,  
    der Versandart, evtl. Kopf- und Fusstexte oder einer abweichenden   
    Lieferadresse an.                                                   
                                                                        
    POSITIONSERFASSUNG                                                  
                                                                        
-   - Das Einlesen von Textbausteinen kann §ber die F2-Taste in (T)ext  
+   - Das Einlesen von Textbausteinen kann Âºber die F2-Taste in (T)ext  
      und (K)ommentar-Positionen erfolgen.                              
                                                                        
      Der Unterschied zwischen den Positionsarten (T)ext und (K)ommentar
-     besteht darin, da¨ Texte in einen weiteren Vorgang §bernommen     
+     besteht darin, daÂ¿ Texte in einen weiteren Vorgang Âºbernommen     
      werden, Kommentare nicht.                                         
                                                                        
    - Sprung nach Menge je nach Angabe im Artikelstamm                  
                                                                        
    - Alternativpositionen                                              
-     Im Unterschied zur Auftragsbearbeitung gibt es hier die M¦glich-  
+     Im Unterschied zur Auftragsbearbeitung gibt es hier die MÂªglich-  
      keit Alternativpositionen einzugeben, diese werden nicht berechnet
-     und bei ¤bernahme in die Auftragsbearbeitung unterdr§ckt.         
+     und bei Ã±bernahme in die Auftragsbearbeitung unterdrÂºckt.         
                                                                        
                                                                        
-   MEHRFACHVORG¢NGE                                                    
+   MEHRFACHVORGÃ³NGE                                                    
                                                                        
-   Ist das Zusatzpaket "Mehrfachvorg¥nge" installiert, so haben Sie die
-   M¦glichkeit, wiederholbare und neutrale Angebote zu erstellen.      
+   Ist das Zusatzpaket "MehrfachvorgÃ‘nge" installiert, so haben Sie die
+   MÂªglichkeit, wiederholbare und neutrale Angebote zu erstellen.      
                                                                        
    Bei Anwahl dieser Position werden Ihnen die Felder 27, 28 und 29 zu-
-   s¥tzlich eingeblendet.                                              
+   sÃ‘tzlich eingeblendet.                                              
                                                                        
                                                                        
    
@@ -957,155 +957,155 @@
 
 
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.14
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;!R!FTMD13;FONT50080;SLS.122;EXIT;
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Men§fenster ¯Hauptmen§® / Auftrag... (AUF-001):Auftrag
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÂºfenster Â»HauptmenÂºÂ« / Auftrag... (AUF-001):Auftrag
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50080;SLS.122;EXIT;
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿             
-   ³ Auftrag... ³                ... Bearbeiten und drucken v. Auftr¥gen, Rechnungen u. Gutschriften.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Angebote/Rechnungen...  ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Auftragseingangsbuch    ³
-   ³ Rechnungsausgangsbuch   ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Statistiklauf           ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”             
+   â”‚ Auftrag... â”‚                ... Bearbeiten und drucken v. AuftrÃ‘gen, Rechnungen u. Gutschriften.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Angebote/Rechnungen...  â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Auftragseingangsbuch    â”‚
+   â”‚ Rechnungsausgangsbuch   â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Statistiklauf           â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder f§r: Bearbeiten Auftr¥ge Rechnungen (AUFM200)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder fÂºr: Bearbeiten AuftrÃ‘ge Rechnungen (AUFM200)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   À!R!FTMD13;FONT50255;EXIT;ğğF-TastenğğOptionenğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğF1=Hilfeğğğğ!R!FTMD13;FONT50055;SLS.142;EXIT;Ù
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄBearbeiten Auftr¥ge Rechnungen - 1/1Ä¿
-   ³  Vorgang   :@@@@@@@@@@@@                   Nummer    :@@@@@@@@@@@@           ³
-   ³                                                                              ³
-   ³  Empf¥nger : D@@@@@@@@@@                   Vertreter       :@@@@@@@@@@@@@@   ³
-   ³                                            Tour/Gebiet     :@@@@@@@@@@@@@@   ³
-   ³  Name 1    :@@@@@@@@@@@@                   Preisgruppe     :@@@@@@@@@@@@@@   ³
-   ³  Name 2    :@@@@@@@@@@@@                   Rabattgruppe    :@@@(0-8)         ³
-   ³  Strasse   :@@@@@@@@@@@@                   Zahlungskond.   :@@@@@@@          ³
-   ³  PLZ Ort   :@@@@@@@@@@@@                   USt.schl§ssel   :@@@@@@@          ³
-   ³  Kurzbez.  :@@@@@@@@@@@@                   Rechnungskreis  :@@@(0-9)         ³
-   ³                                            Rabattsatz      :@@@@@@@%         ³
-   ³  Datum     :@@@@@@@@@@@@                   Provision       :@@@@@@@%         ³
-   ³  Bearbeiter:@@@@@@@@@@@@                   W¥hrung         :@@@@@@@          ³
-   ³  Versand   :@@@@@@@@@@@@                   Sprachcode      :@@@@@@@          ³
-   ³  Rechnung  : D@@@@@@@@@@                                                     ³
-   ³  Kst.stelle: T@@@@@@@@@@                                                     ³
-   ³                                                                              ³
-   ³  Kopftextbaustein :@@@@@@@@@@@@@@@@@@@@                                      ³
-   ³  Fusstextbaustein :@@@@@@@@@@@@@@@@@@@@                                      ³
-   ³  Platzhalter 1    :@@@@@@@@@@@@@@@@@@@@                                      ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   !R!FTMD13;FONT50255;EXIT;ğ[F1]=Hilfeğğ[Alt]+[F1]=Indexğğ[F2]=Suchenğğ[F10]=Men§ğğ[ESC]=EndeğğğğğğğğğğT02ğ!R!FTMD13;FONT50055;SLS.142;EXIT;
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””!R!FTMD13;FONT50255;EXIT;Â­Â­F-TastenÂ­Â­OptionenÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­F1=HilfeÂ­Â­Â­Â­!R!FTMD13;FONT50055;SLS.142;EXIT;â”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Bearbeiten AuftrÃ‘ge Rechnungen - 1/1â”€â”
+   â”‚  Vorgang   :@@@@@@@@@@@@                   Nummer    :@@@@@@@@@@@@           â”‚
+   â”‚                                                                              â”‚
+   â”‚  EmpfÃ‘nger : D@@@@@@@@@@                   Vertreter       :@@@@@@@@@@@@@@   â”‚
+   â”‚                                            Tour/Gebiet     :@@@@@@@@@@@@@@   â”‚
+   â”‚  Name 1    :@@@@@@@@@@@@                   Preisgruppe     :@@@@@@@@@@@@@@   â”‚
+   â”‚  Name 2    :@@@@@@@@@@@@                   Rabattgruppe    :@@@(0-8)         â”‚
+   â”‚  Strasse   :@@@@@@@@@@@@                   Zahlungskond.   :@@@@@@@          â”‚
+   â”‚  PLZ Ort   :@@@@@@@@@@@@                   USt.schlÂºssel   :@@@@@@@          â”‚
+   â”‚  Kurzbez.  :@@@@@@@@@@@@                   Rechnungskreis  :@@@(0-9)         â”‚
+   â”‚                                            Rabattsatz      :@@@@@@@%         â”‚
+   â”‚  Datum     :@@@@@@@@@@@@                   Provision       :@@@@@@@%         â”‚
+   â”‚  Bearbeiter:@@@@@@@@@@@@                   WÃ‘hrung         :@@@@@@@          â”‚
+   â”‚  Versand   :@@@@@@@@@@@@                   Sprachcode      :@@@@@@@          â”‚
+   â”‚  Rechnung  : D@@@@@@@@@@                                                     â”‚
+   â”‚  Kst.stelle: T@@@@@@@@@@                                                     â”‚
+   â”‚                                                                              â”‚
+   â”‚  Kopftextbaustein :@@@@@@@@@@@@@@@@@@@@                                      â”‚
+   â”‚  Fusstextbaustein :@@@@@@@@@@@@@@@@@@@@                                      â”‚
+   â”‚  Platzhalter 1    :@@@@@@@@@@@@@@@@@@@@                                      â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   !R!FTMD13;FONT50255;EXIT;Â­[F1]=HilfeÂ­Â­[Alt]+[F1]=IndexÂ­Â­[F2]=SuchenÂ­Â­[F10]=MenÂºÂ­Â­[ESC]=EndeÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­T02Â­!R!FTMD13;FONT50055;SLS.142;EXIT;
 
 
 
-   Hilfe f§r: ¯Angebotserfassung®
+   Hilfe fÂºr: Â»AngebotserfassungÂ«
    ------------------------------
 
    Angebotserfassung
                                                                        
    Ziel dieses Programms ist die  Verwaltung von Angeboten,            
-   Kostenvoranschl¥gen und Mehrfachvorg¥ngen.                          
+   KostenvoranschlÃ‘gen und MehrfachvorgÃ‘ngen.                          
                                                                        
    KOPFERFASSUNG                                                       
                                                                        
-   Geben Sie auf der 1. Bearbeitungsmaske die Eingaben zum Empf¥nger,  
+   Geben Sie auf der 1. Bearbeitungsmaske die Eingaben zum EmpfÃ‘nger,  
    der Versandart, evtl. Kopf- und Fusstexte oder einer abweichenden   
    Lieferadresse an.                                                   
                                                                        
    POSITIONSERFASSUNG                                                  
                                                                        
-   - Das Einlesen von Textbausteinen kann §ber die F2-Taste in (T)ext  
+   - Das Einlesen von Textbausteinen kann Âºber die F2-Taste in (T)ext  
      und (K)ommentar-Positionen erfolgen.                              
                                                                        
      Der Unterschied zwischen den Positionsarten (T)ext und (K)ommentar
-     besteht darin, da¨ Texte in einen weiteren Vorgang §bernommen     
+     besteht darin, daÂ¿ Texte in einen weiteren Vorgang Âºbernommen     
      werden, Kommentare nicht.                                         
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.15
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;                                                                       
    - Sprung nach Menge je nach Angabe im Artikelstamm                  
                                                                        
    - Alternativpositionen                                              
-     Im Unterschied zur Auftragsbearbeitung gibt es hier die M¦glich-  
+     Im Unterschied zur Auftragsbearbeitung gibt es hier die MÂªglich-  
      keit Alternativpositionen einzugeben, diese werden nicht berechnet
-     und bei ¤bernahme in die Auftragsbearbeitung unterdr§ckt.         
+     und bei Ã±bernahme in die Auftragsbearbeitung unterdrÂºckt.         
                                                                        
                                                                        
-   MEHRFACHVORG¢NGE                                                    
+   MEHRFACHVORGÃ³NGE                                                    
                                                                        
-   Ist das Zusatzpaket "Mehrfachvorg¥nge" installiert, so haben Sie die
-   M¦glichkeit, wiederholbare und neutrale Angebote zu erstellen.      
+   Ist das Zusatzpaket "MehrfachvorgÃ‘nge" installiert, so haben Sie die
+   MÂªglichkeit, wiederholbare und neutrale Angebote zu erstellen.      
                                                                        
    Bei Anwahl dieser Position werden Ihnen die Felder 27, 28 und 29 zu-
-   s¥tzlich eingeblendet.                                              
+   sÃ‘tzlich eingeblendet.                                              
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Vorgang®
+   Hilfe fÂºr: Â»VorgangÂ«
    --------------------
 
-   Geben Sie hier den Vorgang an, den Sie bearbeiten m¦chten.
+   Geben Sie hier den Vorgang an, den Sie bearbeiten mÂªchten.
    
-   Folgende M¦glichkeiten stehen Ihnen zur Verf§gung:
+   Folgende MÂªglichkeiten stehen Ihnen zur VerfÂºgung:
    
      F2  =  Auswahl
             - Angebot
             - Kostenvoranschlag
             - Mehrfachvorgang.
    
-   Angebote u. Kostenvoranschl¥ge k¦nnen §ber F3 in Auftr¥ge und Vor-
-            g¥nge im Programm <Einzelauftr¥ge> §bernommen werden und
-            optional nach ¤bergabe gel¦scht werden.
+   Angebote u. KostenvoranschlÃ‘ge kÂªnnen Âºber F3 in AuftrÃ‘ge und Vor-
+            gÃ‘nge im Programm <EinzelauftrÃ‘ge> Âºbernommen werden und
+            optional nach Ã±bergabe gelÂªscht werden.
    
-   Mehrfachvorgang k¦nnen f§r bestimmte Kunden (Neutrale Vorg¥nge:
-           Nein) oder f§r alle Kunden (Neutraler Vorgang: Ja) angelegt
+   Mehrfachvorgang kÂªnnen fÂºr bestimmte Kunden (Neutrale VorgÃ‘nge:
+           Nein) oder fÂºr alle Kunden (Neutraler Vorgang: Ja) angelegt
             werden.
-            Aus bestehenden Mehrfachvorg¥ngen k¦nnen §ber das
-            Zusatzpaket <Mehrfachvorg¥nge> automatisch Auftr¥ge,
+            Aus bestehenden MehrfachvorgÃ‘ngen kÂªnnen Âºber das
+            Zusatzpaket <MehrfachvorgÃ‘nge> automatisch AuftrÃ‘ge,
             Lieferungen, Rechnungen oder Direktrechnungen generi-
             ert werden.
-            Diese stehen wie manuell erfa¨te Vorg¥nge zur weiteren
-            Verarbeitung zur Verf§gung.
+            Diese stehen wie manuell erfaÂ¿te VorgÃ‘nge zur weiteren
+            Verarbeitung zur VerfÂºgung.
    
    
 
-   Hilfe f§r: ¯Nummer®
+   Hilfe fÂºr: Â»NummerÂ«
    -------------------
 
-   Geben Sie hier die gew¥hlte Vorgangsnummer ein.
+   Geben Sie hier die gewÃ‘hlte Vorgangsnummer ein.
    
-   Folgende Auswahlm¦glichkeiten stehen Ihnen zur Verf§gung.
+   Folgende AuswahlmÂªglichkeiten stehen Ihnen zur VerfÂºgung.
    
      F2        =  Suche nach vorhandenem Angebot
    
-     F10       =  Neue Nummer zu gew¥hltem Vorgang
+     F10       =  Neue Nummer zu gewÃ‘hltem Vorgang
    
    Mit PFEIL OBEN / PFEIL UNTEN / ESC gelangen Sie wieder ins Feld
    "Vorgang".
    
    
 
-   Hilfe f§r: ¯Empf¥nger®
+   Hilfe fÂºr: Â»EmpfÃ‘ngerÂ«
    ----------------------
 
    Geben Sie hier die Nummer des Kunden an. Das Programm stellt Ihnen 5
-   Stellen zur Verf§gung.                                              
+   Stellen zur VerfÂºgung.                                              
                                                                        
-   Folgende Auswahlm¦glichkeiten stehen Ihnen zur Verf§gung:           
+   Folgende AuswahlmÂªglichkeiten stehen Ihnen zur VerfÂºgung:           
                                                                        
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.16
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;      F2        =  Suche nach Kurzbezeichnung                          
                                                                        
@@ -1122,7 +1122,7 @@
        angelegt werden soll, es wird automatisch in den <Kundenstamm>  
        zur Neuanlage verzweigt.                                        
                                                                        
-     - Wenn Sie eine g§ltige Nummer eingeben (Kunde ist im Kundenstamm 
+     - Wenn Sie eine gÂºltige Nummer eingeben (Kunde ist im Kundenstamm 
        vorhanden) springt das Programm in Feld 18.                     
                                                                        
        In die Felder 02 - 17 werden automatisch die Werte aus dem      
@@ -1130,88 +1130,88 @@
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Vertreter®
+   Hilfe fÂºr: Â»VertreterÂ«
    ----------------------
 
-   Hier wird der Vertreter gem¥¨ Ihrer Zuordnung im <Kundenstamm>
+   Hier wird der Vertreter gemÃ‘Â¿ Ihrer Zuordnung im <Kundenstamm>
    vorgeschlagen.                                                      
                                                                        
-   Sie k¦nnen eine ¢nderung vornehmen, die jedoch nur f§r diesen       
-   Vorgang g§ltig ist und nicht im Kundenstamm ge¥ndert wird.          
+   Sie kÂªnnen eine Ã³nderung vornehmen, die jedoch nur fÂºr diesen       
+   Vorgang gÂºltig ist und nicht im Kundenstamm geÃ‘ndert wird.          
                                                                        
-   Der Vertreter mu¨ im <Vertreterstamm> angelegt sein.                
+   Der Vertreter muÂ¿ im <Vertreterstamm> angelegt sein.                
                                                                        
-   F§r diesen Vertreter erfolgt die Provisionierung und die Abspeicher-
+   FÂºr diesen Vertreter erfolgt die Provisionierung und die Abspeicher-
    ung der Statistik.                                                  
                                                                        
    In Feld 22 dieser Bildschirmmaske, wird die Kostenstelle, die Sie im
-   <Vertreterstamm> zugeordnet haben, §bernommen.                      
+   <Vertreterstamm> zugeordnet haben, Âºbernommen.                      
                                                                        
    F2  =  Suche nach Vertreternummer.                                  
                                                                        
-   Wird "999" f§r "Sammelvertreter" eingetragen, erfolgt die Ab-       
-   speicherung der Statistik gem¥¨ Ihrer Festlegung im Programm        
+   Wird "999" fÂºr "Sammelvertreter" eingetragen, erfolgt die Ab-       
+   speicherung der Statistik gemÃ‘Â¿ Ihrer Festlegung im Programm        
    <Bearbeiten Mandant> Feld 08 (Seite 2/5).                           
                                                                        
-   Die Vertreternummer dient zus¥tzlich als Selektionskriterium f§r    
-   die Auswertung "Offene Auftr¥ge nach Kunde".                        
+   Die Vertreternummer dient zusÃ‘tzlich als Selektionskriterium fÂºr    
+   die Auswertung "Offene AuftrÃ‘ge nach Kunde".                        
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Tour/Gebiet®
+   Hilfe fÂºr: Â»Tour/GebietÂ«
    ------------------------
 
-   Dieses Feld enth¥lt die Nummer einer Tour oder eines Gebietes, die/
+   Dieses Feld enthÃ‘lt die Nummer einer Tour oder eines Gebietes, die/
    das Sie dem Kunden zugeordnet haben.                                
                                                                        
-   - Sie k¦nnen jedoch ¢nderungen vornehmen, die allerdings nur f§r    
+   - Sie kÂªnnen jedoch Ã³nderungen vornehmen, die allerdings nur fÂºr    
      diesen Vorgang gelten und nicht im Kundenstamm gespeichert werden.
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Name 1®
+   Hilfe fÂºr: Â»Name 1Â«
    -------------------
 
-   Dieses Feld enth¥lt den Namen des Kunden.
+   Dieses Feld enthÃ‘lt den Namen des Kunden.
                                                                    
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.17
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Hilfe f§r: ¯Preisgruppe®
+   Hilfe fÂºr: Â»PreisgruppeÂ«
    ------------------------
 
-   Dieses Feld enth¥lt die Zuordnung f§r die Preisgruppe (Feld 15
+   Dieses Feld enthÃ‘lt die Zuordnung fÂºr die Preisgruppe (Feld 15
    Kundenstamm). Die Preisgruppe bestimmt den Verkaufspreis (aus dem
    Artikel stamm) der dem Kunden in Rechnung gestellt werden soll.  
                                                                     
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen 
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen 
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.    
                                                                     
-     F2  =  Auswahl aus den m¦glichen Preisgruppen                  
+     F2  =  Auswahl aus den mÂªglichen Preisgruppen                  
                                                                     
                                                                     
 
-   Hilfe f§r: ¯Name 2®
+   Hilfe fÂºr: Â»Name 2Â«
    -------------------
 
-   Dieses Feld enth¥lt einen Zusatz zum Kundennamen.
+   Dieses Feld enthÃ‘lt einen Zusatz zum Kundennamen.
                                                                    
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
 
-   Hilfe f§r: ¯Rabattgruppe®
+   Hilfe fÂºr: Â»RabattgruppeÂ«
    -------------------------
 
-   Dieses Feld enth¥lt die Nummer f§r eine Rabattgruppe.
+   Dieses Feld enthÃ‘lt die Nummer fÂºr eine Rabattgruppe.
                                                                        
-   Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen      
+   Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen      
    Vorgang gelten und nicht im Kundenstamm gespeichert werden.         
                                                                        
    Durch Zuordnung einer Nummer bestimmen Sie, ob dem Kunden ein Rabatt
@@ -1219,104 +1219,104 @@
    mit Ihrem Eintrag im Artikelstamm Feld 30 - Rabattgruppe) zugeordnet
    werden soll.                                                        
                                                                        
-   Sie haben die M¦glichkeit bis zu 8 Rabattgruppen in Verbindung mit  
+   Sie haben die MÂªglichkeit bis zu 8 Rabattgruppen in Verbindung mit  
    der Preisgruppe (Feld 17 Kundenstamm) zu 8 verschiedenen Artikel-   
    rabattgruppen anzulegen.                                            
-   Ihr Eintrag von "0" bedeutet hier, da¨ dieser Kunde keinen Kunden/  
+   Ihr Eintrag von "0" bedeutet hier, daÂ¿ dieser Kunde keinen Kunden/  
    Artikelgruppenrabatt bekommt.                                       
                                                                        
-   Der Artikel mu¨ im Artikelstamm (Feld 33) als rabattierf¥hig ausge- 
+   Der Artikel muÂ¿ im Artikelstamm (Feld 33) als rabattierfÃ‘hig ausge- 
    wiesen werden.                                                      
                                                                        
-   Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen Vor- 
+   Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen Vor- 
    gang gelten und nicht im Kundenstamm gespeichert werden.            
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Strasse/PLZ Ort®
+   Hilfe fÂºr: Â»Strasse/PLZ OrtÂ«
    ----------------------------
 
-   Diese Felder enthalten die vollst¥ndige Adresse des Kunden.
+   Diese Felder enthalten die vollstÃ‘ndige Adresse des Kunden.
                                                                    
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
 
-   Hilfe f§r: ¯Zahlungskonditionen®
+   Hilfe fÂºr: Â»ZahlungskonditionenÂ«
    --------------------------------
 
-   Dieses Feld enth¥lt einen Zahlencode f§r die Zahlungskonditionen des
+   Dieses Feld enthÃ‘lt einen Zahlencode fÂºr die Zahlungskonditionen des
    Kunden.                                                             
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.18
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-!R!FTMD13;FONT50055;SLS.142;EXIT;     Dr§cken Sie die F2-Taste. Es ¦ffnet sich ein Fenster mit drei Ein-
+!R!FTMD13;FONT50055;SLS.142;EXIT;     DrÂºcken Sie die F2-Taste. Es Âªffnet sich ein Fenster mit drei Ein-
      gabefeldern:                                                      
                                                                        
      - ??? Tage Skonto                                                 
      - mit ?,? Prozent                                                 
      - ??? Tage ohne Skonto.                                           
                                                                        
-     1. Tragen Sie dort zun¥chst die Zahl der Tage ein, die der Kunde  
-        Skonto erhalten soll. Das Programm stellt daf§r 3 Stellen      
-        numerisch zur Verf§gung.                                       
+     1. Tragen Sie dort zunÃ‘chst die Zahl der Tage ein, die der Kunde  
+        Skonto erhalten soll. Das Programm stellt dafÂºr 3 Stellen      
+        numerisch zur VerfÂºgung.                                       
                                                                        
      2. Tragen Sie den Skonto-Prozentsatz ein. Das Programm stellt eine
-        Vor- und eine Nachkommastelle zur Verf§gung.                   
+        Vor- und eine Nachkommastelle zur VerfÂºgung.                   
                                                                        
      3. Setzen Sie im letzten Feld das Zahlungsziel "rein netto ohne   
         Abzug" ein (Anzahl Tage). Das Programm stellt maximal 3 Stellen
-        numerisch zur Verf§gung.                                       
+        numerisch zur VerfÂºgung.                                       
                                                                        
-     Sie k¦nnen die Verschl§sselung der Zahlungskonditionen auch direkt
+     Sie kÂªnnen die VerschlÂºsselung der Zahlungskonditionen auch direkt
      im Feld eingeben.                                                 
                                                                        
-     !!! WICHTIG !!!  In diesem Fall m§ssen Sie auch die f§hrenden     
+     !!! WICHTIG !!!  In diesem Fall mÂºssen Sie auch die fÂºhrenden     
                       Nullen mit eingeben.                             
                                                                        
-     Verschl§sselung: 008 25 030                                       
-                       ³  ³   ÀÄÄÄÄ  30 Tage ohne Skonto               
-                       ³  ³                                            
-                       ³  ÀÄÄÄÄÄÄÄÄ  2,5 % Skonto                      
-                       ³                                               
-                       ÀÄÄÄÄÄÄÄÄÄÄÄ  8 Tage Skonto                     
+     VerschlÂºsselung: 008 25 030                                       
+                       â”‚  â”‚   â””â”€â”€â”€â”€  30 Tage ohne Skonto               
+                       â”‚  â”‚                                            
+                       â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€  2,5 % Skonto                      
+                       â”‚                                               
+                       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  8 Tage Skonto                     
                                                                        
                                                                        
 
-   Hilfe f§r: ¯PLZ/Ort®
+   Hilfe fÂºr: Â»PLZ/OrtÂ«
    --------------------
 
-   Diese Felder enthalten die vollst¥ndige Adresse des Kunden.
+   Diese Felder enthalten die vollstÃ‘ndige Adresse des Kunden.
                                                                    
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
                                                                    
 
-   Hilfe f§r: ¯Umsatzsteuerschl§ssel®
+   Hilfe fÂºr: Â»UmsatzsteuerschlÂºsselÂ«
    ----------------------------------
 
-   Dieses Feld enth¥lt einen Schl§ssel f§r die Umsatzsteuerberechnung.
+   Dieses Feld enthÃ‘lt einen SchlÂºssel fÂºr die Umsatzsteuerberechnung.
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
      0  =  keine Umsatzsteuer                                          
            (= keine Berechnung der Umsatzsteuer, i.d.R. bei Auslands-  
            kunden)                                                     
                                                                        
-        !!! WICHTIG !!!  Sie k¦nnen einem Kunden kein Fremdw¥hrungs-   
+        !!! WICHTIG !!!  Sie kÂªnnen einem Kunden kein FremdwÃ‘hrungs-   
                          kennzeichen zuweisen, solange der Umsatz- bzw.
-                         Vorsteuerschl§ssel nicht auf "0" gesetzt ist! 
+                         VorsteuerschlÂºssel nicht auf "0" gesetzt ist! 
                                                                        
      1  =  mit Umsatzsteuer                                            
-           (= gesonderte Berechnung der Umsatzsteuer zus¥tzlich zu den 
+           (= gesonderte Berechnung der Umsatzsteuer zusÃ‘tzlich zu den 
            jeweiligen Artikelpreisen)                                  
                                                                        
      2  =  Bruttopreise                                                
@@ -1327,54 +1327,54 @@
                             Bruttopreis (incl. Umsatzsteuer) im        
                             Gegensatz zu den Nettoverkaufspreisen      
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.19
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;                            (excl. Umsatzsteuer) ist.                  
                                                                        
-     F2  =  Auswahl aus den m¦glichen Eingaben.                        
+     F2  =  Auswahl aus den mÂªglichen Eingaben.                        
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Kurzbezeichnung®
+   Hilfe fÂºr: Â»KurzbezeichnungÂ«
    ----------------------------
 
    - Falls dieser Kunde bereits im Kundenstamm angelegt ist, dient
      dieses Feld zu Ihrer Information.                             
-     Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+     Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
 
-   Hilfe f§r: ¯Rechnungskreis®
+   Hilfe fÂºr: Â»RechnungskreisÂ«
    ---------------------------
 
-   Dieses Feld enth¥lt den Rechnungskreis, den Sie im <Kundenstamm>
+   Dieses Feld enthÃ‘lt den Rechnungskreis, den Sie im <Kundenstamm>
    festgelegt haben.                                                   
                                                                        
-   -Sie k¦nnen ¢nderungen vornehmen, die nur f§r diesen Vorgang        
+   -Sie kÂªnnen Ã³nderungen vornehmen, die nur fÂºr diesen Vorgang        
     gelten und nicht im Kundenstamm gespeichert werden.                
                                                                        
     Die Eingabe oder Auswahl (mit der F2-Taste) des Rechnungskreises   
     1 - 9 legt die entsprechenden Abrechnungsperioden fest. Bei Eingabe
-    eines Kennzeichens erfolgt sp¥ter eine Auswahlm¦glichkeit bei der  
+    eines Kennzeichens erfolgt spÃ‘ter eine AuswahlmÂªglichkeit bei der  
     <Stapelabrechnung> in den Feldern "Abrechnungskreis" von/bis".     
                                                                        
-    Sie k¦nnen die Vergabe eines Sammelrechnungskennzeichens z.B. nach 
+    Sie kÂªnnen die Vergabe eines Sammelrechnungskennzeichens z.B. nach 
     zeitlichen Kriterien vornehmen.                                    
                                                                        
-    Beispiel: 1 = w¦chentliche Berechnung                              
-              2 = zweiw¦chentliche Berechnung                          
+    Beispiel: 1 = wÂªchentliche Berechnung                              
+              2 = zweiwÂªchentliche Berechnung                          
               3 = monatliche Berechnung                                
               usw.                                                     
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Rabattsatz®
+   Hilfe fÂºr: Â»RabattsatzÂ«
    -----------------------
 
-   Dieses Feld enth¥lt den prozentualen Rabattsatz des Kunden.
+   Dieses Feld enthÃ‘lt den prozentualen Rabattsatz des Kunden.
                                                                      
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen  
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen  
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.     
                                                                      
    Der hier eingetragene Rabatt wird von dem Gesamtrechnungsbetrag in
@@ -1382,7 +1382,7 @@
                                                                      
                                                                      
 
-   Hilfe f§r: ¯Datum®
+   Hilfe fÂºr: Â»DatumÂ«
    ------------------
 
    Geben Sie hier das Datum ein,
@@ -1399,33 +1399,33 @@
                                           
                                           
 
-   Hilfe f§r: ¯Provision®
+   Hilfe fÂºr: Â»ProvisionÂ«
    ----------------------
 
-   Dieses Feld enth¥lt den prozentualen Provisionsanteil des
+   Dieses Feld enthÃ‘lt den prozentualen Provisionsanteil des
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.20
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   Vertreters.                                                         
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
    - Wird hier eine Eingabe gemacht, so finden Ihre Angaben zum Pro-   
      visionssatz der einzelnen Artikel (Feld 06 Artikelstamm), sowie   
      beim jeweiligen Vertreter (Feld 02 Vertreterstamm) beim Gesamt-   
-     rechnungsbetrag keine Ber§cksichtigung.                           
+     rechnungsbetrag keine BerÂºcksichtigung.                           
                                                                        
    - Bei Eingabe des Provisionsatzes 0.00" wird der im Artikel hinter- 
-     legte Provisionssatz als Berechnungsgrundlage genommen, unabh¥ngig
+     legte Provisionssatz als Berechnungsgrundlage genommen, unabhÃ‘ngig
      von dem im Vertreterstamm eingetragenen Provisionssatz.           
                                                                        
-     Tragen Sie die Provision f§r diesen Vertreter in Prozenten ein.   
-     Das Programm stellt 2 Vor- und 2 Nachkommastellen zur Verf§gung.  
+     Tragen Sie die Provision fÂºr diesen Vertreter in Prozenten ein.   
+     Das Programm stellt 2 Vor- und 2 Nachkommastellen zur VerfÂºgung.  
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Mitarbeiter®
+   Hilfe fÂºr: Â»MitarbeiterÂ«
    ------------------------
 
    Geben Sie hier den Mitarbeiter ein,
@@ -1435,153 +1435,153 @@
                                        
    Nach dem <Statistiklauf> werden im  
    <Mitarbeiterstamm> die dem jeweili- 
-   gen Mitarbeiter zugeordneten Ums¥tze
+   gen Mitarbeiter zugeordneten UmsÃ‘tze
    aktualisiert.                       
                                        
                                        
 
-   Hilfe f§r: ¯Versandart®
+   Hilfe fÂºr: Â»VersandartÂ«
    -----------------------
 
-   In diesem Feld k¦nnen Sie die Versandart angeben.
+   In diesem Feld kÂªnnen Sie die Versandart angeben.
                                                      
      F2  =  Auswahl aus den angelegten Versandarten  
                                                      
    Umfang und Inhalt dieser Auswahlliste richtet sich
-   nach Ihren eigenen Einstellungen beim Anlegen m¦g-
-   licher Versandarten. Dies k¦nnen Sie in der Auf-  
-   tragsbearbeitung in den Grundlagen im Men§punkt   
+   nach Ihren eigenen Einstellungen beim Anlegen mÂªg-
+   licher Versandarten. Dies kÂªnnen Sie in der Auf-  
+   tragsbearbeitung in den Grundlagen im MenÂºpunkt   
    <Versandarten> tun.                               
                                                      
                                                      
 
-   Hilfe f§r: ¯Sprachcode®
+   Hilfe fÂºr: Â»SprachcodeÂ«
    -----------------------
 
-   Dieses Feld enth¥lt die Sprache, in der der Schriftverkehr mit dem
+   Dieses Feld enthÃ‘lt die Sprache, in der der Schriftverkehr mit dem
    Kunden erfolgen soll.                                               
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
-       F2  =  Auswahl aus den m¦glichen Fremdsprachen                  
+       F2  =  Auswahl aus den mÂªglichen Fremdsprachen                  
                                                                        
      Die Auswahlwerte dieses Fensters richten sich nach Ihren Eingaben 
      in der "Finanzbuchhaltung" oder in der "Auftragsbearbeitung" in   
-     den Grundlagen im Programm <Fremdw¥hrung/sprache>.                
+     den Grundlagen im Programm <FremdwÃ‘hrung/sprache>.                
                                                                        
-   Beachten Sie bitte, da¨ bei Nutzung der Option "Fremdsprache" auch  
-   ein entsprechendes Formular f§r die gew¥hlte Sprache existieren mu¨.
+   Beachten Sie bitte, daÂ¿ bei Nutzung der Option "Fremdsprache" auch  
+   ein entsprechendes Formular fÂºr die gewÃ‘hlte Sprache existieren muÂ¿.
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Rechnung®
+   Hilfe fÂºr: Â»RechnungÂ«
    ---------------------
 
-   In diesem Feld k¦nnen Sie einen abweichenden Rechnungsempf¥nger
+   In diesem Feld kÂªnnen Sie einen abweichenden RechnungsempfÃ‘nger
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.21
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   bestimmen.                                                          
                                                                        
    Haben Sie im Kundenstamm bereits eine Festlegung getroffen, wird    
-   hier die Kundennummer des abweichenden Rechnungsempf¥ngers ange-    
+   hier die Kundennummer des abweichenden RechnungsempfÃ‘ngers ange-    
    zeigt.                                                              
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
-   Bei der Bearbeitung einer Rechnung f§r einen Kunden mit abweichendem
-   Rechnungsempf¥nger werden die Angaben des Kunden, an den die Rech-  
+   Bei der Bearbeitung einer Rechnung fÂºr einen Kunden mit abweichendem
+   RechnungsempfÃ‘nger werden die Angaben des Kunden, an den die Rech-  
    nungsstellung erfolgen soll, im Anschriftenteil angezeigt.          
                                                                        
                                                                        
 
-   Hilfe f§r: ¯Kostenstelle®
+   Hilfe fÂºr: Â»KostenstelleÂ«
    -------------------------
 
    Die Kostenstelle wird automatisch vorgeschlagen, wenn Sie bei dem
    Vertreter im <Vertreterstamm> eine Zuordnung vorgenommen haben.  
                                                                     
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen 
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen 
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.    
                                                                     
      F2  =  Auswahl aus den bestehenden Kostenstellen.              
                                                                     
-   Bei ¤bergabe in die Finanzbuchhaltung, werden die Erl¦se der     
+   Bei Ã±bergabe in die Finanzbuchhaltung, werden die ErlÂªse der     
    Fakturierung auf diese Kostenstelle verbucht.                    
                                                                     
-   Neue Kostenstellen k¦nnen Sie in der "Finanzbuchhaltung" im      
+   Neue Kostenstellen kÂªnnen Sie in der "Finanzbuchhaltung" im      
    Programm <Kostenstellenstamm> erfassen.                          
                                                                     
                                                                     
 
-   Hilfe f§r: ¯Kopftextbaustein®
+   Hilfe fÂºr: Â»KopftextbausteinÂ«
    -----------------------------
 
-   Hier haben Sie die M¦glichkeit einen Kopf-
-   textbaustein f§r diesen Vorgang anzugeben.       
+   Hier haben Sie die MÂªglichkeit einen Kopf-
+   textbaustein fÂºr diesen Vorgang anzugeben.       
                                                     
       F2 =  Suche nach Textbausteinen               
                                                     
    Dieser Textbaustein wird beim Ausdruck im        
    Kopfteil der Formulare gedruckt.                 
                                                     
-   Beachten Sie, da¨ Sie Platzhalter <{1} und {2}>  
-   in Ihre Textbausteine einsetzen k¦nnen. In diese 
+   Beachten Sie, daÂ¿ Sie Platzhalter <{1} und {2}>  
+   in Ihre Textbausteine einsetzen kÂªnnen. In diese 
    Platzhalter wird der Text, den Sie in den Feldern
    25 und 26 eingetragen haben, gedruckt.           
                                                     
                                                     
 
-   Hilfe f§r: ¯Fu¨textbaustein®
+   Hilfe fÂºr: Â»FuÂ¿textbausteinÂ«
    ----------------------------
 
-   Hier haben Sie die M¦glichkeit einen Fu¨-
-   textbaustein f§r diesen Vorgang anzugeben.       
+   Hier haben Sie die MÂªglichkeit einen FuÂ¿-
+   textbaustein fÂºr diesen Vorgang anzugeben.       
                                                     
       F2 =  Suche nach Textbausteinen               
                                                     
    Dieser Textbaustein wird beim Ausdruck im        
-   Fu¨teil der Formulare gedruckt.                  
+   FuÂ¿teil der Formulare gedruckt.                  
                                                     
-   Beachten Sie, da¨ Sie Platzhalter <{1} und {2}>  
-   in Ihre Textbausteine einsetzen k¦nnen. In diese 
+   Beachten Sie, daÂ¿ Sie Platzhalter <{1} und {2}>  
+   in Ihre Textbausteine einsetzen kÂªnnen. In diese 
    Platzhalter wird der Text, den Sie in den Feldern
    25 und 26 eingetragen haben, gedruckt.           
                                                     
                                                     
 
-   Hilfe f§r: ¯Platzhalter 1®
+   Hilfe fÂºr: Â»Platzhalter 1Â«
    --------------------------
 
-   Geben Sie hier den Inhalt f§r die Platz-
+   Geben Sie hier den Inhalt fÂºr die Platz-
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.22
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   halter {1} und {2} ein.                 
                                            
-   Diese Platzhalter k¦nnen Sie bei der    
+   Diese Platzhalter kÂªnnen Sie bei der    
    Textbausteinanlage angeben.             
                                            
    Es stehen Ihnen jeweils 20 Stellen,     
-   die Sie alpha-numerisch angeben k¦nnen, 
-   f§r Ihre Eingabe zur Verf§gung.         
+   die Sie alpha-numerisch angeben kÂªnnen, 
+   fÂºr Ihre Eingabe zur VerfÂºgung.         
                                            
                                            
 
-   Hilfe f§r: ¯Platzhalter 2®
+   Hilfe fÂºr: Â»Platzhalter 2Â«
    --------------------------
 
-   Geben Sie hier den Inhalt f§r die Platz-
+   Geben Sie hier den Inhalt fÂºr die Platz-
    halter {1} und {2} ein.                 
                                            
-   Diese Platzhalter k¦nnen Sie bei der    
+   Diese Platzhalter kÂªnnen Sie bei der    
    Textbausteinanlage angeben.             
                                            
    Es stehen Ihnen jeweils 20 Stellen,     
-   die Sie alpha-numerisch angeben k¦nnen, 
-   f§r Ihre Eingabe zur Verf§gung.         
+   die Sie alpha-numerisch angeben kÂªnnen, 
+   fÂºr Ihre Eingabe zur VerfÂºgung.         
                                            
                                            
    ---------------------------------------------------
@@ -1589,152 +1589,152 @@
 
 !R!FTMD13;FONT50080;SLS.122;EXIT;
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Men§fenster ¯Hauptmen§® / Auftrag... (AUF-001):Auftrag
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÂºfenster Â»HauptmenÂºÂ« / Auftrag... (AUF-001):Auftrag
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50080;SLS.122;EXIT;
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿             
-   ³ Auftrag... ³                ... Bearbeiten und drucken v. Auftr¥gen, Rechnungen u. Gutschriften.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Angebote/Rechnungen...  ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Auftragseingangsbuch    ³
-   ³ Rechnungsausgangsbuch   ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Statistiklauf           ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”             
+   â”‚ Auftrag... â”‚                ... Bearbeiten und drucken v. AuftrÃ‘gen, Rechnungen u. Gutschriften.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Angebote/Rechnungen...  â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Auftragseingangsbuch    â”‚
+   â”‚ Rechnungsausgangsbuch   â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Statistiklauf           â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.23
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;!R!FTMD13;FONT50055;SLS.142;EXIT;
-   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder f§r: Bearbeiten Sammelauftr¥ge (AUFM211)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder fÂºr: Bearbeiten SammelauftrÃ‘ge (AUFM211)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   À!R!FTMD13;FONT50255;EXIT;ğğF-TastenğğOptionenğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğF1=Hilfeğğğğ!R!FTMD13;FONT50055;SLS.142;EXIT;Ù
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄBearbeiten Sammelauftr¥ge - 1/1Ä¿
-   ³                                                                              ³
-   ³  Sammelauftrag f§r:@@@@@@@@@@@@    ^^^^^^^                                   ³
-   ³  Empf¥nger : D@@@@@@@@@@                   Vertreter       :@@@@@@@@@@@@@@   ³
-   ³                                            Tour/Gebiet     :@@@@@@@@@@@@@@   ³
-   ³  Name 1    :@@@@@@@@@@@@                   Preisgruppe     :@@@@@@@@@@@@@@   ³
-   ³  Name 2    :@@@@@@@@@@@@                   Rabattgruppe    :@@@(0-8)         ³
-   ³  Strasse   :@@@@@@@@@@@@                   Zahlungskond.   :@@@@@@@          ³
-   ³  PLZ Ort   :@@@@@@@@@@@@                   USt.schl§ssel   :@@@@@@@          ³
-   ³  Kurzbez.  :@@@@@@@@@@@@                   Rechnungskreis  :@@@(0-9)         ³
-   ³                                            Rabattsatz      :@@@@@@@%         ³
-   ³  Datum     :@@@@@@@@@@@@                   Provision       :@@@@@@@%         ³
-   ³  Bearbeiter:@@@@@@@@@@@@                   W¥hrung         :@@@@@@@          ³
-   ³  Versand   :@@@@@@@@@@@@                   Sprachcode      :@@@@@@@          ³
-   ³  Rechnung  : D@@@@@@@@@@                                                     ³
-   ³  Kst.stelle: T@@@@@@@@@@                                                     ³
-   ³                                                                              ³
-   ³  Kopftextbaustein :@@@@@@@@@@@@@@@@@@@@                                      ³
-   ³  Fusstextbaustein :@@@@@@@@@@@@@@@@@@@@                                      ³
-   ³  Platzhalter 1    :@@@@@@@@@@@@@@@@@@@@                                      ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   !R!FTMD13;FONT50255;EXIT;ğ[F1]=Hilfeğğ[Alt]+[F1]=Indexğğ[F2]=Suchenğğ[F10]=Men§ğğ[ESC]=EndeğğğğğğğğğğT02ğ!R!FTMD13;FONT50055;SLS.142;EXIT;
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””!R!FTMD13;FONT50255;EXIT;Â­Â­F-TastenÂ­Â­OptionenÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­F1=HilfeÂ­Â­Â­Â­!R!FTMD13;FONT50055;SLS.142;EXIT;â”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Bearbeiten SammelauftrÃ‘ge - 1/1â”€â”
+   â”‚                                                                              â”‚
+   â”‚  Sammelauftrag fÂºr:@@@@@@@@@@@@    ^^^^^^^                                   â”‚
+   â”‚  EmpfÃ‘nger : D@@@@@@@@@@                   Vertreter       :@@@@@@@@@@@@@@   â”‚
+   â”‚                                            Tour/Gebiet     :@@@@@@@@@@@@@@   â”‚
+   â”‚  Name 1    :@@@@@@@@@@@@                   Preisgruppe     :@@@@@@@@@@@@@@   â”‚
+   â”‚  Name 2    :@@@@@@@@@@@@                   Rabattgruppe    :@@@(0-8)         â”‚
+   â”‚  Strasse   :@@@@@@@@@@@@                   Zahlungskond.   :@@@@@@@          â”‚
+   â”‚  PLZ Ort   :@@@@@@@@@@@@                   USt.schlÂºssel   :@@@@@@@          â”‚
+   â”‚  Kurzbez.  :@@@@@@@@@@@@                   Rechnungskreis  :@@@(0-9)         â”‚
+   â”‚                                            Rabattsatz      :@@@@@@@%         â”‚
+   â”‚  Datum     :@@@@@@@@@@@@                   Provision       :@@@@@@@%         â”‚
+   â”‚  Bearbeiter:@@@@@@@@@@@@                   WÃ‘hrung         :@@@@@@@          â”‚
+   â”‚  Versand   :@@@@@@@@@@@@                   Sprachcode      :@@@@@@@          â”‚
+   â”‚  Rechnung  : D@@@@@@@@@@                                                     â”‚
+   â”‚  Kst.stelle: T@@@@@@@@@@                                                     â”‚
+   â”‚                                                                              â”‚
+   â”‚  Kopftextbaustein :@@@@@@@@@@@@@@@@@@@@                                      â”‚
+   â”‚  Fusstextbaustein :@@@@@@@@@@@@@@@@@@@@                                      â”‚
+   â”‚  Platzhalter 1    :@@@@@@@@@@@@@@@@@@@@                                      â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   !R!FTMD13;FONT50255;EXIT;Â­[F1]=HilfeÂ­Â­[Alt]+[F1]=IndexÂ­Â­[F2]=SuchenÂ­Â­[F10]=MenÂºÂ­Â­[ESC]=EndeÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­T02Â­!R!FTMD13;FONT50055;SLS.142;EXIT;
 
 
 
-   Hilfe f§r: ¯Einzelauftr¥ge../Sammelaauftr¥ge...®
+   Hilfe fÂºr: Â»EinzelauftrÃ‘ge../SammelaauftrÃ‘ge...Â«
    ------------------------------------------------
 
-   Ziel dieses Programms ist die  Verwaltung von Auftr¥gen und
-   den zugeh¦rigen Vorg¥ngen, die seperat bearbeitet werden k¦nnen:
+   Ziel dieses Programms ist die  Verwaltung von AuftrÃ‘gen und
+   den zugehÂªrigen VorgÃ‘ngen, die seperat bearbeitet werden kÂªnnen:
    
                    Lieferungen
-                   R§cklieferungen
+                   RÂºcklieferungen
                    Rechnungen
                    Stornorechnungen
    
-   Bei Einzelauftr¥gen zus¥tzlich:
+   Bei EinzelauftrÃ‘gen zusÃ‘tzlich:
    
                    Gutschriten
                    Direktrechnungen
                    Proformarechnungen
    
-   Sammelrechnungen werden automatisch §ber die <Stapelabrechnung>
-   erzeugt und k¦nnen wie alle Vorg¥nge bearbeitet werden.
+   Sammelrechnungen werden automatisch Âºber die <Stapelabrechnung>
+   erzeugt und kÂªnnen wie alle VorgÃ‘nge bearbeitet werden.
    
    Jeder Vorgang basiert in der <Auftragsbearbeitung> auf einem
    Auftrag, der automatisch erzeugt wird, wenn z.B. eine Lieferung,
    Rechnung, etc. ohne vorherige Erfassung eines Auftrags bearbeitet
    wird.
    
-   Bei Sammelauftr¥gen wird einmalig eine Sammelauftragsvereinbarung
-   angelegt. Die Vorg¥nge zu Sammelauftr¥gen werden, nach dem Druck
-   der Rechnungen im Rechnungsausgangsbuch, gel¦scht.
+   Bei SammelauftrÃ‘gen wird einmalig eine Sammelauftragsvereinbarung
+   angelegt. Die VorgÃ‘nge zu SammelauftrÃ‘gen werden, nach dem Druck
+   der Rechnungen im Rechnungsausgangsbuch, gelÂªscht.
    
    
-   Zus¥tzlich k¦nnen Sie festlegen, ob zu einem
-   Auftrag bei <Einzelauftr¥gen>:
+   ZusÃ‘tzlich kÂªnnen Sie festlegen, ob zu einem
+   Auftrag bei <EinzelauftrÃ‘gen>:
    
             Werkstattauftrag
             Packliste/Packzettel
             Fertigungszettel
    
-   erstellt und §ber <Stapeldruck> gedruckt werden sollen.
+   erstellt und Âºber <Stapeldruck> gedruckt werden sollen.
    
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.24
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   Die Bestandsaktualisierung (Lagerabbuchung) erfolgt bei der Bear-
    beitung einer Lieferung (Lieferschein oder Direktrechnung).
    
    Die Bestandsaktualisierung erfolgt unmittelbar bei der Mengeneingabe
-   innerhalb eines Liefervorgangs (Lieferschein, R§cklieferschein,
+   innerhalb eines Liefervorgangs (Lieferschein, RÂºcklieferschein,
    Direktrechnung oder Stornorechnung).
-   Dies gilt auch f§r die Artikelbestandteile einer St§ckliste sowie
-   f§r Sreiennummern eines Artikels.
-   Beim Verwerfen oder L¦schen eines Vorgangs werden die bereits er-
-   folgten Bestandsver¥nderungeben r§ckg¥ngig gemacht.
+   Dies gilt auch fÂºr die Artikelbestandteile einer StÂºckliste sowie
+   fÂºr Sreiennummern eines Artikels.
+   Beim Verwerfen oder LÂªschen eines Vorgangs werden die bereits er-
+   folgten BestandsverÃ‘nderungeben rÂºckgÃ‘ngig gemacht.
    
-   Die Berechnung der Lieferungen erfolgt entweder §ber die manuelle
+   Die Berechnung der Lieferungen erfolgt entweder Âºber die manuelle
    Berbeitung einer Rechnung (es werden alle gelieferten und noch nicht
-   berechneten Positionen des Auftrags vorgeschlagen) oder §ber die
-   Stapelabrechnung (f§r alle Lieferungen werden automatisch
+   berechneten Positionen des Auftrags vorgeschlagen) oder Âºber die
+   Stapelabrechnung (fÂºr alle Lieferungen werden automatisch
    (Sammel)Rechnungen erstellt) .
    
    Bei der Direktrechnung erfolgt die Lieferung und Berechnung in
    einem Vorgang.
    
-   Alle Vorg¥nge k¦nnen beliebig editiert werden, solange ein Auftrag
+   Alle VorgÃ‘nge kÂªnnen beliebig editiert werden, solange ein Auftrag
    nicht abgeschlossen ist.
    
    Ein Auftrag wird vom Programm abgeschlossen, wenn alle Positionen
-   geliefert und berechnet wurden. Auftr¥ge und die zugeh¦rigen
-   Vorg¥nge k¦nnen archiviert werden.
-   Vorg¥nge k¦nnen sowohl §bernommen als auch sofort ausgedruckt
+   geliefert und berechnet wurden. AuftrÃ‘ge und die zugehÂªrigen
+   VorgÃ‘nge kÂªnnen archiviert werden.
+   VorgÃ‘nge kÂªnnen sowohl Âºbernommen als auch sofort ausgedruckt
    werden.
    
    POSITIONSERFASSUNG
    
-   Auswahlm¦glichkeiten §ber Funktionstasten
+   AuswahlmÂªglichkeiten Âºber Funktionstasten
    
    F2  =  Suche nach Matchcode
    
-   F3  =  Positionen einf§gen
+   F3  =  Positionen einfÂºgen
    
-   F4  =  Positionen l¦schen
+   F4  =  Positionen lÂªschen
    
-   F5  =  Innerhalb bereits erfa¨ter Positionen eine Positionsart
+   F5  =  Innerhalb bereits erfaÂ¿ter Positionen eine Positionsart
           nach oben bewegen
    
-   F6  =  Innerhalb bereits erfa¨ter Positionen eine Positionsart
+   F6  =  Innerhalb bereits erfaÂ¿ter Positionen eine Positionsart
           nach unten bewegen
    
    
 
-   Hilfe f§r: ¯Sammelauftrag f§r®
+   Hilfe fÂºr: Â»Sammelauftrag fÂºrÂ«
    ------------------------------
 
    Geben Sie hier die Nummer des Kunden an.
    
-   Folgende Auswahlm¦glichkeiten stehen Ihnen zur Verf§gung:
+   Folgende AuswahlmÂªglichkeiten stehen Ihnen zur VerfÂºgung:
    
       F2        =  Suche nach Kurzbezeichnung
    
@@ -1746,22 +1746,22 @@
    
       F3        =  Suche nach Sammelauftragsvereinbarung
    
-   Sie k¦nnen hier eine ¢nderung der Daten vornehmen, die jedoch nur
-   f§r diese Vereinbahrung g§ltig sind und nicht die Kundenstammdaten
-   ver¥ndern.
+   Sie kÂªnnen hier eine Ã³nderung der Daten vornehmen, die jedoch nur
+   fÂºr diese Vereinbahrung gÂºltig sind und nicht die Kundenstammdaten
+   verÃ‘ndern.
    
    
 
-   Hilfe f§r: ¯Empf¥nger®
+   Hilfe fÂºr: Â»EmpfÃ‘ngerÂ«
    ----------------------
 
    Geben Sie hier die Nummer des Kunden an. Das Programm stellt Ihnen 5
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.25
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-!R!FTMD13;FONT50055;SLS.142;EXIT;   Stellen zur Verf§gung.                                              
+!R!FTMD13;FONT50055;SLS.142;EXIT;   Stellen zur VerfÂºgung.                                              
                                                                        
-   Folgende Auswahlm¦glichkeiten stehen Ihnen zur Verf§gung:           
+   Folgende AuswahlmÂªglichkeiten stehen Ihnen zur VerfÂºgung:           
                                                                        
       F2        =  Suche nach Kurzbezeichnung                          
                                                                        
@@ -1778,7 +1778,7 @@
        angelegt werden soll, es wird automatisch in den <Kundenstamm>  
        zur Neuanlage verzweigt.                                        
                                                                        
-     - Wenn Sie eine g§ltige Nummer eingeben (Kunde ist im Kundenstamm 
+     - Wenn Sie eine gÂºltige Nummer eingeben (Kunde ist im Kundenstamm 
        vorhanden) springt das Programm in Feld 18.                     
                                                                        
        In die Felder 02 - 17 werden automatisch die Werte aus dem      
@@ -1787,93 +1787,93 @@
                                                                        
    
 
-   Hilfe f§r: ¯Vertreter®
+   Hilfe fÂºr: Â»VertreterÂ«
    ----------------------
 
-   Hier wird der Vertreter gem¥¨ Ihrer Zuordnung im <Kundenstamm>
+   Hier wird der Vertreter gemÃ‘Â¿ Ihrer Zuordnung im <Kundenstamm>
    vorgeschlagen.                                                      
                                                                        
-   Sie k¦nnen eine ¢nderung vornehmen, die jedoch nur f§r diesen       
-   Vorgang g§ltig ist und nicht im Kundenstamm ge¥ndert wird.          
+   Sie kÂªnnen eine Ã³nderung vornehmen, die jedoch nur fÂºr diesen       
+   Vorgang gÂºltig ist und nicht im Kundenstamm geÃ‘ndert wird.          
                                                                        
-   Der Vertreter mu¨ im <Vertreterstamm> angelegt sein.                
+   Der Vertreter muÂ¿ im <Vertreterstamm> angelegt sein.                
                                                                        
-   F§r diesen Vertreter erfolgt die Provisionierung und die Abspeicher-
+   FÂºr diesen Vertreter erfolgt die Provisionierung und die Abspeicher-
    ung der Statistik.                                                  
                                                                        
    In Feld 22 dieser Bildschirmmaske, wird die Kostenstelle, die Sie im
-   <Vertreterstamm> zugeordnet haben, §bernommen.                      
+   <Vertreterstamm> zugeordnet haben, Âºbernommen.                      
                                                                        
    F2  =  Suche nach Vertreternummer.                                  
                                                                        
-   Wird "999" f§r "Sammelvertreter" eingetragen, erfolgt die Ab-       
-   speicherung der Statistik gem¥¨ Ihrer Festlegung im Programm        
+   Wird "999" fÂºr "Sammelvertreter" eingetragen, erfolgt die Ab-       
+   speicherung der Statistik gemÃ‘Â¿ Ihrer Festlegung im Programm        
    <Bearbeiten Mandant> Feld 08 (Seite 2/5).                           
                                                                        
-   Die Vertreternummer dient zus¥tzlich als Selektionskriterium f§r    
-   die Auswertung "Offene Auftr¥ge nach Kunde".                        
+   Die Vertreternummer dient zusÃ‘tzlich als Selektionskriterium fÂºr    
+   die Auswertung "Offene AuftrÃ‘ge nach Kunde".                        
                                                                        
                                                                        
    
 
-   Hilfe f§r: ¯Tour/Gebiet®
+   Hilfe fÂºr: Â»Tour/GebietÂ«
    ------------------------
 
-   Dieses Feld enth¥lt die Nummer einer Tour oder eines Gebietes, die/
+   Dieses Feld enthÃ‘lt die Nummer einer Tour oder eines Gebietes, die/
    das Sie dem Kunden zugeordnet haben.                                
                                                                        
-   - Sie k¦nnen jedoch ¢nderungen vornehmen, die allerdings nur f§r    
+   - Sie kÂªnnen jedoch Ã³nderungen vornehmen, die allerdings nur fÂºr    
      diesen Vorgang gelten und nicht im Kundenstamm gespeichert werden.
                                                                        
                                                                        
    
 
-   Hilfe f§r: ¯Name 1®
+   Hilfe fÂºr: Â»Name 1Â«
    -------------------
 
-   Dieses Feld enth¥lt den Namen des Kunden.
+   Dieses Feld enthÃ‘lt den Namen des Kunden.
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.26
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;                                                                   
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
    
 
-   Hilfe f§r: ¯Preisgruppe®
+   Hilfe fÂºr: Â»PreisgruppeÂ«
    ------------------------
 
-   Dieses Feld enth¥lt die Zuordnung f§r die Preisgruppe (Feld 15
+   Dieses Feld enthÃ‘lt die Zuordnung fÂºr die Preisgruppe (Feld 15
    Kundenstamm). Die Preisgruppe bestimmt den Verkaufspreis (aus dem
    Artikel stamm) der dem Kunden in Rechnung gestellt werden soll.  
                                                                     
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen 
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen 
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.    
                                                                     
-     F2  =  Auswahl aus den m¦glichen Preisgruppen                  
+     F2  =  Auswahl aus den mÂªglichen Preisgruppen                  
                                                                     
                                                                     
    
 
-   Hilfe f§r: ¯Name 2®
+   Hilfe fÂºr: Â»Name 2Â«
    -------------------
 
-   Dieses Feld enth¥lt einen Zusatz zum Kundennamen.
+   Dieses Feld enthÃ‘lt einen Zusatz zum Kundennamen.
                                                                    
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
    
 
-   Hilfe f§r: ¯Rabattgruppe®
+   Hilfe fÂºr: Â»RabattgruppeÂ«
    -------------------------
 
-   Dieses Feld enth¥lt die Nummer f§r eine Rabattgruppe.
+   Dieses Feld enthÃ‘lt die Nummer fÂºr eine Rabattgruppe.
                                                                        
-   Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen      
+   Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen      
    Vorgang gelten und nicht im Kundenstamm gespeichert werden.         
                                                                        
    Durch Zuordnung einer Nummer bestimmen Sie, ob dem Kunden ein Rabatt
@@ -1881,111 +1881,111 @@
    mit Ihrem Eintrag im Artikelstamm Feld 30 - Rabattgruppe) zugeordnet
    werden soll.                                                        
                                                                        
-   Sie haben die M¦glichkeit bis zu 8 Rabattgruppen in Verbindung mit  
+   Sie haben die MÂªglichkeit bis zu 8 Rabattgruppen in Verbindung mit  
    der Preisgruppe (Feld 17 Kundenstamm) zu 8 verschiedenen Artikel-   
    rabattgruppen anzulegen.                                            
-   Ihr Eintrag von "0" bedeutet hier, da¨ dieser Kunde keinen Kunden/  
+   Ihr Eintrag von "0" bedeutet hier, daÂ¿ dieser Kunde keinen Kunden/  
    Artikelgruppenrabatt bekommt.                                       
                                                                        
-   Der Artikel mu¨ im Artikelstamm (Feld 33) als rabattierf¥hig ausge- 
+   Der Artikel muÂ¿ im Artikelstamm (Feld 33) als rabattierfÃ‘hig ausge- 
    wiesen werden.                                                      
                                                                        
-   Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen Vor- 
+   Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen Vor- 
    gang gelten und nicht im Kundenstamm gespeichert werden.            
                                                                        
                                                                        
    
 
-   Hilfe f§r: ¯Stra¨e®
+   Hilfe fÂºr: Â»StraÂ¿eÂ«
    -------------------
 
-   Diese Felder enthalten die vollst¥ndige Adresse des Kunden.
+   Diese Felder enthalten die vollstÃ‘ndige Adresse des Kunden.
                                                                    
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
    
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.27
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Hilfe f§r: ¯Zahlungskonditionen®
+   Hilfe fÂºr: Â»ZahlungskonditionenÂ«
    --------------------------------
 
-   Dieses Feld enth¥lt einen Zahlencode f§r die Zahlungskonditionen des
+   Dieses Feld enthÃ‘lt einen Zahlencode fÂºr die Zahlungskonditionen des
    Kunden.                                                             
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
-     Dr§cken Sie die F2-Taste. Es ¦ffnet sich ein Fenster mit drei Ein-
+     DrÂºcken Sie die F2-Taste. Es Âªffnet sich ein Fenster mit drei Ein-
      gabefeldern:                                                      
                                                                        
      - ??? Tage Skonto                                                 
      - mit ?,? Prozent                                                 
      - ??? Tage ohne Skonto.                                           
                                                                        
-     1. Tragen Sie dort zun¥chst die Zahl der Tage ein, die der Kunde  
-        Skonto erhalten soll. Das Programm stellt daf§r 3 Stellen      
-        numerisch zur Verf§gung.                                       
+     1. Tragen Sie dort zunÃ‘chst die Zahl der Tage ein, die der Kunde  
+        Skonto erhalten soll. Das Programm stellt dafÂºr 3 Stellen      
+        numerisch zur VerfÂºgung.                                       
                                                                        
      2. Tragen Sie den Skonto-Prozentsatz ein. Das Programm stellt eine
-        Vor- und eine Nachkommastelle zur Verf§gung.                   
+        Vor- und eine Nachkommastelle zur VerfÂºgung.                   
                                                                        
      3. Setzen Sie im letzten Feld das Zahlungsziel "rein netto ohne   
         Abzug" ein (Anzahl Tage). Das Programm stellt maximal 3 Stellen
-        numerisch zur Verf§gung.                                       
+        numerisch zur VerfÂºgung.                                       
                                                                        
-     Sie k¦nnen die Verschl§sselung der Zahlungskonditionen auch direkt
+     Sie kÂªnnen die VerschlÂºsselung der Zahlungskonditionen auch direkt
      im Feld eingeben.                                                 
                                                                        
-     !!! WICHTIG !!!  In diesem Fall m§ssen Sie auch die f§hrenden     
+     !!! WICHTIG !!!  In diesem Fall mÂºssen Sie auch die fÂºhrenden     
                       Nullen mit eingeben.                             
                                                                        
-     Verschl§sselung: 008 25 030                                       
-                       ³  ³   ÀÄÄÄÄ  30 Tage ohne Skonto               
-                       ³  ³                                            
-                       ³  ÀÄÄÄÄÄÄÄÄ  2,5 % Skonto                      
-                       ³                                               
-                       ÀÄÄÄÄÄÄÄÄÄÄÄ  8 Tage Skonto                     
+     VerschlÂºsselung: 008 25 030                                       
+                       â”‚  â”‚   â””â”€â”€â”€â”€  30 Tage ohne Skonto               
+                       â”‚  â”‚                                            
+                       â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€  2,5 % Skonto                      
+                       â”‚                                               
+                       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  8 Tage Skonto                     
                                                                        
                                                                        
    
 
-   Hilfe f§r: ¯PLZ/Ort®
+   Hilfe fÂºr: Â»PLZ/OrtÂ«
    --------------------
 
-   Diese Felder enthalten die vollst¥ndige Adresse des Kunden.
+   Diese Felder enthalten die vollstÃ‘ndige Adresse des Kunden.
                                                                    
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
                                                                    
    
 
-   Hilfe f§r: ¯Umsatzsteuerschl§ssel®
+   Hilfe fÂºr: Â»UmsatzsteuerschlÂºsselÂ«
    ----------------------------------
 
-   Dieses Feld enth¥lt einen Schl§ssel f§r die Umsatzsteuerberechnung.
+   Dieses Feld enthÃ‘lt einen SchlÂºssel fÂºr die Umsatzsteuerberechnung.
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
      0  =  keine Umsatzsteuer                                          
            (= keine Berechnung der Umsatzsteuer, i.d.R. bei Auslands-  
            kunden)                                                     
                                                                        
-        !!! WICHTIG !!!  Sie k¦nnen einem Kunden kein Fremdw¥hrungs-   
+        !!! WICHTIG !!!  Sie kÂªnnen einem Kunden kein FremdwÃ‘hrungs-   
                          kennzeichen zuweisen, solange der Umsatz- bzw.
-                         Vorsteuerschl§ssel nicht auf "0" gesetzt ist! 
+                         VorsteuerschlÂºssel nicht auf "0" gesetzt ist! 
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.28
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;                                                                       
      1  =  mit Umsatzsteuer                                            
-           (= gesonderte Berechnung der Umsatzsteuer zus¥tzlich zu den 
+           (= gesonderte Berechnung der Umsatzsteuer zusÃ‘tzlich zu den 
            jeweiligen Artikelpreisen)                                  
                                                                        
      2  =  Bruttopreise                                                
@@ -1997,53 +1997,53 @@
                             Gegensatz zu den Nettoverkaufspreisen      
                             (excl. Umsatzsteuer) ist.                  
                                                                        
-     F2  =  Auswahl aus den m¦glichen Eingaben.                        
+     F2  =  Auswahl aus den mÂªglichen Eingaben.                        
                                                                        
                                                                        
    
 
-   Hilfe f§r: ¯Kurzbezeichnung®
+   Hilfe fÂºr: Â»KurzbezeichnungÂ«
    ----------------------------
 
    - Falls dieser Kunde bereits im Kundenstamm angelegt ist, dient
      dieses Feld zu Ihrer Information.                             
-     Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen
+     Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.   
                                                                    
                                                                    
    
 
-   Hilfe f§r: ¯Rechnungskreis®
+   Hilfe fÂºr: Â»RechnungskreisÂ«
    ---------------------------
 
-   Dieses Feld enth¥lt den Rechnungskreis, den Sie im <Kundenstamm>
+   Dieses Feld enthÃ‘lt den Rechnungskreis, den Sie im <Kundenstamm>
    festgelegt haben.                                                   
                                                                        
-   -Sie k¦nnen ¢nderungen vornehmen, die nur f§r diesen Vorgang        
+   -Sie kÂªnnen Ã³nderungen vornehmen, die nur fÂºr diesen Vorgang        
     gelten und nicht im Kundenstamm gespeichert werden.                
                                                                        
     Die Eingabe oder Auswahl (mit der F2-Taste) des Rechnungskreises   
     1 - 9 legt die entsprechenden Abrechnungsperioden fest. Bei Eingabe
-    eines Kennzeichens erfolgt sp¥ter eine Auswahlm¦glichkeit bei der  
+    eines Kennzeichens erfolgt spÃ‘ter eine AuswahlmÂªglichkeit bei der  
     <Stapelabrechnung> in den Feldern "Abrechnungskreis" von/bis".     
                                                                        
-    Sie k¦nnen die Vergabe eines Sammelrechnungskennzeichens z.B. nach 
+    Sie kÂªnnen die Vergabe eines Sammelrechnungskennzeichens z.B. nach 
     zeitlichen Kriterien vornehmen.                                    
                                                                        
-    Beispiel: 1 = w¦chentliche Berechnung                              
-              2 = zweiw¦chentliche Berechnung                          
+    Beispiel: 1 = wÂªchentliche Berechnung                              
+              2 = zweiwÂªchentliche Berechnung                          
               3 = monatliche Berechnung                                
               usw.                                                     
                                                                        
                                                                        
    
 
-   Hilfe f§r: ¯Rabatsatz®
+   Hilfe fÂºr: Â»RabatsatzÂ«
    ----------------------
 
-   Dieses Feld enth¥lt den prozentualen Rabattsatz des Kunden.
+   Dieses Feld enthÃ‘lt den prozentualen Rabattsatz des Kunden.
                                                                      
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen  
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen  
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.     
                                                                      
    Der hier eingetragene Rabatt wird von dem Gesamtrechnungsbetrag in
@@ -2052,12 +2052,12 @@
                                                                      
    
 
-   Hilfe f§r: ¯Datum®
+   Hilfe fÂºr: Â»DatumÂ«
    ------------------
 
    Geben Sie hier das Datum ein,
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.29
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   an dem der Vorgang erfasst wurde.      
                                           
@@ -2073,31 +2073,31 @@
                                           
    
 
-   Hilfe f§r: ¯Provision®
+   Hilfe fÂºr: Â»ProvisionÂ«
    ----------------------
 
-   Dieses Feld enth¥lt den prozentualen Provisionsanteil des
+   Dieses Feld enthÃ‘lt den prozentualen Provisionsanteil des
    Vertreters.                                                         
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
    - Wird hier eine Eingabe gemacht, so finden Ihre Angaben zum Pro-   
      visionssatz der einzelnen Artikel (Feld 06 Artikelstamm), sowie   
      beim jeweiligen Vertreter (Feld 02 Vertreterstamm) beim Gesamt-   
-     rechnungsbetrag keine Ber§cksichtigung.                           
+     rechnungsbetrag keine BerÂºcksichtigung.                           
                                                                        
    - Bei Eingabe des Provisionsatzes 0.00" wird der im Artikel hinter- 
-     legte Provisionssatz als Berechnungsgrundlage genommen, unabh¥ngig
+     legte Provisionssatz als Berechnungsgrundlage genommen, unabhÃ‘ngig
      von dem im Vertreterstamm eingetragenen Provisionssatz.           
                                                                        
-     Tragen Sie die Provision f§r diesen Vertreter in Prozenten ein.   
-     Das Programm stellt 2 Vor- und 2 Nachkommastellen zur Verf§gung.  
+     Tragen Sie die Provision fÂºr diesen Vertreter in Prozenten ein.   
+     Das Programm stellt 2 Vor- und 2 Nachkommastellen zur VerfÂºgung.  
                                                                        
                                                                        
    
 
-   Hilfe f§r: ¯Bearbeiter®
+   Hilfe fÂºr: Â»BearbeiterÂ«
    -----------------------
 
    Geben Sie hier den Mitarbeiter ein,
@@ -2107,123 +2107,123 @@
                                        
    Nach dem <Statistiklauf> werden im  
    <Mitarbeiterstamm> die dem jeweili- 
-   gen Mitarbeiter zugeordneten Ums¥tze
+   gen Mitarbeiter zugeordneten UmsÃ‘tze
    aktualisiert.                       
                                        
                                        
    
 
-   Hilfe f§r: ¯Versand®
+   Hilfe fÂºr: Â»VersandÂ«
    --------------------
 
-   In diesem Feld k¦nnen Sie die Versandart angeben.
+   In diesem Feld kÂªnnen Sie die Versandart angeben.
                                                      
      F2  =  Auswahl aus den angelegten Versandarten  
                                                      
    Umfang und Inhalt dieser Auswahlliste richtet sich
-   nach Ihren eigenen Einstellungen beim Anlegen m¦g-
-   licher Versandarten. Dies k¦nnen Sie in der Auf-  
-   tragsbearbeitung in den Grundlagen im Men§punkt   
+   nach Ihren eigenen Einstellungen beim Anlegen mÂªg-
+   licher Versandarten. Dies kÂªnnen Sie in der Auf-  
+   tragsbearbeitung in den Grundlagen im MenÂºpunkt   
    <Versandarten> tun.                               
                                                      
                                                      
    
 
-   Hilfe f§r: ¯Sprachcode®
+   Hilfe fÂºr: Â»SprachcodeÂ«
    -----------------------
 
-   Dieses Feld enth¥lt die Sprache, in der der Schriftverkehr mit dem
+   Dieses Feld enthÃ‘lt die Sprache, in der der Schriftverkehr mit dem
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.30
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   Kunden erfolgen soll.                                               
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
-       F2  =  Auswahl aus den m¦glichen Fremdsprachen                  
+       F2  =  Auswahl aus den mÂªglichen Fremdsprachen                  
                                                                        
      Die Auswahlwerte dieses Fensters richten sich nach Ihren Eingaben 
      in der "Finanzbuchhaltung" oder in der "Auftragsbearbeitung" in   
-     den Grundlagen im Programm <Fremdw¥hrung/sprache>.                
+     den Grundlagen im Programm <FremdwÃ‘hrung/sprache>.                
                                                                        
-   Beachten Sie bitte, da¨ bei Nutzung der Option "Fremdsprache" auch  
-   ein entsprechendes Formular f§r die gew¥hlte Sprache existieren mu¨.
+   Beachten Sie bitte, daÂ¿ bei Nutzung der Option "Fremdsprache" auch  
+   ein entsprechendes Formular fÂºr die gewÃ‘hlte Sprache existieren muÂ¿.
                                                                        
                                                                        
    
 
-   Hilfe f§r: ¯Rechnung®
+   Hilfe fÂºr: Â»RechnungÂ«
    ---------------------
 
-   In diesem Feld k¦nnen Sie einen abweichenden Rechnungsempf¥nger
+   In diesem Feld kÂªnnen Sie einen abweichenden RechnungsempfÃ‘nger
    bestimmen.
    
    Haben Sie im Kundenstamm bereits eine Festlegung getroffen, wird    
-   hier die Kundennummer des abweichenden Rechnungsempf¥ngers ange-    
+   hier die Kundennummer des abweichenden RechnungsempfÃ‘ngers ange-    
    zeigt.                                                              
                                                                        
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen    
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen    
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.       
                                                                        
-   Bei der Bearbeitung einer Rechnung f§r einen Kunden mit abweichendem
-   Rechnungsempf¥nger werden die Angaben des Kunden, an den die Rech-  
+   Bei der Bearbeitung einer Rechnung fÂºr einen Kunden mit abweichendem
+   RechnungsempfÃ‘nger werden die Angaben des Kunden, an den die Rech-  
    nungsstellung erfolgen soll, im Anschriftenteil angezeigt.          
                                                                        
                                                                        
    
 
-   Hilfe f§r: ¯Kostenstelle®
+   Hilfe fÂºr: Â»KostenstelleÂ«
    -------------------------
 
    Die Kostenstelle wird automatisch vorgeschlagen, wenn Sie bei dem
    Vertreter im <Vertreterstamm> eine Zuordnung vorgenommen haben.  
                                                                     
-   - Sie k¦nnen ¢nderungen vornehmen, die allerdings nur f§r diesen 
+   - Sie kÂªnnen Ã³nderungen vornehmen, die allerdings nur fÂºr diesen 
      Vorgang gelten und nicht im Kundenstamm gespeichert werden.    
                                                                     
      F2  =  Auswahl aus den bestehenden Kostenstellen.              
                                                                     
-   Bei ¤bergabe in die Finanzbuchhaltung, werden die Erl¦se der     
+   Bei Ã±bergabe in die Finanzbuchhaltung, werden die ErlÂªse der     
    Fakturierung auf diese Kostenstelle verbucht.                    
                                                                     
-   Neue Kostenstellen k¦nnen Sie in der "Finanzbuchhaltung" im      
+   Neue Kostenstellen kÂªnnen Sie in der "Finanzbuchhaltung" im      
    Programm <Kostenstellenstamm> erfassen.                          
                                                                     
                                                                     
    
 
-   Hilfe f§r: ¯Kopftextbaustein®
+   Hilfe fÂºr: Â»KopftextbausteinÂ«
    -----------------------------
 
-   Hier haben Sie die M¦glichkeit einen Kopf-
-   textbaustein f§r diesen Vorgang anzugeben.       
+   Hier haben Sie die MÂªglichkeit einen Kopf-
+   textbaustein fÂºr diesen Vorgang anzugeben.       
                                                     
       F2 =  Suche nach Textbausteinen               
                                                     
    Dieser Textbaustein wird beim Ausdruck im        
    Kopfteil der Formulare gedruckt.                 
                                                     
-   Beachten Sie, da¨ Sie Platzhalter <{1} und {2}>  
-   in Ihre Textbausteine einsetzen k¦nnen. In diese 
+   Beachten Sie, daÂ¿ Sie Platzhalter <{1} und {2}>  
+   in Ihre Textbausteine einsetzen kÂªnnen. In diese 
    Platzhalter wird der Text, den Sie in den Feldern
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.31
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   25 und 26 eingetragen haben, gedruckt.           
                                                     
                                                     
    
 
-   Hilfe f§r: ¯Werkstattauftrag®
+   Hilfe fÂºr: Â»WerkstattauftragÂ«
    -----------------------------
 
    Geben Sie hier an, ob ein Werkstattauftrag gedruckt werden soll.
    
-   Werkstattauftr¥ge k¦nnen nur §ber das Programm <Stapeldruck Werk-
-   stattauftr¥ge> gedruckt werden.
+   WerkstattauftrÃ‘ge kÂªnnen nur Âºber das Programm <Stapeldruck Werk-
+   stattauftrÃ‘ge> gedruckt werden.
    
-   Folgende Kennzeichen sind m¦glich:
+   Folgende Kennzeichen sind mÂªglich:
    
      0 (nein)        = es soll kein Werkstattauftrag gedruckt werden
    
@@ -2232,42 +2232,42 @@
      2 (ja)          = es wurde bereits ein Werkstattauftrag gedruckt
      (Druck erfolgt)   Dieses Kennzeichen wird vom Programm automatisch
                        gesetzt, wenn das Kennzeichen auf "1" gesetzt
-                       war und §ber den Stapeldruck der Werkstatt-
+                       war und Âºber den Stapeldruck der Werkstatt-
                        auftrag gedruckt wurde.
    
-     F2 = Auswahl aus den m¦glichen Kennzeichen.
+     F2 = Auswahl aus den mÂªglichen Kennzeichen.
    
    
 
-   Hilfe f§r: ¯Fu¨textbaustein®
+   Hilfe fÂºr: Â»FuÂ¿textbausteinÂ«
    ----------------------------
 
-   Hier haben Sie die M¦glichkeit einen Fu¨-
-   textbaustein f§r diesen Vorgang anzugeben.       
+   Hier haben Sie die MÂªglichkeit einen FuÂ¿-
+   textbaustein fÂºr diesen Vorgang anzugeben.       
                                                     
       F2 =  Suche nach Textbausteinen               
                                                     
    Dieser Textbaustein wird beim Ausdruck im        
-   Fu¨teil der Formulare gedruckt.                  
+   FuÂ¿teil der Formulare gedruckt.                  
                                                     
-   Beachten Sie, da¨ Sie Platzhalter <{1} und {2}>  
-   in Ihre Textbausteine einsetzen k¦nnen. In diese 
+   Beachten Sie, daÂ¿ Sie Platzhalter <{1} und {2}>  
+   in Ihre Textbausteine einsetzen kÂªnnen. In diese 
    Platzhalter wird der Text, den Sie in den Feldern
    25 und 26 eingetragen haben, gedruckt.           
                                                     
                                                     
    
 
-   Hilfe f§r: ¯Packliste/Packzettel®
+   Hilfe fÂºr: Â»Packliste/PackzettelÂ«
    ---------------------------------
 
    Geben Sie hier an, ob eine Packliste und/oder Packzettel gedruckt
    werden soll.
    
-   Diese k¦nnen nur §ber das Programm <Stapeldruck Packzettel> gedruckt
+   Diese kÂªnnen nur Âºber das Programm <Stapeldruck Packzettel> gedruckt
    werden.
    
-   Folgende Kennzeichen sind m¦glich:
+   Folgende Kennzeichen sind mÂªglich:
    
      0 (nein)    = es soll keine Packliste/Packzettel gedruckt werden
    
@@ -2276,13 +2276,13 @@
      2 (ja)     = es wurde bereits eine Packliste/Packzettel gedruckt
     (Druck erfolgt)  Dieses Kennzeichen wird vom Programm automatisch
                      gesetzt, wenn das Kennzeichen auf "1" gesetzt war
-                     und §ber den Stapeldruck der Packzettel gedruckt
+                     und Âºber den Stapeldruck der Packzettel gedruckt
                      wurde.
    
-        F2 = Auswahl aus den m¦glichen Kennzeichen.
+        F2 = Auswahl aus den mÂªglichen Kennzeichen.
    
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.32
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   
    ---------------------------------------------------
@@ -2290,295 +2290,295 @@
 
 !R!FTMD13;FONT50080;SLS.122;EXIT;
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Men§fenster ¯Hauptmen§® / Auftrag... (AUF-001):Auftrag
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÂºfenster Â»HauptmenÂºÂ« / Auftrag... (AUF-001):Auftrag
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50080;SLS.122;EXIT;
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿             
-   ³ Auftrag... ³                ... Bearbeiten und drucken v. Auftr¥gen, Rechnungen u. Gutschriften.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Angebote/Rechnungen...  ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Auftragseingangsbuch    ³
-   ³ Rechnungsausgangsbuch   ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Statistiklauf           ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”             
+   â”‚ Auftrag... â”‚                ... Bearbeiten und drucken v. AuftrÃ‘gen, Rechnungen u. Gutschriften.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Angebote/Rechnungen...  â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Auftragseingangsbuch    â”‚
+   â”‚ Rechnungsausgangsbuch   â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Statistiklauf           â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder f§r: Bearbeiten Stapelabrechnug (AUFM212)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder fÂºr: Bearbeiten Stapelabrechnug (AUFM212)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   À!R!FTMD13;FONT50255;EXIT;ğğF-TastenğğOptionenğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğF1=Hilfeğğğğ!R!FTMD13;FONT50055;SLS.142;EXIT;Ù
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄBearbeiten Stapelabrechnug - 1/1Ä¿
-   ³                                                                              ³
-   ³         Auftragsart          :@@@@@@@@@@@@@@                                 ³
-   ³                                                                              ³
-   ³         Abrechnungskreis 0   :@@@@@@@@@@@@@@                                 ³
-   ³         Abrechnungskreis 1   :@@@@@@@@@@@@@@                                 ³
-   ³         Abrechnungskreis 2   :@@@@@@@@@@@@@@                                 ³
-   ³         Abrechnungskreis 3   :@@@@@@@@@@@@@@                                 ³
-   ³         Abrechnungskreis 4   :@@@@@@@@@@@@@@                                 ³
-   ³         Abrechnungskreis 5   :@@@@@@@@@@@@@@                                 ³
-   ³         Abrechnungskreis 6   :@@@@@@@@@@@@@@                                 ³
-   ³         Abrechnungskreis 7   :@@@@@@@@@@@@@@                                 ³
-   ³         Abrechnungskreis 8   :@@@@@@@@@@@@@@                                 ³
-   ³         Abrechnungskreis 9   :@@@@@@@@@@@@@@                                 ³
-   ³                                                                              ³
-   ³         Mindestbetrag netto  :@@@@@@@@@@@@@@                                 ³
-   ³         Kopftextbaustein     :@@@@@@@@@@@@@@                                 ³
-   ³         Fusstextbaustein     :@@@@@@@@@@@@@@                                 ³
-   ³         Platzhalter 1        :@@@@@@@@@@@@@@                                 ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   !R!FTMD13;FONT50255;EXIT;ğ[F1]=Hilfeğğ[Alt]+[F1]=Indexğğ[F2]=Suchenğğ[F10]=Men§ğğ[ESC]=EndeğğğğğğğğğğT02ğ!R!FTMD13;FONT50055;SLS.142;EXIT;
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””!R!FTMD13;FONT50255;EXIT;Â­Â­F-TastenÂ­Â­OptionenÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­F1=HilfeÂ­Â­Â­Â­!R!FTMD13;FONT50055;SLS.142;EXIT;â”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Bearbeiten Stapelabrechnug - 1/1â”€â”
+   â”‚                                                                              â”‚
+   â”‚         Auftragsart          :@@@@@@@@@@@@@@                                 â”‚
+   â”‚                                                                              â”‚
+   â”‚         Abrechnungskreis 0   :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Abrechnungskreis 1   :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Abrechnungskreis 2   :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Abrechnungskreis 3   :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Abrechnungskreis 4   :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Abrechnungskreis 5   :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Abrechnungskreis 6   :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Abrechnungskreis 7   :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Abrechnungskreis 8   :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Abrechnungskreis 9   :@@@@@@@@@@@@@@                                 â”‚
+   â”‚                                                                              â”‚
+   â”‚         Mindestbetrag netto  :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Kopftextbaustein     :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Fusstextbaustein     :@@@@@@@@@@@@@@                                 â”‚
+   â”‚         Platzhalter 1        :@@@@@@@@@@@@@@                                 â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   !R!FTMD13;FONT50255;EXIT;Â­[F1]=HilfeÂ­Â­[Alt]+[F1]=IndexÂ­Â­[F2]=SuchenÂ­Â­[F10]=MenÂºÂ­Â­[ESC]=EndeÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­T02Â­!R!FTMD13;FONT50055;SLS.142;EXIT;
 
 
 
-   Hilfe f§r: ¯Sammelrechnungslauf®
+   Hilfe fÂºr: Â»SammelrechnungslaufÂ«
    --------------------------------
 
-   Mit diesem Programm k¦nnen Sie Sammelrechnungen generieren.
+   Mit diesem Programm kÂªnnen Sie Sammelrechnungen generieren.
    
    Es wird hier auf das im Kundenstamm eingegebene "Sammelrechnungs-
    Kennzeichen" zugegriffen.
    
-   Sie k¦nnen dort die Vergabe eines Sammelrechnungskennzeichens z.B.
+   Sie kÂªnnen dort die Vergabe eines Sammelrechnungskennzeichens z.B.
    nach zeitlichen Kriterien vornehmen.
    
-   Beispiel: 1 = w¦chentliche Sammelrechnung
-             2 = 2-w¦chentliche Sammelrechnunng
+   Beispiel: 1 = wÂªchentliche Sammelrechnung
+             2 = 2-wÂªchentliche Sammelrechnunng
              3 = monatliche Sammelrechnung
                  usw...
    
    Alle Lieferscheine eines Auftrags zu einem Kunden, der im Kunden-
-   stamm das "Sammelrechnungskennzeichen" auf 1 - 9 (f§r den Ab-
+   stamm das "Sammelrechnungskennzeichen" auf 1 - 9 (fÂºr den Ab-
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.33
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   rechnungskreis) stehen hat, werden hier zusammengefasst und es wird
    e i n e Rechnung erstellt.
    
-   Diese Sammelrechnung k¦nnen Sie im Programm <Stapeldruck Rechnungen>
+   Diese Sammelrechnung kÂªnnen Sie im Programm <Stapeldruck Rechnungen>
    wie eine normale Rechnung ausdrucken lassen.
    
-   Nach Angabe des Abrechnungskreises f§r den Sie die Generierung durch-
-   f§hren m¦chten und des Mindestbetrages k¦nnen Sie einen Textvorspann
+   Nach Angabe des Abrechnungskreises fÂºr den Sie die Generierung durch-
+   fÂºhren mÂªchten und des Mindestbetrages kÂªnnen Sie einen Textvorspann
    eingeben, der zu Beginn der Sammelrechnungen erscheint.
    
    Dieser Textvorspann kann bis zu 50 Zeilen lang sein.
    
    
 
-   Hilfe f§r: ¯Auftragsart®
+   Hilfe fÂºr: Â»AuftragsartÂ«
    ------------------------
 
-   Auswahlm¦glichkeiten
+   AuswahlmÂªglichkeiten
    
-   F2  =  Einzelauftr¥ge
-       =  Sammelauftr¥ge
-       =  Einzel- und Sammelauftr¥ge
+   F2  =  EinzelauftrÃ‘ge
+       =  SammelauftrÃ‘ge
+       =  Einzel- und SammelauftrÃ‘ge
    
    
 
-   Hilfe f§r: ¯Abrechnungskreis®
+   Hilfe fÂºr: Â»AbrechnungskreisÂ«
    -----------------------------
 
-   Geben Sie hier den Abrechnungskreis an, f§r
-   den Sie Sammelrechnungen generieren m¦chten.
+   Geben Sie hier den Abrechnungskreis an, fÂºr
+   den Sie Sammelrechnungen generieren mÂªchten.
    
-   Im <Kundenstamm> haben Sie f§r jeden Kunden ein
+   Im <Kundenstamm> haben Sie fÂºr jeden Kunden ein
    Sammelrechnungskennzeichen angelegt. Durch die-
    ses Kennzeichen haben Sie Ihre Kunden in ver-
    schiedene Abrechnungskreise eingeteilt.
    
    In der Kopferfassung haben Sie nochmals die
-   M¦glichkeit dieses Sammelrechnungskennzeichen
-   f§r diesen Auftrag,... zu ¥ndern.
+   MÂªglichkeit dieses Sammelrechnungskennzeichen
+   fÂºr diesen Auftrag,... zu Ã‘ndern.
    
    
 
-   Hilfe f§r: ¯Abrechnungskreis®
+   Hilfe fÂºr: Â»AbrechnungskreisÂ«
    -----------------------------
 
-   Geben Sie hier den Abrechnungskreis an, f§r
-   den Sie Sammelrechnungen generieren m¦chten.
+   Geben Sie hier den Abrechnungskreis an, fÂºr
+   den Sie Sammelrechnungen generieren mÂªchten.
    
-   Im <Kundenstamm> haben Sie f§r jeden Kunden ein
+   Im <Kundenstamm> haben Sie fÂºr jeden Kunden ein
    Sammelrechnungskennzeichen angelegt. Durch die-
    ses Kennzeichen haben Sie Ihre Kunden in ver-
    schiedene Abrechnungskreise eingeteilt.
    
    In der Kopferfassung haben Sie nochmals die
-   M¦glichkeit dieses Sammelrechnungskennzeichen
-   f§r diesen Auftrag,... zu ¥ndern.
+   MÂªglichkeit dieses Sammelrechnungskennzeichen
+   fÂºr diesen Auftrag,... zu Ã‘ndern.
    
    
 
-   Hilfe f§r: ¯Abrechnungskreis®
+   Hilfe fÂºr: Â»AbrechnungskreisÂ«
    -----------------------------
 
-   Geben Sie hier den Abrechnungskreis an, f§r
-   den Sie Sammelrechnungen generieren m¦chten.
+   Geben Sie hier den Abrechnungskreis an, fÂºr
+   den Sie Sammelrechnungen generieren mÂªchten.
    
-   Im <Kundenstamm> haben Sie f§r jeden Kunden ein
+   Im <Kundenstamm> haben Sie fÂºr jeden Kunden ein
    Sammelrechnungskennzeichen angelegt. Durch die-
    ses Kennzeichen haben Sie Ihre Kunden in ver-
    schiedene Abrechnungskreise eingeteilt.
    
    In der Kopferfassung haben Sie nochmals die
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.34
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-!R!FTMD13;FONT50055;SLS.142;EXIT;   M¦glichkeit dieses Sammelrechnungskennzeichen
-   f§r diesen Auftrag,... zu ¥ndern.
+!R!FTMD13;FONT50055;SLS.142;EXIT;   MÂªglichkeit dieses Sammelrechnungskennzeichen
+   fÂºr diesen Auftrag,... zu Ã‘ndern.
    
    
 
-   Hilfe f§r: ¯Abrechnungskreis®
+   Hilfe fÂºr: Â»AbrechnungskreisÂ«
    -----------------------------
 
-   Geben Sie hier den Abrechnungskreis an, f§r
-   den Sie Sammelrechnungen generieren m¦chten.
+   Geben Sie hier den Abrechnungskreis an, fÂºr
+   den Sie Sammelrechnungen generieren mÂªchten.
    
-   Im <Kundenstamm> haben Sie f§r jeden Kunden ein
+   Im <Kundenstamm> haben Sie fÂºr jeden Kunden ein
    Sammelrechnungskennzeichen angelegt. Durch die-
    ses Kennzeichen haben Sie Ihre Kunden in ver-
    schiedene Abrechnungskreise eingeteilt.
    
    In der Kopferfassung haben Sie nochmals die
-   M¦glichkeit dieses Sammelrechnungskennzeichen
-   f§r diesen Auftrag,... zu ¥ndern.
+   MÂªglichkeit dieses Sammelrechnungskennzeichen
+   fÂºr diesen Auftrag,... zu Ã‘ndern.
    
    
 
-   Hilfe f§r: ¯Abrechnungskreis®
+   Hilfe fÂºr: Â»AbrechnungskreisÂ«
    -----------------------------
 
-   Geben Sie hier den Abrechnungskreis an, f§r
-   den Sie Sammelrechnungen generieren m¦chten.
+   Geben Sie hier den Abrechnungskreis an, fÂºr
+   den Sie Sammelrechnungen generieren mÂªchten.
    
-   Im <Kundenstamm> haben Sie f§r jeden Kunden ein
+   Im <Kundenstamm> haben Sie fÂºr jeden Kunden ein
    Sammelrechnungskennzeichen angelegt. Durch die-
    ses Kennzeichen haben Sie Ihre Kunden in ver-
    schiedene Abrechnungskreise eingeteilt.
    
    In der Kopferfassung haben Sie nochmals die
-   M¦glichkeit dieses Sammelrechnungskennzeichen
-   f§r diesen Auftrag,... zu ¥ndern.
+   MÂªglichkeit dieses Sammelrechnungskennzeichen
+   fÂºr diesen Auftrag,... zu Ã‘ndern.
    
    
 
-   Hilfe f§r: ¯Abrechnungskreis®
+   Hilfe fÂºr: Â»AbrechnungskreisÂ«
    -----------------------------
 
-   Geben Sie hier den Abrechnungskreis an, f§r
-   den Sie Sammelrechnungen generieren m¦chten.
+   Geben Sie hier den Abrechnungskreis an, fÂºr
+   den Sie Sammelrechnungen generieren mÂªchten.
    
-   Im <Kundenstamm> haben Sie f§r jeden Kunden ein
+   Im <Kundenstamm> haben Sie fÂºr jeden Kunden ein
    Sammelrechnungskennzeichen angelegt. Durch die-
    ses Kennzeichen haben Sie Ihre Kunden in ver-
    schiedene Abrechnungskreise eingeteilt.
    
    In der Kopferfassung haben Sie nochmals die
-   M¦glichkeit dieses Sammelrechnungskennzeichen
-   f§r diesen Auftrag,... zu ¥ndern.
+   MÂªglichkeit dieses Sammelrechnungskennzeichen
+   fÂºr diesen Auftrag,... zu Ã‘ndern.
    
    
 
-   Hilfe f§r: ¯Abrechnungskreis®
+   Hilfe fÂºr: Â»AbrechnungskreisÂ«
    -----------------------------
 
-   Geben Sie hier den Abrechnungskreis an, f§r
-   den Sie Sammelrechnungen generieren m¦chten.
+   Geben Sie hier den Abrechnungskreis an, fÂºr
+   den Sie Sammelrechnungen generieren mÂªchten.
    
-   Im <Kundenstamm> haben Sie f§r jeden Kunden ein
+   Im <Kundenstamm> haben Sie fÂºr jeden Kunden ein
    Sammelrechnungskennzeichen angelegt. Durch die-
    ses Kennzeichen haben Sie Ihre Kunden in ver-
    schiedene Abrechnungskreise eingeteilt.
    
    In der Kopferfassung haben Sie nochmals die
-   M¦glichkeit dieses Sammelrechnungskennzeichen
-   f§r diesen Auftrag,... zu ¥ndern.
+   MÂªglichkeit dieses Sammelrechnungskennzeichen
+   fÂºr diesen Auftrag,... zu Ã‘ndern.
    
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.35
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   
 
-   Hilfe f§r: ¯Abrechnungskreis®
+   Hilfe fÂºr: Â»AbrechnungskreisÂ«
    -----------------------------
 
-   Geben Sie hier den Abrechnungskreis an, f§r
-   den Sie Sammelrechnungen generieren m¦chten.
+   Geben Sie hier den Abrechnungskreis an, fÂºr
+   den Sie Sammelrechnungen generieren mÂªchten.
    
-   Im <Kundenstamm> haben Sie f§r jeden Kunden ein
+   Im <Kundenstamm> haben Sie fÂºr jeden Kunden ein
    Sammelrechnungskennzeichen angelegt. Durch die-
    ses Kennzeichen haben Sie Ihre Kunden in ver-
    schiedene Abrechnungskreise eingeteilt.
    
    In der Kopferfassung haben Sie nochmals die
-   M¦glichkeit dieses Sammelrechnungskennzeichen
-   f§r diesen Auftrag,... zu ¥ndern.
+   MÂªglichkeit dieses Sammelrechnungskennzeichen
+   fÂºr diesen Auftrag,... zu Ã‘ndern.
    
    
 
-   Hilfe f§r: ¯Abrechnungskreis®
+   Hilfe fÂºr: Â»AbrechnungskreisÂ«
    -----------------------------
 
-   Geben Sie hier den Abrechnungskreis an, f§r
-   den Sie Sammelrechnungen generieren m¦chten.
+   Geben Sie hier den Abrechnungskreis an, fÂºr
+   den Sie Sammelrechnungen generieren mÂªchten.
    
-   Im <Kundenstamm> haben Sie f§r jeden Kunden ein
+   Im <Kundenstamm> haben Sie fÂºr jeden Kunden ein
    Sammelrechnungskennzeichen angelegt. Durch die-
    ses Kennzeichen haben Sie Ihre Kunden in ver-
    schiedene Abrechnungskreise eingeteilt.
    
    In der Kopferfassung haben Sie nochmals die
-   M¦glichkeit dieses Sammelrechnungskennzeichen
-   f§r diesen Auftrag,... zu ¥ndern.
+   MÂªglichkeit dieses Sammelrechnungskennzeichen
+   fÂºr diesen Auftrag,... zu Ã‘ndern.
    
    
 
-   Hilfe f§r: ¯Abrechnungskreis®
+   Hilfe fÂºr: Â»AbrechnungskreisÂ«
    -----------------------------
 
-   Geben Sie hier den Abrechnungskreis an, f§r
-   den Sie Sammelrechnungen generieren m¦chten.
+   Geben Sie hier den Abrechnungskreis an, fÂºr
+   den Sie Sammelrechnungen generieren mÂªchten.
    
-   Im <Kundenstamm> haben Sie f§r jeden Kunden ein
+   Im <Kundenstamm> haben Sie fÂºr jeden Kunden ein
    Sammelrechnungskennzeichen angelegt. Durch die-
    ses Kennzeichen haben Sie Ihre Kunden in ver-
    schiedene Abrechnungskreise eingeteilt.
    
    In der Kopferfassung haben Sie nochmals die
-   M¦glichkeit dieses Sammelrechnungskennzeichen
-   f§r diesen Auftrag,... zu ¥ndern.
+   MÂªglichkeit dieses Sammelrechnungskennzeichen
+   fÂºr diesen Auftrag,... zu Ã‘ndern.
    
    
 
-   Hilfe f§r: ¯Mindestbetrag netto®
+   Hilfe fÂºr: Â»Mindestbetrag nettoÂ«
    --------------------------------
 
-   Ihre Sammelrechnung mu¨ den hier eingetragenen
+   Ihre Sammelrechnung muÂ¿ den hier eingetragenen
    Mindest-Netto-Betrag haben, um generiert zu werden.
    
    Wenn der Netto-Betrag der kumulierten Liefer-
-   scheine f§r einen Kunden den hier angegebenen
-   Mindestbetrag unterschreitet, wird f§r diesen
+   scheine fÂºr einen Kunden den hier angegebenen
+   Mindestbetrag unterschreitet, wird fÂºr diesen
    Kunden keine Sammelrechnung generiert.
    
    
 
-   Hilfe f§r: ¯Kopftextbaustein®
+   Hilfe fÂºr: Â»KopftextbausteinÂ«
    -----------------------------
 
-   Hier haben Sie die M¦glichkeit einen Kopf-
-   textbaustein f§r diesen Vorgang anzugeben.
+   Hier haben Sie die MÂªglichkeit einen Kopf-
+   textbaustein fÂºr diesen Vorgang anzugeben.
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.36
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   
       F2 =  Suche nach Textbausteinen
@@ -2586,142 +2586,142 @@
    Dieser Textbaustein wird beim Ausdruck im
    Kopfteil der Formulare gedruckt.
    
-   Beachten Sie, da¨ Sie Platzhalter <{1} und {2}>
-   in Ihre Textbausteine einsetzen k¦nnen. In diese
+   Beachten Sie, daÂ¿ Sie Platzhalter <{1} und {2}>
+   in Ihre Textbausteine einsetzen kÂªnnen. In diese
    Platzhalter wird der Text, den Sie in den Feldern
    25 und 26 eingetragen haben, gedruckt.
    
    
 
-   Hilfe f§r: ¯Fu¨textbaustein®
+   Hilfe fÂºr: Â»FuÂ¿textbausteinÂ«
    ----------------------------
 
-   Hier haben Sie die M¦glichkeit einen Fu¨-
-   textbaustein f§r diesen Vorgang anzugeben.
+   Hier haben Sie die MÂªglichkeit einen FuÂ¿-
+   textbaustein fÂºr diesen Vorgang anzugeben.
    
       F2 =  Suche nach Textbausteinen
    
    Dieser Textbaustein wird beim Ausdruck im
-   Fu¨teil der Formulare gedruckt.
+   FuÂ¿teil der Formulare gedruckt.
    
-   Beachten Sie, da¨ Sie Platzhalter <{1} und {2}>
-   in Ihre Textbausteine einsetzen k¦nnen. In diese
+   Beachten Sie, daÂ¿ Sie Platzhalter <{1} und {2}>
+   in Ihre Textbausteine einsetzen kÂªnnen. In diese
    Platzhalter wird der Text, den Sie in den Feldern
    25 und 26 eingetragen haben, gedruckt.
    
    
 
-   Hilfe f§r: ¯Platzhalter 1/2®
+   Hilfe fÂºr: Â»Platzhalter 1/2Â«
    ----------------------------
 
-   Geben Sie hier den Inhalt f§r die Platz-
+   Geben Sie hier den Inhalt fÂºr die Platz-
    halter {1} und {2} ein.
    
-   Diese Platzhalter k¦nnen Sie bei der
+   Diese Platzhalter kÂªnnen Sie bei der
    Textbausteinanlage angeben.
    
    Es stehen Ihnen jeweils 20 Stellen,
-   die Sie alpha-numerisch angeben k¦nnen,
-   f§r Ihre Eingabe zur Verf§gung.
+   die Sie alpha-numerisch angeben kÂªnnen,
+   fÂºr Ihre Eingabe zur VerfÂºgung.
    
    
 
-   Hilfe f§r: ¯Platzhalter 1/2®
+   Hilfe fÂºr: Â»Platzhalter 1/2Â«
    ----------------------------
 
-   Geben Sie hier den Inhalt f§r die Platz-
+   Geben Sie hier den Inhalt fÂºr die Platz-
    halter {1} und {2} ein.
    
-   Diese Platzhalter k¦nnen Sie bei der
+   Diese Platzhalter kÂªnnen Sie bei der
    Textbausteinanlage angeben.
    
    Es stehen Ihnen jeweils 20 Stellen,
-   die Sie alpha-numerisch angeben k¦nnen,
-   f§r Ihre Eingabe zur Verf§gung.
+   die Sie alpha-numerisch angeben kÂªnnen,
+   fÂºr Ihre Eingabe zur VerfÂºgung.
    
    
    ---------------------------------------------------
 
 
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.37
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;!R!FTMD13;FONT50080;SLS.122;EXIT;
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Men§fenster ¯Hauptmen§® / Auftrag... (AUF-001):Auftrag
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÂºfenster Â»HauptmenÂºÂ« / Auftrag... (AUF-001):Auftrag
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50080;SLS.122;EXIT;
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿             
-   ³ Auftrag... ³                ... Bearbeiten und drucken v. Auftr¥gen, Rechnungen u. Gutschriften.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Angebote/Rechnungen...  ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Auftragseingangsbuch    ³
-   ³ Rechnungsausgangsbuch   ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Statistiklauf           ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”             
+   â”‚ Auftrag... â”‚                ... Bearbeiten und drucken v. AuftrÃ‘gen, Rechnungen u. Gutschriften.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Angebote/Rechnungen...  â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Auftragseingangsbuch    â”‚
+   â”‚ Rechnungsausgangsbuch   â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Statistiklauf           â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder f§r: Bearbeiten Mehrfachvorg¥nge (AUFM213)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder fÂºr: Bearbeiten MehrfachvorgÃ‘nge (AUFM213)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   À!R!FTMD13;FONT50255;EXIT;ğğF-TastenğğOptionenğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğF1=Hilfeğğğğ!R!FTMD13;FONT50055;SLS.142;EXIT;Ù
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄBearbeiten Mehrfachvorg¥nge - 1/1Ä¿
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³     ¤bernahme als       :  @@@@@@@@@@@@@@@                                   ³
-   ³     Vorgangsdatum       :  @@@@@@@@@@@@@@@                                   ³
-   ³                                                                              ³
-   ³     Wiederholungskennz. :  @@@@@@@@@@@@@@@@                                  ³
-   ³     Wiederholungsart    :  @@@@@@@@@@@@@@@@@@@@@@@                           ³
-   ³                                                                              ³
-   ³     Mehrfachvorgang     :  von @@@@@@      bis @@@@@@                        ³
-   ³     Kundennummer        :  von D@@@@@      bis D@@@@@                        ³
-   ³     Kundengruppe        :  von @@@@@@      bis @@@@@@                        ³
-   ³     Auswertungskennz.   :  von @@@@@@      bis @@@@@@                        ³
-   ³     Vertreter           :  von @@@@@@      bis @@@@@@                        ³
-   ³     Tour/Gebiet         :  von @@@@@@      bis @@@@@@                        ³
-   ³     Postleitzahl        :  von @@@@@@      bis @@@@@@                        ³
-   ³                                                                              ³
-   ³     Textvorspann @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                     ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   !R!FTMD13;FONT50255;EXIT;ğ[F1]=Hilfeğğ[Alt]+[F1]=Indexğğ[F2]=Suchenğğ[F10]=Men§ğğ[ESC]=EndeğğğğğğğğğğT02ğ!R!FTMD13;FONT50055;SLS.142;EXIT;
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””!R!FTMD13;FONT50255;EXIT;Â­Â­F-TastenÂ­Â­OptionenÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­F1=HilfeÂ­Â­Â­Â­!R!FTMD13;FONT50055;SLS.142;EXIT;â”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Bearbeiten MehrfachvorgÃ‘nge - 1/1â”€â”
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚     Ã±bernahme als       :  @@@@@@@@@@@@@@@                                   â”‚
+   â”‚     Vorgangsdatum       :  @@@@@@@@@@@@@@@                                   â”‚
+   â”‚                                                                              â”‚
+   â”‚     Wiederholungskennz. :  @@@@@@@@@@@@@@@@                                  â”‚
+   â”‚     Wiederholungsart    :  @@@@@@@@@@@@@@@@@@@@@@@                           â”‚
+   â”‚                                                                              â”‚
+   â”‚     Mehrfachvorgang     :  von @@@@@@      bis @@@@@@                        â”‚
+   â”‚     Kundennummer        :  von D@@@@@      bis D@@@@@                        â”‚
+   â”‚     Kundengruppe        :  von @@@@@@      bis @@@@@@                        â”‚
+   â”‚     Auswertungskennz.   :  von @@@@@@      bis @@@@@@                        â”‚
+   â”‚     Vertreter           :  von @@@@@@      bis @@@@@@                        â”‚
+   â”‚     Tour/Gebiet         :  von @@@@@@      bis @@@@@@                        â”‚
+   â”‚     Postleitzahl        :  von @@@@@@      bis @@@@@@                        â”‚
+   â”‚                                                                              â”‚
+   â”‚     Textvorspann @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                     â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   !R!FTMD13;FONT50255;EXIT;Â­[F1]=HilfeÂ­Â­[Alt]+[F1]=IndexÂ­Â­[F2]=SuchenÂ­Â­[F10]=MenÂºÂ­Â­[ESC]=EndeÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­T02Â­!R!FTMD13;FONT50055;SLS.142;EXIT;
 
 
 
-   Hilfe f§r: ¯¤bernahme als®
+   Hilfe fÂºr: Â»Ã±bernahme alsÂ«
    --------------------------
 
    Geben Sie hier ein, als was der hier generierte Mehrfachvorgang
-   §bernommen werden soll.
+   Âºbernommen werden soll.
    
      F2  =  Zur Auswahl stehen:
-            - Auftragsbest¥tigung
+            - AuftragsbestÃ‘tigung
             - Lieferung
             - Rechnung
             - Direktrechnung.
    
-   Die Vorg¥nge werden dann in das Programm <Auftr¥ge, Rechnungen,...>
-   §bernommen und sind dort aufrufbar.
+   Die VorgÃ‘nge werden dann in das Programm <AuftrÃ‘ge, Rechnungen,...>
+   Âºbernommen und sind dort aufrufbar.
    
    
 
-   Hilfe f§r: ¯Vorgangsdatum®
+   Hilfe fÂºr: Â»VorgangsdatumÂ«
    --------------------------
 
    In diesem Feld geben Sie das Datum ein, welches die hier generierten
-   Vorg¥nge tragen sollen.
+   VorgÃ‘nge tragen sollen.
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.38
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   
-   Geben Sie das Datum in der Form TTMMJJ ein, also je 2 Stellen f§r
+   Geben Sie das Datum in der Form TTMMJJ ein, also je 2 Stellen fÂºr
    den Tag, den Monat und das Jahr.
    
    Beispiel: "090492" bedeutet: 9. April 1992.
@@ -2730,50 +2730,50 @@
    
    
 
-   Hilfe f§r: ¯Wiederhohlungskennzeichen®
+   Hilfe fÂºr: Â»WiederhohlungskennzeichenÂ«
    --------------------------------------
 
-   Hier k¦nnen Sie das im Programm <Angebotserfassung> im Feld 27 =
+   Hier kÂªnnen Sie das im Programm <Angebotserfassung> im Feld 27 =
    "Wiederholungskennzeichen" eingetragene Kennzeichen ansprechen.
    
    Mit Hilfe dieses Kennzeichens lassen sich wiederholbare Angebote in
-   Hinsicht auf ihre periodische ¤bernahme als Rechnungen unterscheiden:
-   z.B. k¦nnte eine "1" w¦chentliche, eine "2" monatliche und eine "3"
-   viertelj¥hrliche Rechnungsstellung bedeuten, wobei die tats¥chliche
+   Hinsicht auf ihre periodische Ã±bernahme als Rechnungen unterscheiden:
+   z.B. kÂªnnte eine "1" wÂªchentliche, eine "2" monatliche und eine "3"
+   vierteljÃ‘hrliche Rechnungsstellung bedeuten, wobei die tatsÃ‘chliche
    Bedeutung frei von Ihnen bestimmt werden kann.
    
    Dieses Kennzeichen kann Werte von 0 - 9 annehmen.
    
    
 
-   Hilfe f§r: ¯Wiederhohlungsart®
+   Hilfe fÂºr: Â»WiederhohlungsartÂ«
    ------------------------------
 
    Geben Sie hier an, ob es sich um kundenbezogene oder neutrale
-   Vorg¥nge handelt.
+   VorgÃ‘nge handelt.
    
      F2  =  Auswahl
-            - Kundenbezogene Vorg¥nge
-              alle Mehrfachvorg¥nge mit dem angegebenen
-              Wiederholungskennzeichen werden f§r die
+            - Kundenbezogene VorgÃ‘nge
+              alle MehrfachvorgÃ‘nge mit dem angegebenen
+              Wiederholungskennzeichen werden fÂºr die
               entsprechenden Kunden generiert.
               Eine Selektion erfolgt nicht, es wird
               direkt in den Textvorspann verzweigt.
    
-            - Neutrale Vorg¥nge
-              hier mu¨ angegeben werden welche Mehr-
-              fachvorg¥nge f§r welchen Kunden generiert
+            - Neutrale VorgÃ‘nge
+              hier muÂ¿ angegeben werden welche Mehr-
+              fachvorgÃ‘nge fÂºr welchen Kunden generiert
               werden sollen.
    
    
 
-   Hilfe f§r: ¯Mehrfachvorgang von/bis®
+   Hilfe fÂºr: Â»Mehrfachvorgang von/bisÂ«
    ------------------------------------
 
-   Grenzen Sie in diesen Feldern den Bereich der Mehrfachvorg¥nge ein,
-   welche §bernommen werden sollen.
+   Grenzen Sie in diesen Feldern den Bereich der MehrfachvorgÃ‘nge ein,
+   welche Âºbernommen werden sollen.
    
-   Dazu geben Sie in dem Feld "Mehrfachvorg¥nge von" den Mehrfachvor-
+   Dazu geben Sie in dem Feld "MehrfachvorgÃ‘nge von" den Mehrfachvor-
    gang ein, der vom Programm als untere Bereichsgrenze erkannt werden
    soll.
    
@@ -2784,15 +2784,15 @@
    
    
 
-   Hilfe f§r: ¯Mehrfachvorgang von/bis®
+   Hilfe fÂºr: Â»Mehrfachvorgang von/bisÂ«
    ------------------------------------
 
-   Grenzen Sie in diesen Feldern den Bereich der Mehrfachvorg¥nge ein,
-   welche §bernommen werden sollen.
+   Grenzen Sie in diesen Feldern den Bereich der MehrfachvorgÃ‘nge ein,
+   welche Âºbernommen werden sollen.
    
-   Dazu geben Sie in dem Feld "Mehrfachvorg¥nge von" den Mehrfachvor-
+   Dazu geben Sie in dem Feld "MehrfachvorgÃ‘nge von" den Mehrfachvor-
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.39
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   gang ein, der vom Programm als untere Bereichsgrenze erkannt werden
    soll.
@@ -2804,11 +2804,11 @@
    
    
 
-   Hilfe f§r: ¯Kundennummer von/bis®
+   Hilfe fÂºr: Â»Kundennummer von/bisÂ«
    ---------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
-   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
+   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Kundennummer von" die Kundennummer an, die
    vom Programm als untere Bereichsgrenze erkannt werden soll.
@@ -2819,18 +2819,18 @@
       F2       = Suche nach Kurzbezeichnung
    
       SHIFT+F2 = Auswahl
-                 ş Suche nach Bezeichnung
-                 ş Suche nach Nummer
-                 ş Suche nach Ansprechpartner
-                 ş Suche nach Postleitzahl.
+                 â–  Suche nach Bezeichnung
+                 â–  Suche nach Nummer
+                 â–  Suche nach Ansprechpartner
+                 â–  Suche nach Postleitzahl.
    
    
 
-   Hilfe f§r: ¯Kundennummer von/bis®
+   Hilfe fÂºr: Â»Kundennummer von/bisÂ«
    ---------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
-   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
+   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Kundennummer von" die Kundennummer an, die
    vom Programm als untere Bereichsgrenze erkannt werden soll.
@@ -2841,18 +2841,18 @@
       F2       = Suche nach Kurzbezeichnung
    
       SHIFT+F2 = Auswahl
-                 ş Suche nach Bezeichnung
-                 ş Suche nach Nummer
-                 ş Suche nach Ansprechpartner
-                 ş Suche nach Postleitzahl.
+                 â–  Suche nach Bezeichnung
+                 â–  Suche nach Nummer
+                 â–  Suche nach Ansprechpartner
+                 â–  Suche nach Postleitzahl.
    
    
 
-   Hilfe f§r: ¯Kundengruppe von/bis®
+   Hilfe fÂºr: Â»Kundengruppe von/bisÂ«
    ---------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
-   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
+   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Kundengruppe von" die Kundengruppe an, die
    vom Programm als untere Bereichsgrenze erkannt werden soll.
@@ -2860,18 +2860,18 @@
    Im Feld "Kundengruppe bis" geben Sie entsprechend die Kundengruppe
    ein, die die obere Bereichsgrenze festlegt.
    
-   Es stehen Ihnen hierf§r 4 Stellen alpha-numerisch zur Verf§gung.
+   Es stehen Ihnen hierfÂºr 4 Stellen alpha-numerisch zur VerfÂºgung.
    
    
 
-   Hilfe f§r: ¯Kundengruppe von/bis®
+   Hilfe fÂºr: Â»Kundengruppe von/bisÂ«
    ---------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.40
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-!R!FTMD13;FONT50055;SLS.142;EXIT;   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+!R!FTMD13;FONT50055;SLS.142;EXIT;   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Kundengruppe von" die Kundengruppe an, die
    vom Programm als untere Bereichsgrenze erkannt werden soll.
@@ -2879,15 +2879,15 @@
    Im Feld "Kundengruppe bis" geben Sie entsprechend die Kundengruppe
    ein, die die obere Bereichsgrenze festlegt.
    
-   Es stehen Ihnen hierf§r 4 Stellen alpha-numerisch zur Verf§gung.
+   Es stehen Ihnen hierfÂºr 4 Stellen alpha-numerisch zur VerfÂºgung.
    
    
 
-   Hilfe f§r: ¯Auswertungskennzeichen®
+   Hilfe fÂºr: Â»AuswertungskennzeichenÂ«
    -----------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
-   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
+   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Auswertungskennzeichen von" das Auswertungs-
    kennzeichen an, das vom Programm als untere Bereichsgrenze erkannt
@@ -2896,15 +2896,15 @@
    Im Feld "Auswertungskennzeichen bis" geben Sie entsprechend das Aus-
    wertungskennzeichen ein, das die obere Bereichsgrenze festlegt.
    
-   Es stehen Ihnen hierf§r 4 Stellen alpha-numerisch zur Verf§gung.
+   Es stehen Ihnen hierfÂºr 4 Stellen alpha-numerisch zur VerfÂºgung.
    
    
 
-   Hilfe f§r: ¯Auswertungskennzeichen®
+   Hilfe fÂºr: Â»AuswertungskennzeichenÂ«
    -----------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
-   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
+   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Auswertungskennzeichen von" das Auswertungs-
    kennzeichen an, das vom Programm als untere Bereichsgrenze erkannt
@@ -2913,15 +2913,15 @@
    Im Feld "Auswertungskennzeichen bis" geben Sie entsprechend das Aus-
    wertungskennzeichen ein, das die obere Bereichsgrenze festlegt.
    
-   Es stehen Ihnen hierf§r 4 Stellen alpha-numerisch zur Verf§gung.
+   Es stehen Ihnen hierfÂºr 4 Stellen alpha-numerisch zur VerfÂºgung.
    
    
 
-   Hilfe f§r: ¯Vertreter von/bis®
+   Hilfe fÂºr: Â»Vertreter von/bisÂ«
    ------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
-   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
+   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Vertreter von" den Vertreter an, der vom
    Programm als untere Bereichsgrenze erkannt werden soll.
@@ -2933,17 +2933,17 @@
    
    
 
-   Hilfe f§r: ¯Vertreter von/bis®
+   Hilfe fÂºr: Â»Vertreter von/bisÂ«
    ------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
-   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
+   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Vertreter von" den Vertreter an, der vom
    Programm als untere Bereichsgrenze erkannt werden soll.
    
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.41
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   Im Feld "Vertreter bis" geben Sie entsprechend den Vertreter ein,
    der die obere Bereichsgrenze festlegt.
@@ -2952,11 +2952,11 @@
    
    
 
-   Hilfe f§r: ¯Tour/Gebiet von/bis®
+   Hilfe fÂºr: Â»Tour/Gebiet von/bisÂ«
    --------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
-   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
+   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Tour/Gebiet von" die/das Tour/Gebiet an,
    die/das vom Programm als untere Bereichsgrenze erkannt werden soll.
@@ -2964,15 +2964,15 @@
    Im Feld "Tour/Gebiet bis" geben Sie entsprechend die/das Tour/Gebiet
    ein, die/das die obere Bereichsgrenze festlegt.
    
-   Sie k¦nnen hier die Werte 00 - 99 eingeben.
+   Sie kÂªnnen hier die Werte 00 - 99 eingeben.
    
    
 
-   Hilfe f§r: ¯Tour/Gebiet von/bis®
+   Hilfe fÂºr: Â»Tour/Gebiet von/bisÂ«
    --------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
-   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
+   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Tour/Gebiet von" die/das Tour/Gebiet an,
    die/das vom Programm als untere Bereichsgrenze erkannt werden soll.
@@ -2980,15 +2980,15 @@
    Im Feld "Tour/Gebiet bis" geben Sie entsprechend die/das Tour/Gebiet
    ein, die/das die obere Bereichsgrenze festlegt.
    
-   Sie k¦nnen hier die Werte 00 - 99 eingeben.
+   Sie kÂªnnen hier die Werte 00 - 99 eingeben.
    
    
 
-   Hilfe f§r: ¯Postleitzahl von/bis®
+   Hilfe fÂºr: Â»Postleitzahl von/bisÂ«
    ---------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
-   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
+   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Postleitzahl von" die Postleitzahl an, die
    vom Programm als untere Bereichsgrenze erkannt werden soll.
@@ -2996,15 +2996,15 @@
    Im Feld "Postleitzahl bis" geben Sie entsprechend die Postleitzahl
    ein, die die obere Bereichsgrenze festlegt.
    
-   Es stehen Ihnen hierf§r 10 Stellen alphanumerisch zur Verf§gung.
+   Es stehen Ihnen hierfÂºr 10 Stellen alphanumerisch zur VerfÂºgung.
    
    
 
-   Hilfe f§r: ¯Postleitzahl von/bis®
+   Hilfe fÂºr: Â»Postleitzahl von/bisÂ«
    ---------------------------------
 
-   Innerhalb der oben eingegrenzten Mehrfachvorg¥nge k¦nnen Sie die
-   Auswahl der zu §bernehmenden Vorg¥nge weiter eingrenzen.
+   Innerhalb der oben eingegrenzten MehrfachvorgÃ‘nge kÂªnnen Sie die
+   Auswahl der zu Âºbernehmenden VorgÃ‘nge weiter eingrenzen.
    
    Dazu geben Sie im Feld "Postleitzahl von" die Postleitzahl an, die
    vom Programm als untere Bereichsgrenze erkannt werden soll.
@@ -3012,14 +3012,14 @@
    Im Feld "Postleitzahl bis" geben Sie entsprechend die Postleitzahl
    ein, die die obere Bereichsgrenze festlegt.
    
-   Es stehen Ihnen hierf§r 10 Stellen alphanumerisch zur Verf§gung.
+   Es stehen Ihnen hierfÂºr 10 Stellen alphanumerisch zur VerfÂºgung.
    
    
 
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.42
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-!R!FTMD13;FONT50055;SLS.142;EXIT;   Hilfe f§r: 
+!R!FTMD13;FONT50055;SLS.142;EXIT;   Hilfe fÂºr: 
    -----------
 
    ---------------------------------------------------
@@ -3027,90 +3027,90 @@
 
 !R!FTMD13;FONT50080;SLS.122;EXIT;
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Men§fenster ¯Hauptmen§® / Auftrag... (AUF-001):Auftrag
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÂºfenster Â»HauptmenÂºÂ« / Auftrag... (AUF-001):Auftrag
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50080;SLS.122;EXIT;
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿             
-   ³ Auftrag... ³                ... Bearbeiten und drucken v. Auftr¥gen, Rechnungen u. Gutschriften.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Angebote/Rechnungen...  ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Auftragseingangsbuch    ³
-   ³ Rechnungsausgangsbuch   ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Statistiklauf           ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”             
+   â”‚ Auftrag... â”‚                ... Bearbeiten und drucken v. AuftrÃ‘gen, Rechnungen u. Gutschriften.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Angebote/Rechnungen...  â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Auftragseingangsbuch    â”‚
+   â”‚ Rechnungsausgangsbuch   â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Statistiklauf           â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder f§r: Druck Auftragseingangsbuch (AUFM350)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder fÂºr: Druck Auftragseingangsbuch (AUFM350)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   À!R!FTMD13;FONT50255;EXIT;ğğF-TastenğğOptionenğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğF1=Hilfeğğğğ!R!FTMD13;FONT50055;SLS.142;EXIT;Ù
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄDruck Auftragseingangsbuch - 1/1Ä¿
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                AE-Buch detailiert  :  @@@@@@@@@@@@@@                         ³
-   ³                AE-Buch §bersicht   :  @@@@@@@@@@@@@@                         ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   !R!FTMD13;FONT50255;EXIT;ğ[F1]=Hilfeğğ[Alt]+[F1]=Indexğğ[F2]=Suchenğğ[F10]=Men§ğğ[ESC]=EndeğğğğğğğğğğT02ğ!R!FTMD13;FONT50055;SLS.142;EXIT;
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””!R!FTMD13;FONT50255;EXIT;Â­Â­F-TastenÂ­Â­OptionenÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­F1=HilfeÂ­Â­Â­Â­!R!FTMD13;FONT50055;SLS.142;EXIT;â”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Druck Auftragseingangsbuch - 1/1â”€â”
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                AE-Buch detailiert  :  @@@@@@@@@@@@@@                         â”‚
+   â”‚                AE-Buch Âºbersicht   :  @@@@@@@@@@@@@@                         â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   !R!FTMD13;FONT50255;EXIT;Â­[F1]=HilfeÂ­Â­[Alt]+[F1]=IndexÂ­Â­[F2]=SuchenÂ­Â­[F10]=MenÂºÂ­Â­[ESC]=EndeÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­T02Â­!R!FTMD13;FONT50055;SLS.142;EXIT;
 
 
 
-   Hilfe f§r: ¯Auftragseingangsbuch®
+   Hilfe fÂºr: Â»AuftragseingangsbuchÂ«
    ---------------------------------
 
-   Das Auftragseingangsbuch erm¦glicht Ihnen eine ¤bersicht §ber die
-   eingegangenen Auftr¥ge.
+   Das Auftragseingangsbuch ermÂªglicht Ihnen eine Ã±bersicht Âºber die
+   eingegangenen AuftrÃ‘ge.
    
-   Sie k¦nnen ausw¥hlen, wie Sie das Auftragseingangsbuch ausdrucken
-   m¦chten. Zur Auswahl stehen folgende Varianten:
+   Sie kÂªnnen auswÃ‘hlen, wie Sie das Auftragseingangsbuch ausdrucken
+   mÂªchten. Zur Auswahl stehen folgende Varianten:
    
    - detailiert
      In der detailierten Liste werden zu jedem Auftrag die einzelnen
-     Positionen aufgef§hrt. Weiterhin erhalten Sie Informationen §ber
+     Positionen aufgefÂºhrt. Weiterhin erhalten Sie Informationen Âºber
      Auftragsnummer/-datum, die Lieferwoche, die Auftragsmenge und den
      Auftragswert.
    
-   - ¤bersicht
-     In der Auftrags§bersicht erhalten Sie neben der Auftragsnummer
-     und dem Datum Informationen §ber den Vertreter, den Bearbeiter
+   - Ã±bersicht
+     In der AuftragsÂºbersicht erhalten Sie neben der Auftragsnummer
+     und dem Datum Informationen Âºber den Vertreter, den Bearbeiter
      und den Auftragswert.
    
    Nach dem Ausdruck erfolgt eine Abfrage, ob der Ausdruck in Ordnung
    war. Wenn Sie hier "J" eingeben, werden alle im Auftragseingangsbuch
-   ausgewiesenen Auftr¥ge markiert und bei sp¥teren Ausdrucken nicht
+   ausgewiesenen AuftrÃ‘ge markiert und bei spÃ‘teren Ausdrucken nicht
    mehr mit gedruckt.
    
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.43
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   Beantworten Sie diese Abfrage mit "N", so werden die ausgedruckten
-   Auftr¥ge bei einem sp¥teren Ausdruck wieder mit ausgegeben.
+   AuftrÃ‘ge bei einem spÃ‘teren Ausdruck wieder mit ausgegeben.
    
-   !!! WICHTIG !!!   Vor dem Ausdruck sollten Sie §berpr§fen, ob der
-                     richtige Drucker eingestellt ist. Sie k¦nnen dies
-                     jederzeit mit SHIFT+F1 §berpr§fen und gegebenen-
-                     falls ¥ndern.
+   !!! WICHTIG !!!   Vor dem Ausdruck sollten Sie ÂºberprÂºfen, ob der
+                     richtige Drucker eingestellt ist. Sie kÂªnnen dies
+                     jederzeit mit SHIFT+F1 ÂºberprÂºfen und gegebenen-
+                     falls Ã‘ndern.
    
    
 
-   Hilfe f§r: ¯Auftragseingangsbuch detailiert®
+   Hilfe fÂºr: Â»Auftragseingangsbuch detailiertÂ«
    --------------------------------------------
 
    Geben Sie hier an, ob das Auftragseingangsbuch detailliert
    ausgegeben werden soll oder nicht.
    
-   Detailliert bedeutet, da¨ jede Position einzeln aufgef§hrt wird.
-   Sie k¦nnen hier ersehen:
+   Detailliert bedeutet, daÂ¿ jede Position einzeln aufgefÂºhrt wird.
+   Sie kÂªnnen hier ersehen:
    
      - das Auftragsdatum
      - den Kunden
@@ -3118,18 +3118,18 @@
      - die Lieferwoche
      - den Auftragswert.
    
-   Um eine ¤bersicht §ber alle Auftr¥ge zu erhalten w¥hlen Sie bitte im
-   n¥chsten Feld "AE-Buch ¤bersicht: ja".
+   Um eine Ã±bersicht Âºber alle AuftrÃ‘ge zu erhalten wÃ‘hlen Sie bitte im
+   nÃ‘chsten Feld "AE-Buch Ã±bersicht: ja".
    
    
 
-   Hilfe f§r: ¯Auftragseingangsbuch §bersicht®
+   Hilfe fÂºr: Â»Auftragseingangsbuch ÂºbersichtÂ«
    -------------------------------------------
 
-   Geben Sie hier an, ob das Auftragseingangsbuch als ¤bersicht
+   Geben Sie hier an, ob das Auftragseingangsbuch als Ã±bersicht
    ausgegeben werden soll oder nicht.
    
-   In dieser ¤bersicht sind enthalten:
+   In dieser Ã±bersicht sind enthalten:
    
      - das Auftragsdatum
      - der Kunde
@@ -3138,7 +3138,7 @@
      - der Auftragswert.
    
    Um ein Auftragseingangsbuch mit den einzelnen Artikelpositionen zu
-   erhalten w¥hlen Sie bitte im vorigen Feld "AE-Buch detailliert: ja".
+   erhalten wÃ‘hlen Sie bitte im vorigen Feld "AE-Buch detailliert: ja".
    
    
    ---------------------------------------------------
@@ -3146,83 +3146,83 @@
 
 !R!FTMD13;FONT50080;SLS.122;EXIT;
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Men§fenster ¯Hauptmen§® / Auftrag... (AUF-001):Auftrag
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÂºfenster Â»HauptmenÂºÂ« / Auftrag... (AUF-001):Auftrag
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50080;SLS.122;EXIT;
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿             
-   ³ Auftrag... ³                ... Bearbeiten und drucken v. Auftr¥gen, Rechnungen u. Gutschriften.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Angebote/Rechnungen...  ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Auftragseingangsbuch    ³
-   ³ Rechnungsausgangsbuch   ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Statistiklauf           ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”             
+   â”‚ Auftrag... â”‚                ... Bearbeiten und drucken v. AuftrÃ‘gen, Rechnungen u. Gutschriften.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Angebote/Rechnungen...  â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Auftragseingangsbuch    â”‚
+   â”‚ Rechnungsausgangsbuch   â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Statistiklauf           â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.44
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;!R!FTMD13;FONT50055;SLS.142;EXIT;
-   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder f§r: Druck Rechnungsausgangsbuch (AUFM360)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   !R!FTMD13;FONT50055;SLS.142;EXIT;Ein-/Ausgabefelder fÂºr: Druck Rechnungsausgangsbuch (AUFM360)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 !R!FTMD13;FONT50055;SLS.142;EXIT;
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   À!R!FTMD13;FONT50255;EXIT;ğğF-TastenğğOptionenğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğğF1=Hilfeğğğğ!R!FTMD13;FONT50055;SLS.142;EXIT;Ù
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄDruck Rechnungsausgangsbuch - 1/1Ä¿
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                Bis Rechnungsdsatum  :  @@@@@@@@@@@@@@                        ³
-   ³                Bis Rechnungsnummer  :  @@@@@@@@@@@@@@                        ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   !R!FTMD13;FONT50255;EXIT;ğ[F1]=Hilfeğğ[Alt]+[F1]=Indexğğ[F2]=Suchenğğ[F10]=Men§ğğ[ESC]=EndeğğğğğğğğğğT02ğ!R!FTMD13;FONT50055;SLS.142;EXIT;
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””!R!FTMD13;FONT50255;EXIT;Â­Â­F-TastenÂ­Â­OptionenÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­Â­F1=HilfeÂ­Â­Â­Â­!R!FTMD13;FONT50055;SLS.142;EXIT;â”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Druck Rechnungsausgangsbuch - 1/1â”€â”
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                Bis Rechnungsdsatum  :  @@@@@@@@@@@@@@                        â”‚
+   â”‚                Bis Rechnungsnummer  :  @@@@@@@@@@@@@@                        â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   !R!FTMD13;FONT50255;EXIT;Â­[F1]=HilfeÂ­Â­[Alt]+[F1]=IndexÂ­Â­[F2]=SuchenÂ­Â­[F10]=MenÂºÂ­Â­[ESC]=EndeÂ­Â­Â­Â­Â­Â­Â­Â­Â­Â­T02Â­!R!FTMD13;FONT50055;SLS.142;EXIT;
 
 
 
-   Hilfe f§r: ¯Rechnungsausgangsbuch®
+   Hilfe fÂºr: Â»RechnungsausgangsbuchÂ«
    ----------------------------------
 
-   Alle Erl¦se und Ums¥tze aus den bisher gedruckten Rechnungen,
+   Alle ErlÂªse und UmsÃ‘tze aus den bisher gedruckten Rechnungen,
    Gutschriften und Stornorechnungen werden hier ausgedruckt.
    
    Wenn Sie die an den Druck anschliessende OK-Abfrage mit "J"
    beantworten, wird vermerkt, welche Rechnungen, Gutschriften,... im
    RA-Buch ausgedruckt worden sind.
    
-   Beim n¥chsten Ausdruck werden bereits gedruckte Formulare nicht mehr
+   Beim nÃ‘chsten Ausdruck werden bereits gedruckte Formulare nicht mehr
    gedruckt.
    
    Falls Sie mit der Finanzbuchhaltung arbeiten werden die Rechnungen,
-   Gutschriften,... anschliessend in die Finanzbuchhaltung §bernommen
+   Gutschriften,... anschliessend in die Finanzbuchhaltung Âºbernommen
    und dort automatisch verbucht.
    
-   Anschliessend k¦nnen Sie den Statistiklauf starten. Diesen
-   k¦nnen Sie aber auch separat zu einem sp¥teren Zeitpunkt star-
-   ten, da die Verarbeitung der Daten l¥ngere Zeit in Anspruch
+   Anschliessend kÂªnnen Sie den Statistiklauf starten. Diesen
+   kÂªnnen Sie aber auch separat zu einem spÃ‘teren Zeitpunkt star-
+   ten, da die Verarbeitung der Daten lÃ‘ngere Zeit in Anspruch
    nehmen kann.
    
    
 
-   Hilfe f§r: ¯Bis Rechnungsdatum®
+   Hilfe fÂºr: Â»Bis RechnungsdatumÂ«
    -------------------------------
 
    Geben Sie hier das Rechnungsdatum ein bis zu dem die Rechnungen in
-   das Rechnungseingangsbuch einflie¨en sollen.
+   das Rechnungseingangsbuch einflieÂ¿en sollen.
    
    Die Rechnungen die vor bzw. an diesem Tag erstellt wurden, werden
    dann im Rechnungsausgangsbuch ausgewiesen.
    
    Geben Sie hier das Datum im Format TTMMJJ ein, d.h. es stehen Ihnen
-   jeweils 2 Stellen f§r den Tag, den Monat und das Jahr zur Verf§gung.
+   jeweils 2 Stellen fÂºr den Tag, den Monat und das Jahr zur VerfÂºgung.
    
    Beispiel: "100492" bedeutet 10. April 1992.
    
@@ -3231,16 +3231,16 @@
    
    
 
-   Hilfe f§r: ¯Bis Rechnungsnummer®
+   Hilfe fÂºr: Â»Bis RechnungsnummerÂ«
    --------------------------------
 
    Geben Sie hier die letzte Rechnungsnummer ein, die ins Rechnungsein-
-   gangsbuch einflie¨en soll.
+   gangsbuch einflieÂ¿en soll.
 !R!FTMD13;FONT50055;SLPP99;SLS.142;SLM0.7;STM0.2;MAP0,.15;EXIT;WINware (C) 1988/1993                                  II. Bereich: Auftrag... / 1.45
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 !R!FTMD13;FONT50055;SLS.142;EXIT;   
-   Wenn Sie dieses Feld mit RETURN §bergehen, wird die gr¦¨tm¦gliche
+   Wenn Sie dieses Feld mit RETURN Âºbergehen, wird die grÂªÂ¿tmÂªgliche
    Nummer "999999" vorgeschlagen. Es werden dann alle noch nicht ver-
    arbeiteten Rechnungen bis zu dem im letzten Feld genannten Datum aus-
    gegeben.

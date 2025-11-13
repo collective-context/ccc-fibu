@@ -1,61 +1,61 @@
-WINware (C) 1988/1993                       ¯0® IV. WINware AUFTRAG Kundenstamm / 1.1
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+WINware (C) 1988/1993                       Â»0Â« IV. WINware AUFTRAG Kundenstamm / 1.1
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware WARE Basis Auftragsbearbeitung                                           º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
-
-
-
-   Menfenster ¯Basis Auftragsbearbeitung® / Stammdaten (AU-030):Žndern Kunden
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿              
-   ³ Stammdaten ³                 ... Kunden-, Lieferanten-, Artikel-, Mitarbeiterstamm, Konstanten.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Žndern Kundenstamm       ³   ... Anlegen, „ndern oder l”schen Ihrer Kunden.
-   ³ Žndern Lieferantenstamm  ³   ... Anlegen, „ndern oder l”schen Ihrer Lieferanten.
-   ³ Žndern Artikelstamm      ³   ... Anlegen, „ndern oder l”schen Ihrer Artikel.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ ¯Stammdaten/Konstanten®  ³
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Žndern Mitarbeiterstamm  ³   ... Anlegen „ndern oder l”schen Ihrer Mitarbeiter.
-   ³ Liste Mitarbeiter        ³   ... Drucken einer Liste Ihrer Mitarbeiter.
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware WARE Basis Auftragsbearbeitung                                           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
 
+   MenÃ¼fenster Â»Basis AuftragsbearbeitungÂ« / Stammdaten (AU-030):Ã„ndern Kunden
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Menfenster ¯Stammdaten® / Kunden (AU-040):Anlegen/Žndern Kunden
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-
-   ÚÄÄÄÄÄÄÄÄ¿            
-   ³ Kunden ³               ... Hier k”nnen Sie Kunden erfassen, „ndern, l”schen oder drucken.
-   ÃÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Anlegen/Žndern     ³   ... Anlegen, „ndern oder l”schen von kundenspezifischen Stammdaten.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Liste numerisch    ³   ... Druck der Kunden in numerischen Reihenfolge.
-   ³ Liste Bezeichnung  ³   ... Druck einer alphabetisch sortierten Lieste Ihrer Kunden.
-   ³ Liste Adressen     ³   ... Druck einer Adress-Liste der Kunden.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Telefonliste       ³   ... Druck eines Telefon-Verzeichnisses Ihrer Kunden.
-   ³ Etiketten          ³   ... Druck der Kundenadressen auf Klebe-Etiketten.
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”              
+   â”‚ Stammdaten â”‚                 ... Kunden-, Lieferanten-, Artikel-, Mitarbeiterstamm, Konstanten.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Ã„ndern Kundenstamm       â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen Ihrer Kunden.
+   â”‚ Ã„ndern Lieferantenstamm  â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen Ihrer Lieferanten.
+   â”‚ Ã„ndern Artikelstamm      â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen Ihrer Artikel.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Â»Stammdaten/KonstantenÂ«  â”‚
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Ã„ndern Mitarbeiterstamm  â”‚   ... Anlegen Ã¤ndern oder lÃ¶schen Ihrer Mitarbeiter.
+   â”‚ Liste Mitarbeiter        â”‚   ... Drucken einer Liste Ihrer Mitarbeiter.
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
-   Dateibeschreibung fr: Kundenstamm
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+   MenÃ¼fenster Â»StammdatenÂ« / Kunden (AU-040):Anlegen/Ã„ndern Kunden
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”            
+   â”‚ Kunden â”‚               ... Hier kÃ¶nnen Sie Kunden erfassen, Ã¤ndern, lÃ¶schen oder drucken.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Anlegen/Ã„ndern     â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen von kundenspezifischen Stammdaten.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Liste numerisch    â”‚   ... Druck der Kunden in numerischen Reihenfolge.
+   â”‚ Liste Bezeichnung  â”‚   ... Druck einer alphabetisch sortierten Lieste Ihrer Kunden.
+   â”‚ Liste Adressen     â”‚   ... Druck einer Adress-Liste der Kunden.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Telefonliste       â”‚   ... Druck eines Telefon-Verzeichnisses Ihrer Kunden.
+   â”‚ Etiketten          â”‚   ... Druck der Kundenadressen auf Klebe-Etiketten.
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+
+
+
+   Dateibeschreibung fÃ¼r: Kundenstamm
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Name der Datei   : ST1100
    Bezeichnung      : Kundenstamm allgemein
    
-   Zusatzerkl„rung 1: zentraler Adreábestand fr alle Module
-   Zusatzerkl„rung 2: 
+   ZusatzerklÃ¤rung 1: zentraler AdreÃŸbestand fÃ¼r alle Module
+   ZusatzerklÃ¤rung 2: 
    
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-   Datenfeld  Zusatzerkl„rung         Offset L„nge Filler Datenattribut-TYP   VKS NKS KEY DUP MOD
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Datenfeld  ZusatzerklÃ¤rung         Offset LÃ¤nge Filler Datenattribut-TYP   VKS NKS KEY DUP MOD
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    
    KUNDE      Kunden-Nummer               10    20         0                            1  N   N
    MATCH_CODE Kurzbezeichnung             31    30         0                            2  J   J
@@ -63,7 +63,7 @@ WINware (C) 1988/1993                       ¯0® IV. WINware AUFTRAG Kundenstamm 
    NAME       Name (Name 1)               98    35         0                            3  J   J
    ZUSATZ     Zusatz 1 (Name 2)          134    35         0                                    
    STRASSE    Strasse                    170    35         0                            4  J   J
-   LAND       Ld/ [= Land-Krzel]        206     3      5  0                                    
+   LAND       Ld/ [= Land-KÃ¼rzel]        206     3      5  0                                    
    PLZ_ORT    PLZ/Ort                    215    35         0                            5  J   J
    MAILING    Mailing-Vermerk            251     2         6                    1               
    POSTFACH   Postfach                   253    10         0                                    
@@ -73,25 +73,25 @@ WINware (C) 1988/1993                       ¯0® IV. WINware AUFTRAG Kundenstamm 
    TELEFAX    Telefax                    373    35         0                                    
    BTX        BTX-Nr.:                   409    25         0                                    
 WINware (C) 1988/1993                      >73< IV. WINware AUFTRAG Kundenstamm / 1.2
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    BRANCHE_0  Branche                    435     4     55  4                                    
    AUSWAHL    Auswahl                    494     4         4                                    
    KUNDEN_GR  Kunden-Gruppe              498    10         0                                    
    AUSWERTUNG Auswertung                 509    10         0                            6  J   J
-   ANREDE_1   Anrede fr Ansprechp.      520    10         0                                    
-   TITEL_1    Titel fr Ansprechpart.    531    20         0                                    
-   VORNAME_1  Vorname fr Ansprechp.     552    20         0                                    
-   ZUNAME_1   Zuname fr Ansprechp.      573    25         0                                    
-   POSITION_1 Position fr Ansprechp.    599    35         0                                    
-   GEBURT_1   Geburtstag fr Anspr.      635     4         7                    8               
+   ANREDE_1   Anrede fÃ¼r Ansprechp.      520    10         0                                    
+   TITEL_1    Titel fÃ¼r Ansprechpart.    531    20         0                                    
+   VORNAME_1  Vorname fÃ¼r Ansprechp.     552    20         0                                    
+   ZUNAME_1   Zuname fÃ¼r Ansprechp.      573    25         0                                    
+   POSITION_1 Position fÃ¼r Ansprechp.    599    35         0                                    
+   GEBURT_1   Geburtstag fÃ¼r Anspr.      635     4         7                    8               
    TELEX      Telex [Teletex]            639    25         0                                    
    ZUSATZ_2   Zusatz 2 (Name 3)          665    35         0                                    
    ZUSATZ_3   Zusatz 3 (Name 4)          701    35         0                                    
    WERB_EIN   Werbung bekommen           737     4         4                                    
    WERB_AUS   Werbung versendet          741     4         4                                    
    PUBLIC     Publicrelation             745     4         4                                    
-   AUSSENDUNG Diesmal bercksichtigen    749     1         0                                    
+   AUSSENDUNG Diesmal berÃ¼cksichtigen    749     1         0                                    
    BRANCHE    Sik-Code                   751   120                                              
    UMSATZ_GR  Umsatzgruppe               872     1                                              
    MITARB_GR  Mitarbeitergruppe          874     1                                              
@@ -103,20 +103,20 @@ WINware (C) 1988/1993                      >73< IV. WINware AUFTRAG Kundenstamm 
    Name der Datei   : ST1110
    Bezeichnung      : Kundenstamm FIBU/FAKT/AUFTRAG
    
-   Zusatzerkl„rung 1: zus„tzliche Infos ber den Kunden
-   Zusatzerkl„rung 2: 
+   ZusatzerklÃ¤rung 1: zusÃ¤tzliche Infos Ã¼ber den Kunden
+   ZusatzerklÃ¤rung 2: 
    
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-   Datenfeld  Zusatzerkl„rung         Offset L„nge Filler Datenattribut-TYP   VKS NKS KEY DUP MOD
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Datenfeld  ZusatzerklÃ¤rung         Offset LÃ¤nge Filler Datenattribut-TYP   VKS NKS KEY DUP MOD
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    
    KUNDE_ST1  Kunden-Nummer        FA     10    20         0                            1  N   N
-   FILLER     WŽHRUNG -> in FI1100        31     1         0                                    
+   FILLER     WÃ„HRUNG -> in FI1100        31     1         0                                    
    MWST       MwSt-Kennz.[0,1,2,3] FA     33     2         0                                    
    FILLER     KONDITION -> in FI1110      36     9      6  0                                    
    FILLER     AUSLANDSKU -> in -"-        52     1         0                                    
    FI_KU_KTO  Kontonummer in Fibu         54     8      7  0                                    
-   Z_EMPFANG  Zahlschein: Empf„nger       70    60         0                                    
+   Z_EMPFANG  Zahlschein: EmpfÃ¤nger       70    60         0                                    
    Z_KONTO    -"- Konto-Nr.: des Empf    131    20         0                                    
    Z_BEI      -"- Bei Bank               152    35         0                                    
    Z_BLZ      -"- Bankleitzahl           188    10         0                                    
@@ -128,10 +128,10 @@ WINware (C) 1988/1993                      >73< IV. WINware AUFTRAG Kundenstamm 
    TOUR_GEB   Tour, Gebit [1-99]         314     2         1                                    
    APSPEICHER Abspeicherungsk. [0-5]     316     2         1                                    
    SAMMEL_RE  Sammelrechnung [0-99]      318     2         1                                    
-   EMPFŽNGER  Rechnungsempf„nger         320    20         0                                    
-   KREDIT     Kreditlimit in T™S         341     8         5                    9  2            
+   EMPFÃ„NGER  RechnungsempfÃ¤nger         320    20         0                                    
+   KREDIT     Kreditlimit in TÃ–S         341     8         5                    9  2            
    LE_KONTAKT Letzter Kontakt            349     4         7                                    
-   NE_KONTAKT N„chster Kontakt           353     4         7                                    
+   NE_KONTAKT NÃ¤chster Kontakt           353     4         7                                    
    FILLER     UMSATZ_PER                 357     8         5                    9  2            
    FILLER     UMSATZ_JAH                 365     8         5                    9  2            
    FILLER     UMSATZ_VOR                 373     8         5                    9  2            
@@ -146,234 +146,234 @@ WINware (C) 1988/1993                      >73< IV. WINware AUFTRAG Kundenstamm 
 
 
 WINware (C) 1988/1993                      >72< IV. WINware AUFTRAG Kundenstamm / 1.3
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 
-   Ein-/Ausgabefelder fr: Anlegen/Žndern Kundenstamm (STM110)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Ein-/Ausgabefelder fÃ¼r: Anlegen/Ã„ndern Kundenstamm (STM110)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   ÀF-TastenOptionenF1=HilfeÙ
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/Žndern Kundenstamm - 1/2Ä¿
-   ³  Kunde: Kïïïïïïïïïïïïïïïïï  Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ³
-   ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ³
-   ³                                                                              ³
-   ³  Anrede    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Kunden-Gr : ïïïïïïïïïï  ³
-   ³  Name      : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Auswertung: ïïïïïïïïïï  ³
-   ³  Zusatz    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Freigabe  : @@@@@@@@@@  ³
-   ³                                                                              ³
-   ³  Straáe    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     ® Postfach : @@@@@@@@@  ³
-   ³  Ld/PLZ/Ort: @@@ - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Sprache  : ›››        ³
-   ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ³
-   ³                                                                              ³
-   ³  Telefon   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Telex : @@@@@@@@@@@@@@@@@@@@  ³
-   ³  Telefax   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ BTX-Nr: @@@@@@@@@@@@@@@@@@@@  ³
-   ³  Branche   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ³
-   ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ³
-   ³                                                                              ³
-   ³  Anrede Titel       Vorname       Zuname             Position    Geburtstag  ³
-   ³  ÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄ  ³
-   ³  @@@@@@ @@@@@@@@@@@ @@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@ ##.##.##  ³
-   ³ù Anrede im Brief  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          ù³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=Men[ESC]=EndeT02
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””F-TastenOptionenF1=Hilfeâ”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Anlegen/Ã„ndern Kundenstamm - 1/2â”€â”
+   â”‚  Kunde: KÂ´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´  Kurzbezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  â”‚
+   â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚
+   â”‚                                                                              â”‚
+   â”‚  Anrede    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Kunden-Gr : Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´  â”‚
+   â”‚  Name      : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Auswertung: Â´Â´Â´Â´Â´Â´Â´Â´Â´Â´  â”‚
+   â”‚  Zusatz    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Freigabe  : @@@@@@@@@@  â”‚
+   â”‚                                                                              â”‚
+   â”‚  StraÃŸe    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     Â« Postfach : @@@@@@@@@  â”‚
+   â”‚  Ld/PLZ/Ort: @@@ - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Sprache  : Ã¸Ã¸Ã¸        â”‚
+   â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚
+   â”‚                                                                              â”‚
+   â”‚  Telefon   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Telex : @@@@@@@@@@@@@@@@@@@@  â”‚
+   â”‚  Telefax   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ BTX-Nr: @@@@@@@@@@@@@@@@@@@@  â”‚
+   â”‚  Branche   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  â”‚
+   â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚
+   â”‚                                                                              â”‚
+   â”‚  Anrede Titel       Vorname       Zuname             Position    Geburtstag  â”‚
+   â”‚  â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”€  â”‚
+   â”‚  @@@@@@ @@@@@@@@@@@ @@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@ ##.##.##  â”‚
+   â”‚Â¨ Anrede im Brief  : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          Â¨â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=MenÃ¼[ESC]=EndeT02
 
 
 
-   Ein-/Ausgabefelder fr: Anlegen/Žndern Kundenstamm (AUM111)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Ein-/Ausgabefelder fÃ¼r: Anlegen/Ã„ndern Kundenstamm (AUM111)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   ÀF-TastenOptionenF1=HilfeÙ
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/Žndern Kundenstamm - 2/2Ä¿
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””F-TastenOptionenF1=Hilfeâ”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Anlegen/Ã„ndern Kundenstamm - 2/2â”€â”
 
-1. Anlegen/Žndern Kunden
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+1. Anlegen/Ã„ndern Kunden
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Anlegen/Žndern Kundenstamm
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Anlegen/Ã„ndern Kundenstamm
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Dieses Programm pflegt zwei Kategorien von Dateien. Der Kunden-
    stamm auf der ersten Seite wird in eine eigene Datei geschrieben
-   und wird auch in vielen anderen WINware- Programmen ver„ndert.
+   und wird auch in vielen anderen WINware- Programmen verÃ¤ndert.
    
    Die Daten auf der zweiten Bildschirmmaske werden in einer eigenen
-   Datei gespeichert. Durch diese Technik wird es m”glich viele eigen-
-   st„ndige Module auch nachtr„glich zu installieren, die dann auf die
-   Dateien der Stammprogramme zugreifen k”nnen.
+   Datei gespeichert. Durch diese Technik wird es mÃ¶glich viele eigen-
+   stÃ¤ndige Module auch nachtrÃ¤glich zu installieren, die dann auf die
+   Dateien der Stammprogramme zugreifen kÃ¶nnen.
    
    Das Anlegen der KUNDEN sollte, wie die Eingabe aller  STAMM-Daten,
-   besonders sorgf„ltig erfolgen, da natrlich nur korrekte STAMM-
-   Daten zu richtigen Ergebnissen fhren.
+   besonders sorgfÃ¤ltig erfolgen, da natÃ¼rlich nur korrekte STAMM-
+   Daten zu richtigen Ergebnissen fÃ¼hren.
    
-   Wenn Sie die angelegten KUNDEN protokollieren, k”nnen Sie auf-
-   kommende Fragen oder unerwartete Ergebnisse leichter berprfen.
+   Wenn Sie die angelegten KUNDEN protokollieren, kÃ¶nnen Sie auf-
+   kommende Fragen oder unerwartete Ergebnisse leichter Ã¼berprÃ¼fen.
    
    Verwenden Sie sowohl die WINware- Finanzbuchhaltung als auch
-   andere WINware- Standard- oder Branchenl”sungen, dann brauchen
+   andere WINware- Standard- oder BranchenlÃ¶sungen, dann brauchen
    Sie Ihre Stammdaten (Kunden, Lieferanten, Artikel, usw.) nur
    einmal anzulegen.
    
-   .Alle WINware-Programme verwenden n„mlich gemeinsam die Dateien
+   .Alle WINware-Programme verwenden nÃ¤mlich gemeinsam die Dateien
    der Stammdaten-Programme.
    
-   Mit diesem Programm k”nnen Sie nicht nur neue Kunden anlegen, oder
-   Kundendaten ver„ndern, sondern natrlich auch l”schen.
+   Mit diesem Programm kÃ¶nnen Sie nicht nur neue Kunden anlegen, oder
+   Kundendaten verÃ¤ndern, sondern natÃ¼rlich auch lÃ¶schen.
 WINware (C) 1988/1993                      >73< IV. WINware AUFTRAG Kundenstamm / 1.4
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Drcken Sie die F3-Taste so werden Sie nochmals gefragt ob Sie den
-   Kunden wircklich l”schen wollen. Beantworten Sie die Frage mit ¯Ja®
-   so wird dieser Kunde gel”scht.
+   DrÃ¼cken Sie die F3-Taste so werden Sie nochmals gefragt ob Sie den
+   Kunden wircklich lÃ¶schen wollen. Beantworten Sie die Frage mit Â»JaÂ«
+   so wird dieser Kunde gelÃ¶scht.
 WINware (C) 1988/1993                       >5< IV. WINware AUFTRAG Kundenstamm / 1.5
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-1/2 þ Kunde
-ÄÄÄÄÄÄÄÄÄÄÄ
+1/2 â–  Kunde
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Bei der Anlage von ¯Kunden® k”nnen Sie eine bis zu 20-stellige
-   alphanumerische ¯Kunden-Nummer® eingegeben.                         
+   Bei der Anlage von Â»KundenÂ« kÃ¶nnen Sie eine bis zu 20-stellige
+   alphanumerische Â»Kunden-NummerÂ« eingegeben.                         
                                                                        
-   Existiert diese ¯Kunden-Nr.® bereits, so wird die Information am    
+   Existiert diese Â»Kunden-Nr.Â« bereits, so wird die Information am    
    Bildschirm angezeigt. Existiert noch kein Eintrag unter dieser      
-   ¯Kunden-Nummer® kann ein neuer Kunde angelegt werden.               
+   Â»Kunden-NummerÂ« kann ein neuer Kunde angelegt werden.               
                                                                        
-   Wenn Sie das Zeichen [+] als ¯Kunden-Nr.® eingeben, wird der        
-   Eintrag aus den ¯Nummern-Kreisen® gelesen und eine, um eins erh”hte,
+   Wenn Sie das Zeichen [+] als Â»Kunden-Nr.Â« eingeben, wird der        
+   Eintrag aus den Â»Nummern-KreisenÂ« gelesen und eine, um eins erhÃ¶hte,
    Kunden-Nr. als neue Nummer vorgeschlagen.                           
                                                                        
-   Setzen Sie auch das Fibu-Modul ein und wollen, daá die ¯Konto-Nr®   
-   mit dieser ¯Kunden-Nr® identisch ist, dann drfen Sie nur die       
+   Setzen Sie auch das Fibu-Modul ein und wollen, daÃŸ die Â»Konto-NrÂ«   
+   mit dieser Â»Kunden-NrÂ« identisch ist, dann dÃ¼rfen Sie nur die       
    ersten 8 Stellen alphanummerisch verwenden.                         
                                                                        
-   W„hlen Sie hier einen Kunden aus, so k”nnen Sie ber verschiedene   
-   Schlssel den gewnschten Kunden suchen. Standardm„áig sind die     
-   Felder ¯Kundennummer®, ¯Kurzbezeichnung®, ¯Name®, ¯Straáe® und      
-   ¯PLZ/Ort® Schlsselfelder, in denen Sie nach dem Alphabet sortiert  
-   suchen k”nnen.                                                      
+   WÃ¤hlen Sie hier einen Kunden aus, so kÃ¶nnen Sie Ã¼ber verschiedene   
+   SchlÃ¼ssel den gewÃ¼nschten Kunden suchen. StandardmÃ¤ÃŸig sind die     
+   Felder Â»KundennummerÂ«, Â»KurzbezeichnungÂ«, Â»NameÂ«, Â»StraÃŸeÂ« und      
+   Â»PLZ/OrtÂ« SchlÃ¼sselfelder, in denen Sie nach dem Alphabet sortiert  
+   suchen kÃ¶nnen.                                                      
                                                                        
-   Zwischen den Schlsselfeldern schalten Sie durch das Drcken der    
-   [Ù]-Taste hin und her.                                             
+   Zwischen den SchlÃ¼sselfeldern schalten Sie durch das DrÃ¼cken der    
+   [â”˜]-Taste hin und her.                                             
                                                                        
-   Wollen Sie auf diese Weise in das andere Schlsselfeld gelangen, so 
-   muá das eigene Schlsselfeld leer sein und es darf kein Datensatz   
+   Wollen Sie auf diese Weise in das andere SchlÃ¼sselfeld gelangen, so 
+   muÃŸ das eigene SchlÃ¼sselfeld leer sein und es darf kein Datensatz   
    am Bildschirm angezeigt werden.                                     
                                                                        
-   Ist dies nicht der Fall, so k”nnen Sie durch Drcken der Taste [ESC]
+   Ist dies nicht der Fall, so kÃ¶nnen Sie durch DrÃ¼cken der Taste [ESC]
    leicht in diese Position gelangen. Falls im angezeigten Datensatz   
-   etwas ge„ndert wurde, stellt Ihnen das Programm die Frage, ob Sie   
-   die Žnderungen speichern wollen oder nicht.                         
+   etwas geÃ¤ndert wurde, stellt Ihnen das Programm die Frage, ob Sie   
+   die Ã„nderungen speichern wollen oder nicht.                         
                                                                        
-   Stehen Sie nun im ersten Schlsselfeld (¯Kunden-Nr.®), dann         
-   k”nnen Sie mit [Ù] ins zweite Schlsselfeld gelangen, oder mit     
+   Stehen Sie nun im ersten SchlÃ¼sselfeld (Â»Kunden-Nr.Â«), dann         
+   kÃ¶nnen Sie mit [â”˜] ins zweite SchlÃ¼sselfeld gelangen, oder mit     
    [ESC] das Programm verlassen.                                       
                                                                        
-   Sie k”nnen die Schlsselfelder natrlich auch jederzeit mit den     
+   Sie kÃ¶nnen die SchlÃ¼sselfelder natÃ¼rlich auch jederzeit mit den     
    Cursortasten [] und [] errreichen.                                
                                                                        
-   ¯> Wenn Sie in einem Schlsselfeld stehen und die [F2]-Taste        
-      drcken, wird ein Bildschirm-Fenster ge”ffnet. Danach k”nnen Sie 
+   Â»> Wenn Sie in einem SchlÃ¼sselfeld stehen und die [F2]-Taste        
+      drÃ¼cken, wird ein Bildschirm-Fenster geÃ¶ffnet. Danach kÃ¶nnen Sie 
       den Suchbegriff oder einen Teil des Suchbegriffes eingeben.      
-      Alle passenden ¯Kunden® werden dann im Bildschirmfenster an-     
+      Alle passenden Â»KundenÂ« werden dann im Bildschirmfenster an-     
       gezeigt.                                                         
                                                                        
-      Innerhalb des Fensters k”nnen Sie mit den Cursor-Tasten [] und  
-      [] die gesuchten Kunden ausw„hlen. Nachdem Sie die [Ù]-Taste   
-      gedrckt haben, wird der gewnschte Kunden-Stammsatz auf dem     
+      Innerhalb des Fensters kÃ¶nnen Sie mit den Cursor-Tasten [] und  
+      [] die gesuchten Kunden auswÃ¤hlen. Nachdem Sie die [â”˜]-Taste   
+      gedrÃ¼ckt haben, wird der gewÃ¼nschte Kunden-Stammsatz auf dem     
       Bildschirm angezeigt.                                            
                                                                        
-   ¯> Wird am Bildschirm bereits ein ausgew„hlter Kunde angezeigt      
-      und stehen Sie im Feld Kurzbezeichnung, dann k”nnen Sie mit Hilfe
+   Â»> Wird am Bildschirm bereits ein ausgewÃ¤hlter Kunde angezeigt      
+      und stehen Sie im Feld Kurzbezeichnung, dann kÃ¶nnen Sie mit Hilfe
       der Tasten [Bild] und [Bild], sortiert nach der Kurzbezeichnung
-      vor oder rckw„rtsbl„ttern.                                      
+      vor oder rÃ¼ckwÃ¤rtsblÃ¤ttern.                                      
                                                                        
-      Das gleiche gilt fr alle anderen Schlsselfelder wie ¯Name®,    
-      ¯Straáe® und ¯PLZ/Ort®.                                          
+      Das gleiche gilt fÃ¼r alle anderen SchlÃ¼sselfelder wie Â»NameÂ«,    
+      Â»StraÃŸeÂ« und Â»PLZ/OrtÂ«.                                          
                                                                        
-      Stehen Sie in irgend einem anderen Eingabefeld, dann bl„ttern    
+      Stehen Sie in irgend einem anderen Eingabefeld, dann blÃ¤ttern    
       Sie mit den Taste [Bild] und [Bild], sortiert nach der Kunden- 
-      Nummer, vor oder rckw„rts.                                      
+      Nummer, vor oder rÃ¼ckwÃ¤rts.                                      
                                                                        
                                                                        
 WINware (C) 1988/1993                      >69< IV. WINware AUFTRAG Kundenstamm / 1.6
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-þ Kurzbezeichnung
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Kurzbezeichnung
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Die Kurzbezeichnung wird vom Programm selbstst„ndig beim Verlassen
-   des Feldes ¯Postleitzahl/Ort® vorgeschlagen.                        
+   Die Kurzbezeichnung wird vom Programm selbststÃ¤ndig beim Verlassen
+   des Feldes Â»Postleitzahl/OrtÂ« vorgeschlagen.                        
                                                                        
-   Die Zusammensetzung des Feldes Kurzbezeichnung h„ngt von der Eingabe
+   Die Zusammensetzung des Feldes Kurzbezeichnung hÃ¤ngt von der Eingabe
    im Feld Anrede ab. Geben Sie dort Firma ein, so setzt sich die Kurz-
-   bezeichnung aus dem Feld ¯Name® und dem Feld ¯Postleitzahl/Ort® zu- 
-   sammen. Haben Sie im Feld ¯Anrede® z.B. Herr oder Frau eingegeben,  
-   so wird die Kurzbezeichnung aus dem letzten Wort im Feld ¯Namen®    
-   (Nachname) und dem Eintrag im Feld ¯Postleitzahl/Ort® gebildet.
-   Dieser Vorschlag kann aber jederzeit berschrieben werden.          
+   bezeichnung aus dem Feld Â»NameÂ« und dem Feld Â»Postleitzahl/OrtÂ« zu- 
+   sammen. Haben Sie im Feld Â»AnredeÂ« z.B. Herr oder Frau eingegeben,  
+   so wird die Kurzbezeichnung aus dem letzten Wort im Feld Â»NamenÂ«    
+   (Nachname) und dem Eintrag im Feld Â»Postleitzahl/OrtÂ« gebildet.
+   Dieser Vorschlag kann aber jederzeit Ã¼berschrieben werden.          
                                                                        
-   Sie k”nnen hier ber die F2-Taste nach Adressen suchen. Geben Sie,  
-   nachdem Sie die F2-Taste gedrckt haben, die ¯Kurzbezeichnung® ganz 
+   Sie kÃ¶nnen hier Ã¼ber die F2-Taste nach Adressen suchen. Geben Sie,  
+   nachdem Sie die F2-Taste gedrÃ¼ckt haben, die Â»KurzbezeichnungÂ« ganz 
    oder teilweise ein.                                                 
                                                                        
-   Nach Drcken der [Ù]-Taste erscheinen alle Adressen, bei denen die 
-   ¯Kurzbezeichnung® mit den Vorgaben bereinstimmen, alphabetisch ge- 
+   Nach DrÃ¼cken der [â”˜]-Taste erscheinen alle Adressen, bei denen die 
+   Â»KurzbezeichnungÂ« mit den Vorgaben Ã¼bereinstimmen, alphabetisch ge- 
    ordnet, in einem Fenster.                                           
                                                                        
    Innerhalb des Fensters kann dann mit den Cursortasten [] und []   
-   die gewnschte Adresse ausgew„hlt werden. Wird dann die [Ù]-Taste  
-   gedrckt, wird der ausgew„hlte Adressen-Stamm-Satz am Bildschirm    
+   die gewÃ¼nschte Adresse ausgewÃ¤hlt werden. Wird dann die [â”˜]-Taste  
+   gedrÃ¼ckt, wird der ausgewÃ¤hlte Adressen-Stamm-Satz am Bildschirm    
    angezeigt.                                                          
                                                                        
-   Drcken Sie innerhalb des Suchfensters die [TAB]-TASTE, dann springt
-   der Cursor wieder zur Eingabe einer ¯Kurzbezeichnung® zurck.       
+   DrÃ¼cken Sie innerhalb des Suchfensters die [TAB]-TASTE, dann springt
+   der Cursor wieder zur Eingabe einer Â»KurzbezeichnungÂ« zurÃ¼ck.       
                                                                        
-   Sind zu den ganz oder teilweise eingegebenen ¯Kurzbezeichnungen®    
+   Sind zu den ganz oder teilweise eingegebenen Â»KurzbezeichnungenÂ«    
    keine passenden Adressen vorhanden, dann wird die Eingabe von hinten
-   nach vorne verkleinert, bis passende Stamm-S„tze gefunden werden.   
+   nach vorne verkleinert, bis passende Stamm-SÃ¤tze gefunden werden.   
                                                                        
-   Haben Sie bereits eine Adresse am Bildschirm stehen, k”nnen Sie in  
+   Haben Sie bereits eine Adresse am Bildschirm stehen, kÃ¶nnen Sie in  
    diesem Feld mit den Tasten [Bild] und [Bild] in Ihrer Datei       
-   alphabetisch bl„ttern.                                              
+   alphabetisch blÃ¤ttern.                                              
                                                                        
                                                                        
-þ Anrede
-ÄÄÄÄÄÄÄÄ
+â–  Anrede
+â”€â”€â”€â”€â”€â”€â”€â”€
 
    Hier geben Sie die Anrede Ihrer Adresse ein.
                                                                   
    Beispiel: Herr, Frau, Frl., Firma                              
                                                                   
-   Die Eingabe in diesem Feld beeinfluát die Bildung der Kurzbe-  
+   Die Eingabe in diesem Feld beeinfluÃŸt die Bildung der Kurzbe-  
    zeichnung. Das Programm unterscheidet Privat- und Firmennamen. 
                                                                   
-   Geben Sie als Anrede ¯Firma® ein, so setzt sich der Match-Code 
-   aus dem Eintrag im Feld ¯Name® und dem Feld ¯PLZ/Ort® zusammen.
+   Geben Sie als Anrede Â»FirmaÂ« ein, so setzt sich der Match-Code 
+   aus dem Eintrag im Feld Â»NameÂ« und dem Feld Â»PLZ/OrtÂ« zusammen.
    Bei Herr oder Frau aus dem letzten Wort im Feld Name (Nachname)
-   und dem Feld ¯Postleitzahl/Ort®.                               
+   und dem Feld Â»Postleitzahl/OrtÂ«.                               
                                                                   
                                                                   
-þ Name
-ÄÄÄÄÄÄ
+â–  Name
+â”€â”€â”€â”€â”€â”€
 
-   Bitte geben Sie hier den ¯Namen® des Kunden ein. Sie haben dafr 35
-   Stellen fr Ihre Eingaben zur Verfgung.
+   Bitte geben Sie hier den Â»NamenÂ« des Kunden ein. Sie haben dafÃ¼r 35
+   Stellen fÃ¼r Ihre Eingaben zur VerfÃ¼gung.
    
    Die Eingabe in diesem Feld wird zur Bildung der Kurzbezeichnung vor-
    geschlagen.
    
-   Haben Sie im Feld ¯Anrede® [Firma] eingegeben, so wird das gesamte
+   Haben Sie im Feld Â»AnredeÂ« [Firma] eingegeben, so wird das gesamte
    Feld, bei [Herr], [Frau] und [Frl.] wird nur das letzte Wort
    (Nachname) zur Bildung des Match-Codes verwendet.
    
    
 WINware (C) 1988/1993                      >71< IV. WINware AUFTRAG Kundenstamm / 1.7
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-þ Zusatz
-ÄÄÄÄÄÄÄÄ
+â–  Zusatz
+â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Beispiel: Fr die Anschrift Ihrers Kunden
+   Beispiel: FÃ¼r die Anschrift Ihrers Kunden
    
                             Firma
                             Weber & Partner
@@ -382,123 +382,123 @@ WINware (C) 1988/1993                      >71< IV. WINware AUFTRAG Kundenstamm 
    geben Sie hier ein:  [Software-Entwicklungs-GmbH].
    
    
-þ Straáe
-ÄÄÄÄÄÄÄÄ
+â–  StraÃŸe
+â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Geben Sie hier bitte die Straáe der zu erfassenden Adresse ein.     
+   Geben Sie hier bitte die StraÃŸe der zu erfassenden Adresse ein.     
                                                                        
-   Sie haben dafr 35 Stellen fr eine alphanumerische Eingabe zur Ver-
-   fgung.                                                             
+   Sie haben dafÃ¼r 35 Stellen fÃ¼r eine alphanumerische Eingabe zur Ver-
+   fÃ¼gung.                                                             
                                                                        
                                                                        
-þ Land
-ÄÄÄÄÄÄ
+â–  Land
+â”€â”€â”€â”€â”€â”€
 
-   Geben Sie hier bitte das L„nderkennzeichen fr die Adresse ein.
+   Geben Sie hier bitte das LÃ¤nderkennzeichen fÃ¼r die Adresse ein.
                                                                   
-   Standardm„áig wird Ihnen [A] fr ™sterreich vorgeschlagen.     
+   StandardmÃ¤ÃŸig wird Ihnen [A] fÃ¼r Ã–sterreich vorgeschlagen.     
                                                                   
                                                                   
-þ PLZ/Ort
-ÄÄÄÄÄÄÄÄÄ
+â–  PLZ/Ort
+â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Hier geben Sie die Postleitzahl und den Wohnort der Adresse ein.    
                                                                        
-   Die Eingabe in diesem Feld wird als zweite H„lfte im Feld ¯Kurz-    
-   bezeichnung® vorgeschlagen. Die Kurzbezeichnung dient als Such-     
-   begriff fr den ¯Match-Code®.                                       
+   Die Eingabe in diesem Feld wird als zweite HÃ¤lfte im Feld Â»Kurz-    
+   bezeichnungÂ« vorgeschlagen. Die Kurzbezeichnung dient als Such-     
+   begriff fÃ¼r den Â»Match-CodeÂ«.                                       
                                                                        
                                                                        
-þ Kunden-Gr.
-ÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Kunden-Gr.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Mit der Eingabe in diesem Feld k”nnen Sie den Kunden zu einer be-
-   stimmten ¯Kunden-Gruppe® zuordnen.
+   Mit der Eingabe in diesem Feld kÃ¶nnen Sie den Kunden zu einer be-
+   stimmten Â»Kunden-GruppeÂ« zuordnen.
    
-   Fr die Kennzeichnung der ¯Kunden-Gruppe® stehen Ihnen 10 Stel-
-   len fr eine alphanumerische Eingabe zur Verfgung.
+   FÃ¼r die Kennzeichnung der Â»Kunden-GruppeÂ« stehen Ihnen 10 Stel-
+   len fÃ¼r eine alphanumerische Eingabe zur VerfÃ¼gung.
    
    In verschiedenen Auswertungs-Programmen kann dann dieses Feld
-   als Auswahl-Kriterium benutzt werden. Zum Beispiel k”nnen Sie nur
-   alle Kunden ausdrucken lassen, die den ¯Kunden-Gruppen® von B111
-   bis C111 angeh”ren.
+   als Auswahl-Kriterium benutzt werden. Zum Beispiel kÃ¶nnen Sie nur
+   alle Kunden ausdrucken lassen, die den Â»Kunden-GruppenÂ« von B111
+   bis C111 angehÃ¶ren.
    
-   Die sachliche Bedeutung der verschiedenen ¯Kunden-Gruppen® be-
-   stimmt dabei ausschlieálich der jeweilige Anwender.
+   Die sachliche Bedeutung der verschiedenen Â»Kunden-GruppenÂ« be-
+   stimmt dabei ausschlieÃŸlich der jeweilige Anwender.
    
    
-þ Auswertung
-ÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Auswertung
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier geben Sie ein selbstgew„hltes Auswahlkriterium fr Ihre Kunden
+   Hier geben Sie ein selbstgewÃ¤hltes Auswahlkriterium fÃ¼r Ihre Kunden
    an.
    
-   Dies ist wichtig fr alle Auswertungs- und Druck-Programme.
+   Dies ist wichtig fÃ¼r alle Auswertungs- und Druck-Programme.
                                                                        
                                                                        
 WINware (C) 1988/1993                      >68< IV. WINware AUFTRAG Kundenstamm / 1.8
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-þ Mailing
-ÄÄÄÄÄÄÄÄÄ
+â–  Mailing
+â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier setzten Sie als ¯weiteres Auswahl-Kennzeichen® ein "X" oder 
+   Hier setzten Sie als Â»weiteres Auswahl-KennzeichenÂ« ein "X" oder 
    NICHTS ein.                                                      
                                                                     
    Wird bei der Serienbriefschreibung der Kunde selektiert, wird das
-   "X" wieder gel”scht.                                             
+   "X" wieder gelÃ¶scht.                                             
                                                                     
                                                                     
-þ Postfach
-ÄÄÄÄÄÄÄÄÄÄ
+â–  Postfach
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Geben Sie hier, falls vorhanden, die ¯Postfach-Nummer® der Adresse  
+   Geben Sie hier, falls vorhanden, die Â»Postfach-NummerÂ« der Adresse  
    ein.                                                                
                                                                        
                                                                        
-þ Sprach-Code
-ÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Sprach-Code
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Tragen Sie hier den ¯Sprach-Code® Ihres Kunden ein.
+   Tragen Sie hier den Â»Sprach-CodeÂ« Ihres Kunden ein.
    
-   Defaultm„áig wird [043] fr ™sterreich vorgeschlagen. Dieser Vor-
-   schlag kann aber jederzeit berschrieben werden.
+   DefaultmÃ¤ÃŸig wird [043] fÃ¼r Ã–sterreich vorgeschlagen. Dieser Vor-
+   schlag kann aber jederzeit Ã¼berschrieben werden.
    
    Auf Wunsch kann der Ausdruck z.B. der Mahnungen, Rechnungen usw.
    in der Landessprache des Kunden erfolgen.
    
    
-þ Telefon
-ÄÄÄÄÄÄÄÄÄ
+â–  Telefon
+â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   In diesem Feld kann die ¯Telefon-Nummer® der Adresse eingegeben
-   werden. Dafr stehen 60 Stellen fr eine alphanumerische Eingabe    
-   zur Verfgung.                                                      
+   In diesem Feld kann die Â»Telefon-NummerÂ« der Adresse eingegeben
+   werden. DafÃ¼r stehen 60 Stellen fÃ¼r eine alphanumerische Eingabe    
+   zur VerfÃ¼gung.                                                      
                                                                        
    Wenn Sie mit der      WINware  Vertriebssteuerung das Zusatzpaket   
-   ¯W„hlautomat® verwenden, mssen Sie hier folgende Syntax einhalten: 
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Â»WÃ¤hlautomatÂ« verwenden, mÃ¼ssen Sie hier folgende Syntax einhalten: 
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    <Vorwahl>/<1.Tel-Nr>[-DW], [<2.Tel-Nr>[-DW]], [|<Vorwahl>/<3.T-Nr>] 
    Beispiel: 0316/81 37 61-10, 81 60 60, |0633/94 7 18                 
                                                                        
    Im Normalfall wird die erste Eingabe bis zum [/] als Vorwahl ge-    
-   wertet und fr alle Tel. Nummern verwendet. Wenn Sie wie im obigen  
+   wertet und fÃ¼r alle Tel. Nummern verwendet. Wenn Sie wie im obigen  
    Beispiel gezeigt aber eine Nummer mit neuer Vorwahl (z.B. Auto-     
-   telefonnummer) eingeben m”chten, dann setzten Sie einfach das [|]-  
-   Zeichen vor die Vorwahl. Ausser am Zeilenende muá nach jeder Tele-  
+   telefonnummer) eingeben mÃ¶chten, dann setzten Sie einfach das [|]-  
+   Zeichen vor die Vorwahl. Ausser am Zeilenende muÃŸ nach jeder Tele-  
    vonnummer ein [,] sein.                                             
                                                                        
-   Die Eingabe in diesem Feld wird z.B. vom Zusatzpaket ¯W„hlautomat®  
+   Die Eingabe in diesem Feld wird z.B. vom Zusatzpaket Â»WÃ¤hlautomatÂ«  
    verwendet, dient zum Drucken der Telefonliste und zu Ihrer Er-      
    innerung.                                                           
                                                                        
                                                                        
-þ Telex
-ÄÄÄÄÄÄÄ
+â–  Telex
+â”€â”€â”€â”€â”€â”€â”€
 
-   Bitte geben Sie hier die ¯Telex-Nummer® der Adresse ein.
-   Dafr stehen Ihnen 20 Stellen fr eine alphanumerische  
-   Eingabe zur Verfgung.                                  
+   Bitte geben Sie hier die Â»Telex-NummerÂ« der Adresse ein.
+   DafÃ¼r stehen Ihnen 20 Stellen fÃ¼r eine alphanumerische  
+   Eingabe zur VerfÃ¼gung.                                  
                                                            
    Die Eingabe in diesem Feld wird von keinem Standard-Pro-
    gramm verarbeitet und dient nur zum Drucken der Telex-  
@@ -506,109 +506,109 @@ WINware (C) 1988/1993                      >68< IV. WINware AUFTRAG Kundenstamm 
                                                            
                                                            
 WINware (C) 1988/1993                      >68< IV. WINware AUFTRAG Kundenstamm / 1.9
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-þ Telefax
-ÄÄÄÄÄÄÄÄÄ
+â–  Telefax
+â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier geben Sie die Nummer des ¯Telefaxanschluáes® der Adresse ein.
-   Dafr stehen Ihnen 28 Stellen fr eine alphanumerische Eingabe zur
-   Verfgung.                                                        
+   Hier geben Sie die Nummer des Â»TelefaxanschluÃŸesÂ« der Adresse ein.
+   DafÃ¼r stehen Ihnen 28 Stellen fÃ¼r eine alphanumerische Eingabe zur
+   VerfÃ¼gung.                                                        
                                                                      
    Die Eingabe in diesem Feld wird von keinem Standard-Programm ver- 
    arbeitet und dient nur zum Drucken der Telefaxliste und zu Ihrer  
    Erinnerung.                                                       
                                                                      
                                                                      
-þ BTX-Nr.
-ÄÄÄÄÄÄÄÄÄ
+â–  BTX-Nr.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier geben Sie bitte die Nummer des ¯BTX- Anschluáes®
-   der Adresse ein. Dafr stehen Ihnen 20 Stellen fr eine
-   alphanumerische Eingabe zur Verfgung.                 
+   Hier geben Sie bitte die Nummer des Â»BTX- AnschluÃŸesÂ«
+   der Adresse ein. DafÃ¼r stehen Ihnen 20 Stellen fÃ¼r eine
+   alphanumerische Eingabe zur VerfÃ¼gung.                 
                                                           
    Die Eingabe in diesem Feld wird von keinem Standard-   
    programm verarbeitet und dient nur zum Drucken der     
    BTX-Liste und zu Ihrer Erinnerung.                     
                                                           
                                                           
-þ Branche
-ÄÄÄÄÄÄÄÄÄ
+â–  Branche
+â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Dafr steht Ihnen ein 40 stelliges Feld zur Verfgung. Wenn
-   Ihre Eingabe l„nger als 10 Stellen wird, verschiebt sich der
+   DafÃ¼r steht Ihnen ein 40 stelliges Feld zur VerfÃ¼gung. Wenn
+   Ihre Eingabe lÃ¤nger als 10 Stellen wird, verschiebt sich der
    Eingabetext nach links.                                            
                                                                       
    Damit Sie zu Auswertungsprogrammen kompatibel bleiben, empfeh-     
-   len wir Ihnen den 4-stelligen ¯SIK-Code® zur Kennzeichnung der     
+   len wir Ihnen den 4-stelligen Â»SIK-CodeÂ« zur Kennzeichnung der     
    Branche.                                                           
                                                                       
    Dieser genormte Code teilt die Branchen in Haupt- und Untergruppen 
-   auf. Sie k”nnen von ¯WINware- SOFTvertrieb® gerne eine n„here      
+   auf. Sie kÃ¶nnen von Â»WINware- SOFTvertriebÂ« gerne eine nÃ¤here      
    Beschreibung des SIK-Codes anfordern.                              
                                                                       
-   Fr eine richtige Auswertung dieses Feldes muá der SIK-Code        
+   FÃ¼r eine richtige Auswertung dieses Feldes muÃŸ der SIK-Code        
    nach folgendem Schema genau eingegeben werden:                     
                                                                       
-   Sie k”nnen bis zu 8 SIK-Nummern eingeben, die jeweils durch        
-   eine Schr„gstrich (aber ohne Leerzeichen) getrennt werden.         
+   Sie kÃ¶nnen bis zu 8 SIK-Nummern eingeben, die jeweils durch        
+   eine SchrÃ¤gstrich (aber ohne Leerzeichen) getrennt werden.         
                                                                       
    zum Beispiel: 0111/1446/...   (SIK-Code/[SIK-Code/..])             
                                                                       
-   Fr dieses Feld wird auf Kundenwunsch auch oft eine individuelle   
-   Programmerweiterung von WINware- SOFT durchgefhrt. Sie k”nnen Z.B.
-   angeben, welche Eintrags-Vorschl„ge nach dem Drcken der [F2]-Taste
+   FÃ¼r dieses Feld wird auf Kundenwunsch auch oft eine individuelle   
+   Programmerweiterung von WINware- SOFT durchgefÃ¼hrt. Sie kÃ¶nnen Z.B.
+   angeben, welche Eintrags-VorschlÃ¤ge nach dem DrÃ¼cken der [F2]-Taste
    erscheinen sollen.                                                 
                                                                       
                                                                       
-þ Anrede
-ÄÄÄÄÄÄÄÄ
+â–  Anrede
+â”€â”€â”€â”€â”€â”€â”€â”€
 
    Die folgenden Felder dienen der Eingabe von Daten Ihrer Ansprech-
    partner.
    
    Tragen Sie hier die Anrede, wie z.B. Herr, Frau usw., ein.
    
-   Wollen Sie Serienbriefe fr Ihre Kunden drucken, so werden diese
+   Wollen Sie Serienbriefe fÃ¼r Ihre Kunden drucken, so werden diese
    Felder zum Bilden der Adresse oder Anrede verwendet.
    
    
 WINware (C) 1988/1993                     >67< IV. WINware AUFTRAG Kundenstamm / 1.10
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-þ Titel
-ÄÄÄÄÄÄÄ
+â–  Titel
+â”€â”€â”€â”€â”€â”€â”€
 
    Tragen Sie hier den Titel Ihres Ansprechpartners ein.
    
    z.B.: Dr., Dipl.-Ing., usw.
    
-   Dieser Eintrag wird auch fr das Feld [Anrede im Brief] vorge-
+   Dieser Eintrag wird auch fÃ¼r das Feld [Anrede im Brief] vorge-
    schlagen.
    
    
-þ Vorname
-ÄÄÄÄÄÄÄÄÄ
+â–  Vorname
+â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Dieses Feld dient zu Ihrer Information. Bei der šbergabe in eine
+   Dieses Feld dient zu Ihrer Information. Bei der Ãœbergabe in eine
    Textverarbeitung zur Serienbriefschreibung wird dieses Feld auch
    oft verwendet.
    
    Tragen Sie hier den Vornamen Ihres Ansprechpartners ein.
    
    
-þ Zuname
-ÄÄÄÄÄÄÄÄ
+â–  Zuname
+â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier k”nnen Sie den Nachnamen Ihres Ansprechpartners eintragen.
+   Hier kÃ¶nnen Sie den Nachnamen Ihres Ansprechpartners eintragen.
    
-   Fr das Drucken von Serienbriefen wird dieser Namen fr das Feld
-   [Anrede im Brief] vorgeschlagen und wenn vorhanden fr die [c/o]-
+   FÃ¼r das Drucken von Serienbriefen wird dieser Namen fÃ¼r das Feld
+   [Anrede im Brief] vorgeschlagen und wenn vorhanden fÃ¼r die [c/o]-
    (zu Handen) Zeile der Adresse verwendet.
    
    
-þ Position
-ÄÄÄÄÄÄÄÄÄÄ
+â–  Position
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Geben Sie hier ein, welche Position Ihr Ansprechpartner in der Firma
    hat.
@@ -616,16 +616,16 @@ WINware (C) 1988/1993                     >67< IV. WINware AUFTRAG Kundenstamm /
    Dieses Feld dient nur zu Ihrer Information.
    
    
-þ Geburtstag
-ÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Geburtstag
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier k”nnen Sie den Geburtstag Ihres Ansprechpartners eintragen.    
+   Hier kÃ¶nnen Sie den Geburtstag Ihres Ansprechpartners eintragen.    
                                                                        
    Auch dieses Feld dient nur zu Ihrer Information.                    
                                                                        
                                                                        
-þ Anrede im Brief
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Anrede im Brief
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Dieses Feld wird vom Programm automatisch belegt. Es wird in der
    Textverarbeitung als Briefanrede eingesetzt.
@@ -634,374 +634,374 @@ WINware (C) 1988/1993                     >67< IV. WINware AUFTRAG Kundenstamm /
    Geschlecht und bildet dementsprechend die Briefanrede.             
    Bei Nichterkennen wird "Sehr geehrte Damen und Herren" eingesetzt. 
                                                                       
-   Sie k”nnen das Feld natrlich berschreiben. Damit Sie bei der     
-   šbergabe der Adressen fr die Serienbriefschreibung immer die      
-   gleiche Form haben, empfehlen wir Ihnen die Briefanrede ¯nicht®
-   mit einem Beistrich abzuschlieáen.
+   Sie kÃ¶nnen das Feld natÃ¼rlich Ã¼berschreiben. Damit Sie bei der     
+   Ãœbergabe der Adressen fÃ¼r die Serienbriefschreibung immer die      
+   gleiche Form haben, empfehlen wir Ihnen die Briefanrede Â»nichtÂ«
+   mit einem Beistrich abzuschlieÃŸen.
    
-   Dadurch haben Sie in der Textverarbeitung die M”glichkeit mit einem
+   Dadurch haben Sie in der Textverarbeitung die MÃ¶glichkeit mit einem
    Rufzeichen oder einem Beistrich die Anrede zu beenden.
    
    
 WINware (C) 1988/1993                     >73< IV. WINware AUFTRAG Kundenstamm / 1.11
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-2/2 þ Grundrabatt
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+2/2 â–  Grundrabatt
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Bei einem neuen Kunden geben Sie hier den Grundrabatt in Prozent
    ein.
    
-   Bei der Fakturierung wird dieser Wert automatisch fr den Kunden
-   bercksichtigt.
+   Bei der Fakturierung wird dieser Wert automatisch fÃ¼r den Kunden
+   berÃ¼cksichtigt.
    
-þ Zahlungskonditionen
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Zahlungskonditionen
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Bitte geben Sie hier die ¯Zahlungskonditionen® des Kunden ein:
+   Bitte geben Sie hier die Â»ZahlungskonditionenÂ« des Kunden ein:
    
-      ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-      ³                                          TT-%%-TTT  ³
-      ³  Anzahl der Tage fr die der ÄÄÄÄÄÄÄÄÄÄÄÄ         ³
-      ³  Skonto in Prozenten gew„hrt wird oder, ÄÄÄÄ      ³ 30 = 3,0%
-      ³  das Zahlungsziel ohne Skontoausnutzung. ÄÄÄÄÄÄ  ³
-      ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+      â”‚                                          TT-%%-TTT  â”‚
+      â”‚  Anzahl der Tage fÃ¼r die der â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€         â”‚
+      â”‚  Skonto in Prozenten gewÃ¤hrt wird oder, â”€â”€â”€â”€      â”‚ 30 = 3,0%
+      â”‚  das Zahlungsziel ohne Skontoausnutzung. â”€â”€â”€â”€â”€â”€  â”‚
+      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
    
-   Hierbei geben die ersten beiden Stellen die ¯Anzahl der Tage® an,
-   w„hrend der Skonto gew„hrt wird.
+   Hierbei geben die ersten beiden Stellen die Â»Anzahl der TageÂ« an,
+   wÃ¤hrend der Skonto gewÃ¤hrt wird.
    
-   Die Stellen 5 und 6 stellen den ¯Prozentsatz an Skonto® dar, der
-   gew„hrt wird. Die letzten drei Stellen geben die ¯Anzahl der Tage®
-   an, in der die Rechnung ohne Abzug bezahlt werden muá.
+   Die Stellen 5 und 6 stellen den Â»Prozentsatz an SkontoÂ« dar, der
+   gewÃ¤hrt wird. Die letzten drei Stellen geben die Â»Anzahl der TageÂ«
+   an, in der die Rechnung ohne Abzug bezahlt werden muÃŸ.
    
-   BEISPIEL : Werden die ¯Zahlungskonditionen® eingegeben als
-              "10-25-030", dann bedeutet das, daá diesem Kunden
-              fr die ersten 10 Tage ein Skonto-Abzug von 2,5
-              Prozent gew„hrt wird und daá innerhalb von 30 Ta-
+   BEISPIEL : Werden die Â»ZahlungskonditionenÂ« eingegeben als
+              "10-25-030", dann bedeutet das, daÃŸ diesem Kunden
+              fÃ¼r die ersten 10 Tage ein Skonto-Abzug von 2,5
+              Prozent gewÃ¤hrt wird und daÃŸ innerhalb von 30 Ta-
               gen die Rechnungssumme ohne Abzug gezahlt werden
-              muá.
+              muÃŸ.
    
-þ W„hrung
-ÄÄÄÄÄÄÄÄÄ
+â–  WÃ¤hrung
+â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Ordnen Sie hier jedem Kunden ber die F2-Taste eine der, in den Kon-
-   stanten angelegeten, W„hrungen zu. Bei der Neuanlage eines Kunden   
-   wird in diesem Feld die Landesw„hrung vorgeschlagen.                
+   Ordnen Sie hier jedem Kunden Ã¼ber die F2-Taste eine der, in den Kon-
+   stanten angelegeten, WÃ¤hrungen zu. Bei der Neuanlage eines Kunden   
+   wird in diesem Feld die LandeswÃ¤hrung vorgeschlagen.                
                                                                        
-   Ist der Kunde ein Inlandskunde so muá in diesem Feld die Landes-    
-   w„hrung stehen. Automatisch steht dann im Feld ¯Auslandskunde®      
-   ¯nein®. Im Feld ¯MwSt.-Kennzeichen® k”nnen Sie w„hlen, ob Rechnungen
-   ¯ohne MwSt®, ¯plus MwSt® oder ¯incl. MwSt® geschrieben werden.      
+   Ist der Kunde ein Inlandskunde so muÃŸ in diesem Feld die Landes-    
+   wÃ¤hrung stehen. Automatisch steht dann im Feld Â»AuslandskundeÂ«      
+   Â»neinÂ«. Im Feld Â»MwSt.-KennzeichenÂ« kÃ¶nnen Sie wÃ¤hlen, ob Rechnungen
+   Â»ohne MwStÂ«, Â»plus MwStÂ« oder Â»incl. MwStÂ« geschrieben werden.      
    
    Ist der Kunde ein Auslandskunde, so ordnen Sie ihm eine, in den     
-   Konstanten angelegte, Fremdw„hrung zu (F2-Taste). Im Feld ¯Aus-     
-   landskunde® wird Ihnen ¯ja® angezeigt, und im Feld ¯MwSt.-Kennzei-  
-   chen® steht dann ¯ohne MwSt.®. šberschreiben Sie das MwSt-Kenn-     
-   zeichen, so wird beim Verlassen des Feldes wieder ¯ohne MwSt.® ange-
+   Konstanten angelegte, FremdwÃ¤hrung zu (F2-Taste). Im Feld Â»Aus-     
+   landskundeÂ« wird Ihnen Â»jaÂ« angezeigt, und im Feld Â»MwSt.-Kennzei-  
+   chenÂ« steht dann Â»ohne MwSt.Â«. Ãœberschreiben Sie das MwSt-Kenn-     
+   zeichen, so wird beim Verlassen des Feldes wieder Â»ohne MwSt.Â« ange-
    zeigt.                                                              
    
-   Bitte w„hlen Sie nachdem Sie die [F2]-Taste gedrckt haben:
+   Bitte wÃ¤hlen Sie nachdem Sie die [F2]-Taste gedrÃ¼ckt haben:
    
-      ( ) ™S
+      ( ) Ã–S
       ( ) DM
       ( ) US$
       ( ) LIRE
    
    Bewegen Sie einfach mit den Cursortasten []/[] den Balken auf den
-   gewnschten Eintrag. Danach best„tigen Sie die Wahl mit [Ù].
+   gewÃ¼nschten Eintrag. Danach bestÃ¤tigen Sie die Wahl mit [â”˜].
    
-   Wenn Sie das Auswahlfenster nicht ”ffnen wollen, k”nnen Sie die
+   Wenn Sie das Auswahlfenster nicht Ã¶ffnen wollen, kÃ¶nnen Sie die
    Wahl auch durch Eingabe des ersten Buchstabens (bzw. der ersten
    Buchstaben) treffen.
    
-   Existiert bereits ein gltiger Eintrag in diesem Feld, dann ist
-   mit den Tasten [Bild]/[Bild] auch ein Weiterbl„ttern zum n„chsten
-   gltigen Eintrag m”glich.
+   Existiert bereits ein gÃ¼ltiger Eintrag in diesem Feld, dann ist
+   mit den Tasten [Bild]/[Bild] auch ein WeiterblÃ¤ttern zum nÃ¤chsten
+   gÃ¼ltigen Eintrag mÃ¶glich.
 WINware (C) 1988/1993                     >73< IV. WINware AUFTRAG Kundenstamm / 1.12
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    
    
-þ MwSt.-Kennzeichen
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  MwSt.-Kennzeichen
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Bei der Einstellung ¯plus MwSt® oder ¯ohne MwSt® wird jeder Artikel-
+   Bei der Einstellung Â»plus MwStÂ« oder Â»ohne MwStÂ« wird jeder Artikel-
    preis auf der Rechnung ohne MwSt angezeigt. Am Ende der Rechnung
-   wird bei der Einstellung ¯plus MwSt® die Mwst hinzugerechnet.
+   wird bei der Einstellung Â»plus MwStÂ« die Mwst hinzugerechnet.
    
-   Die Einstellung "ohne MwSt" wird fr Auslandskunden ben”tigt.
+   Die Einstellung "ohne MwSt" wird fÃ¼r Auslandskunden benÃ¶tigt.
    
-   Wenn Sie fr den Kunden ¯incl. MWST® ausw„hlen, dann wird auf einer
-   Rechnung fr den einzelnen Artikel jeweils der Preis incl. MwSt
+   Wenn Sie fÃ¼r den Kunden Â»incl. MWSTÂ« auswÃ¤hlen, dann wird auf einer
+   Rechnung fÃ¼r den einzelnen Artikel jeweils der Preis incl. MwSt
    angegeben. Am Ende der Rechnung wird in diesem Fall die jeweilige
    MwSt herausgerechnet und angezeigt.
    
-   Bitte w„hlen Sie nachdem Sie die [F2]-Taste gedrckt haben:
+   Bitte wÃ¤hlen Sie nachdem Sie die [F2]-Taste gedrÃ¼ckt haben:
    
-      ( ) ohneÿMwSt
-      ( ) plusÿMwSt
-      ( ) incl.ÿMwSt
+      ( ) ohneÂ MwSt
+      ( ) plusÂ MwSt
+      ( ) incl.Â MwSt
    
    Bewegen Sie einfach mit den Cursortasten []/[] den Balken auf den
-   gewnschten Eintrag. Danach best„tigen Sie die Wahl mit [Ù].
+   gewÃ¼nschten Eintrag. Danach bestÃ¤tigen Sie die Wahl mit [â”˜].
    
-   Wenn Sie das Auswahlfenster nicht ”ffnen wollen, k”nnen Sie die
+   Wenn Sie das Auswahlfenster nicht Ã¶ffnen wollen, kÃ¶nnen Sie die
    Wahl auch durch Eingabe des ersten Buchstabens (bzw. der ersten
    Buchstaben) treffen.
    
-   Existiert bereits ein gltiger Eintrag in diesem Feld, dann ist
-   mit den Tasten [Bild]/[Bild] auch ein Weiterbl„ttern zum n„chsten
-   gltigen Eintrag m”glich.
+   Existiert bereits ein gÃ¼ltiger Eintrag in diesem Feld, dann ist
+   mit den Tasten [Bild]/[Bild] auch ein WeiterblÃ¤ttern zum nÃ¤chsten
+   gÃ¼ltigen Eintrag mÃ¶glich.
    
    
-þ Auslandskunde
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Auslandskunde
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Dieses Feld ist ein reines Anzeigefeld.
    
-   Steht im Feld ¯W„hrung® die Landesw„hrung, so wird hier ¯nein®
+   Steht im Feld Â»WÃ¤hrungÂ« die LandeswÃ¤hrung, so wird hier Â»neinÂ«
    angezeigt.
    
-   Haben Sie dem Kunden eine Fremdw„hrung zugeordnet, so steht in
-   diesem Feld ¯ja®.
+   Haben Sie dem Kunden eine FremdwÃ¤hrung zugeordnet, so steht in
+   diesem Feld Â»jaÂ«.
    
-þ Artikel VK-Preis
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Artikel VK-Preis
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Mit der Eingabe des ¯Artikel VK-Preises® im Kunden-Stamm-Satz be-
+   Mit der Eingabe des Â»Artikel VK-PreisesÂ« im Kunden-Stamm-Satz be-
    stimmen Sie welcher Verkaufspreis diesem Kunden beim Kauf von      
    Artikeln berechnet werden soll.                                    
                                                                       
-   Wird einem Kunden z.B. der ¯Artikel VK-Preis 1® zugeordnet, so wird
-   ihm der ¯Verkaufspreis 1® aus dem Artikel-Stamm-Satz berechnet.    
+   Wird einem Kunden z.B. der Â»Artikel VK-Preis 1Â« zugeordnet, so wird
+   ihm der Â»Verkaufspreis 1Â« aus dem Artikel-Stamm-Satz berechnet.    
                                                                       
    Dieses Feld bezieht sich also auf die Verkaufspreis-Felder im      
    Artikel-Stamm-Satz und bestimmt somit mit welchem Verkaufspreis die
    Faktura geschrieben werden soll.                                   
    
-   Bitte w„hlen Sie nachdem Sie die [F2]-Taste gedrckt haben:
+   Bitte wÃ¤hlen Sie nachdem Sie die [F2]-Taste gedrÃ¼ckt haben:
    
-      ( ) Groáhandel
+      ( ) GroÃŸhandel
       ( ) Detail-VKP
       ( ) Gruppe C
       ( ) Gruppe D
       ( ) Gruppe E
    
    Bewegen Sie einfach mit den Cursortasten []/[] den Balken auf den
-   gewnschten Eintrag. Danach best„tigen Sie die Wahl mit [Ù].
+   gewÃ¼nschten Eintrag. Danach bestÃ¤tigen Sie die Wahl mit [â”˜].
    
-   Wenn Sie das Auswahlfenster nicht ”ffnen wollen, k”nnen Sie die
+   Wenn Sie das Auswahlfenster nicht Ã¶ffnen wollen, kÃ¶nnen Sie die
 WINware (C) 1988/1993                     >73< IV. WINware AUFTRAG Kundenstamm / 1.13
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Wahl auch durch Eingabe des ersten Buchstabens (bzw. der ersten
    Buchstaben) treffen.
    
-   Existiert bereits ein gltiger Eintrag in diesem Feld, dann ist
-   mit den Tasten [Bild]/[Bild] auch ein Weiterbl„ttern zum n„chsten
-   gltigen Eintrag m”glich.
+   Existiert bereits ein gÃ¼ltiger Eintrag in diesem Feld, dann ist
+   mit den Tasten [Bild]/[Bild] auch ein WeiterblÃ¤ttern zum nÃ¤chsten
+   gÃ¼ltigen Eintrag mÃ¶glich.
    
    
-þ Kreditlimit in T™S
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Kreditlimit in TÃ–S
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Dieses Feld dient nur zu Ihrer Information.
    
-   Sie k”nnen hier das ¯Kredit-Limit® des Kunden eingeben.
+   Sie kÃ¶nnen hier das Â»Kredit-LimitÂ« des Kunden eingeben.
 WINware (C) 1988/1993                     >18< IV. WINware AUFTRAG Kundenstamm / 1.14
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    
-þ Umsatz
-ÄÄÄÄÄÄÄÄ
+â–  Umsatz
+â”€â”€â”€â”€â”€â”€â”€â”€
 
    Dieses Feld wird in der Basis Faktura nicht ausgewertet!
    
-   In der Groáen Auftragsbearbeitung ist es ein Ausgabefeld und zeigt
+   In der GroÃŸen Auftragsbearbeitung ist es ein Ausgabefeld und zeigt
    Ihnen den fakturierten Umsatz des Kunden an.
    
-   Schreiben Sie also fr diesen Kunden eine Rechnung, so wird der
-   Brutto-Endbetrag zum Betrag dieses Feldes hinzugez„hlt. Bei
+   Schreiben Sie also fÃ¼r diesen Kunden eine Rechnung, so wird der
+   Brutto-Endbetrag zum Betrag dieses Feldes hinzugezÃ¤hlt. Bei
    Storno-Rechnungen und Gutschriften wird der Endbetrag abgezogen.
    
-   Mit dem Programm ¯Drucken Kundenums„tze® k”nnen Sie sich eine Liste
-   der Kunden, sortiert nach den Ums„tzen, ausdrucken lassen.
+   Mit dem Programm Â»Drucken KundenumsÃ¤tzeÂ« kÃ¶nnen Sie sich eine Liste
+   der Kunden, sortiert nach den UmsÃ¤tzen, ausdrucken lassen.
    
    Wollen Sie den Umsatz eines Kunden auf Null stellen, so rufen Sie
-   das Programm ¯L”schen Kundenums„tze® auf.
+   das Programm Â»LÃ¶schen KundenumsÃ¤tzeÂ« auf.
    
-þ Datum l. Umsatz
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Datum l. Umsatz
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    In der Basis-Fakturierung wird dieses Feld nicht ausgewertet!
    
-   Arbeiten Sie mit der groáen Auftragsbearbeitung so wird hier
-   das Datum der letzten Faktura fr diesen Kunden angezeigt.
+   Arbeiten Sie mit der groÃŸen Auftragsbearbeitung so wird hier
+   das Datum der letzten Faktura fÃ¼r diesen Kunden angezeigt.
    
 
 1. Kunden-Stamm-Listen
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 1. Liste nach Kundennummer
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Dieses Programm druckt Ihnen eine ¯Liste® Ihrer Kunden, nach der
+   Dieses Programm druckt Ihnen eine Â»ListeÂ« Ihrer Kunden, nach der
    Kunden-Nummer geordnet, aus.
    
    Mit Hilfe der einzugebenden Auswahl-Kriterien sind Sie in der Lage,
    die zu druckenden Kunden nach den verschiedensten Merkmalen auszu-
-   w„hlen.
+   wÃ¤hlen.
    
-1/1 þ von Kunden-Nummer
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+1/1 â–  von Kunden-Nummer
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier k”nnen Sie den Kundennamen eingeben ab dem ein Etikett ge-
+   Hier kÃ¶nnen Sie den Kundennamen eingeben ab dem ein Etikett ge-
    druckt werden soll.                                               
                                                                      
    Wird hier nichts eingetragen, dann beginnt der Druck beim ersten  
    Kunden.                                                           
                                                                      
-   Mit der [F2]-Taste k”nnen Sie auch nach Eintr„gen suchen.         
+   Mit der [F2]-Taste kÃ¶nnen Sie auch nach EintrÃ¤gen suchen.         
    Mit der [ESC]-Taste beenden Sie die Auswahl und starten den Druck.
-þ bis Kunden-Nummer
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  bis Kunden-Nummer
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier k”nnen Sie den Kundennamen eingeben bis zu dem ein Etikett ge-
+   Hier kÃ¶nnen Sie den Kundennamen eingeben bis zu dem ein Etikett ge-
    druckt werden soll.                                                
                                                                       
    Wird hier nichts eingetragen, dann endet der Druck beim letzten    
    Kunden.                                                            
                                                                       
-   Mit der [F2]-Taste k”nnen Sie auch nach Eintr„gen suchen.          
+   Mit der [F2]-Taste kÃ¶nnen Sie auch nach EintrÃ¤gen suchen.          
    Mit der [ESC]-Taste beenden Sie die Auswahl und starten den Druck. 
 WINware (C) 1988/1993                     >66< IV. WINware AUFTRAG Kundenstamm / 1.15
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-þ von Plz/Ort
-ÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  von Plz/Ort
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier k”nnen Sie noch die ¯kleinste Postleitzahl® angeben, die mit-
+   Hier kÃ¶nnen Sie noch die Â»kleinste PostleitzahlÂ« angeben, die mit-
    gedruckt werden soll.
    
-   Geben Sie hier weniger als die zur Verfgung stehenden Stellen ein,
+   Geben Sie hier weniger als die zur VerfÃ¼gung stehenden Stellen ein,
    dann werden die restlichen Stellen am Bildschirm mit Leerzeichen
    besetzt und bei der Suche werden nur die von Ihnen vorgebegenen
-   Stellen mit dem Wert im Feld ¯Plz/Ort® verglichen.
+   Stellen mit dem Wert im Feld Â»Plz/OrtÂ« verglichen.
    
-   Soll bezglich der Postleitzahl keine Auswahl getroffen werden,
-   k”nnen Sie die Feldern ¯von Postleitzahl® und ¯bis Postleitzahl®
-   durch Drcken der [Ù]-Taste berspringen. Diese Felder werden
+   Soll bezÃ¼glich der Postleitzahl keine Auswahl getroffen werden,
+   kÃ¶nnen Sie die Feldern Â»von PostleitzahlÂ« und Â»bis PostleitzahlÂ«
+   durch DrÃ¼cken der [â”˜]-Taste Ã¼berspringen. Diese Felder werden
    dann am Bildschirm mit Leerzeichen besetzt, damit keine Selektion
    nach Postleitzahl stattfindet.
    
    
-þ bis Plz/Ort
-ÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  bis Plz/Ort
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier k”nnen Sie noch die ¯gr”áte Postleitzahl® angeben, die mit-
+   Hier kÃ¶nnen Sie noch die Â»grÃ¶ÃŸte PostleitzahlÂ« angeben, die mit-
    gedruckt werden soll.                                              
                                                                       
-   Geben Sie hier weniger als die zur Verfgung stehenden Stellen ein,
+   Geben Sie hier weniger als die zur VerfÃ¼gung stehenden Stellen ein,
    dann werden die restlichen Stellen am Bildschirm mit Leerzeichen   
    besetzt und bei der Suche werden nur die von Ihnen vorgebegenen    
-   Stellen mit dem Wert im Feld ¯Plz/Ort® verglichen.                 
+   Stellen mit dem Wert im Feld Â»Plz/OrtÂ« verglichen.                 
                                                                       
-   Soll bezglich der Postleitzahl keine Auswahl getroffen werden,
-   k”nnen Sie die Feldern ¯von Postleitzahl® und ¯bis Postleitzahl®   
-   durch Drcken der [Ù]-Taste berspringen. Diese Felder werden     
+   Soll bezÃ¼glich der Postleitzahl keine Auswahl getroffen werden,
+   kÃ¶nnen Sie die Feldern Â»von PostleitzahlÂ« und Â»bis PostleitzahlÂ«   
+   durch DrÃ¼cken der [â”˜]-Taste Ã¼berspringen. Diese Felder werden     
    dann am Bildschirm mit Leerzeichen besetzt, damit keine Selektion  
    nach Postleitzahl stattfindet.                                     
                                                                       
    
-þ von Kundengruppe
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  von Kundengruppe
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier geben Sie die ¯kleinste Kundengruppe® ein, fr die die ent-
+   Hier geben Sie die Â»kleinste KundengruppeÂ« ein, fÃ¼r die die ent-
    sprechenden Kunden noch auf Ihrer Liste gedruckt werden sollen.
    
    Geben Sie hier weniger als 4 Stellen alpha-numerisch ein, dann
    werden bei der Suche nur die von Ihnen vorgegebenen Stellen mit
-   dem Wert im Feld ¯Kundengruppe® des entsprechenden Kunden-Stamm-
-   Satzes verglichen. Liegen sie im ausgew„hlten Bereich, dann werden
+   dem Wert im Feld Â»KundengruppeÂ« des entsprechenden Kunden-Stamm-
+   Satzes verglichen. Liegen sie im ausgewÃ¤hlten Bereich, dann werden
    die Kunden ausgedruckt.
    
-   Wenn von Ihnen in den einzelnen Kunden-Stamm-S„tzen keine Ein-
-   tr„ge im Feld "Kundengruppe" gemacht wurden, dann k”nnen die
-   Felder "von Kundengruppe" und "bis Kundengruppe" durch Drcken
-   der [Ù]-Taste bergangen werden.
+   Wenn von Ihnen in den einzelnen Kunden-Stamm-SÃ¤tzen keine Ein-
+   trÃ¤ge im Feld "Kundengruppe" gemacht wurden, dann kÃ¶nnen die
+   Felder "von Kundengruppe" und "bis Kundengruppe" durch DrÃ¼cken
+   der [â”˜]-Taste Ã¼bergangen werden.
    
-þ bis Kundengruppe
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  bis Kundengruppe
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier geben Sie die ¯gr”áte Kundengruppe® ein, die noch auf Ihrer
+   Hier geben Sie die Â»grÃ¶ÃŸte KundengruppeÂ« ein, die noch auf Ihrer
    Liste gedruckt werden soll.
    
    Geben Sie hier weniger als 4 Stellen alpha-numerisch ein, dann
    werden bei der Suche nur die von Ihnen vorgegebenen Stellen mit
-   dem Inhalt des Feldes ¯Kundengruppe® des entsprechenden Kunden-
+   dem Inhalt des Feldes Â»KundengruppeÂ« des entsprechenden Kunden-
    Stamm-Satzes verglichen.
    
 WINware (C) 1988/1993                     >66< IV. WINware AUFTRAG Kundenstamm / 1.16
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-þ von Auswertungs-KZ
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  von Auswertungs-KZ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Geben Sie hier bitte das kleinste ¯Auswertungs-Kennzeichen® ein, fr
-   das die dazugeh”rigen Kunden noch auf Ihrer Liste gedruckt werden
+   Geben Sie hier bitte das kleinste Â»Auswertungs-KennzeichenÂ« ein, fÃ¼r
+   das die dazugehÃ¶rigen Kunden noch auf Ihrer Liste gedruckt werden
    sollen.
    
    Geben Sie hier weniger als 4 Stellen alpha-numerisch ein, dann
    werden bei der Suche nur die von Ihnen vorgegebenen Stellen mit dem
-   Wert im Feld ¯Auswertungs-KZ® des entsprechenden Kunden-Stamm-Satzes
+   Wert im Feld Â»Auswertungs-KZÂ« des entsprechenden Kunden-Stamm-Satzes
    verglichen.
    
-   Wenn von Ihnen in den einzelnen Kunden-Stamm-S„tzen keine Eingaben
-   im Feld ¯Auswertungs-KZ® gemacht wurden, dann k”nnen Sie die Felder
-   ¯von Auswertungs-KZ® und ¯bis Auswertungs-KZ® durch Drcken der
-   [Ù]-Taste bergehen.
+   Wenn von Ihnen in den einzelnen Kunden-Stamm-SÃ¤tzen keine Eingaben
+   im Feld Â»Auswertungs-KZÂ« gemacht wurden, dann kÃ¶nnen Sie die Felder
+   Â»von Auswertungs-KZÂ« und Â»bis Auswertungs-KZÂ« durch DrÃ¼cken der
+   [â”˜]-Taste Ã¼bergehen.
    
-þ bis Auswertungs-KZ
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  bis Auswertungs-KZ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier geben Sie bitte das gr”áte ¯Auswertungs-Kennzeichen® ein,
-   fr das die dazugeh”rigen Kunden noch gedruckt werden sollen.
+   Hier geben Sie bitte das grÃ¶ÃŸte Â»Auswertungs-KennzeichenÂ« ein,
+   fÃ¼r das die dazugehÃ¶rigen Kunden noch gedruckt werden sollen.
    
    Bitte beachten Sie hier, wie auch in den anderen Auswahlfeldern,
-   daá zwischen Groá- und Kleinschreibung unterschieden wird.
+   daÃŸ zwischen GroÃŸ- und Kleinschreibung unterschieden wird.
    
    
 2. Liste nach Kurzbezeichnung
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Dieses Programm druckt Ihnen eine Liste Ihrer Kunden alphabetisch
-   geordnet nach der ¯Kurzbezeichnung® aus.
+   geordnet nach der Â»KurzbezeichnungÂ« aus.
    
-   Mit den in der Bildschirmmaske aufgefhrten Auswahl-Kriterien sind
+   Mit den in der Bildschirmmaske aufgefÃ¼hrten Auswahl-Kriterien sind
    Sie in der Lage, die zu druckenden Kunden nach den verschiedensten
-   Merkmalen auszuw„hlen.
+   Merkmalen auszuwÃ¤hlen.
    
-   Wird hier die [Ù]-Taste gedrckt, dann werden keine Kurzbezeich-
+   Wird hier die [â”˜]-Taste gedrÃ¼ckt, dann werden keine Kurzbezeich-
    nungen vom Druck ausgeschlossen.
    
-1/1 þ von Kurzbezeichnung
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+1/1 â–  von Kurzbezeichnung
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Geben Sie bitte hier die erste Kurzbezeichnung ein, fr die die zu-
-   geh”rigen Mitarbeiter noch auf Ihrer Liste gedruckt werden sollen.
+   Geben Sie bitte hier die erste Kurzbezeichnung ein, fÃ¼r die die zu-
+   gehÃ¶rigen Mitarbeiter noch auf Ihrer Liste gedruckt werden sollen.
    
-   Mit der [F2]-Taste k”nnen Sie auch nach Kunden suchen.
-þ bis Kurzbezeichnung
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Mit der [F2]-Taste kÃ¶nnen Sie auch nach Kunden suchen.
+â–  bis Kurzbezeichnung
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Geben Sie hier bitte die ¯letzte Kurzbezeichnung ein®, fr die die
-   dazugeh”rigen Kunden noch ausgedruckt werden sollen.
+   Geben Sie hier bitte die Â»letzte Kurzbezeichnung einÂ«, fÃ¼r die die
+   dazugehÃ¶rigen Kunden noch ausgedruckt werden sollen.
    
-   Wenn Sie in den Feldern ¯von Kurzbezeichnung® und ¯bis Kurzbezeich-
-   nung® weniger als die vorgesehenen 30 Stellen alpha-numerisch ein-
+   Wenn Sie in den Feldern Â»von KurzbezeichnungÂ« und Â»bis Kurzbezeich-
+   nungÂ« weniger als die vorgesehenen 30 Stellen alpha-numerisch ein-
    geben, dann werden die restlichen Stellen am Bildschirm mit Leer-
-   zeichen ausgefllt. Bei der Suche werden nur die von Ihnen vorge-
-   gebenen Stellen mit dem Eintrag im Feld ¯Kurzbezeichnung® des be-
+   zeichen ausgefÃ¼llt. Bei der Suche werden nur die von Ihnen vorge-
+   gebenen Stellen mit dem Eintrag im Feld Â»KurzbezeichnungÂ« des be-
    treffenden Kunden-Stamm-Satzes verglichen.
    
    Mit den Cursortasten [] und [] bewegen Sie sich zwischen den
@@ -1009,296 +1009,296 @@ WINware (C) 1988/1993                     >66< IV. WINware AUFTRAG Kundenstamm /
    beendet un der Druck gestartet.
    
 WINware (C) 1988/1993                     >68< IV. WINware AUFTRAG Kundenstamm / 1.17
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 3. Adressliste Kunden
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Dieses Programm druckt Ihnen eine ¯Liste® Ihrer Kunden aufsteigend
-   nach der ¯Kurzbezeichnung® aus.
+   Dieses Programm druckt Ihnen eine Â»ListeÂ« Ihrer Kunden aufsteigend
+   nach der Â»KurzbezeichnungÂ« aus.
    
    Mit Hilfe der einzugebenden Auswahl-Kriterien sind Sie in der Lage,
    die zu druckenden Kunden nach den verschiedensten Merkmalen auszu-
-   w„hlen.
+   wÃ¤hlen.
    
 4. Telefonliste
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Dieses Programm druckt Ihnen eine ¯Liste® Ihrer Kunden, sortiert
+   Dieses Programm druckt Ihnen eine Â»ListeÂ« Ihrer Kunden, sortiert
    nach der Kurzbezeichnung, aus.
    
-   Dieser Liste k”nnen Sie die Adressen und die Telefonnummern Ihrer
+   Dieser Liste kÃ¶nnen Sie die Adressen und die Telefonnummern Ihrer
    Kunden entnehmen.
    
    Mit Hilfe der einzugebenden Auswahl-Kriterien sind Sie in der Lage,
    die zu druckenden Kunden nach den verschiedensten Merkmalen auszu-
-   w„hlen.
+   wÃ¤hlen.
    
 5. Adressen-Etiketten
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Mit diesem  Programm haben Sie die M”glichkeit, ¯Adreáetiketten®
+   Mit diesem  Programm haben Sie die MÃ¶glichkeit, Â»AdreÃŸetikettenÂ«
    von Ihren Kunden ein- oder mehrbahnig ausdrucken zu lassen.       
                                                                      
    Mit Hilfe der einzugebenden Auswahl-Kriterien sind Sie in der Lage
-   die Kunden nach den verschiedensten Merkmalen auszuw„hlen.        
+   die Kunden nach den verschiedensten Merkmalen auszuwÃ¤hlen.        
                                                                      
-   Wenn Sie alle Eintragungen ausdrucken wollen, dann k”nnen Sie das 
+   Wenn Sie alle Eintragungen ausdrucken wollen, dann kÃ¶nnen Sie das 
    Auswahlfenster ohne weitere Eintragungen sofort nach dem Start    
-   mit der [ESC]-Taste schlieáen und den Druck starten.              
+   mit der [ESC]-Taste schlieÃŸen und den Druck starten.              
                                                                      
-1/1 þ Formularh”he
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+1/1 â–  FormularhÃ¶he
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Bitte geben Sie an dieser Stelle die ¯Formularh”he® in Zeilen fr
+   Bitte geben Sie an dieser Stelle die Â»FormularhÃ¶heÂ« in Zeilen fÃ¼r
    den Ausdruck der Etiketten ein.                                    
                                                                       
    Dabei ist die Anzahl der Zeilen von der Oberkante der Etikette     
-   bis zur Oberkante der n„chsten Etikette zu z„hlen. Der kleinste    
-   zul„ssige Wert hier ist 8, der gr”áte zul„ssige Wert ist 72 Zeilen.
+   bis zur Oberkante der nÃ¤chsten Etikette zu zÃ¤hlen. Der kleinste    
+   zulÃ¤ssige Wert hier ist 8, der grÃ¶ÃŸte zulÃ¤ssige Wert ist 72 Zeilen.
                                                                       
-   Durch Drcken der [Ù]-Taste kann die Eingabe in diesem Feld ber- 
-   gangen werden. Dann wird dieses Feld mit dem Standardwert ¯10 Zei- 
-   len® vorbesetzt.                                                   
+   Durch DrÃ¼cken der [â”˜]-Taste kann die Eingabe in diesem Feld Ã¼ber- 
+   gangen werden. Dann wird dieses Feld mit dem Standardwert Â»10 Zei- 
+   lenÂ« vorbesetzt.                                                   
                                                                       
                                                                       
    
-þ Formularbreite
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Formularbreite
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Bitte geben Sie hier ein, wie breit Ihre Etiketten sind. Diese      
-   Angabe ist natrlich nur bei mehrbahnigen Etiketten von Bedeutung.  
+   Angabe ist natÃ¼rlich nur bei mehrbahnigen Etiketten von Bedeutung.  
                                                                        
                                                                        
                                                                        
    
-þ Anzahl Etiketten
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Anzahl Etiketten
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Dieses Feld wird in der Basis-Fakturierung nicht ausgewertet.
    
-   Verwenden Sie die groáe Auftragsbearbeitung, dann k”nnen Sie hier
-   festlegen, wieviele ¯Etiketten® von einer Kundenadresse gedruckt
+   Verwenden Sie die groÃŸe Auftragsbearbeitung, dann kÃ¶nnen Sie hier
+   festlegen, wieviele Â»EtikettenÂ« von einer Kundenadresse gedruckt
    werden.
 WINware (C) 1988/1993                     >73< IV. WINware AUFTRAG Kundenstamm / 1.18
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    
-   Durch Drcken der [Ù]-Taste kann die Eingabe in diesem Feld ber-
-   sprungen werden. Dann wird dieses Feld mit dem Standardwert ¯1®
+   Durch DrÃ¼cken der [â”˜]-Taste kann die Eingabe in diesem Feld Ã¼ber-
+   sprungen werden. Dann wird dieses Feld mit dem Standardwert Â»1Â«
    belegt.
    
-þ Anzahl Bahnen
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Anzahl Bahnen
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Geben Sie hier an wieviele ¯Bahnen® bei den Adreáetiketten neben-
+   Geben Sie hier an wieviele Â»BahnenÂ« bei den AdreÃŸetiketten neben-
    einander bedruckt werden sollen.                                   
                                                                       
-   Bitte w„hlen Sie nachdem Sie die [F2]-Taste gedrckt haben:        
+   Bitte wÃ¤hlen Sie nachdem Sie die [F2]-Taste gedrÃ¼ckt haben:        
                                                                       
-      ( ) 1ÿBahn                                                      
-      ( ) 2ÿBahnen                                                    
-      ( ) 3ÿBahnen                                                    
-      ( ) 4ÿBahnen                                                    
+      ( ) 1Â Bahn                                                      
+      ( ) 2Â Bahnen                                                    
+      ( ) 3Â Bahnen                                                    
+      ( ) 4Â Bahnen                                                    
                                                                       
    Bewegen Sie einfach mit den Cursortasten []/[] den Balken auf den
-   gewnschten Eintrag. Danach best„tigen Sie die Wahl mit [Ù].      
+   gewÃ¼nschten Eintrag. Danach bestÃ¤tigen Sie die Wahl mit [â”˜].      
                                                                       
-   Wenn Sie das Auswahlfenster nicht ”ffnen wollen, k”nnen Sie die    
+   Wenn Sie das Auswahlfenster nicht Ã¶ffnen wollen, kÃ¶nnen Sie die    
    Wahl auch durch Eingabe des ersten Buchstabens (bzw. der ersten    
    Buchstaben) treffen.                                               
                                                                       
-   Existiert bereits ein gltiger Eintrag in diesem Feld, dann ist    
-   mit den Tasten [Bild]/[Bild] auch ein Weiterbl„ttern zum n„chsten
-   gltigen Eintrag m”glich.                                          
+   Existiert bereits ein gÃ¼ltiger Eintrag in diesem Feld, dann ist    
+   mit den Tasten [Bild]/[Bild] auch ein WeiterblÃ¤ttern zum nÃ¤chsten
+   gÃ¼ltigen Eintrag mÃ¶glich.                                          
                                                                       
                                                                       
    
-þ Anschrift mit
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Anschrift mit
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Sie haben in diesem Feld folgende Eingabem”glichkeiten:
+   Sie haben in diesem Feld folgende EingabemÃ¶glichkeiten:
    
-   Straáe:   Die Kundenadresse wird mit der ¯Strassenangabe®
+   StraÃŸe:   Die Kundenadresse wird mit der Â»StrassenangabeÂ«
              gedruckt, wenn das entsprechende Feld im Kunden-
              stammsatz beschrieben ist; andernfalls wird das
              Postfach verwendet.
    
-   Postfach: Die Kundenadresse wird mit ¯Postfach® gedruckt,
+   Postfach: Die Kundenadresse wird mit Â»PostfachÂ« gedruckt,
              wenn das entsprechende Feld im Kundenstamm be-
-             schrieben ist; andernfalls wird die Straáenbe-
+             schrieben ist; andernfalls wird die StraÃŸenbe-
              zeichnung verwendet.
    
 WINware (C) 1988/1993                     >48< IV. WINware AUFTRAG Kundenstamm / 1.19
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 
 
    Beispiel: Druck Adress-Liste Kunden (STB1100.M)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ ÚÙADRESS-LISTE KUNDEN                                 Datum: 04.09.90 - SEITE 0001À¿ ³Û
-   ³ ³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³ ³Û
-   ³ À´Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002ÃÙ ³Û
-   ³  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ  ³Û
-   ³ Kunden-Kurzbezeichnung         Kunden-Nummer                                         ³Û
-   ³ Name                           Straáe                                                ³Û
-   ³ Zusatz                         Land - PLZ/Ort                 Telefon                ³Û
-   ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ³Û
-   ³                                                                                      ³Û
-   ³ Abel Gerhard - 8942 W”rschach  001-5000                                              ³Û
-   ³ Gerhard Abel                   Au 288                                                ³Û
-   ³                                A   - 8942 W”rschach           03682/25-22            ³Û
-   ³                                                                                      ³Û
-   ³ Absenger J. - 8323 St. Marein  001-5001                                              ³Û
-   ³ Josef Absenger                 Petersdorf II 57                                      ³Û
-   ³                                A   - 8323 St. Marein          03119/26-21            ³Û
-   ³                                                                                      ³Û
-   ³ Aero-Foto GmbH - 8650 Kapfenbe 001-5002                                              ³Û
-   ³ Aero-Foto Ges.m.b.H.           Schmidgasse 5                                         ³Û
-   ³                                A   - 8605 Kapfenberg          03862/25-3-6           ³Û
-   ³                                                                                      ³Û
-   ³ Aero Sanit„ranl. - 8010 Graz   001-5003                                              ³Û
-   ³ Aero-Sanit„ranlagenbau         Mnzgrabenstraáe 32                                   ³Û
-   ³ Gesellschaft m.b.H.            A   - 8010 Graz                0316/71-1-11           ³Û
-   ³                                                                                      ³Û
-   ³ Agnello Tindaro - 8020 Graz    001-5004                                              ³Û
-   ³ Tindaro Agnello                Josef Huber Gasse 35                                  ³Û
-   ³                                A   - 8020 Graz                0316/91-30-5           ³Û
-   ³                                                                                      ³Û
-   ³ Agra Grabner GmbH - 8280 Frst 001-5005                                              ³Û
-   ³ AGRA Grabner Ges.m.b.H.        Hauptplatz 8                                          ³Û
-   ³                                A   - 8280 Frstenfeld         03382/22-52            ³Û
-   ³                                                                                      ³Û
-   ³ Agraunion Sdost - 8330 Feldba 001-5006                                              ³Û
-   ³ AGRAUNION SšDOST               Lugitschstraáe 1                                      ³Û
-   ³ reg. Genossenhaft m.b.H.       A   - 8330 Feldbach            03152/22-47            ³Û
-   ³                                                                                      ³Û
-   ³ Agrosserta - 8042 Graz-Raaba   001-5007                                              ³Û
-   ³ Agraverwertungsv. GenmbH       Dr. Auer Straáe 22                                    ³Û
-   ³ Agrosserta                     A   - 8042 Graz-Raaba          0316/40-15-6           ³Û
-   ³                                                                                      ³Û
-   ³ Aigner Franz GmbH - 8940 Lieze 001-5009                                              ³Û
-   ³ Franz Aigner Ges.m.b.H.        Hauptplatz 1                                          ³Û
-   ³                                A   - 8940 Liezen              03612/22 1 0           ³Û
-   ³                                                                                      ³Û
-   ³ Akad. Druck u.Verlag - 8010 Gr 001-5010                                              ³Û
-   ³ Akad. Druck u.Verlagsanstalt   Neufeldweg 75                                         ³Û
-   ³ Dr. Struzl                     A   - 8010 Graz                0316/41 1 53           ³Û
-   ³                                                                                      ³Û
-   ³ Alba-Schuhe - 8141 Unterpremst 001-5011                                              ³Û
-   ³ Alba-Schuhfabrik               Jochen-Rindt-Weg 1                                    ³Û
-   ³ Alois Bauer KG.                A   - 8141 Unterpremst„tten    03136/25-36            ³Û
-   ³                                                                                      ³Û
-   ³ Albogel-Werke GmbH - 8010 Graz 001-5012                                              ³Û
-   ³ Albogel-Werke                  Roseggerkai 3/I                                       ³Û
-   ³ Brandner Ges.m.b.H.            A   - 8010 Graz                0316/73 2 21           ³Û
-   ³                                                                                      ³Û
-   ³ All-Ha Bau-GmbH - 8041 Graz    001-5013                                              ³Û
-   ³ ALL - HA Baugesellschaft m.b   Herbert-B”ckl-Gasse 10                                ³Û
-   ³                                A   - 8041 Graz                0316/42 5 92           ³Û
-   ³                                                                                      ³Û
-   ³ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ ³Û
-   ³ À¿Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFTÚÙ ³Û
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙÛ
-    ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ â”Œâ”˜ADRESS-LISTE KUNDEN                                 Datum: 04.09.90 - SEITE 0001â””â” â”‚â–ˆ
+   â”‚ â”‚â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”‚ â”‚â–ˆ
+   â”‚ â””â”¤Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002â”œâ”˜ â”‚â–ˆ
+   â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚â–ˆ
+   â”‚ Kunden-Kurzbezeichnung         Kunden-Nummer                                         â”‚â–ˆ
+   â”‚ Name                           StraÃŸe                                                â”‚â–ˆ
+   â”‚ Zusatz                         Land - PLZ/Ort                 Telefon                â”‚â–ˆ
+   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Abel Gerhard - 8942 WÃ¶rschach  001-5000                                              â”‚â–ˆ
+   â”‚ Gerhard Abel                   Au 288                                                â”‚â–ˆ
+   â”‚                                A   - 8942 WÃ¶rschach           03682/25-22            â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Absenger J. - 8323 St. Marein  001-5001                                              â”‚â–ˆ
+   â”‚ Josef Absenger                 Petersdorf II 57                                      â”‚â–ˆ
+   â”‚                                A   - 8323 St. Marein          03119/26-21            â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Aero-Foto GmbH - 8650 Kapfenbe 001-5002                                              â”‚â–ˆ
+   â”‚ Aero-Foto Ges.m.b.H.           Schmidgasse 5                                         â”‚â–ˆ
+   â”‚                                A   - 8605 Kapfenberg          03862/25-3-6           â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Aero SanitÃ¤ranl. - 8010 Graz   001-5003                                              â”‚â–ˆ
+   â”‚ Aero-SanitÃ¤ranlagenbau         MÃ¼nzgrabenstraÃŸe 32                                   â”‚â–ˆ
+   â”‚ Gesellschaft m.b.H.            A   - 8010 Graz                0316/71-1-11           â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Agnello Tindaro - 8020 Graz    001-5004                                              â”‚â–ˆ
+   â”‚ Tindaro Agnello                Josef Huber Gasse 35                                  â”‚â–ˆ
+   â”‚                                A   - 8020 Graz                0316/91-30-5           â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Agra Grabner GmbH - 8280 FÃ¼rst 001-5005                                              â”‚â–ˆ
+   â”‚ AGRA Grabner Ges.m.b.H.        Hauptplatz 8                                          â”‚â–ˆ
+   â”‚                                A   - 8280 FÃ¼rstenfeld         03382/22-52            â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Agraunion SÃ¼dost - 8330 Feldba 001-5006                                              â”‚â–ˆ
+   â”‚ AGRAUNION SÃœDOST               LugitschstraÃŸe 1                                      â”‚â–ˆ
+   â”‚ reg. Genossenhaft m.b.H.       A   - 8330 Feldbach            03152/22-47            â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Agrosserta - 8042 Graz-Raaba   001-5007                                              â”‚â–ˆ
+   â”‚ Agraverwertungsv. GenmbH       Dr. Auer StraÃŸe 22                                    â”‚â–ˆ
+   â”‚ Agrosserta                     A   - 8042 Graz-Raaba          0316/40-15-6           â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Aigner Franz GmbH - 8940 Lieze 001-5009                                              â”‚â–ˆ
+   â”‚ Franz Aigner Ges.m.b.H.        Hauptplatz 1                                          â”‚â–ˆ
+   â”‚                                A   - 8940 Liezen              03612/22 1 0           â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Akad. Druck u.Verlag - 8010 Gr 001-5010                                              â”‚â–ˆ
+   â”‚ Akad. Druck u.Verlagsanstalt   Neufeldweg 75                                         â”‚â–ˆ
+   â”‚ Dr. Struzl                     A   - 8010 Graz                0316/41 1 53           â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Alba-Schuhe - 8141 Unterpremst 001-5011                                              â”‚â–ˆ
+   â”‚ Alba-Schuhfabrik               Jochen-Rindt-Weg 1                                    â”‚â–ˆ
+   â”‚ Alois Bauer KG.                A   - 8141 UnterpremstÃ¤tten    03136/25-36            â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Albogel-Werke GmbH - 8010 Graz 001-5012                                              â”‚â–ˆ
+   â”‚ Albogel-Werke                  Roseggerkai 3/I                                       â”‚â–ˆ
+   â”‚ Brandner Ges.m.b.H.            A   - 8010 Graz                0316/73 2 21           â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ All-Ha Bau-GmbH - 8041 Graz    001-5013                                              â”‚â–ˆ
+   â”‚ ALL - HA Baugesellschaft m.b   Herbert-BÃ¶ckl-Gasse 10                                â”‚â–ˆ
+   â”‚                                A   - 8041 Graz                0316/42 5 92           â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚â–ˆ
+   â”‚ â””â”Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFTâ”Œâ”˜ â”‚â–ˆ
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â–ˆ
+    â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€
 
 
 WINware (C) 1988/1993                     >75< IV. WINware AUFTRAG Kundenstamm / 1.20
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 
    Beispiel: Druck Telefon-Liste Kunden (STB1101.M)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³                                                   ÚÄÄÄ¿ ³Û
-   ³                                                   ³   ³ ³Û
-   ³                         ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ   ÀÄÄÄÙ ³Û
-   ³                                                         ³Û
-   ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ³Û
-   ³ Adresse                            ³ Telefon            ³Û
-   ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ³Û
-   ³                                    ³                    ³Û
-   ³ Firma 2i Industrial Informatics Gm ³                    ³Û
-   ³ Haierweg 20 e                      ³                    ³Û
-   ³ D - 7800 Freiburg i.Br.            ³ 0761/4 22 57       ³Û
-   ³                                    ³                    ³Û
-   ³ Firma A-Consult EDV-Beratungs-GmbH ³                    ³Û
-   ³ K„rntnerstraáe 1                   ³                    ³Û
-   ³ A - 1010 Wien                      ³ 0222/513 32 33, 51 ³Û
-   ³                                    ³                    ³Û
-   ³ Firma A.C.O.                       ³                    ³Û
-   ³ Computer Systeme GmbH              ³                    ³Û
-   ³ Pfingstrosenstraáe 29              ³                    ³Û
-   ³ D - 8000 Mnchen 70                ³ 089/714 09 05-08   ³Û
-   ³                                    ³                    ³Û
-   ³ Firma a.h.c. managementberatungs g ³                    ³Û
-   ³ austrian hotelconsult              ³                    ³Û
-   ³ Schloá Rif                         ³                    ³Û
-   ³ A - 5400 Hallein                   ³ 06245/55 46-0      ³Û
-   ³                                    ³                    ³Û
-   ³ Firma A.P.S.                       ³                    ³Û
-   ³ Automatic Portfolio Systems        ³                    ³Û
-   ³ Rintheimerstraáe 11                ³                    ³Û
-   ³ D - 7500 Karlsruhe 1               ³ 0721/69 18 17      ³Û
-   ³                                    ³                    ³Û
-   ³ Firma AB Computergesellschaft m.b. ³                    ³Û
-   ³ Wiedner Hauptstraáe 135            ³                    ³Û
-   ³ A - 1050 Wien                      ³ 0222/55 16 30, 55  ³Û
-   ³                                    ³                    ³Û
-   ³ Firma abacomp-software             ³                    ³Û
-   ³ Busdorfmauer 10                    ³                    ³Û
-   ³ D - 4790 Paderborn                 ³ 05251/2 78 99      ³Û
-   ³                                    ³                    ³Û
-   ³ Firma abacus computer gmbH         ³                    ³Û
-   ³ Weilimdorfer Straáe 47             ³                    ³Û
-   ³ D - 7015 Korntal-Mnchingen 1      ³ 0771/83 10 03      ³Û
-   ³                                    ³                    ³Û
-   ³ Firma Abacus Software GmbH         ³                    ³Û
-   ³ Berggasse 17, Stg. 2               ³                    ³Û
-   ³ A - 1170 Wien                      ³ 0222/31 25 36-0    ³Û
-   ³                                    ³                    ³Û
-   ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ³Û
-   ³                                                         ³Û
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙÛ
-    ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚                                                   â”Œâ”€â”€â”€â” â”‚â–ˆ
+   â”‚                                                   â”‚   â”‚ â”‚â–ˆ
+   â”‚                         â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€   â””â”€â”€â”€â”˜ â”‚â–ˆ
+   â”‚                                                         â”‚â–ˆ
+   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”‚â–ˆ
+   â”‚ Adresse                            â”‚ Telefon            â”‚â–ˆ
+   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”‚â–ˆ
+   â”‚                                    â”‚                    â”‚â–ˆ
+   â”‚ Firma 2i Industrial Informatics Gm â”‚                    â”‚â–ˆ
+   â”‚ Haierweg 20 e                      â”‚                    â”‚â–ˆ
+   â”‚ D - 7800 Freiburg i.Br.            â”‚ 0761/4 22 57       â”‚â–ˆ
+   â”‚                                    â”‚                    â”‚â–ˆ
+   â”‚ Firma A-Consult EDV-Beratungs-GmbH â”‚                    â”‚â–ˆ
+   â”‚ KÃ¤rntnerstraÃŸe 1                   â”‚                    â”‚â–ˆ
+   â”‚ A - 1010 Wien                      â”‚ 0222/513 32 33, 51 â”‚â–ˆ
+   â”‚                                    â”‚                    â”‚â–ˆ
+   â”‚ Firma A.C.O.                       â”‚                    â”‚â–ˆ
+   â”‚ Computer Systeme GmbH              â”‚                    â”‚â–ˆ
+   â”‚ PfingstrosenstraÃŸe 29              â”‚                    â”‚â–ˆ
+   â”‚ D - 8000 MÃ¼nchen 70                â”‚ 089/714 09 05-08   â”‚â–ˆ
+   â”‚                                    â”‚                    â”‚â–ˆ
+   â”‚ Firma a.h.c. managementberatungs g â”‚                    â”‚â–ˆ
+   â”‚ austrian hotelconsult              â”‚                    â”‚â–ˆ
+   â”‚ SchloÃŸ Rif                         â”‚                    â”‚â–ˆ
+   â”‚ A - 5400 Hallein                   â”‚ 06245/55 46-0      â”‚â–ˆ
+   â”‚                                    â”‚                    â”‚â–ˆ
+   â”‚ Firma A.P.S.                       â”‚                    â”‚â–ˆ
+   â”‚ Automatic Portfolio Systems        â”‚                    â”‚â–ˆ
+   â”‚ RintheimerstraÃŸe 11                â”‚                    â”‚â–ˆ
+   â”‚ D - 7500 Karlsruhe 1               â”‚ 0721/69 18 17      â”‚â–ˆ
+   â”‚                                    â”‚                    â”‚â–ˆ
+   â”‚ Firma AB Computergesellschaft m.b. â”‚                    â”‚â–ˆ
+   â”‚ Wiedner HauptstraÃŸe 135            â”‚                    â”‚â–ˆ
+   â”‚ A - 1050 Wien                      â”‚ 0222/55 16 30, 55  â”‚â–ˆ
+   â”‚                                    â”‚                    â”‚â–ˆ
+   â”‚ Firma abacomp-software             â”‚                    â”‚â–ˆ
+   â”‚ Busdorfmauer 10                    â”‚                    â”‚â–ˆ
+   â”‚ D - 4790 Paderborn                 â”‚ 05251/2 78 99      â”‚â–ˆ
+   â”‚                                    â”‚                    â”‚â–ˆ
+   â”‚ Firma abacus computer gmbH         â”‚                    â”‚â–ˆ
+   â”‚ Weilimdorfer StraÃŸe 47             â”‚                    â”‚â–ˆ
+   â”‚ D - 7015 Korntal-MÃ¼nchingen 1      â”‚ 0771/83 10 03      â”‚â–ˆ
+   â”‚                                    â”‚                    â”‚â–ˆ
+   â”‚ Firma Abacus Software GmbH         â”‚                    â”‚â–ˆ
+   â”‚ Berggasse 17, Stg. 2               â”‚                    â”‚â–ˆ
+   â”‚ A - 1170 Wien                      â”‚ 0222/31 25 36-0    â”‚â–ˆ
+   â”‚                                    â”‚                    â”‚â–ˆ
+   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”‚â–ˆ
+   â”‚                                                         â”‚â–ˆ
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â–ˆ
+    â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€
 
 
 WINware (C) 1988/1993                     >60< IV. WINware AUFTRAG Kundenstamm / 1.21
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 
 
    Beispiel: Druck Adress-Etiketten Kunden (STB1102.M)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³                                          ³Û
-   ³     Firma                                ³Û
-   ³     2i Industrial Informatics GmbH       ³Û
-   ³                                          ³Û
-   ³     Haierweg 20 e                        ³Û
-   ³     D - 7800 Freiburg i.Br.              ³Û
-   ³                                          ³Û
-   ³                                          ³Û
-   ³     Firma                                ³Û
-   ³     A-Consult EDV-Beratungs-GmbH         ³Û
-   ³                                          ³Û
-   ³     K„rntnerstraáe 1                     ³Û
-   ³     A - 1010 Wien                        ³Û
-   ³                                          ³Û
-   ³                                          ³Û
-   ³     Firma                                ³Û
-   ³     A.C.O.                               ³Û
-   ³     Computer Systeme GmbH                ³Û
-   ³                                          ³Û
-   ³     Pfingstrosenstraáe 29                ³Û
-   ³     D - 8000 Mnchen 70                  ³Û
-   ³                                          ³Û
-   ³                                          ³Û
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙÛ
-    ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚                                          â”‚â–ˆ
+   â”‚     Firma                                â”‚â–ˆ
+   â”‚     2i Industrial Informatics GmbH       â”‚â–ˆ
+   â”‚                                          â”‚â–ˆ
+   â”‚     Haierweg 20 e                        â”‚â–ˆ
+   â”‚     D - 7800 Freiburg i.Br.              â”‚â–ˆ
+   â”‚                                          â”‚â–ˆ
+   â”‚                                          â”‚â–ˆ
+   â”‚     Firma                                â”‚â–ˆ
+   â”‚     A-Consult EDV-Beratungs-GmbH         â”‚â–ˆ
+   â”‚                                          â”‚â–ˆ
+   â”‚     KÃ¤rntnerstraÃŸe 1                     â”‚â–ˆ
+   â”‚     A - 1010 Wien                        â”‚â–ˆ
+   â”‚                                          â”‚â–ˆ
+   â”‚                                          â”‚â–ˆ
+   â”‚     Firma                                â”‚â–ˆ
+   â”‚     A.C.O.                               â”‚â–ˆ
+   â”‚     Computer Systeme GmbH                â”‚â–ˆ
+   â”‚                                          â”‚â–ˆ
+   â”‚     PfingstrosenstraÃŸe 29                â”‚â–ˆ
+   â”‚     D - 8000 MÃ¼nchen 70                  â”‚â–ˆ
+   â”‚                                          â”‚â–ˆ
+   â”‚                                          â”‚â–ˆ
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â–ˆ
+    â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€
 
 

@@ -16,7 +16,7 @@ Kopf 1
 &END
 
 &RUMPF (0)
-÷;÷;÷;÷;÷;÷;÷ - ÷ ~0.BRIEFANR_1 ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~0.STRASSE ~0.LAND ~0.PLZ_ORT
+Â¸;Â¸;Â¸;Â¸;Â¸;Â¸;Â¸ - Â¸ ~0.BRIEFANR_1 ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~0.STRASSE ~0.LAND ~0.PLZ_ORT
 &END
 
 &FUSS (0)
@@ -26,6 +26,6 @@ Kopf 1
 
 
 &REM
-&REM ÷;÷;÷;÷ ÷;;÷;÷ - ÷ ~0.BRIEFANR_1 ~0.ANREDE ~0.NAME ~0.ZUSATZ ~0.POSITION_1 ~0.STRASSE ~0.LAND ~0.PLZ_ORT
+&REM Â¸;Â¸;Â¸;Â¸ Â¸;;Â¸;Â¸ - Â¸ ~0.BRIEFANR_1 ~0.ANREDE ~0.NAME ~0.ZUSATZ ~0.POSITION_1 ~0.STRASSE ~0.LAND ~0.PLZ_ORT
 &REM
 

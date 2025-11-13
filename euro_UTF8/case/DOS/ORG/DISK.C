@@ -1,7 +1,7 @@
 /*****************************************************************
  *   Programmname:    DISK.C                                     *
  *   Aufgabe:         Stellt eine Reihe von C-Funktionen zur     *
- *                    VerfÅgung, die Auswahl und Daten der       *
+ *                    Verf√ºgung, die Auswahl und Daten der       *
  *                    Laufwerke betreffen                        *
  *   Memory Model:    SMALL                                      *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC         *
@@ -13,10 +13,10 @@
  *    wobei options:  COMP=QCL  (falls QuickC verwendet wird)    *
  *                                                               *
  *   Sollen Routinen in anderen Programmen verwendet werden, so  *
- *   mu· beim Linken DOSLIBS.LIB als Library zusÑtzlich angege-  *
+ *   mu√ü beim Linken DOSLIBS.LIB als Library zus√§tzlich angege-  *
  *   ben werden.                                                 *
  *                                                               *
- *   Programmautor:    Heinrich Gîbl                             *
+ *   Programmautor:    Heinrich G√∂bl                             *
  *   Stand:            27.6.88                                   *
  *****************************************************************/
 
@@ -47,7 +47,7 @@ bdos (RESET_DISK, 0, 0);
 
 
 /* ---------------------------------------------------------- *
- *  F 0Eh - Aktuelles Laufwerk Ñndern                         *
+ *  F 0Eh - Aktuelles Laufwerk √§ndern                         *
  * ---------------------------------------------------------- */
 
 int
@@ -59,7 +59,7 @@ return (bdos (SELECT_DISK, (WORD) drive, 0) & 0x00ff);
 
 
 /* ---------------------------------------------------------- *
- *  F 19h - Gibt aktuelles Laufwerk als Buchstabe zurÅck      *
+ *  F 19h - Gibt aktuelles Laufwerk als Buchstabe zur√ºck      *
  * ---------------------------------------------------------- */
 
 char
@@ -89,7 +89,7 @@ intdosx (&outregs, &outregs, &segregs);
 
 
 /* ---------------------------------------------------------- *
- *  F 1Bh - Gibt Daten des aktuellen Laufwerks zurÅck         *
+ *  F 1Bh - Gibt Daten des aktuellen Laufwerks zur√ºck         *
  * ---------------------------------------------------------- */
 
 void far *
@@ -118,7 +118,7 @@ return ((void far *) dw);
 
 
 /* ---------------------------------------------------------- *
- *  F 1Ch - Gibt Daten eines bestimmten Laufwerks zurÅck      *
+ *  F 1Ch - Gibt Daten eines bestimmten Laufwerks zur√ºck      *
  * ---------------------------------------------------------- */
 
 void far *
@@ -148,7 +148,7 @@ return ((void far *) dw);
 
 
 /* ---------------------------------------------------------- *
- *  F 2Fh - Gibt Disk Transfer Adresse zurÅck                 *
+ *  F 2Fh - Gibt Disk Transfer Adresse zur√ºck                 *
  * ---------------------------------------------------------- */
 
 void far *
@@ -182,7 +182,7 @@ D_get_disk_free (dp, drive)
 union REGS outregs;
 int memalloc = FALSE;
 
-/* Falls der Aufrufer als Zeiger NULL Åbergibt, Åbernimmt die
+/* Falls der Aufrufer als Zeiger NULL √ºbergibt, √ºbernimmt die
               Funktion die Bereitstellung des Speicherplatzes */
 if (dp == NULL)
     {
@@ -190,7 +190,7 @@ if (dp == NULL)
             malloc (sizeof (struct DISKP))) == NULL)
          return (NULL);
     else
-         memalloc = TRUE;  /* merkt sich, da· diese Funktion
+         memalloc = TRUE;  /* merkt sich, da√ü diese Funktion
                                   Speicher bereitgestellt hat */
     }
 outregs.h.ah = GET_DISK_FREE;

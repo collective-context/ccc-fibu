@@ -1,6 +1,6 @@
 /**************************************************************
  *   DIREC.H                                                  *
- *   Definitionen fÅr Directory-Funktionen                    *
+ *   Definitionen f√ºr Directory-Funktionen                    *
  *   27.6.88                                                  *
  **************************************************************/
 

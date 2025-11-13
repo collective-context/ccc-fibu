@@ -1,18 +1,18 @@
 +-------------------------------------------------------------------------+
-|                      PC/MS-DOS  f걊 Insider                           |
+|                      PC/MS-DOS  f체r Insider                           |
 |-------------------------------------------------------------------------|
-| Testprogramm f걊 den Funktion-Calls 44h                                 |
+| Testprogramm f체r den Funktion-Calls 44h                                 |
 |                                                                         |
 | Die Funktionen befinden sich im Quelltext unter dem Namen IOCTL.C       |
-| Sie k봭nen in Programmen verwendet werden, indem man die Library        |
-| DOSLIBS.LIB beim Linken als zus꼝zliche Library angibt.                 |
+| Sie k철nnen in Programmen verwendet werden, indem man die Library        |
+| DOSLIBS.LIB beim Linken als zus채tzliche Library angibt.                 |
 +-------------------------------------------------------------------------+
 
 Dieses Programm testet die C-Funktionen in IOCTL.C.
-Zun꼊hst werden die Attribute der Handles 0 bis 4 entschl걌selt. Dabei
+Zun채chst werden die Attribute der Handles 0 bis 4 entschl체sselt. Dabei
 halten sie den "Auswurf" des Programms am besten mit CTRL-NUMLOCK bzw.
-CTRL-S an. Die Erkl꼛ung zu den Attributen finden Sie im Kapitel 3.3,
-bei den Ger꼝etreibern.
+CTRL-S an. Die Erkl채rung zu den Attributen finden Sie im Kapitel 3.3,
+bei den Ger채tetreibern.
 
 Darauf wird bei jedem installierten Laufwerk des Systems angegeben, ob
 das Medium wechselbar oder nicht wechselbar ist.

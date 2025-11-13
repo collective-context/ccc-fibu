@@ -12,31 +12,31 @@
 &DATEI  (5)  = MASK, FI1210
 
 &KOPF (0)
-^��KONTOBLATT - �@@@@@@@@ / @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                               Datum: @@@@@@@@ - SEITE ������ ~SM ~0..KTO_ART ~0..KONTO_NR ~1._KONTO_BEZ ~1._DATUM_AKT ~1._SEITE
-�������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                        Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ��������������������������������������������������������������������������������������������������������������������
-�EB-Wert: ###.###.##�,���      �JVkz SOLL: ###.###.##�,��� / �JVkz HABEN: ###.###.##�,���      �Saldo: ###.###.##�,��� ~1._A_EB_WERT~1._A_JVKZ_SO~1._A_JVKZ_HA~1._ANF_SALDO
-����������������������������������������������������������������������������������������������������������������������
+^┌┘KONTOBLATT - ¡@@@@@@@@ / @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                               Datum: @@@@@@@@ - SEITE øøøø└┐ ~SM ~0..KTO_ART ~0..KONTO_NR ~1._KONTO_BEZ ~1._DATUM_AKT ~1._SEITE
+│┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                        Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+»EB-Wert: ###.###.##ø,øø«      »JVkz SOLL: ###.###.##ø,øø« / »JVkz HABEN: ###.###.##ø,øø«      »Saldo: ###.###.##ø,øø« ~1._A_EB_WERT~1._A_JVKZ_SO~1._A_JVKZ_HA~1._ANF_SALDO
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
         Beleg      Beleg    Gegen                                         Ust USt
 Lfn.Nr  Nummer     Datum    Konto     Buchungstext                        Art Satz        Umsatz-Soll     Umsatz-Haben
-����������������������������������������������������������������������������������������������������������������������
-�
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 
 &END
 
 &RUMPF (0)
-####### @@@@@@@@@@ ##.##.## �@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @ #�,��  #.###.###.##�,�� #.###.###.##�,�� \
-~0..SATZ_NR~0..BELEG_NR~0..BELEG_DAT~1._KONTO_NR~0..BUCH_TEXT              ~0..UST_ART~0�.UST_SATZ~1._UMSATZ_SO~1._UMSATZ_HA
+####### @@@@@@@@@@ ##.##.## ´@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @ #ø,øø  #.###.###.##ø,øø #.###.###.##ø,øø \
+~0..SATZ_NR~0..BELEG_NR~0..BELEG_DAT~1._KONTO_NR~0..BUCH_TEXT              ~0..UST_ART~0°.UST_SATZ~1._UMSATZ_SO~1._UMSATZ_HA
 &END
 
 &FUSS (0)
-����������������������������������������������������������������������������������������������������������������������
-�EB-Wert: ###.###.##�,���      �JVkz SOLL: ###.###.##�,��� / �JVkz HABEN: ###.###.##�,���      �Saldo: ###.###.##�,��� ~1._E_EB_WERT~1._E_JVKZ_SO~1._E_JVKZ_HA~1._END_SALDO
-��������������������������������������������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                        @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+»EB-Wert: ###.###.##ø,øø«      »JVkz SOLL: ###.###.##ø,øø« / »JVkz HABEN: ###.###.##ø,øø«      »Saldo: ###.###.##ø,øø« ~1._E_EB_WERT~1._E_JVKZ_SO~1._E_JVKZ_HA~1._END_SALDO
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                        @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
-&REM �EB-Wert: ###.###.##�,���      �JVkz SOLL: ###.###.##�,��� / �JVkz HABEN: ###.###.##�,���      �Saldo: ###.###.##�,��� ~1._A_EB_WERT~1._A_JVKZ_SO~1._A_JVKZ_HA~1._ANF_SALDO
-&REM �EB-Wert: ###.###.##�,���      �JVkz SOLL: ###.###.##�,��� / �JVkz HABEN: ###.###.##�,���      �Saldo: ###.###.##�,��� ~1._E_EB_WERT~1._E_JVKZ_SO~1._E_JVKZ_HA~1._END_SALDO
+&REM »EB-Wert: ###.###.##ø,øø«      »JVkz SOLL: ###.###.##ø,øø« / »JVkz HABEN: ###.###.##ø,øø«      »Saldo: ###.###.##ø,øø« ~1._A_EB_WERT~1._A_JVKZ_SO~1._A_JVKZ_HA~1._ANF_SALDO
+&REM »EB-Wert: ###.###.##ø,øø«      »JVkz SOLL: ###.###.##ø,øø« / »JVkz HABEN: ###.###.##ø,øø«      »Saldo: ###.###.##ø,øø« ~1._E_EB_WERT~1._E_JVKZ_SO~1._E_JVKZ_HA~1._END_SALDO
 
 

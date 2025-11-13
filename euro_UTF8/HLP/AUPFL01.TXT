@@ -1,128 +1,128 @@
 /*.ta,F02,I. Auftragsbearbeitung / 1.,1
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware Auftragsbearbeitung                                                      º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware Auftragsbearbeitung                                                      â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
                                   Pflichtenheft
                            "WINware Auftragsbearbeitung"
 
 
-                                  Fr die Firma
+                                  FÃ¼r die Firma
                             WINware Software, P.Mayer
 
-                                 Grazerstraáe 126
+                                 GrazerstraÃŸe 126
                                  A-8082 Kirchbach
 
 
 Dieses Pflichtenheft ist eine detailierte Beschreibung des Programmpaketes
-WINware Auftragsbearbeitung. Diese Programmpaket ist innerhalb eines v”llig
+WINware Auftragsbearbeitung. Diese Programmpaket ist innerhalb eines vÃ¶llig
 neuen Programmierkonzeptes mit Hilfe der WINware CASEbox erstellt worden und
-erschlieát sowohl fr den Kunden als auch fr den Programmierer vollkommen
-neue M”glichkeiten.
+erschlieÃŸt sowohl fÃ¼r den Kunden als auch fÃ¼r den Programmierer vollkommen
+neue MÃ¶glichkeiten.
 
 Man kann den Produktlebenszyklus in sechs verschiedene Phasen aufteilen:
 
-                               ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-                               ³ 6) nderung ³
-                               ³ 5) Wartung  ³
-                   ÚÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿
-                   ³         4) Test/Debugging           ³
-                   ³  3) Implementierung/Programmierung  ³
-            ÚÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄ¿
-            ³              2) Konzept-Erstellung              ³
-            ³          1) Anforderungsspezifikation           ³
-            ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+                               â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                               â”‚ 6) Ã„nderung â”‚
+                               â”‚ 5) Wartung  â”‚
+                   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                   â”‚         4) Test/Debugging           â”‚
+                   â”‚  3) Implementierung/Programmierung  â”‚
+            â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”
+            â”‚              2) Konzept-Erstellung              â”‚
+            â”‚          1) Anforderungsspezifikation           â”‚
+            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
-Fr die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
+FÃ¼r die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
 und Konzepterstellung - wird meist eine Textverarbeitung verwendet. Fort-
 schrittlichere Programmierkonzepte setzten hier bereits CASE-Tools ein.
 
 Die beiden nachfolgenden Phasen - Implementierung/Programmierung und Test/De-
 bugging - finden in der Anwendungs-Entwicklungsumgebung statt. Das Problem
-dabei ist nur: Die Brcke zwischen den ersten beiden Planungs-Phasen und den
-n„chsten beiden Phasen der Programmerstellung kann man bei den herk”mmlichen
-Programmerstellungs-Mitteln nicht als tragf„hig bezeichnen.
+dabei ist nur: Die BrÃ¼cke zwischen den ersten beiden Planungs-Phasen und den
+nÃ¤chsten beiden Phasen der Programmerstellung kann man bei den herkÃ¶mmlichen
+Programmerstellungs-Mitteln nicht als tragfÃ¤hig bezeichnen.
 
-Das erarbeitete Konzept muá mit groáem Aufwand in die Anwendungs-Enwicklungs-
-umgebung bernommen werden. Das n„chste Problem taucht auf, wenn sich in den
-Phasen der Implementierung und des Test/Debugging nderungen ergeben. Wenn
-sich diese nderungen auf das Konzept zurckschlagen, mssen diese im Planungs-
+Das erarbeitete Konzept muÃŸ mit groÃŸem Aufwand in die Anwendungs-Enwicklungs-
+umgebung Ã¼bernommen werden. Das nÃ¤chste Problem taucht auf, wenn sich in den
+Phasen der Implementierung und des Test/Debugging Ã„nderungen ergeben. Wenn
+sich diese Ã„nderungen auf das Konzept zurÃ¼ckschlagen, mÃ¼ssen diese im Planungs-
 teil "von Hand nachgefahren" werden. Unterbleibt dies, kommt es zur Inkon-
 sistenz zwischen Konzept und Realisierung, was in der Praxis ein durchaus
-blicher Zustand ist.
+Ã¼blicher Zustand ist.
 
-Diese Inkonsistenz r„cht sich aber sp„testens dann, wenn es um die Wartung der
-Software geht. ndern sich beispielsweise die Anforderungen an das Produkt,
-hat dies zun„chst Auswirkungen auf das Konzept und schlieálich auf die
-Implementierung. Wenn die Brcke zwischen der Planungs- und Anwendungs-
-Entwicklungsumgebung fehlt oder unvollst„ndig ist, wird man direkt die
-Implementierung ver„ndern und das Konzept somit veraltern lassen. Wiederholt
+Diese Inkonsistenz rÃ¤cht sich aber spÃ¤testens dann, wenn es um die Wartung der
+Software geht. Ã„ndern sich beispielsweise die Anforderungen an das Produkt,
+hat dies zunÃ¤chst Auswirkungen auf das Konzept und schlieÃŸlich auf die
+Implementierung. Wenn die BrÃ¼cke zwischen der Planungs- und Anwendungs-
+Entwicklungsumgebung fehlt oder unvollstÃ¤ndig ist, wird man direkt die
+Implementierung verÃ¤ndern und das Konzept somit veraltern lassen. Wiederholt
 sich dieser Vorgang einige Male, kann man das Konzept praktisch wegwerfen.
 
 Die Forderung nach einer integrierten Umgebung, die sowohl die Planungsphasen
-als auch die Entwicklungsphasen umfaát - einschlieálich Wartung -, ist somit
+als auch die Entwicklungsphasen umfaÃŸt - einschlieÃŸlich Wartung -, ist somit
 sehr sinnvoll. Genau dieses Ziel ist mit der WINware CASEbox verwirklicht.
 .ff
 Der Kern der WINware CASEbox ist das Datenlexikon. Es gibt also nur eine
-einzige Stelle, an der die Datenfelder fr jede Datei beschrieben werden.
+einzige Stelle, an der die Datenfelder fÃ¼r jede Datei beschrieben werden.
 Der Masken-Compiler, der Formular-Compiler und der Programm-Quellcode greifen
 bereits auf diese Informationen zu.
 
-Doch damit nicht genug. Selbst das Druckprogramm fr dieses Pflichtenheft
-holt sich die Dateiinforamtion w„hrend des Ausdruckes direkt aus dem Daten-
-lexikon. Dasselbe gilt fr Masken-Abbildungen oder Meninformationen.
+Doch damit nicht genug. Selbst das Druckprogramm fÃ¼r dieses Pflichtenheft
+holt sich die Dateiinforamtion wÃ¤hrend des Ausdruckes direkt aus dem Daten-
+lexikon. Dasselbe gilt fÃ¼r Masken-Abbildungen oder MenÃ¼informationen.
 
-Fr den Kunden und fr den Applikations-Programmierer bringt die WINware-
-CASEbox eine Reihe von Vorteilen. Der frhzeitige Einsatz eines professionellen
+FÃ¼r den Kunden und fÃ¼r den Applikations-Programmierer bringt die WINware-
+CASEbox eine Reihe von Vorteilen. Der frÃ¼hzeitige Einsatz eines professionellen
 Werkzeuges bereits in der Planung eines Softwareprojektes reduziert konzeptio-
-nelle Fehler. Durch den "weichen šbergang" zwischen Planungs- und Entwicklungs-
-werkzeug l„át sich das erarbeitete Konzept ohne Einschr„nkungen fr die
-Implementierung verwenden. Hiezu geh”rt beispielsweise, daá die WINware
+nelle Fehler. Durch den "weichen Ãœbergang" zwischen Planungs- und Entwicklungs-
+werkzeug lÃ¤ÃŸt sich das erarbeitete Konzept ohne EinschrÃ¤nkungen fÃ¼r die
+Implementierung verwenden. Hiezu gehÃ¶rt beispielsweise, daÃŸ die WINware
 CASEbox automatisch die Datenbanken und die Bildschirm-Masken in der im
 Konzept angegebenen Form anlegt.
 
-Stellen sich w„hrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
-Ursprungs sind, stellt die integrierte L”sung sicher, daá notwendige nderungen
-am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daá
-diese Methode die Produktivit„t bei der Software-Entwicklung drastisch steigert.
+Stellen sich wÃ¤hrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
+Ursprungs sind, stellt die integrierte LÃ¶sung sicher, daÃŸ notwendige Ã„nderungen
+am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daÃŸ
+diese Methode die ProduktivitÃ¤t bei der Software-Entwicklung drastisch steigert.
 
 
 Zielsetzung: WINware Auftragsbearbeitung
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 Struktur des Rechnungswesens
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
  Erfassen             Verarbeiten               Auswertungen        Stammdaten
- ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
- Buchungen ÄÄÄÄÄÄÂÄÂÄ Buchungen ÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄ Kundensalden ÄÄÄÄÄÂ Kunden ÄÄÄÙ
-                 ³ ³                         ³  Lieferantensalden ³ Lieferanten
- Protokoll       ³ ³  Druck Buchungsjournal  ³  Sachkontensalden  ³ Sachkonten
- Buchungen ÄÄÄÄÄÄÙ ³  Druck Kontobl„tter     ³                    ³
-                   ³                         ³  UST-Voranmeldung  ³ Konstanten
-                   ³  Monatsabschluá         ³  Kostenvergleich   ³
-                   ÀÄ Jahresabschluá ÄÄÄÄÄÄÄÄÁÄ Bilanzauswertung ÄÙ
+ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+ Buchungen â”€â”€â”€â”€â”€â”€â”¬â”€â”¬â”€ Buchungen â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€ Kundensalden â”€â”€â”€â”€â”€â”¬ Kunden â”€â”€â”€â”˜
+                 â”‚ â”‚                         â”‚  Lieferantensalden â”‚ Lieferanten
+ Protokoll       â”‚ â”‚  Druck Buchungsjournal  â”‚  Sachkontensalden  â”‚ Sachkonten
+ Buchungen â”€â”€â”€â”€â”€â”€â”˜ â”‚  Druck KontoblÃ¤tter     â”‚                    â”‚
+                   â”‚                         â”‚  UST-Voranmeldung  â”‚ Konstanten
+                   â”‚  MonatsabschluÃŸ         â”‚  Kostenvergleich   â”‚
+                   â””â”€ JahresabschluÃŸ â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€ Bilanzauswertung â”€â”˜
 
 .te*/
 
 
-/*.ta,F02,II. WINware MENš / 1.,1
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware Auftragsbearbeitung                                                      º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+/*.ta,F02,II. WINware MENÃœ / 1.,1
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware Auftragsbearbeitung                                                      â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-Bentzeroberfl„che WINware MENš
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+BenÃ¼tzeroberflÃ¤che WINware MENÃœ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Der Aufruf der jeweiligen Funktionen erfolgt ber das WINware MENš. Dabei sind
+Der Aufruf der jeweiligen Funktionen erfolgt Ã¼ber das WINware MENÃœ. Dabei sind
 die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
 
 
-.mi (MENUE,FI-L000),1,¯WINware Auftragsbearbeitung®.
-.mi (MENUE,FI-L011),1,¯Stammdaten/Konstanten®.
-.mi (MENUE,FI-L010),1,¯Installation®.
+.mi (MENUE,FI-L000),1,Â»WINware AuftragsbearbeitungÂ«.
+.mi (MENUE,FI-L011),1,Â»Stammdaten/KonstantenÂ«.
+.mi (MENUE,FI-L010),1,Â»InstallationÂ«.
 .te*/
 
 

@@ -14,21 +14,21 @@ set lpt=%1
   goto meldung
 
 :fehler
-  echo ÿ
+  echo Â 
   echo Werte     : DRUCK=%druck%    (LPT=%lpt%,   OUT=%out%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo Syntax    : druck ®Wahl¯        oder: druck ®s/h¯ (fr show bzw. help)
-  echo Fr ®Wahl¯: Drucker-Extention mit drei Buchstaben.
-  echo ÿ
-  echo Beispiele : ¯druck KYO® oder ¯STA®, ¯IBM®, ¯HP®, ...
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Syntax    : druck Â«WahlÂ»        oder: druck Â«s/hÂ» (fÃ¼r show bzw. help)
+  echo FÃ¼r Â«WahlÂ»: Drucker-Extention mit drei Buchstaben.
+  echo Â 
+  echo Beispiele : Â»druck KYOÂ« oder Â»STAÂ«, Â»IBMÂ«, Â»HPÂ«, ...
+  echo Â 
   goto end
 
 :meldung
-  echo ÿ
+  echo Â 
   echo Werte:   DRUCK=%druck%    (LPT=%lpt%,   OUT=%out%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Â 
 
 :end
 

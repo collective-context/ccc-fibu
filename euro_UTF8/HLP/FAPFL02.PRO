@@ -1,13 +1,13 @@
-WINware (C) 1988/1993                    ¯0® III. WINware AUFTRAG Nummernkreise / 1.1
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+WINware (C) 1988/1993                    Â»0Â« III. WINware AUFTRAG Nummernkreise / 1.1
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware WARE Basis Auftragsbearbeitung                                           º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware WARE Basis Auftragsbearbeitung                                           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-Wenn Sie alle Konstanten fr die WINware- Programme angelegt haben,
+Wenn Sie alle Konstanten fÃ¼r die WINware- Programme angelegt haben,
 sollte Sie einen Ausdruck der Konstanten anfertigen, indem Sie das 
-Programm ¯Drucken Konstanten® starten.                             
+Programm Â»Drucken KonstantenÂ« starten.                             
                                                                    
 Man kann bei der laufenden Arbeit mit den WINware- Modulen in      
 diesen Ausdrucken nachschlagen.                                    
@@ -15,43 +15,43 @@ diesen Ausdrucken nachschlagen.
 
 
 
-   Menfenster ¯Konstanten® / Konstanten (AU-048):Nummernkreise
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÃ¼fenster Â»KonstantenÂ« / Konstanten (AU-048):Nummernkreise
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿           
-   ³ Konstanten ³              ... Anlegen, „ndern oder drucken der konstanten Werte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Nummernkreise         ³   ... Žndern der Nummernkreise.
-   ³ Steuers„tze           ³   ... Anlegen, „ndern oder l”schen der Steuers„tze.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Werbetexte            ³   ... Anlegen, „ndern oder l”schen der Werbetexte.
-   ³ Versandart            ³   ... Anlegen, „ndern oder l”schen der Versandarten.
-   ³ Landesw„hrung         ³   ... Žndern der Landesw„hrung.
-   ³ Artikel-Preis-Text    ³   ... Žndern der Artikel-Verkaufspreis-Texte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Drucken Konstanten    ³   ... Ausdruck einer Liste der angelegten Konstanten.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Fremdw„hrungen        ³   ... Anlegen, „ndern der Fremdw„hrungen.
-   ³ Drucken Fremdw„hrung  ³   ... Drucken der angelegten Fremdw„hrungen.
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”           
+   â”‚ Konstanten â”‚              ... Anlegen, Ã¤ndern oder drucken der konstanten Werte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Nummernkreise         â”‚   ... Ã„ndern der Nummernkreise.
+   â”‚ SteuersÃ¤tze           â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der SteuersÃ¤tze.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Werbetexte            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Werbetexte.
+   â”‚ Versandart            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Versandarten.
+   â”‚ LandeswÃ¤hrung         â”‚   ... Ã„ndern der LandeswÃ¤hrung.
+   â”‚ Artikel-Preis-Text    â”‚   ... Ã„ndern der Artikel-Verkaufspreis-Texte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Drucken Konstanten    â”‚   ... Ausdruck einer Liste der angelegten Konstanten.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ FremdwÃ¤hrungen        â”‚   ... Anlegen, Ã¤ndern der FremdwÃ¤hrungen.
+   â”‚ Drucken FremdwÃ¤hrung  â”‚   ... Drucken der angelegten FremdwÃ¤hrungen.
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 
-   Dateibeschreibung fr: Nummernkreise
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Dateibeschreibung fÃ¼r: Nummernkreise
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    Name der Datei   : SYP_01
    Bezeichnung      : Systemparameter Konstanten
    
-   Zusatzerkl„rung 1: fr jeden Mandanten (00-99)               [..\DAT]
-   Zusatzerkl„rung 2: 
+   ZusatzerklÃ¤rung 1: fÃ¼r jeden Mandanten (00-99)               [..\DAT]
+   ZusatzerklÃ¤rung 2: 
    
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-   Datenfeld  Zusatzerkl„rung         Offset L„nge Filler Datenattribut-TYP   VKS NKS KEY DUP MOD
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Datenfeld  ZusatzerklÃ¤rung         Offset LÃ¤nge Filler Datenattribut-TYP   VKS NKS KEY DUP MOD
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    
    MAND_01    Mandanten-Nummer            10    10    100  0                            1  N   N
-   UST_1      þ Steuers„tze þ            121     8         5                    3  2            
+   UST_1      â–  SteuersÃ¤tze â–             121     8         5                    3  2            
    UST_2      Steuersatz 2               129     8         5                    3  2            
    UST_3      Steuersatz 3               137     8         5                    3  2            
    UST_4      Steuersatz 4               145     8         5                    3  2            
@@ -59,7 +59,7 @@ diesen Ausdrucken nachschlagen.
    UST_6      Steuersatz 6               161     8         5                    3  2            
    UST_7      Steuersatz 7               169     8         5                    3  2            
    UST_8      Steuersatz 8               177     8     71  5                    3  2            
-   SALDO_VOR  þ Konstanten þ   EBK       256     8      7  0                                    
+   SALDO_VOR  â–  Konstanten â–    EBK       256     8      7  0                                    
    FORDER_IN  Forderungen Inland         272     8      7  0                                    
    FORDER_AUS -"- Ausland                288     8      7  0                                    
    VERBIN_IN  Verbindlichkeiten Ausl.    304     8      7  0                                    
@@ -73,7 +73,7 @@ diesen Ausdrucken nachschlagen.
    KTO_MWST_6                            432     8      7  0                                    
    KTO_MWST_7                            448     8      7  0                                    
 WINware (C) 1988/1993                   >73< III. WINware AUFTRAG Nummernkreise / 1.2
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    KTO_MWST_8                            464     8      7  0                                    
    LIEF_SKONT Lieferantenskonto          480     8      7  0                                    
@@ -91,38 +91,38 @@ WINware (C) 1988/1993                   >73< III. WINware AUFTRAG Nummernkreise 
    AN_SCHADEN Anlagen Schadensfall       672     8      7  0                                    
    AN_ERTRAG  -"- -verkauf (Ertrag)      688     8      7  0                                    
    AN_AUFWAND -"- -verkauf (Aufwand)     704     8    311  0                                    
-   FRWŽ_BE_00 þ Fremdw„hrungkurse þ     1024    10         0                                    
-   FRWŽ_BE_01 Bezeichnung 0 bis 9       1035    10         0                                    
-   FRWŽ_BE_02                           1046    10         0                                    
-   FRWŽ_BE_03                           1057    10         0                                    
-   FRWŽ_BE_04                           1068    10         0                                    
-   FRWŽ_BE_05                           1079    10         0                                    
-   FRWŽ_BE_06                           1090    10         0                                    
-   FRWŽ_BE_07                           1101    10         0                                    
-   FRWŽ_BE_08                           1112    10         0                                    
-   FRWŽ_BE_09                           1123    10         0                                    
-   FRWŽ_BE_N  Endemarke (null)          1134    10         0                                    
-   FRWŽ_EH_00 Einheit 0 bis 9           1145     1         0                                    
-   FRWŽ_EH_01                           1147     1         0                                    
-   FRWŽ_EH_02                           1149     1         0                                    
-   FRWŽ_EH_03                           1151     1         0                                    
-   FRWŽ_EH_04                           1153     1         0                                    
-   FRWŽ_EH_05                           1155     1         0                                    
-   FRWŽ_EH_06                           1157     1         0                                    
-   FRWŽ_EH_07                           1159     1         0                                    
-   FRWŽ_EH_08                           1161     1         0                                    
-   FRWŽ_EH_09                           1163     1         0                                    
-   FRWŽ_KU_00 Kurs 0 bis 9              1165     8         5                    4  3            
-   FRWŽ_KU_01                           1173     8         5                    4  3            
-   FRWŽ_KU_02                           1181     8         5                    4  3            
-   FRWŽ_KU_03                           1189     8         5                    4  3            
-   FRWŽ_KU_04                           1197     8         5                    4  3            
-   FRWŽ_KU_05                           1205     8         5                    4  3            
-   FRWŽ_KU_06                           1213     8         5                    4  3            
-   FRWŽ_KU_07                           1221     8         5                    4  3            
-   FRWŽ_KU_08                           1229     8         5                    4  3            
-   FRWŽ_KU_09                           1237     8    291  5                    4  3            
-   TXT_VKP_01 þ Artikel-VKP-Texte þ     1536    12         0                                    
+   FRWÃ„_BE_00 â–  FremdwÃ¤hrungkurse â–      1024    10         0                                    
+   FRWÃ„_BE_01 Bezeichnung 0 bis 9       1035    10         0                                    
+   FRWÃ„_BE_02                           1046    10         0                                    
+   FRWÃ„_BE_03                           1057    10         0                                    
+   FRWÃ„_BE_04                           1068    10         0                                    
+   FRWÃ„_BE_05                           1079    10         0                                    
+   FRWÃ„_BE_06                           1090    10         0                                    
+   FRWÃ„_BE_07                           1101    10         0                                    
+   FRWÃ„_BE_08                           1112    10         0                                    
+   FRWÃ„_BE_09                           1123    10         0                                    
+   FRWÃ„_BE_N  Endemarke (null)          1134    10         0                                    
+   FRWÃ„_EH_00 Einheit 0 bis 9           1145     1         0                                    
+   FRWÃ„_EH_01                           1147     1         0                                    
+   FRWÃ„_EH_02                           1149     1         0                                    
+   FRWÃ„_EH_03                           1151     1         0                                    
+   FRWÃ„_EH_04                           1153     1         0                                    
+   FRWÃ„_EH_05                           1155     1         0                                    
+   FRWÃ„_EH_06                           1157     1         0                                    
+   FRWÃ„_EH_07                           1159     1         0                                    
+   FRWÃ„_EH_08                           1161     1         0                                    
+   FRWÃ„_EH_09                           1163     1         0                                    
+   FRWÃ„_KU_00 Kurs 0 bis 9              1165     8         5                    4  3            
+   FRWÃ„_KU_01                           1173     8         5                    4  3            
+   FRWÃ„_KU_02                           1181     8         5                    4  3            
+   FRWÃ„_KU_03                           1189     8         5                    4  3            
+   FRWÃ„_KU_04                           1197     8         5                    4  3            
+   FRWÃ„_KU_05                           1205     8         5                    4  3            
+   FRWÃ„_KU_06                           1213     8         5                    4  3            
+   FRWÃ„_KU_07                           1221     8         5                    4  3            
+   FRWÃ„_KU_08                           1229     8         5                    4  3            
+   FRWÃ„_KU_09                           1237     8    291  5                    4  3            
+   TXT_VKP_01 â–  Artikel-VKP-Texte â–      1536    12         0                                    
    TXT_VKP_02 Text Verkaufspreis 1-5    1549    12         0                                    
    TXT_VKP_03                           1562    12         0                                    
    TXT_VKP_04                           1575    12         0                                    
@@ -133,13 +133,13 @@ WINware (C) 1988/1993                   >73< III. WINware AUFTRAG Nummernkreise 
    WER_VKP_03                           1616     1         0                                    
    WER_VKP_04                           1618     1         0                                    
    WER_VKP_05                           1620     1    170  0                                    
-   WERB_TXT_1 þ Werbetexte þ            1792   125         0                                    
+   WERB_TXT_1 â–  Werbetexte â–             1792   125         0                                    
    WERB_TXT_2                           1918   125         0                                    
    WERB_TXT_3                           2044   125         0                                    
    WERB_TXT_4                           2170   125         0                                    
    WERB_TXT_5                           2296   125         0                                    
    WERB_TXT_6                           2422   125    268  0                                    
-   VERSAND_01 þ Versandart þ            2816    30         0                                    
+   VERSAND_01 â–  Versandart â–             2816    30         0                                    
    VERSAND_02                           2847    30         0                                    
    VERSAND_03                           2878    30         0                                    
    VERSAND_04                           2909    30         0                                    
@@ -147,7 +147,7 @@ WINware (C) 1988/1993                   >73< III. WINware AUFTRAG Nummernkreise 
    VERSAND_06                           2971    30         0                                    
    VERSAND_07                           3002    30         0                                    
 WINware (C) 1988/1993                   >73< III. WINware AUFTRAG Nummernkreise / 1.3
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    VERSAND_08                           3033    30         0                                    
    VERSAND_09                           3064    30         0                                    
@@ -160,424 +160,424 @@ WINware (C) 1988/1993                   >73< III. WINware AUFTRAG Nummernkreise 
    KZ_FIBU_BA Kennzeichen Fibu Basis    3328     4    252  4                                    
 
 
-   Ein-/Ausgabefelder fr: Anlegen/Žndern Nummernkreise (STM091)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Ein-/Ausgabefelder fÃ¼r: Anlegen/Ã„ndern Nummernkreise (STM091)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   ÀF-TastenOptionenF1=HilfeÙ
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/Žndern Nummernkreise - 1/1Ä¿
-   ³                                                                              ³
-   ³                                                                              ³
-   ³      ù                                                             ù         ³
-   ³          Stammdaten     ge„nderte Nummer      gespeicherte Nummer            ³
-   ³                                                                              ³
-   ³          Kunden      : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^            ³
-   ³          Lieferanten : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^            ³
-   ³          Artikel     : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^            ³
-   ³          Mitarbeiter : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^            ³
-   ³                                                                              ³
-   ³          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ            ³
-   ³                                                                              ³
-   ³          Bewegungsdaten:                                                     ³
-   ³                                                                              ³
-   ³          Angebote      :     @@@@@@                 ^^^^^^^                  ³
-   ³          Auftr„ge      :     @@@@@@                 ^^^^^^^                  ³
-   ³          Lieferscheine :     @@@@@@                 ^^^^^^^                  ³
-   ³          Rechnungen    :     @@@@@@                 ^^^^^^^                  ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=Men[ESC]=EndeT02
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””F-TastenOptionenF1=Hilfeâ”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Anlegen/Ã„ndern Nummernkreise - 1/1â”€â”
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚      Â¨                                                             Â¨         â”‚
+   â”‚          Stammdaten     geÃ¤nderte Nummer      gespeicherte Nummer            â”‚
+   â”‚                                                                              â”‚
+   â”‚          Kunden      : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^            â”‚
+   â”‚          Lieferanten : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^            â”‚
+   â”‚          Artikel     : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^            â”‚
+   â”‚          Mitarbeiter : @@@@@@@@@@@@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^            â”‚
+   â”‚                                                                              â”‚
+   â”‚          â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€            â”‚
+   â”‚                                                                              â”‚
+   â”‚          Bewegungsdaten:                                                     â”‚
+   â”‚                                                                              â”‚
+   â”‚          Angebote      :     @@@@@@                 ^^^^^^^                  â”‚
+   â”‚          AuftrÃ¤ge      :     @@@@@@                 ^^^^^^^                  â”‚
+   â”‚          Lieferscheine :     @@@@@@                 ^^^^^^^                  â”‚
+   â”‚          Rechnungen    :     @@@@@@                 ^^^^^^^                  â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=MenÃ¼[ESC]=EndeT02
 
 
 
-1. Anlegen/Žndern Nummernkreise
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+1. Anlegen/Ã„ndern Nummernkreise
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Anlegen/Žndern Nummernkreise
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Anlegen/Ã„ndern Nummernkreise
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Mit Hilfe des Programmes [Anlegen/Žndern Nummernkreise] k”nnen Sie
-   fr Ihre Stammdaten (Kunden, Lieferanten, Artikel und Mitarbeiter)  
-   und Ihre Bewegungsdaten (Angebote, Auftr„ge, Rechnungen, und Liefer-
+   Mit Hilfe des Programmes [Anlegen/Ã„ndern Nummernkreise] kÃ¶nnen Sie
+   fÃ¼r Ihre Stammdaten (Kunden, Lieferanten, Artikel und Mitarbeiter)  
+   und Ihre Bewegungsdaten (Angebote, AuftrÃ¤ge, Rechnungen, und Liefer-
    scheine) bestimmen, bei welcher Nummer der jeweilige Nummernkreis   
    beginnen soll.                                                      
                                                                        
    Geben Sie beim Anlegen Ihrer Stamm- und Bewegungsdaten im Nummern-  
-   feld ein ¯+® ein, so wird Ihnen die n„chsth”here Nummer aus dem     
+   feld ein Â»+Â« ein, so wird Ihnen die nÃ¤chsthÃ¶here Nummer aus dem     
    Nummernkreis vorgeschlagen.                                         
                                                                        
-   So haben Sie also weitgehend freie Hand, und k”nnen die von Ihnen   
-   gewnschten Anfangsnummern immer wieder selbst festlegen.           
+   So haben Sie also weitgehend freie Hand, und kÃ¶nnen die von Ihnen   
+   gewÃ¼nschten Anfangsnummern immer wieder selbst festlegen.           
                                                                        
-   In den Feldern unter ¯ge„nderte Nummer® geben Sie Ihre gewnschte   
-   Zahl ein. In den Feldern unter ¯gespeicherte Nummer® wird Ihnen die 
+   In den Feldern unter Â»geÃ¤nderte NummerÂ« geben Sie Ihre gewÃ¼nschte   
+   Zahl ein. In den Feldern unter Â»gespeicherte NummerÂ« wird Ihnen die 
    letzte verwendete Nummer angezeigt.                                 
                                                                        
-   ACHTUNG: Es erfolgt keine Prfung, ob sich die eingegebenen Nummern 
-            mit den gespeicherten Nummer berschneiden. Das bedeutet   
-            fr Sie, wenn Sie eine Nummer eingeben die schon verwendet 
+   ACHTUNG: Es erfolgt keine PrÃ¼fung, ob sich die eingegebenen Nummern 
+            mit den gespeicherten Nummer Ã¼berschneiden. Das bedeutet   
+            fÃ¼r Sie, wenn Sie eine Nummer eingeben die schon verwendet 
             wurde, wird Ihnen die Nummer nocheinmal vorgeschlagen!     
                                                                        
             Solche Situationen fallen Ihnen bei der Verwendung der     
 WINware (C) 1988/1993                   >73< III. WINware AUFTRAG Nummernkreise / 1.4
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
             [+]-Taste auf. Ihren Daten kann dadurch nichts geschehen.  
-            Am besten w„hlen Sie dann hier eine neue Anfangsnummer.    
+            Am besten wÃ¤hlen Sie dann hier eine neue Anfangsnummer.    
                                                                        
                                                                        
-1/1 þ Stammdaten-Nummernkreis-Felder
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+1/1 â–  Stammdaten-Nummernkreis-Felder
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Geben Sie hier bitte die letzte schon vergebene Nummer fr die
-   ¯Kunden®, ¯Lieferanten®, ¯Artikel® und ¯Mitarbeiter® ein. Die Felder
+   Geben Sie hier bitte die letzte schon vergebene Nummer fÃ¼r die
+   Â»KundenÂ«, Â»LieferantenÂ«, Â»ArtikelÂ« und Â»MitarbeiterÂ« ein. Die Felder
    sind 20-stellig alphannummerisch.                                   
                                                                        
-   Geben Sie in den Stammdaten-Programmen, im Feld ¯Nummer® ein [+] ein
-   so wird zu der hier eingegebenen Nummer immer ¯1® hinzugez„hlt.     
+   Geben Sie in den Stammdaten-Programmen, im Feld Â»NummerÂ« ein [+] ein
+   so wird zu der hier eingegebenen Nummer immer Â»1Â« hinzugezÃ¤hlt.     
                                                                        
-   Beispiel: Letzte vergebene Kundennummer ist ¯KU179-D754®. Geben     
+   Beispiel: Letzte vergebene Kundennummer ist Â»KU179-D754Â«. Geben     
              Sie im Feld Kundennummer ein [+] ein, so wird als neue    
-             Kundennummer ¯KU179-D755® vorgeschlagen.                  
+             Kundennummer Â»KU179-D755Â« vorgeschlagen.                  
                                                                        
    Verwenden Sie auch die WINware- Finanzbuchhaltung kann es sinnvoll  
-   sein, fr die Kunden und Lieferanten nur die ersten acht Stellen    
-   alphanumerisch zu verwenden. In diesem Fall wird n„hmlich fr die   
+   sein, fÃ¼r die Kunden und Lieferanten nur die ersten acht Stellen    
+   alphanumerisch zu verwenden. In diesem Fall wird nÃ¤hmlich fÃ¼r die   
    Kunden- und Lieferantenkonten die gleiche Nummer vorgeschlagen.     
                                                                        
                                                                        
-þ Bewegungsdaten-Nummernkreis-Felder
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Bewegungsdaten-Nummernkreis-Felder
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Geben Sie hier bitte die letzten schon vergebenen Nummern fr die
-   ¯Angebote®, ¯Auftr„ge®, ¯Lieferscheine® und ¯Rechnungen® ein.    
+   Geben Sie hier bitte die letzten schon vergebenen Nummern fÃ¼r die
+   Â»AngeboteÂ«, Â»AuftrÃ¤geÂ«, Â»LieferscheineÂ« und Â»RechnungenÂ« ein.    
                                                                     
-   Das Feld ist alphanumerisch. Sie k”nnen also auch Buchstaben vor 
+   Das Feld ist alphanumerisch. Sie kÃ¶nnen also auch Buchstaben vor 
    die Nummern setzen.                                              
                                                                     
-   ¯Rechnungen®, ¯Gutschriften® und ¯Storno-Rechnungen® greifen     
+   Â»RechnungenÂ«, Â»GutschriftenÂ« und Â»Storno-RechnungenÂ« greifen     
    auf den gleichen Nummernkreis zu!                                
                                                                     
                                                                     
-WINware (C) 1988/1993                      ¯0® III. WINware AUFTRAG Steuers„tze / 2.1
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+WINware (C) 1988/1993                      Â»0Â« III. WINware AUFTRAG SteuersÃ¤tze / 2.1
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware WARE Basis Auftragsbearbeitung                                           º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
-
-
-
-   Menfenster ¯Konstanten® / Konstanten (AU-048):Steuers„tze
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿           
-   ³ Konstanten ³              ... Anlegen, „ndern oder drucken der konstanten Werte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Nummernkreise         ³   ... Žndern der Nummernkreise.
-   ³ Steuers„tze           ³   ... Anlegen, „ndern oder l”schen der Steuers„tze.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Werbetexte            ³   ... Anlegen, „ndern oder l”schen der Werbetexte.
-   ³ Versandart            ³   ... Anlegen, „ndern oder l”schen der Versandarten.
-   ³ Landesw„hrung         ³   ... Žndern der Landesw„hrung.
-   ³ Artikel-Preis-Text    ³   ... Žndern der Artikel-Verkaufspreis-Texte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Drucken Konstanten    ³   ... Ausdruck einer Liste der angelegten Konstanten.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Fremdw„hrungen        ³   ... Anlegen, „ndern der Fremdw„hrungen.
-   ³ Drucken Fremdw„hrung  ³   ... Drucken der angelegten Fremdw„hrungen.
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware WARE Basis Auftragsbearbeitung                                           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
 
-   Ein-/Ausgabefelder fr: Anlegen/Žndern Steuers„tze (STM090)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÃ¼fenster Â»KonstantenÂ« / Konstanten (AU-048):SteuersÃ¤tze
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   ÀF-TastenOptionenF1=HilfeÙ
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/Žndern Steuers„tze - 1/1Ä¿
-   ³                                                                              ³
-   ³                                       ù                        ù             ³
-   ³                                          Steuersatz 1 : #›,››                ³
-   ³                                                                              ³
-   ³                                          Steuersatz 2 : #›,››                ³
-   ³                                                                              ³
-   ³                                          Steuersatz 3 : #›,››                ³
-   ³                                                                              ³
-   ³                                          Steuersatz 4 : #›,››                ³
-   ³                                                                              ³
-   ³                                          Steuersatz 5 : #›,››                ³
-   ³                                                                              ³
-   ³                                          Steuersatz 6 : #›,››                ³
-   ³                                                                              ³
-   ³                                          Steuersatz 7 : #›,››                ³
-   ³                                                                              ³
-   ³                                          Steuersatz 8 : #›,››                ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=Men[ESC]=EndeT02
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”           
+   â”‚ Konstanten â”‚              ... Anlegen, Ã¤ndern oder drucken der konstanten Werte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Nummernkreise         â”‚   ... Ã„ndern der Nummernkreise.
+   â”‚ SteuersÃ¤tze           â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der SteuersÃ¤tze.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Werbetexte            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Werbetexte.
+   â”‚ Versandart            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Versandarten.
+   â”‚ LandeswÃ¤hrung         â”‚   ... Ã„ndern der LandeswÃ¤hrung.
+   â”‚ Artikel-Preis-Text    â”‚   ... Ã„ndern der Artikel-Verkaufspreis-Texte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Drucken Konstanten    â”‚   ... Ausdruck einer Liste der angelegten Konstanten.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ FremdwÃ¤hrungen        â”‚   ... Anlegen, Ã¤ndern der FremdwÃ¤hrungen.
+   â”‚ Drucken FremdwÃ¤hrung  â”‚   ... Drucken der angelegten FremdwÃ¤hrungen.
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 
-2. Anlegen/Žndern Steuers„tze
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Ein-/Ausgabefelder fÃ¼r: Anlegen/Ã„ndern SteuersÃ¤tze (STM090)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Anlegen/Žndern Steuers„tze
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””F-TastenOptionenF1=Hilfeâ”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Anlegen/Ã„ndern SteuersÃ¤tze - 1/1â”€â”
+   â”‚                                                                              â”‚
+   â”‚                                       Â¨                        Â¨             â”‚
+   â”‚                                          Steuersatz 1 : #Ã¸,Ã¸Ã¸                â”‚
+   â”‚                                                                              â”‚
+   â”‚                                          Steuersatz 2 : #Ã¸,Ã¸Ã¸                â”‚
+   â”‚                                                                              â”‚
+   â”‚                                          Steuersatz 3 : #Ã¸,Ã¸Ã¸                â”‚
+   â”‚                                                                              â”‚
+   â”‚                                          Steuersatz 4 : #Ã¸,Ã¸Ã¸                â”‚
+   â”‚                                                                              â”‚
+   â”‚                                          Steuersatz 5 : #Ã¸,Ã¸Ã¸                â”‚
+   â”‚                                                                              â”‚
+   â”‚                                          Steuersatz 6 : #Ã¸,Ã¸Ã¸                â”‚
+   â”‚                                                                              â”‚
+   â”‚                                          Steuersatz 7 : #Ã¸,Ã¸Ã¸                â”‚
+   â”‚                                                                              â”‚
+   â”‚                                          Steuersatz 8 : #Ã¸,Ã¸Ã¸                â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=MenÃ¼[ESC]=EndeT02
 
-   Mit diesem Programm k”nnen Sie bis zu 8 verschiedene ¯Steuer-Pro-
-   zents„tze® hinterlegen, auf die Sie dann in den brigen Programmen
-   wieder zurckgreifen k”nnen.                                      
+
+
+2. Anlegen/Ã„ndern SteuersÃ¤tze
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+Anlegen/Ã„ndern SteuersÃ¤tze
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+   Mit diesem Programm kÃ¶nnen Sie bis zu 8 verschiedene Â»Steuer-Pro-
+   zentsÃ¤tzeÂ« hinterlegen, auf die Sie dann in den Ã¼brigen Programmen
+   wieder zurÃ¼ckgreifen kÃ¶nnen.                                      
                                                                      
-   Dadurch brauchen Sie sp„ter nicht mehr die einzelnen Prozents„tze 
-   eingeben. Sie k”nnen dann vielmehr ber die [F2]-Taste einen der  
-WINware (C) 1988/1993                     >73< III. WINware AUFTRAG Steuers„tze / 2.2
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Dadurch brauchen Sie spÃ¤ter nicht mehr die einzelnen ProzentsÃ¤tze 
+   eingeben. Sie kÃ¶nnen dann vielmehr Ã¼ber die [F2]-Taste einen der  
+WINware (C) 1988/1993                     >73< III. WINware AUFTRAG SteuersÃ¤tze / 2.2
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   hier angelegten Steuer-S„tze ausw„hlen.                           
+   hier angelegten Steuer-SÃ¤tze auswÃ¤hlen.                           
                                                                      
                                                                      
-1/1 þ Steuersatz 1-8
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+1/1 â–  Steuersatz 1-8
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier geben Sie bitte den ¯Prozentsatz® fr Ihre Steuersatz
+   Hier geben Sie bitte den Â»ProzentsatzÂ« fÃ¼r Ihre Steuersatz
    numerisch, mit 2 Nachkommastellen, ein.                             
                                                                        
                                                                        
-WINware (C) 1988/1993                       ¯0® III. WINware AUFTRAG Werbetexte / 3.1
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+WINware (C) 1988/1993                       Â»0Â« III. WINware AUFTRAG Werbetexte / 3.1
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware WARE Basis Auftragsbearbeitung                                           º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
-
-
-
-   Menfenster ¯Konstanten® / Konstanten (AU-048):Werbetexte
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿           
-   ³ Konstanten ³              ... Anlegen, „ndern oder drucken der konstanten Werte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Nummernkreise         ³   ... Žndern der Nummernkreise.
-   ³ Steuers„tze           ³   ... Anlegen, „ndern oder l”schen der Steuers„tze.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Werbetexte            ³   ... Anlegen, „ndern oder l”schen der Werbetexte.
-   ³ Versandart            ³   ... Anlegen, „ndern oder l”schen der Versandarten.
-   ³ Landesw„hrung         ³   ... Žndern der Landesw„hrung.
-   ³ Artikel-Preis-Text    ³   ... Žndern der Artikel-Verkaufspreis-Texte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Drucken Konstanten    ³   ... Ausdruck einer Liste der angelegten Konstanten.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Fremdw„hrungen        ³   ... Anlegen, „ndern der Fremdw„hrungen.
-   ³ Drucken Fremdw„hrung  ³   ... Drucken der angelegten Fremdw„hrungen.
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware WARE Basis Auftragsbearbeitung                                           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
 
-   Ein-/Ausgabefelder fr: Anlegen/Žndern Werbetexte (STM092)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÃ¼fenster Â»KonstantenÂ« / Konstanten (AU-048):Werbetexte
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   ÀF-TastenOptionenF1=HilfeÙ
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/Žndern Werbetexte - 1/1Ä¿
-   ³                                                                              ³
-   ³                                                                              ³
-   ³     ``                                                                       ³
-   ³     Zeile 1 : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³     Zeile 2 : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³     Zeile 3 : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³     Zeile 4 : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³     Bitte Beachten ! Dieser Werbetext wird auf allen Angeboten,              ³
-   ³   ù                  Auftr„gen und Rechnungen ausgedruckt.                ù  ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=Men[ESC]=EndeT02
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”           
+   â”‚ Konstanten â”‚              ... Anlegen, Ã¤ndern oder drucken der konstanten Werte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Nummernkreise         â”‚   ... Ã„ndern der Nummernkreise.
+   â”‚ SteuersÃ¤tze           â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der SteuersÃ¤tze.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Werbetexte            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Werbetexte.
+   â”‚ Versandart            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Versandarten.
+   â”‚ LandeswÃ¤hrung         â”‚   ... Ã„ndern der LandeswÃ¤hrung.
+   â”‚ Artikel-Preis-Text    â”‚   ... Ã„ndern der Artikel-Verkaufspreis-Texte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Drucken Konstanten    â”‚   ... Ausdruck einer Liste der angelegten Konstanten.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ FremdwÃ¤hrungen        â”‚   ... Anlegen, Ã¤ndern der FremdwÃ¤hrungen.
+   â”‚ Drucken FremdwÃ¤hrung  â”‚   ... Drucken der angelegten FremdwÃ¤hrungen.
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 
-3. Anlegen/Žndern Werbetexte
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-4. Anlegen/Žndern Versandart
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Ein-/Ausgabefelder fÃ¼r: Anlegen/Ã„ndern Werbetexte (STM092)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””F-TastenOptionenF1=Hilfeâ”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Anlegen/Ã„ndern Werbetexte - 1/1â”€â”
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚     ``                                                                       â”‚
+   â”‚     Zeile 1 : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚     Zeile 2 : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚     Zeile 3 : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚     Zeile 4 : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚     Bitte Beachten ! Dieser Werbetext wird auf allen Angeboten,              â”‚
+   â”‚   Â¨                  AuftrÃ¤gen und Rechnungen ausgedruckt.                Â¨  â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=MenÃ¼[ESC]=EndeT02
+
+
+
+3. Anlegen/Ã„ndern Werbetexte
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+4. Anlegen/Ã„ndern Versandart
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 WINware (C) 1988/1993                      >66< III. WINware AUFTRAG Werbetexte / 3.2
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Anlegen/Žndern Versandart
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Anlegen/Ã„ndern Versandart
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Mit dem Programm [Anlegen/Žndern Versandart] haben Sie die M”glich-
-      keit, die von Ihnen am h„ufigsten benutzten Versandarten abzu-
+      Mit dem Programm [Anlegen/Ã„ndern Versandart] haben Sie die MÃ¶glich-
+      keit, die von Ihnen am hÃ¤ufigsten benutzten Versandarten abzu-
       speichern.
       
       Beim Erstellen der Formulare brauchen Sie dann nicht mehr den Text
-      dieser Versandart einzutippen, sondern w„hlen Ihnen einfach aus.
+      dieser Versandart einzutippen, sondern wÃ¤hlen Ihnen einfach aus.
       
-      Mit der Anlage der Versandart sind alle Konstanten fr die WINware 
+      Mit der Anlage der Versandart sind alle Konstanten fÃ¼r die WINware 
       Auftragsbearbeitung angelegt. Man sollte sich jetzt noch einen zu-
-      sammenh„ngenden Ausdruck aller Konstanten herstellen, indem man das
-      Programm [Drucken Konstanten] anw„hlt.
+      sammenhÃ¤ngenden Ausdruck aller Konstanten herstellen, indem man das
+      Programm [Drucken Konstanten] anwÃ¤hlt.
       
       
-1/1 þ Versandart 1-6
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+1/1 â–  Versandart 1-6
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Hier k”nnen Sie den Text fr die ¯Versandart 1-6® mit bis zu 20
+      Hier kÃ¶nnen Sie den Text fÃ¼r die Â»Versandart 1-6Â« mit bis zu 20
       Stellen alpha-numerisch eingeben.
       
       
-5. Anlegen/Žndern Landesw„hrung
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+5. Anlegen/Ã„ndern LandeswÃ¤hrung
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Anlegen/Žndern Fremdw„hrungen
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Anlegen/Ã„ndern FremdwÃ¤hrungen
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Programmbezeichnung: Anlegen/Žndern Fremdw„hrungen
+      Programmbezeichnung: Anlegen/Ã„ndern FremdwÃ¤hrungen
       
-      Mit dem Programm ¯Anlegen/Žndern Fremdw„hrungen® k”nnen Sie bis zu
-      acht verschiedenen Fremdw„hrungen anlegen.
+      Mit dem Programm Â»Anlegen/Ã„ndern FremdwÃ¤hrungenÂ« kÃ¶nnen Sie bis zu
+      acht verschiedenen FremdwÃ¤hrungen anlegen.
       
-      In das 1. Feld (Landesw„hrung), tragen Sie Ihre Landesw„hrung ein.
-      Defaultm„áig wird Ihnen ™S (fr Schilling) vorgeschlagen.
-      Der im Feld Landesw„hrung eingetragene Wert wird Ihnen beim Anlegen
-      der Kunden im Feld W„hrung vorgeschlagen.
+      In das 1. Feld (LandeswÃ¤hrung), tragen Sie Ihre LandeswÃ¤hrung ein.
+      DefaultmÃ¤ÃŸig wird Ihnen Ã–S (fÃ¼r Schilling) vorgeschlagen.
+      Der im Feld LandeswÃ¤hrung eingetragene Wert wird Ihnen beim Anlegen
+      der Kunden im Feld WÃ¤hrung vorgeschlagen.
       
       
-1/1 þ Bezeichnung
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+1/1 â–  Bezeichnung
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Im der Zeile der ¯Landesw„hrung® geben Sie an dieser Stelle die
-      W„hrung Ihres Landes ein. Die beiden n„chsten Felder sind reine
-      Anzeigefelder die nie ge„ndert werden k”nnen, da es bei der
-      Landesw„hrung keinen Umrechnungskurs gibt.
+      Im der Zeile der Â»LandeswÃ¤hrungÂ« geben Sie an dieser Stelle die
+      WÃ¤hrung Ihres Landes ein. Die beiden nÃ¤chsten Felder sind reine
+      Anzeigefelder die nie geÃ¤ndert werden kÃ¶nnen, da es bei der
+      LandeswÃ¤hrung keinen Umrechnungskurs gibt.
       
-      In den Zeilen der verschiedenen Fremdw„hrungen k”nnen Sie in
-      dieses Feld die Bezeichnung der W„hrung eingeben. Sie haben
-      dafr 4 Stellen zur Verfgung.
-þ Einheit
-ÄÄÄÄÄÄÄÄÄ
+      In den Zeilen der verschiedenen FremdwÃ¤hrungen kÃ¶nnen Sie in
+      dieses Feld die Bezeichnung der WÃ¤hrung eingeben. Sie haben
+      dafÃ¼r 4 Stellen zur VerfÃ¼gung.
+â–  Einheit
+â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Hier k”nnen Sie die Einheit des Umrechnungskurses eingeben.
+      Hier kÃ¶nnen Sie die Einheit des Umrechnungskurses eingeben.
       
-      Bitte w„hlen Sie nachdem Sie die [F2]-Taste gedrckt haben:
+      Bitte wÃ¤hlen Sie nachdem Sie die [F2]-Taste gedrÃ¼ckt haben:
       
       Bewegen Sie einfach mit den Cursortasten []/[] den Balken auf den
-      gewnschten Eintrag. Danach best„tigen Sie die Wahl mit [Ù].
+      gewÃ¼nschten Eintrag. Danach bestÃ¤tigen Sie die Wahl mit [â”˜].
       
-      Wenn Sie das Auswahlfenster nicht ”ffnen wollen, k”nnen Sie die
+      Wenn Sie das Auswahlfenster nicht Ã¶ffnen wollen, kÃ¶nnen Sie die
       Wahl auch durch Eingabe des ersten Buchstabens (bzw. der ersten
       Buchstaben) treffen.
       
-      Existiert bereits ein gltiger Eintrag in diesem Feld, dann ist
-      mit den Tasten [Bild]/[Bild] auch ein Weiterbl„ttern zum n„chsten
-      gltigen Eintrag m”glich.
+      Existiert bereits ein gÃ¼ltiger Eintrag in diesem Feld, dann ist
+      mit den Tasten [Bild]/[Bild] auch ein WeiterblÃ¤ttern zum nÃ¤chsten
+      gÃ¼ltigen Eintrag mÃ¶glich.
       
       
 WINware (C) 1988/1993                      >72< III. WINware AUFTRAG Werbetexte / 3.3
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-þ Kurs
-ÄÄÄÄÄÄ
+â–  Kurs
+â”€â”€â”€â”€â”€â”€
 
-      Geben Sie hier den Umrechnungskurs fr
-      die jeweilige Fremdw„hrung ein.
+      Geben Sie hier den Umrechnungskurs fÃ¼r
+      die jeweilige FremdwÃ¤hrung ein.
       
 6. Anlegen Artikel-Preis-Texte
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Anlegen/Žndern Artikel-Preis-Texte
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Anlegen/Ã„ndern Artikel-Preis-Texte
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Mit dem Programm ¯Anlegen/Žndern Artikel-Preis-Texte® k”nnen Sie bis
-      zu fnf verschiedene Texte fr die jeweiligen Preisgruppen anlegen.
+      Mit dem Programm Â»Anlegen/Ã„ndern Artikel-Preis-TexteÂ« kÃ¶nnen Sie bis
+      zu fÃ¼nf verschiedene Texte fÃ¼r die jeweiligen Preisgruppen anlegen.
       
-      Diese Texte werden im Progamm ¯Anlegen/Žndern Artikel vor den je-
+      Diese Texte werden im Progamm Â»Anlegen/Ã„ndern Artikel vor den je-
       weiligen Artikel-Preisgruppen angezeigt.
       
-      Im Programm ¯Anlegen/Žndern Kunden® kann dieser Text mit der dazu-
-      geh”rigen Preisgruppe dem Kunden zugeordnet werden.
+      Im Programm Â»Anlegen/Ã„ndern KundenÂ« kann dieser Text mit der dazu-
+      gehÃ¶rigen Preisgruppe dem Kunden zugeordnet werden.
       
       
 1/1 Anlegen Artikel-Preis-Texte
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Fr jeden Artikel k”nnen Sie fnf Verkaufspreise festlegen. Jedem
-      Kunden k”nnen Sie einen dieser Verkaufspreise zuordnen.
+      FÃ¼r jeden Artikel kÃ¶nnen Sie fÃ¼nf Verkaufspreise festlegen. Jedem
+      Kunden kÃ¶nnen Sie einen dieser Verkaufspreise zuordnen.
       
-      Damit die fnf Verkaufspreise besser unterschieden werden k”nnen,
-      ist es hier m”glich jeden Verkaufspreis zu benennen.
+      Damit die fÃ¼nf Verkaufspreise besser unterschieden werden kÃ¶nnen,
+      ist es hier mÃ¶glich jeden Verkaufspreis zu benennen.
       
-      Dieser Name wird Ihnen im Programm ¯Anlegen/Žndern Artikel® ebenso
-      angezeigt, wie er im Programm ¯Anlegen/Žndern Kunden® zugeordnet
+      Dieser Name wird Ihnen im Programm Â»Anlegen/Ã„ndern ArtikelÂ« ebenso
+      angezeigt, wie er im Programm Â»Anlegen/Ã„ndern KundenÂ« zugeordnet
       werden kann.
       
       
 7. Mengen-Einheiten
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Anlegen/Žndern Mengen-Einheiten
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Anlegen/Ã„ndern Mengen-Einheiten
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-1/1 þ Match-Code
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+1/1 â–  Match-Code
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
       Geben Sie hier eine Bezeichnung der anzulegenden Mengen-Einheit ein,
-      nach der Sie dann in verschiedenen anderen Programmen die gewnschte
-      Mengen-Einheit ber die [F2]-Taste suchen k”nnen.
+      nach der Sie dann in verschiedenen anderen Programmen die gewÃ¼nschte
+      Mengen-Einheit Ã¼ber die [F2]-Taste suchen kÃ¶nnen.
       
-      Natrlich haben Sie auch hier die M”glichkeit ber die [F2]-Taste
+      NatÃ¼rlich haben Sie auch hier die MÃ¶glichkeit Ã¼ber die [F2]-Taste
       nach verschiedenen Mengeneinheiten zu suchen.
       
-      Ist der Bildschirm leer, und Sie drcken die [Ù]-Taste so gelangen
+      Ist der Bildschirm leer, und Sie drÃ¼cken die [â”˜]-Taste so gelangen
       Sie ins Feld Bezeichnung, wo Sie ebenfalls nach schon vorhandenen
-      Mengeneinheiten suchen k”nnen.
+      Mengeneinheiten suchen kÃ¶nnen.
       
       
-þ Bezeichnung
-ÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Bezeichnung
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
       Geben Sie hier die Mengen-Einheits Bezeichnung ein, die beim Anlegen
       der Artikel oder beim Fakturieren angezeigt wird (z.B. kg, l, Stk.).
       
       Ist bereits ein Datensatz unter dieser Bezeichnung angelegt, werden
-      die dazugeh”rigen Daten angezeigt.
+      die dazugehÃ¶rigen Daten angezeigt.
       
-      Mit [F2] kann ein Datensatz gesucht, mit [F3] kann er gel”scht wer-
+      Mit [F2] kann ein Datensatz gesucht, mit [F3] kann er gelÃ¶scht wer-
       den.
       
       
 WINware (C) 1988/1993                      >72< III. WINware AUFTRAG Werbetexte / 3.4
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-þ Basis-Einheit
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Basis-Einheit
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Bitte w„hlen Sie nachdem Sie die [F2]-Taste gedrckt haben:
+      Bitte wÃ¤hlen Sie nachdem Sie die [F2]-Taste gedrÃ¼ckt haben:
       
       Bewegen Sie einfach mit den Cursortasten []/[] den Balken auf den
-      gewnschten Eintrag. Danach best„tigen Sie die Wahl mit [Ù].
+      gewÃ¼nschten Eintrag. Danach bestÃ¤tigen Sie die Wahl mit [â”˜].
       
-      Wenn Sie das Auswahlfenster nicht ”ffnen wollen, k”nnen Sie die
+      Wenn Sie das Auswahlfenster nicht Ã¶ffnen wollen, kÃ¶nnen Sie die
       Wahl auch durch Eingabe des ersten Buchstabens (bzw. der ersten
       Buchstaben) treffen.
       
-      Existiert bereits ein gltiger Eintrag in diesem Feld, dann ist
-      mit den Tasten [Bild]/[Bild] auch ein Weiterbl„ttern zum n„chsten
-      gltigen Eintrag m”glich.
+      Existiert bereits ein gÃ¼ltiger Eintrag in diesem Feld, dann ist
+      mit den Tasten [Bild]/[Bild] auch ein WeiterblÃ¤ttern zum nÃ¤chsten
+      gÃ¼ltigen Eintrag mÃ¶glich.
       
       
       
@@ -585,453 +585,453 @@ WINware (C) 1988/1993                      >72< III. WINware AUFTRAG Werbetexte 
       
       
                                                                           
-þ Umrechnungs-Faktor
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â–  Umrechnungs-Faktor
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Geben Sie hier den ¯Umrechnungs-Faktor® der Basis-Einheit auf die
-      ¯Mengen-Einheit® ein.
+      Geben Sie hier den Â»Umrechnungs-FaktorÂ« der Basis-Einheit auf die
+      Â»Mengen-EinheitÂ« ein.
       
 8. Drucken Konstanten
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Wenn Sie alle Konstanten fr die WINware- Programme angelegt haben,
+   Wenn Sie alle Konstanten fÃ¼r die WINware- Programme angelegt haben,
    sollte Sie einen Ausdruck der Konstanten anfertigen, indem Sie das 
-   Programm ¯Drucken Konstanten® starten.                             
+   Programm Â»Drucken KonstantenÂ« starten.                             
                                                                       
    Man kann bei der laufenden Arbeit mit den WINware- Modulen in      
    diesen Ausdrucken nachschlagen.                                    
    
-9. Drucken Fremdw„hrungen
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+9. Drucken FremdwÃ¤hrungen
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Wenn Sie die Fremdw„hrungen angelegt haben, k”nnen Sie mit dem
-   Programm ¯Drucken Fremdw„hrungen® davon ein Protokoll anfertigen.
+   Wenn Sie die FremdwÃ¤hrungen angelegt haben, kÃ¶nnen Sie mit dem
+   Programm Â»Drucken FremdwÃ¤hrungenÂ« davon ein Protokoll anfertigen.
    
-   Dann k”nnen Sie bei der laufenden Arbeit mit den WINware- Modulen
+   Dann kÃ¶nnen Sie bei der laufenden Arbeit mit den WINware- Modulen
    in diesem Ausdruck nachschlagen.
-WINware (C) 1988/1993                       ¯0® III. WINware AUFTRAG Versandart / 4.1
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+WINware (C) 1988/1993                       Â»0Â« III. WINware AUFTRAG Versandart / 4.1
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware WARE Basis Auftragsbearbeitung                                           º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
-
-
-
-   Menfenster ¯Konstanten® / Konstanten (AU-048):Versandart
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿           
-   ³ Konstanten ³              ... Anlegen, „ndern oder drucken der konstanten Werte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Nummernkreise         ³   ... Žndern der Nummernkreise.
-   ³ Steuers„tze           ³   ... Anlegen, „ndern oder l”schen der Steuers„tze.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Werbetexte            ³   ... Anlegen, „ndern oder l”schen der Werbetexte.
-   ³ Versandart            ³   ... Anlegen, „ndern oder l”schen der Versandarten.
-   ³ Landesw„hrung         ³   ... Žndern der Landesw„hrung.
-   ³ Artikel-Preis-Text    ³   ... Žndern der Artikel-Verkaufspreis-Texte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Drucken Konstanten    ³   ... Ausdruck einer Liste der angelegten Konstanten.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Fremdw„hrungen        ³   ... Anlegen, „ndern der Fremdw„hrungen.
-   ³ Drucken Fremdw„hrung  ³   ... Drucken der angelegten Fremdw„hrungen.
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware WARE Basis Auftragsbearbeitung                                           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
 
-   Ein-/Ausgabefelder fr: Anlegen/Žndern Versandart (STM093)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÃ¼fenster Â»KonstantenÂ« / Konstanten (AU-048):Versandart
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   ÀF-TastenOptionenF1=HilfeÙ
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/Žndern Versandart - 1/1Ä¿
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                               ù ``                                  ù        ³
-   ³                                 Versandart 1 : @@@@@@@@@@@@@@@@@@@@          ³
-   ³                                                                              ³
-   ³                                 Versandart 2 : @@@@@@@@@@@@@@@@@@@@          ³
-   ³                                                                              ³
-   ³                                 Versandart 3 : @@@@@@@@@@@@@@@@@@@@          ³
-   ³                                                                              ³
-   ³                                 Versandart 4 : @@@@@@@@@@@@@@@@@@@@          ³
-   ³                                                                              ³
-   ³                                 Versandart 5 : @@@@@@@@@@@@@@@@@@@@          ³
-   ³                                                                              ³
-   ³                                 Versandart 6 : @@@@@@@@@@@@@@@@@@@@          ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=Men[ESC]=EndeT02
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”           
+   â”‚ Konstanten â”‚              ... Anlegen, Ã¤ndern oder drucken der konstanten Werte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Nummernkreise         â”‚   ... Ã„ndern der Nummernkreise.
+   â”‚ SteuersÃ¤tze           â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der SteuersÃ¤tze.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Werbetexte            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Werbetexte.
+   â”‚ Versandart            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Versandarten.
+   â”‚ LandeswÃ¤hrung         â”‚   ... Ã„ndern der LandeswÃ¤hrung.
+   â”‚ Artikel-Preis-Text    â”‚   ... Ã„ndern der Artikel-Verkaufspreis-Texte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Drucken Konstanten    â”‚   ... Ausdruck einer Liste der angelegten Konstanten.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ FremdwÃ¤hrungen        â”‚   ... Anlegen, Ã¤ndern der FremdwÃ¤hrungen.
+   â”‚ Drucken FremdwÃ¤hrung  â”‚   ... Drucken der angelegten FremdwÃ¤hrungen.
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 
-4. Anlegen/Žndern Versandart
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Ein-/Ausgabefelder fÃ¼r: Anlegen/Ã„ndern Versandart (STM093)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Anlegen/Žndern Versandart
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””F-TastenOptionenF1=Hilfeâ”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Anlegen/Ã„ndern Versandart - 1/1â”€â”
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                               Â¨ ``                                  Â¨        â”‚
+   â”‚                                 Versandart 1 : @@@@@@@@@@@@@@@@@@@@          â”‚
+   â”‚                                                                              â”‚
+   â”‚                                 Versandart 2 : @@@@@@@@@@@@@@@@@@@@          â”‚
+   â”‚                                                                              â”‚
+   â”‚                                 Versandart 3 : @@@@@@@@@@@@@@@@@@@@          â”‚
+   â”‚                                                                              â”‚
+   â”‚                                 Versandart 4 : @@@@@@@@@@@@@@@@@@@@          â”‚
+   â”‚                                                                              â”‚
+   â”‚                                 Versandart 5 : @@@@@@@@@@@@@@@@@@@@          â”‚
+   â”‚                                                                              â”‚
+   â”‚                                 Versandart 6 : @@@@@@@@@@@@@@@@@@@@          â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=MenÃ¼[ESC]=EndeT02
 
-   Mit dem Programm [Anlegen/Žndern Versandart] haben Sie die M”glich-
-   keit, die von Ihnen am h„ufigsten benutzten Versandarten abzu-
+
+
+4. Anlegen/Ã„ndern Versandart
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+Anlegen/Ã„ndern Versandart
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+   Mit dem Programm [Anlegen/Ã„ndern Versandart] haben Sie die MÃ¶glich-
+   keit, die von Ihnen am hÃ¤ufigsten benutzten Versandarten abzu-
    speichern.
    
    Beim Erstellen der Formulare brauchen Sie dann nicht mehr den Text
-   dieser Versandart einzutippen, sondern w„hlen Ihnen einfach aus.
+   dieser Versandart einzutippen, sondern wÃ¤hlen Ihnen einfach aus.
 WINware (C) 1988/1993                      >73< III. WINware AUFTRAG Versandart / 4.2
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
    
-   Mit der Anlage der Versandart sind alle Konstanten fr die WINware 
+   Mit der Anlage der Versandart sind alle Konstanten fÃ¼r die WINware 
    Auftragsbearbeitung angelegt. Man sollte sich jetzt noch einen zu-
-   sammenh„ngenden Ausdruck aller Konstanten herstellen, indem man das
-   Programm [Drucken Konstanten] anw„hlt.
+   sammenhÃ¤ngenden Ausdruck aller Konstanten herstellen, indem man das
+   Programm [Drucken Konstanten] anwÃ¤hlt.
    
    
-1/1 þ Versandart 1-6
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+1/1 â–  Versandart 1-6
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Hier k”nnen Sie den Text fr die ¯Versandart 1-6® mit bis zu 20
+   Hier kÃ¶nnen Sie den Text fÃ¼r die Â»Versandart 1-6Â« mit bis zu 20
    Stellen alpha-numerisch eingeben.
    
    
-WINware (C) 1988/1993                     ¯0® III. WINware AUFTRAG Fremdw„hrung / 5.1
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+WINware (C) 1988/1993                     Â»0Â« III. WINware AUFTRAG FremdwÃ¤hrung / 5.1
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware WARE Basis Auftragsbearbeitung                                           º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
-
-
-
-   Menfenster ¯Konstanten® / Konstanten (AU-048):W„hrungen
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿           
-   ³ Konstanten ³              ... Anlegen, „ndern oder drucken der konstanten Werte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Nummernkreise         ³   ... Žndern der Nummernkreise.
-   ³ Steuers„tze           ³   ... Anlegen, „ndern oder l”schen der Steuers„tze.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Werbetexte            ³   ... Anlegen, „ndern oder l”schen der Werbetexte.
-   ³ Versandart            ³   ... Anlegen, „ndern oder l”schen der Versandarten.
-   ³ Landesw„hrung         ³   ... Žndern der Landesw„hrung.
-   ³ Artikel-Preis-Text    ³   ... Žndern der Artikel-Verkaufspreis-Texte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Drucken Konstanten    ³   ... Ausdruck einer Liste der angelegten Konstanten.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Fremdw„hrungen        ³   ... Anlegen, „ndern der Fremdw„hrungen.
-   ³ Drucken Fremdw„hrung  ³   ... Drucken der angelegten Fremdw„hrungen.
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware WARE Basis Auftragsbearbeitung                                           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
 
-   Ein-/Ausgabefelder fr: Anlegen/Žndern Fremdw„hrung (STM094)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÃ¼fenster Â»KonstantenÂ« / Konstanten (AU-048):WÃ¤hrungen
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   ÀF-TastenOptionenF1=HilfeÙ
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/Žndern Fremdw„hrung - 1/1Ä¿
-   ³                                                                              ³
-   ³                     ù                                                        ³
-   ³                                               Bez.  Einheit   Kurs           ³
-   ³                          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ        ³
-   ³                          Landesw„hrung  :     @@@@  ^^^^^^^ = ``|,|||        ³
-   ³                          Fremdw„hrung 1 :     @@@@  @@@@@@@ = ##›,›››        ³
-   ³                                                                              ³
-   ³                          Fremdw„hrung 2 :     @@@@  @@@@@@@ = ##›,›››        ³
-   ³                          Fremdw„hrung 3 :     @@@@  @@@@@@@ = ##›,›››        ³
-   ³                                                                              ³
-   ³                          Fremdw„hrung 4 :     @@@@  @@@@@@@ = ##›,›››        ³
-   ³                          Fremdw„hrung 5 :     @@@@  @@@@@@@ = ##›,›››        ³
-   ³                                                                              ³
-   ³                          Fremdw„hrung 6 :     @@@@  @@@@@@@ = ##›,›››        ³
-   ³                          Fremdw„hrung 7 :     @@@@  @@@@@@@ = ##›,›››        ³
-   ³                                                                              ³
-   ³                          Fremdw„hrung 8 :     @@@@  @@@@@@@ = ##›,›››        ³
-   ³                          Fremdw„hrung 9 :     @@@@  @@@@@@@ = ##›,››› ^      ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=Men[ESC]=EndeT02
-
-
-WINware (C) 1988/1993               ¯0® III. WINware AUFTRAG Artikel-Preis-Text / 6.1
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware WARE Basis Auftragsbearbeitung                                           º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”           
+   â”‚ Konstanten â”‚              ... Anlegen, Ã¤ndern oder drucken der konstanten Werte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Nummernkreise         â”‚   ... Ã„ndern der Nummernkreise.
+   â”‚ SteuersÃ¤tze           â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der SteuersÃ¤tze.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Werbetexte            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Werbetexte.
+   â”‚ Versandart            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Versandarten.
+   â”‚ LandeswÃ¤hrung         â”‚   ... Ã„ndern der LandeswÃ¤hrung.
+   â”‚ Artikel-Preis-Text    â”‚   ... Ã„ndern der Artikel-Verkaufspreis-Texte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Drucken Konstanten    â”‚   ... Ausdruck einer Liste der angelegten Konstanten.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ FremdwÃ¤hrungen        â”‚   ... Anlegen, Ã¤ndern der FremdwÃ¤hrungen.
+   â”‚ Drucken FremdwÃ¤hrung  â”‚   ... Drucken der angelegten FremdwÃ¤hrungen.
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
 
-   Menfenster ¯Konstanten® / Konstanten (AU-048):Artikel-Preis-Text
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Ein-/Ausgabefelder fÃ¼r: Anlegen/Ã„ndern FremdwÃ¤hrung (STM094)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿           
-   ³ Konstanten ³              ... Anlegen, „ndern oder drucken der konstanten Werte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Nummernkreise         ³   ... Žndern der Nummernkreise.
-   ³ Steuers„tze           ³   ... Anlegen, „ndern oder l”schen der Steuers„tze.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Werbetexte            ³   ... Anlegen, „ndern oder l”schen der Werbetexte.
-   ³ Versandart            ³   ... Anlegen, „ndern oder l”schen der Versandarten.
-   ³ Landesw„hrung         ³   ... Žndern der Landesw„hrung.
-   ³ Artikel-Preis-Text    ³   ... Žndern der Artikel-Verkaufspreis-Texte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Drucken Konstanten    ³   ... Ausdruck einer Liste der angelegten Konstanten.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Fremdw„hrungen        ³   ... Anlegen, „ndern der Fremdw„hrungen.
-   ³ Drucken Fremdw„hrung  ³   ... Drucken der angelegten Fremdw„hrungen.
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””F-TastenOptionenF1=Hilfeâ”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Anlegen/Ã„ndern FremdwÃ¤hrung - 1/1â”€â”
+   â”‚                                                                              â”‚
+   â”‚                     Â¨                                                        â”‚
+   â”‚                                               Bez.  Einheit   Kurs           â”‚
+   â”‚                          â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€        â”‚
+   â”‚                          LandeswÃ¤hrung  :     @@@@  ^^^^^^^ = ``|,|||        â”‚
+   â”‚                          FremdwÃ¤hrung 1 :     @@@@  @@@@@@@ = ##Ã¸,Ã¸Ã¸Ã¸        â”‚
+   â”‚                                                                              â”‚
+   â”‚                          FremdwÃ¤hrung 2 :     @@@@  @@@@@@@ = ##Ã¸,Ã¸Ã¸Ã¸        â”‚
+   â”‚                          FremdwÃ¤hrung 3 :     @@@@  @@@@@@@ = ##Ã¸,Ã¸Ã¸Ã¸        â”‚
+   â”‚                                                                              â”‚
+   â”‚                          FremdwÃ¤hrung 4 :     @@@@  @@@@@@@ = ##Ã¸,Ã¸Ã¸Ã¸        â”‚
+   â”‚                          FremdwÃ¤hrung 5 :     @@@@  @@@@@@@ = ##Ã¸,Ã¸Ã¸Ã¸        â”‚
+   â”‚                                                                              â”‚
+   â”‚                          FremdwÃ¤hrung 6 :     @@@@  @@@@@@@ = ##Ã¸,Ã¸Ã¸Ã¸        â”‚
+   â”‚                          FremdwÃ¤hrung 7 :     @@@@  @@@@@@@ = ##Ã¸,Ã¸Ã¸Ã¸        â”‚
+   â”‚                                                                              â”‚
+   â”‚                          FremdwÃ¤hrung 8 :     @@@@  @@@@@@@ = ##Ã¸,Ã¸Ã¸Ã¸        â”‚
+   â”‚                          FremdwÃ¤hrung 9 :     @@@@  @@@@@@@ = ##Ã¸,Ã¸Ã¸Ã¸ ^      â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=MenÃ¼[ESC]=EndeT02
+
+
+WINware (C) 1988/1993               Â»0Â« III. WINware AUFTRAG Artikel-Preis-Text / 6.1
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware WARE Basis Auftragsbearbeitung                                           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
 
-   Ein-/Ausgabefelder fr: Anlegen/Žndern Artikel-Preis-Text (STM096)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÃ¼fenster Â»KonstantenÂ« / Konstanten (AU-048):Artikel-Preis-Text
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   ÀF-TastenOptionenF1=HilfeÙ
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄAnlegen/Žndern Artikel-Preis-Text - 1/1Ä¿
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                     ù                                                        ³
-   ³                          Bezeichnung zu den 5 Artikel-Vk-Preisen             ³
-   ³                          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ        ³
-   ³                          Verkaufs-Preis ^:   @@@@@@@@@@@                     ³
-   ³                                                                              ³
-   ³                          Verkaufs-Preis ^:   @@@@@@@@@@@                     ³
-   ³                                                                              ³
-   ³                          Verkaufs-Preis ^:   @@@@@@@@@@@                     ³
-   ³                                                                              ³
-   ³                          Verkaufs-Preis ^:   @@@@@@@@@@@                     ³
-   ³                                                                              ³
-   ³                          Verkaufs-Preis ^:   @@@@@@@@@@@  ^                  ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=Men[ESC]=EndeT02
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”           
+   â”‚ Konstanten â”‚              ... Anlegen, Ã¤ndern oder drucken der konstanten Werte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Nummernkreise         â”‚   ... Ã„ndern der Nummernkreise.
+   â”‚ SteuersÃ¤tze           â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der SteuersÃ¤tze.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Werbetexte            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Werbetexte.
+   â”‚ Versandart            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Versandarten.
+   â”‚ LandeswÃ¤hrung         â”‚   ... Ã„ndern der LandeswÃ¤hrung.
+   â”‚ Artikel-Preis-Text    â”‚   ... Ã„ndern der Artikel-Verkaufspreis-Texte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Drucken Konstanten    â”‚   ... Ausdruck einer Liste der angelegten Konstanten.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ FremdwÃ¤hrungen        â”‚   ... Anlegen, Ã¤ndern der FremdwÃ¤hrungen.
+   â”‚ Drucken FremdwÃ¤hrung  â”‚   ... Drucken der angelegten FremdwÃ¤hrungen.
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+
+
+
+   Ein-/Ausgabefelder fÃ¼r: Anlegen/Ã„ndern Artikel-Preis-Text (STM096)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””F-TastenOptionenF1=Hilfeâ”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Anlegen/Ã„ndern Artikel-Preis-Text - 1/1â”€â”
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                     Â¨                                                        â”‚
+   â”‚                          Bezeichnung zu den 5 Artikel-Vk-Preisen             â”‚
+   â”‚                          â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€        â”‚
+   â”‚                          Verkaufs-Preis ^:   @@@@@@@@@@@                     â”‚
+   â”‚                                                                              â”‚
+   â”‚                          Verkaufs-Preis ^:   @@@@@@@@@@@                     â”‚
+   â”‚                                                                              â”‚
+   â”‚                          Verkaufs-Preis ^:   @@@@@@@@@@@                     â”‚
+   â”‚                                                                              â”‚
+   â”‚                          Verkaufs-Preis ^:   @@@@@@@@@@@                     â”‚
+   â”‚                                                                              â”‚
+   â”‚                          Verkaufs-Preis ^:   @@@@@@@@@@@  ^                  â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=MenÃ¼[ESC]=EndeT02
 
 
 
 6. Anlegen Artikel-Preis-Texte
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Anlegen/Žndern Artikel-Preis-Texte
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Anlegen/Ã„ndern Artikel-Preis-Texte
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Mit dem Programm ¯Anlegen/Žndern Artikel-Preis-Texte® k”nnen Sie bis
-   zu fnf verschiedene Texte fr die jeweiligen Preisgruppen anlegen.
+   Mit dem Programm Â»Anlegen/Ã„ndern Artikel-Preis-TexteÂ« kÃ¶nnen Sie bis
+   zu fÃ¼nf verschiedene Texte fÃ¼r die jeweiligen Preisgruppen anlegen.
    
-   Diese Texte werden im Progamm ¯Anlegen/Žndern Artikel vor den je-
+   Diese Texte werden im Progamm Â»Anlegen/Ã„ndern Artikel vor den je-
    weiligen Artikel-Preisgruppen angezeigt.
    
 WINware (C) 1988/1993              >73< III. WINware AUFTRAG Artikel-Preis-Text / 6.2
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Im Programm ¯Anlegen/Žndern Kunden® kann dieser Text mit der dazu-
-   geh”rigen Preisgruppe dem Kunden zugeordnet werden.
+   Im Programm Â»Anlegen/Ã„ndern KundenÂ« kann dieser Text mit der dazu-
+   gehÃ¶rigen Preisgruppe dem Kunden zugeordnet werden.
    
    
 1/1 Anlegen Artikel-Preis-Texte
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Fr jeden Artikel k”nnen Sie fnf Verkaufspreise festlegen. Jedem
-   Kunden k”nnen Sie einen dieser Verkaufspreise zuordnen.
+   FÃ¼r jeden Artikel kÃ¶nnen Sie fÃ¼nf Verkaufspreise festlegen. Jedem
+   Kunden kÃ¶nnen Sie einen dieser Verkaufspreise zuordnen.
    
-   Damit die fnf Verkaufspreise besser unterschieden werden k”nnen,
-   ist es hier m”glich jeden Verkaufspreis zu benennen.
+   Damit die fÃ¼nf Verkaufspreise besser unterschieden werden kÃ¶nnen,
+   ist es hier mÃ¶glich jeden Verkaufspreis zu benennen.
    
-   Dieser Name wird Ihnen im Programm ¯Anlegen/Žndern Artikel® ebenso
-   angezeigt, wie er im Programm ¯Anlegen/Žndern Kunden® zugeordnet
+   Dieser Name wird Ihnen im Programm Â»Anlegen/Ã„ndern ArtikelÂ« ebenso
+   angezeigt, wie er im Programm Â»Anlegen/Ã„ndern KundenÂ« zugeordnet
    werden kann.
    
    
-WINware (C) 1988/1993                 ¯0® III. WINware AUFTRAG Druck Konstanten / 7.1
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+WINware (C) 1988/1993                 Â»0Â« III. WINware AUFTRAG Druck Konstanten / 7.1
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware WARE Basis Auftragsbearbeitung                                           º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
-
-
-
-   Menfenster ¯Konstanten® / Konstanten (AU-048):Druck Konstanten
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿           
-   ³ Konstanten ³              ... Anlegen, „ndern oder drucken der konstanten Werte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ¿
-   ³ Nummernkreise         ³   ... Žndern der Nummernkreise.
-   ³ Steuers„tze           ³   ... Anlegen, „ndern oder l”schen der Steuers„tze.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Werbetexte            ³   ... Anlegen, „ndern oder l”schen der Werbetexte.
-   ³ Versandart            ³   ... Anlegen, „ndern oder l”schen der Versandarten.
-   ³ Landesw„hrung         ³   ... Žndern der Landesw„hrung.
-   ³ Artikel-Preis-Text    ³   ... Žndern der Artikel-Verkaufspreis-Texte.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Drucken Konstanten    ³   ... Ausdruck einer Liste der angelegten Konstanten.
-   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
-   ³ Fremdw„hrungen        ³   ... Anlegen, „ndern der Fremdw„hrungen.
-   ³ Drucken Fremdw„hrung  ³   ... Drucken der angelegten Fremdw„hrungen.
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware WARE Basis Auftragsbearbeitung                                           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
 
-   Ein-/Ausgabefelder fr: Druck Konstanten (STM4010)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   MenÃ¼fenster Â»KonstantenÂ« / Konstanten (AU-048):Druck Konstanten
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   Ú(c) 1993 WINware ÄÄÄÄÄ WINware P.Mayer / A-1040 Wien ÄÄÄÄÄ Datum 01.12.93 (01)¿
-   ÀF-TastenOptionenF1=HilfeÙ
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄDruck KonstantenÄ¿
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                 ù                                                            ³
-   ³                                                                              ³
-   ³                    Wollen Sie wirklich drucken?                              ³
-   ³                   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                             ³
-   ³                                @@@@                                          ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ³                                                                              ³
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=Men[ESC]=EndeT02
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”           
+   â”‚ Konstanten â”‚              ... Anlegen, Ã¤ndern oder drucken der konstanten Werte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ Nummernkreise         â”‚   ... Ã„ndern der Nummernkreise.
+   â”‚ SteuersÃ¤tze           â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der SteuersÃ¤tze.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Werbetexte            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Werbetexte.
+   â”‚ Versandart            â”‚   ... Anlegen, Ã¤ndern oder lÃ¶schen der Versandarten.
+   â”‚ LandeswÃ¤hrung         â”‚   ... Ã„ndern der LandeswÃ¤hrung.
+   â”‚ Artikel-Preis-Text    â”‚   ... Ã„ndern der Artikel-Verkaufspreis-Texte.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ Drucken Konstanten    â”‚   ... Ausdruck einer Liste der angelegten Konstanten.
+   â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+   â”‚ FremdwÃ¤hrungen        â”‚   ... Anlegen, Ã¤ndern der FremdwÃ¤hrungen.
+   â”‚ Drucken FremdwÃ¤hrung  â”‚   ... Drucken der angelegten FremdwÃ¤hrungen.
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+
+
+
+   Ein-/Ausgabefelder fÃ¼r: Druck Konstanten (STM4010)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+   â”Œ(c) 1993 WINware â”€â”€â”€â”€â”€ WINware P.Mayer / A-1040 Wien â”€â”€â”€â”€â”€ Datum 01.12.93 (01)â”
+   â””F-TastenOptionenF1=Hilfeâ”˜
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€Druck Konstantenâ”€â”
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                 Â¨                                                            â”‚
+   â”‚                                                                              â”‚
+   â”‚                    Wollen Sie wirklich drucken?                              â”‚
+   â”‚                   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                             â”‚
+   â”‚                                @@@@                                          â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â”‚                                                                              â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   [F1]=Hilfe[Alt]+[F1]=Index[F2]=Suchen[F10]=MenÃ¼[ESC]=EndeT02
 
 
 WINware (C) 1988/1993                >55< III. WINware AUFTRAG Druck Konstanten / 7.2
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 
 
    Beispiel: Druck Konstanten (STB4010.M)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ ÚÙLISTE KONSTANTEN                                    Datum: 05.09.90 - SEITE 0001À¿ ³Û
-   ³ ³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³ ³Û
-   ³ À´Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002ÃÙ ³Û
-   ³  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ  ³Û
-   ³                                                                                      ³Û
-   ³                                                                                      ³Û
-   ³ Steuer-S„tze:                                                                        ³Û
-   ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                       ³Û
-   ³ Steuersatz 1 :  20,00 %                Steuersatz 5 :   0,00 %                       ³Û
-   ³ Steuersatz 2 :  10,00 %                Steuersatz 6 :   0,00 %                       ³Û
-   ³ Steuersatz 3 :  32,00 %                Steuersatz 7 :   0,00 %                       ³Û
-   ³ Steuersatz 4 :   0,00 %                Steuersatz 8 :   0,00 %                       ³Û
-   ³                                                                                      ³Û
-   ³                                                                                      ³Û
-   ³ Versandarten:                                                                        ³Û
-   ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                        ³Û
-   ³ Versandart 1 :  Bahn express           Versandart 4 :                                ³Û
-   ³ Versandart 2 :  Post                   Versandart 5 :                                ³Û
-   ³ Versandart 3 :  LKW frei Haus          Versandart 6 :                                ³Û
-   ³                                                                                      ³Û
-   ³                                                                                      ³Û
-   ³ Werbetexte Zeile 1-4:                                                                ³Û
-   ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                ³Û
-   ³ ...euroSOFT-WARE!  -  Know-How fr L”sungen auf Einplatz- und Mehrplatzsystemen.     ³Û
-   ³                                                                                      ³Û
-   ³                                     Bankverb.:   CA - Griesplatz  -  A-8020 Graz     ³Û
-   ³                                     Bankleitzahl:  11870,   Konto: 0188-34846/00     ³Û
-   ³                                                                                      ³Û
-   ³                                                                                      ³Û
-   ³ Nummernkreise:                                                                       ³Û
-   ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                       ³Û
-   ³ Stammdaten:      Kunden        :  500-1385                                           ³Û
-   ³                  Lieferanten   :  100-0000                                           ³Û
-   ³                  Artikel       :  900-006                                            ³Û
-   ³                  Mitarbeiter   :  106                                                ³Û
-   ³                                                                                      ³Û
-   ³ Bewegungsdaten:  Angebote      :  135                                                ³Û
-   ³                  Auftr„ge      :  106                                                ³Û
-   ³                  Lieferscheine :  100                                                ³Û
-   ³                  Rechnungen    :  140                                                ³Û
-   ³                                                                                      ³Û
-   ³                                                                                      ³Û
-   ³ Landesw„hrung:   ™S                                                                  ³Û
-   ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                       ³Û
-   ³                                                                                      ³Û
-   ³ Artikel-Preis-Texte                                                                  ³Û
-   ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                  ³Û
-   ³ Artikel-Preis-Text 1 : H„ndler EKP     Artikel-Preis-Text 4 :                        ³Û
-   ³ Artikel-Preis-Text 2 : empf. VKP       Artikel-Preis-Text 5 :                        ³Û
-   ³ Artikel-Preis-Text 3 :                                                               ³Û
-   ³                                                                                      ³Û
-   ³                                                                                      ³Û
-   ³ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ ³Û
-   ³ À¿Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFTÚÙ ³Û
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙÛ
-    ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ â”Œâ”˜LISTE KONSTANTEN                                    Datum: 05.09.90 - SEITE 0001â””â” â”‚â–ˆ
+   â”‚ â”‚â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”‚ â”‚â–ˆ
+   â”‚ â””â”¤Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002â”œâ”˜ â”‚â–ˆ
+   â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Steuer-SÃ¤tze:                                                                        â”‚â–ˆ
+   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                                                       â”‚â–ˆ
+   â”‚ Steuersatz 1 :  20,00 %                Steuersatz 5 :   0,00 %                       â”‚â–ˆ
+   â”‚ Steuersatz 2 :  10,00 %                Steuersatz 6 :   0,00 %                       â”‚â–ˆ
+   â”‚ Steuersatz 3 :  32,00 %                Steuersatz 7 :   0,00 %                       â”‚â–ˆ
+   â”‚ Steuersatz 4 :   0,00 %                Steuersatz 8 :   0,00 %                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Versandarten:                                                                        â”‚â–ˆ
+   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                                                        â”‚â–ˆ
+   â”‚ Versandart 1 :  Bahn express           Versandart 4 :                                â”‚â–ˆ
+   â”‚ Versandart 2 :  Post                   Versandart 5 :                                â”‚â–ˆ
+   â”‚ Versandart 3 :  LKW frei Haus          Versandart 6 :                                â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Werbetexte Zeile 1-4:                                                                â”‚â–ˆ
+   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                                                â”‚â–ˆ
+   â”‚ ...euroSOFT-WARE!  -  Know-How fÃ¼r LÃ¶sungen auf Einplatz- und Mehrplatzsystemen.     â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                                     Bankverb.:   CA - Griesplatz  -  A-8020 Graz     â”‚â–ˆ
+   â”‚                                     Bankleitzahl:  11870,   Konto: 0188-34846/00     â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Nummernkreise:                                                                       â”‚â–ˆ
+   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                                                       â”‚â–ˆ
+   â”‚ Stammdaten:      Kunden        :  500-1385                                           â”‚â–ˆ
+   â”‚                  Lieferanten   :  100-0000                                           â”‚â–ˆ
+   â”‚                  Artikel       :  900-006                                            â”‚â–ˆ
+   â”‚                  Mitarbeiter   :  106                                                â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Bewegungsdaten:  Angebote      :  135                                                â”‚â–ˆ
+   â”‚                  AuftrÃ¤ge      :  106                                                â”‚â–ˆ
+   â”‚                  Lieferscheine :  100                                                â”‚â–ˆ
+   â”‚                  Rechnungen    :  140                                                â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ LandeswÃ¤hrung:   Ã–S                                                                  â”‚â–ˆ
+   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                                                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ Artikel-Preis-Texte                                                                  â”‚â–ˆ
+   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                                                  â”‚â–ˆ
+   â”‚ Artikel-Preis-Text 1 : HÃ¤ndler EKP     Artikel-Preis-Text 4 :                        â”‚â–ˆ
+   â”‚ Artikel-Preis-Text 2 : empf. VKP       Artikel-Preis-Text 5 :                        â”‚â–ˆ
+   â”‚ Artikel-Preis-Text 3 :                                                               â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚â–ˆ
+   â”‚ â””â”Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFTâ”Œâ”˜ â”‚â–ˆ
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â–ˆ
+    â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€
 
 
 
-Wenn Sie alle Konstanten fr die WINware- Programme angelegt haben,
+Wenn Sie alle Konstanten fÃ¼r die WINware- Programme angelegt haben,
 sollte Sie einen Ausdruck der Konstanten anfertigen, indem Sie das 
-Programm ¯Drucken Konstanten® starten.                             
+Programm Â»Drucken KonstantenÂ« starten.                             
                                                                    
 Man kann bei der laufenden Arbeit mit den WINware- Modulen in      
 diesen Ausdrucken nachschlagen.                                    
 WINware (C) 1988/1993                >73< III. WINware AUFTRAG Druck Konstanten / 7.3
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 
 
-   Beispiel: Druck Fremdw„hrungen (STB4011.M)
-   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Beispiel: Druck FremdwÃ¤hrungen (STB4011.M)
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-   ³ ÚÙLISTE FREMDWŽHRUNG                                  Datum: 05.09.90 - SEITE 0001À¿ ³Û
-   ³ ³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³ ³Û
-   ³ À´Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002ÃÙ ³Û
-   ³  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ  ³Û
-   ³                                                                                      ³Û
-   ³                                        Bez.  Einheit   Kurs                          ³Û
-   ³                   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                       ³Û
-   ³                   Fremdw„hrung 1 :     ™S            =   0,000                       ³Û
-   ³                                                                                      ³Û
-   ³                   Fremdw„hrung 2 :     DM    1       =   7,000                       ³Û
-   ³                                                                                      ³Û
-   ³                   Fremdw„hrung 3 :     Lire  100     =   1,000                       ³Û
-   ³                                                                                      ³Û
-   ³                   Fremdw„hrung 4 :                   =   0,000                       ³Û
-   ³                                                                                      ³Û
-   ³                   Fremdw„hrung 5 :                   =   0,000                       ³Û
-   ³                                                                                      ³Û
-   ³                   Fremdw„hrung 6 :                   =   0,000                       ³Û
-   ³                                                                                      ³Û
-   ³                   Fremdw„hrung 7 :                   =   0,000                       ³Û
-   ³                                                                                      ³Û
-   ³                   Fremdw„hrung 8 :                   =   0,000                       ³Û
-   ³                                                                                      ³Û
-   ³                   Fremdw„hrung 9 :                   =   0,000                       ³Û
-   ³                                                                                      ³Û
-   ³                   Fremdw„hrung 10:                   =   0,000                       ³Û
-   ³                                                                                      ³Û
-   ³                                                                                      ³Û
-   ³ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ ³Û
-   ³ À¿Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFTÚÙ ³Û
-   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙÛ
-    ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚ â”Œâ”˜LISTE FREMDWÃ„HRUNG                                  Datum: 05.09.90 - SEITE 0001â””â” â”‚â–ˆ
+   â”‚ â”‚â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”‚ â”‚â–ˆ
+   â”‚ â””â”¤Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002â”œâ”˜ â”‚â–ˆ
+   â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                                        Bez.  Einheit   Kurs                          â”‚â–ˆ
+   â”‚                   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                       â”‚â–ˆ
+   â”‚                   FremdwÃ¤hrung 1 :     Ã–S            =   0,000                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                   FremdwÃ¤hrung 2 :     DM    1       =   7,000                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                   FremdwÃ¤hrung 3 :     Lire  100     =   1,000                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                   FremdwÃ¤hrung 4 :                   =   0,000                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                   FremdwÃ¤hrung 5 :                   =   0,000                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                   FremdwÃ¤hrung 6 :                   =   0,000                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                   FremdwÃ¤hrung 7 :                   =   0,000                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                   FremdwÃ¤hrung 8 :                   =   0,000                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                   FremdwÃ¤hrung 9 :                   =   0,000                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                   FremdwÃ¤hrung 10:                   =   0,000                       â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚                                                                                      â”‚â–ˆ
+   â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚â–ˆ
+   â”‚ â””â”Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFTâ”Œâ”˜ â”‚â–ˆ
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â–ˆ
+    â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€â–€
 
 
 
-Wenn Sie die Fremdw„hrungen angelegt haben, k”nnen Sie mit dem
-Programm ¯Drucken Fremdw„hrungen® davon ein Protokoll anfertigen.
+Wenn Sie die FremdwÃ¤hrungen angelegt haben, kÃ¶nnen Sie mit dem
+Programm Â»Drucken FremdwÃ¤hrungenÂ« davon ein Protokoll anfertigen.
 
-Dann k”nnen Sie bei der laufenden Arbeit mit den WINware- Modulen
+Dann kÃ¶nnen Sie bei der laufenden Arbeit mit den WINware- Modulen
 in diesem Ausdruck nachschlagen.

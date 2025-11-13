@@ -1,8 +1,8 @@
-ÚÄ Inhaltsverzeichnis zur Bibliothek: ¯\EURO\EXE\SYMASK.043® ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€ Inhaltsverzeichnis zur Bibliothek: Â»\EURO\EXE\SYMASK.043Â« â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
-     020 : SY  STAMM Anlegen Men-Stamm 1/2         am 07.06.1992 -> 19:14 Uhr
-     021 : SY  STAMM Anlegen Men-Stamm 2/2         am 07.06.1992 -> 19:14 Uhr
+     020 : SY  STAMM Anlegen MenÃ¼-Stamm 1/2         am 07.06.1992 -> 19:14 Uhr
+     021 : SY  STAMM Anlegen MenÃ¼-Stamm 2/2         am 07.06.1992 -> 19:14 Uhr
      025 : SY  STAMM Anlegen Programm-Parameter 1/1 am 07.06.1992 -> 19:14 Uhr
      028 : SY  STAMM Anlegen Modem-Parameter 1/1    am 07.06.1992 -> 19:14 Uhr
      030 : SY  STAMM Anlegen Druckerparameter 1/3   am 07.06.1992 -> 19:14 Uhr
@@ -17,22 +17,22 @@
      043 : SY  STAMM Mandant-Uebergabe in KHK-Fibu  am 07.06.1992 -> 19:15 Uhr
      045 : SY  STAMM Mandantenstamm 1/1             am 07.06.1992 -> 19:15 Uhr
      050 : SY  STAMM Mandantenstamm 2/2             am 07.06.1992 -> 19:15 Uhr
-    4020 : SY  DRUCK Men-Datei 1/1                 am 07.06.1992 -> 19:15 Uhr
+    4020 : SY  DRUCK MenÃ¼-Datei 1/1                 am 07.06.1992 -> 19:15 Uhr
     4041 : SY  DRUCK Mandantenstamm                 am 07.06.1992 -> 19:15 Uhr
      910 : SY  STAMM Anlegen Fehler-Meldungen 1/1   am 07.06.1992 -> 19:15 Uhr
 
-ÚÄ Verwendete Dateien: ÄÄÄ¿
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€ Verwendete Dateien: â”€â”€â”€â”
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
    ERROR : Fehlermeldungen
-    MENU : Mendatei
-  SY4020 : Druck Meneintr„ge
+    MENU : MenÃ¼datei
+  SY4020 : Druck MenÃ¼eintrÃ¤ge
   SY4041 : Druck Mandantenstamm
   SYFORM : Formularinformationen
  SYMODEM : Modem Steuerzeichen
   SYPARA : System-Parameter
  SYPRINT : Druckersteuerzeichen
   SYP_01 : Systemparameter Konstanten
-  SYP_13 : Sy-Para. šbernahme in KHK-Fibu
+  SYP_13 : Sy-Para. Ãœbernahme in KHK-Fibu
   SYTEIL : Teilnehmer-Programmparameter
 
 Insgesamt 19 Maske(n) und 11 Datei(en).

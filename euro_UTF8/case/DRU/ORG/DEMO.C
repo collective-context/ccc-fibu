@@ -11,11 +11,11 @@ VOID ChooseDriver( VOID )
 {
      CHAR zeichen;
 
-     clrscr();  /* Mu· bei MS-Compilern entfallen */
+     clrscr();  /* Mu√ü bei MS-Compilern entfallen */
 
      printf( "\n\r                        PT-Druckertoolbox Demoprogramm 1" );
      printf( "\n\r                        --------------------------------" );
-     printf( "\n\r\n\r\n\r Bitte wÑhlen Sie den Druckertreiber: ");
+     printf( "\n\r\n\r\n\r Bitte w√§hlen Sie den Druckertreiber: ");
      printf( "\n\r\n\r 1) EPSON-9-Nadler und kompatible, z.B. LX-800, FX, ...");
      printf( "\n\r 2) EPSON-24-Nadler und kompatible, z.B. LQ-Reihe, ...");
      printf( "\n\r 3) HP-Laserjet und kompatible" );
@@ -50,31 +50,31 @@ VOID main( VOID )
    CHAR  Feld[50],
          Feld2[10];
 
-   /* User hat den passenden Druckertreiber auszuwÑhlen ! */
+   /* User hat den passenden Druckertreiber auszuw√§hlen ! */
    ChooseDriver();
 
    /* Druckertreiber wird aktiviert, tritt ein Fehler auf gilt allgemein: */
-   /* RÅckgabewert < 0                                                    */
+   /* R√ºckgabewert < 0                                                    */
    if ( ptInitPrinter( Text ) < 0 )
    {
       printf("Fehler beim Initialisieren des Druckers !");
       exit ( 1 );
    }
 
-   /* Alle Ma·angaben liegen in CM vor */
+   /* Alle Ma√üangaben liegen in CM vor */
    ptDefineUnit( PT_CM );
 
    /* Breite einer Zeile: 20 cm */
    ptDefineHorLength( 20 );
 
-   /* FÅr die öberschrift: Attribut "Unterstreichen" aktivieren */
+   /* F√ºr die √úberschrift: Attribut "Unterstreichen" aktivieren */
    ptSwitchFontCharacter( PT_UNDERLINE, PT_ON );
 
-   /* Ausgabe einer zentriert gedruckten öberschrift */
+   /* Ausgabe einer zentriert gedruckten √úberschrift */
    ptPrintAutoBuffer( 2, 0, "PT-Druckertoolbox Demoausdruck", 0,
                       ptGetDoubleInfo( PT_HORLENGTH ), PT_CENTER );
 
-   /* FÅr weiteren Text: Attribut "Unterstreichen" abschalten */
+   /* F√ºr weiteren Text: Attribut "Unterstreichen" abschalten */
    ptSwitchFontCharacter( PT_UNDERLINE, PT_OFF );
 
    /* Vormerken: Ausgabe eines Logo-Bildes (PCX-Format) */
@@ -89,20 +89,20 @@ VOID main( VOID )
    ptPrintAutoBuffer( 14, 0, "Dies ist die letzte Zeitungsspalte. Auch hier gilt: We know no limits !", 11, 18,
                       PT_JUSTIFY );
 
-   /* FÅr die öberschrift: Attribut "Fettdruck" aktivieren */
+   /* F√ºr die √úberschrift: Attribut "Fettdruck" aktivieren */
    ptSwitchFontCharacter( PT_BOLD, PT_ON );
 
-   /* Zentrierte Ausgabe einer fettgedruckten öberschrift */
+   /* Zentrierte Ausgabe einer fettgedruckten √úberschrift */
    ptPrintAutoBuffer( 20, 0, "Folgende Schriftarten werden geboten:", 0,
                       ptGetDoubleInfo( PT_HORLENGTH ), PT_CENTER );
 
-   /* FÅr die öberschrift: Attribut "Fettdruck" abschalten */
+   /* F√ºr die √úberschrift: Attribut "Fettdruck" abschalten */
    ptSwitchFontCharacter( PT_BOLD, PT_OFF );
 
-   /* Alle verfÅgbaren Fonts (im Druckertreiber angegeben) der Reihe nach ausgeben */
+   /* Alle verf√ºgbaren Fonts (im Druckertreiber angegeben) der Reihe nach ausgeben */
    for (a=0; a<ptGetInfo( PT_NUMBEROFFONTS ); a++)
    {
-       /* Font wÑhlen */
+       /* Font w√§hlen */
        ptChooseFont( a );
 
        strcpy( Feld, "Dies ist Font Nr. " );
@@ -122,7 +122,7 @@ VOID main( VOID )
    /* Speicher, der von "..Buffer"-Befehlen belegt wurde, wieder freigeben */
    ptEmptyBuffer();
 
-   /* Druckertoolbox schlie·en */
+   /* Druckertoolbox schlie√üen */
    ptClosePrinter();
 
 }

@@ -1,7 +1,7 @@
 /*****************************************************************
  *   Programmname:    DATETIME.C                                 *
  *   Aufgabe:         Stellt eine Reihe von C-Funktionen zur     *
- *                    Verfgung, die Datum und Uhrzeit lesen     *
+ *                    VerfÃ¼gung, die Datum und Uhrzeit lesen     *
  *                    und setzen.                                *
  *   Memory Model:    SMALL                                      *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC         *
@@ -13,10 +13,10 @@
  *    wobei options:  COMP=QCL  (falls QuickC verwendet wird)    *
  *                                                               *
  *   Sollen Routinen in anderen Programmen verwendet werden, so  *
- *   muá beim Linken DOSLIBS.LIB als Library zus„tzlich angege-  *
+ *   muÃŸ beim Linken DOSLIBS.LIB als Library zusÃ¤tzlich angege-  *
  *   ben werden.                                                 *
  *                                                               *
- *   Programmautor:    Heinrich G”bl                             *
+ *   Programmautor:    Heinrich GÃ¶bl                             *
  *   Stand:            27.6.88                                   *
  *****************************************************************/
 
@@ -41,8 +41,8 @@ D_get_date (d)
 {
 union REGS outregs;
 
-if (d == NULL    /* Falls Aufrufer NULL bergibt fordert die
-                             Funktion den n”tigen Speicher an */
+if (d == NULL    /* Falls Aufrufer NULL Ã¼bergibt fordert die
+                             Funktion den nÃ¶tigen Speicher an */
     && (d = (struct D_DATE *)
        malloc (sizeof (struct D_DATE))) == NULL)
     return (NULL);
@@ -55,7 +55,7 @@ d->month     = outregs.h.dh;                  /* Monat (1-12) */
 d->day       = outregs.h.dl;                    /* Tag (1-31) */
 d->dayofweek = outregs.h.al;     /* Tag der Woche (0=Sonntag) */
 
-return (d);           /* Gibt die Adresse der Struktur zurck */
+return (d);           /* Gibt die Adresse der Struktur zurÃ¼ck */
 }
 
 
@@ -75,7 +75,7 @@ inregs.h.dl = d->day;
 
 intdos (&inregs, &inregs);
 
-return (inregs.h.al);  /* 00 = gltiges Datum, FFh = ungltig */
+return (inregs.h.al);  /* 00 = gÃ¼ltiges Datum, FFh = ungÃ¼ltig */
 }
 
 
@@ -116,8 +116,8 @@ D_set_time (t)
 {
 union REGS inregs;
 
-inregs.h.ah = SET_TIME;            /* Fllen der Register mit */
-inregs.h.ch = t->hour;                /* der gewnschten Zeit */
+inregs.h.ah = SET_TIME;            /* FÃ¼llen der Register mit */
+inregs.h.ch = t->hour;                /* der gewÃ¼nschten Zeit */
 inregs.h.cl = t->min;
 inregs.h.dh = t->sec;
 inregs.h.dl = t->hsec;

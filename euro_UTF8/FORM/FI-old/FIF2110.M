@@ -8,26 +8,26 @@
 &DATEI (1) = MASK, FI4210
 
 &KOPF (0)
-�
-^��BUCHUNGSERFASSUNGS-PROTOKOLL                                                          Datum: @@@@@@@@ - SEITE ������ ~NO ~1._DATUM_AKT ~1._SEITE
-�������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                        Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ��������������������������������������������������������������������������������������������������������������������
+ 
+^┌┘BUCHUNGSERFASSUNGS-PROTOKOLL                                                          Datum: @@@@@@@@ - SEITE øøøø└┐ ~NO ~1._DATUM_AKT ~1._SEITE
+│┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                        Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
        Buchungs Soll-     Beleg-     Beleg-   Haben-                                            U
 lfd.Nr    Datum Konto     Nummer        Datum Konto             Betrag Buchungstext             S   Satz    USt-Betrag
-����������������������������������������������������������������������������������������������������������������������
-�
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 
 &END
 
 &RUMPF (0)
-������ ##.##.## @@@@@@@@@ @@@@@@@@@@ ##.##.## @@@@@@@@@ ###.###.###.## @@@@@@@@@@@@@@@@@@@@@@@@ @ @@@@@@ ##.###.###.##~0.:SATZ_NR~0.:BUCH_DAT~0.:SOL_KONTO~0.:BELEG_NR~0.:BELEG_DAT~0.:HAB_KONTO~0.:BETRAG_BR~0.:BUCH_TEXT~0.:UST_ART~0.:UST_SATZ~0.:UST_BETR
+øøøøøø ##.##.## @@@@@@@@@ @@@@@@@@@@ ##.##.## @@@@@@@@@ ###.###.###.## @@@@@@@@@@@@@@@@@@@@@@@@ @ @@@@@@ ##.###.###.##~0.:SATZ_NR~0.:BUCH_DAT~0.:SOL_KONTO~0.:BELEG_NR~0.:BELEG_DAT~0.:HAB_KONTO~0.:BETRAG_BR~0.:BUCH_TEXT~0.:UST_ART~0.:UST_SATZ~0.:UST_BETR
 &END
 
 &REM ##.##.## @@@@@@@@@ @@@@@@@@@@ ##.##.## @@@@@@@@@ ###.###.###.## @@@@@@@@@@@@@@@@@@@@@@@@ @ @@@@@@ ##.###.###.## ~0.SATZ_NR ~0.BUCH_DATUM ~0.SOLL_KONTO ~0.BELEG_NR ~0.BELEG_DAT ~0.HAB_KONTO ~0.BETRAG_BR~0.BUCH_TEXT~0.UST_ART~0.UST_SATZ~0.UST_BETRAG
 
 &FUSS (0)
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 

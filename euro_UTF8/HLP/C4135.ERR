@@ -1,20 +1,20 @@
 
-  ³      Compiler warning (level 4) C4135
-  ³
-  ³      conversion between different integral types
-  ³
-  ³      Information was lost between two integral types.
-  ³
-  ³      For example, the following code causes this warning:
-  ³
-  ³           int intvar;
-  ³           long longvar;
-  ³           intvar = longvar;
-  ³
-  ³      If the information is merely interpreted differently, this warning
-  ³      is not given, as in the following example:
-  ³
-  ³           unsigned uintvar = intvar;
-  ³                                     --
+  â”‚      Compiler warning (level 4) C4135
+  â”‚
+  â”‚      conversion between different integral types
+  â”‚
+  â”‚      Information was lost between two integral types.
+  â”‚
+  â”‚      For example, the following code causes this warning:
+  â”‚
+  â”‚           int intvar;
+  â”‚           long longvar;
+  â”‚           intvar = longvar;
+  â”‚
+  â”‚      If the information is merely interpreted differently, this warning
+  â”‚      is not given, as in the following example:
+  â”‚
+  â”‚           unsigned uintvar = intvar;
+  â”‚                                     --
 
 

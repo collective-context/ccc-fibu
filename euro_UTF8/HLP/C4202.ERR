@@ -1,12 +1,12 @@
 
-  ³      Compiler warning (level 4) C4202
-  ³
-  ³      unreachable code
-  ³
-  ³      The flow of control can never reach the indicated line.
-  ³
-  ³      This warning is given only when compiling with one of the global
-  ³      optimizations (/Oe, /Og, or /Ol).
-  ³                                     --
+  â”‚      Compiler warning (level 4) C4202
+  â”‚
+  â”‚      unreachable code
+  â”‚
+  â”‚      The flow of control can never reach the indicated line.
+  â”‚
+  â”‚      This warning is given only when compiling with one of the global
+  â”‚      optimizations (/Oe, /Og, or /Ol).
+  â”‚                                     --
 
 

@@ -1,7 +1,7 @@
 /**************************************************************
  *    IOCTL.H                                                 *
- *    Direkte Kontrolle Åber Zeichen- bzw. Blocktreiber       *
- *    Definitionen fÅr C-Funktionen (in IOCTL.C)              *
+ *    Direkte Kontrolle √ºber Zeichen- bzw. Blocktreiber       *
+ *    Definitionen f√ºr C-Funktionen (in IOCTL.C)              *
  *    27.6.88                                                 *
  **************************************************************/
 

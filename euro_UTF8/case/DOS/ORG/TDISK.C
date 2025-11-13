@@ -4,7 +4,7 @@
  *   Memory Model:    SMALL                                   *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC      *
  *   Compilieren:     (Q)CL TDISK.C /link DOSLIBS.LIB         *
- *   Programmautor:   Heinrich G”bl                           *
+ *   Programmautor:   Heinrich GÃ¶bl                           *
  *   Stand:           27.6.88                                 *
  **************************************************************/
 
@@ -26,7 +26,7 @@ void far *fatid;                   /* Far Ptr zum FAT ID Byte */
 struct DISKP *dp;           /* Ptr auf Diskparameter Struktur */
 int c;
 DWORD frei,              /* Freier Speicherplatz auf der Disk */
-      geskap;                     /* Gesamtkapazit„t der Disk */
+      geskap;                     /* GesamtkapazitÃ¤t der Disk */
 
 showhelp ("TDISK.HLP");  /* Information zum Programm anzeigen */
 
@@ -54,7 +54,7 @@ if ((dp = D_get_disk_free (NULL, (WORD) c-48)) == NULL)
     printf ("\n\nFalsches Laufwerk !\n\n");
     return (0);
     }
-printf ("\nSie haben Laufwerk %c gew„hlt.\n\n", (char)(c+16));
+printf ("\nSie haben Laufwerk %c gewÃ¤hlt.\n\n", (char)(c+16));
 printf ("\tByte pro Sektor:        %u\n"
         "\tSektoren pro Cluster:   %u\n"
         "\tCluster pro Laufwerk:   %u\n"
@@ -65,7 +65,7 @@ frei   = (DWORD) dp->bps * (DWORD) dp->spc * (DWORD) dp->freeclu;
 geskap = (DWORD) dp->bps * (DWORD) dp->spc * (DWORD) dp->cpd;
 
 printf ("\nFreier Platz auf der Disk: %lu\n", frei);
-printf ("Gesamtkapazit„t der Disk:  %lu\n", geskap);
+printf ("GesamtkapazitÃ¤t der Disk:  %lu\n", geskap);
 printf ("Die Disk ist zu %d%% belegt\n\n",
                   100 - (frei * 100) / geskap);
 

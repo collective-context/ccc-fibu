@@ -1,11 +1,11 @@
-ÚÙLISTE KONSTANTEN                                    Datum: 05.09.90 - SEITE 0001À¿
-³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
-À´Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002ÃÙ
- ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”˜LISTE KONSTANTEN                                    Datum: 05.09.90 - SEITE 0001â””â”
+â”‚â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”‚
+â””â”¤Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002â”œâ”˜
+ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
  
-Steuer-S„tze:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Steuer-SÃ¤tze:
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Steuersatz 1 :  20,00 %                Steuersatz 5 :   0,00 %
 Steuersatz 2 :  10,00 %                Steuersatz 6 :   0,00 %
 Steuersatz 3 :  32,00 %                Steuersatz 7 :   0,00 %
@@ -13,43 +13,43 @@ Steuersatz 4 :   0,00 %                Steuersatz 8 :   0,00 %
 
  
 Versandarten:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Versandart 1 :  Bahn express           Versandart 4 :
 Versandart 2 :  Post                   Versandart 5 :
 Versandart 3 :  LKW frei Haus          Versandart 6 :
 
  
 Werbetexte Zeile 1-4:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-...euroSOFT-WARE!  -  Know-How fr L”sungen auf Einplatz- und Mehrplatzsystemen.
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+...euroSOFT-WARE!  -  Know-How fÃ¼r LÃ¶sungen auf Einplatz- und Mehrplatzsystemen.
 
                                     Bankverb.:   CA - Griesplatz  -  A-8020 Graz
                                     Bankleitzahl:  11870,   Konto: 0188-34846/00
 
  
 Nummernkreise:
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Stammdaten:      Kunden        :  500-1385
                  Lieferanten   :  100-0000
                  Artikel       :  900-006
                  Mitarbeiter   :  106
  
 Bewegungsdaten:  Angebote      :  135
-                 Auftr„ge      :  106
+                 AuftrÃ¤ge      :  106
                  Lieferscheine :  100
                  Rechnungen    :  140
  
  
-Landesw„hrung:   ™S
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+LandeswÃ¤hrung:   Ã–S
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
  
 Artikel-Preis-Texte
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-Artikel-Preis-Text 1 : H„ndler EKP     Artikel-Preis-Text 4 : 
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Artikel-Preis-Text 1 : HÃ¤ndler EKP     Artikel-Preis-Text 4 : 
 Artikel-Preis-Text 2 : empf. VKP       Artikel-Preis-Text 5 :
 Artikel-Preis-Text 3 : 
 
 
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-À¿Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFTÚÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â””â”Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFTâ”Œâ”˜
 

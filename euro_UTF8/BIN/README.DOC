@@ -459,9 +459,9 @@
           customized build options can only have extensions that
           contain the following characters:
 
-               0Ä9
-               AÄZ
-               aÄz
+               0â”€9
+               Aâ”€Z
+               aâ”€z
 
           No other characters are allowed in a file-name extension.
 

@@ -1,11 +1,11 @@
 
-  ³      Compiler warning (level 4) C4101
-  ³
-  ³      'identifier' : unreferenced local variable
-  ³
-  ³      The given local variable was never used.
-  ³
-  ³      This warning is informational.
-  ³                                     --
+  â”‚      Compiler warning (level 4) C4101
+  â”‚
+  â”‚      'identifier' : unreferenced local variable
+  â”‚
+  â”‚      The given local variable was never used.
+  â”‚
+  â”‚      This warning is informational.
+  â”‚                                     --
 
 

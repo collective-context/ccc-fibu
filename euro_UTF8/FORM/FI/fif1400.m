@@ -1,4 +1,4 @@
-&TITEL       = "FI  DRUCK Kapitalflu�rechnung"
+&TITEL       = "FI  DRUCK Kapitalflußrechnung"
 
 &FORMULAR    = 11
 &FOOT_H      = 2
@@ -7,93 +7,93 @@
 &DATEI (1) = MASK, FI4135
 
 &KOPF (0)
-^��KAPTIALFLUSSRECHNUNG                            Monat: @@@@@@@@@@                          Datum: ##.##.## - SEITE ������ ~SM ~1�_W_MONAT ~1._DRUCK_DAT ~1._SEITE
-������������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- �������������������������������������������������������������������������������������������������������������������������
+^┌┘KAPTIALFLUSSRECHNUNG                            Monat: @@@@@@@@@@                          Datum: ##.##.## - SEITE øøøø└┐ ~SM ~1°_W_MONAT ~1._DRUCK_DAT ~1._SEITE
+│┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 
-Konto-                                           ��� M O N A T S W E R T E �Ŀ ��� J A H R E S W E R T E �Ŀ        Jahres-
-Nummer    Geldkonten                             �      Zug�nge       Abg�nge� �      Zug�nge       Abg�nge�          Saldo
-���������������������������������������������������������������������������������������������������������������������������
-�
+Konto-                                           ┌── M O N A T S W E R T E ──┐ ┌── J A H R E S W E R T E ──┐        Jahres-
+Nummer    Geldkonten                             └      Zugänge       Abgänge┘ └      Zugänge       Abgänge┘          Saldo
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 
 &END
 
 
 &RUMPF (0)
-S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~0.KONTONR~0.KONTO_BEZ~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
+S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~0.KONTONR~0.KONTO_BEZ~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
 &END
 
 &RUMPF (1)
-          �����������������������������������������������������������������������������������������������������������������
-          ** Zwischensumme        ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
+          ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+          ** Zwischensumme        ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
 
 &END
 
 &RUMPF (2)
-          �����������������������������������������������������������������������������������������������������������������
-          ** Zwischensumme        ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1.$VOR_SALDO~1.$PER_HABEN~1.$PER_SOLL~1.$JHR_HABEN~1.$JHR_SOLL~1.$AKT_SALDO
+          ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+          ** Zwischensumme        ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1.$VOR_SALDO~1.$PER_HABEN~1.$PER_SOLL~1.$JHR_HABEN~1.$JHR_SOLL~1.$AKT_SALDO
 
 &END
 
 &RUMPF (5)
-S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~0.KONTONR~0.KONTO_BEZ~1.-PER_HABEN~1.-PER_SOLL~1.-JHR_HABEN~1.-JHR_SOLL~1.-AKT_SALDO
+S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~0.KONTONR~0.KONTO_BEZ~1.-PER_HABEN~1.-PER_SOLL~1.-JHR_HABEN~1.-JHR_SOLL~1.-AKT_SALDO
 &END
 
 &RUMPF (11)
-���������������������������������������������������������������������������������������������������������������������������
-== Gruppensumme                   ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1._VOR_SALDO~1._PER_SOLL~1._PER_HABEN~1._JHR_SOLL~1._JHR_HABEN~1._AKT_SALDO
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+== Gruppensumme                   ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1._VOR_SALDO~1._PER_SOLL~1._PER_HABEN~1._JHR_SOLL~1._JHR_HABEN~1._AKT_SALDO
 
 
 
 
-Konto-                                           ���� Monatswerte Mittel- ��Ŀ ���� Jahreswerte Mittel- ��Ŀ        Jahres-
-Nummer    Laufender Betrieb                      �    -Herkunft   -Verwendung� �    -Herkunft   -Verwendung�          Saldo
-���������������������������������������������������������������������������������������������������������������������������
+Konto-                                           ┌─── Monatswerte Mittel- ───┐ ┌─── Jahreswerte Mittel- ───┐        Jahres-
+Nummer    Laufender Betrieb                      └    -Herkunft   -Verwendung┘ └    -Herkunft   -Verwendung┘          Saldo
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 &END
 
 &RUMPF (12)
-���������������������������������������������������������������������������������������������������������������������������
-== Gruppensumme                   ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1._VOR_SALDO~1._PER_HABEN~1._PER_SOLL~1._JHR_HABEN~1._JHR_SOLL~1._AKT_SALDO
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+== Gruppensumme                   ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1._VOR_SALDO~1._PER_HABEN~1._PER_SOLL~1._JHR_HABEN~1._JHR_SOLL~1._AKT_SALDO
 
 
 
-Konto-                                           ���� Monatswerte Mittel- ��Ŀ ���� Jahreswerte Mittel- ��Ŀ        Jahres-
-Nummer    Investitionen                          �    -Herkunft   -Verwendung� �    -Herkunft   -Verwendung�          Saldo
-���������������������������������������������������������������������������������������������������������������������������
+Konto-                                           ┌─── Monatswerte Mittel- ───┐ ┌─── Jahreswerte Mittel- ───┐        Jahres-
+Nummer    Investitionen                          └    -Herkunft   -Verwendung┘ └    -Herkunft   -Verwendung┘          Saldo
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 &END
 
 &RUMPF (13)
-���������������������������������������������������������������������������������������������������������������������������
-== Gruppensumme                   ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1._VOR_SALDO~1._PER_HABEN~1._PER_SOLL~1._JHR_HABEN~1._JHR_SOLL~1._AKT_SALDO
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+== Gruppensumme                   ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1._VOR_SALDO~1._PER_HABEN~1._PER_SOLL~1._JHR_HABEN~1._JHR_SOLL~1._AKT_SALDO
 
 
 
-Konto-                                           ���� Monatswerte Mittel- ��Ŀ ���� Jahreswerte Mittel- ��Ŀ        Jahres-
-Nummer    Privat                                 �    -Herkunft   -Verwendung� �    -Herkunft   -Verwendung�          Saldo
-���������������������������������������������������������������������������������������������������������������������������
+Konto-                                           ┌─── Monatswerte Mittel- ───┐ ┌─── Jahreswerte Mittel- ───┐        Jahres-
+Nummer    Privat                                 └    -Herkunft   -Verwendung┘ └    -Herkunft   -Verwendung┘          Saldo
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 &END
 
 &RUMPF (20)
-���������������������������������������������������������������������������������������������������������������������������
-== Gruppensumme                   ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1._VOR_SALDO~1._PER_HABEN~1._PER_SOLL~1._JHR_HABEN~1._JHR_SOLL~1._AKT_SALDO
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+== Gruppensumme                   ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1._VOR_SALDO~1._PER_HABEN~1._PER_SOLL~1._JHR_HABEN~1._JHR_SOLL~1._AKT_SALDO
 
 
 
 
           Kontrolle:
-          �����������������������������������������������������������������������������������������������������������������
-          Salden Geldkonten       ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
-          Salden andere Konten    ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1.-VOR_SALDO~1.-PER_HABEN~1.-PER_SOLL~1.-JHR_HABEN~1.-JHR_SOLL~1.-AKT_SALDO
-          �����������������������������������������������������������������������������������������������������������������
+          ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+          Salden Geldkonten       ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
+          Salden andere Konten    ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1.-VOR_SALDO~1.-PER_HABEN~1.-PER_SOLL~1.-JHR_HABEN~1.-JHR_SOLL~1.-AKT_SALDO
+          ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 &END
 
 
 &FUSS (0)
-�������������������������������������������������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                             @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                             @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 

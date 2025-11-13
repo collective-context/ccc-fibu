@@ -1,7 +1,7 @@
 /************************************************************
  *  FCB.H
- *  Definitionen fÅr Funktionen, die Dateiein- und ausgabe
- *  Åber die FCBs machen
+ *  Definitionen f√ºr Funktionen, die Dateiein- und ausgabe
+ *  √ºber die FCBs machen
  *  14.3.88   18:16
  ************************************************************/
 

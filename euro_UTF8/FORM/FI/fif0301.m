@@ -1,4 +1,4 @@
-&TITEL       = "FI  LISTE Sachkontenbasis jetzt/fr�her"
+&TITEL       = "FI  LISTE Sachkontenbasis jetzt/früher"
 
 &FORMULAR    = 11
 &LF_N_ZEILEN = 3
@@ -8,12 +8,12 @@
 &DATEI (1) = MASK, FI4130
 
 &KOPF (0)
-^��SACHKONTEN-BASIS jetzt/fr�her                                                              Datum: @@@@@@@@ - SEITE ������ ~SM ~1._DATUM_AKT ~1._SEITE
-������������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- �������������������������������������������������������������������������������������������������������������������������
-Klasse   Bezeichnung                                                       Kontoklasse fr�her
-���������������������������������������������������������������������������������������������������������������������������
+^┌┘SACHKONTEN-BASIS jetzt/früher                                                              Datum: @@@@@@@@ - SEITE øøøø└┐ ~SM ~1._DATUM_AKT ~1._SEITE
+│┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Klasse   Bezeichnung                                                       Kontoklasse früher
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 &END
 
 &RUMPF (0)
@@ -22,8 +22,8 @@ Klasse   Bezeichnung                                                       Konto
 &END
 
 &FUSS (0)
-�������������������������������������������������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                             @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                             @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 

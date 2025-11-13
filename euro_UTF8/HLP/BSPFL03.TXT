@@ -1,21 +1,21 @@
-/*.ta,F02,II. euroSOFT-MEN / 3.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE BS-buerliche Selbstvermarkter                                     บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+/*.ta,F02,II. euroSOFT-MENร / 3.,1
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE BS-bรคuerliche Selbstvermarkter                                     โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 
                                   K O N S T A N T E N
-                                  อออออออออออออออออออ
+                                  โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-Zustzlich zu den Konstanten die in der BASIS-Auftragsbearbeitung existieren, k”nnen
-Sie im euroSOFT-Programmpaket ฏbuerliche Selbstvermarkterฎ folgende konstanten Werte
+Zusรคtzlich zu den Konstanten die in der BASIS-Auftragsbearbeitung existieren, kรถnnen
+Sie im euroSOFT-Programmpaket ยปbรคuerliche Selbstvermarkterยซ folgende konstanten Werte
 anlegen:
 
 Anlegen Mahntext
-ออออออออออออออออ
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .da (EURODATA,SYP_04),1, Mahntexte.
-.ma (\euro\mask\FIM040),1,Anlegen/ndern Mahntexte.
+.ma (\euro\mask\FIM040),1,Anlegen/รndern Mahntexte.
 .hd (BS,konst),FI,mate-an.
 .ff
 

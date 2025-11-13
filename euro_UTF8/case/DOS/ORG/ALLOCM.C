@@ -1,8 +1,8 @@
  /*****************************************************************
  *   Programmname:    ALLOCM.C                                   *
  *   Aufgabe:         Stellt eine Reihe von C-Funktionen zur     *
- *                    VerfÅgung, die Speicher reservieren, ver-  *
- *                    grî·ern, verkleinern und freigeben.        *
+ *                    Verf√ºgung, die Speicher reservieren, ver-  *
+ *                    gr√∂√üern, verkleinern und freigeben.        *
  *   Memory Model:    SMALL                                      *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC         *
  *   Library:         DOSLIBS.LIB                                *
@@ -13,10 +13,10 @@
  *    wobei options:  COMP=QCL  (falls QuickC verwendet wird)    *
  *                                                               *
  *   Sollen Routinen in anderen Programmen verwendet werden, so  *
- *   mu· beim Linken DOSLIBS.LIB als Library zusÑtzlich angege-  *
+ *   mu√ü beim Linken DOSLIBS.LIB als Library zus√§tzlich angege-  *
  *   ben werden.                                                 *
  *                                                               *
- *   Programmautor:    Heinrich Gîbl                             *
+ *   Programmautor:    Heinrich G√∂bl                             *
  *   Stand:            27.6.88                                   *
  *****************************************************************/
 
@@ -74,13 +74,13 @@ segregs.es = seg;           /* Segment des belegten Speichers */
 
 intdosx (&inregs, &inregs, &segregs);
 
-/* Fehlercode zurÅckgeben */
+/* Fehlercode zur√ºckgeben */
 return (inregs.x.cflag ? (inregs.x.ax & 0x00ff) : 0);
 }
 
 
 /* ---------------------------------------------------------- *
- *  F 4Ah - VerÑndert die Grî·e eines reservierten Speichers  *
+ *  F 4Ah - Ver√§ndert die Gr√∂√üe eines reservierten Speichers  *
  * ---------------------------------------------------------- */
 
 WORD

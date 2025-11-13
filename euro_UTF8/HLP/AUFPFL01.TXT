@@ -1,40 +1,40 @@
-/*.ta,F02,I. WINware AUFTRAG Einfhrung / 1.,1
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware Groáe Auftragsbearbeitung                --- MENš ---                    º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+/*.ta,F02,I. WINware AUFTRAG EinfÃ¼hrung / 1.,1
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware GroÃŸe Auftragsbearbeitung                --- MENÃœ ---                    â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
-.mi (MENU,AUF-L00),1,¯Groáe Auftragsbearbeitung...®.
-.mi (MENU,AUF-L90),1,¯Groáe Auftragsbearbeitung...®.
-.mi (MENU,AUF-L10),1,¯Stammdaten/Konstanten...®.
-.mi (MENU,AUF-L91),1,¯Stammdaten/Konstanten...®
-.mi (MENU,AUF-L12),1,¯Schnell„nderung...®.
-.mi (MENU,AUF-L14),1,¯Preise&Rabatte...®.
-.mi (MENU,AUF-L16),1,¯Umsatz...®.
-.mi (MENU,AUF-L93),1,¯Umsatz...®.
-.mi (MENU,AUF-L18),1,¯Umsatz Vorjahresvergleich...®.
-.mi (MENU,AUF-L20),1,¯Inventur...®.
-.mi (MENU,AUF-L21),1,¯Kartei...®.
-.mi (MENU,AUF-L23),1,¯Barverkauf/Kasse...®.
-.mi (MENU,AUF-L25),1,¯Reparaturverwaltung...®.
-.mi (MENU,AUF-L26),1,¯Paketversand...®.
-.mi (MENU,AUF-L31),1,¯Angebote/Rechnungen...®.
+.mi (MENU,AUF-L00),1,Â»GroÃŸe Auftragsbearbeitung...Â«.
+.mi (MENU,AUF-L90),1,Â»GroÃŸe Auftragsbearbeitung...Â«.
+.mi (MENU,AUF-L10),1,Â»Stammdaten/Konstanten...Â«.
+.mi (MENU,AUF-L91),1,Â»Stammdaten/Konstanten...Â«
+.mi (MENU,AUF-L12),1,Â»SchnellÃ¤nderung...Â«.
+.mi (MENU,AUF-L14),1,Â»Preise&Rabatte...Â«.
+.mi (MENU,AUF-L16),1,Â»Umsatz...Â«.
+.mi (MENU,AUF-L93),1,Â»Umsatz...Â«.
+.mi (MENU,AUF-L18),1,Â»Umsatz Vorjahresvergleich...Â«.
+.mi (MENU,AUF-L20),1,Â»Inventur...Â«.
+.mi (MENU,AUF-L21),1,Â»Kartei...Â«.
+.mi (MENU,AUF-L23),1,Â»Barverkauf/Kasse...Â«.
+.mi (MENU,AUF-L25),1,Â»Reparaturverwaltung...Â«.
+.mi (MENU,AUF-L26),1,Â»Paketversand...Â«.
+.mi (MENU,AUF-L31),1,Â»Angebote/Rechnungen...Â«.
 
 
 .te*/
 
-.mi (MENU,AUF-L00),1,¯Groáe Auftragsbearbeitung®.
-.mi (MENU,AUF-L90),1,¯Groáe Auftragsbearbeitung®.
+.mi (MENU,AUF-L00),1,Â»GroÃŸe AuftragsbearbeitungÂ«.
+.mi (MENU,AUF-L90),1,Â»GroÃŸe AuftragsbearbeitungÂ«.
 
-.me (MENU,AUF-001),1,Hauptmen,Auftrag.
-.me (MENU,AUF-002),1,Hauptmen,Lager.
-.me (MENU,AUF-003),1,Hauptmen,Auswertung.
-.me (MENU,AUF-004),1,Hauptmen,Zusatz.
-.me (MENU,AUF-005),1,Hauptmen,Rev62.
-.me (MENU,AUF-006),1,Hauptmen,Stammdaten.
+.me (MENU,AUF-001),1,HauptmenÃ¼,Auftrag.
+.me (MENU,AUF-002),1,HauptmenÃ¼,Lager.
+.me (MENU,AUF-003),1,HauptmenÃ¼,Auswertung.
+.me (MENU,AUF-004),1,HauptmenÃ¼,Zusatz.
+.me (MENU,AUF-005),1,HauptmenÃ¼,Rev62.
+.me (MENU,AUF-006),1,HauptmenÃ¼,Stammdaten.
 
-.mi (MENU,AUF-L10),1,¯Stammdaten Auftragsbearbeitung®.
-.mi (MENU,AUF-L91),1,¯Stammdaten Auftragsbearbeitung®.
+.mi (MENU,AUF-L10),1,Â»Stammdaten AuftragsbearbeitungÂ«.
+.mi (MENU,AUF-L91),1,Â»Stammdaten AuftragsbearbeitungÂ«.
 
 .me (MENU,AUF-101),1,Stammdaten,Kunden.
 .me (MENU,AUF-102),1,Stammdaten,Lieferanten.
@@ -44,15 +44,15 @@
 .me (MENU,AUF-106),1,Stammdaten,Konstanten.
 
 
-.mi (MENU,AUF-L12),1,¯Schnell„nderung®.
+.mi (MENU,AUF-L12),1,Â»SchnellÃ¤nderungÂ«.
 
-.me (MENU,AUF-121),1,Schnell„nderung,Kunden.
-.me (MENU,AUF-122),1,Schnell„nderung,Artikel.
-.me (MENU,AUF-123),1,Schnell„nderung,Preise.
+.me (MENU,AUF-121),1,SchnellÃ¤nderung,Kunden.
+.me (MENU,AUF-122),1,SchnellÃ¤nderung,Artikel.
+.me (MENU,AUF-123),1,SchnellÃ¤nderung,Preise.
 
 
 
-.mi (MENU,AUF-L14),1,¯Preise&Rabatte®.
+.mi (MENU,AUF-L14),1,Â»Preise&RabatteÂ«.
 
 .me (MENU,AUF-141),1,Preise&Rabatte,Preise.
 .me (MENU,AUF-142),1,Preise&Rabatte,Rabatte.
@@ -61,8 +61,8 @@
 
 
 
-.mi (MENU,AUF-L16),1,¯Umsatz®.
-.mi (MENU,AUF-L93),1,¯Umsatz®.
+.mi (MENU,AUF-L16),1,Â»UmsatzÂ«.
+.mi (MENU,AUF-L93),1,Â»UmsatzÂ«.
 
 .me (MENU,AUF-161),1,Umsatz,Kunden.
 .me (MENU,AUF-162),1,Umsatz,Lieferanten.
@@ -72,7 +72,7 @@
 
 
 
-.mi (MENU,AUF-L18),1,¯Umsatz Vorjahresvergleich®.
+.mi (MENU,AUF-L18),1,Â»Umsatz VorjahresvergleichÂ«.
 
 .me (MENU,AUF-181),1,Umsatz Vorjahresvergleich,Kunden.
 .me (MENU,AUF-182),1,Umsatz Vorjahresvergleich,Lieferanten.
@@ -80,14 +80,14 @@
 .me (MENU,AUF-184),1,Umsatz Vorjahresvergleich,Vertreter.
 
 
-.mi (MENU,AUF-L20),1,¯Inventur®.
+.mi (MENU,AUF-L20),1,Â»InventurÂ«.
 
 .me (MENU,AUF-121),1,Inventur,Inventur.
 
 
 
 
-.mi (MENU,AUF-L21),1,¯Kartei®.
+.mi (MENU,AUF-L21),1,Â»KarteiÂ«.
 
 .me (MENU,AUF-211),1,Umsatz Kartei,Artikel.
 .me (MENU,AUF-212),1,Umsatz Kartei,Kunden.
@@ -97,7 +97,7 @@
 
 
 
-.mi (MENU,AUF-L23),1,¯Barverkauf/Kasse®.
+.mi (MENU,AUF-L23),1,Â»Barverkauf/KasseÂ«.
 
 .me (MENU,AUF-231),1,Barverkauf/Kasse,Barverkauf/Kasse.
 
@@ -105,17 +105,17 @@
 
 
 
-.mi (MENU,AUF-L25),1,¯Reparaturverwaltung®.
+.mi (MENU,AUF-L25),1,Â»ReparaturverwaltungÂ«.
 
 .me (MENU,AUF-251),1,Reparaturverwaltung,Reparaturverwaltung.
 
 
-.mi (MENU,AUF-L26),1,¯Paketversand®.
+.mi (MENU,AUF-L26),1,Â»PaketversandÂ«.
 
 .me (MENU,AUF-261),1,Paketversand,Paketversand.
 
 
-.mi (MENU,AUF-L31),1,¯Bearbeiten®.
+.mi (MENU,AUF-L31),1,Â»BearbeitenÂ«.
 
 .me (MENU,AUF-311),1,Bearbeiten,Bearbeiten.
 .me (MENU,AUF-312),1,Bearbeiten,Druck.
@@ -126,10 +126,10 @@
 .te*/
 
 
-/*.ta,F02,I. WINware AUFTRAG Einfhrung / 1.,1
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware Groáe Auftragsbearbeitung                                                º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+/*.ta,F02,I. WINware AUFTRAG EinfÃ¼hrung / 1.,1
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware GroÃŸe Auftragsbearbeitung                                                â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 
                                    Pflichtenheft
@@ -139,96 +139,96 @@
 
 
 Dieses Pflichtenheft ist eine detailierte Beschreibung des Projektes "Basis-
-Auftrag". Es ist innerhalb eines v”llig neuen Programmierkonzeptes mit Hilfe 
-der euroSOFT-CASEbox erstellt worden und erschlieát sowohl fr den Kunden als
-auch fr den Programmierer vollkommen neue M”glichkeiten.
+Auftrag". Es ist innerhalb eines vÃ¶llig neuen Programmierkonzeptes mit Hilfe 
+der euroSOFT-CASEbox erstellt worden und erschlieÃŸt sowohl fÃ¼r den Kunden als
+auch fÃ¼r den Programmierer vollkommen neue MÃ¶glichkeiten.
 
 Man kann den Produktlebenszyklus in sechs verschiedene Phasen aufteilen:
 
-                               ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-                               ³ 6) nderung ³
-                               ³ 5) Wartung  ³
-                   ÚÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿
-                   ³         4) Test/Debugging           ³
-                   ³  3) Implementierung/Programmierung  ³
-            ÚÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄ¿
-            ³              2) Konzept-Erstellung              ³
-            ³          1) Anforderungsspezifikation           ³
-            ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+                               â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                               â”‚ 6) Ã„nderung â”‚
+                               â”‚ 5) Wartung  â”‚
+                   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                   â”‚         4) Test/Debugging           â”‚
+                   â”‚  3) Implementierung/Programmierung  â”‚
+            â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”
+            â”‚              2) Konzept-Erstellung              â”‚
+            â”‚          1) Anforderungsspezifikation           â”‚
+            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 
-Fr die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
+FÃ¼r die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
 und Konzepterstellung - wird meist eine Textverarbeitung verwendet. Fort-
 schrittlichere Programmierkonzepte setzten hier bereits CASE-Tools ein.
 
 Die beiden nachfolgenden Phasen - Implementierung/Programmierung und Test/De-
 bugging - finden in der Anwendungs-Entwicklungsumgebung statt. Das Problem
-dabei ist nur: Die Brcke zwischen den ersten beiden Planungs-Phasen und den
-n„chsten beiden Phasen der Programmerstellung kann man bei den herk”mmlichen
-Programmerstellungs-Mitteln nicht als tragf„hig bezeichnen.
+dabei ist nur: Die BrÃ¼cke zwischen den ersten beiden Planungs-Phasen und den
+nÃ¤chsten beiden Phasen der Programmerstellung kann man bei den herkÃ¶mmlichen
+Programmerstellungs-Mitteln nicht als tragfÃ¤hig bezeichnen.
 
-Das erarbeitete Konzept muá mit groáem Aufwand in die Anwendungs-Enwicklungs-
-umgebung bernommen werden. Das n„chste Problem taucht auf, wenn sich in den
-Phasen der Implementierung und des Test/Debugging nderungen ergeben. Wenn
-sich diese nderungen auf das Konzept zurckschlagen, mssen diese im Planungs-
+Das erarbeitete Konzept muÃŸ mit groÃŸem Aufwand in die Anwendungs-Enwicklungs-
+umgebung Ã¼bernommen werden. Das nÃ¤chste Problem taucht auf, wenn sich in den
+Phasen der Implementierung und des Test/Debugging Ã„nderungen ergeben. Wenn
+sich diese Ã„nderungen auf das Konzept zurÃ¼ckschlagen, mÃ¼ssen diese im Planungs-
 teil "von Hand nachgefahren" werden. Unterbleibt dies, kommt es zur Inkon-
 sistenz zwischen Konzept und Realisierung, was in der Praxis ein durchaus
-blicher Zustand ist.
+Ã¼blicher Zustand ist.
 
-Diese Inkonsistenz r„cht sich aber sp„testens dann, wenn es um die Wartung der
-Software geht. ndern sich beispielsweise die Anforderungen an das Produkt,
-hat dies zun„chst Auswirkungen auf das Konzept und schlieálich auf die
-Implementierung. Wenn die Brcke zwischen der Planungs- und Anwendungs-
-Entwicklungsumgebung fehlt oder unvollst„ndig ist, wird man direkt die
-Implementierung ver„ndern und das Konzept somit veraltern lassen. Wiederholt
+Diese Inkonsistenz rÃ¤cht sich aber spÃ¤testens dann, wenn es um die Wartung der
+Software geht. Ã„ndern sich beispielsweise die Anforderungen an das Produkt,
+hat dies zunÃ¤chst Auswirkungen auf das Konzept und schlieÃŸlich auf die
+Implementierung. Wenn die BrÃ¼cke zwischen der Planungs- und Anwendungs-
+Entwicklungsumgebung fehlt oder unvollstÃ¤ndig ist, wird man direkt die
+Implementierung verÃ¤ndern und das Konzept somit veraltern lassen. Wiederholt
 sich dieser Vorgang einige Male, kann man das Konzept praktisch wegwerfen.
 
 Die Forderung nach einer integrierten Umgebung, die sowohl die Planungsphasen
-als auch die Entwicklungsphasen umfaát - einschlieálich Wartung -, ist somit
+als auch die Entwicklungsphasen umfaÃŸt - einschlieÃŸlich Wartung -, ist somit
 sehr sinnvoll. Genau dieses Ziel ist mit der euroSOFT-CASEbox verwirklicht.
 .ff
 Der Kern der euroSOFT-CASEbox ist das Datenlexikon. Es gibt also nur eine
-einzige Stelle, an der die Datenfelder fr jede Datei beschrieben werden.
+einzige Stelle, an der die Datenfelder fÃ¼r jede Datei beschrieben werden.
 Der Masken-Compiler, der Formular-Compiler und der Programm-Quellcode greifen
 bereits auf diese Informationen zu.
 
-Doch damit nicht genug. Selbst das Druckprogramm fr dieses Pflichtenheft
-holt sich die Dateiinforamtion w„hrend des Ausdruckes direkt aus dem Daten-
-lexikon. Dasselbe gilt fr Masken-Abbildungen oder Meninformationen.
+Doch damit nicht genug. Selbst das Druckprogramm fÃ¼r dieses Pflichtenheft
+holt sich die Dateiinforamtion wÃ¤hrend des Ausdruckes direkt aus dem Daten-
+lexikon. Dasselbe gilt fÃ¼r Masken-Abbildungen oder MenÃ¼informationen.
 
-Fr den Kunden und fr den Applikations-Programmierer bringt die euroSOFT-
-CASEbox eine Reihe von Vorteilen. Der frhzeitige Einsatz eines professionellen
+FÃ¼r den Kunden und fÃ¼r den Applikations-Programmierer bringt die euroSOFT-
+CASEbox eine Reihe von Vorteilen. Der frÃ¼hzeitige Einsatz eines professionellen
 Werkzeuges bereits in der Planung eines Softwareprojektes reduziert konzeptio-
-nelle Fehler. Durch den "weichen šbergang" zwischen Planungs- und Entwicklungs-
-werkzeug l„át sich das erarbeitete Konzept ohne Einschr„nkungen fr die
-Implementierung verwenden. Hiezu geh”rt beispielsweise, daá die eruoSOFT-
+nelle Fehler. Durch den "weichen Ãœbergang" zwischen Planungs- und Entwicklungs-
+werkzeug lÃ¤ÃŸt sich das erarbeitete Konzept ohne EinschrÃ¤nkungen fÃ¼r die
+Implementierung verwenden. Hiezu gehÃ¶rt beispielsweise, daÃŸ die eruoSOFT-
 CASEbox automatisch die Datenbanken und die Bildschirm-Masken in der im
 Konzept angegebenen Form anlegt.
 
-Stellen sich w„hrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
-Ursprungs sind, stellt die integrierte L”sung sicher, daá notwendige nderungen
-am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daá
-diese Methode die Produktivit„t bei der Software-Entwicklung drastisch steigert.
+Stellen sich wÃ¤hrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
+Ursprungs sind, stellt die integrierte LÃ¶sung sicher, daÃŸ notwendige Ã„nderungen
+am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daÃŸ
+diese Methode die ProduktivitÃ¤t bei der Software-Entwicklung drastisch steigert.
 
 .te*/
 
 
-/*.ta,F02,II. WINware AUFTRAG Men / 1.,1
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  WINware Groáe Auftragsbearbeitung                                                º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+/*.ta,F02,II. WINware AUFTRAG MenÃ¼ / 1.,1
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  WINware GroÃŸe Auftragsbearbeitung                                                â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-Bentzeroberfl„che WINware MENš
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+BenÃ¼tzeroberflÃ¤che WINware MENÃœ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Der Aufruf der jeweiligen Funktionen erfolgt ber das WINware MENš. Dabei sind
+Der Aufruf der jeweiligen Funktionen erfolgt Ã¼ber das WINware MENÃœ. Dabei sind
 die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
 
 
-.mi (MENU,AUF-L00),1,¯Basis Auftragsbearbeitung®.
-.mi (MENU,AUF-L10),1,¯Stammdaten Auftragsbearbeitung®.
+.mi (MENU,AUF-L00),1,Â»Basis AuftragsbearbeitungÂ«.
+.mi (MENU,AUF-L10),1,Â»Stammdaten AuftragsbearbeitungÂ«.
 
-.me (MENU,AUF-106),1,Konstanten,šbersicht.
+.me (MENU,AUF-106),1,Konstanten,Ãœbersicht.
 .te*/
 
 

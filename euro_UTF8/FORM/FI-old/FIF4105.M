@@ -7,32 +7,32 @@
 &DATEI (1) = MASK, FI4135
 
 &KOPF (0)
-^��SALDENLISTE SACHKONTEN / Bestandskonten         Monat: @@@@@@@@@@                          Datum: ##.##.## - SEITE ������ ~SM ~1�_W_MONAT ~1._DRUCK_DAT ~1._SEITE
-������������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- �������������������������������������������������������������������������������������������������������������������������
+^┌┘SALDENLISTE SACHKONTEN / Bestandskonten         Monat: @@@@@@@@@@                          Datum: ##.##.## - SEITE øøøø└┐ ~SM ~1°_W_MONAT ~1._DRUCK_DAT ~1._SEITE
+│┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 Konto-                                  Anfangs-        Monats-        Monats-        Jahres-        Jahres-           End-
-Nummer    Bezeichnung                      Saldo        Zug�nge        Abg�nge        Zug�nge        Abg�nge          Saldo
-���������������������������������������������������������������������������������������������������������������������������
-�
+Nummer    Bezeichnung                      Saldo        Zugänge        Abgänge        Zugänge        Abgänge          Saldo
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 
 &END
 
 
 &RUMPF (0)
-S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
+S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
 &END
 
 &RUMPF (1)
-          �����������������������������������������������������������������������������������������������������������������
-          ** Zwischensumme        ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
+          ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+          ** Zwischensumme        ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
 
 &END
 
 
 &FUSS (0)
-          == Endsumme             ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~1._VOR_SALDO~1._PER_SOLL~1._PER_HABEN~1._JHR_SOLL~1._JHR_HABEN~1._AKT_SALDO
-�������������������������������������������������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                             @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+          == Endsumme             ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~1._VOR_SALDO~1._PER_SOLL~1._PER_HABEN~1._JHR_SOLL~1._JHR_HABEN~1._AKT_SALDO
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                             @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 

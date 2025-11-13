@@ -4,7 +4,7 @@
  *   Memory Model:    SMALL                                   *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC      *
  *   Compilieren:     (Q)CL WS2ASCII.C                        *
- *   Programmautor:   Heinrich Gîbl                           *
+ *   Programmautor:   Heinrich G√∂bl                           *
  *   Stand:           27.6.88                                 *
  **************************************************************/
 
@@ -21,9 +21,9 @@ int c;
 while ((c = g()) != EOF)
     {
     if (c == 0x1B)                      /* Wenn Steuerzeichen */
-        c = g();                /* dann lies nÑchstes Zeichen */
+        c = g();                /* dann lies n√§chstes Zeichen */
     else if (c & 0x80)                /* Falls 8. Bit gesetzt */
-        c &= 0x7F;                          /* dann lîsche es */
+        c &= 0x7F;                          /* dann l√∂sche es */
     if (c == 0x0A)          /* Als Ctrl-Zeichen wird nur noch */
         p(c);              /* das Linefeed-Zeichen akzeptiert */
     else if (!iscntrl (c))

@@ -1,14 +1,14 @@
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º  Programme-Name: BA_SAA.C        Revision: 1.3         (C) 1989/1991    º
-  º  Function      : euroSOFT Basisprogramm                                 º
-  º                                                                         º
-  º  Rev.-Date     : 01.05.1991, Graz           Update: 16.07.1991, Graz    º
-  º  Author        : Peter Mayer                Author: Peter Mayer         º
-  º  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º     Application_Mask()                                                  º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘  Programme-Name: BA_SAA.C        Revision: 1.3         (C) 1989/1991    â•‘
+  â•‘  Function      : euroSOFT Basisprogramm                                 â•‘
+  â•‘                                                                         â•‘
+  â•‘  Rev.-Date     : 01.05.1991, Graz           Update: 16.07.1991, Graz    â•‘
+  â•‘  Author        : Peter Mayer                Author: Peter Mayer         â•‘
+  â•‘  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘     Application_Mask()                                                  â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 GLOBAL
 WORD Application_Mask()
 {
@@ -18,9 +18,9 @@ while(!wFinis_g)                                     /* Haupt-Eingabe-Schl.  */
   {
   Set_Default();
 
-  while(wKeyCode_g!=9999 && !wEscFlag_g)             /* ESC-Taste gedrckt   */
+  while(wKeyCode_g!=9999 && !wEscFlag_g)             /* ESC-Taste gedrÃ¼ckt   */
     {
-    M_KeyCode(apWkbMask_g, wKeyCode_g,               /* Fr Application_Set  */
+    M_KeyCode(apWkbMask_g, wKeyCode_g,               /* FÃ¼r Application_Set  */
       &wNextMaskNumber, &wNextFieldNumber,
       &wNextBlockNumber_g, apTextBox_g,
       apstrRecord_g, awRecLength_g, awBlocks_g );    /* Key-Code auswerten   */
@@ -37,14 +37,14 @@ while(!wFinis_g)                                     /* Haupt-Eingabe-Schl.  */
 
     KeyCode_Handler();
     if(strchr(strSpecialKeyCodes_g,wKeyCode_g ) > 0) /* Wenn Funktionstaste  */
-      Special_Functions();                           /* gedrckt dann aus-   */
+      Special_Functions();                           /* gedrÃ¼ckt dann aus-   */
     else                                             /* werten sonst:        */
       {                                              /* Feldnummer auf Key-  */
-      Field_Classification();                        /* Feld prfen          */
-      if(wRecKey_g>0 && boRecMask_g)                 /* Wenn Stammschlssel  */
+      Field_Classification();                        /* Feld prÃ¼fen          */
+      if(wRecKey_g>0 && boRecMask_g)                 /* Wenn StammschlÃ¼ssel  */
         Record_Key_Handler();                        /* dann abhandeln       */
       else                                           /* sonst: wenn Referenz-*/
-        if(wRefKey_g>0)                              /* schlssel dann such  */
+        if(wRefKey_g>0)                              /* schlÃ¼ssel dann such  */
           Reference_Key_Handler();                   /* Referenzdatei        */
         else                                         /* sonst: andere Felder */
           Other_Fields_Handler();                    /* abhandeln            */
@@ -62,103 +62,103 @@ return(OK);
 
 #pragma optimize("q", on)   /* P-Code ein */
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Special_Functions()                                                     º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine wird angesprungen, wenn vom Anwender eine Sonderfunk-     º
-  º tionstaste bet„tigt wurde, die fr die Applikation eine bestimmte       º
-  º Bedeutung hat.                                                          º
-  º Siehe Konstanten-Deklaration                                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Special_Functions()                                                     â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine wird angesprungen, wenn vom Anwender eine Sonderfunk-     â•‘
+  â•‘ tionstaste betÃ¤tigt wurde, die fÃ¼r die Applikation eine bestimmte       â•‘
+  â•‘ Bedeutung hat.                                                          â•‘
+  â•‘ Siehe Konstanten-Deklaration                                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Field_Classification()                                                  º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Field_Classification() teilt das vom Anwender gerade verlassene Feld in º
-  º eine der Kategorien "Schlssel zum Stammsatz", "Schlsselfeld mit Ver-  º
-  º weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     º
-  º Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  º
-  º auf den Primarkey in der Reference-Datei beziehen, so muá dies in der   º
-  º Sub-Funktion i_Field_Classification nachgetragen werden.                º
-  º Auch bei scrollbaren Zeilen im Maskentyp 1 muáe bei einem Verweis auf   º
-  º Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Field_Classification()                                                  â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Field_Classification() teilt das vom Anwender gerade verlassene Feld in â•‘
+  â•‘ eine der Kategorien "SchlÃ¼ssel zum Stammsatz", "SchlÃ¼sselfeld mit Ver-  â•‘
+  â•‘ weis auf eine Referenzdatei" oder "allgemeines Stammdatenfeld" ein.     â•‘
+  â•‘ Soll die Eingabe bei einem Verweis auf eine Reference-Datei sich nicht  â•‘
+  â•‘ auf den Primarkey in der Reference-Datei beziehen, so muÃŸ dies in der   â•‘
+  â•‘ Sub-Funktion i_Field_Classification nachgetragen werden.                â•‘
+  â•‘ Auch bei scrollbaren Zeilen im Maskentyp 1 muÃŸe bei einem Verweis auf   â•‘
+  â•‘ Reference-Dateien der Eintrag in i_Field_Classification() erfolgen.     â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Copy_Selection()                                                        º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Funktion wird nach drcken der [F2]-Taste nach Ausfhrung der     º
-  º Funktion Matchcode_Handler() in der Funktion Special_Funktions() vor    º
-  º der Funktion Reference_Key_Handler() aufgerufen.                        º
-  º Weiters wird die Funktion in der Funktion Field_Classification() und    º
-  º damit ebenfalls vor Reference_Key_Handler() aufgerufen.                 º
-  º Aufgabe:                                                                º
-  º   1) In der Funktion Matchcode_Handler wird nach einem beliebigen       º
-  º      Schlssel in der angebenen Datei gesucht. Unter strSelection_g     º
-  º      wird vom gew„hlten Datensatz der Prim„rkey der Datei zurckgegeben.º
-  º oder: (R-2)                                                             º
-  º   2) In der Funktion Field_Classification() wird nach einem beliebigen  º
-  º      Schlssel in der angebenen Datei gesucht. Unter strSelection_g     º
-  º      wird vom gew„hlten Datensatz der Prim„rkey der Datei zurckgegeben.º
-  º In beiden F„llen kopiert diese Funktion strSelection_g an die Primarkey-º
-  º stelle des Records sowie auf die Varaiblen strKey_Value_g und strNew-   º
-  º string_g.                                                               º
-  º Danach steht der Prim„rkey nach der Wahl fr die Funktion Referenc_Key- º
-  º Handler() an der richtigen Stelle.                                      º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Copy_Selection()                                                        â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Funktion wird nach drÃ¼cken der [F2]-Taste nach AusfÃ¼hrung der     â•‘
+  â•‘ Funktion Matchcode_Handler() in der Funktion Special_Funktions() vor    â•‘
+  â•‘ der Funktion Reference_Key_Handler() aufgerufen.                        â•‘
+  â•‘ Weiters wird die Funktion in der Funktion Field_Classification() und    â•‘
+  â•‘ damit ebenfalls vor Reference_Key_Handler() aufgerufen.                 â•‘
+  â•‘ Aufgabe:                                                                â•‘
+  â•‘   1) In der Funktion Matchcode_Handler wird nach einem beliebigen       â•‘
+  â•‘      SchlÃ¼ssel in der angebenen Datei gesucht. Unter strSelection_g     â•‘
+  â•‘      wird vom gewÃ¤hlten Datensatz der PrimÃ¤rkey der Datei zurÃ¼ckgegeben.â•‘
+  â•‘ oder: (R-2)                                                             â•‘
+  â•‘   2) In der Funktion Field_Classification() wird nach einem beliebigen  â•‘
+  â•‘      SchlÃ¼ssel in der angebenen Datei gesucht. Unter strSelection_g     â•‘
+  â•‘      wird vom gewÃ¤hlten Datensatz der PrimÃ¤rkey der Datei zurÃ¼ckgegeben.â•‘
+  â•‘ In beiden FÃ¤llen kopiert diese Funktion strSelection_g an die Primarkey-â•‘
+  â•‘ stelle des Records sowie auf die Varaiblen strKey_Value_g und strNew-   â•‘
+  â•‘ string_g.                                                               â•‘
+  â•‘ Danach steht der PrimÃ¤rkey nach der Wahl fÃ¼r die Funktion Referenc_Key- â•‘
+  â•‘ Handler() an der richtigen Stelle.                                      â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Record_Key_Handler()                                                    º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine behandelt die Eingaben, die in einem Schlsselfeld        º
-  º zum Stammsatz gemacht wurden.                                           º
-  º Hier wird berprft, ob der Schlssel Gltigkeit besitzt und in         º
-  º der Stammdaten-Datei vorhanden ist. Danach wird entschieden, ob ein     º
-  º bestehender Satz mutiert werden soll, oder ob ein neuer Satz ange-      º
-  º legt werden soll.                                                       º
-  º Bei Leereingaben ohne aktuellen Datensatz wird in das n„chste           º
-  º Schlsselfeld zum Stammdaten-Satz verzweigt.                            º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Record_Key_Handler()                                                    â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine behandelt die Eingaben, die in einem SchlÃ¼sselfeld        â•‘
+  â•‘ zum Stammsatz gemacht wurden.                                           â•‘
+  â•‘ Hier wird Ã¼berprÃ¼ft, ob der SchlÃ¼ssel GÃ¼ltigkeit besitzt und in         â•‘
+  â•‘ der Stammdaten-Datei vorhanden ist. Danach wird entschieden, ob ein     â•‘
+  â•‘ bestehender Satz mutiert werden soll, oder ob ein neuer Satz ange-      â•‘
+  â•‘ legt werden soll.                                                       â•‘
+  â•‘ Bei Leereingaben ohne aktuellen Datensatz wird in das nÃ¤chste           â•‘
+  â•‘ SchlÃ¼sselfeld zum Stammdaten-Satz verzweigt.                            â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Primary_KeyHandler()                                                    º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Funktion wird aufgerufen, wenn das Prim„rkeyfeld verlassen wird.  º
-  º Der Primary_KeyHandler wird auch in einem Rec-Schlsselfeld nach dem    º
-  º Drcken der [F2]-Taste angesprungen.                                    º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Primary_KeyHandler()                                                    â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Funktion wird aufgerufen, wenn das PrimÃ¤rkeyfeld verlassen wird.  â•‘
+  â•‘ Der Primary_KeyHandler wird auch in einem Rec-SchlÃ¼sselfeld nach dem    â•‘
+  â•‘ DrÃ¼cken der [F2]-Taste angesprungen.                                    â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Reference_Key_Handler()                                                 º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Reference_Key_Handler() behandelt die Eingaben, die in einem Schlssel- º
-  º feld auf eine Referenz-Datei gemacht wurden.                            º
-  º Es werden Referenz-Zugriffe (sofern erwnscht) auf die jeweiligen       º
-  º Dateien vorgenommen.                                                    º
-  º Der laut Field_Classification() oder Matchcode_Handler gew„hlte Prim„r- º
-  º key in der Reference-Datei wird geladen.                                º
-  º In i_Reference_Key_Handler() k”nnen etwaige Feldzuordnungen nachgetra-  º
-  º gen werden.                                                             º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Reference_Key_Handler()                                                 â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Reference_Key_Handler() behandelt die Eingaben, die in einem SchlÃ¼ssel- â•‘
+  â•‘ feld auf eine Referenz-Datei gemacht wurden.                            â•‘
+  â•‘ Es werden Referenz-Zugriffe (sofern erwÃ¼nscht) auf die jeweiligen       â•‘
+  â•‘ Dateien vorgenommen.                                                    â•‘
+  â•‘ Der laut Field_Classification() oder Matchcode_Handler gewÃ¤hlte PrimÃ¤r- â•‘
+  â•‘ key in der Reference-Datei wird geladen.                                â•‘
+  â•‘ In i_Reference_Key_Handler() kÃ¶nnen etwaige Feldzuordnungen nachgetra-  â•‘
+  â•‘ gen werden.                                                             â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Next_Key_Field ()                                                       º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Diese Routine setzt den Feld-Cursor auf das n„chste Schlsselfeld.      º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Next_Key_Field ()                                                       â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Diese Routine setzt den Feld-Cursor auf das nÃ¤chste SchlÃ¼sselfeld.      â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º Matchcode_Handler()                                                     º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    º
-  º Fr scrollbare Zeilen im Maskentyp 1 und fr spezielle Wnsche bei      º
-  º Zugriffen auf Referenz-Dateien k”nnen in i_Matchcode_Handler() Eintr„ge º
-  º erfolgen.                                                               º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ Matchcode_Handler()                                                     â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Matchcode_Handler() behandelt die Matchcode-Anfragen zu Key-Feldern.    â•‘
+  â•‘ FÃ¼r scrollbare Zeilen im Maskentyp 1 und fÃ¼r spezielle WÃ¼nsche bei      â•‘
+  â•‘ Zugriffen auf Referenz-Dateien kÃ¶nnen in i_Matchcode_Handler() EintrÃ¤ge â•‘
+  â•‘ erfolgen.                                                               â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/
 
-/*ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  º i_Read_Default()                                                        º
-  º ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ º
-  º Legt fest, ob beim Aufruf eines Programmes bereits ein Datensatz gele-  º
-  º sen werden soll.                                                        º
-  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼*/
+/*â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  â•‘ i_Read_Default()                                                        â•‘
+  â•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â•‘
+  â•‘ Legt fest, ob beim Aufruf eines Programmes bereits ein Datensatz gele-  â•‘
+  â•‘ sen werden soll.                                                        â•‘
+  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•*/

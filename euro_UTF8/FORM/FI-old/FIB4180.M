@@ -1,16 +1,16 @@
-��BILANZ-AUSWERTUNG                                                                     Datum: 04.09.90 - SEITE 0001��
-�������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (01) ...euroSOFT-WARE - 8010 Graz                                                          Teilnehmer: 002��
- ��������������������������������������������������������������������������������������������������������������������
+┌┘BILANZ-AUSWERTUNG                                                                     Datum: 04.09.90 - SEITE 0001└┐
+│┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (01) ...euroSOFT-WARE - 8010 Graz                                                          Teilnehmer: 002├┘
+ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 Text                                         Wert          Gruppen-Summe       Zwischen-Summe            Gesamt-Summe
-����������������������������������������������������������������������������������������������������������������������
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 A K T I V A
                                         
-  I. ANLAGEVERM�GEN
+  I. ANLAGEVERMÖGEN
     Inventar                       ###.###.###,##
                                                           ###.###.###,##
 
-  II. UMLAUFVERM�GEN
+  II. UMLAUFVERMÖGEN
     Kundenforderungen              ###.###.###,##
     Kassenbestand                  ###.###.###,##
     Bankguthaben                   ###.###.###,##
@@ -25,6 +25,6 @@ A K T I V A
 
 
  
-��������������������������������������������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: euroSOFT Graz                                                              (c) 1990 euroSOFT��
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: euroSOFT Graz                                                              (c) 1990 euroSOFT┌┘
 

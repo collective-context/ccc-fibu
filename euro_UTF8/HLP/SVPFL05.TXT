@@ -1,14 +1,14 @@
 /*.ta,F02,III. euroSOFT-PROGRAMMbeschreibung / 4.,26
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE UB-Urlaub am Bauernhof                                             บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE UB-Urlaub am Bauernhof                                             โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-Anlegen/ndern Kunden/Anfrager
-ออออออออออออออออออออออออออออออ
+Anlegen/รndern Kunden/Anfrager
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-.da (EURODATA,ST1100),1, Anlegen/ndern Kunden.
-.da (EURODATA,UB1110),1, Anlegen/ndern Kunden/Anfrager.
-.ma (\euro\mask\UBM110),1, Anlegen/ndern Kunden/Anfrager.
+.da (EURODATA,ST1100),1, Anlegen/รndern Kunden.
+.da (EURODATA,UB1110),1, Anlegen/รndern Kunden/Anfrager.
+.ma (\euro\mask\UBM110),1, Anlegen/รndern Kunden/Anfrager.
 .ma (\euro\mask\UBM111),1, Kunden Daten.
 .hd (UB,stamm),UB,kunden.
 .ma (\euro\mask\UBM4111),1, Druck Kunden-Daten.

@@ -8,23 +8,23 @@
 &DATEI (1) = MASK, ST4140
 
 &KOPF (0)
-^��LISTE ARTIKEL NACH BEZEICHNUNG                                                          Datum: @@@@@@@@ - SEITE ������ ~SM ~1._DATUM_AKT ~1._SEITE
-���������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                          Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
-�����������������������������������������������������������������������������������������������������������������������
+^┌┘LISTE ARTIKEL NACH BEZEICHNUNG                                                          Datum: @@@@@@@@ - SEITE øøøø└┐ ~SM ~1._DATUM_AKT ~1._SEITE
+│┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                          Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 Artikel-Kurzbezeichnung        Nummer     Lagerort AGR EH-Menge  EH-Preis @@@@@@@@@@@@ @@@@@@@@@@@@ @@@@@@@@@@@@    MWST ~1._FELD_1 ~1._FELD_2 ~1._FELD_3
-������������������������������������������������������������������������������������������������������������������������
-�
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 
 &END
 
 &RUMPF (0)
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@ @@@@@@ ### @@@@@@@@@@ @@@@@@@ #.###.###,�� #.###.###,�� #.###.###,��  #�.��% \
-~0.MATCH_CODE ~0.ARTNR ~0.LAGERORT ~0.ARTGR ~0.MENGENEINH ~0�PREINHKZ ~0.VKPR1 ~0.VKPR2 ~0.VKPR3 ~0�MWST
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@ @@@@@@ ### @@@@@@@@@@ @@@@@@@ #.###.###,øø #.###.###,øø #.###.###,øø  #ø.øø% \
+~0.MATCH_CODE ~0.ARTNR ~0.LAGERORT ~0.ARTGR ~0.MENGENEINH ~0°PREINHKZ ~0.VKPR1 ~0.VKPR2 ~0.VKPR3 ~0°MWST
 &END
 
 &FUSS (0)
-����������������������������������������������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                          @@@@@@@@@@@@@@@@@�� ^  ~1._NUTZUNG  ~1._COPYRIGHT ~NO
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                          @@@@@@@@@@@@@@@@@┌┘ ^  ~1._NUTZUNG  ~1._COPYRIGHT ~NO
 &END
 
 
@@ -36,22 +36,22 @@ Artikel-Kurzbezeichnung        Nummer     Lagerort AGR EH-Menge  EH-Preis @@@@@@
 &DATEI (2) = MASK, SYP_15
 
 &KOPF (0)
-^��LISTE ARTIKEL NACH KURZBEZEICHNUNG                                                      Datum: @@@@@@@@ - SEITE ������ ~SM ~1._DATUM_AKT ~1._SEITE
-���������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                          Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
-�����������������������������������������������������������������������������������������������������������������������
+^┌┘LISTE ARTIKEL NACH KURZBEZEICHNUNG                                                      Datum: @@@@@@@@ - SEITE øøøø└┐ ~SM ~1._DATUM_AKT ~1._SEITE
+│┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                          Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 Kurzbezeichnung                Artikel-Nr  Lagerort AGR  ME  Preis-Eh.    MwSt.   @@@@@@@@@@@@ @@@@@@@@@@@@ @@@@@@@@@@@@ ~1._FELD_1 ~1._FELD_2 ~1._FELD_3
-������������������������������������������������������������������������������������������������������������������������
-�
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 
 &END
 
 &RUMPF (0)
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@ @@@@@@ @@@ @@@@ @@@@@@@@@@@@ @@@@@@@ #.###.###,�� #.###.###,�� #.###.###,��  ~0.MATCH_CODE ~0.ARTNR ~0.LAGERORT ~0.ARTGR ~0.MENGENEINH ~1._PREINHKZ ~1._MWST ~0.VKPR1 ~0.VKPR2 ~0.VKPR3
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@ @@@@@@ @@@ @@@@ @@@@@@@@@@@@ @@@@@@@ #.###.###,øø #.###.###,øø #.###.###,øø  ~0.MATCH_CODE ~0.ARTNR ~0.LAGERORT ~0.ARTGR ~0.MENGENEINH ~1._PREINHKZ ~1._MWST ~0.VKPR1 ~0.VKPR2 ~0.VKPR3
 &END
 
 &FUSS (0)
-����������������������������������������������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                          @@@@@@@@@@@@@@@@@�� ^  ~1._NUTZUNG  ~1._COPYRIGHT ~NO
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                          @@@@@@@@@@@@@@@@@┌┘ ^  ~1._NUTZUNG  ~1._COPYRIGHT ~NO
 &END
 
 

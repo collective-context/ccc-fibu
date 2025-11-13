@@ -10,7 +10,7 @@
 0005.0  ~0.LIEFNR                 \\A.Lieferanten-Nummer
 0001.0  ~0.MWST                   \\A.MwSt-Satz (1-2)
 0003.2  ~0.ARTGR                  \\A.Artikel-Gruppe (001-999)
-0002.2  ~0.ERL™SCO                \\A.Erl”scode (00-99)
+0002.2  ~0.ERLÃ–SCO                \\A.ErlÃ¶scode (00-99)
 0004.0  ~0.MENGENEINH             \\A.Mengeneinheit
 0001.0  ~0.PREINHKZ               \\A.Kennz. Preiseinheit (0-3)
 0001.0  ~0.PRRECHKZ               \\A.Kennz. Preisrechnung (0-3)
@@ -26,13 +26,13 @@
 0013.5  ~0.VERBRAUCHK             \\N.Verbrauch kumuliert
 0013.5  ~0.UMSATZP                \\N.Umsatz Periode
 0013.5  ~0.UMSATZK                \\N.Umsatz kumuliert
-0013.5  ~0.ROHERLP                \\N.Roherl”s Periode
-0013.5  ~0.ROHERLK                \\N.Roherl”s kumuliert
+0013.5  ~0.ROHERLP                \\N.RoherlÃ¶s Periode
+0013.5  ~0.ROHERLK                \\N.RoherlÃ¶s kumuliert
 0011.5  ~0.INVEN_AKT              \\N.Bestand aktuell
 0001.0  ~0.                       \\A.Filler
 0001.0  ~0.ARTTEXTKZ              \\A.Kennzeichen Artikeltexte
 0010.5  ~0.SONDERPR               \\N.Sonderpreis
-0009.7  ~0.GšLTBIS=               \\N.Gltig bis
+0009.7  ~0.GÃœLTBIS=               \\N.GÃ¼ltig bis
 0005.7  ~0.LETZLIEFAM=            \\N.Datum letzte Lieferung
 0010.5  ~0.VKPR1                  \\N.Verkaufspreis 1
 0011.5  ~0.VKPR2                  \\N.Verkaufspreis 2
@@ -45,7 +45,7 @@
 0006.0  ~0.PLANNR                 \\A.Arbeitsplannummer
 0002.2  ~0.PRODUKTKW              \\A.Produktionszeit in Wochen
 0001.0  ~0.                       \\A.Filler
-0005.0  ~0.STKLISTNR              \\A.Stcklisten-Nummer
+0005.0  ~0.STKLISTNR              \\A.StÃ¼cklisten-Nummer
 0001.0  ~0.BESTKZ                 \\A.Bestellkennzeichen (01)
 0008.5  ~0.GEBINDE                \\A.Gebinde
 0006.5  ~0.MINDEST_BE             \\A.Mindestbestand
@@ -57,29 +57,29 @@
 0000.0  ~1.AUSLANDSKU=n
 0000.0  ~1.FI_KU_KTO=~0.KUNDE
 
- ÄÄ EOF, Nach einem End-Of-File Zeichen gilt alles als Remark!
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ DATEINUMMER  FIMASK.043  Dateiname                                           ³
-³ ÀÄÄÄÄÄÄÄÄÙ  ÀÄÄÄÄÄÄÄÙ  ÀÄÄÄÄÄÄÙ                                           ³
-³ &DATEI (0) = FIMASK, ST1100 ÄÄ¿                                              ³
-³ &DATEI (1) = FIMASK, ST1110   Ã euroSOFT ¯ZIELDATEIEN®                      ³
-³ &DATEI (2) = FIMASK, FI1110 ÄÄÙ                                              ³
-³                                                                              ³
-³ &FELDER ÄÄÄ Damit beginnt die Beschreibung der ¯QUELLDATEI®                 ³
-³ 0005.0  ~0.KUNDE                  \\Kundennummer ¿                           ³
-³ 0028.0  ~0.NAME                   \\Name1 ÄÄÄÄÄÄÄÁ Remarkzeichen: \\        ³
-³ 0028.0  ~0.ZUSATZ ÄÄÄÄ Dateinummer und Feldname in ST1100 (FIMASK.043).     ³
-³ 0001.0  ~1.PREIS_GR=1 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿                      ³
-³ 0006.0  ~1.KONDITION=10-30-030                        ³                      ³
-³ 0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren" Ã Defaultwerte        ³
-³ 0008.M  ~0.GEBURT_1=s                                 ³  s: Systemdatum      ³
-³ 0013.D  ~1.UMSATZ_PER=123.5 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ                      ³
-³ 0004.0  ~0. ÄÄ¿ Offset der Quelldatei hochz„hlen.                           ³
-³ 0003.0  ~0. ÄÄÙ                                                              ³
-³ 0000.0  ~1.FI_KU_KTO=~0.KUNDE ÄÄÄÄÄ¿                                         ³
-³ 0000.0  ~2.KU_KONTO=~0.KUNDE       Ã Kopiert Inhalt des 2. aufs 1. Feld.    ³
-³ 0000.0  ~2.KURZ_BEZ=~0.MATCH_CODE ÄÙ                                         ³
-³         ÄÄÄ Dateinummer der euroSOFT Zieldatei.                            ³
-³ ÀÄÄ Feldl„nge z„hlt Offset der Quelldatei hoch. Ab dem Punkt ein Remark.     ³
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ â”€â”€ EOF, Nach einem End-Of-File Zeichen gilt alles als Remark!
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ DATEINUMMER  FIMASK.043  Dateiname                                           â”‚
+â”‚ â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”˜                                           â”‚
+â”‚ &DATEI (0) = FIMASK, ST1100 â”€â”€â”                                              â”‚
+â”‚ &DATEI (1) = FIMASK, ST1110   â”œ euroSOFT Â»ZIELDATEIENÂ«                      â”‚
+â”‚ &DATEI (2) = FIMASK, FI1110 â”€â”€â”˜                                              â”‚
+â”‚                                                                              â”‚
+â”‚ &FELDER â”€â”€â”€ Damit beginnt die Beschreibung der Â»QUELLDATEIÂ«                 â”‚
+â”‚ 0005.0  ~0.KUNDE                  \\Kundennummer â”                           â”‚
+â”‚ 0028.0  ~0.NAME                   \\Name1 â”€â”€â”€â”€â”€â”€â”€â”´ Remarkzeichen: \\        â”‚
+â”‚ 0028.0  ~0.ZUSATZ â”€â”€â”€â”€ Dateinummer und Feldname in ST1100 (FIMASK.043).     â”‚
+â”‚ 0001.0  ~1.PREIS_GR=1 â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                      â”‚
+â”‚ 0006.0  ~1.KONDITION=10-30-030                        â”‚                      â”‚
+â”‚ 0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren" â”œ Defaultwerte        â”‚
+â”‚ 0008.M  ~0.GEBURT_1=s                                 â”‚  s: Systemdatum      â”‚
+â”‚ 0013.D  ~1.UMSATZ_PER=123.5 â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                      â”‚
+â”‚ 0004.0  ~0. â”€â”€â” Offset der Quelldatei hochzÃ¤hlen.                           â”‚
+â”‚ 0003.0  ~0. â”€â”€â”˜                                                              â”‚
+â”‚ 0000.0  ~1.FI_KU_KTO=~0.KUNDE â”€â”€â”€â”€â”€â”                                         â”‚
+â”‚ 0000.0  ~2.KU_KONTO=~0.KUNDE       â”œ Kopiert Inhalt des 2. aufs 1. Feld.    â”‚
+â”‚ 0000.0  ~2.KURZ_BEZ=~0.MATCH_CODE â”€â”˜                                         â”‚
+â”‚         â”€â”€â”€ Dateinummer der euroSOFT Zieldatei.                            â”‚
+â”‚ â””â”€â”€ FeldlÃ¤nge zÃ¤hlt Offset der Quelldatei hoch. Ab dem Punkt ein Remark.     â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 

@@ -9,19 +9,19 @@
 &DATEI (3) = MASK, VS1110
 
 &KOPF (0)
-^��ADRESS-LISTE KUNDEN                                 Datum: @@@@@@@@ - SEITE ������ ~NO ~1._DATUM_AKT ~1._SEITE
-���������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ����������������������������������������������������������������������������������
+^┌┘ADRESS-LISTE KUNDEN                                 Datum: @@@@@@@@ - SEITE øøøø└┐ ~NO ~1._DATUM_AKT ~1._SEITE
+│┌────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └────────────────────────────────────────────────────────────────────────────────┘
 Kundennummer Anrede                              Kurzbezeichnung
-             Name                                Stra�e
+             Name                                Straße
              Zusatz                              Land - PLZ/Ort
-������������������������������������������������������������������������������������
+────────────────────────────────────────────────────────────────────────────────────
 &END
 
 
 &RUMPF (0)
-�
+ 
 @@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       ~0.KUNDE  ~0.ANREDE  ~0.MATCH_CODE
              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       ~0.NAME   ~0.STRASSE
              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       ~0.ZUSATZ ~0.LAND    ~0.PLZ_ORT
@@ -29,8 +29,8 @@ Kundennummer Anrede                              Kurzbezeichnung
 
 
 &FUSS (0)
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 

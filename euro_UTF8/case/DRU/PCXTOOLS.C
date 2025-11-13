@@ -2,32 +2,32 @@
 
                      PCX - Dateien auf einem EPSON LX/FX
 
-                          (c) 1992/93 by Markus MÅck
+                          (c) 1992/93 by Markus M√ºck
 
 -----------------------------------------------------------------------------*/
 
 BYTE     PrinterType   = 0;               /* Art des Bewegungscodes: PT_HP oder PT_ESC.. */
-CHAR     *NoLineSpace  = NULL;            /* [EPSON] Code fÅr Zeilenabstand 7/72 ''      */
-CHAR     *NewLine      = NULL;            /* [EPSON] Code fÅr neue Zeile                 */
-CHAR     *GraphicOn    = NULL;            /* [EPSON,HP] Code fÅr 'Graphikmodus ein'      */
-CHAR     *LineSpace    = NULL;            /* [EPSON] Code fÅr normalen Zeilenabstand     */
-WORD     Resolution    = 0;               /* [EPSON,HP] Horizontale Auflîsung der Graphik*/
-WORD     YResolution   = 0;               /* [EPSON,HP] Vertikale Auflîsung der Grafik   */
-CHAR     *PreDPIRes    = NULL;            /* [HP] Code VOR Druckauflîsung in DPI         */
-CHAR     *AftDPIRes    = NULL;            /* [HP] Code NACH Druckauflîsung in DPI        */
+CHAR     *NoLineSpace  = NULL;            /* [EPSON] Code f√ºr Zeilenabstand 7/72 ''      */
+CHAR     *NewLine      = NULL;            /* [EPSON] Code f√ºr neue Zeile                 */
+CHAR     *GraphicOn    = NULL;            /* [EPSON,HP] Code f√ºr 'Graphikmodus ein'      */
+CHAR     *LineSpace    = NULL;            /* [EPSON] Code f√ºr normalen Zeilenabstand     */
+WORD     Resolution    = 0;               /* [EPSON,HP] Horizontale Aufl√∂sung der Graphik*/
+WORD     YResolution   = 0;               /* [EPSON,HP] Vertikale Aufl√∂sung der Grafik   */
+CHAR     *PreDPIRes    = NULL;            /* [HP] Code VOR Druckaufl√∂sung in DPI         */
+CHAR     *AftDPIRes    = NULL;            /* [HP] Code NACH Druckaufl√∂sung in DPI        */
 CHAR     *PreBytes     = NULL;            /* [HP] Code VOR Anzahl Graphicbytes           */
 CHAR     *AftBytes     = NULL;            /* [HP] Code NACH Anzahl Graphicbytes          */
-CHAR     *CodeEnd      = NULL;            /* [HP] Code fÅr Graphic-Ende                  */
+CHAR     *CodeEnd      = NULL;            /* [HP] Code f√ºr Graphic-Ende                  */
 BYTE     *Zeile[25][5];                   /* Zeiger auf Zeile 1 bis 8/Plane 1-4          */
-WORD     AuflosungHor;                    /* Horizontale Grî·e eines Bildes in Pixel     */
-WORD     AuflosungVer;                    /* Vertikale Grî·e eines Bildes in Pixel       */
-FILE     *FileHandle;                     /* Handle fÅr Bilddatei                        */
+WORD     AuflosungHor;                    /* Horizontale Gr√∂√üe eines Bildes in Pixel     */
+WORD     AuflosungVer;                    /* Vertikale Gr√∂√üe eines Bildes in Pixel       */
+FILE     *FileHandle;                     /* Handle f√ºr Bilddatei                        */
 BYTE     Planes;                          /* Anzahl Planes                               */
 BYTE     BitProPixel;                     /* Anzahl Bits pro Pixel (EGA: 1, CGA: 2)      */
-BYTE     PCXAnzahl;                       /* Variable fÅr interne Verwendung             */
-BYTE     PCXWert;                         /* Variable fÅr interne Verwendung             */
+BYTE     PCXAnzahl;                       /* Variable f√ºr interne Verwendung             */
+BYTE     PCXWert;                         /* Variable f√ºr interne Verwendung             */
 
-/* Druckmuster fÅr PCX-Graphiken, Farbe 1 bis 16 */
+/* Druckmuster f√ºr PCX-Graphiken, Farbe 1 bis 16 */
 
 BYTE     DruckMuster[16][8]  = { { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF },
                                  { 0x81, 0x42, 0x24, 0x10, 0x08, 0x24, 0x42, 0x81 },
@@ -52,10 +52,10 @@ BYTE     DruckMuster[16][8]  = { { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xF
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : keine                                                       *
+ *   R√ºckgabe : keine                                                       *
  *                                                                          *
- *   Beschreibung: Diese Funktion lîscht alle im Speicher befindlichen      *
- *                 druckerspezifischen Daten, welche Åber eine Druckerdatei *
+ *   Beschreibung: Diese Funktion l√∂scht alle im Speicher befindlichen      *
+ *                 druckerspezifischen Daten, welche √ºber eine Druckerdatei *
  *                 eingeladen wurden.                                       *
  ****************************************************************************/
 
@@ -119,10 +119,10 @@ VOID ptClearLoadedPCXData( VOID )
  *                                                                          *
  *   Parameter: SWORD  : FehlerNummer                                       *
  *                                                                          *
- *   RÅckgabe : SWORD  : Obige Fehlernummer                                 *
+ *   R√ºckgabe : SWORD  : Obige Fehlernummer                                 *
  *                                                                          *
- *   Beschreibung: Diese Funktion schlie·t eine geîffnete PCX/PCC-Datei und *
- *                 gibt die Åbergebene Fehlernummer wieder zurÅck.          *
+ *   Beschreibung: Diese Funktion schlie√üt eine ge√∂ffnete PCX/PCC-Datei und *
+ *                 gibt die √ºbergebene Fehlernummer wieder zur√ºck.          *
  *                 Verwendungsbeispiel:                                     *
  *                 if ( fputc( 'c', Handle ) == EOF )                       *
  *                      return( CloseFileAndError ( PT_FILEERROR ) );       *
@@ -139,7 +139,7 @@ VOID ptClearLoadedPCXData( VOID )
  *                                                                          *
  *   Parameter: CHAR*  : Zeiger auf Sequenzbeginn                           *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion sendet eine Druckersequenz.               *
  ****************************************************************************/
@@ -160,9 +160,9 @@ SWORD  ptSendPCXSequenz ( CHAR *Start )
  *                                                                          *
  *   Parameter: CHAR*  : Zeiger auf Dateiname einer PCX- oder PCC-Datei     *
  *                                                                          *
- *   RÅckgabe : SWORD  : File-Fehlermeldungen oder PT_OK                    *
+ *   R√ºckgabe : SWORD  : File-Fehlermeldungen oder PT_OK                    *
  *                                                                          *
- *   Beschreibung: Diese Funktion îfnnet eine PCX- oder PCC-Datei und liest *
+ *   Beschreibung: Diese Funktion √∂fnnet eine PCX- oder PCC-Datei und liest *
  *                 den Kopf ein.                                             *
  ****************************************************************************/
 
@@ -239,9 +239,9 @@ SWORD ptOpenFile ( CHAR *DateiName )
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : SWORD  : Speicher -Fehlermeldungen oder PT_OK               *
+ *   R√ºckgabe : SWORD  : Speicher -Fehlermeldungen oder PT_OK               *
  *                                                                          *
- *   Beschreibung: Diese Funktion versucht, Speicher fÅr die Konvertierung  *
+ *   Beschreibung: Diese Funktion versucht, Speicher f√ºr die Konvertierung  *
  *                 PCX->Drucker zu belegen.                                 *
  ****************************************************************************/
 
@@ -279,9 +279,9 @@ SWORD ptGetMemory( VOID )
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : kein                                                        *
+ *   R√ºckgabe : kein                                                        *
  *                                                                          *
- *   Beschreibung: Diese Funktion schlie·t alle von dieser Unit geîffneten  *
+ *   Beschreibung: Diese Funktion schlie√üt alle von dieser Unit ge√∂ffneten  *
  *                 Dateien und gibt den Speicher wieder frei.               *
  ****************************************************************************/
 
@@ -309,13 +309,13 @@ VOID  ptCloseFilesAndFreeMemory( VOID )
 /****************************************************************************
  *   Funktionsname: ptLoadZeilen                                            *
  *                                                                          *
- *   Parameter: MaxZeilen = Zum kÅnstlichen Dehnen von Bildern ( gibt die   *
+ *   Parameter: MaxZeilen = Zum k√ºnstlichen Dehnen von Bildern ( gibt die   *
  *              Anzahl Linien an, die von Disk gelesen werden und mit       *
- *              denen 24 Zeilen aufgefÅllt werden ).                        *
+ *              denen 24 Zeilen aufgef√ºllt werden ).                        *
  *                                                                          *
- *   RÅckgabe : File-Fehlermeldungen oder PT_OK                             *
+ *   R√ºckgabe : File-Fehlermeldungen oder PT_OK                             *
  *                                                                          *
- *   Beschreibung: Diese Funktion lÑdt die nÑchsten  Zeilen Graphik von     *
+ *   Beschreibung: Diese Funktion l√§dt die n√§chsten  Zeilen Graphik von     *
  *                 Disk.                                                    *
  ****************************************************************************/
 
@@ -432,15 +432,15 @@ SWORD ptLoadZeilen( WORD MaxZeilen )
                  {
                        if ( PCXAnzahl == 0 )
                        {
-                            /* Auch EOF = 0x1A mu· mîglich sein, daher */
-                            /* keine öberprÅfung !                     */
+                            /* Auch EOF = 0x1A mu√ü m√∂glich sein, daher */
+                            /* keine √úberpr√ºfung !                     */
 
                             Zeichen = fgetc( FileHandle );
 
                             if ( ( Zeichen & 0x00C0 ) == 0x00C0 )
                             {
-                                 /* Auch EOF = 0x1A mu· mîglich sein, daher */
-                                 /* keine öberprÅfung !                     */
+                                 /* Auch EOF = 0x1A mu√ü m√∂glich sein, daher */
+                                 /* keine √úberpr√ºfung !                     */
 
                                  Zeichen2 = fgetc( FileHandle );
 
@@ -488,9 +488,9 @@ SWORD ptLoadZeilen( WORD MaxZeilen )
  *   Parameter: AktSpalte : Horizontale Pixelposition in Pixel              *
  *              SktZeile  : Vertikale Spaltenposition ( 1-8 )               *
  *                                                                          *
- *   RÅckgabe : Pixelfarbwert oder Fehlermeldung                            *
+ *   R√ºckgabe : Pixelfarbwert oder Fehlermeldung                            *
  *                                                                          *
- *   Beschreibung: Diese Funktion lÑdt die Farbe eines Pixels aus einer der *
+ *   Beschreibung: Diese Funktion l√§dt die Farbe eines Pixels aus einer der *
  *                 eingelesenen Zeilen                                      *
  ****************************************************************************/
 
@@ -502,7 +502,7 @@ SWORD ptDetectPixel ( WORD AktSpalte, WORD AktZeile )
          ShiftLeft;
     SWORD HZahl;
 
-      if ( Planes == 1 && BitProPixel == 2 )             /* CGA-Auflîsung, 4-farbig */
+      if ( Planes == 1 && BitProPixel == 2 )             /* CGA-Aufl√∂sung, 4-farbig */
       {
            HorByte   = ( AktSpalte - 1 ) / 4;
            ShiftLeft = ( ( AktSpalte - 1 ) % 4 ) * 2;
@@ -511,7 +511,7 @@ SWORD ptDetectPixel ( WORD AktSpalte, WORD AktZeile )
            return ( PixelByte >> 6 );
       }
       else
-      if ( Planes == 1 && BitProPixel == 1 )             /* CGA-Auflîsung, 2-farbig */
+      if ( Planes == 1 && BitProPixel == 1 )             /* CGA-Aufl√∂sung, 2-farbig */
       {
            HorByte   = ( AktSpalte - 1 ) / 8;
            ShiftLeft = ( AktSpalte - 1 ) % 8;
@@ -520,7 +520,7 @@ SWORD ptDetectPixel ( WORD AktSpalte, WORD AktZeile )
            return ( PixelByte >> 7 );
       }
       else
-      if ( Planes == 4 && BitProPixel == 1 )             /* EGA-Auflîsung, 16-farbig */
+      if ( Planes == 4 && BitProPixel == 1 )             /* EGA-Aufl√∂sung, 16-farbig */
       {
            HorByte   = ( AktSpalte - 1 ) / 8;
            ShiftLeft = ( AktSpalte - 1 ) % 8;
@@ -549,7 +549,7 @@ SWORD ptDetectPixel ( WORD AktSpalte, WORD AktZeile )
  *   Parameter: AktSpalte : Horizontale Pixelposition in Pixel              *
  *              AktZeile  : Vertikale Byte-Position ( 1-3 )                 *
  *                                                                          *
- *   RÅckgabe : Fehlermeldung oder PT_OK                                    *
+ *   R√ºckgabe : Fehlermeldung oder PT_OK                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion gibt die Spalte AKTSPALTE der zulest ge-  *
  *                 ladenen 8 Grafikzeilen auf dem Nadel - Drucker aus.      *
@@ -588,14 +588,14 @@ SWORD ptPrintSpalte ( WORD AktSpalte, WORD AktZeile )
  *   Funktionsname: ptPrintImage                                            *
  *                                                                          *
  *   Parameter: WORD      : Breite des Bildes in Pixel auf dem Drucker      *
- *              WORD      : LÑnge des Bildes in Pixel auf dem Drucker       *
+ *              WORD      : L√§nge des Bildes in Pixel auf dem Drucker       *
  *              DOUBLE    : Horizontale Position des Bildes in cm oder inch *
  *                          (je nach definierter Einheit)                   *
  *                                                                          *
- *   RÅckgabe : Fehlermeldung oder PT_OK                                    *
+ *   R√ºckgabe : Fehlermeldung oder PT_OK                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion gibt eine Graphik auf dem Nadel-Drucker   *
- *                 mit vorgegebener Grî·e aus.                              *
+ *                 mit vorgegebener Gr√∂√üe aus.                              *
  ****************************************************************************/
 
 SWORD  ptPrintImage( WORD XSpalten, WORD YZeilen, DOUBLE HorPos )
@@ -660,14 +660,14 @@ SWORD  ptPrintImage( WORD XSpalten, WORD YZeilen, DOUBLE HorPos )
  *   Funktionsname: ptPrint24Image                                          *
  *                                                                          *
  *   Parameter: XSpalten  : Breite des Bildes in Pixel auf dem Drucker      *
- *              YSpalten  : LÑnge des Bildes in Pixel auf dem Drucker       *
+ *              YSpalten  : L√§nge des Bildes in Pixel auf dem Drucker       *
  *              HorPos    : Horizontale Position des Bildes in cm oder inch *
  *                          (je nach definierter Einheit)                   *
  *                                                                          *
- *   RÅckgabe : Fehlermeldung oder PT_OK                                    *
+ *   R√ºckgabe : Fehlermeldung oder PT_OK                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion gibt eine Graphik auf dem Nadel-Drucker   *
- *                 mit vorgegebener Grî·e aus ( 24 Nadeln ).                *
+ *                 mit vorgegebener Gr√∂√üe aus ( 24 Nadeln ).                *
  ****************************************************************************/
 
 SWORD  ptPrint24Image( WORD XSpalten, WORD YZeilen, DOUBLE HorPos )
@@ -729,14 +729,14 @@ SWORD  ptPrint24Image( WORD XSpalten, WORD YZeilen, DOUBLE HorPos )
  *   Funktionsname: ptPrintLaser                                            *
  *                                                                          *
  *   Parameter: XSpalten  : Breite des Bildes in Pixel auf dem Drucker      *
- *              YSpalten  : LÑnge des Bildes in Pixel auf dem Drucker       *
+ *              YSpalten  : L√§nge des Bildes in Pixel auf dem Drucker       *
  *              HorPos    : Horizontale Position des Bildes in cm oder inch *
  *                          (je nach definierter Einheit)                   *
  *                                                                          *
- *   RÅckgabe : Fehlermeldung oder PT_OK                                    *
+ *   R√ºckgabe : Fehlermeldung oder PT_OK                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion gibt eine Graphik auf dem Laser-Drucker   *
- *                 mit vorgegebener Grî·e aus.                              *
+ *                 mit vorgegebener Gr√∂√üe aus.                              *
  ****************************************************************************/
 
 SWORD  ptPrintLaser( WORD XSpalten, WORD YZeilen, DOUBLE HorPos )
@@ -849,9 +849,9 @@ SWORD  ptPrintLaser( WORD XSpalten, WORD YZeilen, DOUBLE HorPos )
  *                                                                          *
  *   Parameter: FILE** : Doppelzeiger auf Dateihandle                       *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
- *   Beschreibung: Diese Funktion lÑdt einen neuen Druckertreiber.          *
+ *   Beschreibung: Diese Funktion l√§dt einen neuen Druckertreiber.          *
  ****************************************************************************/
 
 SWORD ptLoadPCXParameters( FILE **Datei )
@@ -893,7 +893,7 @@ SWORD ptLoadPCXParameters( FILE **Datei )
           if ( ptLoadCodes( &AftBytes, Datei )      < 0 ) return( ptCloseFileAndError( PT_NOTENOUGHMEMORY ) );
           if ( ptLoadCodes( &CodeEnd, Datei )       < 0 ) return( ptCloseFileAndError( PT_NOTENOUGHMEMORY ) );
 
-          YResolution = Resolution;   /* Bei HP: X-Auflîsung = Y-Auflîsung */
+          YResolution = Resolution;   /* Bei HP: X-Aufl√∂sung = Y-Aufl√∂sung */
      }
      if ( fclose( *Datei ) != 0 ) return( ptCloseFileAndError( PT_FILEERROR ) );
 
@@ -911,9 +911,9 @@ SWORD ptLoadPCXParameters( FILE **Datei )
  *                                                                          *
  *   Parameter: CHAR*  : Zeiger auf Druckername (=Dateiname)                *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion lÑdt einen neuen Druckertreiber.          *
+ *   Beschreibung: Diese Funktion l√§dt einen neuen Druckertreiber.          *
  ****************************************************************************/
 
 SWORD ptInitPCXPrinter ( CHAR *Drucker )
@@ -946,14 +946,14 @@ SWORD ptInitPCXPrinter ( CHAR *Drucker )
  *                                                                          *
  *   Parameter: CHAR*  : Zeiger auf Druckertreibername (=Dateiname+".PX")   *
  *              CHAR*  : Zeiger auf Bildname ( incl. PCX-Endung ! )         *
- *              DOUBLE : Horizontale Grî·e des Bildes in inch oder cm       *
- *              DOUBLE : Vertikale Grî·e des Bildes in inch oder cm         *
+ *              DOUBLE : Horizontale Gr√∂√üe des Bildes in inch oder cm       *
+ *              DOUBLE : Vertikale Gr√∂√üe des Bildes in inch oder cm         *
  *              HorPos : Horizontale Position des Bildes in cm oder inch    *
  *                       (je nach definierter Einheit)                      *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion lÑdt einen neuen Druckertreiber.          *
+ *   Beschreibung: Diese Funktion l√§dt einen neuen Druckertreiber.          *
  ****************************************************************************/
 
 SWORD ptPrintImageNow ( CHAR *Drucker, CHAR *PicName, DOUBLE XRes,
@@ -1005,7 +1005,7 @@ SWORD ptPrintImageNow ( CHAR *Drucker, CHAR *PicName, DOUBLE XRes,
  *   Parameter: WORD   : Zeile                                              *
  *              CHAR*  : Zeiger auf Druckertreibername                      *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
  *   Beschreibung: Diese Funktion gibt alle im Speicher befindlichen Daten  *
  *                 einer Zeile an den Drucker aus. Dabei werden die einzel- *
@@ -1104,8 +1104,8 @@ SWORD ptPrintPCXBufferWithLine ( WORD XZeile, CHAR *PrinterDriver )
                                       return ( PT_PRINTERERROR );
                                  }
 
-        /* Y-Auflîsung ist vielfaches von 8 (9-Nadler) bzw. 24 (24-Nadler), daher mu· */
-        /* in einigen FÑllen Aufgerundet werden, um die Positionsberechnung korrekt zu*/
+        /* Y-Aufl√∂sung ist vielfaches von 8 (9-Nadler) bzw. 24 (24-Nadler), daher mu√ü */
+        /* in einigen F√§llen Aufgerundet werden, um die Positionsberechnung korrekt zu*/
         /* halten !           */
 
                                  YPixel = (WORD) ( (BufferZeiger + TakeBuffer ) -> Left * (DOUBLE) YResolution );
@@ -1198,7 +1198,7 @@ SWORD ptPrintPCXBufferWithLine ( WORD XZeile, CHAR *PrinterDriver )
  *                                                                          *
  *   Parameter: CHAR*  : Name der Graphik-Druckertreiberdatei               *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
  *   Beschreibung: Diese Funktion gibt alle im Speicher befindlichen Daten  *
  *                 ( soweit vorhanden ) INCL. PCX-BILDER an den Drucker aus.*
@@ -1277,25 +1277,25 @@ SWORD ptSendPCXBuffer ( CHAR *PrinterDriver )
  *                       (ptSkipExactStandard-Einheiten zu 1/48 Zoll)       *
  *              CHAR*  : Zeiger auf Bildname ( incl. PCX-Endung ! )         *
  *              BYTE   : Art des Bildes ( PT_PCX, PT_PCC )                  *
- *              DOUBLE : Horizontale Grî·e des Bildes in cm oder inch       *
- *              DOUBLE : Vertikale Grî·e des Bildes in cm oder inch         *
+ *              DOUBLE : Horizontale Gr√∂√üe des Bildes in cm oder inch       *
+ *              DOUBLE : Vertikale Gr√∂√üe des Bildes in cm oder inch         *
  *              DOUBLE : Horizontale Position des Bildes in cm oder inch    *
  *                       (je nach definierter Einheit)                      *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
  *   Beschreibung: Diese Funktion legt die Position eines Bildes im Speicher*
  *                 ab. Ausgegeben wird alles mit "ptSendPCXBuffer"          *
- *                 Alle Daten werden dabei Åber die BUFFER-Struktur im      *
+ *                 Alle Daten werden dabei √ºber die BUFFER-Struktur im      *
  *                 Speicher abgelegt (normalerweise von ptPrintAutoBuffer   *
  *                 verwaltet). Dabei werden die einzelnen BUFFER-Werte wie  *
- *                 folgt "mi·brauch":                                       *
+ *                 folgt "mi√übrauch":                                       *
  *                 Text[CHAR*]       :   Name des PCX-Files                 *
  *                 Font[WORD]        :   Horizontale Position in inch * 100 *
  *                 Line[WORD]        :   Ab welcher Zeile Bild darstellen   *
- *                 ExactVerPos[WORD] :   ZusÑtzliche Standard-Einheiten     *
- *                 Left[DOUBLE]      :   Vert. Grî·e in inch                *
- *                 Right[DOUBLE]     :   Hor. Grî·e in inch                 *
+ *                 ExactVerPos[WORD] :   Zus√§tzliche Standard-Einheiten     *
+ *                 Left[DOUBLE]      :   Vert. Gr√∂√üe in inch                *
+ *                 Right[DOUBLE]     :   Hor. Gr√∂√üe in inch                 *
  ****************************************************************************/
 
 SWORD ptPrintImageBuffer ( WORD Line, WORD VerUnits, CHAR *PicName,
@@ -1325,14 +1325,14 @@ SWORD ptPrintImageBuffer ( WORD Line, WORD VerUnits, CHAR *PicName,
 /****************************************************************************
  *   Funktionsname: ptDefinePattern     [USER]                              *
  *                                                                          *
- *   Parameter: WORD   : Farbe (0 bis 15), deren Muster verÑndert werden    *
+ *   Parameter: WORD   : Farbe (0 bis 15), deren Muster ver√§ndert werden    *
  *                       soll.                                              *
- *              8xBYTE : 8 Bytes fÅr Muster (s. Handbuch !)                 *
+ *              8xBYTE : 8 Bytes f√ºr Muster (s. Handbuch !)                 *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion gestattet dem Anwender, die Muster fÅr    *
- *                 die einzelnen Farben selbst bestimmen zu kînnen.         *
+ *   Beschreibung: Diese Funktion gestattet dem Anwender, die Muster f√ºr    *
+ *                 die einzelnen Farben selbst bestimmen zu k√∂nnen.         *
  ****************************************************************************/
 
 SWORD ptDefinePattern( WORD Color, BYTE P1, BYTE P2, BYTE P3, BYTE P4, BYTE P5,

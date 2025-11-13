@@ -1,16 +1,16 @@
-��KOSTENSTELLEN/KOSTENARTEN-LISTE                     Datum: 04.09.90 - SEITE 0001��
-���������������������������������������������������������������������������������Ŀ�
-��Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002��
- ����������������������������������������������������������������������������������
-          Kostenstelle      Budget in T�S  Mon.01 Mon.02 Mon.03 Mon.04 Mon.05 Mon.06
+┌┘KOSTENSTELLEN/KOSTENARTEN-LISTE                     Datum: 04.09.90 - SEITE 0001└┐
+│┌────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002├┘
+ └────────────────────────────────────────────────────────────────────────────────┘
+          Kostenstelle      Budget in TÖS  Mon.01 Mon.02 Mon.03 Mon.04 Mon.05 Mon.06
 Nummer    Kostenart                        Mon.07 Mon.08 Mon.09 Mon.10 Mon.11 Mon.12
-������������������������������������������������������������������������������������
+────────────────────────────────────────────────────────────────────────────────────
 T1000     Kost 1                            10.00  10.00  10.00  10.00  10.00  10.00
-S8100     Erl�se 20% MWST                   10.00  10.00  10.00  10.00  10.00  10.00
-������������������������������������������������������������������������������������
+S8100     Erlöse 20% MWST                   10.00  10.00  10.00  10.00  10.00  10.00
+────────────────────────────────────────────────────────────────────────────────────
 
 
 
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFT��
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFT┌┘
 

@@ -1,19 +1,19 @@
-ÚÙSACHKONTEN-LISTE                                    Datum: 04.09.90 - SEITE 0001À¿
-³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
-À´Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002ÃÙ
- ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”˜SACHKONTEN-LISTE                                    Datum: 04.09.90 - SEITE 0001â””â”
+â”‚â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”‚
+â””â”¤Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002â”œâ”˜
+ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 Konto-                                UStVa USt Sammel Kto. KSt.  Ausw.-Kz  Ausw.-Kz
 Nummer    Bezeichnung                  -Kz  -Kz  -Kz   -Art -Kz      Soll     Haben
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 S0200     Maschinen                         20.00 nein Bila nein    AK110
-S0300     Werkzeuge u. Ger„te               20.00 nein Bila nein    AK110
-S0400     Betriebs u. Gesch„ftsausstattu    20.00 nein Bila nein    AK120
-S0490     Geringw. Wirtschaftsgter         20.00 nein Betr nein    AU830
+S0300     Werkzeuge u. GerÃ¤te               20.00 nein Bila nein    AK110
+S0400     Betriebs u. GeschÃ¤ftsausstattu    20.00 nein Bila nein    AK120
+S0490     Geringw. WirtschaftsgÃ¼ter         20.00 nein Betr nein    AU830
 S0500     Fuhrpark                          20.00 nein Bila nein    AK130
 S0700     Rechte, Programmlizenzen          20.00 nein Bila nein    AK150
 S0800     Beteiligungen u. Wertpap.               nein Bila nein    AK150
-S1100     Handelswarenvorr„te                     nein Bila nein    AK210
-S1900     Wertberrichtigung Vorr„te               nein Bila nein    AK210
+S1100     HandelswarenvorrÃ¤te                     nein Bila nein    AK210
+S1900     Wertberrichtigung VorrÃ¤te               nein Bila nein    AK210
 S2000     Kassa                                   nein Bila nein    AK225
 S2100     CA - Graz                               nein Bila nein    AK230     PA420
 S2180     Scheckverrechnung                       nein Bila nein    AK260
@@ -25,8 +25,8 @@ S2400     Guthaben bei Lieferanten                nein Bila nein    AK240
 S2410     Anzahlungen, Kautionen                  nein Bila nein    AK240
 S2500     Vorsteuer-Konto               50        nein Bila nein    AK250     PA445
 S2510     EUST                          60        nein Bila nein    AK250     PA445
-S2600     Verrechnungsvorschsse                  nein Bila nein    AK260
-S2710     Lohn- u. Gehaltsvorschsse              nein Bila nein    AK260
+S2600     VerrechnungsvorschÃ¼sse                  nein Bila nein    AK260
+S2710     Lohn- u. GehaltsvorschÃ¼sse              nein Bila nein    AK260
 S2800     Aktive Rechnungsabgrenzung              nein Bila nein    AK310
 S3300     Verbindlichkeiten Inland                nein Bila nein              PA410
 S3310     Verbindlichkeiten Ausland               nein Bila nein              PA410
@@ -40,8 +40,8 @@ S3590     Finanzamt Lohnsteuer                    nein Bila nein    AK250     PA
 S3600     Durchlaufkonto Lohnverrg.               nein Bila nein    AK260     PA450
 S3630     Darlehen                                nein Bila nein              PA450
 S3650     Stmk. Gebietskrankenkasse               nein Bila nein              PA450
-S3700     Rckst. Grndungskosten                 nein Bila nein              PA330
-S3710     Rckst.Rechts-u.Berat.Kost              nein Bila nein              PA320
+S3700     RÃ¼ckst. GrÃ¼ndungskosten                 nein Bila nein              PA330
+S3710     RÃ¼ckst.Rechts-u.Berat.Kost              nein Bila nein              PA320
 S3800     Passive Rechnungsabgrenz.               nein Bila nein              PA510
 S3900     Sonstige Verbindlichkeiten              nein Bila nein              PA450
 S4100     Wareneinkauf Inland               20.00 nein Eink nein    AU120
@@ -57,10 +57,10 @@ S4670     Aufwand Leihwagen                       nein Tran nein    AU240
 S4690     Versicherungen KFZ                      nein Tran nein    AU240
 S4700     Verpackungsmaterial               20.00 nein Kost nein    AU580
 S4900     Fremdarbeit                       20.00 nein Eink nein    AU135
-S5100     Reisekosten, Di„ten                     nein Pers nein    AU550
-S5330     Geh„lter Angestellte                    nein Pers nein    AU320
-S5350     Lehrlingsentsch„digung                  nein Pers nein    AU320
+S5100     Reisekosten, DiÃ¤ten                     nein Pers nein    AU550
+S5330     GehÃ¤lter Angestellte                    nein Pers nein    AU320
+S5350     LehrlingsentschÃ¤digung                  nein Pers nein    AU320
 
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-À¿Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFTÚÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â””â”Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFTâ”Œâ”˜
 

@@ -1,23 +1,23 @@
-/*.ta,F02,II. euroSOFT-SV Men / 2.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE ARGE-SV / Buerliche Selbstvermarkter                              บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+/*.ta,F02,II. euroSOFT-SV Menรผ / 2.,1
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE ARGE-SV / Bรคuerliche Selbstvermarkter                              โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-Bentzeroberflche euroSOFT-MEN
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Benรผtzeroberflรคche euroSOFT-MENร
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
-Der Aufruf der jeweiligen Funktionen erfolgt ber das euroSOFT-MEN. Dabei sind
+Der Aufruf der jeweiligen Funktionen erfolgt รผber das euroSOFT-MENร. Dabei sind
 die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
 
-.mi (MENUE,SV-L000),1,ฏSV Hauptmen ฏSelbstvermarkterฎ.
-.mi (MENUE,SV-L010),1,ฏSV Stammdaten/Konstantenฎ.
+.mi (MENUE,SV-L000),1,ยปSV Hauptmenรผ ยปSelbstvermarkterยซ.
+.mi (MENUE,SV-L010),1,ยปSV Stammdaten/Konstantenยซ.
 .me (MENUE,SV-048),1,SV Stammdaten,Konstanten.
 
-Die euroSOFT-MEN's im Detail:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
-.me (MENUE,SV-030),1,SV Hauptmen,Stammdaten.
-.me (MENUE,SV-050),1,SV Hauptmen,Bearbeiten.
-.me (MENUE,SV-018),1,SV Hauptmen,Optionen.
+Die euroSOFT-MENร's im Detail:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
+.me (MENUE,SV-030),1,SV Hauptmenรผ,Stammdaten.
+.me (MENUE,SV-050),1,SV Hauptmenรผ,Bearbeiten.
+.me (MENUE,SV-018),1,SV Hauptmenรผ,Optionen.
 .me (MENUE,SV-040),1,SV Stammdaten,Mitglieder.
 .me (MENUE,SV-042),1,SV Stammdaten,Lieferatnen.
 .me (MENUE,SV-044),1,SV Stammdaten,Artikel/Leistungen.
@@ -26,17 +26,17 @@ Die euroSOFT-MEN's im Detail:
 .te*/
 
 /*.ta,F02,III. euroSOFT-SV Mahntexte / 1.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE ARGE-SV / Buerliche Selbstvermarkter                              บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE ARGE-SV / Bรคuerliche Selbstvermarkter                              โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-Da alle anderen Konstanten im folgenden Men bereits im Pflichtenheft der ฏeuroSOFT-
-Basis Auftragsbearbeitungฎ beschrieben sind, werden hier nur noch die Mahntexte
-zustzlich angefhrt:
+Da alle anderen Konstanten im folgenden Menรผ bereits im Pflichtenheft der ยปeuroSOFT-
+Basis Auftragsbearbeitungยซ beschrieben sind, werden hier nur noch die Mahntexte
+zusรคtzlich angefรผhrt:
 
 .me (MENUE,SV-048),1,Konstanten,Mahntexte.
 .da (EURODATA,SYP_04),1, Mahntexte.
-.ma (\euro\mask\FIM040),1,Anlegen/ndern Mahntexte.
+.ma (\euro\mask\FIM040),1,Anlegen/รndern Mahntexte.
 .hd (FI,kons-st),FI,mate-an.
 .te*/
 

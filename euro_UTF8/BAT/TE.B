@@ -20,13 +20,13 @@ goto end
 
 
 :fehler
-echo ÿ
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo   Erlaubte Eingabe ¯te [m][f] [d][s]®, Fehler ¯%1®
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo ÿ
-echo   Steht fr: ¯mask, form, druck, support®
-echo ÿ
+echo Â 
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo   Erlaubte Eingabe Â»te [m][f] [d][s]Â«, Fehler Â»%1Â«
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo Â 
+echo   Steht fÃ¼r: Â»mask, form, druck, supportÂ«
+echo Â 
 goto end
 
 :support
@@ -41,30 +41,30 @@ if X%LPT%==X   SET LPT=LPT1
 
 if X%1==X  goto start_druck
 set APP=%1
-echo APP wird tempor„r auf %1 umgestellt.
+echo APP wird temporÃ¤r auf %1 umgestellt.
 SHIFT
 
 :START_DRUCK
-echo ÿ
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo     [d] == Druck ¯ %LPT%
+echo Â 
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo     [d] == Druck Â» %LPT%
 echo     [i] == Initialisieren
-echo     [a] == Abbruch ¯ DOS
-echo ÿÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-echo ÿ
+echo     [a] == Abbruch Â» DOS
+echo Â â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+echo Â 
 \%smd%DOS\ask "i/d/a " d,i,a
 if errorlevel 3 goto end
 if errorlevel 2 copy \euro\dru\te.%DRUCK% %LPT%
-echo ÿ
+echo Â 
 copy \euro\dru\te_kopf + \euro\mask\%app%mask.BAT + \euro\mask\%app%form.BAT TEMP
 if NOT %LPT%==PRINT copy TEMP %LPT%
 if     %LPT%==PRINT copy TEMP %USER%\PRINT
 if     %LPT%==PRINT show %USER%\PRINT
-echo ÿ
+echo Â 
 set APP=%temp%
 goto end
 
 :end
-echo ÿ
+echo Â 
 
 

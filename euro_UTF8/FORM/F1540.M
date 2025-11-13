@@ -8,40 +8,40 @@
 
 
 &KOPF (0)
-^��EINNAHMEN "SOLL-BESTEUERUNG"                                                          Datum: @@@@@@@@ - SEITE ������ ~SM ~1._DATUM_AKT ~1._SEITE
-�������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                        Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ��������������������������������������������������������������������������������������������������������������������
-Lauf.   Beleg  Beleg                                 �����������Ausgaben f�r USt-Berechnung���������Ŀ   Ausgaben  f�r
- Nr.    Datum  Nr.        Buchungstext               �U-Satz      Aufwand USt-Betrag      Spesencode �     EA-Rechnung
-����������������������������������������������������������������������������������������������������������������������
-&END��
+^┌┘EINNAHMEN "SOLL-BESTEUERUNG"                                                          Datum: @@@@@@@@ - SEITE øøøø└┐ ~SM ~1._DATUM_AKT ~1._SEITE
+│┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                        Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Lauf.   Beleg  Beleg                                 ┌──────────Ausgaben für USt-Berechnung──────────┐   Ausgaben  für
+ Nr.    Datum  Nr.        Buchungstext               └U-Satz      Aufwand USt-Betrag      Spesencode ┘     EA-Rechnung
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+&END  
 
 &RUMPF (0)
-����� ##.##.## @@@@@@@ @@ @@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@ #.###.##�,�� ###.##�,�� @@@@@@@@@@@@@@@@@   ##.###.##�,��     ~1._LAUFENDNR ~0.BEL_DATUM ~0.BELEGNR ~0�ZAHLUNG ~0.BUCH_TEXT ~0�UST_SATZ ~1._UST_ENT ~1._UST_BER ~1._EIGENVER ~1._EST_EIN
+øøøøø ##.##.## @@@@@@@ @@ @@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@ #.###.##ø,øø ###.##ø,øø @@@@@@@@@@@@@@@@@   ##.###.##ø,øø     ~1._LAUFENDNR ~0.BEL_DATUM ~0.BELEGNR ~0°ZAHLUNG ~0.BUCH_TEXT ~0°UST_SATZ ~1._UST_ENT ~1._UST_BER ~1._EIGENVER ~1._EST_EIN
 &END
 
 &RUMPF (1)
-����������������������������������������������������������������������������������������������������������������������
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-                                            �  Gesamtausgaben f�r die Einkommensteuerberechnung (ESt.): ###.###.##�,��    ~1._SUM_EIN
-                                            ��������������������������������������������������������������������������
+                                            │  Gesamtausgaben für die Einkommensteuerberechnung (ESt.): ###.###.##ø,øø    ~1._SUM_EIN
+                                            └─────────────────────────────────────────────────────────────────────────
 
-USt pflichtige Erl�se            Erl�se       Berichtigungen     Eigenverbrauch        Summe Erl�se         davon MwSt
-����������������������������������������������������������������������������������������������������������������������
-Mit #�,�� % MwSt         ###.###.##�,��       ###.###.##�,��     ###.###.##�,��      ###.###.##�,��     ###.###.##�,�� ~1._MWST_1 ~1._ENTGELT_1 ~1._BERICHT_1 ~1._EIGEN_1 ~1._SUM_ERL_1 ~1._SUM_MS_1
-Mit #�,�� % MwSt         ###.###.##�,��       ###.###.##�,��     ###.###.##�,��      ###.###.##�,��     ###.###.##�,�� ~1._MWST_2 ~1._ENTGELT_2 ~1._BERICHT_2 ~1._EIGEN_2 ~1._SUM_ERL_2 ~1._SUM_MS_2
-Mit #�,�� % MwSt         ###.###.##�,��       ###.###.##�,��     ###.###.##�,��      ###.###.##�,��     ###.###.##�,�� ~1._MWST_3 ~1._ENTGELT_3 ~1._BERICHT_3 ~1._EIGEN_3 ~1._SUM_ERL_3 ~1._SUM_MS_3
-Mit #�,�� % MwSt         ###.###.##�,��       ###.###.##�,��     ###.###.##�,��      ###.###.##�,��     ###.###.##�,�� ~1._MWST_4 ~1._ENTGELT_4 ~1._BERICHT_4 ~1._EIGEN_4 ~1._SUM_ERL_4 ~1._SUM_MS_4
-Mit #�,�� % MwSt         ###.###.##�,��       ###.###.##�,��     ###.###.##�,��      ###.###.##�,��     ###.###.##�,�� ~1._MWST_5 ~1._ENTGELT_5 ~1._BERICHT_5 ~1._EIGEN_5 ~1._SUM_ERL_5 ~1._SUM_MS_5
-����������������������������������������������������������������������������������������������������������������������
-Gesamtsummen             ###.###.##�,��       ###.###.##�,��     ###.###.##�,��      ###.###.##�,��     ###.###.##�,�� ~1._GES_EIN ~1._GES_BER ~1._GES_EIG ~1._GES_ERL ~1._GES_MWST
+USt pflichtige Erlöse            Erlöse       Berichtigungen     Eigenverbrauch        Summe Erlöse         davon MwSt
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Mit #ø,øø % MwSt         ###.###.##ø,øø       ###.###.##ø,øø     ###.###.##ø,øø      ###.###.##ø,øø     ###.###.##ø,øø ~1._MWST_1 ~1._ENTGELT_1 ~1._BERICHT_1 ~1._EIGEN_1 ~1._SUM_ERL_1 ~1._SUM_MS_1
+Mit #ø,øø % MwSt         ###.###.##ø,øø       ###.###.##ø,øø     ###.###.##ø,øø      ###.###.##ø,øø     ###.###.##ø,øø ~1._MWST_2 ~1._ENTGELT_2 ~1._BERICHT_2 ~1._EIGEN_2 ~1._SUM_ERL_2 ~1._SUM_MS_2
+Mit #ø,øø % MwSt         ###.###.##ø,øø       ###.###.##ø,øø     ###.###.##ø,øø      ###.###.##ø,øø     ###.###.##ø,øø ~1._MWST_3 ~1._ENTGELT_3 ~1._BERICHT_3 ~1._EIGEN_3 ~1._SUM_ERL_3 ~1._SUM_MS_3
+Mit #ø,øø % MwSt         ###.###.##ø,øø       ###.###.##ø,øø     ###.###.##ø,øø      ###.###.##ø,øø     ###.###.##ø,øø ~1._MWST_4 ~1._ENTGELT_4 ~1._BERICHT_4 ~1._EIGEN_4 ~1._SUM_ERL_4 ~1._SUM_MS_4
+Mit #ø,øø % MwSt         ###.###.##ø,øø       ###.###.##ø,øø     ###.###.##ø,øø      ###.###.##ø,øø     ###.###.##ø,øø ~1._MWST_5 ~1._ENTGELT_5 ~1._BERICHT_5 ~1._EIGEN_5 ~1._SUM_ERL_5 ~1._SUM_MS_5
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Gesamtsummen             ###.###.##ø,øø       ###.###.##ø,øø     ###.###.##ø,øø      ###.###.##ø,øø     ###.###.##ø,øø ~1._GES_EIN ~1._GES_BER ~1._GES_EIG ~1._GES_ERL ~1._GES_MWST
 
 &END
 
 &FUSS (0)
-��������������������������������������������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                        @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                        @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 

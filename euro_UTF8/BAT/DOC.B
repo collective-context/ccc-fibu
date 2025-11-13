@@ -32,17 +32,17 @@ shift
 :edit
 if not exist %app%%DOC%%1.pro goto ende
 if %LPT%==NULL goto ende
-echo ÿ
-echo ÿ
+echo Â 
+echo Â 
 pause
 REM g:\word5\word %app%%DOC%%1.pro
 edit %app%%DOC%%1.pro
 REM copy /b %app%%DOC%%1.pro \euro\doc\%app%%DOC%%1.txt
-echo ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-echo ³ [d] == Druck ¯ %LPT%  ³
-echo ³ [a] == Abbruch ¯ DOS ³
-echo ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-echo ÿ
+echo â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+echo â”‚ [d] == Druck Â» %LPT%  â”‚
+echo â”‚ [a] == Abbruch Â» DOS â”‚
+echo â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+echo Â 
 \%smd%DOS\ask "a/d " d,a
 if errorlevel 2 goto ende
 if errorlevel 1 goto druck
@@ -66,10 +66,10 @@ goto druck_error
   goto druck_ende
 
 :druck_error
-  echo Error: Der Drucker mit der Bezeichnung ¯%DRUCK%® ist nicht bekannt!
-  echo ÿ
+  echo Error: Der Drucker mit der Bezeichnung Â»%DRUCK%Â« ist nicht bekannt!
+  echo Â 
   pause
-  echo ÿ
+  echo Â 
 
 :druck_ende
 shift
@@ -90,23 +90,23 @@ if X%1==Xpfl set DOC=PFL
   goto meldung
 
 :fehler
-  echo ÿ
+  echo Â 
   echo Werte    : DOC=%doc%     (MAN=%man% / ART=%art% / EXT=%ext%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo Syntax   : doc [DOC]              oder: doc ®s/h¯ (fr show bzw. help)
-  echo fr [DOC]: DOC fr Dokumentation oder PFL fr Pflichtenheft.
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Syntax   : doc [DOC]              oder: doc Â«s/hÂ» (fÃ¼r show bzw. help)
+  echo fÃ¼r [DOC]: DOC fÃ¼r Dokumentation oder PFL fÃ¼r Pflichtenheft.
   echo     oder : Die Nummer der Druckanweisungsdatei !!!
-  echo ÿ
-  echo Beispiele: ¯doc DOC®, ¯doc PFL®, ¯DOC 01® ...
-  echo ÿ
+  echo Â 
+  echo Beispiele: Â»doc DOCÂ«, Â»doc PFLÂ«, Â»DOC 01Â« ...
+  echo Â 
   goto ende
 
 :ende
 :meldung
-  echo ÿ
+  echo Â 
   echo Werte    : DOC=%doc%     (MAN=%man% / ART=%art% / EXT=%ext%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Â 
 
 
 

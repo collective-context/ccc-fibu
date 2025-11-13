@@ -9,17 +9,17 @@
 &DATEI (2) = MASK, VS1110
 
 &KOPF (0)
-ÿ
+Â 
 &END
 
 &RUMPF (0)
-!R!FONT2;SLPI5.5;EXIT;@@@@@@@@@@&a38C@@@@@@@@&a55Cÿ÷;ÿÿ÷;ÿÿ(u@ÿm@)ÿÿ÷;ÿÿ÷;ÿÿ÷ \
+!R!FONT2;SLPI5.5;EXIT;@@@@@@@@@@&a38C@@@@@@@@&a55CÂ Â¸;Â Â Â¸;Â Â (u@Â m@)Â Â Â¸;Â Â Â¸;Â Â Â¸ \
 ~0.MATCH_CODE ~0.KUNDE ~0.NAME ~0.BRANCHE ~0.UMSATZ_GR ~0.MITARB_GR ~0.STRASSE  \
 ~0.PLZ_ORT ~0.TELEFON
 &END
 
 &FUSS (0)
-ÿ
+Â 
 &END
 
 
@@ -27,12 +27,12 @@
 ^ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \
 
-÷;÷;÷;÷;÷;÷;÷;÷;÷ ~0.LAND ~0.PLZ_ORT ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~1._NAME_5 ~0.TELEFON ~0.BRIEFANR_1
-÷;÷;÷;÷;÷ - ÷ ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~0.STRASSE ~0.LAND ~0.PLZ_ORT
+Â¸;Â¸;Â¸;Â¸;Â¸;Â¸;Â¸;Â¸;Â¸ ~0.LAND ~0.PLZ_ORT ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~1._NAME_5 ~0.TELEFON ~0.BRIEFANR_1
+Â¸;Â¸;Â¸;Â¸;Â¸ - Â¸ ~1._NAME_1 ~1._NAME_2 ~1._NAME_3 ~1._NAME_4 ~0.STRASSE ~0.LAND ~0.PLZ_ORT
 &REM
 &REM
 
-&TITEL    = "ST  Datei fr Word-Serienbrief"
+&TITEL    = "ST  Datei fÃ¼r Word-Serienbrief"
 &FORMULAR = 10
 
 &DATEI (0) = MASK, ST1100

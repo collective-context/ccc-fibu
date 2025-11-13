@@ -1,19 +1,19 @@
-/*.ta,F02,II. euroSOFT-MENš / 2.,1
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º  euroSOFT-WARE BS-b„erliche Selbstvermarkter                                      º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+/*.ta,F02,II. euroSOFT-MENÃœ / 2.,1
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘  euroSOFT-WARE BS-bÃ¤erliche Selbstvermarkter                                      â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-Bentzeroberfl„che euroSOFT-MENš
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+BenÃ¼tzeroberflÃ¤che euroSOFT-MENÃœ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-Der Aufruf der jeweiligen Funktionen erfolgt ber das euroSOFT-MENš. Dabei sind
+Der Aufruf der jeweiligen Funktionen erfolgt Ã¼ber das euroSOFT-MENÃœ. Dabei sind
 die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
 
 
-.mi (MENUE,UB-L001),1,¯UB Stammdaten/Konstanten®.
-.mi (MENUE,UB-L000),1,¯UB Hauptmen ¯Urlaub am Bauernhof®.
+.mi (MENUE,UB-L001),1,Â»UB Stammdaten/KonstantenÂ«.
+.mi (MENUE,UB-L000),1,Â»UB HauptmenÃ¼ Â»Urlaub am BauernhofÂ«.
 
-.me (MENUE,UB-010),1,UB Hauptmen,Stammdaten.
+.me (MENUE,UB-010),1,UB HauptmenÃ¼,Stammdaten.
 
 .me (MENUE,UB-040),1,UB Stammdaten,Mitglieder/Anbieter.
 
@@ -23,11 +23,11 @@ die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
 
 .me (MENUE,UB-060),1,UB Stammdaten,Konstanten.
 
-.me (MENUE,UB-020),1,UB Hauptmen,Bewegungsdaten Mitglieder.
+.me (MENUE,UB-020),1,UB HauptmenÃ¼,Bewegungsdaten Mitglieder.
 
-.me (MENUE,UB-030),1,UB Hauptmen,Bewegungsdaten Kunden/Anfrager.
+.me (MENUE,UB-030),1,UB HauptmenÃ¼,Bewegungsdaten Kunden/Anfrager.
 
-.me (MENUE,UB-018),1,UB Hauptmen,Optionen.
+.me (MENUE,UB-018),1,UB HauptmenÃ¼,Optionen.
 
 .te*/
 

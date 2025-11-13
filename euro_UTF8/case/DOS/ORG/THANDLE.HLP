@@ -1,23 +1,23 @@
 +-------------------------------------------------------------------------+
-|                      PC/MS-DOS  f걊 Insider                           |
+|                      PC/MS-DOS  f체r Insider                           |
 |-------------------------------------------------------------------------|
-| Testprogramm f걊 die Funktion-Calls 3Ch-40h,42h,45h,46h,5Ah,5Bh         |
+| Testprogramm f체r die Funktion-Calls 3Ch-40h,42h,45h,46h,5Ah,5Bh         |
 |                                                                         |
 | Die Funktionen befinden sich im Quelltext unter dem Namen HANDLE.C      |
-| Sie k봭nen in Programmen verwendet werden, indem man die Library        |
-| DOSLIBS.LIB beim Linken als zus꼝zliche Library angibt.                 |
+| Sie k철nnen in Programmen verwendet werden, indem man die Library        |
+| DOSLIBS.LIB beim Linken als zus채tzliche Library angibt.                 |
 +-------------------------------------------------------------------------+
 
-Das folgende Programm bringt f걊 den Anwender keinerlei Nutzen, da es nur
-die Verwendung der Handle-Funktionen zeigt und auf Fehler pr갽t.
-Auftauchende Fehler werden nicht n꼑er beschrieben, sondern nur die
+Das folgende Programm bringt f체r den Anwender keinerlei Nutzen, da es nur
+die Verwendung der Handle-Funktionen zeigt und auf Fehler pr체ft.
+Auftauchende Fehler werden nicht n채her beschrieben, sondern nur die
 Fehlernummer angegeben. Sehen Sie sich bitte hierzu das Kapitel Fehler-
 behandlung in diesem Buch durch.
-Das Programm fr꼏t nach dem Namen einer Datei. Geben Sie hier am besten
+Das Programm fr채gt nach dem Namen einer Datei. Geben Sie hier am besten
 eine Textdatei ein, da 512 Bytes dieser Datei gelesen werden und in eine
 Datei kopiert werden, die im Hauptverzeichnis angelegt wird und die einen
-einzigartigen Namen tr꼏t, der aus Datum und Uhrzeit gebildet wird.
-Das Programm gibt jeweils Auskunft 갶er den Erfolg bei der Ausf갿rung der
+einzigartigen Namen tr채gt, der aus Datum und Uhrzeit gebildet wird.
+Das Programm gibt jeweils Auskunft 체ber den Erfolg bei der Ausf체hrung der
 Funktionen.
 
 

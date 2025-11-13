@@ -7,42 +7,42 @@
 &DATEI (1) = MASK, FI4135
 
 &KOPF (0)
-^ÚÙSALDENLISTE SACHKONTEN                          Monat: @@@@@@@@@@                          Datum: ##.##.## - SEITE ››››À¿ ~SM ~1ø_W_MONAT ~1._DRUCK_DAT ~1._SEITE
-³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
-À´Mandant (››) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Teilnehmer: ›››ÃÙ ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+^â”Œâ”˜SALDENLISTE SACHKONTEN                          Monat: @@@@@@@@@@                          Datum: ##.##.## - SEITE Ã¸Ã¸Ã¸Ã¸â””â” ~SM ~1Â°_W_MONAT ~1._DRUCK_DAT ~1._SEITE
+â”‚â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”‚
+â””â”¤Mandant (Ã¸Ã¸) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Teilnehmer: Ã¸Ã¸Ã¸â”œâ”˜ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 Konto-                                    Saldo-        Monats-        Monats-        Jahres-        Jahres-
 Nummer    Bezeichnung                    Vortrag           Soll          Haben           Soll          Haben          Saldo
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-ÿ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Â 
 &END
 
 
 &RUMPF (0)
-S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
+S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##Ã¸,Ã¸Ã¸ `##.###.##Ã¸,Ã¸Ã¸ `##.###.##Ã¸,Ã¸Ã¸ `##.###.##Ã¸,Ã¸Ã¸ `##.###.##Ã¸,Ã¸Ã¸ `##.###.##Ã¸,Ã¸Ã¸ ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
 &END
 
 
 &RUMPF (1)
-          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-          ** Zwischensumme        ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
+          â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          ** Zwischensumme        ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
 
 &END
 
 
 &FUSS (0)
-          == Endsumme             ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ~1._VOR_SALDO~1._PER_SOLL~1._PER_HABEN~1._JHR_SOLL~1._JHR_HABEN~1._AKT_SALDO
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-À¿Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                             @@@@@@@@@@@@@@@@@ÚÙ ~1._NUTZUNG  ~1._COPYRIGHT
+          == Endsumme             ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ~1._VOR_SALDO~1._PER_SOLL~1._PER_HABEN~1._JHR_SOLL~1._JHR_HABEN~1._AKT_SALDO
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â””â”Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                             @@@@@@@@@@@@@@@@@â”Œâ”˜ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 &KOPF (10)
-ÿ
-^ÿ ~NO
-     ÚÙUMSATZSTEUER-VORANMELDUNG                                  Datum: ##.##.## À¿ ~1._DRUCK_DAT
-     ³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
-     À´Mandant (››) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                 Teilnehmer: ›››ÃÙ ~1._NR_MAND ~1._MANDANT ~1._TEILN
-      ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+Â 
+^Â  ~NO
+     â”Œâ”˜UMSATZSTEUER-VORANMELDUNG                                  Datum: ##.##.## â””â” ~1._DRUCK_DAT
+     â”‚â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”‚
+     â””â”¤Mandant (Ã¸Ã¸) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                 Teilnehmer: Ã¸Ã¸Ã¸â”œâ”˜ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 &END
 
@@ -50,28 +50,28 @@ S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `
 
 
 
-     ÿGesamtbetrag der Ums„tze:    ###.###.##›,››                   ~1._ERL_SUMME
+     Â Gesamtbetrag der UmsÃ¤tze:    ###.###.##Ã¸,Ã¸Ã¸                   ~1._ERL_SUMME
 
 
       Davon zu versteuern:
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Mit #›,››% Mehrwertsteuer                      ###.###.##›,››  ###.###.##›,››   ~1._MWST_1 ~1._ERLOS_S1 ~1._BERECH_S1
-      Mit #›,››% Mehrwertsteuer                      ###.###.##›,››  ###.###.##›,››   ~1._MWST_2 ~1._ERLOS_S2 ~1._BERECH_S2
-      Mit #›,››% Mehrwertsteuer                      ###.###.##›,››  ###.###.##›,››   ~1._MWST_3 ~1._ERLOS_S3 ~1._BERECH_S3
-      Mit #›,››% Mehrwertsteuer                      ###.###.##›,››  ###.###.##›,››   ~1._MWST_4 ~1._ERLOS_S4 ~1._BERECH_S4
-      Mit #›,››% Mehrwertsteuer                      ###.###.##›,››  ###.###.##›,››   ~1._MWST_5 ~1._ERLOS_S5 ~1._BERECH_S5
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-                 Summe  Umsatzsteuer                                 ###.###.##›,››   ~1._BER_SUMME
+      Mit #Ã¸,Ã¸Ã¸% Mehrwertsteuer                      ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._MWST_1 ~1._ERLOS_S1 ~1._BERECH_S1
+      Mit #Ã¸,Ã¸Ã¸% Mehrwertsteuer                      ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._MWST_2 ~1._ERLOS_S2 ~1._BERECH_S2
+      Mit #Ã¸,Ã¸Ã¸% Mehrwertsteuer                      ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._MWST_3 ~1._ERLOS_S3 ~1._BERECH_S3
+      Mit #Ã¸,Ã¸Ã¸% Mehrwertsteuer                      ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._MWST_4 ~1._ERLOS_S4 ~1._BERECH_S4
+      Mit #Ã¸,Ã¸Ã¸% Mehrwertsteuer                      ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._MWST_5 ~1._ERLOS_S5 ~1._BERECH_S5
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+                 Summe  Umsatzsteuer                                 ###.###.##Ã¸,Ã¸Ã¸   ~1._BER_SUMME
 
 
-                 + MWSt aus ig Erwerb                ###.###.##›,››                   ~1._VST
-                 - Vorsteuer                         ###.###.##›,››                   ~1._VST
-                 - EUST                              ###.###.##›,››  ###.###.##›,››   ~1._EUST ~1._ABZUG
-                 - VSt aus ig Erwerb                 ###.###.##›,››                   ~1._VST
-                 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-                 * Zahllast (Gutschrift bei -Betrag)                 ###.###.##›,››   ~1._ZAHLLAST
-                 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                 + MWSt aus ig Erwerb                ###.###.##Ã¸,Ã¸Ã¸                   ~1._VST
+                 - Vorsteuer                         ###.###.##Ã¸,Ã¸Ã¸                   ~1._VST
+                 - EUST                              ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._EUST ~1._ABZUG
+                 - VSt aus ig Erwerb                 ###.###.##Ã¸,Ã¸Ã¸                   ~1._VST
+                 â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+                 * Zahllast (Gutschrift bei -Betrag)                 ###.###.##Ã¸,Ã¸Ã¸   ~1._ZAHLLAST
+                 â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 
 
@@ -81,18 +81,18 @@ S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `
 
 
       Umsatzsteuer Verprobung:
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-     ÿSteuer gem„á:              Berechnung          MwSt-Konto           Differenz
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-      Steuergruppe #›,››%    ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._MWST_1 ~1._BERECH_S1 ~1._MWSTV_1 ~1._DIFF_S1
-      Steuergruppe #›,››%    ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._MWST_2 ~1._BERECH_S2 ~1._MWSTV_2 ~1._DIFF_S2
-      Steuergruppe #›,››%    ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._MWST_3 ~1._BERECH_S3 ~1._MWSTV_3 ~1._DIFF_S3
-      Steuergruppe #›,››%    ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._MWST_4 ~1._BERECH_S4 ~1._MWSTV_4 ~1._DIFF_S4
-      Steuergruppe #›,››%    ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._MWST_5 ~1._BERECH_S5 ~1._MWSTV_5 ~1._DIFF_S5
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-      Gesamt                 ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._BER_SUMME ~1._MW_SUMME ~1._DIF_SUMME
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+     Â Steuer gemÃ¤ÃŸ:              Berechnung          MwSt-Konto           Differenz
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      Steuergruppe #Ã¸,Ã¸Ã¸%    ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._MWST_1 ~1._BERECH_S1 ~1._MWSTV_1 ~1._DIFF_S1
+      Steuergruppe #Ã¸,Ã¸Ã¸%    ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._MWST_2 ~1._BERECH_S2 ~1._MWSTV_2 ~1._DIFF_S2
+      Steuergruppe #Ã¸,Ã¸Ã¸%    ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._MWST_3 ~1._BERECH_S3 ~1._MWSTV_3 ~1._DIFF_S3
+      Steuergruppe #Ã¸,Ã¸Ã¸%    ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._MWST_4 ~1._BERECH_S4 ~1._MWSTV_4 ~1._DIFF_S4
+      Steuergruppe #Ã¸,Ã¸Ã¸%    ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._MWST_5 ~1._BERECH_S5 ~1._MWSTV_5 ~1._DIFF_S5
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      Gesamt                 ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._BER_SUMME ~1._MW_SUMME ~1._DIF_SUMME
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 &END
 
@@ -103,7 +103,7 @@ S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `
 
 
 &FUSS (99)
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-À¿Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@ÚÙ ~1._NUTZUNG  ~1._COPYRIGHT
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â””â”Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@â”Œâ”˜ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 

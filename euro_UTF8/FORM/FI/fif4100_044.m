@@ -7,42 +7,42 @@
 &DATEI (1) = MASK, FI4135
 
 &KOPF (0)
-^ÚÙGENERAL BALANCES                              Month: @@@@@@@@@@                              Date: ##.##.## - PAGE ››››À¿ ~SM ~1ø_W_MONAT ~1._DRUCK_DAT ~1._SEITE
-³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
-À´Client (››) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Participant: ›››ÃÙ ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+^â”Œâ”˜GENERAL BALANCES                              Month: @@@@@@@@@@                              Date: ##.##.## - PAGE Ã¸Ã¸Ã¸Ã¸â””â” ~SM ~1Â°_W_MONAT ~1._DRUCK_DAT ~1._SEITE
+â”‚â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”‚
+â””â”¤Client (Ã¸Ã¸) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                             Participant: Ã¸Ã¸Ã¸â”œâ”˜ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 Account                                  Opening        Monthly        Monthly            YTD            YTD
 Number    Description                    Balance          Debit         Credit          Debit         Credit        Balance
-ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-ÿ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Â 
 &END
 
 
 &RUMPF (0)
-S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
+S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##Ã¸,Ã¸Ã¸ `##.###.##Ã¸,Ã¸Ã¸ `##.###.##Ã¸,Ã¸Ã¸ `##.###.##Ã¸,Ã¸Ã¸ `##.###.##Ã¸,Ã¸Ã¸ `##.###.##Ã¸,Ã¸Ã¸ ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
 &END
 
 
 &RUMPF (1)
-          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-          ** Subtotal             ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
+          â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+          ** Subtotal             ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ~1.$VOR_SALDO~1.$PER_SOLL~1.$PER_HABEN~1.$JHR_SOLL~1.$JHR_HABEN~1.$AKT_SALDO
 
 &END
 
 
 &FUSS (0)
-          == Grand Total          ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ###.###.##›,›› ~1._VOR_SALDO~1._PER_SOLL~1._PER_HABEN~1._JHR_SOLL~1._JHR_HABEN~1._AKT_SALDO
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-À¿User Authorization: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                               @@@@@@@@@@@@@@@@@ÚÙ ~1._NUTZUNG  ~1._COPYRIGHT
+          == Grand Total          ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ###.###.##Ã¸,Ã¸Ã¸ ~1._VOR_SALDO~1._PER_SOLL~1._PER_HABEN~1._JHR_SOLL~1._JHR_HABEN~1._AKT_SALDO
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â””â”User Authorization: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                               @@@@@@@@@@@@@@@@@â”Œâ”˜ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 &KOPF (10)
-ÿ
-^ÿ ~NO
-     ÚÙVAT ADVANCE RETURN                                          Date: ##.##.## À¿ ~1._DRUCK_DAT
-     ³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
-     À´Client (››) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                 Participant: ›››ÃÙ ~1._NR_MAND ~1._MANDANT ~1._TEILN
-      ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+Â 
+^Â  ~NO
+     â”Œâ”˜VAT ADVANCE RETURN                                          Date: ##.##.## â””â” ~1._DRUCK_DAT
+     â”‚â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”â”‚
+     â””â”¤Client (Ã¸Ã¸) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                 Participant: Ã¸Ã¸Ã¸â”œâ”˜ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 &END
 
@@ -50,28 +50,28 @@ S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `
 
 
 
-     ÿTotal Turnover (S4010 to S4150)                ###.###.##›,››                   ~1._ERL_SUMME
+     Â Total Turnover (S4010 to S4150)                ###.###.##Ã¸,Ã¸Ã¸                   ~1._ERL_SUMME
 
 
       Taxable Amount:
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-      Subject to #›,››% VAT (S4010)                  ###.###.##›,››  ###.###.##›,››   ~1._MWST_1 ~1._ERLOS_S1 ~1._BERECH_S1
-      Subject to #›,››% VAT (S4020)                  ###.###.##›,››  ###.###.##›,››   ~1._MWST_2 ~1._ERLOS_S2 ~1._BERECH_S2
-      Subject to #›,››% VAT (S4030)                  ###.###.##›,››  ###.###.##›,››   ~1._MWST_3 ~1._ERLOS_S3 ~1._BERECH_S3
-      Subject to #›,››% VAT                          ###.###.##›,››  ###.###.##›,››   ~1._MWST_4 ~1._ERLOS_S4 ~1._BERECH_S4
-      Subject to #›,››% VAT (S4150)                  ###.###.##›,››  ###.###.##›,››   ~1._MWST_5 ~1._ERLOS_S5 ~1._BERECH_S5
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-                 Total Output VAT                                    ###.###.##›,››   ~1._BER_SUMME
+      Subject to #Ã¸,Ã¸Ã¸% VAT (S4010)                  ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._MWST_1 ~1._ERLOS_S1 ~1._BERECH_S1
+      Subject to #Ã¸,Ã¸Ã¸% VAT (S4020)                  ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._MWST_2 ~1._ERLOS_S2 ~1._BERECH_S2
+      Subject to #Ã¸,Ã¸Ã¸% VAT (S4030)                  ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._MWST_3 ~1._ERLOS_S3 ~1._BERECH_S3
+      Subject to #Ã¸,Ã¸Ã¸% VAT                          ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._MWST_4 ~1._ERLOS_S4 ~1._BERECH_S4
+      Subject to #Ã¸,Ã¸Ã¸% VAT (S4150)                  ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._MWST_5 ~1._ERLOS_S5 ~1._BERECH_S5
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+                 Total Output VAT                                    ###.###.##Ã¸,Ã¸Ã¸   ~1._BER_SUMME
 
 
-                 + VAT on IC Acquisitions (S5500)    ###.###.##›,››                   ~1._VST
-                 - Input VAT  (S1400)                ###.###.##›,››                   ~1._VST
-                 - Import VAT (S1410)                ###.###.##›,››  ###.###.##›,››   ~1._EUST ~1._ABZUG
-                 - Input VAT on IC Acquisitions      ###.###.##›,››                   ~1._VST
-                 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-                 * VAT Payable (Credit if negative)                  ###.###.##›,››   ~1._ZAHLLAST
-                 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                 + VAT on IC Acquisitions (S5500)    ###.###.##Ã¸,Ã¸Ã¸                   ~1._VST
+                 - Input VAT  (S1400)                ###.###.##Ã¸,Ã¸Ã¸                   ~1._VST
+                 - Import VAT (S1410)                ###.###.##Ã¸,Ã¸Ã¸  ###.###.##Ã¸,Ã¸Ã¸   ~1._EUST ~1._ABZUG
+                 - Input VAT on IC Acquisitions      ###.###.##Ã¸,Ã¸Ã¸                   ~1._VST
+                 â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+                 * VAT Payable (Credit if negative)                  ###.###.##Ã¸,Ã¸Ã¸   ~1._ZAHLLAST
+                 â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 
 
@@ -81,18 +81,18 @@ S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `
 
 
       VAT Reconciliation:
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-     ÿVAT per:                  Calculation         VAT Account          Difference
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-      VAT Group    #›,››%    ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._MWST_1 ~1._BERECH_S1 ~1._MWSTV_1 ~1._DIFF_S1
-      VAT Group    #›,››%    ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._MWST_2 ~1._BERECH_S2 ~1._MWSTV_2 ~1._DIFF_S2
-      VAT Group    #›,››%    ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._MWST_3 ~1._BERECH_S3 ~1._MWSTV_3 ~1._DIFF_S3
-      VAT Group    #›,››%    ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._MWST_4 ~1._BERECH_S4 ~1._MWSTV_4 ~1._DIFF_S4
-      VAT Group    #›,››%    ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._MWST_5 ~1._BERECH_S5 ~1._MWSTV_5 ~1._DIFF_S5
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-      Total                  ###.###.##›,››      ###.###.##›,››      ###.###.##›,››  ~1._BER_SUMME ~1._MW_SUMME ~1._DIF_SUMME
-      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+     Â VAT per:                  Calculation         VAT Account          Difference
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      VAT Group    #Ã¸,Ã¸Ã¸%    ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._MWST_1 ~1._BERECH_S1 ~1._MWSTV_1 ~1._DIFF_S1
+      VAT Group    #Ã¸,Ã¸Ã¸%    ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._MWST_2 ~1._BERECH_S2 ~1._MWSTV_2 ~1._DIFF_S2
+      VAT Group    #Ã¸,Ã¸Ã¸%    ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._MWST_3 ~1._BERECH_S3 ~1._MWSTV_3 ~1._DIFF_S3
+      VAT Group    #Ã¸,Ã¸Ã¸%    ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._MWST_4 ~1._BERECH_S4 ~1._MWSTV_4 ~1._DIFF_S4
+      VAT Group    #Ã¸,Ã¸Ã¸%    ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._MWST_5 ~1._BERECH_S5 ~1._MWSTV_5 ~1._DIFF_S5
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      Total                  ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸      ###.###.##Ã¸,Ã¸Ã¸  ~1._BER_SUMME ~1._MW_SUMME ~1._DIF_SUMME
+      â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 &END
 
@@ -103,7 +103,7 @@ S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##›,›› `##.###.##›,›› `##.###.##›,›› `
 
 
 &FUSS (99)
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-À¿User Authorization: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@ÚÙ ~1._NUTZUNG  ~1._COPYRIGHT
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â””â”User Authorization: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@â”Œâ”˜ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 

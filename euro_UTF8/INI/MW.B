@@ -14,16 +14,16 @@ goto help
 
 :backup
   if NOT exist %user%\m.%2 goto ba_start
-  echo ÿ
-  \euro\bin\ask "Datei %user%\m.%2 schon vorhanden, berschreiben [j]/[n]/[s]how ",j,n,s
+  echo Â 
+  \euro\bin\ask "Datei %user%\m.%2 schon vorhanden, Ã¼berschreiben [j]/[n]/[s]how ",j,n,s
   if errorlevel 3 goto ba_show
   if errorlevel 2 goto end
   if errorlevel 1 goto ba_start
 
   :ba_show
   show %user%\m.%2
-  echo ÿ
-  \euro\bin\ask "Datei %user%\m.%2 schon vorhanden, berschreiben [j]/[n] ",j,n
+  echo Â 
+  \euro\bin\ask "Datei %user%\m.%2 schon vorhanden, Ã¼berschreiben [j]/[n] ",j,n
   if errorlevel 2 goto end
   if errorlevel 1 goto ba_start
 
@@ -36,8 +36,8 @@ goto help
   if NOT exist %user%\m.tmp goto re_start
 
   show %user%\m.tmp
-  echo ÿ
-  \euro\bin\ask "Datei %user%\m.tmp ist vorhanden, berschreiben [j]/[n] ",j,n
+  echo Â 
+  \euro\bin\ask "Datei %user%\m.tmp ist vorhanden, Ã¼berschreiben [j]/[n] ",j,n
   if errorlevel 2 goto end
 
   :re_start
@@ -45,22 +45,22 @@ goto help
   goto end
 
   :re_end
-    echo ÿ
+    echo Â 
     echo Datei %user%\m.%2 ist nicht vorhanden!
-    echo ÿ
+    echo Â 
     pause
-    echo ÿ
+    echo Â 
     goto end
 
 
 :show
 :edit
   if exist %user%\m.%2 goto sh_start
-  echo ÿ
+  echo Â 
   echo Datei %user%\m.%2 ist nicht vorhanden!
-  echo ÿ
+  echo Â 
   pause
-  echo ÿ
+  echo Â 
   goto end
 
   :sh_start
@@ -70,16 +70,16 @@ goto help
 
 :delete
   if exist %user%\m.%2 goto de_start
-  echo ÿ
+  echo Â 
   echo Datei %user%\m.%2 ist nicht vorhanden!
-  echo ÿ
+  echo Â 
   pause
-  echo ÿ
+  echo Â 
   goto end
 
   :de_start
     show %user%\m.%2
-    \euro\bin\ask "Datei l”schen! Sind Sie sicher [j]/[n] ",j,n
+    \euro\bin\ask "Datei lÃ¶schen! Sind Sie sicher [j]/[n] ",j,n
     if errorlevel 2 goto end
     del %user%\m.%2
     goto end
@@ -102,37 +102,37 @@ goto help
   goto end
 
 :error_1
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo   Fehler: Source ¯\euro\ini\%sA%.B® fehlt.
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo   Fehler: Source Â»\euro\ini\%sA%.BÂ« fehlt.
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   goto end
 
 :error_2
   ren TEMP %sA%.COM
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo   Fehler: Datei ¯\euro\bin\%sA%.COM konnte nicht erstellt werden.
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo   Fehler: Datei Â»\euro\bin\%sA%.COM konnte nicht erstellt werden.
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   goto end
 
 :help
-  echo [M]-Editor [W]ork-File: mw  b/r/s/e/d ¯EXT® oder [he/ed/co]
-  echo ¯EXT® = Dreistelliges File-Extension, z.B.: 001, 002 ...
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo mw  b ¯EXT® = Backup  von ¯M.TMP® auf  ¯M.001® wenn ¯EXT®==001.
-  echo mw  r ¯EXT® = Restore von ¯M.001® auf  ¯M.TMP® wenn ¯EXT®==001.
-  echo mw  s ¯EXT® = Show    von ¯M.001® wenn ¯EXT®==001.
-  echo mw  e ¯EXT® = Edit    von ¯M.001® wenn ¯EXT®==001.
-  echo mw  d ¯EXT® = Delete  von ¯M.TMP® wenn ¯EXT®==TMP.
-  echo mw  f [EXT] = Files, zeigt Dateien mit ¯M.0??® wenn ¯EXT®==0??.
-  echo ÿ
+  echo [M]-Editor [W]ork-File: mw  b/r/s/e/d Â»EXTÂ« oder [he/ed/co]
+  echo Â»EXTÂ« = Dreistelliges File-Extension, z.B.: 001, 002 ...
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo mw  b Â»EXTÂ« = Backup  von Â»M.TMPÂ« auf  Â»M.001Â« wenn Â»EXTÂ«==001.
+  echo mw  r Â»EXTÂ« = Restore von Â»M.001Â« auf  Â»M.TMPÂ« wenn Â»EXTÂ«==001.
+  echo mw  s Â»EXTÂ« = Show    von Â»M.001Â« wenn Â»EXTÂ«==001.
+  echo mw  e Â»EXTÂ« = Edit    von Â»M.001Â« wenn Â»EXTÂ«==001.
+  echo mw  d Â»EXTÂ« = Delete  von Â»M.TMPÂ« wenn Â»EXTÂ«==TMP.
+  echo mw  f [EXT] = Files, zeigt Dateien mit Â»M.0??Â« wenn Â»EXTÂ«==0??.
+  echo Â 
   echo mw he = Ausgabe dieses Hilfstextes.
   echo mw ed = Editieren des Batch-Sources.
   echo mw co = Compilieren des Batch-Sources.
-  echo ÿ
+  echo Â 
   goto end
 
 :end
-  echo ÿ
+  echo Â 
 
 
 

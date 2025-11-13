@@ -1,13 +1,13 @@
 /*.ta,F02,IV. euroSOFT-AUFTRAG Lieferantenstamm / 2.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE Basis Auftragsbearbeitung                                          บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE Basis Auftragsbearbeitung                                          โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-.me (MENU,AU-030),1,Basis Auftragsbearbeitung,ndern Lieferanten.
-.me (MENU,AU-042),1,Stammdaten,Anlegen/ndern Lieferanten.
+.me (MENU,AU-030),1,Basis Auftragsbearbeitung,รndern Lieferanten.
+.me (MENU,AU-042),1,Stammdaten,Anlegen/รndern Lieferanten.
 .da (EURODATA,ST1200),1,Lieferantenstamm.
 .da (EURODATA,ST1210),1,.
-.ma (\euro\mask\ST\STM120),1,Anlegen/ndern Lieferantenstamm 1/1.
+.ma (\euro\mask\ST\STM120),1,Anlegen/รndern Lieferantenstamm 1/1.
 .hd (AU,st-deta),AU,liefera.
 .hd (AU,listen),ST,lief-li.
 .fo (\euro\form\ST\STB1200.M),1,S0,Z0,B84,H51,Druck Adress-Liste Lieferanten.

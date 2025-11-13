@@ -10,25 +10,25 @@
 &DATEI (3) = MASK, ST1210
 
 &KOPF (0)
-^��LISTE LIEFERANTENKONTEN NACH KURZBEZEICHNUNG        Datum: @@@@@@@@ - SEITE ������ ~NO ~1._DATUM_AKT ~1._SEITE
-���������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ����������������������������������������������������������������������������������
-Kurzbezeichnung                Konto-NR  Liefer-Nr    Zahlungs- Ausl. W�hrung Kunden
+^┌┘LISTE LIEFERANTENKONTEN NACH KURZBEZEICHNUNG        Datum: @@@@@@@@ - SEITE øøøø└┐ ~NO ~1._DATUM_AKT ~1._SEITE
+│┌────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └────────────────────────────────────────────────────────────────────────────────┘
+Kurzbezeichnung                Konto-NR  Liefer-Nr    Zahlungs- Ausl. Währung Kunden
                                                       kondition kunde         gruppe
-������������������������������������������������������������������������������������
+────────────────────────────────────────────────────────────────────────────────────
 
 &END
 
 
 &RUMPF (0)
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ L@@@@@@@@ @@@@@@@@@@@@ @@@@@@@@@ @@@@  @@@@@@@ @@@@@@ ~0.KURZ_BEZ ~0.LI_KONTO ~2.LIEFNR ~0.KONDITION ~0�AUSLANDSLI ~0�W�HRUNG ~2.LIEFGR
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ L@@@@@@@@ @@@@@@@@@@@@ @@@@@@@@@ @@@@  @@@@@@@ @@@@@@ ~0.KURZ_BEZ ~0.LI_KONTO ~2.LIEFNR ~0.KONDITION ~0°AUSLANDSLI ~0°WÄHRUNG ~2.LIEFGR
 &END
 
-&REM @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ L@@@@@@@@ @@@@@@@@@@@@ @@@@@@@@@ @@@@  @@@@@@@ @@@@@@ ~0.KURZ_BEZ ~0.LI_KONTO ~2.LIEFNR ~0.KONDITION ~1._AUSLANDSL ~1._W�HRUNG ~2.LIEFGR
+&REM @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ L@@@@@@@@ @@@@@@@@@@@@ @@@@@@@@@ @@@@  @@@@@@@ @@@@@@ ~0.KURZ_BEZ ~0.LI_KONTO ~2.LIEFNR ~0.KONDITION ~1._AUSLANDSL ~1._WÄHRUNG ~2.LIEFGR
 
 &FUSS (0)
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 

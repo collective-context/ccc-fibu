@@ -17,8 +17,8 @@ ren menu.lie menu.btr
 goto ENDE
 
 :ERROR
-echo Fehler!!! - Vorhandene MenÅdateien:
-echo ˇ
+echo Fehler!!! - Vorhandene Men√ºdateien:
+echo ¬†
 if exist MENU.BTR echo MENU.BTR
 if exist MENU.ORG echo MENU.ORG
 if exist MENU.LIE echo MENU.LIE

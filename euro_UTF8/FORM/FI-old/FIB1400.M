@@ -1,14 +1,14 @@
-��BANKEN-LISTE                                        Datum: 04.09.90 - SEITE 0001��
-���������������������������������������������������������������������������������Ŀ�
-��Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002��
- ����������������������������������������������������������������������������������
+┌┘BANKEN-LISTE                                        Datum: 04.09.90 - SEITE 0001└┐
+│┌────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (01) ...euroSOFT-WARE - 8010 Graz                        Teilnehmer: 002├┘
+ └────────────────────────────────────────────────────────────────────────────────┘
 Bankleitzahl      Bankbezeichnung
-������������������������������������������������������������������������������������
-14000             BAWAG Annenstra�e
+────────────────────────────────────────────────────────────────────────────────────
+14000             BAWAG Annenstraße
 
 
 
 
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFT��
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: euroSOFT Graz                            (c) 1990 euroSOFT┌┘
 

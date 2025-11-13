@@ -15,13 +15,13 @@ int c;
 while ((c = fgetc (stdin)) != EOF)
     switch (c)
 	 {
-	 case 'Ñ': p('Y'); p('a'); break;
-	 case 'î': p('Y'); p('o'); break;
-	 case 'Å': p('Y'); p('u'); break;
-	 case '·': p('Y'); p('s'); break;
-	 case 'é': p('Y'); p('A'); break;
-	 case 'ô': p('Y'); p('O'); break;
-	 case 'ö': p('Y'); p('U'); break;
+	 case '√§': p('Y'); p('a'); break;
+	 case '√∂': p('Y'); p('o'); break;
+	 case '√º': p('Y'); p('u'); break;
+	 case '√ü': p('Y'); p('s'); break;
+	 case '√Ñ': p('Y'); p('A'); break;
+	 case '√ñ': p('Y'); p('O'); break;
+	 case '√ú': p('Y'); p('U'); break;
 	 default : p (c); break;
 	 }
 }

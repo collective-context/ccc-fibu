@@ -1,20 +1,20 @@
   
 
-1                        SideKick Installierungsmen
-2           W„hlen Sie einen der folgenden Punkte zur Installierung:
-Š4          Monitor-Typ ³ Notiz-Kommandos ³  Notiz-Dateigr”áe ³ Rechter Rand 
+1                        SideKick InstallierungsmenÃ¼
+2           WÃ¤hlen Sie einen der folgenden Punkte zur Installierung:
+Ã¨4          Monitor-Typ â”‚ Notiz-Kommandos â”‚  Notiz-DateigrÃ¶ÃŸe â”‚ Rechter Rand 
 
-5          Modem       ³ Farben          ³ Aktivierungs-Kommandos ³ Ende
+5          Modem       â”‚ Farben          â”‚ Aktivierungs-Kommandos â”‚ Ende
 
 
 6                    Geben Sie T, K, D, R, M, F, A oder E ein:
 
 7  Doppelte Definition. Kommand Nr. 
-8  šberschneidung mit einem nicht installierbaren Kommando
+8  Ãœberschneidung mit einem nicht installierbaren Kommando
 10 Doppelte Definition. Kommandos Nr. 
-11 Kommandos mit gleichem Anfangsbchstaben mssen die gleiche L„nge haben.
+11 Kommandos mit gleichem Anfangsbchstaben mÃ¼ssen die gleiche LÃ¤nge haben.
  Falsche Kommandos sind: 
-12 Gesamtl„nge aller Kommandos berschritten. Krze ein oder mehrere Kommandos.
+12 GesamtlÃ¤nge aller Kommandos Ã¼berschritten. KÃ¼rze ein oder mehrere Kommandos.
 13  -> 
 
 
@@ -27,8 +27,8 @@
 24  Wort rechts                      
 25  Zeile nach oben                  
 26  Zeile nach unten                 
-27  Rollen aufw„rts                  
-28  Rollen abw„rts                   
+27  Rollen aufwÃ¤rts                  
+28  Rollen abwÃ¤rts                   
 29  Seite nach oben                  
 30  Seite nach unten                 
 31  Linker Rand                      
@@ -43,37 +43,37 @@
 40  Letzte Cursorposition            
 
 
-15 EINFšGEN & L™SCHEN:
+15 EINFÃœGEN & LÃ–SCHEN:
 
-41  Einfgen-Modus ein/aus           
-42  Zeile einfgen                   
-43  Zeile l”schen                    
-44  L”schen bis Zeilenende           
-45  Wort rechts l”schen              
-46  Zeichen unter Cursor l”schen     
-47  Zeichen links l”schen            
+41  EinfÃ¼gen-Modus ein/aus           
+42  Zeile einfÃ¼gen                   
+43  Zeile lÃ¶schen                    
+44  LÃ¶schen bis Zeilenende           
+45  Wort rechts lÃ¶schen              
+46  Zeichen unter Cursor lÃ¶schen     
+47  Zeichen links lÃ¶schen            
 48    Alternative                    
 
 16 BLOCK KOMMANDOS:
 
-49  Blockanfang markieren            Š50  Blockende markieren              
+49  Blockanfang markieren            Ã¨50  Blockende markieren              
 51  Wort markieren                   
 52  Block verdecken/zeigen           
 53  Block kopieren                   
 54  Block verschieben                
-55  Block l”schen                    
+55  Block lÃ¶schen                    
 56  Block von Disk lesen             
 57  Block auf Disk schreiben         
 58  Block sortieren                  
 59  Block drucken                    
-60  Block einfgen                   
+60  Block einfÃ¼gen                   
  
 17  VERSCHIEDENE KOMMANDOS:
 
 61  Notiz-File sichern               
 62  Tab                              
 63  Letzte Suche wiederholen         
-64  Kontrollzeichen-Pr„fix           
+64  Kontrollzeichen-PrÃ¤fix           
 65  Suchen                           
 66  Suchen und Tauschen              
 67  Auto Tabulator ein/aus           
@@ -83,18 +83,18 @@
 71  Setzen des rechten Rands         
 72  Abschnitt neuformatieren         
 
-80 Gr”áe des Notiz-Files (1000-50000 Zeichen, ÄÙ keine nderung): 
-81 Modemschnittstelle (1 fr Com1:  2 fr Com2:) (ÄÙ kein Modem): 
-82 Blinkt der Bildschirm beim Textrollen (Y/N) (ÄÙ  keine nderung): 
-83 Voreinstellung in den Notizen fr den rechten Rand (Spalte 1-251, ÄÙ keine nderung) 
-85 Geben Sie H ein um eines der folgenden Modems zu w„hlen :
+80 GrÃ¶ÃŸe des Notiz-Files (1000-50000 Zeichen, â”€â”˜ keine Ã„nderung): 
+81 Modemschnittstelle (1 fÃ¼r Com1:  2 fÃ¼r Com2:) (â”€â”˜ kein Modem): 
+82 Blinkt der Bildschirm beim Textrollen (Y/N) (â”€â”˜  keine Ã„nderung): 
+83 Voreinstellung in den Notizen fÃ¼r den rechten Rand (Spalte 1-251, â”€â”˜ keine Ã„nderung) 
+85 Geben Sie H ein um eines der folgenden Modems zu wÃ¤hlen :
 86          oder ein anderes Hayes-kompatibles Modem (300 Baud)
-87 Geben Sie J ein um das IBM PCjr Modem zu w„hlen (300 Baud)
-88 Ausgew„hltes Modem (H/J/V/A, ÄÙ keine nderung): 
-89 Minimale Ziffern-Zahl (1-80, ÄÙ  keine nderung): 
-90 Gewnschtes Zeichen (bis zu 10 Zeichen,  ÄÙ keine nderung)
-91 Geben Sie V ein um das VOAD Tasten-Telefon zu w„hlen (9600 Baud)
-92 Geben Sie A um ein AT & T 4000 Modem zu w„hlen (1200 Baud) 
+87 Geben Sie J ein um das IBM PCjr Modem zu wÃ¤hlen (300 Baud)
+88 AusgewÃ¤hltes Modem (H/J/V/A, â”€â”˜ keine Ã„nderung): 
+89 Minimale Ziffern-Zahl (1-80, â”€â”˜  keine Ã„nderung): 
+90 GewÃ¼nschtes Zeichen (bis zu 10 Zeichen,  â”€â”˜ keine Ã„nderung)
+91 Geben Sie V ein um das VOAD Tasten-Telefon zu wÃ¤hlen (9600 Baud)
+92 Geben Sie A um ein AT & T 4000 Modem zu wÃ¤hlen (1200 Baud) 
 101 Nichts
 
 120 Borland Produkt-Upgrade-System
@@ -102,26 +102,26 @@
 122 Weiter mit <RETURN> :
 123 Fehler im Eingabe-File :
 124 Syntaxfehler
-125 File fr Update nicht gefunden :
-126 Update-Sheet paát nicht zum aktuellen File
+125 File fÃ¼r Update nicht gefunden :
+126 Update-Sheet paÃŸt nicht zum aktuellen File
 127 Falsches File (File zu klein) oder Syntaxfehler
 128 Filename eingeben
-129 Prfsumme unkorrekt
+129 PrÃ¼fsumme unkorrekt
 130 Eingabe-File FI    existiert nicht
 131 Zuviel Eingabe oder Syntaxfehler
 132 Zuviele Bytes in einer Zeile
-133 Alte und neue Zeile stimmen nicht berein
+133 Alte und neue Zeile stimmen nicht Ã¼berein
 
-150 Wollen Sie die Installierung durchfhren
+150 Wollen Sie die Installierung durchfÃ¼hren
 151 (Y/N): 
-152 Programm-Files von den  Notizen nicht ge”ffnet
+152 Programm-Files von den  Notizen nicht geÃ¶ffnet
 
-200 W„hlen Sie den Darstellungsmodus
+200 WÃ¤hlen Sie den Darstellungsmodus
 201 Welchen Darstellungsmodus (Eingabe der Nummer oder "Q" zum Quittieren): 
 202 voreingestellter Darstellungsmodus
 203 Monochrome Darstellung
 204 Farb-Darstellung 80x25
-205 Schwarz/Weiá-Darstellung 80x25
+205 Schwarz/WeiÃŸ-Darstellung 80x25
 
-Š   
+Ã¨   
 

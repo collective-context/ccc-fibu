@@ -4,7 +4,7 @@
  *   Memory Model:    SMALL                                   *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC      *
  *   Compilieren:     (Q)CL FLAGS.C /link DOSLIBS.LIB         *
- *   Programmautor:   Heinrich Gîbl                           *
+ *   Programmautor:   Heinrich G√∂bl                           *
  *   Stand:           27.6.88                                 *
  **************************************************************/
 
@@ -24,7 +24,7 @@ struct COUNTRY c;
 showhelp ("TFLAGS.HLP");
 
 D_get_country (&c, CUR_COUNTRY); /* 0 = Gesetzter Country-Code */
-D_get_dos_ver (&v);                   /* FÅllen der Struktur v */
+D_get_dos_ver (&v);                   /* F√ºllen der Struktur v */
 
 printf ("Aktuelle DOS-Version: %d.%d\n",
                   (int) v.major, (int) v.minor);
@@ -32,12 +32,12 @@ printf ("\tOEM-Nummer:     %d\n", (int) v.oemnr);
 printf ("\tBenutzernummer: %lu\n\n", v.usernr);
 printf ("Country Code:\n");
 printf ("\tDatumsformat: \"%s\"\n", datform [c.dateformat]);
-printf ("\tWÑhrungssymbol: \"%s\"\n", c.currency);
-printf ("\tDas WÑhrungssymbol ist %s dem Betrag\n",
+printf ("\tW√§hrungssymbol: \"%s\"\n", c.currency);
+printf ("\tDas W√§hrungssymbol ist %s dem Betrag\n",
                c.bitfield & 1 ? "nach" : "vor");
 printf ("\tZwischen Symbol und Betrag ist %sein Leerzeichen\n",
                c.bitfield & 2 ? "" : "k");
-printf ("\tDie Zeit wird bis %d Stunden gezÑhlt\n",
+printf ("\tDie Zeit wird bis %d Stunden gez√§hlt\n",
                c.time_form & 1 ? 24 : 12);
 printf ("\tDer Platzhalter bei der Zeitangabe ist \"%s\"\n",
                c.time_sep);

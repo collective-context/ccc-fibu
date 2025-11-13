@@ -1,6 +1,6 @@
 /**************************************************************
  *    FLAGS.H                                                 *
- *    C-Funktionen zur Ver„nderung von DOS-Parametern         *
+ *    C-Funktionen zur VerÃ¤nderung von DOS-Parametern         *
  *    27.6.88                                                 *
  **************************************************************/
 

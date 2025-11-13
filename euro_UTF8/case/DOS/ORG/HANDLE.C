@@ -1,7 +1,7 @@
 /*****************************************************************
  *   Programmname:    HANDLE.C                                   *
  *   Aufgabe:         Stellt eine Reihe von C-Funktionen zur     *
- *                    VerfÅgung, die Ein- und Ausgabe Åber die   *
+ *                    Verf√ºgung, die Ein- und Ausgabe √ºber die   *
  *                    Handle Funktionen erledigen.               *
  *   Memory Model:    SMALL                                      *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC         *
@@ -13,10 +13,10 @@
  *    wobei options:  COMP=QCL  (falls QuickC verwendet wird)    *
  *                                                               *
  *   Sollen Routinen in anderen Programmen verwendet werden, so  *
- *   mu· beim Linken DOSLIBS.LIB als Library zusÑtzlich angege-  *
+ *   mu√ü beim Linken DOSLIBS.LIB als Library zus√§tzlich angege-  *
  *   ben werden.                                                 *
  *                                                               *
- *   Programmautor:    Heinrich Gîbl                             *
+ *   Programmautor:    Heinrich G√∂bl                             *
  *   Stand:            27.6.88                                   *
  *****************************************************************/
 
@@ -37,7 +37,7 @@
 
 
 /* ---------------------------------------------------------- *
- *  F 3Ch - Erstellt Datei Åber Handle                        *
+ *  F 3Ch - Erstellt Datei √ºber Handle                        *
  * ---------------------------------------------------------- */
 
 int
@@ -68,7 +68,7 @@ else                                              /* Alles OK */
 
 
 /* ---------------------------------------------------------- *
- *  F 3Dh - ôffnet Datei Åber File Handle                     *
+ *  F 3Dh - √ñffnet Datei √ºber File Handle                     *
  * ---------------------------------------------------------- */
 
 int
@@ -99,7 +99,7 @@ else                                              /* Alles OK */
 
 
 /* ---------------------------------------------------------- *
- *  F 3Eh - Schlie·t Datei Åber Handle                        *
+ *  F 3Eh - Schlie√üt Datei √ºber Handle                        *
  * ---------------------------------------------------------- */
 
 int
@@ -310,7 +310,7 @@ return (inregs.x.cflag ? (inregs.x.ax & 0x00ff) : 0);
 
 
 /* ---------------------------------------------------------- *
- *  F 5Ah - Erzeugt eine vorÅbergehende Datei                 *
+ *  F 5Ah - Erzeugt eine vor√ºbergehende Datei                 *
  * ---------------------------------------------------------- */
 
 int

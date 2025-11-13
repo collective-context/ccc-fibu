@@ -1,6 +1,6 @@
 /************************************************************
  *    TFCB.C
- *    testet C-Funktionen, die Datei Ein- und Ausgabe Åber
+ *    testet C-Funktionen, die Datei Ein- und Ausgabe √ºber
  *    FCB erledigen
  *    Compiler: Microsoft C 5.0
  *    14.3.88     18:07
@@ -39,10 +39,10 @@ printf ("Geben Sie einen Dateinamen ein (z.B. A:FILE.ASC)\n");
 scanf ("%14s", name);
 fcb = D_fcb_open (name, 0);
 if (fcb != NULL)
-    printf ("Erfolgreich geîffnet\n");
+    printf ("Erfolgreich ge√∂ffnet\n");
 else
     {
-    printf ("Fehler beim ôffnen\n");
+    printf ("Fehler beim √ñffnen\n");
     return (1);
     }
 
@@ -55,7 +55,7 @@ getch();
 if (D_fcb_close (fcb))
     printf ("Erfolgreich geschlossen\n");
 else
-    printf ("Fehler beim Schlie·en\n");
+    printf ("Fehler beim Schlie√üen\n");
 free (fcb);
 
 printf ("Inhaltsverzeichnis des angemeldeten Laufwerks\n\n\n");

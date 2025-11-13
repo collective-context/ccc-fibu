@@ -1,17 +1,17 @@
 +-------------------------------------------------------------------------+
-|                      PC/MS-DOS  fÅr Insider                           |
+|                      PC/MS-DOS  f√ºr Insider                           |
 |-------------------------------------------------------------------------|
-| Testprogramm fÅr die Funktion-Calls 25h,31h,35h,4Bh,4Ch,4Dh             |
+| Testprogramm f√ºr die Funktion-Calls 25h,31h,35h,4Bh,4Ch,4Dh             |
 |                                                                         |
 | Die Funktionen befinden sich im Quelltext unter dem Namen PROC.C        |
-| Sie kînnen in Programmen verwendet werden, indem man die Library        |
-| DOSLIBS.LIB beim Linken als zusÑtzliche Library angibt.                 |
+| Sie k√∂nnen in Programmen verwendet werden, indem man die Library        |
+| DOSLIBS.LIB beim Linken als zus√§tzliche Library angibt.                 |
 +-------------------------------------------------------------------------+
 
 Das folgende Programm listet alle Interruptvektoren von 0 bis 30h auf.
 Das Format ist jeweils XXXX:YYYY, wobei XXXX das Segment des Einsprung-
 vektors und YYYY das Offset ist.
-Beispiele fÅr Interruptnummern und deren Bedeutung:
+Beispiele f√ºr Interruptnummern und deren Bedeutung:
          10h  VIDEO_IO     BIOS
          13h  DISK_IO      BIOS
          16h  KEYBD_IO     BIOS

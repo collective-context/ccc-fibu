@@ -22,18 +22,18 @@ LKPFL99  TXT        354  9.03.90  8.44a
 Total: 17 files using 33021 bytes
 
 
-/*.ta,F02,I. Einfhrung / 1.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+/*.ta,F02,I. Einfรผhrung / 1.,1
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 
                                   Pflichtenheft
-                   "Landwirtschaftliches Buchfhrungsprogramm"
+                   "Landwirtschaftliches Buchfรผhrungsprogramm"
 
 
-                                    Fr Firma
-                       LK-DATA, Landwirtschaftskammer fr
+                                    Fรผr Firma
+                       LK-DATA, Landwirtschaftskammer fรผr
                             Land- und Forstwirtschaft
 
                                 Hammerlinggasse 3
@@ -41,142 +41,142 @@ Total: 17 files using 33021 bytes
 
 
 Dieses Pflichtenheft ist eine detailierte Beschreibung des Projektes "LK-Fibu".
-Es ist innerhalb eines v”llig neuen Programmierkonzeptes mit Hilfe der
-euroSOFT-CASEbox erstellt worden und erschlieแt sowohl fr den Kunden als
-auch fr den Programmierer vollkommen neue M”glichkeiten.
+Es ist innerhalb eines vรถllig neuen Programmierkonzeptes mit Hilfe der
+euroSOFT-CASEbox erstellt worden und erschlieรt sowohl fรผr den Kunden als
+auch fรผr den Programmierer vollkommen neue Mรถglichkeiten.
 
 Man kann den Produktlebenszyklus in sechs verschiedene Phasen aufteilen:
 
-                               ฺฤฤฤฤฤฤฤฤฤฤฤฤฤฟ
-                               ณ 6) nderung ณ
-                               ณ 5) Wartung  ณ
-                   ฺฤฤฤฤฤฤฤฤฤฤฤมฤฤฤฤฤฤฤฤฤฤฤฤฤมฤฤฤฤฤฤฤฤฤฤฤฟ
-                   ณ         4) Test/Debugging           ณ
-                   ณ  3) Implementierung/Programmierung  ณ
-            ฺฤฤฤฤฤฤมฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤมฤฤฤฤฟ
-            ณ              2) Konzept-Erstellung              ณ
-            ณ          1) Anforderungsspezifikation           ณ
-            ภฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤู
+                               โ”โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”
+                               โ” 6) รnderung โ”
+                               โ” 5) Wartung  โ”
+                   โ”โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”ดโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”ดโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”
+                   โ”         4) Test/Debugging           โ”
+                   โ”  3) Implementierung/Programmierung  โ”
+            โ”โ”€โ”€โ”€โ”€โ”€โ”€โ”ดโ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”ดโ”€โ”€โ”€โ”€โ”
+            โ”              2) Konzept-Erstellung              โ”
+            โ”          1) Anforderungsspezifikation           โ”
+            โ””โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”
 
 
-Fr die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
+Fรผr die ersten beiden Phasen im Produktlebenszyklus - Anforderungsspezifikation
 und Konzepterstellung - wird meist eine Textverarbeitung verwendet. Fort-
 schrittlichere Programmierkonzepte setzten hier bereits CASE-Tools ein.
 
 Die beiden nachfolgenden Phasen - Implementierung/Programmierung und Test/De-
 bugging - finden in der Anwendungs-Entwicklungsumgebung statt. Das Problem
-dabei ist nur: Die Brcke zwischen den ersten beiden Planungs-Phasen und den
-nchsten beiden Phasen der Programmerstellung kann man bei den herk”mmlichen
-Programmerstellungs-Mitteln nicht als tragfhig bezeichnen.
+dabei ist nur: Die Brรผcke zwischen den ersten beiden Planungs-Phasen und den
+nรคchsten beiden Phasen der Programmerstellung kann man bei den herkรถmmlichen
+Programmerstellungs-Mitteln nicht als tragfรคhig bezeichnen.
 
-Das erarbeitete Konzept muแ mit groแem Aufwand in die Anwendungs-Enwicklungs-
-umgebung bernommen werden. Das nchste Problem taucht auf, wenn sich in den
-Phasen der Implementierung und des Test/Debugging nderungen ergeben. Wenn
-sich diese nderungen auf das Konzept zurckschlagen, mssen diese im Planungs-
+Das erarbeitete Konzept muร mit groรem Aufwand in die Anwendungs-Enwicklungs-
+umgebung รผbernommen werden. Das nรคchste Problem taucht auf, wenn sich in den
+Phasen der Implementierung und des Test/Debugging รnderungen ergeben. Wenn
+sich diese รnderungen auf das Konzept zurรผckschlagen, mรผssen diese im Planungs-
 teil "von Hand nachgefahren" werden. Unterbleibt dies, kommt es zur Inkon-
 sistenz zwischen Konzept und Realisierung, was in der Praxis ein durchaus
-blicher Zustand ist.
+รผblicher Zustand ist.
 
-Diese Inkonsistenz rcht sich aber sptestens dann, wenn es um die Wartung der
-Software geht. ndern sich beispielsweise die Anforderungen an das Produkt,
-hat dies zunchst Auswirkungen auf das Konzept und schlieแlich auf die
-Implementierung. Wenn die Brcke zwischen der Planungs- und Anwendungs-
-Entwicklungsumgebung fehlt oder unvollstndig ist, wird man direkt die
-Implementierung verndern und das Konzept somit veraltern lassen. Wiederholt
+Diese Inkonsistenz rรคcht sich aber spรคtestens dann, wenn es um die Wartung der
+Software geht. รndern sich beispielsweise die Anforderungen an das Produkt,
+hat dies zunรคchst Auswirkungen auf das Konzept und schlieรlich auf die
+Implementierung. Wenn die Brรผcke zwischen der Planungs- und Anwendungs-
+Entwicklungsumgebung fehlt oder unvollstรคndig ist, wird man direkt die
+Implementierung verรคndern und das Konzept somit veraltern lassen. Wiederholt
 sich dieser Vorgang einige Male, kann man das Konzept praktisch wegwerfen.
 
 Die Forderung nach einer integrierten Umgebung, die sowohl die Planungsphasen
-als auch die Entwicklungsphasen umfaแt - einschlieแlich Wartung -, ist somit
+als auch die Entwicklungsphasen umfaรt - einschlieรlich Wartung -, ist somit
 sehr sinnvoll. Genau dieses Ziel ist mit der euroSOFT-CASEbox verwirklicht.
 .ff
 Der Kern der euroSOFT-CASEbox ist das Datenlexikon. Es gibt also nur eine
-einzige Stelle, an der die Datenfelder fr jede Datei beschrieben werden.
+einzige Stelle, an der die Datenfelder fรผr jede Datei beschrieben werden.
 Der Masken-Compiler, der Formular-Compiler und der Programm-Quellcode greifen
 bereits auf diese Informationen zu.
 
-Doch damit nicht genug. Selbst das Druckprogramm fr dieses Pflichtenheft
-holt sich die Dateiinforamtion whrend des Ausdruckes direkt aus dem Daten-
-lexikon. Dasselbe gilt fr Masken-Abbildungen oder Meninformationen.
+Doch damit nicht genug. Selbst das Druckprogramm fรผr dieses Pflichtenheft
+holt sich die Dateiinforamtion wรคhrend des Ausdruckes direkt aus dem Daten-
+lexikon. Dasselbe gilt fรผr Masken-Abbildungen oder Menรผinformationen.
 
-Fr den Kunden und fr den Applikations-Programmierer bringt die euroSOFT-
-CASEbox eine Reihe von Vorteilen. Der frhzeitige Einsatz eines professionellen
+Fรผr den Kunden und fรผr den Applikations-Programmierer bringt die euroSOFT-
+CASEbox eine Reihe von Vorteilen. Der frรผhzeitige Einsatz eines professionellen
 Werkzeuges bereits in der Planung eines Softwareprojektes reduziert konzeptio-
-nelle Fehler. Durch den "weichen bergang" zwischen Planungs- und Entwicklungs-
-werkzeug lแt sich das erarbeitete Konzept ohne Einschrnkungen fr die
-Implementierung verwenden. Hiezu geh”rt beispielsweise, daแ die eruoSOFT-
+nelle Fehler. Durch den "weichen รbergang" zwischen Planungs- und Entwicklungs-
+werkzeug lรครt sich das erarbeitete Konzept ohne Einschrรคnkungen fรผr die
+Implementierung verwenden. Hiezu gehรถrt beispielsweise, daร die eruoSOFT-
 CASEbox automatisch die Datenbanken und die Bildschirm-Masken in der im
 Konzept angegebenen Form anlegt.
 
-Stellen sich whrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
-Ursprungs sind, stellt die integrierte L”sung sicher, daแ notwendige nderungen
-am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daแ
-diese Methode die Produktivitt bei der Software-Entwicklung drastisch steigert.
+Stellen sich wรคhrend der Test/Debugging-Phase Fehler heraus, die konzeptionellen
+Ursprungs sind, stellt die integrierte Lรถsung sicher, daร notwendige รnderungen
+am Konzept unmittelbar auf die Implementierung durchschlagen. Es ist klar, daร
+diese Methode die Produktivitรคt bei der Software-Entwicklung drastisch steigert.
 
 
 Zielsetzung: LK-Fibu
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
-Nach Ihren Vorstellungen ist die LK-Fibu fr drei verschiedene Zielgruppen
+Nach Ihren Vorstellungen ist die LK-Fibu fรผr drei verschiedene Zielgruppen
 konzipiert:
 
   a) Betriebe mit Einnahmen/Ausgaben-Rechnung
   b) Optierende Betriebe
   c) Steuerpflichtige Betriebe
 
-Der Anwender kann ohne Datenverlust jeweils zu einem neuen Geschftsjahr von
+Der Anwender kann ohne Datenverlust jeweils zu einem neuen Geschรคftsjahr von
 einer Aufzeichnungsform zu einer anderen Aufzeichnungsform wechseln.
 
 
 Struktur des Rechnungswesens
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
         Eingaben             Bereich/Buchungen         Auswertungen
-        ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
-        Einnahmen ฤฤฤฤฤฤยฤยฤ Buchungen auf ฤฤฤฤฤฤฤฤฤยฤ Geldrechnung
-        Ausgaben        ณ ณ  Geld-/Aufwands-        ณ
-                        ณ ณ  und Ertragskonten      ณ
-                        ณ ณ                         ณ
-        Bewegungen      ณ ณ  Buchungen der Bestnde รฤ Mengenrechnung
-        Inventur/Waren ฤู ณ  (Lager/Anlagen, wert-  ณ
-                          ภฤ und mengenmแig) ฤฤฤฤฤฤู
+        โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
+        Einnahmen โ”€โ”€โ”€โ”€โ”€โ”€โ”ฌโ”€โ”ฌโ”€ Buchungen auf โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”ฌโ”€ Geldrechnung
+        Ausgaben        โ” โ”  Geld-/Aufwands-        โ”
+                        โ” โ”  und Ertragskonten      โ”
+                        โ” โ”                         โ”
+        Bewegungen      โ” โ”  Buchungen der Bestรคnde โ”โ”€ Mengenrechnung
+        Inventur/Waren โ”€โ” โ”  (Lager/Anlagen, wert-  โ”
+                          โ””โ”€ und mengenmรครig) โ”€โ”€โ”€โ”€โ”€โ”€โ”
 
-        Arbeits- ฤฤฤฤฤฤฤยฤฤฤ Arbeitsbuchungen ฤฤฤฤฤฤฤฤ Kostenrechnung
-        aufzeichnungen ฤู
+        Arbeits- โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”ฌโ”€โ”€โ”€ Arbeitsbuchungen โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€ Kostenrechnung
+        aufzeichnungen โ”€โ”
 
 
 
-Die LK-Fibu umfaแt die Bereiche:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Die LK-Fibu umfaรt die Bereiche:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
-ฺฤ Geldrechnung (Einnahmen/Ausgaben) = AKTIV/PASSIV Konten (KL 2,3) ฤฤฤฤฤฤฤฟ
-ภฤ Bestandsrechnung (Bilanz)         = AKTIV/PASSIV Konten (KL 0,1,9) ฤฤฤฤฤู
+โ”โ”€ Geldrechnung (Einnahmen/Ausgaben) = AKTIV/PASSIV Konten (KL 2,3) โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”
+โ””โ”€ Bestandsrechnung (Bilanz)         = AKTIV/PASSIV Konten (KL 0,1,9) โ”€โ”€โ”€โ”€โ”€โ”
    Erfolgsrechnung (Einkommen)       = AUFWAND/ERTRAGS Konten (KL 4,5,6,7,8)
 
 
 Die Betriebe mit Einnahmen/Ausgaben-Rechnung sollen auf Grund der Programm-
-konzeption auch ohne Kenntnisse der doppelten Buchfhrung die dafr bestimmte
-Version der LK-Fibu einsetzen k”nnen.
+konzeption auch ohne Kenntnisse der doppelten Buchfรผhrung die dafรผr bestimmte
+Version der LK-Fibu einsetzen kรถnnen.
 .te*/
 
 
-/*.ta,F02,II. euroSOFT-MEN / 1.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+/*.ta,F02,II. euroSOFT-MENร / 1.,1
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-Bentzeroberflche euroSOFT-MEN
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Benรผtzeroberflรคche euroSOFT-MENร
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
-Der Aufruf der jeweiligen Funktionen erfolgt ber das euroSOFT-MEN. Dabei sind
+Der Aufruf der jeweiligen Funktionen erfolgt รผber das euroSOFT-MENร. Dabei sind
 die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
 
 
-.mi (MENUE,FI-L000),1,ฏLK Finanzbuchhaltungฎ.
-.mi (MENUE,FI-L010),1,ฏKontenstammฎ.
-.mi (MENUE,FI-L011),1,ฏAuswertungsstammฎ.
-.mi (MENUE,FI-L020),1,ฏSalden/offene Postenฎ.
-.mi (MENUE,FI-L021),1,ฏStatistiken / Kostenฎ.
-.mi (MENUE,FI-L025),1,ฏZusatzpakete Fibuฎ.
+.mi (MENUE,FI-L000),1,ยปLK Finanzbuchhaltungยซ.
+.mi (MENUE,FI-L010),1,ยปKontenstammยซ.
+.mi (MENUE,FI-L011),1,ยปAuswertungsstammยซ.
+.mi (MENUE,FI-L020),1,ยปSalden/offene Postenยซ.
+.mi (MENUE,FI-L021),1,ยปStatistiken / Kostenยซ.
+.mi (MENUE,FI-L025),1,ยปZusatzpakete Fibuยซ.
 .te*/
 
 
@@ -199,114 +199,114 @@ me (MENUE,FI-080),1.
 me (MENUE,FI-082),1.
 
 /*.ta,F02,III. KONSTANTEN Nummernkreise / 1.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .me (MENUE,FI-050),1,Kontenstamm,Nummernkreise.
 .da (EURODATA,SYP_05),1,Nummernkreise.
-.ma (\euro\mask\STM091),1,Anlegen/ndern Nummernkreise 1/1.
+.ma (\euro\mask\STM091),1,Anlegen/รndern Nummernkreise 1/1.
 .hd (FI,kons-st),ST,nummer.
 .te*/
 
 
-/*.ta,F02,III. KONSTANTEN Steuerstze / 2.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+/*.ta,F02,III. KONSTANTEN Steuersรคtze / 2.,1
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-.me (MENUE,FI-050),1,Kontenstamm,Steuerstze.
-.da (EURODATA,SYP_01),1,Steuerstze.
-.ma (\euro\mask\STM090),1,Anlegen/ndern Steuerstze 1/1.
+.me (MENUE,FI-050),1,Kontenstamm,Steuersรคtze.
+.da (EURODATA,SYP_01),1,Steuersรคtze.
+.ma (\euro\mask\STM090),1,Anlegen/รndern Steuersรคtze 1/1.
 .hd (FI,kons-st),ST,steuer.
 .te*/
 
 /*.ta,F02,III. KONSTANTEN UST-VA Kennzeichen / 3.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .me (MENUE,FI-050),1,Kontenstamm,Ust-VA Kennzeichen.
 .da (EURODATA,SYP_10),1,UST-VA Kennzeichen.
-.ma (\euro\mask\FIM010),1,Anlegen/ndern UST-VA Kennzeichen 1/1.
+.ma (\euro\mask\FIM010),1,Anlegen/รndern UST-VA Kennzeichen 1/1.
 .hd (FI,kons-st),FI,ust-va.
 .te*/
 
 /*.ta,F02,III. KONSTANTEN Festkonten / 4.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .me (MENUE,FI-050),1,Kontenstamm,Festkonten.
 .da (EURODATA,SYP_02),1,Festkonten:.
-.ma (\euro\mask\FIM020),1,Anlegen/ndern Festkonten 1/1.
+.ma (\euro\mask\FIM020),1,Anlegen/รndern Festkonten 1/1.
 .hd (FI,kons-st),FI,fest-an.
 .te*/
 
-/*.ta,F02,III. KONSTANTEN Landes-/Fremdwhrung / 5.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+/*.ta,F02,III. KONSTANTEN Landes-/Fremdwรคhrung / 5.,1
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-.me (MENUE,FI-050),1,Kontenstamm,Whrungen.
-.da (EURODATA,SYP_08),1,Landes-/Fremdwhrung.
-.ma (\euro\mask\STM095),1,Anlegen/ndern Landeswhrung 1/1.
-.hd (FI,kons-st),ST,law-an.
-.ma (\euro\mask\STM094),1,Anlegen/ndern Fremdwhrung 1/1.
-.hd (FI,kons-st),ST,fremdw.
+.me (MENUE,FI-050),1,Kontenstamm,Wรคhrungen.
+.da (EURODATA,SYP_08),1,Landes-/Fremdwรคhrung.
+.ma (\euro\mask\STM095),1,Anlegen/รndern Landeswรคhrung 1/1.
+.hd (FI,kons-st),ST,lawรค-an.
+.ma (\euro\mask\STM094),1,Anlegen/รndern Fremdwรคhrung 1/1.
+.hd (FI,kons-st),ST,fremdwรค.
 .te*/
 
 /*.ta,F02,III. KONSTANTEN Buchungstexte / 6.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .me (MENUE,FI-050),1,Kontenstamm,Buchungstexte.
 .da (EURODATA,SYP_03),1,Buchungstexte.
-.ma (\euro\mask\FIM030),1,Anlegen/ndern Buchungstexte.
+.ma (\euro\mask\FIM030),1,Anlegen/รndern Buchungstexte.
 .hd (FI,kons-st),FI,bute-an.
 .te*/
 
 /*.ta,F02,III. KONSTANTEN / Mahntexte 7.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .me (MENUE,FI-050),1,Kontenstamm,Mahntexte.
 .da (EURODATA,SYP_04),1,Mahntexte.
-.ma (\euro\mask\FIM040),1,Anlegen/ndern Mahntexte 1/1.
+.ma (\euro\mask\FIM040),1,Anlegen/รndern Mahntexte 1/1.
 .hd (FI,kons-st),FI,mate-an.
 .ff
 .te*/
 
 /*.ta,F02,III. KONSTANTEN / Druck Konstanten 8.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .me (MENUE,FI-050),1,Kontenstamm,Druck Konstanten.
 .ma (\euro\mask\STM4010),1,Druck Konstanten.
 .hd (FI,kons-st),ST,kons-dr.
 .fo (\euro\form\STB4010.M03),1,S0,Z0,B84,H54,Druck Konsten.
 .hd (FI,kons-st),ST,drfremd.
-.fo (\euro\form\STB4011.M03),1,S0,Z0,B84,H30,Druck Fremdwhrungen.
+.fo (\euro\form\STB4011.M03),1,S0,Z0,B84,H30,Druck Fremdwรคhrungen.
 .te*/
 
 
 /*.ta,F02,IV. euroSOFT-FIBU Kundenstamm / 1.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-.me (MENUE,FI-030),1,LK Finanzbuchhaltung,ndern Kunden.
-.me (MENUE,FI-040),1,Kontenstamm,ndern Kunden.
+.me (MENUE,FI-030),1,LK Finanzbuchhaltung,รndern Kunden.
+.me (MENUE,FI-040),1,Kontenstamm,รndern Kunden.
 .da (EURODATA,ST1100),1,Kundenstamm.
 .da (EURODATA,ST1110),1,.
 .da (EURODATA,FI1110),1,.
 .da (EURODATA,FI1115),1,.
-.ma (\euro\mask\STM110),1,Anlegen/ndern Kundenstamm 1/4.
-.ma (\euro\mask\FIM111),1,Anlegen/ndern Kundenstamm 2/4.
-.ma (\euro\mask\FIM112),1,Gebuchte Kunden-Umstze 3/4.
+.ma (\euro\mask\STM110),1,Anlegen/รndern Kundenstamm 1/4.
+.ma (\euro\mask\FIM111),1,Anlegen/รndern Kundenstamm 2/4.
+.ma (\euro\mask\FIM112),1,Gebuchte Kunden-Umsรคtze 3/4.
 .ma (\euro\mask\FIM113),1,Offene Posten Kunden 4/4.
 .hd (FI,kund-st),FI,kund-an.
 .hd (FI,kund-st),FI,kund-dr.
@@ -330,19 +330,19 @@ da (EURODATA,SYPARA),1.
 
 
 /*.ta,F02,IV. euroSOFT-FIBU Lieferantenstamm / 2.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-.me (MENUE,FI-030),1,LK Finanzbuchhaltung,ndern Lieferanten.
-.me (MENUE,FI-042),1,Kontenstamm,ndern Lieferanten.
+.me (MENUE,FI-030),1,LK Finanzbuchhaltung,รndern Lieferanten.
+.me (MENUE,FI-042),1,Kontenstamm,รndern Lieferanten.
 .da (EURODATA,ST1200),1,Lieferantenstamm.
 .da (EURODATA,ST1210),1,.
 .da (EURODATA,FI1210),1,.
 .da (EURODATA,FI1215),1,.
-.ma (\euro\mask\STM120),1,Anlegen/ndern Lieferantenstamm 1/4.
-.ma (\euro\mask\FIM121),1,Anlegen/ndern Lieferantenstamm 2/4.
-.ma (\euro\mask\FIM122),1,Gebuchte Lieferanten-Umstze 3/4.
+.ma (\euro\mask\STM120),1,Anlegen/รndern Lieferantenstamm 1/4.
+.ma (\euro\mask\FIM121),1,Anlegen/รndern Lieferantenstamm 2/4.
+.ma (\euro\mask\FIM122),1,Gebuchte Lieferanten-Umsรคtze 3/4.
 .ma (\euro\mask\FIM123),1,Offene Posten Lieferanten 4/4.
 .hd (FI,lief-st),FI,lief-an.
 .fo (\euro\form\STB1200.M03),1,S0,Z0,B84,H51,Druck Adress-Liste Lieferanten.
@@ -366,23 +366,23 @@ da (EURODATA,SYPARA),1.
 
 
 /*.ta,F02,IV. euroSOFT-FIBU Sachkonten-Stamm & Sonstige Konten / 3.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-.me (MENUE,FI-030),1,LK Finanzbuchhaltung,ndern Sachkonten.
-.me (MENUE,FI-042),1,Kontenstamm,ndern Sachkonten.
+.me (MENUE,FI-030),1,LK Finanzbuchhaltung,รndern Sachkonten.
+.me (MENUE,FI-042),1,Kontenstamm,รndern Sachkonten.
 .da (EURODATA,FI1310),1,Sachkontenstamm.
 .da (EURODATA,FI1311),1,Sachkontenstamm Zusatz.
-.ma (\euro\mask\FIM130),1,Anlegen/ndern Sachkontenstamm 1/2.
-.ma (\euro\mask\FIM131),1,Umstze Sachkontenstamm 2/2.
+.ma (\euro\mask\FIM130),1,Anlegen/รndern Sachkontenstamm 1/2.
+.ma (\euro\mask\FIM131),1,Umsรคtze Sachkontenstamm 2/2.
 .hd (FI,sach-st),FI,sach-an.
 .hd (FI,sach-st),FI,sach-dr.
 .fo (\euro\form\FIB1310.M03),1,S0,Z0,B84,H65,Druck Sachkonten-Stamm.
 
-.me (MENUE,FI-042),1,Kontenstamm,ndern Bankenstamm.
+.me (MENUE,FI-042),1,Kontenstamm,รndern Bankenstamm.
 .da (EURODATA,FI1400),1,Bankenstamm.
-.ma (\euro\mask\FIM140),1,Anlegen/ndern Bankenstamm 1/1.
+.ma (\euro\mask\FIM140),1,Anlegen/รndern Bankenstamm 1/1.
 .hd (FI,sach-st),FI,bank-an.
 .hd (FI,sach-st),FI,bank-dr.
 .fo (\euro\form\FIB1400.M03),1,S0,Z0,B84,H13,Druck Banken-Stamm.
@@ -404,47 +404,47 @@ da (EURODATA,SYPARA),1.
 
 
 /*.ta,F02,IV. euroSOFT-FIBU Auswertungs-Stamm / 4.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-.me (MENUE,FI-032),1,Auswertungsstamm,ndern Bilanztexte.
+.me (MENUE,FI-032),1,Auswertungsstamm,รndern Bilanztexte.
 .da (EURODATA,FI1500),1,Bilanztexte.
-.ma (\euro\mask\FIM150),1,Anlegen/ndern Bilanztexte 1/1.
+.ma (\euro\mask\FIM150),1,Anlegen/รndern Bilanztexte 1/1.
 .hd (FI,ausw-st),FI,bila-an.
 .fo (\euro\form\FIB1500.M03),1,S0,Z0,B84,H37,Druck Bilanztexte.
 
-.me (MENUE,FI-046),1,Auswertungsstamm,ndern Kostenstellen.
+.me (MENUE,FI-046),1,Auswertungsstamm,รndern Kostenstellen.
 .da (EURODATA,FI1710),1,Kostenstellen.
-.ma (\euro\mask\FIM171),1,Anlegen/ndern Kostenstellen 1/1.
+.ma (\euro\mask\FIM171),1,Anlegen/รndern Kostenstellen 1/1.
 .hd (FI,ausw-st),FI,kost-an.
 .fo (\euro\form\FIB1710.M03),1,S0,Z0,B84,H13,Druck Kostenstellen.
 
-.me (MENUE,FI-046),1,Auswertungsstamm,ndern K-Stellen/K-Arten.
+.me (MENUE,FI-046),1,Auswertungsstamm,รndern K-Stellen/K-Arten.
 .da (EURODATA,FI1720),1,Kostenstellen/Kostenarten.
-.ma (\euro\mask\FIM172),1,Anlegen/ndern Kostenstellen/-arten 1/1.
+.ma (\euro\mask\FIM172),1,Anlegen/รndern Kostenstellen/-arten 1/1.
 .hd (FI,ausw-st),FI,koka-an.
 .fo (\euro\form\FIB1720.M03),1,S0,Z0,B84,H15,Druck K-Stellen/K-Arten.
 .te*/
 
 
 Dateibeschreibung Festkonten:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
 da (EURODATA,SYP_02),1.
 
 
-Bildschirmmaske und Ein-/Ausgabefelder fr die Festkonten:
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Bildschirmmaske und Ein-/Ausgabefelder fรผr die Festkonten:
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
 ma (\euro\mask\FIM160),1.
 
 hd (FI,kons-st),FI,fest-an.
 
 /*.ta,F02,V. euroSOFT-FIBU Buchungen Erfassen / 1.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .da (EURODATA,FI2100),1,Buchungserfassung.
 .ma (\euro\mask\FIM210),1,Erfassen Buchungen 1/1.
@@ -456,9 +456,9 @@ hd (FI,kons-st),FI,fest-an.
 hd (FI,AU110),FI,erfass.
 
 /*.ta,F02,VI. euroSOFT-FIBU Buchungen Verarbeiten / 1.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .hd (FI,AU110),FI,bu-vera.
 .fo (\euro\form\FIB2100.M03),1,S0,Z0,B118,H16,Druck Buchungserfassungs-Protokoll.
@@ -483,25 +483,25 @@ ma (\euro\mask\FIM210),1,Erfassen Buchungen 1/1.
 hd (FI,AU110),FI,erfass.
 
 /*.ta,F02,ANHANG Artikelstamm  / 1.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu / Zusatz                                                   บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu / Zusatz                                                   โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .da (EURODATA,ST1300),1,Artikelstamm.
 .da (EURODATA,ST1330),1,Artikelstamm.
-.ma (\euro\mask\FIM134),1,Anlegen/ndern Artikel 1/3.
+.ma (\euro\mask\FIM134),1,Anlegen/รndern Artikel 1/3.
 .ma (\euro\mask\FIM135),1,Anlegen Artikelmerkmale 2/3.
 .ma (\euro\mask\AUM133),1,Anlegen Artikelzusatztexte 3/3.
 .hd (FI,sach-st),LK,artikel.
 .te*/
 
 /*.ta,F02,ANHANG Mengeneinheiten / 2.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu / Zusatz                                                   บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu / Zusatz                                                   โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .da (EURODATA,ST1400),1,Stammdatei Mengeneinheiten.
-.ma (\euro\mask\STM140),1,Anlegen/ndern Mengeneinheiten 1/1.
+.ma (\euro\mask\STM140),1,Anlegen/รndern Mengeneinheiten 1/1.
 .hd (FI,sach-st),ST,mengen.
 .te*/
 
@@ -511,9 +511,9 @@ da (EURODATA,FI1610),1,Anlagenstamm.
 hd (FI,AU110),FI,erfass.
 
 /*.ta,F02,ANHANG Erfassen Geldbuchungen / 3.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu / Zusatz                                                   บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu / Zusatz                                                   โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .da (EURODATA,FI2500),1,Erfassen Geldbuchungen.
 .ma (\euro\mask\FIM250),1,Erfassen Geldbuchungen 1/1.
@@ -522,9 +522,9 @@ hd (FI,AU110),FI,erfass.
 
 
 /*.ta,F02,ANHANG Erfassen Eigenverbrauch / 4.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu / Zusatz                                                   บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu / Zusatz                                                   โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .da (EURODATA,FI2540),1,Erfassen Eigenverbrauch.
 .ma (\euro\mask\FIM254),1,Erfassen Eigenverbrauch 1/1.
@@ -533,9 +533,9 @@ hd (FI,AU110),FI,erfass.
 
 
 /*.ta,F02,Anhang / Beispielausdrucke 1.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .fo (\euro\form\FIB4140.M03),1,S0,Z0,B118,H45,Druck Offene Posten Kunden.
 .fo (\euro\form\FIB4150.M03),1,S0,Z0,B118,H35,Druck Offene Posten Lieferanten.
@@ -543,9 +543,9 @@ hd (FI,AU110),FI,erfass.
 
 
 /*.ta,F02,III. KONSTANTEN / Mahntexte 7.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .fo (\euro\form\DRUCK001.TXT),1,S0,Z0,B125,H26,DRUCK001.
 .fo (\euro\form\DRUCK002.TXT),1,S0,Z0,B125,H26,DRUCK002.
@@ -571,9 +571,9 @@ hd (FI,AU110),FI,erfass.
 
 
 /*.ta,F02,III. KONSTANTEN / Mahntexte 7.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .fo (\euro\form\DRUCK021.TXT),1,S0,Z0,B125,H26,DRUCK021.
 .fo (\euro\form\DRUCK022.TXT),1,S0,Z0,B125,H26,DRUCK022.
@@ -597,33 +597,33 @@ hd (FI,AU110),FI,erfass.
 .fo (\euro\form\DRUCK030.TXT),1,S0,Z0,B125,H26,DRUCK030.
 .te*/
 
-/*.ta,F02,II. euroSOFT-MEN / 1.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+/*.ta,F02,II. euroSOFT-MENร / 1.,1
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
-Bentzeroberflche euroSOFT-MEN
-ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+Benรผtzeroberflรคche euroSOFT-MENร
+โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€โ”€
 
-Der Aufruf der jeweiligen Funktionen erfolgt ber das euroSOFT-MEN. Dabei sind
+Der Aufruf der jeweiligen Funktionen erfolgt รผber das euroSOFT-MENร. Dabei sind
 die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
 
 fo (\euro\form\FIB4100.M01),1,S0,Z0,B125,H26,Druck Sachkontensaldenliste.
-mi (MENUE,FI-L000),1,ฏLK Finanzbuchhaltungฎ.
-mi (MENUE,FI-L010),1,ฏKontenstammฎ.
-mi (MENUE,FI-L011),1,ฏAuswertungsstammฎ.
-mi (MENUE,FI-L020),1,ฏSalden/offene Postenฎ.
-mi (MENUE,FI-L021),1,ฏStatistiken / Kostenฎ.
-mi (MENUE,FI-L025),1,ฏZusatzpakete Fibuฎ.
+mi (MENUE,FI-L000),1,ยปLK Finanzbuchhaltungยซ.
+mi (MENUE,FI-L010),1,ยปKontenstammยซ.
+mi (MENUE,FI-L011),1,ยปAuswertungsstammยซ.
+mi (MENUE,FI-L020),1,ยปSalden/offene Postenยซ.
+mi (MENUE,FI-L021),1,ยปStatistiken / Kostenยซ.
+mi (MENUE,FI-L025),1,ยปZusatzpakete Fibuยซ.
 .te*/
 
 
 
 
 /*.ta,F02,IV. STAMMDATEN Anlagenstamm / 5.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .da (EURODATA,FI1610),1,Anlagenstamm.
 .te*/
@@ -633,17 +633,17 @@ da (EURODATA,ST1100),1,Kundenstamm.
 da (EURODATA,ST1110),1,.
 da (EURODATA,FI1110),1,.
 da (EURODATA,FI1115),1,.
-ma (\euro\mask\STM110),1,Anlegen/ndern Kundenstamm 1/4.
-ma (\euro\mask\FIM111),1,Anlegen/ndern Debitor-Stamm 2/4.
-ma (\euro\mask\FIM112),1,Gebuchte Debitor-Umstze 3/4.
+ma (\euro\mask\STM110),1,Anlegen/รndern Kundenstamm 1/4.
+ma (\euro\mask\FIM111),1,Anlegen/รndern Debitor-Stamm 2/4.
+ma (\euro\mask\FIM112),1,Gebuchte Debitor-Umsรคtze 3/4.
 ma (\euro\mask\FIM113),1,Offene Posten Debitoren 4/4.
 hd (FI,kund-st),FI,kund-an.
 
 
-/*.ta,F02,I. Einfhrung / 2.,1
-ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-บ  euroSOFT-WARE LK-Fibu                                                            บ
-ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+/*.ta,F02,I. Einfรผhrung / 2.,1
+โ•”โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•—
+โ•‘  euroSOFT-WARE LK-Fibu                                                            โ•‘
+โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•โ•
 
 .in (FI,AU110).
 .te*/

@@ -1,44 +1,44 @@
-Anmerkung: øEC steht fr den ASCII-Wert ¯027® (Escape)
-           øSP -"- ¯032® (Space)
+Anmerkung: Â°EC steht fÃ¼r den ASCII-Wert Â»027Â« (Escape)
+           Â°SP -"- Â»032Â« (Space)
 
-Damit die Befehlsfolgen besser gelesen werden k”nnen sind sie im
-Beispiel ”fters durch Leerzeichen getrennt. Geben Sie diese Leerzeichen
-nicht ein. Ben”tigte Leerzeichen werden mit øSP
-angefhrt!!!
+Damit die Befehlsfolgen besser gelesen werden kÃ¶nnen sind sie im
+Beispiel Ã¶fters durch Leerzeichen getrennt. Geben Sie diese Leerzeichen
+nicht ein. BenÃ¶tigte Leerzeichen werden mit Â°SP
+angefÃ¼hrt!!!
 
 
 Druckerbezeichnung :  1. HP Laserjet 4L
 Device             :  LPT1
 
-Normalschrift   :  øEC(s0B øEC(s4099T øEC(s0P øEC(s12H øEC(s12V øEC(s0S øEC&l7C
-Schmalschrift   :  øEC(s0B øEC(s4102T øEC(s0P øEC(s17H øEC(s6V øEC(s0S øEC&l6C
-Sch”nschrift    :  øEC(s1B øEC(s4102T øEC(s0P øEC(s17H øEC(s6V øEC(s0S øEC&l6C
-Optional        :  øEC(s4B øEC(s4148T øEC(s1P øEC(s10V øEC(s0S øEC&l12C
+Normalschrift   :  Â°EC(s0B Â°EC(s4099T Â°EC(s0P Â°EC(s12H Â°EC(s12V Â°EC(s0S Â°EC&l7C
+Schmalschrift   :  Â°EC(s0B Â°EC(s4102T Â°EC(s0P Â°EC(s17H Â°EC(s6V Â°EC(s0S Â°EC&l6C
+SchÃ¶nschrift    :  Â°EC(s1B Â°EC(s4102T Â°EC(s0P Â°EC(s17H Â°EC(s6V Â°EC(s0S Â°EC&l6C
+Optional        :  Â°EC(s4B Â°EC(s4148T Â°EC(s1P Â°EC(s10V Â°EC(s0S Â°EC&l12C
 
 KZ Einzug       :  Endlospapier
 
 
-Unterstreichen ein:  øEC&d0D
-Unterstreichen aus:  øEC&d@
-Fett ein          :  øEC(s7B øEC(s4099T øEC(s0P øEC(s12H øEC(s12V øEC(s0S øEC&l12C
-Fett aus          :  øEC(s0B
-Breit ein         :  øEC(s2B øEC(s4148T øEC(s1P øEC(s16V øEC(s0S øEC&l8C
+Unterstreichen ein:  Â°EC&d0D
+Unterstreichen aus:  Â°EC&d@
+Fett ein          :  Â°EC(s7B Â°EC(s4099T Â°EC(s0P Â°EC(s12H Â°EC(s12V Â°EC(s0S Â°EC&l12C
+Fett aus          :  Â°EC(s0B
+Breit ein         :  Â°EC(s2B Â°EC(s4148T Â°EC(s1P Â°EC(s16V Â°EC(s0S Â°EC&l8C
 Breit aus         :
-Kursiv ein        :  øEC(s1S
-Kursiv aus        :  øEC(s0S
-Frei 1 ein        :  øEC(s0B øEC(s4148T øEC(s1P øEC(s12V øEC(s0S øEC&l10C
+Kursiv ein        :  Â°EC(s1S
+Kursiv aus        :  Â°EC(s0S
+Frei 1 ein        :  Â°EC(s0B Â°EC(s4148T Â°EC(s1P Â°EC(s12V Â°EC(s0S Â°EC&l10C
 Frei 1 aus        :
-Frei 2 ein        :  øEC(s2B øEC(s4148T øEC(s1P øEC(s12V øEC(s1S øEC&l8C
+Frei 2 ein        :  Â°EC(s2B Â°EC(s4148T Â°EC(s1P Â°EC(s12V Â°EC(s1S Â°EC&l8C
 Frei 2 aus        :
-Frei 3 ein        :  øEC(s0B øEC(s4148T øEC(s1P øEC(s9V øEC(s0S øEC&l7C
+Frei 3 ein        :  Â°EC(s0B Â°EC(s4148T Â°EC(s1P Â°EC(s9V Â°EC(s0S Â°EC&l7C
 Frei 3 aus        :
-Frei 4 ein        :  øEC(s2B øEC(s4148T øEC(s1P øEC(s7V øEC(s1S øEC&l5C
+Frei 4 ein        :  Â°EC(s2B Â°EC(s4148T Â°EC(s1P Â°EC(s7V Â°EC(s1S Â°EC&l5C
 Frei 4 aus        :
 
 
 Seitensteuerung
 
-Initialisierung alle Seiten   : øECE øEC&l26A øEC&l0O øEC&l1E øEC&l99F øEC&l0L øEC(10U
+Initialisierung alle Seiten   : Â°ECE Â°EC&l26A Â°EC&l0O Â°EC&l1E Â°EC&l99F Â°EC&l0L Â°EC(10U
 Deinitialisierung alle Seiten :
 Initialisierung erste Seite   :
 Deinitialisierung letzte Seite:
@@ -48,29 +48,29 @@ Druckerbezeichnung :  Canon Laserdrucker
 Device             :  LPT1
 
 Initialisieren 1. Seite:
-øEC; øECc øEC< øEC[14p       ISO Mode, Hard-, Softreset, Seite A4
-øEC[&%                   ÿ   Paint Memory Mode
-øEC[?2                   ÿ   Scalierbare Fonts
-øEC('$2 øEC)'øSP3 øEC[0%r    Prim„r-, Sekund„rgrafikset, Hochformat
-øEC[0;0t                     R„nder 0=links, ;=rechts, 0=oben, =unten w„re m”glich
+Â°EC; Â°ECc Â°EC< Â°EC[14p       ISO Mode, Hard-, Softreset, Seite A4
+Â°EC[&%                   Â    Paint Memory Mode
+Â°EC[?2                   Â    Scalierbare Fonts
+Â°EC('$2 Â°EC)'Â°SP3 Â°EC[0%r    PrimÃ¤r-, SekundÃ¤rgrafikset, Hochformat
+Â°EC[0;0t                     RÃ¤nder 0=links, ;=rechts, 0=oben, =unten wÃ¤re mÃ¶glich
 
 Normalschrift:
-øEC[0øSPK øEC[120øSPC        Pitch/Size
-øEC[22m øEC[3y               St„rke/Type
-øEC[110;63øSPG               VMI:110; HMI:63
+Â°EC[0Â°SPK Â°EC[120Â°SPC        Pitch/Size
+Â°EC[22m Â°EC[3y               StÃ¤rke/Type
+Â°EC[110;63Â°SPG               VMI:110; HMI:63
 
 Schmalschrift:
-øEC[2øSPK øEC[82øSPC         Pitch/Size
-øEC[m øEC[3y                 St„rke/Type
-øEC[95;43øSPG                VMI:95; HMI:43
+Â°EC[2Â°SPK Â°EC[82Â°SPC         Pitch/Size
+Â°EC[m Â°EC[3y                 StÃ¤rke/Type
+Â°EC[95;43Â°SPG                VMI:95; HMI:43
 
-øEC[1m  Bold ein             øEC[22m  Bold aus
-øEC[3m  Italic ein           øEC[23m  Italic aus
-øEC[4m  Unterline ein        øEC[24m  Unterline aus
-øEC[7m  Reverse ein          øEC[27m Reverse aus
-øEC[200;200 B Expand ein     øEC[100;100 B Expand aus
-øEC[100;200 B Wide ein       øEC[100;100 B Wide aus
-øEC[200;100 B Tall ein       øEC[100;100 B Tall aus
-øEC[1;0;0{ Box ein           øEC[6} Box aus
-øEC[1;0s Schatten ein        øEC[6r Schatten aus
+Â°EC[1m  Bold ein             Â°EC[22m  Bold aus
+Â°EC[3m  Italic ein           Â°EC[23m  Italic aus
+Â°EC[4m  Unterline ein        Â°EC[24m  Unterline aus
+Â°EC[7m  Reverse ein          Â°EC[27m Reverse aus
+Â°EC[200;200 B Expand ein     Â°EC[100;100 B Expand aus
+Â°EC[100;200 B Wide ein       Â°EC[100;100 B Wide aus
+Â°EC[200;100 B Tall ein       Â°EC[100;100 B Tall aus
+Â°EC[1;0;0{ Box ein           Â°EC[6} Box aus
+Â°EC[1;0s Schatten ein        Â°EC[6r Schatten aus
 

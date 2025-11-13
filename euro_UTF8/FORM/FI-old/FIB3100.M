@@ -1,11 +1,11 @@
       
-     ��BUCHUNGS-JOURNAL                                                                      Datum: 16.03.91 - SEITE 0001��
-     �������������������������������������������������������������������������������������������������������������������Ŀ�
-     ��Mandant (03) ... T�chtig & Co                                                                      Teilnehmer: 002��
-      ��������������������������������������������������������������������������������������������������������������������
+     ┌┘BUCHUNGS-JOURNAL                                                                      Datum: 16.03.91 - SEITE 0001└┐
+     │┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+     └┤Mandant (03) ... Tüchtig & Co                                                                      Teilnehmer: 002├┘
+      └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
             Buch.-   Beleg-     Beleg-   Konto-         U m s a t z      U m s a t z Gegen-
      Lfd.Nr    Datum Nummer        Datum Nummer             S O L L        H A B E N Konto     Buchungstext
-     ����������������������������������������������������������������������������������������������������������������������
+     ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       
      000001  3.04.91 KO/001      3.04.91 S2000            10.000,00             0,00 S2100     KO Umbuchungen
      000002  3.04.91 KO/001      3.04.91 S2100                 0,00        10.000,00 S2000     KO Umbuchungen
@@ -41,8 +41,8 @@
      000032  3.04.91 AUTO        3.04.91 S3300                 0,00         1.200,00 Lief./Inl INLANDSVERBINDL. HABEN
 
 
-     ��������������������������������������������������������������������������������������������������������������������Ŀ
-     ��Nutzungsberechtigung: euroSOFT Graz                                                              (c) 1990 euroSOFT��
+     ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+     └┐Nutzungsberechtigung: euroSOFT Graz                                                              (c) 1990 euroSOFT┌┘
 
 
 

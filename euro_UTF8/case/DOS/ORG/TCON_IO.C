@@ -4,7 +4,7 @@
  *   Memory Model:    SMALL                                   *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC      *
  *   Compilieren:     (Q)CL TCON_IO.C /link DOSLIBS.LIB       *
- *   Programmautor:   Heinrich Gîbl                           *
+ *   Programmautor:   Heinrich G√∂bl                           *
  *   Stand:           27.6.88                                 *
  **************************************************************/
 
@@ -14,9 +14,9 @@
 #include "showhelp.c"
 
 #define LF  '\012'              /* Zeilenvorschub = Line Feed */
-#define CR  '\015'         /* WagenrÅcklauf = Carriage Return */
+#define CR  '\015'         /* Wagenr√ºcklauf = Carriage Return */
 
-char s[13];                         /* FÅr gepufferte Eingabe */
+char s[13];                         /* F√ºr gepufferte Eingabe */
 
 main ()
 {

@@ -1,6 +1,6 @@
 /**************************************************************
  *   CON_IO.H                                                 *
- *   Definitionen fÅr C-Funktionen, die Åber DOS auf CON,     *
+ *   Definitionen f√ºr C-Funktionen, die √ºber DOS auf CON,     *
  *   AUX und PRN zugreifen                                    *
  *   27.6.88                                                  *
  **************************************************************/

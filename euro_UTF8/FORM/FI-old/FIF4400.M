@@ -7,90 +7,90 @@
 &DATEI (1) = MASK, FI4135
 
 &KOPF (0)
-^��SCHATTENSALDO           Monat: @@@@@@@@@@           Datum: ##.##.## - SEITE ������ ~NO ~1�_W_MONAT ~1._DRUCK_DAT ~1._SEITE
-���������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ����������������������������������������������������������������������������������
+^┌┘SCHATTENSALDO           Monat: @@@@@@@@@@           Datum: ##.##.## - SEITE øøøø└┐ ~NO ~1°_W_MONAT ~1._DRUCK_DAT ~1._SEITE
+│┌────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └────────────────────────────────────────────────────────────────────────────────┘
 Konto-                                     Saldo-       Saldo am      Schatten-
 Nummer    Bezeichnung                     Vortrag          Konto          Saldo
-������������������������������������������������������������������������������������
-�
+────────────────────────────────────────────────────────────────────────────────────
+ 
 &END
 
 
 &RUMPF (0)
-S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ `##.###.##�,�� `##.###.##�,�� `##.###.##�,��  ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-AKT_SALDO~0.SALDO
+S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ `##.###.##ø,øø `##.###.##ø,øø `##.###.##ø,øø  ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-AKT_SALDO~0.SALDO
 &END
 
 
 &RUMPF (1)
-������������������������������������������������������������������������������������
-               ** Zwischensumme         ###.###.##�,�� ###.###.##�,�� ~1.$VOR_SALDO~1.$AKT_SALDO
+────────────────────────────────────────────────────────────────────────────────────
+               ** Zwischensumme         ###.###.##ø,øø ###.###.##ø,øø ~1.$VOR_SALDO~1.$AKT_SALDO
 
 &END
 
 
 &FUSS (0)
-               == Endsumme              ###.###.##�,�� ###.###.##�,�� ~1._VOR_SALDO~1._AKT_SALDO
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+               == Endsumme              ###.###.##ø,øø ###.###.##ø,øø ~1._VOR_SALDO~1._AKT_SALDO
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 &KOPF (10)
-^��UMSATZSTEUER-VORANMELDUNG                                  Datum: ##.##.## �� ~NO ~1._DRUCK_DAT
-����������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                 Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- �����������������������������������������������������������������������������
-�
+^┌┘UMSATZSTEUER-VORANMELDUNG                                  Datum: ##.##.## └┐ ~NO ~1._DRUCK_DAT
+│┌───────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                 Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └───────────────────────────────────────────────────────────────────────────┘
+ 
 &END
 
 &RUMPF (10)
-�
-�
-�
-�Gesamtbetrag der steuerpflichtigen Ums�tze:    ###.###.##�,��                   ~1._ERL_SUMME
-�
-�
+ 
+ 
+ 
+ Gesamtbetrag der steuerpflichtigen Umsätze:    ###.###.##ø,øø                   ~1._ERL_SUMME
+ 
+ 
  Davon zu versteuern:
- ��������������������
-�
- Mit #�,��% Mehrwertsteuer                      ###.###.##�,��  ###.###.##�,��   ~1._MWST_1 ~1._ERLOS_S1 ~1._BERECH_S1
- Mit #�,��% Mehrwertsteuer                      ###.###.##�,��  ###.###.##�,��   ~1._MWST_2 ~1._ERLOS_S2 ~1._BERECH_S2
- Mit #�,��% Mehrwertsteuer                      ###.###.##�,��  ###.###.##�,��   ~1._MWST_3 ~1._ERLOS_S3 ~1._BERECH_S3
- Mit #�,��% Mehrwertsteuer                      ###.###.##�,��  ###.###.##�,��   ~1._MWST_4 ~1._ERLOS_S4 ~1._BERECH_S4
- Mit #�,��% Mehrwertsteuer                      ###.###.##�,��  ###.###.##�,��   ~1._MWST_5 ~1._ERLOS_S5 ~1._BERECH_S5
- �����������������������������������������������������������������������������
-            Summe  Umsatzsteuer                                 ###.###.##�,��   ~1._BER_SUMME
-�
-�
-            - Vorsteuer                         ###.###.##�,��                   ~1._VST
-            - EUST                              ###.###.##�,��                   ~1._EUST
-            - MwSt-Korrektur                    ###.###.##�,��  ###.###.##�,��   ~1._MWST_KORR ~1._ABZUG
-            ������������������������������������������������������������������
-            * Zahllast (Gutschrift bei -Betrag)                 ###.###.##�,��   ~1._ZAHLLAST
-            ������������������������������������������������������������������
-�
-�
-�
-�
-�
-�
-�
-�
+ ────────────────────
+ 
+ Mit #ø,øø% Mehrwertsteuer                      ###.###.##ø,øø  ###.###.##ø,øø   ~1._MWST_1 ~1._ERLOS_S1 ~1._BERECH_S1
+ Mit #ø,øø% Mehrwertsteuer                      ###.###.##ø,øø  ###.###.##ø,øø   ~1._MWST_2 ~1._ERLOS_S2 ~1._BERECH_S2
+ Mit #ø,øø% Mehrwertsteuer                      ###.###.##ø,øø  ###.###.##ø,øø   ~1._MWST_3 ~1._ERLOS_S3 ~1._BERECH_S3
+ Mit #ø,øø% Mehrwertsteuer                      ###.###.##ø,øø  ###.###.##ø,øø   ~1._MWST_4 ~1._ERLOS_S4 ~1._BERECH_S4
+ Mit #ø,øø% Mehrwertsteuer                      ###.###.##ø,øø  ###.###.##ø,øø   ~1._MWST_5 ~1._ERLOS_S5 ~1._BERECH_S5
+ ─────────────────────────────────────────────────────────────────────────────
+            Summe  Umsatzsteuer                                 ###.###.##ø,øø   ~1._BER_SUMME
+ 
+ 
+            - Vorsteuer                         ###.###.##ø,øø                   ~1._VST
+            - EUST                              ###.###.##ø,øø                   ~1._EUST
+            - MwSt-Korrektur                    ###.###.##ø,øø  ###.###.##ø,øø   ~1._MWST_KORR ~1._ABZUG
+            ──────────────────────────────────────────────────────────────────
+            * Zahllast (Gutschrift bei -Betrag)                 ###.###.##ø,øø   ~1._ZAHLLAST
+            ──────────────────────────────────────────────────────────────────
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  Umsatzsteuer Verprobung:
- ������������������������
-�
-�Steuer gem��:              Berechnung          MwSt-Konto           Differenz
- �����������������������������������������������������������������������������
- Steuergruppe #�,��%    ###.###.##�,��      ###.###.##�,��      ###.###.##�,��  ~1._MWST_1 ~1._BERECH_S1 ~1._MWSTV_1 ~1._DIFF_S1
- Steuergruppe #�,��%    ###.###.##�,��      ###.###.##�,��      ###.###.##�,��  ~1._MWST_2 ~1._BERECH_S2 ~1._MWSTV_2 ~1._DIFF_S2
- Steuergruppe #�,��%    ###.###.##�,��      ###.###.##�,��      ###.###.##�,��  ~1._MWST_3 ~1._BERECH_S3 ~1._MWSTV_3 ~1._DIFF_S3
- Steuergruppe #�,��%    ###.###.##�,��      ###.###.##�,��      ###.###.##�,��  ~1._MWST_4 ~1._BERECH_S4 ~1._MWSTV_4 ~1._DIFF_S4
- Steuergruppe #�,��%    ###.###.##�,��      ###.###.##�,��      ###.###.##�,��  ~1._MWST_5 ~1._BERECH_S5 ~1._MWSTV_5 ~1._DIFF_S5
- �����������������������������������������������������������������������������
- Gesamt                 ###.###.##�,��      ###.###.##�,��      ###.###.##�,��  ~1._BER_SUMME ~1._MW_SUMME ~1._DIF_SUMME
- �����������������������������������������������������������������������������
-�
+ ────────────────────────
+ 
+ Steuer gemäß:              Berechnung          MwSt-Konto           Differenz
+ ─────────────────────────────────────────────────────────────────────────────
+ Steuergruppe #ø,øø%    ###.###.##ø,øø      ###.###.##ø,øø      ###.###.##ø,øø  ~1._MWST_1 ~1._BERECH_S1 ~1._MWSTV_1 ~1._DIFF_S1
+ Steuergruppe #ø,øø%    ###.###.##ø,øø      ###.###.##ø,øø      ###.###.##ø,øø  ~1._MWST_2 ~1._BERECH_S2 ~1._MWSTV_2 ~1._DIFF_S2
+ Steuergruppe #ø,øø%    ###.###.##ø,øø      ###.###.##ø,øø      ###.###.##ø,øø  ~1._MWST_3 ~1._BERECH_S3 ~1._MWSTV_3 ~1._DIFF_S3
+ Steuergruppe #ø,øø%    ###.###.##ø,øø      ###.###.##ø,øø      ###.###.##ø,øø  ~1._MWST_4 ~1._BERECH_S4 ~1._MWSTV_4 ~1._DIFF_S4
+ Steuergruppe #ø,øø%    ###.###.##ø,øø      ###.###.##ø,øø      ###.###.##ø,øø  ~1._MWST_5 ~1._BERECH_S5 ~1._MWSTV_5 ~1._DIFF_S5
+ ─────────────────────────────────────────────────────────────────────────────
+ Gesamt                 ###.###.##ø,øø      ###.###.##ø,øø      ###.###.##ø,øø  ~1._BER_SUMME ~1._MW_SUMME ~1._DIF_SUMME
+ ─────────────────────────────────────────────────────────────────────────────
+ 
 &END
 
 
@@ -100,13 +100,13 @@ S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ `##.###.##�,�� `##.###.##�,�� `##.###.##
 
 
 &FUSS (99)
-�����������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+┌─────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 
-S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ###.###.##�,�� ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
-S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##�,�� `##.###.##�,�� `##.###.##�,�� `##.###.##�,�� `##.###.##�,�� `##.###.##�,�� ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
+S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ###.###.##ø,øø ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
+S@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@ `##.###.##ø,øø `##.###.##ø,øø `##.###.##ø,øø `##.###.##ø,øø `##.###.##ø,øø `##.###.##ø,øø ~0.KONTONR~0.KONTO_BEZ~1.-VOR_SALDO~1.-PER_SOLL~1.-PER_HABEN~1.-JHR_SOLL~1.-JHR_HABEN~1.-AKT_SALDO
 
 
 Konto-                                       Schatten-         Saldo-       Saldo am

@@ -1,6 +1,6 @@
 /*************************************************************
  *    DATETIME.H                                             *
- *    C-Funktionen zum Lesen/Ver„ndern von Datum und Uhrzeit *
+ *    C-Funktionen zum Lesen/VerÃ¤ndern von Datum und Uhrzeit *
  *    Definitionsdatei                                       *
  *    27.6.88                                                *
  *************************************************************/

@@ -10,18 +10,18 @@
         InchesPerChar;          /* Inch pro Zeichen             */
  char   PrinterDriver[9],       /* Name des Druckertreibers     */
         DiscNr[5],              /* Nummer der Diskette          */
-        DiscContent[10][31],    /* Die Einzelnen Eintr„ge       */
+        DiscContent[10][31],    /* Die Einzelnen EintrÃ¤ge       */
         Answer;                 /* J/N-Antwort                  */
- int    Entries = 0,            /* Anzahl vorhandener Eintr„ge  */
+ int    Entries = 0,            /* Anzahl vorhandener EintrÃ¤ge  */
         LettersPerEntry,        /* Buchtsaben pro Zeile         */
-        Count,                  /* Schleifenz„hler              */
-        Count2;                 /* Schleifenz„hler              */
+        Count,                  /* SchleifenzÃ¤hler              */
+        Count2;                 /* SchleifenzÃ¤hler              */
 
 
  void EmptyLine( void )
  {
-      ptPrintLeftNow( "º", 0 );
-      ptPrintLeftNow( "º",  ( SpacePerLine - InchesPerChar ) );
+      ptPrintLeftNow( "â•‘", 0 );
+      ptPrintLeftNow( "â•‘",  ( SpacePerLine - InchesPerChar ) );
 
       ptSkipExactStandard( 4 );
 
@@ -30,7 +30,7 @@
  void main( void )
  {
 
-    /* clrscr();  /* Muá bei MS-Compilern entfallen */
+    /* clrscr();  /* MuÃŸ bei MS-Compilern entfallen */
     printf("\n\r\n\r Name der Druckertreiberdatei (max. 8 Buchstaben): ");
     scanf( "%s", PrinterDriver );
 
@@ -65,11 +65,11 @@
                Entries++;
          }
 
-         ptPrintLeftNow( "É", 0 );
+         ptPrintLeftNow( "â•”", 0 );
          for( Count=1; Count <= (WORD) ( ( SpacePerLine -
                   2 * InchesPerChar ) * CharsPerInch); Count++ )
-              ptPrintNowChar( 'Í' );
-         ptPrintLeftNow( "»", ( SpacePerLine - InchesPerChar ) );
+              ptPrintNowChar( 'â•' );
+         ptPrintLeftNow( "â•—", ( SpacePerLine - InchesPerChar ) );
          ptSkipExactStandard( 4 );
 
          EmptyLine();
@@ -78,11 +78,11 @@
          ptPrintNow( DiscNr );
          ptSkipExactStandard( 4 );
 
-         ptPrintLeftNow( "Ì", 0 );
+         ptPrintLeftNow( "â• ", 0 );
          for( Count=1; Count <= (WORD) ( ( SpacePerLine -
               2 * InchesPerChar ) * CharsPerInch); Count++ )
-              ptPrintNowChar( 'Í' );
-         ptPrintLeftNow( "¹", ( SpacePerLine - InchesPerChar ) );
+              ptPrintNowChar( 'â•' );
+         ptPrintLeftNow( "â•£", ( SpacePerLine - InchesPerChar ) );
          ptSkipExactStandard( 4 );
 
          Count = 0;
@@ -102,11 +102,11 @@
                Count++;
          }
 
-         ptPrintLeftNow( "È", 0 );
+         ptPrintLeftNow( "â•š", 0 );
          for( Count=1; Count <= (WORD) ( ( SpacePerLine -
                   2 * InchesPerChar ) * CharsPerInch); Count++ )
-              ptPrintNowChar( 'Í' );
-         ptPrintNowChar( '¼' );
+              ptPrintNowChar( 'â•' );
+         ptPrintNowChar( 'â•' );
 
          ptSkipExactStandard( 14 );
 

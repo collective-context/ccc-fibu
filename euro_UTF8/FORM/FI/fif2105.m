@@ -8,28 +8,28 @@
 &DATEI (2) = MASK, SYP_01
 
 &KOPF (0)
-^��BUCHUNGSERFASSUNGS-PROTOKOLL                                                          Datum: @@@@@@@@ - SEITE ������ ~SM ~1._DATUM_AKT ~1._SEITE
-�������������������������������������������������������������������������������������������������������������������Ŀ�
-��Mandant (��) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                        Teilnehmer: ����� ~1._NR_MAND ~1._MANDANT ~1._TEILN
- ��������������������������������������������������������������������������������������������������������������������
+^┌┘BUCHUNGSERFASSUNGS-PROTOKOLL                                                          Datum: @@@@@@@@ - SEITE øøøø└┐ ~SM ~1._DATUM_AKT ~1._SEITE
+│┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐│
+└┤Mandant (øø) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                        Teilnehmer: øøø├┘ ~1._NR_MAND ~1._MANDANT ~1._TEILN
+ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 &END
 
 &RUMPF (0)
 
-����������������������������������������������������������������������������������������������������������������������
-�:SATZ_NR :BELEG_NR :BELEG_DAT :BUCH_DAT :SOL_KONTO :HAB_KONTO    :BETRAG_BR :UST_ART :UST_SATZ       :UST_BETR�����Ŀ
-��ě����� @@@@@@@@@@  ##.##.##  ##.##.## @@@@@@@@@  @@@@@@@@@ ###.###.##�,��        @    @@@@@@   ##.###.##�,��������� ~0.:SATZ_NR~0.:BELEG_NR~0.:BELEG_DAT~0.:BUCH_DAT~0.:SOL_KONTO~0.:HAB_KONTO~0.:BETRAG_BR~0.:UST_ART~0.:UST_SATZ~0.:UST_BETR
-�:OP_NUMMER :BUCH_ART  :ZAHL_KO  :SKO_BET1 :SKO_BET2 :SKO_BET3 :SKO_BET4 :SKO_BET5 :SKO_BET6 :SKO_BET7 :SKO_BET8����Ŀ
-�@@@@@@@@@@        ��  @@-@@-@@@ ##.##�,�� ##.##�,�� ##.##�,�� ##.##�,�� ##.##�,�� ##.##�,�� ##.##�,�� ##.##�,�������� ~0.:OP_NUMMER~0.:BUCH_ART~0.:ZAHL_KO~0.:SKO_BET1~0.:SKO_BET2~0.:SKO_BET3~0.:SKO_BET4~0.:SKO_BET5~0.:SKO_BET6~0.:SKO_BET7~0.:SKO_BET8
-�:K_AUFTEIL :BUCH_TEXT���������������������������������Ŀ
-����������@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@�����        ~0.:K_AUFTEIL~0.:BUCH_TEXT
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+┌:SATZ_NR :BELEG_NR :BELEG_DAT :BUCH_DAT :SOL_KONTO :HAB_KONTO    :BETRAG_BR :UST_ART :UST_SATZ       :UST_BETR──────┐
+└──øøøøøø @@@@@@@@@@  ##.##.##  ##.##.## @@@@@@@@@  @@@@@@@@@ ###.###.##ø,øø        @    @@@@@@   ##.###.##ø,øø──────┘ ~0.:SATZ_NR~0.:BELEG_NR~0.:BELEG_DAT~0.:BUCH_DAT~0.:SOL_KONTO~0.:HAB_KONTO~0.:BETRAG_BR~0.:UST_ART~0.:UST_SATZ~0.:UST_BETR
+┌:OP_NUMMER :BUCH_ART  :ZAHL_KO  :SKO_BET1 :SKO_BET2 :SKO_BET3 :SKO_BET4 :SKO_BET5 :SKO_BET6 :SKO_BET7 :SKO_BET8─────┐
+└@@@@@@@@@@        øø  @@-@@-@@@ ##.##ø,øø ##.##ø,øø ##.##ø,øø ##.##ø,øø ##.##ø,øø ##.##ø,øø ##.##ø,øø ##.##ø,øø─────┘ ~0.:OP_NUMMER~0.:BUCH_ART~0.:ZAHL_KO~0.:SKO_BET1~0.:SKO_BET2~0.:SKO_BET3~0.:SKO_BET4~0.:SKO_BET5~0.:SKO_BET6~0.:SKO_BET7~0.:SKO_BET8
+┌:K_AUFTEIL :BUCH_TEXT──────────────────────────────────┐
+└─────────@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@────┘        ~0.:K_AUFTEIL~0.:BUCH_TEXT
 &END
 
 &REM ##.##.## @@@@@@@@@ @@@@@@@@@@ ##.##.## @@@@@@@@@ ###.###.###.## @@@@@@@@@@@@@@@@@@@@@@@@ @ @@@@@@ ##.###.###.## ~0.SATZ_NR ~0.BUCH_DATUM ~0.SOLL_KONTO ~0.BELEG_NR ~0.BELEG_DAT ~0.HAB_KONTO ~0.BETRAG_BR~0.BUCH_TEXT~0.UST_ART~0.UST_SATZ~0.UST_BETRAG
 
 &FUSS (0)
-����������������������������������������������������������������������������������Ŀ
-��Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@�� ~1._NUTZUNG  ~1._COPYRIGHT
+┌──────────────────────────────────────────────────────────────────────────────────┐
+└┐Nutzungsberechtigung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@@@@@@@@@@@@@@@@┌┘ ~1._NUTZUNG  ~1._COPYRIGHT
 &END
 
 

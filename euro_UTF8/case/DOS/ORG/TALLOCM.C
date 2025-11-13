@@ -4,7 +4,7 @@
  *   Memory Model:    SMALL                                   *
  *   Compiler:        Microsoft C 5.0 / Microsoft QuickC      *
  *   Compilieren:     (Q)CL TALLOCM.C /link DOSLIBS.LIB       *
- *   Programmautor:   Heinrich G”bl                           *
+ *   Programmautor:   Heinrich GÃ¶bl                           *
  *   Stand:           27.6.88                                 *
  **************************************************************/
 
@@ -40,7 +40,7 @@ D_change_para (seg, 0x800u, &err);
 if (err)                           /* Fehler beim Verkleinern */
     printf ("Beim Verkleinern entstand Fehler %d\n", err);
 else                                              /* Alles OK */
-    printf ("Speicherplatz auf die H„lfte verkleinert\n");
+    printf ("Speicherplatz auf die HÃ¤lfte verkleinert\n");
 
 if (err = D_free_para (seg))
     printf ("Fehler beim Freigeben des Speichers: %d\n", err);
@@ -52,7 +52,7 @@ if (err)
     printf ("Fehler bei D_alloc_strategy: %d\n", err);
 else
     printf ("\n\nVerwendetes Speichersuchverfahren: %s "
-            "M”glichkeit\n\n",  strat [st]);
+            "MÃ¶glichkeit\n\n",  strat [st]);
 }
 
 

@@ -5,28 +5,28 @@ M_INPUT.C
 M_BINPUT.C
 M_MKCHOI.C
                                                                                      
-DL_ERROR.C -> verÑndert!
-M_OkQuestion(&swSelect,"Bitte wÑhlen Sie",
+DL_ERROR.C -> ver√§ndert!
+M_OkQuestion(&swSelect,"Bitte w√§hlen Sie",
     "#Abbruch des Programmes.",
-    "FortfÅhren #im Testmodus.",
-    "FortfÅhren ohne Testmodus.",_N);
+    "Fortf√ºhren #im Testmodus.",
+    "Fortf√ºhren ohne Testmodus.",_N);
 
-M_DELMES.C -> gelîscht! 			     /* M_DeleteMessage()    */
+M_DELMES.C -> gel√∂scht! 			     /* M_DeleteMessage()    */
 M_OkQuestion(&swSelect, 			     /* Antwort 	     */
-    "Daten unwiederbringlich lîschen:", 	     /* Titelzeile	     */
-    "#Nein, Daten nicht lîschen.",		     /* Text der Auswahl-    */
-    "#Ja, Daten ØL ô S C H E NÆ.",		     /* liste		     */
-    "#Abbruch, ohne lîschen.",_N);
+    "Daten unwiederbringlich l√∂schen:", 	     /* Titelzeile	     */
+    "#Nein, Daten nicht l√∂schen.",		     /* Text der Auswahl-    */
+    "#Ja, Daten ¬ªL √ñ S C H E N¬´.",		     /* liste		     */
+    "#Abbruch, ohne l√∂schen.",_N);
 
 
-M_OKKUND.C -> gelîscht! 			     /* Ok_Kundenstamm()     */
+M_OKKUND.C -> gel√∂scht! 			     /* Ok_Kundenstamm()     */
 M_OkQuestion(&swSelect, 			     /* Antwort 	     */
-    "Bitte wÑhlen Sie:",			     /* Titelzeile	     */
-    "#öbernahme in den Kundenstamm",		     /* Text der Auswahl-    */
-    "#Keine öbernahme",_N);			     /* liste		     */
+    "Bitte w√§hlen Sie:",			     /* Titelzeile	     */
+    "#√úbernahme in den Kundenstamm",		     /* Text der Auswahl-    */
+    "#Keine √úbernahme",_N);			     /* liste		     */
 
 
-M_MESSAG.C -> gelîscht! 			     /* M_LockedMessage()    */
+M_MESSAG.C -> gel√∂scht! 			     /* M_LockedMessage()    */
 M_OkQuestion(&swSelect, 			     /* Antwort 	     */
     "Datensatz gesperrt - Zugriff wiederholen ?",    /* Titelzeile	     */
     "#Nein, Zugriff nicht wiederholen.",	     /* Text der Auswahl-    */

@@ -8,21 +8,21 @@ set ext=%1
   goto meldung
 
 :fehler
-  echo ÿ
+  echo Â 
   echo Werte    : EXT=%ext%     (MAN=%man% / ART=%art%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo Syntax   : ext [EXT]              oder: ext ®s/h¯ (fr show bzw. help)
-  echo fr [EXT]: L„ndernummer fr Masken- und Formularsource.
-  echo ÿ
-  echo Beispiele: ¯ext 043®, ¯ext 049®, ¯ext 039® ...
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Syntax   : ext [EXT]              oder: ext Â«s/hÂ» (fÃ¼r show bzw. help)
+  echo fÃ¼r [EXT]: LÃ¤ndernummer fÃ¼r Masken- und Formularsource.
+  echo Â 
+  echo Beispiele: Â»ext 043Â«, Â»ext 049Â«, Â»ext 039Â« ...
+  echo Â 
   goto end
 
 :meldung
-  echo ÿ
+  echo Â 
   echo Werte    : EXT=%ext%     (MAN=%man% / ART=%art%)
-  echo ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-  echo ÿ
+  echo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  echo Â 
 
 :end
 

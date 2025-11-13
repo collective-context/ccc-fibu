@@ -1,8 +1,8 @@
 /*---------------------------------------------------------------------------
 
-        Druckertoolbox fÅr Textausgaben - direkt und speichergesteuert
+        Druckertoolbox f√ºr Textausgaben - direkt und speichergesteuert
 
-                          (c) 1992/93 by Markus MÅck
+                          (c) 1992/93 by Markus M√ºck
 
 -----------------------------------------------------------------------------*/
 #include <stdio.h>
@@ -13,32 +13,32 @@
 
 CHAR     PrinterName[8];                  /* Name des Druckers = Filename                */
 CHAR     Port[8] = { "" };                /* Druckerport, z.B. Lpt1                      */
-WORD     VerticalMoveUnit = 0;            /* Kleinstmîgliche vertikale Bewegungseinheit  */
-WORD     VerUnitsPerLine  = 0;            /* Vertikale Bewegungseinheit fÅr 1 Zeile      */
+WORD     VerticalMoveUnit = 0;            /* Kleinstm√∂gliche vertikale Bewegungseinheit  */
+WORD     VerUnitsPerLine  = 0;            /* Vertikale Bewegungseinheit f√ºr 1 Zeile      */
 BYTE     VerMoveKind   = 0;               /* Art des Bewegungscodes: PT_HP oder PT_ESC   */
 CHAR     *PreVerCode   = NULL;            /* Code vor vertikaler Bewegung                */
 CHAR     *AftVerCode   = NULL;            /* Code nach vertikaler Bewegung               */
-CHAR     *Reset        = NULL;            /* Zeiger auf String fÅr Druckerreset          */
-CHAR     *BoldOn       = NULL;            /* Zeiger auf String fÅr Fettdruck ein         */
-CHAR     *BoldOff      = NULL;            /* Zeiger auf String fÅr Fettdruck aus         */
-CHAR     *UnderlineOn  = NULL;            /* Zeiger auf String fÅr Unterstreichen an     */
-CHAR     *UnderlineOff = NULL;            /* Zeiger auf String fÅr Unterstreichen aus    */
-CHAR     *ItalicOn     = NULL;            /* Zeiger auf String fÅr Kursiv ein            */
-CHAR     *ItalicOff    = NULL;            /* Zeiger auf String fÅr Kursiv aus            */
-CHAR     BackSpace     = 0;               /* Code fÅr "1 Zeichen zurÅck"                 */
-CHAR     NewPage       = 0;               /* Code fÅr "neue Seite"                       */
+CHAR     *Reset        = NULL;            /* Zeiger auf String f√ºr Druckerreset          */
+CHAR     *BoldOn       = NULL;            /* Zeiger auf String f√ºr Fettdruck ein         */
+CHAR     *BoldOff      = NULL;            /* Zeiger auf String f√ºr Fettdruck aus         */
+CHAR     *UnderlineOn  = NULL;            /* Zeiger auf String f√ºr Unterstreichen an     */
+CHAR     *UnderlineOff = NULL;            /* Zeiger auf String f√ºr Unterstreichen aus    */
+CHAR     *ItalicOn     = NULL;            /* Zeiger auf String f√ºr Kursiv ein            */
+CHAR     *ItalicOff    = NULL;            /* Zeiger auf String f√ºr Kursiv aus            */
+CHAR     BackSpace     = 0;               /* Code f√ºr "1 Zeichen zur√ºck"                 */
+CHAR     NewPage       = 0;               /* Code f√ºr "neue Seite"                       */
 FILE     *Datei;                          /* Dateihandle                                 */
 WORD     AktFont       = 0;               /* Nummer des aktuellen Fonts                  */
 WORD     SetFont       = 0;               /* Font, der zuletzt an Drucker geschickt ward */
-WORD     Fonts         = 0;               /* Anzahl verfÅgbarer Fonts                    */
+WORD     Fonts         = 0;               /* Anzahl verf√ºgbarer Fonts                    */
 BYTE     Chars_per_inch= 0;               /* Zeichen pro inch, wird beim Laden angegl.   */
 DOUBLE   SpaltenBreiteCM=16.9;            /* Spaltenbreite in cm                         */
 DOUBLE   LeftAdjustment= 0;               /* Linker Rand um .. INCH nach rechts versetzt */
 FILE     *DruckerHandle         = NULL;   /* Druckerhandle                               */
 WORD     AktLine                = 0;      /* Nummer der aktuellen Zeile                  */
-WORD     AktMeasureUnit         = PT_CM;  /* Aktuelle Ma·einheit                         */
+WORD     AktMeasureUnit         = PT_CM;  /* Aktuelle Ma√üeinheit                         */
 WORD     AnzahlColumns          = 0;      /* Anzahl vorhandener Spalten                  */
-WORD     AnzahlBufferEintrage   = 0;      /* Anzahl vorhandener BuffereintrÑge           */
+WORD     AnzahlBufferEintrage   = 0;      /* Anzahl vorhandener Buffereintr√§ge           */
 WORD     ActiveColumn           = 0;      /* Nummer der aktiven Spalte                   */
 WORD     AnzahlTraps            = 0;      /* Anzahl vorhandener TRAPS                    */
 WORD     ActiveLine             = 0;      /* Nummer der aktuellen Zeile                  */
@@ -50,7 +50,7 @@ BYTE     ParallelPort           = 0;      /* Ausgabeport: 1=lpt1, 2=lpt2, ...   
 BOOL     ActiveBold             = PT_FALSE;/*Standard: Fettdruck aus                     */
 BOOL     ActiveUnderline        = PT_FALSE;/*Standard: Unterstreichen aus                */
 BOOL     ActiveItalic           = PT_FALSE;/*Standard: Kursiv aus                        */
-BOOL     ActiveSpecialChars     = PT_TRUE;/* "_^" fÅr Underline/Bold ein                 */
+BOOL     ActiveSpecialChars     = PT_TRUE;/* "_^" f√ºr Underline/Bold ein                 */
 COLUMNS  *ColumnZeiger          = NULL;   /* Zeiger auf Spalten-Daten                    */
 TRAP     *TrapZeiger            = NULL;   /* Zeiger auf TRAP-Daten                       */
 BUFFER   *BufferZeiger          = NULL;   /* Zeiger auf BUFFER-Daten                     */
@@ -141,9 +141,9 @@ FONTS    *FontZeiger            = NULL;   /* Zeiger auf FONT-Daten              
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : keine                                                       *
+ *   R√ºckgabe : keine                                                       *
  *                                                                          *
- *   Beschreibung: Dummyfunktion fÅr Verwaltung der Traps.                  *
+ *   Beschreibung: Dummyfunktion f√ºr Verwaltung der Traps.                  *
  ****************************************************************************/
 VOID ptFunc ( VOID )
 {
@@ -154,9 +154,9 @@ VOID ptFunc ( VOID )
  *                                                                          *
  *   Parameter: CHAR                                                        *
  *                                                                          *
- *   RÅckgabe : SWORD                                                       *
+ *   R√ºckgabe : SWORD                                                       *
  *                                                                          *
- *   Beschreibung: Ausgabefunktion fÅr Toolbox                              *
+ *   Beschreibung: Ausgabefunktion f√ºr Toolbox                              *
  ****************************************************************************/
 SWORD ptfputc ( CHAR Zeichen )
 {
@@ -219,7 +219,7 @@ SWORD ptfputc ( CHAR Zeichen )
  *                                                                          *
  *   Parameter: DOUBLE: Platz zwischen Blattrand und Text in inch, bzw. cm  *
  *                                                                          *
- *   RÅckgabe : SWORD : PT_OK oder Fehlermeldung                            *
+ *   R√ºckgabe : SWORD : PT_OK oder Fehlermeldung                            *
  *                                                                          *
  *   Beschreibung: Funktion gibt systeminterne Werte zur Weiterverarbeitung *
  *                 an den User weiter                                       *
@@ -239,9 +239,9 @@ SWORD ptDefineLeftMargin ( DOUBLE LeftMargin )
 /****************************************************************************
  *   Funktionsname: ptGetDoubleInfo [USER]                                  *
  *                                                                          *
- *   Parameter: BYTE  : Angabe Åber Art der Information (PT_LINE, o.Ñ.)     *
+ *   Parameter: BYTE  : Angabe √ºber Art der Information (PT_LINE, o.√§.)     *
  *                                                                          *
- *   RÅckgabe : DOUBLE: Angeforderte Information                            *
+ *   R√ºckgabe : DOUBLE: Angeforderte Information                            *
  *                                                                          *
  *   Beschreibung: Funktion gibt systeminterne Werte zur Weiterverarbeitung *
  *                 an den User weiter                                       *
@@ -260,9 +260,9 @@ DOUBLE ptGetDoubleInfo ( BYTE Info )
 /****************************************************************************
  *   Funktionsname: ptGetInfo [USER]                                        *
  *                                                                          *
- *   Parameter: BYTE  : Angabe Åber Art der Information (PT_LINE, o.Ñ.)     *
+ *   Parameter: BYTE  : Angabe √ºber Art der Information (PT_LINE, o.√§.)     *
  *                                                                          *
- *   RÅckgabe : WORD  : Angeforderte Information                            *
+ *   R√ºckgabe : WORD  : Angeforderte Information                            *
  *                                                                          *
  *   Beschreibung: Funktion gibt systeminterne Werte zur Weiterverarbeitung *
  *                 an den User weiter                                       *
@@ -318,9 +318,9 @@ WORD ptGetInfo ( BYTE Info )
 /****************************************************************************
  *   Funktionsname: ptGetStrInfo [USER]                                     *
  *                                                                          *
- *   Parameter: BYTE  : Angabe Åber Art der Information (PT_LINE, o.Ñ.)     *
+ *   Parameter: BYTE  : Angabe √ºber Art der Information (PT_LINE, o.√§.)     *
  *                                                                          *
- *   RÅckgabe : CHAR* : Zeiger auf geforderten String oder NULL-Zeiger      *
+ *   R√ºckgabe : CHAR* : Zeiger auf geforderten String oder NULL-Zeiger      *
  *                                                                          *
  *   Beschreibung: Funktion gibt systeminternen String z. Weiterverarbeitung*
  *                 an den User weiter                                       *
@@ -339,12 +339,12 @@ CHAR *ptGetStrInfo ( BYTE Info )
  *                                                                          *
  *   Parameter: WORD  : PT_ON oder PT_OFF                                   *
  *                                                                          *
- *   RÅckgabe : SWORD : PT_OK oder Fehlermeldung                            *
+ *   R√ºckgabe : SWORD : PT_OK oder Fehlermeldung                            *
  *                                                                          *
- *   Beschreibung: Diese Funktion ist nur fÅr Sofortausgabebefehle (d.h.    *
- *                 NICHT fÅr Bufferbefehle) interessant !                   *
+ *   Beschreibung: Diese Funktion ist nur f√ºr Sofortausgabebefehle (d.h.    *
+ *                 NICHT f√ºr Bufferbefehle) interessant !                   *
  *                 Diese Funktion schaltet die Wirkung der Beiden Zeichen   *
- *                 '_' (fÅr Underline an/aus) und '^' (fÅr Fettdruck an/aus)*
+ *                 '_' (f√ºr Underline an/aus) und '^' (f√ºr Fettdruck an/aus)*
  *                 ein (PT_ON) oder aus (PT_OFF) !
  ****************************************************************************/
 SWORD ptSetSpecialChar ( WORD Switch )
@@ -371,7 +371,7 @@ SWORD ptSetSpecialChar ( WORD Switch )
  *                                                                          *
  *   Parameter: Character : An aktueller Position auszugebendes Zeichen     *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion erlaubt, an der aktuellen Druckkopfpos-   *
  *                 ition eine Zeichen auszugeben.                           *
@@ -422,7 +422,7 @@ SWORD  ptPrintNowChar ( CHAR Character )
  *                                                                          *
  *   Parameter: CHAR*  : Zeiger auf Sequenzbeginn                           *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion sendet eine Druckersequenz.               *
  ****************************************************************************/
@@ -445,7 +445,7 @@ SWORD  ptSendSequenz ( CHAR *Start )
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion sendet die Reset-Sequenz an den Drucker.  *
  ****************************************************************************/
@@ -460,7 +460,7 @@ SWORD  ptResetPrinter ( VOID )
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion schaltet alle FOnt-Charakteristica aus.   *
  ****************************************************************************/
@@ -489,7 +489,7 @@ SWORD  ptSwitchOffFontCharacteristics( VOID )
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion schaltet alle Font-Charakteristica ein.   *
  ****************************************************************************/
@@ -519,9 +519,9 @@ SWORD  ptSwitchOnFontCharacteristics( VOID )
  *   Parameter: WORD : PT_BOLD, PT_UNDERLINE oder PT_ITALIC                 *
  *              WORD : PT_ON oder PT_OFF                                    *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
- *   Beschreibung: éndern des Schriftcharakters (Fettdruck, Unterstreichen, *
+ *   Beschreibung: √Ñndern des Schriftcharakters (Fettdruck, Unterstreichen, *
  *                 Kursivschrift).                                          *
  ****************************************************************************/
 
@@ -576,10 +576,10 @@ SWORD ptSwitchFontCharacter ( WORD Character, WORD OnOff )
  *                                                                          *
  *   Parameter: Word   : Nummer der zu untersuchenden zeile                 *
  *                                                                          *
- *   RÅckgabe : PT_TRUE (Trap existiert) oder PT_FALSE (Trap existiert      *
+ *   R√ºckgabe : PT_TRUE (Trap existiert) oder PT_FALSE (Trap existiert      *
  *                      nicht)                                              *
  *                                                                          *
- *   Beschreibung: Diese Funktion prÅft, ob eine bestimmte Zeile schon mit  *
+ *   Beschreibung: Diese Funktion pr√ºft, ob eine bestimmte Zeile schon mit  *
  *                 einem Trap belegt ist.                                   *
  ****************************************************************************/
 
@@ -608,7 +608,7 @@ SWORD ptCheckForTrap ( WORD Line )
  *                                                                          *
  *   Parameter: Word   : Nummer der Zeile, deren Trap demarkiert werden soll*
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion deaktiviert den Trap einer bestimmten     *
  *                 Zeile (falls definiert), bis er mit ptUseTrap wieder     *
@@ -640,7 +640,7 @@ SWORD ptDontUseTrap ( WORD Line )
  *                                                                          *
  *   Parameter: Word   : Nummer der Zeile, deren Trap verwendet werden soll *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion aktiviert den Trap einer bestimmten       *
  *                 Zeile (falls definiert), wenn er mit ptDontUseTrap zuvor *
@@ -673,10 +673,10 @@ SWORD ptUseTrap ( WORD Line )
  *                                                                          *
  *   Parameter: Word   : Nummer der Zeile                                   *
  *              VOID   : Zeiger auf eine Prozedur, die keine Parameter haben*
- *                       und keine Werte zurÅckgeben darf.                  *
+ *                       und keine Werte zur√ºckgeben darf.                  *
  *                       (z.B. VOID FUNKTION ( VOID ) )                     *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion erlaubt die Definition eines Traps.       *
  ****************************************************************************/
@@ -727,10 +727,10 @@ SWORD ptDefineTrap ( WORD Line, VOID (*ptFunc)() )
  *                                                                          *
  *   Parameter: Word   : Nummer der Zeile                                   *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion erlaubt, eine zuvor definierte Traps zu   *
- *                 lîschen.                                                 *
+ *                 l√∂schen.                                                 *
  ****************************************************************************/
 
 SWORD ptDeleteTrap ( WORD Line )
@@ -782,10 +782,10 @@ SWORD ptDeleteTrap ( WORD Line )
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : Ok oder Fehlermeldung                                       *
+ *   R√ºckgabe : Ok oder Fehlermeldung                                       *
  *                                                                          *
  *   Beschreibung: Diese Funktion ruft - falls vorhanden - eine zu einer    *
- *                 Zeile gehîrige Funktion auf.                             *
+ *                 Zeile geh√∂rige Funktion auf.                             *
  ****************************************************************************/
 
 SWORD ptCallTraps ( VOID )
@@ -819,9 +819,9 @@ SWORD ptCallTraps ( VOID )
  *                                                                          *
  *   Parameter: WORD   : Anzahl vertikaler Bewegungseinheiten               *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion Åbergeht die angegebene Anzahl vertikaler *
+ *   Beschreibung: Diese Funktion √ºbergeht die angegebene Anzahl vertikaler *
  *                 Bewegungseinheiten (normal n/300 '' bei Laserdruckern)   *
  ****************************************************************************/
 
@@ -900,9 +900,9 @@ SWORD  ptMoveVerUnits( WORD Units )
  *                                                                          *
  *   Parameter: WORD   : Anzahl Zeilen                                      *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion Åbergeht die angegebene Anzahl Zeilen.    *
+ *   Beschreibung: Diese Funktion √ºbergeht die angegebene Anzahl Zeilen.    *
  ****************************************************************************/
 
 SWORD  ptSkip( WORD Lines )
@@ -953,9 +953,9 @@ SWORD  ptSkip( WORD Lines )
  *                                                                          *
  *   Parameter: WORD   : Anzahl Units ( definiert in VerticalMoveUnit)      *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion Åbergeht die angegebene Anzahl Units in   *
+ *   Beschreibung: Diese Funktion √ºbergeht die angegebene Anzahl Units in   *
  *                 vertikaler Richtung ( Beispiel Laserdrucker: n/300 Zoll )*
  ****************************************************************************/
 
@@ -1001,11 +1001,11 @@ SWORD  ptSkipExact( WORD Units )
  *                                                                          *
  *   Parameter: WORD   : Anzahl Units ( 1 Unit = 1/48 Zoll )                *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion Åbergeht die angegebene Anzahl Units in   *
+ *   Beschreibung: Diese Funktion √ºbergeht die angegebene Anzahl Units in   *
  *                 vertikaler Richtung. Dabei ist diese Funktion unab-      *
- *                 hÑngig vom Drucker Modell ( nicht so ptSkipExact ! ).    *
+ *                 h√§ngig vom Drucker Modell ( nicht so ptSkipExact ! ).    *
  *                 Eine Unit entspricht in jedem Falle 1/48 Zoll.           *
  ****************************************************************************/
 
@@ -1022,11 +1022,11 @@ SWORD  ptSkipExactStandard( WORD Units )
  *              DOUBLE : Linke Spalte in inch                               *
  *              DOUBLE : Rechte Spalte in inch                              *
  *                                                                          *
- *   RÅckgabe : SWORD  : Anzahl Worte, die zwischen Left und Right passen.  *
+ *   R√ºckgabe : SWORD  : Anzahl Worte, die zwischen Left und Right passen.  *
  *                                                                          *
- *   Beschreibung: Diese Funktion zÑhlt die Anzahl Worte, welche zwischen   *
+ *   Beschreibung: Diese Funktion z√§hlt die Anzahl Worte, welche zwischen   *
  *                 den Grenzen Left und Right Platz findet. Liegt ein       *
- *                 CR und/oder LF vor, ist der RÅckgabewert negativ.        *
+ *                 CR und/oder LF vor, ist der R√ºckgabewert negativ.        *
  ****************************************************************************/
 
 SWORD ptAnzahlWorte( CHAR* Text, DOUBLE Left, DOUBLE Right )
@@ -1082,10 +1082,10 @@ SWORD ptAnzahlWorte( CHAR* Text, DOUBLE Left, DOUBLE Right )
  *                                                                          *
  *   Parameter: DOUBLE : Linker Rand (inch INCH !!)                         *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion fÑhrt den Druckkopf von jeder Position    *
- *                 zu der Åbergebenen Stelle.                               *
+ *   Beschreibung: Diese Funktion f√§hrt den Druckkopf von jeder Position    *
+ *                 zu der √ºbergebenen Stelle.                               *
  ****************************************************************************/
 
 SWORD  ptMoveHeadToHorPosition( DOUBLE Pos )
@@ -1097,7 +1097,7 @@ SWORD  ptMoveHeadToHorPosition( DOUBLE Pos )
 
        if ( ptfputc( (char) PT_CR ) == EOF ) return ( PT_PRINTERERROR );
 
-       Pos += LeftAdjustment;  /* Linken Rand, wenn befohlen, einrÅcken */
+       Pos += LeftAdjustment;  /* Linken Rand, wenn befohlen, einr√ºcken */
 
        if ( Pos > 1/(DOUBLE) Chars_per_inch )
        {
@@ -1126,10 +1126,10 @@ SWORD  ptMoveHeadToHorPosition( DOUBLE Pos )
  *              DOUBLE : Linker Rand in inch                                *
  *              DOUBLE : Rechter Rand in inch                               *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion druckt den Åbergebenen Text zwischen den  *
- *                 angegebenen Spalten linksbÅndig aus. Pa·t der Text nicht *
+ *   Beschreibung: Diese Funktion druckt den √ºbergebenen Text zwischen den  *
+ *                 angegebenen Spalten linksb√ºndig aus. Pa√üt der Text nicht *
  *                 in eine Zeile, findet automatisch ein entsprechender Um- *
  *                 bruch statt, bis der komplette Text ausgegeben ist.      *
  ****************************************************************************/
@@ -1195,16 +1195,16 @@ SWORD  ptPrintLeft( CHAR* Text, DOUBLE Left, DOUBLE Right )
 /****************************************************************************
  *   Funktionsname: ptPrintCenterOrRight                                    *
  *                                                                          *
- *   Parameter: BYTE   : PT_RIGHT (rechtsbÅndig), PT_CENTER (zentriert)     *
+ *   Parameter: BYTE   : PT_RIGHT (rechtsb√ºndig), PT_CENTER (zentriert)     *
  *              CHAR*  : Zeiger auf Text                                    *
  *              DOUBLE : Linker Rand in inch                                *
  *              DOUBLE : Rechter Rand in inch                               *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion druckt den Åbergebenen Text zwischen den  *
- *                 angegebenen Spalten rechtsbÅndig, bzw. zentriert aus.    *
- *                 Pa·t der Text nicht in eine Zeile, findet automatisch ein*
+ *   Beschreibung: Diese Funktion druckt den √ºbergebenen Text zwischen den  *
+ *                 angegebenen Spalten rechtsb√ºndig, bzw. zentriert aus.    *
+ *                 Pa√üt der Text nicht in eine Zeile, findet automatisch ein*
  *                 entsprechender Umbruch statt, bis der komplette Text     *
  *                 ausgegeben ist.                                          *
  ****************************************************************************/
@@ -1307,11 +1307,11 @@ SWORD  ptPrintCenterOrRight( BYTE Ausrichtung, CHAR* Text, DOUBLE Left, DOUBLE R
  *              DOUBLE : Linker Rand in inch                                *
  *              DOUBLE : Rechter Rand in inch                               *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion druckt den Åbergebenen Text zwischen den  *
+ *   Beschreibung: Diese Funktion druckt den √ºbergebenen Text zwischen den  *
  *                 angegebenen Spalten im Blocksatz aus.                    *
- *                 Pa·t der Text nicht in eine Zeile, findet automatisch ein*
+ *                 Pa√üt der Text nicht in eine Zeile, findet automatisch ein*
  *                 entsprechender Umbruch statt, bis der komplette Text     *
  *                 ausgegeben ist.                                          *
  ****************************************************************************/
@@ -1533,9 +1533,9 @@ SWORD  ptPrintJustify( CHAR* Text, DOUBLE Left, DOUBLE Right )
 /****************************************************************************
  *   Funktionsname: ptCm2Inch                                               *
  *                                                                          *
- *   Parameter: DOUBLE : Ma·einheit in cm                                   *
+ *   Parameter: DOUBLE : Ma√üeinheit in cm                                   *
  *                                                                          *
- *   RÅckgabe : DOUBLE : Ma·einheit in inch ( 1 Inch = 1 Zoll = 2,54 cm )   *
+ *   R√ºckgabe : DOUBLE : Ma√üeinheit in inch ( 1 Inch = 1 Zoll = 2,54 cm )   *
  *                                                                          *
  *   Beschreibung: Diese Funktion rechnet einen cm-Wert in einen inch-Wert  *
  *                 um.                                                      *
@@ -1549,9 +1549,9 @@ DOUBLE ptCm2Inch( DOUBLE Cm )
 /****************************************************************************
  *   Funktionsname: ptInch2Cm                                                 *
  *                                                                          *
- *   Parameter: DOUBLE : Ma·einheit in inch                                 *
+ *   Parameter: DOUBLE : Ma√üeinheit in inch                                 *
  *                                                                          *
- *   RÅckgabe : DOUBLE : Ma·einheit in cm ( 1 Inch = 1 Zoll = 2,54 cm )     *
+ *   R√ºckgabe : DOUBLE : Ma√üeinheit in cm ( 1 Inch = 1 Zoll = 2,54 cm )     *
  *                                                                          *
  *   Beschreibung: Diese Funktion rechnet einen inch-Wert in einen cm-Wert  *
  *                 um.                                                      *
@@ -1570,10 +1570,10 @@ DOUBLE ptInch2Cm( DOUBLE Inch )
  *              DOUBLE : Rechter Rand                                       *
  *              WORD   : PT_LEFT, PT_RIGHT, PT_CENTER, PT_JUSTIFY           *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion druckt den Åbergebenen Text in der gewÅn- *
- *                 schten Art (linksbÅndig, rechtsbÅndig, zentriert, Block- *
+ *   Beschreibung: Diese Funktion druckt den √ºbergebenen Text in der gew√ºn- *
+ *                 schten Art (linksb√ºndig, rechtsb√ºndig, zentriert, Block- *
  *                 satz) SOFORT aus, ohne ihn im Speicher abzulegen.        *
  ****************************************************************************/
 
@@ -1619,10 +1619,10 @@ SWORD  ptPrintAutoNow( CHAR *Text, DOUBLE Left, DOUBLE Right, DOUBLE Method )
  *                                                                          *
  *   Parameter: Word   : Anzahl Zeichen                                     *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion erlaubt, den Druckkopf um eine bestimmte  *
- *                 Anzahl Zeichen zurÅckzubewegen.                          *
+ *                 Anzahl Zeichen zur√ºckzubewegen.                          *
  ****************************************************************************/
 
 SWORD  ptMoveBack ( WORD Chars )
@@ -1640,7 +1640,7 @@ SWORD  ptMoveBack ( WORD Chars )
  *                                                                          *
  *   Parameter: Text   : An aktueller Position auszugebender Text           *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion erlaubt, an der aktuellen Druckkopfpos-   *
  *                 ition einen Text auszugeben.                             *
@@ -1661,11 +1661,11 @@ SWORD  ptPrintNow ( CHAR *Text )
 /****************************************************************************
  *   Funktionsname: ptDefineUnit [USER]                                     *
  *                                                                          *
- *   Parameter: Word   : PT_CM fÅr cm oder PT_INCH fÅr inch                 *
+ *   Parameter: Word   : PT_CM f√ºr cm oder PT_INCH f√ºr inch                 *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
- *   Beschreibung: Diese Funktion setzt die aktuelle Ma·einheit.            *
+ *   Beschreibung: Diese Funktion setzt die aktuelle Ma√üeinheit.            *
  ****************************************************************************/
 
 SWORD ptDefineUnit( WORD Unit )
@@ -1690,10 +1690,10 @@ SWORD ptDefineUnit( WORD Unit )
  *                                                                          *
  *   Parameter: Word   : Nummer der Spalte                                  *
  *                                                                          *
- *   RÅckgabe : PT_TRUE (Spalte existiert) oder PT_FALSE (Spalte existiert  *
+ *   R√ºckgabe : PT_TRUE (Spalte existiert) oder PT_FALSE (Spalte existiert  *
  *                      nicht)                                              *
  *                                                                          *
- *   Beschreibung: Diese Funktion prÅft, ob eine bestimmte Spaltennummer    *
+ *   Beschreibung: Diese Funktion pr√ºft, ob eine bestimmte Spaltennummer    *
  *                 schon belegt ist.                                        *
  ****************************************************************************/
 
@@ -1724,11 +1724,11 @@ SWORD ptCheckForColumn ( WORD Num )
  *              DOUBLE : Linke Spalte (in inch !)                           *
  *              DOUBLE : Rechte Spalte (in inch !)                          *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion erlaubt die Definition einer Spalte. Ob   *
- *                 die Ma·einheit fÅr die RÑnder cm oder inch ist, wird     *
- *                 Åber die Funktion ptDefineUnit (Standard: inch) bestimmt.*
+ *                 die Ma√üeinheit f√ºr die R√§nder cm oder inch ist, wird     *
+ *                 √ºber die Funktion ptDefineUnit (Standard: inch) bestimmt.*
  ****************************************************************************/
 
 SWORD ptDefineColumn ( WORD Num, DOUBLE Left, DOUBLE Right )
@@ -1781,10 +1781,10 @@ SWORD ptDefineColumn ( WORD Num, DOUBLE Left, DOUBLE Right )
  *                                                                          *
  *   Parameter: Word   : Nummer der Spalte                                  *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Diese Funktion erlaubt, eine zuvor definierte Spalte zu  *
- *                 lîschen.                                                 *
+ *                 l√∂schen.                                                 *
  ****************************************************************************/
 
 SWORD ptDeleteColumn ( WORD Num )
@@ -1837,7 +1837,7 @@ SWORD ptDeleteColumn ( WORD Num )
  *   Parameter: WORD   : Nummer der Spalte                                  *
  *              WORD   : PT_LEFT oder PT_RIGHT                              *
  *                                                                          *
- *   RÅckgabe : Wert ( in inch ) oder Fehlermeldung ( DOUBLE !! )           *
+ *   R√ºckgabe : Wert ( in inch ) oder Fehlermeldung ( DOUBLE !! )           *
  *                                                                          *
  *   Beschreibung: Diese Funktion erlaubt, eine zuvor definierte Spalte ab- *
  *                 zurufen.                                                 *
@@ -1880,10 +1880,10 @@ DOUBLE ptGetColumn ( WORD Num, WORD Method )
  *              DOUBLE : Rechte Spaltennummer ( Column )                    *
  *              WORD   : PT_LEFT, PT_RIGHT, PT_CENTER, PT_JUSTIFY           *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion druckt den Åbergebenen Text in der gewÅn- *
- *                 schten Art (linksbÅndig, rechtsbÅndig, zentriert, Block- *
+ *   Beschreibung: Diese Funktion druckt den √ºbergebenen Text in der gew√ºn- *
+ *                 schten Art (linksb√ºndig, rechtsb√ºndig, zentriert, Block- *
  *                 satz) ZWISCHEN zwei Columns aus, d.h. rechts von der     *
  *                 linken und links von der rechten Column.                 *
  ****************************************************************************/
@@ -1898,7 +1898,7 @@ SWORD  ptPrintBetweenColumnsNow( CHAR *Text, WORD ColLeft, WORD ColRight, DOUBLE
          return ( PT_WRONGCOLUMN );
        }
 
-       /* PrÅfen, ob der Platz zwischen links und rechts ausreichend fÅr */
+       /* Pr√ºfen, ob der Platz zwischen links und rechts ausreichend f√ºr */
        /* mindestens 1 Zeichen ist, geschieht in ptPrintAutoNow          */
 
        OldUnit = ptGetInfo( PT_MEASUREUNIT );
@@ -1919,10 +1919,10 @@ SWORD  ptPrintBetweenColumnsNow( CHAR *Text, WORD ColLeft, WORD ColRight, DOUBLE
  *              WORD   : Spaltennummer ( Column )                           *
  *              WORD   : PT_LEFT, PT_RIGHT, PT_CENTER, PT_JUSTIFY           *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK Fehlermeldung                                *
+ *   R√ºckgabe : SWORD  : PT_OK Fehlermeldung                                *
  *                                                                          *
- *   Beschreibung: Diese Funktion druckt den Åbergebenen Text in der gewÅn- *
- *                 schten Art (linksbÅndig, rechtsbÅndig, zentriert, Block- *
+ *   Beschreibung: Diese Funktion druckt den √ºbergebenen Text in der gew√ºn- *
+ *                 schten Art (linksb√ºndig, rechtsb√ºndig, zentriert, Block- *
  *                 satz) INNERHALB einer Column aus.                        *
  ****************************************************************************/
 
@@ -1950,10 +1950,10 @@ SWORD  ptPrintInColumnNow( CHAR *Text, WORD Column, WORD Method )
  *   Funktionsname: ptFlush [USER]                                          *
  *                                                                          *
  *   Parameter: keine                                                       *
- *   RÅckgabe : SWORD  : PT_OK Fehlermeldung                                *
+ *   R√ºckgabe : SWORD  : PT_OK Fehlermeldung                                *
  *                                                                          *
- *   Beschreibung: Diese Funktion leer den Druckerbuffer Åber die C-Funktion*
- *                 fflush(). In manchen FÑllen ist keine Wirkung bemerkbar. *
+ *   Beschreibung: Diese Funktion leer den Druckerbuffer √ºber die C-Funktion*
+ *                 fflush(). In manchen F√§llen ist keine Wirkung bemerkbar. *
  ****************************************************************************/
 
 SWORD  ptFlush( VOID )
@@ -1971,10 +1971,10 @@ SWORD  ptFlush( VOID )
  *                                                                          *
  *   Parameter: DOUBLE : Position in CM oder INCH                           *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion fÑhrt den Druckkopf von jeder Position    *
- *                 zu der Åbergebenen Stelle.                               *
+ *   Beschreibung: Diese Funktion f√§hrt den Druckkopf von jeder Position    *
+ *                 zu der √ºbergebenen Stelle.                               *
  ****************************************************************************/
 
 SWORD  ptMoveHorPos( DOUBLE Pos )
@@ -1997,9 +1997,9 @@ SWORD  ptMoveHorPos( DOUBLE Pos )
  *   Parameter: CHAR*  : Zeiger auf auszugebenden Text                      *
  *           DOUBLE : Position in CM oder INCH                              *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion druckt einen String rechtsbÅndig ab       *
+ *   Beschreibung: Diese Funktion druckt einen String rechtsb√ºndig ab       *
  *                 Spaltenanfang bis zur angegebenen Position aus.          *
  ****************************************************************************/
 
@@ -2014,9 +2014,9 @@ SWORD  ptPrintRightNow( CHAR *Text, DOUBLE Pos )
  *   Parameter: CHAR*  : Zeiger auf auszugebenden Text                      *
  *           DOUBLE : Position in CM oder INCH                              *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion druckt einen String linksbÅndig  ab       *
+ *   Beschreibung: Diese Funktion druckt einen String linksb√ºndig  ab       *
  *                 der angegebenen Position bis SPaltenende aus.            *
  ****************************************************************************/
 
@@ -2035,9 +2035,9 @@ SWORD  ptPrintLeftNow( CHAR *Text, DOUBLE Pos)
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion lÑ·t den Drucker die aktuelle Seite       *
+ *   Beschreibung: Diese Funktion l√§√üt den Drucker die aktuelle Seite       *
  *                 "ausspucken".                                            *
  ****************************************************************************/
 
@@ -2063,10 +2063,10 @@ SWORD  ptNextPage( VOID )
  *                                                                          *
  *   Parameter: CHAR*  : Zeiger auf Text                                    *
  *                                                                          *
- *   RÅckgabe : DOUBLE : StringLÑnge in CM oder INCH, je nach aktivierter   *
+ *   R√ºckgabe : DOUBLE : StringL√§nge in CM oder INCH, je nach aktivierter   *
  *                       Einheit.                                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion berechnet die LÑnge eines Strings auf dem *
+ *   Beschreibung: Diese Funktion berechnet die L√§nge eines Strings auf dem *
  *                 Papier ( inc Cm oder Inch ).                             *
  ****************************************************************************/
 
@@ -2091,12 +2091,12 @@ DOUBLE ptStringLen( CHAR *Text  )
  *              DOUBLE : Linker Rand     in cm oder Inch, je nach bestimmter*
  *              DOUBLE : Rechter Rand    Einheit                            *
  *                                                                          *
- *   RÅckgabe : CHAR*  : Zeiger auf Rest, bei Fehler: NULL-Zeiger           *
+ *   R√ºckgabe : CHAR*  : Zeiger auf Rest, bei Fehler: NULL-Zeiger           *
  *                                                                          *
  *   Beschreibung: Diese Funktion kopiert aus dem Ausgangstext soviele      *
  *                 Zeichen in den Zielspeicher, wie in zwischen die ange-   *
  *                 gebenen Grenzen passen. Die Funktion gibt einen Zeiger   *
- *                 auf die restlichen Zeichen im Ausgangstext zurÅck.       *
+ *                 auf die restlichen Zeichen im Ausgangstext zur√ºck.       *
  ****************************************************************************/
 
 CHAR* ptSplitText( CHAR *ZielText, CHAR *OrigText, DOUBLE Left, DOUBLE Right  )
@@ -2137,7 +2137,7 @@ CHAR* ptSplitText( CHAR *ZielText, CHAR *OrigText, DOUBLE Left, DOUBLE Right  )
  *                                                                          *
  *   Parameter: Fontnummer                                                  *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
  *   Beschreibung: Aktivieren eines neuen Fonts.                            *
  ****************************************************************************/
@@ -2162,7 +2162,7 @@ SWORD ptChooseFont ( WORD FontNr )
  *              BOOL   : Unterstreichen an/aus ( PT_TRUE/PT_FALSE )         *
  *              BOOL   : Kursivdruck an/aus ( PT_TRUE/PT_FALSE )            *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
  *   Beschreibung: Diese Funktion korrigiert, falls notwendig, die einzelnen*
  *                 Schriftcharacteristica.                                  *
@@ -2203,9 +2203,9 @@ SWORD ptSetSequenz ( BOOL Bold, BOOL Underline, BOOL Italic )
  *                                                                          *
  *   Parameter: WORD  : Fontnummer ( 0 bis .. )                             *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
- *   Beschreibung: öber diese Funktion kann der User die Grî·e eines be-    *
+ *   Beschreibung: √úber diese Funktion kann der User die Gr√∂√üe eines be-    *
  *                 stimmten Fonts in Characters per Inch erfahren.          *
  *                 Die Werte sind Druckertreiberspezifisch !                *
  ****************************************************************************/
@@ -2222,11 +2222,11 @@ SWORD ptSetSequenz ( BOOL Bold, BOOL Underline, BOOL Italic )
  *                                                                          *
  *   Parameter: CHAR* : Zeiger auf Portname (max. 8 Zeichen)                *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
- *   Beschreibung: öber diese Funktion kann der User den Ausgangsport der   *
+ *   Beschreibung: √úber diese Funktion kann der User den Ausgangsport der   *
  *                 Druckdaten nach Initialisierung durch "ptInitPrinter"    *
- *                 verÑndern und dadurch die Druckdaten beispielsweise in   *
+ *                 ver√§ndern und dadurch die Druckdaten beispielsweise in   *
  *                 eine Datei umleiten !        *
  ****************************************************************************/
 
@@ -2245,9 +2245,9 @@ SWORD ptSetSequenz ( BOOL Bold, BOOL Underline, BOOL Italic )
  *   Parameter: WORD  : Anzahl Zeilen pro Seite, bei Endlospapier:          *
  *                      PT_NOEND                                            *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
- *   Beschreibung: öber diese Funktion kann der User die Anzahl Zeilen pro  *
+ *   Beschreibung: √úber diese Funktion kann der User die Anzahl Zeilen pro  *
  *                 Seite ( Standardwert: 50 ) festsetzen.                   *
  ****************************************************************************/
 
@@ -2266,10 +2266,10 @@ SWORD ptSetSequenz ( BOOL Bold, BOOL Underline, BOOL Italic )
  *   Parameter: DOUBLE: Breite einer Zeile in cm oder inch, je nach         *
  *                      definierter Einheit.                                *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
- *   Beschreibung: öber diese Funktion kann der User die Breite einer       *
- *                 Standardzeile verÑndern. Die Angabe der Breite erfolgt   *
+ *   Beschreibung: √úber diese Funktion kann der User die Breite einer       *
+ *                 Standardzeile ver√§ndern. Die Angabe der Breite erfolgt   *
  *                 in cm oder inch, je nach definierter Einheit (s.         *
  *                 ptDefineUnit)                 *
  ****************************************************************************/
@@ -2289,17 +2289,17 @@ SWORD ptSetSequenz ( BOOL Bold, BOOL Underline, BOOL Italic )
 
 /***************************************************************************
  *                                                                         *
- *  Es folgen: Bufferbefehle. Die Åbergebenen Daten werden nicht direkt an *
+ *  Es folgen: Bufferbefehle. Die √ºbergebenen Daten werden nicht direkt an *
  *  den Drucker weitergeleitet, sondern verbleiben im Speicher, bis sie mit*
  *  ptSendBuffer an den Drucker gesandt werden. Dieses Verfahren bietet    *
  *  zwei Vorteile:                                                         *
- *  1. Die einzelnen Zeilen mÅssen nicht in der korrekten Reihenfolge an   *
+ *  1. Die einzelnen Zeilen m√ºssen nicht in der korrekten Reihenfolge an   *
  *     den Drucker gegeben werden. Der Computer sendet alle Zeilen auto-   *
  *     matisch in der Richtigen Reihenfolge an den Drucker. Es ist also    *
- *     mîglich, zuerst die letzte und DANACH die erste Zeile einer Seite   *
+ *     m√∂glich, zuerst die letzte und DANACH die erste Zeile einer Seite   *
  *     (im Speicher) zu drucken - der Computer erledigt den Rest.          *
  *  2. Eine einmal im Speicher befindliche Seite kann beliebig oft aus-    *
- *     gedruckt werden. Der Computer "vergi·t" die Daten erst mit dem      *
+ *     gedruckt werden. Der Computer "vergi√üt" die Daten erst mit dem      *
  *     ptEmptyBuffer - Kommando.                                           *
  *                                                                         *
  ***************************************************************************/
@@ -2308,14 +2308,14 @@ SWORD ptSetSequenz ( BOOL Bold, BOOL Underline, BOOL Italic )
 /****************************************************************************
  *   Funktionsname: ptGetBufferMemory                                       *
  *                                                                          *
- *   Parameter: WORD   : Anzahl Bytes fÅr Texteintrag                       *
+ *   Parameter: WORD   : Anzahl Bytes f√ºr Texteintrag                       *
  *                                                                          *
- *   RÅckgabe : SWORD  : Nummer des reservierten Buffers oder Fehlermeldung *
+ *   R√ºckgabe : SWORD  : Nummer des reservierten Buffers oder Fehlermeldung *
  *                                                                          *
  *   Beschreibung: Diese Funktion reserviert ( wenn ausreichend Speicher    *
- *                 vorhanden ) Speicher fÅr einen neuen Buffereintrag und   *
+ *                 vorhanden ) Speicher f√ºr einen neuen Buffereintrag und   *
  *                 gibt die aktuelle Buffernummer - 1 ( zur direkten Ver-   *
- *                 wendung ) zurÅck.                                        *
+ *                 wendung ) zur√ºck.                                        *
  ****************************************************************************/
 
 SWORD ptGetBufferMemory ( WORD TextLength )
@@ -2373,17 +2373,17 @@ SWORD ptGetBufferMemory ( WORD TextLength )
  *                                                                          *
  *   Parameter: WORD   : Zeile, ab der der Text dargestellt werden soll     *
  *              WORD   : Anzahl "MinVerUnit"s davon nach unten, < 1 Zeile !!*
- *                       1 MinVerUnit = 1 SkipExact (DruckerabhÑngig !!)    *
- *              WORD   : Anzahl Zeichen, die Åbernommen werden sollen       *
+ *                       1 MinVerUnit = 1 SkipExact (Druckerabh√§ngig !!)    *
+ *              WORD   : Anzahl Zeichen, die √ºbernommen werden sollen       *
  *              CHAR*  : Zeiger auf Text                                    *
  *              DOUBLE : Linker Rand in inch                                *
  *              DOUBLE : Rechter Rand in inch                               *
  *              WORD   : PT_LEFT, PT_RIGHT, PT_CENTER, PT_JUSTIFY           *
  *                                                                          *
- *   RÅckgabe : SWORD  : Anzahl Åbernommener Buchstaben oder Fehlermeldung  *
+ *   R√ºckgabe : SWORD  : Anzahl √ºbernommener Buchstaben oder Fehlermeldung  *
  *                                                                          *
  *   Beschreibung: Diese Funktion reserviert einen Buffer und schreibt die  *
- *                 Åbergebenen Daten in den reservierten SPeicherbereich.   *
+ *                 √ºbergebenen Daten in den reservierten SPeicherbereich.   *
  ****************************************************************************/
 
 SWORD ptWriteToMemoryBuffer ( WORD Zeile, WORD VerUnits, WORD AnzZeichen, CHAR *Text, DOUBLE Left,
@@ -2472,20 +2472,20 @@ SWORD ptWriteToMemoryBuffer ( WORD Zeile, WORD VerUnits, WORD AnzZeichen, CHAR *
  *              DOUBLE : Rechter Rand in inch oder cm                       *
  *              WORD   : PT_LEFT, PT_RIGHT, PT_CENTER, PT_JUSTIFY           *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion Åbergibt den gegebenen Text in der gewÅn- *
- *                 schten Art (linksbÅndig, rechtsbÅndig, zentriert, Block- *
+ *   Beschreibung: Diese Funktion √ºbergibt den gegebenen Text in der gew√ºn- *
+ *                 schten Art (linksb√ºndig, rechtsb√ºndig, zentriert, Block- *
  *                 satz) dem Speicher, um mit ptSendBuffer ausgedruckt zu   *
  *                 werden.                                                  *
- *                 öber diese Funktion wird auch ein PCX-Bild im Buffer ge- *
+ *                 √úber diese Funktion wird auch ein PCX-Bild im Buffer ge- *
  *                 speichert. Dabei werden die Parameter wie folgt ver-     *
  *                 wendet:                                                  *
  *                 WORD   : s. o.                                           *
  *                 WORD   : s. o.                                           *
  *                 CHAR * : Name des PCX-Files                              *
- *                 DOUBLE : Vertikale Grî·e in inch                         *
- *                 DOUBLE : Horizontale Grî·e in inch                       *
+ *                 DOUBLE : Vertikale Gr√∂√üe in inch                         *
+ *                 DOUBLE : Horizontale Gr√∂√üe in inch                       *
  *                 WORD   : Filetyp: PT_PCX oder PT_PCC                     *
  *                 aktueller Font: Hor. Position in inch * 100              *
  ****************************************************************************/
@@ -2558,7 +2558,7 @@ SWORD ptPrintAutoBuffer ( WORD Zeile, WORD VerUnits, CHAR *Text, DOUBLE Left,
  *                                                                          *
  *   Parameter: WORD   : Zeile                                              *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
  *   Beschreibung: Diese Funktion gibt alle im Speicher befindlichen Daten  *
  *                 einer Zeile an den Drucker aus. Dabei werden die einzel- *
@@ -2677,13 +2677,13 @@ SWORD ptPrintBufferWithLine ( WORD XZeile )
  *              WORD   : Rechte Spaltennummer ( Column )                    *
  *              WORD   : PT_LEFT, PT_RIGHT, PT_CENTER, PT_JUSTIFY           *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion druckt den Åbergebenen Text in der gewÅn- *
- *                 schten Art (linksbÅndig, rechtsbÅndig, zentriert, Block- *
+ *   Beschreibung: Diese Funktion druckt den √ºbergebenen Text in der gew√ºn- *
+ *                 schten Art (linksb√ºndig, rechtsb√ºndig, zentriert, Block- *
  *                 satz) ZWISCHEN zwei Columns aus, d.h. rechts von der     *
  *                 linken und links von der rechten Column.                 *
- *                 Der Text wird dabei zunÑchst im Speicher aufgearbeitet   *
+ *                 Der Text wird dabei zun√§chst im Speicher aufgearbeitet   *
  *                 und beim Aufruf von ptSendBuffer ausgegeben.             *
  ****************************************************************************/
 
@@ -2714,12 +2714,12 @@ SWORD  ptPrintBetweenColumnsBuffer( WORD Zeile, WORD VerUnits, CHAR *Text, WORD 
  *              WORD   : Spaltennummer ( Column )                           *
  *              WORD   : PT_LEFT, PT_RIGHT, PT_CENTER, PT_JUSTIFY           *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion druckt den Åbergebenen Text in der gewÅn- *
- *                 schten Art (linksbÅndig, rechtsbÅndig, zentriert, Block- *
+ *   Beschreibung: Diese Funktion druckt den √ºbergebenen Text in der gew√ºn- *
+ *                 schten Art (linksb√ºndig, rechtsb√ºndig, zentriert, Block- *
  *                 satz) INNERHALB einer Column aus.                        *
- *                 Der Text wird dabei zunÑchst im Speicher aufgearbeitet   *
+ *                 Der Text wird dabei zun√§chst im Speicher aufgearbeitet   *
  *                 und beim Aufruf von ptSendBuffer ausgegeben.             *
  ****************************************************************************/
 
@@ -2743,7 +2743,7 @@ SWORD  ptPrintInColumnBuffer( WORD Zeile, WORD VerUnits, CHAR *Text, WORD Column
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
  *   Beschreibung: Diese Funktion gibt alle im Speicher befindlichen Daten  *
  *                 ( soweit vorhanden ) an den Drucker aus.                 *
@@ -2843,10 +2843,10 @@ SWORD ptSendBuffer ( VOID )
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK                                              *
+ *   R√ºckgabe : SWORD  : PT_OK                                              *
  *                                                                          *
  *   Beschreibung: Diese Funktion gibt den Speicher frei, der von           *
- *                 ptGetBufferMemory fÅr die speicherinterne Druckdatenver- *
+ *                 ptGetBufferMemory f√ºr die speicherinterne Druckdatenver- *
  *                 waltung belegt wurde. Wurde kein Speicher belegt,        *
  *                 passiert nichts.                                         *
  ****************************************************************************/
@@ -2872,7 +2872,7 @@ SWORD ptEmptyBuffer ( VOID )
 }
 
 /****************************************************************************
- *   Die folgenden Routinen werden zum Laden von Treibern benîtigt !!!      *
+ *   Die folgenden Routinen werden zum Laden von Treibern ben√∂tigt !!!      *
  ****************************************************************************/
 
 /****************************************************************************
@@ -2880,10 +2880,10 @@ SWORD ptEmptyBuffer ( VOID )
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : keine                                                       *
+ *   R√ºckgabe : keine                                                       *
  *                                                                          *
- *   Beschreibung: Diese Funktion lîscht alle im Speicher befindlichen      *
- *                 druckerspezifischen Daten, welche Åber eine Druckerdatei *
+ *   Beschreibung: Diese Funktion l√∂scht alle im Speicher befindlichen      *
+ *                 druckerspezifischen Daten, welche √ºber eine Druckerdatei *
  *                 eingeladen wurden.                                       *
  ****************************************************************************/
 
@@ -2949,12 +2949,12 @@ VOID ptClearLoadedData( VOID )
 /****************************************************************************
  *   Funktionsname: ptLoadCodes                                             *
  *                                                                          *
- *   Parameter: CHAR** : Doppelzeiger auf Speicher fÅr Zieldaten            *
+ *   Parameter: CHAR** : Doppelzeiger auf Speicher f√ºr Zieldaten            *
  *              FILE** : Zeiger auf Dateihandle                             *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
- *   Beschreibung: Diese Funktion lÑdt Druckersequenzen.                    *
+ *   Beschreibung: Diese Funktion l√§dt Druckersequenzen.                    *
  ****************************************************************************/
 
 SWORD ptLoadCodes ( CHAR **Zeiger, FILE **Datei )
@@ -2981,9 +2981,9 @@ SWORD ptLoadCodes ( CHAR **Zeiger, FILE **Datei )
  *   Parameter: CHAR*  : Zeiger auf Stringzieladresse                       *
  *              FILE*  : Dateihandle                                        *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
- *   Beschreibung: Diese Funktion lÑdt einen nullterminierten String.       *
+ *   Beschreibung: Diese Funktion l√§dt einen nullterminierten String.       *
  ****************************************************************************/
 
 SWORD ptLoadString ( CHAR *Zeiger, FILE **Datei )
@@ -3008,9 +3008,9 @@ SWORD ptLoadString ( CHAR *Zeiger, FILE **Datei )
  *                                                                          *
  *   Parameter: FILE** : Doppelzeiger auf Dateihandle                       *
  *                                                                          *
- *   RÅckgabe : PT_OK oder Fehlermeldung                                    *
+ *   R√ºckgabe : PT_OK oder Fehlermeldung                                    *
  *                                                                          *
- *   Beschreibung: Diese Funktion lÑdt einen neuen Druckertreiber.          *
+ *   Beschreibung: Diese Funktion l√§dt einen neuen Druckertreiber.          *
  ****************************************************************************/
 
 SWORD ptLoadParameters( FILE **Datei )
@@ -3078,9 +3078,9 @@ SWORD ptLoadParameters( FILE **Datei )
  *                                                                          *
  *   Parameter: CHAR*  : Zeiger auf Druckername (=Dateiname)                *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion lÑdt einen neuen Druckertreiber.          *
+ *   Beschreibung: Diese Funktion l√§dt einen neuen Druckertreiber.          *
  ****************************************************************************/
 
 SWORD ptInitPrinter ( CHAR *Drucker )
@@ -3119,9 +3119,9 @@ SWORD ptInitPrinter ( CHAR *Drucker )
  *                                                                          *
  *   Parameter: CHAR*  : Zeiger auf Druckername (=Dateiname)                *
  *                                                                          *
- *   RÅckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
+ *   R√ºckgabe : SWORD  : PT_OK oder Fehlermeldung                           *
  *                                                                          *
- *   Beschreibung: Diese Funktion lÑdt einen neuen Druckertreiber.          *
+ *   Beschreibung: Diese Funktion l√§dt einen neuen Druckertreiber.          *
  ****************************************************************************/
 
 SWORD ptScanInitPrinter ( CHAR *Drucker )
@@ -3179,10 +3179,10 @@ SWORD ptScanInitPrinter ( CHAR *Drucker )
  *                                                                          *
  *   Parameter: keine                                                       *
  *                                                                          *
- *   RÅckgabe : PT_OK                                                       *
+ *   R√ºckgabe : PT_OK                                                       *
  *                                                                          *
- *   Beschreibung: Diese Funktion lîscht jeglichen von dieser Toolbox       *
- *                 allokierten Speicher und schlie·t alle Streams.          *
+ *   Beschreibung: Diese Funktion l√∂scht jeglichen von dieser Toolbox       *
+ *                 allokierten Speicher und schlie√üt alle Streams.          *
  ****************************************************************************/
 
  SWORD ptClosePrinter( VOID )

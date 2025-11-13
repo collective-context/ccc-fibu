@@ -1,0 +1,17 @@
+del \euro\form\VS\*.bak
+del \euro\form\FD\*.bak
+del \euro\form\TE\*.bak
+del \euro\form\PB\*.bak
+del \euro\form\AU\*.bak
+del \euro\form\HWP\*.bak
+del \euro\form\SY\*.bak
+del \euro\form\KA\*.bak
+del \euro\form\LI\*.bak
+del \euro\form\EU\*.bak
+del \euro\form\FI\*.bak
+del \euro\form\ROC\*.bak
+del \euro\form\ST\*.bak
+del \euro\form\ZE\*.bak
+del \euro\form\KHK\*.bak
+del \euro\form\UAB\*.bak
+del \euro\form\AKV\*.bak

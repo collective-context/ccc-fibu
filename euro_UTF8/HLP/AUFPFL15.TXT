@@ -1,0 +1,123 @@
+/*.ta,F02,VI. Bereich: Stammdaten / 3.1.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.mi (MENU,AUF-L12),1,ฏSchnellnderungenฎ.
+   ---------------------------------------------------
+
+.me (MENU,AUF-121),1,Stammdaten/Konstanten,Altkundenl”schung.
+.mh (\euro\mask\AUF\AUFM201),1,Altkundenl”schung.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 3.1.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-121),1,Stammdaten/Konstanten,Karteikennzeichen.
+.mh (\euro\mask\AUF\AUFM202),1,Karteikennzeichen.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 3.2.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-122),1,Stammdaten/Konstanten,Artikelgruppe.
+.mh (\euro\mask\AUF\AUFM231),1,Artikelgruppe.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 3.2.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-122),1,Stammdaten/Konstanten,Erl”scode.
+.mh (\euro\mask\AUF\AUFM232),1,Erl”scode.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 3.2.3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-122),1,Stammdaten/Konstanten,Lagerbewertungssatz.
+.mh (\euro\mask\AUF\AUFM233),1,Lagerbewertungssatz.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 3.2.4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-122),1,Stammdaten/Konstanten,Provisoionssatz.
+.mh (\euro\mask\AUF\AUFM234),1,Provisionssatz.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 3.2.5.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-122),1,Stammdaten/Konstanten,Aktueller Bestand.
+.mh (\euro\mask\AUF\AUFM235),1,Aktueller Bestand.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 3.2.6.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-122),1,Stammdaten/Konstanten,Mindestbestand.
+.mh (\euro\mask\AUF\AUFM236),1,Mindestbestand.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 3.2.7.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-122),1,Stammdaten/Konstanten,Rabattgruppe.
+.mh (\euro\mask\AUF\AUFM237),1,Rabattgruppe.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 3.2.8.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-122),1,Stammdaten/Konstanten,Karteikennzeichen.
+.mh (\euro\mask\AUF\AUFM238),1,Karteikennzeichen.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 3.3.1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-123),1,Stammdaten/Konstanten,Verkaufspreise.
+.mh (\euro\mask\AUF\AUFM241),1,Verkaufspreise.
+---------------------------------------------------
+.te*/
+
+/*.ta,F02,VI. Bereich: Stammdaten / 3.3.2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  WINware Groแe Auftragsbearbeitung                                                บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,AUF-123),1,Stammdaten/Konstanten,Sonderpreise.
+.mh (\euro\mask\AUF\AUFM242),1,Sonderpreise.
+---------------------------------------------------
+.te*/
+

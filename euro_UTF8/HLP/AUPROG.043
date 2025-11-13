@@ -1,0 +1,22 @@
+
+ÚÄ Programmname, Steuerkennzeichen, Masken und Formulare: ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+@ECHO OFF
+rem %1 %2  AU2100 0000E    û  Anlegen Rechnungen, ..  M:210,211
+    %1 %2  AU2100 1000E    û  Anlegen Rechnungen FKO  M:210,211
+
+rem %1 %2  EU1100 2300E    û  Lagerbewegungen erf.    M:230
+@echo off
+
+rem %1 %2  AU4200 0000E    ù  DRUCK Rechnungen        M:4210,4211,4236   F:2100   0020
+rem %1 %2  AU4200 0050E    ù  DRUCK Erlagscheine      M:4280,4211,4236   F:2180   0020
+rem %1 %2  AU4200 0200E    ù  DRUCK Angebote          M:4212,4211,4236   F:2110   0020
+rem %1 %2  AU4200 0201E    ù  DRUCK Angebote II       M:4212,4211,4236   F:2111
+rem %1 %2  AU4200 0300E    ù  DRUCK Auftr„ge          M:4214,4211,4236   F:2120   0020
+rem %1 %2  AU4200 0400E    ù  DRUCK Lieferscheine     M:4216,4211,4236   F:2130   0020
+rem %1 %2  AU4200 0500E    ù  DRUCK Gutschriften      M:4218,4211,4236   F:2140   0020
+
+rem %1 %2  AU4200 0100E    ù  TRANS to KHK            M:4220,4211        F:
+    %1 %2  AU4200 1000E    ù  šbergabe in Fibu        M:4300,4211        F:2300
+

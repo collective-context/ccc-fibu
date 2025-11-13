@@ -1,0 +1,8 @@
+#   Make-File fÅr tdisk.exe
+
+COMP=CL
+
+
+tdisk.exe: tdisk.c
+   $(COMP) tdisk.c /link DOSLIBS.LIB
+

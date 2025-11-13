@@ -1,0 +1,37 @@
+/*.ta,F02,V. euroSOFT-FIBU Stamm: Lieferanten / 2.,1
+ﾉﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍｻ
+ｺ  euroSOFT-Finanzbuchhaltung                                                       ｺ
+ﾈﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍﾍｼ
+
+.me (MENUE,FI-030),1,Finanzbuchhaltung,始dern Lieferanten.
+.me (MENUE,FI-042),1,Kontenstamm,始dern Lieferanten.
+.da (EURODATA,ST1200),1,Lieferantenstamm.
+.da (EURODATA,ST1210),1,.
+.da (EURODATA,FI1210),1,.
+.da (EURODATA,FI1215),1,.
+.ma (\euro\mask\STM120),1,Anlegen/始dern Lieferantenstamm 1/4.
+.ma (\euro\mask\FIM121),1,Anlegen/始dern Lieferantenstamm 2/4.
+.ma (\euro\mask\FIM122),1,Gebuchte Lieferanten-Umsдze 3/4.
+.ma (\euro\mask\FIM123),1,Offene Posten Lieferanten 4/4.
+.hd (FI,lief-st),FI,lief-an.
+.fo (\euro\form\STB1200.M03),1,S0,Z0,B84,H51,Druck Adress-Liste Lieferanten.
+.fo (\euro\form\STB1201.M03),1,S0,Z0,B55,H37,Druck Telefon-Liste Lieferanten.
+.fo (\euro\form\STB1202.M03),1,S0,Z0,B40,H15,Druck Adress-Etiketten Lieferanten.
+.te*/
+
+ma \euro\mask\STM110
+hd (SY,vorwort),SYHLP10,dateien.
+hi (SY,SY110)
+ff
+
+
+da (EURODATA,FI1610),1.
+da (EURODATA,FI1710),1.
+da (EURODATA,FI2100),1.
+da (EURODATA,FI3100),1.
+da (EURODATA,FI3100K),1.
+da (EURODATA,SYP_01),1.
+da (EURODATA,SYPARA),1.
+
+
+

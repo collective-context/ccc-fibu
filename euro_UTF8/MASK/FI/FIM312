@@ -1,0 +1,81 @@
+
+
+
+  Kunden-Nr Matchcode                       Straáe                 Telefon
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Kïïïïïïïï @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@
+  K
+  K
+  K
+  K
+  K
+  K
+  K
+  K
+  K
+  K
+  K
+  K
+  K
+  K
+  K
+  K
+ ùK                                                                           ù
+
+^ ^
+
+>>Mask:   FIM312
+>>Prog.:  FI1100.C
+>>Update: 01.06.91
+
+&TITEL    = "FI  STAMM Ersterfassung Kundenkonten"
+&FRAME    = 0,0,0,0, "Ersterfassung Kundenkonten", 2
+>>&SEQUENZ  = 00,04
+
+&BROWSE     = 0,3
+&SCROLL     = 4,1,21,78
+
+&MASKHELP = FIHLP10, sach-an
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI1110
+&DRU_DATEI  (1)  = MASK, D.FI4500
+&DATEI      (2)  = MASK, D.ST1110
+&DATEI      (3)  = MASK, D.ST1100
+&WORK_DATEI (4)  = MASK, D.FI1310
+
+>>--- Positionsteil
+>>Kunden-Nummer (S)
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Kundennummer", 0, FI_KUNDE
+&ADD_MATCH  (+-) = "Kurzbezeichnung               ", 0, KURZ_BEZ
+  &HELPTEXT (+-) = STHLP10, 110, 0
+  &DATA     (+-) = 0, FI_KUNDE
+
+>>Match-Code Kurzbezeichnung (S)
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Kurzbezeichnung               ", 0, KURZ_BEZ
+&ADD_MATCH  (+-) = "Kundennummer", 0, FI_KUNDE
+  &HELPTEXT (+-) = STHLP10, 110, 1
+  &DATA     (+-) = 0, KURZ_BEZ
+
+>>Match-Code Kurzbezeichnung (S)
+>>&REC_KEY    (+)
+>>&REC_MATCH  (+-) = "Straáe                  ", 3, STRASSE
+>>&ADD_MATCH  (+-) = "Kundennummer", 3, KUNDE
+>>&ADD_MATCH  (+-) = "Kurzbezeichnung               ", 3, MATCH_CODE
+  &HELPTEXT (+) = STHLP10, 110, 10
+  &DATA     (+-) = 3, STRASSE
+
+>>Telefon
+  &HELPTEXT (+)  = FIHLP10, 110, 15
+  &DATA     (+-) = 3, TELEFON
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 3, KUNDE       >>Kundennummer
+  &DATA_H   (+)  = 3, MATCH_CODE  >>Kurzbezeichnung
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+

@@ -1,0 +1,300 @@
+MA_BMTCH.CPP SWORD M_MatchCode(wZeile, wSpalte, wFileHandler, apstrFileBlock[], apstrRecord[],
+MA_BMTCH.CPP                 awRecLen[], pstrKeyPreset, apstrRecordKey[], wReadIndex,
+MA_BMTCH.CPP            pstrFieldName, awAddDispFields[], PSSTR apstrAddFieldNames[],
+MA_BMTCH.CPP            SWORD awAddDisplayField[], PSSTR apstrAddDisplayFieldNames[],
+MA_BMTCH.CPP PSSTR apstrRecordKey[] Ein-/Ausgang
+MA_BMTCH.CPP SWORD awAddDispFields[] Eingang
+MA_BMTCH.CPP PSSTR apstrAddDispNames[] Eingang
+MA_BMTCH.CPP (siehe awAddDispFields[]). Diese Bezeichnungen werden in einer Kopfzeile Åber
+MA_BMTCH.CPP Gibt an, wie viele Felder aus awAddDispFields[] zusÑtzlich angezeigt werden
+MA_BMTCH.CPP Variablen (R/W)   - aCS_g[]    (R)           - pstrEsc_g    (R)
+MA_BMTCH.CPP IMPORT COLORSET  aCS_g[];
+MA_BMTCH.CPP      PSSTR apstrFileBlock[], SWORD wReadIndex, BMATCH *pMatchCode,
+MA_BMTCH.CPP      SWORD awRecKeyOffset[], PSSTR pstrSelect, PFSPEC apfsFile[])
+MA_BMTCH.CPP   ∫                    PTEXTBOX apTextBox[][99]  Informationen Åber die    ∫
+MA_BMTCH.CPP   ∫                       SWORD awAddFields[][20]    zusÑtzlich anzuzeigende   ∫
+BA_INIT.CPP IMPORT CHAR strDat_g[];
+BA_INIT.CPP IMPORT CHAR strExe_g[];
+BA_INIT.CPP IMPORT CHAR strExt_g[];
+BA_INIT.CPP VOID ba_Init(SWORD argc, PSSTR argv[])
+BA_INIT.CPP   SWORD awMasks[], PSSTR pstrMask, ...)
+BA_INIT.CPP IMPORT  CHAR   acAktSatz_g[];
+BA_INIT.CPP IMPORT  CHAR   acVonWahl_g[];
+BA_INIT.CPP IMPORT      CHAR   acBisWahl_g[];  */
+BA_ISAM.CPP STATIC VOID i_Prepare_Records(PTEXTBOX[][99]);
+BA_ISAM.CPP STATIC VOID i_Prepare_Defaults(PTEXTBOX, PSSTR[]);
+BA_ISAM.CPP VOID i_Prepare_Records(PTEXTBOX apTB[][99])
+BA_ISAM.CPP VOID i_Prepare_Defaults(PTEXTBOX pTB, PSSTR apstr[])
+DB_BOPEN.CPP         pwAccessMode, apfsFileBuffer[], pwKeyLen, pwKeyOffset
+DB_BOPEN.CPP         ppstrKey, pwMaxKey, aFiles[], pF, wL);
+DB_BOPEN.CPP PFSPEC   apfsFileBuffer[]
+DB_BOPEN.CPP BFILEINFO aFiles[]
+DB_BOPEN.CPP ˘ apstrRecord[]
+DB_BOPEN.CPP ˘ awRecordLength[]
+DB_BOPEN.CPP IMPORT CHAR     strExe_g[];
+DB_BOPEN.CPP IMPORT CHAR     strDat_g[];
+DB_BOPEN.CPP IMPORT CHAR        strExt_g[];
+DB_BOPEN.CPP IMPORT CHAR        strApp_g[];
+DB_BOPEN.CPP STATIC SWORD File_Definition (SWORD, PPSTR, PFSPEC[], PSSTR, SWORD);
+DB_BOPEN.CPP          PFSPEC apfsFileBuffer[], PSWORD pwKeyLen,
+DB_BOPEN.CPP          PSWORD  pwMaxKey,         BFILEINFO aFiles[],
+DB_BOPEN.CPP        PFSPEC apfsFileBuffer[], PSSTR pF, SWORD wL)
+DL_MASK.CPP Variablen (R/W)   - aCS_g[]    (R)           - pstrReturn_g (R)
+DL_MASK.CPP IMPORT COLORSET  aCS_g[];
+DL_MASK.CPP IMPORT CHAR   strTmp_g[];
+DL_MASK.CPP IMPORT CHAR   strDat_g[];
+DL_MASK.CPP IMPORT CHAR   strExe_g[];
+DL_MASK.CPP IMPORT CHAR   strExt_g[];
+DL_MASK.CPP IMPORT SWORD           awColor_g[];
+DL_MASK.CPP STATIC VOID  SchreibBox  (PTEXTBOX[], SWORD);
+DL_MASK.CPP STATIC      PSSTR apstrText_m[]=
+DL_MASK.CPP VOID SchreibBox(PTEXTBOX apT[], SWORD wBox)
+MA_MKSEL.CPP IMPORT MENU      aMenus_g[];                /* Array mit MenÅs              */
+MA_MKSEL.CPP IMPORT COLORSET  aCS_g[];                   /* Farbpalette und Index auf    */
+BMC.CPP IMPORT COLORSET aCS_g[];
+BMC.CPP GLOBAL CHAR strKonflikt[]="   ";
+BMC.CPP VOID main (SWORD argc, PSSTR argv[])
+MA_INDEX.CPP IMPORT COLORSET aCS_g[];                            /* Farbpaletten-Array   */
+MA_INDEX.CPP IMPORT CHAR     strHlp_g[];
+MA_INDEX.CPP IMPORT CHAR     strExt_g[];
+BMC1.CPP IMPORT COLORSET aCS_g[];
+BMC1.CPP IMPORT CHAR strFileBlock_m[];
+BMC1.CPP IMPORT CHAR strMaskKey_m[];
+BMC1.CPP IMPORT CHAR strBuffer[];
+BMC1.CPP IMPORT PSSTR apstrZeile[];
+BMC1.CPP IMPORT PSSTR apstrHilfe_m[];
+BMC1.CPP IMPORT PSSTR apstrDatei[][2];
+BMC1.CPP IMPORT CHAR strIndexKey_g[];
+BMC1.CPP IMPORT CHAR strMskHlpFile_g[];
+BMC1.CPP IMPORT CHAR strMskHlpKey_g[];
+BMC1.CPP IMPORT CHAR strKonflikt[];
+BMC1.CPP IMPORT CHAR strTitel[];
+BMC1.CPP IMPORT SWORD awScroll[];
+BMC1.CPP IMPORT CHAR strBlock[];
+BMC1.CPP IMPORT PTEXTBOX apTextBox_m[];
+BMC1.CPP IMPORT PTEXTBOX apRefBox_m[];
+BMC1.CPP IMPORT PBLOCKS apBlocks[];
+BMC1.CPP IMPORT PSSTR apstrMaskText[];
+BMC1.CPP IMPORT PSSTR apstrWort[];
+CAMERA.CPP MGLOBAL VOID   main      (SWORD, PCHAR[]);
+CAMERA.CPP MGLOBAL CHAR   strFertig[] = "Ausgabe beendet.";
+CAMERA.CPP MGLOBAL CHAR   strEnde[]   = "Programm beendet.";
+CAMERA.CPP MGLOBAL CHAR   strWeiter[] = "Weiter mit jeder Taste...";
+CAMERA.CPP VOID main(SWORD argc, PCHAR argv[])
+DBTOEURO.CPP    SWORD main               (SWORD, PCHAR[]);
+DBTOEURO.CPP MGLOBAL CHAR   strEnde[]   = "Programm beendet.";
+DBTOEURO.CPP SWORD main(SWORD argc, PCHAR argv[])
+FO_BPRN.CPP SWORD Fo_Print (apWkbMask[], pswMask, apstrRecord[], apstrMaskText[][25],
+FO_BPRN.CPP               apTextBox[][99], pswField, pstrOldString, pstrNewString,
+FO_BPRN.CPP               pswKeyCode, awBlocks[][2], awScroll[][4], awRecLen[]);
+FO_BPRN.CPP PWKB   apWkbMask[]        Zeiger auf Array fÅr die Maskenattribute.
+FO_BPRN.CPP dem alten Feldinhalt, wie er im angegebenen Datensatz ØapstrRecord[]Æ steht.
+FO_BPRN.CPP    char *equal_part[];
+FO_BPRN.CPP       stehen in equal_part[] die eigentlichen Auswahlmîglichkeiten aufge-
+FO_BPRN.CPP       Achtung  Ist equal_part[] kleiner dimensioniert als die anzahl der
+FO_BPRN.CPP                Auswahl-fenster nur so viele Elemente, wie equal_part[]
+FO_BPRN.CPP    char *record[];
+FO_BPRN.CPP       Beim RÅcksprung in den aufrufenden Programmteil enthÑlt record[] immer
+FO_BPRN.CPP       In record[] mu· fÅr jeden Datensatz ein ausreichend langer String ange-
+FO_BPRN.CPP       Gibt den Index fÅr den Parameter record[] an, der fÅr das gerade
+FO_BPRN.CPP Variablen (R/W)   - aCS_g[]    (R)           - pstrEsc_g   (R)
+FO_BPRN.CPP IMPORT COLORSET aCS_g[];
+FO_BPRN.CPP IMPORT CHAR     strExt_g[];                            /* LÑnderextension     */
+FO_BPRN.CPP IMPORT CHAR     strDat_g[];                            /* Datenverzeichnis    */
+FO_BPRN.CPP IMPORT CHAR     strMan_g[];                            /* Mandantennummer     */
+FO_BPRN.CPP /* IMPORT PTEXTBOX apTextBox_g[][99];       /* wegen TBpt() */
+FO_BPRN.CPP STATIC      SWORD Print_Text      (PSSTR[], PFKB, PPKB, PPKB[], PSWORD, FILE *, SWORD);
+FO_BPRN.CPP STATIC      SWORD i_ChangexFF     (PSSTR, PSSTR[], PFKB, PPKB[], FILE *);
+FO_BPRN.CPP SWORD Fo_Print(PSSTR apstrRecord[], FILE *pfDevice, SWORD wBereich,
+FO_BPRN.CPP          PFKB pFkb, PPKB apPkb[], PSSTR pF, SWORD wL)
+FO_BPRN.CPP SWORD Print_Text(PSSTR apstrRecord[], PFKB pFkb, PPKB pPkb, PPKB apPkb[],
+FO_BPRN.CPP SWORD i_ChangexFF(PSSTR pstr, PSSTR apstrRecord[], PFKB pFkb,
+FO_BPRN.CPP             PPKB apPkb[], FILE *pfDevice)
+FO_BPRN.CPP SWORD Fo_Set_Page(PSSTR apstrRecord[], FILE *pfDevice, PFKB pFkb, PPKB apPkb[],
+FO_BPRN.CPP                PSSTR apstrRecord[], SWORD wLine, PSSTR pstrFile)
+FO_PRN.CPP SWORD Fo_Print (apWkbMask[], pswMask, apstrRecord[], apstrMaskText[][25],
+FO_PRN.CPP               apTextBox[][99], pswField, pstrOldString, pstrNewString,
+FO_PRN.CPP               pswKeyCode, awBlocks[][2], awScroll[][4], awRecLen[]);
+FO_PRN.CPP PWKB   apWkbMask[]        Zeiger auf Array fÅr die Maskenattribute.
+FO_PRN.CPP dem alten Feldinhalt, wie er im angegebenen Datensatz ØapstrRecord[]Æ steht.
+FO_PRN.CPP    char *equal_part[];
+FO_PRN.CPP       stehen in equal_part[] die eigentlichen Auswahlmîglichkeiten aufge-
+FO_PRN.CPP       Achtung  Ist equal_part[] kleiner dimensioniert als die anzahl der
+FO_PRN.CPP                Auswahl-fenster nur so viele Elemente, wie equal_part[]
+FO_PRN.CPP    char *record[];
+FO_PRN.CPP       Beim RÅcksprung in den aufrufenden Programmteil enthÑlt record[] immer
+FO_PRN.CPP       In record[] mu· fÅr jeden Datensatz ein ausreichend langer String ange-
+FO_PRN.CPP       Gibt den Index fÅr den Parameter record[] an, der fÅr das gerade
+FO_PRN.CPP Variablen (R/W)   - aCS_g[]    (R)           - pstrEsc_g   (R)
+FO_PRN.CPP IMPORT COLORSET aCS_g[];
+FO_PRN.CPP IMPORT CHAR     strExt_g[];                            /* LÑnderextension     */
+FO_PRN.CPP IMPORT CHAR     strDat_g[];                            /* Datenverzeichnis    */
+FO_PRN.CPP IMPORT CHAR     strMan_g[];                            /* Mandantennummer     */
+FO_PRN.CPP IMPORT PTEXTBOX apTextBox_g[][99];   /* wegen TBpt() */
+FO_PRN.CPP STATIC       SWORD Print_Text      (PSSTR[], PFKB, PPKB, PPKB[], PSWORD, FILE *, SWORD);
+FO_PRN.CPP STATIC       SWORD i_ChangexFF     (PSSTR, PSSTR[], PFKB, PPKB[], FILE *);
+FO_PRN.CPP SWORD Fo_Print(PSSTR apstrRecord[], FILE *pfDevice, SWORD wBereich,
+FO_PRN.CPP           PFKB pFkb, PPKB apPkb[], PSSTR pF, SWORD wL)
+FO_PRN.CPP SWORD Print_Text(PSSTR apstrRecord[], PFKB pFkb, PPKB pPkb, PPKB apPkb[],
+FO_PRN.CPP SWORD i_ChangexFF(PSSTR pstr, PSSTR apstrRecord[], PFKB pFkb,
+FO_PRN.CPP              PPKB apPkb[], FILE *pfDevice)
+FO_PRN.CPP SWORD Fo_Set_Page(PSSTR apstrRecord[], FILE *pfDevice, PFKB pFkb, PPKB apPkb[],
+FO_PRN.CPP                 PSSTR apstrRecord[], SWORD wLine, PSSTR pstrFile)
+BA_WORK.CPP IMPORT PSSTR  apstrWorkKey_g[];
+BA_SAA.CPP //IMPORT CHAR  strNewString_g[];
+BA_SAA.CPP IMPORT CHAR   strModemTyp_g[];
+MA_HILFE.CPP IMPORT COLORSET aCS_g[];                            /* Farbpaletten-Array   */
+MA_HILFE.CPP IMPORT CHAR        acHlpFile_g[];              /* Name der Hilfedatei / _MSK 0 */
+MA_HILFE.CPP IMPORT CHAR        acHlpKey_g[];               /* Hilfstext-SchlÅssel / 2x[F1] */
+MA_HILFE.CPP IMPORT CHAR     strHlp_g[];
+MA_HILFE.CPP IMPORT CHAR     strExt_g[];
+MA_MATCH.CPP SWORD M_MatchCode(wZeile, wSpalte, wFileHandler, apstrFileBlock[], apstrRecord[],
+MA_MATCH.CPP                 awRecLen[], pstrKeyPreset, apstrRecordKey[], wReadIndex,
+MA_MATCH.CPP            pstrFieldName, awAddDispFields[], PSSTR apstrAddFieldNames[],
+MA_MATCH.CPP            SWORD awAddDisplayField[], PSSTR apstrAddDisplayFieldNames[],
+MA_MATCH.CPP PSSTR apstrRecordKey[] Ein-/Ausgang
+MA_MATCH.CPP SWORD awAddDispFields[] Eingang
+MA_MATCH.CPP PSSTR apstrAddDispNames[] Eingang
+MA_MATCH.CPP (siehe awAddDispFields[]). Diese Bezeichnungen werden in einer Kopfzeile Åber
+MA_MATCH.CPP Gibt an, wie viele Felder aus awAddDispFields[] zusÑtzlich angezeigt werden
+MA_MATCH.CPP Variablen (R/W)   - aCS_g[]    (R)           - pstrEsc_g    (R)
+MA_MATCH.CPP IMPORT COLORSET  aCS_g[];
+MA_MATCH.CPP      SWORD awRecKeyOffset[], PSSTR pstrSelect, PFSPEC apfsFile[])
+MA_MATCH.CPP   ∫                    PTEXTBOX apTextBox[][99]  Informationen Åber die    ∫
+MA_MATCH.CPP   ∫                       SWORD awAddFields[][20]    zusÑtzlich anzuzeigende   ∫
+DL_LADEN.CPP Variablen (R/W)   - aCS_g[]    (R)           - pstrEsc_g    (R)
+DL_LADEN.CPP IMPORT COLORSET  aCS_g[];
+DL_LADEN.CPP STATIC     PSSTR pstrUngueltigPfad_m = "/[]{}|<>+=,;\"";
+DL_LADEN.CPP STATIC     PSSTR pstrUngueltigDat_m  = "/[]{}|<>+=,;\"  ?*";
+DL_LADEN.CPP /* STATIC  PSSTR pstrUngueltigDat_m  = "/[]{}|<>+=,;\"  ?*\."; */
+DL_HTOOL.CPP Variablen (R/W)   - aCS_g[]    (R)           - pstrEsc_g   (R)
+DL_HTOOL.CPP IMPORT COLORSET aCS_g[];                            /* Farbpaletten-Array   */
+DL_HTOOL.CPP   " vorkommen  \\ / [] {}   | <> + = ; . \" ? * ",
+DOC.CPP IMPORT CHAR     strPrt_g[];
+DOC.CPP IMPORT CHAR     strTeiln_g[];
+DOC.CPP IMPORT CHAR     strExe_g[];
+DOC.CPP IMPORT CHAR     strHlp_g[];
+DOC.CPP IMPORT CHAR     strExt_g[];
+DOC.CPP VOID main (SWORD, PSSTR[]);
+DOC.CPP MGLOBAL CHAR strErrorNoHelp_m[]="ERR_LEER";
+DOC.CPP VOID main (SWORD argc, PSSTR argv[])
+MA_MEMO.CPP IMPORT COLORSET aCS_g[];                            /* Farbpaletten-Array   */
+MA_MEMO.CPP IMPORT CHAR     strDat_g[];                         /*  Daten-Verzeichnis   */
+MA_MEMO.CPP IMPORT CHAR     strMan_g[];                         /*  Mandaten-Nummer     */
+ASC2EURO.CPP    VOID main              (SWORD, PSSTR[]);
+ASC2EURO.CPP VOID main(SWORD argc, PSSTR argv[])
+FC.CPP IMPORT CHAR        strExt_g[];
+FC.CPP STATIC SWORD wKopfZ_m;         /* Index-Nr. fÅr apKopfInfo_m[]               */
+FC.CPP STATIC SWORD wRumpfZ_m;       /* Index-Nr. fÅr apRumpfInfo_m[]               */
+FC.CPP STATIC SWORD wFussZ_m;         /* Index-Nr. fÅr apFussInfo_m[]               */
+FC.CPP VOID main (SWORD argc, PSSTR argv[])
+RESI.CPP MGLOBAL CHAR   strBild[]={"BILD0000.PIC        "};
+RESI.CPP MGLOBAL SWORD  awScreenBuffer[]=
+INDEX.CPP IMPORT CHAR   strHlp_g[];
+INDEX.CPP IMPORT CHAR   strExt_g[];
+INDEX.CPP SWORD main (SWORD argc, PSSTR argv[])
+ORG.CPP IMPORT CHAR     strPrt_g[];
+ORG.CPP IMPORT CHAR     strTeiln_g[];
+ORG.CPP IMPORT CHAR     strExe_g[];
+ORG.CPP IMPORT CHAR     strHlp_g[];
+ORG.CPP IMPORT CHAR     strExt_g[];
+ORG.CPP MGLOBAL CHAR strErrorNoHelp_m[]="ERR_LEER";
+ORG.CPP SWORD main (SWORD argc, PSSTR argv[])
+EU_FC.CPP IMPORT CHAR     strExe_g[];           /* Programm-Verzeichnis                */
+EU_FC.CPP                PSSTR argv[], PPSTR ppstrZeile, SWORD awZeileKombi[])
+EU_FC.CPP SWORD Source_Close (FILE *pFileHandle, PSSTR argv[], PPSTR ppstrZeile)
+ZE1100.CPP SWORD main (SWORD argc, PSSTR argv[])
+ZE4100.CPP MGLOBAL SWORD  Print_Next_Info (FILE *, PFKB, PPKB[]);
+ZE4100.CPP SWORD main (SWORD argc, PSSTR argv[])
+ZE4100.CPP STATIC CHAR acNull[]="\0";
+ZE4100.CPP   STATIC CHAR acEnd[]="99";
+ZE4100.CPP SWORD Print_Next_Info (FILE *pfDevice, PFKB pFkb, PPKB apPkb[])
+PRESENT.CPP SWORD              main(SWORD, PCHAR[]);
+PRESENT.CPP MGLOBAL CHAR  strFertig[] = "Ausgabe beendet.";
+PRESENT.CPP MGLOBAL CHAR  strWeiter[] = "Weiter mit jeder Taste...";
+PRESENT.CPP SWORD main (SWORD argc, PSSTR argv[])
+PREPARE.CPP                                               /*/* awMonoAtt[]               */
+PREPARE.CPP SWORD awMonoAtt[] = { NORMAL,                      /*/* Array mit Attributen      */
+PREPARE.CPP SWORD               main(SWORD, PCHAR[]);
+PREPARE.CPP IMPORT COLORSET aCS_g[];                            /* Farbpaletten-Array   */
+PREPARE.CPP MGLOBAL CHAR  strFertig[] = "Ausgabe beendet.";
+PREPARE.CPP MGLOBAL CHAR  strWeiter[] = "Weiter mit jeder Taste...";
+PREPARE.CPP SWORD main(SWORD argc, PCHAR argv[])
+EUROINST.CPP VOID main(SWORD argc, PSSTR argv[])
+EUROINST.CPP STATIC CHAR str[]="d";
+HP_FCOPY.CPP SWORD main (SWORD argc, PSSTR argv[])
+IDFONT.CPP PSSTR apstrText[] = {
+KATALOG.CPP main (SWORD argc, PSSTR argv[])
+EU_MC.CPP   ∫  apstrDatei[][2]                                                       ∫
+EU_MC.CPP SWORD SetDatei(PSSTR apstrDatei[][2], SWORD awFileMode[], PPSTR ppstrCode,
+BILDWORD.CPP    VOID   main            (SWORD, PCHAR[]);
+BILDWORD.CPP MGLOBAL CHAR   strEnde[]   = "Programm beendet.";
+BILDWORD.CPP MGLOBAL CHAR   cRahmenzeichen_m[][8] =
+BILDWORD.CPP VOID main(SWORD argc, PCHAR argv[])
+BILDWORD.CPP STATIC CHAR cRahmenzeichen[][8] =
+BILDWORD.CPP /*CHAR cRahmenzeichen[][8] =
+DL_FORM.CPP Variablen (R/W)   - aCS_g[]    (R)           - pstrReturn_g (R)
+DL_FORM.CPP IMPORT COLORSET  aCS_g[];
+DL_FORM.CPP IMPORT CHAR   strTmp_g[];
+DL_FORM.CPP IMPORT CHAR   strDat_g[];
+DL_FORM.CPP IMPORT CHAR   strExe_g[];
+DL_FORM.CPP IMPORT CHAR   strExt_g[];
+DL_FORM.CPP IMPORT SWORD           awColor_g[];
+DL_FORM.CPP STATIC VOID  SchreibBox  (PTEXTBOX[], SWORD);
+DL_FORM.CPP STATIC      PSSTR apstrText_m[]=
+DL_FORM.CPP VOID SchreibBox(PTEXTBOX apT[], SWORD wBox)
+MOVEINIT.CPP static char SzMOVE_COVL [] = "MOVE_COVL";
+MOVEINIT.CPP static char SzMOVE_HEAP [] = "MOVE_HEAP";
+MOVEINIT.CPP static char SzMOVE_XMS     [] = "MOVE_XMS";
+MOVEINIT.CPP static char SzMOVE_EMS     [] = "MOVE_EMS";
+OWNER.CPP VOID main (SWORD argc, PSSTR argv[])
+WOTAG.CPP VOID main(SWORD argc, PSSTR argv[])
+WOTAG.CPP STATIC CHAR str[]="d";
+WOTAG.CPP IMPORT COLORSET  aCS_g[];
+WOTAG.CPP STATIC VOID SchreibBox(PD_DATE, PD_TIME, PTEXTBOX[], SWORD);
+WOTAG.CPP STATIC        PSSTR apstrText_m[]=
+WOTAG.CPP VOID SchreibBox(PD_DATE pDate, PD_TIME pTime, PTEXTBOX apTB[], SWORD wBox)
+MENU.CPP MGLOBAL SWORD  awFieldOffset_m[] =    /* Offset der Eingabefelder in der MenÅdatei */
+MENU.CPP VOID main (SWORD argc, PSSTR argv[])
+DB_OPEN.CPP          pwAccessMode, apfsFileBuffer[], pwKeyLen, pwKeyOffset
+DB_OPEN.CPP          ppstrKey, pwMaxKey, aFiles[], pF, wL);
+DB_OPEN.CPP PFSPEC   apfsFileBuffer[]
+DB_OPEN.CPP FILEINFO aFiles[]
+DB_OPEN.CPP ˘ apstrRecord[]
+DB_OPEN.CPP ˘ awRecordLength[]
+DB_OPEN.CPP IMPORT CHAR     strExe_g[];
+DB_OPEN.CPP IMPORT CHAR     strDat_g[];
+DB_OPEN.CPP IMPORT CHAR strExt_g[];
+DB_OPEN.CPP IMPORT CHAR strApp_g[];
+DB_OPEN.CPP STATIC SWORD File_Definition (SWORD, PPSTR, PFSPEC[], PSSTR, SWORD);
+DB_OPEN.CPP /*IMPORT PFSPEC apfsFileBuffer_g[];  /*˘BTRV-Dateiattribute fuer B_Create ()     */
+DB_OPEN.CPP           PFSPEC apfsFileBuffer[], PSWORD pwKeyLen,
+DB_OPEN.CPP           PSWORD  pwMaxKey,         FILEINFO aFiles[],
+DB_OPEN.CPP        PFSPEC apfsFileBuffer[], PSSTR pF, SWORD wL)
+BB_INIT.CPP IMPORT      DOUBLE adFremdw_g[];
+BB_INIT.CPP IMPORT      DOUBLE adMwst_g[];
+BB_INIT.CPP VOID ba_Init(SWORD argc, PSSTR argv[])
+BMC2.CPP IMPORT COLORSET aCS_g[];
+BMC2.CPP IMPORT CHAR strFileBlock_m[];
+BMC2.CPP IMPORT CHAR strMaskKey_m[];
+BMC2.CPP IMPORT CHAR strBuffer[];
+BMC2.CPP IMPORT PSSTR apstrZeile[];
+BMC2.CPP IMPORT PSSTR apstrHilfe_m[];
+BMC2.CPP IMPORT PSSTR apstrDatei[][2];
+BMC2.CPP IMPORT SWORD awEndOffset[], awEndLength[], awEndFiller[];
+BMC2.CPP IMPORT CHAR strMaskSignatur[];
+BMC2.CPP IMPORT CHAR strTitel[];
+BMC2.CPP IMPORT CHAR strBlock[];
+BMC2.CPP IMPORT CHAR strScroll[];
+BMC2.CPP IMPORT CHAR strIndexKey_g[];
+BMC2.CPP IMPORT CHAR strMskHlpFile_g[];
+BMC2.CPP IMPORT CHAR strMskHlpKey_g[];
+BMC2.CPP IMPORT PTEXTBOX apTextBox_m[];
+BMC2.CPP IMPORT PTEXTBOX apRefBox_m[];
+BMC2.CPP IMPORT PBLOCKS apBlocks[];
+BMC2.CPP IMPORT PSSTR apstrMaskText[];
+BMC2.CPP IMPORT SWORD awScroll[];
+BMC2.CPP IMPORT PSSTR apstrWort[];
+MC.CPP STATIC VOID BefehlAuswerten(PSSTR [], PSSTR);
+MC.CPP VOID main (SWORD argc, PSSTR argv[])
+MC.CPP VOID BefehlAuswerten(PSSTR aapstrWort[], PSSTR pstrBlock)

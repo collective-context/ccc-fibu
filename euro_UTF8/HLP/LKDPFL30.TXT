@@ -1,0 +1,28 @@
+/*.ta,F02,III. KONSTANTEN / Mahntexte 7.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE LK-Fibu                                                            บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.fo (\euro\form\DRUCK001.TXT),1,S0,Z0,B125,H26,DRUCK001.
+.fo (\euro\form\DRUCK002.TXT),1,S0,Z0,B125,H26,DRUCK002.
+.fo (\euro\form\DRUCK003.TXT),1,S0,Z0,B125,H26,DRUCK003.
+.fo (\euro\form\DRUCK004.TXT),1,S0,Z0,B125,H26,DRUCK004.
+.fo (\euro\form\DRUCK005.TXT),1,S0,Z0,B125,H26,DRUCK005.
+.fo (\euro\form\DRUCK006.TXT),1,S0,Z0,B125,H26,DRUCK006.
+.fo (\euro\form\DRUCK007.TXT),1,S0,Z0,B125,H26,DRUCK007.
+.fo (\euro\form\DRUCK008.TXT),1,S0,Z0,B125,H26,DRUCK008.
+.fo (\euro\form\DRUCK009.TXT),1,S0,Z0,B125,H26,DRUCK009.
+.fo (\euro\form\DRUCK010.TXT),1,S0,Z0,B125,H26,DRUCK010.
+.fo (\euro\form\DRUCK011.TXT),1,S0,Z0,B125,H26,DRUCK011.
+.fo (\euro\form\DRUCK012.TXT),1,S0,Z0,B125,H26,DRUCK012.
+.fo (\euro\form\DRUCK013.TXT),1,S0,Z0,B125,H26,DRUCK013.
+.fo (\euro\form\DRUCK014.TXT),1,S0,Z0,B125,H26,DRUCK014.
+.fo (\euro\form\DRUCK015.TXT),1,S0,Z0,B125,H26,DRUCK015.
+.fo (\euro\form\DRUCK016.TXT),1,S0,Z0,B125,H26,DRUCK016.
+.fo (\euro\form\DRUCK017.TXT),1,S0,Z0,B125,H26,DRUCK017.
+.fo (\euro\form\DRUCK018.TXT),1,S0,Z0,B125,H26,DRUCK018.
+.fo (\euro\form\DRUCK019.TXT),1,S0,Z0,B125,H26,DRUCK019.
+.fo (\euro\form\DRUCK020.TXT),1,S0,Z0,B125,H26,DRUCK020.
+.te*/
+
+

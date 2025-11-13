@@ -1,0 +1,40 @@
+/*.ta,F02,III. euroSOFT LK-Fibu Erfassen Geldbuchungen / 1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT LK-Fibu                                                                 บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENUE,LK-060),1,Finanzbuchhaltung,Erfassen Geldbuchungen.
+.da (EURODATA,FI2500),1,Erfassen Geldbuchungen.
+.ma (\euro\mask\FIM250),1,Erfassen Geldbuchungen 1/1.
+.hd (FI,bu-erfa),FI,ge_erfa.
+.te*/
+
+
+/*.ta,F02,III. euroSOFT LK-Fibu Erfassen Sonstige Buchungen / 2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT LK-Fibu                                                                 บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENUE,LK-060),1,Finanzbuchhaltung,Erfassen Sonstige Buchungen.
+.da (EURODATA,FI2540),1,Erfassen Sonstige Buchungen.
+.ma (\euro\mask\FIM254),1,Erfassen Sonstige Buchungen 1/1.
+.hd (FI,bu-erfa),FI,ei_erfa.
+.te*/
+
+
+/*.ta,F02,III. euroSOFT LK-Fibu Erfassen Soll/Haben Buchungen / 3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT LK-Fibu                                                                 บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENUE,LK-060),1,Finanzbuchhaltung,Soll/Haben Buchungen.
+.da (EURODATA,FI2100),1,Erfassen Soll/Haben Buchungen.
+.ma (\euro\mask\FIM210),1,Erfassen Soll/Haben Buchungen 1/1.
+.hd (FI,bu-erfa),FI,erfass.
+.fo (\euro\form\FIB2100.M03),1,S5,Z0,B118,H25,Druck Buchungserfassungs-Protokoll.
+.te*/
+
+
+hd (FI,AU110),FI,erfass.
+
+

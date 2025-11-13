@@ -1,0 +1,23 @@
++-------------------------------------------------------------------------+
+|                      PC/MS-DOS  fr Insider                           |
+|-------------------------------------------------------------------------|
+| Testprogramm fr die Funktion-Calls 3Ch-40h,42h,45h,46h,5Ah,5Bh         |
+|                                                                         |
+| Die Funktionen befinden sich im Quelltext unter dem Namen HANDLE.C      |
+| Sie k”nnen in Programmen verwendet werden, indem man die Library        |
+| DOSLIBS.LIB beim Linken als zus„tzliche Library angibt.                 |
++-------------------------------------------------------------------------+
+
+Das folgende Programm bringt fr den Anwender keinerlei Nutzen, da es nur
+die Verwendung der Handle-Funktionen zeigt und auf Fehler prft.
+Auftauchende Fehler werden nicht n„her beschrieben, sondern nur die
+Fehlernummer angegeben. Sehen Sie sich bitte hierzu das Kapitel Fehler-
+behandlung in diesem Buch durch.
+Das Programm fr„gt nach dem Namen einer Datei. Geben Sie hier am besten
+eine Textdatei ein, da 512 Bytes dieser Datei gelesen werden und in eine
+Datei kopiert werden, die im Hauptverzeichnis angelegt wird und die einen
+einzigartigen Namen tr„gt, der aus Datum und Uhrzeit gebildet wird.
+Das Programm gibt jeweils Auskunft ber den Erfolg bei der Ausfhrung der
+Funktionen.
+
+

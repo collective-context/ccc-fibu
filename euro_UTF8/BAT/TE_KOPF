@@ -1,0 +1,22 @@
+
+ÚÄ Programmname, Steuerkennzeichen, Masken und Formulare: ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+@echo off
+REM Urlaub am Bauernhof:
+REM %1 %2 uab1100 08000    û  Nummernkreise           M:091
+REM %1 %2 uab1100 11000    û  ndern Kunden           M:110,111,112,113
+    %1 %2 uab1100 12000    û  ndern Betriebe         M:120,121,122,123
+REM %1 %2 uab1100 13000    û  ndern Regionen         M:130
+
+@echo off
+REM       Druckprogramme:     UABMASK oder Prefix     Source: MASK       FORM
+REM %1 %2 UAB4100 01000       Liste Regionen          UAB4130,130        UAB1300  0010
+REM %1 %2 UAB4100 02000       Liste Mitglieder        UAB4120            UAB1200  0010
+REM %1 %2 UAB4100 02010       Betriebsempfehlung      UAB4120            UAB1201  5000
+REM %1 %2 UAB4100 03000       Liste Kunden            UAB4111            ST1100   0010
+    %1 %2 UAB4100 11500       DRUCK Kunden-Etiketten  UAB4113,110        UAB1102  0112
+REM %1 %2 UAB4100 12500       DRUCK Mitgl.-Etiketten  UAB4123,120        UAB1202  0112
+REM           ³     ³                                                               ³
+REM Programm ÄÙ     ÀÄÄ Steuerkennzeichen                         Formular-Nummer ÄÄÙ
+

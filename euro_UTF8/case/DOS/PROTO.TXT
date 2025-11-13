@@ -1,0 +1,21 @@
+s_abrt.cpp
+s_abrt.cpp(16) : warning C4306: 'cast' : conversion from 'const int ' to 'void (__far __cdecl *)(int )' of greater size
+s_fpe.cpp
+s_fpe.cpp(19) : warning C4306: 'cast' : conversion from 'const int ' to 'void (__far __cdecl *)(int )' of greater size
+s_ill.cpp
+s_ill.cpp(16) : warning C4306: 'cast' : conversion from 'const int ' to 'void (__far __cdecl *)(int )' of greater size
+s_int.cpp
+s_int.cpp(18) : warning C4306: 'cast' : conversion from 'const int ' to 'void (__far __cdecl *)(int )' of greater size
+s_segv.cpp
+s_segv.cpp(16) : warning C4306: 'cast' : conversion from 'const int ' to 'void (__far __cdecl *)(int )' of greater size
+s_stoi.cpp
+s_string.cpp
+s_term.cpp
+s_term.cpp(16) : warning C4306: 'cast' : conversion from 'const int ' to 'void (__far __cdecl *)(int )' of greater size
+d_call.cpp
+d_calloc.cpp
+d_date.cpp
+d_proc.cpp
+d_read.cpp
+d_shmem.cpp
+d_write.cpp

@@ -1,0 +1,42 @@
+                                                                                     
+F:\EURO\SAA>fgrep M_MakeCh *.c
+M_OKQUES.C
+M_INPUT.C
+M_BINPUT.C
+M_MKCHOI.C
+                                                                                     
+DL_ERROR.C -> ver„ndert!
+M_OkQuestion(&swSelect,"Bitte w„hlen Sie",
+    "#Abbruch des Programmes.",
+    "Fortfhren #im Testmodus.",
+    "Fortfhren ohne Testmodus.",_N);
+
+M_DELMES.C -> gel”scht! 			     /* M_DeleteMessage()    */
+M_OkQuestion(&swSelect, 			     /* Antwort 	     */
+    "Daten unwiederbringlich l”schen:", 	     /* Titelzeile	     */
+    "#Nein, Daten nicht l”schen.",		     /* Text der Auswahl-    */
+    "#Ja, Daten ¯L ™ S C H E N®.",		     /* liste		     */
+    "#Abbruch, ohne l”schen.",_N);
+
+
+M_OKKUND.C -> gel”scht! 			     /* Ok_Kundenstamm()     */
+M_OkQuestion(&swSelect, 			     /* Antwort 	     */
+    "Bitte w„hlen Sie:",			     /* Titelzeile	     */
+    "#šbernahme in den Kundenstamm",		     /* Text der Auswahl-    */
+    "#Keine šbernahme",_N);			     /* liste		     */
+
+
+M_MESSAG.C -> gel”scht! 			     /* M_LockedMessage()    */
+M_OkQuestion(&swSelect, 			     /* Antwort 	     */
+    "Datensatz gesperrt - Zugriff wiederholen ?",    /* Titelzeile	     */
+    "#Nein, Zugriff nicht wiederholen.",	     /* Text der Auswahl-    */
+    "#Ja, Zugriff wiederholen.",_N);		     /* liste		     */
+
+  if(swSelect == -1) swSelect==0;		     /* T_ESC getrennt	     */
+
+
+
+	M_OkQuestion(&swSelect, "Datensatz "	     /* Antwort 	     */
+	  "gesperrt - Zugriff wiederholen ?",	     /* Titelzeile	     */
+	  "#Nein, Zugriff nicht wiederholen.",	     /* Text der Auswahl-    */
+	  "#Ja, Zugriff wiederholen.",_N);	     /* liste		     */

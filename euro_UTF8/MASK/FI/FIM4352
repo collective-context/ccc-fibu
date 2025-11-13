@@ -1,0 +1,97 @@
+
+
+
+ ù
+   1: @ @ @ @ @   @ @ @ @ @   @ @ @ @ @   @ @ @
+   2: @ @
+
+
+
+
+
+
+   3: @ @@@@@@@  @  @ @ @ @ @   @ ##.###.##›,›› @
+
+ ù                                                                            ù
+
+>>Mask:   FIM4352
+>>Prog.:  FI3100.C
+>>Update: 4.08.91
+
+&TITEL    = "FI  WORK Dummy-Maske fr FIM4350"
+&FRAME    = 
+>>SEQUENZ =
+
+&BLOCK    = 20,30
+&SCROLL   = 11,0,12,79
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK,   D.FI2500     >>Erfassen Rechnungsbuchungen
+&DRU_DATEI  (1)  = MASK,   D.FI4210     >>Dummy-Datei
+&WORK_DATEI (2)  = MASK,   D.FI2100     >>Erfassen Buchungen
+&WORK_DATEI (3)  = MASK,   D.ST1300     >>Artikelstamm
+&REF_DATEI  (4)  = MASK,   D.ST1400     >>Einheitenstamm
+&REF_DATEI  (5)  = MASK,   D.FI1210     >>Lieferantenkonten
+&WORK_DATEI (6)  = MASK,   D.FI2500A    >>Tempor„re Erfassungsdatei
+&PARA_READ  (7)  = MASK,   L.SYP_01     >>Konsten Festkonten, MWST, ...
+
+>>ATEI      (0)  = MASK,   D.FI2500     >>Erfassen Rechnungsbuchungen
+>>RU_DATEI  (1)  = MASK,   D.FI4210     >>Dummy-Datei
+>>ORK_DATEI (2)  = MASK,   D.FI2100     >>Erfassen Buchungen
+>>ORK_DATEI (3)  = MASK,   D.ST1300     >>Artikelstamm
+>>EF_DATEI  (4)  = MASK,   D.ST1400     >>Einheitenstamm
+>>EF_DATEI  (5)  = MASK,   D.FI1210     >>Lieferantenkonten
+>>ARA_READ  (6)  = MASK,   L.SYP_01     >>UST - S„tze
+>>EF_DATEI  (7)  = MASK,   L.SYP_02     >>Festkonten
+>>ORK_DATEI (8)  = MASK,   D.FI2500A    >>Tempor„re Erfassungsdatei
+>>EF_DATEI  (9)  = SYMASK, L.SYPARA     >>Kennzeichen im Mandantenstamm
+
+
+>>--- 1. Zeile
+&DATA  (0) = 3, ARTNR
+&DATA  (+) = 3, MATCH_CODE
+&DATA  (+) = 3, ERLOES_KT
+&DATA  (+) = 3, VKPR1
+&DATA  (+) = 3, AUFWAND_KT
+
+&DATA  (+) = 3, ART_KENNZ
+&DATA  (+) = 3, MWST
+&DATA  (+) = 3, MENGENEINH
+&DATA  (+) = 3, MENGENBAS
+&DATA  (+) = 3, EKPR1
+
+&DATA  (+) = 3, EKPRMIT
+&DATA  (+) = 3, SOLL_BEST
+&DATA  (+) = 3, LAGERKZ
+&DATA  (+) = 3, LETZLIEFAM
+&DATA  (+) = 3, UMSATZMEN
+&DATA  (+) = 3, EINKAUFMEN
+
+&DATA  (+) = 3, UMSATZK
+&DATA  (+) = 3, LETZ_VK_AM
+
+>>--- 2. Zeile
+&DATA  (+) = 4, UM_RECH
+&DATA  (+) = 4, BASIS_EH
+
+>>------------------------------
+>>Positionsteil Zeile 3
+>>Artikel-Nummer
+&DATA      (+) = 0, PO_ART
+&DATA      (+) = 0, AR_NUMMER
+&DATA      (+) = 0, AR_BEZEICH
+&DATA      (+) = 0, AR_EINHEIT
+&DATA      (+) = 0, AR_MENGE
+
+&DATA      (+) = 0, AR_KENNZ
+&DATA      (+) = 0, UST_BETRAG
+&DATA      (+) = 0, PREIS_EINH
+&DATA      (+) = 0, NETTO_BRUT
+&DATA      (+) = 0, BETRAG
+&DATA      (+) = 0, PO_EIN_AUS
+
+

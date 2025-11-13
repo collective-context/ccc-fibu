@@ -1,0 +1,56 @@
+
+
+
+ Konto  Op-Nummer  Bwl-Dat Zahlung US MKZ    Rechn./Zahl.  Buchungstext
+ 컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&TITEL = "FI-Bearbeiten offene Posten"
+&REM   Source:  FIM1002
+&REM   Maske :  #102
+
+&REM Historie
+&REM Stand: 06.06.89
+
+&REM ORIGIN = 4, 1, 22, 80
+&FRAME = 0, 0, 0, 0, "Bearbeiten offene Posten 1/1" 2
+&INDEX = "FI103"
+
+&REM NUMMER  = 00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17
+&REM SEQUENZ = 00,01,03,04,05,07,16,17
+
+&REM  Konto
+&HELPTEXT (00) = FIHLP, 103, 0
+
+&REM  Op-Nummer
+&HELPTEXT (+) = FIHLP, 103, 1
+                                                                            
+&REM  Bel-Dat
+&HELPTEXT (+) = FIHLP, 103, 2
+                                                                            
+&REM  Zahlung
+&HELPTEXT (+) = FIHLP, 103, 3
+
+&REM  US
+&HELPTEXT (+) = FIHLP, 103, 4
+
+&REM  MKZ
+&HELPTEXT (+) = FIHLP, 103, 5
+
+&REM  Buchungstext
+&HELPTEXT (+) = FIHLP, 103, 6
+                                                                            

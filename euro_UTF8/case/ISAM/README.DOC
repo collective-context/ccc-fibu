@@ -1,0 +1,254 @@
+/*****************************************************************************/
+
+                                README.DOC
+
+                               Btrieve v5.10
+                          MS-Windows DLL version
+
+                               Novell, Inc.
+                       Development Products Division
+                         5918 W. Courtyard Drive
+                           Austin, Texas 78730
+                              (512) 346-8380
+
+/*****************************************************************************/
+
+
+   This README contains updated information not found in the accompanying
+   documentation.
+
+      - Diskette Contents
+      - Documentation Changes
+      - Additional Include File
+      - Tracefiles
+      - Maximum Number of Concurrent Tasks
+      - Batch Execution and Recorded Keystrokes
+      - Aborting Lengthy Toolbox Operations
+      - Marked Windows v2.X applications
+      - Windows v2.X Btrieve Requester and Local Btrieve in Transactions
+      - Education Methods
+
+
+   Diskette Contents
+   =================
+
+   README   DOC
+   2X\
+      WBTRCALL EXE    Btrieve DLL, Windows v2.X specific
+      BTRTOOLS EXE    Btrieve utilities and executor, Windows v2.X specific
+      BTRVERR  MSG    Error messages for the Toolbox
+      WBROLL   EXE    Roll Forward utility, Windows v2.X specific
+
+   30\
+      WBTRCALL DLL    Btrieve DLL, Windows v3.0 specific
+      BTRTOOLS EXE    Btrieve utilities and executor, Windows v3.0 specific
+      BTRVERR  MSG    Error messages for the Toolbox
+      WBROLL   EXE    Roll Forward utility, Windows v3.0 specific
+
+   INTF\
+      WBTRCALL LIB    Import library
+      WBTRINTF C      C interface
+      WBTRV    H      header file, has function prototypes
+
+
+
+   Documentation Changes
+   =====================
+
+   In the Btrieve for MS-Windows IOM, the error message 1010 on page A-17
+   should read "Unable to access Btrieve file during transaction recovery".
+
+   Status code 1012 is missing in the IOM listing of status codes.  The 1012
+   code is returned for an invalid /n: option value.  This option sets the
+   maximum number of files allowed in a transaction.  The minimum is 0,
+   default is 12, and maximum is 18.
+
+
+   Additional Include File
+   =======================
+
+   Additional development file WBTRV.H is an include file containing the
+   Btrieve function prototypes.
+
+
+   Tracefiles
+   ==========
+
+   A tracefile can be generated which can be very useful in debugging Btrieve
+   applications.  To specify a tracefile is to be generated place the following
+   line under the [btrieve] heading in the WIN.INI file:
+
+         tracefile=[d:][path]filename
+
+
+   This will cause Btrieve to dump information to this file on each call to
+   the DLL for any currently executing Btrieve application.  The following is
+   a sample tracefile.
+
+  Task : 2b6f-00
+  Parms: 0000  49a1:1d6a/L01  49a1:108f/L01  49a1:42c2/L01  49a1:2476/L01  fe
+  Data : 20 00 61 63 6b 00 00 2e 6d 73 67 00 00 00 00 00      .ack...msg.....
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+  Key  : 62 74 72 76 65 72 72 2e 6d 73 67 00 00 00 00 00     btrverr.msg.....
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+  Dlen : 000b
+  Stat : 0000
+  Data : 20 00 61 63 6b 00 00 2e 6d 73 67 00 00 00 00 00      .ack...msg.....
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+  Key  : 62 74 72 76 65 72 72 2e 6d 73 67 00 00 00 00 00     btrverr.msg.....
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+  Dlen : 000b
+
+  Task : 2b6f-00
+  Parms: 0001  49a1:1d6a/L01  49a1:1572/L01  49a1:3be8/L01  49a1:2476/L01  00
+  Data : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+  Key  : 62 74 72 76 65 72 72 2e 6d 73 67 00 00 00 00 00     btrverr.msg.....
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+  Dlen : 0000
+  Stat : 0000
+  Data : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+  Key  : 62 74 72 76 65 72 72 2e 6d 73 67 00 00 00 00 00     btrverr.msg.....
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+  Dlen : 0000
+
+  BTRVSTOP Task: 2b6f
+
+    Each operation lists the same items.  This sample was created by first
+    setting the trace file name in WIN.INI, and then starting the Btrieve
+    Toolbox and exiting it without doing anything else.  In this trace,
+    the Toolbox message file is opened, then closed on exit, and the stop
+    function WBTRVSTOP() is called.
+
+    Each operation lists:
+
+    ****  Prior to performing operation ****
+       task#-index to task list[/T]
+           op  posblkP[/LXX] databufP[/LXX] dataLenP[/LXX] keybufP[/LXX] keynum
+       [INVALID POINTER parameter #1-4]
+           data buffer (hex)                                data buffer (ascii)
+           key buffer (hex)                                 key buffer (ascii)
+           data length
+    ****  After performing operation ****
+           status
+           data buffer (hex)                                data buffer (ascii)
+           key buffer (hex)                                 key buffer (ascii)
+           data length
+
+     [/T]   - If this task has an active transaction
+     [/LXX] - Lock count on that segment pointed to (Windows 2.11 and earlier)
+
+
+   In addition to simply listing the data, and other information, the pointers
+   being passed to Btrieve by the caller are validated for access.  If the
+   pointer is invalid it will be so noted following the parameter list.  The
+   data buffer parameter is validated over the range specified by the data
+   length.
+
+   If only specific operations are to be traced, those operations can be
+   specified using the following line under the [btrieve] heading in the
+   WIN.INI file:
+
+       traceOps=0 1 19 20 21
+
+   This example will only trace the OPEN, CLOSE, BEG_TRAN, END_TRAN, and
+   ABORT_TRAN operations.  This particular trace is useful when a status
+   is returned from WBTRVSTOP () indicating that the application has left
+   a file open, or a transaction active.  Looking at the trace file will
+   show what is not being closed.
+
+   Up to 50 operations can be specified using traceOps.
+
+
+   Maximum Number of Concurrent Tasks
+   ==================================
+
+   The default number of tasks handled by Btrieve is 10.  This may be increased
+   to a maximum of 255.  To change the maximum number of tasks, place the
+   following line in WIN.INI under the [btrieve] heading:
+
+          tasks=XXX      ; XXX is the maximum number of tasks
+
+
+   Batch Execution and Recorded Keystrokes
+   =======================================
+
+   Using batch execution programs such as SoftBridge's BRIDGE with the Btrieve
+   Toolbox, and Roll Forward programs can cause problems due to the
+   background execution characteristics of these programs.  When control is
+   released to Windows while still performing the desired operation, it is
+   assumed that the operation has completed.  The release of control can be
+   turned off by putting the following line under that program's heading in
+   the WIN.INI file:
+
+        [btrtools / wbroll]
+        yield=no
+
+   This will cause the operations to be run to completion.  Those operations
+   affected by this are the Load, Save, Copy, Recover, and Index utilities of
+   the Btrieve Toolbox and the Btrieve Roll Forward program itself.
+
+
+
+   Aborting Lengthy Toolbox Operations
+   ===================================
+
+   Those tools listed above which can run as a background process can be
+   aborted by selecting Exit from the Tools pulldown menu.  All other
+   selections in main menu pulldowns are disabled.  If the operation is
+   aborted, be sure to perform a Reset when the message box comes up on exit
+   from the Toolbox.  Files should be left undamaged, but may not contain
+   all the data.
+
+
+   Marked Windows v2.X Applications
+   ===============================
+
+   Windows v2.X applications "marked" to run in Windows v3.0 can use the
+   v3.0 Btrieve DLL by copying WBTRCALL.DLL to WBTRCALL.EXE.  Windows v2.X
+   applications load DLL's with an .EXE extension. By doing this, the
+   application can run in either Windows version and use either the v2.X
+   or v3.0 DLL Btrieve DLL for Windows.
+
+
+
+   Windows v2.X Btrieve Requester and Local Btrieve in Transactions
+   ===============================================================
+
+   When running Windows v2.X using the Btrieve requester and local Btrieve
+   DLL, a problem can occur if the application executes a BEGIN TRANSACTION
+   operation when the local DLL is also active but is not initialized for
+   transactions.  Transactions are distributed to all connected servers and
+   to the local Btrieve, if active.  If the local Btrieve is not initialized
+   for transactions, a status 36 is returned on the operation; however, the
+   transactions at the connected servers are not aborted as they normally
+   would be if an error occurs.
+
+   This problem can be avoided by making sure the local Btrieve is initialized
+   for transactions.
+
+
+
+   Education Methods
+   =================
+
+   A regular newsletter, Professional Development Series Bullets, is compiled by
+   the Technical Support department of the Development Products Division.  It
+   contains information regarding both current and new products, and is sent
+   to all registered users of DPD products and is also available on NetWire.
+
+   To access the Bullets from NetWire, Novell's forum on CompuServe,
+   type GO NOVSOFT at the ! prompt.  Choose the library option.  Choose
+   library 17 for New Uploads.  The naming convention for the current
+   issue is PDSXXX.ARC, where XXX are the first three characters of the
+   month.  All back issues are in PDSBAK.ARC.
+
+   The Professional Developers' Forum (PDF) meets in a different city in
+   the country every month.  It is your opportunity to discuss today's
+   development challenges and understand Novell's product strategy and
+   implementation.  Information on the PDF is sent to all registered
+   users of DPD products once a year, and updates are included in the
+   Bullets.
+
+

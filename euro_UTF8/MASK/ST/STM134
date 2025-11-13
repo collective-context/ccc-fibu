@@ -1,0 +1,163 @@
+
+
+
+ ù
+  Art.Nr.: ïïïïïïïïïï  Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Einheit: @@@@@@@@@@  ^^^^^^^^^^^^^^^^^^^^^^^                  Inventur: @@@@
+
+  ÚEINKAUF                letztes EK-Datum:``.``.``    let.Preis:``.```.``|,||
+  ÀMenge :``.```.``|,|| ^ í EK-Preis: ``.```.``|,||       Umsatz:``.```.``|,||
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  ÚVERKAUF                letztes VK-Datum:``.``.``    let.Preis:``.```.``|,||
+  ÀMenge :``.```.``|,||   í VK-Preis: ``.```.``|,||       Umsatz:``.```.``|,||
+
+  ÚINVENTUR               Datum: ``.``.``            Ver„nderung:``.```.``|,||
+  ³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  ³Er”ffnung Menge: ``.```.``|    PR/EH:``.```.``|,||     Betrag:``.```.``|,||
+  ÀAktuell   Menge: ``.```.``|    PR/EH:``.```.``|,||     Betrag:``.```.``|,||
+
+  Erl”skonto ^ ^ ^ : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  Aufwandskonto    : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  Bestandskonto    : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ ùMehr-/Minderwerte: @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        ù
+
+^ ^
+^ ^ ^ ^ ^ ^
+
+>>Mask:   STM134
+>>Prog.:  ST1100.C
+>>Update: 2.08.91
+
+&TITEL    = "ST  STAMM Anlegen Artikel/Leistungen 1/x"
+&FRAME    = 0, 0, 0, 0, "LK-Fibu / Žndern Artikel oder Leistungen", 2
+&SEQUENZ  = 00,02,03,01,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,\
+            21,22,23,24
+
+&MASKHELP = LKHLP10, art-st
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1300
+&REF_DATEI  (1)  = MASK, D.ST1200
+&REF_DATEI  (2)  = MASK, D.ST1400
+&PARA_READ  (3)  = MASK, L.SYP_01
+&PARA_DATEI (4)  = MASK, L.SYP_02
+&DRU_DATEI  (5)  = MASK, D.DU1000
+&REF_DATEI  (6)  = MASK, D.FI1310
+
+>>Artikelnummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+&ADD_MATCH  (+-) = "Match-Code                              ", 0, MATCH_CODE
+  &HELPTEXT (+-) = STHLP10, 130, 0
+  &DATA     (+-) = 0, ARTNR
+
+>>Bezeichnung zur Suche
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Match-Code                              ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+  &HELPTEXT (+-)  = STHLP10, 130, 1
+  &DATA     (+-) = 0, MATCH_CODE
+
+>>Mengen-Einheit
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Match-Code                                 ", 2, MG_MATCH
+&ADD_MATCH  (+-) = "Bezeichnung   ", 2, MG_BEZ
+  &HELPTEXT (+-) = STHLP10, 130, 17
+  &REF_DATA (+-) = 2, MG_BEZ, 0, MENGENEINH
+
+>>Match-Code Mengen-Einheit
+&REF_KEY    (+)
+  &DATA     (+-) = 2, MG_MATCH
+
+  &DATA     (+) = 0, LAGERKZ
+  &CHOICE   (+-) = "Inventurartikel",   "ja",j,   "nein",n
+
+>>Einkauf
+  &DATA     (+) = 0, LETZLIEFAM
+  &DATA     (+) = 0, EKPR1
+  &DATA     (+) = 0, EINKAUFMEN
+  &DATA_H   (+) = 0, SOLL_BEST
+  &DATA     (+) = 0, EKPRMIT
+  &DATA     (+) = 5, _EK_UMSATZ
+
+>>Verkauf
+  &DATA     (+) = 0, LETZ_VK_AM
+  &DATA     (+) = 0, VKPR1
+  &DATA     (+) = 0, UMSATZMEN
+  &DATA     (+) = 5, _VKPRMIT
+  &DATA     (+) = 0, UMSATZK
+
+>>Inventur
+  &DATA     (+) = 0, LETZ_INVEN
+  &DATA     (+) = 5, _INV_DIFF
+
+  &DATA     (+) = 0, INVEN_ANF
+  &DATA     (+) = 0, IN_ANF_EKP
+  &DATA     (+) = 5, _INV_ANF
+  &DATA     (+) = 0, INVEN_AKT
+  &DATA     (+) = 0, IN_AKT_EKP
+  &DATA     (+) = 5, _INV_AKT
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)                   >>Sachkonten Konto
+&REF_MATCH  (+-) = "Konto-Nummer", 6, KONTONR
+&ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 6, KONTO_BEZ
+  &DATA_H   (+-) = 6, KONTONR
+
+&REF_KEY    (+)                   >>Sachkonten Bezeichnung
+  &DATA_H   (+-) = 6, KONTO_BEZ
+
+  &DATA_H   (+)  = 6, KOSTENVERG  >>Kostenvergleich fr Matchcode_OK()
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>Konto-Nr fr Erl”sbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 28
+  &DATA     (+-) = 0, ERLOES_KT
+  &DATA     (+)  = 0, ERLOES_BZ  >>Konto-Bezeichnung fr Erl”sbuchungen
+
+>>Konto-Nr fr Aufwandsbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 29
+  &DATA     (+-) = 0, AUFWAND_KT
+  &DATA     (+)  = 0, AUFWAND_BZ  >>Konto-Bezeichnung fr Aufwandsbuchungen
+
+>>Konto-Nr fr Bestandsbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 30
+  &DATA     (+-) = 0, BESTAND_KT
+  &DATA     (+)  = 0, BESTAND_BZ  >>Konto-Bezeichnung fr Bestandsbuchungen
+
+>>Konto-Nr fr Bestandsbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 31
+  &DATA     (+-) = 0, MEHR_MI_KT
+  &DATA     (+)  = 0, MEHR_MI_BZ  >>Konto-Bezeichnung fr Bestandsbuchungen
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Mandanten-Nummer (Dummy Feld)
+  &REF_KEY  (+)
+  &DATA_H   (+-) = 4, MAND_02
+  &DATA_H   (+)  = 4, NR_ART      >>Nummernkreis Artikelstamm (Dummy Feld)
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 0, EKPR1
+  &DATA_H   (+)  = 0, INVEN_ANF
+  &DATA_H   (+)  = 0, IN_ANF_EKP
+  &DATA_H   (+)  = 0, INVEN_AKT
+  &DATA_H   (+)  = 0, IN_AKT_EKP
+  &DATA_H   (+)  = 0, LETZ_INVEN
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+
+>>Umrechnungsfaktor
+  &DATA     (+) = 2, UM_RECH
+
+>>Basiseinheit
+  >>&REF_DATA (+)  = 2, BASIS_EH, 0, MENGENBAS
+  &DATA     (+)  = 2, BASIS_EH
+  &CHOICE   (+-) = "Basis-Einheit",   "l",1,   "kg",2,   "m2",3,   "Stk",4,\
+                                       "m",5,   "m3",6,   "KW",7,   "min",8
+
+    Mengen-Einheit: @@@@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^ = ```.```.``|,|||| ^^^^
+
+

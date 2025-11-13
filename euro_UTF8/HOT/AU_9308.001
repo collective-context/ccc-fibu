@@ -1,0 +1,66 @@
+ÚÄ(c)WINware P.Mayer                                   AU_9308.001 - Seite 1/1 ÄÄ¿
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+  Ú(c)ÿ1992ÿWINware ÄÄÄÄÄÄÄÄÄ WINware, N.Niegelhell ÄÄÄÄÄÄÄÄÄ Datum 23.08.93 (05)¿   
+  À ÚAuftrag...¿ Lager  Offene Posten  Stammdaten  Optionen        [F1]=Hilfe    Ù   
+   ÚÁÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿                                                         
+   ³  Bearbeiten           ³  <--- Aufruf des Programmes nach der Anlage eines
+   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´       neuen Mandaten und der Anlage der notwendigen
+   ³  Druck Angebote       ³       Verzeichnisse.
+   ³  Druck Angebote II    ³                                                         
+
+                                                                                     
+Fehlermeldung:
+--------------
+                                                                                     
+  Ú(c)ÿ1992ÿWINware ÄÄÄÄÄÄÄÄÄ WINware, N.Niegelhell ÄÄÄÄÄÄÄÄÄ Datum 23.08.93 (05)¿   
+  À  F-Tasten  Optionen                                              F1=Hilfe    Ù   
+                                                                                     
+      ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿      
+      ³                 WINware-TOOLbox Laufzeitfehler                        ³
+      ³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³      
+      ³  Fehler (4) ®¯ Source ¯bb_init.cpp®, Zeile ¯198®.                     ³      
+      ³    Read_Rec(EQ), - File/Key: 8/0 _  5(32 53 0 0 0...).                ³      
+      ³                                                                       ³      
+      ³  Ursache des Fehlers:                                                 ³      
+      ³    ¯ BTR-04 = key not found ®                                         ³      
+      ³                                                                       ³      
+      ³    Btrieve konnte den verlangten Schlsselwert im angegebenen         ³      
+      ³    Zugriffspfad nicht finden.                                         ³      
+      ³                                                                       ³      
+      ³    Wurde als ¯wHandle® ein Wert gr”áer ¯0® bergeben, so wird         ³      
+      ³    das Programm weitergefhrt.                                        ³      
+      ³                                                                       ³      
+      ³    Soll ein ¯key not found® zum Programmabbruch fhren, muá           ³      
+      ³    als ¯wHandle® ein Wert gleich ¯0® bergeben werden.                ³      
+      ³                                                                       ³      
+      ³    Die Ausfhrung des Programmes wird beendet...   ¯wFehler_g(0)®     ³      
+      ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ      
+
+
+Grund und Behebung:
+-------------------
+
+In den Konstanten mssen die Programme "Nummernkreise, Steuers„tze und
+Fremdw„hrungen wenigstens einmal aufgerufen werden:
+                                                                                     
+  Ú(c)ÿ1992ÿeuroSOF ÄÄÄÄÄÄÄÄÄ WINware, N.Niegelhell ÄÄÄÄÄÄÄÄÄ Datum 23.08.93 (05)¿   
+  À  Kunden  Lieferanten  Artikel  Sonstige ÚKonstanten¿           [F1]=Hilfe    Ù   
+                                           ÚÁÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄ¿                 
+            Einstellen nach        --->    ³  Nummernkreise        ³
+            Kundenwunsch.          --->    ³  Steuers„tze          ³
+                                           ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´                 
+            -"-                    --->    ³  Werbetexte           ³
+                                           ³  Versandart           ³                 
+                                           ³  Landesw„hrung        ³                 
+            -"-                    --->    ³  Artikel-Preis-Text   ³
+                                           ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+                                           ³  Drucken Konstanten   ³                 
+                                           ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´                 
+                                   --->    ³  Fremdw„hrungen       ³
+                                           ³  Drucken Fremdw„hrung ³                 
+                                           ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+                 
+
+
+

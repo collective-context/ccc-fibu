@@ -1,0 +1,312 @@
+
+
+
+
+
+
+   ù
+      Lagerort  ^ ^    : ïïïïïï             Artikel-Gruppe : ###
+     ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      KZ-Texterg„nzung : @@@@               Bewertungssatz : @
+     ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      Lagerfhrung     : @@@@               Soll-Bestand :#.###.###.##›,›››
+                                            í EK-Preis   :#.###.###.##›,››
+
+      Letzter Einkauf  : ##.##.##           letzter EK-Pr:#.###.###.##›,››
+
+      Verkauf Menge    : #.###.###.##›,››   Umsatz in ™S :#.###.###.##›,››
+     ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      Erl”skonto ^ ^ ^ : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      Aufwandskonto    : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ù  Bestandskonto    : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  ù
+
+
+>>Mask:   STM135 (verbunden mit STM134/STM133)
+>>Prog.:  ST1100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  STAMM Anlegen Artikel-Merkmale 2/x"
+&FRAME    = 0, 0, 0, 0, "LK-Fibu / ndern Artikel-Merkmale", 2
+>>SEQUENZ = 00,01,02,03,04,05,07,09,10,11,12,13,15,17
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1300
+&REF_DATEI  (1)  = MASK, D.FI1310
+
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+&ADD_MATCH  (+-) = "Match-Code                              ", 0, MATCH_CODE
+  &HELPTEXT (+-) = STHLP10, 130, 0
+  &DATA_H   (+-) = 0, ARTNR
+
+>>Bezeichnung zur Suche
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Match-Code                              ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+  &HELPTEXT (+-)  = STHLP10, 130, 1
+  &DATA_H   (+-) = 0, MATCH_CODE
+
+
+>>Lagerort
+  &HELPTEXT (+)  = STHLP10, 131, 3
+  &DATA     (+-) = 0, LAGERORT
+
+>>Artikel-Gruppe
+  &HELPTEXT (+)  = STHLP10, 131, 7
+  &DATA     (+-) = 0, ARTGR
+
+>>Kennzeichen Texterg„nzung
+  &HELPTEXT (+)  = STHLP10, 131, 19
+  &DATA     (+-) = 0, ARTTEXTKZ
+  &DEFAULT  (+-) = "n"
+  &CHOICE   (+-) = "Kennzeichen Texterg„nzung",  "ja",j,  "nein",n
+
+>>Bewertungs-Satz
+  &HELPTEXT (+)  = STHLP10, 131, 13
+  &DATA     (+-) = 0, BEWERTSA
+  &DEFAULT  (+-) = "0"
+  &CHOICE   (+-) = "Bewertungs-Satz",  "0",0,  "1",1,  "2",2,  "3",3
+
+>>Lagerfhrung j/n
+  &HELPTEXT (+)  = STHLP10, 131, 24
+  &DATA     (+-) = 0, LAGERKZ
+  &DEFAULT  (+-) = "j"
+  &CHOICE   (+-) = "Lagerfhrung",  "ja",j,  "nein",n
+
+>>Bestand aktuell
+  &HELPTEXT (+)  = STHLP10, 131, 27
+  &DATA     (+-) = 0, SOLL_BEST
+
+>>í Netto-Einkaufs-Preis
+  &HELPTEXT (+)  = STHLP10, 131, 23
+  &DATA     (+-) = 0, EKPRMIT
+
+>>Datum letzte Lieferung
+  &HELPTEXT (+)  = STHLP10, 131, 8
+  &DATA     (+-) = 0, LETZLIEFAM
+
+>>letzter Netto-Einkaufs-Preis
+  &HELPTEXT (+)  = STHLP10, 131, 20
+  &DATA     (+-) = 0, EKPR1
+
+>>Mengenumsatz
+  &HELPTEXT (+)  = STHLP10, 131, 25
+  &DATA     (+-) = 0, UMSATZMEN
+
+>>Umsatz in ™S
+  &HELPTEXT (+)  = STHLP10, 131, 26
+  &DATA     (+-) = 0, UMSATZK
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)                   >>Sachkonten Konto
+&REF_MATCH  (+-) = "Konto-Nummer", 1, KONTONR
+&ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 1, KONTO_BEZ
+  &DATA_H   (+-) = 1, KONTONR
+
+&REF_KEY    (+)                   >>Sachkonten Bezeichnung
+  &DATA_H   (+-) = 1, KONTO_BEZ
+
+  &DATA_H   (+)  = 1, KOSTENVERG  >>Kostenvergleich fr Matchcode_OK()
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>Konto-Nr fr Erl”sbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 28
+  &DATA     (+-) = 0, ERLOES_KT
+  &DATA     (+)  = 0, ERLOES_BZ  >>Konto-Bezeichnung fr Erl”sbuchungen
+
+>>Konto-Nr fr Aufwandsbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 29
+  &DATA     (+-) = 0, AUFWAND_KT
+  &DATA     (+)  = 0, AUFWAND_BZ  >>Konto-Bezeichnung fr Aufwandsbuchungen
+
+>>Konto-Nr fr Bestandsbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 30
+  &DATA     (+-) = 0, BESTAND_KT
+  &DATA     (+)  = 0, BESTAND_BZ  >>Konto-Bezeichnung fr Bestandsbuchungen
+
+
+
+
+
+
+   ù
+      Artikel          : ^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      Erl”skonto       : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      Aufwandskonto    : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      Bestandskonto    : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ù                                                                        ù
+^ ^ ^
+
+>>Mask:   STM135 (verbunden mit STM134/STM133)
+>>Prog.:  ST1100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  STAMM Anlegen Artikel-Merkmale 2/x"
+&FRAME    = 0, 0, 0, 0, "ÄLK-Fibu / ndern Artikel-Merkmale", 2
+>>SEQUENZ = 00,01,02,03,04,05,07,09,10,11,12,13,15,17
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+
+&DATEI      (0)  = MASK, D.ST1300
+&REF_DATEI  (1)  = MASK, D.FI1310
+
+
+>>Artikelnummer
+>>&REC_KEY    (0)
+>>&REC_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+>>&ADD_MATCH  (+-) = "Match-Code                              ", 0, MATCH_CODE
+>>  &HELPTEXT (+-) = STHLP10, 130, 0
+  &DATA     (0) = 0, ARTNR
+
+>>Bezeichnung zur Suche
+  &HELPTEXT (+)  = STHLP10, 130, 1
+  &DATA     (+-) = 0, MATCH_CODE
+
+>>Konto-Nr fr Erl”sbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 28
+  &DATA     (+-) = 0, ERLOES_KT
+  &DATA     (+)  = 0, ERLOES_BZ  >>Konto-Bezeichnung fr Erl”sbuchungen
+
+>>Konto-Nr fr Aufwandsbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 29
+  &DATA     (+-) = 0, AUFWAND_KT
+  &DATA     (+)  = 0, AUFWAND_BZ  >>Konto-Bezeichnung fr Aufwandsbuchungen
+
+>>Konto-Nr fr Bestandsbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 30
+  &DATA     (+-) = 0, BESTAND_KT
+  &DATA     (+)  = 0, BESTAND_BZ  >>Konto-Bezeichnung fr Bestandsbuchungen
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)                   >>Sachkonten Konto
+&REF_MATCH  (+-) = "Konto-Nummer", 1, KONTONR
+&ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 1, KONTO_BEZ
+  &DATA_H   (+-) = 1, KONTONR
+
+&REF_KEY    (+)                   >>Sachkonten Bezeichnung
+  &DATA_H   (+-) = 1, KONTO_BEZ
+  &DATA_H   (+)  = 1, KOSTENVERG  >>Kostenvergleich fr Matchcode_OK()
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+
+
+
+
+
+
+   ù
+      Lagerort         : ïïïïïï             Artikel-Gruppe : ###
+     ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      KZ-Texterg„nzung : @@@@               Bewertungssatz : @
+     ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      Lagerfhrung     : @@@@               Soll-Bestand :#.###.###.##›,›››
+                                            í EK-Preis   :#.###.###.##›,››
+
+      Letzter Einkauf  : ##.##.##           letzter EK-Pr:#.###.###.##›,››
+
+      Verkauf Menge    : #.###.###.##›,››   Umsatz in ™S :#.###.###.##›,››
+     ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      Erl”skonto ^ ^ ^ : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      Aufwandskonto    : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ù  Bestandskonto    : @@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  ù
+
+
+>>Mask:   STM135 (verbunden mit STM134/STM133)
+>>Prog.:  ST1100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  STAMM Anlegen Artikel-Merkmale 2/x"
+&FRAME    = 0, 0, 0, 0, "LK-Fibu / ndern Artikel-Merkmale", 2
+>>SEQUENZ = 00,01,02,03,04,05,07,09,10,11,12,13,15,17
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1300
+&REF_DATEI  (1)  = MASK, D.FI1310
+
+>>Lagerort
+  &HELPTEXT (0)  = STHLP10, 131, 3
+  &DATA     (+-) = 0, LAGERORT
+
+>>Artikel-Gruppe
+  &HELPTEXT (+)  = STHLP10, 131, 7
+  &DATA     (+-) = 0, ARTGR
+
+>>Kennzeichen Texterg„nzung
+  &HELPTEXT (+)  = STHLP10, 131, 19
+  &DATA     (+-) = 0, ARTTEXTKZ
+  &DEFAULT  (+-) = "n"
+  &CHOICE   (+-) = "Kennzeichen Texterg„nzung",  "ja",j,  "nein",n
+
+>>Bewertungs-Satz
+  &HELPTEXT (+)  = STHLP10, 131, 13
+  &DATA     (+-) = 0, BEWERTSA
+  &DEFAULT  (+-) = "0"
+  &CHOICE   (+-) = "Bewertungs-Satz",  "0",0,  "1",1,  "2",2,  "3",3
+
+>>Lagerfhrung j/n
+  &HELPTEXT (+)  = STHLP10, 131, 24
+  &DATA     (+-) = 0, LAGERKZ
+  &DEFAULT  (+-) = "j"
+  &CHOICE   (+-) = "Lagerfhrung",  "ja",j,  "nein",n
+
+>>Bestand aktuell
+  &HELPTEXT (+)  = STHLP10, 131, 27
+  &DATA     (+-) = 0, SOLL_BEST
+
+>>í Netto-Einkaufs-Preis
+  &HELPTEXT (+)  = STHLP10, 131, 23
+  &DATA     (+-) = 0, EKPRMIT
+
+>>Datum letzte Lieferung
+  &HELPTEXT (+)  = STHLP10, 131, 8
+  &DATA     (+-) = 0, LETZLIEFAM
+
+>>letzter Netto-Einkaufs-Preis
+  &HELPTEXT (+)  = STHLP10, 131, 20
+  &DATA     (+-) = 0, EKPR1
+
+>>Mengenumsatz
+  &HELPTEXT (+)  = STHLP10, 131, 25
+  &DATA     (+-) = 0, UMSATZMEN
+
+>>Umsatz in ™S
+  &HELPTEXT (+)  = STHLP10, 131, 26
+  &DATA     (+-) = 0, UMSATZK
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)                   >>Sachkonten Konto
+&REF_MATCH  (+-) = "Konto-Nummer", 1, KONTONR
+&ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 1, KONTO_BEZ
+  &DATA_H   (+-) = 1, KONTONR
+
+&REF_KEY    (+)                   >>Sachkonten Bezeichnung
+  &DATA_H   (+-) = 1, KONTO_BEZ
+
+  &DATA_H   (+)  = 1, KOSTENVERG  >>Kostenvergleich fr Matchcode_OK()
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>Konto-Nr fr Erl”sbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 28
+  &DATA     (+-) = 0, ERLOES_KT
+  &DATA     (+)  = 0, ERLOES_BZ  >>Konto-Bezeichnung fr Erl”sbuchungen
+
+>>Konto-Nr fr Aufwandsbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 29
+  &DATA     (+-) = 0, AUFWAND_KT
+  &DATA     (+)  = 0, AUFWAND_BZ  >>Konto-Bezeichnung fr Aufwandsbuchungen
+
+>>Konto-Nr fr Bestandsbuchungen
+  &HELPTEXT (+)  = STHLP10, 131, 30
+  &DATA     (+-) = 0, BESTAND_KT
+  &DATA     (+)  = 0, BESTAND_BZ  >>Konto-Bezeichnung fr Bestandsbuchungen
+

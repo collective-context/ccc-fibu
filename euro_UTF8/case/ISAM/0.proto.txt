@@ -1,0 +1,25 @@
+db_abort.cpp
+db_btrv.cpp
+db_btrv.cpp(150) : warning C4305: 'cast' : truncation from 'struct ::BTRIEVE_PARMS __far *' to 'int '
+db_close.cpp
+db_del.cpp
+db_eq.cpp
+db_error.cpp
+db_first.cpp
+db_ge.cpp
+db_great.cpp
+db_ins.cpp
+db_last.cpp
+db_le.cpp
+db_less.cpp
+db_next.cpp
+db_prev.cpp
+db_reset.cpp
+db_sort.cpp
+db_stop.cpp
+db_trana.cpp
+db_tranb.cpp
+db_trane.cpp
+db_unloc.cpp
+db_upd.cpp
+db_vers.cpp

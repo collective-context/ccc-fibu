@@ -1,0 +1,42 @@
+
+Maskensource: \euro\mask\lo\loM130.        Workdatei: F:\EURO\T02\WORK.001,       Datum: Donnerstag, 27.02.1992 - 09:23
+дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+
+
+
+
+  Mitarbeiter Nr-Monat.Tag: з Numm-MM.TT ©
+                            ю @@@@@@@@@@ ы
+  дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+  з Kassa-Vortrag ©   здд Einnahmen дд©  здд Ausgaben ддд©   зд Kassa-Stand д©
+  ю               ы   ю               ы  ю               ы   ю               ы
+  дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+
+  Projekt ЁArt  %Ё von - bis ЁBezeichnung
+  ддддддддеддддддедддддддддддедддддддддддддддддддддддддддддддддддддддддддддддд
+  @@@@@@@@Ё@@ ###Ё##.## ##.##Ё@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ^
+          Ё      Ё           Ё
+          Ё      Ё           Ё
+          Ё      Ё           Ё
+          Ё      Ё           Ё
+          Ё      Ё           Ё
+          Ё      Ё           Ё
+          Ё      Ё           Ё
+          Ё      Ё           Ё
+          Ё      Ё           Ё
+ Ы        Ё      Ё           Ё                                                Ы
+
+
+&TITEL    = "LO  Zeiterfassung 1/1"
+
+
+&DATEI      (0)  = MASK, D.LO1300
+
+
+Mitarbeiternummer - Tag        -  LOHLP10, 130, 0       -  0, MI_NR_TAG
+Projekt                        -  LOHLP10, 130, 1       -  0, Projekt
+Projekt-Art                    -  LOHLP10, 130, 2       -  0, PRO_ART
+Verrechnung zu %               -  LOHLP10, 130, 3       -  0, VERRECHN
+Zeit von                       -  LOHLP10, 130, 3       -  0, ZEIT_VON
+Bezeichnung                    -  LOHLP10, 130, 4       -  0, Bezeichnung der Arbeit
+Ende Block                     -  LOHLP10, 130, 1       -  0, BLOCK_ENDE

@@ -1,0 +1,29 @@
+/*.ta,F02,III. euroSOFT-PROGRAMMbeschreibung / 2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE PB-Prfbau                                                         บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+Anlegen, ndern und Drucken von Pyknometerdaten
+อออออออออออออออออออออออออออออออออออออออออออออออ
+
+Dateibeschreibungen
+ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+
+.da (EURODATA,PB1400),1.
+
+
+Detailbeschreibungen
+ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+
+
+.ma (\euro\mask\PBM140),1.
+.ff
+.hd (PB,pyknom),PB,pykn-an.
+
+.ma (\euro\mask\PBM4140),1.
+
+.hd (PB,pyknom),PB,dr-pykn.
+
+.te*/
+
+

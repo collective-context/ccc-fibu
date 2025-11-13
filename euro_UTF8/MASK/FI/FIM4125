@@ -1,0 +1,150 @@
+
+
+
+
+
+
+
+
+                                 ù
+                                   Von Konto-Nummer: Lïïïïïïïï
+                                   Bis Konto-Nummer: Lïïïïïïïï
+                                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                                   Periode / Monat : @@@@@@@@@
+                                   Druckdatum      : ##.##.##
+                                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                                   Kopien          :   ##
+
+                                   von Seite       : ####
+                                   bis Seite       : ####
+                                 ù                             ù
+
+^ ^ ^ 
+``.``.``  ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^   ^ ^
+^
+^ ^ ^ ^ ^
+
+>>Mask:   FIM4125
+>>Prog.:  FI4100.C
+>>Update: 5.08.91
+
+&TITEL    = "FI  DRUCK Lieferantenkonten Saldenliste"
+&FRAME    = 0, 0, 0, 0, "ÄLieferanten-Saldenliste", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, lief-dr
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI1210
+&DRU_DATEI  (1)  = MASK, D.FI4120
+&DATEI      (2)  = MASK, D.ST1200
+&DATEI      (3)  = MASK, D.ST1210
+&PARA_READ  (4)  = MASK, L.SYP_01
+
+>>von Lieferanten-Nummer
+  &HELPTEXT (0)  = STHLP10, 412, 0
+  &DATA     (+-) = 1, _V_KONTONR
+
+>>bis Lieferanten-Nummer
+  &HELPTEXT (+)  = STHLP10, 412, 1
+  &DATA     (+-) = 1, _B_KONTONR
+
+>>Verarbeiten Monat
+  &HELPTEXT (+)  = FIHLPP10, 413, 2
+  &DATA     (+-) = 1, _W_MONAT
+  &DEFAULT  (+-) = "01"
+  &CHOICE   (+-) = "Verarbeiten Monat",\
+                 "J„nner",01,  "Februar",02,  "M„rz",03,  "April",04,\ 
+                 "Mai",05,  "Juni",06,  "Juli",07,  "August",08,\
+                 "September",09,  "Oktober",10,  "November",11,  "Dezember",12
+
+>>Druckdatum
+  &HELPTEXT (+)  = STHLP10, 413, 3
+  &DATA     (+-) = 1, _DRUCK_DAT
+  &DEFAULT  (+-) = "s"
+
+>>Kopien
+  &HELPTEXT (+)  = SYHLP10, 402, 04
+  &DATA     (+-) = 1, _KOPIEN
+  &DEFAULT  (+-) = "1"
+
+>>von Seite
+  &HELPTEXT (+)  = STHLP10, 413, 9
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = STHLP10, 413, 10
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REC_KEY    (+)                   >>von Lieferanten-Nummer
+&REC_MATCH  (+-) = "Konto-Nr.", 0, LI_KONTO
+&ADD_MATCH  (+-) = "Kurzbezeichnung      ", 0, KURZ_BEZ
+&ADD_MATCH  (+-) = "Lieferanten-Nr", 0, FI_LIEFER
+  &DATA_H   (+-) = 0, LI_KONTO
+
+&REC_KEY    (+)                   >>Kunden-Nummer
+  &DATA_H   (+-) = 0, FI_LIEFER
+
+&REC_KEY    (+)                   >>Kurzbezeichnung
+  &DATA_H   (+-) = 0, KURZ_BEZ
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
+ 
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>Mandanten-Nummer
+  &DATA_H   (+)  = 4, FRW_BE_00  >>Fremdw„hrung 0 - 9
+  &DATA_H   (+)  = 2, AUSWERTUNG  >>Auswertungskennzeichen
+  &DATA_H   (+)  = 0, WHRUNG     >>W„hrung
+  &DATA_H   (+)  = 1, _WHRUNG    >>W„hrung
+  &DATA_H   (+)  = 0, AUSLANDSLI  >>Auslandslieferant
+  &DATA_H   (+)  = 1, _AUSLANDSL  >>Auslandslieferant
+
+  &DATA_H   (+)  = 2, LIEFGR      >>Lieferantengruppe
+  &DATA_H   (+)  = 2, PLZ_ORT     >>Postleitzahl/Ort
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _MONAT       >>Dummyfeld fr Monat
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>von Lieferaten-Gruppe
+  &HELPTEXT (+)  = STHLP10, 412, 2
+  &DATA_H   (+-) = 1, _V_LIEFGR
+
+>>bis Lieferanten-Gruppe
+  &HELPTEXT (+)  = STHLP10, 412, 4
+  &DATA_H   (+-) = 1, _B_LIEFGR
+
+>>von Auswertungs-Kennzeichen
+  &HELPTEXT (+)  = STHLP10, 412, 3
+  &DATA_H   (+-) = 1, _V_AUSWKZ
+
+>>bis Auswertungs-Kennzeichen
+  &HELPTEXT (+)  = STHLP10, 412, 5
+  &DATA_H   (+-) = 1, _B_AUSWKZ
+
+  &DATA_H   (+)  = 3, VST
+
+
+      ù
+        von Konto-Nummer  : Lïïïïïïïï    bis Konto-Nummer  : Lïïïïïïïï
+       ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+        von Liefer.-Gruppe: ïïïïïïïïïï   bis Liefer.-Gruppe: ïïïïïïïïïï
+        von Auswertungs-KZ: ïïïïïïïïïï   bis Auswertungs-KZ: ïïïïïïïïïï
+
+        von Seite         : ####         bis Seite         : ####
+      ù                                                                  ù
+

@@ -1,0 +1,19 @@
+Btrieve Utilities Version 5.00 
+Copyright 1982, 1988, Novell, Inc.  All Rights Reserved.
+
+ File Stats for st1300.btr                                                      
+     Record Length = 120           Compressed Records = Yes
+  Variable Records = Truncate    Free Space Threshold = 5%
+    Number of Keys = 3
+         Page Size = 1024                Unused Pages = 0
+     Total Records = 118
+
+   Key  Position  Length  Duplicates  Modifiable   Type    Null      Total
+
+     0     11       20        No          No     *Zstring   --          118
+     1     32       40        Yes         Yes    *Zstring   --          117
+     2     73       40        Yes         Yes    *Zstring   --           94
+
+
+ * Alternate Collating Sequence is GERMAN_U
+

@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+       ù                                       ù
+          Fr den Drucker ^^^^^^^^^^^^^^^^^^^^
+          wurde kein Zeichensatz eingetragen.
+
+       ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+       ù      Weiter mit beliebiger Taste      ù
+
+
+&TITEL = "SYÍFehlermeldung bei keinem Zeichensatzes"
+&REM   Maske    :  SYM011
+&REM   Programm:  SY1100
+&REM   Datei    : SYRINT
+
+&FRAME = 0,0,0,0, "Ä", 2
+
+&DATEI (0) = EURODATA, L.SYPRINT
+
+&REM Drucker Bezeichnung (Match-Code)
+&DATA  (00)  = 0, MATCH_CODE

@@ -1,0 +1,24 @@
++-------------------------------------------------------------------------+
+|                      PC/MS-DOS  fÅr Insider                           |
+|-------------------------------------------------------------------------|
+|      Testprogramm fÅr die Funktion-Calls  01h bis 0Ch                   |
+|                                                                         |
+| Die Funktionen befinden sich im Quelltext unter dem Namen CON_IO.C      |
+| Sie kînnen in Programmen verwendet werden, indem man die Library        |
+| DOSLIBS-LIB beim Linken als zusÑtzliche Library angibt.                 |
++-------------------------------------------------------------------------+
+
+Folgendes Programm testet die Funktionen, die Ein- und Ausgabe Åber die
+Handles 0 bis 4 vornehmen.
+Als erstes sollen Sie einen Buchstaben eingeben, der dann am Bildschirm
+angezeigt wird. Darauf erscheint das Alphabet in Gro·buchstaben.
+Wenn Sie einen Drucker an AUX angeschlossen haben, so geben Sie bitte auf
+die Frage F1 ein, haben Sie einen Drucker an PRN, so antworten Sie bitte
+mit F2. Wenn Sie gar keinen Drucker haben oder auf einen Ausdruck verzich-
+ten wollen, so geben Sie F3 ein.
+Andere Tasten werden nicht akzeptiert, ebenso Ctrl+C nicht!
+Dann werden Sie aufgefordert, einen 12 Zeichen langen String einzugeben.
+Die gepufferte Eingabe speichert maximal 12 Zeichen und !!!mu·!!! mit Enter
+abgeschlossen werden.
+
+

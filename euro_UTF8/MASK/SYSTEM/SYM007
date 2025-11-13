@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+           Ы                manueller Programmaufruf                Ы
+            дддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+              Programm-Name :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              Steuerzeichen :  @@@@@
+            дддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+           Ы  <ды=Eingabe  Esc= Abbruch  F1=Hilfe                   Ы
+
+
+
+
+&TITEL = "SYмArbeit Manueller Programm-Start 1/1"
+&REM   Maske    :  SYM007
+&REM   Programm:  SY1000 / 07000
+&REM   Datei    : SYARBEIT
+
+&FRAME = 0,0,0,0, "д", 2
+&INDEX = "SY007"
+
+&DATEI (0) = EURODATA, L.SYARBEIT
+
+&REM  Programmname
+&HELPTEXT (00) = SYHLP, 007, 00
+&DATA     (+-) = 0, FELD_1
+
+&REM  Steuerkennzeichen
+&HELPTEXT (+)  = SYHLP, 007, 01
+&DEFAULT  (+-) = "00000"
+&DATA     (+-) = 0, FELD_2

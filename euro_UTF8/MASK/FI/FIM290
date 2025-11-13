@@ -1,0 +1,146 @@
+
+
+
+ ù
+
+  Geldkonto    : S@@@@@@@@        Beleg-Nr: @@@@@@@@@@    Belegdatum: ##.##.##
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^Ein/Aus : @@@  Zahlungsbetrag:###.###.##›,››
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Kunde/Lieferant: ï@@@@@@@@      Rechn-Nr: @@@@@@@@@@    Rech.Datum: ##.##.##
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                Rechnungsbetrag:###.###.##›,››
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Produkt ``.``.``        Konto     Menge EH        Preis/EH N U%    Betrag ™S
+  @@@@@@@ @@@@@@@@@@@@@@@ @@@@ ###.##›,›› @@@@@ #.###.##›,›› @ `` #.###.##›,››
+
+
+
+
+
+
+
+
+
+ ù                                                                            ù
+
+&TITEL = "FI-Kontrolle Rechnungs-Buchungen"
+&REM   Source:  FIM251
+&REM   Progr.:  FI2500
+
+&FRAME    = 0, 0, 0, 0, "Kontrolle Rechnungs-Buchungen", 2
+&REM MASKHELP = FIHLP10, gebu-er
+&REM INDEX    = BASIS
+
+&DATEI (0) = EURODATA, D.FI2500
+
+&BLOCK = 13,21
+&SCROLL = 11,0,21,79
+
+&REM Geld-Konto
+&HELPTEXT  (0)  = FIHLP10, 250, 0
+&DATA      (+-) = 0, GELDKONTO
+
+&REM Beleg-Nummer
+&HELPTEXT  (+) = FIHLP10, 250, 1
+&REC_KEY   (+-)
+&REC_MATCH (+-) = "Beleg-Nr  ", 0, BELEG_NR
+&ADD_MATCH (+-) = "Datum   ", 0, BELEG_DAT
+&ADD_MATCH (+-) = "Konto   ", 0, GELDKONTO
+&ADD_MATCH (+-) = "Bezeichnung Geldkonto    ", 0, GELDK_BEZ
+&ADD_MATCH (+-) = "Bu-Datum", 0, BUCH_DATUM
+&DATA      (+-) = 0, BELEG_NR
+
+&REM Beleg-Datum
+&HELPTEXT (+)  = FIHLP10, 250, 4
+&DATA     (+-) = 0, BELEG_DAT
+
+&REM Bezeichnung-Geldkonto (aus Referenz-Datei: Sachkontenstamm)
+&DATA     (+)  = 0, GELDK_BEZ
+
+&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM - Erfassungsnummer
+&HIDE      (+)
+&REC_KEY   (+-)
+&DATA      (+-) = 0, SATZ_NR
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+&REM Ein/Aus
+&HELPTEXT (+)  = FIHLP10, 250, 3
+&CHOICE   (+-) = "Zahlung Ein/Aus","Eingangs-Zahlung","e","Ausgangs-Zahlung","a"
+&DATA     (+-) = 0, EIN_AUS
+
+&REM Betrag
+&HELPTEXT (+) = FIHLP10, 250, 4
+&DATA     (+-) = 0, ZAHL_BETR
+
+&REM  Kunde/Lieferant
+&HELPTEXT  (+)  = FIHLP10, 250, 5
+&DATA      (+-) = 0, KULI_KONTO
+
+&REM Rechnungs-Nummer
+&HELPTEXT  (+) = FIHLP10, 250, 6
+&REC_KEY   (+-)
+&REC_MATCH (+-) = "Rechnung-Nr", 0, RECH_NR
+&ADD_MATCH (+-) = "Datum  ", 0, RECH_DAT
+&ADD_MATCH (+-) = "Konto   ", 0, KULI_KONTO
+&ADD_MATCH (+-) = "Kunde/Lieferant          ", 0, KULI_BEZ
+&ADD_MATCH (+-) = "Bu-Datum", 0, BUCH_DATUM
+&DATA      (+-) = 0, RECH_NR
+
+&REM Liefer-Datum
+&HELPTEXT  (+) = FIHLP10, 250, 7
+&DATA      (+-) = 0, RECH_DAT
+
+&REM Bezeichnung-Kunde/Lieferant (aus Referenz-Datei: Kunden/Lieferantenstamm)
+&DATA      (+)  = 0, KULI_BEZ
+
+&REM Betrag
+&HELPTEXT  (+) = FIHLP10, 250, 8
+&DATA      (+-) = 0, RECH_BETR
+
+&REM ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+&REM Buchungsdatum
+&HIDE      (+)
+&REC_KEY   (+-)
+&DATA      (+-) = 0, BUCH_DATUM
+&REM ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+&REM ------------------------------
+&REM Positionsteil
+&REM Artikel-Nummer
+&HELPTEXT  (+)  = AUHLP10, 250, 9
+&DATA      (+-) = 0, AR_NUMMER
+
+&REM Bezeichnung
+&HELPTEXT  (+) = AUHLP10, 250, 10
+&DATA      (+-) = 0, AR_BEZEICH
+
+&REM Konto
+&HELPTEXT  (+)  = FIHLP10, 250, 10
+&DATA      (+-) = 0, KONTO_NR
+
+&REM Menge
+&HELPTEXT  (+) = AUHLP10, 250, 11
+&DATA      (+-) = 0, AR_MENGE
+
+&REM Mengen-Einheit
+&HELPTEXT  (+) = AUHLP10, 250, 12
+&DATA      (+-) = 0, AR_EINHEIT
+
+&REM Preis/Einheit
+&HELPTEXT  (+) = AUHLP10, 250, 13
+&DATA      (+-) = 0, PREIS_EINH
+
+&REM Netto/Brutto
+&HELPTEXT  (+)  = AUHLP10, 250, 14
+&CHOICE    (+-) = "Netto/Brutto","Netto = plus MwSt","n","Brutto = incl. MwSt","b"
+&DATA      (+-) = 0, NETTO_BRUT
+
+&REM Umsatzsteuer-Schlssel
+&HELPTEXT  (+)  = AUHLP10, 250, 15
+&CHOICE    (+-) = "MWST-Satz %","20%","1","10%","2","32%","3"
+&DATA      (+-) = 0, UST_ART
+
+&REM Betrag in ™S
+&HELPTEXT  (+)  = AUHLP10, 250, 16
+&DATA      (+-) = 0, BETRAG
+

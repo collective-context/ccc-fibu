@@ -1,0 +1,12 @@
+ba_init.cpp
+ba_init.cpp(305) : warning C4701: local variable 'wRec' may be used without having been initialized
+ba_isam.cpp
+ba_isam.cpp(365) : warning C4701: local variable 'wHandle' may be used without having been initialized
+ba_isam.cpp(607) : warning C4701: local variable 'wOldFileMode' may be used without having been initialized
+ba_prn1.cpp
+ba_prn2.cpp
+ba_prn2.cpp(207) : warning C4701: local variable 'pTB' may be used without having been initialized
+ba_saa.cpp
+ba_saa.cpp(1070) : warning C4701: local variable 'wOff' may be used without having been initialized
+ba_saa.cpp(1070) : warning C4701: local variable 'wRec' may be used without having been initialized
+ba_work.cpp

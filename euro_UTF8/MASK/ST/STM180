@@ -1,0 +1,64 @@
+
+
+
+ Textbaustein-Nummer: @@@@@@@@@@   Bezeichnung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ù                                                                            ù
+
+
+>>Mask:   STM180
+>>Prog.:  ST1100.C
+>>Update: 01.06.91
+
+&TITEL    = "ST  STAMM Anlegen Textbausteine"
+&FRAME    = 0, 0, 0, 0, "ÄAnlegen/Žndern Textbausteine", 2
+>>SEQUENZ =
+
+&BLOCK    = 2,2
+&SCROLL   = 6,0,22,79
+
+&MASKHELP = STHLP10, num-inf
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1800
+
+>>Textbaustein-Nummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Textbaustein-Nr.", 0, TEXT_NR
+&ADD_MATCH  (+-) = "Textbaustein-Bezeichnung", 0, TEXT_BEZ
+  &HELPTEXT (+-) = STHLP10, 180, 00
+  &DATA     (+-) = 0, TEXT_NR
+
+>>Textbaustein-Bezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Textbaustein-Bezeichnung", 0, TEXT_BEZ
+&ADD_MATCH  (+-) = "Textbaustein-Nr.", 0, TEXT_NR
+  &HELPTEXT (+-) = STHLP10, 180, 01
+  &DATA     (+-) = 0, TEXT_BEZ
+
+>>Positionsteil
+
+>>Text
+  &HELPTEXT (+) = STHLP10, 180, 02
+  &DATA     (+-) = 0, TEXT_TXT
+
+

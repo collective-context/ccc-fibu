@@ -1,0 +1,60 @@
+&TITEL = "SYÍFormular Druck Datenlexikon"
+&FORMULAR = 10
+
+&DATEI (0) = EURODATA, EURODATA
+
+&LIRAND = 0
+&R_ZEILEN = 67
+&REM SCHACHT = 1
+
+
+&KOPF (0)
+^ÿ^ÿ^ ~I00 ~F15 ~L10
+ÿÿ
+ÿÿ
+Dateilexikon EURODATA - Dateibeschreibung fr: @@@@@@@@.BTR                         Datum: 01.01.1990   Seite: 01  ~0.NAME
+-----------------------------------------------------------------------------------------------------------------
+ÿÿ
+Name der Datei   : @@@@@@@@                                      Applikation:                                      ~0.NAME
+Bezeichnung      : @@@@@@@@@@@@@@@@@@@                                                                             ~0.BEZEICH
+ÿÿ
+Zusatzerkl„rung 1: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       Datensatzl„nge fixer Teil: @@@         ~0.ZUSATZ_1 ~0.FIXER_TEIL
+Zusatzerkl„rung 2: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       Seitengr”áe              : @@@@        ~0.ZUSATZ_2 ~0.SEITEN_GR
+ÿÿ
+Anzahl der Schlssel        :  #                    Variable Satzl„nge: @, Leerzeichen-Komprimierung : @           ~0.ANZAHL_SCH ~0.VARIABLE ~0.KOMPRIMIER
+Reservierung von Datens„tzen: ##                    Dateiname fr eine alternative Sortierreihenfolge: @@@@@@@@    ~0.RESERVIER  ~0.NAME_ALT
+ÿÿ
+-----------------------------------------------------------------------------------------------------------------
+Datenfeld  Zusatzerkl„rung        Offset L„nge Filler Datenattribut  TYP  VKS NKS KEY DUP MOD DES ALT NUL VAL SEG
+-----------------------------------------------------------------------------------------------------------------
+ÿÿ
+&END
+
+
+&KOPF (1)
+Dateilexikon EURODATA - Dateibeschreibung fr: @@@@@@@@.BTR                         Datum: 01.01.1990   Seite: 02  ~0.NAME
+-----------------------------------------------------------------------------------------------------------------
+
+Name der Datei   : @@@@@@@@                                      Applikation:                                      ~0.NAME
+Bezeichnung      : @@@@@@@@@@@@@@@@@@@                                                                             ~0.BEZEICH
+
+-----------------------------------------------------------------------------------------------------------------
+Datenfeld  Zusatzerkl„rung        Offset L„nge Filler Datenattribut  TYP  VKS NKS KEY DUP MOD DES ALT NUL VAL SEG
+-----------------------------------------------------------------------------------------------------------------
+&END
+
+
+&RUMPF (0)
+@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@ @@@@@@  @@@@   @@@@ @@@@@@@@@@@@@@@@@@@  @@  @   @@  @   @   @   @   @   @@  @   ~0.DATENFELD ~0.ERKLŽRUNG ~0.OFFSET ~0.LŽNGE ~0.FILLER ~0.TYP ~0.VKS ~0.NKS ~0.KEY ~0.DUP ~0.MOD ~0.DES ~0.ALT ~0.NUL ~0.VAL ~0.SEG
+&END
+
+
+&FUSS (0)
+ÿÿ
+      ÿÿ                            >>>>>>>>>>>  euroSOFT-TOOLbox  <<<<<<<<<<<
+-----------------------------------------------------------------------------------------------------------------
+.
+&END
+&REM
+&REM
+

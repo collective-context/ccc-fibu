@@ -1,0 +1,86 @@
+{\rtf1\pc {\info{\title Formular-Compiler}{\revtim\mo10\dy06\yr1999}
+{\creatim\mo11\dy28\yr1989}{\nofchars3571}}\deff0
+{\fonttbl{\f0\fmodern pica;}{\f1\fmodern Courier;}{\f2\fmodern elite;}
+{\f3\fmodern prestige;}{\f4\fmodern lettergothic;}
+{\f5\fmodern gothicPS;}{\f6\fmodern cubicPS;}
+{\f7\fmodern lineprinter;}{\f8\fswiss Helvetica;}
+{\f9\fmodern avantegarde;}{\f10\fmodern spartan;}{\f11\fmodern metro;}
+{\f12\fmodern presentation;}{\f13\fmodern APL;}{\f14\fmodern OCRA;}
+{\f15\fmodern OCRB;}{\f16\froman boldPS;}{\f17\froman emperorPS;}
+{\f18\froman madaleine;}{\f19\froman zapf humanist;}
+{\f20\froman classic;}{\f21\froman roman f;}{\f22\froman roman g;}
+{\f23\froman roman h;}{\f24\froman timesroman;}{\f25\froman century;}
+{\f26\froman palantino;}{\f27\froman souvenir;}{\f28\froman garamond;}
+{\f29\froman caledonia;}{\f30\froman bodini;}{\f31\froman university;}
+{\f32\fscript script;}{\f33\fscript scriptPS;}{\f34\fscript script c;}
+{\f35\fscript script d;}{\f36\fscript commercial script;}
+{\f37\fscript park avenue;}{\f38\fscript coronet;}
+{\f39\fscript script h;}{\f40\fscript greek;}{\f41\froman kana;}
+{\f42\froman hebrew;}{\f43\froman roman s;}{\f44\froman russian;}
+{\f45\froman roman u;}{\f46\froman roman v;}{\f47\froman roman w;}
+{\f48\fdecor narrator;}{\f49\fdecor emphasis;}
+{\f50\fdecor zapf chancery;}{\f51\fdecor decor d;}
+{\f52\fdecor old english;}{\f53\fdecor decor f;}{\f54\fdecor decor g;}
+{\f55\fdecor cooper black;}{\f56\ftech Symbol;}{\f57\ftech linedraw;}
+{\f58\ftech math7;}{\f59\ftech math8;}{\f60\ftech bar3of9;}
+{\f61\ftech EAN;}{\f62\ftech pcline;}{\f63\ftech tech h;}}
+\paperw11664\paperh16273\margl1134\margr851\margt-1134\margb1134\ftnbj\ftnrestart\widowctrl\pgnstart1 
+\sectd \linex49\headery113\footery567\colsx706\endnhere\pgnrestart 
+{\header \pard \qr\keepn\ri-171\sl-280\sb240\tx-414 \brdrb\brdrs 
+\plain euroSOFT (C) 1989\tab \plain \b\f17\fs20 euroSOFT-FORMULARcompiler / Einf\'81hrung   \plain \b\fs20 1-\chpgn \~\par 
+}\pard \sl-240 \plain 1.1 Vorwort\par 
+\pard \sl-240 \plain Mit einem beliebigen Editor wird ein Formular-Source erzeugt. Dieser Source spiegelt mit Hilfe von Symbolen in der Form \'afWYSIWYG\'ae den sp\'84tern Ausdruck am Papier wieder.\par 
+In der euroSOFT-TOOLbox wird nun mit Hilfe des Formularcompilers \'afFC.EXE\'ae dieser Source automatisch ausgewertet und in der Applikations-Formularbibliothek (z.B.: \\euro\\dat\\d01\\STFORM.048) gespeichert. Diese Bibliothek wird f\'81r jeden Mandanten, in seinem Datenverzeichnis, f\'81r alle verwendbaren L\'84nder-Extenditions gef\'81hrt.\par 
+Dem Applikationsprogrammierer stehen nun C-Funktionen zur Verf\'81gung, mit deren Hilfe er in seinem Programm die Druckanweisungen steuern kann. Ein Gro\'e1teil der Druckersteuerung kann so, sehr flexibel, durch die Informationen aus der Formular-Bibliothek erfolgen.\par 
+\pard \sl-240 \plain 1.2 Jedes Formular wird grob unterteilt in:\par 
+\pard \sl-240 \plain \f1\fs16 Formular-Info\plain \par 
+\pard \ri-1134\li862\sl-156 \plain \f1\fs16 \'da\_\_\_\_\_\_\_
+\_\_\_\_\_\_\_\_\_\_\_\_\'bf\line \'b3                   \'b3\line \'b3   Formular-Kopf   \'b3\line \'b3                   \'b3
+\line \'c3\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\'b4\line \'b3                   \'b3
+\line \'b3                   \'b3\line \'b3                   \'b3\line \'b3   Formular-Rumpf  \'b3\line \'b3                   \'b3\line \'b3                   \'b3
+\line \'b3                   \'b3\line \'b3                   \'b3\line \'c3\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\_\_\_\'b4\line \'b3                   \'b3\line \'b3   Formular-Fu\'e1    \'b3\line \'c0\_\_\_\_\_\_\_\_\_
+\_\_\_\_\_\_\_\_\_\_\'d9\par 
+\par 
+\pard \sl-240 \plain F\'81r jeden Bereich gibt es verschiedene Varianten. Diese Varianten werden vom Applikationsprogrammierer in seinem Programm angesprochen. Mit Hilfe der C-Funktionen kann er sich die Druckinformationen aus der Formularbiliothek holen.\par 
+\pard \sl-240 \plain 2.1 Formular-Info\par 
+\pard \sl-240 \plain F\'81r jedes Formular k\'94nnen au\'e1er dem eigentlichen Druck-Inhalt folgende Informationen gespeichert werden:\par 
+Anzahl der Leerzeilen vor dem Kopf\tab : 00\par 
+Anzahl der Zeilen im Rumpf\tab \tab : 31\par 
+Anz. Leerzeilen zw. Rumpf und Fu\'e1\tab : 00\par 
+Leerzeilen vor Positionen\tab \tab \tab : 01\par 
+Leerzeilen nach Positionen\tab \tab : 00\par 
+Leerzeichen / linker Rand\tab \tab :\par 
+Anz. Zeilen im 2. F-Kopf(\'9abertrag)\tab :\par 
+Anz Pos.-Zeilen auf 2. Seite\tab \tab :\par 
+Die Formular-Info-Parameter beziehen sich auf das ganze Formular und nicht nur auf einzelne Kopf-, Rumpf- oder Fu\'e1teile.\par 
+\pard \sl-240 \plain 2.2 Formular-Kopf, -Rumpf, -Fu\'e1\par 
+\pard \sl-240 \plain Der Formularcompiler wertet im Formular-Source f\'81r den Kopf, den Rumpf und den Fu\'e1 folgende Informationen aus:\par 
+Art des Feldes\tab \tab \tab : 1\par 
+LineFeed (Zeile)\tab \tab \tab : 01\par 
+TAB Position (Spalte)\tab \tab : 021\par 
+Max Feldl\'84nge\tab \tab \tab :\par 
+Druckersteuerzeichen \tab \tab :\par 
+\'9abergabe-Record/Offset\tab \tab :Rec.Offset.L\'84nge.Typ.VK.NK\par 
+oder Text (Druck/Konstante)\tab :\par 
+\pard 
+\qj\li862\sl-240\sa120\tx1584\tx2304\tx3024\tx3744\tx4464\tx5184\tx5904\tx6624\tx7344 
+\plain \f1\fs17 \~\par 
+\pard 
+\qj\li862\sl-240\sa120\tx1584\tx2304\tx3024\tx3744\tx4464\tx5184\tx5904\tx6624\tx7344 
+\box\brdrs \plain \f1\fs17 Eingabedatei  : \\euro\\form\\STF1103.M01.\tab \line Ausgabedatei  : stform.048.\tab \line Maskennummer  : 1103.\tab \line Protokolldatei: stform.pro.
+\tab \line \line Titel f\'81r den Katalogeintrag: ST\'cdFormular Adressen-Zettel.\tab \line \line 1 01 000 015           0 ~!R!FONT12;EXIT;\tab \line 1 01 003 036           0 ~\_\_\_\_\_\_\'b4  computer team graz  
+\'c3\_\_\_\_\_\_\tab \line 1 01 003 050           0 ~P. Mayer, Krenngasse 19, 8010 Graz (0316/81-37-61)\tab \line 1 01 000 026           0 ~\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\_\_\_\_\_\_\_\_\_\_\tab \line 2 02 039 023          23 ~0.247.030.00.023.0\tab \line 1 00 000 000           0 ~\tab \line 2 05 007 035          35 ~0.058.035.00.028.0\tab \line 1 00 000 000           0 ~\tab 
+\line 2 01 007 035          35 ~0.094.035.00.028.0\tab \line 1 00 000 000           0 ~\tab \line 2 01 007 035          35 ~0.130.035.00.028.0\tab \line 1 00 000 000           0 ~\tab \line 2 02 007 035          35 ~0.166.035.00.028.0\tab \line 1 00 000 000           0 ~\tab 
+\line 2 01 007 002           2 ~0.202.003.00.003.0\tab \line 1 00 010 001           0 ~-\tab \line 2 00 012 035          35 ~0.211.035.00.028.0\tab \line \par 
+\pard 
+\qj\li862\sl-240\sa120\tx1584\tx2304\tx3024\tx3744\tx4464\tx5184\tx5904\tx6624\tx7344 
+\plain \f1\fs17                            \'9aberg/Rec.Offset.L\'84nge.Typ.VK.NK \'af aus Datenlekixon\par 
+                           oder Text (Druck/Konstante)\par 
+              Druckersteuerzeichen\par 
+          Max Feldl\'84nge\par 
+      TAB Position (Spalte)\par 
+   LineFeed (Zeile)\par 
+ Art des Feldes\par 
+\pard \sl-240 \plain \sect }

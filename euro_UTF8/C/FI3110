@@ -1,0 +1,12 @@
+ FI3100     BA_ISAM    BA_WORK              +
+(FI_3110)  (BA_SAA)   (BA_INIT)             +
+(FI3110A)                                   +
+(MA_MATCH) (MA_MEMO)  (MA_HILFE) (MA_INDEX) +
+(MA_MKSEL) (DB_OPEN)  (DL_LADEN) (DL_HTOOL)
+
+(FI3100A)  (FI3100B)  (FI3100C)             +
+
+ 37,1      22,2      14,2        ==  73,5 + (37,4) = 110,9 KB
+(12,7      18,3   ) (24,6  )
+(37,4)    (32,6   ) (10,6  )
+

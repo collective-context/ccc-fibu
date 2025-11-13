@@ -1,0 +1,53 @@
+/*.ta,F02,VI. euroSOFT-FIBU Konstanten: Nummernkreise / 1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-Finanzbuchhaltung                                                       บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENUE,FI-050),1,Kontenstamm,Nummernkreise.
+.da (EURODATA,SYP_05),1,Nummernkreise.
+.ma (\euro\mask\STM091),1,Anlegen/ndern Nummernkreise 1/1.
+.hd (FI,kons-st),ST,nummer.
+.te*/
+
+
+/*.ta,F02,VI. euroSOFT-FIBU Konstanten: Steuerstze / 2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-Finanzbuchhaltung                                                       บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENUE,FI-050),1,Kontenstamm,Steuerstze.
+.da (EURODATA,SYP_01),1,Steuerstze.
+.ma (\euro\mask\STM090),1,Anlegen/ndern Steuerstze 1/1.
+.hd (FI,kons-st),ST,steuer.
+.te*/
+
+
+/*.ta,F02,VI. euroSOFT-FIBU Konstanten: Whrung / 3.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-Finanzbuchhaltung                                                       บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENUE,FI-050),1,Kontenstamm,Whrungen.
+.da (EURODATA,SYP_08),1,Landes-/Fremdwhrung.
+.ma (\euro\mask\STM095),1,Anlegen/ndern Landeswhrung 1/1.
+.hd (FI,kons-st),ST,law-an.
+.ma (\euro\mask\STM094),1,Anlegen/ndern Fremdwhrung 1/1.
+.hd (FI,kons-st),ST,fremdw.
+.te*/
+
+
+/*.ta,F02,VI. euroSOFT-FIBU Konstanten: Druck / 4.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-Finanzbuchhaltung                                                       บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENUE,FI-050),1,Kontenstamm,Druck Konstanten.
+.ma (\euro\mask\STM4010),1,Druck Konstanten.
+.hd (FI,kons-st),ST,kons-dr.
+.fo (\euro\form\STB4010.M03),1,S0,Z0,B84,H54,Druck Konsten.
+.hd (FI,kons-st),ST,drfremd.
+.fo (\euro\form\STB4011.M03),1,S0,Z0,B84,H30,Druck Fremdwhrungen.
+.te*/
+
+
+

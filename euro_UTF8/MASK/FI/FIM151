@@ -1,0 +1,84 @@
+
+
+
+  Auswertungs-Nr.: ›››        Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+  Text                        ³KZ³     Wert     ³Zwischen-Summe³     Summe
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@³@@³###.###.##›,››³###.###.##›,››³###.###.##›,››
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+                              ³  ³              ³              ³
+ ù                            ³  ³              ³              ³              ù
+
+
+>>Mask:   FIM151
+>>Prog.:  FI1100.C
+>>Update: 2.08.91
+
+&TITEL    = "FI  STAMM Anlegen Bilanz-KZ 1/1"
+&FRAME    = 0, 0, 0, 0, "ÄAnlegen/Žndern Bilanz-KZ", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, bila-an
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&BLOCK    = 2,6
+&SCROLL   = 6,0,22,79
+
+&DATEI      (0)  = MASK, D.FI1510
+
+>>Auswertungs-NR
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Nr.", 0, NUMMER
+&ADD_MATCH  (+-) = "Bezeichnung                         ", 0, BEZEICH
+  &HELPTEXT (+-) = FIHLP10, 151, 0
+  &DATA     (+-) = 0, NUMMER
+
+>>Auswertungs-Bezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Bezeichnung                         ", 0, BEZEICH
+&ADD_MATCH  (+-) = "Nr.", 0, NUMMER
+  &HELPTEXT (+-) = FIHLP10, 151, 1
+  &DATA     (+-) = 0, BEZEICH
+
+>>--- Positionsteil
+>>Auswertungs-Text
+  &HELPTEXT (+)  = FIHLP10, 151, 2
+  &DATA     (+-) = 0, TEXT
+
+>>Auswertungs-Bezeichnung
+  &HELPTEXT (+)  = FIHLP10, 151, 3
+  &DATA     (+-) = 0, KZ
+  &SELECT   (+-) = "Bilanz-Art",\
+                 "Wertposition",            1, "Zwischensumme",           2,\
+                 "Summe",                   4, "Bilanzsumme",             8,\
+                 "Seitenwechsel",          16
+
+>>Wert
+  &HELPTEXT (+)  = FIHLP10, 151, 4
+  &DATA     (+-) = 0, WERT
+
+>>Zwischen-Summe
+  &HELPTEXT (+)  = FIHLP10, 151, 5
+  &DATA     (+-) = 0, ZS
+
+>>Summe
+  &HELPTEXT (+)  = FIHLP10, 151, 6
+  &DATA     (+-) = 0, SUMME
+
+

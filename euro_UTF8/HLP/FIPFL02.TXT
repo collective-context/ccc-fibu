@@ -1,0 +1,15 @@
+/*.ta,F02,III. euroSOFT-FIBU Erfassen Buchungen / 1.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-Finanzbuchhaltung                                                       บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+.me (MENU,FI-060),1,Finanzbuchhaltung,Buchungen/Protokolldruck.
+.da (EURODATA,FI2100),1,Buchungserfassung.
+.ma (\euro\mask\FI\FIM210),1,Erfassen Buchungen 1/1.
+.hd (FI,bu-erfa),FI,erfass.
+.fo (\euro\form\FIB2100.M03),1,S5,Z0,B118,H25,Druck Buchungserfassungs-Protokoll.
+.te*/
+
+
+hd (FI,AU110),FI,erfass.
+

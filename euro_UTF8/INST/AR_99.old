@@ -1,0 +1,15 @@
+@echo off
+if exist ar_99.exe del ar_99.exe
+if exist ar_99.lzh del ar_99.lzh
+lharc a /x ar_99.lzh !
+
+rem lharc a /x ar_99.lzh X:\euro\form\AU\*.*
+
+    lharc a /x ar_99.lzh V:\euro\exe\au2100.exe
+    lharc a /x ar_99.lzh V:\euro\exe\au4200.exe
+    lharc a /x ar_99.lzh V:\euro\exe\aumask.043
+rem lharc a /x ar_99.lzh X:\euro\dat\auform.043
+    lharc a /x ar_99.lzh V:\euro\hlp\au*.043
+
+lharc s /x ar_99.lzh
+if exist ar_99.lzh del ar_99.lzh

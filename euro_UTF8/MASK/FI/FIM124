@@ -1,0 +1,215 @@
+
+
+
+
+
+ ù Lieferant: K^^^^^^^^^^^^^ Kurzbezeichnung: ^^^^^^^^^^^^^^^^^^^^^^^^^^^ ù
+
+   ÚÄSaldo inkl. den noch nicht verarbeiteten Buchungen:  ###.###.##›,››¿
+   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   ÚÄSaldovortragÄ¿  ÚÄÄJahres-SOLLÄ¿  ÚÄJahres-HABENÄ¿  ÚÄÄÄÄÄÄÄÄSaldoÄ¿
+   À###.###.##›,››Ù  À```.```.``|,||Ù  À```.```.``|,||Ù  À```.```.``|,||Ù
+         J„nner   :   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||
+         Februar  :   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||
+         M„rz     :   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||
+         April    :   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||
+         Mai      :   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||
+         Juni     :   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||
+         Juli     :   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||
+         August   :   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||
+         September:   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||
+         Oktober  :   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||
+         November :   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||
+ ù       Dezember :   ###.###.##›,››    ###.###.##›,››    ```.```.``|,||  ù
+
+>>Mask:   FIM124
+>>Prog.:  FI1100.C
+>>Update: 25.07.91
+
+
+&TITEL    = "FI  SUPPORT Lieferanten-Konto"
+&FRAME    = 0, 0, 0, 0, "Lieferanten-Konto", 2
+>>SEQUENZ =
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1200
+&DATEI      (1)  = MASK, D.FI1210
+&DRU_DATEI  (2)  = MASK, D.FI4500
+
+>>Kunden-Nummer (S)
+  &HELPTEXT (0)  = STHLP10, 110, 0
+  &DATA     (+-) = 0, LIEFNR
+
+>>Match-Code Kurzbezeichnung (S)
+  &HELPTEXT (+)  = STHLP10, 110, 1
+  &DATA     (+-) = 0, MATCH_CODE
+
+>>(Schatten-) Saldo
+  &HELPTEXT (+)  = FIHLP10, 112, 0
+  &DATA     (+-) = 1, SALDO
+
+>>Saldovortrag
+  &HELPTEXT (+) = FIHLP10, 112, 1
+  &DATA     (+-) = 1, VOR_SALDO
+
+>>Jahressaldo SOLL
+  &HELPTEXT (+) = FIHLP10, 112, 2
+  &DATA     (+-) = 2, JHR_SOLL
+
+>>Jahressalod HABEN
+  &HELPTEXT (+) = FIHLP10, 112, 3
+  &DATA     (+-) = 2, JHR_HABEN
+
+>>Aktueller Saldo auf Konto
+  &HELPTEXT (+) = FIHLP10, 112, 4
+  &DATA     (+-) = 2, JHR_SALDO
+
+>>SOLL J„nner
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_01
+
+>>HABEN J„nner
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_01
+
+>>SALDO J„nner
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_01
+
+>>SOLL Februar
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_02
+
+>>HABEN Februar
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_02
+
+>>SALDO Februar
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_02
+
+>>SOLL M„rz
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_03
+
+>>HABEN M„rz
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_03
+
+>>SALDO M„rz
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_03
+
+>>SOLL April
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_04
+
+>>HABEN April
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_04
+
+>>SALDO April
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_04
+
+>>SOLL Mai
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_05
+
+>>HABEN Mai
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_05
+
+>>SALDO Mai
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_05
+
+>>SOLL Juni
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_06
+
+>>HABEN Juni
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_06
+
+>>SALDO Juni
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_06
+
+>>SOLL Juli
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_07
+
+>>HABEN Juli
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_07
+
+>>SALDO Juli
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_07
+
+>>SOLL August
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_08
+
+>>HABEN August
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_08
+
+>>SALDO August
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_08
+
+>>SOLL September
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_09
+
+>>HABEN September
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_09
+
+>>SALDO September
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_09
+
+>>SOLL Oktober
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_10
+
+>>HABEN Oktober
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_10
+
+>>SALDO Oktober
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_10
+
+>>SOLL November
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_11
+
+>>HABEN November
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_11
+
+>>SALDO November
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_11
+
+>>SOLL Dezember
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, SOLL_12
+
+>>HABEN Dezember
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 1, HABEN_12
+
+>>SALDO Dezember
+  &HELPTEXT (+) = FIHLP10, 112, 5
+  &DATA     (+-) = 2, SALDO_12
+
+

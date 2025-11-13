@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+               ù
+                 Kostenstelle            : T@@@@@@@@
+                 ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+                 Bezeichnung             : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+               ù                                                          ù
+
+
+
+&TITEL    = "FI  STAMM Anlegen Kostenstellen 1/1"
+&FRAME    = 0, 0, 0, 0, "ÄAnlegen/Žndern Kostenstellen", 2
+>>SEQUENZ =
+
+
+&MASKHELP = FIHLP10, kost-an
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI1700
+
+>>Kostenstelle
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Kostenstelle-Nr.", 0, KOSTENSTEL
+&ADD_MATCH  (+-) = "Kostenstelle-Bezeichnung       ", 0, KOSTENBEZ
+  &HELPTEXT (+-) = FIHLP10, 170, 0
+  &DATA     (+-) = 0, KOSTENSTEL
+
+>>Bezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Kostenstelle-Bezeichnung       ", 0, KOSTENBEZ
+&ADD_MATCH  (+-) = "Kostenstelle-Nr.", 0, KOSTENSTEL
+  &DATA     (+-) = 0, KOSTENBEZ
+  &HELPTEXT (+-) = FIHLP10, 170, 1
+
+

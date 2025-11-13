@@ -33,3 +33,5 @@ Thumbs.db
 *.pem
 secrets/
 credentials/
+euro_UTF8_backup_*/
+conversion_log_*.txt

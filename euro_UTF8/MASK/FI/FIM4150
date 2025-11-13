@@ -1,0 +1,168 @@
+
+
+
+
+
+
+
+
+              ù
+                 Bis Monat: @@@@@@@@@@      von Seite: ###›
+                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                 Kopien   : ##              bis Seite: ###›
+              ù                                              ù
+
+|||.|  |||.|
+^ ^  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``.``.``  ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^   ^ ^ ^ ^ ^ ^
+
+>>Mask:   FIM4151
+>>Prog.:  FI4100.C
+>>Update: 4.08.91
+
+&TITEL    = "FI  DRUCK Bilanz"
+&FRAME    = 0, 0, 0, 0, "ÄDruck Buchhaltungs-Auswertungen", 2
+>>SEQUENZ =
+
+>>BLOCK   = 4,5
+>>SCROLL  = 11,0,11,79
+
+&MASKHELP = FIHLP10, buer-dr
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI1500
+&DRU_DATEI  (1)  = MASK, D.FI4215
+&REF_DATEI  (2)  = MASK, D.FI1310
+&REF_DATEI  (3)  = MASK, V.FI1310
+&REF_DATEI  (4)  = MASK, 2.FI1310
+
+>>bis Monat
+  &HELPTEXT (0)  = STHLP10, 415, 0
+  &DATA     (+-) = 1, _MONAT
+  &DEFAULT  (+-) = "12"
+  &CHOICE   (+-) = "Verarbeiten Monat",\
+                 "J„nner",01,  "Februar",02,  "M„rz",03,  "April",04,\
+                 "Mai",05,  "Juni",06,  "Juli",07,  "August",08,\
+                 "September",09,  "Oktober",10,  "November",11,  "Dezember",12
+
+>>von Seite
+  &HELPTEXT (+)  = STHLP10, 413, 9
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>Kopien
+  &HELPTEXT (+)  = SYHLP10, 402, 04
+  &DATA     (+-) = 1, _KOPIEN
+  &DEFAULT  (+-) = "1"
+
+>>bis Seite
+  &HELPTEXT (+)  = STHLP10, 413, 10
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Von Erfassungsnummer
+  &DATA_H   (+)  = 1, _V_NUMMER
+
+>>Bis Satznummer
+  &DATA_H   (+)  = 1, _B_NUMMER
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Nummer", 0, NUMMER
+&ADD_MATCH  (+-) = "Bezeichnung                         ", 0, BEZEICH
+  &DATA_H   (+-) = 0, NUMMER
+
+&REC_KEY    (+)                   >>Bezeichnung
+  &DATA_H   (+-) = 0, BEZEICH
+
+>>Auswertungs-Bezeichnung
+  &DATA_H   (+)  = 0, KZ
+  &SELECT   (+-) = "Bilanz-Art",\
+                 "We",1, "KF",2, "Vo",4, "ZS",8, "Su",16, "BS",32, "FF",64
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 2, K_SOLL_01
+  &DATA_H   (+)  = 2, K_HABEN_01
+  &DATA_H   (+)  = 2, K_SOLL_02
+  &DATA_H   (+)  = 2, K_HABEN_02
+  &DATA_H   (+)  = 2, K_SOLL_03
+  &DATA_H   (+)  = 2, K_HABEN_03
+
+  &DATA_H   (+)  = 2, K_SOLL_04
+  &DATA_H   (+)  = 2, K_HABEN_04
+  &DATA_H   (+)  = 2, K_SOLL_05
+  &DATA_H   (+)  = 2, K_HABEN_05
+  &DATA_H   (+)  = 2, K_SOLL_06
+  &DATA_H   (+)  = 2, K_HABEN_06
+
+  &DATA_H   (+)  = 2, K_SOLL_07
+  &DATA_H   (+)  = 2, K_HABEN_07
+  &DATA_H   (+)  = 2, K_SOLL_08
+  &DATA_H   (+)  = 2, K_HABEN_08
+  &DATA_H   (+)  = 2, K_SOLL_09
+  &DATA_H   (+)  = 2, K_HABEN_09
+
+  &DATA_H   (+)  = 2, K_SOLL_10
+  &DATA_H   (+)  = 2, K_HABEN_10
+  &DATA_H   (+)  = 2, K_SOLL_11
+  &DATA_H   (+)  = 2, K_HABEN_11
+  &DATA_H   (+)  = 2, K_SOLL_12
+  &DATA_H   (+)  = 2, K_HABEN_12
+
+>>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 2, SOLL_01
+  &DATA_H   (+)  = 2, HABEN_01
+  &DATA_H   (+)  = 2, SOLL_02
+  &DATA_H   (+)  = 2, HABEN_02
+  &DATA_H   (+)  = 2, SOLL_03
+  &DATA_H   (+)  = 2, HABEN_03
+
+  &DATA_H   (+)  = 2, SOLL_04
+  &DATA_H   (+)  = 2, HABEN_04
+  &DATA_H   (+)  = 2, SOLL_05
+  &DATA_H   (+)  = 2, HABEN_05
+  &DATA_H   (+)  = 2, SOLL_06
+  &DATA_H   (+)  = 2, HABEN_06
+
+  &DATA_H   (+)  = 2, SOLL_07
+  &DATA_H   (+)  = 2, HABEN_07
+  &DATA_H   (+)  = 2, SOLL_08
+  &DATA_H   (+)  = 2, HABEN_08
+  &DATA_H   (+)  = 2, SOLL_09
+  &DATA_H   (+)  = 2, HABEN_09
+
+  &DATA_H   (+)  = 2, SOLL_10
+  &DATA_H   (+)  = 2, HABEN_10
+  &DATA_H   (+)  = 2, SOLL_11
+  &DATA_H   (+)  = 2, HABEN_11
+  &DATA_H   (+)  = 2, SOLL_12
+  &DATA_H   (+)  = 2, HABEN_12
+
+  &DATA_H   (+)  = 2, VOR_SALDO
+  &DATA_H   (+)  = 2, K_VOR_SAL
+
+  &DATA_H   (+)  = 2, KONTONR     >>Sachkonto-Nr
+  &DATA_H   (+)  = 1, _BETRAG     >>
+  &DATA_H   (+)  = 1, _Z_SUMME    >>
+  &DATA_H   (+)  = 1, _SUMME      >>
+  &DATA_H   (+)  = 1, _BIL_SUMME  >>
+  &DATA_H   (+)  = 1, _PROZENT    >>
+
+
+                Von Auswertung: ›››.›   Bis Auswertung: ›››.›

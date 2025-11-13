@@ -1,0 +1,34 @@
+/*.ta,F02,II. euroSOFT-MEN / 2.,1
+ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ  euroSOFT-WARE BS-berliche Selbstvermarkter                                      บ
+ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+
+Bentzeroberflche euroSOFT-MEN
+ฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ
+
+Der Aufruf der jeweiligen Funktionen erfolgt ber das euroSOFT-MEN. Dabei sind
+die Aufgaben logisch in verschiedene Gruppen aufgeteilt.
+
+
+.mi (MENUE,UB-L001),1,ฏUB Stammdaten/Konstantenฎ.
+.mi (MENUE,UB-L000),1,ฏUB Hauptmen ฏUrlaub am Bauernhofฎ.
+
+.me (MENUE,UB-010),1,UB Hauptmen,Stammdaten.
+
+.me (MENUE,UB-040),1,UB Stammdaten,Mitglieder/Anbieter.
+
+.me (MENUE,UB-050),1,UB Stammdaten,Kunden/Anfrager.
+
+.me (MENUE,UB-070),1,UB Stammdaten,Textbausteine.
+
+.me (MENUE,UB-060),1,UB Stammdaten,Konstanten.
+
+.me (MENUE,UB-020),1,UB Hauptmen,Bewegungsdaten Mitglieder.
+
+.me (MENUE,UB-030),1,UB Hauptmen,Bewegungsdaten Kunden/Anfrager.
+
+.me (MENUE,UB-018),1,UB Hauptmen,Optionen.
+
+.te*/
+
+

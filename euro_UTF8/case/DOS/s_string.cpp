@@ -1,0 +1,1760 @@
+
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║  Programme-Name: S_String.C                                             ║
+  ║  Function      : euroSOFT String-Tools                                  ║
+  ║                  Standard-Stringfunktionen fuer EUR_M51x.LIB            ║
+  ║                                                                         ║
+  ║                                                                         ║
+  ║  Date          : 20.03.1989, Graz           Update: 10.11.1990, Graz    ║
+  ║  Author        : Peter Mayer                Author: Peter Mayer         ║
+  ║  Copyright (C) : euroSOFT-WAREengineering,  Peter Mayer, A-8010 Graz    ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║                         Deklarations-Dateien                            ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+#define NDEBUG 1
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <ctype.h>
+#include <malloc.h>
+#include <stdarg.h>           /* ANSI-C Standard für va_start(), va_end()   */
+#include <eur_tool.h>
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║                            Standard-Strings                             ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+extern char num[];             /* Zeichen bei numerischen Eingaben      */
+extern char alpha[];           /* Zeichen bei alphanumerischen Eingaben */
+extern char terminator[];      /* Trennzeichen zwischen zwei Wörtern    */
+extern char end_key[];         /* String mit den "Standard-Endezeichen" */
+                               /* für Eingaben (ESC und RETURN)         */
+
+IMPORT PSSTR pstrTemp_g;
+IMPORT PWKB pWkbInfo_g;
+IMPORT BOOL boTestModus_g;
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ Funktionen: ins(), strings(), strpad()                                  ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Diese Funktionen erzeugen einen String, der länger als der Ausgangs-    ║
+  ║ string ist. Diese Funktionen gehen davon aus, daß für den zu manipilie- ║
+  ║ renden String ausreichend Platz reserviert ist. Beachten Sie, daß auch  ║
+  ║ auch strstring() je nach angegebener Stringlänge einen String erweitert ║
+  ║ und für stradd() ausreichend Platz für die Summe aller verknüpften      ║
+  ║ Strings zur Verfügung stehen muß.                                       ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+
+/*.ta ins()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      ins() - Ein Zeichen in einen String einfügen.                           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+PSSTR ins (cZeichen,  pstr);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+CHAR   cZeichen    Zeichen das eingefügt werden soll.
+PSSTR	pstr	    Zeiger auf Einfügeposition im Ausgangsstring.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Diese Funktion erzeugt einen String, der länger als der Ausgangsstring ist.
+Diese Funktion geht davon aus, daß für den zu manipilierenden String aus-
+reichend Platz reserviert ist.
+
+Das Zeichen <cZeichen> wird an der übergebenen Adresse in den String <pstr>
+eingefügt. Resultierende Länge: strlen(pstr) + 1.
+
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt die Anfangsadresse des Ausgangsstrings zurück.
+
+.de \euro\demo\ins.c
+.te*/
+
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR ins (CHAR c, PSSTR pstr)
+{
+SREGISTER i;
+PSSTR pstrReturn=pstr;
+
+for(i=strlen(pstr)+1,
+   pstr+=i-1;
+   i;
+   i--,
+   pstr--)
+   *(pstr+1)=*pstr;
+
+*(++pstr)=c;
+return(pstrReturn);
+}
+
+/*.ta cat()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      cat() - Ein Zeichen am Stringe-Ende anhängen.                           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+PSSTR cat (pstr, cZeichen);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	pstr	    Zeiger auf Beginn des Ausgangsstring.
+CHAR   cZeichen    Zeichen das angehängt werden soll.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Diese Funktion erzeugt einen String, der länger als der Ausgangsstring ist.
+Diese Funktion geht davon aus, daß für den zu manipilierenden String aus-
+reichend Platz reserviert ist.
+
+Das Zeichen <cZeichen> wird am Ende des Strings <pstr> angehängt.
+Resultierende Länge: strlen(pstr) + 1.
+
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt die Anfangsadresse des Ausgangsstrings zurück.
+
+.de \euro\demo\cat.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR cat (PSSTR pstr, CHAR c)
+{
+SWORD wStrLen=strlen(pstr);
+
+*(pstr+wStrLen)=c;
+*(pstr+wStrLen+1)='\0';
+
+return(pstr);
+}
+
+/*.ta ch()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      ch() - Ein Zeichen in einem String austauschen (change)                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+PSSTR ch (cZeichen, pstr, wOff);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+CHAR   cZeichen    Zeichen das getauscht werden soll.
+PSSTR	pstr	    Zeiger auf Startposition des Ausgangsstrings.
+SWORD	wOff	    Tauschposition im Ausgangsstring.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Das Zeichen <cZeichen> wird an der übergebenen Adresse im String <pstr> plus
+dem übergebenen Offset <wOff> ausgetauscht. Resultierende Länge: strlen(pstr).
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt die Anfangsadresse des Ausgangsstrings zurück.
+
+.de \euro\demo\ch.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR ch (CHAR c, PSSTR pstr, SWORD wOff)
+{
+*(pstr+wOff)=c;
+return(pstr);
+}
+
+
+/*.ta chi()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      chi() - Ziffer am Anfang eines String's austauschen. (CHangeInteger)    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+PSSTR chi (wInt, pstrWahl);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+SWORD  wInt	 Int wird als ASCII-Wert im Ausgangsstring am Anfang getauscht.
+PSSTR  pstrWahl  Zeiger auf Startposition des Ausgangsstrings.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Der Int-Wert <wInt> wird mit der Funktion itoa() in einen ASCII-String umge-
+wandelt und am Anfang des Ausgangsstrings's <pstrWahl> ausgetauscht. Es werden
+also am Beginn des Ausgangsstrings n-Zeichen ausgetauscht. Wobei n-Zeichen
+von der Länge des umgewandelten Int-Wertes abhängt.
+
+Die Länge des Ausgangsstrings bleibt in jedem Fall gleich: strlen(pstrWahl).
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt die Anfangsadresse des Ausgangsstrings zurück.
+
+.de \euro\demo\ch.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR chi(SWORD wInt, PSSTR pstrWahl)			/* CHange Integer	*/
+{
+CHAR strTmp[TB_MAX];
+PSSTR pstr=itoa(wInt,strTmp,10);
+SWORD wLen=strlen(pstr);
+
+memcpy(pstrWahl, pstr, wLen);
+return(pstrWahl);
+}
+
+
+/*.ta chri()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      chri() - Ziffer am Ende eines String's austauschen (CHangeRearInteger)  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+PSSTR chri (pstrWahl, wInt);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	pstrWahl    Zeiger auf Startposition des Ausgangsstrings.
+SWORD	wInt	    Int wird als ASCII-Wert im Ausgangsstring am Ende getauscht.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Der Int-Wert <wInt> wird mit der Funktion itoa() in einen ASCII-String umge-
+wandelt und am Ende des Ausgangsstrings's <pstrWahl> ausgetauscht. Es werden
+also vom rechten Ende des Ausgangsstrings n-Zeichen ausgetauscht. Wobei
+n-Zeichen von der Länge des umgewandelten Int-Wertes abhängt.
+
+Die Länge des Ausgangsstrings bleibt in jedem Fall gleich: strlen(pstrWahl).
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt die Anfangsadresse des Ausgangsstrings zurück.
+
+.de \euro\demo\ch.c
+.te*/
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR chri(PSSTR pstrWahl, SWORD wInt)			 /* CHange Rear Integer */
+{
+CHAR strTmp[TB_MAX];
+PSSTR pstr=itoa(wInt,strTmp,10);
+SWORD wLen=strlen(pstr);
+
+strcpy(pstrTemp_g, pstrWahl);
+strcpy(strrchr(pstrTemp_g, '\0')-wLen, pstr);
+return(pstrTemp_g);
+}
+
+/*.ta ptoD()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      ptoD() - 8-Byte als DOUBLE Wert zurückgeben. (PointTODouble)            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+DOUBLE ptoD (pstrWahl);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	pstrWahl    Zeiger auf Startposition des 8-Byte Ausgangsstrings.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Die ersten 8-Byte des Ausgangsstrings <pstrWahl> werden in einen DOUBLE-Wert
+gewandelt und als DOUBLE-Wert zurückgegeben.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt den gewandelten DOUBLE-Wert zurück.
+
+.de \euro\demo\ptoD.c
+.te*/
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+DOUBLE ptoD(PSSTR pstrWahl)			       /* PointTODouble       */
+{
+DOUBLE dReturn;
+
+memcpy(&dReturn, pstrWahl, 8);
+return(dReturn);
+}
+
+/*.ta ptoW()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      ptoW() - 2-Byte als SWORD Wert zurückgeben. (PointTOWord)		║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+SWORD ptoW (pstrWahl);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	pstrWahl    Zeiger auf Startposition des 2-Byte Ausgangsstrings.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Die ersten 2-Byte des Ausgangsstrings <pstrWahl> werden in einen WORD-Wert
+gewandelt und als WORD-Wert zurückgegeben.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt den gewandelten WORD-Wert zurück.
+
+.de \euro\demo\ptoW.c
+.te*/
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+SWORD ptoW(PSSTR pstrWahl)				/* PointTOWord	       */
+{
+SWORD wReturn;
+
+memcpy(&wReturn, pstrWahl, 2);
+return(wReturn);
+}
+
+/*.ta ptoL()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      ptoL() - 4-Byte als LONG Wert zurückgeben. (PointTOLong)                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+SLONG ptoL (pstrWahl);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	pstrWahl    Zeiger auf Startposition des 4-Byte Ausgangsstrings.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Die ersten 4-Byte des Ausgangsstrings <pstrWahl> werden in einen LONG-Wert
+gewandelt und als LONG-Wert zurückgegeben.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt den gewandelten LONG-Wert zurück.
+
+.de \euro\demo\ptoL.c
+.te*/
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+SLONG ptoL(PSSTR pstrWahl)				/* PointTOLong	       */
+{
+SLONG lReturn;
+
+memcpy(&lReturn, pstrWahl, 4);
+return(lReturn);
+}
+
+/*.ta ptoMd()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ ptoMd() 8-Byte String Microsoft double-precision wandeln.(PointTOMicroDouble)║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+DOUBLE ptoMd (pstrWahl);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	pstrWahl    Zeiger auf Startposition des 8-Byte Ausgangsstrings.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Die ersten 8-Byte des Ausgangsstrings <pstrWahl> werden in einen DOUBLE-Wert
+gewandelt und als DOUBLE-Wert zurückgegeben. Dabei wird davon ausgegangen, daß
+die ersten 8-Byte des Strings im Microsoft Format für double-precision vor-
+liegen. Das ist dann der Fall, wenn im Datenlexikon der Datentyp [25] verwendet
+wurde.
+
+Diese Funktion wird also nur gebraucht, wenn mit (Btrieve)-Dateien gearbeitet
+werden soll, die zum Beispiel von Microsoft-Basic aus bearbeitet werden.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt den gewandelten DOUBLE-Wert zurück.
+
+.de \euro\demo\ptoMd.c
+
+Siehe auch:
+────────────────────────────────────────────────────────────────────────────────
+Datenlexikon: Datentyp [13] für C-FLOAT Wert == 4-BYTE,
+              Datentyp [23] für Microsoft CVS single-precision == 4-BYTE!
+
+              Datentyp  [5] für C-DOUBLE Wert == 8-BYTE,
+              Datentyp [25] für Microsoft CVD double-precision == 8-BYTE!
+
+C-Funktionen: dieeetomsbin(&dHelp, &dMsHelp); fieeetomsbin(&fHelp, &fMsHelp);
+              dmsbintoieee(&dMsHelp, &dHelp); fmsbintoieee(&fMsHelp, &fHelp);.
+
+Basicbefehle: MKS$, MKD$, CVS, CVD.
+
+Anmerkung:
+────────────────────────────────────────────────────────────────────────────────
+Integer Werte aus Basic (MKI$/CVI) sind mit dem WORD-Wert (unsignet int) in C
+kompatibel.
+
+.te*/
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+DOUBLE ptoMd(PSSTR pstrWahl)			       /* PointTOMicroDouble  */
+{
+DOUBLE dMsHelp, dReturn;
+memcpy(&dMsHelp, pstrWahl, 8);
+
+dmsbintoieee(&dMsHelp, &dReturn);
+return(dReturn);
+}
+
+
+/*.ta roundd()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      roundd() - Double-Wert kaufmännisch runden. (ROUNDDouble)               ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+DOUBLE roundd (dValue, nKomma);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+DOUBLE  dValue   Double-Wert wird auf n-Nachkommastellen kaufmännisch gerundet.
+SWORD	 wKomma   Int-Wert gibt n-Nachkommastellen zur Rundung an.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Der übergebene Double-Wert <dValue> wird auf n-Nachkommastellen genau kaufmän-
+nisch auf oder abgerundet. Dafür wird die Funktion modf() zur Ermittlung des
+Ganzzahlenwertes verwendet. Die Funktion berücksichtigt richtig einen etwaigen
+Minuswert. Der übergebene Double-Wert <dValue> wird natürlich nicht verändert.
+(Wäre ja nur bei einer Übergabe der Adresse möglich.)
+
+Der neue Double-Wert ist also kaufmännisch auf n-Nachkommastellen gerundet
+und wird als Double-Wert wieder zurückgegeben.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt den gerundeten Double-Wert zurück.
+
+.de \euro\demo\roundd.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+DOUBLE roundd(DOUBLE dValue, SWORD wKomma)	      /* ROUND Double	      */
+{
+SREGISTER i;
+SLONG lFaktor=1;
+
+if(dValue==0.0) return(dValue);
+
+for(i=0; i<wKomma; i++)
+  lFaktor*=10;
+
+dValue*=lFaktor;
+
+if(dValue>0.0) dValue+=0.5;
+else dValue-=0.5;
+
+modf(dValue, &dValue);
+dValue/=lFaktor;
+
+return(dValue);
+}
+
+
+/*.ta proundd()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      proundd() - Double-Wert kaufmännisch runden. (Point-ROUND-Double)       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+PDOUBLE roundd (pdValue, nKomma);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PDOUBLE pdValue Double-Wert wird auf n-Nachkommastellen kaufmännisch gerundet.
+SWORD	 wKomma  Int-Wert gibt n-Nachkommastellen zur Rundung an.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Der Double-Wert <pdValue> wird auf n-Nachkommastellen genau kaufmännisch auf
+oder abgerundet. Dafür wird die Funktion modf() zur Ermittlung des Ganzzahlen-
+wertes verwendet. Der Double-Wert wird an der übergebenen Adresse innerhalb
+der Funktion gerundet.
+
+Der Double-Wert ist also kaufmännisch auf n-Nachkommastellen an der übergebenen
+Adresse gerundet. Zusätzlich wird die Adresse auf den gerundeten Double-Wert
+wieder zurückgeben.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion verändert den Double-Wert an der übergebenen Adresse und die gibt
+die Adresse des gerundeten Double-Wertes wiederzurück. Dardurch ist die
+Funktion beispielsweise auch innerhalb eines memcpy gut verwendbar.
+
+.de \euro\demo\proundd.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PDOUBLE proundd(PDOUBLE pdValue, SWORD wKomma)		/* Point-ROUND-Double	*/
+{
+*pdValue=roundd(*pdValue, wKomma);
+return(pdValue);
+}
+
+/*.ta vroundd()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      vroundd() - Double-Wert kaufmännisch runden. (Value-ROUND-Double)       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+DOUBLE roundd (pdValue, nKomma);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PDOUBLE pdValue Double-Wert wird auf n-Nachkommastellen kaufmännisch gerundet.
+SWORD	 wKomma  Int-Wert gibt n-Nachkommastellen zur Rundung an.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Der Double-Wert <pdValue> wird auf n-Nachkommastellen genau kaufmännisch auf
+oder abgerundet. Dafür wird die Funktion roundd() verwendet.
+Der Double-Wert wird an der übergebenen Adresse innerhalb der Funktion
+gerundet.
+
+Der Double-Wert ist also kaufmännisch auf n-Nachkommastellen an der übergebenen
+Adresse gerundet. Zusätzlich wird der gerundete Double-Wert wieder zurückgeben.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion verändert den Double-Wert an der übergebenen Adresse und die gibt
+die den gerundeten Double-Werte wieder zurück. Dardurch ist die Funktion
+beispielsweise innerhalb einer Berechnung gut verwendbar.
+
+.de \euro\demo\vroundd.c
+.te*/
+
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+DOUBLE vroundd(PDOUBLE pdValue, SWORD wKomma)		/* Value-ROUND-Double */
+{
+*pdValue=roundd(*pdValue, wKomma);
+return(*pdValue);
+}
+
+/*.ta movrdat()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      movrdat() - Btrieve Datumsformat umwandeln in »JJJJ.MM.TT«              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+PSSTR movrdat(PSSTR pstrDest, PSSTR pstrSource);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	pstrDest    Zeiger auf String für neues Datumsformat.
+PSSTR	pstrSource  Zeiger auf Btrieve-Ausgangsstring.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Der Source-String <pstrSource> wird vom Btrieve-Datumsformat (SWORD wYear, BYTE
+bMonth, BYTE bDay) in ein ASCII-Format (JJJJ.MM.TT) umgewandelt.
+
+Dieser String kann dann für Vergleichsoperation oder Stringmanipulationen
+verwendet werden. Für <pstrDest> müssen mindestens 11-Byte allociert sein.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt einen Zeiger auf <pstrDest> zurück.
+
+.de \euro\demo\movrdat.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR movrdat(PSSTR pstrDest, PSSTR pstrSource) 	/* MOVeRearDATe 	*/
+{
+SWORD wYear;
+SBYTE bMonth, bDay;
+memcpy(&bDay,   pstrSource,   1);
+memcpy(&bMonth, pstrSource+1, 1);
+memcpy(&wYear,  pstrSource+2, 2);
+
+sprintf(pstrDest, "%#4d.%#02d.%#02d", wYear, bMonth, bDay);
+
+return(pstrDest);
+}
+
+
+/*.ta trim()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║      trim() - Leerzeichen am Stringanfang und -ende abschneiden.             ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+PSSTR trim(pstrText);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	pstrText    Zeiger auf Beginn des Ausgangsstring.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Diese Funktion kürzt den String auf den Text-Inhalt indem sie die Leerzeichen
+links und rechts herausfiltert.                                                  ║
+
+Resultierende Länge: strlen(pstrText) - Leerzeichen am Beginn und am Ende des
+Strings.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt die Adresse des ersten Nichtleerzeichens des Ausgangsstrings
+zurück.
+
+.de \euro\demo\trim.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR trim(PSSTR pstrText)
+{
+PSSTR pstrEnde; 				      /*Adresse Stringende    */
+
+if(strlen(pstrText)==0)                              /*und wenn Zeichen vor- */
+  return(pstrText);                                  /* vorhanden dann so-   */
+else pstrEnde=pstrText+strlen(pstrText)-1;           /*Adresse Stringende    */
+
+while(pstrEnde>pstrText &&
+  (*pstrEnde==' ' || *pstrEnde=='\t') ) 	     /*lange kürzen bis erst.*/
+  *(pstrEnde--)='\0';                                /*Nicht-Leerzeichen     */
+
+while(*pstrText==' ' || *pstrText=='\t')	     /*Adresse hochzählen bis*/
+   pstrText++;                                       /*erstes Nicht-Leer-    */
+                                                     /*zeichen kommt         */
+return(pstrText);
+}
+
+
+/*=========================================================================
+
+        chardel
+        -------
+        Funktion: Ein Zeichen in einem String löschen. Resultierende
+                  Länge: strlen(s) - 1.
+        Hin:      pstr = Adresse auf zu löschende Position im Ausgangsstring
+*/
+void chardel(PSSTR pstr)
+{
+ PCHAR pchar;
+
+ pchar = pstr + 1;
+ while (*(pchar - 1))
+   {
+    *(pchar-1) = *pchar;
+    pchar++;
+   }
+}
+/*=========================================================================
+
+        strins
+        ------
+        Funktion: String <s1> in String <s2> einfügen. Resultierende Länge:
+                  strlen(s1) + strlen(s2).
+        Hin:      s1 : Ptr. auf einzufügenden String
+                  s2 : Ptr. auf Einfügeposition im Ausgangsstring
+*/
+void strins(PSSTR s1, PSSTR s2)
+{
+   int i, len;
+
+   for (len = strlen(s1), i = strlen(s2) + 1, s2 += i - 1; i; i--, s2--)
+      *(s2 + len) = *s2;
+   s2++;
+
+   for ( ; *s1; s1++, s2++)
+      *s2 = *s1;
+}
+/*=========================================================================
+
+        strdel
+        ------
+        Funktion: Entfernt aus einem String alle Zeichen von <start> bis <ende>
+                  durch Links-Verschieben der nachfolgenden Zeichen (incl.'\0').
+        Hin:      start : Ptr. auf das erste zu löschende Zeichen
+                  ende  : Ptr. auf das letzte zu löschende Zeichen
+*/
+void strdel(PSSTR start, PSSTR ende)
+{
+ende++;
+
+while(*start)
+  *start++ = *ende++;
+}
+
+/*=========================================================================
+
+        strfill
+        -------
+        Funktion: Überschreibt in einem String alle Zeichen ab <start> bis
+                  <ende> mit dem Zeichen <ch>
+        Hin:      start : Ptr. auf das erste zu überschreibende Zeichen
+                  ende  : Ptr. auf das letzte zu überschreibende Zeichen
+                  ch    : "Füllzeichen"
+*/
+void strfill(PSSTR start, PSSTR ende, CHAR ch)
+{
+  int i;
+
+  for (i = ende - start + 1; i; i--)
+     *ende-- = ch;
+}
+/*=========================================================================
+
+        strstring
+        ---------
+        Funktion: Erzeugt einen - mit '\0' abgeschlossenen - String der
+                  Länge <len>, gefüllt mit dem Zeichen <ch>
+        Hin:      s   : Ptr. auf String
+                  len : Sollänge des Strings
+        RETURN  : Ptr. auf erzeugten String
+*/
+PSSTR strstring(PSSTR s, CHAR ch, SIZE_T len)
+{
+  int i;
+  PSSTR p;
+
+  p = s;
+  for (i = 0; i < (SWORD)len; i++)
+     *s++ = ch;
+  *s = '\0';
+  return (p);
+}
+/*=========================================================================
+
+/*.ta strpad()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  strpad() - String mit Leerzeichen auffüllen.                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+PSSTR strpad(pstrText, wLaenge);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	pstrText    Zeiger auf String, der Platz für Leerzeichen allokiert hat.
+SWORD	wLaenge     gewünschte Stringlänge inkl. den angehängten Leerzeichen.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion hängt an das Ende eines gegebenen Strings Leerzeichen an, um ihn
+auf die angegebene Soll-Länge aufzufüllen. Der String wird mit '\0' abge-
+schlossen.
+
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR  Zeiger auf den aufgefüllten String.
+
+
+.de \euro\demo\strpad.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+PSSTR strpad(PSSTR pstr, SIZE_T wLen)
+{
+if(strlen(pstr) < wLen)
+  strfill(pstr+strlen(pstr), pstr+wLen-1, ' ');
+
+*(pstr+wLen)='\0';
+return (pstr);
+}
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+PSSTR strcpad(PSSTR pstr, CHAR c, SIZE_T wLen)
+{
+if(strlen(pstr) < wLen)
+  strfill(pstr+strlen(pstr), pstr+wLen-1, c);
+
+*(pstr+wLen)='\0';
+return (pstr);
+}
+
+/*=========================================================================
+
+        strcompress
+        -----------
+        Funktion: Umkehrung von STRPAD. Entfernt alle "rechtsbündigen"
+                  Leerzeichen. Komprimiert einen String auf seine "echte"
+                  Länge durch entsprechendes Setzen von '\0'.
+        Hin:      s      : Ptr. auf den String
+        RETURN  : Ptr. auf den String
+*/
+PSSTR strcompress(PSSTR s)
+{
+  PSSTR p;
+
+  p = s;
+  s += strlen(s) - 1;
+  while (s >= p  &&  *s == ' ')
+     s--;
+  *(++s) = '\0';
+  return (p);
+}
+/*=========================================================================
+
+        lower
+        -----
+        Funktion: Wandelt alle Großbuchstaben eines Strings in Kleinbuchstaben
+        Hin:      s      : Ptr. auf String
+        RETURN  : Ptr. auf String
+*/
+PSSTR lower(PSSTR s)
+{
+   PSSTR p;
+
+   p = s;
+   while (*s) {
+      switch (*s) {
+	 case 'Ö' : *s = 'ö'; break;
+	 case 'Ä' : *s = 'ä'; break;
+	 case 'Ü' : *s = 'ü'; break;
+	 default  : *s = (UCHAR)tolower(*s);
+      }
+      s++;
+   }
+   return(p);
+}
+/*=========================================================================
+
+        upper
+        -----
+        Funktion: Wandelt alle Kleinbuchstaben eines Strings in Großbuchstaben
+        Hin:      s      : Ptr. auf String
+        RETURN  : Ptr. auf String
+*/
+PSSTR upper(PSSTR s)
+{
+PSSTR p=s;
+
+while(*s)
+  {
+  switch (*s)
+    {case 'ö' : *s = 'Ö'; break;
+    case 'ä' : *s = 'Ä'; break;
+    case 'ü' : *s = 'Ü'; break;
+    default  : *s = (UCHAR)toupper(*s);}
+
+  s++;
+  }
+
+return(p);
+}
+
+/*=========================================================================
+
+        instr
+        -----
+        Funktion: Prüft, ob der String <s1> im String <s2> enthalten ist
+        Hin:      s1     : Ptr. auf den Vergleichsstring
+                  s2     : Ptr. auf den durchsuchten String
+        RETURN  : Zeiger auf gefundene Position (NULL=nicht enthalten)
+*/
+PSSTR instr(PSSTR s1, PSSTR s2)
+{
+   PSSTR ptr1, ptr2;
+
+   for ( ; *s2; s2++) {
+      for (ptr1 = s1, ptr2 = s2; *ptr1 && (*ptr1 == *ptr2) ; ptr1++, ptr2++)
+         ;
+      if (! *ptr1)
+         return (s2);
+   }
+   return (NULL);
+}
+/*=========================================================================
+
+        nextword
+        --------
+        Funktion: Sucht in einem String das nächste Wort (nach rechts)
+        Hin:      s    : Ptr. auf String
+                  term : Ptr. auf String mit Trennzeichen zwischen Wörtern
+        RETURN  : Ptr. auf Wortanfang (NULL, wenn kein weiteres Wort)
+*/
+PSSTR nextword(PSSTR s, PSSTR term)
+{
+   while (*s  &&  (! strchr(term, *s)))
+      s++;
+   while (*s  &&  (strchr(term, *s)))
+      s++;
+   return (*s  ?  s  :  NULL);
+}
+/*=========================================================================
+
+        prevword
+        --------
+        Funktion: Umkehrung von NEXTWORD. Sucht - ausgehend von der Position
+                  <ende> - das vorhergehende Wort (nach links). Die Suche
+                  endet, wenn die Position <start> erreicht ist (normalerweise
+                  wird als <start> der Stringanfang übergeben. Kriterium für
+                  "Wort-Terminatoren" ist wieder der Inhalt von TERM.
+        Hin:      start : Ptr. auf die linke Grenze
+                  ende  : Ptr. auf die rechte Grenze
+                  term  : Ptr. auf String mit Trennzeichen zwischen Wörtern
+        RETURN  : Ptr. auf Wortanfang (NULL, wenn kein letztes Wort)
+*/
+PSSTR prevword(PSSTR start, PSSTR ende, PSSTR term)
+{
+   while ((start <= ende)  &&  (! strchr(term, *ende)))
+      ende--;
+   while ((start <= ende)  &&  (strchr(term, *ende)))
+      ende--;
+   while ((start <= ende)  &&  (! strchr(term, *ende)))
+      ende--;
+   return (*ende  ?  ende + 1  :  NULL);
+}
+/*=========================================================================
+
+        stradd
+        ------
+        Funktion: Verknüpft eine variable Anzahl Strings durch "Konkatenieren"
+                  (wiederholter Aufruf von STRCAT) zu einem Gesamtstring.
+                  Resultierende Länge: strlen(arg1) + ... + strlen(argN)
+        Hin:      s    : Ptr. auf den "Summenstring"
+                  arg1 : Ptr. auf 1.Teilstring
+                  arg2 : Ptr. auf 2.Teilstring
+                  ...
+                  ...
+                  argN : Ptr. auf N.Teilstring
+		  _N   : Endemarke
+        RETURN :  Ptr. auf erzeugten "Summenstring"
+	Bsp.: stradd(s, "Dies ", "ist ", "ein ", "Test", _N);
+*/
+PSSTR stradd(PSSTR pstr, ...)
+{
+PPSTR ppArg=&pstr;
+ppArg++;
+
+strcpy(pstr, *ppArg++);
+while(*ppArg)
+  strcat(pstr, *ppArg++);
+
+return (pstr);
+}
+
+PSSTR straddbl(PSSTR s, ...)
+{
+   char **argp;
+
+   argp = &s;
+   argp++;
+
+   strcpy(s, *argp);
+   if(**argp)
+     strcat(s, " ");
+
+   argp++;
+   while (*argp)
+     {
+     if(**argp)
+       {
+       strcat(s, *argp);
+       strcat(s, " ");
+       }
+
+     argp++;
+     }
+   return (s);
+}
+
+
+/*  str("awBlocks_g[%d][%d]",j,i)); */
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR str(const PCHAR pcFormat,...)
+{
+va_list  arg_zeiger;
+va_start(arg_zeiger, pcFormat); 		     /* Arg.-zeiger setzen   */
+memset(pstrTemp_g, '\0', 512);
+
+vsprintf(pstrTemp_g, pcFormat, arg_zeiger);	      /* Ausgabe in Buffer    */
+						     /* vornehmen	     */
+va_end(arg_zeiger);				     /* Zeiger auf NULL      */
+return(pstrTemp_g);				      /* String zurück	      */
+}
+
+
+/*=========================================================================
+
+        charadd
+        -------
+        Funktion: Verknüpft eine variable Anzahl Zeichen zu einem mit '\0'
+                  abgeschlossenen String. Resultierende Länge: Anzahl Zeichen
+        Hin:      s    : Ptr. auf den "Summenstring"
+                  arg1 : 1.Zeichen
+                  arg2 : 2.Zeichen
+                  ...
+                  ...
+                  argN : N.Zeichen
+                  '\0' : Endemarke
+        RETURN :  Ptr. auf erzeugten String
+        Bsp.: charadd(s, 'T', 'e', 's', 't', '\0');
+*/
+PSSTR charadd(PSSTR pstr, ...)
+{
+PSSTR pstrReturn=pstr;
+PSSTR pArg;					      /* va_list pArg	      */
+pArg=(PSSTR)&pstr+sizeof(PSSTR);		       /* va_start(pArg,pstr); */
+
+for(; *pArg; pstr++, pArg+=2)
+  *pstr=*pArg;
+
+*pstr='\0';
+
+return (pstrReturn);
+}
+
+
+/*.ta StrCpy(), PstrCpy(),
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  StrCpy()  - String in ein durch CHAR[] reserviertes Array kopieren.         ║
+║  PstrCpy() - String in einen mit Ut_Calloc reservierten PSTR kopieren.       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+VOID StrCpy  (strDestination,  pstrSource, wStart);
+VOID PstrCpy (pstrDestination, pstrSource, wStart);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+CHAR[]  strDestination   String-Array als Ziel der Kopierfunktion.
+PSSTR	 pstrDestination  Zeiger auf String, der mit Ut_Calloc allokiert wurde.
+
+PSSTR	 pstrSource	  Zeiger auf String, der kopiert werden soll.
+SWORD	 wStart 	  Bezeichnet den Beginn im Zielstring ab dem die Kopie
+                         starten soll.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Entspricht der Funktion »strcpy()« aus der Standardbibliothek. Der Start im
+Zielstring, ab dem kopiert werden soll, darf nicht als Addresse beim »Des-
+tination-String« angegeben werden. Der Start muss vielmehr als dritter Parameter
+an die Funktion uebergeben werden. (Wert >= 0)
+
+Der Destination-String muss in der Form uebergeben werden, wie er definiert
+wurde.
+
+Bei StrCpy wird intern mit »sizeof« die maximale Stringlaenge des Ziels kon-
+trolliert. Bei PstrCpy wird intern mit »_msize« die maximale Stringlaenge des
+Ziels kontrolliert.
+
+Da bei Parameteruebergabe in eine Funktion ein Character-Array (strDesti-
+nation[]) vom Compiler intern als PSTR interpretiert wird, darf StrCpy nicht
+auf uebergebene Arrays (CHAR[]) angegwendet werden. Diese Regeln muessen vom
+Applikationsprogrammierer beachtet werden, da die »sizeof«-Operation die
+Laenge dieser Arrays nicht mehr richtig erkennt.
+
+Sie sollten in Ihrer Applikation ausschließlich diese Kopierfunktionen verwen-
+den. Dadurch stellen Sie sicher, daß Sie nur in reservierte Speicherbereiche
+kopieren. Alles andere fuehrt leicht zu unkontrollierten Programmabstuerzen.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Diese Funktion hat keinen Rueckgabewert.
+
+.de \euro\demo\strcpy.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+VOID CHKcpy (PSSTR pstrDest, PSSTR pstrSource, SWORD wStart, SWORD wSize)
+{
+ wSize -= wStart;
+ strncpy ( &pstrDest[wStart], pstrSource, wSize);
+ *(pstrDest + wSize + wStart - 1) = '\0';
+
+ return;
+}
+
+/*.ta calcpy()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  calcpy() - Speicher reservieren und String kopieren.                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+SWORD calcpy  (strDestination,	pstrSource);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	 pstrDestination  Zeiger auf Speicher, der mit Ut_Calloc reserviert wird.
+
+PSSTR	 pstrSource	  Zeiger auf String, der kopiert werden soll.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Entspricht der Funktion »strcpy()« aus der Standardbibliothek. Der Start im
+Zielstring, ab dem kopiert werden soll, darf nicht als Addresse beim »Des-
+tination-String« angegeben werden, da bei dieser Adresse Platz mit Ut_Caloc
+reserviert wird, falls noch nicht genug Platz zum kopieren des Ausgangs-
+strings reserviert ist.
+
+Bei calcpy wird mit »_msize« die maximale Stringlaenge des Ziels kon-
+trolliert.
+
+Da bei Parameteruebergabe in eine Funktion ein Character-Array (strDesti-
+nation[]) vom Compiler intern als PSSTR interpretiert wird, darf StrCpy nicht
+auf uebergebene Arrays (CHAR[]) angegwendet werden. Diese Regeln muessen vom
+Applikationsprogrammierer beachtet werden, da die »sizeof«-Operation die
+Laenge dieser Arrays nicht mehr richtig erkennt.
+
+Ist die Adresse kein NULL-Pointer, so wird der vorher reservierte Speicher
+mit Ut_Free freigegeben.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Diese Funktion hat keinen Rueckgabewert.
+
+.de \euro\demo\strcpy.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+SWORD calcpy(PPSTR ppstrDest, PSSTR pstrSource)
+{
+if(*ppstrDest) Ut_Free(*ppstrDest);		     /* 		     */
+
+if(pstrSource)
+  {
+  Ut_Calloc(*ppstrDest, strlen(pstrSource)+1, CHAR); /* 		     */
+  strcpy(*ppstrDest, pstrSource);		     /* 		     */
+  }
+
+/*Wi_TestPrintf(pWkbInfo_g,"\npstrSource   =%s."*/
+/*   "\npstrDestTitel=%s.", pstrSource, *ppstrDest);*/
+return(OK);
+}
+
+
+
+/*.ta StrEnd()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ StrEnd() - Letztes Zeichen des Strings um den ASCII-Wert 1 erhöhen.          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+PSSTR StrEnd(pstrSource);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	pstrSource    Zeiger auf Beginn des Ausgangsstring.
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Diese Funktion erhöht des ASCII Werte des letzten Buchstabens um den Wert 1.
+Resultierende Länge: strlen(pstrSource).
+
+Bei Druckangaben wie Druck »bis« wird diese Funktion gerne verwendet.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt die Anfangsadresse des Sourcstrings wieder zurück.
+
+.de \euro\demo\StrEnd.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR StrEnd (PSSTR pstr)
+{
+PSSTR pstrHilf;
+if(pstr==NULL) return(pstr);
+
+pstrHilf = pstr + strlen(pstr) - 1;
+*pstrHilf = (*pstrHilf)++;
+
+return(pstr);
+}
+
+/*.ta StringAddEnd()
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ StringAddEnd() - String um Zeichen oder den ASCII-Wert 1 ergänzen.           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Überblick:
+────────────────────────────────────────────────────────────────────────────────
+#include <eur_str.h> oder #include <eur_type.h>
+PSSTR StringAddEnd(pstr, pTB, wLine, pstrFile);
+
+Parameter:
+────────────────────────────────────────────────────────────────────────────────
+PSSTR	   pstr      Zeiger auf Beginn des Ausgangsstring.
+PTEXTBOX  pTB       Textbox des Ausgangsstrings
+SWORD	   wLine     Errorzeile im Applikationssource
+PSSTR	   pstrFile  Dateiname des Applikationssource
+
+Beschreibung:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion hängt mit strcat() den ASCII-Wert »!« (== Dez 33) am Ausgangs-
+string an, wenn laut Textbox die maximale Stringlänge noch nicht erreicht ist.
+Sonst erhöht die Funktion den letzten Buchstabens des Ausgangsstrings um den
+ASCII-Wert 1 unter Verwendung der StrEnd()-Funktion.
+
+Resultierende Länge: strlen(pstr) oder strlen(pstr)+1.
+
+Bei Druckangaben wie Druck »bis« wird diese Funktion gerne verwendet.
+
+Rückgabewert:
+────────────────────────────────────────────────────────────────────────────────
+Die Funktion gibt die Anfangsadresse des Sourcstrings wieder zurück.
+
+.de \euro\demo\StrEnd.c
+.te*/
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║                          FUNKTIONS-DEFINITION                          ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+
+GLOBAL
+PSSTR StringAddEnd(PSSTR pstr, PTEXTBOX pTB, SWORD wL, PSSTR pF)
+{
+SWORD wLen=strlen(pstr);
+
+if(pstr==NULL)
+  Dl_Abbruch("StrAddEnd", wL, pF, "pstr==NULL");
+
+else if(wLen==0)
+  ;
+
+else if(wLen < pTB->wMaxL)
+  strcat(pstr, " ");				     /* ASCII 255	     */
+
+else if(wLen == pTB->wMaxL)
+  *(pstr+wLen)= ' ';				     /* ASCII 255	     */
+
+else
+  Dl_Abbruch("StrAddEnd",wL,pF,str("%s(%d)",pstr,wLen));
+
+return(pstr);
+}
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║  boAltStrStr ()                                   Datum:  19.6.90      ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+BOOL boAltStrStr (PUSTR pstr1, PUSTR pstr2, PUSTR pstrAltColSeq)
+{
+BOOL boOK=JA;
+
+if (!pstrAltColSeq)
+  return (strstr((PSSTR)pstr1, (PSSTR)pstr2) != NULL);
+
+for (; *pstr2; pstr1++, pstr2++)
+   if (pstrAltColSeq[*pstr1] !=
+       pstrAltColSeq[*pstr2])
+     boOK = NEIN;
+
+return (boOK);
+}
+
+/*╔════════════════════════════════════════════════════════════════════════╗
+  ║  AltStrCmp ()                                     Datum:  19.6.90      ║
+  ╚════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+SWORD AltStrCmp (PUSTR pstr1, PUSTR pstr2, PUSTR pstrAltColSeq)
+{
+SWORD swRet=0, swWeiter=1;
+
+if (!pstrAltColSeq)
+  return (strcmp((PSSTR)pstr1, (PSSTR)pstr2));
+
+for (; swWeiter; pstr1++, pstr2++)
+  if (!*pstr1 && !*pstr2)
+    swWeiter = 0;
+  else if (pstrAltColSeq[*pstr1] >
+      pstrAltColSeq[*pstr2])
+    {
+    swRet = 1;
+    swWeiter = 0;
+    }
+  else if (pstrAltColSeq[*pstr1] <
+      pstrAltColSeq[*pstr2])
+    {
+    swRet = -1;
+    swWeiter = 0;
+    }
+
+return (swRet);
+}
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ boMemCmp ()                                                             ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║                                                                         ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+SWORD boMemCmp(PSSTR pstrA, PSSTR pstrB)
+{
+SIZE_T wLen=strlen(pstrA), wRetCode;
+
+if(strlen(pstrB) > wLen)
+  wLen=strlen(pstrB);
+
+wRetCode = memcmp (pstrA, pstrB, wLen);
+wRetCode = (wRetCode == 0) ? JA : NEIN;
+
+return(wRetCode);
+}
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ cpy ()                                                                  ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Arbeitet wie strcpy(), liefert jedoch einen Zeiger auf das              ║
+  ║ neue Ende des Strings (d.h. auf die NULL).                              ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR cpy(PSSTR pstrDestination, PSSTR pstrSource)
+{
+while(*pstrSource)
+  *pstrDestination++ = *pstrSource++;
+
+*pstrDestination='\0';
+return(pstrDestination);
+}
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ stp(pstrSource)                                                         ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Die Adresse des Source-Strings wird mit return() zurückgegeben.         ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR stp(PSSTR pstrSource)			       /* StringToPstr	       */
+{
+return(pstrSource);
+}
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ cpD(pstrSource)                                                         ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Der Source-String wird als PDOUBLE-Wert mit return() zurückgegeben      ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PDOUBLE stpD (PSSTR pstrSource) 		      /* StringToPDouble      */
+{
+DOUBLE dReturn;
+memcpy(&dReturn, pstrSource, 8);
+
+return(&dReturn);
+}
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ cpL(pstrSource)                                                         ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Der Source-String wird als PLONG-Wert mit return() zurückgegeben        ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR stpL (PSSTR pstrSource)			      /* StringToPLong	      */
+{
+SLONG lReturn=atol(pstrSource);
+CHAR str[4];
+memcpy(str, &lReturn, 4);
+return(str);
+}
+
+
+GLOBAL
+PSSTR Ltop(SLONG lWahl) 				/* LongTOPoint	       */
+{
+//PSLONG plWahl;
+//*plWahl=lWahl;
+
+CHAR str[4];
+memcpy(str, &lWahl, 4);
+
+return(str);
+}
+
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ cpW(pstrSource)                                                         ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Der Source-String wird als PWORD-Wert mit return() zurückgegeben        ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSWORD stpW (PSSTR pstrSource)			       /* StringToPWord        */
+{
+SWORD wReturn;
+memcpy(&wReturn, pstrSource, 2);
+
+return(&wReturn);
+}
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ ncpy ()                                                                 ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Arbeitet wie strncpy(), hängt aber am Ende der Kopie in jedem Fall eine ║
+  ║ NULL an und liefert einen Zeiger auf das neue Ende des Strings (d.h.    ║
+  ║ die NULL).                                                              ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR ncpy(PSSTR pstrDestination, PSSTR pstrSource, SWORD wAnzahl)
+{
+SREGISTER i;
+
+for(i=0; *pstrSource && i<wAnzahl; i++)
+  *pstrDestination++ = *pstrSource++;
+
+*pstrDestination='\0';
+return(pstrDestination);
+}
+
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ _memset()								    ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Arbeitet wie memset(), prüft aber, ob der Destination-String mit colloc ║
+  ║ reserviert wurde.							    ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR _memset(PSSTR pstrDestination, CHAR c, SIZE_T wCount, PSSTR pF, SWORD wL)
+{
+if(_msize(pstrDestination) < wCount)
+  Dl_Abbruch("_memset() size<Len", wL, pF,
+    str("%u < %u",_msize(pstrDestination), wCount) );
+else
+  memset(pstrDestination, c, wCount);
+
+return(pstrDestination);
+} /* end _memset() */
+
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ pt ()                                                                   ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Diese Routine ist eine Hilfsfunktion.                                   ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PSSTR point(PSSTR pstrWahl, PSSTR apstrRecord[], PTEXTBOX apTextBox[][99],
+	   PSSTR pstrFile, SWORD wLine)
+{
+SREGISTER i, j;
+STATIC SWORD wRes = -1;
+PSSTR pstrReturn;
+STATIC SWORD awOff[10]; 			      /* letz. 10 Offsets     */
+STATIC SWORD awRec[10]; 			      /* letz. 10 Records     */
+STATIC CHAR astrAltWahl[10][12];                     /* letz. 10 Datenfelder */
+SWORD	wRecWahl=99;
+
+if(isdigit(*pstrWahl))
+  if(*(pstrWahl+1)=='°')
+    {wRecWahl=atoi(pstrWahl);
+    pstrWahl+=2;}
+
+for (i=0; astrAltWahl[i][0]; i++)
+  {
+  if( boMemCmp(astrAltWahl[i], pstrWahl) &&
+    (awRec[i]==wRecWahl || wRecWahl==99) )
+    {
+    pstrReturn=&apstrRecord[awRec[i]][awOff[i]];
+    return (pstrReturn);
+    }
+  }
+                                                     /* Die Wahl 10 x spei-  */
+wRes=(wRes < 9) ? ++wRes : 0;                        /* chern und dann wieder*/
+                                                     /* mit 0 beginnen       */
+strncpy(astrAltWahl[wRes],pstrWahl,10);
+
+for(j=0; *apTextBox[j]; j++)
+  for(i=0; apTextBox[j][i]; i++)
+    if(boMemCmp(apTextBox[j][i]->strDatenfeld,pstrWahl)
+      && (apTextBox[j][i]->wRecord==wRecWahl || wRecWahl==99) )
+      goto ENDE_POINT;
+
+
+ENDE_POINT:                                          /* NULL-Pointer==Fehler */
+if(!apTextBox[j][i] || !(*apTextBox[j]) )
+  {
+  CHAR strError[TB_MAX];
+  sprintf(strError,"point(%s) in Datei %d "          /*                      */
+    "unbekannt", pstrWahl, wRecWahl);                /*                      */
+  Dl_ErrorHandler (704, strError, pstrFile, wLine, 0); /*                    */
+  }
+
+awOff[wRes]=apTextBox[j][i]->wOffset;
+awRec[wRes]=apTextBox[j][i]->wRecord;
+
+pstrReturn =
+  &apstrRecord[awRec[wRes]][awOff[wRes]];
+
+return (pstrReturn);
+}
+
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ TBpoint ()                                                              ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Diese Routine ist eine Hilfsfunktion.                                   ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PTEXTBOX TBpoint (PSSTR pstrWahl, SWORD wMsk, SWORD wRecord,
+	       PTEXTBOX apTextBox[][99], PSSTR pstrFile, SWORD wLine)
+{
+SREGISTER i;
+PTEXTBOX pTB=NULL;
+
+if(wMsk==99)
+  {
+  if(wRecord==99)
+    {
+    for(wMsk=0; *apTextBox[wMsk]; wMsk++)            /* Suche »pstrWahl« auf */
+      for(pTB=apTextBox[wMsk][i=0]; pTB;             /* allen Masken in      */
+	pTB=apTextBox[wMsk][++i])		     /* allen Dateien	     */
+	{
+
+	/* {BOOL boTest=boTestModus_g; boTestModus_g=JA;
+	Wi_TestPrintf(pWkbInfo_g, "\n(%s)-(%s).", pTB->strDatenfeld,
+	  pstrWahl); boTestModus_g=boTest;} */
+
+        if(boMemCmp(pTB->strDatenfeld,pstrWahl))
+	  goto ENDE_POINT;
+	}
+    }
+  else
+    {
+    for(wMsk=0; *apTextBox[wMsk]; wMsk++)            /* Suche »pstrWahl« auf */
+      for(pTB=apTextBox[wMsk][i=0]; pTB;             /* allen Masken in      */
+        pTB=apTextBox[wMsk][++i])                    /* Datei »wRecord«      */
+        if(boMemCmp(pTB->strDatenfeld, pstrWahl)
+          && pTB->wRecord==wRecord)
+          goto ENDE_POINT;
+    }
+  }
+else
+  {
+  if(wRecord==99)
+    {
+    for(pTB=apTextBox[wMsk][i=0]; pTB;                 /* Suche »pstrWahl« auf */
+      pTB=apTextBox[wMsk][++i])                        /* »wMsk«               */
+      if(boMemCmp(pTB->strDatenfeld, pstrWahl))
+        goto ENDE_POINT;
+    }
+  else
+    {
+    for(pTB=apTextBox[wMsk][i=0]; pTB;                 /* Suche »pstrWahl« auf */
+      pTB=apTextBox[wMsk][++i])                        /* Seite »wMaske« aus   */
+      if(boMemCmp(pTB->strDatenfeld, pstrWahl)
+        && pTB->wRecord==wRecord)
+        goto ENDE_POINT;
+    }
+  }
+
+ENDE_POINT:
+if(!pTB)
+  {
+  CHAR strError[TB_MAX];
+  sprintf(strError,"TBpoint(%s) auf Maske %d in "    /*                      */
+    "Datei %d unbekannt", pstrWahl, wMsk, wRecord);  /*                      */
+  Dl_ErrorHandler(704, strError, pstrFile, wLine, 0);     /*                      */
+  }
+
+/*i_FormatSchreiben(pTB, apstrRecord);*/
+return(pTB);
+}
+
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ Text_Box()                                                              ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Diese Routine ist eine Hilfsfunktion.                                   ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+SWORD Text_Box (PSSTR pstrName, SWORD wMaske, SWORD wField,
+	       PTEXTBOX apTextBox[][99], PSSTR pstrFile, SWORD wLine)
+{
+SREGISTER i;
+PTEXTBOX pTB;
+
+if(boMemCmp(apTextBox[wMaske]
+  [wField]->strDatenfeld, pstrName))
+  return(JA);
+
+for(pTB=apTextBox[wMaske][i=0];                      /* Suche »pstrWahl« auf */
+  pTB && !boMemCmp(pTB->strDatenfeld, pstrName);     /* Seite »wMaske« aus   */
+  pTB=apTextBox[wMaske][++i])
+  ;
+
+if(!pTB)
+  {
+  CHAR strError[TB_MAX];
+  sprintf(strError,"Text_Box(%s) auf Maske %d "      /*                      */
+    "unbekannt", pstrName, wMaske);                  /*                      */
+  Dl_ErrorHandler(704, strError, pstrFile, wLine, 0);  /*                    */
+  }
+
+return(NEIN);
+}
+
+
+/*╔═════════════════════════════════════════════════════════════════════════╗
+  ║ TBpointB ()                                                             ║
+  ║ ─────────────────────────────────────────────────────────────────────── ║
+  ║ Diese Routine ist eine Hilfsfunktion.                                   ║
+  ╚═════════════════════════════════════════════════════════════════════════╝*/
+GLOBAL
+PTEXTBOXLIST TBLpoint (PSSTR pstrWahl, SWORD wMsk, SWORD wRec,
+                  PMASKS pFirstMask)
+{
+PTEXTBOXLIST pTBL=NULL;
+PMASKS pMask=pFirstMask;
+SWORD wM=0;
+
+if(wMsk==99)
+  {
+  if(wRec==99)
+    {
+    for(; pMask; pMask=pMask->pNext)
+      for(pTBL=pMask->pBlLineWurzel->pBlWurzel->pTBLWurzel;
+        pTBL; pTBL=pTBL->pNext)
+        if(pTBL->pstrDatenfeld &&                    /* Suche »pstrWahl« auf */
+          !strcmp(pTBL->pstrDatenfeld, pstrWahl))    /* allen Masken in      */
+          goto ENDE_POINT;                           /* allen Dateien        */
+
+    }
+  else
+    {
+    for(; pMask; pMask=pMask->pNext)
+      for(pTBL=pMask->pBlLineWurzel->pBlWurzel->pTBLWurzel;
+        pTBL; pTBL=pTBL->pNext)
+        if(pTBL->pstrDatenfeld &&                    /* Suche »pstrWahl« auf */
+          !strcmp(pTBL->pstrDatenfeld, pstrWahl)     /* allen Masken in      */
+          && pTBL->wRecord==wRec)                    /* Datei »wRec«         */
+          goto ENDE_POINT;
+    }
+  }
+else
+  {
+  if(wRec==99)
+    {
+    for(; pMask; pMask=pMask->pNext, wM++)
+      for(pTBL=pMask->pBlLineWurzel->pBlWurzel->pTBLWurzel;
+        pTBL; pTBL=pTBL->pNext)
+        if(pTBL->pstrDatenfeld && wM==wMsk &&        /* Suche »pstrWahl« auf */
+          !strcmp(pTBL->pstrDatenfeld, pstrWahl))    /* »wMsk« in allen      */
+          goto ENDE_POINT;                           /* Dateien              */
+    }
+  else
+    {
+    for(; pMask; pMask=pMask->pNext, wM++)
+      for(pTBL=pMask->pBlLineWurzel->pBlWurzel->pTBLWurzel;
+        pTBL; pTBL=pTBL->pNext)
+        if(pTBL->pstrDatenfeld && wM==wMsk &&        /* Suche »pstrWahl« auf */
+          !strcmp(pTBL->pstrDatenfeld, pstrWahl) &&  /* »wMsk« in Datei      */
+          pTBL->wRecord==wRec)                       /* »wRec«               */
+          goto ENDE_POINT;
+    }
+  }
+
+ENDE_POINT:
+if(!pTBL)
+  {
+  CHAR strError[TB_MAX];
+  sprintf(strError,"TBpointB(%s) auf Maske %d in "   /*                      */
+    "Datei %d unbekannt", pstrWahl, wMsk, wRec);     /*                      */
+  Dl_ErrorHandler(704, strError, NULL, 0, 0);	     /* 		     */
+  }
+
+/*i_FormatSchreiben(pTB, apstrRecord);*/
+return(pTBL);
+}
+
+/*
+{BOOL boTest=boTestModus_g; boTestModus_g=JA;
+Wi_TestPrintf(pWkbInfo_g, "\n1: isdigit(%d) %d-%d(%d) %c-%c(%d), %s.",
+  isdigit(*pstrWahl), *(pstrWahl+1), '\xF8', *(pstrWahl+1)=='\xF8',
+		      *(pstrWahl+1), '\xF8', *(pstrWahl+1)=='\xF8',
+  pstrWahl); boTestModus_g=boTest;}
+*/

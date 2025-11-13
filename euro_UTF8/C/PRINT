@@ -1,0 +1,68 @@
+
+Maskensource: \euro\mask\FI\FIM160.        Workdatei: F:\euro\t02\WORK.001,       Datum: Freitag, 06.11.1992 - 12:40
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+
+
+
+  ù
+   Anlage: ïïïïïïïïïï       Bezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+   Anlagenkonto : Sïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   Abschreibung : Sïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+   Anlage aktiviert   : @@@@              Buchfhrungsjahr : ^^^^^^^^^
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+   Datum Ersterfassung: ``.``.``          Zeitwert Anfang  : `.```.``|,||
+   Datum Aktivierung  : ##.##.##          Zug„nge          : `.```.``|,||
+                                          a.o. Abg„nge     : `.```.``|,||
+   Anschaffungswert   : #.###.##›,››      Abschreibung     : `.```.``|,||
+   Nutzungsdauer      : ### Jahre         Zeitwert derzeit : `.```.``|,||
+   Restnutzungsdauer  : `` Jahre
+
+   j„hrliche AFA in % : ##›,››            j„hrliche AFA    : `.```.``|,||
+ ù                                                                            ù
+
+^ ^ ^ ^ ^ ^
+
+&TITEL    = "FI  STAMM Ersterfaáung Anlagen 1/1"
+
+
+&MASKHELP = FIHLP10, bila-an
+
+
+&DATEI      (0)  = MASK, D.FI1600
+&REF_DATEI  (1)  = MASK, D.FI1310
+&REF_DATEI  (2)  = MASK, D.FI1700
+
+
+Inventar/Projekt NR            -  FIHLP10, 160, 0       -  0, INVENT_NR
+Projekt/Anlagen-Kurzbezeichnun -  FIHLP10, 160, 1       -  0, MATCH_CODE
+Anlagenkonto                   -  FIHLP10, 160, 5       -  0, ANL_KONTO
+Konten-Bezeichnung             -                        -  0, ANL_K_BEZ
+Abschreibungskonto             -  FIHLP10, 160, 6       -  0, AFA_KONTO
+Konten-Bezeichnung             -                        -  0, AFA_K_BEZ
+aktiviert j/n                  -  FIHLP10, 160, 16      -  0, AKTIVIERT
+Buchfhrungsjahr               -  FIHLP10, 160, 8       -  0, BUCH_JAHR
+Anschaffungsdatum = Datum Erst -  FIHLP10, 160, 9       -  0, AN_DATUM
+Zeitwert Anfang                -  FIHLP10, 160, 11      -  0, ZEITW_ANF
+Datum Aktivierung              -  FIHLP10, 160, 16      -  0, DAT_AKTIV
+Zug„nge                        -  FIHLP10, 160, 17      -  0, ZUGANG
+Ausserordentliche Abg„nge      -  FIHLP10, 160, 19      -  0, ABGANG
+Anschaffungswert               -  FIHLP10, 160, 21      -  0, AN_WERT
+Abschreibung aktuell (diesj„hr -  FIHLP10, 160, 20      -  0, AFA
+Nutzungsdauer gesamt           -  FIHLP10, 160, 12      -  0, NUTZ_GES
+Zeitwert aktuell               -  FIHLP10, 160, 13      -  0, ZEIT_WERT
+Nutzungsdauer Rest             -  FIHLP10, 160, 14      -  0, NUTZ_RES
+j„hrliche Abschreibung in %    -  FIHLP10, 160, 15      -  0, JAHR_AFA_P
+j„hrliche Abschreibung in S    -  FIHLP10, 160, 15      -  0, JAHR_AFA
+Sachkonto                      -                        -  1, KONTONR
+Konten-Bezeichnung             -                        -  1, KONTO_BEZ
+                               -                        -  1, VOR_SALDO
+                               -                        -  3, KAPIT_KTO
+                               -                        -  0, AB_DATUM
+                               -                        -  4, Y_CLOSED
+

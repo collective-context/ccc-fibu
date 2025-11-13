@@ -1,0 +1,221 @@
+
+
+
+ ù
+    Art.Nr.:ïïïïïïïïïïïïïïïï Kurzb.: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    Artikeltext 1: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Artikeltext 2: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+    Lieferant: ïïïïïïïïïïïïïïïïïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    Mengen-Einheit: @@@@@@@@@@ ^^^^^^^^^^^^^^^^^^^^^^^ = ```.```.``|,|||| ^^^^
+
+    Preis-Einheit : @@@@@@@@@@@@@@@@@@@@@  MwSt. -Satz : @@@@@@@@@@@@@
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+                   Bezeichnung       Netto-Preis      Brutto-Preis
+                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+           VKP 1  ^^^^^^^^^^^^ :    #.###.##›,››      #.###.##›,››
+           VKP 2  ^^^^^^^^^^^^ :    #.###.##›,››      #.###.##›,››
+           VKP 3  ^^^^^^^^^^^^ :    #.###.##›,››      #.###.##›,››
+           VKP 4  ^^^^^^^^^^^^ :    #.###.##›,››      #.###.##›,››
+ ù         VKP 5  ^^^^^^^^^^^^ :    #.###.##›,››      #.###.##›,››            ù
+^ ^ ^
+^ ^
+^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
+^ ^
+
+>>Mask:   STM130
+>>Prog.:  ST1100.C
+>>Update: 01.06.91
+
+&TITEL    = "ST  STAMM Anlegen Artikel/Leistungen 1/x"
+&FRAME    = 0, 0, 0, 0, "Žndern Artikel oder Leistungen", 2
+&SEQUENZ  = 00,02,03,01,04,06,10,11,13,14,16,17,19,20,22,23,25,26
+
+&MASKHELP = AUHLP10, art-st
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1300
+&REF_DATEI  (1)  = MASK, D.ST1200
+&REF_DATEI  (2)  = MASK, D.ST1400
+&PARA_READ  (3)  = MASK, L.SYP_02
+&PARA_READ  (4)  = MASK, L.SYP_01
+&DRU_DATEI  (5)  = MASK, D.DU1000
+>>&REF_DATEI(7)  = MASK, D.FI1310
+
+>>Artikelnummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+&ADD_MATCH  (+-) = "Match-Code                              ", 0, MATCH_CODE
+  &HELPTEXT (+-) = STHLP10, 130, 0
+  &DATA     (+-) = 0, ARTNR
+  &MODUS    (+-) = PREPARE
+
+>>Bezeichnung zur Suche
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Match-Code                              ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+  &HELPTEXT (+-) = STHLP10, 130, 1
+  &DATA     (+-) = 0, MATCH_CODE
+  &MODUS    (+-) = PREPARE
+
+>>Artikeltext 1
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Bezeichnung 1                           ", 0, BEZ_1
+&ADD_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+  &HELPTEXT (+-) = STHLP10, 130, 10
+  &DATA     (+-) = 0, BEZ_1
+  &MODUS    (+-) = PREPARE
+
+>>Artikeltext 2
+  &HELPTEXT (+)  = STHLP10, 130, 2
+  &DATA     (+-) = 0, BEZ_2
+  &MODUS    (+-) = PREPARE
+
+>>Lieferanten-Nummer
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Lieferant                 ", 1, MATCH_CODE
+&ADD_MATCH  (+-) = "Lieferanten-Nummer   ", 1, LIEFNR
+  &HELPTEXT (+-) = STHLP10, 130, 3
+  &REF_DATA (+-) = 1, LIEFNR, 0, LIEFNR
+
+>>Lieferanten-Kurzbezeichnung
+&REF_KEY    (+)
+  &HELPTEXT (+-)  = STHLP10, 130, 4
+  &DATA     (+-) = 1, MATCH_CODE
+  &MODUS    (+-) = PREPARE
+
+>>Mengen-Einheit
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Match-Code                                 ", 2, MG_MATCH
+&ADD_MATCH  (+-) = "Bezeichnung   ", 2, MG_BEZ
+  &HELPTEXT (+-)  = STHLP10, 130, 17
+  &REF_DATA (+-) = 2, MG_BEZ, 0, MENGENEINH
+  &MODUS    (+-) = PREPARE
+
+>>Match-Code Mengen-Einheit
+&REF_KEY    (+)
+  &DATA     (+-) = 2, MG_MATCH
+
+>>Umrechnungsfaktor
+  &DATA     (+) = 2, UM_RECH
+
+>>Basiseinheit
+  &DATA     (+)  = 2, BASIS_EH
+  &CHOICE   (+-) = "Basis-Einheit",\
+                 "l","1",  "kg","2",  "mý","3",  "Stk","4",\
+                 "m","5",  "m3","6",  "KW","7",  "min","8"
+
+>>Preiseinheit
+  &HELPTEXT (+)  = STHLP10, 130, 19
+  &DATA     (+-) = 0, PREINHKZ
+  &MODUS    (+-) = PREPARE
+  &DEFAULT  (+-) = "0"
+  &CHOICE   (+-) = "Preis-Einheit",\
+                 "pro Einheit","0",  "pro 10 Einheiten","1",\
+                 "pro 100 Einheiten","2",  "pro 1000 Einheiten","3"
+
+>>MWST-Satz (aus der Datei SYPARA)
+  &HELPTEXT (+)  = STHLP10, 130, 15
+  &DATA     (+-) = 0, MWST
+  &MODUS    (+-) = PREPARE
+
+
+>>Text zu Verkaufs-Preis 1
+  &HELPTEXT (+)  = STHLP10, 130, 6
+  &DATA     (+-) = 4, TXT_VKP_01
+
+>>Netto-Verkaufs-Preis 1
+  &HELPTEXT (+)  = STHLP10, 130, 6
+  &DATA     (+-) = 0, VKPR1
+
+>>Brutto-Verkaufs-Preis 1
+  &HELPTEXT (+)  = STHLP10, 130, 8
+  &DATA     (+-) = 5, FELD_1
+
+>>Text zu Verkaufs-Preis 2
+  &HELPTEXT (+)  = STHLP10, 130, 6
+  &DATA     (+-) = 4, TXT_VKP_02
+
+>>Netto-Verkaufs-Preis 2
+  &HELPTEXT (+)  = STHLP10, 130, 6
+  &DATA     (+-) = 0, VKPR2
+
+>>Brutto-Verkaufs-Preis 2
+  &HELPTEXT (+)  = STHLP10, 130, 8
+  &DATA     (+-) = 5, FELD_2
+
+>>Text zu Verkaufs-Preis 3
+  &HELPTEXT (+)  = STHLP10, 130, 6
+  &DATA     (+-) = 4, TXT_VKP_03
+
+>>Netto-Verkaufs-Preis 3
+  &HELPTEXT (+)  = STHLP10, 130, 6
+  &DATA     (+-) = 0, VKPR3
+
+>>Brutto-Verkaufs-Preis 3
+  &HELPTEXT (+)  = STHLP10, 130, 8
+  &DATA     (+-) = 5, FELD_3
+
+>>Text zu Verkaufs-Preis 4
+  &HELPTEXT (+)  = STHLP10, 130, 6
+  &DATA     (+-) = 4, TXT_VKP_04
+
+>>Netto-Verkaufs-Preis 4
+  &HELPTEXT (+)  = STHLP10, 130, 6
+  &DATA     (+-) = 0, VKPR4
+
+>>Brutto-Verkaufs-Preis 4
+  &HELPTEXT (+)  = STHLP10, 130, 8
+  &DATA     (+-) = 5, FELD_4
+
+>>Text zu Verkaufs-Preis 5
+  &HELPTEXT (+)  = STHLP10, 130, 6
+  &DATA     (+-) = 4, TXT_VKP_05
+
+>>Netto-Verkaufs-Preis 5
+  &HELPTEXT (+)  = STHLP10, 130, 6
+  &DATA     (+-) = 0, VKPR5
+
+>>Brutto-Verkaufs-Preis 5
+  &HELPTEXT (+)  = STHLP10, 130, 8
+  &DATA     (+-) = 5, FELD_5
+
+>> ___ jetzt HIDE:
+  &DATA_H   (+)  = 0, ERLOES_KT
+  &DATA_H   (+)  = 0, AUFWAND_KT
+  &DATA_H   (+)  = 0, BESTAND_KT
+>>  &DATA_H   (+)  = 7, KONTONR
+>>  &DATA_H   (+)  = 7, KONTO_BEZ
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>Mandanten-Nummer (Dummy Feld)
+&REF_KEY    (+)
+  &DATA_H   (+-) = 3, MAND_02
+  &DATA_H   (+)  = 3, NR_ART      >>Nummernkreis Artikelstamm
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)
+  &DATA_H   (+-) = 4, MAND_01     >>Mandanten-Nummer
+  &DATA_H   (+)  = 4, UST_1       >>Steuersatz 1 - 8
+  &DATA_H   (+)  = 4, UST_2
+  &DATA_H   (+)  = 4, UST_3
+  &DATA_H   (+)  = 4, UST_4
+  &DATA_H   (+)  = 4, UST_5
+
+  &DATA_H   (+)  = 4, UST_6
+  &DATA_H   (+)  = 4, UST_7
+  &DATA_H   (+)  = 4, UST_8
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+  &REF_DATA (+)  = 2, BASIS_EH, 0, MENGENBAS
+  &DATA     (+)  = 0, MENGENBAS
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+
+>>&DATA     (+)  = 0, MINDEST_BE
+

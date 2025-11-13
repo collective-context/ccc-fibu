@@ -1,0 +1,15 @@
++-------------------------------------------------------------------------+
+|                      PC/MS-DOS  fÅr Insider                           |
+|-------------------------------------------------------------------------|
+| Testprogramm fÅr die Funktion-Calls 2Eh,30h,33h,38h,54h,59h             |
+|                                                                         |
+| Die Funktionen befinden sich im Quelltext unter dem Namen FLAGS.C       |
+| Sie kînnen in Programmen verwendet werden, indem man die Library        |
+| DOSLIBS.LIB beim Linken als zusÑtzliche Library angibt.                 |
++-------------------------------------------------------------------------+
+
+Dieses Programm gibt Auskunft Åber einige DOS- und landesspezifische Daten.
+
+
+
+

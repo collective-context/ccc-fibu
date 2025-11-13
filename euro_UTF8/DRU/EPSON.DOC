@@ -1,0 +1,10 @@
+Die wichtigsten Druckersequenzen fÅr Espon FX 80:
+
+Amerikan. Zeichensatz =   \027 R \000
+Deutscher Zeichensatz =   \027 R \002
+
+PTest |\[]{}  \027 P   \027 \018  =  10 Cpi /  80 Zeichen
+PTest |\[]{}  \027 P   \027 \015  =  15 Cpi / 126 Zeichen
+MTest |\[]{}  \027 M              =  12 Cpi /  90 Zeichen
+
+

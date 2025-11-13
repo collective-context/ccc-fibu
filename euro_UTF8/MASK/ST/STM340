@@ -1,0 +1,165 @@
+
+
+
+  Artikel Bezeichnung               Inventur EH      EK-Preis/EH        Betrag
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  ïïïïïïï @@@@@@@@@@@@@@@@@@@@@@@ ###.##›,›› @@@@@ ##.###.##›,›› ``.```.``|,||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ù                                                                            ù
+
+^ ^ ^ ^ ^   ^ ^
+^ ^ ^
+^ ^ ^       ^ ^
+^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
+
+>>Mask:   FIM340
+>>Prog.:  ST1100.C
+>>Update: 01.06.91
+
+&TITEL    = "FI  STAMM Er”ffnungsbilanz Artikel"
+&FRAME    = 0,0,0,0, "Er”ffnungsbilanz Artikel", 2
+>>&SEQUENZ  = 00,04
+
+&BROWSE     = 0,5
+&SCROLL     = 4,1,21,78
+
+&MASKHELP = FIHLP10, sach-an
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1300
+&DRU_DATEI  (1)  = MASK, D.ST4500
+&REF_DATEI  (2)  = MASK, D.ST1400
+&PARA_READ  (3)  = MASK, L.SYP_01
+&PARA_READ  (4)  = MASK, L.SYP_02
+>>&PARA_READ  (5)  = MASK, D.SYP_50  >>Konsten des aktuellen Jahres
+
+>>--- Positionsteil
+>>Artikelnummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+&ADD_MATCH  (+-) = "Match-Code                              ", 0, MATCH_CODE
+  &HELPTEXT (+-) = STHLP10, 130, 0
+  &DATA     (+-) = 0, ARTNR
+
+>>Bezeichnung zur Suche
+>>&REC_KEY    (+)
+>>&REC_MATCH  (+-) = "Match-Code                              ", 0, MATCH_CODE
+>>&ADD_MATCH  (+-) = "Artikel-Nummer   ", 0, ARTNR
+  &HELPTEXT (+)  = STHLP10, 130, 1
+  &DATA     (+-) = 0, MATCH_CODE
+  &MODUS    (+-) = PREPARE
+
+>>Menge
+  &HELPTEXT (+)  = AUHLP10, 250, 11
+  &DATA     (+-) = 0, INVEN_AKT
+
+>>Mengen-Einheit
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Bezeichnung   ", 2, MG_BEZ
+&ADD_MATCH  (+-) = "Match-Code                                 ", 2, MG_MATCH
+  &HELPTEXT (+-) = STHLP10, 130, 17
+  &REF_DATA (+-) = 2, MG_BEZ, 0, MENGENEINH
+  &MODUS    (+-) = PREPARE
+
+>>letzter Netto-Einkaufs-Preis
+  &HELPTEXT (+)  = STHLP10, 131, 20
+  &DATA     (+-) = 0, IN_AKT_EKP
+
+>>Summe = INVEN_AKT*IN_AKT_EKP
+  &DATA     (+)  = 1, _SUMME
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _ANDERUNG   >>Žnderung Menge*EKPR1
+  &DATA_H   (+)  = 0, INVEN_ANF   >>Inventur-Anfangsbestand
+  &DATA_H   (+)  = 0, BESTAND_KT  >>Bezeichnung Mengeneinheit
+  &DATA_H   (+)  = 0, MENGENEINH  >>Bezeichnung Mengeneinheit
+  &DATA_H   (+)  = 2, MG_MATCH    >>Mengeneinheit Matchcode
+
+  &DATA_H   (+)  = 3, MAND_01     >>Mandanten-Nummer Festkonten
+  &DATA_H   (+)  = 3, KAPIT_KTO   >>Kapitlakonto
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>Kennzeichen Texterg„nzung
+  &HELPTEXT (+)  = STHLP10, 131, 19
+  &DATA_H   (+-) = 0, ARTTEXTKZ
+  &DEFAULT  (+-) = "n"
+  &CHOICE   (+-) = "Kennzeichen Texterg„nzung",  "ja",j,  "nein",n
+
+>>Bewertungs-Satz
+  &HELPTEXT (+)  = STHLP10, 131, 13
+  &DATA_H   (+-) = 0, BEWERTSA
+  &DEFAULT  (+-) = "0"
+  &CHOICE   (+-) = "Bewertungs-Satz",  "0",0,  "1",1,  "2",2,  "3",3
+
+>>Lagerfhrung j/n
+  &HELPTEXT (+)  = STHLP10, 131, 24
+  &DATA_H   (+-) = 0, LAGERKZ
+  &DEFAULT  (+-) = "j"
+  &CHOICE   (+-) = "Lagerfhrung",  "ja",j,  "nein",n
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 0, IN_ANF_EKP
+  &DATA_H   (+)  = 0, LETZ_INVEN
+  &DATA_H   (+)  = 0, EKPR1
+
+&REF_KEY    (+)
+  &DATA_H   (+-) = 4, MAND_02
+  &DATA_H   (+)  = 4, NR_ART      >>Nummernkreis Artikelstamm
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)
+  &DATA_H   (+-) = 3, MAND_01     >>Mandanten-Nummer
+  &DATA_H   (+)  = 3, UST_1       >>Steuersatz 1 - 8
+  &DATA_H   (+)  = 3, UST_2
+  &DATA_H   (+)  = 3, UST_3
+  &DATA_H   (+)  = 3, UST_4
+  &DATA_H   (+)  = 3, UST_5
+
+  &DATA_H   (+)  = 3, UST_6
+  &DATA_H   (+)  = 3, UST_7
+  &DATA_H   (+)  = 3, UST_8
+
+>>&MODUS    (+-) = PREPARE
+>>&DEFAULT  (+-) = "n"
+  Artikel Kurzbezeichnung Konto   Inventur      Menge EH         Preis/EH N U%
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  ïïïïïïï @@@@@@@@@@@@@@@ @@@@@ ```.``|,|| ###.##›,›› @@@@@ ##.###.##›,›› @ @@
+
+>>Netto/Brutto
+  &HELPTEXT  (+)  = AUHLP10, 250, 14
+  &DATA      (+-) = 0, NETTO_BRUT
+  &DEFAULT   (+-) = "n"
+  &CHOICE    (+-) = "Netto/Brutto",\
+                    "Netto = plus MwSt",n,  "Brutto = incl. MwSt",b
+
+>>Umsatzsteuer-Schlssel (0/1-8)
+  &HELPTEXT  (+)  = AUHLP10, 250, 15
+  &DATA      (+-) = 0, UST_SATZ
+
+  &DATA_H   (+)  = 0, INVEN_ANF   >>Inventur-Anfangsbestand
+  &DATA_H   (+)  = 0, EKPR_ANF    >>Einkaufspreis-Anfangsbestand
+  &DATA_H   (+)  = 1, _WERT_ANF   >>Inventur-Anfangsbestand Wert
+  &DATA_H   (+)  = 0, INVEN_AKT   >>Inventur-Endbestand
+  &DATA_H   (+)  = 1, _WERT_AKT   >>Inventur-Betrag
+  &DATA_H   (+)  = 1, _DIFF_BET   >>Inventur-Summe
+
+

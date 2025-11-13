@@ -1,0 +1,87 @@
+
+
+
+
+
+
+                      ù
+                           Bezeichnung zu den 5 Artikel-Vk-Preisen
+                           ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                           Verkaufs-Preis ^:   @@@@@@@@@@@
+
+                           Verkaufs-Preis ^:   @@@@@@@@@@@
+
+                           Verkaufs-Preis ^:   @@@@@@@@@@@
+
+                           Verkaufs-Preis ^:   @@@@@@@@@@@
+
+                           Verkaufs-Preis ^:   @@@@@@@@@@@  ^
+
+                      ù                                                     ù
+
+^
+
+>>Mask:   STM096
+>>Prog.:  ST1100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  STAMM Bezeichnung der VK-Preise"
+&FRAME    = 0, 0, 0, 0, "ÄBezeichnung der Artikel VK-Preise" 2
+>>SEQUENZ =
+
+&MASKHELP = STHLP10, art-anl
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, L.SYP_01
+
+>>Wert zu Verkaufs-Preis 1
+  &DATA     (0)  = 0, WER_VKP_01
+  &DEFAULT  (+-) = "1"
+
+>>Text zu Verkaufs-Preis 1
+  &HELPTEXT (+)  = STHLP10, 096, 001
+  &DATA     (+-) = 0, TXT_VKP_01
+
+>>Wert zu Verkaufs-Preis 2
+  &DATA     (+)  = 0, WER_VKP_02
+  &DEFAULT  (+-) = "2"
+
+>>Text zu Verkaufs-Preis 2
+  &HELPTEXT (+)  = STHLP10, 096, 001
+  &DATA     (+-) = 0, TXT_VKP_02
+
+>>Wert zu Verkaufs-Preis 3
+  &DATA     (+)  = 0, WER_VKP_03
+  &DEFAULT  (+-) = "3"
+
+>>Text zu Verkaufs-Preis 3
+  &HELPTEXT (+)  = STHLP10, 096, 001
+  &DATA     (+-) = 0, TXT_VKP_03
+
+>>Wert zu Verkaufs-Preis 4
+  &DATA     (+)  = 0, WER_VKP_04
+  &DEFAULT  (+-) = "4"
+
+>>Text zu Verkaufs-Preis 4
+  &HELPTEXT (+)  = STHLP10, 096, 001
+  &DATA     (+-) = 0, TXT_VKP_04
+
+>>Wert zu Verkaufs-Preis 5
+  &DATA     (+)  = 0, WER_VKP_05
+  &DEFAULT  (+-) = "5"
+
+>>Text zu Verkaufs-Preis 5
+  &HELPTEXT (+)  = STHLP10, 096, 001
+  &DATA     (+-) = 0, TXT_VKP_05
+
+>>Endmarke fr DyChoice
+  &DATA_H   (+)  = 0, TXT_VKP_N
+  &DEFAULT  (+-) = "(null)"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+&REC_KEY    (+)                   >>Mandanten-Nummer
+  &DATA_H   (+-) = 0, MAND_01
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+

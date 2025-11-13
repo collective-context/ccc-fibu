@@ -1,0 +1,66 @@
+
+
+
+
+              ù                                             ù
+                KUNDE      : @@@@@@@@@@@@@@@@@@@@ (= Kunde)
+                             ^ ^
+                DIENSTAG   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                MITTWOCH   : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                DONNERSTAG : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                FREITAG    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+                SAMSTAG    : @@@@@@@@@@
+
+                SONNTAG    : @@@@@@@@@@
+              ù                                             ù
+
+
+
+>>Mask:   STM002
+>>Prog.:  ST1100.C
+>>Update: 24.03.92
+
+&TITEL    = "Arbeitsplan2"
+&FRAME    = 0, 0, 0, 0, "Arbeitsplan2", 2
+
+&INDEX    = BASIS
+
+    &DATEI      (0)  = MASK, D.ST1100
+>>  &DATEI      (0)  = MASK, D.NEULEX  /Probe zu Neulex siehe stm001
+
+>> &PARA_DATEI (1)  =   MASK, L.SYP_02
+
+>>Kunden-Nummer (S)
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Kundennummer ", 0, KUNDE
+&ADD_MATCH  (+-) = "Kurzbezeichnung               ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Straáe                  ", 0, STRASSE
+  &HELPTEXT (+-) = STHLP10, 110, 0
+  &DATA     (+-) = 0, KUNDE
+  &MODUS    (+-) = PREPARE
+
+  &DATA_H   (+) = 0, MATCH_CODE
+  &DATA_H   (+) = 0, STRASSE
+
+  &DATA     (+) = 0, DIENSTAG
+  &HELPTEXT (+-) = STHLP10, 002, 1
+
+  &DATA     (+) = 0, MITTWOCH
+  &HELPTEXT (+-) = STHLP10, 002, 2
+
+  &DATA     (+) = 0, DONNERSTAG
+  &HELPTEXT (+-) = STHLP10, 110, 0
+
+  &DATA     (+) = 0, FREITAG
+
+  &DATA     (+) = 0, SAMSTAG
+
+  &DATA     (+) = 0, SONNTAG
+
+
+
+

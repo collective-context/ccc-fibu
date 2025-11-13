@@ -1,0 +1,47 @@
+
+
+
+
+                         ù                                             ù
+                            Artikel-Zusatztext zu ^^^^^^^^^^^^^^^^^^^^
+                            ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          ù                                            ù
+
+
+>>Mask:   STM133
+>>Prog.:  ST1100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  STAMM Artikel-Zusatz-Texte"
+&FRAME    = 0, 0, 0, 0, "Anlegen Artikelzusatztext", 2
+>>SEQUENZ =
+
+&BLOCK    = 1,1
+&SCROLL   = 6,0,20,79
+
+&DATEI      (0)  = MASK, D.ST1330
+
+>>Artikel-Nummer
+&REC_KEY    (0)
+  &DATA     (+-) = 0, ARTNR_Z
+
+>>Positionsteil
+>>Artikel-Zusattext
+  &HELPTEXT (+) = STHLP10, 111, 00
+  &DATA     (+-) = 0, ART_ZUTXT
+
+

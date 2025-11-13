@@ -1,22 +1,11 @@
 // (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:27:30 - Wed
 
-// ╔══════════════════════════════════════════════════════════════════════════╗
-// ║  Programme-Name: ST1100.C	      Revision: 1.3	    (C) 1989/1991     ║
-// ║  Function	    : FiCore Stammdaten für:				      ║
-// ║		      Anlegen, Ändern Kunden, Lieferanten, Artikel,	      ║
-// ║			Mitarbeiter, ...				      ║
-// ║									      ║
-// ║		      Anlegen, Ändern MwSt-Sätze, Werbetexte, Versandart,     ║
-// ║			Fremdwährung, Nummernkreise , Landeswährung,	      ║
-// ║			Artikel-Preis-Texte, Buchungstext, Mahntexte	      ║
-// ║									      ║
-// ║		      Textverarbeitung: Anlegen Kopftext		      ║
-// ║									      ║
-// ║									      ║
-// ║  Rev.-Date     : 01.05.1991, Graz		 Update: 06.08.1991, Graz     ║
-// ║  Author	    : Peter Mayer		 Author: Peter Mayer	      ║
-// ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz     ║
-// ╚══════════════════════════════════════════════════════════════════════════╝
+// recode@ /CCC by CCCORE                  Letztes Update: 2025-01-14 / 16:18
+/*+-------------------------------------------------------------------------+
+  | Programm: st1100.cpp                                    Revision: 1.4 |
+  | Function: Stammdaten für: ║                                            |
+  | Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) |
+  +-------------------------------------------------------------------------+*/
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║			     Deklarations-Dateien			      ║
 // ╚══════════════════════════════════════════════════════════════════════════╝

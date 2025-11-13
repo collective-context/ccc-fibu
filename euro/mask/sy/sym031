@@ -1,0 +1,103 @@
+
+
+
+
+  ù
+     Schmal   LineDraw         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Normal   LineDraw         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Optional LineDraw         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Groá     LineDraw         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     šberschriften 1           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     šberschriften 2           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     šberschriften 3           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     šberschriften 4           :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Texte 1                   :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Texte 2                   :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Texte 3                   :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Texte 4                   :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Sonderschriften 1         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Sonderschriften 2         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Sonderschriften 3         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     Sonderschriften 4         :  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  ù                                                                          ù
+
+>>Mask:   SYM031
+>>Prog.:  SY1100.C
+>>Update: 06.08.91
+
+&TITEL    = "SY  STAMM Anlegen Druckerparameter 2/3"
+&FRAME    = 0,0,0,0 "Anlegen/Žndern Drucker-Parameter", 2
+&SEQUENZ  = 
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, L.SYPRINT
+
+>>Unterstreichen ein
+  &HELPTEXT (0)  = SYHLP10, 031, 00
+  &DATA     (+-) = 0, UNTER_EIN
+
+>>Unterstreichen aus
+  &HELPTEXT (+)  = SYHLP10, 031, 01
+  &DATA     (+-) = 0, UNTER_AUS
+
+>>Fett ein
+  &HELPTEXT (+)  = SYHLP10, 031, 02
+  &DATA     (+-) = 0, FETT_EIN
+
+>>Fett aus
+  &HELPTEXT (+)  = SYHLP10, 031, 03
+  &DATA     (+-) = 0, FETT_AUS
+
+>>Breit ein
+  &HELPTEXT (+)  = SYHLP10, 031, 04
+  &DATA     (+-) = 0, BREIT_EIN
+
+>>Breit aus
+  &HELPTEXT (+)  = SYHLP10, 031, 05
+  &DATA     (+-) = 0, BREIT_AUS
+
+>>Kursiv ein
+  &HELPTEXT (+)  = SYHLP10, 031, 06
+  &DATA     (+-) = 0, KURSIV_EIN
+
+>>Kursiv aus
+  &HELPTEXT (+)  = SYHLP10, 031, 07
+  &DATA     (+-) = 0, KURSIV_AUS
+
+>>frei 1 ein
+  &HELPTEXT (+)  = SYHLP10, 031, 10
+  &DATA     (+-) = 0, FREI_1_EIN
+
+>>frei 1 aus
+  &HELPTEXT (+)  = SYHLP10, 031, 11
+  &DATA     (+-) = 0, FREI_1_AUS
+
+>>frei 2 ein
+  &HELPTEXT (+)  = SYHLP10, 031, 10
+  &DATA     (+-) = 0, FREI_2_EIN
+
+>>frei 2 aus
+  &HELPTEXT (+)  = SYHLP10, 031, 11
+  &DATA     (+-) = 0, FREI_2_AUS
+
+>>frei 3 ein
+  &HELPTEXT (+)  = SYHLP10, 031, 10
+  &DATA     (+-) = 0, FREI_3_EIN
+
+>>frei 3 aus
+  &HELPTEXT (+)  = SYHLP10, 031, 11
+  &DATA     (+-) = 0, FREI_3_AUS
+
+>>frei 4 ein
+  &HELPTEXT (+)  = SYHLP10, 031, 8
+  &DATA     (+-) = 0, FREI_4_EIN
+
+>>frei 4 aus
+  &HELPTEXT (+)  = SYHLP10, 031, 9
+  &DATA     (+-) = 0, FREI_4_AUS
+
+

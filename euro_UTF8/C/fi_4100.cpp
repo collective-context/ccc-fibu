@@ -1,14 +1,11 @@
 // (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 12:23:14 - Wed
 
-// ╔══════════════════════════════════════════════════════════════════════════╗
-// ║  Programme-Name: FI_4100.C       Revision: 1.3	    (C) 1989/1991     ║
-// ║  Function	    : Initialisieren -> Erf. Buchungen, Erfassen Geldbuch.    ║
-// ║		      Erfassen Eigenbedarf, Erfassen Lagerbewegungen	      ║
-// ║									      ║
-// ║  Rev.-Date     : 01.05.1991, Graz		 Update: 01.05.1991, Graz     ║
-// ║  Author	    : Peter Mayer		 Author: Peter Mayer	      ║
-// ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz     ║
-// ╚══════════════════════════════════════════════════════════════════════════╝
+// recode@ /CCC by CCCORE                  Letztes Update: 2025-01-14 / 16:18
+/*+-------------------------------------------------------------------------+
+  | Programm: fi_4100.cpp                                   Revision: 1.4 |
+  | Function: Initialisieren -> Erf. Buchungen, Erfassen Geldbuch. ║       |
+  | Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) |
+  +-------------------------------------------------------------------------+*/
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║			     Deklarations-Dateien			      ║
 // ╚══════════════════════════════════════════════════════════════════════════╝

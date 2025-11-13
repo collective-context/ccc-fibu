@@ -1,0 +1,128 @@
+ïï  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ïï  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ïï  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ïï  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ïï  ##.###.##›,››
+ïï  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ïï  ``.```.``|,||
+^^  ``.```.``|,||
+^^  ``.```.``|,||
+ïï
+^
+
+&TITEL = "AU  Dummy f. Druck Ang./Auftr./Rechn."
+&REM   Source:  AUM2101
+&REM   Maske :  #2101
+&REM   Progr.:  AU2300.EXE
+
+&REM Historie
+&REM Stand: 14.03.90
+
+&FRAME = 0, 0, 0, 0, "Dummy", 2
+&INDEX = "BASIS"
+
+&DATEI     (0) = EURODATA, D.AU2100
+&REF_DATEI (1) = EURODATA, D.AU2110
+&REF_DATEI (2) = EURODATA, D.AU2101
+
+&REM DRU_DATEI (1) = EURODATA, D.AU2110
+
+&REM Artikel-Position
+&REM     Positions-Kennzeichen
+         &DATA     (00) = 2, ARTIK_POS
+
+&REM     Rabattbetrag
+         &DATA     (+) = 2, AR_RA_BETR
+
+&REM Zusatztext-Position
+&REM     Positions-Kennzeichen
+         &DATA     (+) = 2, ZUSATZ_POS
+
+&REM     Textzeile
+         &DATA     (+) = 2, ZUSATZ_TXT
+
+&REM Text-Position
+&REM     Positions-Kennzeichen
+         &DATA     (+) = 2, TEXT_POS
+
+&REM     Textzeile
+         &DATA     (+) = 2, TEXTZEILE
+
+&REM Gruppenposition
+&REM     Positions-Kennzeichen
+         &DATA     (+) = 2, GRUPP_POS
+
+&REM     Gruppen-Text
+         &DATA     (+) = 2, GRUPP_TEXT
+
+&REM Summenposition
+&REM     Positions-Kennzeichen
+         &DATA     (+) = 2, SUMM_POS
+
+&REM     Betrag incl. Rabatt
+         &DATA     (+) = 2, SU_GESAMT
+
+&REM Steuerposition
+&REM     Positionskennzeichen
+         &DATA     (+) = 2, ST_POS_KZ
+
+&REM     Steuerposition
+         &DATA     (+) = 2, ST_POS_TXT
+
+&REM Endsummenposition
+&REM     Positions-Kennzeichen
+         &DATA     (+) = 2, ESU_POS
+
+&REM     Endsumme
+         &DATA     (+) = 2, ESU_GESAMT
+
+&REM Mwst.Zeile
+&REM     Positions-Kennzeichen
+         &DATA     (+) = 2, BRU_POS_1
+
+&REM     Steuer Betrag
+         &DATA     (+) = 2, BRU_STEUER
+
+&REM Schlusszeile
+&REM     Positions-Kennzeichen
+         &DATA     (+) = 2, BRU_POS_2
+
+&REM     Endsumme
+         &DATA     (+) = 2, BRU_GESAMT
+
+&REM Auswahl-Position
+         &DATA     (+) = 2, AUSWAHL
+
+&REM Auswahl-Position
+         &DATA     (+) = 2, AUSWAHL
+
+&REM Artikel-Position
+&BLOCK2 = "ARTIKEL", 0, 1
+
+&REM Zusatztext-Position
+&BLOCK2 = "ZUSATZTEXT", 2, 3
+
+&REM Allgemeine Textposition
+&BLOCK2 = "ALLGEMEINER_TEXT", 4, 5
+
+&REM Titel-Position
+&BLOCK2 = "TITEL", 6, 7
+
+&REM Gruppensummen-Position
+&BLOCK2 = "GRUPPENSUMME", 8, 9
+
+&REM Seitenumbruch
+&BLOCK2 = "UMBRUCH", 10, 11
+
+&REM Endsummme
+&BLOCK2 = "ENDSUMME", 12, 13
+
+&REM Mwst.-Zeile
+&BLOCK2 = "MWST_ZEILE", 14, 15
+
+&REM Schlusszeile
+&BLOCK2 = "SCHLUSSZEILE", 16, 17
+
+&REM Auswahl
+&BLOCK2 = "AUSWAHL", 18
+

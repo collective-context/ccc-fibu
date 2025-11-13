@@ -7,7 +7,7 @@
 //
 // Datum        : 30.04.1991, Graz
 // Author       : Peter Mayer
-// Copyright(C) : FiCore-WAREvertrieb, A-8010 Graz
+// Copyright(C) : FiCore-WAREvertrieb, https://Creative-Context.org
 //------------------------------------------------------------------------------
 
 #ifndef APP_TYPE_HEADER

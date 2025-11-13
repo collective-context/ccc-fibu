@@ -1,0 +1,136 @@
+Ú Wichtige WINware- SOFT Programmdateien ¿
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ                          
+                                                                    
+\                = Hauptverzeichnis
+  CONFIG   SYS   Es muá mind. FILES=20 und BUFFERS=20 eingestellt sein.
+  CONFIG   EUR   Beispiel fr CONFIG.SYS
+  AUTOEXEC EUR   Beispiel fr AUTOEXEC.BAT
+  AUTOEXEC BAT   Es muá die DOS-Umgebungsvariable USER belegt werden
+                 Z.B.:  ¯SET USER=C:\EURO\T01®                      
+                                                                    
+\DOS             = Verzeichnis muá im PATH-Befehl enthalten sein.   
+  BTRIEVE  EXE   Diese drei Dateien mssen unbedingt in dem ¯DOS® Verz.
+  BSTOP    EXE   liegen, indem Sie in der AUTOEXEC.BAT Datei mit dem
+  START    BAT   Befehl PATH den Pfad gelegt haben:  PATH C:\DOS
+
+  START    EUR   Beispiel fr die Datei START.BAT
+                                                                    
+  BREQUEST EXE   Event. vorhanden. Ersetzt im Novell-Netwerk BTRIEVE.EXE
+  BUTIL    EXE   Event. weitere Hilfsprogr. (bearb. Btrieve-Dateien)
+  ASK      EXE   M”glichkeit in AUTOEXEC.BAT Fragen zu stellen.     
+                                                                    
+\EURO\T01        = Teilnehmerverzeichnis                            
+  MENU     EXE   Eigentliches Menprogramm.                         
+  MENU     BTR   Dazugeh”rige Btriev-Datei.                         
+                                                                    
+  PW       BAT   Startet das Menprogramm.                          
+  EUROINST       Informationen fr alle WINware- Programme. (Zuletzt
+                 verwend. Druckern, Mandant usw.) Wenn nicht vorhan-
+                 den wird sie automatisch angelegt.                 
+                                                                    
+  PWCHANGE BAT   Damit wird festgelegt welches Startmen verwendet  
+  PW0      BAT   + PW1.BAT + PW2.BAT                  werden soll.
+                                                                    
+  FF       BAT   Wird im Men verwendet bei: ¯Druck Seitenvorschub® 
+  F_BACK   BAT   Wird im Men verwendet bei: ¯Daten sichern® ...
+  F_REST   BAT
+  SICHERN  BAT                                                      
+  EINSPIEL BAT                                                      
+                                                                    
+  WORD     BAT   Beispiel fr Batchdatei im Men.                   
+  DOS      BAT   Beispiel: Aufruf der DOS 5.0 Shell.
+  INST_01  043   Beispiel einer Meldung, die in einer BATCH-DATEI mit
+                 ¯type INST_01.043® aufgerufen wird.                
+                                                                    
+  EUINST   BAT   Wird im Men verwendet bei: ¯Neue Version einkopieren®
+  HI_*     BAT   Wird im Hilfemen aufgerufen.
+ 
+\euro\exe        = Programmverzeichnis                              
+  SY1100   EXE   Druckerwechsel, Mandantenwechsel, „ndern Mendatei 
+  SY4100   EXE   Druck Mendatei                                    
+  SYMASK   043   Dazugehrige Btrievedatei.                          
+                                                                    
+  GERMAN_U ACS   Fr deutsche Sortierreihenfolge.                   
+  ERROR    043   Btrievedatei enth„lt die Fehlermeldungen.          
+  SHOW     COM   Hilfsprogramm fr Druck am Bildschirm.             
+  SHOWMEM  EXE   Prft die Speicherbelegung.                        
+                                                                    
+  ST1100   EXE   Stammdatenprogramm fr Applikationen               
+  ST4100   EXE   Stammdatenprogramm fr Applikationen               
+  STMASK   043   Dazugeh”rige Btrievedatei.                         
+                                                                    
+  FI1100   EXE   Spezielle Applikationen (z.B.: Anlegen Fibu).      
+  FI1500   EXE   Spezielle Applikationen (z.B.: Erfassen Fibu).     
+  FI3100   EXE   Spezielle Applikationen (z.B.: Verarbeiten Fibu).  
+  FI4100   EXE   Spezielle Applikationen (z.B.: Druck Fibu).        
+  FIMASK   043   Dazugeh”rige Btrievedatei.                         
+                                                                    
+  AU2100   EXE   Erfassen Angebote, Rechnungen, ...                 
+  AU4200   EXE   Drucken Angebote, Rechnunge, ...                   
+  AUMASK   043   Dazugeh”rige Btrievedatei.                         
+                                                                    
+\euro\hlp        = Hilfstextverzeichnis                             
+  SYHLP10  043     STHLP10  043     FIHLP10  043     AUHLP10  043   
+  SYINDEX  043     STINDEX  043     FIINDEX  043     AUINDEX  043   
+                                                                    
+\euro\dat        = Datenverezichnis                                 
+  D01          <DIR>  Jeder Mandant bekommt ein eigenes Unterverz.  
+  D02          <DIR>                                                
+                                                                    
+  SYFORM   043  Btrieve-Formulardatei fr Druck Systemprogramme.    
+  STFORM   043  Btrieve-Formulardatei fr Druck Stamm-Programme.    
+  FIFORM   043  Btrieve-Formulardatei fr Druck Fibu-Programme.     
+  AUFORM   043  Btrieve-Formulardatei fr Druck Auftragsbearb.      
+                                                                    
+  Systemdateien:                                                    
+  SYFORM   BTR  Formularr„nder     SYTEIL   BTR  Teilnehmerdaten    
+  SYPRINT* BTR  Druckersteuerkz.   SYMODEM  BTR  Parameter fr Modem
+  SYPARA   BTR  Mandantenname,...  SYP_01   BTR  Konstanten, Mwst   
+  SYP_02   BTR  Nummernkreise                                       
+                                                                    
+Bei Bedarf kann die Landesextension ¯.043® mit dem Menpunkt ¯Progr.
+Installation® ver„ndert werden. (Umkopieren der Hilfstexte, Masken- 
+Formulardateien, die jetzt mit ¯.043® enden.)                       
+                                                                    
+Danach k”nnte man die Hilfstexte in ver„nderter Form aufbauen.      
+Andere Sprache, andere Version, Schulversion ...)                   
+                                                                    
+                                                                    
+Ú Dateiaufbau der WINware- WARE Produkte ¿                          
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ                          
+                                                                    
+ ş Der Aufbau der Programm- und Dateibezeichnungen:                 
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                 
+                                                                    
+ Der Programm- oder Dateiname setzt sich zusammen aus der zwei-     
+ÿstelligen ¯ID® (Alpha-Idendifikation) und der vierstelligen        
+ ¯NUMMER®.                                                          
+                                                                    
+ Programmnamen     ³ Dateinamen        ³ Funktionen                 
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 
+ ID0000-ID0999.EXE ³ ID0000-ID0999.BTR ³ frei, event. Hilfsprogr.   
+ ID1000-ID1999.EXE ³ ID1000-ID1999.BTR ³ Stammdaten                 
+ ID2000-ID2999.EXE ³ ID2000-ID2999.BTR ³ Erfassungen                
+ ID3000-ID3999.EXE ³ ID3000-ID3999.BTR ³ Verarbeitungen             
+ ID4000-ID4999.EXE ³ ID4000-ID4999.BTR ³ Auswertungen, Drucken      
+ ID5000-ID5999.EXE ³ ID5000-ID5999.BTR ³ frei, event. Statistiken   
+                                                                    
+                                                                    
+ Zum Beispiel: ID+NUMMER = ST1100 ¯ Anlegen/ndern Kundenstamm.     
+                                                                    
+ Das ¯ID®-Kennzeichen bezeichnet die Applikation, zum Beispiel:     
+ ST=Stammdaten, FI=Fibu, AU=Auftragsbearbeitung, TE=Text, usw..     
+                                                                    
+ Die Gruppierung der vierstelligen Nummer teilt sich auf in:        
+                                                                    
+ 0000 - 0999  frei, Hilfsdaten      5000 - 5999 frei, Statistikdaten
+ 1000 - 1999  Stammdaten            6000 - 6999 frei                
+ 2000 - 2999  Erfassungsdaten       7000 - 7999 frei                
+ 3000 - 3999  Verarbeitungsdaten    8000 - 8999 frei                
+ 4000 - 4999  Druck, Dummydaten     9000 - 9999 Wartung- u. Service 
+                                                                    
+ In Ausnahmef„llen kann die Nummer auch 5-stellig sein. Z.B.: Ein   
+ M an der 5. Stelle bezeichnet die dazugeh”rige Memodatei.          
+                                                                    
+                                                                    
+

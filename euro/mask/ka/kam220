@@ -1,0 +1,137 @@
+
+
+
+  ùKundennr.  : @@@@@@@
+
+   Name 1     : @@@@@@@@                        Preisgruppe   : @@@@@@
+   Name 2     : @@@@@@@@                        Rabattgruppe  : @@@@@@
+   Strasse    : @@@@@@@@                        Rabattsatz    : @@@@@@
+   Postfach   : @@@@@@@@                        Zahlungskond. : @@@@@@
+   PLZ Ort    : @@@@@@@@                        USt.Schlssel : @@@@@@
+   Kurzbez.   : @@@@@@@@                        OP-Kennzeichen: @@@@@@
+   Telefon    : @@@@@@@@                        Rechnungskreis: @@@@@@
+   Telefax    : @@@@@@@@                        W„hrung       : @@@@@@
+   Ansprechp. : @@@@@@@@                        Sprachcode    : @@@@@@
+   Geburtstag : @@@@@@@@                        Kreditlimit   : @@@@@@
+   Briefcode  : @@@@@@@@
+                                                Auswertungskz.: @@@@@@
+   Vertreter  : @@@@@@@@                        Kundengruppe  : @@@@@@
+   Tour/Gebiet: @@@@@@@@                        Statistik     : @@@@@@
+   Rechnung an: @@@@@@@@                        Kundenkartei  : @@@@@@
+   Deb.Kredit.: @@@@@@@@                        Umsatz        : @@@@@@
+   Sammelkonto: @@@@@@@@                        Letzter Umsatz: @@@@@@
+ ù                                                                            ù
+
+>>Mask:   SYM041
+>>Prog.:  SY1100.C
+>>Update: 06.08.91
+
+&TITEL    = "SY  STAMM Mandantenstamm 1/1"
+&FRAME    = 0, 0, 0, 0, "Mandantenstamm", 2
+
+&MASKHELP = KAHLP00, kass-gr
+&INDEX    = BASIS
+
+&DRU_DATEI  (0)  = MASK, D.ST4110
+
+  &HELPTEXT (0)  = KAHLP00, 220, 0
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 1
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 2
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 3
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 4
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 5
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 6
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 7
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 8
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 9
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 10
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 11
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 12
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 13
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 14
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 15
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 16
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 17
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 18
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 19
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 20
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 21
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 22
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 23
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 24
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 25
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 26
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 27
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 28
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 29
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 30
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 31
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 220, 32
+  &DATA     (+-) = 0, FILLER
+
+
+

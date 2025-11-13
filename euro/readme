@@ -1,0 +1,11 @@
+mf4.bat -> Original FC.BAT
+
+mf4 [- ]formularnummer
+--------------------------------------------------------------------
+z.B.: mf4 4100 fuer die Sachkonten-Saldenliste
+oder: mf4 - 4100 um die Saldenliste zu entfernen.
+ÿ
+ID=FI APP=FI EXT=044 MAN=
+--------------------------------------------------------------------
+Ziel: dir \euro\dat\*.044
+

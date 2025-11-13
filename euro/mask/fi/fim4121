@@ -1,0 +1,122 @@
+
+
+
+
+
+
+     ù
+       von Kurzbezeichnung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+       bis Kurzbezeichnung : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+       von Liefer.-Gruppe: ïïïïïïïïïï   bis Liefer.-Gruppe: ïïïïïïïïïï
+       von Auswertungs-KZ: ïïïïïïïïïï   bis Auswertungs-KZ: ïïïïïïïïïï
+
+       Kopien              :   ##
+       von Seite           : ####       bis Seite         : ####
+     ù                                                                  ù
+
+^ ^ ^ 
+``.``.`` ^ ^ ^ ^ ^ ^ 
+^ ^ ^
+^ ^ ^  ^
+
+>>Mask:   FIM4121
+>>Prog.:  FI4100.C
+>>Update: 4.08.91
+
+&TITEL    = "FI  DRUCK Lieferantenkonten n. Kurzbez."
+&FRAME    = 0, 0, 0, 0, "ÄListe Lieferanten nach Kurzbezeichnung", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, lief-dr
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI1210
+&DRU_DATEI  (1)  = MASK, D.FI4120
+&DATEI      (2)  = MASK, D.ST1200
+&DATEI      (3)  = MASK, D.ST1210
+&PARA_READ  (4)  = MASK, L.SYP_01
+
+>>von Lieferanten-Kurzbezeichnung
+  &HELPTEXT (0)  = STHLP10, 412, 6
+  &DATA     (+-) = 1, _V_KURZBEZ
+
+>>bis Lieferanten-Nummer
+  &HELPTEXT  (+)  = STHLP10, 412, 7
+  &DATA      (+-) = 1, _B_KURZBEZ
+
+>>von Lieferanten-Gruppe
+  &HELPTEXT (+)  = STHLP10, 412, 2
+  &DATA     (+-) = 1, _V_LIEFGR
+
+>>bis Lieferanten-Gruppe
+  &HELPTEXT (+)  = STHLP10, 412, 4
+  &DATA     (+-) = 1, _B_LIEFGR
+
+>>von Auswertungs-Kennzeichen
+  &HELPTEXT (+)  = STHLP10, 412, 3
+  &DATA     (+-) = 1, _V_AUSWKZ
+
+>>bis Auswertungs-Kennzeichen
+  &HELPTEXT (+)  = STHLP10, 412, 5
+  &DATA     (+-) = 1, _B_AUSWKZ
+
+>>Kopien
+  &HELPTEXT (+)  = SYHLP10, 402, 04
+  &DATA     (+-) = 1, _KOPIEN
+  &DEFAULT  (+-) = "1"
+
+
+>>von Seite
+  &HELPTEXT (+)  = STHLP10, 413, 9
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = STHLP10, 413, 10
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REC_KEY    (+)                   >>von Lieferanten-Nummer
+&REC_MATCH  (+-) = "Kurzbezeichnung      ", 0, KURZ_BEZ
+&ADD_MATCH  (+-) = "Konto-Nr.", 0, LI_KONTO
+&ADD_MATCH  (+-) = "Lieferanten-Nr", 0, FI_LIEFER
+  &DATA_H   (+-) = 0, LI_KONTO
+
+&REC_KEY    (+)                   >>Kunden-Nummer
+  &DATA_H   (+-) = 0, FI_LIEFER
+
+&REC_KEY    (+)                   >>Kurzbezeichnung
+  &DATA_H   (+-) = 0, KURZ_BEZ
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 4, FRW_BE_00  >>Fremdw„hrung
+  &DATA_H   (+)  = 0, WHRUNG     >>W„hrung
+
+  &DATA_H   (+)  = 0, AUSLANDSLI  >>Auslandskunde
+  &CHOICE   (+-) = "Auslandslieferant",   "nein",n,   "ja",j
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 2, LIEFGR      >>Kundengruppe
+  &DATA_H   (+)  = 2, AUSWERTUNG  >>Auswertungskennzeichen
+  &DATA_H   (+)  = 2, PLZ_ORT     >>Postleitzahl/Ort
+  &DATA_H   (+)  = 3, VST
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+
+>>&DATA_H   (+)  = 1, _WHRUNG    >>W„hrung
+>>&DATA_H   (+)  = 1, _AUSLANDSL  >>Auslandskunde

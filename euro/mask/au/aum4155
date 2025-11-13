@@ -1,0 +1,250 @@
+
+
+
+
+
+
+         ù
+           von Artikel-Bez. : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+           bis Artikel-Bez. : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+          ^ ^ ``.``.`` ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+           von Lieferant    : ïïïïïïïïïïïïïïïïïïïï
+           bis Lieferant    : ïïïïïïïïïïïïïïïïïïïï
+            ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+           von Artikelgruppe: ###       bis Artikelgruppe: ###
+           von Lagerort     : ïïïïïï    bis Lagerort     : ïïïïïï
+           von Seite        : ####      bis Seite        : ####
+         ù                                                         ù
+
+
+&TITEL = "AU-Liste Inventur-Differenz"
+&REM   Source:  STM4141
+&REM   Maske :  #4141
+&REM   Prog. :  ST4100
+
+&FRAME    = 0, 0, 0, 0, "ÄListe Inventur-Differenz", 2
+&MASKHELP = STHLP10, artbez
+&INDEX    = BASIS
+
+&REM SEQUENZ = 00,01,13,14,15,17,16,18
+
+&DATEI     (0) = EURODATA, D.ST1300
+&DRU_DATEI (1) = EURODATA, D.ST4140
+&REF_DATEI (2) = EURODATA, L.SYP_15
+&REF_DATEI (3) = EURODATA, L.SYP_01
+
+&REM  von Artikel-Bezeichnung
+&HELPTEXT  (00) = STHLP10, 414, 2
+&REC_MATCH (+-) = "Artikel-Bezeichnung", 0, MATCH_CODE
+&ADD_MATCH (+-) = "Artikel-Nummer", 0, ARTNR
+&DATA      (+-) = 1, _V_KURZBEZ
+
+&REM  bis Artikel-Bezeichnung
+&HELPTEXT  (+)  = STHLP10, 414, 3
+&REC_MATCH (+-) = "Artikel-Bezeichnung", 0, MATCH_CODE
+&ADD_MATCH (+-) = "Artikel-Nummer", 0, ARTNR
+&DATA      (+-) = 1, _B_KURZBEZ
+
+&REM ----- Dummy Felder
+&REM  Artikel-Nummer (Dummy Feld fuer Match-Code-Suche)
+&REC_KEY  (+)
+&HIDE     (+-)
+&DATA     (+-) = 0, ARTNR
+
+&REM  Artikel-Bezeichnung (Dummy Feld fuer Match-Code-Suche)
+&REC_KEY  (+)
+&HIDE     (+-)
+&DATA     (+-) = 0, MATCH_CODE
+
+&REM Datum (Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _DATUM_AKT
+
+&REM Seite (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 0, PREINHKZ
+
+&REM Seite (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 0, MWST
+
+&REM  Mandanten-Nummer (Dummy Feld)
+&REF_KEY   (+)
+&HIDE      (+-)
+&DATA      (+-) = 2, MAND_15
+
+&REM Artikel-Preis-Text 1 (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 2, TEXT_VKPR1
+
+&REM Artikel-Preis-Text 2 (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 2, TEXT_VKPR2
+
+&REM Artikel-Preis-Text 3 (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 2, TEXT_VKPR3
+
+&REM Artikel-Preis-Text 4 (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 2, TEXT_VKPR4
+
+&REM Artikel-Preis-Text 5 (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 2, TEXT_VKPR5
+
+&REM Preis-Text 1 (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 1, _FELD_1
+
+&REM Preis-Text 2 (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 1, _FELD_2
+
+&REM Preis-Text 3 (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 1, _FELD_3
+
+&REM Preis-Text 4 (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 1, _FELD_4
+
+&REM Preis-Text 5 (Dummy-Feld fuer Point-Anweisung)
+&HIDE      (+)
+&DATA      (+-) = 1, _FELD_5
+
+&REM Seite (Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _SEITE
+
+&REM Mandanten-Nummer (Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _NR_MAND
+
+&REM Mandanten-Kurzbez. (Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _MANDANT
+
+&REM Teilnehmer-Nummer (Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _TEILN
+
+&REM Nutzungs-Berechtigung (Standard-Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _NUTZUNG
+
+&REM Nutzungs-Berechtigung (Standard-Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _COPYRIGHT
+
+&REM Preis-Einheits-Kennzeichen (Standard-Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _PREINHKZ
+
+&REM Nutzungs-Berechtigung (Standard-Dummy-Feld fuer Point-Anweisung)
+&HIDE     (+)
+&DATA     (+-) = 1, _MWST
+&REM -----
+
+&REM  von Lieferant
+&HELPTEXT (+)  = STHLP10, 414, 4
+&DATA     (+-) = 1, _V_LIEFNR
+
+&REM  bis Lieferant
+&HELPTEXT (+)  = STHLP10, 414, 5
+&DATA     (+-) = 1, _B_LIEFNR
+
+&REM ----- Dummy Felder
+&REM  Mandanten-Nummer (Dummy Feld)
+&REF_KEY  (+)
+&HIDE     (+-)
+&DATA     (+-) = 3, MAND_01
+
+&REM  Umsatzsteuer 1 (Dummy Feld)
+&HIDE     (+)
+&DATA     (+-) = 3, UST_1
+
+&REM  Umsatzsteuer 2 (Dummy Feld)
+&HIDE     (+)
+&DATA     (+-) = 3, UST_2
+
+&REM  Umsatzsteuer 3 (Dummy Feld)
+&HIDE     (+)
+&DATA     (+-) = 3, UST_3
+
+&REM  Umsatzsteuer 4 (Dummy Feld)
+&HIDE     (+)
+&DATA     (+-) = 3, UST_4
+
+&REM  Umsatzsteuer 5 (Dummy Feld)
+&HIDE     (+)
+&DATA     (+-) = 3, UST_5
+
+&REM  Umsatzsteuer 6 (Dummy Feld)
+&HIDE     (+)
+&DATA     (+-) = 3, UST_6
+
+&REM  Umsatzsteuer 7 (Dummy Feld)
+&HIDE     (+)
+&DATA     (+-) = 3, UST_7
+
+&REM  Umsatzsteuer 8 (Dummy Feld)
+&HIDE     (+)
+&DATA     (+-) = 3, UST_8
+
+&REM Bestand aktuell
+&HIDE     (+)
+&DATA     (+-) = 0, BESTANDAK
+
+&REM Inventur aktuell
+&HIDE     (+)
+&DATA     (+-) = 0, INVEN_AKT
+
+&REM Einkaufspreis
+&HIDE     (+)
+&DATA     (+-) = 0, EKPR
+
+&REM Inventur-Differenz
+&HIDE     (+)
+&DATA     (+-) = 1, _INVEN_DIF
+
+&REM Inventur-Betrag
+&HIDE     (+)
+&DATA     (+-) = 1, _IN_BETRAG
+
+&REM Inventur-Summe
+&HIDE     (+)
+&DATA     (+-) = 1, _IN_SUMME
+&REM -----
+
+&REM  von Artikelgruppe
+&HELPTEXT (+)  = STHLP10, 414, 6
+&DEFAULT  (+-) = "001"
+&DATA     (+-) = 1, _V_ARTGR
+
+&REM  bis Artikelgruppe
+&HELPTEXT (+)  = STHLP10, 414, 8
+&DEFAULT  (+-) = "999"
+&DATA     (+-) = 1, _B_ARTGR
+
+&REM  bis Erl”scode
+&HELPTEXT (+)  = STHLP10, 414, 9
+&DEFAULT  (+-) = "99"
+&DATA     (+-) = 1, _B_LAGEROR
+
+&REM  von Erl”scode
+&HELPTEXT (+)  = STHLP10, 414, 7
+&DEFAULT  (+-) = "00"
+&DATA     (+-) = 1, _V_LAGEROR
+
+&REM  von Seite
+&HELPTEXT (+)  = STHLP10, 411, 9
+&DEFAULT  (+-) = "0001"
+&DATA     (+-) = 1, _VON_SEITE
+
+&REM  bis Seite
+&HELPTEXT (+)  = STHLP10, 411, 10
+&DEFAULT  (+-) = "9999"
+&DATA     (+-) = 1, _BIS_SEITE

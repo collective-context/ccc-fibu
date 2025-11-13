@@ -1,0 +1,184 @@
+
+
+
+
+
+        ˘                                                              ˘
+
+              Auswahl der zu Åbergebenden Rechnungen:
+
+
+                      von Rechnungs-Nummer  : @@@@@@@@
+
+                      bis Rechnungs-Nummer  : @@@@@@@@
+
+                      Buchungsdatum           : ##.##.##
+                      öbergabe in Mandant Nr. : #
+                      Datenverzeichnis KHK    : @@@@@@@@@@@@@@@@@@@@@
+                      Kontenklasse Erlîs      : #
+              ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+        ˘ ```| ```| ```| ```| ```| ```| ```| ```| ||.||.|| ^ ^ ^ ^ ^ ^ ˘
+
+
+&TITEL = "AU  Uebergabe Rechn./Gutschriften in KHK-Fibu"
+
+&REM   Maske    :  AUM2100
+&REM   Programm :  AU2300
+&REM   Datei    :  AUMENUE
+
+&REM History:
+&REM Stand: 16.1.90
+
+&FRAME    = 0, 0, 0, 0, "ƒöbergabe Rechnungen an KHK-Fibu", 2
+&REM MASKHELP = AUHLP10, rech-ub
+&INDEX    = BASIS
+
+&DATEI     (0) = EURODATA, D.AU2100
+&REF_DATEI (1) = EURODATA, D.AU2110
+&REF_DATEI (2) = EURODATA, D.AU2101
+&REF_DATEI (3) = EURODATA, L.SYP_01   /* SteuersÑtze  */
+&REF_DATEI (4) = EURODATA, L.SYP_13   /* Uebernahme in KHK-Fibu */
+
+&REM &NUMMER  = 00,01,02,03
+&REM &SEQUENZ = 00,01,02,03
+
+&REM Von Nummer
+&HELPTEXT  (00) = AUHLP10, 421, 00
+&REC_MATCH (+-) = "Nummer", 0, NUMMER
+&ADD_MATCH (+-) = "Projektbezeichnung", 0, PROJEKT_1
+&DATA      (+-) = 1, _VON_NUM
+
+&REM Bis Nummer
+&HELPTEXT  (+)  = AUHLP10, 421, 01
+&REC_MATCH (+-) = "Nummer", 0, NUMMER
+&ADD_MATCH (+-) = "Projektbezeichnung", 0, PROJEKT_1
+&DATA      (+-) = 1, _BIS_NUM
+
+&REM Buchungsdatum
+&HELPTEXT  (+)  = AUHLP10, 422, 02
+&DATA      (+-) = 1, _BUCHDATUM
+
+&REM Mandant KHK
+&HELPTEXT  (+)  = AUHLP10, 422, 03
+&DATA      (+-) = 4, BUCHMAND
+
+&REM Datenverzeichnis KHK
+&HELPTEXT  (+)  = AUHLP10, 422, 04
+&DATA      (+-) = 4, BUCHDATEI
+
+&REM Kontenklasse Erlîs
+&HELPTEXT  (+)  = AUHLP10, 422, 05
+&DATA      (+-) = 4, BUCHERLS
+
+&REM Primaerkey
+&HIDE     (+)
+&DATA     (+-) = 0, PRIMéR_KEY
+
+&REM  Dummy
+&DATA_H   (+)  = 3, FRWé_KU_00
+&DATA_H   (+)  = 3, FRWé_KU_01
+&DATA_H  (+)  = 3, FRWé_KU_02
+&DATA_H   (+)  = 3, FRWé_KU_03
+&DATA_H   (+)  = 3, FRWé_KU_04
+&DATA_H   (+)  = 3, FRWé_KU_05
+&DATA_H   (+)  = 3, FRWé_KU_06
+&DATA_H   (+)  = 3, FRWé_KU_07
+&DATA_H   (+)  = 3, FRWé_KU_08
+&DATA_H   (+)  = 3, FRWé_KU_09
+
+&REM  Nummer
+&REC_KEY  (+)
+&HIDE     (+-)
+&DATA     (+-) = 0, NUMMER
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-) = 0, PROJEKT_1
+
+&REM KHK-Kontonummer
+&HIDE     (+)
+&DATA     (+-) = 0, KONTO_NR
+
+&REM Fremdwaehrungsnummer
+&HIDE     (+)
+&DATA     (+-) = 0, WéHRUNG
+
+&REM ZKD
+&HIDE     (+)
+&DATA     (+-) = 0, KONDITION
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-) = 1, ESU_POS
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-) = 1, BRU_POS_1
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-) = 1, BRU_POS_2
+
+&REM Mwst 1
+&HIDE     (+)
+&DATA     (+-) = 3, UST_1
+
+&REM Mwst 2
+&HIDE     (+)
+&DATA     (+-) = 3, UST_2
+
+&REM Mwst 3
+&HIDE     (+)
+&DATA     (+-) = 3, UST_3
+
+&REM Mwst 4
+&HIDE     (+)
+&DATA     (+-) = 3, UST_4
+
+&REM Mwst 5
+&HIDE     (+)
+&DATA     (+-) = 3, UST_5
+
+&REM Mwst 6
+&HIDE     (+)
+&DATA     (+-) = 3, UST_6
+
+&REM Mwst 7
+&HIDE     (+)
+&DATA     (+-) = 3, UST_7
+
+&REM Mwst 8
+&HIDE     (+)
+&DATA     (+-) = 3, UST_8
+
+&REM Belegdatum
+&HIDE     (+)
+&DATA     (+-) = 0, DATUMDRUCK
+
+&REM Mwst-Handling
+&HIDE     (+)
+&DATA     (+-) = 0, MWST
+
+&REM Endsumme
+&HIDE     (+)
+&DATA     (+-) = 1, ESU_GESAMT
+
+&REM Steuerprozente
+&HIDE     (+)
+&DATA     (+-) = 1, BRU_STPROZ
+
+&REM Nettobetrag
+&HIDE     (+)
+&DATA     (+-) = 1, BRU_SNETTO
+
+&REM Nettobetrag
+&HIDE     (+)
+&DATA     (+-) = 1, BRU_STEUER
+
+&REM Gesamtsumme
+&HIDE     (+)
+&DATA     (+-) = 1, BRU_GESAMT
+
+&REM Gesamtsumme
+&HIDE     (+)
+&DATA     (+-) = 1, BRU_GESAMT

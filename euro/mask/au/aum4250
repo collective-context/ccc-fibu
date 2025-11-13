@@ -1,0 +1,166 @@
+
+
+
+
+
+
+
+
+
+
+                                 ˘
+                                   Lager-Nr/Jahr-Monat: @@@@@@@@
+                                 ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+                                 ^ ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                                 ``.``.`` ``.``.`` ^ ^ ^ ^ ^ ^
+                                 ^ ^Von Seite ^ ^: #### ``.``.``
+                                 ^ ^Bis Seite ^  : ####
+                                 ˘                               ˘
+
+
+>>Mask:   AUM4250
+>>Prog.:  ST4100.C
+>>Update: 01.06.91
+
+&TITEL   = "AU  DRUCK Lagerbewegungen 1/1"
+&FRAME   = 0, 0, 0, 0, "ƒDruck Lagerbewegungen", 2
+&SEQUENZ = 00,01,02
+
+>>MASKHELP=
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurÅck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.AU2500
+&DRU_DATEI  (1)  = MASK, D.AU4250
+
+>>Von Lager/Monat
+&REF_MATCH  (0) = "Von Lager/Monat",  0, L_NR_TAG
+&ADD_MATCH  (+-) = "Bezeichnung Kunden/Lieferanten", 0, KULI_BEZ
+  &HELPTEXT (+-) = AUHLP10, 425, 100
+  &DATA     (+-) =  1, _VL_NR_MON
+
+>>Von/Bis Lager/Monat (Dummy-Feld fÅr Match-Code)
+&REF_KEY    (+)
+  &HIDE     (+-)
+  &DATA     (+-) =  0, L_NR_TAG
+
+>>Belegnummer (Dummy-Feld fÅr Match-Code)
+  &HIDE     (+)
+  &DATA     (+-) =  0, BELEG_NR
+
+>>Von/Bis Lager/Monat (Dummy-Feld fÅr Match-Code)
+  &HIDE     (+)
+  &DATA     (+-) = 0, KULI_BEZ
+
+>>Tagessummen (Dummy-Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _T_AL_FREI
+
+>>Tagessummen (Dummy-Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _T_ALKOHOL
+
+>>Tagessummen (Dummy-Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _T_WEIN
+
+>>Tagessummen (Dummy-Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _T_KA_TEE
+
+>>Gesamtsummen (Dummy-Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _S_AL_FREI
+
+>>Gesamtsummen (Dummy-Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _S_ALKOHOL
+
+>>Gesamtsummen (Dummy-Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _S_WEIN
+
+>>Gesamtsummen (Dummy-Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _S_KA_TEE
+
+>>Gesamtsummen (Dummy-Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _GESAMT
+
+>>Datum (Standard-Dummy-Feld fuer Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _DATUM_AKT
+
+>>Seite (Standard-Dummy-Feld fÅr Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _LIEF_DAT
+
+>>Seite (Standard-Dummy-Feld fÅr Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _SEITE
+
+>>Mandanten-Nummer (Standard-Dummy-Feld fuer Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _NR_MAND
+
+>>Mandanten-Kurzbez. (Standard-Dummy-Feld fuer Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _MANDANT
+
+>>Nutzungs-Berechtigung (Standard-Dummy-Feld fuer Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _COPYRIGHT
+
+>>Nutzungs-Berechtigung (Standard-Dummy-Feld fuer Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _NUTZUNG
+
+>>Teilnehmer-Nummer (Standard-Dummy-Feld fuer Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _TEILN
+
+>>Laufende Nummer (Druck-Dummy-Feld fÅr Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _AR_NUMMER
+
+>>Kassastand - temporÑr (Druck-Dummy-Feld fÅr Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _AR_BEZ
+
+>>Alkoholfreie GetrÑnke - temporÑr (Druck-Dummy-Feld fÅr Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _AL_FREI
+
+>>Alkoholische GetrÑnke - temporÑr (Druck-Dummy-Feld fÅr Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _ALKOHOL
+
+>>von Seite (Standard-Dummy-Feld fÅr Point-Anweisung)
+  &HELPTEXT (+)  = KAHLP10, 413, 1
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>Belegdatum - temporÑr (Druck-Dummy-Feld fÅr Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _BELEGDAT
+
+>>Wein - temporÑr (Druck-Dummy-Feld fÅr Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _WEIN
+
+>>Kafee/Tee - temporÑr (Druck-Dummy-Feld fÅr Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _KA_TEE
+
+>>Summe Einnahmen - temorÑr (Druck-Dummy-Feld fÅr Point-Anweisung)
+  &HIDE     (+)
+  &DATA     (+-) = 1, _BETRAG
+
+>>bis Seite (Standard-Dummy-Feld fÅr Point-Anweisung)
+  &HELPTEXT (+)  = KAHLP10, 413, 2
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+

@@ -1,0 +1,76 @@
+
+
+
+
+                                        ù                        ù
+                                           Steuersatz 1 : #›,››
+
+                                           Steuersatz 2 : #›,››
+
+                                           Steuersatz 3 : #›,››
+
+                                           Steuersatz 4 : #›,››
+
+                                           Steuersatz 5 : #›,››
+
+                                           Steuersatz 6 : #›,››
+
+                                           Steuersatz 7 : #›,››
+
+                                           Steuersatz 8 : #›,››
+                                        ù                        ù
+``
+
+>>Mask:   STM090
+>>Prog.:  ST1100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  STAMM ndern Steuers„tze"
+&FRAME    = 0, 0, 0, 0, "ÄSteuers„tze" 2
+>>SEQUENZ =
+
+&MASKHELP = KAHLP10, ste-inf
+&INDEX    = EABAS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, L.SYP_01
+
+>>Steuersatz 1 bis 8
+  &HELPTEXT (0)  = KAHLP10, 190, 0
+  &DATA     (+-) = 0, UST_1
+
+>>Steuersatz 2
+  &HELPTEXT (+)  = KAHLP10, 190, 0
+  &DATA     (+-) = 0, UST_2
+
+>>Steuersatz 3
+  &HELPTEXT (+)  = KAHLP10, 190, 0
+  &DATA     (+-) = 0, UST_3
+
+>>Steuersatz 4
+  &HELPTEXT (+)  = KAHLP10, 190, 0
+  &DATA     (+-) = 0, UST_4
+
+>>Steuersatz 5
+  &HELPTEXT (+)  = KAHLP10, 190, 0
+  &DATA     (+-) = 0, UST_5
+
+>>Steuersatz 6
+  &HELPTEXT (+)  = KAHLP10, 190, 0
+  &DATA     (+-) = 0, UST_6
+
+>>Steuersatz 7
+  &HELPTEXT (+)  = KAHLP10, 190, 0
+  &DATA     (+-) = 0, UST_7
+
+>>Steuersatz 8
+  &HELPTEXT (+)  = KAHLP10, 190, 0
+  &DATA     (+-) = 0, UST_8
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+&REC_KEY    (+)                   >>Mandanten-Nummer
+  &DATA_H   (+-) = 0, MAND_01
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+

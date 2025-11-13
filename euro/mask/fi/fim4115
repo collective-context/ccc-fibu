@@ -1,0 +1,162 @@
+
+
+
+
+                                 ù
+                                   Von Konto-Nummer: Kïïïïïïïï
+                                   Bis Konto-Nummer: Kïïïïïïïï
+                                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                                   Periode / Monat : @@@@@@@@@
+                                   Druckdatum      : ##.##.##
+                                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                                   Kopien          .   ##
+
+                                   von Seite       : ####
+                                   bis Seite       : ####
+                                 ù                             ù
+
+^ ^ ^ 
+``.``.``  ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^   ^ ^
+^
+^ ^ ^ ^ ^ ^ ^
+
+>>Mask:   FIM4115
+>>Prog.:  FI4100.C
+>>Update: 5.08.91
+
+&TITEL    = "FI  DRUCK Kundenkonten Saldenliste"
+&FRAME    = 0, 0, 0, 0, "ÄKundenkonten Saldenlisten", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, kund-dr
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI1110
+&DRU_DATEI  (1)  = MASK, D.FI4110
+&DATEI      (2)  = MASK, D.ST1100
+&DATEI      (3)  = MASK, D.ST1110
+&PARA_READ  (4)  = MASK, L.SYP_01
+
+>>von Kunden-Nummer
+  &HELPTEXT (0)  = STHLP10, 411, 0
+  &DATA     (+-) = 1, _V_KONTONR
+
+>>bis Kunden-Nummer
+  &HELPTEXT (+)  = STHLP10, 411, 1
+  &DATA     (+-) = 1, _B_KONTONR
+
+>>Verarbeiten Monat
+  &HELPTEXT (+)  = FIHLPP10, 413, 2
+  &DATA     (+-) = 1, _W_MONAT
+  &DEFAULT  (+-) = "01"
+  &CHOICE   (+-) = "Verarbeiten Monat",\
+                 "J„nner",01,  "Februar",02,  "M„rz",03,  "April",04,\ 
+                 "Mai",05,  "Juni",06,  "Juli",07,  "August",08,\
+                 "September",09,  "Oktober",10,  "November",11,  "Dezember",12
+
+>>Druckdatum
+  &HELPTEXT (+)  = STHLP10, 413, 3
+  &DATA     (+-) = 1, _DRUCK_DAT
+  &DEFAULT  (+-) = "s"
+
+>>Kopien
+  &HELPTEXT (+)  = SYHLP10, 402, 04
+  &DATA     (+-) = 1, _KOPIEN
+  &DEFAULT  (+-) = "1"
+
+>>von Seite
+  &HELPTEXT (+)  = STHLP10, 413, 9
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = STHLP10, 413, 10
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REC_KEY    (+)                   >>von Kunden-Nummer
+&REC_MATCH  (+-) = "Konto-Nr.", 0, KU_KONTO
+&ADD_MATCH  (+-) = "Kurzbezeichnung      ", 0, KURZ_BEZ
+&ADD_MATCH  (+-) = "Kunden-Nummer ", 0, FI_KUNDE
+  &DATA_H   (+-) = 0, KU_KONTO
+
+>>Kunden-Nummer 
+&REC_KEY    (+)
+  &DATA_H   (+-) = 0, FI_KUNDE
+
+>>Kurzbezeichnung 
+&REC_KEY    (+)
+  &DATA_H   (+-) = 0, KURZ_BEZ
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+>>Mandanten-Nummer
+  &DATA_H   (+)  = 4, FRW_BE_00  >>Fremdw„hrung 0 - 9
+  &DATA_H   (+)  = 2, AUSWERTUNG  >>Auswertungskennzeichen
+  &DATA_H   (+)  = 0, WHRUNG     >>W„hrung
+  &DATA_H   (+)  = 1, _WHRUNG    >>W„hrung
+  &DATA_H   (+)  = 0, AUSLANDSKU  >>Auslandskunde
+  &DATA_H   (+)  = 1, _AUSLANDSK  >>Auslandskunde
+
+  &DATA_H   (+)  = 2, KUNDEN_GR   >>Kundengruppe
+  &DATA_H   (+)  = 2, PLZ_ORT     >>Postleitzahl/Ort
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _MONAT       >>Dummyfeld fr Monat
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+
+>>von PLZ/Ort
+  &HELPTEXT (+)  = STHLP10, 411, 7
+  &DATA_H   (+-) = 1, _V_PLZ_ORT
+
+>>bis PLZ/Ort
+  &HELPTEXT (+)  = STHLP10, 411, 9
+  &DATA_H   (+-) = 1, _B_PLZ_ORT
+
+>>von Kundengruppe
+  &HELPTEXT (+)  = STHLP10, 411, 2
+  &DATA_H   (+-) = 1, _V_KUNDGR
+
+>>bis Kundengruppe
+  &HELPTEXT (+)  = STHLP10, 411, 4
+  &DATA_H   (+-) = 1, _B_KUNDGR
+
+>>von Auswertungs-Kenzeichen
+  &HELPTEXT (+)  = STHLP10, 411, 6
+  &DATA_H   (+-) = 1, _V_AUSWKZ
+
+>>bis Auswertungs-Kennzeichen
+  &HELPTEXT (+)  = STHLP10, 411, 8
+  &DATA_H   (+-) = 1, _B_AUSWKZ
+
+  &DATA_H   (+)  = 3, MWST
+
+
+    ù
+      von Konto-Nummer    : Kïïïïïïïï     bis Konto-Nummer    : Kïïïïïïïï
+      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      von PLZ/Ort         : @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      bis PLZ/Ort         : @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+      von Kundengruppe    : ïïïïïïïïïï    bis Kundengruppe    : ïïïïïïïïïï
+      von Auswertungs-KZ. : ïïïïïïïïïï    bis Auswertungs-KZ. : ïïïïïïïïïï
+
+      von Seite           : ####          bis Seite           : ####
+    ù                                                                     ù
+

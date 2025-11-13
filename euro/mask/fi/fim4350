@@ -1,0 +1,122 @@
+
+
+
+
+
+
+
+         ù
+               ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+               ÀÄ 1. Verarbeitungschritt: Rechnungsbuchungen.ÄÄÙ
+
+                Aus den erfaáten Rechnungsbuchungen werden die
+                Buchungss„tze fr die Buchhaltung erzeugt und
+                die Lagerbewegungen bei den Artikeln gebucht.
+
+
+                Verarbeiten Monat: @@@@@@@@@@@@@@@@@@@@@@@@
+               ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                Von Datum: ##.##.##          Bis Datum: ##.##.##
+         ù                                                           ù
+
+^ ^ ^ ^ ^ ^  ``.``.`` ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^   ^ ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^
+
+>>Mask:   FIM4350
+>>Prog.:  FI3100.C
+>>Update: 4.08.91
+
+&TITEL    = "FI  WORK Verarbeiten Rechnungsbuchungen"
+&FRAME    = 0, 0, 0, 0, "ÄVerarbeiten Rechnungsbuchungen", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, buer-dr
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK,   D.FI2500     >>Erfassen Rechnungsbuchungen
+&DRU_DATEI  (1)  = MASK,   D.FI4210     >>Dummy-Datei
+&WORK_DATEI (2)  = MASK,   D.FI2100     >>Erfassen Buchungen
+&WORK_DATEI (3)  = MASK,   D.ST1300     >>Artikelstamm
+&REF_DATEI  (4)  = MASK,   D.ST1400     >>Einheitenstamm
+&REF_DATEI  (5)  = MASK,   D.FI1210     >>Lieferantenkonten
+&WORK_DATEI (6)  = MASK,   D.FI2500A    >>Tempor„re Erfassungsdatei
+&PARA_READ  (7)  = MASK,   L.SYP_01     >>Konsten Festkonten, MWST, ...
+&WORK_DATEI (8)  = MASK,   D.FI1600     >>Anlagenstamm
+&PARA_READ  (9)  = MASK,   D.SYP_50  >>Konsten des aktuellen Jahres
+
+>>Verarbeiten Monat
+  &HELPTEXT (0)  = FIHLP10, 431, 1
+  &DATA     (+-) = 1, _MONAT
+>>  &DEFAULT  (+-) = "1"
+  &CHOICE   (+-) = "Verarbeiten Monat",\
+                   "J„nner",1,  "Februar",2,  "M„rz",3,  "April",4,\
+                   "Mai",5,  "Juni",6,  "Juli",7,  "August",8,\
+                   "September",9,  "Oktober",A,  "November",B,  "Dezember",C
+
+>>Verarbeiten - Von Datum
+  &HELPTEXT (+)  = FIHLP10, 431, 2
+  &DATA     (+-) = 1, _V_DATUM
+
+>>Verarbeiten - Bis Datum
+  &HELPTEXT (+)  = FIHLP10, 431, 2
+  &DATA     (+-) = 1, _B_DATUM
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+&REC_KEY    (+)                   >>Satznummer (fr Point-Anweisung)
+  &DATA_H   (+-) = 0, SATZ_NR
+
+&REC_KEY    (+)                   >>Belegnummer (fr Point-Anweisung)
+  &DATA_H   (+-) = 0, BELEG_NR
+
+&REC_KEY    (+)                   >>Buchungsdatum (fr Point-Anweisung)
+  &DATA_H   (+-) = 0, BELEG_DAT
+
+&REC_KEY    (+)                   >>Belegdatum (fr Point-Anweisung)
+  &DATA_H   (+-) = 0, RECH_NR
+  &DATA_H   (+)  = 0, BUCH_DATUM  >>Buchungsdatum (fr Point-Anweisung)
+  &DATA_H   (+)  = 0, FIRMA       >>Buchungsdatum (fr Point-Anweisung)
+
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>Nutzungs-Berechtigung
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>&REF_KEY  (+)                   >>Mandanten-Nummer (Dummy Feld)
+>>  &DATA_H (+-) = 6, MAND_01
+  &DATA_H   (+)  = 7, UST_1       >>Steuersatz 1
+  &DATA_H   (+)  = 7, UST_2       >>Steuersatz 2
+  &DATA_H   (+)  = 7, UST_3       >>Steuersatz 3
+  &DATA_H   (+)  = 7, UST_4       >>Steuersatz 4
+  &DATA_H   (+)  = 7, UST_5       >>Steuersatz 5
+  &DATA_H   (+)  = 7, UST_6       >>Steuersatz 6
+  &DATA_H   (+)  = 7, UST_7       >>Steuersatz 7
+  &DATA_H   (+)  = 7, UST_8       >>Steuersatz 8
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 8, INVENT_NR   >>Anlagen/Inventurnummer
+  &DATA_H   (+)  = 8, MATCH_CODE  >>Datum Ersterfassung
+  &DATA_H   (+)  = 8, AN_WERT     >>Anschaffungswert
+  &DATA_H   (+)  = 8, AN_DATUM    >>Datum Ersterfassung
+  &DATA_H   (+)  = 8, ZUGANG      >>Zug„nge
+  &DATA_H   (+)  = 8, AKTIVIERT   >>Aktiviert
+
+  &DATA_H   (+)  = 8, ZEITW_ANF
+  &DATA_H   (+)  = 8, VERK_WERT
+  &DATA_H   (+)  = 8, AB_DATUM
+  &DATA_H   (+)  = 8, NUTZ_RES
+  &DATA_H   (+)  = 8, NUTZ_GES
+  &DATA_H   (+)  = 8, JAHR_AFA
+
+  &DATA_H   (+)  = 8, ZEIT_WERT
+  &DATA_H   (+)  = 8, BUCH_JAHR
+  &DATA_H   (+)  = 8, DAT_AKTIV
+  &DATA_H   (+)  = 9, Y_CLOSED
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+

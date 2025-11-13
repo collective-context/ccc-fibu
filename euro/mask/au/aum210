@@ -1,0 +1,218 @@
+
+
+
+ ù
+   Art: @@@@@@@@@@@@@@@@@@  Nr. @@@@@@@@ vom ##.##.##
+   Projektbezeichnung: @@@@@@@@@@@@@@@@@@@@
+                       @@@@@@@@@@@@@@@@@@@@  Unser Zeichen: @@@@@ / ##.##.##
+
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Kunde : ïïïïïïïïïïïïïïïïïïïï       Kurzbez.: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+   Anrede    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    ^   Konto-Nr.:  ïïïïïïïï
+   Name      : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   Zusatz    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+   Straáe    : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      ® Postfach : @@@@@@@@@
+   Ld/PLZ/Ort: ïïïïï - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+   Grundrabatt      : #›,›› %     W„hrung      : @@@@   MwSt-KZ: @@@@@@@@@@
+   Zahlungskondition: ››-››-›››   Auslandskunde: ^^^^  VK-Preis: @@@@@@@@@@@@
+ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^  ù
+
+>>Mask:   AUM210
+>>Prog.:  AU2100.CPP
+>>Datum:  14.03.90/ 03.03.94
+
+&TITEL    = "AU-Anlegen/Aendern Ang./Auftr./Rechn. "
+&FRAME    = 0, 0, 0, 0, "Kopfdaten-Erfassung", 2
+&SEQUENZ  = 0,1,2,3,4,5,7,9,12,13,14,17,08,18,19,20,21,23
+>>SEQUENZ = 00,01,03,04,05,07,08,20,23
+
+&MASKHELP = AUHLP10, erf-ang
+&INDEX    = BASIS
+
+&DATEI      (0) = EURODATA, D.AU2100
+&POS_DATEI  (1) = EURODATA, D.AU2101
+&REF_DATEI  (2) = EURODATA, D.ST1100
+&REF_DATEI  (3) = EURODATA, D.ST1300
+&REF_DATEI  (4) = EURODATA, D.ST1110
+&REF_DATEI  (5) = EURODATA, D.ST1330     >>Artikelzusatztexte >>frher: AU1100
+&PARA_DATEI (6) = EURODATA, L.SYP_02     >>Nummernkreise
+&REF_DATEI  (7) = EURODATA, D.ST1800     >>Textbausteine
+&PARA_READ  (8) = EURODATA, L.SYP_01     >>Konstanten, MwSt ...
+&REF_DATEI  (9) = EURODATA, D.FI1110
+
+>>Art der Erfassung (S)
+&HELPTEXT (0)  = AUHLP10, 210, 0
+&CHOICE   (+-) = "Erfassungsart", "Angebot", "1", "Bestellung/Auftrag", "2","Lieferschein", "3", "Rechnung","4", "Gutschrift", "5"
+&DATA     (+-) = 0, ART_ERFASS
+
+>>Nummer lt. Nummernkreis (S)
+&HELPTEXT  (+)  = AUHLP10, 210, 01
+&REC_KEY   (+-)
+&REC_MATCH (+-) = "Nummer     ", 0, NUMMER
+&ADD_MATCH (+-) = "Projektbezeichnung    ", 0, PROJEKT_1
+&DATA      (+-) = 0, NUMMER
+
+>>Datum der Erfassung
+&HELPTEXT (+)  = AUHLP10, 210, 02
+&DATA     (+-) = 0, ERFASS_DAT
+
+>>Projektbezeichenung (S)
+&HELPTEXT  (+)  = AUHLP10, 210, 03
+&REC_KEY   (+-)
+&REC_MATCH (+-) = "Projektbezeichnung     ", 0, PROJEKT_1
+&ADD_MATCH (+-) = "Nummer     ", 0, NUMMER
+&DATA      (+-) = 0, PROJEKT_1
+
+>>Projektbezeichnung 2
+&HELPTEXT (+)  = AUHLP10, 210, 04
+&DATA     (+-) = 0, PROJEKT_2
+
+>>Namenskrzel
+&HELPTEXT (+)  = AUHLP10, 210, 05
+&DATA     (+-) = 0, NAMEN_KZ
+
+>>Datum Ausdruck
+&HELPTEXT (+)  = AUHLP10, 210, 06
+&DATA     (+-) = 0, DATUMDRUCK
+
+>>Kundennummer
+&HELPTEXT  (+)  = AUHLP10, 210, 07
+&REF_KEY   (+-)
+&REF_MATCH (+-) = "Kundennummer    ", 2, KUNDE
+&ADD_MATCH (+-) = "Matchcode       ", 2, MATCH_CODE
+&ADD_MATCH (+-) = "Strasse        ", 2, STRASSE
+&REF_DATA  (+-) = 2, KUNDE, 0, KUNDEN_NUM
+
+>>Match-Code
+&HELPTEXT  (+)  = AUHLP10, 210, 08
+&REF_KEY   (+-)
+&REF_MATCH (+-) = "Matchcode      ", 2, MATCH_CODE
+&ADD_MATCH (+-) = "Kundennummer    ", 2, KUNDE
+&ADD_MATCH (+-) = "Strasse       ", 2, STRASSE
+&REF_DATA  (+-) = 2, MATCH_CODE, 0, MATCH_CODE
+
+>>Anrede
+&HELPTEXT  (+)  = AUHLP10, 210, 09
+&REF_DATA  (+-) = 2, ANREDE, 0, ANREDE
+
+>>Konto-Nummer
+&DATA_H   (+) = 0, KONTO_NR
+
+>>Konto-Nummer
+&HELPTEXT (+)  = AUHLP10, 210, 20
+&REF_DATA (+-) = 4, FI_KU_KTO, 0, KONTO_NR
+
+>>Name
+&HELPTEXT (+)  = AUHLP10, 210, 10
+&REF_DATA (+-) = 2, NAME, 0, KUNDENNAME
+
+>>Zusatz
+&HELPTEXT (+)  = AUHLP10, 210, 11
+&REF_DATA (+-) = 2, ZUSATZ, 0, ZUSATZ
+
+>>Straáe
+&HELPTEXT (+)  = AUHLP10, 210, 13
+&REF_DATA (+-) = 2, STRASSE, 0, STRASSE
+
+>>Postfach
+&HELPTEXT (+)  = AUHLP10, 210, 21
+&REF_DATA (+-) = 2, POSTFACH, 0, POSTFACH
+
+>>Landkrzel
+&HELPTEXT (+)  = AUHLP10, 210, 14
+&REF_DATA (+-) = 2, LAND, 0, LAND_KZ
+
+>>PLZ/Ort
+&HELPTEXT (+)  = AUHLP10, 210, 15
+&REF_DATA (+-) = 2, PLZ_ORT, 0, PLZ_ORT
+
+>>Grundrabatt
+&HELPTEXT (+)  = AUHLP10, 210, 17
+&REF_DATA (+-) = 4, GR_RABATT, 0, GRU_RABATT
+
+>>W„hrung
+&HELPTEXT (+)  = AUHLP10, 210, 26
+&REF_DATA (+-) = 9, WŽHRUNG, 0, WŽHRUNG
+
+>>MwSt-KZ
+&HELPTEXT (+)  = AUHLP10, 210, 22
+&CHOICE   (+-) = "MwSt. Kennzeichen", "ohne MwSt", "o", "plus MwSt", "m", "incl. MwSt", "i"
+&DEFAULT  (+-) = "m"
+&REF_DATA (+-) = 4, MWST, 0, MWST
+
+>>Zahlungskonditionen
+&HELPTEXT (+)  = AUHLP10, 210, 23
+&REF_DATA (+-) = 9, KONDITION, 0, KONDITION
+
+>>Auslandskunde
+&HELPTEXT (+)  = AUHLP10, 210, 24
+&CHOICE   (+-) = "Auslandskunde", "nein", "n", "ja", "j"
+&REF_DATA (+-) = 9, AUSLANDSKU , 0, AUSLANDSKU
+
+>>Artikel-Verkaufspreis
+&HELPTEXT (+)  = AUHLP10, 210, 25
+>>CHOICE   (+-) = "Artikelpreise", "1.Art.-Preis", "1", "2.Art.-Preis","2", "3.Art.-Preis","3", "4.Art.-Preis","4", "5.Art.-Preis","5"
+&REF_DATA (+-) = 4, PREIS_GR, 0, PREIS_GR
+
+>>Kunden-Nummer in ST1110 (Dummy Feld)
+&REF_KEY  (+)
+&DATA_H   (+-) = 4, KUNDE_ST1
+
+>>Kunden-Nummer in FI1110 (Dummy Feld)
+&REF_KEY  (+)
+&DATA_H   (+-) = 9, FI_KUNDE
+
+>>Mandanten-Nummer (Dummy Feld)
+&REF_KEY  (+)
+&DATA_H   (+-) = 6, MAND_02
+
+>>Mandanten-Nummer (Dummy Feld)
+&REF_KEY  (+)
+&DATA_H   (+-) = 8, MAND_01
+
+>>Prim„rkey
+&REC_KEY  (+)
+&DATA_H   (+-) = 0, PRIMŽR_KEY
+
+&DATA_H   (+) = 9, KURZ_BEZ	  >>Fibu Konto-Kunden  >>KEY  (+)
+&DATA_H   (+) = 9, KU_KONTO	  >>Fibu Konto-Kunden
+&DATA_H   (+) = 6, NR_ANGEBOT	  >>Nummernkreis Angebote (Dummy Feld)
+&DATA_H   (+) = 6, NR_AUFTRAG	  >>Nummernkreis Auftraege (Dummy Feld)
+&DATA_H   (+) = 6, NR_LIEFER	  >>Nummernkreis Lieferscheine (Dummy Feld)
+&DATA_H   (+) = 6, NR_RECH	  >>Nummernkreis Rechnungen, Gutschriften (Dummy Feld)
+&DATA_H   (+) = 6, NR_KUND	  >>Nummernkreis Kunden (Dummy Feld)
+
+&DATA_H   (+) = 8, FRWŽ_BE_00	  >>Fremdw„hrung 00-09
+&DATA_H   (+) = 8, FRWŽ_BE_01	  >>Fremdw„hrung 00-09
+&DATA_H   (+) = 8, FRWŽ_BE_02	  >>Fremdw„hrung 00-09
+&DATA_H   (+) = 8, FRWŽ_BE_03	  >>Fremdw„hrung 00-09
+&DATA_H   (+) = 8, FRWŽ_BE_04	  >>Fremdw„hrung 00-09
+&DATA_H   (+) = 8, FRWŽ_BE_05	  >>Fremdw„hrung 00-09
+&DATA_H   (+) = 8, FRWŽ_BE_06	  >>Fremdw„hrung 00-09
+&DATA_H   (+) = 8, FRWŽ_BE_07	  >>Fremdw„hrung 00-09
+&DATA_H   (+) = 8, FRWŽ_BE_08	  >>Fremdw„hrung 00-09
+&DATA_H   (+) = 8, FRWŽ_BE_09	  >>Fremdw„hrung 00-09
+
+&DATA_H   (+) = 8, UST_1	  >>Mwst-Satz 1-8
+&DATA_H   (+) = 8, UST_2	  >>Mwst-Satz 1-8
+&DATA_H   (+) = 8, UST_3	  >>Mwst-Satz 1-8
+&DATA_H   (+) = 8, UST_4	  >>Mwst-Satz 1-8
+&DATA_H   (+) = 8, UST_5	  >>Mwst-Satz 1-8
+&DATA_H   (+) = 8, UST_6	  >>Mwst-Satz 1-8
+&DATA_H   (+) = 8, UST_7	  >>Mwst-Satz 1-8
+&DATA_H   (+) = 8, UST_8	  >>Mwst-Satz 1-8
+
+&DATA_H   (+) = 8, TXT_VKP_01	  >>Text fr Verkaufspreis 1-5
+&DATA_H   (+) = 8, TXT_VKP_02	  >>Text fr Verkaufspreis 1-5
+&DATA_H   (+) = 8, TXT_VKP_03	  >>Text fr Verkaufspreis 1-5
+&DATA_H   (+) = 8, TXT_VKP_04	  >>Text fr Verkaufspreis 1-5
+&DATA_H   (+) = 8, TXT_VKP_05	  >>Text fr Verkaufspreis 1-5
+
+&DATA_H   (+) = 0, KONDITION      >>Kondition
+&DATA_H   (+) = 0, KUNDEN_NUM     >>Kundennummer
+&DATA_H   (+) = 0, KONDITION      >>pt() findet letztes Feld nicht!!!

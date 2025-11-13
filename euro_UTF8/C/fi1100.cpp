@@ -1,15 +1,11 @@
 // (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:51:08 - Wed
 
-// ╔══════════════════════════════════════════════════════════════════════════╗
-// ║  Programme-Name: FI1100.CPP      Revision: 2.0	    (C) 1989/1993     ║
-// ║  Function	    : Stammdaten für die Finanzbuchhaltung		      ║
-// ║		      Anlegen, Ändern Kunden, Lieferanten, Sachkonten	      ║
-// ║		      USt-VA-Kennzeichen, Bilanztexte			      ║
-// ║									      ║
-// ║  Rev.-Date     : 01.07.1993, Graz		   Update: 01.05.1991, Graz   ║
-// ║  Author	    : Peter Mayer		   Author: Peter Mayer	      ║
-// ║  Copyright (C) : euroWIN-WARE, euroCASE-BOX   Peter Mayer, A-8041 Graz   ║
-// ╚══════════════════════════════════════════════════════════════════════════╝
+// recode@ /CCC by CCCORE                  Letztes Update: 2025-01-14 / 16:18
+/*+-------------------------------------------------------------------------+
+  | Programm: fi1100.cpp                                    Revision: 2.1 |
+  | Function: Stammdaten für die Finanzbuchhaltung ║                       |
+  | Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) |
+  +-------------------------------------------------------------------------+*/
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║			     Deklarations-Dateien			      ║
 // ╚══════════════════════════════════════════════════════════════════════════╝

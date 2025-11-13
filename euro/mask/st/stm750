@@ -1,0 +1,83 @@
+
+
+
+ ù                                                                            ù
+    Erf-Nr: @@@@@
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    Sorte Klasse  Sortierung Verp. Fracht Sonst.   Menge  Preis
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    ››       ›       ››››      ›     ›      ›     #####›   #›,››
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ù                                                                            ù
+
+>>Mask:   STM750
+>>Prog.:  ST1100.C
+>>Update: 6.08.91
+
+&TITEL    = "ST  Obstinfo Verkaufserfassung 1/x"
+&FRAME    = 0, 0, 0, 0, "ÄVerkaufserfassung", 2
+>>SEQUENZ =
+
+&BLOCK = 1, 8
+&SCROLL = 7,0,21,79
+
+&MASKHELP = AUHLP10, art-st
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.LKS1500
+
+>>Erfassungsnummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Erfassungsnummer", 0, ERFNR
+&ADD_MATCH  (+-) = "Bezeichnung          ", 0, ART_NR
+  &HELPTEXT (+-)  = LKHLP10, 150, 1
+  &DATA     (+-) = 0, ERFNR
+
+>>Positionsteil
+>>Artikelnummer / Sorte
+  &HELPTEXT (+)  = LKHLP10, 150, 2
+  &DATA     (+-) = 0, ART_NR
+
+>>Klasse
+  &HELPTEXT  (+) = LKHLP10, 150, 3
+  &DATA      (+-) = 0, KLASSE
+
+>>Sortierung
+  &HELPTEXT (+)  = LKHLP10, 150, 4
+  &DATA     (+-) = 0, SORTIERUNG
+
+>>Verpackungscode
+  &HELPTEXT (+)  = LKHLP10, 150, 5
+  &DATA     (+-) = 0, VER_CODE
+
+>>Fracht-Code
+  &HELPTEXT (+)  = LKHLP10, 150, 6
+  &DATA     (+-) = 0, FRA_CODE
+
+>>SONST-Code
+  &HELPTEXT (+)  = LKHLP10, 150, 7
+  &DATA     (+-) = 0, SON_CODE
+
+>>Menge
+  &HELPTEXT (+)  = LKHLP10, 150, 8
+  &DATA     (+-) = 0, MENGE
+
+>>Verkaufspreis
+  &HELPTEXT (+)  = LKHLP10, 150, 9
+  &DATA     (+-) = 0, PREIS
+
+

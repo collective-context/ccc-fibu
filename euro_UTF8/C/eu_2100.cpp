@@ -1,20 +1,11 @@
 // (C) FiCore - Open Source Financial Core  Letztes Update am 14-Feb-1996 / 11:18:37 - Wed
 
-// ╔══════════════════════════════════════════════════════════════════════════╗
-// ║  Programme-Name: EU_1100.C       Revision: 1.3	    (C) 1989/1991     ║
-// ║  Function	    : FiCore - CASEbox Programme			      ║
-// ║		      EU Anlegen/Ändern Datenlexikon			      ║
-// ║		      EU Vertriebssteuerung FiCore			      ║
-// ║		      LE Lernprogramm - Lexikon 			      ║
-// ║		      PBA Prüfbau - Preisbasis				      ║
-// ║		      LKS Obstsorten - Obstinfo 			      ║
-// ║		      AKV Anlegen Kunden				      ║
-// ║									      ║
-// ║									      ║
-// ║  Rev.-Date     : 01.05.1991, Graz		 Update: 05.08.1991, Graz     ║
-// ║  Author	    : Peter Mayer		 Author: Peter Mayer	      ║
-// ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz     ║
-// ╚══════════════════════════════════════════════════════════════════════════╝
+// recode@ /CCC by CCCORE                  Letztes Update: 2025-01-14 / 16:18
+/*+-------------------------------------------------------------------------+
+  | Programm: eu_2100.cpp                                   Revision: 1.4 |
+  | Function: - CASEbox Programme ║                                        |
+  | Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) |
+  +-------------------------------------------------------------------------+*/
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║			     Deklarations-Dateien			      ║
 // ╚══════════════════════════════════════════════════════════════════════════╝

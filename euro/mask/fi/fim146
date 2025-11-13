@@ -1,0 +1,119 @@
+
+
+
+ ù                                                                            ù
+  @ @ @
+  @ @ @ @ @ @    @ @ @ @ @ @    @ @ @ @ @ @    @ @ @ @ @ @
+  @ @ @ @ @ @    @ @ @ @ @ @    @ @ @ @ @ @    @ @ @ @ @ @
+  @ @ @ @ @ @    @ @ @ @ @ @    @ @ @ @ @ @    @ @ @ @ @ @
+
+ ù                                                                            ù
+
+>>Mask:   FIM131
+>>Prog.:  FI1100.C
+>>Update: 25.07.91
+
+
+&TITEL    = "FI  STAMM Dummy fr FIM145"
+&FRAME    = 0, 0, 0, 0, "ÄDummy fr FIM145", 2
+>>SEQUENZ =
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.FI1310
+&DRU_DATEI  (1)  = MASK, D.FI4500
+&DATEI      (2)  = MASK, V.FI1310
+&DATEI      (3)  = MASK, 2.FI1310
+
+  &DATA     (0)  = 0, VOR_SALDO   >>Saldovortrag
+  &DATA     (+)  = 1, JHR_SOLL    >>
+  &DATA     (+)  = 1, JHR_HABEN   >>
+
+  &DATA     (+)  = 0, SOLL_01     >>SOLL J„nner
+  &DATA     (+)  = 0, HABEN_01    >>HABEN J„nner
+  &DATA     (+)  = 0, SOLL_02     >>SOLL Februar
+  &DATA     (+)  = 0, HABEN_02    >>HABEN Februar
+  &DATA     (+)  = 0, SOLL_03     >>SOLL M„rz
+  &DATA     (+)  = 0, HABEN_03    >>HABEN M„rz
+
+  &DATA     (+)  = 0, SOLL_04     >>SOLL April
+  &DATA     (+)  = 0, HABEN_04    >>HABEN April
+  &DATA     (+)  = 0, SOLL_05     >>SOLL Mai
+  &DATA     (+)  = 0, HABEN_05    >>HABEN Mai
+  &DATA     (+)  = 0, SOLL_06     >>SOLL Juni
+  &DATA     (+)  = 0, HABEN_06    >>HABEN Juni
+
+  &DATA     (+)  = 0, SOLL_07     >>SOLL Juli
+  &DATA     (+)  = 0, HABEN_07    >>HABEN Juli
+  &DATA     (+)  = 0, SOLL_08     >>SOLL August
+  &DATA     (+)  = 0, HABEN_08    >>HABEN August
+  &DATA     (+)  = 0, SOLL_09     >>SOLL September
+  &DATA     (+)  = 0, HABEN_09    >>HABEN September
+
+  &DATA     (+)  = 0, SOLL_10     >>SOLL Oktober
+  &DATA     (+)  = 0, HABEN_10    >>HABEN Oktober
+  &DATA     (+)  = 0, SOLL_11     >>SOLL November
+  &DATA     (+)  = 0, HABEN_11    >>HABEN November
+  &DATA     (+)  = 0, SOLL_12     >>SOLL Dezember
+  &DATA     (+)  = 0, HABEN_12    >>HABEN Dezember
+
+  &DATA     (+)  = 2, SOLL_01     >>SOLL J„nner
+  &DATA     (+)  = 2, HABEN_01    >>HABEN J„nner
+  &DATA     (+)  = 2, SOLL_02     >>SOLL Februar
+  &DATA     (+)  = 2, HABEN_02    >>HABEN Februar
+  &DATA     (+)  = 2, SOLL_03     >>SOLL M„rz
+  &DATA     (+)  = 2, HABEN_03    >>HABEN M„rz
+
+  &DATA     (+)  = 2, SOLL_04     >>SOLL April
+  &DATA     (+)  = 2, HABEN_04    >>HABEN April
+  &DATA     (+)  = 2, SOLL_05     >>SOLL Mai
+  &DATA     (+)  = 2, HABEN_05    >>HABEN Mai
+  &DATA     (+)  = 2, SOLL_06     >>SOLL Juni
+  &DATA     (+)  = 2, HABEN_06    >>HABEN Juni
+
+  &DATA     (+)  = 2, SOLL_07     >>SOLL Juli
+  &DATA     (+)  = 2, HABEN_07    >>HABEN Juli
+  &DATA     (+)  = 2, SOLL_08     >>SOLL August
+  &DATA     (+)  = 2, HABEN_08    >>HABEN August
+  &DATA     (+)  = 2, SOLL_09     >>SOLL September
+  &DATA     (+)  = 2, HABEN_09    >>HABEN September
+
+  &DATA     (+)  = 2, SOLL_10     >>SOLL Oktober
+  &DATA     (+)  = 2, HABEN_10    >>HABEN Oktober
+  &DATA     (+)  = 2, SOLL_11     >>SOLL November
+  &DATA     (+)  = 2, HABEN_11    >>HABEN November
+  &DATA     (+)  = 2, SOLL_12     >>SOLL Dezember
+  &DATA     (+)  = 2, HABEN_12    >>HABEN Dezember
+
+  &DATA     (+)  = 3, SOLL_01     >>SOLL J„nner
+  &DATA     (+)  = 3, HABEN_01    >>HABEN J„nner
+  &DATA     (+)  = 3, SOLL_02     >>SOLL Februar
+  &DATA     (+)  = 3, HABEN_02    >>HABEN Februar
+  &DATA     (+)  = 3, SOLL_03     >>SOLL M„rz
+  &DATA     (+)  = 3, HABEN_03    >>HABEN M„rz
+
+  &DATA     (+)  = 3, SOLL_04     >>SOLL April
+  &DATA     (+)  = 3, HABEN_04    >>HABEN April
+  &DATA     (+)  = 3, SOLL_05     >>SOLL Mai
+  &DATA     (+)  = 3, HABEN_05    >>HABEN Mai
+  &DATA     (+)  = 3, SOLL_06     >>SOLL Juni
+  &DATA     (+)  = 3, HABEN_06    >>HABEN Juni
+
+  &DATA     (+)  = 3, SOLL_07     >>SOLL Juli
+  &DATA     (+)  = 3, HABEN_07    >>HABEN Juli
+  &DATA     (+)  = 3, SOLL_08     >>SOLL August
+  &DATA     (+)  = 3, HABEN_08    >>HABEN August
+  &DATA     (+)  = 3, SOLL_09     >>SOLL September
+  &DATA     (+)  = 3, HABEN_09    >>HABEN September
+
+  &DATA     (+)  = 3, SOLL_10     >>SOLL Oktober
+  &DATA     (+)  = 3, HABEN_10    >>HABEN Oktober
+  &DATA     (+)  = 3, SOLL_11     >>SOLL November
+  &DATA     (+)  = 3, HABEN_11    >>HABEN November
+  &DATA     (+)  = 3, SOLL_12     >>SOLL Dezember
+  &DATA     (+)  = 3, HABEN_12    >>HABEN Dezember
+
+

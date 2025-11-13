@@ -1,0 +1,80 @@
+
+
+
+
+
+
+
+
+                   ù                                              ù
+                      von Textbaustein-Nr. : ïïïïïïïïïï
+                      bis Textbaustein-Nr. : ïïïïïïïïïï
+                      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                                    Kopien : ##
+
+                           Druck von Seite : ####
+                                 bis Seite : ####
+                   ù                                             ù
+
+^ ^ 
+^ ^ ^ ^ ^ ^ ^
+
+>>Mask:   STM4180
+>>Prog.:  ST4100.C
+>>Update: 01.06.91
+
+&TITEL    = "ST  DRUCK Textbausteine"
+&FRAME    = 0, 0, 0, 0, "ÄDrucken Textbausteine", 2
+>>SEQUENZ =
+
+>>MASKHELP= STHLP10, artnr
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.ST1800
+&DRU_DATEI  (1)  = MASK, D.ST4180
+
+>>von Textbaustein-Nummer
+  &HELPTEXT (0)  = STHLP10, 418, 0
+  &DATA     (+-) = 1, _V_TXTNR
+
+>>bis Textbaustein-Nummer
+  &HELPTEXT (+)  = STHLP10, 418, 1
+  &DATA     (+-) = 1, _B_TXTNR
+
+>>Kopien
+  &HELPTEXT (+)  = SYHLP10, 402, 04
+  &DATA     (+-) = 1, _KOPIEN
+  &DEFAULT  (+-) = "1"
+
+>>von Seite
+  &HELPTEXT (+)  = SYHLP10, 100, 100
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = SYHLP10, 100, 100
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Text-Nummer", 0, TEXT_NR
+&ADD_MATCH  (+-) = "Bezeichnung                   ", 0, TEXT_BEZ
+  &DATA_H   (+-) = 0, TEXT_NR     >>Textbaustein-Nummer
+
+&REC_KEY    (+)
+  &DATA_H   (+-) = 0, TEXT_BEZ    >>Bezeichnung
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+

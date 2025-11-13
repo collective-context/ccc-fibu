@@ -1,0 +1,158 @@
+
+
+
+ ùErfassung - Lagerbewegungen
+  Lieferanten Nummer: @@@@@@@@@@@@@@@   Name: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  Lieferscheinnummer: @@@@@@@@@@@@@@@   Datum: ##.##.##   @
+
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   Artikel Nr.: ³ Bezeichnung         ³ Ort ³ Menge      ³ Betrag       ³ Art
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄ
+   @@@@@@@@@@@@ ³ @@@@@@@@@@@@@@@@@@@ ³ ##  ³ ###.##›,›› ³ #.###.##›,›› ³  @@
+                ³                     ³     ³            ³              ³
+                ³                     ³     ³            ³              ³
+                ³                     ³     ³            ³              ³
+                ³                     ³     ³            ³              ³
+                ³                     ³     ³            ³              ³
+                ³                     ³     ³            ³              ³
+                ³                     ³     ³            ³              ³
+                ³                     ³     ³            ³              ³
+                ³                     ³     ³            ³              ³
+                ³                     ³     ³            ³              ³
+                ³                     ³     ³            ³              ³
+ ù              ³                     ³     ³            ³              ³     ù
+
+^ ^ ^ ^ ^ ^   ^ ^
+
+>>Mask:   AUM230
+>>Prog.:  AU1100.C
+>>Update: 23.06.93
+
+
+&TITEL    = "AU Erfassung-Lagerbewegungen 1/2"
+&FRAME    = 0, 0, 0, 0, "Erfassung von Lagerbewegungen", 2
+>>&SEQUENZ  = 1,2,3,4,8,9,10,12,13,15
+
+&BLOCK    = 5,10
+&SCROLL   = 9,0,21,79
+
+&MASKHELP  = AUHLP10, lag-bew
+&INDEX    = BASIS
+
+&DATEI      (0)  = MASK, D.AU2300
+&REF_DATEI  (1)  = MASK, D.ST1200
+&REF_DATEI  (2)  = MASK, D.ST1300
+
+
+>>ÚÄÄÄÄÄÄÄ  Dummy Feld: ÄÄÄÄÄÄÄ¿
+>>Erfassungsnummer
+>>&REC_KEY    (0)
+>>  &DATA_H   (+-) = 0, SATZ_NR
+>>ÀÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÙ
+
+>>Lieferantennummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Lieferant", 0, LIEFER_NR
+&ADD_MATCH  (+-) = "Bezeichnung               ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "LS-Nummer  ", 0, LS_NUMMER
+&ADD_MATCH  (+-) = "LS-Datum   ", 0, LS_DATUM
+  &HELPTEXT (+-) = AUHLP10, 230, 0
+  &DATA     (+-) = 0, LIEFER_NR
+
+>>Lieferanten Kurzbezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Bezeichnung               ", 0, MATCH_CODE
+&ADD_MATCH  (+-) = "Lieferant", 0, LIEFER_NR
+&ADD_MATCH  (+-) = "LS-Nummer  ", 0, LS_NUMMER
+&ADD_MATCH  (+-) = "LS-Datum   ", 0, LS_DATUM
+  &HELPTEXT (+-) = AUHLP10, 230, 1
+  &DATA     (+-) = 0, MATCH_CODE
+
+>>Lieferscheinnummer
+  &HELPTEXT (+)  = AUHLP10, 230, 2
+  &DATA     (+-) = 0, LS_NUMMER
+
+>>Lieferung Datum
+  &HELPTEXT (+)  = AUHLP10, 230, 3
+  &DATA     (+-) = 0, LS_DATUM
+
+>>Seriennummer (dzt. tempor„r)
+  &HELPTEXT (+)  = AUHLP10, 230, 10
+  &DATA     (+-) = 0, LS_NUMMER
+
+>>&HIDE       (+)
+>>&REF_DATA   (+-) = 1, MATCH_CODE, 0, MATCH_CODE
+
+>>Aktueller Bestand Gesamt
+>>&DATA     (+)  = 0, ART_GES
+
+>>Lagerort (Bestand)
+>>&DATA     (+)  = 0, LAG_AKT
+
+>>--- Beginn Positionsteil
+>>Artikel Nummer
+  &HELPTEXT (+)  = AUHLP10, 230, 4
+  &DATA     (+-)  = 0, ART_NR
+
+>>Artikel Bezeichnung
+  &HELPTEXT (+)  = AUHLP10, 230, 5
+  &DATA     (+-)  = 0, ART_BEZ
+
+>>Lagerort
+  &HELPTEXT (+)  = AUHLP10, 230, 6
+  &DATA     (+-)  = 0, LAG_ORT
+
+>>Menge
+  &HELPTEXT (+)  = AUHLP10, 230, 9
+  &DATA     (+-)  = 0, MENGE
+
+>>Betrag
+  &HELPTEXT (+)  = AUHLP10, 230, 7
+  &DATA     (+-)  = 0, BETRAG
+
+>>Art
+  &HELPTEXT (+)  = AUHLP10, 230, 8
+  &DATA     (+-) = 0, ART
+  &CHOICE   (+-) = "ÄArten              ",\
+                   "LI  Lieferung",1,  "TL  Teillieferung",2,  "NL  Nachlieferung",3, \
+                   "SL  Sonderlieferung",4, "RL  Retourlieferung",5, "BR  Bruch",6, \
+                   "SC  Schwund",7, "SO  sonstige Ausg„nge",8
+
+
+>>------Dummy Felder fr Referenzfelder-------------
+>>Lieferantennummer //~0te Matchcodedefinition in Datei 1
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Lieferanten Nr.:", 1, LIEFNR
+&ADD_MATCH  (+-) = "Match - Code             ", 1, MATCH_CODE
+  &DATA_H   (+-) = 1, LIEFNR
+
+>>Match-Code  //~1te Matchcodedefinition in Datei 1
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Match - Code             ", 1, MATCH_CODE
+&ADD_MATCH  (+-) = "Lieferanten Nr.:", 1, LIEFNR
+  &DATA_H   (+-) = 1, MATCH_CODE
+
+>>Artikelnummer
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Match - Code             ", 2, MATCH_CODE
+&ADD_MATCH  (+-) = "Artikelnummer :", 2, ARTNR
+  &DATA_H   (+-) = 2, ARTNR
+
+
+>>Artikelnummer Match Code
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Match - Code             ", 2, MATCH_CODE
+&ADD_MATCH  (+-) = "Artikelnummer :", 2, ARTNR
+  &DATA_H   (+-) = 2, MATCH_CODE
+
+  &DATA_H   (+)  = 2, LAGER_GES
+  &DATA_H   (+)  = 2, LAG_00-99
+
+>>Lagerort
+  &DATA_H   (+)  = 0, LAG_VOR
+
+>>Menge aktuell
+  &DATA_H   (+)  = 0, MENGE_VOR
+
+
+

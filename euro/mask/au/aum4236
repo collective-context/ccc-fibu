@@ -1,0 +1,162 @@
+
+
+
+  ù
+    › @ ï @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+    @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+ ù                                                            ù
+
+
+
+
+
+&TITEL = "AU  DRUCK - Parameter"
+&REM Programm: ST4100
+
+&FRAME = 0,0,0,0 "Anlegen/Žndern Drucker-Parameter", 2
+&INDEX = "BASIS"
+
+&DATEI     (0) = EURODATA, D.AU2100
+&REF_DATEI (1) = EURODATA, D.AU2110
+&REF_DATEI (2) = EURODATA, D.AU2101
+&REF_DATEI (3) = EURODATA, L.SYPARA
+&PARA_READ (4) = EURODATA, L.SYP_01
+&REF_DATEI (5) = EURODATA, L.SYFORM
+&REF_DATEI (6) = EURODATA, L.SYPRINT
+
+&REM  Drucker-Nummer
+&REF_KEY   (00)
+&DATA      (+-) = 6, DRUCKER_NR
+
+&REM Bezeichnung
+&REF_KEY   (+)
+&DATA      (+-) = 6, DR_NAME
+
+&REM Device
+&DATA     (+) = 6, DEVICE
+
+&REM Normalschrift
+&DATA     (+) = 6, SCHR_NORM
+
+&REM Schmalschrift
+&DATA     (+) = 6, SCHR_SCHM
+
+&REM Sch”nschrift
+&DATA     (+) = 6, SCHR_SCH™
+
+&REM Frei
+&DATA     (+) = 6, SCHR_FREI
+
+&REM KZ Einzug
+&DATA     (+) = 6, EINZUG_KZ
+
+&REM Init Schacht 1
+&DATA     (+) = 6, SCHACHT1
+
+&REM Init Schacht 2
+&DATA     (+) = 6, SCHACHT2
+
+&REM  Unterstreichen ein
+&DATA     (+) = 6, UNTER_EIN
+
+&REM  Unterstreichen aus
+&DATA     (+) = 6, UNTER_AUS
+
+&REM  Fett ein
+&DATA     (+) = 6, FETT_EIN
+
+&REM  Fett aus
+&DATA     (+) = 6, FETT_AUS
+
+&REM  Breit ein
+&DATA     (+) = 6, BREIT_EIN
+
+&REM  Breit aus
+&DATA     (+) = 6, BREIT_AUS
+
+&REM  Kursiv ein
+&DATA     (+) = 6, KURSIV_EIN
+
+&REM  Kursiv aus
+&DATA     (+) = 6, KURSIV_AUS
+
+&REM  Frei 4 ein
+&DATA     (+) = 6, FREI_4_EIN
+
+&REM  Frei 4 aus
+&DATA     (+) = 6, FREI_4_AUS
+
+&REM  frei 1 ein
+&DATA     (+) = 6, FREI_1_EIN
+
+&REM  frei 1 aus
+&DATA     (+) = 6, FREI_1_AUS
+
+&REM frei 2 ein
+&DATA     (+) = 6, FREI_2_EIN
+
+&REM frei 2 aus
+&DATA     (+) = 6, FREI_2_AUS
+
+&REM frei 3 ein
+&DATA     (+) = 6, FREI_3_EIN
+
+&REM frei 3 aus
+&DATA     (+) = 6, FREI_3_AUS
+
+&REM  Init alle Seiten
+&DATA     (+) = 6, INIT_ALLE
+
+&REM  Deinit alle Seiten
+&DATA     (+) = 6, DEINIT_ALL
+
+&REM  Init erste Seite
+&DATA     (+) = 6, INIT_ERSTE
+
+&REM  Deinit letzte Seite
+&DATA     (+) = 6, DEINIT_ERS
+
+&REM  Dateiname
+&DATA     (+) = 6, ZEICH_DAT
+
+&REM  Zeichensatz laden
+&DATA     (+) = 6, ZEICH_SATZ
+
+&REM  Startsequenz
+&DATA     (+) = 6, SEQU_START
+
+&REM  Endsequenz
+&DATA     (+) = 6, SEQU_END
+
+&REM Formular-Nr
+&REF_KEY  (+)
+&DATA     (+-) = 5, FORM_NR
+
+&REM Formular-Name
+&REF_KEY  (+)
+&DATA     (+-) = 5, FORM_NAME
+
+&REM Rand oben
+&DATA     (+)  = 5, F_HOEHE
+
+&REM Rand oben
+&DATA     (+)  = 5, RAND_O
+
+&REM Rand unten
+&DATA     (+)  = 5, RAND_U
+
+&REM Rand links
+&DATA     (+)  = 5, RAND_L
+
+&REM Standardschrift
+&DATA     (+)  = 5, STANDARD
+
+&REM Seiten-Steuerzeichen
+&DATA     (+)  = 5, SEITEN_ST
+
+&REM Seiten-Nr
+&DATA     (+)  = 5, _SEITE
+
+&REM Seiten-Nr
+&DATA     (+)  = 5, _SEITE
+

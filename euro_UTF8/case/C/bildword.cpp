@@ -1,14 +1,11 @@
 // (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
-
 /*------------------------------------------------------------------------------*/
 /* Programm-Name: bildword.c                                                    */
 /* Funktion     : FiCore TOOLBOX                                              */
 /*                Bereitet ein BILD0001.PIC Bild für Word auf.                  */
 /*                                                                              */
-/*                                                                              */
-/* Datum        : 01.04.1990, Graz                                              */
-/* Author       : Peter Mayer                                                   */
-/* Copyright(C) : FiCore-WAREvertrieb, A-8020 Graz                            */
+
+/* Copyright (C) : FiCore by CCC,  Peter Mayer, https://Creative-Context.org    */
 /*------------------------------------------------------------------------------*/
 #include <stdio.h>
 #include <stdlib.h>

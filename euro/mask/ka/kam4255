@@ -1,0 +1,157 @@
+
+
+
+
+
+
+
+
+
+
+
+                            ù
+                              Art: @@@@@@@@@@@@@@@@@@@@@@
+                             ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                              Periode / Monat : @@@@@@@@@@@
+                              Druckdatum      : ##.##.##
+                             ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                              von Seite       : ####
+                              bis Seite       : ####
+                            ù                               ù
+
+^ ^ ^
+^ ^ ^ ^ ^ ^ ^   ^
+^ ^ ^ ^ ^ ^     ^ ^ ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^    ^ ^ ^ ^ ^   ^ ^
+
+>>Mask:   KAM4255
+>>Prog.:  FI4100.C
+>>Update: 5.08.91
+
+&TITEL    = "KA  DRUCK Salden Konten"
+&FRAME    = 0, 0, 0, 0, "ÄDrucken Kontensalden", 2
+>>SEQUENZ =
+
+&MASKHELP = KAHLP10, sal-dru
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.KA1500
+&DRU_DATEI  (1)  = MASK, D.KA4130
+&PARA_READ  (2)  = MASK, L.SYP_01
+&REF_DATEI  (3)  = MASK, D.KA0150
+
+
+>>Art
+  &HELPTEXT (0)  = KAHLP10, 255, 2
+  &DATA     (+-) = 1, _ART
+  &DEFAULT  (+-) = 1
+  &CHOICE   (+-) = "Druck der Konten-Saldenliste       ",\
+                   "Alle Eintr„ge drucken",1, "Nur Rechnungsausg„nge",2,\
+                   "Nur Wareneing„nge",3, "Nur Betriebseinnahmen",4,\
+                   "Nur Spesenverteiler",5
+
+
+>>Verarbeiten Monat
+  &HELPTEXT (+)  = KAHLP10, 255, 5
+  &DATA     (+-) = 1, _W_MONAT
+  &CHOICE   (+-) = "Verarbeiten Monat",\
+                 "J„nner",1,  "Februar",2,  "M„rz",3,  "April",4,\
+                 "Mai",5,  "Juni",6,  "Juli",7,  "August",8,\
+                 "September",9,  "Oktober",A,  "November",B,\
+                 "Dezember",C, "Jahreswerte",0
+  &DEFAULT  (+-) = 0
+
+>>Druckdatum
+  &HELPTEXT (+)  = KAHLP10, 255, 6
+  &DATA     (+-) = 1, _DRUCK_DAT
+  &DEFAULT  (+-) = "s"
+
+>>von Seite
+  &HELPTEXT (+)  = KAHLP10, 250, 3
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = KAHLP10, 250, 4
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H  (+) = 1, _V_BEL_DAT
+  &DATA_H  (+) = 1, _B_BEL_DAT
+
+  &DATA_H   (+)  = 1, _KONTO_BEZ
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)
+  &DATA_H   (+-) = 2, MAND_01     >>Mandanten-Nummer
+  &DATA_H   (+)  = 2, UST_1       >>Steuersatz 1 - 8
+  &DATA_H   (+)  = 2, UST_2
+  &DATA_H   (+)  = 2, UST_3
+  &DATA_H   (+)  = 2, UST_4
+  &DATA_H   (+)  = 2, UST_5
+
+  &DATA_H   (+)  = 2, UST_6
+  &DATA_H   (+)  = 2, UST_7
+  &DATA_H   (+)  = 2, UST_8
+  &DATA_H   (+)  = 0, BEL_DATUM
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+ &DATA_H   (+)  = 1, _MONAT       >>Dummyfeld fr Monat
+
+ &DATA_H  (+) = 1, -PER_SOLL
+ &DATA_H  (+) = 1, -PER_HABEN
+ &DATA_H  (+) = 1, -JHR_SOLL
+ &DATA_H  (+) = 1, -JHR_HABEN
+ &DATA_H  (+) = 1, -AKT_SALDO
+
+ &DATA_H  (+) = 1, $PER_SOLL
+ &DATA_H  (+) = 1, $PER_HABEN
+ &DATA_H  (+) = 1, $JHR_SOLL
+ &DATA_H  (+) = 1, $JHR_HABEN
+ &DATA_H  (+) = 1, $AKT_SALDO
+
+ &DATA_H  (+) = 1, _PER_SOLL
+ &DATA_H  (+) = 1, _PER_HABEN
+ &DATA_H  (+) = 1, _JHR_SOLL
+ &DATA_H  (+) = 1, _JHR_HABEN
+ &DATA_H  (+) = 1, _AKT_SALDO
+
+ &DATA_H  (+) = 1, _KONTONR
+ &DATA_H  (+) = 1, _KONTO_BEZ
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+
+
+                                   von Kontonummer : S@@@@@@@@
+                                   bis Kontonummer : S@@@@@@@@
+                                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+>>Von Kontomunner S
+  &HELPTEXT   (+)  = KAHLP10, 255, 0
+  &REF_KEY    (+-)
+  &REF_MATCH  (+-) = "Konto-Nummer", 3, .KONTONR
+  &ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 3, .KONTO_BEZ
+  &DATA       (+-) = 1, _V_KTONR
+  &DEFAULT    (+-) = "0001"
+
+
+>>Bis Kontonummer S
+  &HELPTEXT   (+)  = KAHLP10, 255, 1
+  &REF_KEY    (+-)
+  &REF_MATCH  (+-) = "Konto-Nummer", 3, .KONTONR
+  &ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 3, .KONTO_BEZ
+  &DATA       (+-) = 1, _B_KTONR
+  &DEFAULT    (+-) = "9999"
+
+

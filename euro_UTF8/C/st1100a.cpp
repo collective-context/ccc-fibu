@@ -13,9 +13,7 @@
   ║                                                                         ║
   ║                  Textverarbeitung: Anlegen Kopftext                     ║
   ║                                                                         ║
-  ║  Rev.-Date     : 01.05.1991, Graz           Update: 01.05.1991, Graz    ║
-  ║  Author        : Peter Mayer                Author: Peter Mayer         ║
-  ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz    ║
+ | Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) |
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

@@ -1,0 +1,206 @@
+
+
+
+
+
+
+
+
+
+
+                         ù
+
+                            Monat: @@@@@@@@@@@@
+                            ``.``.``  ``.``.``
+                           ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                            Von Seite: ####
+                            Bis Seite: ####
+                         ù                        ù
+
+``.``.``  ^ ^
+``.``.``  ^ ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^ ^ ^    ^ ^ ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^ ^ ^
+^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
+
+>>Mask:   KAM4130
+>>Prog.:  ST4100.C
+>>Update: 9.08.91
+
+&TITEL    = "KA  DRUCK Einnahmenaufzeichnung 1/1"
+&FRAME    = 0, 0, 0, 0, "ÄDruck Einnahmenaufzeichnung", 2
+>>&SEQUENZ  = 00,01,02
+
+&MASKHELP = KAHLP10, ein-dru
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.KA1500
+&DRU_DATEI  (1)  = MASK, D.KA4130
+&PARA_READ  (2)  = MASK, L.SYP_05
+&PARA_READ  (3)  = MASK, L.SYP_01
+
+>>Verarbeiten Monat
+  &HELPTEXT (0)  = FIHLPP10, 255, 5
+  &DATA     (+-) = 1, _W_MONAT
+  &CHOICE   (+-) = "Verarbeiten Monat",\
+                 "J„nner",1,  "Februar",2,  "M„rz",3,  "April",4,\
+                 "Mai",5,  "Juni",6,  "Juli",7,  "August",8,\
+                 "September",9,  "Oktober",A,  "November",B,\
+                 "Dezember",C, "Jahreswerte",0
+  &DEFAULT  (+-) = 0
+
+
+  &DATA_H (+)  = 1, _V_BEL_DAT
+  &DEFAULT  (+-) = s
+  &DATA_H (+)  = 1, _B_BEL_DAT
+  &DEFAULT  (+-) = s
+
+
+>>von Seite
+  &HELPTEXT (+)  = KAHLP10, 165, 2
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = KAHLP10, 165, 4
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REF_KEY    (+)                   >>Kassa-Nummer
+&REF_MATCH  (+-) = "Datum   ", 0, BEL_DATUM
+&ADD_MATCH  (+-) = "1. Beleg-Nr", 0, BELEGNR
+&ADD_MATCH  (+-) = "1. Buchungs-Text              ", 0, BUCH_TEXT
+  &DATA_H   (+-) = 0, BEL_DATUM
+
+  &DATA_H   (+)  = 0, BELEGNR     >>Einnahmen-Summe
+  &DATA_H   (+)  = 0, BUCH_TEXT   >>Ausgaben-Summe
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+  &DATA_H   (+)  = 1, _LAUFENDNR  >>Laufende Nummer
+
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _SUM_EIN    >>Summe Est Berechnung
+  &DATA_H   (+)  = 1, _UST_ENT
+  &DATA_H   (+)  = 1, _UST_BER
+  &DATA_H   (+)  = 1, _EST_EIN
+  &DATA_H   (+)  = 1, _EIGENVER
+  &DATA_H   (+)  = 1, _MWST_1
+  &DATA_H   (+)  = 1, _MWST_2
+  &DATA_H   (+)  = 1, _MWST_3
+  &DATA_H   (+)  = 1, _MWST_4
+  &DATA_H   (+)  = 1, _MWST_5
+  &DATA_H   (+)  = 1, _MWST_6
+  &DATA_H   (+)  = 1, _MWST_7
+  &DATA_H   (+)  = 1, _MWST_8
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _ENTGELT_1
+  &DATA_H   (+)  = 1, _ENTGELT_2
+  &DATA_H   (+)  = 1, _ENTGELT_3
+  &DATA_H   (+)  = 1, _ENTGELT_4
+  &DATA_H   (+)  = 1, _ENTGELT_5
+  &DATA_H   (+)  = 1, _ENTGELT_6
+  &DATA_H   (+)  = 1, _ENTGELT_7
+  &DATA_H   (+)  = 1, _ENTGELT_8
+
+  &DATA_H   (+) =  1, _BERICHT_1
+  &DATA_H   (+) =  1, _BERICHT_2
+  &DATA_H   (+) =  1, _BERICHT_3
+  &DATA_H   (+) =  1, _BERICHT_4
+  &DATA_H   (+) =  1, _BERICHT_5
+  &DATA_H   (+) =  1, _BERICHT_6
+  &DATA_H   (+) =  1, _BERICHT_7
+  &DATA_H   (+) =  1, _BERICHT_8
+
+>>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+) =  1, _EIGEN_1
+  &DATA_H   (+) =  1, _EIGEN_2
+  &DATA_H   (+) =  1, _EIGEN_3
+  &DATA_H   (+) =  1, _EIGEN_4
+  &DATA_H   (+) =  1, _EIGEN_5
+  &DATA_H   (+) =  1, _EIGEN_6
+  &DATA_H   (+) =  1, _EIGEN_7
+  &DATA_H   (+) =  1, _EIGEN_8
+
+>>ÚÄÄÄÄÄÄÄ  6. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)
+  &DATA_H   (+-) = 3, MAND_01     >>Mandanten-Nummer
+  &DATA_H   (+)  = 3, UST_1       >>Steuersatz 1 - 8
+  &DATA_H   (+)  = 3, UST_2
+  &DATA_H   (+)  = 3, UST_3
+  &DATA_H   (+)  = 3, UST_4
+  &DATA_H   (+)  = 3, UST_5
+  &DATA_H   (+)  = 3, UST_6
+  &DATA_H   (+)  = 3, UST_7
+  &DATA_H   (+)  = 3, UST_8
+
+
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^
+>>ÚÄÄÄÄÄÄÄ  7. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 0, ZAHLUNG
+  &DATA_H   (+)  = 2, ZAH_TXT_01
+  &DATA_H   (+)  = 2, ZAH_TXT_02
+  &DATA_H   (+)  = 2, ZAH_TXT_03
+  &DATA_H   (+)  = 2, ZAH_TXT_04
+  &DATA_H   (+)  = 2, ZAH_TXT_05
+
+  &DATA_H   (+)  = 2, ZAH_TXT_06
+  &DATA_H   (+)  = 2, ZAH_TXT_07
+  &DATA_H   (+)  = 2, ZAH_TXT_08
+  &DATA_H   (+)  = 2, ZAH_TXT_09
+  &DATA_H   (+)  = 2, ZAH_TXT_10
+  &DATA_H   (+)  = 2, ZAH_TXT_11
+
+  &DATA_H   (+)  = 2, ZAH_TXT_12
+
+>>ÚÄÄÄÄÄÄÄ  8. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 2, ZAH_WRT_01
+  &DATA_H   (+)  = 2, ZAH_WRT_02
+  &DATA_H   (+)  = 2, ZAH_WRT_03
+  &DATA_H   (+)  = 2, ZAH_WRT_04
+  &DATA_H   (+)  = 2, ZAH_WRT_05
+  &DATA_H   (+)  = 2, ZAH_WRT_06
+
+  &DATA_H   (+)  = 2, ZAH_WRT_07
+  &DATA_H   (+)  = 2, ZAH_WRT_08
+  &DATA_H   (+)  = 2, ZAH_WRT_09
+  &DATA_H   (+)  = 2, ZAH_WRT_10
+  &DATA_H   (+)  = 2, ZAH_WRT_11
+  &DATA_H   (+)  = 2, ZAH_WRT_12
+
+>>ÚÄÄÄÄÄÄÄ  9. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _SUM_ERL_1
+  &DATA_H   (+)  = 1, _SUM_ERL_2
+  &DATA_H   (+)  = 1, _SUM_ERL_3
+  &DATA_H   (+)  = 1, _SUM_ERL_4
+  &DATA_H   (+)  = 1, _SUM_ERL_5
+  &DATA_H   (+)  = 1, _SUM_MS_1
+
+  &DATA_H   (+)  = 1, _SUM_MS_2
+  &DATA_H   (+)  = 1, _SUM_MS_3
+  &DATA_H   (+)  = 1, _SUM_MS_4
+  &DATA_H   (+)  = 1, _SUM_MS_5
+  &DATA_H   (+)  = 1, _GES_EIN
+  &DATA_H   (+)  = 1, _GES_BER
+
+  &DATA_H   (+)  = 1, _GES_EIG
+  &DATA_H   (+)  = 1, _GES_ERL
+  &DATA_H   (+)  = 1, _GES_MWST
+>>ÀÄ Ende Dummy-Felder! ÄÄÄÄÄÙ
+
+

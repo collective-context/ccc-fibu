@@ -1,0 +1,94 @@
+
+
+
+  Kassa NR-Erfassungstag: Ú NR-JJ.MM.TT ¿
+                          À @@@@@@@@@@@ Ù
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Ú Kassa-Vortrag ¿   ÚÄÄ Einnahmen ÄÄ¿  ÚÄÄ Ausgaben ÄÄÄ¿   ÚÄ Kassa-Stand Ä¿
+  À ``.```.``|,|| Ù   À ``.```.``|,|| Ù  À ``.```.``|,|| Ù   À ``.```.``|,|| Ù
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+    Beleg- ³ Beleg-   ³                          ³             ³
+     datum ³   nummer ³Buchungstext              ³  Einahmen   ³   Ausgaben
+  ÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   ##.##.##³@@@@@@@@@@³@@@@@@@@@@@@@@@@@@@@@@@@@ ³ #.###.##›,››³ #.###.##›,››
+           ³          ³                          ³             ³
+           ³          ³                          ³             ³
+           ³          ³                          ³             ³
+           ³          ³                          ³             ³
+           ³          ³                          ³             ³
+           ³          ³                          ³             ³
+           ³          ³                          ³             ³
+           ³          ³                          ³             ³
+ ù         ³          ³                          ³             ³              ù
+
+
+>>Mask:   KAM130
+>>Prog.:  ST1100.C
+>>Update: 9.08.91
+
+
+&TITEL    = "KA  ERFASS Kassenbuch 1/2"
+&FRAME    = 0, 0, 0, 0, "Kassenbuch", 2
+>>SEQUENZ =
+
+&BLOCK    = 5,9
+&SCROLL   = 12,0,21,79
+
+>>MASKHELP=
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.KA1300
+
+>>Kassa-Nr
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Kassanummer ", 0, KA_NR_TAG
+&ADD_MATCH  (+-) = "Einnahmen    ", 0, SUMEIN
+&ADD_MATCH  (+-) = "Ausgaben     ", 0, SUMAUS
+&ADD_MATCH  (+-) = "Kassastand   ", 0, KASSASTAND
+  &HELPTEXT (+-)  = KAHLP10, 110, 0
+  &DATA     (+-) = 0, KA_NR_TAG
+
+>>Kassenstand
+>>*** nur Anzeigefeld ***
+  &HELPTEXT (+)  = KAHLP10, 110, 3
+  &DATA     (+-)  = 0, KASSAVOR
+
+>>Summe der Einnahmen
+>>*** nur Anzeigefeld ***
+  &HELPTEXT (+)  = KAHLP10, 110, 4
+  &DATA     (+-)  = 0, SUMEIN
+
+>>Summe der Ausgaben
+>>*** nur Anzeigefeld ***
+  &HELPTEXT (+)  = KAHLP10, 110, 5
+  &DATA     (+-)  = 0, SUMAUS
+
+>>Kassastand aktuell
+>>*** nur Anzeigefeld ***
+  &HELPTEXT (+)  = KAHLP10, 110, 6
+  &DATA     (+-)  = 0, KASSASTAND
+
+>>Beleg-Datum
+  &HELPTEXT (+)  = KAHLP10, 110, 7
+  &DATA     (+-) = 0, BELEGDAT
+
+>>Beleg-Nummer
+  &HELPTEXT (+)  = KAHLP10, 110, 8
+  &DATA     (+-) = 0, BELEGNR
+
+>>Buchungstext
+  &HELPTEXT (+)  = KAHLP10, 110, 9
+  &DATA     (+-) = 0, BUCH_TEXT
+
+>>Einnahmen
+  &HELPTEXT (+)  = KAHLP10, 110, 10
+  &DATA     (+-) = 0, EINNAHMEN
+
+>>Ausgaben
+  &HELPTEXT (+)  = KAHLP10, 110, 11
+  &DATA     (+-) = 0, AUSGABEN
+
+

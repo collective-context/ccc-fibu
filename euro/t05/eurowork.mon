@@ -1,0 +1,330 @@
+¯Anfang®ÿ¯Neue Seite®ÿ
+ÚÙBUCHUNGSERFASSUNGS-KONTROLLDATEI                                                      Datum: 10.09.99 - SEITE 0001À¿
+³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
+À´Mandant (02) IFO.net GmbH / A-8010 Graz                                                            Teilnehmer: 010ÃÙ
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+       Soll-     Beleg-     Beleg-   Haben-                                                          U U
+Lfd.Nr konto     Nummer        Datum Konto             Betrag Buchungstext                       Art A S    UST-Betrag
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ 
+000001 KAKV.001  EB001       1.01.99 S9800           2.616,22 EB AKV                              01 M            0,00
+000002 KAKV.001  EB002       1.01.99 S9800           3.013,89 EB AKV                              01 M            0,00
+000003 KWOK.001  EB003       1.01.99 S9800             209,30 EB Woka Managem. Kasic              01 M            0,00
+
+000004 KPSC.001  EB004       1.01.99 S9800             363,04 EB Pschaidt Karl                    01 M            0,00
+000005 KPSC.001  EB005       1.01.99 S9800             427,32 EB Pschaidt Karl                    01 M            0,00
+000006 KPSC.001  EB006       1.01.99 S9800             488,36 EB Pschaidt Karl                    01 M            0,00
+
+000007 KPSC.001  EB007       1.01.99 S9800           1.045,62 EB Pschaidt Karl                    01 M            0,00
+000008 KPSC.001  EB008       1.01.99 S9800             158,72 EB Pschaidt Karl                    01 M            0,00
+000009 KPSC.001  EB009       1.01.99 S9800             212,79 EB Pschaidt Karl                    01 M            0,00
+
+000010 KPSC.001  EB010       1.01.99 S9800             266,85 EB Pschaidt Karl                    01 M            0,00
+000011 KPSC.001  EB011       1.01.99 S9800             185,75 EB Pschaidt Karl                    01 M            0,00
+000012 S9800     EB012       1.01.99 KPSC.001        1.090,09 EB Pschaidt Karl                    03   0          0,00
+
+000013 KVEI.001  EB013       1.01.99 S9800             488,36 EB Veit Heizung-Sanit„r             01 M            0,00
+000014 KVEI.001  EB014       1.01.99 S9800             575,57 EB Veit Heizung-Sanit„r             01 M            0,00
+000015 S9800     EB015       1.01.99 KSCH.005           85,46 EB Schinko-Neuroth G.               03   0          0,00
+
+000016 S9800     EB016       1.01.99 KSCH.008           88,95 EB Schinko Beton-Fertigteilw.       03   0          0,00
+000017 KSCH.006  EB017       1.01.99 S9800              85,46 EB Schinkoïs Styr. House            01 M            0,00
+000018 KEUN.001  EB018       1.01.99 S9800              27,03 EB eundb management                 01 M            0,00
+
+000019 KBRU.000  EB019       1.01.99 S9800             122,96 EB Brhl & S”hne                    01 M            0,00
+000020 KBRU.000  EB020       1.01.99 S9800             185,75 EB Brhl & S”hne                    01 M            0,00
+000021 KBRU.000  EB021       1.01.99 S9800              95,93 EB Brhl & S”hne                    01 M            0,00
+
+000022 KNEU.002  EB022       1.01.99 S9800              85,46 EB Neuroth-Antil„rm                 01 M            0,00
+000023 KSCH.007  EB023       1.01.99 S9800              85,46 EB Schinko Pflaster                 01 M            0,00
+000024 KKOG.001  EB024       1.01.99 S9800              27,69 EB Kogler GmbH                      01 M            0,00
+
+000025 KKOG.001  EB025       1.01.99 S9800              95,93 EB Kogler GmbH                      01 M            0,00
+000026 KMAI.001  EB026       1.01.99 S9800              85,46 EB Mainardy Michael                 01 M            0,00
+000027 KMAI.001  EB027       1.01.99 S9800              85,46 EB Mainardy Michael                 01 M            0,00
+
+000028 KSCH.004  EB028       1.01.99 S9800             488,36 EB Schuster Montagebau              01 M            0,00
+000029 KNAH.001  EB029       1.01.99 S9800             421,21 EB Schuster Nahmw„rme GmbH          01 M            0,00
+000030 KNAH.001  EB030       1.01.99 S9800              85,46 EB Schuster Nahmw„rme GmbH          01 M            0,00
+
+000031 KAUD.001  EB031       1.01.99 S9800           1.404,04 EB AUDIT GesmbH                     01 M            0,00
+000032 KSCH.003  EB032       1.01.99 S9800             714,23 EB Schinko J. Ing. GesmbH           01 M            0,00
+000033 KSCH.003  EB033       1.01.99 S9800             -21,80 EB Schinko J. Ing. GesmbH           01 M            0,00
+
+000034 KSCH.003  EB034       1.01.99 S9800             174,41 EB Schinko J. Ing. GesmbH           01 M            0,00
+000035 KSCH.003  EB035       1.01.99 S9800              54,07 EB Schinko J. Ing. GesmbH           01 M            0,00
+000036 KSCH.002  EB036       1.01.99 S9800              85,46 EB Schinko Beton Ges.               01 M            0,00
+
+000037 KKOE.000  EB037       1.01.99 S9800           1.744,15 EB K”berl-Bau GmbH.                 01 M            0,00
+000038 KGEN.002  EB038       1.01.99 S9800             488,36 EB Ing. Genser Hannes               01 M            0,00
+000039 KGEN.002  EB039       1.01.99 S9800              85,46 EB Ing. Genser Hannes               01 M            0,00
+
+000040 KFLI.000  EB040       1.01.99 S9800             111,45 EB Flich Dr. Ludwig                 01 M            0,00
+000041 KRUF.000  EB041       1.01.99 S9800              85,46 EB R u F Inc.                       01 M            0,00
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+À¿Nutzungsberechtigung: 4life P. Mayer / A-8041 Graz                                               (C)1996 4life(R) ÚÙ
+¯Neue Seite®ÿ
+ÚÙBUCHUNGSERFASSUNGS-KONTROLLDATEI                                                      Datum: 10.09.99 - SEITE 0002À¿
+³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
+À´Mandant (02) IFO.net GmbH / A-8010 Graz                                                            Teilnehmer: 010ÃÙ
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+       Soll-     Beleg-     Beleg-   Haben-                                                          U U
+Lfd.Nr konto     Nummer        Datum Konto             Betrag Buchungstext                       Art A S    UST-Betrag
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ 
+000042 KEAS.001  EB042       1.01.99 S9800             136,04 EB Easydata                         01 M            0,00
+000043 KABS.000  EB043       1.01.99 S9800             488,36 EB Absenger J. KFZ-Werkst.          01 M            0,00
+000044 KKAL.002  EB044       1.01.99 S9800             402,90 EB Kalamidas Oskar                  01 M            0,00
+
+000045 KLUD.001  EB045       1.01.99 S9800             397,67 EB Ludwig & Co Organis.             01 M            0,00
+000046 S9800     EB046       1.01.99 KLUD.001          548,55 EB Ludwig & Co Organis.             03   0          0,00
+000047 KLUD.001  EB047       1.01.99 S9800             252,90 EB Ludwig & Co Organis.             01 M            0,00
+
+000048 S9800     EB048       1.01.99 KLUD.001           18,84 EB Ludwig & Co Organis.             03   0          0,00
+000049 KLUD.001  EB049       1.01.99 S9800             790,54 EB Ludwig & Co Organis.             01 M            0,00
+000050 S9800     EB050       1.01.99 KLUD.001          363,36 EB Ludwig & Co Organis.             03   0          0,00
+
+000051 S9800     EB051       1.01.99 LTEL.000            9,52 EB Telekom Graz                     04 V            0,00
+000052 S9800     EB052       1.01.99 LTEL.000           69,04 EB Telekom Graz                     04 V            0,00
+000053 S9800     EB053       1.01.99 LTEL.000            1,13 EB Telekom Graz                     04 V            0,00
+
+000054 S9800     EB054       1.01.99 LTEL.000          788,07 EB Telekom Graz                     04 V            0,00
+000055 S9800     EB055       1.01.99 LTEL.000          238,25 EB Telekom Graz                     04 V            0,00
+000056 S9800     EB056       1.01.99 LWIR.000            7,99 EB Wirtschafkam. Stmk.              04 V            0,00
+
+000057 S9800     EB057       1.01.99 LWIR.000           26,16 EB Wirtschafkam. Stmk.              04 V            0,00
+000058 S9800     EB058       1.01.99 LLUD.001          129,94 EB Ludwig & Co.                     04 V            0,00
+000059 S9800     EB059       1.01.99 LLUD.001          237,64 EB Ludwig & Co.                     04 V            0,00
+
+000060 S9800     EB060       1.01.99 LLUD.001           51,89 EB Ludwig & Co.                     04 V            0,00
+000061 S9800     EB061       1.01.99 LMAT.000          105,43 EB Matzer VW, Audi                  04 V            0,00
+000062 S9800     EB062       1.01.99 LMIC.000           13,32 EB Micorsoft GesmbH                 04 V            0,00
+
+000063 S9800     EB063       1.01.99 LINT.000           66,13 EB interNIC services                04 V            0,00
+000064 S9800     EB064       1.01.99 LINT.000         -123,77 EB interNIC services                04 V            0,00
+000065 LPRE.000  EB065       1.01.99 S9800               3,63 EB Presse Verl. GmbH                06   0          0,00
+
+000066 LCOL.000  EB066       1.01.99 S9800              15,33 EB Collegialit„t Vers.              06   0          0,00
+000067 LCOL.000  EB067       1.01.99 S9800              15,33 EB Collegialit„t Vers.              06   0          0,00
+000068 LALL.002  EB068       1.01.99 S9800               2,60 EB Allianz-Elementar                06   0          0,00
+
+000069 S9800     EB069       1.01.99 LALL.002          -15,33 EB Allianz-Elementar                04 V            0,00
+000070 S9800     EB070       1.01.99 LNIC.001        5.559,47 EB NIC.AT Wien                      04 V            0,00
+000071 S9800     EB071       1.01.99 LHON.001          188,95 EB Honza / HostServer               04 V            0,00
+
+000072 S9800     EB072       1.01.99 LHON.001          206,49 EB Honza / HostServer               04 V            0,00
+000073 S9800     EB073       1.01.99 LHON.001           51,96 EB Honza / HostServer               04 V            0,00
+000074 S9800     EB074       1.01.99 LHON.001           66,28 EB Honza / HostServer               04 V            0,00
+
+000075 S9800     EB075       1.01.99 LSWI.000           56,83 EB Switch CH                        04 V            0,00
+000076 S9800     EB076       1.01.99 LWIR.003          719,46 EB LOBBY                            04 V            0,00
+000077 S9800     EB077       1.01.99 LINT.002         -346,36 EB Internet Serv.Corp.              04 V            0,00
+
+000078 S9800     EB078       1.01.99 LINT.002         -348,25 EB Internet Serv.Corp.              04 V            0,00
+000079 S9800     EB079       1.01.99 LINT.002          -86,98 EB Internet Serv.Corp.              04 V            0,00
+000080 S9800     EB080       1.01.99 LINT.002          -86,75 EB Internet Serv.Corp.              04 V            0,00
+
+000081 S9800     EB081       1.01.99 LINT.002          -86,75 EB Internet Serv.Corp.              04 V            0,00
+000082 S9800     EB082       1.01.99 LINT.002          518,88 EB Internet Serv.Corp.              04 V            0,00
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+À¿Nutzungsberechtigung: 4life P. Mayer / A-8041 Graz                                               (C)1996 4life(R) ÚÙ
+¯Neue Seite®ÿ
+ÚÙBUCHUNGSERFASSUNGS-KONTROLLDATEI                                                      Datum: 10.09.99 - SEITE 0003À¿
+³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
+À´Mandant (02) IFO.net GmbH / A-8010 Graz                                                            Teilnehmer: 010ÃÙ
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+       Soll-     Beleg-     Beleg-   Haben-                                                          U U
+Lfd.Nr konto     Nummer        Datum Konto             Betrag Buchungstext                       Art A S    UST-Betrag
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ 
+000083 S9800     EB083       1.01.99 LINT.002          -87,18 EB Internet Serv.Corp.              04 V            0,00
+000084 S9800     EB084       1.01.99 LINT.002          -85,91 EB Internet Serv.Corp.              04 V            0,00
+000085 S9800     EB085       1.01.99 LINT.002          -85,91 EB Internet Serv.Corp.              04 V            0,00
+
+000086 S9800     EB086       1.01.99 LFRA.001           15,19 EB Frank - CDROM                    04 V            0,00
+000087 S9800     EB087       1.01.99 LFRA.001           40,12 EB Frank - CDROM                    04 V            0,00
+000088 S9800     EB088       1.01.99 LFRA.001           54,29 EB Frank - CDROM                    04 V            0,00
+
+000089 S9800     EB089       1.01.99 LFRA.001          -69,48 EB Frank - CDROM                    04 V            0,00
+000090 S9800     EB090       1.01.99 LARG.000            5,81 EB ARGE Wirtschaft&Schule           04 V            0,00
+000091 S9800     EB091       1.01.99 LSUE.001        2.965,50 EB Sd-Ost-Journal                  04 V            0,00
+
+000092 S9800     EB092       1.01.99 LWEI.001           38,08 EB ™sterr. Weinmarket.Serv.         04 V            0,00
+000093 S9800     EB093       1.01.99 LKON.000          208,32 EB Konrad GmbH                      04 V            0,00
+000094 S9800     EB094       1.01.99 LMAG.001          -74,13 EB Magnet                           04 V            0,00
+
+000095 S9800     EB095       1.01.99 LINT.003          -87,55 EB INternet ONE                     04 V            0,00
+000096 LLUG.001  EB096       1.01.99 S9800              87,21 EB Lugitsch Florian OHG             06   0          0,00
+000097 S9800     EB097       1.01.99 LLUG.001           93,75 EB Lugitsch Florian OHG             04 V            0,00
+
+000098 LLUG.001  EB098       1.01.99 S9800              87,21 EB Lugitsch Florian OHG             06   0          0,00
+000099 S9800     EB099       1.01.99 LLUG.001           93,75 EB Lugitsch Florian OHG             04 V            0,00
+000100 S9800     EB100       1.01.99 LLUG.001           28,63 EB Lugitsch Florian OHG             04 V            0,00
+
+000101 LLUG.001  EB101       1.01.99 S9800              87,21 EB Lugitsch Florian OHG             06   0          0,00
+000102 S9800     EB102       1.01.99 LLUG.001           29,07 EB Lugitsch Florian OHG             04 V            0,00
+000103 S9800     EB103       1.01.99 LLUG.001           29,07 EB Lugitsch Florian OHG             04 V            0,00
+
+000104 S9800     EB104       1.01.99 LLUG.001          660,59 EB Lugitsch Florian OHG             04 V            0,00
+000105 S9800     EB105       1.01.99 LAWI.000           66,35 EB AWi Aktuelles Wis.               04 V            0,00
+000106 S9800     EB106       1.01.99 LKON.001           25,65 EB Konsument                        04 V            0,00
+
+000107 S9800     EB091       1.01.99 LSUE.001       -2.965,50 EB Sd-Ost Journal                  04 V            0,00
+000108 S9800     EB091       1.01.99 LSUE.001        2.965,05 EB Sd-Ost Journal                  04 V            0,00
+000109 S9800     EB106       1.01.99 S2331          14.035,13 EB Verr. Mayer                      07   0          0,00
+
+000110 S9800     EB107       1.01.99 S2332             831,14 EB Verr. Schwarzl                   07   0          0,00
+000111 S9800     EB108       1.01.99 S2335             661,30 EB Verr. Keimel                     07   0          0,00
+000112 S2700     EB109       1.01.99 S9800              23,05 EB Kassa                            08   0          0,00
+
+000113 S9800     EB111       1.01.99 S3221          16.306,40 EB RAIKA 120T                       07   0          0,00
+000114 S9800     EB112       1.01.99 S3223           9.186,50 EB Raika 150T                       07   0          0,00
+000115 S9800     EB113       1.01.99 S3251           9.895,48 EB Raika KK-Konto                   07   0          0,00
+
+000116 S9800     EB114       1.01.99 S3260             346,55 EB Visa-Kreditkarte                 07   0          0,00
+000117 S9800     EB115       1.01.99 S3501           1.486,40 EB FA Graz-Stadt                    07   0          0,00
+000118 S9800     EB116       1.01.99 S3550             218,76 EB Verr. LSt. Finanzamt             07   0          0,00
+
+000119 S9800     EB117       1.01.99 S3580               2,05 EB Verr. Mayer Sozialvers.          07   0          0,00
+000120 S9800     EB118       1.01.99 S3581             127,03 EB Verr. Mayer Kirchenbeitr.        07   0          0,00
+000121 S9800     EB119       1.01.99 S3582           1.523,49 EB Verr. GKK-Sozialvers.            07   0          0,00
+
+000122 S9010     EB120       1.01.99 S9800               1,12 EB Kapital                          08   0          0,00
+000123 S9011     EB121       1.01.99 S9800          11.705,87 EB Verlustvortrag. 1991             08   0          0,00
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+À¿Nutzungsberechtigung: 4life P. Mayer / A-8041 Graz                                               (C)1996 4life(R) ÚÙ
+¯Neue Seite®ÿ
+ÚÙBUCHUNGSERFASSUNGS-KONTROLLDATEI                                                      Datum: 10.09.99 - SEITE 0004À¿
+³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
+À´Mandant (02) IFO.net GmbH / A-8010 Graz                                                            Teilnehmer: 010ÃÙ
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+       Soll-     Beleg-     Beleg-   Haben-                                                          U U
+Lfd.Nr konto     Nummer        Datum Konto             Betrag Buchungstext                       Art A S    UST-Betrag
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ 
+000124 S9012     EB122       1.01.99 S9800           1.963,50 EB Verlustvortrag. 1992             08   0          0,00
+000125 S9014     EB123       1.01.99 S9800           5.377,82 EB Verlustvortrag. 1993             08   0          0,00
+000126 S9016     EB124       1.01.99 S9800          12.888,13 EB Verlustvortrag. 1995             08   0          0,00
+
+000127 S9800     EB125       1.01.99 S9017           2.976,55 EB Verlustvortrag. 1996             07   0          0,00
+000128 S9800     EB110       1.01.99 S2880             169,63 EB Zwischenk. f. Geldbeweg.         07   0          0,00
+000129 S7400     UB001       1.01.99 LKOE.001           87,21 ER Miete 01/99                      05 V 1          7,93
+
+000130 S7620     UB002       1.01.99 LKLE.000           15,92 ER Abo Kleine Zeitung               05 V 1          1,45
+000131 S9410     UB003       1.01.99 LCOL.000           15,33 ER Unfall-Renten Mayer Peter        05 V            0,00
+000132 KSTE.000  AR901       2.01.99 S4201             593,00 AR stengg.at                        02 M 2         98,83
+
+000133 KMAT.003  AR902       2.01.99 S4201             692,42 AR bambooclette.at                  02 M 2        115,40
+000134 KABS.000  AR903       4.01.99 S4299             198,83 AR Support                          02 M 2         33,14
+000135 S4299     AR903       4.01.99 S4221              49,42 AR Support                          00   0          0,00
+
+000136 S4299     AR903       4.01.99 S4255              81,39 AR ISDN-Karte                       00   0          0,00
+000137 S4299     AR903       4.01.99 S4229              34,88 AR Fahrtpausch.                     00   0          0,00
+000138 KBRU.000  AR904       5.01.99 S4221              27,00 AR Support                          02 M 2          4,50
+
+000139 KAKV.001  AR905       9.01.99 S4299             436,92 AR Support                          02 M 2         72,82
+000140 S4299     AR905       9.01.99 S4221             168,60 AR Support                          00   0          0,00
+000141 S4299     AR905       9.01.99 S4220              90,12 AR Support                          00   0          0,00
+
+000142 S4299     AR905       9.01.99 S4221             105,38 AR Support                          00   0          0,00
+000143 KCOL.002  AR906      12.01.99 S4299             333,14 AR Support                          02 M 2         55,52
+000144 S4299     AR906      12.01.99 S4221             180,24 AR Support                          00   0          0,00
+
+000145 S4299     AR906      12.01.99 S4229              52,32 AR Fahrtpauschale                   00   0          0,00
+000146 S4299     AR906      12.01.99 S4221              45,06 AR Support                          00   0          0,00
+000147 KBRU.000  AR907      15.01.99 S4299             509,74 AR Support                          02 M 2         84,96
+
+000148 S4299     AR907      15.01.99 S4221             292,89 AR Support                          00   0          0,00
+000149 S4299     AR907      15.01.99 S4229              42,19 AR Fahrtpauschale                   00   0          0,00
+000150 S4299     AR907      15.01.99 S4255              50,10 AR Patchkabel                       00   0          0,00
+
+000151 S4299     AR907      15.01.99 S4255              39,60 AR Patchkabel                       00   0          0,00
+000152 KREI.000  AR908      15.01.99 S4299             423,85 AR reinisch-trans.at                02 M 2         70,64
+000153 S4299     AR908      15.01.99 S4201              69,77 AR virt. Serv.                      00   0          0,00
+
+000154 S4299     AR908      15.01.99 S4201             283,44 AR Jahresgeb. Web-Hosting           00   0          0,00
+000155 KBRU.000  AR909      19.01.99 S4299             470,86 AR Support                          02 M 2         78,48
+000156 S4299     AR909      19.01.99 S4221             270,30 AR Support                          00   0          0,00
+
+000157 S4299     AR909      19.01.99 S4229              42,15 AR Fahrtpausch.                     00   0          0,00
+000158 S4299     AR909      19.01.99 S4221              45,05 AR Support                          00   0          0,00
+000159 S4299     AR909      19.01.99 S4229              34,88 AR Fahrtpauschale                   00   0          0,00
+
+000160 KJOE.004  AR910      20.01.99 S4210           3.480,00 AR Web Design                       02 M 2        580,00
+000161 KISO.001  AR912      29.01.99 S4299           2.064,00 AR Hardwear                         02 M 2        344,00
+000162 S4299     AR912      29.01.99 S4251           1.200,00 AR ARTIST                           00   0          0,00
+
+000163 S4299     AR912      29.01.99 S4252             244,00 AR Belinea                          00   0          0,00
+000164 S4299     AR912      29.01.99 S4254             210,00 AR Seagate Datensicherungslaufwerk  00   0          0,00
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+À¿Nutzungsberechtigung: 4life P. Mayer / A-8041 Graz                                               (C)1996 4life(R) ÚÙ
+¯Neue Seite®ÿ
+ÚÙBUCHUNGSERFASSUNGS-KONTROLLDATEI                                                      Datum: 10.09.99 - SEITE 0005À¿
+³ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
+À´Mandant (02) IFO.net GmbH / A-8010 Graz                                                            Teilnehmer: 010ÃÙ
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+       Soll-     Beleg-     Beleg-   Haben-                                                          U U
+Lfd.Nr konto     Nummer        Datum Konto             Betrag Buchungstext                       Art A S    UST-Betrag
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ 
+000165 S4299     AR912      29.01.99 S4254              66,00 AR Streamer                         00   0          0,00
+000166 KISO.001  AR913      29.01.99 S4253             678,00 AR HP LaserJet                      02 M 2        113,00
+000167 KKOE.001  AR914      29.01.99 S4299           1.644,00 AR Hardwear                         02 M 2        274,00
+
+000168 S4299     AR914      29.01.99 S4251           1.140,00 AR ARTIST                           00   0          0,00
+000169 S4299     AR914      29.01.99 S4252             230,00 AR Belinea                          00   0          0,00
+000170 KKOE.001  AR915      29.01.99 S4299             801,60 AR Hardwear                         02 M 2        133,60
+
+000171 S4299     AR915      29.01.99 S4254             198,00 AR Seagate Streamer                 00   0          0,00
+000172 S4299     AR915      29.01.99 S4254              64,00 AR Streamer Quick-Cartr.            00   0          0,00
+000173 S4299     AR915      29.01.99 S4253             406,00 AR HP LaserJet                      00   0          0,00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+À¿Nutzungsberechtigung: 4life P. Mayer / A-8041 Graz                                               (C)1996 4life(R) ÚÙ¯Ende Seite®ÿ¯Ende®ÿ

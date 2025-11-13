@@ -1,0 +1,206 @@
+
+
+
+
+           ù                                                        ù
+                 Auswahl der zu bergebenden Rechnungen:
+
+                         von Rechnungs-Nummer    : ^^^^^^^^
+                         bis Rechnungs-Nummer    : @@@@@@@@
+                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                         Kopien                  : ## ||.||.||
+                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                Statistik buchen:
+                         Kunden  Basis/ erweitert: @@@@ / @@@@
+                         Artikel Basis/ erweitert: @@@@ / @@@@
+                ||.||.||
+                Fibu-Buchungss„tze in Erl”sklasse: ^^
+              ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ```| ```|
+             ```| ```| ```| ```| ```| ```| ||.||.|| ^ ^ ^ ^ ^ ^
+                ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^
+           ù  ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^                 ù
+
+
+>>Mask:   AUM4300
+>>Prog.:  AU4200.CPP
+>>Datum:  16.01.90/ 04.03.94
+
+&TITEL    = "AU  Fibu-šbergabe Rechn./Gutschriften"
+&FRAME    = 0, 0, 0, 0, "Äšbergabe Rechnungen an die Fibu", 2
+>>SEQUENZ = 00,01,02,03
+
+&MASKHELP = AUHLP10, rech-ub
+&INDEX    = BASIS
+
+&DATEI      (0) = EURODATA, D.AU2100
+&REF_DATEI  (1) = EURODATA, D.AU2110
+&REF_DATEI  (2) = EURODATA, D.AU2101
+&PARA_READ  (3) = EURODATA, L.SYP_01   >> Steuers„tze
+&REF_DATEI  (4) = EURODATA, L.SYPARA
+&REF_DATEI  (5) = EURODATA, D.ST1300   >> Artikelstamm
+&REF_DATEI  (6) = EURODATA, L.SYFORM   >> _SEITE, ...
+&REF_DATEI  (7) = EURODATA, L.SYP_02   >> Nummernkreise
+
+
+>>Von Nummer
+&HELPTEXT  (0)  = AUHLP10, 430, 0
+&REC_MATCH (+-) = "Nummer", 0, NUMMER
+&ADD_MATCH (+-) = "Projektbezeichnung", 0, PROJEKT_1
+  &DATA    (+-) = 1, _VON_NUM
+
+>>Bis Nummer
+&HELPTEXT  (+)  = AUHLP10, 430, 1
+&REC_MATCH (+-) = "Nummer", 0, NUMMER
+&ADD_MATCH (+-) = "Projektbezeichnung", 0, PROJEKT_1
+  &DATA    (+-) = 1, _BIS_NUM
+
+>>Kopien
+&HELPTEXT  (+)  = AUHLP10, 430, 50
+  &DATA    (+-) = 1, _KOPIEN
+  &DEFAULT (+-) = 1
+
+>>Bis Rechnungs-Datum
+&HELPTEXT  (+)  = AUHLP10, 430, 2
+  &DATA_H  (+-) = 1, _BIS_DATUM
+  &DEFAULT (+-) = "s"
+
+>>Artikel-Basis verbuchen j/n
+&HELPTEXT  (+)  = AUHLP10, 430, 51
+  &CHOICE  (+-) = "Verbuchen", "ja", "j", "nein", "n"
+  &DEFAULT (+-) = "j"
+  &DATA    (+-) = 1, _ART_BASIS
+
+>>Artikel-Erweitert verbuchen j/n
+&HELPTEXT  (+)  = AUHLP10, 430, 51
+  &CHOICE  (+-) = "Verbuchen", "ja", "j", "nein", "n"
+  &DEFAULT (+-) = "j"
+  &DATA    (+-) = 1, _ART_ERW
+
+>>Kunden-Basis verbuchen j/n
+&HELPTEXT  (+)  = AUHLP10, 430, 52
+  &CHOICE  (+-) = "Verbuchen", "ja", "j", "nein", "n"
+  &DEFAULT (+-) = "j"
+  &DATA    (+-) = 1, _KND_BASIS
+
+>>Kunden-Basis verbuchen j/n
+&HELPTEXT  (+)  = AUHLP10, 430, 52
+  &CHOICE  (+-) = "Verbuchen", "ja", "j", "nein", "n"
+  &DEFAULT (+-) = "j"
+  &DATA    (+-) = 1, _KND_ERW
+
+>>Buchungsdatum
+&HELPTEXT  (+)  = AUHLP10, 430, 3
+  &DATA_H  (+-) = 1, _BU_DATUM
+  &DEFAULT (+-) = "s"
+
+>>Kontenklasse Erl”s
+&HELPTEXT  (+)  = AUHLP10, 430, 4
+  &DATA_H  (+-) = 4, BUCHERLS
+
+&REF_KEY   (+)
+  &DATA_H  (+-) = 3, MAND_01   >>Mandanten-Nummer
+
+  &DATA_H  (+)  = 0, PRIMŽR_KEY  >>Primaerkey
+
+  &DATA_H  (+)  = 3, FRWŽ_KU_00  >>Fremdw„hrungs-Kurs 00-09
+  &DATA_H  (+)  = 3, FRWŽ_KU_01  >>Fremdw„hrungs-Kurs 00-09
+  &DATA_H  (+)  = 3, FRWŽ_KU_02  >>Fremdw„hrungs-Kurs 00-09
+  &DATA_H  (+)  = 3, FRWŽ_KU_03  >>Fremdw„hrungs-Kurs 00-09
+  &DATA_H  (+)  = 3, FRWŽ_KU_04  >>Fremdw„hrungs-Kurs 00-09
+  &DATA_H  (+)  = 3, FRWŽ_KU_05  >>Fremdw„hrungs-Kurs 00-09
+  &DATA_H  (+)  = 3, FRWŽ_KU_06  >>Fremdw„hrungs-Kurs 00-09
+  &DATA_H  (+)  = 3, FRWŽ_KU_07  >>Fremdw„hrungs-Kurs 00-09
+  &DATA_H  (+)  = 3, FRWŽ_KU_08  >>Fremdw„hrungs-Kurs 00-09
+  &DATA_H  (+)  = 3, FRWŽ_KU_09  >>Fremdw„hrungs-Kurs 00-09
+
+&REC_KEY   (+)
+  &DATA_H  (+-) = 0, NUMMER      >>Nummer
+
+  &DATA_H  (+)  = 0, PROJEKT_1   >>Nummer
+  &DATA_H  (+)  = 0, KONTO_NR    >>KHK-Kontonummer
+  &DATA_H  (+)  = 0, WŽHRUNG     >>Fremdwaehrungsnummer
+  &DATA_H  (+)  = 0, KONDITION   >>ZKD
+  &DATA_H  (+)  = 1, ESU_POS     >>Druck-Dummy
+  &DATA_H  (+)  = 1, BRU_POS_1   >>Druck-Dummy
+  &DATA_H  (+)  = 1, BRU_POS_2   >>Druck-Dummy
+
+  &DATA_H  (+)  = 3, UST_1       >>Mwst 1-8
+  &DATA_H  (+)  = 3, UST_2       >>Mwst 1-8
+  &DATA_H  (+)  = 3, UST_3       >>Mwst 1-8
+  &DATA_H  (+)  = 3, UST_4       >>Mwst 1-8
+  &DATA_H  (+)  = 3, UST_5       >>Mwst 1-8
+  &DATA_H  (+)  = 3, UST_6       >>Mwst 1-8
+  &DATA_H  (+)  = 3, UST_7       >>Mwst 1-8
+  &DATA_H  (+)  = 3, UST_8       >>Mwst 1-8
+
+  &DATA_H  (+)  = 0, DATUMDRUCK  >>Belegdatum
+  &DATA_H  (+)  = 0, MWST        >>Mwst-Handling
+  &DATA_H  (+)  = 1, ESU_GESAMT  >>Endsumme
+  &DATA_H  (+)  = 1, BRU_STPROZ  >>Steuerprozente
+  &DATA_H  (+)  = 1, BRU_SNETTO  >>Nettobetrag
+  &DATA_H  (+)  = 1, BRU_STEUER  >>Nettobetrag
+  &DATA_H  (+)  = 1, BRU_GESAMT  >>Gesamtsumme
+  &DATA_H  (+)  = 1, BRU_GESAMT  >>Gesamtsumme
+
+  &DATA_H  (+)  = 1, _DATUM_AKT  >>Datum
+
+>>&DATA_H  (+)  = 1, _SEITE      >>Datum
+  &DATA_H  (+)  = 1, _NR_MAND    >>Mandanten-Nummer
+  &DATA_H  (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H  (+)  = 1, _TEILN      >>Teilnehmer-Nummer
+  &DATA_H  (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H  (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
+
+  &DATA_H  (+)  = 1, _STRICH     >>Dummy-Strich
+  &DATA_H  (+)  = 0, LAND_KZ
+
+>>Von Seite
+&HELPTEXT  (+)  = AUHLP10, 421, 02
+  &DATA_H  (+-) = 1, _VON_SEITE
+
+>>Bis Seite
+&HELPTEXT  (+)  = AUHLP10, 421, 03
+  &DATA_H  (+-) = 1, _BIS_SEITE
+
+>>Mandanten-Nummer
+  &REF_KEY (+)
+  &DATA_H  (+-) = 4, MAND_PARA
+
+
+  &DATA_H  (+)  = 1, _RABATT     >>Druck-Dummy
+  &DATA_H  (+)  = 1, ESU_RA_BET  >>Druck-Dummy
+  &DATA_H  (+)  = 1, ARTIK_POS   >>Artikelposition
+  &DATA_H  (+)  = 1, AR_RA_BETR  >>
+  &DATA_H  (+)  = 1, TEXT_POS    >>
+  &DATA_H  (+)  = 1, SUMM_POS    >>
+
+  &DATA_H  (+)  = 1, ZUSATZ_POS  >>
+  &DATA_H  (+)  = 1, GRUPP_POS   >>
+  &DATA_H  (+)  = 1, ST_POS_KZ   >>
+  &DATA_H  (+)  = 1, AUSWAHL     >>
+
+
+  &DATA_H  (+)  = 1, SU_RA_BET   >>
+
+  &DATA_H  (+)  = 1, ARTIK_NUM   >>Artikel-Nr Druckdatei
+  &DATA_H  (+)  = 1, _ERL™SCO    >>Erl”scode Fibu
+  &DATA_H  (+)  = 1, _ART_ERFAS  >>Erfassungsart-Text
+
+  &DATA_H  (+)  = 5, ARTNR       >>Artikelnummer/Artikelstamm
+  &DATA_H  (+)  = 5, ERL™SCO     >>Erl”scode aus Artikelstamm
+  &DATA_H  (+)  = 0, ART_ERFASS  >>Erfassungsart
+
+  &DATA_H  (+)  = 5, SOLL_BEST   >>Lagerstand/Artikelstamm
+  &DATA_H  (+)  = 1, ART_MENGE   >>fakturierte Menge
+  &DATA_H  (+)  = 5, LAGERKZ     >>Lagerfhrung j/n
+  &DATA_H  (+)  = 5, UMSATZMEN   >>Mengenumsatz
+  &DATA_H  (+)  = 5, UMSATZK     >>Umsatz in ™S
+  &DATA_H  (+)  = 1, ART_GP      >>Artikel-Gesamtpreis
+
+&REF_KEY   (+)
+  &DATA_H  (+-) = 7, MAND_02     >>Mandanten-Nummer
+  &DATA_H  (+)  = 7, RA_RECH     >>Letzte RA-Buch Nr.
+  &DATA_H  (+)  = 1, _ART_POS_N  >>Artikel-Positionsnummer
+  &DATA_H  (+)  = 1, _ART_POS_N  >>letzte Zeile !!!
+
+

@@ -1,0 +1,52 @@
+
+
+
+    Beleg- ³ Beleg-
+     datum ³   nummer ³Buchungstext              ³  Einahmen   ³   Ausgaben
+   ÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   ##.##.##³@@@@@@@@@@³@@@@@@@@@@@@@@@@@@@@@@@@@ ³ #.###.##›,››³ #.###.##›,››
+
+
+
+  ù                                                                         ù
+
+
+>>Mask:   KAM130
+>>Prog.:  ST1100.C
+>>Update: 9.08.91
+
+
+&TITEL    = "KA  ERFASS Kassenbuch 2/2"
+&FRAME    = 0, 0, 0, 0, "Kassenbuch", 2
+>>SEQUENZ =
+
+>>&BLOCK  = 5,9
+>>&SCROLL = 12,0,21,79
+
+>>MASKHELP=
+&INDEX    = BASIS
+
+&DATEI      (0)  = MASK, D.KA1300
+
+
+>>Beleg-Datum
+  &HELPTEXT (0)  = KAHLP10, 110, 7
+  &DATA     (+-) = 0, BELEGDAT
+
+>>Beleg-Nummer
+  &HELPTEXT (+)  = KAHLP10, 110, 8
+  &DATA     (+-) = 0, BELEGNR
+
+>>Buchungstext
+  &HELPTEXT (+)  = KAHLP10, 110, 9
+  &DATA     (+-) = 0, BUCH_TEXT
+
+>>Einnahmen
+  &HELPTEXT (+)  = KAHLP10, 110, 10
+  &DATA     (+-) = 0, EINNAHMEN
+
+>>Ausgaben
+  &HELPTEXT (+)  = KAHLP10, 110, 11
+  &DATA     (+-) = 0, AUSGABEN
+
+

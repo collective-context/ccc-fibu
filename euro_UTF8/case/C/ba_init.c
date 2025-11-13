@@ -1,12 +1,10 @@
-// http://4win.com  ->  Letztes Update am Samstag, 11. September 1999 / 22:08
+// https://Creative-Context.org  ->        Letztes Update: 2025-11-13 / 22:08
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programme   : BA_INIT.C         Revision: 2.0         (C) 1989/2000    ║
   ║  Function    : FiCore Work ...                                        ║
   ║                Basisprogramm zum Initialisiern der Masken               ║
   ║                                                                         ║
-  ║  Rev.-Date   : 01.05.1991, Graz          Update: 02.05.1996, Kirchbach  ║
-  ║  Author      : Peter Mayer               Author: Peter Mayer            ║
-  ║  Copyright(C): 4win(R)Software, P.Mayer, A-8010 Graz, http://4win.com   ║
+  ║ Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

@@ -1,0 +1,136 @@
+
+
+
+
+
+
+
+
+
+
+                         ù
+
+                            Monat: @@@@@@@@@@@@ 
+                            ``.``.``  ``.``.``
+                           ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                            Von Seite: ####
+                            Bis Seite: ####
+                         ù                        ù
+
+``.``.``  ^ ^
+``.``.``  ^ ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^    ^ ^ ^ ^ ^  ^ ^
+^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
+
+
+>>Mask:   KAM4130
+>>Prog.:  ST4100.C
+>>Update: 9.08.91
+
+&TITEL    = "KA  DRUCK Spesenverteiler 1/1"
+&FRAME    = 0, 0, 0, 0, "ÄDruck Spesenverteiler", 2
+>>&SEQUENZ  = 00,01,02
+
+&MASKHELP = KAHLP10, spe-dru
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.KA1500
+&DRU_DATEI  (1)  = MASK, D.KA4130
+&PARA_READ  (2)  = MASK, L.SYP_05
+&PARA_READ  (3)  = MASK, L.SYP_01
+
+
+>>Verarbeiten Monat
+  &HELPTEXT (0)  = FIHLPP10, 255, 5
+  &DATA     (+-) = 1, _W_MONAT
+  &CHOICE   (+-) = "Verarbeiten Monat",\
+                 "J„nner",1,  "Februar",2,  "M„rz",3,  "April",4,\
+                 "Mai",5,  "Juni",6,  "Juli",7,  "August",8,\
+                 "September",9,  "Oktober",A,  "November",B,\
+                 "Dezember",C, "Jahreswerte",0
+  &DEFAULT  (+-) = 0
+
+
+  &DATA_H (+)  = 1, _V_BEL_DAT
+  &DEFAULT  (+-) = s
+  &DATA_H (+)  = 1, _B_BEL_DAT
+  &DEFAULT  (+-) = s
+
+>>von Seite
+  &HELPTEXT (+)  = KAHLP10, 170, 2
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = KAHLP10, 170, 3
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REF_KEY    (+)                   >>Kassa-Nummer
+&REF_MATCH  (+-) = "Datum   ", 0, BEL_DATUM
+&ADD_MATCH  (+-) = "1. Beleg-Nr", 0, BELEGNR
+&ADD_MATCH  (+-) = "1. Buchungs-Text              ", 0, BUCH_TEXT
+  &DATA_H   (+-) = 0, BEL_DATUM
+
+  &DATA_H   (+)  = 0, BELEGNR     >>Einnahmen-Summe
+  &DATA_H   (+)  = 0, BUCH_TEXT   >>Ausgaben-Summe
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+  &DATA_H   (+)  = 1, _LAUFENDNR  >>Laufende Nummer
+
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _SUM_AUS    >>Summe Est Berechnung
+  &DATA_H   (+)  = 1, _AUSGABEN
+  &DATA_H   (+)  = 1, _AUFWAND
+  &DATA_H   (+)  = 1, _A_UST
+  &DATA_H   (+)  = 1, _A_AUFW
+  &DATA_H   (+)  = 1, _AUF_GES
+  &DATA_H   (+)  = 1, _UST_GES
+  &DATA_H   (+)  = 1, _AUFW_GES
+  &DATA_H   (+)  = 1, _A_CODE
+  &DATA_H   (+)  = 1, _AUSG
+
+
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 2, AUF_TXT_01  >>Aufwands-Code-Texte
+  &DATA_H   (+)  = 2, AUF_TXT_02
+  &DATA_H   (+)  = 2, AUF_TXT_03
+  &DATA_H   (+)  = 2, AUF_TXT_04
+  &DATA_H   (+)  = 2, AUF_TXT_05
+
+  &DATA_H   (+)  = 2, AUF_TXT_06
+  &DATA_H   (+)  = 2, AUF_TXT_07
+  &DATA_H   (+)  = 2, AUF_TXT_08
+  &DATA_H   (+)  = 2, AUF_TXT_09
+  &DATA_H   (+)  = 2, AUF_TXT_10
+
+  &DATA_H   (+)  = 2, AUF_TXT_11
+  &DATA_H   (+)  = 2, AUF_TXT_12
+
+
+>>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)
+  &DATA_H   (+-) = 3, MAND_01     >>Mandanten-Nummer
+  &DATA_H   (+)  = 3, UST_1       >>Steuersatz 1 - 8
+  &DATA_H   (+)  = 3, UST_2
+  &DATA_H   (+)  = 3, UST_3
+  &DATA_H   (+)  = 3, UST_4
+  &DATA_H   (+)  = 3, UST_5
+  &DATA_H   (+)  = 3, UST_6
+  &DATA_H   (+)  = 3, UST_7
+  &DATA_H   (+)  = 3, UST_8
+

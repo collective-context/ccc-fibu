@@ -1,0 +1,85 @@
+
+
+
+
+
+          ù
+                 Menge Einheit      Preis/EH     MWSt %%     Betrag ™S
+            ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+            ###.##›,›› @@@@@@@ ##.###.##›,››  ^  @@@@ @@ ##.###.##›,››
+          ù ^                                                             ù
+
+­­­­
+
+>>Mask:   UABM252
+>>Prog.:  FI1500.C
+>>Update: 21.02.92
+
+&TITEL    = "FI  WORK Rechnungs-Buchungen Artikel"
+&FRAME    = 0, 0, 0, 0, "ÄErfassen Artikelbewegungù0", 2
+>>&SEQUENZ  = 01,02,03,04,06,07,13,14,51,52,53,54,55,56,57,58,59
+
+>>&BLOCK    = 7,8
+>>&SCROLL   = 8,0,8,79
+
+&DATEI      (0)  = MASK, D.FI2500
+&REF_DATEI  (1)  = MASK, D.ST1400
+
+>>Menge
+  &HELPTEXT  (0) = AUHLP10, 250, 11
+  &DATA      (+-) = 0, _AR_MENGE
+
+>>Mengen-Einheit
+  &HELPTEXT  (+) = AUHLP10, 250, 12
+  &DATA      (+-) = 0, _AR_EINH
+
+>>Preis/Einheit
+  &HELPTEXT  (+) = AUHLP10, 250, 13
+  &DATA      (+-) = 0, _PREIS_EIN
+
+>>Preis-Basis (fr Testzwecke)
+  &DATA_H    (+)  = 0, _AR_BASIS
+
+>>Netto/Brutto
+  &HELPTEXT  (+)  = AUHLP10, 250, 14
+  &DATA      (+-) = 0, _NETTO_BRU
+  &DEFAULT   (+-) = "b"
+  &CHOICE    (+-) = "ÄMehrwertsteuer",\
+                    "excl. MWSt",n,  "incl. MWSt",b
+
+>>Umsatzsteuer-Schlssel (0/1-8)
+  &HELPTEXT  (+)  = AUHLP10, 250, 15
+  &DATA      (+-) = 0, _UST_SATZ
+
+>>Betrag in ™S
+  &HELPTEXT  (+)  = AUHLP10, 250, 16
+  &DATA      (+-) = 0, _BETRAG
+
+>>Blank - damit [SHIFT]+[CURSOR UNTEN] erlaubt ist!!!
+  &DATA      (+)  = 0, BLANK
+
+>>------------------------------
+>>Positionsteil
+>>       ù ^                                                     ^       ù
+>>ÚÄÄÄÄÄÄÄ  Dummy Felder: ÄÄÄÄÄÄÄ¿
+>>&DATA_H   (+)  = 0, PO_ART      >>Postions-Art
+>>&DATA_H   (+)  = 0, PO_EIN_AUS  >>Position-Ein/Aus
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REF_KEY    (+)                   >>Mengen-Einheit
+&REF_MATCH  (+-) = "Match-Code                                 ", 1, MG_MATCH
+&ADD_MATCH  (+-) = "Bezeichnung   ", 1, MG_BEZ
+&ADD_MATCH  (+-) = "Einheit", 1, BASIS_EH
+  &DATA_H   (+-) = 1, MG_BEZ
+
+&REF_KEY    (+)
+  &DATA_H   (+-) = 1, MG_MATCH
+  &DATA_H   (+)  = 0, AR_BASIS    >>Basiseinheit
+  &DATA_H   (+)  = 1, BASIS_EH
+  &CHOICE   (+-) = "Basis-Einheit",\
+                 "l","1",  "kg","2",  "mı","3",  "Stk","4",\
+                 "m","5",  "m3","6",  "KW","7",  "min","8"
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+

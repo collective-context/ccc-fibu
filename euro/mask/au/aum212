@@ -1,0 +1,446 @@
+
+
+
+ ^^^^^^^^^^^^^^^^^ Nummer ^^^^^^^^  Kunde: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+ ^^^^^^^^^^^^^     Gruppensumme: ``.```.``|,||  Gesamtsumme: ``.```.``|,||
+ ƒƒ¬ƒƒƒƒƒƒƒƒ¬ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+ ÔÔ≥ÔÔÔÔÔÔÔÔ≥ÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔ         ###.##õ,õõõ #.###.##õ,õõ #.###.##õ,õõ
+   ≥        ≥@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     ^
+   ≥        ≥@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     ##õ,õõ ^   ###.##õ,õõ
+   ≥        ≥
+ ÔÔ≥ÔÔÔÔÔÔÔÔ≥ÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔ         ###.##õ,õõõ #.###.##õ,õõ #.###.##õ,õõ
+   ≥        ≥@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ≥        ≥@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ≥        ≥
+ ÔÔ≥        ≥@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ≥        ≥
+ ÔÔ≥        ≥@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   ≥        ≥
+   ≥        ≥
+   ≥        ≥
+   ≥        ≥
+   ≥        ≥
+ ˘ ≥        ≥                                                                 ˘
+
+
+
+
+
+ ÔÔ ÔÔÔÔÔÔÔÔ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ ÔÔ ÔÔÔÔÔÔÔÔ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ ÔÔ          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@             ``.```.``|,||
+                                                   ##õ,õõ ^     ^ ``.```.``|,||
+                                                                ^^^^^^^^^^^^^^^
+                                                                  ##.###.##õ,õõ
+
+ ÔÔ     ^    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ ÔÔ          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@             ``.```.``|,||
+                                                   ##õ,õõ ^     ^ ``.```.``|,||
+                                                                ^^^^^^^^^^^^^^^
+                                                                  ##.###.##õ,õõ
+
+ ÔÔ           ^^^^^ `|,|| ^^^^^^^^^^^^^^^^^^^^   ``.```.``|,||    ``.```.``|,||
+
+ ÔÔ                       ^^^^^^^^^^^^^^^^^^^^                    ``.```.``|,||
+
+ ^ ^ ^ ^ ^ ^ ^ ^ ^
+
+ ÔÔ
+                                                   
+
+&TITEL = "AU-Positionen"
+&REM   Source:  AUM211
+&REM   Maske :  #211
+&REM   Progr.:  AU2101
+&REM   Datei :
+
+&REM Historie
+
+
+&DATEI (0) = EURODATA, D.AU2101
+&DATEI (1) = EURODATA, D.AU2100
+&REF_DATEI (2) = EURODATA, D.ST1300
+
+&INDEX = "AU210"
+
+&FRAME = 0, 0, 0, 0, "Positions-Erfassung", 2
+
+&REM &SEQUENZ=7, 8, 9, 10, 18, 19, 20, 21, 29, 30, 31, 32, 33, 34, 35, 36, 48, 49
+
+&REM &OK="ZurÅck zur Kopferfassung", "Zur 1. Position", "ZurÅck zur Eingabe" ,"Positionsdatei ablegen"
+
+&SCROLL = 6, 1, 17, 78
+
+&REM Verwendungsart
+&CHOICE (00) = "Erfassungsart", "Angebot", "1", "Auftrag", "2", "Lieferschein", "3", "Rechnung","4", "Gutschrift", "5"
+&DATA   (+-) = 1, ART_ERFASS
+
+&REM Kunden-Nummer
+&DATA    (+) = 1, NUMMER
+
+&REM Kunde
+&DATA    (+) = 1, KUNDEN_NUM
+
+&REM Status-Feld
+&DATA   (+)  = 0, STATUS
+
+&REM Summe Gruppe
+&DATA   (+)  = 0, SUM_GRUPPE
+
+&REM Summe Total
+&DATA   (+)  = 0, SUM_TOTAL
+
+&REM Artikel-Position
+&REM     Positions-Kennzeichen
+         &HELPTEXT (+)  = AUHLP10, 211, 00
+         &DATA     (+-) = 0, ARTIK_POS
+
+&REM     Positions-Nummer
+         &HELPTEXT (+)  = AUHLP10, 211, 01
+         &DATA     (+-) = 0, ART_POS_NR
+
+&REM     Artikel-Nummer
+         &HELPTEXT (+)  = AUHLP10, 211, 02
+         &DATA     (+-) = 0, ARTIK_NUM
+
+&REM     Menge
+         &REM &PACKED(+-)=4
+         &HELPTEXT (+)  = AUHLP10, 211, 03
+         &DATA     (+-) = 0, ART_MENGE
+
+&REM     EP
+         &REM &PACKED(+-)=4
+         &HELPTEXT (+)  = AUHLP10, 211, 04
+         &DATA     (+-) = 0, ART_EP
+
+&REM     GP
+         &REM &PACKED(+-)=4
+         &REM &ZEROSUPPRESSION(+-)
+         &HELPTEXT (+)  = AUHLP10, 211, 05
+         &DATA     (+-) = 0, ART_GP
+
+&REM     Textzeile 1
+         &HELPTEXT (+)  = AUHLP10, 211, 06
+         &DATA     (+-) = 0, ART_TEXT_1
+
+&REM     Mwst.-Satz
+         &HIDE     (+)
+         &DATA     (+-) = 0, ART_MWST
+
+&REM     Textzeile 2
+         &HELPTEXT (+)  = AUHLP10, 211, 07
+         &DATA     (+-) = 0, ART_TEXT_2
+
+&REM     Rabatt
+         &REM &PACKED(+-)=3
+         &REM &RANGE(+-)=-999, 99
+         &REM &ZEROSUPPRESSION(+-)
+         &HELPTEXT (+)  = AUHLP10, 211, 08
+         &DATA     (+-) = 0, ART_RABATT
+
+&REM     Prozent-Zeichen
+         &DATA     (+)  = 0, AR_PROZENT
+
+&REM     Rabattbetrag
+         &REM &PACKED(+-)=4
+         &REM &ZEROSUPPRESSION(+-)
+         &HELPTEXT (+)  = AUHLP10, 211, 09
+         &DATA     (+-) = 0, AR_RA_BETR
+
+
+&REM Alternative Artikel Position
+&REM     Positions-Kennzeichen
+         &HELPTEXT (+)  = AUHLP10, 211, 00
+         &DATA     (+-) = 0, AV_POS
+
+&REM     Positions-Nummer
+         &HELPTEXT (+)  = AUHLP10, 211, 01
+         &DATA     (+-) = 0, AV_POS_NR
+
+&REM     Artikel-Nummer
+         &HELPTEXT (+)  = AUHLP10, 211, 10
+         &DATA     (+-) = 0, AV_ART_NR
+
+&REM     Menge
+         &REM &PACKED(+-)=4
+         &HELPTEXT (+)  = AUHLP10, 211, 11
+         &DATA     (+-) = 0, AV_MENGE
+
+&REM     EP
+         &REM &PACKED(+-)=4
+         &HELPTEXT (+)  = AUHLP10, 211, 04
+         &DATA     (+-) = 0, AV_EP
+
+&REM     GP
+         &REM &PACKED(+-)=4
+         &HELPTEXT (+)  = AUHLP10, 211, 05
+         &DATA     (+-) = 0, AV_GP
+
+&REM     Textzeile 1
+         &HELPTEXT (+)  = AUHLP10, 211, 06
+         &DATA     (+-) = 0, AV_TEXT_1
+
+&REM     Textzeile 2
+         &HELPTEXT (+)  = AUHLP10, 211, 07
+         &DATA     (+-) = 0, AV_TEXT_2
+
+
+&REM Zusatztext-Position
+&REM     Positions-Kennzeichen
+         &HELPTEXT (+)  = AUHLP10, 211, 00
+         &DATA     (+-) = 0, ZUSATZ_POS
+
+&REM     Textzeile
+         &HELPTEXT (+)  = AUHLP10, 211, 12
+         &DATA     (+-) = 0, ZUSATZ_TXT
+
+&REM Text-Position
+&REM     Positions-Kennzeichen
+         &HELPTEXT (+)  = AUHLP10, 211, 00
+         &DATA     (+-) = 0, TEXT_POS
+
+&REM     Textzeile
+         &HELPTEXT (+)  = AUHLP10, 211, 12
+         &DATA     (+-) = 0, TEXTZEILE
+
+&REM Gruppenposition
+&REM     Positions-Kennzeichen
+         &HELPTEXT (+)  = AUHLP10, 211, 00
+         &DATA     (+-) = 0, GRUPP_POS
+
+&REM     Positions-Nummer
+         &HELPTEXT (+)  = AUHLP10, 211, 01
+         &DATA     (+-) = 0, GRUPP_NR
+
+&REM     Gruppen-Text
+         &HELPTEXT (+)  = AUHLP10, 211, 13
+         &DATA     (+-) = 0, GRUPP_TEXT
+
+
+&REM Alternative Gruppenposition
+&REM     Positions-Kennzeichen
+         &HELPTEXT (+)  = AUHLP10, 211, 00
+         &DATA     (+-) = 0, ALTGP_POS
+
+&REM     Positions-Nummer
+         &HELPTEXT (+)  = AUHLP10, 211, 01
+         &DATA     (+-) = 0, ALTGP_NR
+
+&REM     Gruppen-Text
+         &HELPTEXT (+)  = AUHLP10, 211, 13
+         &DATA     (+-) = 0, ALTGP_TEXT
+
+
+&REM Summenposition
+&REM     Positions-Kennzeichen
+         &HELPTEXT (+)  = AUHLP10, 211, 00
+         &DATA     (+-) = 0, SUMM_POS
+
+&REM     Summentext
+         &HELPTEXT (+)  = AUHLP10, 211, 14
+         &DATA     (+-) = 0, SUMM_TEXT
+
+&REM     Rabattfreie Summe
+         &REM &PACKED(+-)=4
+         &DATA     (+)  = 0, SUMM_RABFR
+
+&REM     Rabatt %
+         &REM &PACKED(+-)=3
+         &REM &RANGE(+-)=-999, 99
+         &REM &ZEROSUPPRESSION(+-)
+         &HELPTEXT (+)  = AUHLP10, 211, 15
+         &DATA     (+-) = 0, SUMM_RABPZ
+
+&REM     Prozent-Zeichen
+         &DATA     (+)  = 0, SUMM_PROZ
+
+&REM     Minuszeichen
+         &DATA     (+)  = 0, SUMM_MINUS
+
+
+&REM     Rabattbetrag
+         &REM &PACKED(+-)=4
+         &REM &ZEROSUPPRESSION(+-)
+         &HELPTEXT (+)  = AUHLP10, 211, 16
+         &DATA     (+-) = 0, SU_RA_BET
+
+&REM     Trennstrich
+         &DATA     (+)  = 0, SU_TRENNER
+
+&REM     Betrag incl. Rabatt
+         &REM &PACKED(+-)=4
+         &REM &ZEROSUPPRESSION(+-)
+         &HELPTEXT (+)  = AUHLP10, 211, 17
+         &DATA     (+-) = 0, SU_GESAMT
+
+&REM Steuerposition
+&REM     Positionskennzeichen
+         &HELPTEXT (+)  = AUHLP10, 211, 00
+         &DATA     (+-) = 0, ST_POS_KZ
+
+&REM     Form-feed
+         &DATA     (+)  = 0, ST_POS_FF
+
+&REM     Steuerposition
+         &DATA     (+)  = 0, ST_POS_TXT
+
+&REM Endsummenposition
+&REM     Positions-Kennzeichen
+         &HELPTEXT (+)  = AUHLP10, 211, 00
+         &DATA     (+-) = 0, ESU_POS
+
+&REM     Summentext
+         &HELPTEXT (+)  = AUHLP10, 211, 14
+         &DATA     (+-) = 0, ESU_TEXT
+
+&REM     Rabattfreie Summe
+         &REM &PACKED(+-)=4
+         &DATA     (+)  = 0, ESU_RABFR
+
+&REM     Rabatt %
+         &REM &PACKED(+-)=3
+         &REM &RANGE(+-)=-999, 99
+         &REM &ZEROSUPPRESSION(+-)
+         &HELPTEXT (+)  = AUHLP10, 211, 15
+         &DATA     (+-) = 0, ESU_RABPZ
+
+&REM     Prozent-Zeichen
+         &DATA     (+)  = 0, ESU_PROZ
+
+&REM     Minuszeichen
+         &DATA     (+)  = 0, ESU_MINUS
+
+
+&REM     Rabattbetrag
+         &REM &PACKED(+-)=4
+         &REM &ZEROSUPPRESSION(+-)
+         &HELPTEXT (+)  = AUHLP10, 211, 16
+         &DATA     (+-) = 0, ESU_RA_BET
+
+&REM     Trennstrich
+         &DATA     (+)  = 0, ESU_TRENN
+
+&REM     Betrag incl. Rabatt
+         &REM &PACKED(+-)=4
+         &REM &ZEROSUPPRESSION(+-)
+         &HELPTEXT (+)  = AUHLP10, 211, 17
+         &DATA     (+-) = 0, ESU_GESAMT
+
+&REM     Positionskennzeichen
+         &DATA     (+)  = 0, BRU_POS_1
+
+&REM     Plus-Zeichen
+         &DATA     (+)  = 0, BRU_TEXT
+
+&REM     Steuersatz
+         &REM &PACKED(+-)= 3
+         &REM &ZEROSUPPRESSION(+-)
+         &DATA     (+)  = 0, BRU_STPROZ
+
+&REM     Zusatzangabe
+         &DATA     (+)  = 0, BRU_TEXT_1
+
+&REM     Steuerbetrag Netto
+         &REM &PACKED(+-)= 4
+         &REM &ZEROSUPPRESSION(+-)
+         &DATA     (+)  = 0, BRU_SNETTO
+
+&REM     Steuer Betrag
+         &REM &PACKED(+-)= 4
+         &REM &ZEROSUPPRESSION(+-)
+         &DATA     (+)  = 0, BRU_STEUER
+
+&REM     Positionskennzeichen
+         &DATA     (+)  = 0, BRU_POS_2
+&REM     Text GESAMTPREIS
+         &DATA     (+)  = 0, BRU_TEXT_2
+
+&REM     Endsumme
+         &DATA     (+)  = 0, BRU_GESAMT
+
+
+&REM Artikel-Position fuer Referenzsuche (Dummy-Felder)
+
+&REM     Artikelnummer (Dummy fuer Matchcode)
+         &HIDE     (+)
+         &REF_KEY  (+-)
+         &REF_MATCH (+-) = "Artikeltext", 2, MATCH_CODE
+         &ADD_MATCH (+-) = "Art.Nr.", 2, ARTNR
+         &ADD_MATCH (+-) = "Bezeichnung", 2, BEZ_2
+         &DATA     (+-) = 2, ARTNR
+
+&REM     Artikelbez. (Dummy fuer Matchcode)
+         &HIDE     (+)
+         &REF_KEY  (+-)
+         &DATA     (+-) = 2, MATCH_CODE
+
+&REM     Bezeichnung 2 (Dummy fuer point)
+         &HIDE     (+)
+         &DATA     (+-) = 2, BEZ_2
+
+&REM     Verkaufspreis 1 (Dummy fuer point)
+         &HIDE     (+)
+         &DATA     (+-) = 2, VKPR1
+
+&REM     Verkaufspreis 2 (Dummy fuer point)
+         &HIDE     (+)
+         &DATA     (+-) = 2, VKPR2
+
+&REM     Verkaufspreis 3 (Dummy fuer point)
+         &HIDE     (+)
+         &DATA     (+-) = 2, VKPR3
+
+&REM     Verkaufspreis 4 (Dummy fuer point)
+         &HIDE     (+)
+         &DATA     (+-) = 2, VKPR4
+
+&REM     Verkaufspreis 5 (Dummy fuer point)
+         &HIDE     (+)
+         &DATA     (+-) = 2, VKPR5
+
+&REM     Mehrwertsteuersatz (Dummy fuer point)
+         &HIDE     (+)
+         &DATA     (+-) = 2, MWST
+
+&REM     Auswahlfeld
+         &DATA     (+)  = 0, AUSWAHL
+&CHOICE (+-) = "Position","AR  Artikel","AR","AV  Alternativartikel","AV","ZT  Zusatztext","ZT","TM  Text manuell","TM","GP  Gruppierung","GP","GA  Altern. Gruppe","GA","GS  Gruppensumme","GS","SU  Gesamtsumme","SU","NS  Neue Seite","NS"
+
+&REM Artikel-Position
+&BLOCK2 = "ARTIKEL", 6, 7,  8,  9,  10, 11, 12, 13, 14, 15, 16
+
+&REM Manueller Artikel-Position
+&BLOCK2 = "ALTERNATIV_ARTIKEL", 17, 18, 19, 20, 21, 22, 23, 24
+
+&REM Zusatztext-Position
+&BLOCK2 = "ZUSATZTEXT", 25, 26
+
+&REM Allgemeine Textposition
+&BLOCK2 = "ALLGEMEINER_TEXT", 27, 28
+
+&REM Titel-Position
+&BLOCK2 = "TITEL", 29, 30, 31
+
+&REM Alternative Titel-Position
+&BLOCK2 = "ALT_TITEL", 32, 33, 34
+
+&REM Gruppensummen-Position
+&BLOCK2 = "GRUPPENSUMME", 35, 36, 37, 38, 39, 40, 41, 42 ,43
+
+&REM Seitenumbruch
+&BLOCK2 = "UMBRUCH", 44, 45, 46
+
+&REM Endsummme
+&BLOCK2 = "ENDSUMME", 47, 48, 49, 50, 51, 52, 53, 54, 55
+
+&REM Mwst.-Zeile
+&BLOCK2 = "MWST_ZEILE", 56, 57, 58, 59, 60, 61
+
+&REM Schlusszeile
+&BLOCK2 = "SCHLUSSZEILE", 62, 63, 64
+
+&REM Auswahlfeld
+&BLOCK2 = "AUSWAHL", 74

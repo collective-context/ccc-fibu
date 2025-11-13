@@ -1,0 +1,144 @@
+
+
+
+
+
+
+
+
+                         ù
+                            Monat: @@@@@@@@@@@@
+                            ``.``.``   ``.``.``
+                           ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                            Anfangsbestand: ##.###.##›,››
+                            Endbestand    : ##.###.##›,››
+                           ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                            Rohaufschlag  : ##›,›
+                           ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                            Von Seite     : ####
+                            Bis Seite     : ####
+                         ù                                 ù
+
+``.``.``  ^ ^
+``.``.``  ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^
+>>Mask:   KAM4130
+>>Prog.:  ST4100.C
+>>Update: 9.08.91
+
+&TITEL    = "KA  DRUCK Gewinnermittlung"
+&FRAME    = 0, 0, 0, 0, "ÄDruck Gewinnermittlung", 2
+>>&SEQUENZ  = 00,01,02
+
+&MASKHELP = KAHLP10, gew-dru
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.KA1500
+&DRU_DATEI  (1)  = MASK, D.KA4130
+&PARA_READ  (2)  = MASK, L.SYP_05
+
+>>Verarbeiten Monat
+  &HELPTEXT (0)  = KAHLP10, 155, 7
+  &DATA     (+-) = 1, _W_MONAT
+  &CHOICE   (+-) = "Verarbeiten Monat",\
+                 "J„nner",1,  "Februar",2,  "M„rz",3,  "April",4,\
+                 "Mai",5,  "Juni",6,  "Juli",7,  "August",8,\
+                 "September",9,  "Oktober",A,  "November",B,\
+                 "Dezember",C, "Jahreswerte",0
+  &DEFAULT  (+-) = 0
+
+
+  &DATA_H (+)  = 1, _V_BEL_DAT
+  &DEFAULT  (+-) = s
+  &DATA_H (+)  = 1, _B_BEL_DAT
+  &DEFAULT  (+-) = s
+
+>>Anfangsbestand
+  &HELPTEXT (+)  = KAHLP10, 155, 2
+  &DATA     (+-) = 1, _ANFANG
+
+>>Anfangsbestand
+  &HELPTEXT (+)  = KAHLP10, 155, 2
+  &DATA     (+-) = 1, _END_BEST
+
+>>Anfangsbestand
+  &HELPTEXT (+)  = KAHLP10, 155, 2
+  &DATA     (+-) = 1, _R_AUFSCH
+
+>>von Seite
+  &HELPTEXT (+)  = KAHLP10, 155, 5
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = KAHLP10, 155, 6
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REF_KEY    (+)                   >>Kassa-Nummer
+&REF_MATCH  (+-) = "Datum   ", 0, BEL_DATUM
+&ADD_MATCH  (+-) = "1. Beleg-Nr", 0, BELEGNR
+&ADD_MATCH  (+-) = "1. Buchungs-Text              ", 0, BUCH_TEXT
+  &DATA_H   (+-) = 0, BEL_DATUM
+
+  &DATA_H   (+)  = 0, BELEGNR     >>Einnahmen-Summe
+  &DATA_H   (+)  = 0, BUCH_TEXT   >>Ausgaben-Summe
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _LAUFENDNR  >>Laufende Nummer
+  &DATA_H   (+)  = 1, _K-STAND    >>Kassastand - tempor„r
+  &DATA_H   (+)  = 1, _SUMEIN     >>Summe Einnahmen - temor„r
+  &DATA_H   (+)  = 1, _SUMAUS     >>Summe Ausgaben - tempor„r
+  &DATA_H   (+)  = 1, _BELEGDAT   >>Belegdatum - tempor„r
+  &DATA_H   (+)  = 1, _JAHR       >>Jahr
+
+  &DATA_H   (+)  = 1, _KASSANR
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _ERL_CO
+  &CHOICE   (+-) = "Druckbereich",\
+                   "USt-Berichtigung",u, "Eigenverbrauch",e, \
+                   "ESt-Betriebseinnahme",b, "Rechnungsausgangsbuch",r, \
+                   "Wareneingangsbuch",w
+  &DATA_H   (+)  = 1, _AUF_CO
+  &DATA_H   (+)  = 1, _ERL_MO
+  &DATA_H   (+)  = 1, _AUF_MO
+  &DATA_H   (+)  = 1, _AUF_GES
+  &DATA_H   (+)  = 1, _SUM_ERL
+  &DATA_H   (+)  = 1, _SALDO
+  &DATA_H   (+)  = 1, _DATUM_AKT
+
+  &DATA_H   (+)  = 2, AUF_TXT_01  >>Artikel-Preis-Texte
+  &DATA_H   (+)  = 2, AUF_WRT_01
+
+
+>>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _R_AUFSCH
+  &DATA_H   (+)  = 1, _W_EINS
+  &DATA_H   (+)  = 1, _E_VERB
+  &DATA_H   (+)  = 1, _W_EINSATZ
+  &DATA_H   (+)  = 1, _ANFANG
+  &DATA_H   (+)  = 1, _W_EINK
+
+  &DATA_H   (+)  = 1, _END_BEST
+  &DATA_H   (+)  = 1, _BR_GEW
+  &DATA_H   (+)  = 1, _GEWINN
+  &DATA_H   (+)  = 1, _I_ANDER
+  &DATA_H   (+)  = 1, _SUM_AUFS
+>>ÀÄ Ende Dummy-Felder! ÄÄÄÄÄÙ
+

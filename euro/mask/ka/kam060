@@ -1,0 +1,131 @@
+
+
+
+
+
+
+                           ù ``
+                             Belegkreis   1 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Belegkreis   2 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Belegkreis   3 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Belegkreis   4 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Belegkreis   5 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Belegkreis   6 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Belegkreis   7 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Belegkreis   8 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Belegkreis   9 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Belegkreis  10 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Belegkreis  11 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Belegkreis  12 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                           ù  ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^                   ù
+
+
+>>Mask:   STM092
+>>Prog.:  ST1100.C
+>>Update: 20.01.91
+
+&TITEL    = "ST  Žndern Belegkreise"
+&FRAME    = 0, 0, 0, 0, "ÄAnlegen/Žndern Belegkreise" 2
+>>SEQUENZ =
+
+&MASKHELP = KAHLP10, bel-inf
+&INDEX    = EABAS
+
+&DATEI      (0)  = MASK, L.SYP_05
+
+>>Mandanten-Nummer (Dummy Feld)
+&REC_KEY    (0)
+  &DATA_H   (+-) = 0, MAND_05
+
+>>Erl”scode Zeile 1
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_01
+  &DEFAULT  (+-) = "KA Kassa"
+
+>>Erl”scode Zeile 2
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_02
+  &DEFAULT  (+-) = "BA Bank Austria"
+
+>>Erl”scode Zeile 3
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_03
+  &DEFAULT  (+-) = "SO Sonstige Buchungen"
+>>&DEFAULT  (+-) = "CA Creditanstalt"
+
+>>Erl”scode Zeile 4
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_04
+>>&DEFAULT  (+-) = "ER Eingangsrechnung"
+
+>>Erl”scode Zeile 5
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_05
+>>&DEFAULT  (+-) = "AR Ausgangsrechnung"
+
+>>Erl”scode Zeile 6
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_06
+>>&DEFAULT  (+-) = "UB Umbuchung"
+
+>>Erl”scode Zeile 7
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_07
+
+>>Erl”scode Zeile 8
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_08
+
+>>Erl”scode Zeile 9
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_09
+
+>>Erl”scode Zeile 10
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_10
+
+>>Erl”scode Zeile 11
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_11
+
+>>Erl”scode Zeile 12
+  &HELPTEXT (+)  = KAHLP10, 104, 2
+  &DATA     (+-) = 0, ZAH_TXT_12
+
+  &DATA_H   (+)  = 0, ZAH_WRT_01
+  &DEFAULT  (+-) = 1
+
+  &DATA_H   (+)  = 0, ZAH_WRT_02
+  &DEFAULT  (+-) = 2
+
+  &DATA_H   (+)  = 0, ZAH_WRT_03
+  &DEFAULT  (+-) = 3
+
+  &DATA_H   (+)  = 0, ZAH_WRT_04
+  &DEFAULT  (+-) = 4
+
+  &DATA_H   (+)  = 0, ZAH_WRT_05
+  &DEFAULT  (+-) = 5
+
+  &DATA_H   (+)  = 0, ZAH_WRT_06
+  &DEFAULT  (+-) = 6
+
+  &DATA_H   (+)  = 0, ZAH_WRT_07
+  &DEFAULT  (+-) = 7
+
+  &DATA_H   (+)  = 0, ZAH_WRT_08
+  &DEFAULT  (+-) = 8
+  
+  &DATA_H   (+)  = 0, ZAH_WRT_09
+  &DEFAULT  (+-) = 9
+
+  &DATA_H   (+)  = 0, ZAH_WRT_10
+  &DEFAULT  (+-) = A
+
+  &DATA_H   (+)  = 0, ZAH_WRT_11
+  &DEFAULT  (+-) = B
+
+  &DATA_H   (+)  = 0, ZAH_WRT_12
+  &DEFAULT  (+-) = C
+
+

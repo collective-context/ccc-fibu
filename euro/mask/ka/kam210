@@ -1,0 +1,80 @@
+
+
+
+ ù
+   Kassengrundlagen fr Kasse : @@@@
+
+   Kassenbezeichnung      : @@@@@@@@@@@@@
+
+   Preisgrundlage         : @@@@@@@@@@@@@
+   Steuerberechnung       : @@@@@@@@@@@@@
+   Mengeneingabe          : @@@@@@@@@@@@@
+   Bestandsaktualisierung : @@@@@@@@@@@@@
+   Lagerort               : @@@@@@@@@@@@@
+
+   Vertretereingabe       : @@@@@@@@@@@@@
+   Vertreter              : @@@@@@@@@@@@@
+
+   Sperrwort              : @@@@@@@@@@@@@
+   Kassentyp              : @@@@@@@@@@@@@
+   Kassenschublade ”ffnen : @@@@@@@@@@@@@
+   Letzte Belegnummer     : @@@@@@@@@@@@@
+   Kassenbeleg Kopftext   : @@@@@@@@@@@@@
+ ù                                                                            ù
+
+>>Mask:   SYM041
+>>Prog.:  SY1100.C
+>>Update: 06.08.91
+
+&TITEL    = "SY  STAMM Mandantenstamm 1/1"
+&FRAME    = 0, 0, 0, 0, "Mandantenstamm", 2
+
+&MASKHELP = KAHLP00, kass-gr
+&INDEX    = BASIS
+
+&DRU_DATEI  (0)  = MASK, D.ST4110
+
+  &HELPTEXT (0)  = KAHLP00, 210, 0
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 1
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 2
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 3
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 4
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 5
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 6
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 7
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 8
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 9
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 10
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 11
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 12
+  &DATA     (+-) = 0, FILLER
+
+  &HELPTEXT (+)  = KAHLP00, 210, 13
+  &DATA     (+-) = 0, FILLER
+
+
+

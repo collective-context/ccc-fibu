@@ -1,0 +1,40 @@
+
+ÚÄ Programmname, Steuerkennzeichen, Masken und Formulare: ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+@echo off                   
+REM                           KAMASK oder Prefix      Source: MASK       FORM
+rem %1 %2  KA1100 0500E       KA Spesenverteiler -"-  KA050
+rem %1 %2  KA1100 0600E       KA Belegkreis   SYP_05  KA060
+rem %1 %2  KA1100 0900EL      KA Steuers„tze  SYP_01  KA090
+
+rem %1 %2  KA1100 1400E       Anlegen Makros (Konten) KA140
+    %1 %2  KA1100 1500E       E/A-Erfassung           KA150,151
+
+rem %1 %2  ST1100 2400E       Kassabuch               KA130
+
+rem %1 %2  KA1100 2500E       Feldbacher Konserven    FKO170
+@echo off
+REM                           KAMASK oder Prefix      Source: MASK       FORM
+
+
+rem %1 %2  KA4100 5000E       Druck 1.Mahnungen       KA4500             KA2800     20
+rem %1 %2  KA4100 5000E       Druck 2.Mahnungen       KA4500             KA2850     20
+rem %1 %2  KA4100 5000E       Druck 3.Mahnungen       KA4500             KA2900     20
+
+
+    %1 %2  KA4100 1500E       Kassabuch-Belegkreis    KA4150,150,151     KA1500     1130
+rem %1 %2  KA4100 1550E       Gewinnermittlung        KA4155,150         KA1550       15
+rem %1 %2  KA4100 1600E       UVA                     KA4160,150         KA1600       15
+rem %1 %2  KA4100 1650E       Einnahmenaufzeichnung   KA4165,4166,150    KA1650       10
+rem %1 %2  KA4100 1700E       Spesenverteiler         KA4170,4171,150    KA1700       10
+rem %1 %2  KA4100 1750E       Wareneingangsbuch       KA4175,150,140     KA1750       10
+rem %1 %2  KA4100 1800E       Rechnungsausgangsbuch   KA4180,150,140     KA1800       10
+
+rem %1 %2  KA4100 2500E       Liste Makros KontoNr    KA4250,140         KA2500       12
+rem %1 %2  KA4100 2550E       Saldenliste Makros      KA4255,150,151,140 KA2600       11
+REM           ³     ³                                                                  ³
+REM Programm ÄÙ     ÀÄÄ Steuerkennzeichen                           Formular-Nummer ÄÄÄÙ
+
+rem %1 %2  ST4100 8000E       KA Druck Kassabuch      KA4130,130         KA1300     1130
+

@@ -1,0 +1,137 @@
+
+
+
+  Belegdatum: Ú TT.MM.JJ ¿
+              À ##.##.## Ù
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Ú Kassa-Vortrag ¿   ÚÄÄ Einnahmen ÄÄ¿  ÚÄÄ Ausgaben ÄÄÄ¿   ÚÄ Kassa-Stand Ä¿
+  À ``.```.``|,|| Ù   À ``.```.``|,|| Ù  À ``.```.``|,|| Ù   À ``.```.``|,|| Ù
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+    Beleg-  ³Belegkreis                          ³             ³
+     nummer ³   Buchungstext                     ³  Einnahmen  ³   Ausgaben
+  ÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   @@@@@@@@@³@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ³ #.###.##›,››³ #.###.##›,››
+            ³                                    ³             ³
+            ³                                    ³             ³
+            ³                                    ³             ³
+            ³                                    ³             ³
+            ³                                    ³             ³
+            ³                                    ³             ³
+            ³                                    ³             ³
+            ³                                    ³             ³
+ ù          ³                                    ³             ³              ù
+
+ ^ ^ ^ ^ ^ ^
+ ^ #›,›› #›,›› #›,›› #›,›› #›,›› #›,›› #›,›› #›,››
+ ^ ^ ^ ^ ^
+
+>>Mask:   KAM240
+>>Prog.:  ST1100.C
+>>Update: 9.08.91
+
+
+&TITEL    = "KA  E/A Erfassung 1/2"
+&FRAME    = 0, 0, 0, 0, "Erfassung der Buchungsbelege", 2
+>>SEQUENZ =
+
+&BLOCK    = 5,9
+&SCROLL   = 12,0,21,79
+
+&MASKHELP  = KAHLP10, erf-inf
+&INDEX    = EABAS
+
+&DATEI      (0)  = MASK, D.KA1500
+&PARA_READ  (1)  = MASK, L.SYP_01  >>Festkonten, ...
+&PARA_READ  (2)  = MASK, L.SYP_05  >>DyChoice
+&DRU_DATEI  (3)  = MASK, D.KA4130
+&REF_DATEI  (4)  = MASK, D.KA0150
+
+>>Kassa-Nr
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Belegdatum ", 0, BEL_DATUM
+&ADD_MATCH  (+-) = "Einnahmen    ", 0, SUMEIN
+&ADD_MATCH  (+-) = "Ausgaben     ", 0, SUMAUS
+  &HELPTEXT (+-)  = KAHLP10, 150, 0
+  &DATA     (+-) = 0, BEL_DATUM
+>>&MODUS    (+-) = PREPARE
+
+>>Kassenstand
+>>*** nur Anzeigefeld ***
+  &DATA     (+)   = 0, KASSAVOR
+
+>>Summe der Einnahmen
+>>*** nur Anzeigefeld ***
+  &DATA     (+)  = 0, SUMEIN
+
+>>Summe der Ausgaben
+>>*** nur Anzeigefeld ***
+  &DATA     (+)  = 0, SUMAUS
+
+>>Kassastand aktuell
+>>*** nur Anzeigefeld ***
+  &DATA     (+)  = 0, KASSASTAND
+
+>>--- Beginn Positionsteil
+>>Beleg-Nummer
+  &HELPTEXT (+)  = KAHLP10, 150, 1
+  &DATA     (+-) = 0, BELEGNR
+
+>>Buchungsart / Zahlungsart
+  &HELPTEXT (+)  = KAHLP10, 150, 2
+  &DATA     (+-) = 0, ZAHLUNG
+
+>>Buchungstext
+  &HELPTEXT (+)  = KAHLP10, 150, 3
+  &DATA     (+-) = 0, BUCH_TEXT
+
+>>Einnahmen
+  &HELPTEXT (+)  = KAHLP10, 150, 4
+  &DATA     (+-) = 0, EINNAHMEN
+
+>>Ausgaben
+  &HELPTEXT (+)  = KAHLP10, 150, 5
+  &DATA     (+-) = 0, AUSGABEN
+
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Blockfelder der 2. Seite
+  &DATA_H   (+)  = 0, KONTONR
+  &DATA_H   (+)  = 0, UST_SATZ
+  &DATA_H   (+)  = 0, UST_BETR
+  &DATA_H   (+)  = 0, E_CODE
+  &DATA_H   (+)  = 0, A_CODE
+  &DATA_H   (+)  = 0, ART
+
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+>>Mandanten-Nummer
+&REF_KEY    (+)
+  &DATA_H   (+-) = 1, MAND_01     >>Steuers„tze
+  &DATA_H   (+)  = 1, UST_1
+  &DATA_H   (+)  = 1, UST_2
+  &DATA_H   (+)  = 1, UST_3
+  &DATA_H   (+)  = 1, UST_4
+  &DATA_H   (+)  = 1, UST_5
+  &DATA_H   (+)  = 1, UST_6
+  &DATA_H   (+)  = 1, UST_7
+  &DATA_H   (+)  = 1, UST_8
+
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 2, AUF_TXT_01  >>Artikel-Preis-Texte
+  &DATA_H   (+)  = 2, AUF_WRT_01
+
+  &DATA_H   (+)  = 2, ZAH_TXT_01  >>ZAHLUNGSART
+  &DATA_H   (+)  = 2, ZAH_WRT_01
+
+  &DATA_H   (+)  = 4, .ART
+
+>>&REC_KEY  (+)    wegen loeschen im Moment ausgeschaltet
+>>&DATA_H   (+-) = 0, PREPARE
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+
+
+         ^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
+

@@ -1,0 +1,128 @@
+
+
+
+
+
+
+                           ù ``
+                             Aufwandscode   1 : ^^^^^^^^^^^^^^^^^^^^^^^^^
+                             Aufwandscode   2 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Aufwandscode   3 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Aufwandscode   4 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Aufwandscode   5 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Aufwandscode   6 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Aufwandscode   7 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Aufwandscode   8 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Aufwandscode   9 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Aufwandscode  10 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Aufwandscode  11 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                             Aufwandscode  12 : @@@@@@@@@@@@@@@@@@@@@@@@@
+                           ù ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^                      ù
+
+
+>>Mask:   STM092
+>>Prog.:  ST1100.C
+>>Update: 20.01.91
+
+&TITEL    = "ST  Aufwandscode/Spesenv."
+&FRAME    = 0, 0, 0, 0, "ÄAufwandscode im Spesenverteiler" 2
+>>SEQUENZ =
+
+&MASKHELP = STHLP10, wer-inf
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, L.SYP_05
+
+>>Mandanten-Nummer (Dummy Feld)
+&REC_KEY    (0)
+  &DATA_H   (+-) = 0, MAND_05
+
+>>Erl”scode Zeile 1
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_01
+  &DEFAULT  (+-) = "Wareneinkauf"
+
+>>Erl”scode Zeile 2
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_02
+  &DEFAULT  (+-) = "Betriebs-/Brennstoffe"
+
+>>Erl”scode Zeile 3
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_03
+  &DEFAULT  (+-) = "Bromaterial"
+
+>>Erl”scode Zeile 4
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_04
+  &DEFAULT  (+-) = "L”hne, Geh„lter"
+
+>>Erl”scode Zeile 5
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_05
+  &DEFAULT  (+-) = "Geringw. Wirtschaftsg."
+
+>>Erl”scode Zeile 6
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_06
+  &DEFAULT  (+-) = "Strom, Gas, Reparatur"
+
+>>Erl”scode Zeile 7
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_07
+  &DEFAULT  (+-) = "Banksp.,Porti,Tel.,Zinsen"
+
+>>Erl”scode Zeile 8
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_08
+  &DEFAULT  (+-) = "Miete, Versich., Steuern"
+
+>>Erl”scode Zeile 9
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_09
+  &DEFAULT  (+-) = "Entrichtete USt-Zahllast"
+
+>>Erl”scode Zeile 10
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_10
+  &DEFAULT  (+-) = "Werbung"
+
+>>Erl”scode Zeile 11
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_11
+  &DEFAULT  (+-) = "KFZ, Fahrtkosten,Reisesp."
+
+>>Erl”scode Zeile 12
+  &HELPTEXT (+)  = KAHLP10, 102, 1
+  &DATA     (+-) = 0, AUF_TXT_12
+  &DEFAULT  (+-) = "Sonstige Betriebsausgaben"
+  
+
+  &DATA_H   (+)  = 0, AUF_WRT_01
+  &DEFAULT  (+-) = 1
+  &DATA_H   (+)  = 0, AUF_WRT_02
+  &DEFAULT  (+-) = 2
+  &DATA_H   (+)  = 0, AUF_WRT_03
+  &DEFAULT  (+-) = 3
+  &DATA_H   (+)  = 0, AUF_WRT_04
+  &DEFAULT  (+-) = 4
+  &DATA_H   (+)  = 0, AUF_WRT_05
+  &DEFAULT  (+-) = 5
+  &DATA_H   (+)  = 0, AUF_WRT_06
+  &DEFAULT  (+-) = 6
+  &DATA_H   (+)  = 0, AUF_WRT_07
+  &DEFAULT  (+-) = 7
+  &DATA_H   (+)  = 0, AUF_WRT_08
+  &DEFAULT  (+-) = 8
+  &DATA_H   (+)  = 0, AUF_WRT_09
+  &DEFAULT  (+-) = 9
+  &DATA_H   (+)  = 0, AUF_WRT_10
+  &DEFAULT  (+-) = A
+  &DATA_H   (+)  = 0, AUF_WRT_11
+  &DEFAULT  (+-) = B
+  &DATA_H   (+)  = 0, AUF_WRT_12
+  &DEFAULT  (+-) = C
+
+

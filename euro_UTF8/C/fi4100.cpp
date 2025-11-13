@@ -1,14 +1,11 @@
 // (C) FiCore - Open Source Financial Core  Letztes Update am 29-Apr-1996 / 16:39:18 - Mon
 
-// ╔══════════════════════════════════════════════════════════════════════════╗
-// ║  Programme-Name: FI4100.C	      Revision: 1.3	    (C) 1989/1991     ║
-// ║  Function	    : Drucken FiCore-Stammdaten, ...			      ║
-// ║									      ║
-// ║									      ║
-// ║  Rev.-Date     : 01.05.1991, Graz		 Update: 04.07.1991, Graz     ║
-// ║  Author	    : Peter Mayer		 Author: Peter Mayer	      ║
-// ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz     ║
-// ╚══════════════════════════════════════════════════════════════════════════╝
+// recode@ /CCC by CCCORE                  Letztes Update: 2025-01-14 / 16:18
+/*+-------------------------------------------------------------------------+
+  | Programm: fi4100.cpp                                    Revision: 1.4 |
+  | Function: Drucken -Stammdaten, ... ║                                   |
+  | Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) |
+  +-------------------------------------------------------------------------+*/
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║			     Deklarations-Dateien			      ║
 // ╚══════════════════════════════════════════════════════════════════════════╝

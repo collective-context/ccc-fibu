@@ -1,0 +1,97 @@
+
+
+
+ ù
+
+   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   ³ Kontonummer/ Bezeichnung: ïïïïïïïïï @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@³
+   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+
+   Die Werte dieses Kontos:
+   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   ³                                                                         ³
+   ³ UST-Satz       : @@@@@@                                                 ³
+   ³                                                                         ³
+   ³ Druckbereich   : @@@@@@@@@@@@@@@@@@@@@                                  ³
+   ³ Spesenverteiler: @@@@@@@@@@@@@@@@@@@@@                                  ³
+   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ ù                                                                            ù
+
+^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
+ ^ ^ ^ ^
+
+>>Mask:   FIM130
+>>Prog.:  FI1100.C
+>>Update: 10.07.91
+
+&TITEL    = "KA  STAMM Anlegen Makros "
+&FRAME    = 0, 0, 0, 0, "Anlegen/ndern Makros (Konten)" 2
+>>SEQUENZ =
+
+&MASKHELP = KAHLP10, makr-an
+&INDEX    = EABAS
+
+&DATEI      (0)  = MASK, D.KA0150
+&PARA_READ  (1)  = MASK, L.SYP_01
+&PARA_READ  (2)  = MASK, D.SYP_05
+
+>>Konto-Nummer
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Konto-Nummer", 0, .KONTONR
+&ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 0, .KONTO_BEZ
+  &HELPTEXT (+-) = KAHLP10, 130, 0
+  &DATA     (+-) = 0, .KONTONR
+
+>>Konten-Bezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Konten-Bezeichnung            ", 0, .KONTO_BEZ
+&ADD_MATCH  (+-) = "Konto-Nummer", 0, .KONTONR
+  &HELPTEXT (+-) = KAHLP10, 130, 1
+  &DATA     (+-) = 0, .KONTO_BEZ
+  &MODUS    (+-) = PREPARE
+
+>>MwSt/VSt Schlssel
+&HELPTEXT (+)  = KAHLP10, 130, 2
+&DATA     (+-) = 0, .UST_SATZ
+
+>>Erl”s-Code
+&HELPTEXT (+)  = KAHLP10, 130, 3
+&DATA     (+-) = 0, .E_CODE
+&CHOICE   (+-) = "Druckbereich",\
+                 "USt-Berichtigung",u, "Eigenverbrauch",e, \
+                 "ESt-Betriebseinnahme",b, "Rechnungsausgangsbuch",r, \
+                 "Wareneingangsbuch",w
+
+>>Aufwands-Code
+&HELPTEXT (+)  = KAHLP10, 130, 4
+&DATA     (+-) = 0, .A_CODE
+
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)
+  &DATA_H   (+-) = 1, MAND_01     >>Mandanten-Nummer
+  &DATA_H   (+)  = 1, UST_1       >>Steuersatz 1 - 8
+  &DATA_H   (+)  = 1, UST_2
+  &DATA_H   (+)  = 1, UST_3
+  &DATA_H   (+)  = 1, UST_4
+  &DATA_H   (+)  = 1, UST_5
+
+  &DATA_H   (+)  = 1, UST_6
+  &DATA_H   (+)  = 1, UST_7
+  &DATA_H   (+)  = 1, UST_8
+
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 2, AUF_TXT_01  >>Artikel-Preis-Texte
+  &DATA_H   (+)  = 2, AUF_WRT_01
+
+  &DATA_H   (+)  = 2, ZAH_TXT_01  >>Artikel-Preis-Texte
+  &DATA_H   (+)  = 2, ZAH_WRT_01
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+

@@ -1,0 +1,75 @@
+
+^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+^ ^ ^ ^ ^ ^ ^ ^    ^ ^ ^ ^ ^ ^ ^ ^    ^ ^ ^ ^ ^
+
+>>Mask:   KAM4130
+>>Prog.:  ST4100.C
+>>Update: 9.08.91
+
+&TITEL    = "KA  DRUCK Spesenverteiler 1/2"
+&FRAME    = 0, 0, 0, 0, "횯ruck Spesenverteiler", 2
+>>&SEQUENZ  = 00,01,02
+
+>>MASKHELP=
+&INDEX    = BASIS
+
+&DATEI      (0)  = MASK, D.KA1500
+&DRU_DATEI  (1)  = MASK, D.KA4130
+&PARA_READ  (2)  = MASK, L.SYP_05
+
+>>旼컴컴컴  7. Zeile: 컴컴컴커
+  &DATA_H   (0)  = 0, ZAHLUNG
+  &DATA_H   (+)  = 2, ZAH_TXT_01
+  &DATA_H   (+)  = 2, ZAH_TXT_02
+  &DATA_H   (+)  = 2, ZAH_TXT_03
+  &DATA_H   (+)  = 2, ZAH_TXT_04
+  &DATA_H   (+)  = 2, ZAH_TXT_05
+  &DATA_H   (+)  = 2, ZAH_TXT_06
+  &DATA_H   (+)  = 2, ZAH_TXT_07
+  &DATA_H   (+)  = 2, ZAH_TXT_08
+  &DATA_H   (+)  = 2, ZAH_TXT_09
+  &DATA_H   (+)  = 2, ZAH_TXT_10
+  &DATA_H   (+)  = 2, ZAH_TXT_11
+  &DATA_H   (+)  = 2, ZAH_TXT_12
+
+>>旼컴컴컴  8. Zeile: 컴컴컴커
+  &DATA_H   (+)  = 2, ZAH_WRT_01
+  &DATA_H   (+)  = 2, ZAH_WRT_02
+  &DATA_H   (+)  = 2, ZAH_WRT_03
+  &DATA_H   (+)  = 2, ZAH_WRT_04
+  &DATA_H   (+)  = 2, ZAH_WRT_05
+  &DATA_H   (+)  = 2, ZAH_WRT_06
+  &DATA_H   (+)  = 2, ZAH_WRT_07
+  &DATA_H   (+)  = 2, ZAH_WRT_08
+  &DATA_H   (+)  = 2, ZAH_WRT_09
+  &DATA_H   (+)  = 2, ZAH_WRT_10
+  &DATA_H   (+)  = 2, ZAH_WRT_11
+  &DATA_H   (+)  = 2, ZAH_WRT_12
+
+>>旼컴컴컴  9. Zeile: 컴컴컴커
+  &DATA_H   (+)  = 1, _SUM_ERL_1
+  &DATA_H   (+)  = 1, _SUM_ERL_2
+  &DATA_H   (+)  = 1, _SUM_ERL_3
+  &DATA_H   (+)  = 1, _SUM_ERL_4
+  &DATA_H   (+)  = 1, _SUM_ERL_5
+  &DATA_H   (+)  = 1, _SUM_ERL_6
+  &DATA_H   (+)  = 1, _SUM_ERL_7
+  &DATA_H   (+)  = 1, _SUM_ERL_8
+
+  &DATA_H   (+)  = 1, _SUM_MS_1
+  &DATA_H   (+)  = 1, _SUM_MS_2
+  &DATA_H   (+)  = 1, _SUM_MS_3
+  &DATA_H   (+)  = 1, _SUM_MS_4
+  &DATA_H   (+)  = 1, _SUM_MS_5
+  &DATA_H   (+)  = 1, _SUM_MS_6
+  &DATA_H   (+)  = 1, _SUM_MS_7
+  &DATA_H   (+)  = 1, _SUM_MS_8
+
+  &DATA_H   (+)  = 1, _GES_EIN
+  &DATA_H   (+)  = 1, _GES_BER
+  &DATA_H   (+)  = 1, _GES_EIG
+  &DATA_H   (+)  = 1, _GES_ERL
+  &DATA_H   (+)  = 1, _GES_MWST
+>>읕 Ende Dummy-Felder! 컴컴켸
+

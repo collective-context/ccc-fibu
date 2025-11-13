@@ -1,0 +1,61 @@
+
+
+
+
+
+   Jahr     Wert Anfang      Zug„nge    a.o. Abg.          Afa     Wert Ende
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   @@@@@@@ #.```.``|,|| `.```.``|,|| `.```.``|,|| `.```.``|,||  `.```.``|,||
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ù                                                                        ù
+
+>>Mask:   FIM161
+>>Prog.:  FI1100.C
+>>Update: 2.08.91
+
+&TITEL    = "FI  STAMM Anlegen Anlagenstamm 2/2"
+&FRAME    = 0, 0, 0, 0, "ÄAnlegen/Žndern Anlagenstamm", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, bila-an
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&BLOCK  = 0,5
+&SCROLL = 6,0,20,79
+
+&DATEI      (0)  = MASK, D.FI1600
+
+>>Buchungsjahr
+  &HELPTEXT (0)  = FIHLP10, 161, 0
+  &DATA     (+-) = 0, BU_JAHR   
+
+  &DATA     (+)  = 0, WJ_ANFANG   >>Wirtschaftsjahr Anfang
+  &DATA     (+)  = 0, WJ_ZUGANG   >>Zugang
+  &DATA     (+)  = 0, AO_ABGANG   >>auáerordentlicher Abgang
+  &DATA     (+)  = 0, WJ_AFA      >>Abschreibung
+  &DATA     (+)  = 0, WJ_ENDE     >>Wirtschaftsjahr Ende
+
+
+
+>>Inventar/Projekt NR
+&REC_KEY    (0)
+  &DATA_H   (+-) = 0, INVENT_NR
+
+>>Projekt/Anlagen-Kurzbezeichnung
+&REC_KEY    (+)
+  &DATA_H   (+-) = 0, MATCH_CODE
+

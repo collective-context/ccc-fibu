@@ -1,0 +1,56 @@
+🎓 Add Developer Handbook - Chapter 1: CASE Tool Fundamentals
+
+BREAKING THROUGH: Document how to derive exact Btrieve structure from MASK files!
+
+New Documentation:
+- docs/book-01/README.md (356 lines)
+  * Developer Handbook overview and navigation
+  * 8 chapters planned, Chapter 1 complete
+  * Quick start for new developers and KI agents
+  * Learning paths and FAQ
+
+- docs/book-01/chapter-01-case-tool-fundamentals.md (605 lines)
+  * Core concept: One MASK file = UI + Database Schema
+  * Placeholder syntax explained (^ = CHAR, ` = DOUBLE, etc.)
+  * Structure derivation algorithm (step-by-step)
+  * Complete FI1310 example with calculations
+  * Python code examples for export workflow
+  * Quick reference cheatsheet
+
+Key Insight:
+  MASK files contain COMPLETE structure information!
+  - Placeholder count = Field length (^^^^^^^^ = 8 chars)
+  - &DATA directives = Field names
+  - Layout order = Record order
+  
+  NO MORE hexdump guessing! NO MORE reverse engineering!
+  Just read the MASK file and you have the schema!
+
+Impact:
+- Can now automatically generate parsers from MASK files
+- Can export ALL Btrieve files (not just hardcoded ones)
+- Can generate React UI from MASK definitions
+- Can create REST APIs from MASK schemas
+- Complete migration pipeline now possible!
+
+Updated:
+- README.md: Added Developer Handbook section
+
+Session Summary:
+- docs/2025-11-13/session_2025-01-13_late-evening.md
+  * Documents the learning process
+  * Shows the breakthrough moment
+  * 90 minutes from confusion to clarity
+
+Stats:
+- ~1,000 lines of new documentation
+- ~10,000 words written
+- 1 fundamental insight captured
+- Foundation for 7 more chapters
+- Clear path for future development
+
+For new sessions:
+  START HERE: docs/book-01/chapter-01-case-tool-fundamentals.md
+  This is the essential knowledge for understanding the system!
+
+Namasté 🙏

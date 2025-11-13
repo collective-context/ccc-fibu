@@ -1,0 +1,97 @@
+
+
+
+
+
+
+
+
+
+
+
+                       ù
+                          Kontonummer : Sïïïïïïïï ^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                  ^ ^ ^
+                        Ú Umsatzsteuer-Voranmeldung ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                        À Steuersatz     : @@@@@@@ ÄÄÄ Betrag: ##.##›,›› ÄÙ
+
+                        Ú Betriebsergebnis fr die Einkommensteuer ÄÄÄÄÄÄÄ¿
+                        ³ Druckbereich   : ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ³
+                        À Spesenverteiler: ^^^^^^^^^^^^^^^^^^^^^^^^^ ÄÄÄÄÄÙ
+                       ù                                                   ù
+
+  ^ ^ ^ ^
+
+>>Mask:   KAM250
+>>Prog.:  ST1100.C
+>>Update: 9.08.91
+
+
+&TITEL    = "KA  ERFASS Kassenbuch 2/2"
+&FRAME    = 0, 0, 0, 0, "USt-Berechnung & Gewinnermittlung", 2
+>>&SEQUENZ=
+
+
+&MASKHELP  = KAHLP10, erf-inf
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.KA1500
+&PARA_READ  (1)  = MASK, L.SYP_01  >>Festkonten, MWST, ...
+&PARA_READ  (2)  = MASK, L.SYP_05  >>DyChoice
+&DRU_DATEI  (3)  = MASK, D.KA4130
+&REF_DATEI  (4)  = MASK, D.KA0150
+
+>>Konto-Nummer
+  &HELPTEXT (0) = KAHLP10, 151, 0
+  &DATA     (+-) = 3, _KONTONR
+
+>>Konto-Bezeichnung
+  &DATA     (+)  = 4, .KONTO_BEZ
+
+>>Konto-Bezeichnung
+  &DATA_H   (+)  = 3, _KONTO_BEZ
+
+>>Konto-Nummer
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Konto-Nummer", 4, .KONTONR
+&ADD_MATCH  (+-) = "Konten-Bezeichnung            ", 4, .KONTO_BEZ
+  &DATA_H   (+-)  = 4, .KONTONR
+
+  &DATA_H   (+)   = 4, .KONTO_BEZ
+
+>>MwSt/VSt Schlssel
+&HELPTEXT (+)  = KAHLP10, 151, 1
+&DATA     (+-) = 3, _UST_SATZ
+
+>>Steuerbetrag
+  &HELPTEXT (+) = KAHLP10, 151, 2
+  &DATA     (+-) = 3, _UST_BETR
+
+
+>>Erl”s-Code
+  &HELPTEXT (+)  = KAHLP10, 151, 3
+  &DATA     (+-) = 3, _E_CODE
+  &CHOICE   (+-) = "Druckbereich",\
+                   "USt-Berichtigung",u, "Eigenverbrauch",e, \
+                   "ESt-Betriebseinnahme",b, "Rechnungsausgangsbuch",r, \
+                   "Wareneingangsbuch",w
+
+>>Aufwands-Code
+  &HELPTEXT (+)  = KAHLP10, 151, 4
+  &DATA     (+-) = 3, _A_CODE
+
+
+>>Buchungsart
+>>&HELPTEXT (+)  = KAHLP10, 250, 6
+>>&DATA     (+-) = 3, _ART
+>>&CHOICE   (+-) = "Buchungsart",\
+>>               "Wareneingang",1, "Rechnungsausgang",2
+
+  &DATA_H   (+)  = 3, _ART
+
+  &DATA_H   (+)  = 4, .UST_SATZ
+  &DATA_H   (+)  = 4, .A_CODE
+  &DATA_H   (+)  = 4, .E_CODE
+

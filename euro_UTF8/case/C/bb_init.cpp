@@ -1,14 +1,11 @@
 // (C) FiCore - Open Source Financial Core  Letztes Update am 02-Mar-1996 / 16:04:15 - Sat
 
-// ╔══════════════════════════════════════════════════════════════════════════╗
-// ║  Programme-Name: BB_INIT.C       Revision: 1.3	    (C) 1989/1991     ║
-// ║  Function	    : FiCore Work ... 				      ║
-// ║		      Basisprogramm zum Initialisiern der Masken	      ║
-// ║									      ║
-// ║  Rev.-Date     : 01.05.1991, Graz		 Update: 16.07.1991, Graz     ║
-// ║  Author	    : Peter Mayer		 Author: Peter Mayer	      ║
-// ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz     ║
-// ╚══════════════════════════════════════════════════════════════════════════╝
+// recode@ /CCC by CCCORE                  Letztes Update: 2025-01-14 / 16:18
+/*+-------------------------------------------------------------------------+
+  | Programm: bb_init.cpp                                   Revision: 1.4 |
+  | Function: FiCore Financial Core Module                                 |
+  | Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) |
+  +-------------------------------------------------------------------------+*/
 // ╔══════════════════════════════════════════════════════════════════════════╗
 // ║			     Deklarations-Dateien			      ║
 // ╚══════════════════════════════════════════════════════════════════════════╝

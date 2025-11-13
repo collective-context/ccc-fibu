@@ -1,0 +1,118 @@
+
+
+
+
+
+
+
+
+
+                                 ù
+
+                                   Aktuelles Datum : ##.##.##
+
+                                 ù                             ù
+
+^^^^^^^^ ^^^^^^^^ ^
+^ ^ ^ ^ ^ ^ ^
+^ ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^    ^ ^ ^ ^ ^ ^   ^
+^ ^ ^ ^ ^ ^   ^ ^ ^ ^ ^ ^    ^ ^
+^ ^ ^ ^ ^
+
+>>Mask:   FIM4330
+>>Prog.:  FI3100.C
+>>Update: 4.08.91
+
+&TITEL    = "FI  Verbuchen AFA"
+&FRAME    = 0, 0, 0, 0, "ÄVerbuchen AFA", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, sach-dr
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&WORK_DATEI (0)  =   MASK, D.FI1600
+&DRU_DATEI  (1)  =   MASK, D.FI4210
+&REF_DATEI  (2)  =   MASK, D.FI2100
+&REF_DATEI  (3)  =   MASK, D.FI1310
+&PARA_READ  (4)  =   MASK, L.SYP_01     >>Konsten Festkonten, MWST, ...
+&PARA_READ  (5)  =   MASK, D.SYP_50  >>Konsten des aktuellen Jahres
+
+&DATA       (0)  = 1, _DATUM      >>Datum
+&DEFAULT    (+-) = "s"
+
+>>1.Zeile:
+  &DATA_H   (+)  = 1, _V_KTONR    >>Von Kontonummer S
+  &DATA_H   (+)  = 1, _B_KTONR    >>Bis Kontonummer S
+  &DATA_H   (+)  = 0, INVENT_NR   >>Inventurnummer
+
+>>2.Zeile
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+
+>>3.Zeile
+  &DATA_H   (+)  = 1, _VON_SEITE  >>von Seite
+  &DEFAULT  (+-) = "0001"
+
+  &DATA_H   (+)  = 1, _BIS_SEITE  >>bis Seite
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  4. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)
+  &DATA_H   (+-) = 2, :SATZ_NR
+  &DATA_H   (+)  = 2, :SOLL_ART
+  &DATA_H   (+)  = 2, :SOL_KONTO  >>Soll-Konto
+  &DATA_H   (+)  = 2, :BELEG_NR   >>Beleg-Nummer
+  &DATA_H   (+)  = 2, :BELEG_DAT  >>Beleg-Datum
+  &DATA_H   (+)  = 2, :HABEN_ART  >>Haben-Konto
+
+  &DATA_H   (+)  = 2, :HAB_KONTO  >>Haben Konto
+  &DATA_H   (+)  = 2, :BETRAG_BR  >>Betrag
+  &DATA_H   (+)  = 2, :UST_ART    >>Umsatzsteuer-Art
+  &DATA_H   (+)  = 2, :UST_SATZ   >>Umsatzsteuer-Satz  (0/1-8)
+  &DATA_H   (+)  = 2, :SOLL_TEXT  >>Bezeichnung-Soll-Konto (aus Referenz-Datei)
+  &DATA_H   (+)  = 2, :HAB_TEXT   >>Bezeichnung-Haben-Konto (aus Referenz-Datei)
+
+  &DATA_H   (+)  = 2, :UST_BETR   >>UST-Betrag
+  &DATA_H   (+)  = 2, :BUCH_TEXT  >>Buchungs-Text
+  &DATA_H   (+)  = 2, :BUCH_DAT   >>Buchungsdatum
+  &DATA_H   (+)  = 2, :BUCH_ART   >>Buchungsart
+  &DATA_H   (+)  = 2, :SOLL_UST   >>Kunden Konto
+  &DATA_H   (+)  = 2, :HABEN_UST
+
+  &DATA_H   (+)  = 3, KONTONR     >>Kontobezeichnung */
+
+>>ÚÄÄÄÄÄÄÄ  5. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 0, AFA_KONTO
+  &DATA_H   (+)  = 0, AFA_K_BEZ
+  &DATA_H   (+)  = 0, ANL_KONTO
+  &DATA_H   (+)  = 0, ANL_K_BEZ
+  &DATA_H   (+)  = 0, MATCH_CODE
+  &DATA_H   (+)  = 0, JAHR_AFA
+
+  &DATA_H   (+)  = 0, AFA
+  &DATA_H   (+)  = 0, AKTIVIERT
+  &DATA_H   (+)  = 0, ZEIT_WERT
+  &DATA_H   (+)  = 0, VERK_WERT
+  &DATA_H   (+)  = 0, NUTZ_RES
+  &DATA_H   (+)  = 0, ZEITW_ANF
+
+  &DATA_H   (+)  = 0, BUCH_JAHR
+  &DATA_H   (+)  = 0, NUTZ_GES
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+>>ÚÄÄÄÄÄÄÄ  6. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 4, SALDO_VOR
+  &DATA_H   (+)  = 4, AN_ERTRAG
+  &DATA_H   (+)  = 4, AN_AUFWAND
+  &DATA_H   (+)  = 4, AN_SCHADEN
+  &DATA_H   (+)  = 5, Y_CLOSED
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+

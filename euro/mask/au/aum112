@@ -1,0 +1,155 @@
+
+
+
+
+
+    ùLetzter Kontakt  : ##.##.##           N„chster Kontakt : ##.##.##
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+     Preisgruppe      : @@@@@@@@@@@@@      MwSt.-Schlssel  : @@@@@@@@@@
+     Grundrabatt      : ##›,›› %           Zahlungskondition: ››-››-››
+
+     Rabattgruppe     : ïïïï               Kredit-Limit T™S : #####
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+     Sammelrechnungs.-KZ.   : @@           Vertreter        : @@@
+     Abspeicherungs.-Kennz. :  @           Tour/Gebiet      : @@
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+     Umsatz Periode   : ##.###.##›,››      Umsatz akt. Jahr : ##.###.##›,››
+     Datum l. Umsatz  : ##.##.##           Umsatz Vorjahr   : ##.###.##›,››
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+     Konto-Nr. FIBU   : D@@@@@@@@          W„hrungsnummer   : ›››
+     Bankleitzahl     : @@@@@@@@           Bank-Konto-Nummer: @@@@@@@@@@@@
+   ù Postscheck-Konto : @@@@@@@@@@@@@@     OP-Kennzeichen   : @@@@@@@@@@@@ù
+
+
+
+
+
+&TITEL = "AU=Stamm Kundenauswertung 2/2"
+&REM   Source:  ST1000 (verbunden mit STM110)
+&REM   Maske :  #111
+&REM   Progr.:  ST1100
+
+&REM Historie
+&REM Stand: 02.05.89
+
+&FRAME = 0, 0, 0, 0, "Kunden-Daten", 2
+&INDEX = "BASIS"
+
+&DATEI (0) = MASK, D.ST1110
+&DATEI (1) = MASK, D.FI1110
+
+&SEQUENZ = 00,01,02,04,06,03,05,07,08,10,09,11
+
+&OK = "Abspeicherung der Daten", "Abbruch ohne Speicherung", "zurck zur Eingabe"
+
+&REM  Letzter Kontakt
+&HELPTEXT (00) = AUHLP10, 111, 1
+&DATUM    (+-)
+&DATA     (+-) = 0, LE_KONTAKT
+
+&REM  N„chster Kontakt
+&HELPTEXT (+)  = AUHLP10, 111, 2
+&DATUM    (+-)
+&DATA     (+-) = 0, NE_KONTAKT
+
+&REM  Preisgruppe
+&HELPTEXT (+)  = AUHLP10, 111, 3
+&CHOICE   (+-) = "1.Art.-Preis","1", "2.Art.-Preis","2", "3.Art.-Preis","3", "4.Art.-Preis","4", "5.Art.-Preis","5"
+&DEFAULT  (+-) = "1"
+&DATA     (+-) = 0, PREIS_GR
+
+&REM  MWST-Schlssel
+&HELPTEXT (+)  = AUHLP10, 111, 4
+&CHOICE   (+-) = "mit MWST","1", "ohne MWST","0", "incl. MWST","2"
+&DEFAULT  (+-) = "1"
+&DATA     (+-) = 0, MWST
+
+&REM  Grundrabatt
+&HELPTEXT (+)  = AUHLP10, 111, 5
+&DEFAULT  (+-) = 0
+&DATA     (+-) = 0, GR_RABATT
+
+&REM  Zahlungskonditionen TT%%TT
+&REM ** Eventuell šberprfung auf Zul„ssigkeit **
+&HELPTEXT (+)  = AUHLP10, 111, 6
+&DATA     (+-) = 1, KONDITION
+
+&REM  Rabattgruppe
+&HELPTEXT (+)  = AUHLP10, 111, 7
+&DATA     (+-) = 0, RABATT_GR
+
+&REM  Kredit-Limit T™S
+&HELPTEXT (+)  = AUHLP10, 111, 8
+&DATA     (+-) = 0, KREDIT
+
+&REM  SammelRg.-Kz
+&HELPTEXT (+)  = AUHLP10, 111, 9
+&DATA     (+-) = 0, SAMMEL_RE
+
+&REM  Vertreter
+&HELPTEXT (+)  = AUHLP10, 111, 10
+&DATA     (+-) = 0, VERTRETER
+
+&REM  Abspeicher-Kz.
+&HELPTEXT (+)  = AUHLP10, 111, 11
+&DATA     (+-) = 0, FILLER
+>>&DATA   (+-) = 0, ABSPEICHER
+
+&REM  Tour/Gebiet
+&HELPTEXT (+)  = AUHLP10, 111, 12
+&DATA     (+-) = 0, FILLER
+>>&DATA   (+-) = 0, TOUR_GE
+
+&REM  Umsatz Periode
+&HELPTEXT (+)  = AUHLP10, 111, 13
+&DATA     (+-) = 0, UMSATZ_PER
+
+&REM  Umsatz akt. Jahr
+&HELPTEXT (+)  = AUHLP10, 111, 14
+&DATA     (+-) = 0, UMSATZ_JAH
+
+&REM  Datum letzte Umsatz
+&HELPTEXT (+)  = AUHLP10, 111, 15
+&DATUM    (+-)
+&DATA     (+-) = 0, LET_BEWEG
+
+&REM  Umsatz Vorjahr
+&HELPTEXT (+)  = AUHLP10, 111, 16
+&DATA     (+-) = 0, UMSATZ_VOR
+
+&REM  Konto-Nr. FIBU
+&HELPTEXT (+)  = AUHLP10, 111, 17
+&DATA     (+-) = 0, FILLER
+>>&DATA   (+-) = 0, KONTO_NR
+
+&REM  W„hrungs-Nummer
+&HELPTEXT (+)  = AUHLP10, 111, 18
+&RANGE    (+-) = "000", "999"
+&DEFAULT  (+-) = "001"
+&DATA     (+-) = 1, WŽHRUNG
+
+&REM  Bankleitzahl
+&HELPTEXT (+)  = AUHLP10, 111, 19
+&DATA     (+-) = 0, FILLER
+>>&DATA   (+-) = 0, BANKLEIT
+
+&REM  Bank-Kto.-Nr.
+&HELPTEXT (+)  = AUHLP10, 111, 20
+&DATA     (+-) = 0, FILLER
+>>&DATA   (+-) = 0, BKONTO_NR
+
+&REM  Postscheck-Kto.-Nr.
+&HELPTEXT (+)  = AUHLP10, 111, 21
+&DATA     (+-) = 0, FILLER
+>>&DATA   (+-) = 0, POSTSCHECK
+
+&REM  OP-Kennzeichen
+&HELPTEXT (+)  = AUHLP10, 111, 22
+&CHOICE   (+-) = "ohne OP","0", "mit Mahnung","1", "nur OP","2"
+&DEFAULT  (+-) = "1"
+&DATA     (+-) = 0, FILLER
+>>&DATA   (+-) = 0, OP_KENNZEI
+
+
+&NUMMER = 00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21
+

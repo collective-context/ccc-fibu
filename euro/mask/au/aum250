@@ -1,0 +1,190 @@
+
+
+
+ ùLager-Nummer/Erfaáungs-Jahr-Monat-Tag    : @@@@@@@@@@@ ^ ^ ^ ^ ^ ^
+  Kunde/Lieferant: ï@@@@@@@@      Beleg-Nr : @@@@@@@@@@ Lief.Datum: ##.##.##
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                        Betrag: ###.###.##›,››
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Artikel ^ ^ ^ ^ ^ ^ ^ ^         Menge   EH        Preis/EH N U%    Betrag ™S
+  @@@@@@@@ @@@@@@@@@@@@@@@@@ #.###.##›,›› ^^^^^ #.###.##›,›› @ `` #.###.##›,››
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ù                                                                            ù
+
+>>Mask:   AUM250
+>>Prog.:  ST4100.C
+>>Update: 01.06.91
+
+&TITEL    = "AU  ERFASS Lagerbewegungen/Kunden"
+&FRAME    = 0, 0, 0, 0, "Erfassen Lagerbewegungen/Kunden", 2
+>>SEQUENZ = 00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21
+
+&BLOCK = 20,27
+&SCROLL = 7,0,21,79
+
+>>MASKHELP=
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&DATEI      (0)  = MASK, D.AU2500
+&REF_DATEI  (1)  = MASK, D.ST1100
+&REF_DATEI  (2)  = MASK, D.ST1300
+&REF_DATEI  (3)  = MASK, D.ST1200
+&REF_DATEI  (4)  = MASK, D.ST1700
+
+
+>>Lagernummer/JJ-MM-TT (S) Primary-Key
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Lager/Monat", 0, L_NR_TAG
+&ADD_MATCH  (+-) = "Beleg-Nr    ", 0, BELEG_NR
+&ADD_MATCH  (+-) = "Kunden-Kurzbezeichnung                  ", 0, KULI_BEZ
+  &HELPTEXT (+-) = AUHLP10, 250, 0
+  &DATA     (+-) = 0, L_NR_TAG
+
+>>-----
+>>Kunden Nummer (Dummy-Feld)
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Kunden-Kurzbezeichnung                  ", 1, MATCH_CODE
+&ADD_MATCH  (+-) = "Kunden-Nummer        ", 1, KUNDE
+  &HIDE     (+-)
+  &DATA     (+-) = 1, KUNDE
+
+>>Kunden Bezeichnung (Dummy-Feld)
+&REF_KEY    (+)
+  &HIDE     (+-)
+  &DATA     (+-) = 1, MATCH_CODE
+
+>>Lieferanten Nummer (Dummy-Feld)
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Lieferanten-Kurzbezeichnung             ", 3, MATCH_CODE
+&ADD_MATCH  (+-) = "Lieferanten-Nummer   ", 3, LIEFNR
+  &HIDE     (+-)
+  &DATA     (+-) = 3, LIEFNR
+
+>>Lieferanten Bezeichnung (Dummy-Feld)
+&REF_KEY    (+)
+  &HIDE     (+-)
+  &DATA     (+-) = 3, MATCH_CODE
+
+>>Mitarbeiter Nummer (Dummy-Feld)
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Mitarbeiter-Kurzbezeichnung             ", 4, MATCH_CODE
+&ADD_MATCH  (+-) = "Mitarbeiter-Nummer   ", 4, PERSONNR
+  &HIDE     (+-)
+  &DATA     (+-) = 4, PERSONNR
+
+>>Mitarbeiter Bezeichnung (Dummy-Feld)
+&REF_KEY    (+)
+  &HIDE     (+-)
+  &DATA     (+-) = 4, MATCH_CODE
+>>-----
+
+>>Kunde/Lieferant
+  &HELPTEXT  (+)  = AUHLP10, 250, 1
+  &DATA      (+-) = 0, KULI_NR
+
+>>Beleg-Nummer
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Beleg-Nr    ", 0, BELEG_NR
+&ADD_MATCH  (+-) = "Kunden-Kurzbezeichnung                  ", 0, KULI_BEZ
+  &HELPTEXT (+-) = AUHLP10, 250, 2
+  &DATA     (+-) = 0, BELEG_NR
+
+>>Liefer-Datum
+  &HELPTEXT (+) = AUHLP10, 250, 3
+  &DATA     (+-) = 0, LIEF_DAT
+
+>>Bezeichnung-Kunde/Lieferant (aus Referenz-Datei: Kunden/Lieferantenstamm)
+  &DATA     (+) = 0, KULI_BEZ
+
+>>Betrag
+  &HELPTEXT (+) = AUHLP10, 250, 8
+  &DATA     (+-) = 0, KULI_BETR
+
+>>------------------------------
+>>Artikelnummer (Dummy - Feld)
+&REF_KEY    (+)
+&REF_MATCH  (+-) = "Bezeichnung        ", 2, MATCH_CODE
+&ADD_MATCH  (+-) = "Artikelnummer   ", 2, ARTNR
+  &HIDE     (+-)
+  &DATA     (+-) = 2, ARTNR
+
+>>Bezeichnung (Dummy - Feld)
+&REF_KEY    (+)
+  &HIDE     (+-)
+  &DATA     (+-) = 2, MATCH_CODE
+
+>>Mengeneiheit (Dummy - Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 2, MENGENEINH
+
+>>Preis/Einheit (Dummy - Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 2, VKPR1
+
+>>Ust_Art (Dummy - Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 2, MWST
+
+>>Artikelkennzeichen (Gruppe) (Dummy - Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 2, ART_KENNZ
+
+>>Artikelkennzeichen (Gruppe) (Dummy - Feld)
+  &HIDE     (+)
+  &DATA     (+-) = 0, AR_KENNZ
+
+>>Konto
+  &HIDE     (+)
+  &DATA     (+-) = 0, KONTO_NR
+>>------------------------------
+>>Positionsteil
+
+>>Artikel-Nummer
+  &HELPTEXT (+)  = AUHLP10, 250, 9
+  &DATA     (+-) = 0, AR_NUMMER
+
+>>Bezeichnung
+  &HELPTEXT (+)  = AUHLP10, 250, 10
+  &DATA     (+-) = 0, AR_BEZEICH
+
+>>Menge
+  &HELPTEXT (+)  = AUHLP10, 250, 11
+  &DATA     (+-) = 0, AR_MENGE
+
+>>Einheit
+  &HELPTEXT (+)  = AUHLP10, 250, 12
+  &DATA     (+-) = 0, AR_EINHEIT
+
+>>Preis/Einheit
+  &HELPTEXT (+)  = AUHLP10, 250, 13
+  &DATA     (+-) = 0, PREIS_EINH
+
+>>Netto/Brutto
+  &HELPTEXT (+)  = AUHLP10, 250, 14
+  &DATA     (+-) = 0, NETTO_BRUT
+  &CHOICE   (+-) = "Netto/Brutto",\
+                 "Netto = plus MwSt","n",  "Brutto = incl. MwSt","b"
+
+>>Umsatzsteuer-Schlssel
+  &HELPTEXT (+)  = AUHLP10, 250, 15
+  &DATA     (+-) = 0, UST_SATZ
+  &CHOICE   (+-) = "MWST-Satz %",  "20%","1",  "10%","2",  "32%","3"
+
+>>Betrag in ™S
+  &HELPTEXT (+)  = AUHLP10, 250, 16
+  &DATA     (+-) = 0, BETRAG
+
+

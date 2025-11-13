@@ -1,0 +1,81 @@
+
+
+
+
+
+
+
+
+
+                                 ù
+
+                                   Aktuelles Datum : ##.##.##
+
+                                 ù                             ù
+
+^^^^^^^^ ^^^^^^^^
+^ ^
+^ ^ ^ ^ ^ ^ ^
+^ ^
+
+>>Mask:   FIM4330
+>>Prog.:  FI3100.C
+>>Update: 4.08.91
+
+&TITEL    = "FI  L™SCH Monatsabschluá"
+&FRAME    = 0, 0, 0, 0, "ÄMonatsabschluá", 2
+>>SEQUENZ =
+
+&MASKHELP = FIHLP10, sach-dr
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&WORK_DATEI (0)  = MASK, D.FI1310
+&DRU_DATEI  (1)  = MASK, D.FI4210
+&WORK_DATEI (2)  = MASK, D.FI1210
+&WORK_DATEI (3)  = MASK, D.FI1110
+
+&DATA       (0)  = 1, _DATUM      >>Datum
+&DEFAULT    (+-) = "s"
+
+>>1.Zeile:
+>>Von Kontomunner S
+  &HELPTEXT (+)  = FIHLP10, 413, 00
+  &DATA_H   (+-) = 1, _V_KTONR
+  &DEFAULT  (+-) = "!!!!!!!!"
+
+>>Bis Kontonummer S
+  &HELPTEXT (+)  = FIHLP10, 413, 1
+  &DATA_H   (+-) = 1, _B_KTONR
+  &DEFAULT  (+-) = "zzzzzzzz"
+
+>>2.Zeile:
+&REF_KEY    (+)                   >>Bezeichnung
+&REF_MATCH  (+-) = "Konto-Nr.  ", 0, KONTONR
+&ADD_MATCH  (+-) = "Bezeichnung                    ", 0, KONTO_BEZ
+  &DATA_H   (+-) = 0, KONTONR     >>Sachkonto-Nummer
+
+&REF_KEY    (+)
+  &DATA_H   (+-) = 0, KONTO_BEZ   >>Bezeichnung
+
+>>2.Zeile
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung 
+
+>>von Seite
+  &HELPTEXT (+)  = STHLP10, 413, 9
+  &DATA_H   (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = STHLP10, 413, 10
+  &DATA_H   (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+

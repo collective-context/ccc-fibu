@@ -1,11 +1,7 @@
-// http://4win.com  ->  Letztes Update am Samstag, 11. September 1999 / 22:10
+// recode@ /CCC by CCCORE                  Letztes Update: 2025-01-14 / 16:18
 /*+-------------------------------------------------------------------------+
-  | Programme   : asc2euro.cpp       Revision: 2.0         (C) 1989/2000    |
-  | Function    : ASCII Datei in Btrieve Datei einlesen...                  |
-  |                                                                         |
-  | Rev.-Date   : 01.05.1991, Graz          Update: 12.02.1996, Kirchbach   |
-  | Author      : Peter Mayer               Author: Peter Mayer             |
-  | Copyright(C): 4win(R)Software, P.Mayer, A-8010 Graz, http://4win.com    |
+  | Programm: asc2euro.cpp                                                  |
+  | Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) |
   +-------------------------------------------------------------------------+*/
 
 #include <stdio.h>
@@ -18,33 +14,33 @@
 #include "\euro\c\ba.h"
 #include "\euro\c\ba_proto.h"
 
-  /* 0028.0  ~0.NAME=		       \\A.NAME1			   ║
-  ║  0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren"		   ║
+  /* 0028.0  ~0.NAME=		       \\A.NAME1
+  ║  0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren"
   ║  0000.0  ~1.FI_KU_KTO=~0.KUNDE					  */
 
 /*
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ DATEINUMMER  FIMASK.043  Dateiname                                           │
-│ └────────┘  └───────┘  └──────┘                                           │
+│ └─────────┘  └────────┘  └───────┘                                           │
 │ &DATEI (0) = FIMASK, ST1100 ──┐                                              │
-│ &DATEI (1) = FIMASK, ST1110   ├ FiCore »ZIELDATEIEN«                      │
+│ &DATEI (1) = FIMASK, ST1110   ├─ FiCore »ZIELDATEIEN«                        │
 │ &DATEI (2) = FIMASK, FI1110 ──┘                                              │
 │                                                                              │
-│ &FELDER ─── Damit beginnt die Beschreibung der »QUELLDATEI«                 │
-│ 0005.0  ~0.KUNDE		    \\Kundennummer ┐			       │
-│ 0028.0  ~0.NAME		    \\Name1 ───────┴ Remarkzeichen: \\        │
-│ 0028.0  ~0.ZUSATZ ──── Dateinummer und Feldname in ST1100 (FIMASK.043).     │
+│ &FELDER ──── Damit beginnt die Beschreibung der »QUELLDATEI«                 │
+│ 0005.0  ~0.KUNDE		    \\Kundennummer ┐
+│ 0028.0  ~0.NAME		    \\Name1 ───────┴─ Remarkzeichen: \\
+│ 0028.0  ~0.ZUSATZ ───── Dateinummer und Feldname in ST1100 (FIMASK.043).     │
 │ 0001.0  ~1.PREIS_GR=1 ────────────────────────────────┐                      │
 │ 0006.0  ~1.KONDITION=10-30-030                        │                      │
-│ 0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren" ├ Defaultwerte        │
+│ 0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren" ├─ Defaultwerte        │
 │ 0008.M  ~0.GEBURT_1=s                                 │  s: Systemdatum      │
 │ 0013.D  ~1.UMSATZ_PER=123.5 ──────────────────────────┘                      │
-│ 0004.0  ~0. ──┐ Offset der Quelldatei hochzählen.                           │
+│ 0004.0  ~0. ──┐─ Offset der Quelldatei hochzählen.                           │
 │ 0003.0  ~0. ──┘                                                              │
 │ 0000.0  ~1.FI_KU_KTO=~0.KUNDE ─────┐                                         │
-│ 0000.0  ~2.KU_KONTO=~0.KUNDE       ├ Kopiert Inhalt des 2. aufs 1. Feld.    │
+│ 0000.0  ~2.KU_KONTO=~0.KUNDE       ├─ Kopiert Inhalt des 2. aufs 1. Feld.    │
 │ 0000.0  ~2.KURZ_BEZ=~0.MATCH_CODE ─┘                                         │
-│         ─── Dateinummer der FiCore Zieldatei.                            │
+│ │        ──── Dateinummer der FiCore Zieldatei.                             │
 │ └── Feldlänge zählt Offset der Quelldatei hoch. Ab dem Punkt ein Remark.     │
 └──────────────────────────────────────────────────────────────────────────────┘
 */
@@ -316,11 +312,11 @@ return(wTaste);
 
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
-  ║  CopyToDest()							    ║
+  ║  CopyToDest()				                            			    ║
   ║ ─────────────────────────────────────────────────────────────────────── ║
-  ║  0028.0  ~0.NAME=		       \\A.NAME1			    ║
-  ║  0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren"		    ║
-  ║  0000.0  ~1.FI_KU_KTO=~0.KUNDE					    ║
+  ║  0028.0  ~0.NAME=		       \\A.NAME1			                    ║
+  ║  0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren"	                ║
+  ║  0000.0  ~1.FI_KU_KTO=~0.KUNDE					                        ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 STATIC
 VOID CopyToDest(PSSTR pstrLine)
@@ -353,9 +349,9 @@ return;
 
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
-  ║ i_CopyToDest()							    ║
+  ║ i_CopyToDest()						                            	    ║
   ║ ─────────────────────────────────────────────────────────────────────── ║
-  ║									    ║
+  ║									                                        ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 STATIC
 VOID i_CopyToDest(PSOURCELEX pSL, PSSTR pstrSource, CHAR cMode)
@@ -486,7 +482,7 @@ return;
 
 
 /*╔════════════════════════════════════════════════════════════════════════╗
-  ║  i_Default()							   ║
+  ║  i_Default()							                               ║
   ║────────────────────────────────────────────────────────────────────────║
   ║                                                                        ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
@@ -522,7 +518,7 @@ return(wLen);
 }
 
 /*╔════════════════════════════════════════════════════════════════════════╗
-  ║  i_Offset() 							   ║
+  ║  i_Offset() 							                               ║
   ║────────────────────────────────────────────────────────────────────────║
   ║                                                                        ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
@@ -551,9 +547,9 @@ return(wLen);
 
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
-  ║ _pt()								    ║
+  ║ _pt()								                                    ║
   ║ ─────────────────────────────────────────────────────────────────────── ║
-  ║									    ║
+  ║									                                        ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 STATIC
 PSSTR _pt(SWORD wF, PSSTR pstrDatenfeld, SWORD wL)
@@ -575,9 +571,9 @@ return(&apstrRecord_g[wF][pTB->wOffset]);
 /* printf("\npTB:»%s«, wLen:%d.", pTB->pstrDatenfeld, *pwLen); */
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
-  ║ _pTB()								    ║
+  ║ _pTB()								                                    ║
   ║ ─────────────────────────────────────────────────────────────────────── ║
-  ║									    ║
+  ║									                                        ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 STATIC
 PTEXTBOXLIST _pTB(SWORD wF, PSSTR pstrDatenfeld, SWORD wL)
@@ -600,7 +596,7 @@ return(pTB);
 
 
 /*╔════════════════════════════════════════════════════════════════════════╗
-  ║  InitSourceFile()							   ║
+  ║  InitSourceFile()							                           ║
   ║────────────────────────────────────────────────────────────────────────║
   ║                                                                        ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
@@ -650,7 +646,7 @@ return;
 
 
 /*╔════════════════════════════════════════════════════════════════════════╗
-  ║  SetCode()								   ║
+  ║  SetCode()								                               ║
   ║────────────────────────────────────────────────────────────────────────║
   ║  &DATEI (0) = STMASK.043, ST1100					   ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
@@ -662,18 +658,18 @@ PSSTR pstr;
 BOOL boEin=NEIN;
 
 for(pstr=pstrLex; *pstr; pstr++)		     /* Nicht relevante CHAR */
-  if(*pstr=='=' || *pstr==',') *pstr=' ';	     /* mit BLANK überschr.  */
+  if(*pstr=='=' || *pstr==',') *pstr=' ';	 /* mit BLANK überschr.  */
 
 for(pstr=pstrLex; *pstr; pstr++)		     /* Zwischen " " in ge-  */
-  {if(*pstr=='"') boEin=(boEin) ? NEIN : JA;	     /* geschützte Leerzeich.*/
+  {if(*pstr=='"') boEin=(boEin) ? NEIN : JA; /* geschützte Leerzeich.*/
   if(*pstr==' '&&boEin) *pstr=' ';}		     /* BLANK in ALT 255     */
 
 for(pstr=strtok(pstrLex," ");			     /* Blanks sind Trenn-   */
   pstr; pstr=strtok(NULL, " ")) 		     /* zeichen, also alle   */
-  *ppstrCode++=pstr;				     /* Wörter auf ppstrCode */
+  *ppstrCode++=pstr;				         /* Wörter auf ppstrCode */
 *ppstrCode=NULL;
 
-for(; *ppstr; *ppstr++) 			     /* Für jedes Wort die ge*/
+for(; *ppstr; *ppstr++) 			         /* Für jedes Wort die ge*/
   for(pstr=*ppstr; *pstr; pstr++)		     /* schützten Leerz. ret.*/
     if(*pstr==' ') *pstr=' ';			     /* ALT 255 in BLANK     */
 
@@ -682,13 +678,13 @@ return;
 
 
 /*╔════════════════════════════════════════════════════════════════════════╗
-  ║  SetSourceLex()							   ║
+  ║  SetSourceLex()							                               ║
   ║────────────────────────────────────────────────────────────────────────║
-  ║  &FELDER								   ║
-  ║  0005.0  ~0.KUNDE		       \\A.KUNDENNUMMER 		   ║
-  ║  0028.0  ~0.NAME=		       \\A.NAME1			   ║
-  ║  0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren"		   ║
-  ║  0000.0  ~1.FI_KU_KTO=~0.KUNDE					   ║
+  ║  &FELDER								                               ║
+  ║  0005.0  ~0.KUNDE		       \\A.KUNDENNUMMER 		               ║
+  ║  0028.0  ~0.NAME=		       \\A.NAME1			                   ║
+  ║  0000.0  ~0.BRIEFANR_1="Sehr geehrte Damen und Herren"		           ║
+  ║  0000.0  ~1.FI_KU_KTO=~0.KUNDE					                       ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
 STATIC
 VOID SetSourceLex(PSSTR pstrLex, PSOURCELEX pSL)
@@ -768,7 +764,7 @@ return;
 
 
 /*╔════════════════════════════════════════════════════════════════════════╗
-  ║  InitDestFile()					   Datum: 13.01.92 ║
+  ║  InitDestFile()					   Datum: 13.01.92                     ║
   ║────────────────────────────────────────────────────────────────────────║
   ║                                                                        ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
@@ -795,7 +791,7 @@ return;
 
 
 /*╔════════════════════════════════════════════════════════════════════════╗
-  ║  DataDictionary					   Datum: 13.01.92 ║
+  ║  DataDictionary					   Datum: 13.01.92                     ║
   ║────────────────────────────────────────────────────────────────────────║
   ║                                                                        ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
@@ -859,7 +855,7 @@ return(ppTB);
 
 
 /*╔════════════════════════════════════════════════════════════════════════╗
-  ║  ReadData() 					   Datum: 13.01.92 ║
+  ║  ReadData() 					   Datum: 13.01.92                     ║
   ║────────────────────────────────────────────────────────────────────────║
   ║                                                                        ║
   ╚════════════════════════════════════════════════════════════════════════╝*/
@@ -885,7 +881,7 @@ return;
 
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
-  ║ Read()								    ║
+  ║ Read()								                                    ║
   ║ ─────────────────────────────────────────────────────────────────────── ║
   ║ Diese Funktion liest im File wFH den Schlüssel strSelection_g laut Key- ║
   ║ Nummer wK.                                                              ║
@@ -974,7 +970,7 @@ strcpy(strSelection_g, pstrKey);
 if(awChangeFlag_g[wFH] && awNewRecord_g[wFH])	     /* neuer Datensatz      */
   Db_Insert(wFH, apstrFileBlock_g, apstrRecord_g,    /* 		     */
     awRecLength_g, strSelection_g, wK, pF, wL);      /* 		     */
-else if(awChangeFlag_g[wFH])			     /* exisit.    Datensatz */
+else if(awChangeFlag_g[wFH])			            /* exisit.    Datensatz */
   Db_Update(wFH, apstrFileBlock_g, apstrRecord_g,    /* 		     */
     awRecLength_g,wLock,strSelection_g,wK,pF,wL);    /* 		     */
 
@@ -1022,7 +1018,7 @@ return(wRet);
 
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
-  ║ i_Matchcode_Creation()						    ║
+  ║ i_Matchcode_Creation()						                            ║
   ║ ─────────────────────────────────────────────────────────────────────── ║
   ║ Matchcode bilden                                                        ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
@@ -1087,7 +1083,7 @@ return;
 
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
-  ║ i_Anrede_Creation() 						    ║
+  ║ i_Anrede_Creation() 						                            ║
   ║ ─────────────────────────────────────────────────────────────────────── ║
   ║ Anrede bilden                                                           ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
@@ -1154,9 +1150,9 @@ return;
 
 
 /*╔═════════════════════════════════════════════════════════════════════════╗
-  ║ i_Anrede()								    ║
+  ║ i_Anrede()								                                ║
   ║ ─────────────────────────────────────────────────────────────────────── ║
-  ║ Anrede zusammensetzen						    ║
+  ║ Anrede zusammensetzen						                            ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 STATIC
 VOID i_Anrede(SWORD wF)

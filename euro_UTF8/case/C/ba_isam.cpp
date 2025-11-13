@@ -1,12 +1,9 @@
 // (C) FiCore - Open Source Financial Core: letztes Update am 12-Feb-1996
-
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║  Programme-Name: BA_ISAM.C       Revision: 1.3         (C) 1989/1991    ║
-  ║  Function      : FiCore Basisprogramm                                 ║
+  ║  Function      : FiCore Basisprogramm                                   ║
   ║                                                                         ║
-  ║  Rev.-Date     : 01.05.1991, Graz           Update: 16.07.1991, Graz    ║
-  ║  Author        : Peter Mayer                Author: Peter Mayer         ║
-  ║  Copyright (C) : FiCore-WAREengineering,  Peter Mayer, A-8010 Graz    ║
+  ║ Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

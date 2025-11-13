@@ -1,0 +1,129 @@
+
+
+ ˘
+   1: @ @ @ @ @     @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @
+   2: @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @
+   3: @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @ @ @ @ @   @ @
+
+
+
+ ˘                                                                            ˘
+
+
+>>Mask:   FIM4321
+>>Prog.:  FI4100.C
+>>Update: 4.08.91
+
+&TITEL    = "FI  WORK Dummy-Maske fÅr FIM4320"
+&FRAME    = 
+>>SEQUENZ =
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurÅck zur Eingabe"
+
+&WORK_DATEI (0)  = MASK, D.FI1310
+&DRU_DATEI  (1)  = MASK, D.FI4210
+&WORK_DATEI (2)  = MASK, D.FI1210
+&WORK_DATEI (3)  = MASK, D.FI1110
+&REF_DATEI  (4)  = MASK, V.FI1310
+&REF_DATEI  (5)  = MASK, V.FI1210
+&REF_DATEI  (6)  = MASK, V.FI1110
+
+&REM --- 1. Zeile
+&DATA  (0) = 4, VOR_SALDO
+&DATA  (+) = 4, SOLL_01
+&DATA  (+) = 4, HABEN_01
+&DATA  (+) = 4, SOLL_02
+&DATA  (+) = 4, HABEN_02
+
+&DATA  (+) = 4, SOLL_03
+&DATA  (+) = 4, HABEN_03
+&DATA  (+) = 4, SOLL_04
+&DATA  (+) = 4, HABEN_04
+&DATA  (+) = 4, SOLL_05
+&DATA  (+) = 4, HABEN_05
+
+&DATA  (+) = 4, SOLL_06
+&DATA  (+) = 4, HABEN_06
+&DATA  (+) = 4, SOLL_07
+&DATA  (+) = 4, HABEN_07
+&DATA  (+) = 4, SOLL_08
+&DATA  (+) = 4, HABEN_08
+
+&DATA  (+) = 4, SOLL_09
+&DATA  (+) = 4, HABEN_09
+&DATA  (+) = 4, SOLL_10
+&DATA  (+) = 4, HABEN_10
+&DATA  (+) = 4, SOLL_11
+&DATA  (+) = 4, HABEN_11
+
+&DATA  (+) = 4, SOLL_12
+&DATA  (+) = 4, HABEN_12
+
+&REM --- 2. Zeile
+&DATA  (+) = 5, FI_LIEFER
+&DATA  (+) = 5, VOR_SALDO
+&DATA  (+) = 5, SOLL_01
+&DATA  (+) = 5, HABEN_01
+&DATA  (+) = 5, SOLL_02
+&DATA  (+) = 5, HABEN_02
+
+&DATA  (+) = 5, SOLL_03
+&DATA  (+) = 5, HABEN_03
+&DATA  (+) = 5, SOLL_04
+&DATA  (+) = 5, HABEN_04
+&DATA  (+) = 5, SOLL_05
+&DATA  (+) = 5, HABEN_05
+
+&DATA  (+) = 5, SOLL_06
+&DATA  (+) = 5, HABEN_06
+&DATA  (+) = 5, SOLL_07
+&DATA  (+) = 5, HABEN_07
+&DATA  (+) = 5, SOLL_08
+&DATA  (+) = 5, HABEN_08
+
+&DATA  (+) = 5, SOLL_09
+&DATA  (+) = 5, HABEN_09
+&DATA  (+) = 5, SOLL_10
+&DATA  (+) = 5, HABEN_10
+&DATA  (+) = 5, SOLL_11
+&DATA  (+) = 5, HABEN_11
+
+&DATA  (+) = 5, SOLL_12
+&DATA  (+) = 5, HABEN_12
+
+&REM --- 3. Zeile
+&DATA  (+) = 6, FI_KUNDE
+&DATA  (+) = 6, VOR_SALDO
+&DATA  (+) = 6, SOLL_01
+&DATA  (+) = 6, HABEN_01
+&DATA  (+) = 6, SOLL_02
+&DATA  (+) = 6, HABEN_02
+
+&DATA  (+) = 6, SOLL_03
+&DATA  (+) = 6, HABEN_03
+&DATA  (+) = 6, SOLL_04
+&DATA  (+) = 6, HABEN_04
+&DATA  (+) = 6, SOLL_05
+&DATA  (+) = 6, HABEN_05
+
+&DATA  (+) = 6, SOLL_06
+&DATA  (+) = 6, HABEN_06
+&DATA  (+) = 6, SOLL_07
+&DATA  (+) = 6, HABEN_07
+&DATA  (+) = 6, SOLL_08
+&DATA  (+) = 6, HABEN_08
+
+&DATA  (+) = 6, SOLL_09
+&DATA  (+) = 6, HABEN_09
+&DATA  (+) = 6, SOLL_10
+&DATA  (+) = 6, HABEN_10
+&DATA  (+) = 6, SOLL_11
+&DATA  (+) = 6, HABEN_11
+
+&DATA  (+) = 6, SOLL_12
+&DATA  (+) = 6, HABEN_12
+
+

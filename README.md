@@ -34,6 +34,73 @@ Siehe `REBRANDING.md` für vollständige Details.
 
 ---
 
+### PM-LOG 2025-01-14: 🔧 HEADER MODERNIZATION - Phase 2 Complete!
+
+**59 Quelldateien** mit veralteten Header-Stilen modernisiert.
+
+**Alt (4win.com Stil):**
+```
+// http://4win.com  ->  Letztes Update am Samstag, 11. September 1999 / 22:10
+/*+-------------------------------------------------------------------------+
+  | Programme   : asc2euro.cpp       Revision: 2.0         (C) 1989/2000    |
+  | Function    : ASCII Datei in Btrieve Datei einlesen...                  |
+  | Author      : Peter Mayer               Author: Peter Mayer             |
+  | Copyright(C): 4win(R)Software, P.Mayer, A-8010 Graz, http://4win.com    |
+  +-------------------------------------------------------------------------+*/
+```
+
+**Neu (CCC/FiCore Stil):**
+```
+// recode@ /CCC by CCCORE                  Letztes Update: 2025-01-14 / 16:18
+/*+-------------------------------------------------------------------------+
+  | Programm: asc2euro.cpp                                  Revision: 2.1 |
+  | Function: ASCII Datei in Btrieve Datei einlesen...                     |
+  | Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) |
+  +-------------------------------------------------------------------------+*/
+```
+
+**Geändert:**
+- ✅ **3 Header-Typen** ersetzt (4win.com, boxed, simple Programme)
+- ✅ **Revisionen** auto-inkrementiert (z.B. 2.0 → 2.1)
+- ✅ **URLs** aktualisiert: `http://4win.com` → `https://Creative-Context.org`
+- ✅ **Encoding** migriert: CP850 → UTF-8 wo nötig
+- ✅ **Tool** erstellt: `tools/modernize_headers.py` (intelligent, dry-run capable)
+
+**Statistik:** 59 Header modernisiert, 352 Dateien verarbeitet
+
+Siehe `REBRANDING.md` Phase 2 für Details.
+
+---
+
+### PM-LOG 2025-01-14: 🧹 AUTHOR-ZEILEN VEREINFACHT - Phase 2.1 Complete!
+
+**49 Dateien** mit alten Rev.-Date/Author/Copyright-Zeilen bereinigt.
+
+**Alt (3 Zeilen):**
+```
+║  Rev.-Date     : 01.05.1991, Graz           Update: 16.07.1991, Graz    ║
+║  Author        : Peter Mayer                Author: Peter Mayer         ║
+║  Copyright (C) : FiCore by CCC,  Peter Mayer, https://Creative-Context.org    ║
+```
+
+**Neu (1 Zeile):**
+```
+ | Author:   P.Mayer by HUFi.AI (C)      https://Creative-Context.org (CC) |
+```
+
+**Statistik:**
+- ✅ **49 Dateien** aktualisiert (37 in C/, 12 in case/C/)
+- ✅ **147 Zeilen** entfernt (3 pro Datei)
+- ✅ **49 Zeilen** hinzugefügt (1 kompakte Author-Zeile)
+- ✅ **Netto: -98 Zeilen** (kompaktere Headers)
+- ✅ **0 Rev.-Date Zeilen** verbleibend in euro_UTF8/
+
+**Tool:** `tools/simplify_author_lines.py` mit robustem Pattern-Matching
+
+Siehe `REBRANDING.md` Phase 2.1 für vollständige Liste.
+
+---
+
 ### PM-LOG 2025-11-13: CASE Tool & MASK/FORM System vollständig analysiert
 1) **MASK/FORM Konvertierung:** 440 MASK-Dateien und FORM-Dateien erfolgreich von CP850 nach UTF-8 konvertiert. Das komplette Bildschirmmasken-System ist jetzt lesbar und analysierbar.
 
@@ -255,6 +322,17 @@ grep -r "struct.*FI" euro/C/
 
 ## 📚 Dokumentation
 
+### 📖 Developer Handbook (NEU!)
+- **[FiCore Developer Handbook](docs/book-01/README.md)** - Entwicklerhandbuch für neue Team-Mitglieder und KI-Agenten
+  - **[Kapitel 1: CASE Tool Fundamentals](docs/book-01/chapter-01-case-tool-fundamentals.md)** ✅ FERTIG
+    - Das Kern-Konzept: Ein File = UI + Database Schema
+    - Platzhalter-Syntax und Feldtypen verstehen
+    - Struktur-Ableitung aus MASK-Dateien (Schritt-für-Schritt)
+    - Praktisches Beispiel: FI1310 (Sachkonten)
+    - Von MASK zu modernen Datenbanken (SQLite/PostgreSQL)
+  - Weitere Kapitel in Planung: Multi-File Integration, Parser-Generierung, Modern UI, etc.
+  - **Für neue Sessions:** Start hier für schnellen Einstieg!
+
 ### ✨ Btrieve → SQL Export (THE KEY TOOL)
 - **[BTRIEVE_TO_SQL_EXPORT.md](docs/BTRIEVE_TO_SQL_EXPORT.md)** - Der zentrale Exporter (41 KB)
   - EINBAHNSTRASSE: Btrieve überschreibt SQL auf Knopfdruck
@@ -376,5 +454,7 @@ Modernisierung einer professionellen **FIBU** (Finanzbuchhaltung) von C/MSDOS/Bt
 **Status:** Btrieve → SQL Exporter produktionsreif! ✅  
 **THE KEY TOOL:** Einbahnstraßen-Export auf Knopfdruck verfügbar  
 **Konvertiert:** 440+ MASK-Dateien, 28 .ORG-Dateien nach UTF-8  
-**Rebranding:** 320+ Dateien aktualisiert, Legacy-Code bewahrt  
+**Rebranding:** ~428 Dateien aktualisiert (Brand + Headers + Simplification), Legacy-Code bewahrt  
+**Modernization:** 59 Header-Dateien mit neuer CCC/FiCore Struktur  
+**Simplification:** 49 Dateien mit vereinfachten Author-Zeilen (-98 Zeilen total)
 **Lizenz:** Open Source (geplant)

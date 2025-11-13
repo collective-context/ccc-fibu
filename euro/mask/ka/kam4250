@@ -1,0 +1,92 @@
+
+
+
+
+
+
+
+
+
+                                 ù
+                                   Von Konto-Nummer: @@@@@@@@
+                                   Bis Konto-Nummer: @@@@@@@@
+                                  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                                   von Seite       : ####
+                                   bis Seite       : ####
+                                 ù                            ù
+
+^ ^
+``.``.`` ^ ^ ^ ^ ^ ^ ^
+^ `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,|| `|,||
+
+>>Mask:   FIM4130
+>>Prog.:  FI4100.C
+>>Update: 4.08.91
+
+&TITEL    = "KA  DRUCK Konten"
+&FRAME    = 0, 0, 0, 0, "ÄDrucken Konten", 2
+>>SEQUENZ =
+
+&MASKHELP = KAHLP10, mak-dru
+&INDEX    = BASIS
+
+&DATEI      (0)  = MASK, D.KA0150
+&DRU_DATEI  (1)  = MASK, D.KA4130
+&PARA_READ  (2)  = MASK, L.SYP_01
+
+>>Von Kontonummer S
+  &HELPTEXT (0)  = KAHLP10, 250, 0
+  &DATA     (+-) = 1, _V_KTONR
+
+>>Bis Kontonummer S
+  &HELPTEXT (+)  = KAHLP10, 250, 1
+  &DATA     (+-) = 1, _B_KTONR
+
+>>von Seite
+  &HELPTEXT (+)  = KAHLP10, 250, 3
+  &DATA     (+-) = 1, _VON_SEITE
+  &DEFAULT  (+-) = "0001"
+
+>>bis Seite
+  &HELPTEXT (+)  = KAHLP10, 250, 4
+  &DATA     (+-) = 1, _BIS_SEITE
+  &DEFAULT  (+-) = "9999"
+
+>>ÚÄÄÄÄÄÄÄ  1. Zeile: ÄÄÄÄÄÄÄ¿
+>>Dummy Felder fr Match-Code-Suche
+&REC_KEY    (+)                   >>Sachkonto-Nummer
+&REC_MATCH  (+-) = "Konto-Nr.  ", 0, .KONTONR
+&ADD_MATCH  (+-) = "Bezeichnung                    ", 0, .KONTO_BEZ
+  &DATA_H   (+-) = 0, .KONTONR
+
+&REC_KEY    (+)                   >>Bezeichnung
+  &DATA_H   (+-) = 0, .KONTO_BEZ
+
+
+>>ÚÄÄÄÄÄÄÄ  2. Zeile: ÄÄÄÄÄÄÄ¿
+  &DATA_H   (+)  = 1, _DATUM_AKT  >>Datum
+  &DATA_H   (+)  = 1, _SEITE      >>Seite 
+  &DATA_H   (+)  = 1, _NR_MAND    >>Mandanten-Nummer 
+  &DATA_H   (+)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+  &DATA_H   (+)  = 1, _TEILN      >>Teilnehmer-Nummer 
+  &DATA_H   (+)  = 1, _COPYRIGHT  >>(c)euroSOFT
+  &DATA_H   (+)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
+
+  &DATA_H   (+)  = 1, _KASSANR
+
+
+>>ÚÄÄÄÄÄÄÄ  3. Zeile: ÄÄÄÄÄÄÄ¿
+&REF_KEY    (+)
+  &DATA_H   (+-) = 2, MAND_01     >>Mandanten-Nummer
+  &DATA_H   (+)  = 2, UST_1       >>Steuersatz 1 - 8
+  &DATA_H   (+)  = 2, UST_2
+  &DATA_H   (+)  = 2, UST_3
+  &DATA_H   (+)  = 2, UST_4
+  &DATA_H   (+)  = 2, UST_5
+
+  &DATA_H   (+)  = 2, UST_6
+  &DATA_H   (+)  = 2, UST_7
+  &DATA_H   (+)  = 2, UST_8
+>>ÀÄÄÄÄÄÄÄ Ende Dummy-Felder! ÄÄÄÄÄÄÄÙ
+
+

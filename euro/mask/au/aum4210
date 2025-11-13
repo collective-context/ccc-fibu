@@ -1,0 +1,286 @@
+
+
+
+
+
+        ù                                                                ù
+
+              Auswahl der zu druckenden Rechnung:
+
+
+                      von Rechnungs-Nummer  : @@@@@@@@
+                      bis Rechnungs-Nummer  : @@@@@@@@
+                ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                      Kopien                : ##
+
+                      von Seiten-Nummer     : ##### ^ ^ ^ ^
+                      bis Seiten-Nummer     : ##### ^ ^ ^ ^ ^ ^ ^ ^ ^
+         ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+         ^ ```.``|,|| `|,|| ``.```.``|,|| `|,|| ``.```.``|,|| ^ ^ ^ ^ ^ ^
+        ù^                                                               ù
+
+
+&TITEL = "AU  Drucken Rechnungen"
+
+&REM   Maske    :  AUM2100
+&REM   Programm :  AU2300
+&REM   Datei    :  AUMENUE
+
+&REM History:
+&REM Stand: 16.1.90
+
+&FRAME    = 0, 0, 0, 0, "ÄDrucken Rechnungen", 2
+&MASKHELP = AUHLP10, rech-dr
+&INDEX    = BASIS
+
+&DATEI     (0) = EURODATA, D.AU2100
+&DRU_DATEI (1) = EURODATA, D.AU2110
+&REF_DATEI (2) = EURODATA, D.AU2101
+&REF_DATEI (3) = EURODATA, L.SYPARA
+&PARA_READ (4) = EURODATA, L.SYP_01
+&REF_DATEI (5) = EURODATA, L.SYFORM
+&REF_DATEI (6) = EURODATA, L.SYPRINT
+
+
+>>Von Nummer
+&HELPTEXT  (0)  = AUHLP10, 421, 00
+&REC_MATCH (+-) = "Nummer ", 0, NUMMER
+&ADD_MATCH (+-) = "Projektbezeichnung", 0, PROJEKT_1
+&DATA      (+-) = 1, _VON_NUM
+
+>>Bis Nummer
+&HELPTEXT  (+)  = AUHLP10, 421, 01
+&REC_MATCH (+-) = "Nummer ", 0, NUMMER
+&ADD_MATCH (+-) = "Projektbezeichnung", 0, PROJEKT_1
+&DATA      (+-) = 1, _BIS_NUM
+
+>>Kopien
+&HELPTEXT  (+)  = AUHLP10, 430, 50
+  &DATA    (+-) = 1, _KOPIEN
+  &DEFAULT (+-) = 1
+
+&REM Von Seite
+&HELPTEXT (+)  = AUHLP10, 421, 02
+&DATA     (+-) = 1, _VON_SEITE
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, _FREI_2
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 0, KONDITION
+
+&REM  Mandanten-Nummer (Dummy Feld)
+&REF_KEY  (+)
+&HIDE     (+-)
+&DATA     (+-)  = 3, MAND_PARA
+
+&REM  Mandanten-Nummer (Dummy Feld)
+&REF_KEY   (+)
+&HIDE      (+-)
+&DATA      (+-) = 4, MAND_01
+
+&REM Bis Seite
+&HELPTEXT (+)  = AUHLP10, 421, 03
+&DATA     (+-) = 1, _BIS_SEITE
+
+&REM  Dummy
+&HIDE     (+)
+&DATA     (+-) = 4, FRWŽ_BE_00
+
+&REM  Dummy
+&HIDE     (+)
+&DATA     (+-) = 4, FRWŽ_BE_01
+
+&REM  Dummy
+&HIDE     (+)
+&DATA     (+-) = 4, FRWŽ_BE_02
+
+&REM  Dummy
+&HIDE     (+)
+&DATA     (+-) = 4, FRWŽ_BE_03
+
+&REM  Dummy
+&HIDE     (+)
+&DATA     (+-) = 4, FRWŽ_BE_04
+
+&REM  Dummy
+&HIDE     (+)
+&DATA     (+-) = 4, FRWŽ_BE_05
+
+&REM  Dummy
+&HIDE     (+)
+&DATA     (+-) = 4, FRWŽ_BE_06
+
+&REM  Dummy
+&HIDE     (+)
+&DATA     (+-) = 4, FRWŽ_BE_07
+
+&REM  Dummy
+&HIDE     (+)
+&DATA     (+-) = 4, FRWŽ_BE_08
+
+&REM  Dummy
+&HIDE     (+)
+&DATA     (+-) = 4, FRWŽ_BE_09
+
+&REM  Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, _ADRESSE
+
+&HIDE     (+)
+  &DATA_H   (+-)  = 1, _DATUM_AKT  >>Datum
+&HIDE     (+)
+  &DATA_H   (+-)  = 1, _NR_MAND    >>Mandanten-Nummer
+&HIDE     (+)
+  &DATA_H   (+-)  = 1, _MANDANT    >>Mandanten-Kurzbez.
+&HIDE     (+)
+  &DATA_H   (+-)  = 1, _TEILN      >>Teilnehmer-Nummer
+&HIDE     (+)
+  &DATA_H   (+-)  = 1, _COPYRIGHT  >>(c)euroSOFT
+&HIDE     (+)
+  &DATA_H   (+-)  = 1, _NUTZUNG    >>Nutzungs-Berechtigung
+
+&REM  Nummer
+&HIDE     (+)
+&REC_KEY  (+-)
+&DATA     (+-) = 0, NUMMER
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, PROJEKT_1
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, PROJEKT_2
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, NAMEN_KZ
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, KUNDEN_NUM
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, ANREDE
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, KUNDENNAME
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, ZUSATZ
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, STRASSE
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, POSTFACH
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 3, TEST_KZ
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, LAND_KZ
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, PLZ_ORT
+
+&REM  Nummer
+&HIDE     (+)
+&DATA     (+-)  = 0, WŽHRUNG
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, ARTIK_POS
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, ZUSATZ_POS
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, TEXT_POS
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, GRUPP_POS
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, SUMM_POS
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, ST_POS_KZ
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, ESU_POS
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, BRU_POS_1
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, BRU_POS_2
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, AUSWAHL
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-) = 1, ART_GP
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-) = 1, AR_RA_BETR
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-) = 1, SUMM_RABPZ
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-) = 1, SU_RA_BET
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-) = 1, ESU_RABPZ
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-) = 1, ESU_RA_BET
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, _STRICH
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, _RABATT
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, _FREMDW
+
+&REM Druck-Dummy
+&HIDE     (+)
+&DATA     (+-)  = 1, _FREI_1
+
+  &DATA_H  (+)  = 0, PRIMŽR_KEY  >>Primaerkey
+  &DATA_H  (+)  = 1, _ART_POS_N  >>Artikel-Positionsnummer
+
+  &DATA_H  (+)  = 0, PRIMŽR_KEY  >>Primaerkey
+

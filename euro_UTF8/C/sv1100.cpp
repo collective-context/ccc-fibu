@@ -10,7 +10,7 @@
   ║                                                                         ║
   ║  Datum	  : 04.01.1989, Graz	       Update: 28.09.1990, Graz     ║
   ║  Author	  : Peter Mayer 	       Author: Peter Mayer	    ║
-  ║  Copyright(C) : FiCore-WAREengineering,  Peter Mayer, A-8020 Graz     ║
+  ║  Copyright(C) : FiCore by CCC,  Peter Mayer, A-8020 Graz     ║
   ╚═════════════════════════════════════════════════════════════════════════╝*/
 /*╔═════════════════════════════════════════════════════════════════════════╗
   ║                         Deklarations-Dateien                            ║

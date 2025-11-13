@@ -1,0 +1,106 @@
+
+
+
+ ù
+    Kontonummer: Kïïïïïïïï  Kontobezeichnung: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+    ^ ^ ^  ##.###.##›,›› ##.###.##›,››              OP-SALDO : ##.###.##›,››
+
+    OP-Nummer  BEL-Nummer BEL-Dat.     RG-Betrag       Zahlung        Skonto
+    ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+    @@@@@@@@@@ @@@@@@@@@@ ##.##.##  #.###.##›,››  #.###.##›,››  #.###.##›,››
+
+
+
+
+
+
+
+
+
+
+
+ ù                                                                            ù
+
+>>Mask:   FIM115
+>>Prog.:  FI1100.C
+>>Update: 25.07.91
+
+&TITEL    = "FI  WORK Offene Posten Kunden"
+&FRAME    = 0, 0, 0, 0, "ÄOffene-Posten Kunden", 2
+>>SEQUENZ =
+
+>>MASKHELP= XXHLP10, kund-al
+&INDEX    = BASIS
+&OK       = "Abspeicherung der Daten", "Abbruch ohne Speicherung",\
+            "zurck zur Eingabe"
+
+&BLOCK = 8,13
+&SCROLL = 9,0,21,79
+
+&DATEI      (0)  = MASK, D.FI1110
+&DATEI      (1)  = MASK, D.FI1115
+
+>>Konto-Nummer (Key 3 in Fibustamm)
+&REC_KEY    (0)
+&REC_MATCH  (+-) = "Kontonummer", 0, KU_KONTO
+&ADD_MATCH  (+-) = "Kurzbezeichnung               ", 0, KURZ_BEZ
+&ADD_MATCH  (+-) = "Kundennummer            ", 0, FI_KUNDE
+  &HELPTEXT (+-) = FIHLP10, 113, 0
+  &DATA     (+-) = 0, KU_KONTO
+
+>>Kurzbezeichnung
+&REC_KEY    (+)
+&REC_MATCH  (+-) = "Kurzbezeichnung               ", 0, KURZ_BEZ
+&ADD_MATCH  (+-) = "Kontonummer", 0, KU_KONTO
+&ADD_MATCH  (+-) = "Kundennummer            ", 0, FI_KUNDE
+  &HELPTEXT (+-) = FIHLP10, 113, 0
+  &DATA     (+-) = 0, KURZ_BEZ
+
+>>Kunden-Nummer (Key 1 in Fibustamm und Kundensatamm)
+&REC_KEY    (+)
+  &DATA_H   (+-) = 0, FI_KUNDE
+
+  &HIDE     (+)
+  &REF_DATA (+-) = 0, KU_KONTO, 1, OP_KTO_KUN
+
+  &HIDE     (+)
+  &REF_DATA (+-) = 0, KURZ_BEZ, 1, KURZ_BEZ
+
+>>Gesamt-Buchungsbetrag
+  &HELPTEXT (+)  = FIHLP10, 211, 1
+  &DATA     (+-) = 1, OP_BETR_BR
+
+>>Gesamt Restbetrag
+  &HELPTEXT (+)  = FIHLP10, 211, 2
+  &DATA     (+-) = 1, OP_ZUORD
+
+>>OP-Saldo
+  &HELPTEXT (+)  = FIHLP10, 113, 0
+  &DATA     (+-) = 1, OP_SALDO
+
+>>----- Beginn Positionsteil -----
+>>OP-Nummer
+  &HELPTEXT (+)  = FIHLP10, 113, 1
+  &DATA     (+-) = 1, OP_NUMMER
+
+>>BEL-Nummer
+  &HELPTEXT (+)  = FIHLP10, 113, 2
+  &DATA     (+-) = 1, BELEG_NR
+
+>>BEL-Datum
+  &HELPTEXT (+)  = FIHLP10, 113, 3
+  &DATA     (+-) = 1, BELEG_DAT
+
+>>RG-Betrag
+  &HELPTEXT (+)  = FIHLP10, 113, 4
+  &DATA     (+-) = 1, RECH_BETR
+
+>>Zahlung
+  &HELPTEXT (+)  = FIHLP10, 113, 5
+  &DATA     (+-) = 1, ZAHL_BETR
+
+>>Rest
+  &HELPTEXT (+)  = FIHLP10, 113, 6
+  &DATA     (+-) = 1, SKONTO_BET
+

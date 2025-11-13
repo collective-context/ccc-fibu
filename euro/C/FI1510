@@ -1,9 +1,0 @@
- FI1500     FIBASIS    BA_ISAM    BA_SAA    +
-(FI_1500)  (BA_INIT)                        +
-(FI1510A)  (FI1510B)                        +
-(MA_MATCH) (MA_MEMO)  (MA_HILFE) (MA_INDEX) +
-(MA_MKSEL) (DB_OPEN)  (DL_LADEN) (DL_HTOOL)
-
- 24,7      22,2                  ==  46,9 + (26,9) = 73,8 KB
-( 8,6      18,3   ) (24,6  )
-

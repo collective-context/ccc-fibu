@@ -1,8 +1,0 @@
-#  Make File fÅr TDIR.EXE:
-
-COMP=CL
-
-TDIR.EXE: TDIR.C SHOWHELP.C
-  $(COMP) /AS TDIR.C /link DOSLIBS.LIB
-
-

@@ -1,4 +1,0 @@
-@echo off
-
-V:\DOS\BTRIEVE /U:22 /P:2048 /T:V:\EURO\EXE\BTRIEVE.TRN
-

@@ -1,8 +1,0 @@
-# Make File fÅr TFLAGS.EXE
-
-COMP=CL
-
-TFLAGS.EXE: TFLAGS.C SHOWHELP.C
-  $(COMP)  TFLAGS.C /link DOSLIBS.LIB
-
-

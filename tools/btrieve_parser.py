@@ -11,14 +11,15 @@ Date: 2025-01-13
 
 import struct
 import sys
-from pathlib import Path
-from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
 from enum import Enum
+from pathlib import Path
+from typing import List, Optional
 
 
 class BtrieveEncoding(Enum):
     """Btrieve encoding types"""
+
     GERMAN_U = "cp850"  # DOS German encoding
     UTF8 = "utf-8"
 
@@ -26,6 +27,7 @@ class BtrieveEncoding(Enum):
 @dataclass
 class BtrieveHeader:
     """Btrieve file header structure"""
+
     file_version: int
     record_length: int
     page_size: int
@@ -51,23 +53,24 @@ class FI3100Record:
 
     This is the main journal file containing all processed bookings.
     """
-    satz_nr: int           # Record number (4 bytes SLONG)
-    kto_art: str           # Account type: 's'=Sachkonto, 'k'=Kunde, 'l'=Lieferant
-    konto_nr: str          # Account number (8 bytes)
-    beleg_nr: str          # Document number (e.g., CY24-0001)
-    beleg_dat: int         # Document date (DOS format, 4 bytes)
-    buch_dat: int          # Booking date (DOS format, 4 bytes)
-    g_kto_art: str         # Counter-account type
-    gegen_kto: str         # Counter-account number
-    betrag_br: float       # Gross amount (8 bytes DOUBLE)
-    ust_betr: float        # VAT amount (8 bytes DOUBLE)
-    buch_text: str         # Booking text (30 bytes)
-    code_s_h: str          # Debit/Credit code: 'S'=Soll, 'H'=Haben
-    buch_art: int          # Booking type (2 bytes SWORD)
-    ust_art: str           # VAT type: 'v'=Vorsteuer, 'm'=MwSt
-    ust_satz: str          # VAT rate (0-8)
-    op_nummer: str         # Open item number
-    zahl_ko: str           # Payment account
+
+    satz_nr: int  # Record number (4 bytes SLONG)
+    kto_art: str  # Account type: 's'=Sachkonto, 'k'=Kunde, 'l'=Lieferant
+    konto_nr: str  # Account number (8 bytes)
+    beleg_nr: str  # Document number (e.g., CY24-0001)
+    beleg_dat: int  # Document date (DOS format, 4 bytes)
+    buch_dat: int  # Booking date (DOS format, 4 bytes)
+    g_kto_art: str  # Counter-account type
+    gegen_kto: str  # Counter-account number
+    betrag_br: float  # Gross amount (8 bytes DOUBLE)
+    ust_betr: float  # VAT amount (8 bytes DOUBLE)
+    buch_text: str  # Booking text (30 bytes)
+    code_s_h: str  # Debit/Credit code: 'S'=Soll, 'H'=Haben
+    buch_art: int  # Booking type (2 bytes SWORD)
+    ust_art: str  # VAT type: 'v'=Vorsteuer, 'm'=MwSt
+    ust_satz: str  # VAT rate (0-8)
+    op_nummer: str  # Open item number
+    zahl_ko: str  # Payment account
 
     def __str__(self):
         return (
@@ -82,22 +85,23 @@ class FI3100Record:
 @dataclass
 class FI1310Record:
     """FI1310.btr - Sachkonten (General ledger accounts) record structure"""
-    kontonr: str           # Account number (8 bytes)
-    konto_bez: str         # Account description (40 bytes)
-    kto_klass: str         # Account class (4 bytes)
-    k_buch_art: int        # Booking type flags (2 bytes)
-    ust_kz: str            # VAT indicator (1 byte)
-    ustva_kz: str          # VAT declaration code (3 bytes)
-    zeil_text: str         # UVA line text (45 bytes)
-    kostenverg: str        # Cost comparison code (1 byte)
-    s_vor: str             # Balance carry forward (1 byte: 'j'/'n')
-    kapital_re: str        # Cash flow code (1 byte)
-    bilanz_sol: str        # Balance debit code (6 bytes)
-    text_soll: str         # Debit text (45 bytes)
-    bilanz_hab: str        # Balance credit code (6 bytes)
-    text_haben: str        # Credit text (45 bytes)
-    saldo_vor: float       # Balance carry forward
-    saldo_akt: float       # Current balance
+
+    kontonr: str  # Account number (8 bytes)
+    konto_bez: str  # Account description (40 bytes)
+    kto_klass: str  # Account class (4 bytes)
+    k_buch_art: int  # Booking type flags (2 bytes)
+    ust_kz: str  # VAT indicator (1 byte)
+    ustva_kz: str  # VAT declaration code (3 bytes)
+    zeil_text: str  # UVA line text (45 bytes)
+    kostenverg: str  # Cost comparison code (1 byte)
+    s_vor: str  # Balance carry forward (1 byte: 'j'/'n')
+    kapital_re: str  # Cash flow code (1 byte)
+    bilanz_sol: str  # Balance debit code (6 bytes)
+    text_soll: str  # Debit text (45 bytes)
+    bilanz_hab: str  # Balance credit code (6 bytes)
+    text_haben: str  # Credit text (45 bytes)
+    saldo_vor: float  # Balance carry forward
+    saldo_akt: float  # Current balance
 
 
 class BtrieveParser:
@@ -122,11 +126,11 @@ class BtrieveParser:
         - 0x3C-0x43: Encoding marker ("GERMAN_U" for CP850)
         """
         # Extract record length at offset 0x1C
-        rec_len = struct.unpack('<H', data[0x1C:0x1E])[0]
+        rec_len = struct.unpack("<H", data[0x1C:0x1E])[0]
 
         # Check for encoding marker at 0x3C
         encoding_marker = data[0x3C:0x44]
-        if b'GERM' in encoding_marker:
+        if b"GERM" in encoding_marker:
             encoding = "cp850"
         else:
             encoding = "utf-8"
@@ -137,12 +141,12 @@ class BtrieveParser:
         estimated_records = (file_size - 2048) // max(rec_len, 1) if rec_len > 0 else 0
 
         self.header = BtrieveHeader(
-            file_version=struct.unpack('<H', data[0x04:0x06])[0],
+            file_version=struct.unpack("<H", data[0x04:0x06])[0],
             record_length=rec_len,
             page_size=2048,  # Typical Btrieve page size
-            index_count=0,   # Would need to parse index structures
+            index_count=0,  # Would need to parse index structures
             record_count=estimated_records,
-            encoding=encoding
+            encoding=encoding,
         )
 
         return self.header
@@ -170,7 +174,7 @@ class BtrieveParser:
         This uses pattern matching to find records based on
         document number patterns (CY24-, AR24-, ER-, TW24-, BO-).
         """
-        with open(filepath, 'rb') as f:
+        with open(filepath, "rb") as f:
             data = f.read()
 
         # Parse header
@@ -179,7 +183,7 @@ class BtrieveParser:
         records = []
 
         # Find all document number patterns
-        patterns = [b'CY24-', b'AR24-', b'ER-', b'TW24-', b'BO-']
+        patterns = [b"CY24-", b"AR24-", b"ER-", b"TW24-", b"BO-"]
 
         found_positions = []
         for pattern in patterns:
@@ -202,7 +206,9 @@ class BtrieveParser:
 
         return records
 
-    def _parse_fi3100_record_at_position(self, data: bytes, beleg_pos: int) -> Optional[FI3100Record]:
+    def _parse_fi3100_record_at_position(
+        self, data: bytes, beleg_pos: int
+    ) -> Optional[FI3100Record]:
         """
         Parse a single FI3100 record starting near beleg_pos
 
@@ -216,20 +222,24 @@ class BtrieveParser:
         search_start = max(0, beleg_pos - 100)
 
         # Extract document number
-        beleg_nr = data[beleg_pos:beleg_pos+12].decode(self.encoding, errors='ignore').rstrip('\x00')
+        beleg_nr = (
+            data[beleg_pos : beleg_pos + 12]
+            .decode(self.encoding, errors="ignore")
+            .rstrip("\x00")
+        )
 
         # Try to find other fields nearby
         # This is a simplified extraction - full implementation would need exact offsets
 
         # Look for account numbers (format: K/L/S followed by digits)
-        konto_search = data[max(0, beleg_pos-50):beleg_pos]
+        konto_search = data[max(0, beleg_pos - 50) : beleg_pos]
 
         # Extract amounts (8-byte DOUBLEs) - search for non-zero doubles
         amounts = []
-        for i in range(max(0, beleg_pos-60), beleg_pos+60, 8):
+        for i in range(max(0, beleg_pos - 60), beleg_pos + 60, 8):
             if i + 8 <= len(data):
                 try:
-                    amount = struct.unpack('<d', data[i:i+8])[0]
+                    amount = struct.unpack("<d", data[i : i + 8])[0]
                     if 0.01 < amount < 1000000.0:  # Reasonable amount range
                         amounts.append((i, amount))
                 except:
@@ -238,22 +248,22 @@ class BtrieveParser:
         # Create a partial record (full implementation would parse complete structure)
         record = FI3100Record(
             satz_nr=0,  # Would need to find actual position
-            kto_art='?',
-            konto_nr='',
+            kto_art="?",
+            konto_nr="",
             beleg_nr=beleg_nr,
             beleg_dat=0,
             buch_dat=0,
-            g_kto_art='?',
-            gegen_kto='',
+            g_kto_art="?",
+            gegen_kto="",
             betrag_br=amounts[0][1] if amounts else 0.0,
             ust_betr=amounts[1][1] if len(amounts) > 1 else 0.0,
-            buch_text='',
-            code_s_h='?',
+            buch_text="",
+            code_s_h="?",
             buch_art=0,
-            ust_art='?',
-            ust_satz='0',
-            op_nummer='',
-            zahl_ko=''
+            ust_art="?",
+            ust_satz="0",
+            op_nummer="",
+            zahl_ko="",
         )
 
         return record
@@ -262,26 +272,55 @@ class BtrieveParser:
         """Export records to CSV file"""
         import csv
 
-        with open(output_path, 'w', newline='', encoding='utf-8') as f:
+        with open(output_path, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
 
             # Write header
-            writer.writerow([
-                'SATZ_NR', 'KTO_ART', 'KONTO_NR', 'BELEG_NR', 'BELEG_DAT',
-                'BUCH_DAT', 'G_KTO_ART', 'GEGEN_KTO', 'BETRAG_BR', 'UST_BETR',
-                'BUCH_TEXT', 'CODE_S_H', 'BUCH_ART', 'UST_ART', 'UST_SATZ',
-                'OP_NUMMER', 'ZAHL_KO'
-            ])
+            writer.writerow(
+                [
+                    "SATZ_NR",
+                    "KTO_ART",
+                    "KONTO_NR",
+                    "BELEG_NR",
+                    "BELEG_DAT",
+                    "BUCH_DAT",
+                    "G_KTO_ART",
+                    "GEGEN_KTO",
+                    "BETRAG_BR",
+                    "UST_BETR",
+                    "BUCH_TEXT",
+                    "CODE_S_H",
+                    "BUCH_ART",
+                    "UST_ART",
+                    "UST_SATZ",
+                    "OP_NUMMER",
+                    "ZAHL_KO",
+                ]
+            )
 
             # Write records
             for rec in records:
-                writer.writerow([
-                    rec.satz_nr, rec.kto_art, rec.konto_nr, rec.beleg_nr,
-                    rec.beleg_dat, rec.buch_dat, rec.g_kto_art, rec.gegen_kto,
-                    rec.betrag_br, rec.ust_betr, rec.buch_text, rec.code_s_h,
-                    rec.buch_art, rec.ust_art, rec.ust_satz, rec.op_nummer,
-                    rec.zahl_ko
-                ])
+                writer.writerow(
+                    [
+                        rec.satz_nr,
+                        rec.kto_art,
+                        rec.konto_nr,
+                        rec.beleg_nr,
+                        rec.beleg_dat,
+                        rec.buch_dat,
+                        rec.g_kto_art,
+                        rec.gegen_kto,
+                        rec.betrag_br,
+                        rec.ust_betr,
+                        rec.buch_text,
+                        rec.code_s_h,
+                        rec.buch_art,
+                        rec.ust_art,
+                        rec.ust_satz,
+                        rec.op_nummer,
+                        rec.zahl_ko,
+                    ]
+                )
 
         print(f"Exported {len(records)} records to {output_path}")
 
@@ -290,10 +329,12 @@ def main():
     """Main entry point"""
     import argparse
 
-    parser = argparse.ArgumentParser(description='Parse Btrieve FIBU database files')
-    parser.add_argument('input_file', type=Path, help='Input .btr file')
-    parser.add_argument('-o', '--output', type=Path, help='Output CSV file')
-    parser.add_argument('-e', '--encoding', default='cp850', help='Character encoding (default: cp850)')
+    parser = argparse.ArgumentParser(description="Parse Btrieve FIBU database files")
+    parser.add_argument("input_file", type=Path, help="Input .btr file")
+    parser.add_argument("-o", "--output", type=Path, help="Output CSV file")
+    parser.add_argument(
+        "-e", "--encoding", default="cp850", help="Character encoding (default: cp850)"
+    )
 
     args = parser.parse_args()
 
@@ -307,7 +348,7 @@ def main():
     # Parse file
     print(f"Parsing {args.input_file}...")
 
-    if 'FI3100' in args.input_file.name.upper():
+    if "FI3100" in args.input_file.name.upper():
         records = btr_parser.extract_fi3100_records(args.input_file)
 
         # Print first few records
@@ -321,11 +362,11 @@ def main():
             btr_parser.export_to_csv(records, args.output)
     else:
         # Read header only
-        with open(args.input_file, 'rb') as f:
+        with open(args.input_file, "rb") as f:
             data = f.read()
         header = btr_parser.parse_header(data)
         print(header)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

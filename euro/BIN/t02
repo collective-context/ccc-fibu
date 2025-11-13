@@ -1,9 +1,0 @@
-@echo off
-V:
-SET USER=\euro\T02
-\DOS\BTRIEVE /U:22 /P:2048 /T:\EURO\EXE\BTRIEVE.TRN
-
-T:
-echo ÿ
-echo Beispiel: "hpw 01"
-echo ÿ

@@ -1,0 +1,22 @@
+feat: Convert euro_UTF8 from CP850 to UTF-8 encoding
+
+- Converted 89 text files from CP850 (DOS German) to UTF-8
+- Preserved 5 files already in UTF-8
+- Added conversion script: tools/convert_to_utf8.sh
+- Created conversion report: UTF8_CONVERSION_REPORT.md
+
+File types converted:
+- C/C++ source files (.cpp, .c)
+- Header files (.h, .hpp)
+- Batch files (.bat)
+- Configuration files (.ini)
+- Project files (.pro)
+- Text files (.txt)
+- Log files (.log)
+
+Validation:
+- Box-drawing characters correctly converted (╔═╗║╝╚)
+- Binary files (.btr, .exe) unchanged
+- No conversion errors
+
+The euro_UTF8 directory is now ready for modern development tools.

@@ -1,3 +1,0 @@
-@echo off
-MAP S16:=SYS:SYSTEM
-RCONSOLE

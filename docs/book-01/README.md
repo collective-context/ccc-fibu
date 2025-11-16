@@ -52,7 +52,33 @@ Es dokumentiert:
 
 ---
 
-### Kapitel 2: Multi-File Integration & Referenzen
+### [Kapitel 2: Btrieve zu SQL Migration](chapter-02-btrieve-to-sql-migration.md)
+**Status:** ✅ Fertig
+
+**Inhalt:**
+- Das Problem: Legacy Btrieve zu modernem SQL
+- Recherche-Ergebnisse (Actian Zen, BTR2SQL, btrvodbc)
+- Die Lösung: "Back to the Roots" mit vorhandenen Tools
+- wbtrv32: Open Source Btrieve-Replacement (MIT-Lizenz)
+- LEX-Dateiformat und Schema-Definitionen
+- Drei Migrations-Strategien (kurzfristig/mittelfristig/langfristig)
+- Implementierungs-Roadmap mit konkreten Schritten
+- Häufige Missverständnisse (DOS vs. Linux, MBBSEmu)
+- Best Practices (Backup, Validierung, Performance)
+
+**Lernziele:**
+- ✅ Verstehen warum kommerzielle Tools nicht funktionieren
+- ✅ wbtrv32 als Game-Changer erkennen
+- ✅ Unterschied zwischen DOSEMU und Linux-nativen Tools
+- ✅ asc2euro.cpp zu btr2sql.cpp umdrehen
+- ✅ LEX-Dateien für Metadaten nutzen
+- ✅ Konkrete Migrations-Strategie entwickeln
+
+**Geschätzte Lesezeit:** 30 Minuten
+
+---
+
+### Kapitel 3: Multi-File Integration & Referenzen
 **Status:** 🚧 Geplant
 
 **Geplante Inhalte:**
@@ -65,7 +91,7 @@ Es dokumentiert:
 
 ---
 
-### Kapitel 3: Automatische Parser-Generierung
+### Kapitel 4: Automatische Parser-Generierung
 **Status:** 🚧 Geplant
 
 **Geplante Inhalte:**
@@ -77,7 +103,7 @@ Es dokumentiert:
 
 ---
 
-### Kapitel 4: Von MASK zu modernem UI
+### Kapitel 5: Von MASK zu modernem UI
 **Status:** 🚧 Geplant
 
 **Geplante Inhalte:**
@@ -89,7 +115,7 @@ Es dokumentiert:
 
 ---
 
-### Kapitel 5: Vollständiger Export-Workflow
+### Kapitel 6: Vollständiger Export-Workflow
 **Status:** 🚧 Geplant
 
 **Geplante Inhalte:**
@@ -101,7 +127,7 @@ Es dokumentiert:
 
 ---
 
-### Kapitel 6: Btrieve Deep-Dive
+### Kapitel 7: Btrieve Deep-Dive
 **Status:** 🚧 Geplant
 
 **Geplante Inhalte:**
@@ -113,7 +139,7 @@ Es dokumentiert:
 
 ---
 
-### Kapitel 7: System-Architektur
+### Kapitel 8: System-Architektur
 **Status:** 🚧 Geplant
 
 **Geplante Inhalte:**
@@ -125,7 +151,7 @@ Es dokumentiert:
 
 ---
 
-### Kapitel 8: Best Practices
+### Kapitel 9: Best Practices
 **Status:** 🚧 Geplant
 
 **Geplante Inhalte:**
@@ -142,9 +168,10 @@ Es dokumentiert:
 ### Für neue Entwickler
 
 1. **Lies Kapitel 1** - Verstehe das CASE-Tool (20 Min)
-2. **Öffne eine MASK-Datei** - z.B. `euro_UTF8/MASK/FI/FIM131`
-3. **Folge dem Beispiel** - Leite die FI1310-Struktur selbst ab
-4. **Teste den Export** - Exportiere FI1310.btr zu SQLite
+2. **Lies Kapitel 2** - Verstehe die Migrations-Strategie (30 Min)
+3. **Öffne eine MASK-Datei** - z.B. `euro_UTF8/MASK/FI/FIM131`
+4. **Folge dem Beispiel** - Leite die FI1310-Struktur selbst ab
+5. **Teste wbtrv32** - Kompiliere und teste erste Migration
 
 ### Für KI-Agenten (neue Session)
 
@@ -152,17 +179,27 @@ Es dokumentiert:
 # 1. Lies Kapitel 1 für CASE-Tool-Basics
 cat docs/book-01/chapter-01-case-tool-fundamentals.md
 
-# 2. Siehe vorhandene Dokumentation
+# 2. Lies Kapitel 2 für Migrations-Strategie
+cat docs/book-01/chapter-02-btrieve-to-sql-migration.md
+
+# 3. Siehe vorhandene Dokumentation
 ls docs/
 
-# 3. Verstehe die Projekt-Struktur
+# 4. Verstehe die Projekt-Struktur
 cat README.md
 ```
 
-**Wichtigste Erkenntnis aus Kapitel 1:**
+**Wichtigste Erkenntnisse:**
+
+**Aus Kapitel 1:**
 > MASK-Dateien definieren **gleichzeitig** UI-Layout und Datenbank-Struktur!
 > Die Anzahl der Platzhalter-Zeichen gibt die Feldlänge an!
 > &DATA Direktiven mappen Felder zu Btrieve-Records!
+
+**Aus Kapitel 2:**
+> "Back to the Roots" - Wir haben bereits alles was wir brauchen!
+> wbtrv32 ist der Game-Changer: Open Source Btrieve-Replacement mit MIT-Lizenz!
+> asc2euro.cpp umdrehen = btr2sql.cpp (CSV/SQLite Export)!
 
 ---
 
@@ -174,7 +211,7 @@ ccc-fibu/
 │   ├── book-01/                          ← 👈 DIESES HANDBUCH
 │   │   ├── README.md                     ← Du bist hier
 │   │   ├── chapter-01-case-tool-fundamentals.md
-│   │   ├── chapter-02-...md
+│   │   ├── chapter-02-btrieve-to-sql-migration.md
 │   │   └── ...
 │   ├── BTRIEVE_RECORD_STRUCTURES.md      ← Btrieve-Strukturen
 │   ├── BTRIEVE_FILE_HIERARCHY.md         ← Datei-Hierarchie
@@ -219,15 +256,16 @@ ccc-fibu/
 | Dokument | Status | Vollständigkeit |
 |----------|--------|-----------------|
 | Kapitel 1: CASE Tool Fundamentals | ✅ Fertig | 100% |
-| Kapitel 2: Multi-File Integration | 🚧 Geplant | 0% |
-| Kapitel 3: Parser-Generierung | 🚧 Geplant | 0% |
-| Kapitel 4: Modern UI | 🚧 Geplant | 0% |
-| Kapitel 5: Export-Workflow | 🚧 Geplant | 0% |
-| Kapitel 6: Btrieve Deep-Dive | 🚧 Geplant | 0% |
-| Kapitel 7: System-Architektur | 🚧 Geplant | 0% |
-| Kapitel 8: Best Practices | 🚧 Geplant | 0% |
+| Kapitel 2: Btrieve zu SQL Migration | ✅ Fertig | 100% |
+| Kapitel 3: Multi-File Integration | 🚧 Geplant | 0% |
+| Kapitel 4: Parser-Generierung | 🚧 Geplant | 0% |
+| Kapitel 5: Modern UI | 🚧 Geplant | 0% |
+| Kapitel 6: Export-Workflow | 🚧 Geplant | 0% |
+| Kapitel 7: Btrieve Deep-Dive | 🚧 Geplant | 0% |
+| Kapitel 8: System-Architektur | 🚧 Geplant | 0% |
+| Kapitel 9: Best Practices | 🚧 Geplant | 0% |
 
-**Gesamt-Fortschritt:** 12.5% (1/8 Kapitel)
+**Gesamt-Fortschritt:** 22.2% (2/9 Kapitel)
 
 ---
 
@@ -253,7 +291,7 @@ Wenn du neue Erkenntnisse über das System machst:
 
 ## 📝 Changelog
 
-### 2025-01-13 - Initial Release
+### 2025-01-13 - Initial Release + Kapitel 2
 
 **Kapitel 1: CASE Tool Fundamentals**
 - ✅ Kern-Konzept erklärt: Ein File = UI + Database Schema
@@ -262,9 +300,26 @@ Wenn du neue Erkenntnisse über das System machst:
 - ✅ Praktisches Beispiel FI1310 komplett
 - ✅ Python-Code-Beispiele für Export
 
-**Wichtigste Erkenntnis:**
+**Kapitel 2: Btrieve zu SQL Migration**
+- ✅ Komplette Recherche-Ergebnisse dokumentiert
+- ✅ wbtrv32 als Open Source Lösung identifiziert
+- ✅ "Back to the Roots" Strategie entwickelt
+- ✅ LEX-Dateiformat vollständig beschrieben
+- ✅ Drei Migrations-Strategien (kurz/mittel/langfristig)
+- ✅ Implementierungs-Roadmap mit konkreten Schritten
+- ✅ Häufige Missverständnisse geklärt (DOS vs. Linux)
+- ✅ Best Practices für Backup, Validierung, Performance
+
+**Wichtigste Erkenntnisse:**
+
+**Aus Kapitel 1:**
 > Die Anzahl der Platzhalter-Zeichen in MASK-Dateien definiert die Feldlänge!
 > Dies ist die Grundlage für automatische Schema-Generierung!
+
+**Aus Kapitel 2:**
+> "Back to the Roots" - Vorhandene Tools (asc2euro.cpp) umdrehen!
+> wbtrv32 (MIT-Lizenz) spart Monate Entwicklungszeit!
+> LEX-Dateien enthalten alle Metadaten die wir brauchen!
 
 ---
 
@@ -272,22 +327,23 @@ Wenn du neue Erkenntnisse über das System machst:
 
 ### Pfad 1: Schneller Einstieg (1 Stunde)
 1. Lies Kapitel 1 (20 Min)
-2. Öffne FIM131 und zähle Platzhalter (10 Min)
-3. Teste btrieve_export.py (15 Min)
-4. Analysiere die SQLite-Ausgabe (15 Min)
+2. Lies Kapitel 2 (30 Min)
+3. Öffne FIM131 und zähle Platzhalter (10 Min)
 
-### Pfad 2: Vollständiges Verständnis (1 Tag)
-1. Alle Kapitel lesen
-2. Alle MASK-Dateien in MASK/FI/ analysieren
-3. Export-Tool erweitern für weitere Dateien
-4. Eigenen MASK-Parser schreiben
+### Pfad 2: Vollständiges Verständnis (2-3 Tage)
+1. Kapitel 1 + 2 durcharbeiten
+2. wbtrv32 kompilieren und testen
+3. Erste Migration mit wbtrv32 durchführen
+4. Alle MASK-Dateien in MASK/FI/ analysieren
+5. LEX-Dateien verstehen
 
-### Pfad 3: Migration-Experte (1 Woche)
+### Pfad 3: Migration-Experte (2-4 Wochen)
 1. Vollständiges Verständnis (siehe oben)
-2. Alle Btrieve-Dateien exportieren
-3. React-UI aus MASK generieren
-4. REST-API implementieren
-5. PostgreSQL-Migration
+2. btr2sql.cpp implementieren
+3. Alle 64 Btrieve-Dateien migrieren
+4. Validierung und Qualitätssicherung
+5. PostgreSQL/MariaDB-Export
+6. FiCore modernisieren (native SQL)
 
 ---
 

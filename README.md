@@ -7,7 +7,7 @@ Perfect for tax advisors, SMEs, freelancers, and digital nomads who value financ
 ---
 
 ### PM-LOG 2025-11-16: Btrieve to SQLite
-Siehe .logs/10-btrieve-to-sql-session.md
+Siehe .logs/10-btrieve-to-sql-session.md und docs/book-01/chapter-02-btrieve-to-sql-migration.md
 
 ### PM-LOG 2025-01-14: 🎉 REBRANDING COMPLETE - Welcome to FiCore!
 

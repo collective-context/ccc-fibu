@@ -6,6 +6,9 @@ Perfect for tax advisors, SMEs, freelancers, and digital nomads who value financ
 
 ---
 
+### PM-LOG 2025-11-16: Btrieve to SQLite
+Siehe .logs/10-btrieve-to-sql-session.md
+
 ### PM-LOG 2025-01-14: 🎉 REBRANDING COMPLETE - Welcome to FiCore!
 
 Das Projekt wurde erfolgreich zu **FiCore - Open Source Financial Core** umbenannt.

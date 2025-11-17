@@ -37,55 +37,82 @@ Zusätzliche Referenz in `ut_crerr.cpp` (Zeile 20):
 
 ---
 
-## SAA-Toolbox Architektur
+## SAA-Toolbox Architektur - Zwei-Schichten-Modell
 
-Die SAA-Toolbox besteht aus **30.000+ Zeilen** ausführlich dokumentiertem C-Source-Code und ist in 4 Hauptkomponenten unterteilt:
+⚠️ **WICHTIG:** Die FiCore-Architektur besteht aus ZWEI separaten Schichten:
 
-### 1. SAA-Toolbox (Kernkomponenten)
+### 🔵 LAYER 1: UI-Framework (aus dem Buch "Programmieren mit QuickC")
+
+**Quelle:** Markt & Technik, Microsoft Edition, 1989
+**Autoren:** Rainer Haselier, Klaus Fahnenstich
+**Status:** ⚠️ DOS-spezifisch, NICHT 1:1 auf moderne Systeme übertragbar
 
 **Funktionalität:**
 - Professioneller Menümanager (Pull-down-Menüs)
 - Window-Management für überlappende Fenster
 - Dialogfelder-Sammlung
 - Microsoft Maus-Unterstützung
-- Schnelle Assembler- und C-Routinen für Bildschirmausgabe (direkter Zugriff auf Bildschirmspeicher)
+- Schnelle Assembler- und C-Routinen für Bildschirmausgabe (direkter Zugriff auf Video-RAM)
 
 **Header-Dateien in FiCore:**
 ```c
+// UI-Layer (aus dem Buch - KANN durch moderne TUI-Frameworks ersetzt werden!)
 #include <eur_dlg.h>    // Dl_* - Dialogfelder
 #include <eur_mnu.h>    // Mn_* - Menümanager
 #include <eur_msm.h>    // Ms_* - Microsoft-Maus
+#include <eur_utl.h>    // Ut_* - Utility-Funktionen
 #include <eur_vio.h>    // Vi_* - Video/Bildschirmausgabe
 #include <eur_win.h>    // Wi_* - Window-Handling
 ```
 
-### 2. MASK-Toolbox ⭐ (Kernstück der FIBU!)
+**Modernisierungs-Strategie:**
+→ **KANN und SOLLTE** durch moderne Cross-Platform TUI-Frameworks ersetzt werden (z.B. MS-Edit, Ratatui, Textual)
+→ Wrapper-Schicht entwickeln: Alte Signaturen (Dl_, Mn_, Vi_, Wi_) → Neue Implementierung (MS-Edit)
+
+---
+
+### 🟢 LAYER 2: Business Logic + CASE Tool (EIGENENTWICKLUNGEN ⭐ - DER SCHATZ!)
+
+**Quelle:** euroSOFT Eigenentwicklung, 1989-1999
+**Status:** ✅ Zeitlos, muss 1:1 portiert/erhalten werden
+
+**Kernkomponenten:**
+
+#### 2.1 MASK-Toolbox (Deklaratives UI-System)
 
 **Funktionalität:**
-- **Maskencompiler:** Kompiliert deklarative MASK-Dateien zu C-Code
-- **Masken-Interpreter:** Interpretiert kompilierte Maskendateien zur Laufzeit
-- **Formularcompiler:** Erstellt Druck-Layouts für Reports
+- **mm - Masken-Compiler:** Kompiliert deklarative MASK-Dateien → Applikationsdatenbank
+- **mf - Formular-Compiler:** Kompiliert FORM-Dateien → Druck-Layout-Datenbank
+- **M_* - Masken-Interpreter:** Lädt MASK-Definition zur Laufzeit aus Datenbank
+- **Runtime Assembly:** Baut Applikationslogik dynamisch aus gespeicherten MASK-Definitionen zusammen
 - **Automatisches Datenbank-Mapping:** `&DATA` Direktiven verbinden Bildschirmfelder mit Btrieve-Records
 
 **Header-Dateien in FiCore:**
 ```c
+// EIGENENTWICKLUNG - MUSS erhalten bleiben!
 #include <eur_tool.h>   // M_* - Masken-Interpreter-Funktionen
 ```
 
 **Verwendung in FiCore:**
 - **440+ MASK-Dateien** in `euro_UTF8/MASK/` (FI/, ST/, SY/)
-- **Formular-Dateien** in `euro_UTF8/FORM/`
+- **199 Formular-Dateien** in `euro_UTF8/FORM/`
+- **mm-Compiler:** MASK → Datenbank (Applikationsdefinitionen)
+- **mf-Compiler:** FORM → Datenbank (Print-Layouts)
 
-### 3. ISAM-Toolbox (Datenbank)
+**Besonderheit:** Die MASK/FORM-Definitionen werden NICHT zu C-Code kompiliert, sondern in einer **Applikationsdatenbank** gespeichert und zur **Laufzeit interpretiert**!
+
+#### 2.2 ISAM-Toolbox (Btrieve-Wrapper)
 
 **Funktionalität:**
-- Btrieve ISAM-Datenbankfunktionen
+- Btrieve ISAM-Datenbankfunktionen (Eigenentwicklung!)
 - Record-Locking für Multi-User
 - Transaktions-Management
 - Index-Verwaltung
+- High-Level Db_*() Funktionen (Wrapper um Low-Level BTRV() Interrupt)
 
 **Header-Dateien in FiCore:**
 ```c
+// EIGENENTWICKLUNG - MUSS portiert werden (Btrieve → SQLite/PostgreSQL)
 #include <eur_btr.h>    // BTRV(), B_* - Btrieve-Funktionen
 ```
 
@@ -93,19 +120,59 @@ Die SAA-Toolbox besteht aus **30.000+ Zeilen** ausführlich dokumentiertem C-Sou
 - `docs/BTRIEVE_ISAM_INTERFACE.md` (39 KB)
 - `docs/README_BTRIEVE.md` (14 KB)
 
-### 4. UTIL-Toolbox (Hilfsfunktionen)
+#### 2.3 Interne Business-Funktionen
 
 **Funktionalität:**
-- String-Manipulation
-- DOS Low-Level Funktionen
-- Utility-Makros
+- FIBU-spezifische Validierungslogik
+- Schattensaldo-Berechnung
+- SOLL=HABEN-Prüfung
+- Buchungslogik
+- Audit-Trail
 
 **Header-Dateien in FiCore:**
 ```c
-#include <eur_utl.h>    // Ut_* - Utility-Funktionen
-#include <eur_str.h>    // String-Funktionen
-#include <eur_dos.h>    // DOS-Funktionen
-#include <eur_type.h>   // Typ-Definitionen (BYTE, WORD, LONG, BOOL, PSTR, etc.)
+// EIGENENTWICKLUNG - Kernlogik der FIBU!
+#include <eur_int.h>    // i_* - Interne Funktionen
+```
+
+---
+
+### Architektur-Diagramm
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  FiCore Application Layer (fi*.cpp, eu*.cpp, st*.cpp)       │
+│  - Menü-Programme (Applikations-Logik)                      │
+│  - FIBU-Module (Buchung, Stammdaten, Reports)               │
+└─────────────────────────────────────────────────────────────┘
+                              ↓ ruft auf ↓
+┌─────────────────────────────────────────────────────────────┐
+│  🟢 LAYER 2: Business Logic (EIGENENTWICKLUNG - ERHALTEN!)  │
+│  ┌──────────────┬──────────────┬─────────────────────────┐ │
+│  │ M_*          │ BTRV, B_*    │ i_*                     │ │
+│  │ Masken-      │ Btrieve ISAM │ Interne FIBU-Funktionen │ │
+│  │ Interpreter  │ Wrapper      │ (Validierung, Saldo)    │ │
+│  └──────────────┴──────────────┴─────────────────────────┘ │
+│  ┌──────────────┬──────────────────────────────────────────┐│
+│  │ mm-Compiler  │ mf-Compiler                              ││
+│  │ MASK → DB    │ FORM → DB                                ││
+│  └──────────────┴──────────────────────────────────────────┘│
+└─────────────────────────────────────────────────────────────┘
+                              ↓ ruft auf ↓
+┌─────────────────────────────────────────────────────────────┐
+│  🔵 LAYER 1: UI-Framework (aus Buch - KANN ERSETZT WERDEN!) │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  Alt: Dl_*(), Mn_*(), Vi_*(), Wi_*() - DOS/QuickC    │  │
+│  │  Neu: MS-Edit TUI Framework - Rust, Cross-Platform   │  │
+│  │  → Wrapper-Schicht: Alte Signaturen, neue Impl.     │  │
+│  └──────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+                              ↓ greift zu ↓
+┌─────────────────────────────────────────────────────────────┐
+│  Platform Layer                                             │
+│  - Alt: DOS Video-RAM, BIOS Interrupts                     │
+│  - Neu: Linux/macOS/Windows Terminal (ANSI Escape Codes)   │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -114,17 +181,30 @@ Die SAA-Toolbox besteht aus **30.000+ Zeilen** ausführlich dokumentiertem C-Sou
 
 ### Präfix-System für Funktionen
 
-| Präfix | Kategorie | Header-Datei |
-|--------|-----------|--------------|
-| `Dl_`  | Dialogfelder | `eur_dlg.h` |
-| `Mn_`  | Menümanager | `eur_mnu.h` |
-| `Ms_`  | Microsoft-Maus | `eur_msm.h` |
-| `Ut_`  | Utility-Funktionen | `eur_utl.h` |
-| `Vi_`  | Video/Bildschirm | `eur_vio.h` |
-| `Wi_`  | Window-Handling | `eur_win.h` |
-| `i_`   | Interne Funktionen | `eur_int.h` |
-| `BTRV`, `B_` | Btrieve ISAM | `eur_btr.h` |
-| `M_`   | Masken-Interpreter | `eur_tool.h` |
+#### 🔵 LAYER 1: UI-Framework (aus Buch - ERSETZBAR)
+
+| Präfix | Kategorie | Header-Datei | Quelle |
+|--------|-----------|--------------|--------|
+| `Dl_`  | Dialogfelder | `eur_dlg.h` | QuickC Buch |
+| `Mn_`  | Menümanager | `eur_mnu.h` | QuickC Buch |
+| `Ms_`  | Microsoft-Maus | `eur_msm.h` | QuickC Buch |
+| `Ut_`  | Utility-Funktionen | `eur_utl.h` | QuickC Buch |
+| `Vi_`  | Video/Bildschirm | `eur_vio.h` | QuickC Buch |
+| `Wi_`  | Window-Handling | `eur_win.h` | QuickC Buch |
+
+**→ Dieser Layer kann durch MS-Edit, Ratatui oder Textual ersetzt werden!**
+
+#### 🟢 LAYER 2: Business Logic (EIGENENTWICKLUNG - ERHALTEN!)
+
+| Präfix | Kategorie | Header-Datei | Quelle |
+|--------|-----------|--------------|--------|
+| `i_`   | Interne FIBU-Funktionen | `eur_int.h` | ⭐ Eigenentwicklung |
+| `BTRV`, `B_` | Btrieve ISAM-Wrapper | `eur_btr.h` | ⭐ Eigenentwicklung |
+| `M_`   | Masken-Interpreter | `eur_tool.h` | ⭐ Eigenentwicklung |
+| `mm`   | Masken-Compiler | (Programm) | ⭐ Eigenentwicklung |
+| `mf`   | Formular-Compiler | (Programm) | ⭐ Eigenentwicklung |
+
+**→ Dieser Layer MUSS 1:1 portiert/erhalten werden - DAS IST DER SCHATZ!**
 
 **Beispiele aus FiCore:**
 ```c

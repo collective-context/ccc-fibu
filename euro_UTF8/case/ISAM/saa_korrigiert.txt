@@ -1,0 +1,157 @@
+recode@ SAA-Toolbox für FiCore (C) 1989-2026
+
+1.1. Vorwort
+
+Mit der SAA-Toolbox stehen dir C-Funktionen zur Verfügung, die dir helfen werden, deine Programme mit einer professionellen Benutzerschnittstelle auszustatten, ohne selbst »das Rad noch einmal erfinden zu müssen«. Ausgetestete und auf Geschwindigkeit und leichte Bedienbarkeit hin optimierte Routinen geben deiner Software das »look and feel« der neuen und die Zukunft bestimmenden Software-Generation, die sich an dem SAA-Standard orientiert:
+
+■ Leichte Bedienung des Anwenderprogramms durch Verwendung einer Menüzeile und Pull-down-Menüs,
+■ wahlweise Bedienung des Anwenderprogramms mit Maus und Tastatur,
+■ das Arbeiten mit mehreren Fenstern,
+■ Programmsteuerung mit Hilfe von Dialogfeldern
+
+sind nur einige der Merkmale dieses neuen Standards, den du vielleicht von der Shell des Betriebssystems DOS 4.0 oder der Grafik-Version von Microsoft Windows 2.1 oder /386 her kennst. Natürlich folgt auch QuickC diesem Standard, und im Laufe dieser Dokumentation wirst du alte Bekannte aus der QuickC-Bedienoberfläche wiederfinden.
+
+Neben der umfangreichen Funktionssammlung werden die Elemente des SAA-Standards erläutert, die eine Vereinheitlichung der Benutzeroberfläche zum Ziel haben. Weitere Informationen zur System Anwendungs-Architektur kannst du den Veröffentlichungen von IBM zu SAA entnehmen (siehe Literaturverzeichnis).
+
+Allein die SAA-Toolbox besteht bereits aus mehr als 30.000 Zeilen ausführlich dokumentierten Source-Codes.
+
+Die dir vorliegende SAA-Toolbox-Dokumentation wird es dir ermöglichen, dass du auf all diese Funktionen über die dir zur Verfügung stehenden Bibliotheken zugreifen kannst.
+
+In diesem Kapitel erhältst du einen ersten Überblick über die Leistungsmerkmale der Toolbox. Außerdem werden wir die im Text und in den Programmen verwendeten Notationsregeln erläutern und dich mit dem Aufbau der Dokumentation vertraut machen.
+
+
+1.2. Die SAA-Toolbox im Überblick
+
+Die Tools unterstützen dich bei der Programmentwicklung einer anwenderfreundlichen Benutzerschnittstelle, die sich an dem von IBM definierten SAA-Standard (System-Anwendungs-Architektur) anlehnt. Durch die Verwendung der Toolbox wird die Dauer für die Erstellung einer Bedienoberfläche, die den Großteil der Programmierzeit beträgt, erheblich verkürzt. Zur Verfügung stehen dir:
+
+SAA-Toolbox:
+
+■ Ein professioneller Menümanager, der vom Anwender mit Maus und Tastatur bedient werden kann.
+■ Ein komfortables Window-Management für die Generierung, Anzeige und Verwaltung von mehreren Fenstern, die sich beliebig überlappen können.
+■ Eine Sammlung von Dialogfeldern, die du über einen simplen Funktionsaufruf in deine Programme einbinden kannst.
+■ Eine Funktionssammlung zur Unterstützung der Microsoft Maus.
+■ Schnelle Assembler- und C-Routinen zur Bildschirmausgabe, die direkt auf den Bildschirmspeicher zugreifen.
+
+MASK-Toolbox:
+
+■ Ein Maskencompiler und C-Funktionen, die die vom Maskencompiler erstellten Maskendateien interpretieren.
+■ Ein Formularcompiler und C-Funktionen, die die erstellten Formulare und Listen für den Ausdruck interpretieren.
+
+ISAM-Toolbox:
+
+■ Die Funktionen, die dir die Datenbankverwaltung zur Verfügung stellt, verwenden als Basis das Novell-Btrieve-Tool.
+
+UTIL-Toolbox:
+
+■ Weiters stehen dir Funktionen zur Stringbearbeitung und Low-Level-Funktionen aller Art zur Verfügung.
+
+Bei der Realisierung der Funktionen haben wir versucht, die bestmögliche Kombination von Effektivität und leichter Bedienbarkeit zu finden.
+
+Die verschiedenen Funktionen der SAA-Toolbox sind in folgenden Kategorien zusammengefasst:
+
+┌──────┬─────────────────────────────────────┬───────────────┐
+│Präfix│ Kategorie                           │ Header-Dateien│
+├──────┼─────────────────────────────────────┼───────────────┤
+│      │ Lädt alle anderen Header-Dateien    │ eur_tool.h    │
+│      │                                     │               │
+│ Dl_  │ Funktionen zur Aktivierung der      │ eur_dlg.h     │
+│      │ Dialogfelder                        │               │
+│      │                                     │               │
+│ Mn_  │ Funktionen zur Initialisierung      │               │
+│      │ und Aktivierung des Menümanagers    │ eur_mnu.h     │
+│      │                                     │               │
+│ Ms_  │ Funktionen zur Unterstützung der    │               │
+│      │ Microsoft-Maus                      │ eur_msm.h     │
+│      │                                     │               │
+│ Ut_  │ Utility-Funktionen und Makros       │ eur_utl.h     │
+│      │                                     │               │
+│ Vi_  │ Funktionen zur schnellen Bild-      │               │
+│      │ schirmausgabe                       │ eur_vio.h     │
+│      │                                     │               │
+│ Wi_  │ Funktionen zum Window-Handling      │ eur_win.h     │
+│      │                                     │               │
+│ i_   │ interne SAA-Funktionen              │ eur_int.h     │
+│      │                                     │               │
+│      │ Funktionstypen, typedef             │ eur_type.h    │
+│      │                                     │               │
+│      │ Funktionen für Stringmanipulationen │ eur_str.h     │
+│      │                                     │               │
+│      │ DOS Low-Level Funktionen            │ eur_dos.h     │
+│      │                                     │               │
+│ BTRV │                                     │               │
+│ B_   │ Btrieve ISAM-Funktionen             │ eur_btr.h     │
+│      │                                     │               │
+│ M_   │ Masken-Interpreter-Funktionen       │ eur_tool.h    │
+└──────┴─────────────────────────────────────┴───────────────┘
+
+Tabelle 1.1: Die Toolbox-Kategorien und die Präfixe der Funktionsnamen.
+
+Die Spalte »Präfixe« der Tabelle 1.1. informiert dich über die Vorsilben, die den einzelnen Funktions- und Makronamen vorangestellt sind, um sie den Kategorien zuzuordnen.
+
+So enthält das Modul zur Steuerung des Menümanagers (Präfix: Mn_) eine Funktion, mit der Menüs initialisiert werden können: »Mn_Einrichten()«. Außerdem informiert dich dieses Präfix darüber, welche Deklarationsdatei von dir zur Typenprüfung der Funktionsargumente in deinen Code miteingebunden werden muss.
+
+Wenn du beispielsweise in einem Programmteil die Toolbox-Funktion »Mn_Einrichten()« verwenden willst, musst du die Header-Datei »eur_mnu.h« miteinbinden.
+
+Wenn dein Programm mehrere Header-Dateien der Toolbox benötigt, kannst du auch die Header-Datei »eur_tool.h« verwenden. Diese Datei bindet sämtliche Header-Dateien der Toolbox mit einer Anweisung ein. Durch die Präprozessorbefehle zur bedingten Kompilation ist sichergestellt, dass jede Header-Datei nur einmal eingebunden wird.
+
+Bei der Namensvergabe der Funktionen haben wir uns die Fähigkeit des Microsoft-C Compilers und des Linkers zunutze gemacht, 31 signifikante Stellen zu unterscheiden. Die Funktionsnamen wurden dadurch zwar länger, verdeutlichen jedoch gleichzeitig besser den Verwendungszweck der Funktion. (Beispiel: Ms_CursorOff(): schaltet den Maus-Cursor aus).
+
+Die Funktionsnamen verwenden eine Mischung aus Klein- und Großschreibung, wobei diese Notation die Funktionsnamen in einzelne Worte teilt.
+
+Für Low-Level-Funktionen, DOS-Funktionen oder Funktionen zur Stringmanipulation verwenden wir, gleich wie die Microsoft-Standard-Bibliothek, nur Kleinbuchstaben.
+
+Interne SAA-Toolbox-Funktionen beginnen mit »i_«. Die Funktionen des Maskeninterpreters verwenden ein Präfix »M_« und die Btrieve-Funktionen das Präfix »B_«.
+
+
+1.3. Notationsregeln
+
+Zur Angabe des Datentyps einer Variable verwenden wir Datentypen, die mit der »typedef-Anweisung« geschaffen wurden. Ziel dabei ist es, Datentypen, die in C nicht explizit vorhanden sind, zu schaffen (z.B. den Booleschen Datentyp) als auch durch die Vergabe von Großbuchstaben den Code übersichtlicher zu gestalten.
+
+Die wichtigsten Datentypen findest du in der nachfolgenden Tabelle. Eine komplette Übersicht kannst du der Header-Datei »eur_type.h« entnehmen. Wenn du bereits unter Windows programmiert hast, werden dir diese »Typen« bekannt vorkommen.
+
+┌──────────┬─────────────────────┬─────────────────────────────────┐
+│Toolbox-  │ C-Typ               │ Verwendungszweck                │
+│Typ       │                     │                                 │
+├──────────┼─────────────────────┼─────────────────────────────────┤
+│CHAR      │ unsigned char       │ Zeichen                         │
+│BYTE      │ unsigned char       │ Zahl im Bereich 0-255           │
+│WORD      │ unsigned int        │ Zahl im Bereich 0-65.535        │
+│LONG      │ unsigned long       │ Zahl im Bereich 0-4.294.967.295 │
+│BOOL      │ signed short int    │ Boolsche Variable: TRUE/FALSE   │
+│          │                     │                                 │
+│PSTR      │ unsigned char *     │ Zeiger auf String               │
+│FPSTR     │ unsigned char far * │ far-Zeiger auf String           │
+│          │                     │                                 │
+│PWORD     │ unsigned int *      │ Zeiger auf Word                 │
+│FPWORD    │ unsigned word far * │ far-Zeiger auf Word             │
+└──────────┴─────────────────────┴─────────────────────────────────┘
+
+Tabelle 1.2: Die wichtigsten Toolbox-Datentypen
+
+Den Toolbox-Datentypen für vorzeichenbehaftete C-Typen wird ein »S« (für »signed«) vorangestellt. Somit erhält beispielsweise eine Variable vom C-Typ »signed int« den Toolbox-Typ SWORD.
+
+Ein großes Manko vieler Programme sind Variablennamen ohne jede Aussagekraft. Die Programmierer verwenden offensichtlich keine oder nur wenig Zeit für die Namensgebung der Variablen. Dies führt dann in der Regel dazu, dass die so entstandenen Programme für außenstehende Personen nicht mehr zu durchschauen sind und daher kaum gewartet werden können.
+
+Um die Variablennamen der Toolbox aussagekräftiger zu machen, verwenden wir eine Nomenklatur, die sich an die »ungarische Namenskonvention« anlehnt, die vom Microsoft-Programmierer Charles Simonyi entwickelt worden ist. Mit ihr soll erreicht werden, dass aus einem Variablennamen sowohl die Aufgabe der Variable im Programm als auch ihr Datentyp hervorgeht.
+
+Der Datentyp wird dabei durch ein Präfix vor dem Variablennamen angegeben, das den Typ der Variable eindeutig beschreibt. Dieses Verfahren wirkt auf den ersten Blick sicherlich etwas abschreckend, es hat sich jedoch gezeigt, dass nach einer kurzen Gewöhnungsphase die Vorteile bei weitem überwiegen.
+
+In der folgenden Tabelle findest du eine Aufstellung der wichtigsten Präfixe. Eine vollständige Übersicht ist in der Datei »eur_type.h« enthalten.
+
+┌──────┬─────────────────────────────┬───────────────────────────────┐
+│Präfix│ Datentyp                    │ Bedeutung                     │
+├──────┼─────────────────────────────┼───────────────────────────────┤
+│ c    │ CHAR   (unsigned char)      │ Zeichen                       │
+│ b    │ BYTE   (unsigned char)      │ Zahl im Bereich 0-255         │
+│ w    │ WORD   (unsigned int)       │ Zahl im Bereich 0-65.535      │
+│ l    │ LONG   (unsigned long)      │ Zahl im Bereich 0-4.294.967.. │
+│ f    │ BOOL   (signed short int)   │ Boolsche Variable             │
+│      │                             │                               │
+│ psz  │ PSTR   (unsigned char *)    │ Zeiger auf String             │
+│ fpsz │ FPSTR  (unsigned char far *)│ far-Zeiger auf String         │
+│      │                             │                               │
+│ pw   │ PWORD  (unsigned int *)     │ Zeiger auf Word               │
+│ fpw  │ FPWORD (unsigned word far *)│ far-Zeiger auf Word           │
+└──────┴─────────────────────────────┴───────────────────────────────┘
+
+Tabelle 1.3: Die wichtigsten Präfixe für Variablennamen
